@@ -52,13 +52,11 @@ function linkify(s){
     : ui.esc(p)).join('');
 }
 
-/* ---------- read receipts (2026-09-22) ----------
+/* ---------- read receipts (2026-09-22, backend 2026-10-06) ----------
    Status model for my own messages: sent -> delivered -> seen.
-   Honesty: this app is browser-local with no network. 'delivered' means the
-   message was persisted to the thread store (promoted after a short delay so
-   the 'sent' state stays visible). 'seen' advances only when another identity
-   opens the thread — in this demo that's identity switching; real
-   cross-device receipts need a backend. Per-thread seenBy = {<name>: <ts>}. */
+   'delivered' means the message was persisted (locally or to server).
+   'seen' advances when the other user opens the thread — via backend
+   read receipts when logged in and online. Per-thread seenBy = {<name>: <ts>}. */
 const RC={
   markSeen:function(th){
     if(!th) return;

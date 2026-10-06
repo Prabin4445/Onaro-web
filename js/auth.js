@@ -328,7 +328,7 @@ function loginHTML(){
   return brandHTML()
   +'<div class="card auth-card"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<h1 class="auth-title">'+esc(t('auth.loginTitle'))+'</h1>'
-  +'<p class="auth-sub">'+esc(t('auth.demoNote'))+'</p>'
+  +'<p class="auth-sub">'+esc(t('auth.realNote'))+'</p>'
   +'<div class="field"><label for="aId">'+esc(t('auth.idLabel'))+'</label><div class="auth-phonerow">'
   +'<select class="input auth-cc" id="aCC" aria-label="'+esc(t('auth.ccLabel'))+'">'+ccOptions(defaultIso())+'</select>'
   +'<input class="input" id="aId" autocomplete="username" placeholder="'+esc(t('auth.idPh'))+'"></div></div>'
@@ -367,24 +367,37 @@ function wireLogin(){
     if(busy) return;
     /* one smart identifier: '@' -> email, otherwise a phone number using the
        selected country code (matches the "login can use number or email" rule) */
-    var idv=idEl.value.trim(), pw=pwEl.value, u=null;
+    var idv=idEl.value.trim(), pw=pwEl.value;
+    var identifier;
     if(idv.indexOf('@')>=0){
       if(!EMAIL_RE.test(idv)){ errShow('aErr',t('auth.errBadEmail')); return; }
-      u=userByEmail(idv);
+      identifier=idv;
     }else{
       var d=idv.replace(/\D/g,'');
       if(d.length<7||d.length>15){ errShow('aErr',t('auth.errBadPhone')); return; }
-      u=userByPhone('+'+DIAL[ccEl.value]+d);
+      identifier='+'+DIAL[ccEl.value]+d;
     }
-    if(!u){ errShow('aErr',t('auth.errUnknown')); return; }
-    if(!verifyPw(u,pw)){ errShow('aErr',t('auth.errWrongPw')); return; }
+    if(!pw){ errShow('aErr',t('auth.errNoPw')); return; }
+    /* Real backend login — no demo */
+    if(!(window.HUB&&HUB.api&&HUB.api.on())){
+      errShow('aErr',t('auth.errNeedOnline'));
+      return;
+    }
     busy=true;
     var btn=document.getElementById('aLogin');
     btn.classList.add('is-busy'); btn.setAttribute('aria-disabled','true');
     btn.innerHTML='<span class="auth-spin" aria-hidden="true"></span>';
-    /* brief beat so the loader feels alive, then a soft volt "wake-up" glow
-       as the app wakes into the session, then in */
-    setTimeout(function(){
+    HUB.api.authLogin(identifier, pw).then(function(j){
+      /* j = {token, user} — token already stored */
+      var u={
+        id:j.user.id,
+        name:j.user.display_name||j.user.name,
+        email:j.user.email,
+        phoneE164:j.user.phone_e164,
+        backendId:j.user.id,
+        faceId:null,
+        createdAt:Date.now()
+      };
       signIn(u,rem.classList.contains('on'));
       busy=false;
       try{
@@ -394,7 +407,12 @@ function wireLogin(){
         setTimeout(function(){ close(); if(w.parentNode) w.parentNode.removeChild(w); },520);
       }catch(e){ close(); }
       ui.toast(t('auth.signedInAs',{name:u.name}));
-    },550);
+    }).catch(function(e){
+      busy=false;
+      btn.classList.remove('is-busy'); btn.removeAttribute('aria-disabled');
+      btn.textContent=t('auth.loginBtn');
+      errShow('aErr', e.message||t('auth.errLoginFailed'));
+    });
   };
   document.getElementById('aLogin').onclick=doLogin;
   pwEl.onkeydown=function(e){ if(e.key==='Enter'){ e.preventDefault(); doLogin(); } };
@@ -443,7 +461,7 @@ function su1HTML(){
   +'<button class="auth-back" id="suBack1" aria-label="'+esc(t('auth.back'))+'">‹</button>'
   +'<p class="auth-steps">'+esc(t('auth.stepOf',{a:1}))+'</p>'+stepDots(1)
   +'<h1 class="auth-title">'+esc(t('auth.signupTitle'))+'</h1>'
-  +'<p class="auth-sub">'+esc(t('auth.demoNote'))+'</p>'
+  +'<p class="auth-sub">'+esc(t('auth.realNote'))+'</p>'
   +'<div class="field"><label for="suName">'+esc(t('auth.nameLabel'))+'</label>'
   +'<input class="input" id="suName" autocomplete="name" placeholder="'+esc(t('auth.namePh'))+'" value="'+esc(su.name)+'"></div>'
   +'<div class="field"><label for="suEmail">'+esc(t('auth.emailLabel'))+'</label>'
@@ -490,10 +508,29 @@ function wireSu1(){
     if(su.pw.length<8){ errShow('suErr1',t('auth.errPwShort')); return; }
     if(su.pw!==su.pw2){ errShow('suErr1',t('auth.errPwMismatch')); return; }
     if(!su.campusRec){ errShow('suErr1',t('auth.errNoCampus')); return; }
-    if(userByEmail(su.email)){ errShow('suErr1',t('auth.errDupEmail')); return; }
-    if(userByPhone(ph.e164)){ errShow('suErr1',t('auth.errDupPhone')); return; }
     su.phoneE164=ph.e164;
-    goStep(2,false);
+    /* Real backend signup — no demo */
+    if(window.HUB&&HUB.api&&HUB.api.on()){
+      var btn=document.getElementById('suNext1');
+      if(btn) btn.disabled=true;
+      HUB.api.authSignup({
+        phone:su.phoneE164,
+        country:su.cc,
+        email:su.email,
+        password:su.pw,
+        name:su.name
+      }).then(function(j){
+        su.backendUserId=j.user_id;
+        if(btn) btn.disabled=false;
+        goStep(2,false);
+      }).catch(function(e){
+        if(btn) btn.disabled=false;
+        errShow('suErr1', e.message||t('auth.errSignupFailed'));
+      });
+      return;
+    }
+    /* Offline: cannot create real account */
+    errShow('suErr1', t('auth.errNeedOnline'));
   };
 }
 function maskEmail(em){
@@ -540,16 +577,12 @@ function wireSu2(){
   };
 }
 function su3HTML(){
-  var code=pendingCode?pendingCode.code:'••••••';
-  var spaced=code.split('').join(' ');
   return brandHTML()
   +'<div class="card auth-card with-back"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<button class="auth-back" id="suBack3" aria-label="'+esc(t('auth.back'))+'">‹</button>'
   +'<p class="auth-steps">'+esc(t('auth.stepOf',{a:3}))+'</p>'+stepDots(3)
   +'<h1 class="auth-title">'+esc(t('auth.verifyTitle'))+'</h1>'
-  +'<p class="auth-sub">'+esc(t('auth.codeLabel'))+(pendingCode&&pendingCode.label?' · '+esc(pendingCode.label):'')+'</p>'
-  +'<div class="auth-democode" aria-live="polite"><span>'+esc(spaced)+'</span></div>'
-  +'<p class="auth-note">'+esc(t('auth.demoCodeNote'))+'</p>'
+  +'<p class="auth-sub">'+esc(t('auth.codeSentNote'))+'</p>'
   +'<div class="auth-codes" id="suCodes">'
   +[0,1,2,3,4,5].map(function(i){ return '<input class="auth-code" inputmode="numeric" autocomplete="one-time-code" maxlength="1" aria-label="'+esc(t('auth.codeLabel'))+' '+(i+1)+'">'; }).join('')
   +'</div>'
@@ -564,13 +597,22 @@ function wireSu3(){
   var doVerify=function(){
     var entered=boxes.map(function(b){ return b.value; }).join('');
     if(entered.length<6) return;
-    if(!pendingCode||Date.now()>pendingCode.exp||entered!==pendingCode.code){
-      errShow('suErr3',t('auth.errBadCode'));
-      boxes.forEach(function(b){ b.value=''; b.classList.remove('filled'); });
-      if(boxes[0]) boxes[0].focus();
+    /* Real backend verification — no demo */
+    if(window.HUB&&HUB.api&&HUB.api.on()&&su.backendUserId){
+      boxes.forEach(function(b){ b.disabled=true; });
+      HUB.api.authVerify(su.backendUserId, entered, su.via||'email').then(function(j){
+        /* j = {token, user} — token already stored by authVerify */
+        completeBackendSignup(j.user);
+      }).catch(function(e){
+        boxes.forEach(function(b){ b.disabled=false; b.value=''; b.classList.remove('filled'); });
+        if(boxes[0]) boxes[0].focus();
+        errShow('suErr3', e.message||t('auth.errBadCode'));
+      });
       return;
     }
-    completeSignup();
+    errShow('suErr3', t('auth.errNeedOnline'));
+    boxes.forEach(function(b){ b.value=''; b.classList.remove('filled'); });
+    if(boxes[0]) boxes[0].focus();
   };
   boxes.forEach(function(b,i){
     b.addEventListener('input',function(){
@@ -598,6 +640,29 @@ function wireSu3(){
     goStep(3,false);
   };
   document.getElementById('suBack3').onclick=function(){ goStep(2,true); };
+}
+function completeBackendSignup(backendUser){
+  /* Real backend signup completion — token already stored by authVerify.
+     Create the local profile from backend user data. */
+  var u={
+    id:backendUser.id||backendUser.user_id,
+    name:backendUser.display_name||su.name,
+    email:backendUser.email||su.email,
+    phoneE164:backendUser.phone_e164||su.phoneE164,
+    cc:su.cc,
+    campus:su.campusRec?su.campusRec.name:'',
+    verifiedVia:su.via,
+    backendId:backendUser.id||backendUser.user_id,
+    faceId:null,
+    createdAt:Date.now()
+  };
+  su.pw=''; su.pw2=''; su.backendUserId=null;
+  signIn(u,true);
+  ui.toast(t('auth.welcomeNew',{name:u.name}));
+  faceIdAvailable().then(function(ok){
+    if(ok&&curView==='signup'){ curView='enroll'; backDir=false; render(); }
+    else close();
+  });
 }
 function completeSignup(){
   var a=ag();
@@ -678,7 +743,7 @@ function accountCardHTML(){
   var inner='';
   if(!u){
     inner='<div class="auth-acct-row"><div><h2>'+esc(t('auth.accountTitle'))+'</h2>'
-      +'<p class="hint">'+esc(t('auth.demoNote'))+'</p></div></div>'
+      +'<p class="hint">'+esc(t('auth.realNote'))+'</p></div></div>'
       +'<div class="auth-acct-btns"><button class="btn btn-primary" id="acLogin">'+esc(t('auth.loginBtn'))+'</button>'
       +' <button class="btn btn-line" id="acSignup">'+esc(t('auth.signupBtn'))+'</button></div>';
   }else{
