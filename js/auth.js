@@ -112,6 +112,10 @@ function clearSession(){
 }
 function signIn(u,remember){
   var a=ag(); currentUid=u.id;
+  /* Ensure the user exists in the users array for userById/currentUser. */
+  var found=false;
+  for(var i=0;i<a.users.length;i++){ if(a.users[i].id===u.id){ a.users[i]=u; found=true; break; } }
+  if(!found) a.users.push(u);
   var sess={uid:u.id,at:Date.now(),remember:!!remember};
   if(remember){ a.session=sess; try{ sessionStorage.removeItem(TMP_KEY); }catch(e){} }
   else{ a.session=null; try{ sessionStorage.setItem(TMP_KEY,JSON.stringify(sess)); }catch(e){} }
