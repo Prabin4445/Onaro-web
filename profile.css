@@ -86,6 +86,8 @@ body.dark #view-me .card.me-hero{
   -webkit-overflow-scrolling:touch;
 }
 #view-me .me-ribbon::-webkit-scrollbar{display:none}
+/* trailing spacer: the last chip can scroll fully into view with end padding */
+#view-me .me-ribbon::after{content:'';flex:0 0 4px}
 #view-me .me-chip{
   flex:0 0 auto;scroll-snap-align:start;
   display:inline-flex;align-items:center;gap:6px;
@@ -125,6 +127,10 @@ body.dark #view-me .me-sec .me-secico{
 
 /* ---------- reputation breakdown grid: glass stat tiles ---------- */
 #view-me .me-repgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+/* grid items default min-width:auto — long labels would blow out the track */
+#view-me .me-repgrid>*{min-width:0}
+#view-me .me-replabel{overflow-wrap:break-word}
+#view-me .me-rephint{overflow-wrap:break-word}
 #view-me .me-repcard{
   position:relative;overflow:hidden;
   border-radius:20px;padding:16px 14px;
