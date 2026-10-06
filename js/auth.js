@@ -657,11 +657,22 @@ function completeBackendSignup(backendUser){
   su.firebaseUser=null; su.pw=''; su.pw2='';
   signIn(u,true);
   if(wasSignup){
+    /* New signup: clear profile name/campus so onboarding triggers,
+       then run the welcome (language) + onboarding flow like a fresh install. */
+    try{
+      var p=HUB.store.state.profile;
+      if(p){ p.name=''; p.campus=''; }
+      HUB.store.save();
+    }catch(e){}
+    close();
     ui.toast(t('auth.welcomeNew',{name:u.name}));
-    faceIdAvailable().then(function(ok){
-      if(ok&&curView==='signup'){ curView='enroll'; backDir=false; render(); }
-      else close();
-    });
+    if(HUB.i18n&&HUB.i18n.ensureWelcome){
+      HUB.i18n.ensureWelcome(function(){
+        if(HUB.ensureOnboarded) HUB.ensureOnboarded();
+      });
+    }else if(HUB.ensureOnboarded){
+      HUB.ensureOnboarded();
+    }
   }else{
     ui.toast(t('auth.signedInAs',{name:u.name||u.email}));
     close();

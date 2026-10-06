@@ -342,4 +342,5 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 });
 HUB.applyTheme=applyTheme;
+HUB.ensureOnboarded=ensureOnboarded;
 })();
