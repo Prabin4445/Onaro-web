@@ -230,6 +230,37 @@
     return apiGet('/v1/receipts/groups/'+encodeURIComponent(groupId)+'/reads');
   }
 
+  /* ---------- 1-on-1 messaging (Phase 2) ---------- */
+  function createConversation(otherUserId){
+    if(!isLoggedIn()) return Promise.reject(new Error('not_logged_in'));
+    return apiPost('/v1/messages/conversations', {other_user_id:otherUserId});
+  }
+  function listConversations(){
+    if(!isLoggedIn()) return Promise.resolve({conversations:[]});
+    return apiGet('/v1/messages/conversations');
+  }
+  function sendMessage(convId, body, clientId){
+    if(!isLoggedIn()) return Promise.reject(new Error('not_logged_in'));
+    return apiPost('/v1/messages/conversations/'+encodeURIComponent(convId)+'/messages',
+      {body:body, client_id:clientId||''});
+  }
+  function getMessages(convId, limit, before){
+    if(!isLoggedIn()) return Promise.resolve({messages:[]});
+    var q='?limit='+(limit||100)+(before?'&before='+encodeURIComponent(before):'');
+    return apiGet('/v1/messages/conversations/'+encodeURIComponent(convId)+'/messages'+q);
+  }
+
+  /* ---------- group messaging (Phase 2) ---------- */
+  function sendGroupMessage(groupId, body){
+    if(!isLoggedIn()) return Promise.reject(new Error('not_logged_in'));
+    return apiPost('/v1/groups/'+encodeURIComponent(groupId)+'/messages', {body:body});
+  }
+  function getGroupMessages(groupId, limit, before){
+    if(!isLoggedIn()) return Promise.resolve({messages:[]});
+    var q='?limit='+(limit||100)+(before?'&before='+encodeURIComponent(before):'');
+    return apiGet('/v1/groups/'+encodeURIComponent(groupId)+'/messages'+q);
+  }
+
   window.HUB=window.HUB||{};
   window.HUB.api={
     on:on, base:base,
@@ -242,6 +273,11 @@
     authMe:authMe, authLogout:authLogout,
     // receipts
     markRead:markRead, getReads:getReads,
-    markGroupRead:markGroupRead, getGroupReads:getGroupReads
+    markGroupRead:markGroupRead, getGroupReads:getGroupReads,
+    // 1-on-1 messaging
+    createConversation:createConversation, listConversations:listConversations,
+    sendMessage:sendMessage, getMessages:getMessages,
+    // group messaging
+    sendGroupMessage:sendGroupMessage, getGroupMessages:getGroupMessages
   };
 })();

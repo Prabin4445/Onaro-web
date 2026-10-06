@@ -232,6 +232,8 @@ function openThread(threadId){
   openTid=threadId;
   panel().classList.remove('gc-panel'); /* group-only bubble polish must not leak here */
   th.unread=0; RC.markSeen(th); refreshDot();
+  /* Phase 2: start polling for new messages + read receipts */
+  startThreadPolling(th);
   const name=threadName(th), phone=threadPhone(th), cc=threadContact(th);
   /* verified identity: the contact record, or a matching person by name
      (sample threads are title-based and carry no contactId) */
@@ -371,13 +373,32 @@ async function sendMessage(threadId){
   try{
     const enc=await HUB.crypto.encryptText(text);
     input.value='';
-    await pushMessage(th,Object.assign({from:'me',at:Date.now(),kind:'text',status:'sent'},enc?{enc}:{text}));
+    const msg=Object.assign({from:'me',at:Date.now(),kind:'text',status:'sent',
+      clientId:'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,8)},
+      enc?{enc}:{text});
+    await pushMessage(th,msg);
+    /* Phase 2: sync to server when online + logged in */
+    syncMessageToServer(th,msg);
   }catch(e){
     /* Never leave an unhandled rejection: the text stays in the composer
        so the user can retry. */
     try{ ui.toast(t('chat.sendFailed')); }catch(e2){}
   }
   // Honesty: no auto-replies — the other side is a real person (or a silent sample).
+}
+/* Phase 2: send a local message to the backend (fire-and-forget).
+   The thread needs th.backendConvId (set when the conversation is created). */
+function syncMessageToServer(th,msg){
+  try{
+    if(!(window.HUB&&HUB.api&&HUB.api.isLoggedIn())) return;
+    if(HUB.offline&&HUB.offline.is()) return;
+    if(!th.backendConvId) return;
+    var body=msg.enc?JSON.stringify(msg.enc):msg.text;
+    HUB.api.sendMessage(th.backendConvId,body,msg.clientId).then(function(j){
+      msg.backendId=j.message_id;
+      try{ store.save(); }catch(e){}
+    }).catch(function(){ /* stays local; retry on next open */ });
+  }catch(e){}
 }
 function readAsDataURL(file){
   return new Promise((res,rej)=>{ const r=new FileReader(); r.onload=()=>res(r.result); r.onerror=rej; r.readAsDataURL(file); });
@@ -501,8 +522,62 @@ function openWith(contact,contextMessage,opts){
 }
 
 /* ---------- overlay + dot ---------- */
+let _pollTimer=null;
+function stopThreadPolling(){
+  if(_pollTimer){ clearInterval(_pollTimer); _pollTimer=null; }
+}
+/* Phase 2: poll server for new messages + read receipts every 4s while open */
+function startThreadPolling(th){
+  stopThreadPolling();
+  if(!(window.HUB&&HUB.api&&HUB.api.isLoggedIn())) return;
+  if(!th.backendConvId) return;
+  const tid=th.id;
+  _pollTimer=setInterval(function(){
+    if(openTid!==tid) { stopThreadPolling(); return; }
+    if(HUB.offline&&HUB.offline.is()) return;
+    HUB.api.getMessages(th.backendConvId,50).then(function(j){
+      const msgs=j.messages||[];
+      let changed=false;
+      msgs.forEach(function(sm){
+        /* merge: skip if we already have this backendId */
+        const exists=(th.msgs||[]).some(function(m){ return m.backendId===sm.message_id; });
+        if(exists) return;
+        /* decrypt body (it's JSON ciphertext or plain) */
+        let text=sm.body, enc=null;
+        try{ const p=JSON.parse(sm.body); if(p&&p.ct){ enc=p; text=''; } }catch(e){}
+        const isMe=sm.sender_id===(HUB.api.getUser()||{}).id;
+        th.msgs.push({
+          from:isMe?'me':'them', at:new Date(sm.created_at).getTime(),
+          kind:'text', status:isMe?'delivered':'',
+          backendId:sm.message_id, ...(enc?{enc}:{text:text})
+        });
+        /* mark their messages as seen on server */
+        if(!isMe&&sm.message_id) HUB.api.markRead(sm.message_id).catch(function(){});
+        changed=true;
+      });
+      /* update read receipts for my messages */
+      (th.msgs||[]).forEach(function(m){
+        if(m.from!=='me'||!m.backendId) return;
+        const sm=msgs.find(function(x){ return x.message_id===m.backendId; });
+        if(sm&&sm.read_by&&sm.read_by.length>0){
+          /* someone saw it — update seenBy */
+          if(!th.seenBy) th.seenBy={};
+          sm.read_by.forEach(function(uid){
+            if(uid!==(HUB.api.getUser()||{}).id) th.seenBy['user:'+uid]=Date.now();
+          });
+          changed=true;
+        }
+      });
+      if(changed){
+        try{ store.save(); }catch(e){}
+        if(openTid===tid) renderMessages(th);
+      }
+    }).catch(function(){});
+  },4000);
+}
 function close(){
   openTid=null;
+  stopThreadPolling();
   const p=panel(); if(p){ p.style.height=''; p.style.maxHeight=''; p.style.transform=''; } /* drop any keyboard-dodge sizing */
   root().hidden=true;
   ui.closeSheet();

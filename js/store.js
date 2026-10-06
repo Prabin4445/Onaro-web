@@ -90,72 +90,20 @@ const timeAgo=ts=>{const _t=HUB.i18n.t,s=(Date.now()-ts)/1e3;if(s<60)return _t('
 const todayStr=()=> new Date().toISOString().slice(0,10);
 
 function seeds(){
-  const now=Date.now(), H=3600e3;
+  const now=Date.now();
+  /* Production: no sample/demo/fake data. All collections start empty.
+     Real data comes from the backend API and user actions. */
   return {
-    profile:{name:'',email:'',phone:'',campus:'',audience:'',avatarColor:0,verified:false,stars:4.5,jobsDone:3,createdAt:now,sample:false,discoverable:true},
+    profile:{name:'',email:'',phone:'',campus:'',audience:'',avatarColor:0,verified:false,stars:0,jobsDone:0,createdAt:now,sample:false,discoverable:true},
     prefs:{dark:true},
-    people:seedPeople(),
-    listings:[
-      {id:uid(),type:'BORROW',title:'📚 Calculus textbook (Stewart, 9th ed)',photos:['market/photos/textbook.webp'],price:0,borrowFor:'2 weeks',desc:'Need it for MATH 201 this semester. Will return in perfect condition!',campus:'Riverside State',seller:'Alex Rivera',phone:'+1 555-014-2288',createdAt:now-5*H,sample:true},
-      {id:uid(),type:'SWAP',title:'🖥️ 24" Monitor — swap for keyboard',photos:['market/photos/monitor.webp'],price:0,swapFor:'mechanical keyboard',desc:'Dell 24 inch, 1080p, works great. Looking to swap for a mechanical keyboard.',campus:'Riverside State',seller:'Maya Chen',phone:'+1 555-902-1173',createdAt:now-9*H,sample:true},
-      {id:uid(),type:'SELL',title:'💡 Desk lamp with USB port',photos:['market/photos/lamp.webp','market/photos/lamp2.webp'],price:15,desc:'Barely used, warm light, has a USB charging port on the base.',campus:'Riverside State',seller:'Jordan Lee',phone:'+1 555-773-9041',createdAt:now-26*H,sample:true},
-      {id:uid(),type:'FREE',title:'📦 Moving boxes (12) — free pickup',photos:['market/photos/boxes.webp','market/photos/boxes2.webp'],price:0,desc:'Sturdy boxes from my move last week. First come first served!',campus:'Riverside State',seller:'Sam Ortiz',phone:'+1 555-331-8870',createdAt:now-30*H,sample:true},
-      {id:uid(),type:'FREE',title:'🪴 Cherry tomato seedlings — free',photos:['market/photos/plant.webp'],price:0,desc:'Started way too many. Porch pickup in Maplewood, bring a small pot!',campus:'Maplewood Apartments',seller:'Sam Rivera',phone:'+1 555-220-4816',createdAt:now-8*H,sample:true},
-      {id:uid(),type:'SELL',title:'🚲 City commuter bike',photos:['market/photos/bike.webp','market/photos/bike2.webp'],price:120,desc:'7-speed, new brake pads. Perfect for getting around the Arts District.',campus:'Downtown Arts District',seller:'Jordan Blake',phone:'+1 555-773-2094',createdAt:now-14*H,sample:true},
-    ],
-    jobs:[
-      {id:uid(),title:'Need someone to move furniture',pay:40,desc:'Couch + bookshelf, 2nd floor to ground. ~1 hour, Saturday morning.',poster:'Taylor Brooks',status:'open',acceptedBy:null,createdAt:now-3*H,sample:true},
-      {id:uid(),title:'Need a logo designed',pay:25,desc:'Simple logo for my study-group app. Can be done remotely.',poster:'Casey Kim',status:'open',acceptedBy:null,createdAt:now-12*H,sample:true},
-      {id:uid(),title:'Help assemble IKEA desk',pay:30,desc:'Malm desk, all parts ready. Need an extra pair of hands ~45 min.',poster:'Riley Patel',status:'open',acceptedBy:null,createdAt:now-20*H,sample:true},
-    ],
-    events:[
-      {id:uid(),emoji:'🍕',title:'Free pizza — Student Union',time:'Today · 12:00 PM',where:'Student Union lobby',cat:'Community',desc:'Free pizza for all students while it lasts! Come meet people from across campus.',links:[{label:'More info',url:'https://example.com'}],photos:['events/pizza.webp','events/pizza2.webp'],sample:true},
-      {id:uid(),emoji:'💼',title:'Career fair',time:'Today · 3:00 PM',where:'Main gym',sample:true},
-      {id:uid(),emoji:'🏀',title:'Basketball pickup game',time:'Today · 7:00 PM',where:'Rec center courts',sample:true},
-      {id:uid(),emoji:'📚',title:'Study group — MATH 201',time:'Today · 8:00 PM',where:'Library room 204',sample:true},
-      {id:uid(),emoji:'🎨',title:'First Friday art walk',time:'Friday · 6:00 PM',where:'Main St, Downtown Arts District',sample:true},
-      {id:uid(),emoji:'🧹',title:'Maplewood block cleanup',time:'Saturday · 9:00 AM',where:'Maplewood courtyard',sample:true},
-    ],
-    households:[
-      {id:uid(),name:'Apartment 204',members:['Prabin','Alex','Maya'],
-       bills:[
-         {id:uid(),item:'Rent',amount:2100,paidBy:'Prabin',due:'1st'},
-         {id:uid(),item:'Electricity',amount:146,paidBy:'Alex',due:'15th'},
-         {id:uid(),item:'Internet',amount:70,paidBy:'Maya',due:'10th'},
-         {id:uid(),item:'Groceries',amount:238,paidBy:'Prabin',due:'—'},
-       ],
-       chores:[{id:uid(),task:'Take out trash',who:'Alex',done:false},{id:uid(),task:'Clean bathroom',who:'Maya',done:false},{id:uid(),task:'Vacuum living room',who:'Prabin',done:true}],
-       shopping:[{id:uid(),item:'Oat milk',done:false},{id:uid(),item:'Dish soap',done:false},{id:uid(),item:'Trash bags',done:true}],
-       notes:[{id:uid(),text:'Landlord visiting Friday — keep common areas clean 🙏',at:now-8*H}],
-       polls:[{id:uid(),q:'Movie night Friday?',opts:[{t:'Yes 🍿',v:2},{t:'Saturday instead',v:1}],voted:false}],
-       sample:true},
-    ],
-    campusPosts:[
-      {id:uid(),author:'Priya N.',text:'Anyone selling a bike? Budget $80 🚲',at:now-2*H,sample:true},
-      {id:uid(),author:'Devon A.',text:'Room available in 3BR near Riverside State from next month. DM me! 🏠',at:now-6*H,sample:true},
-      {id:uid(),author:'Jordan P.',text:'Lost grey cat near Northside park — answers to Miso 🐱 please DM if seen',at:now-4*H,sample:true},
-      {id:uid(),author:'Sam R.',text:'Courtyard BBQ Sunday at Maplewood 🌭 bring something to share!',at:now-13*H,sample:true},
-      {id:uid(),author:'Lena K.',text:'Guitar club meeting Thursday 6 PM, music room 🎸 beginners welcome',at:now-11*H,sample:true},
-    ],
-    memory:[
-      {id:uid(),kind:'receipt',title:'Laptop receipt — Best Buy',note:'MacBook Air, $999. Warranty 1 year.',fileName:'receipt.jpg',expiry:now+300*24*H,createdAt:now-40*24*H,sample:true},
-      {id:uid(),kind:'note',title:'Internship website',note:'apply.techinterns.io — deadline Nov 15',createdAt:now-5*24*H,sample:true},
-      {id:uid(),kind:'document',title:'Apartment lease 2026',note:'Lease ends Aug 2027. Deposit $800.',fileName:'lease.pdf',createdAt:now-60*24*H,sample:true},
-    ],
-    contacts:[
-      {id:uid(),name:'Alex Rivera',phone:'+1 555-014-2288',sample:true},
-      {id:uid(),name:'Maya Chen',phone:'+1 555-902-1173',sample:true},
-    ],
-    threads:[
-      {id:uid(),contactId:null,listingId:null,title:'Alex Rivera',messages:[{from:'them',text:'Hey! Is the textbook still available?',at:now-2*H}],unread:1,sample:true},
-    ],
-    campuses:['Riverside State','City College','Northlake University','Westfield Tech','Maplewood Apartments','Downtown Arts District','Northside','Riverside Heights'],
-    /* Workstream H: class schedule */
-    classes:seedClasses(),
+    people:[],
+    listings:[],
+    jobs:[],
+    threads:[],
+    campuses:[],
+    classes:[],
     classFires:[],
-    /* Groups feature (2026-09-22): community groups */
-    cgroups:seedCGroups(),
-    /* Daily tab: tasks checklist + quick notes */
+    cgroups:[],
     tasks:[],
     notes:[],
   };

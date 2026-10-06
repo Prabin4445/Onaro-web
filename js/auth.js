@@ -260,9 +260,6 @@ function openSignup(){ suReset(); open('signup',1); }
    actually seen. Returns true when the gate opened the door. */
 function gate(){
   if(curView) return true; /* already showing a view — gate satisfied */
-  /* visitor tapped "Explore without signing in": never re-gate this boot,
-     or the boot poller would pop the login back open ~250ms after skip */
-  if(window.__gateSkip) return true;
   /* open as the splash BEGINS fading (not after removal): the splash lifts
      straight into the login, so the Home tab never flashes through. */
   var sp=document.getElementById('splash');
@@ -343,7 +340,6 @@ function loginHTML(){
  +'<p class="auth-note" id="aFaceNote" hidden></p>'
   +'<div class="auth-links"><button class="linklike" id="aForgot">'+esc(t('auth.forgotPw'))+'</button></div>'
   +'<p class="auth-switch"><button class="linklike" id="aToSignup">'+esc(t('auth.toSignup'))+'</button></p>'
-  +'<p class="auth-skip"><button class="linklike auth-skiplink" id="aSkip">'+esc(t('auth.skip'))+'</button></p>'
   +'</div>';
 }
 function wireLogin(){
@@ -428,8 +424,6 @@ function wireLogin(){
   document.getElementById('aFace').onclick=function(){ loginWithFaceId(); };
   document.getElementById('aForgot').onclick=function(){ ui.toast(t('auth.forgotNote')); };
   document.getElementById('aToSignup').onclick=function(){ suReset(); curView='signup'; goStep(1,false); };
-  /* Preview front door: let people peek inside without an account. */
-  var sk=document.getElementById('aSkip'); if(sk) sk.onclick=function(){ try{window.__gateSkip=true;}catch(e){} close(); };
 }
 
 /* ================= SIGNUP ================= */
