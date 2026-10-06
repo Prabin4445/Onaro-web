@@ -1,14 +1,14 @@
-/* HUB auth: device-local login + signup with demo verification and WebAuthn Face ID.
-   - Accounts live in hub_v1 (state.auth.users). Passwords are salted-djb2-hashed.
-     DEMO-ONLY: a browser demo has no KDF and no server, so this is NOT real
-     password security — the production backend will hash with a real password
-     KDF. The UI says so honestly (auth.demoNote).
-   - Verification codes are 6 digits, IN-MEMORY ONLY (never written to state),
-     10-minute expiry, regenerated on resend. The code is SHOWN ON SCREEN with
-     the exact honest demo note — we NEVER claim a real SMS or email was sent.
-   - Remember-me ON (default): session persists in hub_v1 (survives reload).
-     OFF: session lives ONLY in sessionStorage (hub_auth_tmp), never in hub_v1.
-     Logout clears both. restore() at boot reads hub_v1 first, then sessionStorage.
+/* HUB auth: Firebase Authentication (Email/Password) + Onaro backend.
+   - Signup/login go through the Firebase JS SDK (compat build, loaded in
+     index.html). Firebase sends the verification email and the password-reset
+     email — no SMTP/API keys on our side.
+   - Email MUST be verified in Firebase before the backend allows login.
+   - After Firebase auth, the ID token is POSTed to /v1/auth/firebase with the
+     phone/country/name; the backend verifies the token and returns our own
+     access_token + user. Phone is REQUIRED for new accounts (PraBin's rule).
+   - Session: remember-me ON (default) persists in hub_v1; OFF keeps the
+     session in sessionStorage only. Firebase persistence is aligned with the
+     same choice (LOCAL vs SESSION). Logout signs out of Firebase too.
    - Face ID = WebAuthn platform authenticator, all honest: if the device or
      browser can't do it we say so (auth.faceIdNA) — never a fake prompt.
    - UI: full-page .authroot overlay (z-220) with a water-crystal aesthetic that
@@ -19,14 +19,50 @@
      .authroot[hidden]{display:none} (hidden-vs-display lesson).
    - Escape: app.js's global handler defers while .authroot is visible; this
      module owns Escape (closes a topmost sheet first, else the overlay).
-   - QA seams: HUB.auth._debug {reset,users,lastCode,setCredApi,faceIdAvailable}.
-     Real code paths go through credApi() (injected fake or navigator.credentials)
-     so the fake exercises the real path. */
+   - QA seams: HUB.auth._debug {reset,users,setCredApi,faceIdAvailable}. */
 (function(){
 'use strict';
 const {store,ui}=HUB;
 const t=function(k,v){ return HUB.i18n.t(k,v); };
 const esc=function(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); };
+
+/* ================= Firebase ================= */
+var FIREBASE_CONFIG={
+  apiKey:"AIzaSyDuRo2TpayHkrj1pxkh4d3dSL1XQYbgeec",
+  authDomain:"onaro-ab57a.firebaseapp.com",
+  projectId:"onaro-ab57a",
+  storageBucket:"onaro-ab57a.firebasestorage.app",
+  messagingSenderId:"944953080289",
+  appId:"1:944953080289:web:97ad5ecd23bbb1cd41baa0"
+};
+var fbAuth=null, fbInitErr=null;
+function firebaseReady(){
+  if(fbAuth) return Promise.resolve(fbAuth);
+  if(fbInitErr) return Promise.reject(fbInitErr);
+  return new Promise(function(res,rej){
+    try{
+      if(!(window.firebase&&firebase.auth)){ throw new Error('firebase-sdk-missing'); }
+      if(!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
+      fbAuth=firebase.auth();
+      res(fbAuth);
+    }catch(e){ fbInitErr=e; rej(e); }
+  });
+}
+/* Map Firebase error codes to our honest inline messages. */
+function firebaseErrMsg(e){
+  var code=(e&&e.code)||'';
+  if(e&&e.message==='firebase-sdk-missing') return t('auth.errNeedOnline');
+  if(code==='auth/user-not-found') return t('auth.errUnknown');
+  if(code==='auth/wrong-password') return t('auth.errWrongPw');
+  if(code==='auth/invalid-email') return t('auth.errBadEmail');
+  if(code==='auth/email-already-in-use') return t('auth.errDupEmail');
+  if(code==='auth/weak-password') return t('auth.errPwShort');
+  if(code==='auth/network-request-failed') return t('auth.errNeedOnline');
+  if(code==='auth/too-many-requests') return t('auth.errLoginFailed');
+  if(code==='auth/invalid-credential') return t('auth.errLoginFailed');
+  return (e&&e.message)||t('auth.errLoginFailed');
+}
+var EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /* ================= state ================= */
 function ag(){
@@ -36,7 +72,6 @@ function ag(){
   return st.auth;
 }
 var currentUid=null;
-var pendingCode=null; /* {code,exp,via,label} — in-memory ONLY, never in state */
 var faceIdProbe=null, faceIdOK=false, faceIdRepainted=false, credApiFake=null;
 var TMP_KEY='hub_auth_tmp';
 
@@ -56,19 +91,8 @@ function toE164(iso,num){
   return {e164:'+'+DIAL[iso]+digits, digits:digits};
 }
 
-/* ================= users & session ================= */
+/* ================= users & session (local session layer) ================= */
 function userById(id){ var u=ag().users; for(var i=0;i<u.length;i++) if(u[i].id===id) return u[i]; return null; }
-function userByEmail(em){
-  em=String(em||'').toLowerCase();
-  var u=ag().users;
-  for(var i=0;i<u.length;i++) if(u[i].email&&String(u[i].email).toLowerCase()===em) return u[i];
-  return null;
-}
-function userByPhone(e164){
-  var u=ag().users;
-  for(var i=0;i<u.length;i++) if(u[i].phoneE164===e164) return u[i];
-  return null;
-}
 function currentUser(){ return currentUid?userById(currentUid):null; }
 function syncProfile(u){
   try{
@@ -95,7 +119,7 @@ function signIn(u,remember){
   syncProfile(u);
   repaintMe();
 }
-function doSignOut(){ clearSession(); repaintMe(); openLogin(); }
+function doSignOut(){ clearSession(); repaintMe(); try{ if(fbAuth) fbAuth.signOut(); }catch(e){} openLogin(); }
 /* signOut plays the logout cinematic first; the real sign-out runs when it
    finishes (HUB.logout calls back into _doSignOut). No toast — the cinematic
    is the confirmation, and a toast would land behind the login overlay. */
@@ -113,38 +137,6 @@ function restore(){
   /* warm the Face ID probe so the ME card / login button can render it */
   faceIdAvailable().then(function(ok){ if(ok&&!faceIdRepainted){ faceIdRepainted=true; repaintMe(); } }).catch(function(){});
 }
-
-/* ================= demo-only password hashing =================
-   Salted djb2 hex. This is NOT real password security — a browser demo has no
-   KDF and no server. The production backend will hash with a real password KDF;
-   the UI honesty note (auth.demoNote) says accounts live on this device only. */
-function djb2(s){ var h=5381,i; for(i=0;i<s.length;i++) h=((h<<5)+h+s.charCodeAt(i))>>>0; return ('0000000'+h.toString(16)).slice(-8); }
-function newSalt(){
-  var r='';
-  try{
-    if(window.crypto&&window.crypto.getRandomValues){
-      var b=new Uint8Array(8); window.crypto.getRandomValues(b);
-      for(var i=0;i<8;i++) r+=('0'+b[i].toString(16)).slice(-2);
-    }
-  }catch(e){}
-  if(!r) r=Math.random().toString(36).slice(2)+Date.now().toString(36);
-  return r;
-}
-function hashPw(pw,salt){ return djb2(salt+'|'+String(pw)); }
-function verifyPw(u,pw){ return !!(u&&u.salt&&u.pw===hashPw(pw,u.salt)); }
-
-/* ================= demo verification codes (in-memory only) ================= */
-function issueCode(via,label){
-  var code='';
-  try{
-    var b=new Uint8Array(6); window.crypto.getRandomValues(b);
-    for(var i=0;i<6;i++) code+=String(b[i]%10);
-    if(code.charAt(0)==='0') code='1'+code.slice(1);
-  }catch(e){ code=String(Math.floor(100000+Math.random()*900000)); }
-  pendingCode={code:code,exp:Date.now()+10*60*1000,via:via,label:label};
-  return code;
-}
-var EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 /* ================= Face ID (WebAuthn, honest) ================= */
 function credApi(){ return credApiFake||((typeof navigator!=='undefined'&&navigator.credentials)||null); }
@@ -272,7 +264,7 @@ function gate(){
 function close(){
   if(rootEl) rootEl.hidden=true;
   document.body.classList.remove('auth-open');
-  curView=null; pendingCode=null;
+  curView=null;
 }
 /* Escape: this listener registered at parse time, before app.js's global
    handler (DOMContentLoaded), so it runs first. Topmost layer wins: a sheet
@@ -320,15 +312,14 @@ function stepDots(n,total){
   return h+'</div>';
 }
 
-/* ================= LOGIN ================= */
+/* ================= LOGIN (Firebase email/password) ================= */
 function loginHTML(){
   return brandHTML()
   +'<div class="card auth-card"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<h1 class="auth-title">'+esc(t('auth.loginTitle'))+'</h1>'
   +'<p class="auth-sub">'+esc(t('auth.realNote'))+'</p>'
-  +'<div class="field"><label for="aId">'+esc(t('auth.idLabel'))+'</label><div class="auth-phonerow">'
-  +'<select class="input auth-cc" id="aCC" aria-label="'+esc(t('auth.ccLabel'))+'">'+ccOptions(defaultIso())+'</select>'
-  +'<input class="input" id="aId" autocomplete="username" placeholder="'+esc(t('auth.idPh'))+'"></div></div>'
+  +'<div class="field"><label for="aId">'+esc(t('auth.emailLabel'))+'</label>'
+  +'<input class="input" id="aId" type="email" autocomplete="username" placeholder="'+esc(t('auth.emailPh'))+'"></div>'
   +'<div class="field"><label for="aPw">'+esc(t('auth.pwLabel'))+'</label>'
   +'<div class="auth-pwrow"><input class="input" id="aPw" type="password" autocomplete="current-password" placeholder="'+esc(t('auth.pwPh'))+'">'
   +'<button type="button" class="btn btn-line btn-sm auth-showpw" id="aShowPw">'+esc(t('auth.showPw'))+'</button></div></div>'
@@ -342,8 +333,35 @@ function loginHTML(){
   +'<p class="auth-switch"><button class="linklike" id="aToSignup">'+esc(t('auth.toSignup'))+'</button></p>'
   +'</div>';
 }
+/* Complete a Firebase-authenticated session: exchange the ID token with the
+   backend, build the local profile, animate in. */
+function finishFirebaseLogin(fbUser, remember, extra){
+  return fbUser.getIdToken().then(function(idToken){
+    return HUB.api.authFirebase(idToken,
+      (extra&&extra.phone)||'', (extra&&extra.country)||'',
+      (extra&&extra.name)||fbUser.displayName||'');
+  }).then(function(j){
+    var u={
+      id:j.user.id,
+      name:j.user.display_name||j.user.name||(extra&&extra.name)||fbUser.displayName||'',
+      email:j.user.email||fbUser.email||'',
+      phoneE164:j.user.phone_e164||'',
+      backendId:j.user.id,
+      faceId:null,
+      createdAt:Date.now()
+    };
+    signIn(u,remember);
+    try{
+      var w=document.createElement('div');
+      w.className='auth-wake'; w.setAttribute('aria-hidden','true');
+      rootEl.appendChild(w);
+      setTimeout(function(){ close(); if(w.parentNode) w.parentNode.removeChild(w); },520);
+    }catch(e){ close(); }
+    ui.toast(t('auth.signedInAs',{name:u.name||u.email}));
+  });
+}
 function wireLogin(){
-  var idEl=document.getElementById('aId'), ccEl=document.getElementById('aCC'), pwEl=document.getElementById('aPw');
+  var idEl=document.getElementById('aId'), pwEl=document.getElementById('aPw');
   var showBtn=document.getElementById('aShowPw');
   showBtn.onclick=function(){
     var show=pwEl.type==='password';
@@ -361,53 +379,41 @@ function wireLogin(){
   var busy=false;
   var doLogin=function(){
     if(busy) return;
-    /* one smart identifier: '@' -> email, otherwise a phone number using the
-       selected country code (matches the "login can use number or email" rule) */
-    var idv=idEl.value.trim(), pw=pwEl.value;
-    var identifier;
-    if(idv.indexOf('@')>=0){
-      if(!EMAIL_RE.test(idv)){ errShow('aErr',t('auth.errBadEmail')); return; }
-      identifier=idv;
-    }else{
-      var d=idv.replace(/\D/g,'');
-      if(d.length<7||d.length>15){ errShow('aErr',t('auth.errBadPhone')); return; }
-      identifier='+'+DIAL[ccEl.value]+d;
-    }
+    var email=idEl.value.trim(), pw=pwEl.value;
+    if(!EMAIL_RE.test(email)){ errShow('aErr',t('auth.errBadEmail')); return; }
     if(!pw){ errShow('aErr',t('auth.errNoPw')); return; }
-    /* Real backend login — no demo */
-    if(!(window.HUB&&HUB.api&&HUB.api.on())){
-      errShow('aErr',t('auth.errNeedOnline'));
-      return;
-    }
+    if(!(window.HUB&&HUB.api&&HUB.api.on())){ errShow('aErr',t('auth.errNeedOnline')); return; }
     busy=true;
     var btn=document.getElementById('aLogin');
+    var remember=rem.classList.contains('on');
     btn.classList.add('is-busy'); btn.setAttribute('aria-disabled','true');
     btn.innerHTML='<span class="auth-spin" aria-hidden="true"></span>';
-    HUB.api.authLogin(identifier, pw).then(function(j){
-      /* j = {token, user} — token already stored */
-      var u={
-        id:j.user.id,
-        name:j.user.display_name||j.user.name,
-        email:j.user.email,
-        phoneE164:j.user.phone_e164,
-        backendId:j.user.id,
-        faceId:null,
-        createdAt:Date.now()
-      };
-      signIn(u,rem.classList.contains('on'));
+    var done=function(ok){
       busy=false;
-      try{
-        var w=document.createElement('div');
-        w.className='auth-wake'; w.setAttribute('aria-hidden','true');
-        rootEl.appendChild(w);
-        setTimeout(function(){ close(); if(w.parentNode) w.parentNode.removeChild(w); },520);
-      }catch(e){ close(); }
-      ui.toast(t('auth.signedInAs',{name:u.name}));
+      if(!ok&&btn){ btn.classList.remove('is-busy'); btn.removeAttribute('aria-disabled'); btn.textContent=t('auth.loginBtn'); }
+    };
+    firebaseReady().then(function(fa){
+      return fa.setPersistence(remember?firebase.auth.Auth.Persistence.LOCAL:firebase.auth.Auth.Persistence.SESSION)
+        .then(function(){ return fa.signInWithEmailAndPassword(email,pw); });
+    }).then(function(cred){
+      var user=cred.user;
+      return user.reload().then(function(){ return user; });
+    }).then(function(user){
+      if(!user.emailVerified){
+        /* Firebase account exists but email not verified yet — send them to
+           the check-email screen (same as post-signup). */
+        done(true);
+        suReset();
+        su.isSignup=false;
+        su.firebaseUser=user;
+        su.email=user.email||email;
+        curView='signup'; goStep(3,false);
+        return;
+      }
+      return finishFirebaseLogin(user, remember).then(function(){ done(true); });
     }).catch(function(e){
-      busy=false;
-      btn.classList.remove('is-busy'); btn.removeAttribute('aria-disabled');
-      btn.textContent=t('auth.loginBtn');
-      errShow('aErr', e.message||t('auth.errLoginFailed'));
+      done(false);
+      errShow('aErr', firebaseErrMsg(e));
     });
   };
   document.getElementById('aLogin').onclick=doLogin;
@@ -422,160 +428,25 @@ function wireLogin(){
     else if(!ok&&fn){ fn.textContent='🪪 '+t('auth.faceIdNA'); fn.hidden=false; }
   }).catch(function(){});
   document.getElementById('aFace').onclick=function(){ loginWithFaceId(); };
-  document.getElementById('aForgot').onclick=function(){ ui.toast(t('auth.forgotNote')); };
+  /* Forgot password: real Firebase reset email. */
+  document.getElementById('aForgot').onclick=function(){
+    var email=idEl.value.trim();
+    if(!EMAIL_RE.test(email)){ errShow('aErr',t('auth.errBadEmail')); return; }
+    if(!(window.HUB&&HUB.api&&HUB.api.on())){ errShow('aErr',t('auth.errNeedOnline')); return; }
+    firebaseReady().then(function(fa){ return fa.sendPasswordResetEmail(email); })
+      .then(function(){ ui.toast(t('auth.resetSent')); })
+      .catch(function(e){ errShow('aErr', firebaseErrMsg(e)); });
+  };
   document.getElementById('aToSignup').onclick=function(){ suReset(); curView='signup'; goStep(1,false); };
-  /* Sign in with Google */
 }
 
-/* Google Sign-In via Google Identity Services */
-var GOOGLE_CLIENT_ID='313093898252-po7oadmbimkp3p75ihgpgtdtakjv7vjq.apps.googleusercontent.com';
-function loadGoogleScript(){
-  return new Promise(function(res,rej){
-    if(window.google&&window.google.accounts){ res(); return; }
-    var s=document.createElement('script');
-    s.src='https://accounts.google.com/gsi/client';
-    s.async=true; s.defer=true;
-    s.onload=function(){ res(); };
-    s.onerror=function(){ rej(new Error('google script failed')); };
-    document.head.appendChild(s);
-  });
-}
-function googleSignIn(){
-  if(!(window.HUB&&HUB.api&&HUB.api.on())){
-    ui.toast(t('auth.errNeedOnline'));
-    return;
-  }
-  loadGoogleScript().then(function(){
-    google.accounts.id.initialize({
-      client_id:GOOGLE_CLIENT_ID,
-      callback:handleGoogleCredential,
-      auto_select:false,
-      cancel_on_tap_outside:true
-    });
-    /* Try One Tap prompt first */
-    google.accounts.id.prompt(function(notification){
-      var notShown=notification.isNotDisplayed();
-      var skipped=notification.isSkippedMoment();
-      if(notShown||skipped){
-        var reason='';
-        try{
-          reason=notShown?notification.getNotDisplayedReason():notification.getSkippedReason();
-        }catch(e){}
-        console.warn('[google] One Tap not shown:',reason);
-        /* Fallback: render the official Google button in a popup sheet */
-        showGoogleButtonFallback();
-      }
-    });
-  }).catch(function(){
-    ui.toast(t('auth.errGoogleFailed'));
-  });
-}
-function showGoogleButtonFallback(){
-  /* Render Google's official button in a modal — works even when One Tap is blocked */
-  var host=document.createElement('div');
-  host.id='googleBtnSheet';
-  host.innerHTML=
-    '<div style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6)">'
-    +'<div style="background:#1a1d12;border:1px solid rgba(190,242,0,.3);border-radius:16px;padding:24px;max-width:320px;text-align:center">'
-    +'<p style="color:#fff;margin:0 0 16px;font-weight:600">'+esc(t('auth.googleChoose'))+'</p>'
-    +'<div id="googleBtnRender"></div>'
-    +'<button id="googleBtnCancel" style="margin-top:16px;background:none;border:0;color:#bef200;font-weight:600;cursor:pointer">'+esc(t('auth.cancel'))+'</button>'
-    +'</div></div>';
-  document.body.appendChild(host);
-  document.getElementById('googleBtnCancel').onclick=function(){
-    document.body.removeChild(host);
-  };
-  host.firstChild.onclick=function(e){
-    if(e.target===host.firstChild) document.body.removeChild(host);
-  };
-  try{
-    google.accounts.id.renderButton(document.getElementById('googleBtnRender'),{
-      theme:'outline', size:'large', width:280,
-      text:'continue_with', shape:'pill'
-    });
-  }catch(e){
-    document.body.removeChild(host);
-    ui.toast(t('auth.errGoogleFailed'));
-  }
-  /* Close sheet on successful credential */
-  var origHandle=handleGoogleCredential;
-  handleGoogleCredential=function(resp){
-    var s=document.getElementById('googleBtnSheet');
-    if(s&&s.parentNode) s.parentNode.removeChild(s);
-    origHandle(resp);
-  };
-}
-function handleGoogleCredential(resp){
-  if(!resp||!resp.credential){
-    ui.toast(t('auth.errGoogleFailed'));
-    return;
-  }
-  var idToken=resp.credential;
-  /* Decode to get name/email for phone prompt if new user */
-  var payload={};
-  try{
-    payload=JSON.parse(atob(idToken.split('.')[1]));
-  }catch(e){}
-  /* Try login without phone first (existing user) */
-  HUB.api.authGoogle(idToken,'','',payload.name||'').then(function(j){
-    completeGoogleSignin(j);
-  }).catch(function(e){
-    if(e.message&&e.message.indexOf('phone required')>=0){
-      /* New user: need phone number */
-      promptGooglePhone(idToken, payload);
-    }else{
-      ui.toast(e.message||t('auth.errGoogleFailed'));
-    }
-  });
-}
-function promptGooglePhone(idToken, payload){
-  /* Show phone collection sheet */
-  var rootEl=document.getElementById('authRoot');
-  if(!rootEl) return;
-  rootEl.innerHTML=
-    '<div class="card auth-card"><div class="auth-gloss" aria-hidden="true"></div>'
-    +'<h1 class="auth-title">'+esc(t('auth.phoneNeeded'))+'</h1>'
-    +'<p class="auth-sub">'+esc(t('auth.phoneNeededSub'))+'</p>'
-    +'<div class="field"><label>'+esc(t('auth.phoneLabel'))+'</label><div class="auth-phonerow">'
-    +'<select class="input auth-cc" id="gCC">'+ccOptions(defaultIso())+'</select>'
-    +'<input class="input" id="gNum" inputmode="tel" placeholder="'+esc(t('auth.phonePh'))+'"></div></div>'
-    +'<p class="auth-err" id="gErr" role="alert" hidden></p>'
-    +'<button class="btn btn-primary btn-block auth-cta" id="gContinue">'+esc(t('auth.continueBtn'))+'</button>'
-    +'</div>';
-  document.getElementById('gContinue').onclick=function(){
-    var cc=document.getElementById('gCC').value;
-    var num=document.getElementById('gNum').value.replace(/\D/g,'');
-    if(num.length<7||num.length>15){
-      errShow('gErr',t('auth.errBadPhone'));
-      return;
-    }
-    var phone='+'+DIAL[cc]+num;
-    HUB.api.authGoogle(idToken,phone,cc,payload.name||'').then(function(j){
-      completeGoogleSignin(j);
-    }).catch(function(e2){
-      errShow('gErr',e2.message||t('auth.errGoogleFailed'));
-    });
-  };
-}
-function completeGoogleSignin(j){
-  var u=j.user||{};
-  var local={
-    id:u.id||j.user_id,
-    name:u.name||u.display_name||'',
-    email:u.email||'',
-    phoneE164:u.phone||'',
-    backendId:u.id||j.user_id,
-    faceId:null,
-    createdAt:Date.now()
-  };
-  signIn(local,true);
-  ui.toast(t('auth.signedInAs',{name:local.name||local.email}));
-  close();
-}
-
-/* ================= SIGNUP ================= */
+/* ================= SIGNUP (Firebase) =================
+   Step 1: details form (name, email, phone, password, campus).
+   Step 2 (curStep 3, keeps the old numbering): "check your email" screen —
+   Firebase sends the verification link; "I've verified" reloads the user,
+   checks emailVerified, then exchanges the ID token with the backend. */
 var su=null;
-function suReset(){ su={name:'',email:'',cc:defaultIso(),num:'',pw:'',pw2:'',campusRec:null,via:'email'}; }
+function suReset(){ su={name:'',email:'',cc:defaultIso(),num:'',pw:'',pw2:'',campusRec:null,phoneE164:'',firebaseUser:null,isSignup:true}; }
 function stashSu1(){
   var g=function(id){ var el=document.getElementById(id); return el?el.value:''; };
   su.name=g('suName'); su.email=g('suEmail'); su.cc=g('suCC')||su.cc; su.num=g('suNum'); su.pw=g('suPw'); su.pw2=g('suPw2');
@@ -650,29 +521,33 @@ function wireSu1(){
     if(su.pw!==su.pw2){ errShow('suErr1',t('auth.errPwMismatch')); return; }
     if(!su.campusRec){ errShow('suErr1',t('auth.errNoCampus')); return; }
     su.phoneE164=ph.e164;
-    /* Real backend signup — no demo */
-    if(window.HUB&&HUB.api&&HUB.api.on()){
-      var btn=document.getElementById('suNext1');
-      if(btn) btn.disabled=true;
-      HUB.api.authSignup({
-        phone:su.phoneE164,
-        country:su.cc,
-        email:su.email,
-        password:su.pw,
-        name:su.name
-      }).then(function(j){
-        su.backendUserId=j.user_id;
-        su.via='email'; /* email-only: skip method selection */
-        if(btn) btn.disabled=false;
-        goStep(3,false);
-      }).catch(function(e){
-        if(btn) btn.disabled=false;
-        errShow('suErr1', e.message||t('auth.errSignupFailed'));
-      });
+    /* Firebase signup: create the account, send the verification email,
+       then show the "check your email" screen. */
+    if(!(window.HUB&&HUB.api&&HUB.api.on())){
+      errShow('suErr1', t('auth.errNeedOnline'));
       return;
     }
-    /* Offline: cannot create real account */
-    errShow('suErr1', t('auth.errNeedOnline'));
+    var btn=document.getElementById('suNext1');
+    if(btn) btn.disabled=true;
+    firebaseReady().then(function(fa){
+      return fa.createUserWithEmailAndPassword(su.email, su.pw);
+    }).then(function(cred){
+      var user=cred.user;
+      su.firebaseUser=user; su.isSignup=true;
+      var upd=(su.name&&user.updateProfile)
+        ? user.updateProfile({displayName:su.name}).catch(function(){})
+        : Promise.resolve();
+      return upd.then(function(){ return user; });
+    }).then(function(user){
+      return user.sendEmailVerification().then(function(){ return user; });
+    }).then(function(){
+      su.pw=''; su.pw2='';
+      if(btn) btn.disabled=false;
+      goStep(3,false);
+    }).catch(function(e){
+      if(btn) btn.disabled=false;
+      errShow('suErr1', firebaseErrMsg(e));
+    });
   };
 }
 function maskEmail(em){
@@ -681,44 +556,9 @@ function maskEmail(em){
   var l=parts[0];
   return (l.charAt(0)||'')+'•••@'+parts[1];
 }
-function maskPhone(e164){
-  var d=String(e164||'').replace(/\D/g,'');
-  return '••• '+d.slice(-4);
-}
-function su2HTML(){
-  var em=maskEmail(su.email), ph=maskPhone(su.phoneE164||toE164(su.cc,su.num).e164);
-  var card=function(val,icon,titleKey,sub){
-    return '<label class="auth-via'+(su.via===val?' on':'')+'"><input type="radio" name="suVia" value="'+val+'"'+(su.via===val?' checked':'')+'>'
-      +'<span class="auth-viaico" aria-hidden="true">'+icon+'</span>'
-      +'<span class="auth-viatx"><b>'+esc(t(titleKey))+'</b><i>'+esc(sub)+'</i></span></label>';
-  };
-  return brandHTML()
-  +'<div class="card auth-card with-back"><div class="auth-gloss" aria-hidden="true"></div>'
-  +'<button class="auth-back" id="suBack2" aria-label="'+esc(t('auth.back'))+'">‹</button>'
-  +'<p class="auth-steps">'+esc(t('auth.stepOf',{a:2}))+'</p>'+stepDots(2)
-  +'<h1 class="auth-title">'+esc(t('auth.verifyTitle'))+'</h1>'
-  +'<p class="auth-sub">'+esc(t('auth.verifyHow'))+'</p>'
-  +'<div class="auth-viarow">'+card('email','✉️','auth.viaEmail',em)+card('sms','💬','auth.viaSms',ph)+'</div>'
-  +'<p class="auth-err" id="suErr2" role="alert" hidden></p>'
-  +'<button class="btn btn-primary btn-block auth-cta" id="suSend">'+esc(t('auth.verifyBtn'))+'</button>'
-  +'</div>';
-}
-function wireSu2(){
-  var cards=document.querySelectorAll('.auth-via');
-  cards.forEach(function(c){
-    c.addEventListener('click',function(){
-      su.via=c.querySelector('input').value;
-      cards.forEach(function(x){ x.classList.toggle('on',x===c); });
-    });
-  });
-  document.getElementById('suBack2').onclick=function(){ goStep(1,true); };
-  document.getElementById('suSend').onclick=function(){
-    var label=su.via==='email'?su.email:(su.phoneE164||toE164(su.cc,su.num).e164);
-    issueCode(su.via,label);
-    goStep(3,false);
-  };
-}
+/* ---- step 2: "check your email" (Firebase sends the verification link) ---- */
 function su3HTML(){
+  var em=maskEmail(su.email||'');
   return brandHTML()
   +'<div class="card auth-card with-back"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<button class="auth-back" id="suBack3" aria-label="'+esc(t('auth.back'))+'">‹</button>'
@@ -727,69 +567,76 @@ function su3HTML(){
   +'<div class="mail3d-env"><div class="mail3d-flap"></div><div class="mail3d-body"></div>'
   +'<div class="mail3d-spark s1"></div><div class="mail3d-spark s2"></div><div class="mail3d-spark s3"></div></div>'
   +'</div>'
-  +'<h1 class="auth-title">'+esc(t('auth.verifyTitle'))+'</h1>'
-  +'<p class="auth-sub">'+esc(t('auth.codeSentNote'))+'</p>'
-  +'<div class="auth-codes" id="suCodes">'
-  +[0,1,2,3,4,5].map(function(i){ return '<input class="auth-code" inputmode="numeric" autocomplete="one-time-code" maxlength="1" aria-label="'+esc(t('auth.codeLabel'))+' '+(i+1)+'">'; }).join('')
-  +'</div>'
+  +'<h1 class="auth-title">'+esc(t('auth.checkEmailTitle'))+'</h1>'
+  +'<p class="auth-sub">'+esc(t('auth.checkEmailNote',{email:em}))+'</p>'
+  +'<div id="suPhoneWrap" hidden><div class="field"><label>'+esc(t('auth.phoneLabel'))+'</label><div class="auth-phonerow">'
+  +'<select class="input auth-cc" id="suCC2" aria-label="'+esc(t('auth.ccLabel'))+'">'+ccOptions(su.cc)+'</select>'
+  +'<input class="input" id="suNum2" inputmode="tel" autocomplete="tel" placeholder="'+esc(t('auth.phonePh'))+'"></div></div></div>'
   +'<p class="auth-err" id="suErr3" role="alert" hidden></p>'
-  +'<button class="btn btn-primary btn-block auth-cta" id="suVerify">'+esc(t('auth.verifyBtn'))+'</button>'
-  +'<div class="auth-links"><button class="linklike" id="suResend">'+esc(t('auth.resend'))+'</button></div>'
+  +'<button class="btn btn-primary btn-block auth-cta" id="suVerified">'+esc(t('auth.iveVerified'))+'</button>'
+  +'<div class="auth-links"><button class="linklike" id="suResendEmail">'+esc(t('auth.resendEmail'))+'</button></div>'
   +'</div>';
 }
 function wireSu3(){
-  var boxes=Array.prototype.slice.call(document.querySelectorAll('#suCodes .auth-code'));
-  /* declared before the listeners that close over it (robustness, not luck) */
-  var doVerify=function(){
-    var entered=boxes.map(function(b){ return b.value; }).join('');
-    if(entered.length<6) return;
-    /* Real backend verification — no demo */
-    if(window.HUB&&HUB.api&&HUB.api.on()&&su.backendUserId){
-      boxes.forEach(function(b){ b.disabled=true; });
-      HUB.api.authVerify(su.backendUserId, entered, su.via||'email').then(function(j){
-        /* j = {token, user} — token already stored by authVerify */
-        completeBackendSignup(j.user);
-      }).catch(function(e){
-        boxes.forEach(function(b){ b.disabled=false; b.value=''; b.classList.remove('filled'); });
-        if(boxes[0]) boxes[0].focus();
-        errShow('suErr3', e.message||t('auth.errBadCode'));
-      });
-      return;
-    }
-    errShow('suErr3', t('auth.errNeedOnline'));
-    boxes.forEach(function(b){ b.value=''; b.classList.remove('filled'); });
-    if(boxes[0]) boxes[0].focus();
-  };
-  boxes.forEach(function(b,i){
-    b.addEventListener('input',function(){
-      b.value=b.value.replace(/\D/g,'').slice(0,1);
-      b.classList.toggle('filled',!!b.value);
-      if(b.value&&i<boxes.length-1) boxes[i+1].focus();
-      if(boxes.every(function(x){ return x.value; })) doVerify();
-    });
-    b.addEventListener('keydown',function(e){
-      if(e.key==='Backspace'&&!b.value&&i>0){ e.preventDefault(); boxes[i-1].focus(); boxes[i-1].value=''; boxes[i-1].classList.remove('filled'); }
-    });
-    b.addEventListener('paste',function(e){
-      e.preventDefault();
-      var txt=((e.clipboardData||{}).getData('text')||'').replace(/\D/g,'').slice(0,6);
-      txt.split('').forEach(function(ch,j){ if(boxes[j]){ boxes[j].value=ch; boxes[j].classList.add('filled'); } });
-      if(txt.length===6) doVerify();
-      else if(boxes[txt.length]) boxes[txt.length].focus();
-    });
-  });
-  if(boxes[0]) boxes[0].focus();
-  document.getElementById('suVerify').onclick=doVerify;
-  document.getElementById('suResend').onclick=function(){
-    var label=su.via==='email'?su.email:(su.phoneE164||toE164(su.cc,su.num).e164);
-    issueCode(su.via,label);
-    goStep(3,false);
-  };
   document.getElementById('suBack3').onclick=function(){ goStep(1,true); };
+  /* Resend the Firebase verification email. */
+  document.getElementById('suResendEmail').onclick=function(){
+    var u=su.firebaseUser;
+    if(!u){ errShow('suErr3',t('auth.errLoginFailed')); return; }
+    u.sendEmailVerification()
+      .then(function(){ ui.toast(t('auth.emailResent')); })
+      .catch(function(e){ errShow('suErr3', firebaseErrMsg(e)); });
+  };
+  /* "I've verified": reload the Firebase user, require emailVerified, then
+     exchange the ID token with the backend. If the backend needs a phone
+     (login-then-verify path where we have none), reveal the phone row. */
+  document.getElementById('suVerified').onclick=function(){
+    var u=su.firebaseUser;
+    if(!u){ errShow('suErr3',t('auth.errLoginFailed')); return; }
+    var btn=document.getElementById('suVerified');
+    btn.disabled=true;
+    u.reload().then(function(){
+      if(!u.emailVerified){
+        btn.disabled=false;
+        errShow('suErr3',t('auth.errNotVerified'));
+        return null;
+      }
+      var phone=su.phoneE164||'', cc=su.cc||defaultIso();
+      var pw=document.getElementById('suPhoneWrap');
+      if(!phone&&pw&&!pw.hidden){
+        var ccEl=document.getElementById('suCC2'), numEl=document.getElementById('suNum2');
+        var ph=toE164(ccEl?ccEl.value:cc,(numEl&&numEl.value)||'');
+        if(ph.digits.length<7||ph.digits.length>15){
+          btn.disabled=false;
+          errShow('suErr3',t('auth.errBadPhone'));
+          return null;
+        }
+        phone=ph.e164; cc=ccEl.value; su.phoneE164=phone; su.cc=cc;
+      }
+      return u.getIdToken().then(function(idToken){
+        return HUB.api.authFirebase(idToken, phone, cc, su.name||'');
+      });
+    }).then(function(j){
+      if(!j) return;
+      btn.disabled=false;
+      completeBackendSignup(j.user);
+    }).catch(function(e){
+      btn.disabled=false;
+      var msg=(e&&e.message)||'';
+      if(msg.indexOf('phone required')>=0){
+        var pw2=document.getElementById('suPhoneWrap');
+        if(pw2) pw2.hidden=false;
+        errShow('suErr3',t('auth.phoneNeededSub'));
+        return;
+      }
+      errShow('suErr3', msg||t('auth.errLoginFailed'));
+    });
+  };
 }
 function completeBackendSignup(backendUser){
-  /* Real backend signup completion — token already stored by authVerify.
-     Create the local profile from backend user data. */
+  /* Firebase verification complete + backend token stored by authFirebase.
+     Create the local profile from backend user data. Signup path gets the
+     welcome + Face ID enroll moment; login-then-verify path just signs in. */
   var u={
     id:backendUser.id||backendUser.user_id,
     name:backendUser.display_name||su.name,
@@ -797,40 +644,23 @@ function completeBackendSignup(backendUser){
     phoneE164:backendUser.phone_e164||su.phoneE164,
     cc:su.cc,
     campus:su.campusRec?su.campusRec.name:'',
-    verifiedVia:su.via,
     backendId:backendUser.id||backendUser.user_id,
     faceId:null,
     createdAt:Date.now()
   };
-  su.pw=''; su.pw2=''; su.backendUserId=null;
+  var wasSignup=!!su.isSignup;
+  su.firebaseUser=null; su.pw=''; su.pw2='';
   signIn(u,true);
-  ui.toast(t('auth.welcomeNew',{name:u.name}));
-  faceIdAvailable().then(function(ok){
-    if(ok&&curView==='signup'){ curView='enroll'; backDir=false; render(); }
-    else close();
-  });
-}
-function completeSignup(){
-  var a=ag();
-  var salt=newSalt();
-  var u={
-    id:'u'+Date.now().toString(36)+Math.random().toString(36).slice(2,8),
-    name:su.name, email:su.email, phoneE164:su.phoneE164||toE164(su.cc,su.num).e164, cc:su.cc,
-    pw:hashPw(su.pw,salt), salt:salt,
-    campus:su.campusRec?su.campusRec.name:'', verifiedVia:su.via, faceId:null,
-    createdAt:Date.now()
-  };
-  a.users.push(u);
-  pendingCode=null;
-  su.pw=''; su.pw2='';
-  try{ HUB.store.save(); }catch(e){}
-  signIn(u,true); /* signup always remembers */
-  ui.toast(t('auth.welcomeNew',{name:u.name}));
-  /* warm welcome moment -> Face ID enroll prompt when available */
-  faceIdAvailable().then(function(ok){
-    if(ok&&curView==='signup'){ curView='enroll'; backDir=false; render(); }
-    else close();
-  }).catch(function(){ close(); });
+  if(wasSignup){
+    ui.toast(t('auth.welcomeNew',{name:u.name}));
+    faceIdAvailable().then(function(ok){
+      if(ok&&curView==='signup'){ curView='enroll'; backDir=false; render(); }
+      else close();
+    });
+  }else{
+    ui.toast(t('auth.signedInAs',{name:u.name||u.email}));
+    close();
+  }
 }
 
 /* ================= enroll / welcome moment ================= */
@@ -922,9 +752,10 @@ HUB.auth={
   _debug:{
     reset:function(){
       var a=ag(); a.users=[]; a.session=null; delete a.faceIdUid;
-      currentUid=null; pendingCode=null; faceIdOK=false; faceIdProbe=null; faceIdRepainted=false;
+      currentUid=null; faceIdOK=false; faceIdProbe=null; faceIdRepainted=false;
       try{ HUB.store.save(); }catch(e){}
       try{ sessionStorage.removeItem(TMP_KEY); }catch(e){}
+      try{ if(fbAuth) fbAuth.signOut(); }catch(e){}
       repaintMe(); return true;
     },
     users:function(){
@@ -932,7 +763,7 @@ HUB.auth={
         return {id:u.id,name:u.name,email:u.email,phoneE164:u.phoneE164,faceId:!!(u.faceId&&u.faceId.credId)};
       });
     },
-    lastCode:function(){ return pendingCode?{code:pendingCode.code,exp:pendingCode.exp,via:pendingCode.via}:null; },
+    lastCode:function(){ return null; }, /* retired with the 6-digit demo codes */
     setCredApi:function(fake){ credApiFake=fake||null; faceIdProbe=null; faceIdOK=false; faceIdRepainted=false; },
     faceIdAvailable:faceIdAvailable
   }

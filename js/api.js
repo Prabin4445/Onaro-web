@@ -211,6 +211,25 @@
     setToken(''); setUser(null);
     return Promise.resolve({ok:true});
   }
+  function authFirebase(idToken, phone, country, name){
+    return apiPost('/v1/auth/firebase', {
+      id_token: idToken,
+      phone: phone||'',
+      country: country||'',
+      name: name||''
+    }).then(function(j){
+      // j = {access_token, user_id, existing}
+      if(j.access_token) setToken(j.access_token);
+      // fetch full user profile
+      return authMe().then(function(u){
+        setUser(u);
+        return {token:j.access_token, user:u, existing:j.existing};
+      }).catch(function(){
+        return {token:j.access_token, user:{id:j.user_id}, existing:j.existing};
+      });
+    });
+  }
+
   function authGoogle(idToken, phone, country, name){
     return apiPost('/v1/auth/google', {
       id_token:idToken, phone:phone||'', country:country||'', name:name||''
@@ -285,7 +304,7 @@
     // auth
     getToken:getToken, setToken:setToken, getUser:getUser, isLoggedIn:isLoggedIn,
     authSignup:authSignup, authVerify:authVerify, authLogin:authLogin,
-    authMe:authMe, authLogout:authLogout, authGoogle:authGoogle,
+    authMe:authMe, authLogout:authLogout, authGoogle:authGoogle, authFirebase:authFirebase,
     // receipts
     markRead:markRead, getReads:getReads,
     markGroupRead:markGroupRead, getGroupReads:getGroupReads,
