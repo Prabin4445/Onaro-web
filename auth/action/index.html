@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+<base href="/">
+<title>Onaro</title>
+<link rel="icon" href="/favicon.png">
+<style>
+:root{
+  --bg:#0D100A; --card:#151a11; --line:rgba(198,241,53,.18);
+  --volt:#C6F135; --volt-ink:#101408;
+  --txt:#f2f5ea; --mut:#9aa38f; --err:#ff7a7a;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--txt);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Helvetica,Arial,sans-serif;
+  min-height:100dvh; min-height:100svh;
+  display:flex; align-items:center; justify-content:center;
+  padding:calc(24px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px));
+}
+.card{
+  width:100%; max-width:430px;
+  background:var(--card); border:1px solid var(--line); border-radius:22px;
+  padding:30px 24px 26px; text-align:center;
+  box-shadow:0 18px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(0,0,0,.4);
+}
+.brand{display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:6px}
+.brand img{width:40px; height:40px; border-radius:12px}
+.brand b{font-size:24px; letter-spacing:.5px}
+.brand b em{font-style:normal; color:var(--volt)}
+.tag{color:var(--mut); font-size:13px; margin:0 0 22px}
+.ic{width:64px; height:64px; margin:2px auto 14px; display:flex; align-items:center; justify-content:center;
+  border-radius:50%; background:rgba(198,241,53,.1); border:1px solid var(--line); font-size:30px}
+h1{font-size:21px; margin:0 0 8px}
+p.sub{color:var(--mut); font-size:14px; line-height:1.55; margin:0 0 18px}
+p.sub b{color:var(--txt); font-weight:600}
+.btn{
+  display:block; width:100%; border:0; border-radius:14px; cursor:pointer;
+  background:var(--volt); color:var(--volt-ink);
+  font-size:16px; font-weight:700; padding:14px 18px; margin:6px 0;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent; color:var(--volt); border:1px solid var(--line)}
+.btn[disabled]{opacity:.55; cursor:default}
+.field{margin:0 0 12px; text-align:left}
+.field label{display:block; font-size:13px; color:var(--mut); margin:0 0 6px}
+.pwrow{position:relative}
+input[type=email],input[type=password],input[type=text]{
+  width:100%; background:#0d100a; border:1px solid var(--line); border-radius:12px;
+  color:var(--txt); font-size:16px; padding:13px 14px; outline:none;
+}
+input:focus{border-color:var(--volt)}
+.pwrow input{padding-right:64px}
+.showbtn{
+  position:absolute; right:6px; top:50%; transform:translateY(-50%);
+  background:none; border:0; color:var(--volt); font-size:13px; font-weight:600;
+  padding:8px 10px; cursor:pointer;
+}
+.err{color:var(--err); font-size:13px; min-height:18px; margin:2px 0 10px; text-align:left}
+.ok-note{color:var(--volt); font-size:13px; margin:10px 0 0}
+.spin{width:34px;height:34px;margin:6px auto 16px;border-radius:50%;
+  border:3px solid rgba(198,241,53,.2); border-top-color:var(--volt);
+  animation:sp 1s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.foot{margin-top:18px; font-size:12px; color:var(--mut)}
+@media (prefers-reduced-motion:reduce){ .spin{animation:none} }
+</style>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="/js/i18n.js"></script>
+</head>
+<body>
+<main class="card" id="card">
+  <div class="brand"><img src="/favicon.png" alt=""><b>Onar<em>o</em></b></div>
+  <p class="tag">Everything in your orbit.</p>
+
+  <!-- loading -->
+  <section id="stLoading">
+    <div class="spin" role="status" aria-label="loading"></div>
+    <p class="sub" id="loadingTxt">Checking link…</p>
+  </section>
+
+  <!-- verify success -->
+  <section id="stVerifyOk" hidden>
+    <div class="ic">✓</div>
+    <h1 id="vOkT">Email verified!</h1>
+    <p class="sub" id="vOkS"></p>
+    <button class="btn" id="vOkGo">Continue into Onaro</button>
+  </section>
+
+  <!-- link bad (expired/invalid) -->
+  <section id="stLinkBad" hidden>
+    <div class="ic">⚠</div>
+    <h1 id="lbT">This link didn't work</h1>
+    <p class="sub" id="lbS"></p>
+    <button class="btn" id="lbResendVerify" hidden>Resend verification email</button>
+    <p class="sub" id="lbResendNote" hidden style="font-size:12.5px"></p>
+    <div id="lbResetWrap" hidden>
+      <div class="field">
+        <label for="lbEmail" id="lbEmailL">Email</label>
+        <input type="email" id="lbEmail" autocomplete="email" inputmode="email">
+      </div>
+      <div class="err" id="lbErr"></div>
+      <button class="btn" id="lbNewLink">Email me a new reset link</button>
+      <p class="ok-note" id="lbSent" hidden></p>
+    </div>
+    <button class="btn ghost" id="lbOpenApp" style="margin-top:10px">Open Onaro</button>
+  </section>
+
+  <!-- reset password form -->
+  <section id="stReset" hidden>
+    <div class="ic">🔑</div>
+    <h1 id="rT">Choose a new password</h1>
+    <p class="sub" id="rFor"></p>
+    <div class="field">
+      <label for="rPw1" id="rPw1L">New password</label>
+      <div class="pwrow">
+        <input type="password" id="rPw1" autocomplete="new-password" minlength="8">
+        <button type="button" class="showbtn" id="rShow1">Show</button>
+      </div>
+    </div>
+    <div class="field">
+      <label for="rPw2" id="rPw2L">Confirm new password</label>
+      <div class="pwrow">
+        <input type="password" id="rPw2" autocomplete="new-password" minlength="8">
+        <button type="button" class="showbtn" id="rShow2">Show</button>
+      </div>
+    </div>
+    <div class="err" id="rErr"></div>
+    <button class="btn" id="rGo">Set new password</button>
+  </section>
+
+  <!-- reset success -->
+  <section id="stResetOk" hidden>
+    <div class="ic">✓</div>
+    <h1 id="roT">Password updated!</h1>
+    <p class="sub" id="roS"></p>
+    <button class="btn" id="roGo">Sign in</button>
+  </section>
+
+  <!-- unknown -->
+  <section id="stUnknown" hidden>
+    <div class="ic">?</div>
+    <h1 id="uT">Unknown action</h1>
+    <p class="sub" id="uS"></p>
+    <button class="btn" id="uGo">Open Onaro</button>
+  </section>
+
+  <div class="foot">Onaro · secured by Firebase</div>
+</main>
+
+<script>
+(function(){
+'use strict';
+/* Same Firebase config object as js/auth.js — keep the shape identical. */
+var FIREBASE_CONFIG={
+  apiKey:"AIzaSyDuRo2TpayHkrj1pxkh4d3dSL1XQYbgeec",
+  authDomain:"onaro-ab57a.firebaseapp.com",
+  projectId:"onaro-ab57a",
+  storageBucket:"onaro-ab57a.firebasestorage.app",
+  messagingSenderId:"944953080289",
+  appId:"1:944953080289:web:97ad5ecd23bbb1cd41baa0"
+};
+var APP_URL="/";
+function t(k,v){
+  try{ if(window.HUB&&HUB.i18n) return HUB.i18n.t(k,v); }catch(e){}
+  return k;
+}
+function $(id){ return document.getElementById(id); }
+function show(id){
+  var secs=["stLoading","stVerifyOk","stLinkBad","stReset","stResetOk","stUnknown"];
+  for(var i=0;i<secs.length;i++) $(secs[i]).hidden = secs[i]!==id;
+}
+function errMsg(e){
+  var code=(e&&e.code)||"";
+  if(code==="auth/expired-action-code"||code==="auth/invalid-action-code") return "link";
+  if(code==="auth/weak-password") return t("auth.errPwShort");
+  if(code==="auth/network-request-failed") return t("auth.errNeedOnline");
+  if(code==="auth/user-disabled"||code==="auth/user-not-found") return t("auth.errUnknown");
+  return t("auth.actionErrGeneric");
+}
+function auth(){
+  if(!(window.firebase&&firebase.auth())) throw new Error("sdk");
+  if(!firebase.apps.length) firebase.initializeApp(FIREBASE_CONFIG);
+  return firebase.auth();
+}
+/* Apply stored language + static copy. */
+function paint(){
+  document.documentElement.lang=(window.HUB&&HUB.i18n&&HUB.i18n.lang)||"en";
+  $("loadingTxt").textContent=t("auth.actionChecking");
+  $("vOkT").textContent=t("auth.actionVerifyOk");
+  $("vOkS").textContent=t("auth.actionVerifyOkSub");
+  $("vOkGo").textContent=t("auth.actionContinue");
+  $("lbT").textContent=t("auth.actionLinkBad");
+  $("lbS").textContent=t("auth.actionLinkBadSub");
+  $("lbResendVerify").textContent=t("auth.resendEmail");
+  $("lbResendNote").textContent=t("auth.actionResendVerifyNote");
+  $("lbEmailL").textContent=t("auth.actionEmailLabel");
+  $("lbNewLink").textContent=t("auth.actionNewLink");
+  $("lbSent").textContent=t("auth.actionLinkSent");
+  $("lbOpenApp").textContent=t("auth.actionOpenApp");
+  $("rT").textContent=t("auth.actionResetTitle");
+  $("rPw1L").textContent=t("auth.actionNewPw");
+  $("rPw2L").textContent=t("auth.pwConfirm");
+  $("rShow1").textContent=t("auth.showPw");
+  $("rShow2").textContent=t("auth.showPw");
+  $("rGo").textContent=t("auth.actionSetPw");
+  $("roT").textContent=t("auth.actionResetOk");
+  $("roS").textContent=t("auth.actionResetOkSub");
+  $("roGo").textContent=t("auth.actionSignIn");
+  $("uT").textContent=t("auth.actionModeUnknown");
+  $("uS").textContent=t("auth.actionModeUnknownSub");
+  $("uGo").textContent=t("auth.actionOpenApp");
+}
+function linkBad(kind){
+  /* kind: "verify" | "reset" */
+  show("stLinkBad");
+  var isVerify = kind==="verify";
+  $("lbResendVerify").hidden=!isVerify;
+  $("lbResendNote").hidden=!isVerify;
+  $("lbResetWrap").hidden=isVerify;
+  $("lbErr").textContent="";
+  $("lbSent").hidden=true;
+}
+function boot(){
+  paint();
+  var q;
+  try{ q=new URLSearchParams(location.search); }
+  catch(e){ show("stUnknown"); return; }
+  var mode=q.get("mode"), code=q.get("oobCode");
+  var fa;
+  try{ fa=auth(); }
+  catch(e){ $("loadingTxt").textContent=t("auth.errNeedOnline"); return; }
+
+  $("vOkGo").onclick=function(){ location.href=APP_URL; };
+  $("lbOpenApp").onclick=function(){ location.href=APP_URL; };
+  $("uGo").onclick=function(){ location.href=APP_URL; };
+  $("roGo").onclick=function(){ location.href=APP_URL; };
+  /* Expired verify link: resending needs a signed-in user, so route into the
+     app — logging in with an unverified email lands on the check-email screen
+     which has a working "Resend verification email" button. */
+  $("lbResendVerify").onclick=function(){ location.href=APP_URL; };
+
+  if(!mode||!code){ show("stUnknown"); return; }
+
+  if(mode==="verifyEmail"){
+    show("stLoading");
+    fa.applyActionCode(code).then(function(){
+      show("stVerifyOk");
+    }).catch(function(e){
+      if(errMsg(e)==="link") linkBad("verify");
+      else{ linkBad("verify"); $("lbS").textContent=errMsg(e); }
+    });
+    return;
+  }
+
+  if(mode==="resetPassword"){
+    show("stLoading");
+    fa.verifyPasswordResetCode(code).then(function(email){
+      $("rFor").innerHTML=t("auth.actionResetFor",{email:"<b>"+escapeHtml(email)+"</b>"});
+      show("stReset");
+      wireResetForm(fa,code);
+    }).catch(function(e){
+      linkBad("reset");
+      if(errMsg(e)!=="link") $("lbS").textContent=errMsg(e);
+    });
+    /* Expired reset link: we CAN email a fresh one without sign-in. */
+    $("lbNewLink").onclick=function(){
+      var em=$("lbEmail").value.trim();
+      $("lbErr").textContent=""; $("lbSent").hidden=true;
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ $("lbErr").textContent=t("auth.errBadEmail"); return; }
+      var b=$("lbNewLink"); b.disabled=true;
+      fa.sendPasswordResetEmail(em).then(function(){
+        b.disabled=false; $("lbSent").hidden=false;
+      }).catch(function(e2){
+        b.disabled=false; $("lbErr").textContent=errMsg(e2);
+      });
+    };
+    return;
+  }
+
+  show("stUnknown");
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+function wireResetForm(fa,code){
+  var p1=$("rPw1"), p2=$("rPw2"), err=$("rErr"), go=$("rGo");
+  function toggle(input,btn){
+    btn.onclick=function(){
+      var showPw = input.type==="password";
+      input.type=showPw?"text":"password";
+      btn.textContent=showPw?t("auth.hidePw"):t("auth.showPw");
+    };
+  }
+  toggle(p1,$("rShow1")); toggle(p2,$("rShow2"));
+  go.onclick=function(){
+    err.textContent="";
+    var a=p1.value, b=p2.value;
+    if(a.length<8){ err.textContent=t("auth.errPwShort"); return; }
+    if(a!==b){ err.textContent=t("auth.errPwMismatch"); return; }
+    go.disabled=true;
+    fa.confirmPasswordReset(code,a).then(function(){
+      show("stResetOk");
+    }).catch(function(e){
+      go.disabled=false;
+      if(errMsg(e)==="link"){ linkBad("reset"); }
+      else err.textContent=errMsg(e);
+    });
+  };
+  p2.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){ e.preventDefault(); go.onclick(); }
+  });
+}
+if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",boot);
+else boot();
+})();
+</script>
+</body>
+</html>
