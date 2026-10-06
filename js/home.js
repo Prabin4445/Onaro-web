@@ -165,6 +165,8 @@ function quickAccessHTML(){
     +'<div class="hm-qa">'
     +'<button class="hm-qa-item" id="hmQaCloset"><span class="hm-qa-c">'+HUB.icons.icon('qa-closet')+'</span>'
     +'<span class="hm-qa-l">'+ui.esc(t('style.title'))+'</span></button>'
+    +'<button class="hm-qa-item" id="hmQaScan"><span class="hm-qa-c">'+HUB.icons.icon('scan-doc')+'</span>'
+    +'<span class="hm-qa-l">'+ui.esc(t('scan.title'))+'</span></button>'
     +'<button class="hm-qa-plus" id="hmQaCreate" aria-label="'+ui.esc(t('create.aria'))+'"><span aria-hidden="true">+</span></button>'
     +'<button class="hm-qa-item" id="hmQaGroups"><span class="hm-qa-c">'+HUB.icons.icon('qa-groups')+'</span>'
     +'<span class="hm-qa-l">'+ui.esc(t('groups.title'))+'</span></button>'
@@ -195,10 +197,7 @@ HUB.views.home={
       // 4. Ask Onaro banner
       askBannerHTML()+
 
-      // 5. groups near you — 3D water-flow carousel of live groups ≤50 mi
-      '<div class="hsec" id="homeCg">'+((HUB.cgroups&&HUB.cgroups.homeSectionHTML)?HUB.cgroups.homeSectionHTML():'')+'</div>'+
-
-      // 6. quick access
+      // 5. quick access
       quickAccessHTML()+
 
       // ---- 7. existing Home features below, behavior untouched ----
@@ -221,6 +220,8 @@ HUB.views.home={
       ((HUB.ads&&HUB.ads.carouselHTML)?'<div class="hsec" id="adCarouselHost">'+HUB.ads.carouselHTML()+'</div>':'')+
       // horoscope + calendar (tap: full horoscope / calendar sheet)
       ((HUB.astro&&HUB.astro.homeCardHTML)?'<div class="hsec">'+HUB.astro.homeCardHTML()+'</div>':'')+
+      // groups near you — directly below horoscope, 3D water-flow carousel ≤50 mi
+      '<div class="hsec" id="homeCg">'+((HUB.cgroups&&HUB.cgroups.homeSectionHTML)?HUB.cgroups.homeSectionHTML():'')+'</div>'+
       // events preview — 3D water-flow carousel
       '<div class="hsec"><div class="hsec-hd"><h2><span class="hm-glyph" aria-hidden="true">🎉</span>'+t('home.happening')+'</h2><button class="hsec-act" data-goto="daily">'+t('common.seeAll')+'</button></div>'+
       '<div id="homeEvents">'+
@@ -261,6 +262,8 @@ HUB.views.home={
     /* quick access */
     const qc=document.getElementById('hmQaCloset');
     if(qc) qc.onclick=()=>{ if(HUB.style) HUB.style.open(); };
+    const qs=document.getElementById('hmQaScan');
+    if(qs) qs.onclick=()=>{ if(HUB.scan) HUB.scan.studio(); };
     const qg=document.getElementById('hmQaGroups');
     if(qg) qg.onclick=()=>HUB.showTab('groups');
     const qp=document.getElementById('hmQaCreate');
