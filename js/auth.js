@@ -397,7 +397,8 @@ function wireLogin(){
         .then(function(){ return fa.signInWithEmailAndPassword(email,pw); });
     }).then(function(cred){
       var user=cred.user;
-      return user.reload().then(function(){ return user; });
+      /* Force fresh token to bypass cached emailVerified state. */
+      return user.getIdToken(true).then(function(){ return user.reload(); }).then(function(){ return user; });
     }).then(function(user){
       if(!user.emailVerified){
         /* Firebase account exists but email not verified yet — send them to
@@ -595,7 +596,11 @@ function wireSu3(){
     if(!u){ errShow('suErr3',t('auth.errLoginFailed')); return; }
     var btn=document.getElementById('suVerified');
     btn.disabled=true;
-    u.reload().then(function(){
+    /* Force a fresh ID token first — this bypasses Firebase's cached user
+       state and ensures emailVerified reflects the server truth. */
+    u.getIdToken(true).then(function(){
+      return u.reload();
+    }).then(function(){
       if(!u.emailVerified){
         btn.disabled=false;
         errShow('suErr3',t('auth.errNotVerified'));
