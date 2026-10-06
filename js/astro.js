@@ -277,11 +277,18 @@ function homeCardHTML(){
   const p=store.state.profile||{};
   const dob=p.dob||'';
   if(!dob){
-    return '<div class="hrow" data-goto="me" role="button" tabindex="0">'
-      +'<span class="hrow-ico">🔮</span>'
-      +'<span class="grow"><span class="hrow-t">'+ui.esc(t('astro.cardT'))+'</span>'
-      +'<span class="hrow-s">'+ui.esc(t('astro.cardNoDob'))+'</span></span>'
-      +'<span class="chev">›</span></div>';
+    /* No DOB: let them pick their sign directly instead of forcing profile */
+    return '<div class="card" id="astroCard" style="cursor:pointer">'
+      +'<div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">'
+      +'<div style="font-size:26px">🔮</div>'
+      +'<div class="grow"><h3 style="margin:0;font-size:15px">'+ui.esc(t('astro.cardT'))+'</h3>'
+      +'<div class="meta">'+ui.esc(t('astro.pickSign'))+'</div></div>'
+      +'<span class="chev">›</span></div>'
+      +'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px" id="astroSignGrid">'
+      +SIGNS.map(function(s,i){
+        return '<button data-sign="'+i+'" style="background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 4px;font-size:20px;cursor:pointer" title="'+ui.esc(s.n)+'">'+s.i+'<div style="font-size:10px;margin-top:2px">'+ui.esc(s.n.slice(0,4))+'</div></button>';
+      }).join('')
+      +'</div></div>';
   }
   const s=signForDob(dob);
   const todayN=notes().filter(n=>{
@@ -304,7 +311,23 @@ function bindHomeCard(){
   const card=document.getElementById('astroCard');
   if(!card) return;
   const p=store.state.profile||{};
-  if(!p.dob){ card.onclick=()=>HUB.showTab('me'); return; }
+  if(!p.dob){
+    /* Sign picker: tapping a sign opens its horoscope directly */
+    const grid=document.getElementById('astroSignGrid');
+    if(grid) grid.onclick=function(e){
+      const btn=e.target.closest('[data-sign]');
+      if(!btn) return;
+      e.stopPropagation();
+      const s=SIGNS[parseInt(btn.getAttribute('data-sign'),10)];
+      if(s) openHoroscope(s);
+    };
+    /* Tapping the card header still goes to profile to set DOB */
+    card.onclick=function(e){
+      if(e.target.closest('#astroSignGrid')) return;
+      HUB.showTab('me');
+    };
+    return;
+  }
   const s=signForDob(p.dob);
   const calBtn=document.getElementById('astroCalBtn');
   if(calBtn) calBtn.onclick=e=>{ e.stopPropagation(); openCalendar(); };

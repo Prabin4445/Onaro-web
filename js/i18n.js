@@ -5775,7 +5775,7 @@ Object.assign(HUB.i18n._dict('hi'),{
 
 /* ---- ASTRO + CALENDAR (2026-09-21) ---- */
 Object.assign(HUB.i18n._dict('en'),{
-'astro.cardNoDob':'Add your date of birth in Edit profile to see it.',
+'astro.cardNoDob':'Add your date of birth in Edit profile to see it.','astro.pickSign':'Tap your sign to see today\'s horoscope.',
 'astro.cardT':'Daily horoscope',
 'astro.dobLine':'Born {dob}',
 'astro.loading':'Reading the stars…',
@@ -5820,7 +5820,7 @@ Object.assign(HUB.i18n._dict('en'),{
 'pedit.dobHint':'Used for your zodiac sign and daily horoscope. Kept on this device.'
 });
 Object.assign(HUB.i18n._dict('es'),{
-'astro.cardNoDob':'Agrega tu fecha de nacimiento en Editar perfil para verlo.',
+'astro.cardNoDob':'Agrega tu fecha de nacimiento en Editar perfil para verlo.','astro.pickSign':'Toca tu signo para ver el horóscopo de hoy.',
 'astro.cardT':'Horóscopo diario',
 'astro.dobLine':'Nacido el {dob}',
 'astro.loading':'Consultando las estrellas…',
@@ -5865,7 +5865,7 @@ Object.assign(HUB.i18n._dict('es'),{
 'pedit.dobHint':'Se usa para tu signo zodiacal y horóscopo diario. Se guarda en este dispositivo.'
 });
 Object.assign(HUB.i18n._dict('ne'),{
-'astro.cardNoDob':'हेर्नका लागि प्रोफाइल सम्पादनमा जन्म मिति थप्नुहोस्।',
+'astro.cardNoDob':'हेर्नका लागि प्रोफाइल सम्पादनमा जन्म मिति थप्नुहोस्।','astro.pickSign':'आजको राशिफल हेर्न आफ्नो राशि थिच्नुहोस्।',
 'astro.cardT':'दैनिक राशिफल',
 'astro.dobLine':'जन्म {dob}',
 'astro.loading':'ताराहरू हेर्दै…',
@@ -5910,7 +5910,7 @@ Object.assign(HUB.i18n._dict('ne'),{
 'pedit.dobHint':'तपाईंको राशि र दैनिक राशिफलका लागि प्रयोग हुन्छ। यही डिभाइसमा रहन्छ।'
 });
 Object.assign(HUB.i18n._dict('hi'),{
-'astro.cardNoDob':'देखने के लिए प्रोफ़ाइल संपादन में जन्म तिथि जोड़ें।',
+'astro.cardNoDob':'देखने के लिए प्रोफ़ाइल संपादन में जन्म तिथि जोड़ें।','astro.pickSign':'आज का राशिफल देखने के लिए अपनी राशि चुनें।',
 'astro.cardT':'दैनिक राशिफल',
 'astro.dobLine':'जन्म {dob}',
 'astro.loading':'तारे देखे जा रहे हैं…',
