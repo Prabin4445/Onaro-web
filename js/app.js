@@ -82,6 +82,23 @@ function hideSplash(){
 }
 HUB.splashDone=hideSplash;
 HUB.paintChrome=paintChrome;
+/* Global offline guard: returns true if offline (and shows toast).
+   Use at the start of any internet-required action:
+   if(HUB.offline.check()) return; */
+HUB.offline={
+  is:function(){ try{ return typeof navigator!=='undefined'&&navigator.onLine===false; }catch(e){ return false; } },
+  check:function(){
+    if(this.is()){
+      try{
+        var msg='📡 ';
+        try{ msg+=HUB.i18n.t('common.offline'); }catch(e){ msg+='You are offline — check your connection.'; }
+        if(HUB.ui&&HUB.ui.toast) HUB.ui.toast(msg); else alert(msg);
+      }catch(e){}
+      return true;
+    }
+    return false;
+  }
+};
 
 function refreshDots(){
   if(HUB.chat) HUB.chat.refreshDot();

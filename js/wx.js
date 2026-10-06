@@ -72,6 +72,8 @@ function data(){
    painter(data) on success. Painters must re-query their target node —
    the view may have re-rendered while the fetch was in flight. */
 function refresh(painter){
+  /* Weather needs internet */
+  if(window.HUB&&HUB.offline&&HUB.offline.is()){ painter(false); return; }
   const l=loc(); if(!l) return;
   const k=l.lat+','+l.lon+unit(), now=Date.now();
   if(wxCache&&wxCache.key===k&&now-wxCache.at<30*60*1000){ painter(wxCache.data); return; }

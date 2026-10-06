@@ -420,6 +420,8 @@ function pickKind(groupId){
 }
 function start(groupId,opts){
   opts=opts||{};
+  /* Calls need internet for signaling */
+  if(window.HUB&&HUB.offline&&HUB.offline.check()) return;
   const g=findGroup(groupId);
   if(!g){ ui.toast(t('call.noGroup')); return; }
   if(!isMember(g)){ ui.toast(t('call.notMember')); return; }
