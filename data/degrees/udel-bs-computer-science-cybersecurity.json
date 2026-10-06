@@ -1,0 +1,603 @@
+{
+ "institution": {
+  "city": "Newark, DE",
+  "kind": "public4yr",
+  "name": "University of Delaware",
+  "state": "DE"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "udel-bs-computer-science-cybersecurity",
+  "major": "Computer Science",
+  "notes": "Source: official 'Computer Science - Cybersecurity Concentration BS Four-Year Plan' PDF, University of Delaware 2025-2026 Undergraduate Catalog, https://catalog.udel.edu/mime/media/94/7381 (PDF created 2025-06-17 for the 2025-2026 catalog; downloaded 2026-09-30). True program name per catalog.udel.edu: 'Computer Science - Cybersecurity Concentration (BS)', College of Engineering, Dept. of Computer and Information Sciences. IMPORTANT CREDENTIAL HONESTY: this is the Cybersecurity Concentration BS - a separate credential with its own official four-year plan. The plain (no-concentration) BS Computer Science is BLOCKED: its catalog requirement list publishes no official term-by-term sequence (documented in the blocked log). Transcription method: all 8 semesters transcribed 1:1 from the official PDF (verified against 150-dpi page renders of the actual table; the page-2 image confirmed the correct fall/spring column pairing, including a blank Fall cell in Fourth Year row 5). Choice slots (choice:true) represent official either/or rows with descriptive placeholder codes. No courses invented. Credit accounting: semester totals match the PDF exactly (15/15/16/16/15/15/16/16 = 124). Per-slot credits are NOT published in the PDF for variable slots; recorded so each semester reconciles to its published total: EGGG 101 = 2 cr; MATH 241 = 4 cr; science slots = 4+4 (the program page requires an 8-credit lab-science sequence); CISC Elective = 3 cr (program page: 3-4 credits of 300-level+ CISC); Free Elective (5/6) = 4 cr and Free Elective (6/6) = 1 cr (free electives are variable-credit). Caveats: (1) The official plan PDF lists 'CISC 465 - Introduction to Cybersecurity' in BOTH Spring Year 3 and Spring Year 4; the second occurrence is coded CISC 465-2 (see its slot note) per the unique-code rule. The catalog program page lists the concentration's cybersecurity requirement as CPEG 465 - Introduction to Cybersecurity (3 cr) - the Y3-spring placement is the logical one (it precedes CISC 464 and the advanced cybersecurity electives); the Y4-spring duplicate is almost certainly a typo in the official PDF, transcribed faithfully rather than 'corrected'. (2) Prerequisite chains are not published in the four-year plan PDF; per the official-sources-only rule none were inferred, so all prereq arrays are empty. (3) The ENGL 312/ENGL 410 slot satisfies Breadth Requirement 5/5; CISC 355, ENGL 312 and ENGL 410 count as upper-level breadth per the program page. (4) Free Elective (1/6) carries the official note 'MATH 242 - Analytic Geometry and Calculus B recommended'. (5) Program page consulted for the concentration requirement list, restricted-elective list, and credit rules: catalog.udel.edu/preview_program.php?catoid=90&poid=78393 (2024-2025 archived edition; the four-year plan itself is the 2025-2026 edition).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 108",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGGG 101",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Engineering (FYS)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "First-Year Writing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 241",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Analytic Geometry and Calculus A",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Breadth Requirement (1/5)' - student choice from the University/College breadth lists.",
+      "code": "BRDTH 1XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Breadth Requirement (1/5) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 181",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to Systems Programming",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (1/6) (MATH 242 - Analytic Geometry and Calculus B recommended)'.",
+      "code": "ELECT 1XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Free Elective (1/6) (student choice; MATH 242 - Analytic Geometry and Calculus B recommended)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Breadth Requirement (2/5)' - student choice.",
+      "code": "BRDTH 1XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Breadth Requirement (2/5) (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Breadth Requirement (3/5)' - student choice.",
+      "code": "BRDTH 1XX-C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Breadth Requirement (3/5) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 260",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Machine Organization and Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Discrete Mathematics I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (2/6)' - student choice.",
+      "code": "ELECT 1XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Free Elective (2/6) (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Official plan: 'Science Requirement (1/2)*'. Program page Lab Science Requirement: take one 8-credit sequence; 4 credits recorded here. *See program page for approved courses/sequences.",
+      "code": "SCI 1XX-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Science Requirement (1/2) (student choice; 8-credit lab science sequence)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 275",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 355",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computers, Ethics and Society",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Official plan: 'MATH 205 - Statistical Methods or MATH 350 - Probability Theory and Simulation Methods' - student choice.",
+      "code": "MATH 2XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "MATH 205 - Statistical Methods or MATH 350 - Probability Theory and Simulation Methods (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Official plan: 'Science Requirement (2/2)*'. Second half of the 8-credit lab science sequence; 4 credits. *See program page for approved courses/sequences.",
+      "code": "SCI 1XX-B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Science Requirement (2/2) (student choice; 8-credit lab science sequence)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Multicultural Breadth Requirement (4/5)' - student choice; can also satisfy the University Multicultural Requirement.",
+      "code": "BRDTH 1XX-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Multicultural Breadth Requirement (4/5) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Introduction to Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 450",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Computer Networks I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'CISC Elective*'. Program page: take 3-4 credits of CISC courses at the 300 level or higher; 3 credits recorded. *See program page for approved courses.",
+      "code": "CISC 3XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "CISC Elective (student choice; 300-level or higher CISC course)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (3/6)' - student choice.",
+      "code": "ELECT 1XX-C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Free Elective (3/6) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Automata Theory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 465",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Introduction to Cybersecurity",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'ENGL 312 - Written Communications in Business or ENGL 410 - Technical Writing (Satisfies Breadth Requirement 5/5)' - student choice; counts as upper-level breadth per the program page.",
+      "code": "ENGL 3XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "ENGL 312 - Written Communications in Business or ENGL 410 - Technical Writing (student choice; satisfies Breadth Requirement 5/5)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'Restricted Elective (1/2)*'. Program page restricted-elective list (take six credits total across 1/2 and 2/2): MATH 242, MATH 349, MATH 549, CISC 304, CISC 436, CISC 437, CISC 440, CISC 442, CISC 449, CISC 453, CISC 459, CISC 481, CISC 483, CISC 484, CISC 474, CPEG 470, CPEG 471, CPEG 472, CPEG 473, CPEG 475, CPEG 476, CPEG 494, CPEG 495, ELEG 387, ELEG 487. *See program page for approved courses.",
+      "code": "RSTR 3XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Restricted Elective (1/2) (student choice; see approved list)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (4/6)' - student choice.",
+      "code": "ELECT 1XX-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective (4/6) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'CISC 498 - Computer Science Senior Design Project I or UNIV 401 - Senior Thesis' - student choice (Capstone & DLE).",
+      "code": "CISC 4XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CISC 498 - Computer Science Senior Design Project I or UNIV 401 - Senior Thesis (student choice; Capstone & DLE)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 372",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Parallel Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 494",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "System Hardening and Protection",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (5/6)' - student choice. 4 credits recorded so the semester reconciles to the published 16-credit total (free electives are variable-credit).",
+      "code": "ELECT 1XX-E",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective (5/6) (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'Restricted Elective (2/2)*' - student choice from the same approved restricted-elective list as (1/2). *See program page for approved courses.",
+      "code": "RSTR 3XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Restricted Elective (2/2) (student choice; see approved list)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'CISC 499 - Computer Science Senior Design Project II or UNIV 402 - Senior Thesis (Capstone & DLE)' - student choice.",
+      "code": "CISC 4XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CISC 499 - Computer Science Senior Design Project II or UNIV 402 - Senior Thesis (student choice; Capstone & DLE)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "OFFICIAL-PDF DUPLICATION: the four-year plan PDF prints 'CISC 465 - Introduction to Cybersecurity' in BOTH Spring Year 3 and Spring Year 4. This slot is the second occurrence, coded CISC 465-2 per the unique-code rule (transcribed faithfully, not 'corrected'). The catalog program page lists the concentration's cybersecurity requirement as CPEG 465 - Introduction to Cybersecurity (3 cr); the Y3-spring placement is the logical one (it precedes CISC 464 and the advanced cybersecurity electives), so the Y4-spring duplicate is almost certainly a typo in the official PDF.",
+      "code": "CISC 465-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Introduction to Cybersecurity",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 464",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Introduction to Network Security",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'Advanced Cybersecurity Elective (1/2)*' - student choice. *See program page for approved courses.",
+      "code": "CYBER 4XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Advanced Cybersecurity Elective (1/2) (student choice; see program page for approved courses)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'Advanced Cybersecurity Elective (2/2)*' - student choice. *See program page for approved courses.",
+      "code": "CYBER 4XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Advanced Cybersecurity Elective (2/2) (student choice; see program page for approved courses)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Free Elective (6/6)' - student choice. 1 credit recorded so the semester reconciles to the published 16-credit total (free electives are variable-credit).",
+      "code": "ELECT 1XX-F",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "Free Elective (6/6) (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.udel.edu/mime/media/94/7381",
+  "total_credits": 124,
+  "content_hash": "92eda5dc58f5079e731c4197f7b5c1f137e1bf9ab8da9143aa7f9334c6d118ab",
+  "last_verified": "2026-10-02"
+ }
+}

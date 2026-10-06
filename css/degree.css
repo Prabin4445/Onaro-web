@@ -1,0 +1,341 @@
+/* HUB Degree Plan Tracker (2026-09-29): crystal-glass 3D tracker UI.
+   Dark mode default via body.dark (light looks right too). Volt accents via
+   var(--volt)/var(--volt-rgb) — auto-rose for female profiles (body.theme-rose)
+   follows for free. No purple hexes anywhere.
+   Overlay root follows the professors .chatroot pattern: fixed plain block
+   host, NO flex-centering (iOS Safari mis-centers fixed flex hosts — the
+   .sheethost sheet-shift bug family). The panel bottom-docks itself with
+   left:50% + translateX(-50%), sheetUpC keeps -50% in every keyframe. */
+
+/* ---------- overlay root ---------- */
+.chatroot.degroot{display:block}
+.chatroot.degroot[hidden]{display:none}
+.degroot .chatpanel{
+  position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:min(480px,100%);max-width:480px;
+  animation:sheetUpC .45s var(--ease-spring);
+  background:var(--bg);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.deg-topbar{
+  display:flex;align-items:center;gap:8px;
+  padding:10px 12px 6px;
+}
+.deg-topbar-t{flex:1;min-width:0;font-size:16px;font-weight:800;letter-spacing:-.01em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-back{font-size:24px;line-height:1;padding:4px 10px}
+.deg-tabs{display:flex;gap:8px;padding:2px 14px 10px}
+.deg-tab{
+  flex:1;border:1px solid var(--line);background:var(--surface2);color:var(--ink-2);
+  border-radius:999px;padding:9px 0;font-size:13.5px;font-weight:800;cursor:pointer;
+}
+.deg-tab.on{background:rgba(var(--volt-rgb),.16);border-color:rgba(var(--volt-rgb),.55);color:var(--ink)}
+.deg-body{overflow-y:auto;padding:4px 14px calc(18px + env(safe-area-inset-bottom));-webkit-overflow-scrolling:touch}
+
+/* ---------- start-intake selector ---------- */
+.deg-intake{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:10px 12px;margin-bottom:10px;
+}
+.deg-intake-lab{font-size:12.5px;font-weight:800;color:var(--ink-2);white-space:nowrap}
+.deg-intake-seg{display:flex;gap:6px;flex:1;min-width:140px}
+.deg-intake-term{
+  flex:1;min-width:0;border:1px solid var(--line);background:var(--surface2);color:var(--ink-2);
+  border-radius:999px;padding:8px 0;font-size:12.5px;font-weight:800;cursor:pointer;
+  white-space:nowrap;transition:transform .15s var(--ease-spring),border-color .15s,background .15s;
+}
+.deg-intake-term:active{transform:scale(.96)}
+.deg-intake-term.on{background:rgba(var(--volt-rgb),.16);border-color:rgba(var(--volt-rgb),.55);color:var(--ink)}
+.deg-intake-yr{display:flex;align-items:center;gap:4px;flex:none}
+.deg-yrbtn{
+  width:30px;height:30px;flex:none;border-radius:50%;border:1px solid var(--line);
+  background:var(--surface2);color:var(--ink);font-size:16px;line-height:1;cursor:pointer;
+  transition:transform .15s var(--ease-spring);
+}
+.deg-yrbtn:active{transform:scale(.92)}
+.deg-yrval{font-size:13.5px;font-weight:800;min-width:46px;text-align:center}
+
+/* ---------- picker ---------- */
+.deg-search{margin:2px 0 10px}
+.deg-chips{display:flex;gap:8px;margin-bottom:12px}
+.deg-chip{
+  border:1px solid var(--line);background:var(--surface);color:var(--ink-2);
+  border-radius:999px;padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer;
+  min-height:38px;
+}
+.deg-chip.on{background:rgba(var(--volt-rgb),.16);border-color:rgba(var(--volt-rgb),.6);color:var(--ink)}
+.deg-school{
+  background:var(--surface);border:1px solid var(--line);border-radius:20px;
+  padding:14px;margin-bottom:14px;
+  box-shadow:0 8px 24px rgba(20,30,10,.08),inset 0 1px 0 rgba(255,255,255,.4);
+  position:relative;overflow:hidden;
+}
+body.dark .deg-school{box-shadow:0 8px 24px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.06)}
+.deg-school::before{ /* water-flow sheen */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 35%,rgba(var(--volt-rgb),.07) 48%,transparent 62%);
+  background-size:250% 100%;animation:degFlow 9s ease-in-out infinite;
+}
+@keyframes degFlow{0%,100%{background-position:120% 0}50%{background-position:-20% 0}}
+.deg-school-hd{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;position:relative}
+.deg-school-hd h3{margin:0;font-size:16px;font-weight:800}
+.deg-school-hd .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.deg-more{
+  flex:none;font-size:11px;font-weight:800;color:var(--accent-strong);
+  background:rgba(var(--volt-rgb),.14);border:1px solid rgba(var(--volt-rgb),.4);
+  border-radius:999px;padding:4px 10px;white-space:nowrap;
+}
+.deg-mine{
+  font-size:10px;font-weight:800;color:var(--accent-strong);
+  background:rgba(var(--volt-rgb),.16);border:1px solid rgba(var(--volt-rgb),.45);
+  border-radius:999px;padding:2px 8px;white-space:nowrap;vertical-align:2px;
+}
+.deg-planrow{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  background:var(--surface2);border:1px solid var(--line);border-radius:14px;
+  padding:10px 12px;margin:8px 0;cursor:pointer;position:relative;
+  transition:transform .18s var(--ease-spring),border-color .18s;
+}
+.deg-planrow:active{transform:scale(.98)}
+.deg-planrow .grow{flex:1;min-width:0}
+.deg-planrow .grow b{display:block;font-size:14px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-planrow .meta{font-size:12px;color:var(--muted)}
+.deg-degree{
+  flex:none;min-width:44px;text-align:center;font-size:12px;font-weight:900;
+  color:var(--accent-ink);background:var(--volt);border-radius:10px;padding:6px 8px;
+}
+.deg-tcbadge{
+  flex:none;font-size:10.5px;font-weight:800;color:var(--accent-strong);
+  background:rgba(var(--volt-rgb),.14);border:1px solid rgba(var(--volt-rgb),.4);
+  border-radius:999px;padding:3px 9px;white-space:nowrap;
+}
+.deg-tcbadge.adv{color:var(--warn);background:rgba(180,83,9,.10);border-color:rgba(180,83,9,.35)}
+body.dark .deg-tcbadge.adv{color:var(--amber);background:rgba(251,191,36,.10);border-color:rgba(251,191,36,.35)}
+.deg-pending-tgl{
+  width:100%;background:none;border:0;color:var(--muted);font-size:12.5px;font-weight:700;
+  padding:8px 4px;cursor:pointer;text-align:left;
+}
+.deg-pending-row{
+  display:flex;align-items:center;gap:10px;padding:8px 12px;margin:6px 0;
+  border:1px dashed var(--line);border-radius:12px;opacity:.75;
+}
+.deg-pending-row .grow{flex:1;min-width:0;font-size:13px;font-weight:600;color:var(--muted);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-soon{
+  flex:none;font-size:10.5px;font-weight:800;color:var(--muted);
+  border:1px solid var(--line);border-radius:999px;padding:3px 9px;white-space:nowrap;
+}
+
+/* ---------- tracker header ---------- */
+.deg-head{
+  display:flex;gap:14px;align-items:center;
+  background:var(--surface);border:1px solid rgba(var(--volt-rgb),.35);border-radius:20px;
+  padding:14px;margin-bottom:10px;position:relative;overflow:hidden;
+  box-shadow:0 10px 28px rgba(20,30,10,.10),inset 0 1px 0 rgba(255,255,255,.4);
+}
+body.dark .deg-head{box-shadow:0 10px 28px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.06)}
+.deg-head::before{ /* water-flow accent sweep */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 30%,rgba(var(--volt-rgb),.12) 46%,transparent 60%);
+  background-size:250% 100%;animation:degFlow 7s ease-in-out infinite;
+}
+.deg-ring{flex:none;position:relative;width:76px;height:76px}
+.deg-ring svg{transform:rotate(-90deg)}
+.deg-ring-num{position:absolute;inset:0;display:grid;place-items:center;font-size:15px;font-weight:900}
+.deg-head-meta{flex:1;min-width:0;position:relative}
+.deg-planname{font-size:15px;font-weight:900;letter-spacing:-.01em}
+.deg-schoolname{font-size:12.5px;color:var(--muted);margin:2px 0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-pace{font-size:13px;font-weight:800}
+.deg-pace.on{color:var(--accent-strong)}
+.deg-pace.off{color:var(--warn)}
+body.dark .deg-pace.off{color:var(--amber)}
+.deg-earned{font-size:12px;color:var(--muted);margin-top:2px}
+.deg-switch{flex:none}
+.deg-finish{
+  font-size:12.5px;color:var(--ink-2);text-align:center;margin:2px 4px 10px;font-weight:600;
+}
+.deg-source{
+  font-size:11.5px;color:var(--muted);text-align:center;margin:0 4px 12px;
+}
+.deg-source a{color:var(--accent-strong);font-weight:700;text-decoration:none}
+.deg-verified{
+  font-size:11px;color:var(--muted);text-align:center;margin:-8px 4px 12px;opacity:.85;
+}
+.deg-advisory{
+  font-size:12.5px;font-weight:700;color:var(--warn);background:rgba(180,83,9,.10);
+  border:1px solid rgba(180,83,9,.35);border-radius:12px;padding:9px 12px;margin-bottom:12px;
+}
+body.dark .deg-advisory{color:var(--amber);background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.3)}
+
+/* ---------- semester sections ---------- */
+.deg-sem{margin-bottom:12px}
+.deg-sem-hd{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:12px 14px;cursor:pointer;
+}
+.deg-sem-hd .grow{flex:1;min-width:0}
+.deg-sem-hd .t{font-size:14.5px;font-weight:800}
+.deg-sem-hd .s{font-size:12px;color:var(--muted);margin-top:2px}
+.deg-sem-bar{height:6px;border-radius:99px;background:var(--surface2);margin-top:8px;overflow:hidden}
+.deg-sem-bar i{display:block;height:100%;border-radius:99px;background:var(--volt);
+  transition:width .5s var(--ease-spring)}
+.deg-sem-chev{font-size:18px;color:var(--faint);transition:transform .3s var(--ease-spring);flex:none}
+.deg-sem.open .deg-sem-chev{transform:rotate(90deg)}
+.deg-sem-done{flex:none;font-size:13px;font-weight:900;color:var(--accent-strong)}
+.deg-sem-body{display:none;padding:8px 2px 2px}
+.deg-sem.open .deg-sem-body{display:block;animation:degSemIn .3s var(--ease-spring)}
+@keyframes degSemIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- course tiles (swipe surface) ---------- */
+.deg-tile{
+  position:relative;margin:8px 0;border-radius:16px;
+  touch-action:pan-y; /* vertical scroll stays native; horizontal drags come to us */
+  perspective:600px;user-select:none;-webkit-user-select:none;
+}
+.deg-swipe-hint{
+  position:absolute;inset:0;border-radius:16px;display:flex;align-items:center;
+  font-size:22px;font-weight:900;padding:0 18px;
+}
+.deg-tile[data-dir="left"] .deg-swipe-hint{justify-content:flex-end;background:rgba(var(--volt-rgb),.22)}
+.deg-tile[data-dir="right"] .deg-swipe-hint{justify-content:flex-start;background:rgba(180,83,9,.18)}
+.deg-tile-inner{
+  position:relative;display:flex;gap:10px;align-items:center;
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:11px 12px;transform-style:preserve-3d;
+  box-shadow:0 4px 14px rgba(20,30,10,.07),inset 0 1px 0 rgba(255,255,255,.35);
+  transition:box-shadow .2s;
+  will-change:transform;
+}
+body.dark .deg-tile-inner{box-shadow:0 4px 14px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.05)}
+.deg-tile.done .deg-tile-inner{border-color:rgba(var(--volt-rgb),.55);background:rgba(var(--volt-rgb),.08)}
+.deg-tile.deg-armed .deg-tile-inner{box-shadow:0 6px 22px rgba(var(--volt-rgb),.35)}
+.deg-check{
+  flex:none;width:38px;height:38px;border-radius:50%;cursor:pointer;
+  border:2px solid var(--line);background:var(--surface2);color:transparent;
+  font-size:18px;font-weight:900;display:grid;place-items:center;
+  transition:all .25s var(--ease-pop);
+}
+.deg-tile.done .deg-check{background:var(--volt);border-color:var(--volt);color:var(--accent-ink)}
+.deg-check:active{transform:scale(.88)}
+.deg-tile-main{flex:1;min-width:0;cursor:pointer}
+.deg-code{font-size:14px;font-weight:900;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.deg-cr{font-size:11px;font-weight:800;color:var(--accent-strong);background:rgba(var(--volt-rgb),.16);
+  border-radius:999px;padding:2px 8px;white-space:nowrap}
+.deg-title{font-size:12.5px;color:var(--ink-2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.deg-cat{font-size:10px;font-weight:800;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.deg-cat-core{color:#0D9488;background:rgba(13,148,136,.12);border:1px solid rgba(13,148,136,.35)}
+.deg-cat-major{color:var(--accent-strong);background:rgba(var(--volt-rgb),.14);border:1px solid rgba(var(--volt-rgb),.4)}
+.deg-cat-elective{color:var(--blue);background:rgba(37,99,235,.10);border:1px solid rgba(37,99,235,.3)}
+body.dark .deg-cat-elective{color:#7DA8F5;background:rgba(125,168,245,.10);border-color:rgba(125,168,245,.35)}
+.deg-choice-chip{font-size:10px;font-weight:800;color:var(--ink-2);border:1px dashed var(--line);border-radius:999px;padding:2px 8px;white-space:nowrap}
+.deg-warn{
+  font-size:10.5px;font-weight:800;color:var(--warn);background:rgba(180,83,9,.10);
+  border:1px solid rgba(180,83,9,.4);border-radius:999px;padding:2px 9px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;max-width:100%;cursor:pointer;
+}
+body.dark .deg-warn{color:var(--amber);background:rgba(251,191,36,.10);border-color:rgba(251,191,36,.4)}
+.deg-xfer{
+  font-size:10.5px;font-weight:800;color:var(--accent-strong);background:rgba(var(--volt-rgb),.14);
+  border:1px solid rgba(var(--volt-rgb),.4);border-radius:999px;padding:2px 9px;white-space:nowrap;
+}
+/* completion burst: scale bounce + volt glow (silent — no sounds anywhere) */
+@keyframes degPop{0%{transform:scale(.92)}45%{transform:scale(1.04);box-shadow:0 0 0 6px rgba(var(--volt-rgb),.45),0 0 26px rgba(var(--volt-rgb),.7)}100%{transform:scale(1)}}
+.deg-tile.deg-pop .deg-tile-inner{animation:degPop .55s var(--ease-pop)}
+@keyframes degFloatUp{0%{opacity:0;transform:translateY(6px) scale(.8)}25%{opacity:1}100%{opacity:0;transform:translateY(-26px) scale(1)}}
+.deg-float{
+  position:absolute;right:14px;top:6px;z-index:3;pointer-events:none;
+  font-size:12px;font-weight:900;color:var(--accent-strong);
+  background:rgba(var(--volt-rgb),.2);border:1px solid rgba(var(--volt-rgb),.5);
+  border-radius:999px;padding:3px 10px;animation:degFloatUp 1.1s ease-out forwards;
+}
+
+/* ---------- transfer view ---------- */
+.deg-xrow{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:10px 12px;margin:8px 0;
+}
+.deg-xrow .code{font-size:13.5px;font-weight:900}
+.deg-xrow .title{font-size:12px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-xrow .dests{font-size:12px;font-weight:700;color:var(--accent-strong);margin-top:5px}
+.deg-xsummary{
+  background:rgba(var(--volt-rgb),.10);border:1px solid rgba(var(--volt-rgb),.35);
+  border-radius:14px;padding:11px 13px;margin:8px 0;font-size:13px;font-weight:700;
+}
+.deg-xnote{font-size:12px;color:var(--muted);margin:10px 2px;line-height:1.5}
+
+/* ---------- choice / detail sheets reuse the app's .field/.input/.btn ---------- */
+.deg-optlist{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.deg-opt{
+  text-align:left;background:var(--surface2);border:1px solid var(--line);border-radius:14px;
+  padding:11px 13px;cursor:pointer;width:100%;
+}
+.deg-opt:active{transform:scale(.98)}
+.deg-opt .c{font-size:14px;font-weight:900}
+.deg-opt .ti{font-size:12.5px;color:var(--ink-2)}
+.deg-opt .cr2{font-size:11px;font-weight:800;color:var(--accent-strong);margin-top:3px;display:block}
+.deg-detail-row{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;padding:7px 0;border-top:1px solid var(--line)}
+.deg-detail-row:first-of-type{border-top:0}
+.deg-detail-row .k{flex:none;min-width:110px;font-weight:800;color:var(--muted);font-size:12px;padding-top:2px}
+.deg-req{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:13.5px}
+.deg-req .st{flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:900}
+.deg-req .ok{background:rgba(var(--volt-rgb),.25);color:var(--accent-strong)}
+.deg-req .no{background:rgba(180,83,9,.15);color:var(--warn)}
+body.dark .deg-req .no{color:var(--amber)}
+
+/* ---------- home entry row ---------- */
+#homeDegEntry .hrow-ico{font-size:20px}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  .deg-school::before,.deg-head::before{animation:none}
+  .deg-tile.deg-pop .deg-tile-inner{animation:none}
+  .deg-float{animation:none;opacity:0}
+}
+/* national directory browse (Phase 1) */
+.deg-browse{margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.deg-browsebtn{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  background:rgba(var(--volt-rgb),.08);border:1px solid rgba(var(--volt-rgb),.35);
+  border-radius:16px;padding:14px;cursor:pointer;color:var(--ink);
+  transition:transform .18s var(--ease-spring);
+}
+.deg-browsebtn:active{transform:scale(.98)}
+.deg-browsebtn .grow{flex:1;min-width:0}
+.deg-browsebtn .grow b{display:block;font-size:14.5px;font-weight:800}
+.deg-browsebtn .meta{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+/* unified search (2026-09-30): directory results live under the plan results */
+.deg-dir-hd{font-size:13px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;
+  color:var(--muted);margin:2px 0 8px}
+.deg-dir-hint{margin-top:14px;padding:12px 14px;border:1px dashed var(--line);
+  border-radius:14px;font-size:12.5px;color:var(--muted);text-align:center}
+
+/* ---------- Home entry card: animated graduation cap (PraBin 2026-09-30) ----------
+   Original line-art cap: gentle bob + swinging volt tassel + soft sparkle.
+   Volt/rose aware via --volt. Silent, no JS. */
+.deg-cap-anim{display:block;animation:degBob 3.2s ease-in-out infinite}
+.deg-tassel{transform-origin:12px 8px;animation:degTassel 3.2s ease-in-out infinite}
+.deg-tassel-cord{fill:none;stroke:var(--volt);stroke-width:1.8;stroke-linecap:round}
+.deg-tassel-dot,.deg-btn{fill:var(--volt)}
+.deg-spark{fill:var(--volt);transform-origin:19px 6.5px;animation:degSpark 3.2s ease-in-out infinite}
+@keyframes degBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes degTassel{0%,100%{transform:rotate(10deg)}50%{transform:rotate(-12deg)}}
+@keyframes degSpark{0%,100%{transform:scale(.4);opacity:0}50%{transform:scale(1);opacity:.9}}
+@media (prefers-reduced-motion:reduce){
+  .deg-cap-anim,.deg-tassel,.deg-spark{animation:none}
+  .deg-spark{opacity:0}
+}
+
+/* ---------- Campus display (multi-campus institutions, 2026-10-06) ---------- */
+.deg-campuses{margin:8px 0 2px;padding:10px 12px;background:var(--card2,rgba(127,127,127,.07));
+  border:1px solid var(--line);border-radius:12px}
+.deg-campuses-hd{font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:8px}
+.deg-campus-list{display:flex;flex-wrap:wrap;gap:6px}
+.deg-campus-chip{display:inline-flex;flex-direction:column;padding:6px 10px;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;
+  font-size:12.5px;font-weight:700;line-height:1.3}
+.deg-campus-loc{font-size:11px;font-weight:600;color:var(--muted)}
+.deg-campus-note{font-size:10.5px;font-weight:600;color:var(--volt);font-style:italic}

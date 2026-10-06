@@ -1,0 +1,185 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-interior-design-technology",
+  "major": "Interior Design Technology",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/visual-and-performing-arts/interior-design-technology-5071-ccl). Effective Term Spring 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: Architectural CAD I: Introduction.",
+      "code": "ARC/INT111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Architectural CAD I: Introduction",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 101",
+      "core_area": "HU",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Interior Design",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Digital Visualization for Design",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 145",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122"
+      ],
+      "title": "Drawing and Rendering Studio",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: Architectural Computer Aided Design II: Plans and Elevations.",
+      "code": "ARC/INT112",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Architectural Computer Aided Design II: Plans and Elevations",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: Revit - Introduction.",
+      "code": "ARC/INT110",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Revit - Introduction",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ARC 251",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intermediate Revit or SketchUp - Introduction",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 201",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122",
+       "INT 145"
+      ],
+      "title": "Color and Design Communication Studio",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 260",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Interior Codes and Regulations",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 265",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Building Systems",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/visual-and-performing-arts/interior-design-technology-5071-ccl",
+  "total_credits": 30,
+  "external_prereqs": [
+   "INT 165",
+   "INT 140",
+   "ARC 141",
+   "INT 111"
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "f6baa03edd51bacf228e56975ddcba2b728095f43de6bb3b4b18a24dae9dbcc4",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,623 @@
+{
+ "institution": {
+  "city": "Bridgeport, CT",
+  "kind": "private",
+  "name": "University of Bridgeport",
+  "state": "CT"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 109"
+  ],
+  "id": "bridgeport-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official University of Bridgeport 2024-2025 Academic Catalog (archived), Program: Computer Science, B.S. — https://catalog.bridgeport.edu/preview_program.php?catoid=5&poid=693 (retrieved 2026-09-30 via text extraction of the official 'Suggested Program' semester lists). Catalog-year note: the current 2025-26 catalog program page (catoid=9, poid=1211) confirms the Computer Science, B.S. degree and the 122-semester-hour graduation requirement but does NOT publish the term-by-term sequence in its rendered page; the 2024-2025 archived catalog is therefore the most recent official Bridgeport source carrying the full official semester-by-semester Suggested Program. CREDIT DISCREPANCY (documented honestly per pipeline precedent): the Suggested Program is headed '122 Credit(s)' and the catalog states 'A total of 122 semester hours is required for graduation', but the eight printed semester lists sum to 121 credits (14+13+17+16+15+15+16+15); total_credits is therefore set to 121, the actual sum of the transcribed official sequence, so the validator's credit-sum check holds. The 1-credit shortfall versus the published 122 is a catalog inconsistency, not a transcription gap — every listed course is transcribed. Prerequisites transcribed from the official catalog Course of Instruction descriptions (CPSC series); prereq chains are from the 2023-24 archived catalog course descriptions (same Acalog catalog system, course numbers/credits/titles unchanged in 2024-25) and match the Suggested Program's term order. CPSC 227's official prerequisite is 'MATH 109 with a C or better' — MATH 109 is not part of the sequence, so it is carried in external_prereqs (placement/background course). CPSC 389's official prerequisite is 'CPSC 102 and senior status' — senior status is not a course code and is not machine-representable; only CPSC 102 is listed. MATH 214 OR MATH 314 is the catalog's either/or slot in semester 4. Elective footnotes per catalog: CPSC Elective = any senior-level/graduate-level CPEG/CPSC course; Technical Elective = any senior-level/graduate-level CPEG/CPSC/ELEG/Math course. FYS: the sequence places FYS 101 (First Year Seminar, 3 cr) in semester 2.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Academic Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 110",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 207",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Principles of Physics I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 207L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Principles of Physics I Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Introduction to Computing I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 208",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Principles of Physics II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "FYS 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 101"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Computing II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 227",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 109"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official sequence: PHYS/CHEM/BIOL Electives, 4 credits.",
+      "code": "NATSCI ELEC",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Natural Science Elective (PHYS/CHEM/BIOL)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 215",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry III",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved Humanities core course.",
+      "code": "HUM CORE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Humanities Core",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 102"
+      ],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Advanced Data and File Structures",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Digital Design I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 329",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 201",
+       "CPSC 227"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Fundamentals of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 204",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Technical Writing",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved Humanities elective course.",
+      "code": "HUM ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Humanities Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sequence: MATH 214 - Linear Algebra OR MATH 314 - Numerical Methods (3 credits).",
+      "code": "MATH 214 / MATH 314",
+      "credits": 3,
+      "options": [
+       "MATH 214",
+       "MATH 314"
+      ],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Linear Algebra / Numerical Methods",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved Fine Arts core course.",
+      "code": "FA CORE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Fine Arts Core",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 290",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Economics & Management of Engineering Projects",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved Social Science core course (first of two SOSC core slots).",
+      "code": "SOSC CORE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Social Science Core",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 201"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 286",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Introduction to Microprocessors",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 323",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Probability and Statistics I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 308",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved Social Science core course (second of two SOSC core slots).",
+      "code": "SOSC CORE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Social Science Core",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this CPSC elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC.",
+      "code": "CPSC ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Computer Science Elective I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 312",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this technical elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC/ELEG/Math.",
+      "code": "TECH ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Technical Elective I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 389",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 102"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 349A",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Senior Design Project",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Data Base Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 371",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Data and Computer Communications",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this CPSC elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC.",
+      "code": "CPSC ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Computer Science Elective II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this technical elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC/ELEG/Math.",
+      "code": "TECH ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "Technical Elective II",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this CPSC elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC.",
+      "code": "CPSC ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Science Elective III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 349B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Senior Design Project",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official catalog footnote: this technical elective must be chosen from any senior-level/graduate-level course in CPEG/CPSC/ELEG/Math.",
+      "code": "TECH ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Technical Elective III",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved free elective course.",
+      "code": "FREE ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 203",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 102"
+      ],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Second Programming Language",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.bridgeport.edu/preview_program.php?catoid=5&poid=693",
+  "total_credits": 121,
+  "content_hash": "8393e92e882bc7b9efe0959b1362e0141be0b426f8be3e5a7963dd0b15bbe25d",
+  "last_verified": "2026-10-02"
+ }
+}

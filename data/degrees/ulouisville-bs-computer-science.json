@@ -1,0 +1,773 @@
+{
+ "institution": {
+  "city": "Louisville, KY",
+  "kind": "public4yr",
+  "name": "University of Louisville",
+  "state": "KY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "ulouisville-bs-computer-science",
+  "major": "Computer Science and Engineering",
+  "notes": "CREDENTIAL HONESTY: The University of Louisville does NOT offer a degree literally named 'BS in Computer Science'. This plan is the university's genuine official term-by-term 'Flight Plan' for the Bachelor of Science in Computer Science and Engineering (Academic Plan Code CECSBCC), J.B. Speed School of Engineering, Department of Computer Science and Engineering. (A separate BA in Computer Science exists in the College of Arts & Sciences.) The degree/major fields use UofL's TRUE program name; no substitution was made silently. SOURCE: official UofL undergraduate catalog PDF (Summer 2026-Spring 2027 catalog year), transcribed term-by-term from the 'Flight Plan' table. TRANSCRIPTION: downloaded the official catalog PDF and extracted text (pdftotext); every term's courses and credit hours were hand-verified against the PDF and the term-hour totals (16+17+13+15+1+12+1+17+1+16+15) sum to exactly 124, matching the catalog's stated 'Minimum Total Hours 124'. CAVEATS: (1) The catalog states the Flight Plan 'is intended to demonstrate one possible path to completing the degree within four years' — course selection and placement may vary by offering, electives, study abroad/internships; students consult an advisor. (2) The Flight Plan does not publish explicit per-course prerequisites, so all prereq arrays are left empty rather than inferred; the term order implies progression. (3) The four 'General Education: Cardinal Core AH, SB, or SBH' rows are student-choice slots (choose any approved Arts & Humanities, Social & Behavioral Sciences, or SB Historical Perspective course). (4) The four 'CSE Elective' rows are student-choice slots from the catalog's approved list (CSE 522/528/530/538/545/547/551/555/564/565/566/568/570/590/593; additional CSE 5XX/6XX with departmental consent). (5) CSE 412 or ECE 412 and COMM 111 or COMM 112 are either/or choice slots. (6) CSE 288 is a required 0-credit co-op seminar (required_zero). (7) Catalog admission notes: Speed School requires HS calculus or precalculus plus chemistry; ACT composite+math 25 (SAT 1200, math 590) with 3.0 GPA, or ACT 24 (SAT 1160, math 570) with 3.5 GPA; students without ACT/SAT need 3.0 HS GPA plus transcript/resume review. Students completing ENGL 105 in lieu of ENGL 101/102 satisfy the Written Communication requirement but may need an additional 3-hr Writing (WR) course for program credit hours. (8) Candidates for the BS must be in good standing (university GPA >= 2.25) with >= 2.25 GPA across degree-requirement courses.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "General Chemistry I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 207",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Chemical Analysis I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to College Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Engineering Analysis I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 110",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Engineering Methods, Tools, and Practice I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Cardinal Core course: Arts & Humanities (AH), Social & Behavioral Sciences (SB), or Social & Behavioral Sciences Historical Perspective (SBH).",
+      "code": "GENED AH-SB-1",
+      "credits": 3,
+      "options": [
+       "AH",
+       "SB",
+       "SBH"
+      ],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Cardinal Core: Arts & Humanities / Social & Behavioral Sciences",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 130",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to C and C++ Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Intermediate College Writing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Engineering Analysis II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 111",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Engineering Methods, Tools and Practice II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 295",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introductory Laboratories I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 298",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Introductory Mechanics, Heat and Sound",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Object Oriented Program Design with Java",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Engineering Analysis III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Cardinal Core course: Arts & Humanities (AH), Social & Behavioral Sciences (SB), or Social & Behavioral Sciences Historical Perspective (SBH).",
+      "code": "GENED AH-SB-2",
+      "credits": 3,
+      "options": [
+       "AH",
+       "SB",
+       "SBH"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Cardinal Core: Arts & Humanities / Social & Behavioral Sciences",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 235",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Systems and Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 288",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Science and Engineering Cooperative Education Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Logic Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 211",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Logic Design Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 335",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Introduction to Database",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 205",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-6",
+      "tccns": "",
+      "title": "Differential Equations for Engineering",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 289",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Science and Engineering Cooperative Education I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one: COMM 111 Introduction to Public Speaking (OC) or COMM 112 Business and Professional Speaking (OC).",
+      "code": "COMM 111/112",
+      "credits": 3,
+      "options": [
+       "COMM 111",
+       "COMM 112"
+      ],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to Public Speaking or Business and Professional Speaking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ISE 360",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Probability and Statistics for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Cardinal Core course: Arts & Humanities (AH), Social & Behavioral Sciences (SB), or Social & Behavioral Sciences Historical Perspective (SBH).",
+      "code": "GENED AH-SB-3",
+      "credits": 3,
+      "options": [
+       "AH",
+       "SB",
+       "SBH"
+      ],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Cardinal Core: Arts & Humanities / Social & Behavioral Sciences",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 389",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computer Science and Engineering Cooperative Education II",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 311",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Ethics, Social, and Legal Aspects on the Electronic Frontier",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CSE 412 or ECE 412, both titled Introduction to Embedded Systems.",
+      "code": "CSE 412/ECE 412",
+      "credits": 3,
+      "options": [
+       "CSE 412",
+       "ECE 412"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Introduction to Embedded Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 419",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Introduction to Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 420",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Design of Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 532",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Python and Data Analytics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 330",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "Linear Algebra for Engineering",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 489",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Computer Science and Engineering Cooperative Education III",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 504",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Automata Theory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 525",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Microcomputer Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 546",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Introduction to Machine Learning",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one CSE elective from the catalog-approved list (CSE 522/528/530/538/545/547/551/555/564/565/566/568/570/590/593; additional CSE 5XX/6XX courses with departmental consent).",
+      "code": "CSE ELEC-1",
+      "credits": 3,
+      "options": [
+       "CSE 522",
+       "CSE 528",
+       "CSE 530",
+       "CSE 538",
+       "CSE 545",
+       "CSE 547",
+       "CSE 551",
+       "CSE 555",
+       "CSE 564",
+       "CSE 565",
+       "CSE 566",
+       "CSE 568",
+       "CSE 570",
+       "CSE 590",
+       "CSE 593"
+      ],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "CSE Elective (from approved list)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one CSE elective from the catalog-approved list (CSE 522/528/530/538/545/547/551/555/564/565/566/568/570/590/593; additional CSE 5XX/6XX courses with departmental consent).",
+      "code": "CSE ELEC-2",
+      "credits": 3,
+      "options": [
+       "CSE 522",
+       "CSE 528",
+       "CSE 530",
+       "CSE 538",
+       "CSE 545",
+       "CSE 547",
+       "CSE 551",
+       "CSE 555",
+       "CSE 564",
+       "CSE 565",
+       "CSE 566",
+       "CSE 568",
+       "CSE 570",
+       "CSE 590",
+       "CSE 593"
+      ],
+      "prereq": [],
+      "slot_id": "s10-4",
+      "tccns": "",
+      "title": "CSE Elective (from approved list)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 516",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "Fundamentals of Computer Communications and Networks",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Cardinal Core course: Arts & Humanities (AH), Social & Behavioral Sciences (SB), or Social & Behavioral Sciences Historical Perspective (SBH).",
+      "code": "GENED AH-SB-4",
+      "credits": 3,
+      "options": [
+       "AH",
+       "SB",
+       "SBH"
+      ],
+      "prereq": [],
+      "slot_id": "s11-1",
+      "tccns": "",
+      "title": "Cardinal Core: Arts & Humanities / Social & Behavioral Sciences",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one CSE elective from the catalog-approved list (CSE 522/528/530/538/545/547/551/555/564/565/566/568/570/590/593; additional CSE 5XX/6XX courses with departmental consent).",
+      "code": "CSE ELEC-3",
+      "credits": 3,
+      "options": [
+       "CSE 522",
+       "CSE 528",
+       "CSE 530",
+       "CSE 538",
+       "CSE 545",
+       "CSE 547",
+       "CSE 551",
+       "CSE 555",
+       "CSE 564",
+       "CSE 565",
+       "CSE 566",
+       "CSE 568",
+       "CSE 570",
+       "CSE 590",
+       "CSE 593"
+      ],
+      "prereq": [],
+      "slot_id": "s11-2",
+      "tccns": "",
+      "title": "CSE Elective (from approved list)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one CSE elective from the catalog-approved list (CSE 522/528/530/538/545/547/551/555/564/565/566/568/570/590/593; additional CSE 5XX/6XX courses with departmental consent).",
+      "code": "CSE ELEC-4",
+      "credits": 3,
+      "options": [
+       "CSE 522",
+       "CSE 528",
+       "CSE 530",
+       "CSE 538",
+       "CSE 545",
+       "CSE 547",
+       "CSE 551",
+       "CSE 555",
+       "CSE 564",
+       "CSE 565",
+       "CSE 566",
+       "CSE 568",
+       "CSE 570",
+       "CSE 590",
+       "CSE 593"
+      ],
+      "prereq": [],
+      "slot_id": "s11-3",
+      "tccns": "",
+      "title": "CSE Elective (from approved list)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 596",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-4",
+      "tccns": "",
+      "title": "CSE Capstone Design - CUE",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 11
+   }
+  ],
+  "source_url": "https://catalog.louisville.edu/undergraduate/majors/computer-engineering-science-bs/computer-engineering-science-bs.pdf",
+  "total_credits": 124,
+  "content_hash": "6dd480804baaa3b95e5413a5797109be66b60a542f0349c26ac6ae1ddfd61afc",
+  "last_verified": "2026-10-02"
+ }
+}

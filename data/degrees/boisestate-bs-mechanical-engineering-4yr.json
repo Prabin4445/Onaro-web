@@ -1,0 +1,617 @@
+{
+ "institution": {
+  "name": "Boise State University",
+  "city": "Boise",
+  "state": "ID",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "boisestate-bs-mechanical-engineering-4yr",
+  "degree": "BS",
+  "major": "Mechanical Engineering",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "https://www.boisestate.edu/coen-mbe/mbe-four-year-plan/",
+  "notes": "Official 'MBE 4 Year Plan' from the Dept. of Mechanical and Biomedical Engineering, 2026-2027 catalog. Semester 2 lists 'CS 117 or 121: C++ for Engineers (3-4 CR)' and a 'TOTAL CREDITS: 14-15 credits' range; this seed models CS 117 (3 cr), giving 122 total credits (choosing CS 121 (4 cr) yields 123). Semester 4 of the page prints 'ENG 220'; transcribed as ENGR 220 (Engineering Mechanics II) per the same page's 4.5-year plan and the university catalog. The page publishes no prerequisite lists (asterisks denote upper-division admission requirements); prereq fields are therefore empty. Elective slots (UF/FS/FC/FH/FA, ME COEN, ME Technical, Science/Math) name no specific courses on the page; they are choice slots filled with advisor approval.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "MATH 170",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 101",
+      "title": "Writing & Rhetoric I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UF-100-ELECTIVE",
+      "title": "Foundations of Intellectual Life (100-level UF)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "100-level UF: Foundations of Intellectual Life — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MSE 101",
+      "title": "Living in a Materials World",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FS-ELECTIVE-1",
+      "title": "Foundations of Social Sciences Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Social Sciences elective — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "MATH 175",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 211/211L",
+      "title": "Physics I w/ Calculus And Lab",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 187",
+      "title": "Graphical Communication",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 117 / CS 121",
+      "title": "C++ for Engineers",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CS 117 (3 CR) or CS 121 (4 CR). Seed models CS 117 (3 cr); choosing CS 121 yields 123 total credits.",
+      "options": [
+       {
+        "code": "CS 117",
+        "title": "C++ for Engineers",
+        "credits": 3
+       },
+       {
+        "code": "CS 121",
+        "title": "C++ for Engineers",
+        "credits": 4
+       }
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "MATH 275",
+      "title": "Multivariable & Vector Calculus",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 210",
+      "title": "Engineering Mechanics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 111/111L",
+      "title": "General Chemistry I and Lab",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 102",
+      "title": "Writing & Rhetoric II",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 215",
+      "title": "Engineering Communications Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "MATH 333",
+      "title": "Differential Equations w/ Matrix Theory",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 220",
+      "title": "Engineering Mechanics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 287",
+      "title": "Design I w/ Lab",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FC-ELECTIVE",
+      "title": "Foundations of Oral Communications Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Oral Communications elective — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 273",
+      "title": "Introduction to Computation for Engineers",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "MATH 360 / MATH 361",
+      "title": "Engineering Statistics",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MATH 360 or MATH 361 (3 CR each).",
+      "options": [
+       {
+        "code": "MATH 360",
+        "title": "Engineering Statistics",
+        "credits": 3
+       },
+       {
+        "code": "MATH 361",
+        "title": "Probability and Statistics",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 301/301L",
+      "title": "Solid Mechanics I And Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 321",
+      "title": "Thermal/ Fluids I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 240",
+      "title": "Electrical & Electronic Circuits",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UF-200-ELECTIVE",
+      "title": "Foundations of Ethics (200-level UF)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "200-level UF: Foundations of Ethics — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "ME 303",
+      "title": "Solid Mechanics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 313",
+      "title": "Experimental Methods Lab I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 323",
+      "title": "Thermal/ Fluids II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 360",
+      "title": "System Modeling and Control",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 387",
+      "title": "Design II w/ Lab",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FH-ELECTIVE",
+      "title": "Foundations of Humanities Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Humanities elective — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "ME 401",
+      "title": "Engineering Systems & Applications",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 413",
+      "title": "Experimental Methods Lab II",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 487",
+      "title": "Senior Design Project I (FF)",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME-COEN-ELECTIVE-1",
+      "title": "ME COEN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Mechanical Engineering COEN elective (300-400 level) — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME-TECH-ELECTIVE-1",
+      "title": "ME Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Mechanical Engineering technical elective (300-400 level) — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FS-ELECTIVE-2",
+      "title": "Foundations of Social Sciences Elective (Second Discipline)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Social Sciences elective from a second discipline — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "ME 489",
+      "title": "Senior Design Project II",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME-TECH-ELECTIVE-2",
+      "title": "ME Tech Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Mechanical Engineering technical elective (300-400 level) — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME-COEN-ELECTIVE-2",
+      "title": "ME COEN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Mechanical Engineering COEN elective (300-400 level) — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FA-ELECTIVE",
+      "title": "Foundations of Arts Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Arts elective — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SCI-MATH-ELECTIVE",
+      "title": "Science/ Math Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Science/Math elective (4 CR) — specific course chosen with advisor.",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [],
+  "content_hash": "341336000e9a80716bc4ed0bbcd5d948c8339fbe8fe4f1c8a3acb1a8fca745b3",
+  "last_verified": "2026-10-02"
+ }
+}

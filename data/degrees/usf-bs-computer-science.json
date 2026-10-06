@@ -1,0 +1,903 @@
+{
+ "institution": {
+  "city": "Tampa, FL",
+  "kind": "public4yr",
+  "name": "University of South Florida",
+  "state": "FL"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "usf-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official USF Bellini College of Engineering 4-year plan PDF, 'Computer Science B.S.C.S. - 120 credits, 2025/2026 Catalog', https://www.usf.edu/engineering/student-services/documents/4yrplan-computerscience.pdf (dated 6/2025; the plan itself states 'the catalog is the definitive source of requirements' and references https://cloud.usf.edu/catalog/undergrad/computersciencebscs). Catalog year recorded as 2025-2026, the ACTUAL catalog year printed on the source (not 2026-2027). TRANSCRIPTION: term-by-term transcription of the official plan; course titles verified against the official 2025-2026 Undergraduate Catalog program page (catalog.usf.edu/preview_program.php?catoid=23&poid=11533), which confirms TOTAL DEGREE HOURS: 120, the 59-credit major core, and 21 credits of major electives (9 software + 3 theory + 9 additional non-overlapping technical from the approved Bellini College list). CAVEATS: (1) Courses marked with * in the source (MAC 2311, COP 2510, PHY 2048/2048L, COP 3514, COT 3100, CDA 3103) require a minimum grade of B (not B-) to meet prerequisites for the next course; unless otherwise stated, the minimum acceptable grade in all BSCS required courses is a C (C- insufficient). (2) Students apply for progression to upper division at the end of the Spring semester of Year 1 (requirements: ability to register for COP 4530, minimum 2.0 overall and USF GPA; 2.0 semester/math-science/specialization/USF/overall GPAs must be maintained; required math, science, engineering and specialization courses allowed max two registered attempts). (3) The college recommends an industry internship (up to 6 hrs of CIS 4940 may count as elective; no more than 3 hrs per company) — transcribed as an optional 0-credit advisory Summer Year 3 slot. (4) Exit interview and/or survey is a graduation requirement; students apply for graduation in the final spring. (5) DISCREPANCY DISCLOSED: the Plan of Study PDF hosted on catalog.usf.edu itself (mime/media/23/6733, same program/catalog) sums to 122 credits (its Semester 5 has two 3-cr unrestricted electives where the College plan places EGN 2440 plus a 4-cr 6AC general elective, and its final semester lists 15 credits vs the College plan's 12), contradicting the catalog's own 120-credit degree total. This JSON follows the College of Engineering's plan, which sums exactly to 120 as printed. (6) Major elective example courses are real entries from the catalog's approved elective lists; theory options are COT 4210, COT 4521, COT 4601 per the catalog. (7) Prereq arrays left empty; consult the catalog course inventory for per-course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2311",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 1930",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Freshman Seminar for Computing",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 2510",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Programming Concepts",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "State general-education natural science elective; student chooses any qualifying course per advisor.",
+      "code": "CHOICE-NATSCI-Y1F",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Natural Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2048",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "General Physics I - Calculus Based",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2048L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Physics I Laboratory",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3514",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Program Design",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COT 3100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction to Discrete Structures",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2049",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "General Physics II - Calculus Based",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2049L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Physics II Laboratory",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "State general-education humanities elective (SGEH); student chooses a qualifying course per advisor.",
+      "code": "CHOICE-SGEH",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "State General Education Humanities Elective (SGEH)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4530",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Logic and Design",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3201L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computer Logic and Design Lab",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 2440",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Probability and Statistics with Calculus",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "4-credit general elective; the source marks it (GE elect, 6AC), i.e., it also satisfies the state 6-hour communication requirement.",
+      "code": "CHOICE-GENELEC-Y2S",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "General Elective (6AC writing-intensive)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Meets the Florida Civics Literacy requirement: AMH 2010 (fall 2024 or later), AMH 2020, or POS 2041 plus passing the FL Civics Literacy Exam.",
+      "code": "CHOICE-CIVICS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Civics Requirement (POS 2041, AMH 2010, or AMH 2020)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Student chooses any natural science elective per advisor.",
+      "code": "CHOICE-NATSCI-Y2U",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Natural Science Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Student chooses any general elective per advisor.",
+      "code": "CHOICE-GENELEC-Y2U",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 4205",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 4205L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Architecture Lab",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 4450",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Introduction to Linear Systems",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "University general-education humanities elective (UGEH); student chooses a qualifying course per advisor.",
+      "code": "CHOICE-UGEH",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "University General Education Humanities Elective (UGEH)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Software elective from the approved Bellini College CSE list (9 software-elective credits required total).",
+      "code": "CHOICE-SWELEC-1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CAI 4002",
+        "credits": 3,
+        "title": "Introduction to Artificial Intelligence"
+       },
+       {
+        "code": "CAP 4773",
+        "credits": 3,
+        "title": "Social Media Mining"
+       },
+       {
+        "code": "CEN 4072",
+        "credits": 3,
+        "title": "Software Testing"
+       },
+       {
+        "code": "CIS 4345",
+        "credits": 3,
+        "title": "Big Data Storage and Analysis with Hadoop"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "CNT 4411",
+        "credits": 3,
+        "title": "Computing and Network Security"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4365",
+        "credits": 3,
+        "title": "Software System Development"
+       },
+       {
+        "code": "COP 4520",
+        "credits": 3,
+        "title": "Computing in Massively Parallel Systems"
+       },
+       {
+        "code": "COP 4620",
+        "credits": 3,
+        "title": "Compilers"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Software Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective; the source notes it in the UGES area. Student chooses per advisor.",
+      "code": "CHOICE-GENELEC-Y3F",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "General Elective (UGES area)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COT 4400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Software elective from the approved Bellini College CSE list (9 software-elective credits required total).",
+      "code": "CHOICE-SWELEC-2",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CAI 4002",
+        "credits": 3,
+        "title": "Introduction to Artificial Intelligence"
+       },
+       {
+        "code": "CAP 4773",
+        "credits": 3,
+        "title": "Social Media Mining"
+       },
+       {
+        "code": "CEN 4072",
+        "credits": 3,
+        "title": "Software Testing"
+       },
+       {
+        "code": "CIS 4345",
+        "credits": 3,
+        "title": "Big Data Storage and Analysis with Hadoop"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "CNT 4411",
+        "credits": 3,
+        "title": "Computing and Network Security"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4365",
+        "credits": 3,
+        "title": "Software System Development"
+       },
+       {
+        "code": "COP 4520",
+        "credits": 3,
+        "title": "Computing in Massively Parallel Systems"
+       },
+       {
+        "code": "COP 4620",
+        "credits": 3,
+        "title": "Compilers"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Software Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Software elective from the approved Bellini College CSE list (9 software-elective credits required total).",
+      "code": "CHOICE-SWELEC-3",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CAI 4002",
+        "credits": 3,
+        "title": "Introduction to Artificial Intelligence"
+       },
+       {
+        "code": "CAP 4773",
+        "credits": 3,
+        "title": "Social Media Mining"
+       },
+       {
+        "code": "CEN 4072",
+        "credits": 3,
+        "title": "Software Testing"
+       },
+       {
+        "code": "CIS 4345",
+        "credits": 3,
+        "title": "Big Data Storage and Analysis with Hadoop"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "CNT 4411",
+        "credits": 3,
+        "title": "Computing and Network Security"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4365",
+        "credits": 3,
+        "title": "Software System Development"
+       },
+       {
+        "code": "COP 4520",
+        "credits": 3,
+        "title": "Computing in Massively Parallel Systems"
+       },
+       {
+        "code": "COP 4620",
+        "credits": 3,
+        "title": "Compilers"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Software Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Technical elective from the approved Bellini College CSE list (9 technical-elective credits required total, non-overlapping with software/theory).",
+      "code": "CHOICE-TECHELEC-1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CDA 4203",
+        "credits": 3,
+        "title": "Computer System Design"
+       },
+       {
+        "code": "CDA 4213",
+        "credits": 3,
+        "title": "CMOS-VLSI Design"
+       },
+       {
+        "code": "CIS 4910",
+        "credits": 3,
+        "title": "Computer Science and Engineering Project"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       },
+       {
+        "code": "COT 4210",
+        "credits": 3,
+        "title": "Automata Theory and Formal Languages"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Technical Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "University general-education social science elective (UGES); student chooses a qualifying course per advisor.",
+      "code": "CHOICE-UGES",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "University General Education Social Science Elective (UGES)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Recommended (not required) by the College. Industry internship in software development; up to 6 credit hours of CIS 4940 may count as elective (max 3 hrs per company). 0 credits if not taken.",
+      "code": "CIS 4940",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Industry Internship (recommended, optional)",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CNT 4419",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Secure Coding",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Theory elective from the approved Bellini College CSE list (3 theory-elective credits required).",
+      "code": "CHOICE-THELEC",
+      "credits": 3,
+      "options": [
+       {
+        "code": "COT 4210",
+        "credits": 3,
+        "title": "Automata Theory and Formal Languages"
+       },
+       {
+        "code": "COT 4521",
+        "credits": 3,
+        "title": "Computational Geometry"
+       },
+       {
+        "code": "COT 4601",
+        "credits": 3,
+        "title": "Quantum Computing and Quantum Algorithms"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "Theory Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Technical elective from the approved Bellini College CSE list (9 technical-elective credits required total, non-overlapping).",
+      "code": "CHOICE-TECHELEC-2",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CDA 4203",
+        "credits": 3,
+        "title": "Computer System Design"
+       },
+       {
+        "code": "CDA 4213",
+        "credits": 3,
+        "title": "CMOS-VLSI Design"
+       },
+       {
+        "code": "CIS 4910",
+        "credits": 3,
+        "title": "Computer Science and Engineering Project"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       },
+       {
+        "code": "COT 4210",
+        "credits": 3,
+        "title": "Automata Theory and Formal Languages"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "Technical Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Student chooses any general elective per advisor.",
+      "code": "CHOICE-GENELEC-Y4F",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 4250",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Ethical Issues and Professional Conduct",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CEN 4020",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Technical elective from the approved Bellini College CSE list (9 technical-elective credits required total, non-overlapping).",
+      "code": "CHOICE-TECHELEC-3",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CDA 4203",
+        "credits": 3,
+        "title": "Computer System Design"
+       },
+       {
+        "code": "CDA 4213",
+        "credits": 3,
+        "title": "CMOS-VLSI Design"
+       },
+       {
+        "code": "CIS 4910",
+        "credits": 3,
+        "title": "Computer Science and Engineering Project"
+       },
+       {
+        "code": "CNT 4004",
+        "credits": 3,
+        "title": "Computer Networks I"
+       },
+       {
+        "code": "COP 4020",
+        "credits": 3,
+        "title": "Programming Languages"
+       },
+       {
+        "code": "COP 4710",
+        "credits": 3,
+        "title": "Database Design"
+       },
+       {
+        "code": "COT 4210",
+        "credits": 3,
+        "title": "Automata Theory and Formal Languages"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Technical Elective (approved CSE list)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Student chooses any general elective per advisor. Students apply for graduation in this final term.",
+      "code": "CHOICE-GENELEC-Y4S",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 10
+   }
+  ],
+  "source_url": "https://www.usf.edu/engineering/student-services/documents/4yrplan-computerscience.pdf",
+  "total_credits": 120,
+  "content_hash": "5b999a805f78332142863fd3283cc4c3503972a3f663f24cf70b35c31f49419f",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "institution": {
+  "name": "Grossmont College",
+  "city": "El Cajon, CA",
+  "kind": "community",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "grossmont-college-certificate-telemetry-ecg-technician",
+  "degree": "Certificate",
+  "major": "Telemetry / ECG Technician",
+  "catalog_year": "2026-2027",
+  "total_credits": 12,
+  "source_url": "https://catalog.gcccd.edu/grossmont/associate-degree-programs-certificates/health-sciences/telemetry-ecg-technician-cert-achievement/",
+  "notes": "Course list transcribed verbatim from the official Grossmont-Cuyamaca catalog 'Telemetry / ECG Technician Certificate of Achievement' page: CVTE-104 (3), CVTE-105 (2), CVTE-106 (5), CVTE-108 (2); Total Units 12. Source: https://catalog.gcccd.edu/grossmont/associate-degree-programs-certificates/health-sciences/telemetry-ecg-technician-cert-achievement/ The catalog's Admission: ECG/Telemetry (CVTE) Program page states it is a two-semester program (fall admission); term placement follows the official course-description prerequisites: CVTE-106 requires a C or higher in CVTE-104 and CVTE-105, and CVTE-108 is corequisite with CVTE-106, so 104+105 are Semester 1 (Fall) and 106+108 are Semester 2 (Spring). Semester sums (5 + 7) = 12 = catalog total. CVTE-104 requires admission to the Telemetry/ECG Certificate Program (programmatic; HS graduation + immunizations per catalog admission info); no course-code prerequisites are named, so external_prereqs is empty and prereq arrays encode only the official course-description chains (106 after 104/105).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester 1 (Fall)",
+    "courses": [
+     {
+      "code": "CVTE 104",
+      "title": "Fundamentals of Electrocardiographic Theory and Practice I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CVTE 105",
+      "title": "Fundamentals of Electrocardiographic Theory and Practice Lab I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester 2 (Spring)",
+    "courses": [
+     {
+      "code": "CVTE 106",
+      "title": "Fundamentals of Electrocardiographic Theory and Practice II",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CVTE 104",
+       "CVTE 105"
+      ],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "CVTE 108",
+      "title": "ECG/Telemetry Technician Career Preparation",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CVTE 106"
+      ],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "aebe52ebdaa8f440824257e705d4e5ad6cf640000abf66a57ef8b80bdca981cc",
+  "last_verified": "2026-10-02"
+ }
+}

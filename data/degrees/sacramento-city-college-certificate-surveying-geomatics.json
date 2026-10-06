@@ -1,0 +1,141 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [],
+  "id": "sacramento-city-college-certificate-surveying-geomatics",
+  "major": "Surveying/Geomatics",
+  "notes": "Transcribed from the official SCC 'Surveying/Geomatics Certificate' program map, Catalog 2026-27, published May 27, 2026 (mapmaker.losrios.edu/Maps/7586/PublishedPdf). Certificate of Achievement (grade of C or better in each course). Official Total Units: 26-27; this seed models the first-listed/recommended path at the low end = 12+11+3 = 26 units (SURVY 311 at 3 units). Semester sums verified against the map's 12 / 11-12 / 3 headers. Choice slot: ME SURVY 311 / SURVY 360 — Major Elective (3-4 units, modeled at 3). SURVY 311 prerequisite: EDT 310 with a grade of C or better (documented, not encoded — it applies only to the SURVY 311 option). Sequencing prereqs per map: SURVY 320 requires SURVY 300 (or equivalent); SURVY 352 requires SURVY 350; SURVY 340 requires SURVY 320. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SURVY 300",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "SURVY 300",
+      "title": "Elementary Surveying",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SURVY 330",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "SURVY 330",
+      "title": "Special Surveying Projects",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SURVY 350",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "SURVY 350",
+      "title": "Boundary Control and Legal Principles",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: SURVY 300 with a grade of C or better; or equivalent.",
+      "code": "SURVY 320",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "SURVY 300"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "SURVY 320",
+      "title": "Advanced Survey",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: SURVY 350 with a grade of C or better.",
+      "code": "SURVY 352",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "SURVY 350"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "SURVY 352",
+      "title": "Evidence and Procedures for Boundary Location",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Major elective: SURVY 311 or SURVY 360 (3-4 units; modeled at 3). SURVY 311 prerequisite: EDT 310 with a grade of C or better (documented, not encoded).",
+      "code": "SURVY 311",
+      "credits": 3,
+      "options": [
+       "SURVY 311",
+       "SURVY 360"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "SURVY 311",
+      "title": "Major Elective (SURVY 311 or SURVY 360)",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: SURVY 320 with a grade of C or better.",
+      "code": "SURVY 340",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "SURVY 320"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "SURVY 340",
+      "title": "Photogrammetry",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Semester 3"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7586/PublishedPdf",
+  "total_credits": 26,
+  "transfer_confidence": "core_only",
+  "content_hash": "167161299988e5dd7d03f6bb4e70af08e038018671a6d1ceaad297b95d0f9915",
+  "last_verified": "2026-10-02"
+ }
+}

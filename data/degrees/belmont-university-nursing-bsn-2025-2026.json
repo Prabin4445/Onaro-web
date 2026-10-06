@@ -1,0 +1,606 @@
+{
+ "institution": {
+  "city": "Nashville",
+  "kind": "private",
+  "name": "Belmont University",
+  "state": "TN"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BSN",
+  "external_prereqs": [],
+  "id": "belmont-university-nursing-bsn-2025-2026",
+  "major": "Nursing",
+  "notes": "Source: official Belmont University 'Undergraduate Program of Study — Traditional Degree, 8 semesters, Bachelor of Science in Nursing (BSN)' PDF, stamped 'Revised 6/12/2025', transcribed 2026-10-01; catalog year 2025-2026 assigned from the revision date with this note. Seeded total (112) sums codified sequenced courses only. The PDF states 'Total credit hours for BSN = 128 (70 nursing + 58 non-nursing)'; the 16-credit difference is entirely in placeholder rows published without real course codes ('WEL 2XXX Activity Course', 'XXXX General Elective', 'XXXX Humanities Elective', 'REL 3XXX Religion Course', 'XXXX Fine Arts Elective'), which are excluded per the no-blank-code rule (112 + 16 = 128, reconciles exactly). Per-semester coded sums: 15, 16, 15, 13, 16, 16, 8, 13. 'Or' rows seeded as first-listed option with choice:true: Semester 2 'NUR 1020 OR ... or SWK 2300 Exploring Human Diversity' seeded as NUR1020; 'REL 1010/1020 Religion Course' seeded as REL1010. The '**ILC this semester' line is an advising note, not a course, and is not seeded. NUR-prefixed courses categorized as major; all others as core.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR1010",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Perspectives in Healthcare",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "BIO1070",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Microbiology Lecture",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "BIO1075",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Microbiology Lab",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "ENG1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "First Year Writing",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "BEL1015",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "First Year Seminar",
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "PSY1100",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Psychology",
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ],
+    "label": "Freshman - Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog lists 'NUR 1020 OR ... Cultural Competence in Nursing or' with 'SWK 2300 Exploring Human Diversity'; seeded as first-listed NUR1020.",
+      "code": "NUR1020",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Cultural Competence in Nursing",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "BIO2230",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Anatomy & Physiology I",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "PSY2800",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Lifespan Psychology",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog lists 'REL 1010/1020 Religion Course'; seeded as first-listed REL1010.",
+      "code": "REL1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Religion Course",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "SOC1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Sociology",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ],
+    "label": "Freshman - Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "code": "COM1100",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Speech",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "MTH1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Quantitative Lit & Reasoning",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "BIO2240",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Anatomy & Physiology II",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3850",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Evidence-Based Practice",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3340",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "The Art of Flourishing",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Sophomore - Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR2270",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Foundations of Care Management",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR2271",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Foundations of Experiential Learning",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR2240",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pathophysiology",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR1600",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Wellness, Assessment & Health",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR1601",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Assessment Lab",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "label": "Sophomore - Semester 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Care Management I",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3011",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Experiential Learning I",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3060",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Mental Health Nursing",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3500",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pharmacology I",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR2250",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Lifespan Nutrition",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "CEM1020",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General, Organic, Biochemistry",
+      "slot_id": "s5-5",
+      "xfer": []
+     }
+    ],
+    "label": "Junior - Semester 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3150",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Obstetrical Nursing",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3250",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pediatric Nursing",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3021",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Experiential Learning II",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3600",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pharmacology II",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR3350",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Therapeutic Nutrition",
+      "slot_id": "s6-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "ENG3010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Third Year Writing",
+      "slot_id": "s6-5",
+      "xfer": []
+     }
+    ],
+    "label": "Junior - Semester 6",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Care Management III",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4011",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Experiential Learning III",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4020",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Populations & Their Contexts",
+      "slot_id": "s7-2",
+      "xfer": []
+     }
+    ],
+    "label": "Senior - Semester 7",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4030",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Care Management IV: Complex",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4031",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Experiential Learning IV: Complex",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4200",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Nurse as Leader",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4220",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Preceptorship",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "NUR4015",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Senior Capstone",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ],
+    "label": "Senior - Semester 8",
+    "n": 8
+   }
+  ],
+  "source_url": "https://belmont.edu/academics/majors-programs/nursing/_files/nursing-pos.pdf",
+  "total_credits": 112,
+  "transfer_confidence": "core_only",
+  "content_hash": "0eac90a2df97e8b8e873a3218a4c6e02e5610028e752335fa2705576f6fbe5d6",
+  "last_verified": "2026-10-02"
+ }
+}

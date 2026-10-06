@@ -1,0 +1,630 @@
+{
+ "institution": {
+  "city": "Quincy, MA",
+  "kind": "community",
+  "name": "Quincy College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [
+   "MAT 097",
+   "CSI 116"
+  ],
+  "id": "quincy-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "MERGE NOTE: institution.kind corrected from worker value private4yr to community (Quincy College is a public, two-year municipally affiliated community college in Quincy, MA, licensed to grant baccalaureate degrees). Transcribed from Quincy College's official 'COMPUTER SCIENCE Bachelor of Science Degree Semester Path' PDF (https://quincycollege.edu/wp-content/uploads/Computer-Science-Bachelors-Semester-Path-2025.pdf), the current semester-path document published under the 2025-2026 Course Catalog at https://quincycollege.edu/quincy-college-catalog-2025-2026/. Catalog year: 2025-2026. Transcription method: PDF downloaded from quincycollege.edu, extracted with pdftotext, then every semester table verified cell-by-cell against PNG page renders (catalog pp. 127-128). No courses, credits, or prerequisites invented. Caveats: (1) Either/or prerequisites appear in the source as 'CSI 104 or CSI 116' (CSI 107, CSI 235, CSI 311, CSA 229). CSI 104 is in the plan; CSI 116 is not, so CSI 116 is listed in external_prereqs and both codes appear in each prereq list; the either/or is documented here. (2) MAT 103 prints 'Appropriate Placement Score or Completion of MAT 097'; the placement alternative is documented here and MAT 097 is in external_prereqs. (3) MAT 113 prints 'MAT 103 or Permission of Instructor'; the permission alternative is documented here. (4) Semester 6: the second Open Elective* row has 'CSI 218' printed in the Pre-Requisites column of the source document; transcribed verbatim (the source's own row alignment). (5) CSI 480 prints 'CSI 218; MAT 210 (pre or coreq)'; MAT 210 is carried as a prereq and the pre-or-coreq is documented here. (6) CSI 490 prints 'CSI 218, 226, 330 & 315', expanded to full course codes. Footnotes from the source: '*At least 3 open elective credits must be 300-level or above'; '**At least 3 program elective credits must be 300-level or above'; '***Choose six credits from General Education Elective course list, not CSI or CSA, starting page 99. BUS 220 Business Ethics recommended. Three credits must be 300-level or above.' Catalog publishes 'Total credits required for graduation 120 credits'; the semester path totals (15+15+16+16+15+16+15+12) sum to exactly 120 - no discrepancy. Quincy College offers associate, certificate, and bachelor's degrees (Computer Science is a BS here, with 48 bachelor students per the July 2026 Factbook); institution kind set to private4yr, not 'cc', since the credential is a bachelor's degree.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Comp I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Computers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "IDS 167",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 104",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Introduction to Programming with Python",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 244",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Networking I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 097"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSA 227",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Website Design",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 107",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 104",
+       "CSI 116"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "C++ Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 226",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Unix With Linux",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSA 213",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Database Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 242",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 244"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Systems Security",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Natural Science course with lab (4 credits) from the General Education course list.",
+      "code": "NSLAB",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Natural Science w/ Lab (choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 113",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 103"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Pre-Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 213",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 107"
+      ],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Advanced C++",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 204",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 113"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Calculus I B",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 218",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 213"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 235",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 104",
+       "CSI 116"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one History/Government course (3 credits) from the General Education course list.",
+      "code": "HISTGOV",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "History/Government (choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Social Science or Psychology course (3 credits) from the General Education course list.",
+      "code": "SOCSCI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Social Science/Psychology (choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 315",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSA 213"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Advanced Database Management",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Open Elective: any course; at least 3 open elective credits must be 300-level or above.",
+      "code": "OPELEC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Open Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSA 229",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 104",
+       "CSI 116",
+       "CSA 227"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Web and Mobile Development With JavaScript and React",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 311",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 104",
+       "CSI 116"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Humanities Elective (3 credits) from the General Education course list.",
+      "code": "HUM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Humanities Elective (choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Open Elective: any course; at least 3 open elective credits must be 300-level or above.",
+      "code": "OPELEC2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Open Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 318",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 218"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Source document prints 'CSI 218' in the Pre-Requisites column for this Open Elective* row; transcribed verbatim. Open Elective: any course; at least 3 open elective credits must be 300-level or above.",
+      "code": "OPELEC3",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 218"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Open Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 317",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 218",
+       "CSI 226"
+      ],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 204"
+      ],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 213",
+       "CSI 218",
+       "CSA 227"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Graphics Programming/UI/UX",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 480",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 218",
+       "MAT 210"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Open Elective: any course; at least 3 open elective credits must be 300-level or above.",
+      "code": "OPELEC4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Open Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective: choose from the Computer Science Program Electives list; at least 3 program elective credits must be 300-level or above.",
+      "code": "PROGELEC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Program Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose from the General Education Elective course list, not CSI or CSA (catalog p. 99). BUS 220 Business Ethics recommended. Three credits must be 300-level or above.",
+      "code": "GEED1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Education Elective (choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose from the General Education Elective course list, not CSI or CSA (catalog p. 99). BUS 220 Business Ethics recommended. Three credits must be 300-level or above.",
+      "code": "GEED2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "General Education Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 490",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 218",
+       "CSI 226",
+       "CSI 330",
+       "CSI 315"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Software Engineering (Capstone)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective: choose from the Computer Science Program Electives list; at least 3 program elective credits must be 300-level or above.",
+      "code": "PROGELEC2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Program Elective (choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Open Elective: any course; at least 3 open elective credits must be 300-level or above.",
+      "code": "OPELEC5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Open Elective (choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://quincycollege.edu/wp-content/uploads/Computer-Science-Bachelors-Semester-Path-2025.pdf",
+  "total_credits": 120,
+  "content_hash": "d4770d84cd4ce6637307313e928787572e63042ecb86380fee99e85fc1b979d5",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,568 @@
+{
+ "institution": {
+  "name": "Rutgers University-New Brunswick",
+  "ipeds": "186380",
+  "city": "New Brunswick",
+  "state": "NJ",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "rutgers-university-new-brunswick-bs-data-science",
+  "degree": "BS",
+  "major": "Data Science",
+  "source_url": "https://mps.rutgers.edu/data-science-program/b-s-in-data-science",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "notes": "Source: Official 2025-2026 New Brunswick Undergraduate Catalog, Data Science 219 (SAS), B.S. in Data Science - Computer Science Track (NB219SJ), cross-checked with the Rutgers Math & Physical Sciences B.S. in Data Science program page. Track requirements: foundational courses (Data 101, Statistical Inference, one Data Management course, Calculus I, Linear Algebra, Data in Context) plus CS-track courses (Calculus II, Multivariable Calculus, Intro CS, Data Structures, Discrete Structures I/II, Principles of Information and Data Management, Intro to Data Science, Machine Learning Principles or Deep Learning, Regression Methods, Applied Statistical Learning, Information Visualization). This plan models the Computer Science track, the flagship B.S. track; the B.S. also offers Economics and Chemical Data Science tracks. Course titles/credits verified against the catalog course descriptions: 01:960:291 Statistical Inference for Data Science is 3 credits (official Data Science curriculum sheet) and 01:960:463 Regression Methods is 3 credits (catalog course description). SAS Core Curriculum modeled as constrained-choice slots (10 courses); some SAS Core goals may double-count with major courses, in which case those credits become additional free electives. Semester layout arranged in prerequisite order; no official sample 8-semester plan is published, so term placement follows catalog prerequisites. No courses, credits, or prereqs invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "01:198:142",
+      "title": "Data 101: Data Literacy",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "01:640:151",
+      "title": "Calculus I for Mathematical and Physical Sciences",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "01:198:111",
+      "title": "Introduction to Computer Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "SAS WC-1",
+      "title": "SAS Core: Writing and Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Writing and Communication [WC]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "01:960:291",
+      "title": "Statistical Inference for Data Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:198:142"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "01:640:152",
+      "title": "Calculus II for Mathematical and Physical Sciences",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:640:151"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "01:198:112",
+      "title": "Data Structures",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "SAS QR-1",
+      "title": "SAS Core: Quantitative Reasoning",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Quantitative Reasoning [QR]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "01:640:251",
+      "title": "Multivariable Calculus",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:640:152"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "01:198:205",
+      "title": "Introduction to Discrete Structures I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "01:640:250",
+      "title": "Introductory Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "04:189:220",
+      "title": "Data in Context",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "01:198:206",
+      "title": "Introduction to Discrete Structures II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "01:198:210",
+      "title": "Data Management for Data Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:198:142"
+      ],
+      "choice": true,
+      "choice_note": "One of three Data Management options; 01:960:295 and 04:547:221 are 3 credits, so choosing one requires one additional elective credit elsewhere to stay at 120.",
+      "options": [
+       "01:960:295",
+       "04:547:221"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "01:198:336",
+      "title": "Principles of Information and Data Management",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:198:205",
+       "01:198:112",
+       "01:640:152"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SAS HST-1",
+      "title": "SAS Core: Historical Analysis",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Historical Analysis [HST]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "01:198:439",
+      "title": "Introduction to Data Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:198:205",
+       "01:640:152"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "01:960:463",
+      "title": "Regression Methods",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:960:291"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "01:960:486",
+      "title": "Applied Statistical Learning",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:960:291"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SAS SCL-1",
+      "title": "SAS Core: Social Analysis",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Social Analysis [SCL]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELEC-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "01:198:461",
+      "title": "Machine Learning Principles",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:198:206"
+      ],
+      "choice": true,
+      "choice_note": "Either 01:198:461 Machine Learning Principles or 01:198:462 Introduction to Deep Learning (both 4 credits).",
+      "options": [
+       "01:198:462"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "04:547:321",
+      "title": "Information Visualization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:198:142",
+       "01:960:291"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "SAS ITR-1",
+      "title": "SAS Core: Information Technology and Research",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Information Technology and Research [ITR]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "SAS NS-1",
+      "title": "SAS Core: Natural Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Natural Sciences [NS]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELEC-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "SAS AH-1",
+      "title": "SAS Core: Arts and Humanities",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Arts and Humanities [AH]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "SAS CCD-1",
+      "title": "SAS Core: Contemporary Challenges (CCD)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Contemporary Challenges: Diversity [CCD]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELEC-3",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-4",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-5",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "SAS AH-2",
+      "title": "SAS Core: Arts and Humanities",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Arts and Humanities [AH]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "SAS CCO-1",
+      "title": "SAS Core: Contemporary Challenges (CCO)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Contemporary Challenges: Our Common Future [CCO]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC-6",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-7",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC-8",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "8ba4d872dee414801421ee9da58c64b25d54a2cc89d33d8573d89c798cf89a78",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-massage-therapy",
+  "major": "Massage Therapy",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 3453, Rev. 1/2025, effective Summer 2025): the Spring Start semester-by-semester course sequence for full-time associate degree students finishing in two years. The guide prints semester totals 14 / 8 (summer) / 15-16 / 15 / 9 (summer) and 'TOTAL CREDITS 61-62' because the Fall Semester math slot is MTH105 Math for Allied Health (3), MTH124 Statistics (3), or MTH125 College Algebra (4); this seed models MTH105 (3 credits) for semesters 14 / 8 / 15 / 15 / 9 = 61, the minimum-credit instantiation, and notes the guide's 61-62 range. Course titles and credit hours as printed in the guide's technical/non-technical course lists and sequence. Prerequisites are from the guide's Pre- and Co-Requisites column and name only courses present in the plan: MAS122 requires MAS121 and MAS123; MAS124 requires MAS123 and pre/co-BIO123 (catalog lists BIO122 or BIO123); MAS224, MAS225, MAS227 and MAS231 each require MAS121; MAS228 requires MAS122; MAS226 requires MAS124 and MAS225; MAS229 requires MAS225; MAS223 requires BIO123 (catalog lists BIO122 or BIO123) and pre/co-MAS226; EXS110 requires co-BIO123 (catalog lists BIO122 or BIO123) and co-EXS110L; EXS110L co-EXS110. Footnote markers (^ placement score, ^^ take first semester, # biology substitution, Ω transfer note, @ application criteria) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO123",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Principles of Human Structure and Function",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS121",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Massage Therapy I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS123",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Massage Therapy Anatomy and Physiology I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS122",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS121",
+       "MAS123"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY222",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Psychological Aspects of Therapy",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "MAS124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "MAS123",
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy Anatomy and Physiology II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS224",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS121"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy III",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS225",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS121"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy IV",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS227",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS121"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy Procedures",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS228",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "MAS122"
+      ],
+      "required_zero": false,
+      "title": "Professional Practice and Evaluation",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS231",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS121"
+      ],
+      "required_zero": false,
+      "title": "Sports Massage",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan row 'MTH105 Math for Allied Health or MTH124 Statistics or MTH125 College Algebra'; modeled at 3 credits (guide range 15-16 for the semester, 61-62 total).",
+      "code": "MTH105 / MTH124 / MTH125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Math for Allied Health or Statistics or College Algebra",
+      "slot_id": "s3-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan corequisite.",
+      "code": "EXS110",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123",
+       "EXS110L"
+      ],
+      "required_zero": false,
+      "title": "Anatomy of Exercise",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "EXS110L",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "EXS110"
+      ],
+      "required_zero": false,
+      "title": "Anatomy of Exercise Lab",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "GER121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Introduction to Gerontology",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "MAS223",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123",
+       "MAS226"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy Review",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS226",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "MAS124",
+       "MAS225"
+      ],
+      "required_zero": false,
+      "title": "Massage Therapy V",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAS229",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "MAS225"
+      ],
+      "required_zero": false,
+      "title": "Clinic Operations",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Medical Terminology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "NTR121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Nutrition for Health",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHL122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Ethics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/3453-AAS-Massage-Therapy-Spring-Start.pdf",
+  "total_credits": 61,
+  "content_hash": "4e23a6fcfa48713f90d6c61e34f9e31b4f3ea6a4d47021fa38786babd44a5715",
+  "last_verified": "2026-10-02"
+ }
+}

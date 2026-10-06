@@ -1,0 +1,240 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-cyber-operations",
+  "major": "Cyber Operations",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/cyber-operations-5165-ccl). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 190 or CNT 140AB. Credits shown for CIS 190.",
+      "code": "CIS 190",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Introduction to Networking or Introduction to Networks",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: BPC 270 or MST150++. Credits shown for BPC 270.",
+      "code": "BPC 270",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "A+ Exam Prep: Operating System Configuration and Support or Any Microsoft Windows course",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 126DL or CIS 126RH. Credits shown for CIS 126DL.",
+      "code": "CIS 126DL",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Linux Operating System or Red Hat System Administration I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITS 110",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 126DL",
+       "BPC 270"
+      ],
+      "title": "Information Security Fundamentals",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 111 or ITS 120. Credits shown for CIS 111.",
+      "code": "CIS 111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Ethics in Information Technology or Legal, Ethical and Regulatory Issues",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 156",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Python Programming: Level I",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BPC 170",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "A+ Exam Prep: Computer Hardware Configuration and Support",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITS 240",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ITS 110"
+      ],
+      "title": "Ethical Hacking and Network Defense",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 238DL or CIS 238RH. Credits shown for CIS 238DL.",
+      "code": "CIS 238DL",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 126DL"
+      ],
+      "title": "Linux System Administration or Red Hat System Administration II",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITS 291",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "BPC 170",
+       "ITS 110"
+      ],
+      "title": "Computer Forensics Foundations",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 290AC or CIS 298AC. Credits shown for CIS 290AC.",
+      "code": "CIS 290AC",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Computer Information Systems Internship or Special Projects",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITS 292",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "ITS 291"
+      ],
+      "title": "Advanced Computer Forensics",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/cyber-operations-5165-ccl",
+  "total_credits": 41,
+  "external_prereqs": [
+   "CIS 126RH",
+   "CIS 270",
+   "CNT 205",
+   "MST 150"
+  ],
+  "content_hash": "afa72e3655aa1f78d2dfcd96d3adf1e8ce81c3e2822e9d57227cf28bbf59f03a",
+  "last_verified": "2026-10-02"
+ }
+}

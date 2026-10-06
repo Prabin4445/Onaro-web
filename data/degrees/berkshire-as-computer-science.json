@@ -1,0 +1,288 @@
+{
+ "institution": {
+  "city": "Pittsfield, MA",
+  "kind": "community",
+  "name": "Berkshire Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "MAT 102"
+  ],
+  "id": "berkshire-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Berkshire Community College 2026-2027 Catalog (berkshirecc.smartcatalogiq.com 'current' catalog; catalog root breadcrumb confirms '2026-2027 Catalog'), program page 'Computer Science (A.S.)': https://berkshirecc.smartcatalogiq.com/current/catalog/programs-of-study/computer-information-systems/computer-science-a-s/. TRUE credential per the catalog: 'Associate in Science, Computer Information Systems. Concentration/Option/Track: Computer Science' (page title 'Computer Science (A.S.)'). Hand-transcribed 2026-09-30 from the page's 'Suggested Pathway to Graduation' (semester-by-semester sample sequence; the catalog calls it 'a suggestion for completing this program in two years'). Credit math: pathway term totals 18/18/15/14 = 65, matching the program's own requirement split (Program Courses 46 + General Education Courses 19 = 65). Caveats: (1) ENT-161 (Physics I: Mechanics, 4 cr) is printed after the Second Semester total row and ENT-162 (Engineering Physics II: Fluids, Heat And Sound, 4 cr) after the Third Semester total row, each marked 'See footnote 2'; both are counted inside those semesters' published totals (18 and 15), consistent with the 2023-2024 and 2018-2019 catalogs where they appeared inline in the semester tables. (2) Footnote 2 in the 2026-2027 catalog reads 'Two semesters of another laboratory science sequence may be substituted for ENT-161 and ENT-261'; ENT-261 (Physics II: Electricity, Magnetism & Light) was the third-semester physics in the 2023-2024 pathway, while the 2026-2027 pathway places ENT-162 in the third semester - the footnote appears to carry over the older course number; transcribed the pathway as printed. (3) Prereqs verified from current-catalog course description pages: CIS-125 requires 'CIS-124 with grade of C+ or higher or permission of instructor; MAT-102 or permission of the instructor' (modeled as CIS-124; MAT-102 listed in external_prereqs); CIS-211 requires 'CIS-125 with grade of C+ or higher, or permission of the instructor' (modeled as CIS-125); MAT-152 requires 'MAT-151 or permission of the instructor' (modeled as MAT-151). The 'or permission of instructor' alternatives are documented here, not modeled. No other course prereqs were transcribed: the catalog course pages for CIS-231, CIS-232, ENT-233, ENT-161, ENT-162, MAT-123, MAT-151, and CIS-102 were not verified on the 2026-2027 catalog, so their prereq fields are empty rather than invented. (4) CIS-124's catalog prereq is placement skills ('Skills: ENG-020; Skills: MAT-029 or permission of instructor', seen on the 2021-2022 course page) - placement/assessment detail, documented here, not modeled as a course prereq. (5) Choice slots: two 3-credit English Composition/Writing slots, one 3-credit Behavioral and Social Science slot, one 3-credit Humanities and Fine Arts slot, one 3-credit Communication slot, and one 3-credit Professional Elective (catalog footnote 1: 'chosen from courses designated CIS or ENT'). (6) Program note: 'A minimum of three CIS courses must be taken in the five years prior to graduation.' Minimum cumulative average 2.000 overall and in all CIS & ENT courses.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Fundamental Computer Literacy",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 124",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "C++ Programming I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 151",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course meeting BCC's English Composition/Writing general education requirement (first of two required).",
+      "code": "ENG 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "English Composition/Writing",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Behavioral and Social Science general education list.",
+      "code": "BSS 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Behavioral and Social Science General Education Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 125",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 124"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "C++ Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 152",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 151"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course meeting BCC's English Composition/Writing general education requirement (second of two required).",
+      "code": "ENG 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "English Composition/Writing",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Humanities and Fine Arts general education list.",
+      "code": "HFA 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Humanities and Fine Arts General Education Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENT 161",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Physics I: Mechanics",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 231",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Science I With Java",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENT 233",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Digital Circuits",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 123",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Elementary Statistics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENT 162",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Engineering Physics II: Fluids, Heat And Sound",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 125"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 232",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Science II With Java",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course meeting BCC's Communication general education requirement.",
+      "code": "COM 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Communication",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog footnote 1: professional elective chosen from courses designated CIS or ENT.",
+      "code": "PRF 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Professional Elective (CIS or ENT course)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://berkshirecc.smartcatalogiq.com/current/catalog/programs-of-study/computer-information-systems/computer-science-a-s/",
+  "total_credits": 65,
+  "content_hash": "9ec08ea538625fcc6a117a398f898068f72a35fed0c2ecfc97275ff04bd9ef80",
+  "last_verified": "2026-10-02"
+ }
+}

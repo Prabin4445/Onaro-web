@@ -1,0 +1,401 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-as-emphasis-in-biochemistry",
+  "degree": "AS",
+  "major": ", Emphasis in Biochemistry",
+  "total_credits": 70,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-biochemistry-8610-as",
+  "transfer_confidence": "core_only",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-biochemistry-8610-as), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "CHM 150",
+      "title": "(General Chemistry I and General Chemistry I Laboratory)",
+      "credits": 5,
+      "category": "major",
+      "core_area": "SQ in combo w/ CHM151LL and NSI in combo w/ CHM150 or CHM151; or SQ or NSI in combo w/ CHM151LL; and NSI in combo w/ CHM150 or CHM151; or NSI, SQ",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(CHM150 and CHM151LL) or CHM150AA or (CHM151 and CHM151LL) or CHM151AA: (General Chemistry I and General Chemistry I Laboratory) or General Chemistry I or (General Chemistry I and General Chemistry I Laboratory) or General Chemistry I with Lab",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 130",
+       "CHM 130LL",
+       "CHM 130AA",
+       "MAT 151",
+       "CHM 151"
+      ],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "MAT 220",
+      "title": "Calculus with Analytic Geometry I",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MAT220 or MAT221: Calculus with Analytic Geometry I or Calculus with Analytic Geometry I",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 187",
+       "MAT 188"
+      ],
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "CHM 152AA",
+      "title": "General Chemistry II with Lab",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ or NSI in combo w/ CHM152LL; and NSI in combo w/ CHM152;",
+      "tccns": "",
+      "prereq": [
+       "CHM 150"
+      ],
+      "choice": true,
+      "choice_note": "CHM152AA or (CHM152 and CHM152LL): General Chemistry II with Lab or (General Chemistry II and General Chemistry II Laboratory)",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 151",
+       "CHM 151LL",
+       "CHM 150AA",
+       "CHM 151AA",
+       "CHM 152"
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "INSTITUTIONS_OF_THE_AMERICAS",
+      "title": "Institutions of the Americas",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "IAM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Institutions of the Americas",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "PHY 111",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "MAT 220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 182",
+       "MAT 187",
+       "MAT 188",
+       "MAT 221"
+      ],
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "code": "MAT 230",
+      "title": "Calculus with Analytic Geometry II",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [
+       "MAT 220"
+      ],
+      "choice": true,
+      "choice_note": "MAT230 or MAT231: Calculus with Analytic Geometry II or Calculus with Analytic Geometry II",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 221"
+      ],
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "CHM 235",
+      "title": "(General Organic Chemistry I and General Organic Chemistry I Laboratory)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CHM 152AA"
+      ],
+      "choice": true,
+      "choice_note": "(CHM235 and CHM235LL) or CHM235AA: (General Organic Chemistry I and General Organic Chemistry I Laboratory) or General Organic Chemistry I with Lab",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 152",
+       "CHM 152LL"
+      ],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "BIO 181",
+      "title": "General Biology (Majors) I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "RDG 100",
+       "RDG 100LL",
+       "CRE 101"
+      ],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "CHM 236",
+      "title": "(General Organic Chemistry II and General Organic Chemistry II Laboratory)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CHM 235"
+      ],
+      "choice": true,
+      "choice_note": "(CHM236 and CHM236LL) or CHM236AA: (General Organic Chemistry II and General Organic Chemistry II Laboratory) or General Organic Chemistry II with Lab",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 235LL",
+       "CHM 235AA"
+      ],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "BIO 182",
+      "title": "General Biology (Majors) II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SG",
+      "tccns": "",
+      "prereq": [
+       "BIO 181"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "BIO 181CM",
+       "BIO 181XT"
+      ],
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "ORAL_COMMUNICATION",
+      "title": "Oral Communication",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "OCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Oral Communication",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "cb20bbaf7fa197e49c2de460c34e8fb51324dcdead8042aa1b0ab695ef8a7791",
+  "last_verified": "2026-10-02"
+ }
+}

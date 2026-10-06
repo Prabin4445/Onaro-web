@@ -1,0 +1,656 @@
+{
+ "institution": {
+  "name": "Andrews University",
+  "city": "Berrien Springs",
+  "state": "MI",
+  "kind": "private4yr"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH167",
+   "MATH168",
+   "MATH195",
+   "ENGL117",
+   "MATH215",
+   "MATH145",
+   "CPTR276",
+   "ENGR355",
+   "ENGR390"
+  ],
+  "id": "andrews-university-bs-engineering-electrical-computer",
+  "major": "Engineering, Electrical and Computer Engineering Emphasis",
+  "notes": "Department-published 'Electrical Engineering Concentration Outline' (PDF filename references 2025-2026; header prints 'Suggested 4-year course outline per Bulletin 2024-2025'). Semester credit sums reconcile exactly with the printed totals: 15+16+18+17+16+18+15+16 = 131 = printed 'Total Credits for Graduation 131'. ENGR435 Electromagnetic Fields is offered every other year (even years 2026, 2028) per the outline footnote. Outline prints 'MPE = P5' (math placement). Prerequisite/corequisite parentheticals are transcribed verbatim from the outline into prereq/coreq fields; 'or' alternatives use one_of objects with the verbatim raw text. PHYS272 is the 1-credit lab paired with PHYS242 (outline prints its title as 'Physics for Scientists II'). REL ELEC slots: any RELB, RELG, or RELT religion course. GENED-SS/GENED-AH slots: any course meeting the Andrews general-education Social Sciences / Arts/Humanities requirement. ENGR ELEC slots: engineering electives per department advising.",
+  "retrieved": "2026-10-01",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR120",
+      "credits": 2,
+      "prereq": [],
+      "title": "Intro to Engineering & Design",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR125",
+      "credits": 3,
+      "prereq": [],
+      "title": "Engineering Graphics",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH191",
+      "credits": 4,
+      "prereq": [
+       {
+        "one_of": [
+         "MATH167",
+         "MATH168"
+        ],
+        "raw": "P5, or MATH167, or MATH168"
+       }
+      ],
+      "title": "Calculus I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "HLED135",
+      "credits": 3,
+      "prereq": [],
+      "title": "Wellness",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENGL115",
+      "credits": 3,
+      "prereq": [],
+      "title": "College Writing I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR181",
+      "credits": 3,
+      "prereq": [],
+      "title": "Material Properties and Processes",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "CPTR151",
+      "credits": 3,
+      "prereq": [],
+      "title": "Computer Science I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH192",
+      "credits": 4,
+      "prereq": [
+       {
+        "one_of": [
+         "MATH191",
+         "MATH195"
+        ],
+        "raw": "MATH191 or MATH195"
+       }
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "RELT100",
+      "credits": 3,
+      "prereq": [],
+      "title": "God & Human Life",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "COMM104",
+      "credits": 3,
+      "prereq": [],
+      "title": "Communication Skills",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR185",
+      "credits": 3,
+      "prereq": [
+       "MATH191"
+      ],
+      "title": "Engineering Statics",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PHYS241",
+      "coreq": [
+       {
+        "course": "PHYS271",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "prereq": [
+       "MATH192"
+      ],
+      "title": "Physics for Scientists I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PHYS271",
+      "coreq": [
+       {
+        "course": "PHYS241",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "prereq": [],
+      "title": "Physics for Scientists Lab 1",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH240",
+      "credits": 4,
+      "prereq": [
+       "MATH192"
+      ],
+      "title": "Calculus III",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "CPTR152",
+      "credits": 3,
+      "prereq": [
+       "CPTR151"
+      ],
+      "title": "Computer Science II",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR365",
+      "credits": 3,
+      "prereq": [],
+      "title": "Numerical Methods for Engineers",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR225",
+      "credits": 3,
+      "prereq": [
+       "MATH191"
+      ],
+      "title": "Circuit Analysis",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR285",
+      "coreq": [
+       {
+        "course": "MATH286",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "prereq": [
+       "ENGR185",
+       "PHYS241",
+       "MATH192"
+      ],
+      "title": "Engineering Dynamics",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH286",
+      "credits": 3,
+      "prereq": [
+       "MATH192"
+      ],
+      "title": "Differential Equations",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "INEN221",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intro to Innovation and Entrepreneurship",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PHYS242",
+      "coreq": [
+       {
+        "course": "PHYS272",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "prereq": [
+       "MATH192",
+       "PHYS241"
+      ],
+      "title": "Physics for Scientists II",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PHYS272",
+      "coreq": [
+       {
+        "course": "PHYS242",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "prereq": [],
+      "title": "Physics for Scientists II",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR275",
+      "credits": 3,
+      "prereq": [
+       "ENGR225"
+      ],
+      "title": "Electronics I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "HIST110",
+      "credits": 3,
+      "prereq": [],
+      "title": "Worldviews, Cultures, and God",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENGL215",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL115",
+         "ENGL117"
+        ],
+        "raw": "ENGL115 or ENGL117"
+       }
+      ],
+      "title": "College Writing II",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR435",
+      "credits": 4,
+      "prereq": [
+       "MATH240",
+       "MATH286",
+       "PHYS242"
+      ],
+      "title": "Electromagnetic Fields",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any RELB, RELG, or RELT religion course.",
+      "code": "REL ELEC",
+      "credits": 3,
+      "prereq": [],
+      "title": "Religion Elective",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR310",
+      "credits": 3,
+      "prereq": [
+       "MATH215",
+       "MATH286",
+       "CPTR151"
+      ],
+      "title": "Linear Systems Analysis",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course meeting the Andrews general education Social Sciences requirement.",
+      "code": "GENED-SS",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Education - Social Sciences",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "STAT340",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "MATH191",
+         "MATH195"
+        ],
+        "raw": "MATH191 or MATH195"
+       }
+      ],
+      "title": "Probability and Statistics",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR325",
+      "credits": 4,
+      "prereq": [
+       "ENGR275"
+      ],
+      "title": "Electronics II",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR335",
+      "credits": 3,
+      "prereq": [
+       "ENGR275"
+      ],
+      "title": "Logic Circuit Design",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR450",
+      "credits": 2,
+      "prereq": [
+       {
+        "one_of": [
+         "MATH145",
+         "MATH191"
+        ],
+        "raw": "MATH145 or MATH191"
+       }
+      ],
+      "title": "Engineering Economy",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR385",
+      "credits": 4,
+      "prereq": [
+       {
+        "one_of": [
+         "ENGR335",
+         "CPTR276"
+        ],
+        "raw": "ENGR335 or CPTR276"
+       }
+      ],
+      "title": "Microprocessor Systems",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering elective per department advising.",
+      "code": "ENGR ELEC",
+      "credits": 3,
+      "prereq": [],
+      "title": "Engineering Elective",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR491",
+      "credits": 1,
+      "prereq": [
+       {
+        "one_of": [
+         "ENGR355",
+         "ENGR385",
+         "ENGR390"
+        ],
+        "raw": "ENGR355, 385 or 390"
+       }
+      ],
+      "title": "Review of Engineering Design",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any RELB, RELG, or RELT religion course.",
+      "code": "REL ELEC",
+      "credits": 3,
+      "prereq": [],
+      "title": "Religion Elective",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR410",
+      "credits": 4,
+      "prereq": [
+       "ENGR275",
+       "ENGR285",
+       "ENGR310"
+      ],
+      "title": "Feedback Control",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ENGR492",
+      "credits": 3,
+      "prereq": [
+       "ENGR491"
+      ],
+      "title": "Senior Design Project",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering elective per department advising.",
+      "code": "ENGR ELEC",
+      "credits": 3,
+      "prereq": [],
+      "title": "Engineering Elective",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any RELB, RELG, or RELT religion course.",
+      "code": "REL ELEC",
+      "credits": 3,
+      "prereq": [],
+      "title": "Religion Elective",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course meeting the Andrews general education Arts/Humanities requirement.",
+      "code": "GENED-AH",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Education - Arts/Humanities",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ENGR455",
+      "credits": 4,
+      "prereq": [
+       "ENGR310",
+       "ENGR325",
+       "STAT340"
+      ],
+      "title": "Communications Systems",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.andrews.edu/cas/engineering/programs/electrical-engineering-outline-2025-2026-four-years.pdf",
+  "total_credits": 131,
+  "transfer_confidence": "tccns_equivalencies",
+  "content_hash": "c0451b1ff8c765e14efa95c41d268782e8b96b69be2e14d3b6dbc177d3e33ccb",
+  "last_verified": "2026-10-02"
+ }
+}

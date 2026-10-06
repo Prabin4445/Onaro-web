@@ -1,0 +1,424 @@
+{
+ "institution": {
+  "name": "Allen College",
+  "city": "Waterloo",
+  "state": "IA",
+  "kind": "private4yr"
+ },
+ "plan": {
+  "id": "allen-college-as-radiography",
+  "degree": "AS",
+  "major": "Radiography",
+  "total_credits": 80,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.allencollege.edu/filesimages/PagePDFs/ASR/Curriculum - ASR.pdf",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Allen College curriculum PDFs (allencollege.edu), hand-transcribed 2026-10-01. Associate of Science in Radiography: 58 Allen College credits over six year-round terms plus 22 transfer general-education credits = 80. Gen-ed prereq source: 'General Education - ASR SU27.pdf' (Summer 2027 applicants; a 'Summer 2028 and beyond' variant changes timing but not totals — see notes in seed dir). Caveats: (1) Curriculum PDFs carry no dated catalog year; catalog_year '2026-2027' = retrieval year. (2) Transfer gen-ed is one requirements block (n=1): the college publishes no sequence and no course codes for it. (3) content_hash uses the UTF-8/sort_keys/separators convention documented in gen_allen.py; build.py should recompute on ingest. Semester count is 7 (1 gen-ed block + 6 terms); strict 'AS 4-6' validation may flag this.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "General Education (transfer)",
+    "term": "General Education (transfer, pre-program)",
+    "year_label": "",
+    "declared_credits": 22,
+    "courses": [
+     {
+      "code": "TR-MED-TERM",
+      "title": "Medical Terminology — transfer general education (complete before beginning the program)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-AP1",
+      "title": "Anatomy & Physiology I with Lab — transfer general education (complete before the first fall term)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-AP2",
+      "title": "Anatomy & Physiology II with Lab — transfer general education (complete before the first fall term)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-COLL-MATH",
+      "title": "College-level Math — transfer general education (complete before graduation)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-INTER-COMP",
+      "title": "Intermediate Composition — transfer general education (complete before graduation)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-DIVERSITY",
+      "title": "Diversity Elective (course exploring another culture) — transfer general education (complete before graduation)",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Diversity Elective (course exploring another culture)'. Specific course chosen at the student's transfer institution.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-GEN-PSYCH",
+      "title": "General Psychology — transfer general education (complete before graduation)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-6",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-SOCIOLOGY",
+      "title": "Sociology — transfer general education (complete before graduation)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-7",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term I",
+    "term": "Term I",
+    "year_label": "",
+    "declared_credits": 3,
+    "courses": [
+     {
+      "code": "RA:111",
+      "title": "Radiographic Procedures I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:112",
+      "title": "Methods of Patient Care & Assessment I",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term II",
+    "term": "Term II",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "RA:115",
+      "title": "Introduction to Radiography",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:121",
+      "title": "Radiographic Procedures II",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:135",
+      "title": "Professional Development Practicum I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term III",
+    "term": "Term III",
+    "year_label": "",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "RA:122",
+      "title": "Methods of Patient Care & Assessment II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:131",
+      "title": "Radiographic Procedures III",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:145",
+      "title": "Professional Development Practicum II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:154",
+      "title": "Imaging Methods and Sectional Anatomy",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Term IV",
+    "term": "Term IV",
+    "year_label": "",
+    "declared_credits": 6,
+    "courses": [
+     {
+      "code": "RA:255",
+      "title": "Professional Development Practicum III",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Term V",
+    "term": "Term V",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "RA:203A",
+      "title": "Radiographic Outcomes I",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:251",
+      "title": "Radiographic Physics and Imaging I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:261",
+      "title": "Radiation Protection",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:265",
+      "title": "Professional Development Practicum IV",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Term VI",
+    "term": "Term VI",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "RA:203B",
+      "title": "Radiographic Outcomes II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:258",
+      "title": "Radiographic Pathology",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:270",
+      "title": "Radiographic Physics and Imaging II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RA:275",
+      "title": "Professional Development Practicum V",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "last_verified": "2026-10-01",
+  "source_hash": "",
+  "content_hash": "b037bcb99a9f6b1f7ff559e5e1c6e0b860bc89a886f30f19e5c6018ed7987480"
+ }
+}

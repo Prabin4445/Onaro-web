@@ -1,0 +1,547 @@
+{
+ "institution": {
+  "ipeds": 200800,
+  "name": "University of Akron Main Campus",
+  "city": "Akron",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "akron-bs-biology",
+  "major": "Biology",
+  "notes": "B.S. Biology, Buchtel College of Arts & Sciences. Built from the official University of Akron Undergraduate Bulletin 'Recommended Sequence' (https://bulletin.uakron.edu/undergraduate/colleges-programs/arts-sciences/biology/biology-bs/). Requirements: General Education 36, College of Arts & Sciences requirements 8, Biology Core 47-50, Biology Electives 19, additional credits to 120. Biology electives: minimum 19 credits of 300/400-level biology courses beyond the core (excludes BIOL 311, BIOL 316, BIOL 470; up to 4 credits of independent research/Biological Problems). The official grid leaves the year 3-4 non-core slots unlabeled; this plan designates 19 credits of those slots as 300/400-level biology electives and models the rest as General Education/college requirement choices — documented here, not implied by the grid. Uses Akron's new course numbering. If not at precalculus level, postpone BIOL 111/112 and CHEM 151-154 to sophomore year and take social science/humanities first (per catalog note).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "code": "ENGL 111",
+      "credits": 3,
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 149",
+      "credits": 4,
+      "prereq": [],
+      "title": "Precalculus Mathematics",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 111",
+      "credits": 4,
+      "prereq": [],
+      "title": "Principles of Biology I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 151",
+      "credits": 3,
+      "prereq": [],
+      "title": "Principles of Chemistry I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 152",
+      "credits": 1,
+      "prereq": [
+       "CHEM 151"
+      ],
+      "title": "Principles of Chemistry I Laboratory",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "code": "ENGL 112",
+      "credits": 3,
+      "prereq": [
+       "ENGL 111"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "COMM 105",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 112",
+      "credits": 4,
+      "prereq": [
+       "BIOL 111"
+      ],
+      "title": "Principles of Biology II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 153",
+      "credits": 3,
+      "prereq": [
+       "CHEM 151"
+      ],
+      "title": "Principles of Chemistry II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 154",
+      "credits": 2,
+      "prereq": [
+       "CHEM 151",
+       "CHEM 152"
+      ],
+      "title": "Principles of Chemistry II Laboratory",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIOL 211",
+      "credits": 3,
+      "prereq": [
+       "BIOL 112"
+      ],
+      "title": "General Genetics",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 217",
+      "credits": 3,
+      "prereq": [
+       "BIOL 112"
+      ],
+      "title": "General Ecology",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 263",
+      "credits": 3,
+      "prereq": [
+       "CHEM 153"
+      ],
+      "title": "Organic Chemistry Lecture I",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 265",
+      "credits": 2,
+      "prereq": [
+       "CHEM 263"
+      ],
+      "title": "Organic Chemistry Laboratory I",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIOL 316",
+      "credits": 3,
+      "prereq": [
+       "BIOL 112"
+      ],
+      "title": "Evolutionary Biology",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 264",
+      "credits": 3,
+      "prereq": [
+       "CHEM 263"
+      ],
+      "title": "Organic Chemistry Lecture II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 266",
+      "credits": 2,
+      "prereq": [
+       "CHEM 264",
+       "CHEM 265"
+      ],
+      "title": "Organic Chemistry Laboratory II",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "STAT 261",
+      "credits": 2,
+      "prereq": [
+       "MATH 149"
+      ],
+      "title": "Introductory Statistics I",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "STAT 262",
+      "credits": 2,
+      "prereq": [
+       "STAT 261"
+      ],
+      "title": "Introductory Statistics II",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIOL 311",
+      "credits": 4,
+      "prereq": [
+       "BIOL 211",
+       "BIOL 112"
+      ],
+      "title": "Cell & Molecular Biology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "300/400-level biology course not used in the core (excludes BIOL 311, 316, 470).",
+      "code": "BIOE-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "BIOL 211"
+      ],
+      "title": "Biology Elective (300/400 level, student choice)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education course that also counts for U.S. or Global Perspectives, chosen by the student.",
+      "code": "GENED-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Perspectives Requirement (student choice)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "300/400-level biology course not used in the core (excludes BIOL 311, 316, 470).",
+      "code": "BIOE-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "BIOL 211"
+      ],
+      "title": "Biology Elective (300/400 level, student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "300/400-level biology course not used in the core (excludes BIOL 311, 316, 470).",
+      "code": "BIOE-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "BIOL 211"
+      ],
+      "title": "Biology Elective (300/400 level, student choice)",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "300/400-level biology course not used in the core (excludes BIOL 311, 316, 470).",
+      "code": "BIOE-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "BIOL 211"
+      ],
+      "title": "Biology Elective (300/400 level, student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-8",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "300/400-level biology course not used in the core (excludes BIOL 311, 316, 470).",
+      "code": "BIOE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "BIOL 311"
+      ],
+      "title": "Biology Elective (300/400 level, student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-9",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-10",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-11",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-12",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Buchtel College of Arts & Sciences requirement course chosen by the student.",
+      "code": "GENED-13",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education / College Requirement (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.uakron.edu/undergraduate/colleges-programs/arts-sciences/biology/biology-bs/",
+  "total_credits": 120,
+  "content_hash": "c8d7690fcb766ac867cf80ac7c879d2a2125a6ece949974bc96ac0a4083f2e3c",
+  "last_verified": "2026-10-02"
+ }
+}

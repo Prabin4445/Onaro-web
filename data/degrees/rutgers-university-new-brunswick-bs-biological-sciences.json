@@ -1,0 +1,596 @@
+{
+ "institution": {
+  "name": "Rutgers University-New Brunswick",
+  "ipeds": "186380",
+  "city": "New Brunswick",
+  "state": "NJ",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "rutgers-university-new-brunswick-bs-biological-sciences",
+  "degree": "BS",
+  "major": "Biological Sciences",
+  "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/rutgers-catalog-1746803554494.pdf",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "notes": "Source: Official 2025-2026 New Brunswick Undergraduate Catalog, Division of Life Sciences (SAS). B.S. in Biological Sciences: 73 major credits = 49cr Life Sciences Core (01:119:115-116 General Biology; 01:119:117 Biology Research Laboratory; 01:160:161-162 General Chemistry; 01:160:171 Intro to Experimentation; 01:160:307-308 Organic Chemistry; 01:160:311 Organic Chemistry Laboratory; 01:750:203-204 General Physics; 01:750:205-206 Physics Laboratories; 01:640:135-136 Calculus for Life/Social Sciences; 01:447:380 Genetics) + 01:694:301 Introductory Biochemistry and Molecular Biology (3cr) + 01:447:390 General Microbiology (4cr) + 24cr of life sciences electives (8 slots modeled as constrained-choice, A-H). NOTE: the catalog prints 01:447:390 as (4) in two places and (3) in one; this plan uses 4cr with the discrepancy noted. Course titles/credits verified against catalog course descriptions. No courses, credits, or prereqs invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "01:119:115",
+      "title": "General Biology I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "01:160:161",
+      "title": "General Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "01:640:135",
+      "title": "Calculus for Life and Social Sciences I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "SAS WC-1",
+      "title": "SAS Core: Writing and Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Writing and Communication [WC]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "01:119:116",
+      "title": "General Biology II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:119:115"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "01:119:117",
+      "title": "Biology Research Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "01:160:162",
+      "title": "General Chemistry II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:160:161"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "01:640:136",
+      "title": "Calculus for Life and Social Sciences II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:640:135"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "SAS CCD-1",
+      "title": "SAS Core: Contemporary Challenges (CCD)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Contemporary Challenges: Diversities and Social Inequalities [CCD]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "01:160:307",
+      "title": "Organic Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:160:162"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "01:160:171",
+      "title": "Introduction to Experimentation",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "01:750:203",
+      "title": "General Physics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "01:750:205",
+      "title": "General Physics Laboratory I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SAS AH-1",
+      "title": "SAS Core: Arts and Humanities",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Arts and the Humanities [AH]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "SAS SCL-1",
+      "title": "SAS Core: Social Analysis",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Social Analysis [SCL]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "01:160:308",
+      "title": "Organic Chemistry II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:160:307"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "01:160:311",
+      "title": "Organic Chemistry Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "01:750:204",
+      "title": "General Physics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:750:203"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "01:750:206",
+      "title": "General Physics Laboratory II",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SAS HST-1",
+      "title": "SAS Core: Historical Analysis",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Historical Analysis [HST]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "FREE ELEC-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any free elective",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "01:447:380",
+      "title": "Genetics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:119:116"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "01:694:301",
+      "title": "Introductory Biochemistry and Molecular Biology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "01:160:308"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "01:447:390",
+      "title": "General Microbiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "01:119:116"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SAS CCO-1",
+      "title": "SAS Core: Contemporary Challenges (CCO)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Contemporary Challenges: Our Common Future [CCO]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "FREE ELEC-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any free elective",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "BIO ELEC-A",
+      "title": "Life Sciences Elective A",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "BIO ELEC-B",
+      "title": "Life Sciences Elective B",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "BIO ELEC-C",
+      "title": "Life Sciences Elective C",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "SAS ITR-1",
+      "title": "SAS Core: Information Technology and Research",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Information Technology and Research [ITR]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREE ELEC-3",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any free elective",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "BIO ELEC-D",
+      "title": "Life Sciences Elective D",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "BIO ELEC-E",
+      "title": "Life Sciences Elective E",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "BIO ELEC-F",
+      "title": "Life Sciences Elective F",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "FREE ELEC-4",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any free elective",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "BIO ELEC-G",
+      "title": "Life Sciences Elective G",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "BIO ELEC-H",
+      "title": "Life Sciences Elective H",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300/400-level life sciences elective counting toward the 24cr elective block",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "SAS QR-1",
+      "title": "SAS Core: Quantitative Reasoning",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any SAS Core course certified for Quantitative Reasoning [QR]",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREE ELEC-5",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any free elective",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "cae7698a50085f52f8320ccb6e94c828d8265f9c3f35a7f64e50b8b48989142b",
+  "last_verified": "2026-10-02"
+ }
+}

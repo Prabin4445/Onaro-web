@@ -1,0 +1,431 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-aas-cybersecurity-management-and-information-security",
+  "degree": "AAS",
+  "major": "Cybersecurity Management and Information Security",
+  "total_credits": 59,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/computer-and-information-technology/cybersecurity-management-and-information-security-3039-aas",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/computer-and-information-technology/cybersecurity-management-and-information-security-3039-aas), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CIS 105",
+      "title": "Survey of Computer Information Systems",
+      "credits": 3,
+      "category": "major",
+      "core_area": "CS",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "CIS 126RH",
+      "title": "Red Hat System Administration I",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "CNT 140AB",
+      "title": "Introduction to Networks",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "ELECTIVE",
+      "title": "Elective",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "CRE 101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 3,
+      "category": "major",
+      "core_area": "L",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107",
+       "RDG 100",
+       "RDG 100LL",
+       "RDG 111",
+       "RDG 112",
+       "RDG 113",
+       "ALT 100"
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "BPC 170",
+      "title": "A+ Exam Prep: Computer Hardware Configuration and Support",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "ITS 110",
+      "title": "Information Security Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 126RH",
+       "MST 150"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CIS 126DL",
+       "BPC 270"
+      ],
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "MST 150",
+      "title": "Installing and Configuring Microsoft Windows",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_BEHAVIORAL_SCIENCES",
+      "title": "Social-Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social-Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "code": "CIS 238RH",
+      "title": "Red Hat System Administration II",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 126RH"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "ITS 120",
+      "title": "Legal, Ethical and Regulatory Issues",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "ITS 240",
+      "title": "Ethical Hacking and Network Defense",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "ITS 110"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CNT 205",
+       "CIS 270"
+      ],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "NATURAL_SCIENCES",
+      "title": "Natural Sciences",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "NSI",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Natural Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "ELECTIVE",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 0,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 0,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 0,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 0,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 0,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-5",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "7a2ee14d8c94ad0eddfbaab0a46b45dcfa239e9e2d4714aa26f6a0ad71d96457",
+  "last_verified": "2026-10-02"
+ }
+}

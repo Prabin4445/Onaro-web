@@ -1,0 +1,367 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 75,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/health-sciences/nursing-3812-aas",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/health-sciences/nursing-3812-aas), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "BIO 156",
+      "title": "Introductory Biology for Allied Health",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CRE 101"
+      ],
+      "choice": true,
+      "choice_note": "BIO156 or BIO181: Introductory Biology for Allied Health or General Biology (Majors) I",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "RDG 100"
+      ],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "MAT 140",
+      "title": "College Mathematics",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MAT140 or MAT141 or MAT142: College Mathematics or College Mathematics or College Mathematics",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 052",
+       "MAT 053",
+       "MAT 055",
+       "MAT 056",
+       "MAT 057",
+       "MAT 103",
+       "MAT 114",
+       "MAT 115"
+      ],
+      "slot_id": "s1-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "BIO 201",
+      "title": "Human Anatomy and Physiology I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SG",
+      "tccns": "",
+      "prereq": [
+       "BIO 156",
+       "CRE 101",
+       "CHM 130"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "BIO 181",
+       "RDG 100",
+       "RDG 100LL"
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "CHM 130",
+      "title": "(Fundamental Chemistry and Fundamental Chemistry Laboratory)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "None or SQ",
+      "tccns": "",
+      "prereq": [
+       "CRE 101"
+      ],
+      "choice": true,
+      "choice_note": "(CHM130 and CHM130LL) or (CHM130AA): (Fundamental Chemistry and Fundamental Chemistry Laboratory) or (Fundamental Chemistry with Lab)",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 090",
+       "MAT 090",
+       "MAT 091",
+       "MAT 092",
+       "MAT 103AA",
+       "MAT 103AB",
+       "RDG 100",
+       "RDG 100LL"
+      ],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s2-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "BIO 202",
+      "title": "Human Anatomy and Physiology II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SG",
+      "tccns": "",
+      "prereq": [
+       "BIO 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "BIO 201CM"
+      ],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR 152",
+      "title": "Nursing Theory and Science I",
+      "credits": 9,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "CRE 101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107",
+       "RDG 095",
+       "RDG 100",
+       "RDG 111",
+       "RDG 112",
+       "RDG 113"
+      ],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR 172",
+      "title": "Nursing Theory and Science II",
+      "credits": 9,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "BIO 202",
+       "NUR 152"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "PSY 101",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "category": "major",
+      "core_area": "SB, SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Term 5",
+    "courses": [
+     {
+      "code": "BIO 205",
+      "title": "Microbiology",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SG",
+      "tccns": "",
+      "prereq": [
+       "BIO 156",
+       "CRE 101",
+       "CHM 130"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "BIO 181",
+       "RDG 100",
+       "RDG 100LL"
+      ],
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR 252",
+      "title": "Nursing Theory and Science III",
+      "credits": 9,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CRE 101",
+       "NUR 172",
+       "PSY 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Term 6",
+    "courses": [
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR 283",
+      "title": "Nursing Theory and Science IV",
+      "credits": 9,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "BIO 205",
+       "NUR 252"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "HUMANITIES_FINE_ARTS_DESIGN",
+      "title": "Humanities, Fine Arts & Design",
+      "credits": 2,
+      "category": "elective",
+      "core_area": "HU",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Humanities, Fine Arts & Design",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "0a6cfe9c9fe8b5129e73fc1314b38cab310c38fcaaa1e72b9cb07a2a74ae5315",
+  "last_verified": "2026-10-02"
+ }
+}

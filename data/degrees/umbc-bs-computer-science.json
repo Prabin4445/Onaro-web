@@ -1,0 +1,606 @@
+{
+ "institution": {
+  "name": "University of Maryland, Baltimore County",
+  "city": "Baltimore, MD",
+  "kind": "public4yr",
+  "state": "MD"
+ },
+ "plan": {
+  "id": "umbc-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "source_url": "https://apps.my.umbc.edu/pathways/index.php?SelUrl=&major_list=7",
+  "notes": "Source: Official UMBC Four-Year Academic Pathways page for 'Computer Science - B.S.' (https://apps.my.umbc.edu/pathways/index.php?SelUrl=&major_list=7), Degree Requirements: Total Academic Credits 120-121, Major Credits 78, Min. Upper-Level Credits 45, Min. Cumulative GPA 2.0. catalog.umbc.edu publishes only requirement lists for this program and defers four-year planning to the pathways site (the catalog program page links to 'Four-Year Academic Pathways' for semester planning), which is why the pathways site is the source. Catalog year: the pathways pages are undated; 2025-2026 is the current UMBC Undergraduate Catalog (catoid=40, printed Feb 04, 2026) the pathway aligns with. Transcription method: verbatim manual transcription of the official semester-by-semester tables (Year One through Year Four). Curriculum notes transcribed: sample plan assumes no AP/IB/CLEP or transfer credit, foreign language proficiency up to the 201 level, and math placement level of MATH 151; all students must complete a credit-bearing English and Mathematics course in the first year; § = benchmark, ‡ = gateway course; gateway details at advising.coeit.umbc.edu/gateway-information/computer-science-gateway. CMSC 201/202 require grade of B or better; CMSC 203 requires grade of C or better. Course titles are UMBC's official catalog titles. CAVEATS: (1) The official plan shows the final Spring Year 4 elective as '2-3' credits (term total 14-15, degree 120-121); transcribed at the 2-credit minimum so total_credits = 120. (2) Science Lab GEP 'credit varies' — plan shows 2. (3) Generic GEP/elective/4XX slots are choice slots with unique placeholder codes; all other courses are fixed. (4) CMSC 202 prereq CMSC 201 and MATH 152 prereq MATH 151 reflect the official gateway/sequence structure; other in-plan prereqs were not stated on the pathway page and are not invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMSC 201",
+      "title": "Computer Science I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Gateway (‡) and benchmark (§). Grade of B or better required."
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 151",
+      "title": "Calculus & Analytic Geometry I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "MATH GEP. Plan assumes math placement level of MATH 151."
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "GEN LANG-201",
+      "title": "Foreign Language 201",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Plan assumes foreign language proficiency up to the 201 level.",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GEN ENGL-1",
+      "title": "English General Education (GEP)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "ENGL GEP; any English GEP course (e.g. ENGL 100).",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CMSC 202",
+      "title": "Computer Science II",
+      "credits": 4,
+      "prereq": [
+       "CMSC 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Gateway (‡) and benchmark (§). Grade of B or better required; requires B or better in CMSC 201."
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 152",
+      "title": "Calculus & Analytic Geometry II",
+      "credits": 4,
+      "prereq": [
+       "MATH 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CMSC 203",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Gateway (‡) and benchmark (§). Grade of C or better required."
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GEN AH-1",
+      "title": "Arts & Humanities GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "GEN SS-1",
+      "title": "Social Sciences GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CMSC 331",
+      "title": "Principles of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CMSC 341",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Benchmark (§)."
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "GEN SCI-1",
+      "title": "Science Sequence I (S non-lab GEP, see advisor)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "First course of the approved science sequence for CS majors (S non-lab GEP); see advisor.",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GEN SS-2",
+      "title": "Social Sciences GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GEN ELEC-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CMSC 313",
+      "title": "Computer Organization & Assembly Language Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Benchmark (§)."
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 221",
+      "title": "Introduction to Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GEN SCI-2",
+      "title": "Science Sequence II (S non-lab GEP, see advisor)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second course of the approved science sequence for CS majors (S non-lab GEP); see advisor.",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GEN SCI-LAB",
+      "title": "Science Lab (GEP, see advisor)",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science lab GEP; credit varies — plan shows 2 credits. Twelve credits of the science courses must be from the approved list for CS majors.",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GEN SS-3",
+      "title": "Social Sciences GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CMSC 304",
+      "title": "Social & Ethical Issues in Information Technology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Carries AH GEP credit and is writing intensive (WI)."
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CMSC 411",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "GEN CMSC4XX-1",
+      "title": "CMSC 4XX Elective (see elective requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-level CMSC elective; see program elective requirements.",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "STAT 355",
+      "title": "Introduction to Probability & Statistics for Scientists & Engineers",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": "Benchmark (§)."
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CMSC 421",
+      "title": "Principles of Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "GEN CMSC4XX-2",
+      "title": "CMSC 4XX Elective (see elective requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-level CMSC elective; see program elective requirements.",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "GEN CMSC4XX-3",
+      "title": "CMSC 4XX Elective (see elective requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-level CMSC elective; see program elective requirements.",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GEN AH-2",
+      "title": "Arts & Humanities GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GEN C-1",
+      "title": "Culture GEP",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "note": ""
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMSC 441",
+      "title": "Design & Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CMSC 447",
+      "title": "Software Engineering I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "GEN UL-1",
+      "title": "Upper-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "GEN ELEC-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GEN ELEC-3",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "GEN CMSC4XX-4",
+      "title": "CMSC 4XX Elective (see elective requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-level CMSC elective; see program elective requirements.",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "GEN CMSC4XX-5",
+      "title": "CMSC 4XX Elective (see elective requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-level CMSC elective; see program elective requirements.",
+      "options": [],
+      "category": "major",
+      "note": ""
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "GEN ELEC-4",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "GEN ELEC-5",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GEN ELEC-6",
+      "title": "Free Elective",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official plan shows the final elective as 2-3 credits; transcribed at 2 (minimum) so the total is 120.",
+      "options": [],
+      "category": "elective",
+      "note": ""
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "ed7379d0fc1380870058662cf3269be412601b343ef32032643b19be2ce2acd3",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,307 @@
+{
+ "institution": {
+  "city": "Twin Falls, ID",
+  "kind": "public4yr",
+  "name": "College of Southern Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "id": "csi-as-engineering",
+  "major": "Engineering",
+  "notes": "Source: official College of Southern Idaho 2024-2025 catalog, 'Engineering, Associate of Science' program page (Major Code: 1710S), hand-transcribed 2026-10-02 from https://csi.smartcatalogiq.com/en/2024-2025/catalog/engineering-physical-and-computer-sciences-department/engineering/engineering-associate-of-science . Transcription method: fetched the official program page and transcribed the four semester tables verbatim (course codes, titles, credits, printed semester totals 15/17/14/15). TRUE award: Associate of Science (page title). Catalog year 2024-2025: the newest CSI catalog with complete published program pages found (a 2025-2026 catalog exists but its program pages were not locatable; the 2024-2025 pages are complete and officially published). Total credits: 61, the catalog's published total ('Total Credit Hours: 61'); semester tables sum 15+17+14+15 = 61. Choice slots: (a) Fall Sophomore lists 'ECON 202 Principles of Microeconomics OR ECON 201 Principles of Macroeconomics' (both 3 credits) - modeled as one 3-credit choice slot. (b) WELL GE / COMM GE / SOCS GE2 / HUMA GE2 are official catalog placeholders for 'any Gen. Ed.' course in that category (student choice). (c) PROG ELEC rows are 'Program Elective(s)' (student choice: 5 credits in semester 3, 3 credits in semester 4) selected from the emphasis-area elective lists printed on the page (Agricultural, Biological, Chemical, Civil, Computer, Electrical, Mechanical Engineering). Zero-credit coreq labs: 'CHEM 111L General Chemistry 1 Lab* 0 Credits' and 'PHYS 211L Physic Scientists & Engineers 1 Lab* 0 Credit' are official 0-credit corequisite labs, modeled with required_zero:true (excluded from credit sums; semester totals still match the printed 15/17). Prereqs: left empty. The catalog marks courses with '*' as 'Prerequisite or Corequisite required' but does not name the prerequisite on the plan page; per-course prerequisites live on the official catalog course pages, not the plan page. The catalog notes 'Alternative plans of study available by contacting your advisor.'",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGI 120",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 170",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 111",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "General Chemistry I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 111L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Chemistry 1 Lab",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 1,
+    "term": "Fall Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Writing and Rhetoric II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "GNED 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to General Education",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 175",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 211",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Physics Scientists & Engineers 1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 211L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Physic Scientists & Engineers 1 Lab",
+      "xfer": [],
+      "required_zero": true
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'WELL GE': any General Education Wellness elective (student choice); printed as 2 credits.",
+      "code": "WELL-GE-CHOICE",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "General Education Wellness elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Spring Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog lists 'ECON 202 Principles of Microeconomics OR ECON 201 Principles of Macroeconomics' (both 3 credits). Modeled as one 3-credit choice slot.",
+      "code": "ECON-201-202-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Principles of Microeconomics OR Principles of Macroeconomics (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'COMM GE': any General Education Oral Communication course (student choice).",
+      "code": "COMM-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Oral Communication general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Introduction to Ethics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog lists 'PROG ELEC - Program Elective' (5 credits this semester); student selects from the emphasis-area program elective lists on the official page (Agricultural, Biological, Chemical, Civil, Computer, Electrical, Mechanical Engineering).",
+      "code": "PROG-ELEC-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Program Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Fall Semester Sophomore Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog lists 'PROG ELEC - Program Electives' (3 credits this semester); student selects from the emphasis-area program elective lists on the official page (see semester 3 note).",
+      "code": "PROG-ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Program Electives (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Ordinary Differential Equations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 230",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Introduction to Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE2': any 2nd General Education Social and Behavioral Way of Knowing course (student choice).",
+      "code": "SOCS-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "2nd Social and Behavioral Way of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE2': any 2nd General Education Humanistic & Artistic Way of Knowing course (student choice).",
+      "code": "HUMA-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "2nd Humanistic & Artistic Way of Knowing course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Spring Semester Sophomore Year"
+   }
+  ],
+  "source_url": "https://csi.smartcatalogiq.com/en/2024-2025/catalog/engineering-physical-and-computer-sciences-department/engineering/engineering-associate-of-science",
+  "total_credits": 61,
+  "content_hash": "dc55dd7a9b029fc134f5cf695d50b2e394a61fec07ca6813f783dedd115e4f9d",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "institution": {
+  "name": "ABCO Technology",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "abco-technology-diploma-microsoft-certified-systems-engineer",
+  "degree": "Diploma",
+  "major": "Microsoft Certified Systems Engineer",
+  "catalog_year": "2026-2027",
+  "total_credits": 21.0,
+  "source_url": "https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf",
+  "notes": "QUARTER CREDIT HOURS: ABCO Technology is a quarter-system career college; the official catalog publishes every program in 'QUARTER CREDIT UNITS' (the course-table column is labeled 'Units'). All credit values in this plan are quarter credit hours, NOT semester credits. Source: official ABCO Technology 2026-2027 Catalog (effective July 1, 2026 - June 30, 2027), https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf . Transcription verified against the catalog PDF layout extraction on 2026-09-30. Award: Diploma, Microsoft Certified Systems Engineer. Program length: 20 weeks; 21 quarter credit units required. Catalog prerequisite for MCS900 is 'CT220, CT225 or equivalent technology experience' (the A+ Certification diploma courses); listed in external_prereqs since they are not part of this program. The catalog publishes the complete course list without term subdivisions; the single term below presents the full program in catalog sequence (each prerequisite precedes its dependent).",
+  "external_prereqs": [
+   "CT220",
+   "CT225"
+  ],
+  "semesters": [
+   {
+    "term": "Full program (20 weeks)",
+    "courses": [
+     {
+      "code": "MCS900",
+      "title": "Microsoft Azure Fundamentals",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "MCS104",
+      "title": "Microsoft Certified Azure Administrator",
+      "credits": 4.0,
+      "prereq": [
+       "MCS900"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "MCS400",
+      "title": "Designing and Implementing Microsoft Azure Networking Solutions",
+      "credits": 4.5,
+      "prereq": [
+       "MCS104"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "AWS100",
+      "title": "Amazon Web Services Cloud Practitioner",
+      "credits": 4.0,
+      "prereq": [
+       "MCS400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "NED100",
+      "title": "Network Design and Implementation",
+      "credits": 4.5,
+      "prereq": [
+       "MCS104",
+       "MCS400",
+       "AWS100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-4"
+     }
+    ],
+    "n": 1
+   }
+  ],
+  "content_hash": "28998e60567e3a237df2bda90b8d99f22bd173b8b75db894df4998dec7b5c0d4",
+  "last_verified": "2026-10-02"
+ }
+}

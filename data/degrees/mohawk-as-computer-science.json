@@ -1,0 +1,383 @@
+{
+ "institution": {
+  "city": "Utica, NY",
+  "kind": "community",
+  "name": "Mohawk Valley Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "mohawk-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official MVCC catalog (catalog.mvcc.edu 'current'), program PDF https://catalog.mvcc.edu/current/programs/as-computer-science.pdf (Associate in Science Degree, Total Credit Hours: 63). Catalog year is 2025-2026 (the 'current' catalog's academic calendar covers Fall 2025 / Spring 2026 / Summer 2026; verified 2026-09-30). Transcription method: manual transcription of the PDF's official First/Second/Third/Fourth Semester term-by-term sequence; course titles verified against the current catalog course description pages (cf.php, ci.php, en.php, ma.php, hi.php, so.php, ph.php). Footnote (a): Physics Elective is a two-course sequence in General Physics (PH151 General Physics 1 / PH152 General Physics 2) or Engineering Physics (PH261 Engineering Physics 1 / PH262 Engineering Physics 2), chosen per transfer school — modeled as two linked choice slots (PHY-SEQ1, PHY-SEQ2). Footnote (b): Program Elective chosen with permission of advisor. Physical Education Electives (0.5 credit each semester) are student-choice slots. Prereqs taken from the official course descriptions: CI230/CI245/CI260 require CI130; CI271 and CI285 require any 3-credit programming language (encoded as CI130, the in-plan language course); EN102 requires EN101; MA152 and MA275 require MA151. CI130's corequisite (CI110 or ES151) is satisfied by the sequence itself (both taken in semester 1). Entry placement: program requires two high school mathematics courses or equivalent; EN101 requires appropriate high school GPA/placement or EN090/SL116; MA151 requires appropriate placement or MA150 — all placement-based, so external_prereqs is intentionally empty. Sequence semester totals: 17.5 + 17.5 + 14.5 + 13.5 = 63.0, matching the catalog's published total of 63.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "foundation",
+      "choice": false,
+      "choice_note": "",
+      "code": "CF100",
+      "credits": 1.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Foundations Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI110",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Principles of Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI130",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Programming in C++",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN101",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "English 1: Composition",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA151",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Calculus 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "HI101",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "History of Civilization 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Physical Education course, 0.5 credit.",
+      "code": "PEEL1",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-6",
+      "tccns": "",
+      "title": "Physical Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI230",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "CI130"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN102",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "EN101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "English 2: Ideas and Values in Literature",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA152",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [
+       "MA151"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PH115",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Science of Multimedia",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SO101",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introduction to Sociology",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Physical Education course, 0.5 credit.",
+      "code": "PEEL2",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Physical Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Footnote (a): choose a two-course sequence in General Physics (PH151/PH152) or Engineering Physics (PH261/PH262), depending on transfer school; this is part 1 of 2.",
+      "code": "PHY-SEQ1",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "PH151",
+        "credits": 4.0,
+        "title": "General Physics 1"
+       },
+       {
+        "code": "PH261",
+        "credits": 4.0,
+        "title": "Engineering Physics 1"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Physics Elective (two-course sequence, part 1)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI245",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "CI130"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "JAVA Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI285",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "CI130"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Systems Operations & Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA275",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [
+       "MA151"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Discrete Algebraic Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Physical Education course, 0.5 credit.",
+      "code": "PEEL3",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Physical Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI260",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "CI130"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Microcomputer Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CI271",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "CI130"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Database Design & Implementation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Footnote (a): part 2 of the two-course physics sequence chosen in semester 3 (PH152 General Physics 2 or PH262 Engineering Physics 2).",
+      "code": "PHY-SEQ2",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "PH152",
+        "credits": 4.0,
+        "title": "General Physics 2"
+       },
+       {
+        "code": "PH262",
+        "credits": 4.0,
+        "title": "Engineering Physics 2"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Physics Elective (two-course sequence, part 2)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Footnote (b): chosen with permission of advisor.",
+      "code": "PROG-ELEC",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Program Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Physical Education course, 0.5 credit.",
+      "code": "PEEL4",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Physical Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.mvcc.edu/current/programs/as-computer-science.pdf",
+  "total_credits": 63,
+  "content_hash": "308633ed880525931545f588a286557f05d2b68294f8649f90e43fb7bf0a4d1f",
+  "last_verified": "2026-10-02"
+ }
+}

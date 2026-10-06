@@ -1,0 +1,511 @@
+{
+ "institution": {
+  "ipeds": 203517,
+  "name": "Kent State University at Kent",
+  "city": "Kent",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BSN",
+  "id": "kent-bsn-nursing",
+  "major": "Nursing",
+  "notes": "Foundational Entry Concentration (standard freshman-entry path). Built directly from the official 2026-2027 University Catalog PDF 'Foundational Entry Concentration' semester-by-semester roadmap. The official grid prints ranges on several slots (Chemistry 3-4, Statistics 4-5, Microbiology 3-4, Health Care Policy 2-3) and a minimum total of 122; this plan models the higher-credit options (CHEM 10060 General Chemistry I 4cr, MATH 10040 Introductory Statistics Plus 5cr, BSCI 30171 General Microbiology 4cr) so the semester sums reach the catalog's stated 122 minimum -- the notes on each choice slot list the alternate lower-credit options. Second Summer Term (NURS 20005 Clinical Calculations in Nursing I + NURS 20040 Fundamentals of Nursing) follows Semester Four. Admission to the Professional Nursing Sequence requires minimum 2.000 overall GPA; progression in the sequence requires minimum C grades. Prerequisite chain follows the clinical sequence: NURS 20005 -> NURS 20015; NURS 20040 -> NURS 30035 -> NURS 40010; NURS 20025 -> NURS 30025; BSCI 21010 -> BSCI 21020; NURS 30010/NURS 30020 -> NURS 40020/NURS 40030; NURS 40874 -> NURS 40045 capstone -> NURS 45060 NCLEX Review.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHEM 10050 Fundamentals of Chemistry (3 cr), CHEM 10055 Molecules of Life, or CHEM 10060 General Chemistry I (KBS, 4 cr). Modeled at 4 credits toward the 122 minimum.",
+      "code": "CHEM-E",
+      "credits": 4,
+      "options": [
+       "CHEM 10050",
+       "CHEM 10055",
+       "CHEM 10060"
+      ],
+      "prereq": [],
+      "title": "Chemistry Elective (student choice)",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 10040 Introductory Statistics Plus (KMCR, 4-5 cr) or MATH 10041 Introductory Statistics (KMCR). Modeled at 5 credits toward the 122 minimum.",
+      "code": "STAT-E",
+      "credits": 5,
+      "options": [
+       "MATH 10040",
+       "MATH 10041"
+      ],
+      "prereq": [],
+      "title": "Statistics Elective (student choice)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "PSYC 11762",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Psychology (KSS)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "UC 10001",
+      "credits": 1,
+      "prereq": [],
+      "title": "Flashes 101",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 21010",
+      "credits": 4,
+      "prereq": [],
+      "title": "Anatomy and Physiology I (KBS) (KLAB)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "SOC 12050 Introduction to Sociology (KSS) or SOC 22778 Social Problems (KSS).",
+      "code": "SOC-E",
+      "credits": 3,
+      "options": [
+       "SOC 12050",
+       "SOC 22778"
+      ],
+      "prereq": [],
+      "title": "Sociology Elective (student choice)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "CIVIC",
+      "credits": 3,
+      "prereq": [],
+      "title": "American Civic Literacy Requirement (e.g., HIST 12061 or POL 10101)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BSCI 20021 Basic Microbiology (3 cr) or BSCI 30171 General Microbiology (4 cr). Modeled at 4 credits toward the 122 minimum.",
+      "code": "MICRO",
+      "credits": 4,
+      "options": [
+       "BSCI 20021",
+       "BSCI 30171"
+      ],
+      "prereq": [],
+      "title": "Microbiology (student choice)",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BSCI 21020",
+      "credits": 4,
+      "prereq": [
+       "BSCI 21010"
+      ],
+      "title": "Anatomy and Physiology II",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 20950",
+      "credits": 3,
+      "prereq": [],
+      "title": "Human Growth and Development for Health Professionals",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BSCI 30050 Human Genetics or BSCI 30156 Elements of Genetics.",
+      "code": "GEN",
+      "credits": 3,
+      "options": [
+       "BSCI 30050",
+       "BSCI 30156"
+      ],
+      "prereq": [],
+      "title": "Genetics (student choice)",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 10060",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Professional Nursing Practice",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NUTR 23511",
+      "credits": 3,
+      "prereq": [],
+      "title": "Science of Human Nutrition (KBS)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 20005",
+      "credits": 1,
+      "prereq": [],
+      "title": "Clinical Calculations in Nursing I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 20040",
+      "credits": 8,
+      "prereq": [
+       "BSCI 21010",
+       "BSCI 21020"
+      ],
+      "title": "Fundamentals of Nursing",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 20015",
+      "credits": 2,
+      "prereq": [
+       "NURS 20005"
+      ],
+      "title": "Clinical Calculations in Nursing II",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 20025",
+      "credits": 3,
+      "prereq": [
+       "CHEM-E",
+       "NURS 20040"
+      ],
+      "title": "Pharmacology and Alterations in Physiological Functioning I",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 30035",
+      "credits": 9,
+      "prereq": [
+       "NURS 20040"
+      ],
+      "title": "Nursing of Adults Across the Lifespan",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "NURS 30071 Health Care Policy for the B.S.N. Nurse (2 cr) or NURS 40089 International Health Care Policies (ELR; offered only for students who travel abroad). Modeled at 2 credits.",
+      "code": "POLICY",
+      "credits": 2,
+      "options": [
+       "NURS 30071",
+       "NURS 40089"
+      ],
+      "prereq": [],
+      "title": "Health Care Policy (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 30010",
+      "credits": 4,
+      "prereq": [
+       "NURS 20040"
+      ],
+      "title": "Parent and Newborn Nursing",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 30020",
+      "credits": 4,
+      "prereq": [
+       "NURS 20040"
+      ],
+      "title": "Health Care of Children",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 30025",
+      "credits": 3,
+      "prereq": [
+       "NURS 20025"
+      ],
+      "title": "Pharmacology and Alterations in Physiological Functioning II",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 30050",
+      "credits": 2,
+      "prereq": [],
+      "title": "Basic Nursing Informatics",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 40005",
+      "credits": 3,
+      "prereq": [
+       "NURS 30035"
+      ],
+      "title": "Professional Nursing Development",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 40020",
+      "credits": 4,
+      "prereq": [
+       "NURS 30010",
+       "NURS 30020"
+      ],
+      "title": "Community Health Nursing",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 40030",
+      "credits": 4,
+      "prereq": [
+       "NURS 30010",
+       "NURS 30020"
+      ],
+      "title": "Psychiatric Mental Health Nursing",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 40036",
+      "credits": 2,
+      "prereq": [
+       "NURS 30035"
+      ],
+      "title": "Senior Competency Laboratory",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 40010",
+      "credits": 4,
+      "prereq": [
+       "NURS 30035"
+      ],
+      "title": "Nursing of the Critically Ill",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 40045",
+      "credits": 6,
+      "prereq": [
+       "NURS 40874"
+      ],
+      "title": "Integration of Leadership and Management in Nursing (ELR)",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 40874",
+      "credits": 3,
+      "prereq": [
+       "NURS 30035"
+      ],
+      "title": "Evidence-Based Practice for Nurses (WIC)",
+      "slot_id": "s9-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 45060",
+      "credits": 3,
+      "prereq": [
+       "NURS 40045"
+      ],
+      "title": "NCLEX Review Preparation",
+      "slot_id": "s9-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 9
+   }
+  ],
+  "source_url": "https://catalog.kent.edu/colleges/nu/nursing-bsn/nursing-bsn.pdf",
+  "total_credits": 122,
+  "content_hash": "9d1b5c6ddd3fb3c77420bedcecf489b471d3f4a15069e5470affb9c8e7969481",
+  "last_verified": "2026-10-02"
+ }
+}

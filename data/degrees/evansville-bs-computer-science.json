@@ -1,0 +1,603 @@
+{
+ "institution": {
+  "name": "University of Evansville",
+  "city": "Evansville, IN",
+  "kind": "private",
+  "state": "IN"
+ },
+ "plan": {
+  "id": "evansville-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 125,
+  "source_url": "http://evansville.edu/majors/computerscience/downloads/computer-science-guidebook-2026-2027.pdf",
+  "notes": "Source: University of Evansville, 2026-2027 Computer Science GUIDEBOOK (official PDF at http://evansville.edu/majors/computerscience/downloads/computer-science-guidebook-2026-2027.pdf), 'Bachelor of Science in Computer Science - CLASSIC TRACK' sample term-by-term sequence (guidebook program-plans section; catalog_year 2026-2027). Degree name verified: the guidebook's program heading is 'Bachelor of Science in Computer Science' (degree type BS), offering a Classic Track and an Applied Track; the CLASSIC TRACK sequence is transcribed here (the Applied Track is a published alternate variant, not transcribed). Transcription method: manual verbatim transcription of the official printed Fall/Spring sequence tables — course numbers, course names (full titles taken from the guidebook's own Course List, e.g. 'Logic Design and Machine Organization', 'Senior Project Phase I'), per-course credits, and printed semester totals. CREDIT TOTALS: printed semester totals are 17+16+19+15+15+15+16+12 = 125, which exactly equals the guidebook's stated degree minimum of 'at least 125 hours of coursework' — total_credits=125, and the validator's exact-sum check passes on the sample's own printed totals. MATH CAVEAT: the printed sequence uses 'MATH 323 Calculus III' while the guidebook's requirements text lists the classic track as 'Mathematics 221, 222, 223' — transcribed as printed (MATH 323) with the discrepancy noted here; MATH 341 is printed without explicit credits in the sequence but is required for the 125-hour total (3 credits). PREREQS: the guidebook's sample sequence does not publish per-course prerequisites, so all prereq lists are left empty rather than invented; technical electives are constrained-choice slots drawn from the guidebook's published Technical Electives list; the spring-junior 'Computer Science Elective' is a CS-prefixed technical elective. Foreign Language 111/112 are conditional ('Only if necessary to meet the University foreign language requirement') but are included at full printed credits so the sum matches the sample's own totals. CS 101/MATH 221/FYS 112 have no prereqs shown; none are invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "GENED-O8L",
+      "title": "General Education — Outcome 8 with Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education, Outcome 8 (science), with lab",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CS 101",
+      "title": "Introduction to Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FYS 112",
+      "title": "First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MATH 221",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "LANG-111",
+      "title": "Foreign Language 111",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Only if necessary to meet the University foreign language requirement (guidebook note *)",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 210",
+      "title": "Fundamentals of Programming I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 222",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "GENED-O8",
+      "title": "General Education — Outcome 8",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education, Outcome 8 (no lab)",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GENED-EL-F1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "LANG-112",
+      "title": "Foreign Language 112",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Only if necessary to meet the University foreign language requirement (guidebook note *)",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 215",
+      "title": "Fundamentals of Programming II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 323",
+      "title": "Calculus III",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 365",
+      "title": "Probability",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MATH 341",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GENED-EL-SF1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "FREE-EL-SF1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 220",
+      "title": "Logic Design and Machine Organization",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 315",
+      "title": "Algorithms and Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MATH 370",
+      "title": "Discrete Math",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GENED-EL-SS1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "FREE-EL-SS1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 380",
+      "title": "Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 390",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "TECH-EL-JF1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved technical electives: CS 350, 355, 375, 376, 391, 395, 413, 415, 430, 440, 455, 472, 473, 475, 478, 491, 499; EE 354, 454, 456; LSCM 315 (guidebook p. 5, 'Technical Electives')",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GENED-EL-JF1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "FREE-EL-JF1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 320",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS-EL-JS1",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One CS-prefixed elective from the approved technical electives list",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "TECH-EL-JS1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved technical electives: CS 350, 355, 375, 376, 391, 395, 413, 415, 430, 440, 455, 472, 473, 475, 478, 491, 499; EE 354, 454, 456; LSCM 315 (guidebook p. 5, 'Technical Electives')",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GENED-EL-JS1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREE-EL-JS1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 381",
+      "title": "Formal Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS 495",
+      "title": "Senior Project Phase I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "TECH-EL-SF2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved technical electives: CS 350, 355, 375, 376, 391, 395, 413, 415, 430, 440, 455, 472, 473, 475, 478, 491, 499; EE 354, 454, 456; LSCM 315 (guidebook p. 5, 'Technical Electives')",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "GENED-EL-SNF1",
+      "title": "General Education Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Enduring Foundations General Education elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GENED-EL-SNF2",
+      "title": "General Education Elective (1 credit)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "1-credit Enduring Foundations General Education slot as printed in the guidebook",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "FREE-EL-SNF1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 470",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS 497",
+      "title": "Senior Project Phase II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "TECH-EL-SS2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved technical electives: CS 350, 355, 375, 376, 391, 395, 413, 415, 430, 440, 455, 472, 473, 475, 478, 491, 499; EE 354, 454, 456; LSCM 315 (guidebook p. 5, 'Technical Electives')",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREE-EL-SS2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any university course; free-elective credit",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "ef91b414da2edd997bb675bd49d8fd7950edad0be8cf5431bc0ccbce75517be2",
+  "last_verified": "2026-10-02"
+ }
+}

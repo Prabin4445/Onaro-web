@@ -1,0 +1,249 @@
+{
+ "institution": {
+  "city": "Pittsburg, CA",
+  "kind": "community",
+  "name": "Los Medanos College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "Fall 2025",
+  "degree": "CA",
+  "external_prereqs": [
+   "BIOSC 030 or BIOSC 040 + BIOSC 045 - Introduction to Anatomy and Physiology / Human Anatomy and Human Physiology (4 or 10 units)",
+   "MATH 030 or higher - Intermediate Algebra or higher",
+   "VONUR 020 - Drug Dosage Calculations",
+   "ENGL 100 - College Composition",
+   "NUTRI 055 - Introduction to Nutrition",
+   "VONUR 008 or EMS 013 - Medical Terminology for Healthcare Occupations / Medical Terminology for Healthcare Professions (1 or 3 units)"
+  ],
+  "id": "los-medanos-college-ca-vocational-nursing",
+  "major": "Vocational Nursing",
+  "notes": "Source: official Los Medanos College 'Vocational Nursing Applicant Handbook' (Entering Class - Fall 2025), 'VN PROGRAM COURSE OUTLINE', published by the LMC Nursing Department. The handbook states it 'is revised annually'; it is linked from the official LMC nursing applicant page https://www.losmedanos.edu/nursing/handbook.aspx ('2027 LVN Applicant Handbook' is the current edition; the Fall 2025 edition is the most recent edition publicly indexed). The VN program is a three-semester cohort program; graduates receive a Certificate of Achievement (LMC degree legend: CA = Certificate of Achievement) and qualify for the NCLEX-PN. program_type 'professional-phase': only the professional phase is sequenced here; the handbook states the listed prerequisite courses 'are part of the VN curriculum and are required to apply to the VN Program' and are therefore carried in external_prereqs, not as semesters (handbook prints 'TOTAL PREREQUISITE UNITS 17 or 25'). Per-course prerequisites are not published in the course outline; courses within each semester are taken together as a cohort, so prereq arrays are intentionally empty. VONUR007 is a 1-week intensive course: the handbook outline table carries a 'Units' column whose numeric cell did not extract in text form; the official LMC catalog course description for VONUR-007 (Vocational Nursing Role Relationships, 18 total hours lecture) prints 1 unit, which is encoded here. Semester sums: Pre-1st 1.0 / 1st 13.5 / 2nd 17.0 / 3rd 17.0 = 48.5, matching total_credits exactly.",
+  "program_type": "professional-phase",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Handbook: 1-week intensive course taken before the 1st semester. Units (1) per the official LMC catalog course description (18 total hours lecture, 1 unit); the handbook outline table's numeric units cell did not extract in text form.",
+      "code": "VONUR007",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Vocational Nursing Role Relationships",
+      "xfer": [],
+      "slot_id": "s1-0"
+     }
+    ],
+    "n": 1,
+    "term": "Pre-1st Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR004",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "VN Pharmacology I",
+      "xfer": [],
+      "slot_id": "s2-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR005",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Vocational Nursing",
+      "xfer": [],
+      "slot_id": "s2-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR006",
+      "credits": 7.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Vocational Nursing Practice",
+      "xfer": [],
+      "slot_id": "s2-2"
+     }
+    ],
+    "n": 2,
+    "term": "1st Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR010",
+      "credits": 6.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Medical Surgical I Nursing Care Management",
+      "xfer": [],
+      "slot_id": "s3-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR011",
+      "credits": 7,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Medical Surgical Clinical Skills Lab I",
+      "xfer": [],
+      "slot_id": "s3-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR012",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pharmacology II",
+      "xfer": [],
+      "slot_id": "s3-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR013",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Maternity Nursing Care Management & Interventions",
+      "xfer": [],
+      "slot_id": "s3-3"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR014",
+      "credits": 1.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Maternity Clinical Skills Lab",
+      "xfer": [],
+      "slot_id": "s3-4"
+     }
+    ],
+    "n": 3,
+    "term": "2nd Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR015",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Leadership & Ethics",
+      "xfer": [],
+      "slot_id": "s4-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR016",
+      "credits": 4.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Medical Surgical II Nursing Care Management",
+      "xfer": [],
+      "slot_id": "s4-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR017",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Medical Surgical Clinical Skills Lab II",
+      "xfer": [],
+      "slot_id": "s4-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR018",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pharmacology III",
+      "xfer": [],
+      "slot_id": "s4-3"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR019",
+      "credits": 3.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pediatric Nursing Care Management",
+      "xfer": [],
+      "slot_id": "s4-4"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "VONUR021",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pediatric Clinical Skills Lab",
+      "xfer": [],
+      "slot_id": "s4-5"
+     }
+    ],
+    "n": 4,
+    "term": "3rd Semester"
+   }
+  ],
+  "source_url": "https://www.wnsr-online.com/nursing/2025VNApplicantHanbook.pdf",
+  "total_credits": 48.5,
+  "content_hash": "f207029f4529638f3b021a3e5d99a609b6891665e0fbc735f490273468968bdd",
+  "last_verified": "2026-10-02"
+ }
+}

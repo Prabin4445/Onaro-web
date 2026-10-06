@@ -1,0 +1,339 @@
+{
+ "institution": {
+  "city": "Bronx, NY",
+  "kind": "community",
+  "name": "Hostos Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2022-2023",
+  "degree": "AS",
+  "external_prereqs": [
+   "MAT 150"
+  ],
+  "id": "hostos-as-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official Hostos Community College Academic Degree Map — 'COMPUTER SCIENCE / ASSOCIATE OF SCIENCE' (Office of Academic Affairs, Academic Advisement), dated 9/12/2022, 'updated for DEV-ED Spring 2023': https://hostos.cuny.edu/Hostos/media/Office-of-Academic-Affairs/Academic-Advisement/Computer-Science-AS-Degree-Map-updated-for-DEV-ED-Spring-2023-updated-9-12-2022.pdf — the currently published official term-by-term degree map for the AS in Computer Science on hostos.cuny.edu as of 2026-09-30 (no newer CS AS map found). CATALOG YEAR: 2022-2023 (map era matches the 2022-2023 College Catalog, whose p.198 'COMPUTER SCIENCE – A.S. – CUNY PATHWAYS' page corroborates the requirements: https://hostos.cuny.edu/Hostos/media/Downloadable-Files/2022-2023-College-Catalog-Hostos-Community-College_1.pdf). TRANSCRIPTION: transcribed term-by-term from the degree map's five sections (CREDITS COMPLETED 1-4 + SUMMER); titles, credits, and prereqs cross-checked against 2022-2023 catalog course descriptions. TOTAL CREDITS: the degree map prints TOTAL CREDITS 64 (term subtotals 14-15, 14-15, 16, 13; summer 3+4=7; 14+14+16+13+7=64 is the minimum path). The CUNY Pathways degree minimum is 60 credits — the sequence's own published total (64) is used here per the Clarkson/UVM/GCSU precedent. CREDIT RANGE: the catalog lists CSC 205 Discrete Mathematics at 4 credits (CSC 215 is 3); the 14-15 term subtotal reflects that choice — CSC 205/215 slots are modeled at 3 credits for the 64-credit path; choosing CSC 205 raises the total toward 66. CS SEQUENCE: the map requires 13-16 credits of Computer Science sequence (two 'CSC 205 or CSC 215' slots + two 'CSC 275 or CSC 300+ or CSC 375 or CSC 395' slots); e.g. CSC 205 (4) + CSC 215 (3) + two 300-level CSC courses (3+3) = 13. SUMMER: the map's summer section is untimed ('GET AHEAD! TAKE CLASSES DURING THE SUMMER'); modeled here as 'Summer Year 2' after semester 4; the summer subtotal is not printed on the map (7 = 64 minus 57). MILESTONES: the map marks major milestone courses 'that must be taken in sequential order'; two Writing Intensive courses are required for graduation. PLACEMENT: MAT 160 'if needed due to placement'; students who do not place into MAT 160 or higher take MAT 150 College Algebra with Trigonometric Functions (4 cr) as a free elective (listed in external_prereqs). CSC 215 also carries pre/corequisite ESL 35; ENG 110/111 carry developmental ENG/ESL placement requirements — see catalog. PREREQS (from 2022-2023 catalog course descriptions): MAT 210 requires MAT 160; MAT 220 requires MAT 210; MAT 217 Linear Algebra requires MAT 210 (corequisite MAT 220). Per-option prereqs for the CSC choice slots are documented in each slot's choice_note.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Expository Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Required Common Core: Life and Physical Sciences (with lab).",
+      "code": "LPS 210",
+      "credits": 4,
+      "options": [
+       "CHE 210",
+       "BIO 210",
+       "PHY 210"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Life and Physical Sciences — CHE 210 or BIO 210 or PHY 210 (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one course toward the 13-16 credit Computer Science sequence. Catalog prereqs differ by option: CSC 205 Discrete Mathematics (4 cr) requires MAT 160; CSC 215 Modern Programming (3 cr) has pre/corequisite MAT 210 (plus ESL 35).",
+      "code": "CSC 2XX-A",
+      "credits": 3,
+      "options": [
+       "CSC 205",
+       "CSC 215"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Science sequence — CSC 205 Discrete Mathematics or CSC 215 Modern Programming (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "If needed due to placement.",
+      "code": "MAT 160",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 150"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Pre-Calculus",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Literature and Composition",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Flexible Common Core: Scientific World.",
+      "code": "SCW 220",
+      "credits": 4,
+      "options": [
+       "CHE 220",
+       "BIO 220",
+       "PHY 220"
+      ],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Scientific World — CHE 220 or BIO 220 or PHY 220 (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Required Common Core: Mathematical and Quantitative Reasoning.",
+      "code": "MAT 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 160"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one course toward the 13-16 credit Computer Science sequence. Catalog prereqs differ by option: CSC 205 Discrete Mathematics (4 cr) requires MAT 160; CSC 215 Modern Programming (3 cr) has pre/corequisite MAT 210 (plus ESL 35).",
+      "code": "CSC 2XX-B",
+      "credits": 3,
+      "options": [
+       "CSC 205",
+       "CSC 215"
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Computer Science sequence — CSC 205 Discrete Mathematics or CSC 215 Modern Programming (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose another course toward the 13-16 credit Computer Science sequence. Catalog prereqs by option: CSC 275 Object Oriented Programming requires CSC 215; CSC 300 Data Structures requires CSC 205 and CSC 215; CSC 375 Computer Networking requires CSC 215; CSC 395 Web and Mobile Application Development requires CSC 215. + Students transferring to John Jay College should take CSC 300 Data Structures. ** CSC 395 may substitute for MAT 310 Calculus III.",
+      "code": "CSC 3XX-A",
+      "credits": 3,
+      "options": [
+       "CSC 275",
+       "CSC 300",
+       "CSC 375",
+       "CSC 395"
+      ],
+      "prereq": [
+       "CSC 2XX-A",
+       "CSC 2XX-B"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Science sequence — CSC 275 Object Oriented Programming, CSC 300 Data Structures, CSC 375 Computer Networking, or CSC 395 Web and Mobile Application Development (choose another course)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 220",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 210"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Flexible Common Core category. The catalog strongly recommends HUM 100 Introduction to Global Humanities.",
+      "code": "WC 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "World Cultures and Global Issues (choose one course)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Flexible Common Core category. The catalog strongly recommends SOC 101 Introduction to Sociology or PSY 101 General Psychology.",
+      "code": "IS 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Individual and Society (choose one course)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective. Writing Intensive recommended. Students who do not place into MAT 160 or higher take MAT 150 College Algebra with Trigonometric Functions (4 cr) as a free elective.",
+      "code": "ELEC 3XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Free Elective — Writing Intensive recommended",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Flexible Common Core category. The catalog strongly recommends COM 110 Public Speaking.",
+      "code": "CE 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Creative Expression (choose one course)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose another course toward the 13-16 credit Computer Science sequence. Catalog prereqs by option: CSC 275 Object Oriented Programming requires CSC 215; CSC 300 Data Structures requires CSC 205 and CSC 215; CSC 375 Computer Networking requires CSC 215; CSC 395 Web and Mobile Application Development requires CSC 215. + Students transferring to John Jay College should take CSC 300 Data Structures. ** CSC 395 may substitute for MAT 310 Calculus III.",
+      "code": "CSC 3XX-B",
+      "credits": 3,
+      "options": [
+       "CSC 275",
+       "CSC 300",
+       "CSC 375",
+       "CSC 395"
+      ],
+      "prereq": [
+       "CSC 2XX-A",
+       "CSC 2XX-B"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Science sequence — CSC 275 Object Oriented Programming, CSC 300 Data Structures, CSC 375 Computer Networking, or CSC 395 Web and Mobile Application Development (choose another course)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Flexible Common Core category. The catalog strongly recommends HIS 210 United States History: Through the Civil War or HIS 211 Reconstruction to the Present.",
+      "code": "US 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "U.S. Experience in Its Diversity (choose one course)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 217",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 210"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One additional course from the Flexible Common Core.",
+      "code": "FCC 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Additional Flexible Common Core course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective. Writing Intensive recommended. Students who do not place into MAT 160 or higher take MAT 150 College Algebra with Trigonometric Functions (4 cr) as a free elective.",
+      "code": "ELEC 4XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Free Elective — Writing Intensive recommended",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 5
+   }
+  ],
+  "source_url": "https://hostos.cuny.edu/Hostos/media/Office-of-Academic-Affairs/Academic-Advisement/Computer-Science-AS-Degree-Map-updated-for-DEV-ED-Spring-2023-updated-9-12-2022.pdf",
+  "total_credits": 64,
+  "content_hash": "7652a10548783a8ad5ad8b49c786bc8cc691cc3056cd5bab9b2af9d93a1b9ad6",
+  "last_verified": "2026-10-02"
+ }
+}

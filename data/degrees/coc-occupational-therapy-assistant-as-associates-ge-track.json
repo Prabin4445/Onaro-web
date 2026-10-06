@@ -1,0 +1,561 @@
+{
+ "institution": {
+  "city": "Santa Clarita, CA",
+  "kind": "community",
+  "name": "College of the Canyons",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "coc-occupational-therapy-assistant-as-associates-ge-track",
+  "major": "Occupational Therapy Assistant (Associates GE Track)",
+  "notes": "Official College of the Canyons 'Occupational Therapy Assistant AS (Associates GE Track)' course map, marked 'Updated 8/25/2025 CY 25-26'. Transcribed 2026-10-02 from the official PDF; every course code, title, and unit value copied verbatim. Seven sequenced semesters; total_credits 81.5 = sequenced sum at lower bounds (12+13+13+12+12+6+13.5), matching the map's printed 'Total Units: 81.5 - 82.5 units'. Credit range seeded at the source's lower bound: STAT-C1000 Introduction to Statistics 4-5 units seeded at 4. 'X or Y' slots use the first-listed code: ENGL-C1000 (or ENGL-C1000H), STAT-C1000 (or STAT-C1000H), BIOSCI 201 (or BIOSCI 204), BIOSCI 202 (or BIOSCI 205). Choice slots: Biology Group (BIOSCI 100/101/107, 4 units, dept recommends BIOSCI 101), Social Science Group (dept prefers PSYC-C1000 or PSYCH 240; options also SOCIO 101, ANTHRO 103), Arts or Humanities GE (any, Area 3), Ethnic Studies GE (any, Area 6). The Seventh Semester row prints 'OTA 232 & OTA 242' as a single 1-unit row (Exam Preparation for Occupational Therapy Assistants); kept verbatim as one course entry. The map labels semesters 1-3 courses as Prerequisite/Area or Prerequisite/Major but prints no per-course prerequisite text, so prereq arrays are empty and sequencing follows the official placement. All program courses are sequenced in the map, so external_prereqs is empty.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one Biology course from the group (Prerequisite/Area 5; any of these meet the prerequisite for Anatomy and Physiology); department recommends BIOSCI 101.",
+      "code": "BIOSCI 100",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOSCI 100",
+        "credits": 4,
+        "title": "General Biology"
+       },
+       {
+        "code": "BIOSCI 101",
+        "credits": 4,
+        "title": "Introductory Biology for Health Professions"
+       },
+       {
+        "code": "BIOSCI 107",
+        "credits": 4,
+        "title": "Molecular and Cellular Biology"
+       }
+      ],
+      "prereq": [],
+      "title": "General Biology",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENGL-C1000 or ENGL-C1000H Academic Reading and Writing (FA, WI, SP, SU) (Prerequisite/Area 1A).",
+      "code": "ENGL-C1000",
+      "credits": 4,
+      "options": [
+       {
+        "code": "ENGL-C1000",
+        "credits": 4,
+        "title": "Academic Reading and Writing"
+       },
+       {
+        "code": "ENGL-C1000H",
+        "credits": 4,
+        "title": "Academic Reading and Writing"
+       }
+      ],
+      "prereq": [],
+      "title": "Academic Reading and Writing",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "STAT-C1000 or STAT-C1000H Introduction to Statistics (FA, WI, SP, SU) (Prerequisite/Area 2); map prints 4-5 units, seeded at the lower bound per convention.",
+      "code": "STAT-C1000",
+      "credits": 4,
+      "options": [
+       {
+        "code": "STAT-C1000",
+        "credits": 4,
+        "title": "Introduction to Statistics"
+       },
+       {
+        "code": "STAT-C1000H",
+        "credits": 4,
+        "title": "Introduction to Statistics"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Statistics",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BIOSCI 201 Introduction to Human Anatomy or BIOSCI 204 Human Anatomy and Physiology I (5-year recency) (Prerequisite/Major Course).",
+      "code": "BIOSCI 201",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOSCI 201",
+        "credits": 4,
+        "title": "Introduction to Human Anatomy"
+       },
+       {
+        "code": "BIOSCI 204",
+        "credits": 4,
+        "title": "Human Anatomy and Physiology I"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Human Anatomy",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Social Science course from the group (Prerequisite/Area 4); department prefers PSYC-C1000 Intro to Psychology or PSYCH 240.",
+      "code": "PSYC-C1000",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PSYC-C1000",
+        "credits": 3,
+        "title": "Introduction to Psychology"
+       },
+       {
+        "code": "PSYCH 240",
+        "credits": 3,
+        "title": "Abnormal Psychology"
+       },
+       {
+        "code": "SOCIO 101",
+        "credits": 3,
+        "title": "Introduction to Sociology"
+       },
+       {
+        "code": "ANTHRO 103",
+        "credits": 3,
+        "title": "Cultural Anthropology"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Psychology",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HLHSCI 249",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Medical Terminology",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose any Arts or Humanities GE course (Area 3).",
+      "code": "ARTS-HUMANITIES-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Arts or Humanities GE Course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BIOSCI 202 Introduction to Human Physiology or BIOSCI 205 Human Anatomy and Physiology II (5-year recency) (Prerequisite/Major course).",
+      "code": "BIOSCI 202",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOSCI 202",
+        "credits": 4,
+        "title": "Introduction to Human Physiology"
+       },
+       {
+        "code": "BIOSCI 205",
+        "credits": 4,
+        "title": "Human Anatomy and Physiology II"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Human Physiology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "Psych 172",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Developmental Psychology",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM-C1000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one class from Ethnic Studies GE (Area 6).",
+      "code": "ETHNIC-STUDIES-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Ethnic Studies GE Course",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Third Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 100",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Occupational Therapy: Theory and Practice",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Biomechanics and Applied Kinesiology in Occupational Therapy",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 120L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Biomechanics and Applied Kinesiology in Occupational Therapy Lab",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 130",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Theory and Process in Neurological Disorders and Psychosocial Issues",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 130L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Theory and Process in Neurological Disorders and Psychosocial Issues Lab",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 110",
+      "credits": 1.5,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Activity Analysis & Documentation",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 133",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "title": "Level I Fieldwork in Neurological and Psychosocial Issues",
+      "slot_id": "s4-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fourth Semester (Fall)",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 141",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Conditions and Wellness in Occupational Therapy",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 161",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Pediatric Occupational Therapy: Theory and Practice in Developmental Disabilities and Conditions",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 161L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Pediatric Occupational Therapy: Theory and Practice in Developmental Disabilities and Conditions Lab",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 151",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Advanced Clinical Documentation for Occupational Therapy",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 171",
+      "credits": 3.5,
+      "options": [],
+      "prereq": [],
+      "title": "Physical Dysfunction and Rehabilitation for Adults: Theory and Practice",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 171L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Physical Dysfunction and Rehabilitation for Adults: Theory and Practice Lab",
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 163",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "title": "Level I Fieldwork in Developmental Disabilities and Pediatric Conditions",
+      "slot_id": "s5-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fifth Semester (Spring)",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 202",
+      "credits": 1.5,
+      "options": [],
+      "prereq": [],
+      "title": "Management of Occupational Therapy Services",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 212",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Evidence-Based Practice in Occupational Therapy Interventions",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 222L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Clinical Competency and Reasoning Skills Lab",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 173",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "title": "Level I Fieldwork in Physical Dysfunction and Adult Rehabilitation",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sixth Semester (Summer)",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "The official map lists 'OTA 232 & OTA 242' as a single 1-unit row; kept verbatim as one course entry.",
+      "code": "OTA 232 & OTA 242",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Exam Preparation for Occupational Therapy Assistants",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 233",
+      "credits": 6.25,
+      "options": [],
+      "prereq": [],
+      "title": "OTA Level II Fieldwork: First Rotation",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA 243",
+      "credits": 6.25,
+      "options": [],
+      "prereq": [],
+      "title": "OTA Level II Fieldwork: Second Rotation",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Seventh Semester (Fall)",
+    "n": 7
+   }
+  ],
+  "source_url": "https://www.canyons.edu/_documents/academics/ota/OTA-GE-Track-Course-Map-2025-2026.pdf",
+  "total_credits": 81.5,
+  "content_hash": "3d63fb6d7af228c3ebb9dfbd9b13480ad8c706886aa69f611fd9a6c1b5f47739",
+  "last_verified": "2026-10-02"
+ }
+}

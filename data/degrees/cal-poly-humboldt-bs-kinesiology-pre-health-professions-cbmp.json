@@ -1,0 +1,651 @@
+{
+ "institution": {
+  "city": "Arcata, CA",
+  "kind": "public",
+  "name": "Cal Poly Humboldt",
+  "state": "CA"
+ },
+ "plan": {
+  "allow_repeated_courses": true,
+  "catalog_year": "2025-2026",
+  "degree": "BS+MS",
+  "external_prereqs": [],
+  "id": "cal-poly-humboldt-bs-kinesiology-pre-health-professions-cbmp",
+  "major": "Kinesiology, Pre-Health Professions Concentration + Kinesiology, M.S.",
+  "notes": "Source: official Cal Poly Humboldt 2025-2026 Catalog, 'Kinesiology, Pre-Health Professions Concentration, B.S. + Kinesiology, M.S. Combined Bachelor's and Master's Pathway 5-Year MAP'. https://catalog.humboldt.edu/preview_program.php?catoid=14&poid=8828 This is a 5-year (10-semester) blended CBMP; students may double-count up to 12 units in Year 4. total_credits (141) is the exact sum of the encoded slots. KINS 690 (Thesis Writing Seminar, 1-6 units) appears in Semesters 9 and 10 as a multi-semester thesis; 3 units encoded per semester (within the 1-6 range) so each semester reconciles to its header (Sem 9: 3+3+6=12; Sem 10: 3+6=9); allow_repeated_courses is true for this genuine repeat. Semester 1 'CHEM 109 (5) or KINS 288' is encoded as CHEM 109 (5 units) since KINS 288 units are not printed; the 14-unit header matches the CHEM 109 path. 'MS Major Double-counting BS' slots are graduate courses counting toward both degrees. GE, American Institutions, DCG, and Elective-or-Minor slots are chosen with an advisor. Per-slot prerequisites are not published on MAP pages, so prereq arrays are intentionally empty.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'CHEM 109 - General Chemistry I Units: 5 or KINS 288 - Foundations of Science in Kinesiology' (Major, Core, Lower Division) and Lower Division GE Area 5A: Physical Science (Includes a Laboratory Activity GE Area 5C); KINS 288 units not printed, so CHEM 109 (5 units) encoded; the 14-unit header matches the CHEM 109 path.",
+      "code": "CHEM 109",
+      "credits": 5,
+      "options": [
+       "CHEM 109",
+       "KINS 288"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Chemistry I",
+      "xfer": [],
+      "slot_id": "s1-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "KINS 165",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Foundations of Kinesiology",
+      "xfer": [],
+      "slot_id": "s1-1"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 1A course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 1A: Written Communication",
+      "xfer": [],
+      "slot_id": "s1-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 4: Social Sciences",
+      "xfer": [],
+      "slot_id": "s1-3"
+     }
+    ],
+    "n": 1,
+    "term": "Fall Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division) and Lower Division GE Area 5B: Biological Science.",
+      "code": "BIOL 105",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Principles of Biology",
+      "xfer": [],
+      "slot_id": "s2-0"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'STAT 108 - Elementary Statistics Units: 3 or STAT 108I - Elementary Statistics with Integrated Support' (Major, Concentration, Pre-Health Profession, Lower Division) and Lower Division GE Area 2: Mathematics.",
+      "code": "STAT 108",
+      "credits": 3,
+      "options": [
+       "STAT 108",
+       "STAT 108I"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elementary Statistics",
+      "xfer": [],
+      "slot_id": "s2-1"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 1B course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 1B: Critical Thinking",
+      "xfer": [],
+      "slot_id": "s2-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 1C course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 1C: Speech Communication",
+      "xfer": [],
+      "slot_id": "s2-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt UD GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Upper Division GE Area 4: Social Sciences and American Institutions: U.S. History",
+      "xfer": [],
+      "slot_id": "s2-4"
+     }
+    ],
+    "n": 2,
+    "term": "Spring Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "ZOOL 113",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Physiology",
+      "xfer": [],
+      "slot_id": "s3-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "HED 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Basic Human Nutrition",
+      "xfer": [],
+      "slot_id": "s3-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Concentration, Pre-Health Professions, Lower Division).",
+      "code": "KINS 244",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Medical Terminology",
+      "xfer": [],
+      "slot_id": "s3-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 3A course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 3A: Arts",
+      "xfer": [],
+      "slot_id": "s3-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "American Institutions requirement",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "American Institutions: U.S. and California Government (3 units)",
+      "xfer": [],
+      "slot_id": "s3-4"
+     }
+    ],
+    "n": 3,
+    "term": "Fall Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "ZOOL 270",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Anatomy",
+      "xfer": [],
+      "slot_id": "s4-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 385",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Adapted Physical Activity",
+      "xfer": [],
+      "slot_id": "s4-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "HED 392",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Community and Population Health",
+      "xfer": [],
+      "slot_id": "s4-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 484",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Motor Development/Motor Learning",
+      "xfer": [],
+      "slot_id": "s4-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 3B course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 3B: Humanities",
+      "xfer": [],
+      "slot_id": "s4-4"
+     }
+    ],
+    "n": 4,
+    "term": "Spring Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Concentration, Pre-Health Professions, Lower Division).",
+      "code": "PHYX 106",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "College Physics: Mechanics and Heat",
+      "xfer": [],
+      "slot_id": "s5-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "HED 120",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Responding to Emergencies - CPRFPR",
+      "xfer": [],
+      "slot_id": "s5-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 379",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Exercise Physiology",
+      "xfer": [],
+      "slot_id": "s5-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 483",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Evaluation Techniques in Kinesiology",
+      "xfer": [],
+      "slot_id": "s5-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt UD GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Upper Division GE Area 4: Social Sciences and Diversity and Common Ground: Domestic",
+      "xfer": [],
+      "slot_id": "s5-4"
+     }
+    ],
+    "n": 5,
+    "term": "Fall Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Concentration, Pre-Health Profession, Lower Division).",
+      "code": "PHYX 107",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "College Physics: Electromagnetism and Modern Physics",
+      "xfer": [],
+      "slot_id": "s6-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Concentration, Pre-Health Profession, Upper Division).",
+      "code": "PSYC 338",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Abnormal Psychology",
+      "xfer": [],
+      "slot_id": "s6-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 386",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Structural Kinesiology",
+      "xfer": [],
+      "slot_id": "s6-2"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Concentration, Pre-Health Profession, Elective Requirement) Units: 4' - specific course chosen with advisor.",
+      "code": "Elective Requirement",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pre-Health Professions Elective Requirement (4 units)",
+      "xfer": [],
+      "slot_id": "s6-3"
+     }
+    ],
+    "n": 6,
+    "term": "Spring Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: MS Major Double-counting BS (Required Courses).",
+      "code": "KINS 635",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Research Methods in Kinesiology",
+      "xfer": [],
+      "slot_id": "s7-0"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MS Major Double-counting BS (In-Depth Area of Study) Units: 3' - specific graduate course chosen with advisor; double-counts toward BS and MS.",
+      "code": "In-Depth Area of Study",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "MS In-Depth Area of Study (double-counting, 3 units)",
+      "xfer": [],
+      "slot_id": "s7-1"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Concentration, Pre-Health Professions, Elective Requirement) Units: 3' - specific course chosen with advisor.",
+      "code": "Elective Requirement",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pre-Health Professions Elective Requirement (3 units)",
+      "xfer": [],
+      "slot_id": "s7-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt UD GE Area 3 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Upper Division GE Area 3: Arts or Humanities and Diversity and Common Ground: Domestic or Non-Domestic",
+      "xfer": [],
+      "slot_id": "s7-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 6 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting GE Area 6: Ethnic Studies",
+      "xfer": [],
+      "slot_id": "s7-4"
+     }
+    ],
+    "n": 7,
+    "term": "Fall Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "KINS 492W",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Senior Project in Kinesiology",
+      "xfer": [],
+      "slot_id": "s8-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: MS Major Double-counting in BS (Required Courses).",
+      "code": "KINS 610",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Statistics for Kinesiology",
+      "xfer": [],
+      "slot_id": "s8-1"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Concentration, Pre-Health Professions, Elective Requirement) Units: 3' - specific course chosen with advisor.",
+      "code": "Elective Requirement",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pre-Health Professions Elective Requirement (3 units)",
+      "xfer": [],
+      "slot_id": "s8-2"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MS Major Double-counting in BS (Directed Elective Courses) Units: 3' - specific graduate course chosen with advisor; double-counts toward BS and MS.",
+      "code": "Directed Elective",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "MS Directed Elective (double-counting, 3 units)",
+      "xfer": [],
+      "slot_id": "s8-3"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "",
+      "code": "Elective or Minor",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective or minor (3 units)",
+      "xfer": [],
+      "slot_id": "s8-4"
+     }
+    ],
+    "n": 8,
+    "term": "Spring Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: 'MS Major (Capstone, Thesis/Project Options) KINS 690 - Thesis Writing Seminar Units: 1-6'; 3 units encoded (within 1-6 range) so Semester 9 reconciles to its 12-unit header. Multi-semester thesis; see also Semester 10.",
+      "code": "KINS 690",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Thesis Writing Seminar",
+      "xfer": [],
+      "slot_id": "s9-0"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MS Major (Required Courses) KINS 695 - Directed Field Experience or KINS 699 - Independent Study Units: 1-6'; 3 units encoded (within 1-6 range) so Semester 9 reconciles to its 12-unit header.",
+      "code": "KINS 695",
+      "credits": 3,
+      "options": [
+       "KINS 695",
+       "KINS 699"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Directed Field Experience",
+      "xfer": [],
+      "slot_id": "s9-1"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MS Major (In-Depth Area of Study) Units: 6' - specific graduate courses chosen with advisor.",
+      "code": "In-Depth Area of Study",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "MS In-Depth Area of Study (6 units)",
+      "xfer": [],
+      "slot_id": "s9-2"
+     }
+    ],
+    "n": 9,
+    "term": "Fall Year 5"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: 'MS Major (Capstone, Thesis/Project Options) KINS 690 - Thesis Writing Seminar Units: 1-6'; 3 units encoded (within 1-6 range) so Semester 10 reconciles to its 9-unit header. Multi-semester thesis; see also Semester 9.",
+      "code": "KINS 690",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Thesis Writing Seminar",
+      "xfer": [],
+      "slot_id": "s10-0"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MS Major (Directed Elective Courses) Units: 6' - specific graduate courses chosen with advisor.",
+      "code": "Directed Elective",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "MS Directed Elective (6 units)",
+      "xfer": [],
+      "slot_id": "s10-1"
+     }
+    ],
+    "n": 10,
+    "term": "Spring Year 5"
+   }
+  ],
+  "source_url": "https://catalog.humboldt.edu/preview_program.php?catoid=14&poid=8828",
+  "total_credits": 141,
+  "content_hash": "b062f7c0c409f13a6cf01e4aaecb3b30f886d93621d59c67f0ead033f16e5c49",
+  "last_verified": "2026-10-02"
+ }
+}

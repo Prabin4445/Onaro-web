@@ -1,0 +1,436 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-aas-engineering-technology",
+  "degree": "AAS",
+  "major": "Engineering Technology",
+  "total_credits": 72,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/engineering-technology-3187-aas",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/engineering-technology-3187-aas), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "ECE 102",
+      "title": "Engineering Analysis Tools and Techniques",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CIS 105",
+      "title": "Survey of Computer Information Systems",
+      "credits": 3,
+      "category": "major",
+      "core_area": "CS",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "MAT 187",
+      "title": "Precalculus",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MAT187 or MAT220 or MAT221: Precalculus or Calculus with Analytic Geometry I or Calculus with Analytic Geometry I",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 188"
+      ],
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "ECE 103",
+      "title": "Engineering Problem Solving and Design",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "ECE 102"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "CRE 101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 3,
+      "category": "major",
+      "core_area": "L",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107",
+       "RDG 095",
+       "RDG 100",
+       "RDG 100LL",
+       "RDG 111",
+       "RDG 112",
+       "RDG 113"
+      ],
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "PHY 111",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ or NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "MAT 187"
+      ],
+      "choice": true,
+      "choice_note": "PHY111 or PHY121: General Physics I or University Physics I: Mechanics",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 182",
+       "MAT 188",
+       "MAT 220",
+       "MAT 221"
+      ],
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "CIS 150",
+      "title": "Programming Fundamentals",
+      "credits": 4,
+      "category": "major",
+      "core_area": "None or CS or CS or CS or CS or CS or CS or CS or CS or CS",
+      "tccns": "",
+      "prereq": [
+       "CIS 105"
+      ],
+      "choice": true,
+      "choice_note": "CIS150 or CIS150AB or CIS156 or CIS159 or CIS162AB or CIS162AD or CIS163AA or CSC100 or CSC100AA or CSC100AB or CSC110 or CSC110AA or CSC110AB: Programming Fundamentals or Object-Oriented Programming Fundamentals or Python Programming: Level I or Visual Basic Programming I or C++: Level I or C#: Level I or Java Programming: Level I or Introduction to Computer Science (C++) or Introduction to Computer Science (C++) or Introduction to Computer Science (C++) or Introduction to Computer Science (Java) or Introduction to Computer Science (Java) or Introduction to Computer Science (Java)",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 120",
+       "MAT 121",
+       "MAT 122",
+       "MAT 114",
+       "MAT 115"
+      ],
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "ECE 216AA",
+      "title": "Computer-Aided Engineering",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "ECE 103"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "PHY 112",
+      "title": "General Physics II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ or NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "PHY 111"
+      ],
+      "choice": true,
+      "choice_note": "PHY112 or PHY131: General Physics II or University Physics II: Electricity and Magnetism",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 230",
+       "MAT 231",
+       "PHY 121",
+       "MAT 241"
+      ],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "COM 100",
+      "title": "Introduction to Human Communication",
+      "credits": 3,
+      "category": "major",
+      "core_area": "SB, SCB or SB, SCB or L, OCM or SB, SCB",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "COM100 or COM110 or COM225 or COM230: Introduction to Human Communication or Interpersonal Communication or Public Speaking or Small Group Communication",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_BEHAVIORAL_SCIENCES",
+      "title": "Social-Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social-Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "ECE 104",
+      "title": "EPICS Gold I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECE104 or ECE294++ or ECE296++ or ECE298++: EPICS Gold I or Special Topics in Engineering or Cooperative Education or Special Projects",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "HUMANITIES_FINE_ARTS_DESIGN",
+      "title": "Humanities, Fine Arts & Design",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "HU",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Humanities, Fine Arts & Design",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "CHM 130",
+      "title": "(Fundamental Chemistry and Fundamental Chemistry Laboratory)",
+      "credits": 6,
+      "category": "major",
+      "core_area": "NSI in combo w/ CHM130LL; and NSI in combo w/ CHM130; or NSI, SQ or NSI, SQ or SQ in combo w/ CHM151LL and NSI in combo w/ CHM150 or CHM151; or SQ or NSI in combo w/ CHM151LL; and NSI in combo w/ CHM150 or CHM151; or NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "CRE 101"
+      ],
+      "choice": true,
+      "choice_note": "(CHM130 and CHM130LL) or CHM130AA or CHM140AA or (CHM150 and CHM151LL) or CHM150AA or (CHM151 and CHM151LL) or CHM151AA: (Fundamental Chemistry and Fundamental Chemistry Laboratory) or Fundamental Chemistry with Lab or General Chemistry for Engineers with Lab or (General Chemistry I and General Chemistry I Laboratory) or General Chemistry I or (General Chemistry I and General Chemistry I Laboratory) or General Chemistry I with Lab",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CHM 100",
+       "MAT 140",
+       "RDG 100",
+       "RDG 100LL",
+       "CHM 130LL",
+       "CHM 130AA",
+       "MAT 151",
+       "CHM 150",
+       "CHM 151"
+      ],
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "70021b9ac05c541bad908966fa8c9153ce1ad7152ad059770f79ea30e63ef33d",
+  "last_verified": "2026-10-02"
+ }
+}

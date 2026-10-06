@@ -1,0 +1,629 @@
+{
+ "institution": {
+  "city": "Boston, MA",
+  "kind": "private4yr",
+  "name": "Northeastern University",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "northeastern-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Northeastern University Academic Catalog (live catalog, 2026-2027 edition per the Office of the University Registrar, registrar.northeastern.edu/article/2026-2027-catalog-and-course-descriptions/), program page 'Computer Science, BSCS (Boston)', Khoury College of Computer Sciences. Source URL: https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/ (same content as the page PDF bscs.pdf). Program intro: 'The Bachelor of Science in Computer Science focuses on the fundamentals of program design, software development, computer organization, systems and networks, theories of computation, principles of languages, and advanced algorithms and data.' Transcription method: manual transcription of the catalog's official 'Sample Plan of Study: Four Years, Two Coops in Spring/Summer First Half' (Total Hours: 135). Caveats: (1) The catalog presents each year as Fall / Spring / Summer 1 / Summer 2; Summer 1 and Summer 2 half-terms are merged here into a single 'Summer Year N' term, giving 11 terms total. (2) Plan lines that pair a course with its co-requisite lab/seminar (CS 1800 and CS 1802; CS 2000 and CS 2001; CS 2100 and CS 2101; CS 3100 and CS 3101; EECE 2310 and EECE 2311) are recorded as one slot under the parent course code with the plan's combined semester hours; the co-requisite is taken in the same term per the catalog. (3) The catalog plan does not list per-course prerequisites, so every prereq array is empty; no prerequisites were invented. (4) The catalog's program requirement is 133 total semester hours; the transcribed official sample plan totals 135 hours, which is used as total_credits. (5) A second official sample plan ('Four Years, Two Coops in Summer Second Half/Fall', also 135 hours) appears in the same catalog PDF and is not transcribed here. (6) Student-choice slots use choice:true with placeholder codes and descriptive titles; the catalog's official option lists are given in options/choice_note. (7) Co-op terms are 0-semester-hour required entries (required_zero:true) shown in the official plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1200",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1800",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2000",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Program Design and Implementation",
+      "xfer": []
+     },
+     {
+      "category": "writing",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGW 1111",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "First-Year Writing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Complete one of the following (4 semester hours).",
+      "code": "MATH-1365-1465",
+      "credits": 4,
+      "options": [
+       "MATH 1365",
+       "MATH 1465"
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "MATH 1365 Introduction to Mathematical Reasoning or MATH 1465 Intensive Mathematical Reasoning",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2100",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Program Design and Implementation 1",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1341",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus 1 for Science and Engineering",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any approved 4-semester-hour natural science course (university science requirement).",
+      "code": "SCI-REQUIREMENT",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Science Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3100",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Program Design and Implementation 2",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1210",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Professional Development for Khoury Co-op",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3000",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Algorithms and Data",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3650",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DS 3000",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Mathematical Foundations of Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any approved 4-semester-hour natural science course (university science requirement).",
+      "code": "SCI-REQUIREMENT",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Science Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP-Y2SP",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Co-op",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP-Y2SU",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Co-op",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EECE 2310",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Introduction to Digital Design and Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3800",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Complete one of the following approved Computing and Social Issues courses: AFCS 2600, CY 4170, CY 5240, DS 1300 or PHIL 1300, HIST 2220, INSH 2102, JRNL 3700, PHIL 1145, SOCL 1280, SOCL 2485, or SOCL 4528.",
+      "code": "COMP-SOC-ISSUES",
+      "credits": 4,
+      "options": [
+       "AFCS 2600",
+       "CY 4170",
+       "CY 5240",
+       "DS 1300",
+       "PHIL 1300",
+       "HIST 2220",
+       "INSH 2102",
+       "JRNL 3700",
+       "PHIL 1145",
+       "SOCL 1280",
+       "SOCL 2485",
+       "SOCL 4528"
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computing and Social Issues",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour course in the student's chosen Computer Science concentration: Artificial Intelligence, Foundations, Human-Centered Computing, Software, or Systems (four concentration courses total across the plan).",
+      "code": "CONCENTRATION-COURSE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour course in the student's chosen Computer Science concentration: Artificial Intelligence, Foundations, Human-Centered Computing, Software, or Systems (four concentration courses total across the plan).",
+      "code": "CONCENTRATION-COURSE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Concentration Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP-Y3SP",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Co-op",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP-Y3SU",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Co-op",
+      "xfer": []
+     },
+     {
+      "category": "writing",
+      "choice": true,
+      "choice_note": "Complete one of the following (4 semester hours).",
+      "code": "ENGW-3302-3315",
+      "credits": 4,
+      "options": [
+       "ENGW 3302",
+       "ENGW 3315"
+      ],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "ENGW 3302 Advanced Writing in the Technical Professions or ENGW 3315 Interdisciplinary Advanced Writing in the Disciplines",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour course in the student's chosen Computer Science concentration: Artificial Intelligence, Foundations, Human-Centered Computing, Software, or Systems (four concentration courses total across the plan).",
+      "code": "CONCENTRATION-COURSE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour Khoury approved elective: CS 2300 or higher (except CS 5010); CY 2000 or higher (except CY 4930); DS 2500 or higher (except DS 4900); EECE 2160 Embedded Design: Enabling Robotics; EECE 2322 and EECE 2323 Fundamentals of Digital Design and Computer Organization; or MKTG 4606 Digital, Analytics, Technology, and Automation Research Practicum.",
+      "code": "KHOURY-ELECTIVE",
+      "credits": 4,
+      "options": [
+       "EECE 2160",
+       "EECE 2322",
+       "MKTG 4606"
+      ],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Khoury Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Complete one of the following approved presentation courses: COMM 1112, COMM 1113, COMM 1210, COMM 1511, THTR 1125, THTR 1130, THTR 1180, or THTR 2345.",
+      "code": "PRESENTATION-REQ",
+      "credits": 4,
+      "options": [
+       "COMM 1112",
+       "COMM 1113",
+       "COMM 1210",
+       "COMM 1511",
+       "THTR 1125",
+       "THTR 1130",
+       "THTR 1180",
+       "THTR 2345"
+      ],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Presentation Requirement",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Complete one of the following (4 semester hours): CY 2550 Foundations of Cybersecurity, CY 3740 Systems Security, or CY 4740 Network Security.",
+      "code": "SECURITY-COURSE",
+      "credits": 4,
+      "options": [
+       "CY 2550",
+       "CY 3740",
+       "CY 4740"
+      ],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "Security Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Complete one of the following (4 semester hours): CS 4530 Fundamentals of Software Engineering or CS 4535 Professional Practicum Capstone.",
+      "code": "CS-4530-4535",
+      "credits": 4,
+      "options": [
+       "CS 4530",
+       "CS 4535"
+      ],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "CS 4530 Fundamentals of Software Engineering or CS 4535 Professional Practicum Capstone",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour course in the student's chosen Computer Science concentration: Artificial Intelligence, Foundations, Human-Centered Computing, Software, or Systems (four concentration courses total across the plan).",
+      "code": "CONCENTRATION-COURSE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-1",
+      "tccns": "",
+      "title": "Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any 4-semester-hour general elective course.",
+      "code": "GEN-ELECTIVE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One 4-semester-hour Khoury approved elective: CS 2300 or higher (except CS 5010); CY 2000 or higher (except CY 4930); DS 2500 or higher (except DS 4900); EECE 2160 Embedded Design: Enabling Robotics; EECE 2322 and EECE 2323 Fundamentals of Digital Design and Computer Organization; or MKTG 4606 Digital, Analytics, Technology, and Automation Research Practicum.",
+      "code": "KHOURY-ELECTIVE",
+      "credits": 4,
+      "options": [
+       "EECE 2160",
+       "EECE 2322",
+       "MKTG 4606"
+      ],
+      "prereq": [],
+      "slot_id": "s11-3",
+      "tccns": "",
+      "title": "Khoury Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 11
+   }
+  ],
+  "source_url": "https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/",
+  "total_credits": 135,
+  "content_hash": "cf19ad8e53d9d7d97407d44eee849c409a56be7c958007f795ab9f4bd808e0a1",
+  "last_verified": "2026-10-02"
+ }
+}

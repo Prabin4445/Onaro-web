@@ -1,0 +1,585 @@
+{
+ "institution": {
+  "city": "Hammond, IN",
+  "kind": "public",
+  "name": "Purdue University Northwest",
+  "state": "IN"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "pnw-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Purdue University Northwest 2025-2026 Academic Catalog (Modern Campus Catalog), 'Degree Program: Computer Science, BS' — https://catalog.pnw.edu/preview_program.php?catoid=13&poid=5337&returnto=1955 — which publishes an official 8-semester Degree Map with per-term totals. True degree verified: PNW awards the Bachelor of Science (B.S.) in Computer Science (College of Engineering and Sciences, Department of Computer Science). Transcription method: course rows transcribed verbatim from the catalog's Degree Map; the catalog's print view (captured 2026-03-03; the print endpoint rejects direct fetches with HTTP 403) was cross-checked against official catalog.pnw.edu crawls of the same page. Per-course credits: taken from the catalog's requirement blocks where printed (CS 10000=1 FYE; CS 12300=4 Technology; ENGL 10400/10500=3 each; COM 11400=3; MA 16300=5 Quantitative Reasoning); CS 12400=4, CS 12600=4, MA 16400=4 derived from the published Major Core 58-credit total together with Semester 2's exact 15-credit total (the three unknown courses must sum to 12; 4+4+4 also makes the full Major Core arithmetic close exactly at 58 — see scratch EVIDENCE.md); standard Purdue values MA 26100=4, MA 26500=3, STAT 34500=3, all other named CS courses=3, capstone choice=3. Range slots modeled inside published ranges: Semester 1 Natural Science with Lab at 4 cr; Semester 5 sciences at 3+3; Semester 7 as four 3-cr free electives; Semester 8 free electives as three 3-cr slots (9 cr, within the published 8-10). Term sums 17+15+16+15+15+15+15+12=120 equals the catalog's published 120-credit degree total; every term total falls inside its published range. Free-elective block totals 24 cr (within published 23-25). Catalog notes carried: Note 1 (ENGL 10800 substitution requires a Gen Ed approved writing-intensive English course); Note 2 (capstone choose-one may be taken in Semester 7 or 8); Note 3 (not all courses offered every semester). Milestone course: CS 27500 (m). Experiential Learning (e): ENGL 10500 and the capstone choice. The degree map prints no per-course prereqs, so all prereq lists are empty; no placement/assessment requirements are stated. Catalog spells the Semester 3 humanities slot 'Humanitites' (sic). Caveats: (1) PNW is a two-campus university (Hammond/Westville) — some courses are campus-specific, noted (H) in the catalog; (2) CS/Other electives beyond the required list must be MA 26400, CS 20600, or 30000-level+ MA/STAT/CS courses; (3) minimum grade C in all Major Core (including MA 16300 and CS 12300), 2.0 GPA required.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 10000",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "An Introduction To Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 12300",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Programming I: Java",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 10400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "English Composition I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 16300",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Integrated Calculus Analysis Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Student selects any Natural Science course with Lab from the PNW Natural Sciences Core List. Modeled at 4 credits (term total 17, within the published 16-17 range); a 3-credit choice keeps the term in range.",
+      "code": "NATSCI-LAB-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Natural Science with Lab (Natural Sciences Core List)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 12400",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming II: Object-Oriented Java",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 12600",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Systems Programming In C",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 10500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 16400",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Integrated Calculus Analysis Geometry II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 11400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Fundamentals Of Speech Communication",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 22300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Architecture And Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 27500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 26100",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Multivariate Calculus",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any course from the PNW Humanities Core List (catalog spells this slot 'Humanitites' sic). 3 credits.",
+      "code": "HUM-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Humanities (Humanities Core List)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 30200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 30900",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Discrete Mathematical Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 26500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gen Ed Elective: student selects any additional course from the PNW General Education Core list. 3 credits.",
+      "code": "GENED-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Gen Ed Elective (General Education Core List)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any course from the PNW Social Sciences Core List. 3 credits.",
+      "code": "SSCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Social Science (Social Sciences Core List)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 33200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 44200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 46200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Introduction To Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Natural Science Course (no lab required), 3-4 credits. Modeled at 3 credits (term total 15, within the published 15-17 range).",
+      "code": "NATSCI-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Natural Science Course",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Science Course with Lab, 3-4 credits. Modeled at 3 credits (term total 15, within the published 15-17 range).",
+      "code": "NATSCI-LAB-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Science Course with Lab",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 31600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 33600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Network Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 41600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 34500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Statistics",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits. If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 45500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Interactive Computer Graphics",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits. If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits. If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits. If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits. If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Capstone experience — student chooses ONE: CS 30303 Internship In Computer Science, CS 40300 Undergraduate Research In Computer Science, CS 42000 Senior Design Project, or CS 48000 The Practicum In Computer Science. Experiential Learning (e). Per catalog Note 2, may be taken in Semester 7 or 8; placed in Semester 8 per the published map.",
+      "code": "CS-CAPSTONE",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CS 30303",
+        "credits": 3,
+        "title": "Internship In Computer Science"
+       },
+       {
+        "code": "CS 40300",
+        "credits": 3,
+        "title": "Undergraduate Research In Computer Science"
+       },
+       {
+        "code": "CS 42000",
+        "credits": 3,
+        "title": "Senior Design Project"
+       },
+       {
+        "code": "CS 48000",
+        "credits": 3,
+        "title": "The Practicum In Computer Science"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Experience (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits (part of the published 8-10 credit Free Electives block). If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits (part of the published 8-10 credit Free Electives block). If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective, 3 credits (part of the published 8-10 credit Free Electives block). If a MA, STAT, or CS course is taken as an elective it must be MA 26400, CS 20600, or a 30000-level or above MA/STAT/CS course.",
+      "code": "ELECT-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.pnw.edu/preview_program.php?catoid=13&poid=5337&returnto=1955",
+  "total_credits": 120,
+  "content_hash": "75b4085adf6bc1e59cfee6ecf644d6ce67386f5dd99e8c5292631112fc2140ee",
+  "last_verified": "2026-10-02"
+ }
+}

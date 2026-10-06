@@ -1,0 +1,827 @@
+{
+ "institution": {
+  "name": "Rose-Hulman Institute of Technology",
+  "city": "Terre Haute, IN",
+  "kind": "private",
+  "state": "IN"
+ },
+ "plan": {
+  "id": "rosehulman-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 192,
+  "source_url": "https://catalog.rose-hulman.edu/catalog/undergraduate-programs-study/computer-science-bs/",
+  "notes": "Source: official Rose-Hulman Institute of Technology Academic Catalog (2026-2027 edition), Computer Science (BS) page 'Plan of Study Grid' sample plan of study, 'New Curriculum Starting Fall 2026': https://catalog.rose-hulman.edu/catalog/undergraduate-programs-study/computer-science-bs/ Cross-checked against the catalog's official plan PDF: https://catalog.rose-hulman.edu/catalog/undergraduate-programs-study/computer-science-bs/computer-science-bs_planofstudytext.pdf. Transcription method: fetched the live catalog page and the linked official plan PDF on 2026-09-30; all course codes, titles, and credit hours copied verbatim from the official grid. Rose-Hulman runs on a quarter system, so this plan has 12 quarters (Fall/Winter/Spring x 4 years), not 8 semesters. Per-term printed totals (18+17+17+16+16+16+16+16+16+16+16+12) sum to the catalog's published degree total of 192 credits, which is used as total_credits. Caveats: (1) The sample plan is track-generic: six 4-credit slots are printed only as 'Track Required Course' with no course assigned, so they are transcribed as choice slots listing the official track course codes; see each slot's choice_note. CS majors choose the Developer track (Software Development, Industry, & Practice) or the Researcher track (Theory, Applications, & Research). (2) Elective split discrepancy: the printed plan contains eight HSSA elective slots (32 cr) and four free-elective slots (16 cr), while the catalog's prose requirements state 28 HSS credits and 20 free-elective credits; both sum to 48 elective credits and the plan total still matches the published 192. (3) The official sample plan lists no prerequisites, so all prereq fields are empty; students must consult the catalog course descriptions and their advisor for prerequisite chains. (4) PH 111L/PH 112L are 0-credit required labs, flagged required_zero. (5) Older track flowchart PDFs linked from the page (Jan/Jul 2025) predate the Fall 2026 curriculum and were not used for term placement.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSSE 120",
+      "title": "Introduction to Software Development",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MA 111",
+      "title": "Calculus I",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "PH 111",
+      "title": "Physics I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "PH 111L",
+      "title": "Physics I Lab",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "science",
+      "required_zero": true
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "RHIT 100",
+      "title": "Foundations for Rose-Hulman Success",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "HUM H190",
+      "title": "First-Year Writing Seminar",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSSE 220",
+      "title": "Object-Oriented Software Development",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MA 112",
+      "title": "Calculus II",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PH 112",
+      "title": "Physics II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "PH 112L",
+      "title": "Physics II Lab",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "science",
+      "required_zero": true
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "HSSA ELEC-1",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSSE 132",
+      "title": "Introduction to Systems Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MA 113",
+      "title": "Calculus III",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "ECE 233",
+      "title": "Introduction to Digital Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SCI ELEC-1",
+      "title": "Science Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of lab-based science electives - any CHEM, PH, or BIO course with an associated lab not already required for the CS major.",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSSE 232",
+      "title": "Computer Architecture I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSSE 280",
+      "title": "Introduction to Web Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MA 221",
+      "title": "Matrix Algebra & Differential Equations I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MA 276",
+      "title": "Introduction to Proofs",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Winter Year 2",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSSE 230",
+      "title": "Data Structures and Algorithm Analysis",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "MA 374",
+      "title": "Combinatorics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "ENGL H290",
+      "title": "Technical & Professional Communication",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "FREE ELEC-1",
+      "title": "Free Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of free electives; free electives may be selected from any Rose-Hulman course, with the student's academic advisor approval.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSSE 333",
+      "title": "Intro to Database Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "MA 381",
+      "title": "Introduction to Probability with Applications to Statistics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "HSSA ELEC-2",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "TRACK REQ-1",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSSE ELEC-1",
+      "title": "CSSE Elective, 300-level or above (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of additional 300-level or above CSSE courses (or ECE 332); excludes CSSE 490-493, CSSE 487-489, and CSSE 494-496; advisor approval required.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSSE 304",
+      "title": "Programming Language Concepts",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSSE 371",
+      "title": "Software Requirements Engineering or Linear Algebra I (track-dependent)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Developer track: take CSSE 371 Software Requirements Engineering. Researcher track: take MA 371 Linear Algebra I.",
+      "options": [
+       "CSSE 371",
+       "MA 371"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "HSSA ELEC-3",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter Year 3",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "HSSA ELEC-4",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSSE 332",
+      "title": "Operating Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSSE 473",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "TRACK REQ-2",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "HSSA ELEC-5",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s9-1",
+      "code": "FREE ELEC-2",
+      "title": "Free Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of free electives; free electives may be selected from any Rose-Hulman course, with the student's academic advisor approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s9-2",
+      "code": "TRACK REQ-3",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-3",
+      "code": "TRACK REQ-4",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s10-0",
+      "code": "SR PROJ-1",
+      "title": "Senior Project I (select one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one: CSSE 487 Senior Research Project I, CSSE 497 Senior Capstone Project I, or CSSE 494 Senior Thesis I. Developer track takes the CSSE 497-499 capstone sequence; researcher track takes CSSE 487-489 (research) or CSSE 494-496 (thesis).",
+      "options": [
+       "CSSE 487",
+       "CSSE 497",
+       "CSSE 494"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-1",
+      "code": "TRACK REQ-5",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-2",
+      "code": "HSSA ELEC-6",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s10-3",
+      "code": "FREE ELEC-3",
+      "title": "Free Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of free electives; free electives may be selected from any Rose-Hulman course, with the student's academic advisor approval.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Winter Year 4",
+    "courses": [
+     {
+      "slot_id": "s11-0",
+      "code": "SR PROJ-2",
+      "title": "Senior Project II (select one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one: CSSE 488 Senior Research Project II, CSSE 498 Senior Capstone Project II, or CSSE 495 Senior Thesis II (continuation of the Fall senior project).",
+      "options": [
+       "CSSE 488",
+       "CSSE 498",
+       "CSSE 495"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-1",
+      "code": "TRACK REQ-6",
+      "title": "Track Required Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The official sample plan lists this as a generic 4-credit 'Track Required Course' slot and does not assign a specific course to it. Developer track requires CSSE 371, CSSE 374, CSSE 376, CSSE 477, and CSSE 497-499 (CSSE 371 and the senior capstone sequence appear as named slots elsewhere in this plan). Researcher track requires CSSE 193, CSSE 392, CSSE 393, CSSE 394, CSSE 395, and CSSE 474 or MA 474, plus MA 371 and either CSSE 487-489 or CSSE 494-496 (MA 371 and the senior project sequence appear as named slots elsewhere). Remaining track slots are filled with 300-level-or-above CSSE electives (or ECE 332) toward the 16-credit additional-CSSE requirement. See academic advisor.",
+      "options": [
+       "CSSE 374",
+       "CSSE 376",
+       "CSSE 477",
+       "CSSE 193",
+       "CSSE 392",
+       "CSSE 393",
+       "CSSE 394",
+       "CSSE 395",
+       "CSSE 474",
+       "MA 474"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-2",
+      "code": "HSSA ELEC-7",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s11-3",
+      "code": "TECH ELEC-1",
+      "title": "Technical Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of technical electives - any courses in biology, chemistry, engineering (except software engineering and engineering management), geology, mathematics, biomathematics, or physics.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s12-0",
+      "code": "SR PROJ-3",
+      "title": "Senior Project III (select one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one: CSSE 489 Senior Research Project III, CSSE 499 Senior Capstone Project III, or CSSE 496 Senior Thesis III (continuation of the senior project).",
+      "options": [
+       "CSSE 489",
+       "CSSE 499",
+       "CSSE 496"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s12-1",
+      "code": "FREE ELEC-4",
+      "title": "Free Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of free electives; free electives may be selected from any Rose-Hulman course, with the student's academic advisor approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s12-2",
+      "code": "HSSA ELEC-8",
+      "title": "HSSA Elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4 credits of courses offered by the Department of Humanities, Social Sciences, and the Arts; the distribution must meet HSSA department requirements, with advisor approval.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "fb48b152269df6bb9af1dd8ba7def6934d3cfe221ab6a38d440aad01f1977eab",
+  "last_verified": "2026-10-02"
+ }
+}

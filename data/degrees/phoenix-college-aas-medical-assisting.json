@@ -1,0 +1,275 @@
+{
+ "institution": {
+  "city": "Phoenix",
+  "kind": "community",
+  "name": "Phoenix College",
+  "state": "AZ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "external_prereqs": [
+   "CCL 5291",
+   "CCL 5295",
+   "HCC145"
+  ],
+  "id": "phoenix-college-aas-medical-assisting",
+  "major": "Medical Assisting",
+  "notes": "Official Catalog Year 2026-27 pathway map ('Course Sequence by Term', Full-time sequence) from Phoenix College (Effective Term Fall 2025; Academic Plan Code 3291). Option 1 sequence used; the page also offers an Option 2 arrangement of the same requirements. Terms are the college's own suggested sequence; full-time status is 12-18 credits per semester. Credit ranges (e.g. 1-3, 0-3, 3-5) are summed at their minimum in total_credits. Admission requires completion of the Medical Administrative Assisting CCL (5295) and Clinical Medical Assisting CCL (5291), or all MA courses via Prior Learning Assessment; these are listed as Admission Criteria on the page and are recorded as external_prereqs rather than sequenced courses. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "program_type": "degree",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS101",
+      "credits": 3,
+      "title": "Medical Assisting Fundamentals",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS102",
+      "credits": 6,
+      "prereq": [
+       "MAS101"
+      ],
+      "title": "Workplace Dynamics and Communications for Allied Health",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS103",
+      "credits": 3,
+      "title": "Medical Assisting Laboratory Procedures",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS104",
+      "credits": 4,
+      "prereq": [
+       "MAS103"
+      ],
+      "title": "Medical Assisting Clinical Procedures",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "options: FYE101 Introduction to College, Career and Personal Success; FYE103 Exploration of College, Career and Personal Success",
+      "code": "FYE101",
+      "credits": 1,
+      "title": "Introduction to College, Career and Personal Success",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS201",
+      "credits": 6,
+      "title": "Medical Assisting Pharmacology",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS202",
+      "credits": 6,
+      "prereq": [
+       "MAS104"
+      ],
+      "title": "Medical Assisting Clinical Procedures II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS203",
+      "credits": 6,
+      "prereq": [
+       "MAS201",
+       "MAS202"
+      ],
+      "title": "Medical Assisting Administrative Procedures",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS204",
+      "credits": 4,
+      "prereq": [
+       "MAS203"
+      ],
+      "title": "Medical Assisting Clinical Procedures III",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MAS205",
+      "credits": 2,
+      "prereq": [
+       "MAS203"
+      ],
+      "title": "Medical Assisting Externship Seminar",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any general education course from the Oral Communication area.",
+      "code": "COM",
+      "core_area": "OCM",
+      "credits": 3,
+      "title": "COM",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "PSY101 recommended for students interested in transferring to the NAU BS in Health Sciences - Medical Assisting.",
+      "code": "SB",
+      "core_area": "SB",
+      "credits": 3,
+      "title": "Social-Behavioral Sciences",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "MAT14+ recommended",
+      "code": "MA",
+      "core_area": "MA",
+      "credits": 3,
+      "title": "MA",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "options: ENG101 First-Year Composition; ENG107 First-Year Composition for ESL",
+      "code": "ENG101",
+      "core_area": "FYC, WCM",
+      "credits": 0,
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "code": "CRE101",
+      "core_area": "L",
+      "credits": 0,
+      "title": "College Critical Reading and Critical Thinking",
+      "required_zero": true,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select Humanities, Fine Arts & Design",
+      "code": "HU",
+      "core_area": "HU",
+      "credits": 3,
+      "title": "Humanities, Fine Arts & Design",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "options: ENG102 First-Year Composition; ENG108 First-Year Composition for ESL",
+      "code": "ENG102",
+      "core_area": "FYC, WCM",
+      "credits": 3,
+      "prereq": [
+       "ENG101"
+      ],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any approved General Education course from the Natural Sciences area.",
+      "code": "SQ/SG",
+      "credits": 4,
+      "title": "SQ/SG",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 5",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.phoenixcollege.edu/degrees-certificates/health-sciences/medical-assisting-3291-aas",
+  "total_credits": 60,
+  "content_hash": "ad5318c0cf1d7b662b199629d685fc13c51ac2f9fb3a45f830b8b7be0cb15b4b",
+  "last_verified": "2026-10-02"
+ }
+}

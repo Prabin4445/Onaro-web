@@ -1,0 +1,385 @@
+{
+ "institution": {
+  "city": "Boaz, AL",
+  "kind": "community",
+  "name": "Snead State Community College",
+  "state": "AL"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "id": "snead-state-community-college-aas-computer-science-technology",
+  "major": "Computer Science Technology",
+  "notes": "Source: 'Computer Science Technology Master Schedule 2-Year A.A.S.' (snead.edu, revised 8/26/2026; Fall 2026 master schedule). College's note: 'Courses should be taken during the semester listed. Courses are not offered every semester.' Terms recorded in the source's listing order (Spring 1st-year first); a student's entry term (fall or spring) rotates them through the same five blocks. Sequenced credit sum is 67 (science/math elective recorded at 3 of 3-4); the source prints 'Total Hours 64-65' — genuine discrepancy kept verbatim. Genuine catalog quirks kept verbatim: (1) the Spring 1st-year IT Admin Track Requirement row prints 3 hours with a blank course cell — modeled as a CIS XXX choice placeholder, never invented; (2) the Fall 2nd-year Core row prints 'CIS 268 CIS 268 Software Support' (duplicated code in the name column) — title recorded as 'Software Support'; (3) the Spring 1st-year Cyber Security Track Requirement row prints no hours value; CIS 260 is 3 cr per the 2026-2027 catalog course list (cross-checked in-session). Catalog year is the retrieval-year stamp per convention: the source prints a revision date (8/26/2026), not a catalog year.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 171",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Linux I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 207",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Web Development",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 269",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Hardware Support",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Track Requirement: Cyber Security track takes CIS 260 Network Security and Risk Management (3 cr, catalog-verified). The source's IT Admin Track Requirement row for this term prints 3 hours with a blank course cell (revised 8/26/2026) — modeled as a CIS XXX placeholder; the course was never invented.",
+      "code": "CIS 260",
+      "credits": 3,
+      "options": [
+       "CIS 260",
+       "CIS XXX"
+      ],
+      "prereq": [],
+      "title": "Network Security and Risk Management",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Academic (Choose One): Science/Math Elective — BIO, CHM, GEO 101, PHS, or PHY; 3-4 cr per source, recorded at 3.",
+      "code": "BIO XXX",
+      "credits": 3,
+      "options": [
+       "BIO",
+       "CHM",
+       "GEO 101",
+       "PHS",
+       "PHY"
+      ],
+      "prereq": [],
+      "title": "Science/Math Elective",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Spring 1st-year",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 117",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Database Management Software Applications",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 161",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Networking Communications",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 146",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Applications",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Track Requirement: Cyber Security track takes CIS 280 Network Security; IT Admin track takes CIS 287 SQL Server.",
+      "code": "CIS 280",
+      "credits": 3,
+      "options": [
+       "CIS 280",
+       "CIS 287"
+      ],
+      "prereq": [],
+      "title": "Network Security",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Academic: Math Elective — MTH 116t, MTH 100, 112, 113, or 125 (source prints 'MTH 116t' verbatim).",
+      "code": "MTH 116t",
+      "credits": 3,
+      "options": [
+       "MTH 116t",
+       "MTH 100",
+       "MTH 112",
+       "MTH 113",
+       "MTH 125"
+      ],
+      "prereq": [],
+      "title": "Math Elective",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Fall 1st-year",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "WKO 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Workplace Skills",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 294",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Special Topics",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Track Requirement: Cyber Security track takes CIS 214 Security Analysis (Pen Testing); IT Admin track takes CIS 162 Advanced Networking.",
+      "code": "CIS 214",
+      "credits": 3,
+      "options": [
+       "CIS 214",
+       "CIS 162"
+      ],
+      "prereq": [],
+      "title": "Security Analysis (Pen Testing)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Track Requirement: Cyber Security track takes CIS 282 Computer Forensics; IT Admin track takes CIS 267 Enterprise Virtualization.",
+      "code": "CIS 282",
+      "credits": 3,
+      "options": [
+       "CIS 282",
+       "CIS 267"
+      ],
+      "prereq": [],
+      "title": "Computer Forensics",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Academic: Social Science Elective (no course list in source).",
+      "code": "SOC XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social Science Elective",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Spring 2nd-year",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 130",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Information Systems",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Source footnote: CIS 251 may be substituted for CIS 201 for students with future plans to obtain a Bachelor's degree.",
+      "code": "CIS 201",
+      "credits": 3,
+      "options": [
+       "CIS 201",
+       "CIS 251"
+      ],
+      "prereq": [],
+      "title": "Introduction to Programming Concepts",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 202",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Python Programming",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 9,
+    "label": "Summer 2nd-year",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 268",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Software Support",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Source footnote: CIS 284 may be substituted for any 200-level CIS course except 280.",
+      "code": "CIS 284",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CIS Internship",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Track Requirement: Cyber Security track takes CIS 245 Cyber Defense; IT Admin track takes CIS 277 Network Services Administration.",
+      "code": "CIS 245",
+      "credits": 3,
+      "options": [
+       "CIS 245",
+       "CIS 277"
+      ],
+      "prereq": [],
+      "title": "Cyber Defense",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Academic: Fine Art/Humanities Elective (no course list in source).",
+      "code": "HUM XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fine Art/Humanities Elective",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Fall 2nd-year",
+    "n": 5
+   }
+  ],
+  "source_url": "https://snead.edu/wp-content/uploads/2026/09/Computer-Science-Technology-Master-Schedule-FA2026.pdf",
+  "total_credits": 67,
+  "content_hash": "05e639a0b96c9bb5558c52e521d06734b3213bd36c6cccaf5e2fadc485b79e03",
+  "last_verified": "2026-10-02"
+ }
+}

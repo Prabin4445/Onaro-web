@@ -1,0 +1,394 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-occupational-therapy-assistant",
+  "major": "Occupational Therapy Assistant",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 3250, Rev. 1/2025, effective Summer 2025): semester-by-semester course sequence for full-time associate degree students finishing in two years. Semester totals as printed: 13 / 18 / 16 / 10 / 8 = 65, matching the printed 'TOTAL CREDITS 65'. Course titles and credit hours as printed in the guide's technical/non-technical course lists and sequence. Prerequisites are from the guide's Pre- and Co-requisites column and name only courses present in the plan; where the catalog lists BIO122 or BIO123, BIO123 is recorded as the in-plan prerequisite. Footnote markers (^ placement score, ^^ take first semester, @/# biology substitution, Ω transfer note) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "General Psychology",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA122"
+      ],
+      "required_zero": false,
+      "title": "Foundations in Occupational Therapy",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA121"
+      ],
+      "required_zero": false,
+      "title": "Therapeutic Media",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "1st Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan row 'MTH124 Statistics or MTH105 Math for Allied Health'.",
+      "code": "MTH124 / MTH105",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Statistics or Math for Allied Health",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO123",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Principles of Human Structure & Function (lab)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA123",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "OTA121",
+       "OTA122",
+       "PSY121",
+       "OTA124",
+       "PSY221"
+      ],
+      "required_zero": false,
+      "title": "Psychosocial Aspects in OT",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA121",
+       "OTA122",
+       "OTA123"
+      ],
+      "required_zero": false,
+      "title": "Psychosocial Clinical Experience",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY221",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PSY121",
+       "OTA123"
+      ],
+      "required_zero": false,
+      "title": "Abnormal Psychology",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "2nd Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "OTA221",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "BIO123",
+       "OTA123",
+       "OTA124",
+       "OTA222",
+       "PTA226",
+       "OTA223"
+      ],
+      "required_zero": false,
+      "title": "Developmental Aspects in OT",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "OTA222",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123",
+       "OTA123",
+       "OTA124",
+       "OTA221",
+       "PTA226",
+       "OTA223"
+      ],
+      "required_zero": false,
+      "title": "Developmental Clinical Experience",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA223",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Life Span Development",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "PTA226",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Functional Anatomy",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "3rd Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "BIO124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Human Diseases",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA224",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "OTA221",
+       "OTA222",
+       "OTA225",
+       "BIO124"
+      ],
+      "required_zero": false,
+      "title": "OT in Physical Dysfunction",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA225",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA221",
+       "OTA222",
+       "OTA224"
+      ],
+      "required_zero": false,
+      "title": "Physical Dysfunction Clinical Experience",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "4th Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA226",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "OTA224",
+       "OTA225",
+       "OTA227",
+       "OTA228"
+      ],
+      "required_zero": false,
+      "title": "OTA Seminar",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA227",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA224",
+       "OTA225",
+       "OTA226",
+       "OTA228"
+      ],
+      "required_zero": false,
+      "title": "Clinical Application I",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "OTA228",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "OTA224",
+       "OTA225",
+       "OTA226",
+       "OTA227"
+      ],
+      "required_zero": false,
+      "title": "Clinical Application II",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "5th Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/3250-AAS-Occupational-Therapy-Assistant.pdf",
+  "total_credits": 65,
+  "content_hash": "4595b6358271f8c1a16b9679c514532f118f4ca94ef3db09d7ce051241e0da65",
+  "last_verified": "2026-10-02"
+ }
+}

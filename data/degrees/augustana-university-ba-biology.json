@@ -1,0 +1,685 @@
+{
+ "institution": {
+  "name": "Augustana University",
+  "city": "Sioux Falls, SD",
+  "state": "SD",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "augustana-university-ba-biology",
+  "degree": "BA",
+  "major": "Biology",
+  "total_credits": 113,
+  "catalog_year": "2022-2023",
+  "source_url": "https://augie.smartcatalogiq.com/en/2022-2023/2022-2023-undergraduate-general-catalog/academic-program/biology/biology-major/",
+  "notes": "Term-by-term sample plan transcribed verbatim from the official Augustana University 2022-2023 Undergraduate General Catalog, Biology Major page (degree BA per augie.edu: 'Earn a Bachelor of Arts (B.A.) in biology degree at Augustana University'). The 2022-2023 catalog is the most recent catalog year whose sample plan is published inline in HTML; the current (2026-2027) catalog links its sample plan as a Google Sheet, which is not retrievable via text-fetch tools (direct fetches return HTTP 400 from docs.google.com). 'Core, Major, Minor or Elective Course (3-4)' and 'Elective course at the 300-level (3-4)' slots seeded at base 3 cr as choice:true. BIOL 490 (0 cr) is a required course, seeded with required_zero:true. CHEM 117 and PHYS 201/202 appear in the sample plan (pre-professional preparation / strongly recommended per catalog) but are not in the major's required or required-supportive lists (supportive = one of CHEM 116/120, one of CHEM 145/201, one math course); they are categorized as major with this note. The required math course (MATH 150/151/280 or ECON 270/PSYC 270 or BIOL 370) and BIOL 491 (Biology Seminar II, 1 cr) are not explicitly placed in the plan; filler slots absorb them. Year 3 Interim is empty in the catalog's plan (no courses listed) and is transcribed as an empty semester. Catalog states 124 total credits are needed for degree completion.",
+  "external_prereqs": [],
+  "transfer_confidence": "tccns_equivalencies",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Year 1 — Fall",
+    "courses": [
+     {
+      "code": "FYS 110",
+      "title": "First Year Seminar I (FS)",
+      "credits": 4,
+      "category": "core",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "FYS 110",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "BIOL 120",
+      "title": "Biological Principles I (NS)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 120",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CHEM 116",
+      "title": "General Chemistry I (NS)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CHEM 116",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Year 1 — Interim",
+    "courses": [
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Year 1 — Spring",
+    "courses": [
+     {
+      "code": "FYS 112",
+      "title": "First Year Seminar: Vocation",
+      "credits": 1,
+      "category": "core",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "FYS 112",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [
+       "augustana-university-ba-business-administration"
+      ]
+     },
+     {
+      "code": "BIOL 121",
+      "title": "Biological Principles II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 121",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 117",
+      "title": "General Chemistry II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CHEM 117",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Year 2 — Fall",
+    "courses": [
+     {
+      "code": "BIOL 233",
+      "title": "Genetics",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 233",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 201",
+      "title": "Organic Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CHEM 201",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Year 2 — Interim",
+    "courses": [
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Year 2 — Spring",
+    "courses": [
+     {
+      "code": "BIOL 234",
+      "title": "Cell Biology",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 234",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Year 3 — Fall",
+    "courses": [
+     {
+      "code": "BIOL 300+ ELECTIVE",
+      "title": "Biology elective course at the 300-level",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 300+ ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog: 'Elective course at the 300-level (3-4)'; seeded at base 3 cr. BIOL 392, 395 and 399 do not count toward the 300-level electives.",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "BIOL 490",
+      "title": "Biology Seminar",
+      "credits": 0,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 490",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": true,
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "PHYS 201",
+      "title": "Physics for Life Sciences I (NS)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "PHYS 201",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Year 3 — Interim",
+    "courses": []
+   },
+   {
+    "n": 9,
+    "label": "Year 3 — Spring",
+    "courses": [
+     {
+      "code": "BIOL 300+ ELECTIVE",
+      "title": "Biology elective course at the 300-level",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 300+ ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog: 'Elective course at the 300-level (3-4)'; seeded at base 3 cr. BIOL 392, 395 and 399 do not count toward the 300-level electives.",
+      "options": [],
+      "slot_id": "s9-0",
+      "xfer": []
+     },
+     {
+      "code": "PHYS 202",
+      "title": "Physics for Life Sciences II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "PHYS 202",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s9-1",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s9-2",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s9-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "label": "Year 4 — Fall",
+    "courses": [
+     {
+      "code": "BIOL 300+ ELECTIVE",
+      "title": "Biology elective course at the 300-level",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 300+ ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog: 'Elective course at the 300-level (3-4)'; seeded at base 3 cr. BIOL 392, 395 and 399 do not count toward the 300-level electives.",
+      "options": [],
+      "slot_id": "s10-0",
+      "xfer": []
+     },
+     {
+      "code": "BIOL 300+ ELECTIVE",
+      "title": "Biology elective course at the 300-level",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 300+ ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog: 'Elective course at the 300-level (3-4)'; seeded at base 3 cr. BIOL 392, 395 and 399 do not count toward the 300-level electives.",
+      "options": [],
+      "slot_id": "s10-1",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s10-2",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s10-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "label": "Year 4 — Interim",
+    "courses": [
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s11-0",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "label": "Year 4 — Spring",
+    "courses": [
+     {
+      "code": "BIOL 300+ ELECTIVE",
+      "title": "Biology elective course at the 300-level",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 300+ ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog: 'Elective course at the 300-level (3-4)'; seeded at base 3 cr. BIOL 392, 395 and 399 do not count toward the 300-level electives.",
+      "options": [],
+      "slot_id": "s12-0",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s12-1",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s12-2",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s12-3",
+      "xfer": [
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology",
+       "augustana-university-bsn-nursing"
+      ]
+     }
+    ]
+   }
+  ],
+  "content_hash": "4b99ed2d946ba4bf4e6d36c498d1e8060bbd38c7b3afb8471d74f6389885c858",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,391 @@
+{
+ "institution": {
+  "city": "Arkadelphia",
+  "kind": "university",
+  "name": "Henderson State University",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Bachelor of Science",
+  "external_prereqs": [
+   "ENG 1463"
+  ],
+  "id": "hsu-bs-nursing-2026",
+  "major": "Nursing",
+  "notes": "Source: HSU official 2026-2027 Degree Plans index, Nursing BS (2026-2027 Catalog) PDF, Version 2024/10/7. This is the traditional pre-licensure BSN (distinct from the RN-to-BSN completion plan). Header states the plan is 'a suggested program of courses' and 'does not substitute for the HSU catalog'. ENGL 10103 and ENGL 10203 require a grade of C or better; ENGL 10203 lists PR: ENG 1463, coded as plan-level external_prereqs (excluded from credit sums per standing rules). Genuine term-by-term sequence sums 14+16+15+13+16+17+15+15 = 121; every printed semester TOTAL reconciles with its course rows. No grand total is printed on the PDF; total_credits records the actual sequenced sum (121), which satisfies the printed graduation requirement of 'At least 120 Total Hours Earned'. 'X or Y' choice slots use the first-listed code. ELECTIVE placeholders use code 'ELECTIVE' because the catalog names only the slot, not a course.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "ENGL 10103",
+      "credits": 3,
+      "title": "Freshman English A",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 11003",
+      "credits": 3,
+      "title": "College Algebra",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UNIV 10051",
+      "credits": 1,
+      "title": "Henderson Seminar",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 12104/12100",
+      "credits": 4,
+      "title": "General Chemistry & Lab",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYC 11003",
+      "credits": 3,
+      "title": "General Psychology",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "ENGL 10203",
+      "credits": 3,
+      "title": "Freshman English B",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SPCH 10003",
+      "credits": 3,
+      "title": "Oral Communications",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "BIOL 10043 Introduction to Biology OR BIOL 10103 General Biology for Majors; first-listed code shown",
+      "code": "BIOL 10043",
+      "credits": 3,
+      "options": [
+       {
+        "code": "BIOL 10043",
+        "credits": 3,
+        "title": "Introduction to Biology"
+       },
+       {
+        "code": "BIOL 10103",
+        "credits": 3,
+        "title": "General Biology for Majors"
+       }
+      ],
+      "title": "Introduction to Biology or General Biology for Majors",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 10031",
+      "credits": 1,
+      "title": "Introduction to Biology lab",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Humanities'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Humanities",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Social Science'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Social Science",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "PLSC 20003 or PLSC 200H3 or HIST 21103 or HIST 21203 (Am Nat'l Gov. or US Hist); first-listed code shown",
+      "code": "PLSC 20003",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PLSC 20003",
+        "credits": 3,
+        "title": "Am Nat'l Gov. or US Hist"
+       },
+       {
+        "code": "PLSC 200H3",
+        "credits": 3,
+        "title": "Am Nat'l Gov. or US Hist"
+       },
+       {
+        "code": "HIST 21103",
+        "credits": 3,
+        "title": "Am Nat'l Gov. or US Hist"
+       },
+       {
+        "code": "HIST 21203",
+        "credits": 3,
+        "title": "Am Nat'l Gov. or US Hist"
+       }
+      ],
+      "title": "Am Nat'l Gov. or US Hist",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 24004/24000",
+      "credits": 4,
+      "title": "Human Anatomy & Physiology I and lab (nonmajors)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 20004/20000",
+      "credits": 4,
+      "title": "Microbiology",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 25601",
+      "credits": 1,
+      "title": "Nursing as a Profession",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Humanities'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Humanities",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "code": "SOCI 10103",
+      "credits": 3,
+      "title": "Introduction to Sociology",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 24104/24100",
+      "credits": 4,
+      "title": "Human Anatomy & Physiology II and lab (nonmajors)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUTR 22043",
+      "credits": 3,
+      "title": "Nutrition",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Elective'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "code": "NURS 35809/35800",
+      "credits": 9,
+      "title": "Basic Concepts & Skills of Nursing",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 35904/35900",
+      "credits": 4,
+      "title": "Psychiatric and Mental Health Nursing (3 Lecture/1 Lab)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 36403",
+      "credits": 3,
+      "title": "Transcultural Healthcare",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "code": "NURS 36206/36200",
+      "credits": 6,
+      "title": "Adult Health Nursing I (4 Lecture/2 Lab)",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 36306/36300",
+      "credits": 6,
+      "title": "Family/Child Nursing (3 Lecture/3 Lab)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 36003",
+      "credits": 3,
+      "title": "Healthcare Research for Evidence-Based Practice",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 36102",
+      "credits": 2,
+      "title": "Nursing and Healthcare Delivery Theories",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "code": "NURS 46506/46500",
+      "credits": 6,
+      "title": "Adult Health Nursing II (3 Lecture/3 Lab)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 47305/47300",
+      "credits": 5,
+      "title": "Palliative and Gerontologic Care Nursing (3 Lecture/2 Lab)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 46702",
+      "credits": 2,
+      "title": "Disaster Nursing and Emergency Preparedness",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 46902",
+      "credits": 2,
+      "title": "Health Promotion and Wellness",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "code": "NURS 47009/47000",
+      "credits": 9,
+      "title": "Adult Health Nursing III (4 Lecture/5 Lab)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 47104/47100",
+      "credits": 4,
+      "title": "Community-Based Nursing (3 Lecture/1 Lab)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 47202",
+      "credits": 2,
+      "title": "Leadership Principles",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.hsu.edu/site/assets/files/17269/26nursing_degreeplan.pdf",
+  "total_credits": 121,
+  "transfer_confidence": "medium",
+  "content_hash": "49f0657d5a956d88b6fb1ad01f451f34c9ec107c437ea0f18cc3ae2a2f9d3824",
+  "last_verified": "2026-10-02"
+ }
+}

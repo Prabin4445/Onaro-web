@@ -1,0 +1,59 @@
+{
+ "institution": {
+  "name": "ABCO Technology",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "abco-technology-diploma-linux-plus",
+  "degree": "Diploma",
+  "major": "Linux+",
+  "catalog_year": "2026-2027",
+  "total_credits": 7.0,
+  "source_url": "https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf",
+  "notes": "QUARTER CREDIT HOURS: ABCO Technology is a quarter-system career college; the official catalog publishes every program in 'QUARTER CREDIT UNITS' (the course-table column is labeled 'Units'). All credit values in this plan are quarter credit hours, NOT semester credits. Source: official ABCO Technology 2026-2027 Catalog (effective July 1, 2026 - June 30, 2027), https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf . Transcription verified against the catalog PDF layout extraction on 2026-09-30. Award: Diploma, Linux+. Program length: 8 weeks; 7 quarter credit units required. Catalog prerequisite for LNX001 is 'CT220, CT225 or equivalent experience' (the A+ Certification diploma courses); listed in external_prereqs since they are not part of this program. The catalog publishes the complete course list without term subdivisions; the single term below presents the full program in catalog sequence.",
+  "external_prereqs": [
+   "CT220",
+   "CT225"
+  ],
+  "semesters": [
+   {
+    "term": "Full program (8 weeks)",
+    "courses": [
+     {
+      "code": "LNX001",
+      "title": "Linux Fundamentals basic",
+      "credits": 3.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "LNX005",
+      "title": "Linux Advanced fundamentals",
+      "credits": 3.5,
+      "prereq": [
+       "LNX001"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     }
+    ],
+    "n": 1
+   }
+  ],
+  "content_hash": "e61076f39fd9af544b3c32ff155a0194ae82ce676c15ca64e4dcd7c40b672496",
+  "last_verified": "2026-10-02"
+ }
+}

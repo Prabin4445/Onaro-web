@@ -1,0 +1,188 @@
+{
+ "institution": {
+  "name": "Central Alabama Community College",
+  "city": "Alexander City",
+  "state": "AL",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "central-alabama-community-college-certificate-practical-nursing",
+  "degree": "Certificate",
+  "major": "Practical Nursing",
+  "total_credits": 45,
+  "catalog_year": "2026",
+  "source_url": "https://www.cacc.edu/content/userfiles/files/CACC-PN-Info-.pdf",
+  "notes": "Source: official CACC 'Practical Nursing Certificate' program information sheet (cacc.edu). Certificate Earned: Practical Nursing; Length of Program: 3 Semesters (45 Semester Hours); offered in Childersburg, Prattville, Talladega (Summer Admission Only), and Alexander City. Semester subtotals: 14/18/13 = 45. Titles are the source labels verbatim. '*BIO 201 is a prerequisite for BIO 202.' 'Classes in bold may be taken prior to entering the nursing program or taken concurrently with nursing courses as outlined above.' The source prints no catalog year or revision date; catalog_year stamped with retrieval year (2026) and documented here. Program cross-validated in the official 2026-2027 CACC catalog program listing ('Practical Nursing', 45 hours).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester I",
+    "courses": [
+     {
+      "code": "BIO 201",
+      "title": "Human Anatomy & Phys. I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 100",
+      "title": "Intermediate College Algebra or higher-level math",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MTH 100 Intermediate College Algebra or higher-level math",
+      "options": [
+       {
+        "code": "MTH 100",
+        "title": "Intermediate College Algebra",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 112",
+      "title": "Fundamentals Concepts of Nursing",
+      "credits": 7,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester II",
+    "courses": [
+     {
+      "code": "BIO 202",
+      "title": "Human Anatomy & Phys. II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY 210",
+      "title": "Human Growth & Development",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 113",
+      "title": "Nursing Concepts",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester III",
+    "courses": [
+     {
+      "code": "SPH 106",
+      "title": "Fundamentals of Oral Communication (or SPH 107)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SPH 106 Fundamentals of Oral Communication (or SPH 107)",
+      "options": [
+       {
+        "code": "SPH 106",
+        "title": "Fundamentals of Oral Communication",
+        "credits": 3
+       },
+       {
+        "code": "SPH 107",
+        "title": "SPH 107",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 114",
+      "title": "Nursing Concepts II",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 115",
+      "title": "Evidence Based Clinical Reasoning",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "e211901e464c94c0f90f2aa814f627f4d25effa1e129833a6fb59311010c7930",
+  "last_verified": "2026-10-02"
+ }
+}

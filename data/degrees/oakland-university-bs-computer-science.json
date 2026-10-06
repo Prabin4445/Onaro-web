@@ -1,0 +1,530 @@
+{
+ "institution": {
+  "name": "Oakland University",
+  "city": "Rochester Hills, MI",
+  "state": "MI",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "oakland-university-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "total_credits": 128,
+  "catalog_year": "2024-2025",
+  "source_url": "https://our.oakland.edu/server/api/core/bitstreams/5da77f3f-f804-4bb4-9539-8651c03044ea/content",
+  "transfer_confidence": "",
+  "notes": "Semester sequence, course codes, titles, and credit hours are verbatim from the official 'Sample computer science schedule' in the Oakland University 2024-2025 Undergraduate Catalog, Volume 3 (School of Engineering and Computer Science). Minimum 128 credits; program is ABET-accredited.\nFreshman fall programming course: catalog lists 'CSI 1320 Intro to Python Programming and Unix (4) OR CSI 1420 Intro to C Programming and Unix (4)'. Recorded as CSI 1320 with a choice note.\nGeneral education placeholders: WRT 1060 satisfies Writing Foundations; PHL 1310 satisfies Western Civilization and professional ethics; MTH 1554 satisfies Formal Reasoning; MTH 1555 satisfies Knowledge Applications; CSI 4999 satisfies Capstone and Writing Intensive in the Major.\nApproved science elective with lab options per catalog: BIO 1200+1201, BIO 1300+1201, CHM 1440+1470, or PHY 1510+1100.\nProfessional electives: 9 credits of 3000-level or higher CSI, BE, ECE, ISE, or ME courses; at most 1 credit of CSI 4950. Professional track: two courses from one approved track (Computational Intelligence, Decision Optimization, System Administration, Bioinformatics, Cybersecurity, Game Development, Mobile Applications, Web Development, AI on Cloud, Software Engineering, Data Analysis).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman · Fall",
+    "term": "Fall",
+    "year_label": "Freshman",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "category": "major",
+      "code": "MTH 1554",
+      "credits": 4,
+      "title": "Calculus I",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CSI 1320 Intro to Python Programming and Unix (4) OR CSI 1420 Intro to C Programming and Unix (4)",
+      "code": "CSI 1320",
+      "credits": 4,
+      "title": "Intro to Python Programming and Unix",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits); WRT 1060 recommended for Writing Foundations",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman · Winter",
+    "term": "Winter",
+    "year_label": "Freshman",
+    "declared_credits": 17,
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSI 2300",
+      "credits": 4,
+      "title": "Object-Oriented Computing",
+      "prereq": [
+       "CSI 1320"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1555",
+      "credits": 4,
+      "title": "Calculus II",
+      "prereq": [
+       "MTH 1554"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved science elective with lab: BIO 1200+1201, BIO 1300+1201, CHM 1440+1470, or PHY 1510+1100",
+      "code": "Approved Science Elective with Lab",
+      "credits": 5,
+      "title": "Approved Science Elective with Lab",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore · Fall",
+    "term": "Fall",
+    "year_label": "Sophomore",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "category": "major",
+      "code": "APM 2663",
+      "credits": 4,
+      "title": "Discrete Mathematics",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 2310",
+      "credits": 4,
+      "title": "Data Structures",
+      "prereq": [
+       "CSI 2300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits); PHL 1310 recommended (satisfies Western Civilization and professional ethics)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore · Winter",
+    "term": "Winter",
+    "year_label": "Sophomore",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "category": "major",
+      "code": "MTH 2775",
+      "credits": 4,
+      "title": "Linear Algebra",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 2470",
+      "credits": 4,
+      "title": "Introduction to Computer Networks",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 2999",
+      "credits": 2,
+      "title": "Sophomore Project",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education course (4 credits)",
+      "code": "General Education",
+      "credits": 4,
+      "title": "General Education",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior · Fall",
+    "term": "Fall",
+    "year_label": "Junior",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "category": "major",
+      "code": "STA 2226",
+      "credits": 4,
+      "title": "Applied Probability and Statistics",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 3480",
+      "credits": 4,
+      "title": "Security and Privacy in Computing",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 3610",
+      "credits": 4,
+      "title": "Design and Analysis of Algorithms",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 3640",
+      "credits": 4,
+      "title": "Computer Organization",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior · Winter",
+    "term": "Winter",
+    "year_label": "Junior",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSI 3370",
+      "credits": 4,
+      "title": "Software Engineering and Practice",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 3430",
+      "credits": 4,
+      "title": "Theory of Computation",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 4650",
+      "credits": 4,
+      "title": "Parallel and Distributed Computing",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Professional elective (4 credits): 3000-level or higher CSI, BE, ECE, ISE, or ME course; at most 1 credit of CSI 4950",
+      "code": "Professional Elective",
+      "credits": 4,
+      "title": "Professional Elective",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior · Fall",
+    "term": "Fall",
+    "year_label": "Senior",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSI 3450",
+      "credits": 4,
+      "title": "Database Design and Implementation",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 4350",
+      "credits": 4,
+      "title": "Programming Languages",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Professional elective (4 credits): 3000-level or higher CSI, BE, ECE, ISE, or ME course; at most 1 credit of CSI 4950",
+      "code": "Professional Elective",
+      "credits": 4,
+      "title": "Professional Elective",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Professional track course (4 credits): one of two courses from a single approved track",
+      "code": "Professional Track Course",
+      "credits": 4,
+      "title": "Professional Track Course",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior · Winter",
+    "term": "Winter",
+    "year_label": "Senior",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSI 4500",
+      "credits": 4,
+      "title": "Operating Systems",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSI 4999",
+      "credits": 4,
+      "title": "Senior Capstone Project",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Professional elective (1 credit): 3000-level or higher CSI, BE, ECE, ISE, or ME course",
+      "code": "Professional Elective",
+      "credits": 1,
+      "title": "Professional Elective",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Professional track course (4 credits): second of two courses from the same approved track",
+      "code": "Professional Track Course",
+      "credits": 4,
+      "title": "Professional Track Course",
+      "prereq": [],
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "0df543ea4e48b3dca75c56d41b5ac57da7d0e21b666e254cf21e17fabe7cd95b",
+  "last_verified": "2026-10-02",
+  "source_hash": ""
+ }
+}

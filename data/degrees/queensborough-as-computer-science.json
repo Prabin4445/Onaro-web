@@ -1,0 +1,303 @@
+{
+ "institution": {
+  "city": "Queens, NY",
+  "kind": "community",
+  "name": "Queensborough Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-26",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "queensborough-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Queensborough Community College degree map PDF 'A.S. in Computer Science - MA-440 Placement - Catalog Year 2025-26' (last updated 2/21/25), URL in source_url. Transcribed 2026-09-30 via browser_open text fetch of the official PDF; no courses invented. This is the MA-440 math-placement variant (4 semesters: Fall #1 / Spring #1 / Fall #2 / Spring #2); Queensborough also publishes MA-119 and MA-441 placement variants (5-semester/developmental paths) which were NOT used here. Official term totals: 16 + 14 + 15 + 15 = 60, matching the catalog's 'Total credits required for the degree: 60'. Credit-range handling: Fall #1 prints two distinct 'One course from Flexible Core 2A, 2B, 2C, or 2D' 3-credit rows (term total 16 requires both; note 2 of the PDF requires one course from each of 2A, 2B, 2C, and 2D across the degree: 2+1+0+1 = 4). Spring #2 prints the 1C science slot as 3-4 credits and the lab as 0-1 credits with term total 15; the plan records the 4-credit science + 0-credit lab combination (a STEM-variant/4-credit 1C science with integrated lab satisfies the lab requirement per PDF note 4), so individual students may total 14-16 in this term depending on choices. Catalog quirks documented, not 'fixed': (a) the PDF lists MA-440's own prerequisite as 'MA-440 (C or better)' - a self-referential typo; recorded with prereq [] here and PDF note 1 (MA-119/MA-121 may be required by placement prior to MA-440) summarized in this note; (b) the developmental HTML map at qcc.cuny.edu/academics/degree-programs/maps/qcc/as-computer-science.html labels MA-443 as 'Calculus II' while the Pathways list and this PDF confirm MA-441=Calc I / MA-442=Calc II / MA-443=Calc III; this PDF variant is used, so no mislabeled course appears. Corequisites from the official map (not encoded as prereqs): CS-101 corequisite MA-441 (same term); science laboratory corequisite the 3-credit 1C science course. Placement details ('complete developmental requirements in English/math or placement') kept out of external_prereqs and recorded here. Degree requirements beyond courses: all students must complete two (2) WI-designated classes; CS-101 satisfies Flexible Core 2E; MA-442 satisfies the additional Flexible Core requirement. True program name per QCC Factbook is CSCI-AS Computer Science, marketed as 'A.S. in Computer Science'. No invented data: every course code/title/credit is verbatim from the official map.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA-440",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Pre-Calculus Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS-100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Computers and Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any one course from Flexible Core 2A, 2B, 2C, or 2D (one course from each of 2A/2B/2C/2D required across the degree per PDF note 2).",
+      "code": "FC2A-D-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Flexible Core 2A, 2B, 2C, or 2D course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any one course from Flexible Core 2A, 2B, 2C, or 2D (one course from each of 2A/2B/2C/2D required across the degree per PDF note 2). Second of two such slots in this term per the official 16-credit term total.",
+      "code": "FC2A-D-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Flexible Core 2A, 2B, 2C, or 2D course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL-102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL-101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA-441",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MA-440"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Analytic Geometry and Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS-101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Algorithmic Problem Solving I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any one course from Flexible Core 2A, 2B, 2C, or 2D (one course from each of 2A/2B/2C/2D required across the degree per PDF note 2).",
+      "code": "FC2A-D-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Flexible Core 2A, 2B, 2C, or 2D course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA-442",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MA-441"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Analytic Geometry and Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA-471",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MA-440"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS-201",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MA-441",
+       "CS-101"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Organization and Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: take EITHER CS-203 (C++) OR CS-204 (Java); both are 4 credits and share the same prerequisites.",
+      "code": "CS-203",
+      "credits": 4,
+      "options": [
+       "CS-203 Algorithmic Problem Solving II in C++",
+       "CS-204 Algorithmic Problem Solving II in Java"
+      ],
+      "prereq": [
+       "MA-441",
+       "CS-101"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Algorithmic Problem Solving II in C++ OR Algorithmic Problem Solving II in Java",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: complete at least 8 credits from the official major-elective list (PDF page 3); MA-119/MA-121 count as major electives when required by math placement (PDF note 1).",
+      "code": "CS-MAJ-ELECT",
+      "credits": 8,
+      "options": [
+       "CS-100 Introduction to Computers and Programming (3)",
+       "CS-102 Spreadsheet Programming with MS Excel (3)",
+       "CS-103 Relational Databases (4)",
+       "CS-203 Algorithmic Problem Solving II in C++ (4)",
+       "CS-204 Algorithmic Problem Solving II in Java (4)",
+       "ET-506 LINUX Operating System (3)",
+       "ET-540 Digital Computer Theory I (3)",
+       "ET-704 Networking Fundamentals I (3)",
+       "ET-710 Front End UI/UX Web Development (3)",
+       "ET-725 Computer Network Security (3)",
+       "MA-119 College Algebra (3)",
+       "MA-121 Trigonometry (1)",
+       "MA-443 Analytic Geometry and Calculus III (4)",
+       "MA-461 Linear Algebra (4)",
+       "MA-481 Probability and Statistics (3)",
+       "MA-905 Undergraduate Research in Mathematics and/or Computer Science I (2)",
+       "MA-906 Undergraduate Research in Mathematics and/or Computer Science II (2)"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Science major electives (8 credits)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any one course from Required Core 1C: Life & Physical Sciences (3-4 credits). Recorded at 4 credits; students taking a 3-credit science take the separate 1-credit lab slot (see SCI-LAB). Students who take a STEM-variant 4/5-credit 1C course with integrated lab satisfy the lab requirement (PDF note 4).",
+      "code": "RC1C-SCI",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Required Core 1C: Life & Physical Sciences course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: science laboratory course, 0-1 credits; corequisite with the 3-credit 1C science course. 0 credits here because the recorded 1C science is the 4-credit integrated-lab variant (PDF note 4).",
+      "code": "SCI-LAB",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Science laboratory course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any one course from Flexible Core 2A, 2B, 2C, or 2D (one course from each of 2A/2B/2C/2D required across the degree per PDF note 2).",
+      "code": "FC2A-D-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Flexible Core 2A, 2B, 2C, or 2D course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www7.qcc.cuny.edu/academics/degree-programs/degree-programs-2026/A.S._in_Computer_Science_MA-440_Placement_2025-26.pdf",
+  "total_credits": 60,
+  "content_hash": "a3241c3e96c3121eca39b9e74850a9904a77ac7d58a797a4255dca98d6d0095b",
+  "last_verified": "2026-10-02"
+ }
+}

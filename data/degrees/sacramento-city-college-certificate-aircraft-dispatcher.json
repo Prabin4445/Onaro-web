@@ -1,0 +1,248 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "Certificate",
+  "external_prereqs": [],
+  "id": "sacramento-city-college-certificate-aircraft-dispatcher",
+  "major": "Aircraft Dispatcher",
+  "notes": "Transcribed from the official SCC 'Aircraft Dispatcher Certificate' program map, Catalog 2025-26, published July 19, 2025 (mapmaker.losrios.edu/Maps/6936/PublishedPdf). Official Total Units: 37 = 4+12+15+6, verified against the map's 4 / 12 / 15 / 6 headers. This is a Certificate of Achievement (no GE pattern; all courses are major core). The map's standalone Summer Term (6 units) is kept as its own term per the validator term-cap rule. In-plan prereqs sequenced (all with grades of C or better unless noted): FLTEC 302, 304, 306, 330 each require FLTEC 320; FLTEC 310 requires FLTEC 302, 304, 306, 330; FLTEC 321 requires FLTEC 302, 304, 306, 330; FLTEC 312 requires FLTEC 302, 304, 306, 310, 320; FLTEC 314 requires FLTEC 302, 304, 306, 310, 330; ATCAD 309 requires FLTEC 302, 304, 306, 310, 314, 320, 330; ATCAD 310 requires ATCAD 309. The map's alternative FAA-credential paths (FAA Private Pilot Certificate, FAA Private Pilot Knowledge exam, higher FAA Pilot Certificate, or 14 CFR 65.57(a) experience/recency for ATCAD 309) are documented in choice notes but the modeled path uses the in-plan course sequence. ATCAD 310: students should have completed the FAA aeronautical knowledge exam for Aircraft Dispatcher before the class begins (map note). Certificates of Achievement require a grade of C or better in each major course (map note). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "FLTEC 320",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "FLTEC 320",
+      "title": "Private Pilot Ground School",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of C or better; or hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam.",
+      "code": "FLTEC 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "FLTEC 302",
+      "title": "Aviation Weather",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of C or better; or hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam.",
+      "code": "FLTEC 306",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "FLTEC 306",
+      "title": "Federal Aviation Regulations",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of C or better; or hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam.",
+      "code": "FLTEC 304",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "FLTEC 304",
+      "title": "Human Factors and Risk Management in Aviation",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of C or better; or hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam.",
+      "code": "FLTEC 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "FLTEC 330",
+      "title": "Airplane Aerodynamics",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, and 330 with grades of C or better; or hold FAA Private Pilot Certificate or higher FAA Pilot Certificate.",
+      "code": "FLTEC 310",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 330"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "FLTEC 310",
+      "title": "Instrument Pilot/Instructor Ground School",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, FLTEC 304, FLTEC 306, FLTEC 310, and FLTEC 320 with grades of C or better.",
+      "code": "FLTEC 312",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 320"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "FLTEC 312",
+      "title": "Air Navigation, Airspace, and Communication",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, 310, and 330 with grades of C or better; or hold FAA Private Pilot Certificate or higher FAA Pilot Certificate.",
+      "code": "FLTEC 314",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 330"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "FLTEC 314",
+      "title": "Large Aircraft Systems",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, and 330 with grades of C or better; or hold FAA Private Pilot Certificate or higher FAA Pilot Certificate.",
+      "code": "FLTEC 321",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 330"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "FLTEC 321",
+      "title": "Commercial Pilot Ground School",
+      "xfer": [
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     }
+    ],
+    "n": 3,
+    "term": "Semester 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, 310, 314, 320, and 330 with grades of C or better. Students who do not wish to pursue a degree or certificate from SCC and who meet the experience and recency requirements of 14 CFR 65.57(a) may enroll after completing FLTEC 314 (documented, not modeled).",
+      "code": "ATCAD 309",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 314",
+       "FLTEC 320",
+       "FLTEC 330"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "ATCAD 309",
+      "title": "Airline Operations and Performance",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: ATCAD 309 with a grade of C or better. Students should have completed the Federal Administration's aeronautical knowledge exam for Aircraft Dispatcher before the class begins.",
+      "code": "ATCAD 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ATCAD 309"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "ATCAD 310",
+      "title": "Aircraft Dispatcher Operations",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Summer Term"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/6936/PublishedPdf",
+  "total_credits": 37,
+  "transfer_confidence": "core_only",
+  "content_hash": "d0cbab50e3a277b8e1e7d54c65160e680b94062b2ef9b89f131df12e74ed748e",
+  "last_verified": "2026-10-02"
+ }
+}

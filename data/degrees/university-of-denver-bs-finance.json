@@ -1,0 +1,528 @@
+{
+ "institution": {
+  "city": "Denver, CO",
+  "kind": "private4yr",
+  "name": "University of Denver",
+  "state": "CO"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "id": "university-of-denver-bs-finance",
+  "major": "Finance",
+  "notes": "University of Denver is on the quarter system (Fall/Winter/Spring); term_system=quarter. Official sample 4-year course plan from the 2025-2026 Undergraduate Bulletin Finance program PDF (12 quarters). BSBA degree requires 185 credits; sample plan states Total Credits: 186; declared total 186 (plan's actual sum). PDF text extraction merges table rows; Year-2 (INTZ 2501 placement), Year-3 (Winter/Spring column split), and Year-4 placements were reconstructed from the stated term totals (18/16/16, 16/16/16, 16/12/12), which reconcile exactly — documented per slot. Generic slots (business courses per footnotes 6/7/8, language/SI sequences, Common Curriculum, finance major classes per footnote 5, general electives, study-abroad block) encoded as choice slots exactly as the official plan lists them; no courses invented. Finance major requires FIN 3110, FIN 3200, FIN 3300, FIN 3410, ACTG 3220 plus 16 credits of 3000-level FIN electives. MGMT 3000 prerequisites: all Microsoft certifications and all Business Core except BUS 3800. BUS 3800 may be taken fall, winter, or spring after MGMT 3000.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "FSEM 1111",
+      "credits": 4,
+      "title": "First-Year Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 1: MATH 1200 or MATH 1951 fulfills Analytical Inquiry: The Natural and Physical World",
+      "code": "DU-MATH-1",
+      "credits": 4,
+      "title": "MATH 1200 or MATH 1951",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: complete Language or SI: Natural and Physical World sequence; one in year 1, the other in year 2",
+      "code": "DU-LANG-1",
+      "credits": 4,
+      "title": "Language sequence or SI: Natural sequence I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 6: distribute 12 credits of business-related coursework across year 1 (BUS 1440, MGMT 2100, ECON 1030, INFO 1010 & 1011)",
+      "code": "DU-BUS-1",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1,
+    "term": "Fall — Year 1"
+   },
+   {
+    "courses": [
+     {
+      "code": "WRIT 1122",
+      "credits": 4,
+      "title": "Writing and Rhetoric",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Common Curriculum requirement",
+      "code": "DU-CC-1",
+      "credits": 4,
+      "title": "Common Curriculum course",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: Language or SI: Natural and Physical World sequence",
+      "code": "DU-LANG-2",
+      "credits": 4,
+      "title": "Language sequence or SI: Natural sequence II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 6: year-1 business coursework distribution",
+      "code": "DU-BUS-2",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2,
+    "term": "Winter — Year 1"
+   },
+   {
+    "courses": [
+     {
+      "code": "WRIT 1133",
+      "credits": 4,
+      "title": "Writing and Rhetoric",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Common Curriculum requirement",
+      "code": "DU-CC-2",
+      "credits": 4,
+      "title": "Common Curriculum course",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: Language or SI: Natural and Physical World sequence",
+      "code": "DU-LANG-3",
+      "credits": 4,
+      "title": "Language sequence or SI: Natural sequence III",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 6: year-1 business coursework distribution",
+      "code": "DU-BUS-3",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3,
+    "term": "Spring — Year 1"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: the sequence not completed in year 1",
+      "code": "DU-LANG-4",
+      "credits": 4,
+      "title": "SI: Natural sequence or Language sequence I",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 4: INTZ 2501 Exploring Global Citizenship, required for any student who studies abroad; may be taken any quarter within the year prior to studying abroad; placed in Fall per stated term total 18",
+      "code": "INTZ 2501",
+      "credits": 2,
+      "title": "INTZ 2501",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 7: distribute 16 credits of business-related coursework across year 2 (beyond year-1 courses: ACTG 2200, BUS 1599, INFO 1020 & 1021, LGST 2000, INFO 2020, MKTG 2800, BUS 3000)",
+      "code": "DU-BUS-4",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 7: year-2 business coursework distribution",
+      "code": "DU-BUS-5",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective or optional minor course",
+      "code": "DU-EL-1",
+      "credits": 4,
+      "title": "General elective/optional minor course",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4,
+    "term": "Fall — Year 2"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: the sequence not completed in year 1",
+      "code": "DU-LANG-5",
+      "credits": 4,
+      "title": "SI: Natural sequence or Language sequence II",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Common Curriculum requirement",
+      "code": "DU-CC-3",
+      "credits": 4,
+      "title": "Common Curriculum course",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 7: year-2 business coursework distribution",
+      "code": "DU-BUS-6",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective or optional minor course",
+      "code": "DU-EL-2",
+      "credits": 4,
+      "title": "General elective/optional minor course",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5,
+    "term": "Winter — Year 2"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 2: the sequence not completed in year 1",
+      "code": "DU-LANG-6",
+      "credits": 4,
+      "title": "SI: Natural sequence or Language sequence III",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Common Curriculum requirement",
+      "code": "DU-CC-4",
+      "credits": 4,
+      "title": "Common Curriculum course",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 7: year-2 business coursework distribution",
+      "code": "DU-BUS-7",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective or optional minor course",
+      "code": "DU-EL-3",
+      "credits": 4,
+      "title": "General elective/optional minor course",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6,
+    "term": "Spring — Year 2"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Study-abroad quarter: 16 credits of general electives",
+      "code": "DU-SA-1",
+      "credits": 16,
+      "title": "Study abroad (General electives)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7,
+    "term": "Fall — Year 3"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 8: distribute 16 credits of business-related coursework across year 3 (FIN 2800 by winter of year 3, ACTG 2300, any business courses not completed in year 2)",
+      "code": "DU-BUS-8",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class; check prerequisites. Major requires FIN 3110, FIN 3200, FIN 3300, FIN 3410, ACTG 3220 + 16 credits of 3000-level FIN electives",
+      "code": "DU-FIN-1",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-2",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective or optional minor course",
+      "code": "DU-EL-4",
+      "credits": 4,
+      "title": "General elective/optional minor course",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8,
+    "term": "Winter — Year 3"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 8: year-3 business coursework distribution",
+      "code": "DU-BUS-9",
+      "credits": 4,
+      "title": "Business course",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-3",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-4",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s9-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "General elective or optional minor course",
+      "code": "DU-EL-5",
+      "credits": 4,
+      "title": "General elective/optional minor course",
+      "slot_id": "s9-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 9,
+    "term": "Spring — Year 3"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Prerequisites: all Microsoft certifications and all Business Core except BUS 3800",
+      "code": "MGMT 3000",
+      "credits": 4,
+      "title": "MGMT 3000",
+      "slot_id": "s10-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-5",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s10-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-6",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s10-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-7",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s10-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 10,
+    "term": "Fall — Year 4"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-8",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s11-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-9",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s11-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Could be fall, winter, or spring after completing MGMT 3000",
+      "code": "BUS 3800",
+      "credits": 4,
+      "title": "BUS 3800",
+      "slot_id": "s11-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 11,
+    "term": "Winter — Year 4"
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Advanced Seminar (ASEM)",
+      "code": "DU-ASEM-1",
+      "credits": 4,
+      "title": "Advanced Seminar (ASEM)",
+      "slot_id": "s12-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-10",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s12-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Footnote 5: finance major class",
+      "code": "DU-FIN-11",
+      "credits": 4,
+      "title": "Finance major class",
+      "slot_id": "s12-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 12,
+    "term": "Spring — Year 4"
+   }
+  ],
+  "source_url": "http://bulletin.du.edu/undergraduate/majorsminorscoursedescriptions/traditionalbachelorsprogrammajorandminors/finance/finance.pdf",
+  "term_system": "quarter",
+  "total_credits": 186,
+  "content_hash": "3c5a2c3cff3ee2924eb8bf3d1cfe0c38c7ff108c9f9a61ec54e010fe59c9cb00",
+  "last_verified": "2026-10-02"
+ }
+}

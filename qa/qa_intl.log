@@ -1,0 +1,41 @@
+shot: intl-00-welcome
+PASS onboarding role sheet shows after welcome 
+shot: intl-01-ob-pick
+PASS onboarding uses picker button (no select) yes
+PASS directory loads in picker (2.5MB json) 
+PASS bundled-directory honesty badge visible 
+shot: intl-02-picker-grouped
+PASS search finds Tribhuvan University 
+shot: intl-03-picker-search
+PASS picked Tribhuvan University from directory picked
+shot: intl-04-ob-picked
+PASS onboarding shows picked institution Tribhuvan University
+PASS profile.campus set Tribhuvan University
+PASS profile.campusCoords near Tribhuvan [27.68067,85.28346]
+PASS onboarding completes -> home 
+PASS currency NP -> Rs Rs 2500
+PASS currency IN -> ₹ ₹ 2500
+PASS currency GB -> £ £ 2500
+PASS currency DE -> € € 2500
+PASS currency US -> $ $2500
+PASS map center kathmandu [27.7172,85.324]
+PASS pseudo-pins placed around kathmandu 15
+shot: intl-map-kathmandu
+PASS map center london [51.5074,-0.1278]
+PASS pseudo-pins placed around london 15
+shot: intl-map-london
+PASS map center saopaulo [-23.5558,-46.6396]
+PASS pseudo-pins placed around saopaulo 15
+shot: intl-map-saopaulo
+PASS map center tokyo [35.6762,139.6503]
+PASS pseudo-pins placed around tokyo 15
+shot: intl-map-tokyo
+PASS geolocation fallback status shown 📍 Using community area — location unavailable · base tiles offline — pins still 
+shot: intl-geo-fallback
+PASS picker title in Nepali 🌍 तपाईंको विश्वविद्यालय वा कलेज खोज्नुहोस्
+shot: intl-05-picker-ne
+CONSOLE-ERRORS: none
+PASS zero console errors None
+
+26/26 passed
+EXIT:0

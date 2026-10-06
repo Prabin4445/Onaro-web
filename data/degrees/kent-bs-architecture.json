@@ -1,0 +1,545 @@
+{
+ "institution": {
+  "ipeds": 203517,
+  "name": "Kent State University at Kent",
+  "city": "Kent",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "kent-bs-architecture",
+  "major": "Architecture",
+  "notes": "Architecture major, no concentration (the standard pre-professional path). Built from the official 2026-2027 University Catalog PDF 'Architecture Major (No Concentration)' roadmap. Advancement to third-year professional level requires minimum 2.250 GPA in ARCH courses and minimum 2.500 overall GPA, with no more than one deficiency in required major coursework from the first four semesters. The roadmap prints ranges on some slots (MATH 12002 is 3-5 credits) and a minimum total of 124; the printed semester totals with minimum-credit options sum to 119, while the requirements table lists 14 non-architecture elective credits 'depending on earning 124 credit hours'. This plan models MATH 12002 Analytic Geometry and Calculus I at its standard 5 credits and distributes 15 non-architecture elective credits across the roadmap's elective slots (Sem 3: 1, Sem 4: 4, Sem 5: 1, Sem 6: 5, Sem 8: 4) to reach the catalog's 124 minimum -- the roadmap's elective slots are shown with these modeled values. Prerequisite chain follows the lockstep studio sequence (ARCH 10101 -> 10102 -> 20101 -> 20102 -> 30101 -> 30102 -> 40101 -> 40102), the structures sequence (ARCH 20301 -> 40301 -> 40302), materials/methods (ARCH 40401 -> 40402), environmental technology (ARCH 40501 -> 40502), physics (PHY 13001 + PHY 13021 -> PHY 13012), and MATH 12011 -> MATH 12002.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 10011",
+      "credits": 3,
+      "prereq": [],
+      "title": "Global Architectural History I (KFA)",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 10101",
+      "credits": 3,
+      "prereq": [],
+      "title": "First Year Design Studio I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 20601",
+      "credits": 1,
+      "prereq": [],
+      "title": "Computer Applications in Architecture I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "MATH 12011",
+      "credits": 3,
+      "prereq": [],
+      "title": "Calculus with Precalculus I (KMCR)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "UC 10001",
+      "credits": 1,
+      "prereq": [],
+      "title": "Flashes 101",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 10012",
+      "credits": 3,
+      "prereq": [
+       "ARCH 10011"
+      ],
+      "title": "Global Architectural History II (KFA)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 10102",
+      "credits": 3,
+      "prereq": [
+       "ARCH 10101"
+      ],
+      "title": "First-Year Design Studio II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 20602",
+      "credits": 1,
+      "prereq": [
+       "ARCH 20601"
+      ],
+      "title": "Computer Applications in Architecture II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "MATH 12002 Analytic Geometry and Calculus I (KMCR, 3-5 cr) or MATH 12012 Calculus with Precalculus II (KMCR). Modeled at the standard 5 credits.",
+      "code": "MATH-E",
+      "credits": 5,
+      "options": [
+       "MATH 12002",
+       "MATH 12012"
+      ],
+      "prereq": [
+       "MATH 12011"
+      ],
+      "title": "Calculus Elective (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 20101",
+      "credits": 3,
+      "prereq": [
+       "ARCH 10102"
+      ],
+      "title": "Second-Year Design Studio I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 30031",
+      "credits": 3,
+      "prereq": [],
+      "title": "Architectural Discourses (WIC)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "PHY 13001",
+      "credits": 4,
+      "prereq": [
+       "MATH-E"
+      ],
+      "title": "General College Physics I (KBS)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "PHY 13021",
+      "credits": 1,
+      "prereq": [],
+      "title": "General College Physics Laboratory I (KBS) (KLAB)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "CIVIC",
+      "credits": 3,
+      "prereq": [],
+      "title": "American Civic Literacy Requirement (e.g., HIST 12061 or POL 10101)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any non-architecture elective course chosen by the student.",
+      "code": "NAE-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Non-Architecture Elective (student choice)",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 20102",
+      "credits": 5,
+      "prereq": [
+       "ARCH 20101"
+      ],
+      "title": "Second-Year Design Studio II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 20301",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Building Structures",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "PHY 13012",
+      "credits": 2,
+      "prereq": [
+       "PHY 13001",
+       "PHY 13021"
+      ],
+      "title": "College Physics II (KBS)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student. Kent Core Composition (6 credit hours) must be completed by the end of this semester.",
+      "code": "KC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any non-architecture elective courses chosen by the student, totaling 4 credits this semester.",
+      "code": "NAE-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Non-Architecture Electives (student choice)",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 30101",
+      "credits": 5,
+      "prereq": [
+       "ARCH 20102"
+      ],
+      "title": "Third-Year Design Studio I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40301",
+      "credits": 3,
+      "prereq": [
+       "ARCH 20301"
+      ],
+      "title": "Structural Systems I",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40401",
+      "credits": 3,
+      "prereq": [],
+      "title": "Methods and Materials I",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40501",
+      "credits": 3,
+      "prereq": [],
+      "title": "Environmental Technology I",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any non-architecture elective course chosen by the student.",
+      "code": "NAE-3",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Non-Architecture Elective (student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 30102",
+      "credits": 5,
+      "prereq": [
+       "ARCH 30101"
+      ],
+      "title": "Third-Year Design Studio II (ELR)",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Two upper-division (30000 or 40000 level) Architecture electives chosen by the student, 3 credits each.",
+      "code": "ARCH-UDE-1",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "title": "Architecture Upper-Division Electives (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any non-architecture elective courses chosen by the student, totaling 5 credits this semester.",
+      "code": "NAE-4",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Non-Architecture Electives (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 40101",
+      "credits": 5,
+      "prereq": [
+       "ARCH 30102"
+      ],
+      "title": "Fourth-Year Design Studio I",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40402",
+      "credits": 3,
+      "prereq": [
+       "ARCH 40401"
+      ],
+      "title": "Methods and Materials II",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40502",
+      "credits": 3,
+      "prereq": [
+       "ARCH 40501"
+      ],
+      "title": "Environmental Technology II",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One upper-division (30000 or 40000 level) Architecture elective chosen by the student.",
+      "code": "ARCH-UDE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Architecture Upper-Division Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "ARCH 40102",
+      "credits": 5,
+      "prereq": [
+       "ARCH 40101"
+      ],
+      "title": "Integrated Design Studio",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "ARCH 40302",
+      "credits": 3,
+      "prereq": [
+       "ARCH 40301"
+      ],
+      "title": "Structural Systems II",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose from ARCH 45210 Renaissance Architecture, ARCH 45211 Baroque Architecture, ARCH 45214 Early 20th Century Architecture, ARCH 45215 Mid-20th Century Architecture, ARCH 45220 Architecture in the United States, ARCH 45230 Frank Lloyd Wright, ARCH 45240 The Skyscraper, ARCH 45241 Architecture of World's Fairs, or ARCH 45295 Special Topics in Architectural History.",
+      "code": "ARCH-HIST-E",
+      "credits": 3,
+      "options": [
+       "ARCH 45210",
+       "ARCH 45211",
+       "ARCH 45214",
+       "ARCH 45215",
+       "ARCH 45220",
+       "ARCH 45230",
+       "ARCH 45240",
+       "ARCH 45241",
+       "ARCH 45295"
+      ],
+      "prereq": [],
+      "title": "Architectural History Elective (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any non-architecture elective courses chosen by the student, totaling 4 credits this semester.",
+      "code": "NAE-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Non-Architecture Electives (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.kent.edu/colleges/ae/architecture-bs/architecture-bs.pdf",
+  "total_credits": 124,
+  "content_hash": "36126537d4f751096c1c542078d15e7424880b7866c0b6023b56825ee5706b05",
+  "last_verified": "2026-10-02"
+ }
+}

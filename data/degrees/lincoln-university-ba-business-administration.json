@@ -1,0 +1,734 @@
+{
+ "institution": {
+  "name": "Lincoln University",
+  "city": "Oakland, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "lincoln-university-ba-business-administration",
+  "degree": "BA",
+  "major": "Business Administration",
+  "catalog_year": "2026-2027",
+  "total_credits": 123,
+  "source_url": "http://file.lincolnuca.edu/catalog/LU Catalog.pdf",
+  "notes": "Transcribed from the official Lincoln University 2026-2027 Academic Year Catalog (LU Catalog.pdf, '2026 – 2027 ACADEMIC YEAR CATALOG'). BA in Business Administration: 45 units General Education + 42 units General Business Administration (GBA) + 21 units concentration + 15 units electives = 123 units. Term layout follows the catalog's published 'SUGGESTED COURSE SEQUENCING FOR BA IN BA DEGREE PROGRAM'. Concentration shown is International Business (first-listed of five: International Business, Marketing, Entrepreneurship, Management Information Systems, Business Communications); the other four menus are quoted in the choice notes. The 13 generic GE slots decompose exactly into the catalog's named GE list: SCI 31, MATH --, SCI 10, 'HIST 10 or HIST 15', 'HIST -- or HUM --', PSYCH 10, HUM 10, 'ECON 10 or ECON 280', 'POLSCI 10 or SOCSCI 10', ENG 86, ENG 75, ENG 82, and ENG 77/99/170/271/280 (13x3=39, plus the sequenced MATH 10 and CS 10 = 45). The catalog's GE list says 'HIST 15' but the course-description catalog contains no course numbered HIST 15 (only HIST 15A/15B), so HIST 15A/15B are offered as the options. 'MATH --' is shown as MATH 15 (the standard second mathematics course). ECON 10 is the canonical pick for 'ECON 10 or ECON 280' because BA 125's published prerequisite is ECON 10. BA 290's catalog prerequisite is 'Senior standing' (not a course code); modeled with an empty prereq array. 'MATH 10 or MATH 15' style prerequisites are modeled as the plan's actual satisfying course (MATH 10). Elective slots are not term-sequenced in the catalog ('At least 15 units of elective courses to be chosen from the university catalog').",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "n": 1,
+    "courses": [
+     {
+      "code": "BA 10",
+      "title": "Business Foundations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "CS 10",
+      "title": "Introduction To Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "MATH 10",
+      "title": "College Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "SCI 31",
+      "title": "Human Biology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "MATH 15",
+      "title": "Finite Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'MATH --' (any mathematics course); MATH 15 shown as the standard second mathematics course.",
+      "options": [
+       "MATH 21",
+       "MATH 40"
+      ],
+      "category": "core",
+      "slot_id": "s1-4"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 1",
+    "n": 2,
+    "courses": [
+     {
+      "code": "BA 42",
+      "title": "Financial Accounting",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "ECON 20A",
+      "title": "Principles Of Economics I (Macroeconomics)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "SCI 10",
+      "title": "Physical Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-2"
+     },
+     {
+      "code": "HIST 10",
+      "title": "World History",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'HIST 10 or HIST 15'; the course-description catalog contains no course numbered HIST 15 (only HIST 15A/15B), offered here as the equivalents.",
+      "options": [
+       "HIST 15A",
+       "HIST 15B"
+      ],
+      "category": "core",
+      "slot_id": "s2-3"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 1",
+    "n": 3,
+    "courses": [
+     {
+      "code": "HIST 15A",
+      "title": "History Of The United States I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'HIST -- or HUM --' (any history or humanities course).",
+      "options": [
+       "HIST 15B",
+       "HUM 16",
+       "HUM 30",
+       "HUM 40"
+      ],
+      "category": "core",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "PSYCH 10",
+      "title": "Fundamentals Of Psychology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s3-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 2",
+    "n": 4,
+    "courses": [
+     {
+      "code": "BA 110",
+      "title": "Management Principles",
+      "credits": 3,
+      "prereq": [
+       "BA 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "ECON 20B",
+      "title": "Principles Of Economics Ii (Microeconomics)",
+      "credits": 3,
+      "prereq": [
+       "MATH 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-1"
+     },
+     {
+      "code": "HUM 10",
+      "title": "Introduction To Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s4-2"
+     },
+     {
+      "code": "ECON 10",
+      "title": "Economic Geography",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'ECON 10 or ECON 280'; ECON 10 shown because it is the published prerequisite of concentration course BA 125.",
+      "options": [
+       "ECON 280"
+      ],
+      "category": "core",
+      "slot_id": "s4-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 2",
+    "n": 5,
+    "courses": [
+     {
+      "code": "BA 19",
+      "title": "Fundamentals Of Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "BA 115",
+      "title": "Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-1"
+     },
+     {
+      "code": "BA 130",
+      "title": "Introduction To International Business",
+      "credits": 3,
+      "prereq": [
+       "BA 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-2"
+     },
+     {
+      "code": "POLSCI 10",
+      "title": "United States Government",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'POLSCI 10 or SOCSCI 10'.",
+      "options": [
+       "SOCSCI 10"
+      ],
+      "category": "core",
+      "slot_id": "s5-3"
+     },
+     {
+      "code": "ENG 86",
+      "title": "Survey Of American Literature",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s5-4"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 2",
+    "n": 6,
+    "courses": [
+     {
+      "code": "ENG 75",
+      "title": "Critical Thinking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s6-0"
+     },
+     {
+      "code": "ENG 82",
+      "title": "Written Communication",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s6-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 3",
+    "n": 7,
+    "courses": [
+     {
+      "code": "BA 140",
+      "title": "Fundamentals Of Finance",
+      "credits": 3,
+      "prereq": [
+       "MATH 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "BA 150",
+      "title": "Marketing",
+      "credits": 3,
+      "prereq": [
+       "BA 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-1"
+     },
+     {
+      "code": "BA 215",
+      "title": "Production Management",
+      "credits": 3,
+      "prereq": [
+       "BA 110",
+       "BA 115"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-2"
+     },
+     {
+      "code": "ENG 99",
+      "title": "Report Writing",
+      "credits": 3,
+      "prereq": [
+       "ENG 82"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog GE chart lists 'ENG 77, 99, 170, 271, 280'. Note: ENG 271 requires ENG 170.",
+      "options": [
+       "ENG 77",
+       "ENG 170",
+       "ENG 271",
+       "ENG 280"
+      ],
+      "category": "core",
+      "slot_id": "s7-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 3",
+    "n": 8,
+    "courses": [
+     {
+      "code": "BA 240",
+      "title": "Managerial Accounting",
+      "credits": 3,
+      "prereq": [
+       "BA 42",
+       "BA 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-0"
+     },
+     {
+      "code": "BA 125",
+      "title": "World Resources",
+      "credits": 3,
+      "prereq": [
+       "ECON 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog International Business concentration: 'Choose at least 15 units (5 courses) from:' BA 125, BA 171, ECON 220, BA 230, BA 231, BA 234, BA 259, BA 264, BA 289; plus 'optional additional courses from other concentrations' (6 units). This slot's canonical pick is shown. Note: BA 264 requires BA 160 (not in this plan); ECON 220 requires ECON 20A and BA 130 (both in plan).",
+      "options": [
+       "BA 171",
+       "ECON 220",
+       "BA 230",
+       "BA 231",
+       "BA 234",
+       "BA 259",
+       "BA 264",
+       "BA 289"
+      ],
+      "category": "major",
+      "slot_id": "s8-1"
+     },
+     {
+      "code": "BA 289",
+      "title": "International Business Strategy",
+      "credits": 3,
+      "prereq": [
+       "BA 110",
+       "BA 130",
+       "BA 150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog International Business concentration: 'Choose at least 15 units (5 courses) from:' BA 125, BA 171, ECON 220, BA 230, BA 231, BA 234, BA 259, BA 264, BA 289; plus 'optional additional courses from other concentrations' (6 units). This slot's canonical pick is shown. Note: BA 264 requires BA 160 (not in this plan); ECON 220 requires ECON 20A and BA 130 (both in plan).",
+      "options": [
+       "BA 125",
+       "BA 171",
+       "ECON 220",
+       "BA 230",
+       "BA 231",
+       "BA 234",
+       "BA 259",
+       "BA 264"
+      ],
+      "category": "major",
+      "slot_id": "s8-2"
+     },
+     {
+      "code": "Elective Course",
+      "title": "Elective Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: 'At least 15 units of elective courses to be chosen from the university catalog.' Not term-sequenced; modeled as five 3-unit choice slots.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s8-3"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 3",
+    "n": 9,
+    "courses": [
+     {
+      "code": "BA 230",
+      "title": "Studies In International Business",
+      "credits": 3,
+      "prereq": [
+       "BA 130"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog International Business concentration: 'Choose at least 15 units (5 courses) from:' BA 125, BA 171, ECON 220, BA 230, BA 231, BA 234, BA 259, BA 264, BA 289; plus 'optional additional courses from other concentrations' (6 units). This slot's canonical pick is shown. Note: BA 264 requires BA 160 (not in this plan); ECON 220 requires ECON 20A and BA 130 (both in plan).",
+      "options": [
+       "BA 125",
+       "BA 171",
+       "ECON 220",
+       "BA 231",
+       "BA 234",
+       "BA 259",
+       "BA 264",
+       "BA 289"
+      ],
+      "category": "major",
+      "slot_id": "s9-0"
+     },
+     {
+      "code": "BA 231",
+      "title": "Cultural Dimensions Of Management",
+      "credits": 3,
+      "prereq": [
+       "BA 110",
+       "BA 130"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog International Business concentration: 'Choose at least 15 units (5 courses) from:' BA 125, BA 171, ECON 220, BA 230, BA 231, BA 234, BA 259, BA 264, BA 289; plus 'optional additional courses from other concentrations' (6 units). This slot's canonical pick is shown. Note: BA 264 requires BA 160 (not in this plan); ECON 220 requires ECON 20A and BA 130 (both in plan).",
+      "options": [
+       "BA 125",
+       "BA 171",
+       "ECON 220",
+       "BA 230",
+       "BA 234",
+       "BA 259",
+       "BA 264",
+       "BA 289"
+      ],
+      "category": "major",
+      "slot_id": "s9-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 4",
+    "n": 10,
+    "courses": [
+     {
+      "code": "BA 250",
+      "title": "Entrepreneurial Management",
+      "credits": 3,
+      "prereq": [
+       "BA 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s10-0"
+     },
+     {
+      "code": "BA 259",
+      "title": "International Marketing",
+      "credits": 3,
+      "prereq": [
+       "BA 130",
+       "BA 150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog International Business concentration: 'Choose at least 15 units (5 courses) from:' BA 125, BA 171, ECON 220, BA 230, BA 231, BA 234, BA 259, BA 264, BA 289; plus 'optional additional courses from other concentrations' (6 units). This slot's canonical pick is shown. Note: BA 264 requires BA 160 (not in this plan); ECON 220 requires ECON 20A and BA 130 (both in plan).",
+      "options": [
+       "BA 125",
+       "BA 171",
+       "ECON 220",
+       "BA 230",
+       "BA 231",
+       "BA 234",
+       "BA 264",
+       "BA 289"
+      ],
+      "category": "major",
+      "slot_id": "s10-1"
+     },
+     {
+      "code": "BA 256",
+      "title": "Sales Management",
+      "credits": 3,
+      "prereq": [
+       "BA 150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog IB concentration: 'optional additional courses from other concentrations' (6 units). Curated options whose published prerequisites are all satisfied by this plan.",
+      "options": [
+       "BA 257",
+       "BA 236",
+       "BA 135"
+      ],
+      "category": "major",
+      "slot_id": "s10-2"
+     },
+     {
+      "code": "BA 216",
+      "title": "Project Management",
+      "credits": 3,
+      "prereq": [
+       "BA 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog IB concentration: 'optional additional courses from other concentrations' (6 units). Curated options whose published prerequisites are all satisfied by this plan.",
+      "options": [
+       "BA 217",
+       "BA 219",
+       "BA 170"
+      ],
+      "category": "major",
+      "slot_id": "s10-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 4",
+    "n": 11,
+    "courses": [
+     {
+      "code": "BA 290",
+      "title": "Strategic Business Management",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s11-0"
+     },
+     {
+      "code": "Elective Course",
+      "title": "Elective Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: 'At least 15 units of elective courses to be chosen from the university catalog.'",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s11-1"
+     },
+     {
+      "code": "Elective Course",
+      "title": "Elective Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: 'At least 15 units of elective courses to be chosen from the university catalog.'",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s11-2"
+     },
+     {
+      "code": "Elective Course",
+      "title": "Elective Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: 'At least 15 units of elective courses to be chosen from the university catalog.'",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s11-3"
+     },
+     {
+      "code": "Elective Course",
+      "title": "Elective Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: 'At least 15 units of elective courses to be chosen from the university catalog.'",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s11-4"
+     }
+    ]
+   }
+  ],
+  "content_hash": "1c92774c038cad915f88d01ab75d53a79e820df575607fca4541f5c2945d46b6",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,627 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-aas-web-design-development",
+  "degree": "AAS",
+  "major": "Web Design/Development",
+  "total_credits": 113,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/computer-and-information-technology/web-designdevelopment-3185-aas",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/computer-and-information-technology/web-designdevelopment-3185-aas), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "CIS 105",
+      "title": "Survey of Computer Information Systems",
+      "credits": 3,
+      "category": "major",
+      "core_area": "CS",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CIS 133DA",
+      "title": "Internet/Web Development Level I",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "CIS 120DF",
+      "title": "Introduction to Adobe Photoshop",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "CIS 136",
+      "title": "Content Management Systems: WordPress",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "CIS 166AA",
+      "title": "Introduction to Javascript",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "CIS 233DA",
+      "title": "Internet/Web Development Level II",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "CIS 235",
+      "title": "E-Commerce",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "MATHEMATICS_AREA",
+      "title": "Mathematics Area",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Mathematics Area",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "code": "CRE 101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 3,
+      "category": "major",
+      "core_area": "L",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107",
+       "RDG 095",
+       "RDG 100",
+       "RDG 111",
+       "RDG 112",
+       "RDG 113"
+      ],
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "COM 100",
+      "title": "Introduction to Human Communication",
+      "credits": 3,
+      "category": "major",
+      "core_area": "SB, SCB or SB, SCB or L, OCM or SB, SCB",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "COM100 or COM110 or COM225 or COM230: Introduction to Human Communication or Interpersonal Communication or Public Speaking or Small Group Communication",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s3-4",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_BEHAVIORAL_SCIENCES",
+      "title": "Social-Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social-Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-5",
+      "xfer": []
+     },
+     {
+      "code": "CIS 120DA",
+      "title": "Introduction to Adobe Premiere",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CIS120DA or CIS120DK: Introduction to Adobe Premiere or Introduction to Digital Video Editing",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-6",
+      "xfer": []
+     },
+     {
+      "code": "CIS 120DB",
+      "title": "Introduction to Adobe Illustrator",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-7",
+      "xfer": []
+     },
+     {
+      "code": "CIS 138DA",
+      "title": "Desktop Design and Publishing Using Adobe InDesign",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-8",
+      "xfer": []
+     },
+     {
+      "code": "AVC 183",
+      "title": "Digital Graphic Arts I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "AVC183 or (AVC100 and AVC181) or ART112: Digital Graphic Arts I or (Introduction to Digital Arts and Graphic Design I) or Two-Dimensional Design",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "AVC 100"
+      ],
+      "slot_id": "s3-9",
+      "xfer": []
+     },
+     {
+      "code": "CIS 126DL",
+      "title": "Linux Operating System",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CIS126DL or CIS126RH: Linux Operating System or Red Hat System Administration I",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-10",
+      "xfer": []
+     },
+     {
+      "code": "CIS 150AB",
+      "title": "Object-Oriented Programming Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "core_area": "None or CS or None or None or None or None",
+      "tccns": "",
+      "prereq": [
+       "CIS 105"
+      ],
+      "choice": true,
+      "choice_note": "CIS150AB or CIS156 or CIS159 or CIS162++ or CIS163AA or CIS165++ or CIS262AD or CIS263AA or CIS265++: Object-Oriented Programming Fundamentals or Python Programming: Level I or Visual Basic Programming I or Any C Programming course or Java Programming: Level I or Any Mobile Application Development course or C# Level II or Java Programming: Level II or Any Advanced Application Development course",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CIS 162AD",
+       "CIS 163AA"
+      ],
+      "slot_id": "s3-11",
+      "xfer": []
+     },
+     {
+      "code": "CIS 166AE",
+      "title": "Web Scripting with PHP: Hypertext Preprocessor (PHP)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-12",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "SPECIALIZATION_COURSE",
+      "title": "Specialization Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Specialization Course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "NATURAL_SCIENCES_GENERAL_OR_NATURAL_SCIENCES_QUANTITATIVE",
+      "title": "Natural Sciences General or Natural Sciences Quantitative",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "SG or SQ",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Natural Sciences General or Natural Sciences Quantitative",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "HUMANITIES_FINE_ARTS_DESIGN",
+      "title": "Humanities, Fine Arts & Design",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "HU",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Humanities, Fine Arts & Design",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "code": "CIS 120DC",
+      "title": "Introduction to Adobe Animate",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 120DF"
+      ],
+      "choice": true,
+      "choice_note": "CIS120DC or CIS220DF: Introduction to Adobe Animate or Adobe Photoshop Level II: Advanced Digital Imaging",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-5",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-6",
+      "xfer": []
+     },
+     {
+      "code": "CIS 119DO",
+      "title": "Introduction to Oracle: SQL",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "CIS 105"
+      ],
+      "choice": true,
+      "choice_note": "CIS119DO or CIS276++: Introduction to Oracle: SQL or Any Database Management Systems course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-7",
+      "xfer": []
+     },
+     {
+      "code": "CIS 150AB",
+      "title": "Object-Oriented Programming Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "core_area": "None or CS or None or None or None or None",
+      "tccns": "",
+      "prereq": [
+       "CIS 105"
+      ],
+      "choice": true,
+      "choice_note": "CIS150AB or CIS156 or CIS159 or CIS162++ or CIS163AA or CIS165++ or CIS262AD or CIS263AA or CIS265++: Object-Oriented Programming Fundamentals or Python Programming: Level I or Visual Basic Programming I or Any C Programming course or Java Programming: Level I or Any Mobile Application Development course or C# Level II or Java Programming: Level II or Any Advanced Application Development course",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "CIS 162AD",
+       "CIS 163AA"
+      ],
+      "slot_id": "s4-8",
+      "xfer": []
+     },
+     {
+      "code": "RESTRICTED_ELECTIVES",
+      "title": "Restricted Electives",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Restricted Electives",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-9",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "6d507882b300b407e5aa86f8bb4d620e879ace395151c5485914d460bc6f58c4",
+  "last_verified": "2026-10-02"
+ }
+}

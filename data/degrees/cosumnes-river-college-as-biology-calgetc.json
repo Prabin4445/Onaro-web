@@ -1,0 +1,346 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "MATH 355"
+  ],
+  "id": "cosumnes-river-college-as-biology-calgetc",
+  "major": "Biology",
+  "notes": "Transcribed from the official CRC 'Biology A.S. Degree - CalGETC' program map, Catalog Year 2026-2027, published August 25, 2026 (mapmaker.losrios.edu/Maps/7998/PublishedPdf). GE Pattern: Cal-GETC. Map states Total Units 67-69; lower bound 67 encoded = 15+17+16+19 (semester sums verified at lower bound: Sem 1 MATH 400/355 -> 4; Sem 2 MATH 401/356 -> 4). LINKED MATH SEQUENCES: Semester 1 offers MATH 400 Calculus I (5 units; pre-req MATH 370 or MATH 372 AND Math 373) or MATH 355 Calculus for Biology and Medicine I (4 units; pre-req MATH 373 or MATH 384). Semester 2 offers MATH 401 Calculus II (5 units; pre-req MATH 400) or MATH 356 Calculus for Biology and Medicine II (4 units; pre-req MATH 355). Take the sequences consistently: MATH 400 -> MATH 401; MATH 355 -> MATH 356. The Semester 2 MATH slot prerequisite is encoded as one_of MATH 400/MATH 355 (MATH 355 appears only as a Semester 1 option, so it is carried under external_prereqs for validator code-resolution). CHEM 400 pre-req per map: Intermediate Algebra or equivalent AND CHEM 300 or CHEM 305 or CHEM 309 (prior chemistry and algebra placement; documented here, not encoded as plan prerequisites). BIOL 400 pre-req per map: (CHEM 400 or CHEM 305) and MATH 120; encoded as CHEM 400 (the in-plan course), with CHEM 305/MATH 120 documented here. BIOL 420 and CHEM 421 carry GE AREA 'CRC Area L5' in the map (apparent typo in a CalGETC map; the parallel courses in Semesters 1-3 carry Cal-GETC Area 5A/5B & 5C); they are major courses, encoded without a GE core_area. Advisories (recommended, not required): BIOL 400, BIOL 410, BIOL 420 advisory eligibility for ENGWR 300. Semester 1: map recommends meeting with a counselor (Area 1A).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req per map: Intermediate Algebra or equivalent AND CHEM 300 or CHEM 305 or CHEM 309 (prior chemistry and algebra placement; documented here, not encoded).",
+      "code": "CHEM 400",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "CHEM 400",
+      "title": "General Chemistry I",
+      "slot_id": "s1-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 400 Calculus I (5 units; pre-req MATH 370 or MATH 372 AND Math 373) or MATH 355 Calculus for Biology and Medicine I (4 units; pre-req MATH 373 or MATH 384). Lower bound 4 encoded. Sequences: MATH 400 -> MATH 401; MATH 355 -> MATH 356 (Semester 2). General education: Cal-GETC Area 2.",
+      "code": "MATH 400",
+      "core_area": "2",
+      "credits": 4,
+      "options": [
+       "MATH 400",
+       "MATH 355"
+      ],
+      "prereq": [],
+      "tccns": "MATH 400",
+      "title": "Calculus I",
+      "slot_id": "s1-1",
+      "xfer": [
+       "american-river-college-aa-economics",
+       "cosumnes-river-college-aat-economics",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1A (English Composition). Map recommends meeting with a counselor.",
+      "code": "Any Cal-GETC Area 1A course",
+      "core_area": "1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1A (English Composition) course",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 3A (Arts).",
+      "code": "Any Cal-GETC Area 3A course",
+      "core_area": "3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 3A (Arts) course",
+      "slot_id": "s1-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req per map: (CHEM 400 or CHEM 305) and MATH 120; encoded as the in-plan CHEM 400, with CHEM 305/MATH 120 documented in plan notes. Advisory (recommended, not required): eligibility for ENGWR 300.",
+      "code": "BIOL 400",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 400"
+      ],
+      "tccns": "BIOL 400",
+      "title": "Principles of Biology",
+      "slot_id": "s2-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 401 Calculus II (5 units; pre-req MATH 400) or MATH 356 Calculus for Biology and Medicine II (4 units; pre-req MATH 355). Lower bound 4 encoded. Take consistently with the Semester 1 choice: MATH 400 -> MATH 401; MATH 355 -> MATH 356. General education: Cal-GETC Area 2.",
+      "code": "MATH 401",
+      "core_area": "2",
+      "credits": 4,
+      "options": [
+       "MATH 401",
+       "MATH 356"
+      ],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 400",
+         "MATH 355"
+        ]
+       }
+      ],
+      "tccns": "MATH 401",
+      "title": "Calculus II",
+      "slot_id": "s2-1",
+      "xfer": [
+       "american-river-college-aa-economics",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 401",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 400"
+      ],
+      "tccns": "CHEM 401",
+      "title": "General Chemistry II",
+      "slot_id": "s2-2",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1B (Critical Thinking & Composition).",
+      "code": "Any Cal-GETC Area 1B course",
+      "core_area": "1B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1B (Critical Thinking & Composition) course",
+      "slot_id": "s2-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): eligibility for ENGWR 300.",
+      "code": "BIOL 410",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "BIOL 400"
+      ],
+      "tccns": "BIOL 410",
+      "title": "Principles of Botany",
+      "slot_id": "s3-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 420",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 401"
+      ],
+      "tccns": "CHEM 420",
+      "title": "Organic Chemistry I",
+      "slot_id": "s3-1",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 3B (Humanities).",
+      "code": "Any Cal-GETC Area 3B course",
+      "core_area": "3B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 3B (Humanities) course",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 4 (Social & Behavioral Science).",
+      "code": "Any Cal-GETC Area 4 course",
+      "core_area": "4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 4 (Social & Behavioral Science) course",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): eligibility for ENGWR 300. (Map GE AREA reads 'CRC Area L5', an apparent typo in this CalGETC map.)",
+      "code": "BIOL 420",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "BIOL 400"
+      ],
+      "tccns": "BIOL 420",
+      "title": "Principles of Zoology",
+      "slot_id": "s4-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "(Map GE AREA reads 'CRC Area L5', an apparent typo in this CalGETC map.)",
+      "code": "CHEM 421",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 420"
+      ],
+      "tccns": "CHEM 421",
+      "title": "Organic Chemistry II",
+      "slot_id": "s4-1",
+      "xfer": [
+       "cosumnes-river-college-as-biology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1C (Oral Communication).",
+      "code": "Any Cal-GETC Area 1C course",
+      "core_area": "1C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1C (Oral Communication) course",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 4 (Social & Behavioral Sciences).",
+      "code": "Any Cal-GETC Area 4 course",
+      "core_area": "4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 4 (Social & Behavioral Sciences) course",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 6 (Ethnic Studies).",
+      "code": "Any Cal-GETC Area 6 course",
+      "core_area": "6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 6 (Ethnic Studies) course",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7998/PublishedPdf",
+  "total_credits": 67,
+  "content_hash": "dedb6728ee5f87b8b827c2e4c4fe850f81bde1345a28c1b678e2e90ca71389b2",
+  "last_verified": "2026-10-02"
+ }
+}

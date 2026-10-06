@@ -1,0 +1,638 @@
+{
+ "institution": {
+  "city": "Columbia, MO",
+  "kind": "public4yr",
+  "name": "University of Missouri",
+  "state": "MO"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "mizzou-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: https://catalog.missouri.edu/collegeofengineering/computerscience/bs-computer-science/ (University of Missouri Academic Catalog, current edition 2026-2027, current as of May 2026). Program name per catalog: 'BS in Computer Science'. Transcription method: official 'Semester Plan' table transcribed by hand from the live catalog page; course titles verified against the catalog's Major Core Requirements table. Degree requires 120 credits; the official sample plan totals 122-126. Variable-credit slots are set to the plan minimums so the file sums exactly: Science Sequence I/II 4 (of 4-5), General Education (if needed) 2 (of 2-4) -> total_credits 122. 'prereq' arrays are intentionally empty: the official sample plan does not state per-course prerequisites (only the capstone 6-semester sequence markers, preserved in titles/notes). Student-choice slots are marked choice:true with options listed where the catalog names specific courses; placement of choice slots follows the official semester layout. Caveats: the catalog states the sample plan is a sample and an individual plan may vary; CMP_SC 1000 may be replaced by ENGINR 1000 per the core-requirements waiver note; science sequence must be a 2-semester sequence with at least one course including a lab.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 1000",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 1050",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Algorithm Design and Programming I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1500",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Analytic Geometry and Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMMUN 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Public Speaking",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGLSH 1000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Exposition and Argumentation",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 2050",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Algorithm Design and Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 2270",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to Logic Systems",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1700",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Must fulfill the Missouri Constitutional requirement; any approved constitutional social/behavioral science course.",
+      "code": "SOCBEH 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Constitutional Requirement (Social/Behavioral Science elective)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 3050",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Advanced Algorithm Design",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CMP_SC course numbered 2000 or higher, or any IT course numbered 3000 or higher.",
+      "code": "CMP_SC 2XXXA",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "CMP_SC 2000-level or higher / IT 3000-level or higher course",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "First course of a 2-semester science sequence (at least one course in the sequence must include a lab). Approved sequences: College Physics I+II (PHYSCS 1210 & PHYSCS 1220), University Physics I+II (PHYSCS 2750 & PHYSCS 2760), College Chemistry I+II with labs (CHEM 1400 & CHEM 1401 / CHEM 1410 & CHEM 1411), or a biology sequence (e.g. BIO_SC 1010 & BIO_SC 1020, BIO_SC 1030, BIO_SC 1200, BIO_SC 1500).",
+      "code": "SCI 1XXX",
+      "credits": 4,
+      "options": [
+       "PHYSCS 1210",
+       "PHYSCS 2750",
+       "CHEM 1400",
+       "BIO_SC 1010",
+       "BIO_SC 1030",
+       "BIO_SC 1200",
+       "BIO_SC 1500"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Science Sequence I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Humanities general elective per the official plan.",
+      "code": "HUM 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "General Elective (Humanities)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Humanities general elective per the official plan.",
+      "code": "HUM 2XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "General Elective (Humanities)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 3330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Object Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Second course of the 2-semester science sequence begun in Fall Year 2; completes the sequence (4-5 credits, minimum used).",
+      "code": "SCI 2XXX",
+      "credits": 4,
+      "options": [
+       "PHYSCS 1220",
+       "PHYSCS 2760",
+       "CHEM 1410",
+       "BIO_SC 1020",
+       "BIO_SC 1030",
+       "BIO_SC 1200",
+       "BIO_SC 1500"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Science Sequence II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Social/behavioral science elective per the official plan.",
+      "code": "SOCBEH 2XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Social/Behavioral Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Catalog allows either course; both are titled Introduction to Mathematical Statistics.",
+      "code": "STAT 4710",
+      "credits": 3,
+      "options": [
+       "STAT 4710",
+       "MATH 4315"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Introduction to Mathematical Statistics (STAT 4710 or MATH 4315)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 3280",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Organization and Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 3380",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Database Applications and Information Systems",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives can be 2000 level and above CS or IT courses, 4000 level Math courses, any 4000+ level statistics course, 2000 level and above Engineering courses, or other courses with prior approval of the student's CS advisor.",
+      "code": "TECH 3XXX-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Discrete Mathematical Structures",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives can be 2000 level and above CS or IT courses, 4000 level Math courses, any 4000+ level statistics course, 2000 level and above Engineering courses, or other courses with prior approval of the student's CS advisor.",
+      "code": "TECH 3XXX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4050",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Software Engineering I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS elective numbered 4000 or above; at least 18 of the 24 CS elective hours must be 4000-level, including CMP_SC 4410 or CMP_SC 4450.",
+      "code": "CSELEC 4000-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Elective (4000 level)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS elective numbered 4000 or above.",
+      "code": "CSELEC 4000-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Elective (4000 level)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS elective numbered 4000 or above.",
+      "code": "CSELEC 4000-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "CS Elective (4000 level)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4520",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Operating Systems I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4970W",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Senior Capstone Design I - Writing Intensive",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the 4000-level CS electives must be CMP_SC 4410 or CMP_SC 4450.",
+      "code": "CMP_SC 4410",
+      "credits": 3,
+      "options": [
+       "CMP_SC 4410",
+       "CMP_SC 4450"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Theory of Computation I or Principles of Programming Languages (CMP_SC 4410 or 4450)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CMP_SC course numbered 2000 or higher, any IT course numbered 3000 or higher, or approved internship credit (must get approval prior).",
+      "code": "CMP_SC 2XXXB",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CMP_SC 2000-level or higher / IT 3000-level or higher or Internship course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Social/behavioral science general elective per the official plan.",
+      "code": "SOCBEH 3XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Elective (Social/Behavioral)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4850",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Networks I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMP_SC 4980",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Senior Capstone Design II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS elective numbered 4000 or above.",
+      "code": "CSELEC 4000-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS Elective (4000 level)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS elective numbered 4000 or above.",
+      "code": "CSELEC 4000-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS Elective (4000 level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "General education hours only if needed to reach the credit total; set to the plan minimum of 2.",
+      "code": "GENED 1XXX",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "General Education (if needed)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.missouri.edu/collegeofengineering/computerscience/bs-computer-science/",
+  "total_credits": 122,
+  "content_hash": "e66e26ce34a7cab875d99b2de8346ae1fd9fda9646baf509712fc65c352a9d69",
+  "last_verified": "2026-10-02"
+ }
+}

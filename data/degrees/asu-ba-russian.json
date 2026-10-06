@@ -1,0 +1,632 @@
+{
+ "institution": {
+  "name": "Arizona State University",
+  "city": "Tempe, AZ",
+  "state": "AZ",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "asu-ba-russian",
+  "degree": "BA",
+  "major": "Russian",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://degrees.asu.edu/major-map/ASU00/LARUSBA/null/ALL/2024",
+  "notes": "Source: official ASU Degree Search major map for 'Russian, BA' (program code LARUSBA), 2024-2025 catalog year: https://degrees.asu.edu/major-map/ASU00/LARUSBA/null/ALL/2024 . Transcription method: automated parse of every term row (courses, credit hours, minimum grades) from the official major map page on 2026-09-30, spot-checked against the rendered page. Term names use ASU's own 'Term N' numbering. General Studies designations (HUAD, SOBE, SCIT, AMIT, GCSI, CIVI, SUST) are modeled as choice:true student-choice slots; OR-options are choice slots naming the alternatives. Per-course prerequisites are NOT listed on the ASU major map, so prereq arrays are intentionally empty. Campus: Tempe. Major map track groups (Related Area Course, Upper Division Russian Elective, Upper Division Restricted Electives) are elective choice lists referenced from term slots; transcribed as choice slots with the group's courses as options.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Term 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: SLC 201: Introduction to Linguistics (SOBE OR HU or SB) OR SLC 202: Exploring Cultures: Words, Images, Stories (HUAD OR HU & G); minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "SLC 201",
+      "title": "Introduction to Linguistics (SOBE OR HU or SB) (choose SLC 201 / SLC 202) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 101",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "LIA 101",
+      "title": "Student Success in The College of Liberal Arts and Sciences",
+      "credits": 1
+     },
+     {
+      "slot_id": "s1-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 101",
+      "title": "Elementary Russian I",
+      "credits": 5
+     },
+     {
+      "slot_id": "s1-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Social and Behavioral Sciences (SOBE)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SOBE 1XX",
+      "title": "Social and Behavioral Sciences (SOBE) -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Term 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 102",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: RUS 141: Russian Civilization: From Tsars to Putin ((L or HU) & G & H) OR RUS 241: Russian Pop Culture: Protest and Propaganda (GCSI OR HU & G); minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "RUS 141",
+      "title": "Russian Civilization: From Tsars to Putin ((L or HU) & G & H) (choose RUS 141 / RUS 241) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 102",
+      "title": "Elementary Russian II",
+      "credits": 5
+     },
+     {
+      "slot_id": "s2-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "MAT 142",
+      "title": "College Mathematics (MATH OR MA)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE",
+      "title": "Elective -- student choice",
+      "credits": 1
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Term 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: RUS 211: Conversational Russian I (G) OR RUS 212: Conversational Russian II (G); minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "RUS 211",
+      "title": "Conversational Russian I (G) (choose RUS 211 / RUS 212) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s3-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 201",
+      "title": "Intermediate Russian I (G)",
+      "credits": 5
+     },
+     {
+      "slot_id": "s3-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Global Communities, Societies and Individuals (GCSI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "GCSI 1XX",
+      "title": "Global Communities, Societies and Individuals (GCSI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s3-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 1XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Term 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 202",
+      "title": "Intermediate Russian II (G)",
+      "credits": 5
+     },
+     {
+      "slot_id": "s4-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: RUS 211: Conversational Russian I (G) OR RUS 212: Conversational Russian II (G); minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "RUS 212",
+      "title": "Conversational Russian I (G) (choose RUS 211 / RUS 212) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Quantitative Reasoning (QTRS)'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "QTRS 1XX",
+      "title": "Quantitative Reasoning (QTRS) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 2XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Term 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 311",
+      "title": "Russian Society I (G)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Russian Elective': choose an approved course from: RUS 394: Special Topics; RUS 421: Pushkin (L or HU); RUS 425: Chekhov and Russian Drama (HUAD OR (L or HU) & G); RUS 439: Art in Exile: Vladímir Vladímirovich Nabokov (L or HU); RUS 440: Russian Mass Media (G); RUS 493: Honors Thesis (L); RUS 494: Special Topics; RUS 499: Individualized Instruction; minimum grade C",
+      "options": [
+       {
+        "code": "RUS 394",
+        "title": "Special Topics"
+       },
+       {
+        "code": "RUS 421",
+        "title": "Pushkin (L or HU)"
+       },
+       {
+        "code": "RUS 425",
+        "title": "Chekhov and Russian Drama (HUAD OR (L or HU) & G)"
+       },
+       {
+        "code": "RUS 439",
+        "title": "Art in Exile: Vladímir Vladímirovich Nabokov (L or HU)"
+       },
+       {
+        "code": "RUS 440",
+        "title": "Russian Mass Media (G)"
+       },
+       {
+        "code": "RUS 493",
+        "title": "Honors Thesis (L)"
+       },
+       {
+        "code": "RUS 494",
+        "title": "Special Topics"
+       },
+       {
+        "code": "RUS 499",
+        "title": "Individualized Instruction"
+       }
+      ],
+      "category": "elective",
+      "code": "RUS 394",
+      "title": "Upper Division Russian Elective -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Related Area Course': choose an approved course from: GCU 426: Geography of Russia and Surroundings (SB & G); HST 304: Studies in European History; HST 355: Total War and the Crisis of Modernity (SB & G & H); HST 435: Russian Empire: From Ivan the Terrible to 1917 (SB & H); HST 436: Rise & Fall of Soviet Communism (SB & G & H); MHL 363: Survey of Russian Music (HU); POS 360: World Politics (GCSI OR SB & G); POS 467: International Security (GCSI OR SB & G); POS 486: International Political Economy (GCSI OR SB & G); REL 364: Islam in Eurasia and Central Asia; SLC 340: Approaches to International Cinema (GCSI OR HU & G); minimum grade C",
+      "options": [
+       {
+        "code": "GCU 426",
+        "title": "Geography of Russia and Surroundings (SB & G)"
+       },
+       {
+        "code": "HST 304",
+        "title": "Studies in European History"
+       },
+       {
+        "code": "HST 355",
+        "title": "Total War and the Crisis of Modernity (SB & G & H)"
+       },
+       {
+        "code": "HST 435",
+        "title": "Russian Empire: From Ivan the Terrible to 1917 (SB & H)"
+       },
+       {
+        "code": "HST 436",
+        "title": "Rise & Fall of Soviet Communism (SB & G & H)"
+       },
+       {
+        "code": "MHL 363",
+        "title": "Survey of Russian Music (HU)"
+       },
+       {
+        "code": "POS 360",
+        "title": "World Politics (GCSI OR SB & G)"
+       },
+       {
+        "code": "POS 467",
+        "title": "International Security (GCSI OR SB & G)"
+       },
+       {
+        "code": "POS 486",
+        "title": "International Political Economy (GCSI OR SB & G)"
+       },
+       {
+        "code": "REL 364",
+        "title": "Islam in Eurasia and Central Asia"
+       },
+       {
+        "code": "SLC 340",
+        "title": "Approaches to International Cinema (GCSI OR HU & G)"
+       }
+      ],
+      "category": "elective",
+      "code": "GCU 426",
+      "title": "Related Area Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Humanities, Arts and Design (HUAD)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "HUAD 1XX",
+      "title": "Humanities, Arts and Design (HUAD) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Sustainability (SUST)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SUST 1XX",
+      "title": "Sustainability (SUST) -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Term 6",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 312",
+      "title": "Russian Society II (G)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: SLV 304: Digital Humanities for Language Majors (CS) OR SLV 440: History of Slavic Languages (SB); minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "SLV 304",
+      "title": "Digital Humanities for Language Majors (CS) (choose SLV 304 / SLV 440) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Restricted Electives': choose an approved course from: RUS 322: Scandals and Scoundrels: The Nineteenth-Century Russian Novel (L or HU); RUS 323: Russian Literature and Revolution: The Twentieth Century ((L or HU) & G); RUS 421: Pushkin (L or HU); RUS 425: Chekhov and Russian Drama (HUAD OR (L or HU) & G); RUS 439: Art in Exile: Vladímir Vladímirovich Nabokov (L or HU); minimum grade C",
+      "options": [
+       {
+        "code": "RUS 322",
+        "title": "Scandals and Scoundrels: The Nineteenth-Century Russian Novel (L or HU)"
+       },
+       {
+        "code": "RUS 323",
+        "title": "Russian Literature and Revolution: The Twentieth Century ((L or HU) & G)"
+       },
+       {
+        "code": "RUS 421",
+        "title": "Pushkin (L or HU)"
+       },
+       {
+        "code": "RUS 425",
+        "title": "Chekhov and Russian Drama (HUAD OR (L or HU) & G)"
+       },
+       {
+        "code": "RUS 439",
+        "title": "Art in Exile: Vladímir Vladímirovich Nabokov (L or HU)"
+       }
+      ],
+      "category": "elective",
+      "code": "RUS 322",
+      "title": "Upper Division Restricted Electives -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'American Institutions (AMIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "AMIT 1XX",
+      "title": "American Institutions (AMIT) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 484",
+      "title": "Internship",
+      "credits": 3
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Term 7",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: RUS 411: Russian Language, History and Culture I (G) OR RUS 412: Russian Language, History and Culture II (G); minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "RUS 411",
+      "title": "Russian Language, History and Culture I (G) (choose RUS 411 / RUS 412) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Restricted Electives': choose an approved course from: RUS 322: Scandals and Scoundrels: The Nineteenth-Century Russian Novel (L or HU); RUS 323: Russian Literature and Revolution: The Twentieth Century ((L or HU) & G); RUS 421: Pushkin (L or HU); RUS 425: Chekhov and Russian Drama (HUAD OR (L or HU) & G); RUS 439: Art in Exile: Vladímir Vladímirovich Nabokov (L or HU); minimum grade C",
+      "options": [
+       {
+        "code": "RUS 322",
+        "title": "Scandals and Scoundrels: The Nineteenth-Century Russian Novel (L or HU)"
+       },
+       {
+        "code": "RUS 323",
+        "title": "Russian Literature and Revolution: The Twentieth Century ((L or HU) & G)"
+       },
+       {
+        "code": "RUS 421",
+        "title": "Pushkin (L or HU)"
+       },
+       {
+        "code": "RUS 425",
+        "title": "Chekhov and Russian Drama (HUAD OR (L or HU) & G)"
+       },
+       {
+        "code": "RUS 439",
+        "title": "Art in Exile: Vladímir Vladímirovich Nabokov (L or HU)"
+       }
+      ],
+      "category": "elective",
+      "code": "RUS 322-2",
+      "title": "Upper Division Restricted Electives -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Governance and Civic Engagement (CIVI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "CIVI 1XX",
+      "title": "Governance and Civic Engagement (CIVI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Term 8",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "RUS 430",
+      "title": "Russian Short Story (HUAD OR L or HU)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s8-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 4 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-2",
+      "title": "Complete 4 courses: -- student choice",
+      "credits": 12
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "49ba156ff0b54d88538e94ab50633227749a5eaa4fb12648a7b19cf3afa161d5",
+  "last_verified": "2026-09-30"
+ }
+}

@@ -1,0 +1,260 @@
+{
+ "institution": {
+  "name": "Northland Pioneer College",
+  "city": "Holbrook",
+  "state": "AZ",
+  "kind": "community"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "northland-pioneer-college-aas-medical-assistant",
+  "major": "Medical Assistant",
+  "program_type": "degree",
+  "notes": "Official 2025-26 Medical Assistant AAS program map (checksheet) from the NPC catalog. Blocks are the college's own term-by-term sequence; the map notes they are suggested for full-time students and may be adjusted. The map suggests taking the Block 3/4 general education courses in summer because MDA 124 & 125 meet 9 hours per week. All classes are offered online except MDA 124, MDA 125, MDA 126 and HES 109. Highlighted courses in the map lead to the Certificate of Proficiency as a Clinical Assistant / Certificate of Applied Science in Medical Assistant.",
+  "source_url": "https://www.npc.edu/sites/default/files/checksheets/2025-26-aas-medical-assistant-program-map.pdf",
+  "external_prereqs": [
+   "EMT 104"
+  ],
+  "semesters": [
+   {
+    "label": "Block 1",
+    "n": 1,
+    "courses": [
+     {
+      "code": "ENL 101",
+      "title": "College Composition I",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Requires placement",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 101",
+      "title": "Basic Technical Math",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "HES 101 or MAT 109 or higher - requires placement",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 170",
+      "title": "Medical Terminology for Clinical Health Professionals",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BUS 119",
+      "title": "Medical Office Admin Procedures",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BUS 127",
+      "title": "Microsoft Office I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 2",
+    "n": 2,
+    "courses": [
+     {
+      "code": "HES 120",
+      "title": "Law and Ethics of the Health Care Professional",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 190",
+      "title": "Human Body in Health and Disease",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Co-requisite HES 170",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 180",
+      "title": "Basic Pharmacology",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisites per map: HES 101, MAT 101 or MAT 109 or higher",
+      "prereq": [
+       "HES 101"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BUS 183",
+      "title": "Electronic Medical Record",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 3",
+    "n": 3,
+    "courses": [
+     {
+      "code": "MDA 124",
+      "title": "Clinical Procedures I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisites per map: HES 170, and BIO 160 or HES 190 - Fall semester only",
+      "prereq": [
+       "HES 170",
+       "HES 190"
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 102",
+      "title": "Health Career Occupations",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Arts and Humanities",
+      "title": "Arts and Humanities or Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Arts and Humanities or Social and Behavioral Sciences - requires placement",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Physical and Biological Sciences",
+      "title": "Physical and Biological Sciences Course",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Physical and Biological Sciences course - requires placement",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 4",
+    "n": 4,
+    "courses": [
+     {
+      "code": "MDA 125",
+      "title": "Clinical Procedures II",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisites per map: MDA 124; EMT 104 (or equivalent); HES 101 or MAT 101 or MAT 109 or higher. Co-requisites: BUS 119, HES 180. Spring semester only.",
+      "prereq": [
+       "MDA 124",
+       "HES 101"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 109",
+      "title": "Phlebotomy",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Fall or Spring semester; immunizations, TB test, CPR/First Aid card required",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HES 145",
+      "title": "Nutrition",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Communications",
+      "title": "Communications Course",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Communications course - not SPT 110 or SPT 120",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 5 - Summer only",
+    "n": 5,
+    "courses": [
+     {
+      "code": "MDA 126",
+      "title": "Medical Assistant Externship",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Minimum grade of C to pass; may not retake. Requires immunizations, TB test, CPR/First Aid card, and DPS card; COVID-19 and/or flu vaccination or an approved waiver may be required. Paid or unpaid 160-hour summer internship in an ambulatory healthcare setting.",
+      "prereq": [
+       "MDA 125"
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "total_credits": 62,
+  "content_hash": "0d6211f88f4d3023a897aaa6d2aef3a7f10fedd909c975f2ad1fc42af08cd590",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [
+   "CISA 323",
+   "CISC 310"
+  ],
+  "id": "sacramento-city-college-certificate-programming",
+  "major": "Programming",
+  "notes": "Transcribed from the official SCC 'Programming Certificate' program map, Catalog 2026-27, published June 08, 2026 (mapmaker.losrios.edu/Maps/7638/PublishedPdf). Certificate of Achievement (grade of C or better in each course). Official Total Units: 22-23; this seed models the first-listed/recommended path at the low end = 7+4+4+4+3 = 22 units (BUS 310 at 3 units). Semester sums verified against the map's 7-8 / 4 / 4 / 4 / 3 headers. Choice slots: (1) ME BUS 310 (3-4, modeled at 3) / ENGL C1000 / ENGL 488 Honors — Business Communications; BUS 310 prerequisite: BUS 100, ENGL C1000, or ESLW 340 with a grade of C or better (documented, not encoded); students not placing directly in ENGL C1000 take the ENGL 80/ENGL C1000 combo; (2) ME CISP 400 / CISP 401 — Object Oriented Programming with C++ (4). Sequencing prereqs per map: CISP 360 requires CISP 301; CISP 400 & 401 require CISP 360; CISP 430 requires CISP 400 or 401; CISP 457 requires CISA 323 and CISC 310 (listed in external_prereqs) and any one of CISP 360, CISP 400, or CISP 401. CISP 430 is typically only offered during the spring semester; CISP 457 is typically only offered during the fall semester. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Major elective: BUS 310 (3-4 units, modeled at 3) / ENGL C1000 / ENGL 488 (Honors) — Business Communications. BUS 310 prerequisite: BUS 100, ENGL C1000, or ESLW 340 with a grade of C or better (documented, not encoded). If the student does not place directly in ENGL C1000, the ENGL 80/ENGL C1000 combo is required.",
+      "code": "BUS 310",
+      "credits": 3,
+      "options": [
+       "BUS 310",
+       "ENGL C1000",
+       "ENGL 488"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "BUS 310",
+      "title": "Business Communications",
+      "xfer": [
+       "american-river-college-aa-general-business",
+       "american-river-college-certificate-cis-pc-support",
+       "american-river-college-certificate-retail-management-wafc",
+       "cosumnes-river-college-aa-communication-organizational",
+       "cosumnes-river-college-aa-culinary-arts-management",
+       "cosumnes-river-college-as-business-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISP 301",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "CISP 301",
+      "title": "Algorithm Design and Implementation",
+      "xfer": [
+       "sacramento-city-college-as-computer-science",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-frontend-web-developer",
+       "sacramento-city-college-certificate-management-information-science"
+      ]
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISP 301 with a grade of C or better.",
+      "code": "CISP 360",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CISP 301"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "CISP 360",
+      "title": "Introduction to Structured Programming",
+      "xfer": [
+       "sacramento-city-college-as-computer-science",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science"
+      ]
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Major elective: CISP 400 or CISP 401 — Object Oriented Programming with C++. Prerequisite: CISP 360 with a grade of C or better.",
+      "code": "CISP 400",
+      "credits": 4,
+      "options": [
+       "CISP 400",
+       "CISP 401"
+      ],
+      "prereq": [
+       "CISP 360"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "CISP 400",
+      "title": "Object Oriented Programming with C++",
+      "xfer": [
+       "cosumnes-river-college-certificate-computer-science",
+       "sacramento-city-college-as-computer-science",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science"
+      ]
+     }
+    ],
+    "n": 3,
+    "term": "Semester 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISP 400 or 401 with a grade of C or better. Typically only offered during the spring semester.",
+      "code": "CISP 430",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CISP 400"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "CISP 430",
+      "title": "Data Structures",
+      "xfer": [
+       "cosumnes-river-college-certificate-computer-science",
+       "sacramento-city-college-as-computer-science"
+      ]
+     }
+    ],
+    "n": 4,
+    "term": "Semester 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISA 323 and CISC 310 (see external_prereqs) and any one of CISP 360, CISP 400, or CISP 401 with grades of C or better. Typically only offered during the fall semester.",
+      "code": "CISP 457",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CISA 323",
+       "CISC 310",
+       {
+        "one_of": [
+         "CISP 360",
+         "CISP 400"
+        ]
+       }
+      ],
+      "slot_id": "s5-0",
+      "tccns": "CISP 457",
+      "title": "Introduction to Systems Analysis and Design",
+      "xfer": []
+     }
+    ],
+    "n": 5,
+    "term": "Semester 5"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7638/PublishedPdf",
+  "total_credits": 22,
+  "transfer_confidence": "core_only",
+  "content_hash": "cf8417049bc23a02792cb07b2a84a10ccc5b0f8c64022d18599016f075109dd6",
+  "last_verified": "2026-10-02"
+ }
+}

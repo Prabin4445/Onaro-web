@@ -1,0 +1,99 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-red-hat-linux-engineer",
+  "major": "Red Hat Linux Engineer",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/red-hat-linux-engineer-5050n-ccl). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Only a part-time sequence is published on the official page (no full-time sequence); the published part-time sequence is used verbatim. Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 0,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 126RH",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Red Hat System Administration I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 238RH",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 126RH"
+      ],
+      "title": "Red Hat System Administration II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 240RH",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 238RH"
+      ],
+      "title": "Red Hat System Administration III",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/red-hat-linux-engineer-5050n-ccl",
+  "total_credits": 9,
+  "program_type": "professional-phase",
+  "content_hash": "69acad8df59e6b00668f9a1114f3c6d0c9ec490cac939c00e9333019396cf982",
+  "last_verified": "2026-10-02"
+ }
+}

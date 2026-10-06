@@ -1,0 +1,486 @@
+{
+ "institution": {
+  "city": "Arkadelphia",
+  "kind": "university",
+  "name": "Henderson State University",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Bachelor of Science",
+  "id": "hsu-bs-computer-science-2026",
+  "major": "Computer Science",
+  "notes": "Source: HSU official 2026-2027 Degree Plans index, Computer Science 8-semester degree plan (2026-2027 Catalog), 'Version 2024/10/22', College of Aviation, Science, and Nursing. Header states it is 'a suggested program of courses' and 'does not substitute for the HSU catalog'. GENUINE CATALOG TOTAL DISCREPANCY, kept verbatim per standing rules (verified via pdftotext -layout): Senior Fall lists five 3-credit courses (CPSI 37503, CPSI 38303, Jr/Sr CS Elective, Jr/Sr Math Elective, CPSI 42803 = 15) but prints TOTAL 16. The sequenced sum is therefore 15+16+16+16+16+15+15+12 = 121, not 120; total_credits reflects the sequenced sum. Graduation requirements printed on the plan: overall GPA 2.00+, all major courses C or better, at least 42 junior/senior hours, minor requirements completed, one Writing Intensive (WI) course, at least 120 total hours earned; students are responsible for adding courses if needed to meet hour/financial-aid requirements. 'PR = pre-requisite.' ENGL 10203 lists 'PR: ENG 1463' (prior numbering; satisfied in-plan by ENGL 10103 Freshman English A). Choice slots (first-listed code shown): Freshman Spring US History/American Govt. (PLSC 20003 / PLSC 200H3 / HIST 21103 / HIST 21203); Junior Fall and Junior Spring science two-course sequence (PHYS 20104+lab/20304+lab General/University Physics I or CHEM 14104+lab University Chemistry I, then the II course) — the two semesters must be the same sequence; Junior Spring MATH 21003 Statistical Methods or BIOS 20503 Applied Biostatistics. Lecture/lab pairs (e.g. CSCE 10104/10100) carry one combined credit value; lecture code shown with lab noted. 'Social Science Elective', 'Social Science', 'Humanities', 'Elective/Minor', 'Jr/Sr Computer Science Elective (CPSI, CSCE)', and 'MATH Jr/Sr Mathematics Elective' name only the slot, not a course: ELECTIVE placeholders with choice=true.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "CSCE 10104",
+      "credits": 4,
+      "title": "Foundations I and Lab",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UNIV 10041",
+      "credits": 1,
+      "title": "Intro to STEM",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 10103",
+      "credits": 3,
+      "title": "Freshman English A",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UNIV 10051",
+      "credits": 1,
+      "title": "Henderson Seminar",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Social Science Elective'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Social Science Elective",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 11003",
+      "credits": 3,
+      "title": "College Algebra",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "CSCE 10204",
+      "credits": 4,
+      "title": "Foundations II and Lab",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "PLSC 20003 or PLSC 200H3 or HIST 21103 or HIST 21203 (US History / American Govt.); first-listed code shown",
+      "code": "PLSC 20003",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PLSC 20003",
+        "credits": 3,
+        "title": "American Government"
+       },
+       {
+        "code": "PLSC 200H3",
+        "credits": 3,
+        "title": "American Government (Honors)"
+       },
+       {
+        "code": "HIST 21103",
+        "credits": 3,
+        "title": "US History"
+       },
+       {
+        "code": "HIST 21203",
+        "credits": 3,
+        "title": "US History"
+       }
+      ],
+      "title": "US History / American Govt.",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SPCH 10003",
+      "credits": 3,
+      "title": "Oral Communications",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 10203",
+      "credits": 3,
+      "title": "Freshman English B",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 12003",
+      "credits": 3,
+      "title": "Applied Trigonometry",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "code": "CPSI 25303",
+      "credits": 3,
+      "title": "Assembler Language",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 20003",
+      "credits": 3,
+      "title": "Data Structures",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 24004",
+      "credits": 4,
+      "title": "Calculus I",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Social Science'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Social Science",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Humanities'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Humanities",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "code": "CSCE 31003",
+      "credits": 3,
+      "title": "Algorithm Analysis",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 30303",
+      "credits": 3,
+      "title": "Computer Organization",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 25004",
+      "credits": 4,
+      "title": "Calculus II",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Elective/Minor'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective/Minor",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Humanities'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Humanities",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "code": "CPSI 38003",
+      "credits": 3,
+      "title": "Operating Systems",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 35103",
+      "credits": 3,
+      "title": "Software Engineering",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 26103",
+      "credits": 3,
+      "title": "Discrete Mathematics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 36043",
+      "credits": 3,
+      "title": "Writing for the Workspace",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Two-course science sequence, part 1 of 2 (part 2 in Junior Spring; same sequence both terms). Options: PHYS 20104/20100 General Physics I with lab, PHYS 20304/20300 University Physics I with lab, or CHEM 14104/14100 University Chemistry I with lab; first-listed code shown",
+      "code": "PHYS 20104",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHYS 20104",
+        "credits": 4,
+        "title": "General Physics I"
+       },
+       {
+        "code": "PHYS 20304",
+        "credits": 4,
+        "title": "University Physics I"
+       },
+       {
+        "code": "CHEM 14104",
+        "credits": 4,
+        "title": "University Chemistry I"
+       }
+      ],
+      "title": "General Physics I or University Physics I or University Chemistry I",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "code": "CSCE 34303",
+      "credits": 3,
+      "title": "Computational Complexity",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CPSI 34702",
+      "credits": 2,
+      "title": "Technology & Society (WI)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Jr/Sr Computer Science Elective (CPSI, CSCE)'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Jr/Sr Computer Science Elective",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "MATH 21003 Statistical Methods or BIOS 20503 Applied Biostatistics; first-listed code shown",
+      "code": "MATH 21003",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MATH 21003",
+        "credits": 3,
+        "title": "Statistical Methods"
+       },
+       {
+        "code": "BIOS 20503",
+        "credits": 3,
+        "title": "Applied Biostatistics"
+       }
+      ],
+      "title": "Statistical Methods or Applied Biostatistics",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Two-course science sequence, part 2 of 2 (part 1 in Junior Fall; same sequence both terms). Options: PHYS 20204/20200 General Physics II with lab, PHYS 20404/20400 University Physics II with lab, or CHEM 14204/14200 University Chemistry II with lab; first-listed code shown",
+      "code": "PHYS 20204",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHYS 20204",
+        "credits": 4,
+        "title": "General Physics II"
+       },
+       {
+        "code": "PHYS 20404",
+        "credits": 4,
+        "title": "University Physics II"
+       },
+       {
+        "code": "CHEM 14204",
+        "credits": 4,
+        "title": "University Chemistry II"
+       }
+      ],
+      "title": "General Physics II or University Physics II or University Chemistry II",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "code": "CPSI 37503",
+      "credits": 3,
+      "title": "Database Theory",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CPSI 38303",
+      "credits": 3,
+      "title": "Programming Languages",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Jr/Sr Computer Science Elective (CPSI, CSCE)'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Jr/Sr Computer Science Elective",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Jr/Sr Mathematics Elective (MATH)'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Jr/Sr Mathematics Elective",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CPSI 42803",
+      "credits": 3,
+      "title": "Introduction to Networking",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "code": "CPSI 49203",
+      "credits": 3,
+      "title": "Computer Science Capstone",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Jr/Sr Computer Science Elective (CPSI, CSCE)'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Jr/Sr Computer Science Elective",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BUSI 20103",
+      "credits": 3,
+      "title": "Management Communication",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog placeholder: 'Elective/Minor'; catalog names only the slot, not a course",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective/Minor",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://hsu.edu/site/assets/files/17269/csc_8-semester_degree_plan_2026.pdf",
+  "total_credits": 121,
+  "transfer_confidence": "medium",
+  "content_hash": "ee5d2f3778eb5cba16df8014d2dcdb275ee60a884265169f23a2ef721d97c65f",
+  "last_verified": "2026-10-02"
+ }
+}

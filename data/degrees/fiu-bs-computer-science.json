@@ -1,0 +1,541 @@
+{
+ "institution": {
+  "name": "Florida International University",
+  "city": "Miami, FL",
+  "kind": "public4yr",
+  "state": "FL"
+ },
+ "plan": {
+  "id": "fiu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://www.cis.fiu.edu/wp-content/uploads/2024/08/CS-Plan-of-Study.pdf",
+  "notes": "Source: official FIU Knight Foundation School of Computing and Information Sciences 'Plan of Study' PDF for the Bachelor of Science in Computer Science, Computer Science Track, downloaded 2026-09-30 from https://www.cis.fiu.edu/wp-content/uploads/2024/08/CS-Plan-of-Study.pdf (server Last-Modified 2024-08-20). Catalog year: 2024-2025, the currently published edition on the official school site. STALENESS DISCLOSURE: the document footer stamps 'Rev 07/2017', but the course content (CIS 3950/4951 Capstone I/II at 1+2 credits, ENC 3249, COT 3541, COP 4710, CNT 4713, CDA 3103) matches the post-2022 curriculum and the official Rev 4/2023 CS-Track flowchart effective Fall 2023 (https://dev.cis.fiu.edu/wp-content/uploads/undergrad-flowcharts/CS/CS-BS.pdf), so the footer is a stale artifact, not the content vintage. Transcription method: manual, verbatim, course-by-course from the four year-blocks (Freshman/Sophomore/Junior/Senior, 30 credits each); every code, title, and credit value is verbatim from the PDF. CAVEATS: (1) The source is organized by academic YEAR, not by term; each year was split into Fall/Spring terms of ~15 credits in the document's listed order, which is prerequisite-consistent (cross-checked against the Rev 4/2023 flowchart's prereq lines: MAC 2311->MAC 2312->STA 3033, COP 2210->COP 3337->COP 3530/COP 4338, PHY 2048->PHY 2049, CIS 3950->CIS 4951). The Fall/Spring split within each year is the collector's disclosed inference. (2) The source lists no per-course prerequisites, so prereq arrays are empty (sibling-plan convention). (3) Cross-source discrepancy: the Rev 4/2023 flowchart places CIS 3950 Capstone I in junior year ('Junior standing'); the Plan of Study lists both capstones under Senior Year - transcribed as the Plan of Study states. (4) The flowchart shows 'Natural Science Group 1/2 Elective (See Advisor)' where the Plan of Study lists PHY 2048/2049 plus two 'CS Science Elective' slots - transcribed from the Plan of Study. (5) Per the plan's footnotes, students must earn at least nine credit hours in summer semesters within the Florida State University System and students deficient in a foreign language must include a two-semester sequence in one foreign language among general electives - not modeled as terms. (6) The BS in Computer Science has two tracks (Computer Science and Software Design and Development); this plan is the Computer Science Track, matching catalog program COMPSC:BS (Diploma Title: Bachelor of Science in Computer Science). Placeholder slots (UCC Courses, CS Science Elective, CS Elective, General Electives) are student-choice courses - see the choice notes and an advisor. Credit sum verified: 120.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CGS 1920",
+      "title": "Introduction to Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MAC 2311",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "UCC-CORE1",
+      "title": "UCC Courses - University Core Curriculum (choose courses)",
+      "credits": 9,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose UCC courses from FIU's University Core Curriculum; see an advisor.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MAC 2312",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "SCI-ELEC1",
+      "title": "CS Science Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one KFSCIS-approved CS science elective; may need to take the corresponding lab.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "GEN-ELEC1",
+      "title": "General Electives (choose courses)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose general elective courses; see an advisor.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "UCC-CORE2",
+      "title": "UCC Courses - University Core Curriculum (choose courses)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose UCC courses from FIU's University Core Curriculum; see an advisor.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "COP 2210",
+      "title": "Computer Programming I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "PHY 2048/PHY 2048L",
+      "title": "Physics I w/Calculus",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "COT 3100",
+      "title": "Discrete Structures or Discrete Mathematics (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: COT 3100 Discrete Structures or MAD 2104 Discrete Mathematics.",
+      "options": [
+       "COT 3100",
+       "MAD 2104"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "UCC-CORE3",
+      "title": "UCC Courses - University Core Curriculum (choose courses)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose UCC courses from FIU's University Core Curriculum; see an advisor.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "PHY 2049/PHY 2049L",
+      "title": "Physics II w/ Calculus",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "SCI-ELEC2",
+      "title": "CS Science Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one KFSCIS-approved CS science elective; may need to take the corresponding lab.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "UCC-CORE4",
+      "title": "UCC Courses - University Core Curriculum (choose courses)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose UCC courses from FIU's University Core Curriculum; see an advisor.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GEN-ELEC2",
+      "title": "General Electives (choose courses)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose general elective courses; see an advisor.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CDA 3103",
+      "title": "Fundamentals of Computer Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "COP 3337",
+      "title": "Programming II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "ENC 3249",
+      "title": "Professional and Technical Writing for CS",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "STA 3033",
+      "title": "Introduction to Probability and Statistics for CS",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CGS 3095",
+      "title": "Technology in the Global Arena (GL)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "COP 3530",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "COT 3541",
+      "title": "Logic for Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "COP 4338",
+      "title": "Computer Programming III",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CDA 4101",
+      "title": "Structured Computer Organization",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CS-ELEC1",
+      "title": "CS Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one CS elective from the Foundations, Systems, or Applications elective groups; see an advisor.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CNT 4713",
+      "title": "Net-centric Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "MAD 3512",
+      "title": "Theory of Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CEN 4010",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CIS 3950",
+      "title": "Capstone I",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "CS-ELEC2",
+      "title": "CS Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one CS elective from the Foundations, Systems, or Applications elective groups; see an advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "GEN-ELEC3",
+      "title": "General Electives (choose courses)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose general elective courses; see an advisor.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "COP 4555",
+      "title": "Principles of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "COP 4710",
+      "title": "Database",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "COP 4610",
+      "title": "Operating Systems Principles",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CIS 4951",
+      "title": "Capstone II",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "CS-ELEC3",
+      "title": "CS Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one CS elective from the Foundations, Systems, or Applications elective groups; see an advisor.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "a991213c23c0effd1014b71c2b2eb10080eb28516a6f1b45bbdaea1cbd409af3",
+  "last_verified": "2026-10-02"
+ }
+}

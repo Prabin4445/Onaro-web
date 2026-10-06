@@ -1,0 +1,463 @@
+{
+ "institution": {
+  "city": "Bethlehem, PA",
+  "kind": "private4yr",
+  "name": "Lehigh University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "lehigh-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official 'B.S. in Computer Science - RCEAS Sample Course Sequence (Class 2023 or Later)' page, P.C. Rossin College of Engineering & Applied Science, Lehigh University (https://engineering.lehigh.edu/cse/bs-cs-rceas-sample-course-sequence-class-2023-or-later), the genuine official term-by-term suggested sequence for the Bachelor of Science in Computer Science through the P.C. Rossin College of Engineering and Applied Science. Cross-checked against the official program requirements page (https://engineering.lehigh.edu/cse/academics/undergraduate/computer-science-bs-rossin-college-engineering/bs-computer-science-rceas, 'Total required credit hours: 130') and the Lehigh University 2026-27 catalog PDF (https://catalog.lehigh.edu/coursesprogramsandcurricula/engineeringandappliedscience/computerscienceandengineering/computerscienceandengineering.pdf), which lists the EN-BS Computer Science program at 'Total required credit hours: 130' / 'Total Credits 130-131'. Hand-transcribed 2026-09-30 from the official page text; nothing invented. Transcribed sequence sums to exactly 130 credits = the program's published total. CAVEATS: (1) The sample sequence page labels CSE 281 Capstone Project II at 2 credits and ENGR 010 Applied Engineering Computer Methods at 2 credits; the 2026-27 catalog lists CSE 281 at 3 credits and ENGR 010 at 3 credits. The sequence is transcribed as published. (2) The 2026-27 catalog reorganized some requirements (WRT 001/002 academic writing in place of ENGL 001/002 composition, a 12-credit 'Natural World' science block); the official sample sequence follows the Class of 2023+ arrangement (ENGL 001/002, MATH 023, PHY 021/022 listed explicitly). (3) Elective chunks ('HSS electives, approved electives, or free electives') are student choice; each is modeled as one choice slot carrying the chunk's full credit value per the official sequence. (4) CSE 007 slot honors the catalog's approved alternative: CSE 003 (2 cr) + CSE 004 (2 cr) OR CSE 007 (4 cr). (5) Prereqs intentionally left empty — the sequence page does not publish per-course prerequisites; none were invented. (6) The sequence page carries the historical footnote: 'CSE 140 = CSE 198 (Spring 2018 only) or CSE 261 (Fall 2017 or earlier)'. (7) This is the RCEAS (engineering) BS program, ABET-accredited; Lehigh also offers a separate BS in Computer Science through the College of Arts and Sciences, which is NOT this plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition and Literature",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHM 030",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introductory Chemical Principles",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 021",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "engr",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 010",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Applied Engineering Computer Methods",
+      "xfer": []
+     },
+     {
+      "category": "engr",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 005",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Introduction to Engineering Practice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 002",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition and Literature: Fiction, Drama, Poetry",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 011/012",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introductory Physics I and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official requirements allow either CSE 007 (4 cr) or CSE 003 Introduction to Programming, Part A (2 cr) + CSE 004 Introduction to Programming, Part B (2 cr). The sample sequence places this in Spring Year 1.",
+      "code": "CSE 007",
+      "credits": 4,
+      "options": [
+       "CSE 007",
+       "CSE 003 + CSE 004"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Introduction to Programming (or CSE 003 + CSE 004)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 022",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 023",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Analytic Geometry and Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 021/022",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introductory Physics II and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 017",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Programming and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECO 001",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Principles of Economics",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Sequence page footnote: CSE 140 = CSE 198 (Spring 2018 only) or CSE 261 (Fall 2017 or earlier).",
+      "code": "CSE 140",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Foundations of Discrete Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 205",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Linear Methods",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 109",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Systems Software",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Official sequence: 'HSS electives, approved electives, or free electives (6)' in sophomore year, second semester.",
+      "code": "ELEC 2XX-1",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "HSS electives, approved electives, or free electives (6 credits)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 216",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 262",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 340",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Probability and Statistics",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Official sequence: 'HSS electives, approved electives, or free electives (3)' in junior year, first semester.",
+      "code": "ELEC 2XX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "HSS electives, approved electives, or free electives (3 credits)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 202",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 280",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Capstone Project I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Official sequence: 'HSS electives, approved electives, or free electives (12)' in junior year, second semester.",
+      "code": "ELEC 2XX-3",
+      "credits": 12,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "HSS electives, approved electives, or free electives (12 credits)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Sample sequence lists CSE 281 at 2 credits; the 2026-27 catalog lists CSE 281 at 3 credits. Transcribed as published in the sequence.",
+      "code": "CSE 281",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Capstone Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Operating System Design",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Official sequence: 'HSS electives, approved electives, or free electives (12)' in senior year, first semester.",
+      "code": "ELEC 2XX-4",
+      "credits": 12,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "HSS electives, approved electives, or free electives (12 credits)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 252",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computers, the Internet, and Society",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Official sequence: 'HSS electives, approved electives, or free electives (14)' in senior year, second semester.",
+      "code": "ELEC 2XX-5",
+      "credits": 14,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "HSS electives, approved electives, or free electives (14 credits)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://engineering.lehigh.edu/cse/bs-cs-rceas-sample-course-sequence-class-2023-or-later",
+  "total_credits": 130,
+  "content_hash": "2e66bbd04b287bda52df6b74c39f27a8a88102c645912f3c5cfafd542eb30cf8",
+  "last_verified": "2026-10-02"
+ }
+}

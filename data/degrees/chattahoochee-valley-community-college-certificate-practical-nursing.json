@@ -1,0 +1,158 @@
+{
+ "institution": {
+  "name": "Chattahoochee Valley Community College",
+  "city": "Phenix City",
+  "state": "AL",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "chattahoochee-valley-community-college-certificate-practical-nursing",
+  "degree": "Certificate",
+  "major": "Practical Nursing",
+  "total_credits": 45,
+  "catalog_year": "2025-2026",
+  "source_url": "https://catalog.cv.edu/nursing/certificate/practical-nursing",
+  "notes": "Suggested Course Sequence from the official 2025-2026 catalog (effective 2025-08-18). Catalog total for the certificate: 45 credit hours (20 gen-ed + 25 nursing core). BIO 103 and PSY 200 are listed as external_prereqs per the catalog footnote: they are required if the student was not accepted into the Nursing program (BIO 103 is the prerequisite pathway into BIO 201; PSY 200 into PSY 210). Third-term speech requirement is SPH 106 or SPH 107 per the catalog sequence.",
+  "external_prereqs": [
+   "BIO 103",
+   "PSY 200"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 112",
+      "credits": 7,
+      "title": "Fundamental Concepts of Nursing",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MTH 100",
+      "credits": 3,
+      "title": "College Algebra or Higher",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "BIO 201",
+      "credits": 4,
+      "prereq": [
+       "BIO 103"
+      ],
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 113",
+      "credits": 8,
+      "title": "Nursing Concepts I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENG 101",
+      "credits": 3,
+      "title": "English Composition I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PSY 210",
+      "credits": 3,
+      "prereq": [
+       "PSY 200"
+      ],
+      "title": "Human Growth and Development",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "BIO 202",
+      "credits": 4,
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 114",
+      "credits": 8,
+      "prereq": [
+       "NUR 112",
+       "NUR 113"
+      ],
+      "title": "Nursing Concepts II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NUR 115",
+      "credits": 2,
+      "title": "Evidence-Based Clinical Reasoning",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog sequence: 'SPH 106 or SPH 107'",
+      "code": "SPH 106",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SPH 106",
+        "credits": 3,
+        "title": "Fundamentals of Oral Communication"
+       },
+       {
+        "code": "SPH 107",
+        "credits": 3,
+        "title": "Fundamentals of Public Speaking"
+       }
+      ],
+      "title": "Fundamentals of Oral Communication",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "program_type": "standard",
+  "content_hash": "4ee3d16a93ce6e90bfc609c681927abfcf545959402f6012cf98bdb25b31a2ab",
+  "last_verified": "2026-10-02"
+ }
+}

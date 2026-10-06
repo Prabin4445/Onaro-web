@@ -1,0 +1,293 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "id": "scottsdale-community-college-as-science-emphasis-in-physics",
+  "major": "Science, Emphasis in Physics",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-physics-8606-as). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 101 or ENG 107. Credits shown for ENG 101.",
+      "code": "ENG 101",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MAT 220 or MAT 221. Credits shown for MAT 220.",
+      "code": "MAT 220",
+      "core_area": "MA, QNR or MA, QNR",
+      "credits": 4,
+      "prereq": [],
+      "title": "Calculus with Analytic Geometry I or Calculus with Analytic Geometry I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Oral Communication course (OCM).",
+      "code": "OCM",
+      "core_area": "OCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Oral Communication",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Social and Behavioral Sciences course (SCB).",
+      "code": "SCB",
+      "core_area": "SCB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Social and Behavioral Sciences",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: FYE 101 or FYE 103. Credits shown for FYE 101.",
+      "code": "FYE 101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 102 or ENG 108. Credits shown for ENG 102.",
+      "code": "ENG 102",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MAT 230 or MAT 231. Credits shown for MAT 230.",
+      "code": "MAT 230",
+      "core_area": "MA, QNR or MA, QNR",
+      "credits": 4,
+      "prereq": [
+       "MAT 220"
+      ],
+      "title": "Calculus with Analytic Geometry II or Calculus with Analytic Geometry II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 121",
+      "core_area": "NSI, SQ",
+      "credits": 4,
+      "prereq": [
+       "MAT 220"
+      ],
+      "title": "University Physics I: Mechanics",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MAT 240 or MAT 241. Credits shown for MAT 240.",
+      "code": "MAT 240",
+      "core_area": "MA, QNR or MA, QNR",
+      "credits": 4,
+      "prereq": [
+       "MAT 230"
+      ],
+      "title": "Calculus with Analytic Geometry III or Calculus with Analytic Geometry III",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 131",
+      "core_area": "NSI, SQ",
+      "credits": 4,
+      "prereq": [
+       "MAT 230",
+       "PHY 121"
+      ],
+      "title": "University Physics II: Electricity and Magnetism",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Arts and Humanities course (AHM).",
+      "code": "AHM",
+      "core_area": "AHM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Arts and Humanities",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Elective.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "title": "General Elective",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Arts and Humanities course (AHM).",
+      "code": "AHM",
+      "core_area": "AHM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Arts and Humanities",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Institutions of the Americas course (IAM).",
+      "code": "IAM",
+      "core_area": "IAM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Institutions of the Americas",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Social and Behavioral Sciences course (SCB).",
+      "code": "SCB",
+      "core_area": "SCB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Social and Behavioral Sciences",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Elective.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Elective.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "title": "General Elective",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-physics-8606-as",
+  "total_credits": 48,
+  "external_prereqs": [
+   "ALT 100",
+   "ENG 100A",
+   "ENG 101LL",
+   "ENG 107LL",
+   "ESL 097",
+   "ESL 202",
+   "MAT 187",
+   "MAT 188",
+   "MAT 221",
+   "MAT 231",
+   "MAT 241",
+   "WAC 101"
+  ],
+  "content_hash": "dc9c9a54990beec1d924c6719b1fd5d67599ae3e81fd4fede72a4093fe27475e",
+  "last_verified": "2026-10-02"
+ }
+}

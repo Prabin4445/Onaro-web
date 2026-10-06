@@ -1,0 +1,108 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-chemical-technician-beginning-pathway-2",
+  "degree": "Certificate",
+  "major": "Chemical Technician",
+  "catalog_year": "2026-2027",
+  "total_credits": 10,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7702/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Chemical Technician, Beginning Certificate - Pathway 2' program map, Catalog 2026-27, published May 16, 2026 (mapmaker.losrios.edu/Maps/7702/PublishedPdf). Official Total Units: 10-11; this seed models the first-listed/recommended path = 5 + 5 = 10 units (Major Elective at 3 units). Semester sums verified against the map's 5-6 / 5 headers. Choice slot: ME *Major Elective (3-4) — a minimum of 3 units from BUS 100, BUS 310, ENGL C1000, ENGL 488(H), ENGL C1001, ENGL C1001H, ESLW 340; BUS 100 selected (first-listed, 3 units, no prereq). Documented prereqs (not in-plan): CHEM 400 requires CHEM 300 with a grade of 'C' or better completed within one year prior to enrollment, or ACS California Chemistry Diagnostic Exam placement within one year, AND Intermediate Algebra or equivalent (Integrated Math 3) with a grade of 'C-' or better; BUS 310 requires BUS 100, ENGL C1000, or ESLW 340; students not placing directly in ENGL C1000 take the ENGWR 80/ENGL C1000 combo; ENGL 488(H) requires assessment placement or ESL 325; ENGL C1001/C1001H require college-level composition; ESLW 340 requires ESL 325 or Los Rios assessment placement. Department notes: two pathways to the beginning certificate — Pathway 1 (not this map) is for students who only want the beginning certificate to begin working in industry; Pathway 2 (this map) is for students who plan to pursue an Associate in Science degree in Chemistry or are preparing to transfer. Certificate of Achievement requirements: grade of 'C' or better in each major course. Chemistry, Science, Math, & Engineering Meta Majors. Distinct from the Advanced Certificate Pathway 1 (map 7701). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "CHEMT 201",
+      "title": "Careers in Chemical Technology",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "CHEMT 201",
+      "xfer": [
+       "sacramento-city-college-certificate-chemical-technician-advanced-pathway-1",
+       "sacramento-city-college-certificate-chemical-technician-intermediate"
+      ]
+     },
+     {
+      "code": "BUS 100",
+      "title": "Major Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Major Elective (3-4). A minimum of 3 units from BUS 100, BUS 310, ENGL C1000, ENGL 488(H), ENGL C1001, ENGL C1001H, ESLW 340; BUS 100 selected (first-listed, 3 units). Placement prereqs documented in plan notes.",
+      "options": [
+       "BUS 100",
+       "BUS 310",
+       "ENGL C1000",
+       "ENGL 488",
+       "ENGL C1001",
+       "ENGL C1001H",
+       "ESLW 340"
+      ],
+      "slot_id": "s1-1",
+      "tccns": "BUS 100",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "CHEM 400",
+      "title": "General Chemistry I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "General Chemistry I. Prereq documented in plan notes (CHEM 300 within one year or ACS placement AND Intermediate Algebra) — not in this certificate's sequence.",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "CHEM 400",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics",
+       "sacramento-city-college-as-biology",
+       "sacramento-city-college-as-biology-cal-getc",
+       "sacramento-city-college-as-chemical-technology-cal-getc",
+       "sacramento-city-college-as-chemistry",
+       "sacramento-city-college-as-engineering-civil",
+       "sacramento-city-college-as-engineering-civil-engineering",
+       "sacramento-city-college-as-engineering-electrical-computer",
+       "sacramento-city-college-as-engineering-general",
+       "sacramento-city-college-as-engineering-mechanical-aeronautical",
+       "sacramento-city-college-as-food-science-and-technology",
+       "sacramento-city-college-as-nutrition-uc-path",
+       "sacramento-city-college-as-nutrition-uc-path-cal-getc",
+       "sacramento-city-college-as-t-biology",
+       "sacramento-city-college-as-t-geology",
+       "sacramento-city-college-as-t-nutrition-and-dietetics",
+       "sacramento-city-college-certificate-chemical-technician-intermediate"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "919a489d4c92c8630ef71d75847e53c9d596077adafdb30080bfb7f22cd359f8",
+  "last_verified": "2026-10-02"
+ }
+}

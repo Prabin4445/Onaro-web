@@ -1,0 +1,619 @@
+{
+ "institution": {
+  "city": "Bellingham, WA",
+  "ipeds": 237011,
+  "kind": "public",
+  "name": "Western Washington University",
+  "state": "WA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "wwu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "B.S. Computer Science, College of Science and Engineering. QUARTER SYSTEM — all credits are quarter hours. Built from the official WWU Computer Science department sample 4-year plan (https://cs.wwu.edu/plan-study, 'Computer Science, BS Catalog 2025-26'). Major sequence: CSCI 141/145/201/247/305/330/347/345/401/367/405/447, CISS 346 (Secure Software Development, required before senior project), MATH 124/125/204/341, one lab-science series (PHYS 161/162/163), senior project CSCI 491/492/493 (or 490), 4 CS electives. Admission to the major is based on performance in CSCI 201/247/305. GURs: QSR and LSCI/SCI satisfied by major (MATH 124/125, PHYS series); remaining GURs (ACOM ENG 101, BCOM, HUM 12cr+, SSC 12cr+, ACGM, BCGM) modeled as choice slots; upper-division writing proficiency points and 60 upper-division credits satisfied within the plan. Senior project credits (4 each) use the WWU 400-level standard; CS elective credits (4 each) per department standard. 180 quarter credits total.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 124",
+      "credits": 5,
+      "prereq": [],
+      "title": "Calculus and Analytic Geometry I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENG 101",
+      "credits": 5,
+      "prereq": [],
+      "title": "Writing and Critical Inquiry (ACOM)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Humanities (HUM) GUR; 12 credits minimum across 3+ courses in 2+ departments.",
+      "code": "GUR-HUM-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities GUR (student choice)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 125",
+      "credits": 5,
+      "prereq": [
+       "MATH 124"
+      ],
+      "title": "Calculus and Analytic Geometry II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSCI 141",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Programming I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Social Sciences (SSC) GUR; 12 credits minimum across 3+ courses in 2+ departments.",
+      "code": "GUR-SSC-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Social Sciences GUR (student choice)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Winter Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 145",
+      "credits": 4,
+      "prereq": [
+       "CSCI 141"
+      ],
+      "title": "Computer Programming II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Humanities (HUM) GUR.",
+      "code": "GUR-HUM-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities GUR (student choice)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Social Sciences (SSC) GUR.",
+      "code": "GUR-SSC-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Social Sciences GUR (student choice)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 201",
+      "credits": 4,
+      "prereq": [
+       "CSCI 145"
+      ],
+      "title": "Computer Programming III (Data Structures)",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 161",
+      "credits": 5,
+      "prereq": [
+       "MATH 124"
+      ],
+      "title": "Physics with Calculus I",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Humanities (HUM) GUR.",
+      "code": "GUR-HUM-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities GUR (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Basic Communication (BCOM) GUR.",
+      "code": "GUR-BCOM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Basic Communication GUR (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 305",
+      "credits": 4,
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Analysis of Algorithms I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 162",
+      "credits": 5,
+      "prereq": [
+       "PHYS 161"
+      ],
+      "title": "Physics with Calculus II",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Winter Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 247",
+      "credits": 4,
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Computer Systems",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 163",
+      "credits": 5,
+      "prereq": [
+       "PHYS 162"
+      ],
+      "title": "Physics with Calculus III",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 204",
+      "credits": 4,
+      "prereq": [
+       "MATH 125"
+      ],
+      "title": "Elementary Linear Algebra",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU Social Sciences (SSC) GUR.",
+      "code": "GUR-SSC-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Social Sciences GUR (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 330",
+      "credits": 4,
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Database Systems",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSCI 347",
+      "credits": 4,
+      "prereq": [
+       "CSCI 247"
+      ],
+      "title": "Operating Systems",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU A-Block Comparative, Gender, and Multicultural Studies (ACGM) GUR.",
+      "code": "GUR-ACGM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "ACGM GUR (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the WWU B-Block Comparative, Gender, and Multicultural Studies (BCGM) GUR.",
+      "code": "GUR-BCGM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "BCGM GUR (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 345",
+      "credits": 4,
+      "prereq": [
+       "CSCI 305"
+      ],
+      "title": "Object-Oriented Design",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CISS 346",
+      "credits": 4,
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Secure Software Development",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 341",
+      "credits": 4,
+      "prereq": [
+       "MATH 204"
+      ],
+      "title": "Probability and Statistical Inference",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Winter Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 401",
+      "credits": 4,
+      "prereq": [
+       "CSCI 330"
+      ],
+      "title": "Software Engineering",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSCI 367",
+      "credits": 4,
+      "prereq": [
+       "CSCI 345"
+      ],
+      "title": "Computer Networks",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-3",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s9-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-4",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s9-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 405",
+      "credits": 4,
+      "prereq": [
+       "CSCI 305"
+      ],
+      "title": "Analysis of Algorithms II",
+      "slot_id": "s10-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSCI 491",
+      "credits": 4,
+      "prereq": [
+       "CISS 346"
+      ],
+      "title": "Senior Project I",
+      "slot_id": "s10-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300/400-level CSCI/CISS/DATA elective approved for the CS major.",
+      "code": "CSELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Computer Science Elective (student choice)",
+      "slot_id": "s10-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-5",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s10-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 492",
+      "credits": 4,
+      "prereq": [
+       "CSCI 491"
+      ],
+      "title": "Senior Project II",
+      "slot_id": "s11-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CSCI 447",
+      "credits": 4,
+      "prereq": [
+       "CSCI 345"
+      ],
+      "title": "Web Development",
+      "slot_id": "s11-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300/400-level CSCI/CISS/DATA elective approved for the CS major.",
+      "code": "CSELEC-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Computer Science Elective (student choice)",
+      "slot_id": "s11-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Winter Year 4",
+    "n": 11
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CSCI 493",
+      "credits": 4,
+      "prereq": [
+       "CSCI 492"
+      ],
+      "title": "Senior Project III",
+      "slot_id": "s12-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300/400-level CSCI/CISS/DATA elective approved for the CS major.",
+      "code": "CSELEC-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Computer Science Elective (student choice)",
+      "slot_id": "s12-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300/400-level CSCI/CISS/DATA elective approved for the CS major.",
+      "code": "CSELEC-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 201"
+      ],
+      "title": "Computer Science Elective (student choice)",
+      "slot_id": "s12-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 12
+   }
+  ],
+  "source_url": "https://cs.wwu.edu/plan-study",
+  "total_credits": 180,
+  "content_hash": "37bf94d543108e02df23c327056f4ec04e5eb02c8bb97a30cfd22502324d800f",
+  "last_verified": "2026-10-02"
+ }
+}

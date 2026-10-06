@@ -1,0 +1,594 @@
+{
+ "institution": {
+  "name": "Hofstra University",
+  "city": "Hempstead, NY",
+  "kind": "private",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "hofstra-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 124,
+  "source_url": "https://www.hofstra.edu/computer-science/bs-computer-science-sample-four-year-plan.html",
+  "notes": "Source: official Hofstra University 'BS in Computer Science Sample Four-Year Plan' (https://www.hofstra.edu/computer-science/bs-computer-science-sample-four-year-plan.html), transcribed 2026-09-30 from the rendered page. Catalog year 2026-2027: the page carries no date stamp but is the live current plan; it supersedes the 2014 admission PDF (58 CS credits) and adds CSC 155 Systems Programming (Jr fall) and CSC 170 Databases (Sr fall) vs the archived 2023-2024 bulletin major requirements, and the page header states 64 CS credits / 124 total. Course codes rendered in current bulletin zero-padded style (CSC 014 etc.); the source page uses legacy unpadded style (CSC 14). Course titles cross-checked against bulletin course descriptions. Prereqs included only where verified: CSC 024 requires CSC 014 (official course syllabus, cs.hofstra.edu); CSC 155 requires CSC 016 (bulletin course description). Other standard chains left empty rather than invented. The two Natural Science choice slots are 4-5 s.h. each; encoded at 5 (So fall) and 4 (So spring) so the sequence sums exactly to the published 124-semester-hour degree minimum (valid paths range 123-126). All choice slots use distinct placeholder codes; no non-choice code repeats. Bulletin direct fetch was bot-challenged (AWS WAF 202); official hofstra.edu pages used instead.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 014",
+      "title": "Discrete Structures I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CSC 015",
+      "title": "Fundamentals of Computer Science I: Problem Solving and Program Design",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH 071",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "WSC 001",
+      "title": "Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "DISTR 101",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 024",
+      "title": "Discrete Structures for Computer Science II",
+      "credits": 3,
+      "prereq": [
+       "CSC 014"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CSC 016",
+      "title": "Fundamentals of Computer Science II: Data Structures, Algorithms and Object-Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 072",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "WSC 002",
+      "title": "Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "DISTR 102",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 017",
+      "title": "Fundamentals of Computer Science III: Advanced Data Structures and Object-Oriented Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 110",
+      "title": "Introduction to Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "SCI 201",
+      "title": "Natural Science Requirement",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4-5 s.h. natural science; encoded at 4 so the sequence totals the published 124 s.h. minimum",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MATH 301",
+      "title": "Mathematics Above MATH 072",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any mathematics course above MATH 072",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "DISTR 103",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 112",
+      "title": "Computer Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 110A",
+      "title": "Computer Architecture Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSC 163",
+      "title": "Computing, Ethics, and Society",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CSELEC 201",
+      "title": "CSC Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any CSC elective",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SCI 202",
+      "title": "Natural Science Requirement",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: 4-5 s.h. natural science; encoded at 4 so the sequence totals the published 124 s.h. minimum",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "DISTR 104",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSC 120",
+      "title": "Algorithms and Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 123",
+      "title": "Programming Languages: Survey, Design and Implementation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSC 185",
+      "title": "Methods of Random Process",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CSC 155",
+      "title": "Systems Programming",
+      "credits": 3,
+      "prereq": [
+       "CSC 016"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CSELEC 301",
+      "title": "CSC Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any CSC elective",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 161",
+      "title": "Introduction to Automata Theory",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSC 190",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSC 194",
+      "title": "Foundations of Leadership and Innovation in Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CSELEC 302",
+      "title": "CSC Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any CSC elective",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "DISTR 105",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 170",
+      "title": "Databases",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSC 197A",
+      "title": "Independent Senior Design I",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSC 198F",
+      "title": "Senior Seminar",
+      "credits": 0.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CSELEC 401",
+      "title": "CSC Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any CSC elective",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "DISTR 106",
+      "title": "Distribution Requirement (LT/HP/BH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any Hofstra distribution course",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "ELEC 401",
+      "title": "Free Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any free elective",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSC 197B",
+      "title": "Independent Senior Design II",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSC 198S",
+      "title": "Senior Seminar",
+      "credits": 0.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC 402",
+      "title": "Free Elective",
+      "credits": 12,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any free electives",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "410a1b4f31abba1a510febb14c3ad4a16ac7bb7c5ba548b9ef7a1dfbc582500f",
+  "last_verified": "2026-10-02"
+ }
+}

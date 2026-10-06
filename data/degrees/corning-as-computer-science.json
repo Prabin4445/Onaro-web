@@ -1,0 +1,326 @@
+{
+ "institution": {
+  "city": "Corning, NY",
+  "kind": "community",
+  "name": "Corning Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "CSCS 2420",
+   "MATH 1240"
+  ],
+  "id": "corning-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official SUNY Corning Community College 2026-2027 Academic Catalog (corning.cleancatalog.net, the college's official online catalog), degree page 'Computer Science, Associate in Science' (Transfer, Division of STEM). Hand-transcribed 2026-09-30 from the catalog's 'Course Sequencing' sample sequence plus the 'Program Requirements' table, which publishes Total Credits 64. Credit math: sequence term totals 17/15/15/17 = 64, matching the published degree total exactly (no discrepancy). TRUE credential per the catalog: Associate in Science (Transfer) in Computer Science. Prereqs verified on the current 2026-2027 catalog course pages: CSCS 1320 requires CSCS 1240 (modeled); CSCS 1730 requires 'be taking or have taken CSCS 1240', i.e. concurrent enrollment is permitted (modeled as CSCS 1240); CSCS 2320 requires CSCS 1320 (modeled); CSCS 2330 requires 'MATH 1240 and either CSCS 1320 or CSCS 2420' - CSCS 2420 and MATH 1240 are real catalog course codes but neither appears in the published sequence, so both are listed in external_prereqs and the either/or plus the MATH 1240 requirement are documented here rather than modeled; CSCS 2650 requires 'CSCS 1320 or CSCS 2420' (either/or documented here, modeled with both codes); MATH 1610 requires 'MATH 1411-1412 or MATH 1413' - MATH 1413 is the in-plan path shown in the sequence (the MATH 1411-1412 alternative documented here); ENGL 1020's catalog prerequisite is ENGL 1010, and the catalog's ENGL 1110 course page states ENGL 1110 'may take this course in place of ENGL 1010' for CSCI-AS students, so ENGL 1020 is modeled with prereq ENGL 1110 (the in-plan substitute); ENGL 1110 requires placement or ENGL 0980; MATH 1413 requires MATH 1225 or MATH 1240 or placement; CSCS 1200 and CSCS 1240 require eligibility for college-level composition plus completion of all developmental mathematics - all placement/assessment details documented here, not modeled as course prereqs. Choice slots: two 3-credit Computer Science Elective slots (catalog footnote 2: 'Select from CSCS, CSIT, CSNT, CSNS, or CSWT. Select to fulfill requirements of transfer college.'; catalog footnote 7: 'Program Elective: CSNT 1200 recommended.'), one Humanities Elective, two Laboratory Science Electives (catalog footnote 1: 'If using PHYS for laboratory science elective, select PHYS 1010 or higher'), one Liberal Arts and Sciences Elective (catalog footnote 5: chosen from The Arts, US History & Civic Engagement, World History & Global Awareness, or World Languages), one DEI/SJ course, one Social Sciences Elective, and one 1-credit Wellness (Activity or Awareness) slot. Catalog caveats: the sequence is 'intended as a guide for academic planning. It need not be followed exactly or completed in four semesters.' Footnote: based on placement, students might be required to take developmental and/or prerequisite classes before the required English and Math courses. High school or equivalent preparation required: biology, chemistry or physics and four years of mathematics (algebra, geometry or intermediate algebra, trigonometry, precalculus) - students lacking it may take longer to complete the program. Catalog 'Shelf Life Alert': computer courses may not be used for any computer program if more than 5 years have passed since the course was taken. Degree is also offered via distance education (50%+ online). 20 slots total across 4 semesters.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Communication",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1413",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Pre-Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 1240",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Structured and Object-Oriented Problem Solving",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 1200",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Computer Essentials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select from CSCS, CSIT, CSNT, CSNS, or CSWT per catalog footnote 2; select to fulfill requirements of transfer college. Catalog footnote 7: 'Program Elective: CSNT 1200 recommended.'",
+      "code": "CS-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1020",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 1110"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "College Composition II",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1610",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1413"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 1320",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCS 1240"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "C/C++ Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 1730",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCS 1240"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "UNIX/Linux Fundamentals",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 2320",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCS 1320"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 2330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCS 1320",
+       "CSCS 2420",
+       "MATH 1240"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Humanities general education elective; select to fulfill requirements of transfer college.",
+      "code": "HUM-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Humanities Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Laboratory Science elective; if using PHYS, select PHYS 1010 or higher (catalog footnote 1); select to fulfill requirements of transfer college.",
+      "code": "LAB-SCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Laboratory Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Chosen from The Arts, US History & Civic Engagement, World History & Global Awareness, or World Languages (catalog footnote 5).",
+      "code": "LAS-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Liberal Arts and Sciences Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCS 2650",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCS 1320",
+       "CSCS 2420"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Select from CSCS, CSIT, CSNT, CSNS, or CSWT per catalog footnote 2; select to fulfill requirements of transfer college. Catalog footnote 7: 'Program Elective: CSNT 1200 recommended.'",
+      "code": "CS-EL-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Course meeting the Diversity, Equity, Inclusion, Social Justice general education requirement; see catalog General Education Requirements for qualifying courses.",
+      "code": "DEI-SJ-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Diversity, Equity, Inclusion, Social Justice (DEI/SJ) Course",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Social Sciences general education elective; select to fulfill requirements of transfer college.",
+      "code": "SS-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Social Sciences Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "1-credit Wellness course (Activity or Awareness component).",
+      "code": "WELL-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Wellness (Activity or Awareness)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Laboratory Science elective; if using PHYS, select PHYS 1010 or higher (catalog footnote 1); select to fulfill requirements of transfer college.",
+      "code": "LAB-SCI-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Laboratory Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://corning.cleancatalog.net/sites/default/files/pdf/degree/computer-science.pdf?generated=1762889001",
+  "total_credits": 64,
+  "content_hash": "1da4dc63807d3492f98ea56eeeb61dc2d00d90ac3348ef6b0f4a500eb8dfa12f",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,680 @@
+{
+ "institution": {
+  "city": "Santa Cruz, CA",
+  "kind": "public4yr",
+  "name": "University of California, Santa Cruz",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "ucsc-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: the official 'Computer Science Bachelor of Science Pathway | UC Santa Cruz 2026' at https://programmaps.ucsc.edu/pathway/computer-science-from-high-school-2/ — the UCSC General Catalog's Computer Science B.S. page (https://catalog.ucsc.edu/en/current/general-catalog/academic-units/baskin-engineering/computer-science-and-engineering/computer-science-bs/) states 'Academic planners for this and all majors can be found at programmaps.ucsc.edu,' making this the catalog-sanctioned official term-by-term sequence for the from-high-school (frosh) track. Course titles and credit values are verbatim from the pathway tables. Catalog year: 2026-2027 (program map titled 'UC Santa Cruz 2026'; verified course pages render under the '2026-2027 UCSC General Catalog' breadcrumb). Transcription method: manual, table-by-table transcription of the official 12-quarter (Fall/Winter/Spring x 4 years) pathway; prereqs verified against 2026-2027 General Catalog course listings and official Baskin Engineering course pages, with 'or' alternatives simplified to the standard in-plan track (every listed prereq code names a course in this plan). Placement/assessment items (the pathway's 'Placement Assessments' advising note; math-placement alternatives in course prereqs) are described here, not in external_prereqs. QUARTER SYSTEM: UCSC runs on quarters; the pathway's own unit sum is exactly 180 quarter units (term blocks 16+17+17+14+15+15+15+15+15+15+15+11 = 180, including the 1-credit Summer Orientation), the official bachelor's minimum. CAVEATS: (1) This models the standard frosh-entry pathway; the catalog also publishes an alternative first-year plan for students without programming experience and a transfer plan — not modeled here. (2) The optional 'Summer Edge' early-start advising item from the pathway is not modeled. (3) GE choice slots (Cross-Cultural Analysis, Practice, Ethnicity and Race, Interpreting Arts and Media, Textual Analysis, Perspectives), College Core, and elective slots are student-choice; the pathway names only the GE category, not specific courses. (4) ELWR is typically WRIT 1/WRIT 1E and may be satisfied by exam/AP credit; College Core is specific to the student's residential college. (5) Prereqs are published per-course in the catalog, not on the pathway page; only catalog-verified prereqs are listed (see per-course choice_notes); the pathway's term order is itself the official sequence. external_prereqs is empty: every listed prereq names a course in this plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Official pathway lists 'Placement Assessments' as a Required/Optional advising item in the entry block. Math placement is required for one or more foundational courses in this major per the catalog ('Math placement is required for one or more of the foundational courses for this major').",
+      "code": "PLACEMENT",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Placement Assessments",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Official pathway entry block: 'Summer Orientation' (General Education, 1 credit). Folded into Fall Year 1 to keep the 12-quarter structure.",
+      "code": "SUMMER-ORIENT",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Summer Orientation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: 'No prior programming experience is required.'",
+      "code": "CSE 20",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Beginning Programming in Python",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Math placement or equivalent required per catalog; no in-plan single prereq.",
+      "code": "MATH 19A",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus for Science, Engineering, and Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway lists 'College Core' (General Education, 5 credits) as the Fall Year 1 GE course. UCSC's College Core course is specific to the student's residential college.",
+      "code": "COLLEGE-CORE",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "College Core — your residential college's core course",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Quarter 1",
+    "n": 1,
+    "term": "Fall Year 1",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 20 (or BME 160); and MATH 3 or MATH 11A or MATH 19A or AM 3 or AM 11A or ECON 11A, or MPE score 400+. Simplified to the standard in-plan track (CSE 20 + MATH 19A).",
+      "code": "CSE 30",
+      "credits": 7,
+      "options": [],
+      "prereq": [
+       "CSE 20",
+       "MATH 19A"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming Abstractions: Python",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Standard calculus sequence; catalog prereq alternatives are placement-level.",
+      "code": "MATH 19B",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus for Science, Engineering, and Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Official pathway lists 'ELWR: Entry Level Writing Requirement' (General Education, 5 credits) as the Winter Year 1 GE item — typically WRIT 1/WRIT 1E; may be satisfied by exam or AP credit.",
+      "code": "ELWR",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Entry Level Writing Requirement",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Quarter 2",
+    "n": 2,
+    "term": "Winter Year 1",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: CSE 12 assumes programming experience (shown via the catalog's prerequisite-course list or the CSE 20 test-out exam); the official pathway sequences it in Spring Year 1 after CSE 20 and CSE 30. 7 credits with integrated laboratory.",
+      "code": "CSE 12",
+      "credits": 7,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Systems and Assembly Language and Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: MATH 19A (or MATH 20A/19B/20B/11B/AM 11B/AM 15B/ECON 11B). Simplified to the standard in-plan track (MATH 19A).",
+      "code": "CSE 16",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 19A"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Applied Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (5 credits): select any course satisfying the Cross-Cultural Analysis GE requirement.",
+      "code": "GE-CC",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "GE: Cross-Cultural Analysis — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Quarter 3",
+    "n": 3,
+    "term": "Spring Year 1",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Linear Algebra for Engineers (official pathway title).",
+      "code": "AM 10",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Linear Algebra for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "7 credits with integrated laboratory. Students cannot receive credit for both CSE 13S and ECE 13.",
+      "code": "CSE 13S",
+      "credits": 7,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Systems and C Programming",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (2 credits): select any course satisfying the Practice GE requirement.",
+      "code": "GE-PR",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "GE: Practice — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Quarter 4",
+    "n": 4,
+    "term": "Fall Year 2",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Multivariate Calculus for Engineers (official pathway title).",
+      "code": "AM 30",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Multivariate Calculus for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: (CSE 12 or BME 160); (CSE 13E or ECE 13 or CSE 13S); CSE 16; CSE 30; (MATH 11B or MATH 19B or MATH 20B or AM 11B or ECON 11B). Simplified to the standard in-plan track.",
+      "code": "CSE 101",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 12",
+       "CSE 13S",
+       "CSE 16",
+       "CSE 30",
+       "MATH 19B"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Introduction to Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (5 credits): select any course satisfying the Ethnicity and Race GE requirement.",
+      "code": "GE-ER",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "GE: Ethnicity and Race — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 5",
+    "n": 5,
+    "term": "Winter Year 2",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 101 (or CSE 101P).",
+      "code": "CSE 101M",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 101"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Mathematical Thinking for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prereq per the Winter/Spring 2026 instructor syllabus: CSE 16; and AM 30 (or MATH 22 or MATH 23A). Simplified to the standard in-plan track.",
+      "code": "CSE 107",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 16",
+       "AM 30"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Probability and Statistics for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Rhetoric and Inquiry (official pathway title).",
+      "code": "WRIT 2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Rhetoric and Inquiry",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 6",
+    "n": 6,
+    "term": "Spring Year 2",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Machine Learning Basics: Data Analysis and Empirical Methods (official pathway title). Catalog notes a test-out option can satisfy this requirement.",
+      "code": "CSE 40",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Machine Learning Basics: Data Analysis and Empirical Methods",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 101M.",
+      "code": "CSE 102",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 101M"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Introduction to Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (5 credits): select any course satisfying the Interpreting Arts and Media GE requirement.",
+      "code": "GE-IM",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "GE: Interpreting Arts and Media — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 7",
+    "n": 7,
+    "term": "Fall Year 3",
+    "year_label": "Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 12; and (CSE 13E or CSE 13S or ECE 13 or CSE 15 + CSE 15L); CSE 16 recommended. Simplified to the standard in-plan track.",
+      "code": "CSE 120",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 12",
+       "CSE 13S"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog: four electives required from the B.S. elective list — any 5-credit CSE course numbered 100-189 (except DC courses CSE 115A and CSE 185E/185S) or 201-279, or CSE 195 (if not used for the DC requirement), or listed AM/CMPM/MATH/STAT courses. At least one must be a CSE course; at most two from applied mathematics/statistics/mathematics. This is elective slot 1 of 4 in the pathway.",
+      "code": "CSE-ELEC-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CSE Upper-Division Elective 1 of 4 — student choice",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (5 credits): select any course satisfying the Textual Analysis GE requirement.",
+      "code": "GE-TA",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "GE: Textual Analysis — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 8",
+    "n": 8,
+    "term": "Winter Year 3",
+    "year_label": "Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 12; and (CSE 101 or CSE 15 + CSE 15L); plus knowledge of the C programming language (covered by CSE 13S in this plan). Simplified to the standard in-plan track.",
+      "code": "CSE 130",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 12",
+       "CSE 101"
+      ],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Principles of Computer Systems Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Engineering Principles of Electronics (official pathway title).",
+      "code": "ECE 30",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Engineering Principles of Electronics",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway GE slot (5 credits): select any course satisfying the Perspectives GE requirement.",
+      "code": "GE-PE",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "GE: Perspectives — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 9",
+    "n": 9,
+    "term": "Spring Year 3",
+    "year_label": "Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prereq: CSE 101 (or CSE 101P). Formerly CSE 116, Introduction to Functional Programming.",
+      "code": "CSE 114A",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSE 101"
+      ],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Foundations of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog Disciplinary Communication requirement: one additional course from CSE 115A (Introduction to Software Engineering), CSE 185E/CSE 185S (Technical Writing for Computer Science and Engineering), or CSE 195 (Senior Thesis Research). CSE 195 may count as an elective OR the DC requirement, not both.",
+      "code": "CSE-DC-ELEC",
+      "credits": 5,
+      "options": [
+       "CSE 115A",
+       "CSE 185E",
+       "CSE 185S",
+       "CSE 195"
+      ],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "CSE Disciplinary Communication Elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway slot: 'Any 5 Credit Class' (Elective, 5 credits) — free elective.",
+      "code": "ELEC-5A",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Elective: any 5-credit class — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 10",
+    "n": 10,
+    "term": "Fall Year 4",
+    "year_label": "Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective slot 2 of 4; see s8-1 for the official elective rules.",
+      "code": "CSE-ELEC-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "CSE Upper-Division Elective 2 of 4 — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective slot 3 of 4; see s8-1 for the official elective rules.",
+      "code": "CSE-ELEC-3",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-1",
+      "tccns": "",
+      "title": "CSE Upper-Division Elective 3 of 4 — student choice",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway slot: 'Any 5 Credit Class' (Elective, 5 credits) — free elective.",
+      "code": "ELEC-5B",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-2",
+      "tccns": "",
+      "title": "Elective: any 5-credit class — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Quarter 11",
+    "n": 11,
+    "term": "Winter Year 4",
+    "year_label": "Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog capstone list: CSE 110B, 115C, 115D, 121, 134, 138, 140, 143, 144, 145, 156 (+156L), 157, 160, 161 (+161L), 162 (+162L), 163, 168, 181, 183, 184, 187, CMPM 172; or senior thesis (CSE 195). A passed capstone course also counts toward the upper-division elective requirement.",
+      "code": "CSE-CAPSTONE",
+      "credits": 5,
+      "options": [
+       "CSE 110B",
+       "CSE 115C",
+       "CSE 115D",
+       "CSE 121",
+       "CSE 134",
+       "CSE 138",
+       "CSE 140",
+       "CSE 143",
+       "CSE 144",
+       "CSE 145",
+       "CSE 156",
+       "CSE 157",
+       "CSE 160",
+       "CSE 161",
+       "CSE 162",
+       "CSE 163",
+       "CSE 168",
+       "CSE 181",
+       "CSE 183",
+       "CSE 184",
+       "CSE 187",
+       "CMPM 172",
+       "CSE 195"
+      ],
+      "prereq": [],
+      "slot_id": "s12-0",
+      "tccns": "",
+      "title": "CSE Capstone — student choice from official capstone list",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway slot: 'Any 1 Credit Class' (Elective, 1 credit) — free elective.",
+      "code": "ELEC-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-1",
+      "tccns": "",
+      "title": "Elective: any 1-credit class — student choice",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Official pathway slot: 'Any 5 Credit Class' (Elective, 5 credits) — free elective.",
+      "code": "ELEC-5C",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-2",
+      "tccns": "",
+      "title": "Elective: any 5-credit class — student choice",
+      "xfer": []
+     }
+    ],
+    "declared_credits": 11,
+    "label": "Quarter 12",
+    "n": 12,
+    "term": "Spring Year 4",
+    "year_label": "Year 4"
+   }
+  ],
+  "source_url": "https://programmaps.ucsc.edu/pathway/computer-science-from-high-school-2/",
+  "total_credits": 180,
+  "content_hash": "59cfba1b82b0e12bb640618050374b96ed8f604c98d6c009509bc88cd760cf4f",
+  "last_verified": "2026-10-02"
+ }
+}

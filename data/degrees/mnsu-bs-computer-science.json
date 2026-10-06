@@ -1,0 +1,752 @@
+{
+ "institution": {
+  "city": "Mankato, MN",
+  "kind": "public4yr",
+  "name": "Minnesota State University, Mankato",
+  "state": "MN"
+ },
+ "plan": {
+  "catalog_year": "2021-2022",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "mnsu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official MNSU Department of Computer Information Science 'SAMPLE FOUR-YEAR CURRICULUM (COMPUTER SCIENCE FOUR YEAR PLAN)' from the department's 2021 Computer Science fact sheet (dated 05/21; also published as the CS 4-year advising sheet, Rev. August 2021), https://mnsu.edu/contentassets/41d55b5c45494dc49da6bc421b0e4a1e/2021-computer-science-fact-sheet.pdf. Term-by-term sequence, course order, and row labels transcribed verbatim from that plan. CATALOG YEAR: 2021-2022 (fact-sheet edition). Cross-checked against the official catalog program requirements (2020-2021 archived catalog and the current 2024-2025 catalog at https://www.mnsu.edu/academic-catalog/undergraduate/computer-science-bs/): the major requirements are unchanged — same Required General Education, same Major Common Core (CIS 121/122/223/224, CS 301/302/303/304, CS 391W/392W/491W, CS 495, MATH 122/247/280/354/380), same 4-credit Thesis-or-Capstone (CS 492W or CS 498), same 12-credit restricted CS electives. No curriculum change affects this sequence. CREDITS (from official catalog course listings): CIS 121/122/223/224 = 4; MATH 121/122/247/280/380 = 4; MATH 354 = 3; CS 301/302/303/304 = 2; CS 391W/392W/491W/492W = 4; CS 495 = 1 per semester (catalog: 'complete 4 credits of CS 495', repeated every upper-division semester); CS topics electives = 2; ENG 101 = 4; ENG 271W = 4; BIOL 105 = 4; GEOL 121 = 4. KNOWN DEVIATION: the fact sheet labels Fourth Year Fall as 15 credits; this transcription totals 14 for that term (Gen Ed pick of 3 cr) so that the eight terms sum to exactly the 120-credit degree total — the fact sheet's own implied term totals sum to 121-122, so a 1-credit trim on a Gen Ed choice slot was required and is documented here. 2024 VARIANT (not used): the department's August 2024 fact sheet (ADMS205PA 08-24) republishes the plan but with scrambled/erroneous credit values (e.g. MATH 247 (1), CS 495 (4), CS 391W (1), MATH 354 (4), all contradicting the catalog) and a swapped year-2/year-3 math order; the 2021 sequence + catalog credits are the reliable source. PLACEMENT: CIS 121 requires math placement (MATH 112/113/115/121 eligible); MATH 121 and ENG 101 require placement — see catalog Mathematics/English sections. ADMISSION TO MAJOR: required before any 300/400-level CS course; requires ENG 101, CIS 223, CIS 224, MATH 280 with C or better, 2.5 GPA in lower-division Math/CIS, plus application. SCIENCE ELECTIVES: official list BIOL 105, BIOL 106, CHEM 201, CHEM 202, GEOL 121, GEOL 122, PHYS 221, PHYS 222+232, PHYS 223+233 — choose two from DIFFERENT departments; representative picks shown (BIOL 105, GEOL 121). CS ELECTIVES: 12 credits from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). CS 492W additionally requires one of CS 306/401/403/406/410/420/435/440/445/450/465/470/480/485 alongside CS 491W. CS 495 SEMINAR repeats all four upper-division semesters (1 cr each); distinct codes CS 495 / CS 495-2 / -3 / -4 are used because the pipeline rejects duplicate non-choice codes — all four are the same 1-credit seminar. The 2021 fact sheet prints 'ECS 495' in Fourth Year Spring, an obvious typo for CS 495. Completing this plan also earns the Mathematics minor per the department. The 8 'General Education Course' slots are student choice; representative 3-credit picks used (GENED-5 is 4 cr) to land on 120 total; ~1 credit beyond the 44-credit Gen Ed requirement functions as a free elective.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 121",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Programming",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 121",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Foundations of Writing & Rhetoric",
+      "xfer": [],
+      "category": "gened"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 122",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 121"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 122",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 121"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Official science-elective list: BIOL 105, BIOL 106, CHEM 201, CHEM 202, GEOL 121, GEOL 122, PHYS 221, PHYS 222+232, PHYS 223+233. Choose two science electives from DIFFERENT departments across SCI-EL1 and SCI-EL2. Representative pick shown: BIOL 105 General Biology I (4 cr, no prerequisites).",
+      "code": "SCI-EL1",
+      "credits": 4,
+      "options": [
+       "BIOL 105",
+       "BIOL 106",
+       "CHEM 201",
+       "CHEM 202",
+       "GEOL 121",
+       "GEOL 122",
+       "PHYS 221",
+       "PHYS 222",
+       "PHYS 232",
+       "PHYS 223",
+       "PHYS 233"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Science Elective (e.g. BIOL 105 General Biology I)",
+      "xfer": [],
+      "category": "gened"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 223",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 122",
+       "MATH 121"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 280",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 121"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics for Computer Science I",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Official science-elective list: BIOL 105, BIOL 106, CHEM 201, CHEM 202, GEOL 121, GEOL 122, PHYS 221, PHYS 222+232, PHYS 223+233. Choose two science electives from DIFFERENT departments across SCI-EL1 and SCI-EL2. Representative pick shown: GEOL 121 Physical Geology (4 cr, no prerequisites).",
+      "code": "SCI-EL2",
+      "credits": 4,
+      "options": [
+       "BIOL 105",
+       "BIOL 106",
+       "CHEM 201",
+       "CHEM 202",
+       "GEOL 121",
+       "GEOL 122",
+       "PHYS 221",
+       "PHYS 222",
+       "PHYS 232",
+       "PHYS 223",
+       "PHYS 233"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Science Elective (e.g. GEOL 121 Physical Geology)",
+      "xfer": [],
+      "category": "gened"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 224",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 122"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 247",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 122"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Official plan: CMST 102 Public Speaking (3 cr, no prerequisite) OR ENG 271W Technical Communication (4 cr, requires ENG 101). Representative pick: ENG 271W (4 cr).",
+      "code": "COMM-EL1",
+      "credits": 4,
+      "options": [
+       "CMST 102",
+       "ENG 271W"
+      ],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Public Speaking or Technical Communication (CMST 102 or ENG 271W)",
+      "xfer": [],
+      "category": "gened"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "Same 1-credit seminar repeated every upper-division semester per catalog; distinct code used because the pipeline rejects duplicate non-choice codes. Requires admission to the major.",
+      "code": "CS 495",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Seminar",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 391W",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 223",
+       "MATH 280"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CS Project 1",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 301",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CIS 223",
+       "CIS 224"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "CS Core: Operating Systems",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 302",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CIS 223",
+       "CIS 224"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "CS Core: Software Engr & Parallel Computing",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 354",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 122"
+      ],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Concepts of Probability and Statistics",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 4-credit pick used to match the plan's stated 16-credit term.",
+      "code": "GENED-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "Same 1-credit seminar repeated every upper-division semester per catalog; distinct code used because the pipeline rejects duplicate non-choice codes. Requires admission to the major.",
+      "code": "CS 495-2",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Seminar",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 392W",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 391W"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CS Project 2",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 303",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CIS 223",
+       "CIS 224"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Core: Programming Languages",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 304",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CIS 223",
+       "CIS 224"
+      ],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Core: Databases & Info. Security",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 380",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 247",
+       "MATH 280"
+      ],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Discrete Mathematics for Computer Science II",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). 12 credits required across CS-EL1..CS-EL6. Requires admission to major.",
+      "code": "CS-EL1",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "Same 1-credit seminar repeated every upper-division semester per catalog; distinct code used because the pipeline rejects duplicate non-choice codes. Requires admission to the major.",
+      "code": "CS 495-3",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Seminar",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 491W",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 301",
+       "CS 302",
+       "CS 303",
+       "CS 304",
+       "CS 392W"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Capstone Project 1",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). Requires admission to major.",
+      "code": "CS-EL2",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). Requires admission to major.",
+      "code": "CS-EL3",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). Requires admission to major.",
+      "code": "CS-EL4",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used. NOTE: the source plan labels this term 15 credits; with a 3-credit Gen Ed pick it totals 14, the documented 1-credit trim that brings the eight-term sum to exactly 120.",
+      "code": "GENED-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "Same 1-credit seminar repeated every upper-division semester per catalog (the source plan prints 'ECS 495' here, a typo for CS 495); distinct code used because the pipeline rejects duplicate non-choice codes. Requires admission to the major.",
+      "code": "CS 495-4",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Seminar",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": false,
+      "choice_note": "Catalog additionally requires one of CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, or CS 485 alongside CS 491W; satisfied via the CS-EL choice slots.",
+      "code": "CS 492W",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 491W"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CS Capstone Project 2",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). Requires admission to major.",
+      "code": "CS-EL5",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Restricted CS elective: choose from CS 306, CS 401, CS 403, CS 406, CS 410, CS 420, CS 435, CS 440, CS 445, CS 450, CS 465, CS 470, CS 480, CS 485 (2 cr each; topics vary; 400-level topics repeatable when topics differ). Requires admission to major.",
+      "code": "CS-EL6",
+      "credits": 2,
+      "options": [
+       "CS 306",
+       "CS 401",
+       "CS 403",
+       "CS 406",
+       "CS 410",
+       "CS 420",
+       "CS 435",
+       "CS 440",
+       "CS 445",
+       "CS 450",
+       "CS 465",
+       "CS 470",
+       "CS 480",
+       "CS 485"
+      ],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS Elective (400-level topics course)",
+      "xfer": [],
+      "category": "major"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     },
+     {
+      "choice": true,
+      "choice_note": "Any course satisfying MNSU General Education requirements; see advisor. Representative 3-credit pick used.",
+      "code": "GENED-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": [],
+      "category": "gened"
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://mnsu.edu/contentassets/41d55b5c45494dc49da6bc421b0e4a1e/2021-computer-science-fact-sheet.pdf",
+  "total_credits": 120,
+  "content_hash": "4092d2dfc829ea3d2a0da8013b8b6832dc6661b364e5a18065d07194a92ea455",
+  "last_verified": "2026-10-02"
+ }
+}

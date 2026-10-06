@@ -1,0 +1,552 @@
+{
+ "institution": {
+  "name": "University of Minnesota Twin Cities",
+  "city": "Minneapolis, MN",
+  "kind": "public4yr",
+  "state": "MN"
+ },
+ "plan": {
+  "id": "umn-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://cse.umn.edu/college/four-year-plans/computer-science-four-year-plan",
+  "notes": "Source: the official University of Minnesota College of Science and Engineering four-year plan page 'Computer Science Four-Year Plan (B.S. in Computer Science)', revised 03/2026, at https://cse.umn.edu/college/four-year-plans/computer-science-four-year-plan. Catalog year 2026-2027 reflects the current catalog cycle matching this March 2026 revision. Transcription method: hand-transcribed from the official page's term-by-term tables on 2026-09-30; all course codes, titles, credit values in [Ncr] brackets, and prerequisite/co-requisite markers are from that page. Caveats: the page is explicitly a sample plan, not a guarantee of course availability (alternative options are on APAS or the catalog page). Slots with variable official credits were fixed at the stated values to total exactly 120: Liberal Education slots (official 3 or 4 cr) at 3 except one WRIT-1301-or-LibEd slot at 4; Additional Science (official +/- list: Chem 1071/65, Phys 1302W, ESci 2201 fall-only, Psy 3011, GCD 3022) at 4; UD Math Oriented Requirement (3 or 4 cr) at 3; technical electives at 3 or 4 (UD math 3 cr + technical electives 25 cr = 28 cr, above the official 23-credit minimum, with at least 11 of 23 from CSci courses as the page requires); open electives (only if needed to reach 120) at 4. Bold-face items (CSE 1001, ESci 2201) are fall-only offerings per the page. The department's recommended degree name is the B.S. in Computer Science (listed as 'Computer Science B.S. Comp.Sc.' in UMN Twin Cities undergraduate programs); no silent substitution was made.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "MATH 1371",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Placement or prerequisite per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "PHYS 1301W",
+      "title": "Intro Physics I",
+      "credits": 4,
+      "prereq": [
+       "MATH 1371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "MATH 1371 is a co-requisite (&Math 1371) per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "LIBED 1",
+      "title": "Liberal Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen Liberal Education course per the official four-year plan. Credited here at 3 cr.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "LIBED 2",
+      "title": "Liberal Education Course or WRIT 1301",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official slot: 'Liberal Education course or Writ 1301' (3 or 4 cr) per the official plan. Credited here at 4 cr, consistent with WRIT 1301.",
+      "options": [
+       "Liberal Education Course",
+       "WRIT 1301"
+      ],
+      "category": "general"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CSE 1001",
+      "title": "First Year Experience",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Fall-only offering (bold on the official plan: only offered in the indicated semester).",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MATH 1372",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 1371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Prerequisite: MATH 1371 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "ADDSCI 1",
+      "title": "Additional Science Requirement",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official +/- list: Chem 1071/65, Phys 1302W, ESci 2201 (fall only, coreq Phys 1301W), Psy 3011, or GCD 3022. Course-specific credits; credited here at 4 cr.",
+      "options": [
+       "CHEM 1071",
+       "CHEM 1065",
+       "PHYS 1302W",
+       "ESCI 2201",
+       "PSY 3011",
+       "GCD 3022"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CSCI 1133",
+      "title": "Intro to Computing & Programming Concepts",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "LIBED 3",
+      "title": "Liberal Education Course or WRIT 1301",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official slot: 'Liberal Education course or Writ 1301' (3 or 4 cr) per the official plan. Credited here at 3 cr.",
+      "options": [
+       "Liberal Education Course",
+       "WRIT 1301"
+      ],
+      "category": "general"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "STAT 3021",
+      "title": "Intro to Probability and Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 1372"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Prerequisite: MATH 1372 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSCI 2011",
+      "title": "Discrete Structures",
+      "credits": 4,
+      "prereq": [
+       "MATH 1371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Prerequisite: MATH 1371 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSCI 1933",
+      "title": "Intro to Algorithms & Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CSCI 1133",
+       "MATH 1371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Prerequisite: CSCI 1133; MATH 1371 may be taken as a co-requisite per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "LIBED 4",
+      "title": "Liberal Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen Liberal Education course per the official four-year plan. Credited here at 3 cr.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSCI 2021",
+      "title": "Machine Architecture & Organization",
+      "credits": 4,
+      "prereq": [
+       "CSCI 1933"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "CSCI 1913 may substitute for CSCI 1933 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSCI 2033",
+      "title": "Computational Linear Algebra",
+      "credits": 4,
+      "prereq": [
+       "CSCI 1133",
+       "MATH 1371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "CSCI 1103 or CSCI 1113 may substitute for CSCI 1133 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSCI 2041",
+      "title": "Advanced Programming Principles",
+      "credits": 4,
+      "prereq": [
+       "CSCI 1933",
+       "CSCI 2011"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "CSCI 1913 may substitute for CSCI 1933 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "LIBED 5",
+      "title": "Liberal Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen Liberal Education course per the official four-year plan. Credited here at 3 cr.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSCI 3081W",
+      "title": "Program Design & Development",
+      "credits": 4,
+      "prereq": [
+       "CSCI 2021",
+       "CSCI 2041"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Requires admission to the major (UD) per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSCI 4041",
+      "title": "Algorithms & Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CSCI 1933",
+       "CSCI 2011"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "CSCI 1913 may substitute for CSCI 1933 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "UDMATH 1",
+      "title": "UD Math Oriented Requirement",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen upper-division math course (3 or 4 cr). Counts toward the official 23-credit minimum of UD math + CSci technical electives; credited here at 3 cr.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CSCI 3923",
+      "title": "Ethics in Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Required for those admitted Fall 2023 and after; requires admission to the major (UD) per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "LIBED 6",
+      "title": "Liberal Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen Liberal Education course per the official four-year plan. Credited here at 3 cr.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSCI 4061",
+      "title": "Intro to Operating Systems",
+      "credits": 4,
+      "prereq": [
+       "CSCI 2021"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Requires admission to the major (UD); EE 2361 may substitute for CSCI 2021 per the official plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "TE 1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "TE 2",
+      "title": "Technical Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "OE 1",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen open elective, only if needed to reach 120 credits, per the official four-year plan.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "TE 3",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "TE 4",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "TE 5",
+      "title": "Technical Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "OE 2",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen open elective, only if needed to reach 120 credits, per the official four-year plan.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "TE 6",
+      "title": "Technical Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses). (This slot: if needed to reach 23 credits.)",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "TE 7",
+      "title": "Technical Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen CSci technical elective (3 or 4 cr) per the official four-year plan. CSci technical electives plus the UD math oriented requirement must total at least 23 credits (at least 11 from CSci courses).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "OE 3",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen open elective, only if needed to reach 120 credits, per the official four-year plan.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "OE 4",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student-chosen open elective, only if needed to reach 120 credits, per the official four-year plan.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "92156951c3ef79c646ea7307ee4e67daf6eb9b1c62da996063cec0d856b21b96",
+  "last_verified": "2026-10-02"
+ }
+}

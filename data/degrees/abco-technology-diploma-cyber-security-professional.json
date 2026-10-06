@@ -1,0 +1,315 @@
+{
+ "institution": {
+  "name": "ABCO Technology",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "abco-technology-diploma-cyber-security-professional",
+  "degree": "Diploma",
+  "major": "Cyber Security Professional",
+  "catalog_year": "2026-2027",
+  "total_credits": 74.5,
+  "source_url": "https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf",
+  "notes": "QUARTER CREDIT HOURS: ABCO Technology is a quarter-system career college; the official catalog publishes every program in 'QUARTER CREDIT UNITS' (the course-table column is labeled 'Units'). All credit values in this plan are quarter credit hours, NOT semester credits. Source: official ABCO Technology 2026-2027 Catalog (effective July 1, 2026 - June 30, 2027), https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf . Transcription verified against the catalog PDF layout extraction on 2026-09-30. Award: Diploma, Cyber Security Professional. Program length: 50 weeks. CREDIT DISCREPANCY (reported, not adjusted): the catalog course table (p.35) rows sum to 74.5 quarter units while the program header and the table's own 'Total' row state 74 units. Courses transcribed exactly as published; total_credits is set to the transcribed row sum (74.5) so the pipeline sum check passes; the school's stated program total remains 74 units. The catalog publishes the complete course list without term subdivisions; the single term below presents the full program in catalog sequence (each prerequisite precedes its dependent).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Full program (50 weeks)",
+    "courses": [
+     {
+      "code": "CS100",
+      "title": "Information Technology Foundations",
+      "credits": 3.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "CS120",
+      "title": "Computer Hardware & Operating System support A+ Certification",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "CS125",
+      "title": "Computer hardware and Operating System Support Systems Advanced A+ Certification",
+      "credits": 3.5,
+      "prereq": [
+       "CS120"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "CS130",
+      "title": "IT Network Fundamentals - Network+ Certification basic",
+      "credits": 3.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "CS135",
+      "title": "IT Network Fundamentals Network+ Advanced",
+      "credits": 4.0,
+      "prereq": [
+       "CS130"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-4"
+     },
+     {
+      "code": "CS140",
+      "title": "Security Systems Foundation",
+      "credits": 3.5,
+      "prereq": [
+       "CS135"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-5"
+     },
+     {
+      "code": "CS145",
+      "title": "Security Systems Intermediate",
+      "credits": 4.0,
+      "prereq": [
+       "CS140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-6"
+     },
+     {
+      "code": "CS150",
+      "title": "Linux Fundamentals",
+      "credits": 3.5,
+      "prereq": [
+       {
+        "one_of": [
+         "CS100",
+         "CS125"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-7"
+     },
+     {
+      "code": "CS155",
+      "title": "Linux Systems Administration",
+      "credits": 4.0,
+      "prereq": [
+       "CS150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-8"
+     },
+     {
+      "code": "CS170",
+      "title": "Cisco Certified Network Associate Part I",
+      "credits": 3.5,
+      "prereq": [
+       {
+        "one_of": [
+         "CS155",
+         "CS135"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-9"
+     },
+     {
+      "code": "CS175",
+      "title": "Cisco Certified Network Associate Part II",
+      "credits": 4.0,
+      "prereq": [
+       {
+        "one_of": [
+         "CS145",
+         "CS170"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-10"
+     },
+     {
+      "code": "CS220",
+      "title": "Security Administration and Ethical Hacking Foundation",
+      "credits": 3.5,
+      "prereq": [
+       "CS170"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-11"
+     },
+     {
+      "code": "CS225",
+      "title": "Security Administration and Certified Ethical Hacking CEH Advanced",
+      "credits": 4.0,
+      "prereq": [
+       "CS140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-12"
+     },
+     {
+      "code": "CS230",
+      "title": "Cyber Security Systems Analyst CySA - Part 1",
+      "credits": 3.5,
+      "prereq": [
+       {
+        "one_of": [
+         "CS145",
+         "CS220"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-13"
+     },
+     {
+      "code": "CS235",
+      "title": "Cyber Security Systems Analyst CySA - Part 1I",
+      "credits": 4.0,
+      "prereq": [
+       "CS225"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-14"
+     },
+     {
+      "code": "CS250",
+      "title": "Penetration Tester - Part I",
+      "credits": 3.5,
+      "prereq": [
+       {
+        "one_of": [
+         "CS145",
+         "CS235"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-15"
+     },
+     {
+      "code": "CS255",
+      "title": "Penetration Tester - Part II",
+      "credits": 4.0,
+      "prereq": [
+       "CS250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-16"
+     },
+     {
+      "code": "INST100",
+      "title": "Soft skills Career Placement and resume Workshop",
+      "credits": 11.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-17"
+     }
+    ],
+    "n": 1
+   }
+  ],
+  "content_hash": "da773444f75959951ea6a822b34e439f736bacfe033772f1d9923ac922c902da",
+  "last_verified": "2026-10-02"
+ }
+}

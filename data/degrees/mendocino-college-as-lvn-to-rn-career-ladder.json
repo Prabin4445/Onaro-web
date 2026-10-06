@@ -1,0 +1,246 @@
+{
+ "institution": {
+  "city": "Ukiah, CA",
+  "kind": "community",
+  "name": "Mendocino College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "BIO 230",
+   "BIO 231",
+   "BIO 259",
+   "ENGL C1000",
+   "COMM C1000",
+   "COMM 210",
+   "PSYC C1000",
+   "PSYC 210",
+   "CDV 200",
+   "ANT 201",
+   "ETH 202",
+   "SOC 200",
+   "SOC 201",
+   "HLH 214",
+   "HLH 215"
+  ],
+  "id": "mendocino-college-as-lvn-to-rn-career-ladder",
+  "major": "LVN-to-RN Career Ladder",
+  "notes": "Transcribed from the official Mendocino College 2026 LVN-to-RN Program Brochure 'RN COURSES UNITS' table (three-term sequence: one short-term transition term + two full-time RN semesters). Modeled as accelerated per build.py convention (LPN-to-RN bridge; the 18-month program represents the 3rd and 4th semesters of the RN curriculum with advanced placement). Semester sums: 2 + 13 + 13 = 28. The brochure's printed total ('26') is a typo excluding the transition-term courses; the line items sum to 28, and the 2026-2027 catalog ('Total Major Units 28') and the official LVN-to-RN Certificate of Achievement document (LVN_CERT_25.pdf, 'Total units required for Certificate 28') both confirm 28. Course titles/units cross-verified against LVN_CERT_25.pdf. Prerequisites (per brochure, must be completed before entry with C or better): BIO 230 Human Anatomy, BIO 231 Human Physiology, BIO 239 (catalog: BIO 259) Microbiology (each 4+ semester units with lab, recency applies); ENGL C1000 English Composition; COMM C1000 or COMM 210; one of PSYC C1000, PSYC 210, CDV 200; one of SOC 200, SOC 201, ANT 201, ETH 202; one of HLH 214, HLH 215 (health/nutrition). Prerequisite chains per catalog: NUR 122/NUR 125/NUR 126 require NUR 50; NUR 131 requires NUR 121; NUR 132 requires NUR 122; NUR 135 requires NUR 125; NUR 136 requires NUR 126; NUR 52C requires NUR 52T; NUR 52D requires NUR 52C. The generic AS Registered Nurse program is NOT collected: the catalog publishes only an unsplit required-course list with no official term sequence (honest negative).",
+  "program_type": "accelerated",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 50",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "LVNto-RN Transition",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 52T",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Nursing LVNto-RN Transition Lab 1",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 2,
+    "label": "Transition Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 121",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Leadership and Management I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 50.",
+      "code": "NUR 122",
+      "core_area": "",
+      "credits": 8,
+      "options": [],
+      "prereq": [
+       "NUR 50"
+      ],
+      "title": "Complex Medical/Surgical Nursing I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 50.",
+      "code": "NUR 125",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NUR 50"
+      ],
+      "title": "Pharmacology III",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 50.",
+      "code": "NUR 126",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NUR 50"
+      ],
+      "title": "Nursing Seminar I",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 52T.",
+      "code": "NUR 52C",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NUR 52T"
+      ],
+      "title": "Nursing Technical Lab III",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Semester 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 121.",
+      "code": "NUR 131",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NUR 121"
+      ],
+      "title": "Leadership & Management II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 122.",
+      "code": "NUR 132",
+      "core_area": "",
+      "credits": 8,
+      "options": [],
+      "prereq": [
+       "NUR 122"
+      ],
+      "title": "Complex Medical/Surgical Nursing II",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 125.",
+      "code": "NUR 135",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NUR 125"
+      ],
+      "title": "Pharmacology IV",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 126.",
+      "code": "NUR 136",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NUR 126"
+      ],
+      "title": "Nursing Seminar II",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite per catalog: NUR 52C.",
+      "code": "NUR 52D",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NUR 52C"
+      ],
+      "title": "Nursing Technical Lab IV",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Semester 2",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.mendocino.edu/sites/default/files/2026-03/2026%20%20LVN-to-RN%20Program%20Brochure.pdf",
+  "total_credits": 28,
+  "content_hash": "e47d74ddfed76ace24bf797d6231714f9bdd0437ad789d00744ebf128ce8849d",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,676 @@
+{
+ "institution": {
+  "name": "University of Nebraska-Lincoln",
+  "city": "Lincoln",
+  "state": "NE",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "university-of-nebraska-lincoln-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "total_credits": 120,
+  "catalog_year": "2025-2026",
+  "source_url": "https://catalog.unl.edu/undergraduate/engineering/computer-science/",
+  "transfer_confidence": "tccns_equivalencies",
+  "notes": "Standard (non-Raikes) track. Senior design CSCE 486/487 satisfies ACE 8 & ACE 10.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "CSCE 155A",
+      "title": "Computer Science I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 10",
+      "title": "Introduction to the School of Computing",
+      "credits": 0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": true,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 106",
+      "title": "Calculus I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 150",
+      "title": "Writing and Inquiry",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACE5-1",
+      "title": "Humanities Elective (ACE 5)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Select from ACE 5 approved courses",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CSCE 156",
+      "title": "Computer Science II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CSCE 155A"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 235",
+      "title": "Introduction to Discrete Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 251",
+      "title": "Unix Programming Environment",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 107",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 106"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACE2-1",
+      "title": "Communication Elective (ACE 2)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Select from ACE 2 approved courses",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fall — Year 2",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CSCE 310",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 156"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 231",
+      "title": "Computer Systems Engineering",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CSCE 235"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 314",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 107"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 211",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 106"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 221",
+      "title": "General Physics Laboratory I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Spring — Year 2",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CSCE 322",
+      "title": "Programming Language Concepts",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 361",
+      "title": "Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 380",
+      "title": "Statistics and Applications",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 107"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 212",
+      "title": "General Physics II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "PHYS 211"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACE6-1",
+      "title": "Social Sciences Elective (ACE 6)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Select from ACE 6 approved courses",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall — Year 3",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CSCE 351",
+      "title": "System Resource Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 320",
+      "title": "Data Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 476",
+      "title": "Introduction to Artificial Intelligence",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 109A",
+      "title": "General Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACE7-1",
+      "title": "Arts Elective (ACE 7)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Select from ACE 7 approved courses",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring — Year 3",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CSCE 423",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 430",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 462",
+      "title": "Communication Networks",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACE9-1",
+      "title": "Global Awareness Elective (ACE 9)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Select from ACE 9 approved courses",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL1",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fall — Year 4",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CSCE 486",
+      "title": "Computer Science Professional Development",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCE 470",
+      "title": "Computer Graphics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL2",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL3",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL4",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Spring — Year 4",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "CSCE 487",
+      "title": "Computer Science Senior Design Project",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCE 486"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL5",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL6",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL7",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-EL8",
+      "title": "General Elective",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Student selects any 2-credit course as a general elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "191b54bed61275649f33474a43db0036ea504c9006a2e604d4471bc548ca8d12",
+  "last_verified": "2026-10-02"
+ }
+}

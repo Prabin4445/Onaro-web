@@ -1,0 +1,530 @@
+{
+ "institution": {
+  "city": "Bloomington, IN",
+  "kind": "public4yr",
+  "name": "Indiana University Bloomington",
+  "state": "IN"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "indiana-university-bloomington-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Luddy School of Informatics, Computing, and Engineering. Software Engineering specialization (bulletin 2026-2027). Major = 45 cr with at least 26 cr at 300-level or above (this plan: 30 cr at 300+). Luddy degree requirements: Diversity in the U.S. (3 cr), Intensive Writing (3 cr), 12 cr Natural Science (AST/BIOL/CHEM/EAS/PHYS, non-Luddy, GenEd-approved), plus IU Common Ground. MATH-M 211 also satisfies the Common Ground Mathematical Modeling foundation; the 12 cr Natural Science satisfies the Common Ground N&M breadth. General electives may be used toward a minor or certificate (max 3 minors). C- or higher required in major courses; 2.0 major GPA. Prerequisite chains follow the official bulletin course descriptions. See the IU bulletin for official prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 211",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s1-0",
+      "title": "Introduction to Computer Science",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MATH-M 211",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s1-1",
+      "title": "Calculus I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "ENG-W 131",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-2",
+      "title": "Elementary Composition",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Arts & Humanities course (Common Ground: 2 courses, 6+ cr total)",
+      "code": "GENED-AH1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-3",
+      "title": "Arts & Humanities choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 212",
+      "credits": 4,
+      "prereq": [
+       "CSCI-C 211"
+      ],
+      "slot_id": "s2-0",
+      "title": "Introduction to Software Systems",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 241",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 211"
+      ],
+      "slot_id": "s2-1",
+      "title": "Discrete Structures for Computer Science",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "MATH-M 212",
+      "credits": 4,
+      "prereq": [
+       "MATH-M 211"
+      ],
+      "slot_id": "s2-2",
+      "title": "Calculus II",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Social & Historical Studies course (Common Ground: 2 courses, 6+ cr total)",
+      "code": "GENED-SH1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s2-3",
+      "title": "Social & Historical Studies choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 343",
+      "credits": 4,
+      "prereq": [
+       "CSCI-C 212",
+       "CSCI-C 241"
+      ],
+      "slot_id": "s3-0",
+      "title": "Data Structures",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "STAT-S 350",
+      "credits": 3,
+      "prereq": [
+       "MATH-M 211"
+      ],
+      "slot_id": "s3-1",
+      "title": "Introduction to Statistical Inference",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved natural science course, non-Luddy (AST/BIOL/CHEM/EAS/PHYS); Luddy requires 12 cr total",
+      "code": "NATSCI-1",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s3-2",
+      "title": "Natural Science choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Arts & Humanities course",
+      "code": "GENED-AH2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s3-3",
+      "title": "Arts & Humanities choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-B 461",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 241",
+       "CSCI-C 343"
+      ],
+      "slot_id": "s4-0",
+      "title": "Database Concepts",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 322",
+      "credits": 4,
+      "prereq": [
+       "CSCI-C 212"
+      ],
+      "slot_id": "s4-1",
+      "title": "Object-Oriented Software Methods",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-Y 395",
+      "credits": 1,
+      "prereq": [],
+      "slot_id": "s4-2",
+      "title": "Career Development for CSCI Majors",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Social & Historical Studies course",
+      "code": "GENED-SH2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s4-3",
+      "title": "Social & Historical Studies choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved natural science course, non-Luddy",
+      "code": "NATSCI-2",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s4-4",
+      "title": "Natural Science choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-P 465",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 343"
+      ],
+      "slot_id": "s5-0",
+      "title": "Software Engineering for Information Systems I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-B 403",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 241",
+       "CSCI-C 343",
+       "MATH-M 212"
+      ],
+      "slot_id": "s5-1",
+      "title": "Introduction to Algorithm Design and Analysis",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-B 455",
+      "credits": 3,
+      "prereq": [
+       "MATH-M 211",
+       "CSCI-C 211"
+      ],
+      "slot_id": "s5-2",
+      "title": "Principles of Machine Learning",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved natural science course, non-Luddy",
+      "code": "NATSCI-3",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s5-3",
+      "title": "Natural Science choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved World Culture course (Common Ground World Languages & Cultures: 2 courses, 6+ cr total)",
+      "code": "GENED-WC1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s5-4",
+      "title": "World Culture choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-C 323",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 212"
+      ],
+      "slot_id": "s6-0",
+      "title": "Mobile App Development",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-P 462",
+      "credits": 3,
+      "prereq": [
+       "CSCI-B 461"
+      ],
+      "slot_id": "s6-1",
+      "title": "Database Application Design and Implementation",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-B 456",
+      "credits": 3,
+      "prereq": [
+       "CSCI-C 212",
+       "MATH-M 212"
+      ],
+      "slot_id": "s6-2",
+      "title": "Image Processing",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved World Culture course",
+      "code": "GENED-WC2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-3",
+      "title": "World Culture choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy shared goal: Diversity in the United States (3 cr, CASE-approved listing)",
+      "code": "DIV-US",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-4",
+      "title": "Diversity in the U.S. choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "CSCI-P 434",
+      "credits": 4,
+      "prereq": [
+       "CSCI-C 343"
+      ],
+      "slot_id": "s7-0",
+      "title": "Distributed Systems",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy shared goal: Intensive Writing (3 cr, CASE-approved listing)",
+      "code": "INTW",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-1",
+      "title": "Intensive Writing choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-2",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-3",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-3",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-4",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-0",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-5",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-1",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-6",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-2",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-7",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-3",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective; may apply toward a minor or certificate",
+      "code": "ELEC-8",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s8-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8,
+    "term": "Spring"
+   }
+  ],
+  "source_url": "https://bulletins.iu.edu/iub/sice/2026-2027/undergraduate/degree-programs/bs-computer-science/luddy-degree-major-req.shtml",
+  "total_credits": 120,
+  "content_hash": "d54c68ee0e71dbfe552cffed2b567222488b0871a6a0930711627dbbc22742bf",
+  "last_verified": "2026-10-02"
+ }
+}

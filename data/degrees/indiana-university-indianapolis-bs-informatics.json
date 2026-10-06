@@ -1,0 +1,593 @@
+{
+ "institution": {
+  "name": "Indiana University-Indianapolis",
+  "ipeds": "151111",
+  "city": "Indianapolis",
+  "state": "IN",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "indiana-university-indianapolis-bs-informatics",
+  "degree": "BS",
+  "major": "Informatics",
+  "source_url": "https://luddy.indianapolis.iu.edu/academics/undergraduate/informatics/requirements/index.html",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "notes": "Source: Official Luddy School B.S. in Informatics degree requirements (luddy.indianapolis.iu.edu/academics/undergraduate/informatics/requirements/index.html). The B.S. is a 120 credit hour program: Core A (53 cr.), Career Readiness (2 cr.), Core B (6 cr. of 300+ CSCI/INFO/LIS/NEWM), Capstone (3 cr.), General Education (21 cr.; Social Science and Analytical Reasoning List B fulfilled by the INFO Core), General Electives (14 cr.), and a required Area of Specialization (21 cr. - any minor, major, or certificate). Students must earn a C- or higher in all courses with a 2.0 cumulative GPA. Semester layout arranged in prerequisite order following the standard Informatics course sequence; the school's official interactive degree map (pathways.iu.edu) requires JavaScript and could not be transcribed, so term placement follows catalog course sequencing. Core B, Capstone, Specialization, and General Education blocks are modeled as constrained-choice slots. No courses, credits, or prereqs invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "INFO-I 100",
+      "title": "First Year Experience",
+      "credits": 1,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "INFO-I 101",
+      "title": "Introduction to Informatics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "INFO-I 201",
+      "title": "Mathematical Foundations of Informatics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GEN-COMM1",
+      "title": "Core Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Core Communication course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GEN-SCI1",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Life and Physical Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "INFO-I 210",
+      "title": "Information Infrastructure I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "INFO-I 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "INFO-I 202",
+      "title": "Social Informatics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "GEN-COMM2",
+      "title": "Core Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Core Communication course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GEN-SCI2",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Life and Physical Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "NEWM-N 299",
+      "title": "Career Readiness",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "INFO-I 211",
+      "title": "Information Infrastructure II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "INFO-I 210"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "INFO-I 223",
+      "title": "Data Fluency",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "INFO-I 270",
+      "title": "Introduction to Human Computer Interaction",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GEN-CULT",
+      "title": "Cultural Understanding",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Cultural Understanding course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GEN-ARA",
+      "title": "Analytical Reasoning (List A)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Analytical Reasoning List A course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "DSCI-D 308",
+      "title": "Database Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "INFO-I 211"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSCI-C 310",
+      "title": "Data Structures - Python",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "INFO-I 210"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "INFO-I 303",
+      "title": "Organizational Informatics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GEN-AH1",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Arts and Humanities course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SPEC-1",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "PBHL-B 302",
+      "title": "Biostatistics for Informatics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "INFO-I 305",
+      "title": "Introduction to Research in Informatics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "INFO-I 425",
+      "title": "Web Services in Information Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "INFO-I 211"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SPEC-2",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "SPEC-3",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "INFO-I 421",
+      "title": "Applications of Data Mining",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DSCI-D 308"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "INFO-I 453",
+      "title": "Computer and Information Ethics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "COREB-1",
+      "title": "Core B Elective (300+ CSCI/INFO/LIS/NEWM)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300-level or higher CSCI, INFO, LIS, or NEWM course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "SPEC-4",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "SPEC-5",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "INFO-I 402",
+      "title": "Informatics Project Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "COREB-2",
+      "title": "Core B Elective (300+ CSCI/INFO/LIS/NEWM)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300-level or higher CSCI, INFO, LIS, or NEWM course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "SPEC-6",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-1",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-2",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "INFO-I 491",
+      "title": "Capstone Project Internship",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Capstone: INFO-I 491 Capstone Project Internship, INFO-I 492 Senior Thesis, or INFO-I 494 Design and Development of an Information System Project (all 3 credits).",
+      "options": [
+       "INFO-I 492",
+       "INFO-I 494"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "SPEC-7",
+      "title": "Area of Specialization",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Required Area of Specialization (21 cr.): any minor, major, or certificate through IU Indianapolis (e.g., Applied Data Science certificate, Business minor). If the chosen option is under 21 credits, add electives to reach 120.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC-3",
+      "title": "General Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-4",
+      "title": "General Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "95e11d57e5d6fa0b818a4f3b8df861d05ed3b51d480c8ca2665afe5977a3b144",
+  "last_verified": "2026-10-02"
+ }
+}

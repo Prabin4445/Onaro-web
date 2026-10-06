@@ -1,0 +1,647 @@
+{
+ "institution": {
+  "name": "University of Central Florida",
+  "city": "Orlando, FL",
+  "state": "FL",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "content_hash": "36112cb409e5cce4bd6b0c148618cf2fab2c7e0c8b659b73e56e1bd18715b842",
+  "degree": "BSBA",
+  "id": "ucf-bsba-finance",
+  "last_verified": "2026-09-30",
+  "major": "Finance",
+  "notes": "Source: official UCF Barry S. Miller College of Business Finance degree page, 'Curricular Plan of Study', transcribed course by course 2026-09-30 from https://business.ucf.edu/degree/finance/ (Department of Finance, Orlando FL). Program name per source: Finance BSBA. Course titles use the page's wording. CAVEAT (staleness): the page carries no catalog-year label (it defers to the UCF Catalog for the most up-to-date listing); 2026-2027 is used as the page content is the college's current published plan (same convention as the sibling UCF COB plans). (1) Junior Spring lists 'QMB 3602' with no title; title 'Business Research for Decision Making' taken from the same official site's accounting degree page. (2) Page prints 'FIN 4424 Adavanced Topics in Financial Management' (typo); corrected to 'Advanced Topics in Financial Management'. (3) Junior Spring includes an explicit 'General Elective (2 credit)' row, transcribed at 2 credits. (4) The plan includes a Freshman Summer term whose header reads '(X hours)' — unspecified; it lists two General Elective rows, transcribed at the standard 3 credits each (6 total) with this caveat. Term headers otherwise: 15+15+15+15+15+15+16+13 plus the X-hour summer = 119 transcribed; the UCF degree requirement is a minimum 120 unduplicated semester hours, the balance via additional electives. (5) GEP/ELECT/BUSEL/FINREL/FINEL are placeholder codes for student-choice slots (choice:true) per the page's 'Foundation'/'General Elective'/'Business Elective'/'FIN Restricted Elective'/'FIN Elective' rows; all other rows are fixed courses with distinct codes. (6) Business-core and finance courses categorized as 'major' (schema has no 'core' category); GEB career-series courses also 'major'. (7) prereq arrays are left empty: the plan page does not list per-course prerequisites. Catalog note: the official UCF curricular plan lists Summer Year 1 as \"X hours\" (unspecified) with two General Electives; both are transcribed here as 3-credit choice slots, giving 125 total credits. The degree requires 120 credits; consult an advisor on summer enrollment.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 1105C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECO 2013",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Macroeconomics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Cultural Foundation I'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "General Education — Cultural Foundation I, select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECO 2023",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Microeconomics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Social Science Foundation'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Education — Social Science Foundation, select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'; term header reads '(X hours)' — unspecified, standard 3 credits assumed",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'; term header reads '(X hours)' — unspecified, standard 3 credits assumed",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACG 2021",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Principles of Financial Accounting",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPC 1608",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Fundamentals of Oral Communication",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Historical Foundation I'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "General Education — Historical Foundation I, select one",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Biological Science Foundation'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education — Biological Science Foundation, select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective'",
+      "code": "ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "General Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACG 2071",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Principles of Managerial Accounting",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Historical Foundation II'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "General Education — Historical Foundation II, select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "QMB 3003",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Quantitative Business Tools I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Physical Science Foundation'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education — Physical Science Foundation, select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CGS 2100C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Computer Fundamentals for Business",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "QMB 3200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Quantitative Business Tools II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAR 3023",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Marketing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "FIN 3403",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Business Finance",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAN 3025",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Management of Organizations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACG 3173",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Accounting For Decision Makers",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Title from the same official site's accounting degree page; this page lists the code only",
+      "code": "QMB 3602",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Business Research for Decision Making",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "FIN 4243",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Debt and Money",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "FIN 3414",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Intermediate Corporate Finance",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GEB 3005",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Career Search Strategies",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Business Elective'",
+      "code": "BUSEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Business Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan lists 'General Elective (2 credit)'",
+      "code": "ELECT",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "General Elective (2 credit) — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BUL 3130",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Legal and Ethical Environment of Business",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAR 3203",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Supply Chain and Operations Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "FIN 4504",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Equity and Capital Markets",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'FIN Restricted Elective'",
+      "code": "FINREL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "FIN Restricted Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'FIN Elective'",
+      "code": "FINEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "FIN Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GEB 4223",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "Business Interviewing Techniques",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Page prints 'Adavanced' (typo); corrected",
+      "code": "FIN 4424",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Advanced Topics in Financial Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAN 4720",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Strategic Management (Capstone)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'FIN Restricted Elective'",
+      "code": "FINREL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "FIN Restricted Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'FIN Elective'",
+      "code": "FINEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "FIN Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GEB 4004",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-4",
+      "tccns": "",
+      "title": "Executing Your Career Plan",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 9
+   }
+  ],
+  "source_url": "https://business.ucf.edu/degree/finance/",
+  "total_credits": 125
+ }
+}

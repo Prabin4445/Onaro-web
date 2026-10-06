@@ -1,0 +1,483 @@
+{
+ "institution": {
+  "name": "University of Arkansas at Little Rock",
+  "city": "Little Rock",
+  "state": "AR",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "ualr-computer-science-bs-2026",
+  "degree": "Bachelor of Science",
+  "major": "Computer Science",
+  "total_credits": 120,
+  "catalog_year": "2026-2027",
+  "source_url": "https://ualr.edu/computerscience/wp-content/uploads/sites/167/2025/02/computer_science_bs_degree_map.pdf",
+  "notes": "Source: official UALR Computer Science dept degree-plan map PDF (LAST REVISION 2/24/2025). Term-by-term layout transcribed from the PDF grid as visually rendered. Per-course credit hours are NOT printed on the PDF (only semester totals); they follow UALR's 4-digit course numbering convention (2nd digit = semester hours, e.g. MATH 1451 = 4, CPSC 1105 = 1, PHYS 2321/2121 = 3+1 lecture/lab pair), which is validated in-source: derived sums match the PDF's printed semester totals for 6 of 8 semesters. GENUINE SOURCE INCONSISTENCY: semester 3 boxes sum to 17 credits vs the PDF's printed '14 Hours'; semester 4 boxes sum to 13 vs printed '16 Hours'. Box-to-column placement is visually unambiguous; both the derived column sums (17+13) and the printed totals (14+16) give 120 for the degree, so no courses are missing or duplicated. Courses are seeded exactly as visually placed; the +/-3 printed-total discrepancy is documented here for the build pipeline. catalog_year uses the retrieval-year stamp (PDF prints a revision date, not a catalog year). The PDF's own semester labels read 'First ... Eigth Semester' ('Eigth' kept verbatim as the term_label for semester 8).",
+  "program_type": "standard",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "code": "HIST 1311",
+      "credits": 3,
+      "options": [
+       {
+        "code": "HIST 1311",
+        "credits": 3,
+        "title": "History of Civilization I"
+       },
+       {
+        "code": "HIST 1312",
+        "credits": 3,
+        "title": "History of Civilization II"
+       }
+      ],
+      "title": "History of Civilization",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "RHET 1311",
+      "credits": 3,
+      "title": "Composition I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 1451",
+      "credits": 4,
+      "title": "Calculus I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 1375",
+      "credits": 3,
+      "title": "Programming I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 2310",
+      "credits": 3,
+      "title": "Discrete Mathematics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 1105",
+      "credits": 1,
+      "title": "FYE Computing Majors",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1,
+    "term_label": "First Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "RHET 1312",
+      "credits": 3,
+      "title": "Composition II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 1452",
+      "credits": 4,
+      "title": "Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 2376",
+      "credits": 3,
+      "title": "Programming II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "IFSC 1310 or CPSC 1310",
+      "code": "IFSC 1310",
+      "credits": 3,
+      "options": [
+       {
+        "code": "IFSC 1310",
+        "credits": 3,
+        "title": "Web/Internet Technologies"
+       },
+       {
+        "code": "CPSC 1310",
+        "credits": 3,
+        "title": "Web/Internet Technologies"
+       }
+      ],
+      "title": "Web/Internet Technologies",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2,
+    "term_label": "Second Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "code": "HUMANITIES",
+      "credits": 3,
+      "title": "Humanities Core",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "HIST 2311 or HIST 2312 or POLS 1310",
+      "code": "HIST 2311",
+      "credits": 3,
+      "options": [
+       {
+        "code": "HIST 2311",
+        "credits": 3,
+        "title": "U.S. History to 1877"
+       },
+       {
+        "code": "HIST 2312",
+        "credits": 3,
+        "title": "U.S. History since 1877"
+       },
+       {
+        "code": "POLS 1310",
+        "credits": 3,
+        "title": "American Government"
+       }
+      ],
+      "title": "US History / American Gov",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 2321",
+      "credits": 4,
+      "title": "Physics S&E I (with lab PHYS 2121)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 2380",
+      "credits": 3,
+      "title": "Algorithms",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 2482",
+      "credits": 4,
+      "title": "Computer Organization",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3,
+    "term_label": "Third Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "code": "FLEX",
+      "credits": 3,
+      "title": "Flex Core",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 2322",
+      "credits": 4,
+      "title": "Physics S&E II (with lab PHYS 2122)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 3375",
+      "credits": 3,
+      "title": "Database Concepts",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 3384",
+      "credits": 3,
+      "title": "Computer Networks",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4,
+    "term_label": "Fourth Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "code": "FINE ARTS",
+      "credits": 3,
+      "title": "Fine Arts Core",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 3312",
+      "credits": 3,
+      "title": "Linear Algebra",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 3383",
+      "credits": 3,
+      "title": "Programming Languages",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 3369",
+      "credits": 3,
+      "title": "Intro to Comp Arch & ASM",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5,
+    "term_label": "Fifth Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "code": "SOCIAL SCIENCE",
+      "credits": 3,
+      "title": "Social Science Core",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level (3000-4000) CPSC elective; may be chosen from CPSC, IFSC, CSEC, PHYS, MATH, ECET, BINF, SYEN, TINV, or ERSC 4421",
+      "code": "CPSC ELEC",
+      "credits": 3,
+      "title": "Upper Level CPSC Elective",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 4383",
+      "credits": 3,
+      "title": "Artificial Intelligence",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 3380",
+      "credits": 3,
+      "title": "Operating Systems",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level (3000-4000) CPSC elective; may be chosen from CPSC, IFSC, CSEC, PHYS, MATH, ECET, BINF, SYEN, TINV, or ERSC 4421",
+      "code": "CPSC ELEC",
+      "credits": 3,
+      "title": "Upper Level CPSC Elective",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6,
+    "term_label": "Sixth Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "STAT 3352",
+      "credits": 3,
+      "title": "Applied Statistics I",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 4373",
+      "credits": 3,
+      "title": "Software Engineering",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 4387",
+      "credits": 3,
+      "title": "Distributed Computing",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level (3000-4000) CPSC elective; may be chosen from CPSC, IFSC, CSEC, PHYS, MATH, ECET, BINF, SYEN, TINV, or ERSC 4421",
+      "code": "CPSC ELEC",
+      "credits": 3,
+      "title": "Upper Level CPSC Elective",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7,
+    "term_label": "Seventh Semester"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "code": "ELECTIVE",
+      "credits": 3,
+      "title": "Elective",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 4370",
+      "credits": 3,
+      "title": "Theory of Computation",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 4392",
+      "credits": 3,
+      "title": "Capstone Project",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8,
+    "term_label": "Eigth Semester"
+   }
+  ],
+  "content_hash": "7adeef0eaee80ae9e54d7fb00dfee79e4f7cb7139b8b1a3ae46dab86423fbe1a",
+  "last_verified": "2026-10-02"
+ }
+}

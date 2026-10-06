@@ -1,0 +1,99 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2020-2021",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-computer-system-configuration-and-support-network",
+  "major": "Computer System Configuration and Support, Network",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/computer-system-configuration-and-support-network-5044n-ccl). Effective Term Fall 2020 Part-time Part-time Sequence Part-time status is 11 credit hours or less. Term 1 A sequence of suggested courses that should be taken during Term 1 Course Number Course Name Requisites; catalog_year 2020-2021 derived from Effective Term. Only a part-time sequence is published on the official page (no full-time sequence); the published part-time sequence is used verbatim. Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 0,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BPC 170",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "A+ Exam Prep: Computer Hardware Configuration and Support",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BPC 270",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "A+ Exam Prep: Operating System Configuration and Support",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 190 or CNT 140AB. Credits shown for CIS 190.",
+      "code": "CIS 190",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Introduction to Networking or Introduction to Networks",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/computer-system-configuration-and-support-network-5044n-ccl",
+  "total_credits": 9,
+  "program_type": "professional-phase",
+  "content_hash": "d0cc8f6ab0420f9206a1ab314c50228962cc3f25d3ca1fde6d9b1aaa04035011",
+  "last_verified": "2026-10-02"
+ }
+}

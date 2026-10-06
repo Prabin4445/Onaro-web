@@ -1,0 +1,551 @@
+{
+ "institution": {
+  "city": "DeKalb, IL",
+  "kind": "public4yr",
+  "name": "Northern Illinois University",
+  "state": "IL"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "niu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official NIU 'Computer Science - Software Development' Degree Path - Catalog 2024-25 (PDF), published by NIU's advising office, https://aac.niu.edu/advising/degree-paths/2024-2025/liberal-arts-sciences/computer-science-software-development.pdf. Transcribed manually from the official term-by-term sequence on 2026-09-30; course codes, titles, and credit values are exactly as published in the degree path. EMPHASIS: NIU's B.S. in Computer Science requires one of three emphases; this plan follows Emphasis 1, Software Development (the most general/standard emphasis), as published in the degree path. The other emphases are Enterprise Software and Computational Software. EDITION: catalog_year is 2024-2025, an archived edition (the current catalog at catalog.niu.edu is the 2025-2026 edition, effective Fall 2025). The 2024-2025 degree path is the newest term-by-term sequence obtainable from NIU; the 2025-2026 catalog's Emphasis 1 requirements list (CSCI 240, 241, 330, 340, 360, 463, 466, 467, 480 plus CS electives; MATH 206, MATH 211/229, STAT 200/300) agrees with the sequence used here. CREDIT ANOMALIES (documented, not invented around): (1) the degree path models CSCI 480 (Principles of Operating Systems) at 3 credits (its Semester 7 total is 15-16 on that basis), while the 2024-2025 and 2025-2026 catalog requirement lists credit CSCI 480 at 4; modeled at the degree path's own value. (2) The degree path prints MATH 206 as 3-4 credits; the catalog lists it as 3; modeled at 3. (3) The degree path prints 'MATH 211 or 155' in Semester 3, but the catalog's actual requirement is MATH 211 OR MATH 229; modeled as the catalog's MATH 211/MATH 229 choice, at the degree path's printed 3 credits (catalog credits MATH 211 and MATH 229 at 4 each). (4) 'MATH 229 or Elective' (Semester 4) is printed as 3-4 credits and 'MATH 230 or Elective' (Semester 5) as 3; both modeled at 3 credits with the catalog's 4-credit course values documented in choice_note. UNIV 101 is printed as optional in the degree path ('UNIV 101 (optional)'); included at 1 credit with the optionality noted. STAT 300 instead of STAT 200 in Semester 6 requires MATH 229 and MATH 230 due to prerequisites, per the catalog. Choice slots (Knowledge Domain courses, electives, CS electives, calculus/statistics options) use distinct placeholder codes and count toward the 120-credit total; ranges are modeled at the degree path's printed values with catalog values documented in choice_note. Prerequisite chains were NOT transcribed from the course-description pages, so every prereq array is empty and external_prereqs is empty; nothing was invented.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Rhetoric and Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S1B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S1C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Optional: the official degree path prints this row as 'UNIV 101 (optional)'. The published term total of 15-16 counts it; without it the term is 15 credits.",
+      "code": "UNIV 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "University Experience",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 240",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Programming in C++",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "Degree path prints 3-4 credits; the catalog lists MATH 206 at 3 credits.",
+      "code": "MATH 206",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introductory Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 203",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Rhetoric and Composition II, Researched Writing in the Domains",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS 100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Fundamentals of Oral Communication",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S2A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 241",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Intermediate Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 330",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "UNIX and Network Programming",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": true,
+      "choice_note": "The degree path prints this row as 'MATH 211 or 155' at 3 credits; the catalog's actual requirement is MATH 211 (Calculus for Business and Social Science, 4 cr) OR MATH 229 (Calculus I, 4 cr). Modeled as the catalog's MATH 211/MATH 229 choice at the degree path's printed 3 credits.",
+      "code": "MATH-OPT-S3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus Option (MATH 211 or MATH 229)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 340",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures and Algorithm Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 466",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Databases",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved NIU General Education Knowledge Domain course (3 cr). NIU requires at least 21 Knowledge Domain hours across the three domains (Creativity and Critical Analysis; Nature and Technology; Society and Culture), with no more than two courses from any one department.",
+      "code": "KDOM-S4A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Knowledge Domain Course",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": true,
+      "choice_note": "Degree path prints this row as 'Math 229 or Elective' at 3-4 credits. MATH 229 (Calculus I, 4 cr) is the catalog option not taken in Semester 3; it is required here if STAT 300 is chosen instead of STAT 200 in Semester 6, otherwise a free elective (3 cr). Modeled at 3 credits.",
+      "code": "MATH-OPT-S4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "MATH 229 or Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 360",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Programming in Assembler Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 467",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": true,
+      "choice_note": "Degree path prints this row as 'Math 230 or Elective' at 3 credits. MATH 230 (Calculus II, 4 cr) is required here if STAT 300 is chosen instead of STAT 200 in Semester 6, otherwise a free elective (3 cr). Modeled at the degree path's printed 3 credits.",
+      "code": "MATH-OPT-S5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "MATH 230 or Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective (3 cr), per the degree path's 'Elective' row.",
+      "code": "ELECT-S5A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 463",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Architecture and Systems Organization",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": true,
+      "choice_note": "Degree path prints this row as 'STAT 200 or 300' at 4 credits. STAT 200 (Elementary Statistics, 4 cr) or STAT 300 (Introduction to Probability and Statistics, 3 cr); choosing STAT 300 requires MATH 229 and MATH 230 due to prerequisites. Modeled at 4 credits.",
+      "code": "STAT-OPT-S6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Statistics Option (STAT 200 or STAT 300)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective (3 cr), per the degree path's 'Elective' row.",
+      "code": "ELECT-S6A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Computer Science (300 or 400 level)' (3 cr): one additional computer science course numbered above CSCI 300. Modeled at 3 credits.",
+      "code": "CSCI-EL-S6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Elective (300- or 400-Level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Degree path row 'Knowledge Domain or Elective' (3 cr): either an approved NIU General Education Knowledge Domain course or a free elective.",
+      "code": "KDOM-EL-S6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Knowledge Domain or Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "CREDIT ANOMALY: the official degree path models CSCI 480 at 3 credits (its Semester 7 total is 15-16 on that basis), while the 2024-2025 and 2025-2026 catalog requirement lists credit CSCI 480 at 4. Modeled at the degree path's own value; confirm with advisor.",
+      "code": "CSCI 480",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Principles of Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Computer Science (400 level)' (4 cr): one additional computer science course numbered CSCI 390 or above (3-4 cr). Modeled at 4 credits.",
+      "code": "CSCI-EL-S7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Elective (400-Level)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Minor or Other' (3 cr).",
+      "code": "MINOR-EL-S7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Minor or Other Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Degree path row '300 or 400 level course' (3 cr): any course numbered 300 or above.",
+      "code": "LVL300-S7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "300- or 400-Level Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective (3 cr), per the degree path's 'Elective' row.",
+      "code": "ELECT-S7A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Computer Science (400 level)' (4 cr): one additional computer science course numbered CSCI 390 or above (3-4 cr). Modeled at 4 credits.",
+      "code": "CSCI-EL-S8",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CS Elective (400-Level)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Degree path row '300 or 400 level course' (3 cr): any course numbered 300 or above.",
+      "code": "LVL300-S8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "300- or 400-Level Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Minor or Other' (3 cr).",
+      "code": "MINOR-EL-S8A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Minor or Other Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Degree path row 'Elective: Minor or Other' (3 cr).",
+      "code": "MINOR-EL-S8B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Minor or Other Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://aac.niu.edu/advising/degree-paths/2024-2025/liberal-arts-sciences/computer-science-software-development.pdf",
+  "total_credits": 120,
+  "content_hash": "f96e32da6ea44465205de295b6407d8940b14ddf1ef96de17c76db4a02aedd01",
+  "last_verified": "2026-10-02"
+ }
+}

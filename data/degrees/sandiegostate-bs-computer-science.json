@@ -1,0 +1,654 @@
+{
+ "institution": {
+  "name": "San Diego State University",
+  "city": "San Diego, CA",
+  "kind": "public4yr",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sandiegostate-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2022-2023",
+  "total_credits": 123,
+  "source_url": "https://sunspot.sdsu.edu/pubred/mymap.printer_friendly?p_major_code=773801&p_cat_year=2022",
+  "notes": "Term-by-term sequence transcribed manually from the official SDSU Major Academic Plan (MAP) for Computer Science - BS (major code 773801), Catalog Year 2022, published at sunspot.sdsu.edu (official SDSU MyMAP site). Last modified May 23, 2022. The MAP is SDSU's recommended course sequence; students are directed to the SDSU General Catalog for complete requirements. Course titles taken from the SDSU CS department's official curriculum document (cs.sdsu.edu, Fall 2021) and SDSU catalog course pages: CS 150/160 Introductory/Intermediate Computer Programming, CS 210 Data Structures, CS 240 Computer Organization, CS 250 Introduction to Software Systems, CS 370 Computer Architecture, CS 420 Advanced Programming Languages, CS 450 Introduction to Artificial Intelligence, CS 460 Algorithms, CS 480 Operating Systems, MATH 150/151 Calculus I/II, MATH 245 Discrete Mathematics, MATH 254 Introduction to Linear Algebra, PHYS 195/196 Principles of Physics, STAT 250 Statistical Principles and Practices, STAT 550 Applied Probability. Prereqs transcribed only where verified on official SDSU catalog course pages (CS 150L<-CS 150; CS 160<-CS 150; CS 160L<-CS 160; CS 210<-CS 160; CS 240<-CS 160; CS 250<-CS 240). SDSU now publishes a 2025-2026 catalog roadmap for this program, but its content could not be extracted; the 2022 MAP sequence is the newest complete official term-by-term plan obtainable, so catalog_year is set honestly to 2022-2023. GE and major-elective slots are student choice (MAP footnote: see SDSU catalog for approved lists). MATH 150 and other entry courses require placement per SDSU policy. MAP cumulative total is 123 units (minimum degree total 120).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "code": "GE-WRITCOMM",
+      "title": "GE: Written Communication",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Written Communication course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "MATH 150",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "GE-ARTSHUM-1",
+      "title": "GE: Arts and Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Arts and Humanities course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "GE-ETHNIC-AI",
+      "title": "GE: Ethnic Studies / American Institutions",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU course satisfying Ethnic Studies and American Institutions.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "CS 150",
+      "title": "Introductory Computer Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-4"
+     },
+     {
+      "code": "CS 150L",
+      "title": "Introductory Computer Programming Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CS 150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Catalog allows credit or concurrent registration in CS 150.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-5"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "code": "GE-CRITTHINK",
+      "title": "GE: Critical Thinking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Critical Thinking course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "GE-ORALCOMM",
+      "title": "GE: Oral Communication",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Oral Communication course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "GE-LIFESCI",
+      "title": "GE: Life Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Life Science course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s2-2"
+     },
+     {
+      "code": "CS 160",
+      "title": "Intermediate Computer Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 150",
+       "CS 160L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Catalog also allows concurrent registration in CS 160L.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-3"
+     },
+     {
+      "code": "CS 160L",
+      "title": "Intermediate Computer Programming Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CS 160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Catalog allows credit or concurrent registration in CS 160.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-4"
+     },
+     {
+      "code": "MATH 151",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-5"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Summer Year 1",
+    "courses": [
+     {
+      "code": "GE-SOCBEH-1",
+      "title": "GE: Social and Behavioral Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Social and Behavioral Science course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "GE-ARTSHUM-2",
+      "title": "GE: Arts and Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Arts and Humanities course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s3-1"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "code": "PHYS 195",
+      "title": "Principles of Physics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "PHYS 195L",
+      "title": "Principles of Physics Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-1"
+     },
+     {
+      "code": "GE-ARTSHUM-3",
+      "title": "GE: Arts and Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Arts and Humanities course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s4-2"
+     },
+     {
+      "code": "GE-LIFELONG",
+      "title": "GE: Lifelong Learning and Self-Development",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Lifelong Learning and Self-Development course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s4-3"
+     },
+     {
+      "code": "CS 210",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CS 160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-4"
+     },
+     {
+      "code": "MATH 245",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-5"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "code": "CS 240",
+      "title": "Computer Organization",
+      "credits": 3,
+      "prereq": [
+       "CS 160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Catalog allows credit or concurrent registration in CS 160; MAP places it after CS 160.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "CS 250",
+      "title": "Introduction to Software Systems",
+      "credits": 3,
+      "prereq": [
+       "CS 240"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-1"
+     },
+     {
+      "code": "MATH 254",
+      "title": "Introduction to Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-2"
+     },
+     {
+      "code": "PHYS 196",
+      "title": "Principles of Physics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-3"
+     },
+     {
+      "code": "PHYS 196L",
+      "title": "Principles of Physics Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-4"
+     },
+     {
+      "code": "STAT 250",
+      "title": "Statistical Principles and Practices",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-5"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Summer Year 2",
+    "courses": [
+     {
+      "code": "GE-SOCBEH-AI",
+      "title": "GE: Social and Behavioral Science / American Institutions",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU course satisfying GE Social and Behavioral Science and American Institutions.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s6-0"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "code": "GE-GWAR",
+      "title": "Upper Division Writing Course (GWAR)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any approved upper-division Graduation Writing Assessment Requirement course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "CS 370",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-1"
+     },
+     {
+      "code": "CS 450",
+      "title": "Introduction to Artificial Intelligence",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-2"
+     },
+     {
+      "code": "CS-ELECTIVE-1",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-3"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "code": "GE-EXPL-CULTDIV",
+      "title": "GE: Explorations / Cultural Diversity",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Explorations course satisfying Cultural Diversity.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s8-0"
+     },
+     {
+      "code": "CS 420",
+      "title": "Advanced Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-1"
+     },
+     {
+      "code": "CS 480",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-2"
+     },
+     {
+      "code": "CS-ELECTIVE-2",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-3"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "code": "GE-EXPLOR-1",
+      "title": "GE: Explorations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Explorations course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s9-0"
+     },
+     {
+      "code": "CS 460",
+      "title": "Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s9-1"
+     },
+     {
+      "code": "CS-ELECTIVE-3",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s9-2"
+     },
+     {
+      "code": "CS-ELECTIVE-4",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s9-3"
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "code": "GE-EXPLOR-2",
+      "title": "GE: Explorations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any SDSU GE Explorations course.",
+      "options": [],
+      "category": "gened",
+      "slot_id": "s10-0"
+     },
+     {
+      "code": "STAT 550",
+      "title": "Applied Probability",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s10-1"
+     },
+     {
+      "code": "CS-ELECTIVE-5",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s10-2"
+     },
+     {
+      "code": "CS-ELECTIVE-6",
+      "title": "Computer Science Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: see SDSU University Catalog for the list of approved CS elective courses.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s10-3"
+     }
+    ],
+    "n": 10
+   }
+  ],
+  "content_hash": "6061aaa803dce1f6d517f74ae21f503fdd61e8c4e720c28cc39a8c3f4184b46a",
+  "last_verified": "2026-10-02"
+ }
+}

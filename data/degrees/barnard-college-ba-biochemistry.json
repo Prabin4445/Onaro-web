@@ -1,0 +1,436 @@
+{
+ "institution": {
+  "city": "New York, NY",
+  "kind": "private",
+  "name": "Barnard College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BA",
+  "external_prereqs": [
+   "Algebra",
+   "BIOL BC1001",
+   "MATH UN1201"
+  ],
+  "id": "barnard-college-ba-biochemistry",
+  "major": "Biochemistry",
+  "notes": "Source: Barnard College Chemistry Department official 'Suggested Four-Year Program' for the Biochemistry major ('BIOCHEM 2017 and beyond', for students completing General Chemistry in the first year). Hand-transcribed 2026-10-01. The department's PDF (formerly at chemistry.barnard.edu/sites/default/files/inline-files/BIOCHEM 2017 and beyond Gen Chem FY Suggested Program_0.pdf) was removed from the live site in 2026 (Fall 2026 schedule information moved to the student Portal); the table was recovered from the search-engine cache of the official PDF and cross-checked against the Barnard College Catalogue 2025-2026 (catalog.barnard.edu), whose Biochemistry major requirements (at least 63.5 credits: 43.5 chemistry + 5.0 biology + 6.0 math + 9.0 physics) match every course, credit value, and prerequisite shown here, and against the department's official 'BIOCHEM 2017 and beyond Major Requirements Checklist' (recovered from the same cache), which confirms course titles and marks CHEM BC3271 Inorganic Chemistry as '(optional)' for this major. Department Notes (Notes 1-4 are the department's standard notes, verified verbatim from the live sophomore-start chemistry suggested program at barnard.edu; the biochemistry checklist confirms Note 1's text and Note 4's options): Note 1. Two semesters of math after entering college, including Calculus I and II are required. Students having AP credit for 1 or 2 semesters of calculus will fulfill this requirement with additional mathematics, statistics, or computer science courses. For the Class of 2021 and beyond, students must complete through Calculus II, including two math courses while a student at Barnard. At least one of the courses taken at Barnard must be a calculus class. Note 2. The Barnard physics sequence (PHYS BC2001x-2002y) is strongly recommended. Any calculus-based Columbia sequence, with two semesters of laboratory work, is acceptable (1401-2, 1601-2, but not 1201-2). Consult with your advisor to ensure proper laboratory placement. For greater coverage of basic physics, PHYS BC3001x (Waves and Optics) is recommended. Note 3. One elective course is required. A list of approved advanced lecture and/or lab courses at Barnard or Columbia is available (the catalog lists possible electives - see options - and notes a more complete list is available from the Chemistry Department). Note 4. Senior Honors Thesis (CHEM BC3901/3902) or Guided Research (CHEM BC3599) at Barnard, Columbia, or elsewhere. Note 5 (biochemistry program): the suggested program marks CHEM BC3271y 'Note 5'; the department's biochemistry checklist lists CHEM BC3271 Inorganic Chemistry as '(optional)' for the biochemistry major (it also appears in the catalog's elective list), so it is seeded here as the published course with that caveat. Scope: the published program schedules major-requirement courses only; Barnard Foundations (general education) requirements and additional electives needed to reach the 122-point BA are chosen by the student with the adviser and are not part of the published sequence, so total_credits (76.5) is the sum of the published major-course sequence, not the full degree. It exceeds the catalog's 63.5-credit major minimum because the published program includes the optional junior-fall elective, the optional CHEM BC3271, and three elective slots. Course codes: the x/y suffixes in the department document denote fall/spring offerings and are dropped here (catalog codes carry no term suffix). external_prereqs: 'Algebra' (CHEM BC2001 prerequisite: Math SAT I score of 600 or instructor permission for first-year students, per the catalog course description); 'BIOL BC1001' (the suggested program lists 'BIOL BC1001x (or equivalent)' as prerequisite for BIOL BC1502/BC1503); 'MATH UN1201' (alternative prerequisite 'MATH UN1102 or 1201' for Quantum Chemistry; the plan schedules MATH UN1102).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC2001",
+      "credits": 5.0,
+      "prereq": [
+       "Algebra"
+      ],
+      "title": "General Chemistry I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH UN1101",
+      "credits": 3.0,
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "First Year - Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC3230",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC2001"
+      ],
+      "title": "Organic Chemistry I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM BC3328",
+      "credits": 2.5,
+      "coreq": [
+       {
+        "course": "CHEM BC3230",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [
+       "CHEM BC2001"
+      ],
+      "title": "Introductory Organic Chemistry Laboratory",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH UN1102",
+      "credits": 3.0,
+      "prereq": [
+       "MATH UN1101"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL BC1502",
+      "credits": 3.0,
+      "prereq": [
+       "BIOL BC1001"
+      ],
+      "title": "Introduction to Cell and Molecular Biology",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL BC1503",
+      "credits": 2.0,
+      "prereq": [
+       "BIOL BC1001"
+      ],
+      "title": "Introductory Laboratory in Cell and Molecular Biology",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "First Year - Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC3231",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC3230"
+      ],
+      "title": "Organic Chemistry II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM BC3333",
+      "credits": 3.0,
+      "coreq": [
+       {
+        "course": "CHEM BC3231",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [
+       "CHEM BC3328"
+      ],
+      "title": "Modern Techniques in Organic Chemistry Laboratory",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS BC2001",
+      "credits": 4.5,
+      "coreq": [
+       {
+        "course": "MATH UN1101",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [],
+      "title": "Mechanics (with lab)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore - Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC3242",
+      "credits": 3.0,
+      "coreq": [
+       {
+        "course": "CHEM BC3338",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [
+       "CHEM BC3231",
+       "MATH UN1101"
+      ],
+      "title": "Quantitative Analysis",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM BC3338",
+      "credits": 3.0,
+      "coreq": [
+       {
+        "course": "CHEM BC3242",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [
+       "CHEM BC3231",
+       "CHEM BC3333"
+      ],
+      "title": "Quantitative and Instrumental Techniques Laboratory",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS BC2002",
+      "credits": 4.5,
+      "coreq": [
+       {
+        "course": "MATH UN1102",
+        "kind": "concurrent_required"
+       }
+      ],
+      "prereq": [],
+      "title": "Electricity and Magnetism (with lab)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore - Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC3282",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC3231",
+       "BIOL BC1502"
+      ],
+      "title": "Biological Chemistry",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM BC3253",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC3242",
+       {
+        "one_of": [
+         "MATH UN1102",
+         "MATH UN1201"
+        ],
+        "raw": "MATH UN1102 or 1201"
+       },
+       "PHYS BC2001",
+       "PHYS BC2002"
+      ],
+      "title": "Quantum Chemistry",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Optional slot: the department's advising notes encourage considering an elective during the Fall semester of junior year. Note 3: one elective course is required; possible electives per the catalog are listed in options (credits vary by selection - the published program budgets 3.0 per elective slot); a more complete list is available from the Chemistry Department.",
+      "code": "CHEM ELECTIVE",
+      "credits": 3.0,
+      "options": [
+       "CHEM BC3232 Descriptive Inorganic Chemistry",
+       "CHEM BC3271 Inorganic Chemistry",
+       "MATH UN2030 Ordinary Differential Equations",
+       "CHEM BC3280 Advanced Organic Chemistry",
+       "APMA E2000 Multivariable Calculus for Engineers and Applied Scientists",
+       "CHEM BC3252 Thermodynamics and Kinetics",
+       "CHEM BC3254 Methods and Applications in Physical Chemistry",
+       "CHEM BC3348 Advanced Spectroscopy, Measurement, and Analysis Laboratory",
+       "CHEM BC3358 Advanced Chemical Synthesis and Reactivity Laboratory"
+      ],
+      "prereq": [],
+      "title": "Elective Course",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior - Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM BC3283",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC3282"
+      ],
+      "title": "Biological Chemistry II",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM BC3355",
+      "credits": 5.0,
+      "prereq": [
+       "CHEM BC3333",
+       "CHEM BC3338"
+      ],
+      "title": "Biochemistry Laboratory Techniques",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior - Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Note 4: Senior Honors Thesis (CHEM BC3901/3902) or Guided Research (CHEM BC3599) at Barnard, Columbia, or elsewhere.",
+      "code": "CHEM BC3901",
+      "credits": 4.0,
+      "options": [
+       "CHEM BC3901 Senior Honors Thesis",
+       "CHEM BC3599 Guided Research"
+      ],
+      "prereq": [],
+      "title": "Senior Requirement (Note 4)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Note 3: one elective course is required; possible electives per the catalog are listed in options (credits vary by selection - the published program budgets 3.0 per elective slot); a more complete list is available from the Chemistry Department.",
+      "code": "CHEM ELECTIVE",
+      "credits": 3.0,
+      "options": [
+       "CHEM BC3232 Descriptive Inorganic Chemistry",
+       "CHEM BC3271 Inorganic Chemistry",
+       "MATH UN2030 Ordinary Differential Equations",
+       "CHEM BC3280 Advanced Organic Chemistry",
+       "APMA E2000 Multivariable Calculus for Engineers and Applied Scientists",
+       "CHEM BC3252 Thermodynamics and Kinetics",
+       "CHEM BC3254 Methods and Applications in Physical Chemistry",
+       "CHEM BC3348 Advanced Spectroscopy, Measurement, and Analysis Laboratory",
+       "CHEM BC3358 Advanced Chemical Synthesis and Reactivity Laboratory"
+      ],
+      "prereq": [],
+      "title": "Elective Course",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior - Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Note 4: Senior Honors Thesis (CHEM BC3901/3902) or Guided Research (CHEM BC3599) at Barnard, Columbia, or elsewhere.",
+      "code": "CHEM BC3902",
+      "credits": 4.0,
+      "options": [
+       "CHEM BC3902 Senior Honors Thesis Seminar",
+       "CHEM BC3599 Guided Research"
+      ],
+      "prereq": [],
+      "title": "Senior Requirement (Note 4)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice_note": "Marked 'Note 5' in the suggested program; the department's biochemistry checklist lists CHEM BC3271 Inorganic Chemistry as '(optional)' for the biochemistry major (it also appears in the catalog's elective list).",
+      "code": "CHEM BC3271",
+      "credits": 3.0,
+      "prereq": [
+       "CHEM BC3231"
+      ],
+      "title": "Inorganic Chemistry",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Note 3: one elective course is required; possible electives per the catalog are listed in options (credits vary by selection - the published program budgets 3.0 per elective slot); a more complete list is available from the Chemistry Department.",
+      "code": "CHEM ELECTIVE",
+      "credits": 3.0,
+      "options": [
+       "CHEM BC3232 Descriptive Inorganic Chemistry",
+       "CHEM BC3271 Inorganic Chemistry",
+       "MATH UN2030 Ordinary Differential Equations",
+       "CHEM BC3280 Advanced Organic Chemistry",
+       "APMA E2000 Multivariable Calculus for Engineers and Applied Scientists",
+       "CHEM BC3252 Thermodynamics and Kinetics",
+       "CHEM BC3254 Methods and Applications in Physical Chemistry",
+       "CHEM BC3348 Advanced Spectroscopy, Measurement, and Analysis Laboratory",
+       "CHEM BC3358 Advanced Chemical Synthesis and Reactivity Laboratory"
+      ],
+      "prereq": [],
+      "title": "Elective Course",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior - Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.barnard.edu/pdf/Barnard College Catalogue 2025-2026.pdf",
+  "total_credits": 76.5,
+  "transfer_confidence": "advisory",
+  "content_hash": "66ae35dc7801d33e79c4c30bbe6f26ef36dd32229cb57b4ab6cb389f237f92f0",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,524 @@
+{
+ "institution": {
+  "ipeds": 200800,
+  "name": "University of Akron Main Campus",
+  "city": "Akron",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BSN",
+  "id": "akron-bsn-nursing",
+  "major": "Nursing",
+  "notes": "B.S.N. Nursing (traditional undergraduate program), School of Nursing, College of Health and Human Sciences. Built from the official University of Akron Undergraduate Bulletin 'Recommended Sequence' (https://bulletin.uakron.edu/undergraduate/colleges-programs/health-professions/nursing/nursing-bs/). Per the catalog footnote, credit hours for NURS 380 Mental Health Nursing and NURS 401 RN Transition change to 4 and 3 credits respectively for students starting nursing core courses in fall 2025 or after — modeled here at the updated 4/3 credits. STAT 250 modeled at 3 credits (STAT 260 option is 3-4); total 121. Admission: 2.75 prerequisite GPA and 2.75 prerequisite science GPA, grade of C or higher in all preadmission courses, all prerequisites complete by end of spring before admission; priority/secondary admission pools apply. Junior-level clinical courses (NURS 350, 360, 370, 380) may be taken in any order (catalog footnote). Senior practicum may be NURS 450 or NURS 451 + NURS 499. Uses Akron's new course numbering.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIOL 200",
+      "credits": 3,
+      "prereq": [],
+      "title": "Human Anatomy & Physiology I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 201",
+      "credits": 1,
+      "prereq": [],
+      "title": "Human Anatomy & Physiology Laboratory I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 114",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to General, Organic & Biochemistry (Lecture)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 115",
+      "credits": 1,
+      "prereq": [
+       "CHEM 114"
+      ],
+      "title": "Introduction to General, Organic & Biochemistry (Laboratory)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENGL 111",
+      "credits": 3,
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "STAT 250 Statistics for Everyday Life (3 cr, modeled) or STAT 260 Basic Statistics; STAT 261/262 also accepted per catalog.",
+      "code": "STAT 250",
+      "credits": 3,
+      "options": [
+       "STAT 250",
+       "STAT 260"
+      ],
+      "prereq": [],
+      "title": "Statistics for Everyday Life or Basic Statistics",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 100",
+      "credits": 2,
+      "prereq": [],
+      "title": "Introduction to Nursing",
+      "slot_id": "s1-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIOL 202",
+      "credits": 3,
+      "prereq": [
+       "BIOL 200"
+      ],
+      "title": "Human Anatomy & Physiology II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 203",
+      "credits": 1,
+      "prereq": [
+       "BIOL 201"
+      ],
+      "title": "Human Anatomy & Physiology Laboratory II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENGL 112",
+      "credits": 3,
+      "prereq": [
+       "ENGL 111"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "PSYC 100",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Psychology",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "COMM 105",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIOL 130",
+      "credits": 3,
+      "prereq": [],
+      "title": "Principles of Microbiology",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take NUTR 316 Science of Nutrition one semester and PSYC 230 Developmental Psychology the other.",
+      "code": "NUTR-PSYC-1",
+      "credits": 4,
+      "options": [
+       "NUTR 316",
+       "PSYC 230"
+      ],
+      "prereq": [],
+      "title": "Science of Nutrition or Developmental Psychology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 211",
+      "credits": 5,
+      "prereq": [
+       "BIOL 202",
+       "BIOL 203"
+      ],
+      "title": "Foundations of Nursing Practice I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 217",
+      "credits": 3,
+      "prereq": [
+       "BIOL 202",
+       "BIOL 203"
+      ],
+      "title": "Pathophysiology for Nurses",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 225",
+      "credits": 3,
+      "prereq": [
+       "BIOL 202",
+       "BIOL 203"
+      ],
+      "title": "Health Assessment",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 212",
+      "credits": 5,
+      "prereq": [
+       "NURS 211"
+      ],
+      "title": "Foundations of Nursing Practice II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 230",
+      "credits": 3,
+      "prereq": [
+       "NURS 211"
+      ],
+      "title": "Nursing Pharmacology",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take whichever of NUTR 316 / PSYC 230 was not taken in Fall Year 2.",
+      "code": "NUTR-PSYC-2",
+      "credits": 4,
+      "options": [
+       "NUTR 316",
+       "PSYC 230"
+      ],
+      "prereq": [],
+      "title": "Science of Nutrition or Developmental Psychology",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "code": "PHIL 120",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Ethics",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 350",
+      "credits": 5,
+      "prereq": [
+       "NURS 212"
+      ],
+      "title": "Nursing of the Childbearing Family",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 360",
+      "credits": 5,
+      "prereq": [
+       "NURS 212"
+      ],
+      "title": "Nursing Care of Adults",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education course chosen by the student.",
+      "code": "GENED-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "code": "SOCIO 100",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Sociology",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 341",
+      "credits": 3,
+      "prereq": [
+       "NURS 212"
+      ],
+      "title": "Professional Role Development",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 370",
+      "credits": 5,
+      "prereq": [
+       "NURS 212"
+      ],
+      "title": "Nursing Care of Older Adults",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 380",
+      "credits": 4,
+      "prereq": [
+       "NURS 212"
+      ],
+      "title": "Mental Health Nursing",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education course chosen by the student.",
+      "code": "GENED-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 410",
+      "credits": 5,
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "Nursing of Families with Children",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 435",
+      "credits": 2,
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "Evidence Based Practice in Nursing",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 430",
+      "credits": 5,
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "Nursing in Complex & Critical Situations",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "NURS 401",
+      "credits": 3,
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "RN Transition",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NURS 440",
+      "credits": 4,
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "Nursing of Communities",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education course chosen by the student.",
+      "code": "GENED-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Senior practicum: NURS 450, or NURS 451 Nursing Leadership plus NURS 499 Senior Externship Program.",
+      "code": "NURS 450",
+      "credits": 5,
+      "options": [
+       "NURS 450",
+       "NURS 451 + NURS 499"
+      ],
+      "prereq": [
+       "NURS 350",
+       "NURS 360",
+       "NURS 370",
+       "NURS 380"
+      ],
+      "title": "Senior Practicum and Nursing Leadership",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.uakron.edu/undergraduate/colleges-programs/health-professions/nursing/nursing-bs/",
+  "total_credits": 121,
+  "content_hash": "861e02bdaf5b305175de3146095bb253ee14ea1ce9a5181b5abb3590ecb200ee",
+  "last_verified": "2026-10-02"
+ }
+}

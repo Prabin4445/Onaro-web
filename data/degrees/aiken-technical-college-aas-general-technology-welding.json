@@ -1,0 +1,380 @@
+{
+ "institution": {
+  "name": "Aiken Technical College",
+  "city": "Graniteville, SC",
+  "state": "SC",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "aiken-technical-college-aas-general-technology-welding",
+  "degree": "AAS",
+  "major": "General Technology (Welding)",
+  "total_credits": 70,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.atc.edu/sites/default/files/documents/academic-maps/DEG%20AAS%20Gen%20Tech%20Welding.pdf",
+  "notes": "Source: ATC Academic MAP 'AAS.GEN Emphasis in Welding', revised 4/29/2025, linked as the current Academic Map (official atc.edu PDF). Hand-transcribed 2026-09-30. Prerequisites transcribed verbatim from the map. Catalog title used: WLD 154 'Pipefitting and Welding I'. Nothing invented. Note: atc.edu renamed this map PDF file after transcription (the prior filename now 404s); source_url was updated 2026-10-01 to the live link, and the replacement PDF's content (courses, credits, totals) was spot-verified identical. External prerequisites (WLD 130, WLD 132, MAT 101) are catalog-listed requirements not in the program map; recorded in external_prereqs.",
+  "semesters": [
+   {
+    "term": "Semester 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "WLD 130",
+      "title": "Welding Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "WLD 108",
+      "title": "Gas Metal ARC Welding I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "WLD 132",
+      "title": "Inert Gas Welding Ferrous",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "WLD 120",
+      "title": "Flux Cored Arc Welding",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "EGT 123",
+      "title": "Industrial Print Reading",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Semester 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "WLD 111",
+      "title": "ARC Welding I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 130"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "WLD 141",
+      "title": "Weld Quality",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 130",
+       "WLD 108",
+       "WLD 132",
+       "WLD 120"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Semester 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "WLD 225",
+      "title": "Arc Welding Pipe 1",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 130",
+       "WLD 108",
+       "WLD 132",
+       "WLD 120"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "WLD 152",
+      "title": "Tungsten Arc Welding",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 132"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "WLD 208",
+      "title": "Advanced Pipe Welding",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 132",
+       "WLD 225"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "WLD 222",
+      "title": "Advanced Fabrication Welding or Pipefitting and Welding I (choose WLD 222 or WLD 154)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Map: 'WLD 222 or WLD 154' - Advanced Fabrication Welding or Pipefitting and Welding I.",
+      "options": [
+       "WLD 222",
+       "WLD 154"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "EGT 117",
+      "title": "Welding Print Reading",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EGT 123"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Semester 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "HUMFA-ELECTIVE-1",
+      "title": "Humanities/Fine Arts course",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Map: 'Select Humanities/Fine Arts Course'.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "WLD 201",
+      "title": "Welding Metallurgy",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 130"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "WLD 170",
+      "title": "Qualification Welding",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 130",
+       "WLD 108",
+       "WLD 132",
+       "WLD 120",
+       "WLD 111"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "IMT 113",
+      "title": "Power Tools Operations",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "MAT 155",
+      "title": "Contemporary Mathematics",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MAT 101"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Semester 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "SOCBEH-ELECTIVE-1",
+      "title": "Social/Behavioral Science course",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Map: 'Select Social/Behavioral Science Course'.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "MTT 145",
+      "title": "Machining of Metals",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "WLD 117",
+      "title": "Specialized Arc Welding",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "WLD 132",
+       "WLD 108"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GENED-ELECTIVE-1",
+      "title": "General Education course",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Map: 'Select any General Education Course'.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ENG 101",
+      "title": "English Composition I or Technical Communication (choose ENG 101 or ENG 160)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Map: 'ENG 101 or ENG 160'.",
+      "options": [
+       "ENG 101",
+       "ENG 160"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   }
+  ],
+  "external_prereqs": [
+   "WLD 130",
+   "WLD 132",
+   "MAT 101"
+  ],
+  "content_hash": "5b4348aa4c80e736de871d2f93fc502f216e0ba1c3c73a6326e4ab5df1063f08",
+  "last_verified": "2026-10-02"
+ }
+}

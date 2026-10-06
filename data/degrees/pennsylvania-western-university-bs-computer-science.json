@@ -1,0 +1,633 @@
+{
+ "institution": {
+  "city": "California, PA",
+  "kind": "university",
+  "name": "Pennsylvania Western University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "id": "pennsylvania-western-university-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: https://catalog.pennwest.edu/mime/media/10/3561/BS+Computer+Science+(1).pdf (official PennWest Degree Planner, 2025-2026 Undergraduate Catalog, updated 6/25/2025). Hand-transcribed 2026-09-30 from the Suggested Four Year Course Sequence. 120 credits total. Foundations (13): COMJ 1010, MATH 2410 (4cr), CMSC 1200, ENGL 1200. Discoveries (28): Art/Humanities 9cr, Social Sciences 9cr, Natural Sciences & Technology 10cr (two lab sciences from approved list; modeled here as CHEM 1108 + PHYS 2500/2510). Required Major (51): 14 CMSC courses + MATH 2420 (4cr) + MATH 1510 + MATH 3210 + STAT 2020 + CMAC 1240/CMSC 1240. Major Electives (9): at most two from programming block (CMSC 3340/3360/3380/3700/3720/4950), at least one from advanced block (CMSC 3200/3780/3990/4120/4200/4240); modeled as CMSC 3380 Python, CMSC 4200 AI, CMSC 3200 Database. C- minimum required in ENGL 1200, MATH 2410, CMSC 1200, CMAC 1240, CMSC 2040/2100/3040/3100/3240/4140/4900, MATH 1510. Wellness (3cr) and Free Electives (16cr) fill remaining. Prerequisites shown are the standard published sequences (e.g., CMSC 1200/1240 -> 2040 -> 3040 -> 3140; MATH 2410 -> 2420; CMSC 4900 -> 4920).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "title": "Problem Solving and Programming Constructs",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "title": "College Composition",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2410",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "title": "Calculus I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Arts & Humanities Discoveries (9cr required)",
+      "code": "PENNW-AH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "title": "Arts & Humanities Discoveries elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Social Sciences Discoveries (9cr required)",
+      "code": "PENNW-SS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "title": "Social Sciences Discoveries elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CMAC 1240 or CMSC 1240 Computer Programming I",
+      "code": "CMAC 1240",
+      "credits": 3,
+      "options": [
+       "CMAC 1240",
+       "CMSC 1240"
+      ],
+      "prereq": [
+       "CMSC 1200"
+      ],
+      "slot_id": "s2-0",
+      "title": "Computer Programming I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1510",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "title": "Discrete Structures",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2420",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 2410"
+      ],
+      "slot_id": "s2-2",
+      "title": "Calculus II",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Social Sciences Discoveries; writing-intensive course recommended",
+      "code": "PENNW-SS-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "title": "Social Sciences Discoveries elective (writing intensive)",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Arts & Humanities Discoveries (9cr required)",
+      "code": "PENNW-AH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "title": "Arts & Humanities Discoveries elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 2040",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 1200"
+      ],
+      "slot_id": "s3-0",
+      "title": "Object Oriented Programming",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 2100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "title": "Logic & Switching Theory of the Computer",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMJ 1010",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "title": "Public Speaking",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Intercultural Fluency competency; Arts & Humanities or Social Sciences Discoveries",
+      "code": "PENNW-AH-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "title": "Arts & Humanities Discoveries elective (Intercultural Fluency)",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Social Sciences Discoveries (9cr required)",
+      "code": "PENNW-SS-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "title": "Social Sciences Discoveries elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3100",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 2100"
+      ],
+      "slot_id": "s4-0",
+      "title": "Assembly Language Programming",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3040",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 2040"
+      ],
+      "slot_id": "s4-1",
+      "title": "Data Structures",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 3210",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 2410"
+      ],
+      "slot_id": "s4-2",
+      "title": "Linear Algebra I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Natural Sciences & Technology Discoveries; approved list: ATMS 1100, BIOL 2810/3810, CHEM 1108/1128, GEOL 1500, PHYS 2500/2510, PHYS 2600/2610",
+      "code": "CHEM 1108",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "title": "General Chemistry I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CMIS 3000 Principles of Responsible Computing or PHIL 3210 Engineering Ethics (Ethical Reasoning competency)",
+      "code": "CMIS 3000",
+      "credits": 3,
+      "options": [
+       "CMIS 3000",
+       "PHIL 3210"
+      ],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "title": "Principles of Responsible Computing",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3140",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s5-0",
+      "title": "Analysis of Algorithms",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3100"
+      ],
+      "slot_id": "s5-1",
+      "title": "Computer Architecture",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3180",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 2040"
+      ],
+      "slot_id": "s5-2",
+      "title": "Data Communication and Networking",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Major elective: at most two from programming block (CMSC 3340/3360/3380/3700/3720/4950)",
+      "code": "CMSC 3380",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 2040"
+      ],
+      "slot_id": "s5-3",
+      "title": "Python Programming",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Natural Sciences & Technology Discoveries (second lab science)",
+      "code": "PHYS 2500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "title": "General Physics I Lecture",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Natural Sciences & Technology Discoveries lab",
+      "code": "PHYS 2510",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-5",
+      "title": "General Physics I Laboratory",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 4000",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s6-0",
+      "title": "Operating Systems",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 4080",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s6-1",
+      "title": "Structures of Programming Languages",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 3320",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 2040"
+      ],
+      "slot_id": "s6-2",
+      "title": "Technical Computing Using Java",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 2020",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "title": "Elements of Statistics",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Free elective (16cr required)",
+      "code": "FREE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "title": "Free elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 4140",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s7-0",
+      "title": "Theory of Languages",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Writing Intensive; Information Literacy competency",
+      "code": "CMSC 4900",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s7-1",
+      "title": "Senior Project I: Software Engineering",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Major elective: at least one from advanced block (CMSC 3200/3780/3990/4120/4200/4240)",
+      "code": "CMSC 4200",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s7-2",
+      "title": "Artificial Intelligence",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Free elective (16cr required)",
+      "code": "FREE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "title": "Free elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Wellness & Personal Health (3cr required)",
+      "code": "PENNW-WELL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "title": "Wellness & Personal Health elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 4180",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 4080"
+      ],
+      "slot_id": "s8-0",
+      "title": "Language Translation",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Keystone Experience; Applied Methodologies competency",
+      "code": "CMSC 4920",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 4900"
+      ],
+      "slot_id": "s8-1",
+      "title": "Senior Project II",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Major elective: advanced block",
+      "code": "CMSC 3200",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 3040"
+      ],
+      "slot_id": "s8-2",
+      "title": "Database Application Programming",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Free elective (8cr total required to reach 120)",
+      "code": "FREE-3",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "title": "Free elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.pennwest.edu/mime/media/10/3561/BS+Computer+Science+(1).pdf",
+  "total_credits": 120,
+  "content_hash": "ca4bf823707fc5334f3c37fd59c08b3097892aec35490dcf89aac1a20df1b73f",
+  "last_verified": "2026-10-02"
+ }
+}

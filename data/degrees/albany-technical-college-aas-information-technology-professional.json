@@ -1,0 +1,490 @@
+{
+ "institution": {
+  "city": "Albany, GA",
+  "kind": "community",
+  "name": "Albany Technical College",
+  "state": "GA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "albany-technical-college-aas-information-technology-professional",
+  "major": "Information Technology Professional",
+  "notes": "Catalog page: https://www.albanytech.edu/college-catalog/current/programs/information-technology-pr-611be2a1207743.91563578 (credits required for graduation: 65). Semester sequence transcribed from the official 'Information Technology Professional Degree Student Track for success' PDF (TERM 1-5). PDF prints 'MATH1101', 'CIST1130', 'SOC 1101'; using catalog codes MATH 1101, CIST 1130, SOCI 1101. PREREQ NOTE: Catalog lists CIST 1401 as prerequisite for CIST 2411 (Term 3), CIST 2414 (Term 4), and CIST 1601 (Term 5, also requires CIST 1130 which IS in Term 2). CIST 1401 is not a fixed course in the PDF track; it appears only as an option in the catalog's 'min. 10 credit hours' elective list. The track as printed places CIST 2411/2414/1601 without CIST 1401 earlier in the plan. Other prereqs flow forward: CIST 1130 requires CIST 1001 (Term 1 -> Term 2); CIST 1122 requires CIST 1130 (Term 2 -> Term 3); CIST 2452 requires CIST 2451 (Term 2 -> Term 3); HUMN 1101 requires ENGL 1101 (Term 1 -> Term 2). The four 'CIST ELEC' slots (3+3+4+4 = 14 cr) satisfy the catalog's elective requirements (programming elective min. 4 cr + general electives min. 10 cr). transfer_confidence is advisory (AAS workforce degree). EXTERNAL_PREREQS NOTE: CIST 1401 is listed here (not as a fixed course) because the catalog names it as prerequisite for CIST 2411/2414/1601 while the Student Track PDF carries it only as an elective option; the pipeline requires prereq codes to resolve in-plan or via external_prereqs.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "core_area": "Area I - Language Arts/Communications",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Composition and Rhetoric",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1101",
+      "core_area": "Area III - Natural Sciences/Mathematics",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Mathematical Modeling",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP 1000",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Computer Literacy",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1001",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Concepts",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HUMN 1101",
+      "core_area": "Area IV - Humanities/Fine Arts",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "title": "Introduction to Humanities",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1130",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIST 1001"
+      ],
+      "title": "Operating Systems Concepts",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1305",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Program Design and Development",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2451",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Networks",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1122",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIST 1130"
+      ],
+      "title": "Hardware Installation and Maintenance",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2411",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIST 1401"
+      ],
+      "title": "Microsoft Client",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2452",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIST 2451"
+      ],
+      "title": "Cisco Switching, Routing & Wireless Essentials",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SOCI 1101",
+      "core_area": "Area II - Social/Behavioral Sciences",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Sociology",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2414",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIST 1401"
+      ],
+      "title": "Microsoft Server Administrator",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Select from the following courses for a minimum of 10 credit hours' (3-credit options)",
+      "code": "CIST ELEC",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CIST 2128",
+        "credits": 3,
+        "title": "Comprehensive Spreadsheet Techniques"
+       },
+       {
+        "code": "CIST 1602",
+        "credits": 3,
+        "title": "Security Policies and Procedures"
+       },
+       {
+        "code": "CIST 1510",
+        "credits": 3,
+        "title": "Web Development I"
+       }
+      ],
+      "prereq": [],
+      "title": "CIST Elective (3 cr, choose from list)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Select from the following courses for a minimum of 10 credit hours' (3-credit options)",
+      "code": "CIST ELEC",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CIST 2128",
+        "credits": 3,
+        "title": "Comprehensive Spreadsheet Techniques"
+       },
+       {
+        "code": "CIST 1602",
+        "credits": 3,
+        "title": "Security Policies and Procedures"
+       },
+       {
+        "code": "CIST 1510",
+        "credits": 3,
+        "title": "Web Development I"
+       }
+      ],
+      "prereq": [],
+      "title": "CIST Elective (3 cr, choose from list)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC 1101",
+      "core_area": "Area II - Social/Behavioral Sciences",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introductory Psychology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1601",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIST 1401",
+       "CIST 1130"
+      ],
+      "title": "Information Security Fundamentals",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Select one of the following CIST Programming Elective courses for a minimum of 4 credit hours' OR 'Select from the following courses for a minimum of 10 credit hours' (4-credit options)",
+      "code": "CIST ELEC",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 2361",
+        "credits": 4,
+        "title": "C++ Programming I"
+       },
+       {
+        "code": "CIST 2371",
+        "credits": 4,
+        "title": "Java Programming I"
+       },
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "title": "Structured Query Language (SQL)"
+       },
+       {
+        "code": "CIST 2412",
+        "credits": 4,
+        "title": "Microsoft Server Directory Services"
+       },
+       {
+        "code": "CIST 2453",
+        "credits": 4,
+        "title": "Enterprise Networking, Security, and Automation"
+       },
+       {
+        "code": "CIST 2454",
+        "credits": 4,
+        "title": "Cisco Connecting Networks"
+       },
+       {
+        "code": "CIST 2362",
+        "credits": 4,
+        "title": "C++ Programming II"
+       },
+       {
+        "code": "CIST 2611",
+        "credits": 4,
+        "title": "Network Defense and Countermeasures"
+       },
+       {
+        "code": "CIST 2612",
+        "credits": 4,
+        "title": "Computer Forensics"
+       },
+       {
+        "code": "CIST 2613",
+        "credits": 4,
+        "title": "Ethical Hacking and Penetration Testing"
+       },
+       {
+        "code": "CIST 2742",
+        "credits": 4,
+        "title": "Beginning Python Programming"
+       },
+       {
+        "code": "CIST 1401",
+        "credits": 4,
+        "title": "Computer Networking Fundamentals"
+       }
+      ],
+      "prereq": [],
+      "title": "CIST Elective (4 cr, choose from list)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Select one of the following CIST Programming Elective courses for a minimum of 4 credit hours' OR 'Select from the following courses for a minimum of 10 credit hours' (4-credit options)",
+      "code": "CIST ELEC",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 2361",
+        "credits": 4,
+        "title": "C++ Programming I"
+       },
+       {
+        "code": "CIST 2371",
+        "credits": 4,
+        "title": "Java Programming I"
+       },
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "title": "Structured Query Language (SQL)"
+       },
+       {
+        "code": "CIST 2412",
+        "credits": 4,
+        "title": "Microsoft Server Directory Services"
+       },
+       {
+        "code": "CIST 2453",
+        "credits": 4,
+        "title": "Enterprise Networking, Security, and Automation"
+       },
+       {
+        "code": "CIST 2454",
+        "credits": 4,
+        "title": "Cisco Connecting Networks"
+       },
+       {
+        "code": "CIST 2362",
+        "credits": 4,
+        "title": "C++ Programming II"
+       },
+       {
+        "code": "CIST 2611",
+        "credits": 4,
+        "title": "Network Defense and Countermeasures"
+       },
+       {
+        "code": "CIST 2612",
+        "credits": 4,
+        "title": "Computer Forensics"
+       },
+       {
+        "code": "CIST 2613",
+        "credits": 4,
+        "title": "Ethical Hacking and Penetration Testing"
+       },
+       {
+        "code": "CIST 2742",
+        "credits": 4,
+        "title": "Beginning Python Programming"
+       },
+       {
+        "code": "CIST 1401",
+        "credits": 4,
+        "title": "Computer Networking Fundamentals"
+       }
+      ],
+      "prereq": [],
+      "title": "CIST Elective (4 cr, choose from list)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 5",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.albanytech.edu/uploads/files/fd/19/fd19a91c3f370d24b31b2f910839b549.pdf",
+  "total_credits": 65,
+  "transfer_confidence": "advisory",
+  "external_prereqs": [
+   "CIST 1401"
+  ],
+  "content_hash": "dda74ef2c52890c4ff45d1e89ffe80a6ebc05325be2dc861523ea179e844de60",
+  "last_verified": "2026-10-02"
+ }
+}

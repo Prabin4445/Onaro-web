@@ -1,0 +1,745 @@
+{
+ "institution": {
+  "name": "University of Central Florida",
+  "city": "Orlando, FL",
+  "state": "FL",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BSME",
+  "id": "ucf-bsme-mechanical-engineering",
+  "last_verified": "2026-09-30",
+  "major": "Mechanical Engineering",
+  "notes": "Source: official UCF CECS Department of Mechanical and Aerospace Engineering 'Suggested Program of Study, Mechanical Engineering: 2025-2026', transcribed course by course 2026-09-30 from https://academicaffairs.cecs.ucf.edu/wp-content/uploads/2025/06/Mechanical-4yr.pdf (Revised 04/01/2025). Program name per source: Mechanical Engineering (College of Engineering and Computer Science, Orlando FL). Course titles use the plan's wording. (1) 'CHS 1440: Principals of Chemistry' corrected to 'Principles of Chemistry' (page typo; UCF catalog title). (2) Pick-one slots are choice:true with the page's options: chemistry (CHS 1440 or CHM 2045C Chemistry Fundamentals I – NAT SCI); Physics I (PHY 2048C or PHY 2048 & PHY 2048L); Physics II (PHY 2049C or PHY 2049 & PHY 2049L). (3) Two 'Option Course (Choose 1 of 5)' slots each choose from the page's 6-course list (EML 4143, EML 3101, EML 4220, EML 4504, EML 4703, EML 3262); one 'Laboratory Course (Choose 1 of 2)' slot (EML 4301C or EML 4306C); 'Approved Technical Elective' slots are department-approved technical electives (TECHEL, choice:true). (4) Foundation rows (Historical/Cultural/Social Foundation) are GEP choice placeholders. (5) Term hours sum to 122 (12+15+10+13+12+6+15+15+12+12); each transcribed term matches its header. Summer Year 3 lists no courses (internship/makeup advisory only) and is omitted. (6) prereq arrays are left empty: the plan lists per-course prerequisites as advisory notes, not as a structured field to transcribe here.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Comp I – COMM 1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGS 1006C",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Intro to the Engr Prof",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan: 'Pick One - CHS 1440: Principals of Chemistry or CHM 2045C: Chemistry Fundamentals I – NAT SCI (4)'",
+      "code": "CHS 1440",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CHS 1440",
+        "credits": 4,
+        "title": "Principles of Chemistry"
+       },
+       {
+        "code": "CHM 2045C",
+        "credits": 4,
+        "title": "Chemistry Fundamentals I – NAT SCI"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Principles of Chemistry",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2311C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus I – MATH 1",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Comp II – COMM 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 1007C",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Engr Concepts & Methods",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan: 'PHY 2048C (or PHY 2048 & PHY 2048L): General Physics Using Calc I – NAT SCI 2 (4)'",
+      "code": "PHY 2048C",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHY 2048C",
+        "credits": 4,
+        "title": "General Physics Using Calc I – NAT SCI 2"
+       },
+       {
+        "code": "PHY 2048",
+        "credits": 3,
+        "title": "General Physics Using Calc I"
+       },
+       {
+        "code": "PHY 2048L",
+        "credits": 1,
+        "title": "General Physics Using Calc I Lab"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Physics Using Calc I – NAT SCI 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus II – MATH 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPC 1603C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Fundamentals of Technical Presentations – GEP FLEX 1",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Historical Foundation – HUM 1'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "General Education — Historical Foundation – HUM 1, select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Engr Analysis Statics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2313",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3321",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Engineering Analysis - Dynamics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan: 'PHY 2049C (or PHY 2049 & PHY 2049L): General Physics Using Calc II – GEP FLEX 2 (4)'",
+      "code": "PHY 2049C",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHY 2049C",
+        "credits": 4,
+        "title": "General Physics Using Calc II – GEP FLEX 2"
+       },
+       {
+        "code": "PHY 2049",
+        "credits": 3,
+        "title": "General Physics Using Calc II"
+       },
+       {
+        "code": "PHY 2049L",
+        "credits": 1,
+        "title": "General Physics Using Calc II Lab"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "General Physics Using Calc II – GEP FLEX 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAP 2302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Differential Equations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3365",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Struct & Prop of Aerospace Matls.",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGM 3601",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Solid Mechanics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3373",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Principles of Electrical Engr",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3343",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Thermodynamics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Cultural Foundation – HUM 2'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education — Cultural Foundation – HUM 2, select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 3701",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Fluid Mechanics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3223C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Intro to Programming w/ C",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 3933",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Career/Academic Advising I",
+      "xfer": [],
+      "required_zero": true
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 3034C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Modeling Methods in MAE",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 3500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Machine Components",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 3303C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Mechanical Engr Measurements",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Approved Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Approved Technical Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Social Foundation – SOC SCI 1'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "General Education — Social Foundation – SOC SCI 1, select one",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 4142",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Heat Transfer",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 4312",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Feedback Control and Dynamics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STA 3032",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Probability & Statistics for Engr",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan: 'Option Course (Choose 1 of 5) (See List Below)'; page lists 6 courses, all Mechanical students select 2 of 6",
+      "code": "OPTION",
+      "credits": 3,
+      "options": [
+       {
+        "code": "EML 4143",
+        "credits": 3,
+        "title": "Heat Transfer II"
+       },
+       {
+        "code": "EML 3101",
+        "credits": 3,
+        "title": "Thermodynamics of Mech Systems"
+       },
+       {
+        "code": "EML 4220",
+        "credits": 3,
+        "title": "Vibrations"
+       },
+       {
+        "code": "EML 4504",
+        "credits": 3,
+        "title": "Design & Analysis of Mach Comp II"
+       },
+       {
+        "code": "EML 4703",
+        "credits": 3,
+        "title": "Fluid Mechanics II"
+       },
+       {
+        "code": "EML 3262",
+        "credits": 3,
+        "title": "Kinematics of Mechanisms"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Option Course — select one of 6",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Approved Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Approved Technical Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 4931",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Career/Academic Advising II",
+      "xfer": [],
+      "required_zero": true
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 4501C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Mechanical Design I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Approved Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "Approved Technical Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan: 'Option Course (Choose 1 of 5, See List Below)'",
+      "code": "OPTION",
+      "credits": 3,
+      "options": [
+       {
+        "code": "EML 4143",
+        "credits": 3,
+        "title": "Heat Transfer II"
+       },
+       {
+        "code": "EML 3101",
+        "credits": 3,
+        "title": "Thermodynamics of Mech Systems"
+       },
+       {
+        "code": "EML 4220",
+        "credits": 3,
+        "title": "Vibrations"
+       },
+       {
+        "code": "EML 4504",
+        "credits": 3,
+        "title": "Design & Analysis of Mach Comp II"
+       },
+       {
+        "code": "EML 4703",
+        "credits": 3,
+        "title": "Fluid Mechanics II"
+       },
+       {
+        "code": "EML 3262",
+        "credits": 3,
+        "title": "Kinematics of Mechanisms"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "Option Course — select one of 6",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Social Foundation – SOC SCI 2'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-4",
+      "tccns": "",
+      "title": "General Education — Social Foundation – SOC SCI 2, select one",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EML 4502C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Mechanical Design II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Approved Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Approved Technical Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan: 'Laboratory Course (Choose 1 of 2) (See List Below)'",
+      "code": "LAB",
+      "credits": 3,
+      "options": [
+       {
+        "code": "EML 4301C",
+        "credits": 3,
+        "title": "Mechanical Systems Lab"
+       },
+       {
+        "code": "EML 4306C",
+        "credits": 3,
+        "title": "Energy Systems Lab"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Laboratory Course — select one of 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Approved Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "Approved Technical Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 10
+   }
+  ],
+  "source_url": "https://academicaffairs.cecs.ucf.edu/wp-content/uploads/2025/06/Mechanical-4yr.pdf",
+  "total_credits": 122,
+  "content_hash": "77d5e47a93d62dc160038d995804404ac7c47a8819c18c31c3258ffe5b34afa0"
+ }
+}

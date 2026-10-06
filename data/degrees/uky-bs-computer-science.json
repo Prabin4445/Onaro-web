@@ -1,0 +1,625 @@
+{
+ "institution": {
+  "name": "University of Kentucky",
+  "city": "Lexington, KY",
+  "kind": "public4yr",
+  "state": "KY"
+ },
+ "plan": {
+  "id": "uky-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 129,
+  "source_url": "https://ptc.engr.uky.edu/sites/default/files/2025-11/bellarmine-university-major-sheets-25-26.pdf",
+  "notes": "Source: official UK Pigman College of Engineering pathway sheet, 'Computer Science 2025-2026 (Pathway from Bellarmine University)', https://ptc.engr.uky.edu/sites/default/files/2025-11/bellarmine-university-major-sheets-25-26.pdf . Catalog year 2025-2026 is printed in the sheet title. Transcription method: direct PDF text extraction (pdftotext -layout) from the downloaded official PDF, cross-checked against the parallel 'Computer Science 2025-2026 (Pathway from Union Commonwealth University)' sheet (https://engr.uky.edu/sites/default/files/2025-11/union-commonwealth-university-major-sheets-25-26.pdf); the UK Course Pathway columns are byte-identical between the two - only the partner-school transfer-equivalency column differs. TRANSFER-PATHWAY FRAMING VERDICT: standard UK sequence. Although each document is titled 'Pathway from <partner school>', the 'UK Course Pathway' column is the standard native-UK four-year term-by-term sequence: it begins Freshman Year First Semester with standard UK freshman courses (EGR 101/102, CHE 105, CIS/WRD 110, MA 113) and spans all 8 semesters. Transfer students are framed as a VARIANT of this sequence, not its subject: sheet footnote § states 'Transfer students will take EGR 215, Introduction to the Practice of Engineering for Transfer Students, in place of EGR 101 and EGR 103', and footnote † notes transfer students may satisfy UK Core Arts and Creativity via EGR 215. The 'Transfer Courses' column (partner-school equivalents, e.g. Bellarmine CS 130 for EGR 102) was intentionally omitted as partner-specific articulation. Equivalencies in TES as of 10/2025 (per sheet). Caveats: (1) The sheet publishes no per-course prerequisites, so all prereq arrays are empty and external_prereqs is empty; the only progression rule is Engineering Standing: courses marked with * (MA 114, CS 215, CS 217, CS 218, CS 275) require successful completion with at least a 2.5 GPA in those courses plus cumulative UK GPA of at least 2.5; if a course is repeated, the best grade is used. (2) CS 499 Senior Design Project is the Graduation Composition and Communication Requirement (GCCR) course (sheet marker ∞). (3) EE 280 course title transcribed verbatim from the sheet as 'Design of Logic Design' (as printed; confirmed identical in both sheet versions). (4) EGR 101 and EGR 103 together fulfill the UK Core Arts and Creativity requirement (sheet footnote †). (5) CIS/WRD 110/111 each require also completing one of COM 181, COM 252, COM 281, or COM 287 for students taking ENG 101/102 (sheet footnote Δ). (6) PHY 241 lab taken only if enrolled in PHY 231 (sheet footnote ‡). (7) Free Elective [E]: 3 of the 7 credits are not to be selected from computer science, mathematics, natural science and engineering. Credit total 129 = term sums 14+18+17+16+15+18+16+15.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "EGR 101",
+      "title": "Engineering Exploration I",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "EGR 102",
+      "title": "Fundamentals of Engineering Computing",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CHE 105",
+      "title": "General College Chemistry I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CIS/WRD 110",
+      "title": "Composition and Communication I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take either CIS 110 or WRD 110.",
+      "options": [
+       "CIS 110",
+       "WRD 110"
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MA 113",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CIS/WRD 111",
+      "title": "Composition and Communication II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take either CIS 111 or WRD 111.",
+      "options": [
+       "CIS 111",
+       "WRD 111"
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MA 114",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PHY 231",
+      "title": "General University Physics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "PHY 241",
+      "title": "General University Physics Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "CS 215",
+      "title": "Introduction to Program Design, Abstraction, and Problem Solving Techniques",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "EGR 103",
+      "title": "Engineering Exploration II",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 217",
+      "title": "Introduction to Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 218",
+      "title": "Advanced Programming and Operating Systems Interfaces",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 275",
+      "title": "Discrete Mathematics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MA 213",
+      "title": "Calculus III",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "UKC-SS",
+      "title": "UK Core - Social Sciences",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course from the UK Core Social Sciences list.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 270",
+      "title": "Systems Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 315",
+      "title": "Algorithm Design and Analysis",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "EE 280",
+      "title": "Design of Logic Design",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SCI-ELEC",
+      "title": "Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[S] (3 credit hours total): selected from UK Core natural science list, UK Core social science list, or approved by the Department of Computer Science. Natural science course cannot be an elementary version of a required course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "UKC-HUM",
+      "title": "UK Core - Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course from the UK Core Humanities list.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS/MA 321 OR MA 322",
+      "title": "Introduction to Numerical Methods / Matrix Algebra and Its Applications",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take either CS/MA 321 Introduction to Numerical Methods or MA 322 Matrix Algebra and Its Applications.",
+      "options": [
+       "CS/MA 321",
+       "MA 322"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 371",
+      "title": "Introduction to Computer Networking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "STA 381",
+      "title": "Engineering Statistics - A Conceptual Approach",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CS-ELEC-1",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[C] (15 credit hours total): 300-level and above computer science courses; three classes to be selected from CS 316, CS 335, CS 378, CS 405G, CS 441G, CS 460, CS 463G, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CS-ELEC-2",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[C] (15 credit hours total): 300-level and above computer science courses; three classes to be selected from CS 316, CS 335, CS 378, CS 405G, CS 441G, CS 460, CS 463G, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 375",
+      "title": "Logic and Theory of Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS-ELEC-3",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[C] (15 credit hours total): 300-level and above computer science courses; three classes to be selected from CS 316, CS 335, CS 378, CS 405G, CS 441G, CS 460, CS 463G, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS-ELEC-4",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[C] (15 credit hours total): 300-level and above computer science courses; three classes to be selected from CS 316, CS 335, CS 378, CS 405G, CS 441G, CS 460, CS 463G, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "NSCI-ELEC",
+      "title": "Natural Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[N] (3 credit hours): any natural science course from the UK Core natural science list or approved by the Department of Computer Science. Cannot be an elementary version of a required course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "TECH-ELEC-1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[T] (12 credit hours total): any additional 300-level or higher classes from computer science, electrical engineering, mathematics (including MA 214; excluding MA 308 and MA 310), the Gatton College of Business and Economics, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-5",
+      "code": "UKC-CIT-US",
+      "title": "UK Core - Citizenship (US)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course from the UK Core Citizenship - US list.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 450G",
+      "title": "Fundamentals of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS 498",
+      "title": "Software Engineering for Senior Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "TECH-ELEC-2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[T] (12 credit hours total): any additional 300-level or higher classes from computer science, electrical engineering, mathematics (including MA 214; excluding MA 308 and MA 310), the Gatton College of Business and Economics, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "FREE-ELEC-1",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[E] (7 credit hours total): any course that earns college credit and is not a more elementary version of a required course. 3 credits are not to be selected from computer science, mathematics, natural science and engineering.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "UKC-GD",
+      "title": "UK Core - Global Dynamics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course from the UK Core Global Dynamics list.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 499",
+      "title": "Senior Design Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS-ELEC-5",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[C] (15 credit hours total): 300-level and above computer science courses; three classes to be selected from CS 316, CS 335, CS 378, CS 405G, CS 441G, CS 460, CS 463G, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "TECH-ELEC-3",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[T] (12 credit hours total): any additional 300-level or higher classes from computer science, electrical engineering, mathematics (including MA 214; excluding MA 308 and MA 310), the Gatton College of Business and Economics, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "TECH-ELEC-4",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[T] (12 credit hours total): any additional 300-level or higher classes from computer science, electrical engineering, mathematics (including MA 214; excluding MA 308 and MA 310), the Gatton College of Business and Economics, or by the Department of Computer Science's approval.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "FREE-ELEC-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[E] (7 credit hours total): any course that earns college credit and is not a more elementary version of a required course. 3 credits are not to be selected from computer science, mathematics, natural science and engineering.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "3ef1732895f0a26f99fa1c16c67e3ee7624efe2cab5f1521d5709cb8f73ed9e3",
+  "last_verified": "2026-10-02"
+ }
+}

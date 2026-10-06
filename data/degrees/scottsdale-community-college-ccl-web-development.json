@@ -1,0 +1,229 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-web-development",
+  "major": "Web Development",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/web-development-5988-ccl). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 120DF",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Adobe Photoshop",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 133DA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Internet/Web Development Level I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 136",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Content Management Systems: WordPress",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 166AA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "Introduction to Javascript",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 233DA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "Internet/Web Development Level II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 235",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "E-Commerce",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CIS 150AB or CIS 156 or CIS 159 or CIS162++ or CIS 163AA or CIS165++ or CIS 256 or CIS 262AD or CIS 263AA or CIS265++. Credits shown for CIS 150AB.",
+      "code": "CIS 150AB",
+      "core_area": "None or CS or None or None or None or None or None",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Object-Oriented Programming Fundamentals or Python Programming: Level I or Visual Basic Programming I or Any C Programming course or Java Programming: Level I or Any Mobile Application Development course or Python Programming: Level II or C# Level II or Java Programming: Level II or Any Advanced iOS Application Development course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 166AE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "Web Scripting with PHP: Hypertext Preprocessor (PHP)",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 119DO or CIS276++. Credits shown for CIS 119DO.",
+      "code": "CIS 119DO",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Introduction to Oracle: SQL or Any Database Management Systems course",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 126DL or CIS 126RH. Credits shown for CIS 126DL.",
+      "code": "CIS 126DL",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Linux Operating System or Red Hat System Administration I",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CIS 150AB or CIS 156 or CIS 159 or CIS162++ or CIS 163AA or CIS165++ or CIS 256 or CIS 262AD or CIS 263AA or CIS265++. Credits shown for CIS 150AB.",
+      "code": "CIS 150AB",
+      "core_area": "None or CS or None or None or None or None or None",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Object-Oriented Programming Fundamentals or Python Programming: Level I or Visual Basic Programming I or Any C Programming course or Java Programming: Level I or Any Mobile Application Development course or Python Programming: Level II or C# Level II or Java Programming: Level II or Any Advanced iOS Application Development course",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: Restricted Electives.",
+      "code": "RE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Restricted Electives",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/web-development-5988-ccl",
+  "total_credits": 39,
+  "external_prereqs": [
+   "CIS 162AD",
+   "CIS 163AA"
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "05c99f0f65c7cabc7ec5c984a243ee72f92747c4374353e2a8d28e9ae4417791",
+  "last_verified": "2026-10-02"
+ }
+}

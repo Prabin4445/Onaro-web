@@ -1,0 +1,650 @@
+{
+ "institution": {
+  "city": "Cleveland, OH",
+  "kind": "private4yr",
+  "name": "Case Western Reserve University",
+  "state": "OH"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-ba-economics",
+  "degree": "BA",
+  "major": "Economics",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://bulletin.case.edu/management/economics/economics-ba/",
+  "notes": "Hand-transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) Economics, BA 'Sample Plan of Study' grid (https://bulletin.case.edu/management/economics/economics-ba/, cross-checked against https://bulletin.case.edu/management/economics/economics-ba/economics-ba.pdf). Footnotes quoted from the plan: (a) Unified General Education Requirement; (b) 'Students considering additional coursework in mathematics (i.e. MATH 201, MATH 223, etc.) should take MATH 121 and MATH 122.'; (c) 'Students considering additional coursework in statistics should consider STAT 301 and STAT 302.'; (d) 'Not required for the major but highly suggested.' ANOMALY DISCLOSED: the official plan prints a 'MGMT 205 Essentials of Personal Finance or MGMT 206 Investing for Everyone' row (footnote d) in Year 3 Fall WITH NO credit hours, and the printed Year 3 Fall total of 15 excludes it (3+3+3+3+3); the same course choice appears in Year 4 Fall WITH 1.5 credits counted. Because its credit value in Year 3 Fall cannot be determined from the official document, that row is omitted from the structured plan and documented here instead of invented. REPEATED COURSE: the official plan places MGMT 395 Seminar (1 cr, footnote d) once in Year 4 Fall and twice in Year 4 Spring; allow_repeated_courses is set for this reason. 'Major Elective' and unlabeled slots are choice placeholders. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 125",
+      "title": "Math and Calculus Applications for Life, Managerial, and Social Sci I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 125 or MATH 121'; footnote 'b' advises MATH 121/MATH 122 for students considering additional mathematics coursework.",
+      "options": [
+       "MATH 125",
+       "MATH 121"
+      ],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 102",
+      "title": "Principles of Microeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 198",
+      "title": "Experience in Business Problem Solving",
+      "credits": 1.5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'd': 'Not required for the major but highly suggested.'",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "UGER-3",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 103",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OPRE 207",
+      "title": "Statistics for Business and Management Science I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'OPRE 207 or STAT 201 or STAT 301 or STAT 312 or SOCI 307 or ANTH 319'; footnote 'c' advises STAT 301/302 for students considering additional statistics coursework.",
+      "options": [
+       "OPRE 207",
+       "STAT 201",
+       "STAT 301",
+       "STAT 312",
+       "SOCI 307",
+       "ANTH 319"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-4",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-5",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "ECON 326",
+      "title": "Econometrics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORELECT-1",
+      "title": "Major elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Elective' 3-credit slot.",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-6",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-7",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-8",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "ECON 307",
+      "title": "Intermediate Macro Theory",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'ECON 307 or ECON 309'.",
+      "options": [
+       "ECON 307",
+       "ECON 309"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACCT 106",
+      "title": "Spreadsheet Basics for Business and Non-Business Majors",
+      "credits": 1,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'd': 'Not required for the major but highly suggested.'",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-9",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-10",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "ECON 308",
+      "title": "Intermediate Micro Theory",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'ECON 308 or ECON 309 or ECON 307'.",
+      "options": [
+       "ECON 308",
+       "ECON 309",
+       "ECON 307"
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORELECT-2",
+      "title": "Major elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Elective' 3-credit slot.",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-11",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-12",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-13",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "ECON 395",
+      "title": "Capstone Research in Economics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-14",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-15",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-16",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-17",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "UGER-18",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-19",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-20",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-21",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 206",
+      "title": "Investing for Everyone",
+      "credits": 1.5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MGMT 206 or MGMT 205'; footnote 'd': 'Not required for the major but highly suggested.'",
+      "options": [
+       "MGMT 206",
+       "MGMT 205"
+      ],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "UGER-22",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-23",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-24",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-25",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "allow_repeated_courses": true,
+  "content_hash": "27ff0af83b398644d90e3a987da3cc22134fa080e1cecd113dd3fee7047b190f",
+  "last_verified": "2026-10-02"
+ }
+}

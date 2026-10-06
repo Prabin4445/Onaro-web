@@ -1,0 +1,718 @@
+{
+ "institution": {
+  "name": "Canisius University",
+  "city": "Buffalo, NY",
+  "kind": "private",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "canisius-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "source_url": "https://catalog.canisius.edu/archive/2025-2026/undergraduate/division-business-communication-health-studies/school-data-computing-mathematics/computer-science/computer-science.pdf",
+  "notes": "Source: official Canisius University 2025-2026 undergraduate catalog (Acalog), Computer Science (BS) page, PDF archived at https://catalog.canisius.edu/archive/2025-2026/undergraduate/division-business-communication-health-studies/school-data-computing-mathematics/computer-science/computer-science.pdf ; transcribed manually from the PDF 2026-09-30 into ~/workspace/degree-wave2-work/d2-canisius/. Catalog year 2025-2026: confirmed by archive path and in-PDF links; TRUE degree name is 'Computer Science (BS)'. Catalog degree minimum is 120 credit hours ('more but not less than 120 credit hours'). The published roadmap is titled 'Recommended Semester Schedule for Major Course Requirements' and lists major/track courses only; the Canisius Core Curriculum and free electives needed to reach 120 are modeled as student-choice slots (GENED-1..17, 3 cr each); the exact Core-vs-free-elective split is left to the student and advisor. Science track modeled (MAT 112 + MAT 141 + one 8-credit biology/chemistry/physics sequence = 16 track credits); interdisciplinary-track alternative (approved major/minor in another department) documented in each track slot's choice note. Roadmap shows 'CSC elective, if needed' in BOTH senior terms because 300-level courses rotate every two years; the catalog requires only ONE 300/400-level elective (3-4 cr), modeled once in Fall Year 4 at 3 cr. Roadmap's senior-spring 'Track course, if needed' is not needed for the science track (16 track credits complete by junior spring) and is shown as Core/free-elective space; interdisciplinary-track students use it for minor/major courses. Prereqs are the catalog's stated prerequisites (minimum grade of C where stated); labs list their catalog prerequisites only (corequisites with the lecture are not encoded as prereqs). No 0-credit required courses (CSC 480 Research Experience is optional and omitted). CAVEAT: the canisius.edu program page (as of 2026-09-30) shows a revised curriculum (no CSC 380 requirement, CSC 310 at 3 cr without lab, two electives 6-8 cr) that does NOT match the official 2025-2026 Acalog catalog; this plan follows the catalog of record.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 111",
+      "title": "Introduction to Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CSC 111L",
+      "title": "Introduction to Programming Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MAT 191",
+      "title": "Discrete Mathematics I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GENED-1",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GENED-2",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 112",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CSC 111",
+       "CSC 111L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CSC 112L",
+      "title": "Data Structures Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 111",
+       "CSC 111L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MAT 111",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "TRK-M1",
+      "title": "Track course: science-track math 1 (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Published roadmap: 'Track course'. Science track requires MAT 112 Calculus II (prereq MAT 111). Interdisciplinary-track students take an approved major/minor course in another department instead.",
+      "options": [
+       "MAT 112",
+       "Approved major/minor course in another department (interdisciplinary track)"
+      ],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "GENED-3",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 213",
+      "title": "Large Scale Programming",
+      "credits": 3,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 213L",
+      "title": "Large Scale Programming Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSC 253",
+      "title": "Computer Hardware",
+      "credits": 3,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Catalog allows CSC 112 & CSC 112L to be taken concurrently with CSC 253; roadmap places CSC 253 after CSC 112.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CSC 253L",
+      "title": "Computer Hardware Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GENED-4",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "GENED-5",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 281",
+      "title": "Automata and Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "TRK-M2",
+      "title": "Track course: science-track math 2 (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Published roadmap: 'Track course'. Science track requires MAT 141 Inferential Statistics and Computers for Science (4 cr), or another approved math course (catalog examples: MAT 219, MAT 221, MAT 451). Interdisciplinary-track students take an approved major/minor course in another department instead.",
+      "options": [
+       "MAT 141",
+       "Approved math course (e.g. MAT 219, MAT 221, MAT 451)",
+       "Approved major/minor course in another department (interdisciplinary track)"
+      ],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GENED-6",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GENED-7",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GENED-8",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSC 330",
+      "title": "Operating System Design and Distributed Computing",
+      "credits": 3,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 330L",
+      "title": "Operating System Design and Distributed Computing Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSC 380",
+      "title": "Web Development I",
+      "credits": 3,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CSC 380L",
+      "title": "Web Development I Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 112",
+       "CSC 112L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "TRK-S1",
+      "title": "Track course: science sequence, part 1 (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Published roadmap: 'Track course'. Science track requires one 8-credit sequence: Biology (BIO 111 & 111L, BIO 112 & 112L), Chemistry (CHM 111 & 111L, CHM 112 & 112L), or Physics (PHY 223 & 223L, PHY 224 & 224L). Part 1 modeled at 4 credits. Interdisciplinary-track students take an approved major/minor course in another department instead.",
+      "options": [
+       "BIO 111 & 111L",
+       "CHM 111 & 111L",
+       "PHY 223 & 223L",
+       "Approved major/minor course in another department (interdisciplinary track)"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "GENED-9",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 351",
+      "title": "Comparative Programming Languages",
+      "credits": 3,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSC 351L",
+      "title": "Comparative Programming Languages Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "TRK-S2",
+      "title": "Track course: science sequence, part 2 (student choice)",
+      "credits": 4,
+      "prereq": [
+       "TRK-S1"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Published roadmap: 'Track course'. Science track sequence part 2, modeled at 4 credits; prereq is the part-1 track slot. See part 1 note for sequence options.",
+      "options": [
+       "BIO 112 & 112L",
+       "CHM 112 & 112L",
+       "PHY 224 & 224L",
+       "Approved major/minor course in another department (interdisciplinary track)"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GENED-10",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GENED-11",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 310",
+      "title": "Information Organization and Processing",
+      "credits": 3,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSC 310L",
+      "title": "Information Organization and Processing Laboratory",
+      "credits": 1,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSC 395",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CSC 395L",
+      "title": "Software Engineering Lab",
+      "credits": 1,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "CSC-ELC1",
+      "title": "CSC elective at the 300/400 level (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires ONE additional 300/400-level course (3-4 cr); modeled at 3 cr — choosing a 4-credit option adds 1 credit to the term. Published roadmap shows 'CSC elective, if needed' in both senior terms because 300-level courses rotate; only one elective is required. Recent options: CSC 371 & 371L Cybersecurity Principles and Lab (4 cr; prereq CSC 310 & 310L), CSC 381 & 381L Web Development II and Lab (4 cr; prereq CSC 380 & 380L), MAT 341 Numerical Analysis (3 cr), or other approved math (MAT 219, MAT 221, MAT 451). CSC 497 Internship cannot count.",
+      "options": [
+       "CSC 371 & 371L",
+       "CSC 381 & 381L",
+       "MAT 341",
+       "CSC 360 & 360L",
+       "Other approved 300/400-level course"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "GENED-12",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-6",
+      "code": "GENED-13",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSC 320",
+      "title": "The Social Impact of Computing",
+      "credits": 3,
+      "prereq": [
+       "CSC 213",
+       "CSC 213L"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "GENED-14",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "GENED-15",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "GENED-16",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GENED-17",
+      "title": "Canisius Core / free elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The published roadmap covers major course requirements only; credits to the 120-credit degree minimum are the Canisius Core Curriculum and free electives, chosen by the student.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "853a3c5ee05d12509487f5d4326f1d8c8631f8a00af562aac3307adce6af8bfa",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,278 @@
+{
+ "institution": {
+  "city": "Forrest City, AR",
+  "kind": "community",
+  "name": "East Arkansas Community College",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "external_prereqs": [
+   "BIO 2114",
+   "BIO 2134",
+   "ENG 1013",
+   "ENG 1023",
+   "MTH 1113",
+   "PSY 1003",
+   "PSY 2003"
+  ],
+  "id": "east-arkansas-cc-aas-nursing-lpn-rn-accelerated",
+  "major": "Nursing - LPN/LPTN to RN Accelerated Track",
+  "notes": "Source: University of Arkansas East Arkansas Community College (UA-EACC) official program page 'Associate of Applied Science in Nursing - LPN/LPTN-RN Accelerated Track' (dated 8/7/2025), verified in-session. Unusual structure, modeled honestly: (1) the page lists 23 credits of General Education as 'Required before admission to the LPN/LPTN Accelerated Track' with no term assignment, so those 7 courses are recorded as external_prereqs, not sequenced; (2) the track itself is sequenced as Term III (Summer) / Term IV (Fall) / Term V (Spring) because entrants hold LPN/LPTN licensure covering Terms I-II; (3) the page's stated 'Total Degree Credit Hours 62' = 23 pre-admission + 35 sequenced here + 4 escrow credits for previous LPN learning held after successful completion of NUR 1904 ('NURSING CREDITS FOR PREVIOUS LEARNING'); total_credits is therefore the sequenced sum 35 (11+14+10). Six 0-credit clinical-application courses are genuine requirements (required_zero). Term IV social-science slot: 'SOC 1013 Introduction to Sociology OR SOC 2043 Anthropology' rendered as a choice with code = first-listed option. Page lists both NUR 2134 and NUR 2254 under the title 'Medical Surgical Nursing II' (the NUR 2250 clinical is titled '...Medical Surgical Nursing III'); titles copied verbatim. Graduates may apply for the NCLEX-RN. program_type 'accelerated': official page titles this the 'LPN/LPTN-RN Accelerated Track'; 23 cr gen-ed required before admission.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 2504",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Microbiology",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 1904",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Role Transition for LPN/LPRNs",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 1900",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Applications of Role Transition",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2043",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Mental Health Nursing",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2040",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Applications of Mental Health Nursing",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Term III (Summer)",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BUS 1603",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Computer Fundamentals",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2134",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Medical Surgical Nursing II",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2130",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Applications of Medical Surgical Nursing II",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2164",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Maternal Child Nursing",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2160",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Applications of Maternal Child Nursing",
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "OR SOC 2043 Anthropology",
+      "code": "SOC 1013",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "SOC 1013",
+       "SOC 2043"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Introduction to Sociology",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ],
+    "label": "Term IV (Fall)",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2243",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Nursing Concepts and Intervention",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2254",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Medical Surgical Nursing II",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2250",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Applications of Medical Surgical Nursing III",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2263",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "tccns": "",
+      "title": "Nursing Leadership and Management",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2260",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Clinical Apps of Nursing Leadership and Management",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Term V (Spring)",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.uaeacc.edu/plugins/show_image.php?id=5432",
+  "total_credits": 35,
+  "transfer_confidence": "advisory",
+  "program_type": "accelerated",
+  "content_hash": "ff52e3ad412a20afcb927a0d1ba6982bce8dbd51b1cb79d1d5bf42e40862d74e",
+  "last_verified": "2026-10-02"
+ }
+}

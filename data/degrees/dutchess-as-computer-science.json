@@ -1,0 +1,386 @@
+{
+ "institution": {
+  "city": "Poughkeepsie, NY",
+  "kind": "community",
+  "name": "Dutchess Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "dutchess-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Dutchess Community College 2024-25 Catalog, Computer Science (CPS) Program Map, pp. 136-138 (official DCC site PDF: https://www.sunydutchess.edu/_resources/pdfs/dcc-catalog-2024-25-archive-web.pdf). The Associate in Science (A.S.) in Computer Science (CPS) is DCC's true degree name for this program (transfer-oriented CS program). Transcription: term-by-term sequence manually transcribed from the catalog program map; course titles, credit hours, and prerequisite/corequisite statements verified against the same catalog's course-descriptions section. Program note: students should be at Math Placement Level 4 or higher. CPS 141 has an official corequisite of MAT 184 or higher (co-enrolled with the first-semester math choice slot); it carries no printed prerequisite. Official prerequisite grade rules (e.g., CPS 142 requires CPS 141 with a C or better; ENG 102 requires ENG 101 with a C or better) are course-code sequencing here per schema; the 'C or better' grade detail is not encoded. Catalog footnotes carried: (a) Students must complete MAT 222 to satisfy the CPS degree requirements. (b) Elective courses: MAT 186 or MAT 223 or MAT 230 or second semester of science sequence recommended; many four-year colleges require a two-semester sequence in physics or chemistry. (c) Physics or Chemistry or Biology recommended; applicable four-credit courses are in astronomy, biology, chemistry, geology, physical sciences, physics; students select from General Education Category B Natural Sciences. (d) Free elective: subject area for Computer Science includes all courses labeled CPS. (e) General Education Elective: courses from General Education categories Social Sciences, The Arts, World History and Global Awareness, and World Languages. Credit-range honesty: catalog prints Elective (b) slots as 3-4 credits and semester totals as ranges (16-17, 14-15, 15-16); the catalog's published 'Total Required Minimum Semester Hours Credit 62' corresponds to 3-credit electives, so plan uses 3 for each Elective (b) slot (17+16+14+15=62). 4-credit electives would raise the degree total above 62. No 0-credit required courses or milestones in this plan. 'US History and Civic Engagement' (2024-25 catalog wording) is a General Education category choice, replacing the older 'American History (Appendix D)' row.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "BHS 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Social Problems in Today's World",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog note (a): students must complete MAT 222 to satisfy the CPS degree requirements. Options: MAT 185 Precalculus (prereq: placement level 4 or MAT 184), MAT 221 Calculus I, or MAT 222 Calculus II. Program requires Math Placement Level 4 or higher.",
+      "code": "MATH-1A",
+      "credits": 4,
+      "options": [
+       {
+        "code": "MAT 185",
+        "title": "Precalculus"
+       },
+       {
+        "code": "MAT 221",
+        "title": "Calculus I"
+       },
+       {
+        "code": "MAT 222",
+        "title": "Calculus II"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Mathematics — MAT 185 OR MAT 221 OR MAT 222",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official corequisite: MAT 184 or higher (satisfied by co-enrollment with the first-semester math choice slot). No prior programming experience assumed.",
+      "code": "CPS 141",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPE 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Public Speaking",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog prints the 2024-25 row as 'US History and Civic Engagement' (a General Education category), not a single course code.",
+      "code": "USH-1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "US History and Civic Engagement (General Education category)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog note (a) applies: MAT 222 must be completed for the degree. Options: MAT 221 Calculus I (official prereq MAT 185) or MAT 222 Calculus II (official prereq MAT 221), both satisfied via the first-semester math choice slot. Pointed at the MATH-1A choice slot's own code per schema rule; document the either/or here.",
+      "code": "MATH-2A",
+      "credits": 4,
+      "options": [
+       {
+        "code": "MAT 221",
+        "title": "Calculus I"
+       },
+       {
+        "code": "MAT 222",
+        "title": "Calculus II"
+       }
+      ],
+      "prereq": [
+       "MATH-1A"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "MAT 221 (Calculus I) OR MAT 222 (Calculus II)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official prerequisite: CPS 141 with a C or better.",
+      "code": "CPS 142",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 141"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog note (b): MAT 186 or MAT 223 or MAT 230 or second semester of science sequence recommended. Printed as 3-4 credits; set to 3 so the plan sums to the catalog's published 62-credit minimum.",
+      "code": "ELC-B2",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MAT 186",
+        "title": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 223",
+        "title": "Calculus III"
+       },
+       {
+        "code": "MAT 230",
+        "title": "Probability and Statistics"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Elective (note b)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Catalog note (c): Physics or Chemistry or Biology recommended; applicable four-credit courses are in astronomy, biology, chemistry, geology, physical sciences, physics; select from General Education Category B Natural Sciences.",
+      "code": "SCI-C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Science elective — Physics, Chemistry, or Biology recommended",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Either/or: students who already completed MAT 222 take a math elective here instead (catalog note (a) requires MAT 222 for the degree). Official prereq for MAT 222 is MAT 221, satisfied via the second-semester math choice slot. Pointed at the MATH-2A choice slot's own code per schema rule.",
+      "code": "MATH-3A",
+      "credits": 4,
+      "options": [
+       {
+        "code": "MAT 222",
+        "title": "Calculus II"
+       },
+       {
+        "code": "MATH EL",
+        "title": "Math elective"
+       }
+      ],
+      "prereq": [
+       "MATH-2A"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "MAT 222 (Calculus II) OR math elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official prerequisite: CPS 142 with a grade of C or better.",
+      "code": "CPS 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 142"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Science III/Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog note (b): MAT 186 or MAT 223 or MAT 230 or second semester of science sequence recommended. Printed as 3-4 credits; set to 3 so the plan sums to the catalog's published 62-credit minimum.",
+      "code": "ELC-B3",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MAT 186",
+        "title": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 223",
+        "title": "Calculus III"
+       },
+       {
+        "code": "MAT 230",
+        "title": "Probability and Statistics"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Elective (note b)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Either/or: official prereq for MAT 214 (Discrete Mathematics Using Proofs) is MAT 221 with a C or better; official prereq for MAT 215 (Introduction to Linear Algebra) is MAT 222 with a grade of C or better — both satisfied via the third-semester math choice slot. Pointed at the MATH-3A choice slot's own code per schema rule.",
+      "code": "MATH-4A",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MAT 214",
+        "title": "Discrete Mathematics Using Proofs"
+       },
+       {
+        "code": "MAT 215",
+        "title": "Introduction to Linear Algebra"
+       }
+      ],
+      "prereq": [
+       "MATH-3A"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "MAT 214 (Discrete Mathematics Using Proofs) OR MAT 215 (Introduction to Linear Algebra)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official prerequisite: CIS 112 with a grade of C or better OR CPS 141 with a grade of C or better (either/or). CPS 141 is the in-plan option; CIS 112 is not in this degree plan.",
+      "code": "CIS 227",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 141"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Architecture and Organization",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog note (b): MAT 186 or MAT 223 or MAT 230 or second semester of science sequence recommended. Printed as 3-4 credits; set to 3 so the plan sums to the catalog's published 62-credit minimum.",
+      "code": "ELC-B4",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MAT 186",
+        "title": "Introduction to Data Science"
+       },
+       {
+        "code": "MAT 223",
+        "title": "Calculus III"
+       },
+       {
+        "code": "MAT 230",
+        "title": "Probability and Statistics"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Elective (note b)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog note (e): courses applicable in this program are listed in the General Education categories Social Sciences, The Arts, World History and Global Awareness, and World Languages.",
+      "code": "GED-E",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Elective (note e)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog note (d): free elective; subject area for Computer Science includes all courses labeled CPS.",
+      "code": "FEL-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Free Elective (note d)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.sunydutchess.edu/_resources/pdfs/dcc-catalog-2024-25-archive-web.pdf",
+  "total_credits": 62,
+  "content_hash": "3bacae973142db7607a6dd51e2240e2ce8cea10d0121613816cd4cc96271d84c",
+  "last_verified": "2026-10-02"
+ }
+}

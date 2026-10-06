@@ -1,0 +1,121 @@
+{
+ "institution": {
+  "city": "Tempe",
+  "kind": "community",
+  "name": "Rio Salado College",
+  "state": "AZ",
+  "slug": "rio-salado-college",
+  "ipeds": "105668"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "rio-salado-college-ccl-enrolled-agent",
+  "major": "Enrolled Agent",
+  "notes": "Source: official Maricopa pathway-map page (https://www.riosalado.edu/degrees-certificates/business-entrepreneurialism-and-management/enrolled-agent-5958-ccl). Effective Term Fall 2026 Full-time Part-time Full-time Sequence Full-time status is 12 credits to 18 credits per semester. Term 1 A sequence of suggested courses that should be taken during Term 1 Course Number Course Name Requisites N; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: ACC 111 or ACC 211. Credits shown for ACC 111.",
+      "code": "ACC 111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Accounting Principles I or Financial Accounting",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACC 121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Individual Tax Preparation",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACC 224",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ACC 121"
+      ],
+      "title": "Tax Practice Administration and Business Entity Analysis",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACC 221",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ACC 111"
+      ],
+      "title": "Tax Accounting",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: Restricted Elective.",
+      "code": "RE",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "title": "Restricted Elective",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   }
+  ],
+  "source_url": "https://www.riosalado.edu/degrees-certificates/business-entrepreneurialism-and-management/enrolled-agent-5958-ccl",
+  "total_credits": 17,
+  "program_type": "professional-phase",
+  "external_prereqs": [
+   "ACC 211"
+  ],
+  "content_hash": "cf469cfff86f79a5384300fc4d714b17964821863343550ed910dd0fb2b2666a",
+  "last_verified": "2026-10-02"
+ }
+}

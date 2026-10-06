@@ -1,0 +1,579 @@
+{
+ "institution": {
+  "city": "Providence, RI",
+  "kind": "private4yr",
+  "name": "Providence College",
+  "state": "RI"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "providence-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Providence College 'Computer Science B.S. - Class of 2029' Academic Planning Form published by PC's Office of Academic Advising (http://academic-advising.providence.edu/wp-content/uploads/sites/83/2024/11/rba11-CSC-Academic-Guidebook-1.pdf). Transcribed course-by-course from the form's official 8-semester term-by-term grids via pdftotext -layout with manual verification against the printed totals. Class of 2029 enters Fall 2025, so the form reflects the 2024-2026 Undergraduate Catalog (catalog page: https://catalog.providence.edu/preview_program.php?catoid=38&poid=1838, 'Program: Computer Science'). True degree name per the form: 'Computer Science B.S.' (Bachelor of Science in Computer Science), housed in the Department of Mathematics and Computer Science. Total: the form prints TOTAL PROGRAM OF STUDY CREDITS 125-127 because three MTH slots have 3-or-4-credit options (MTH 109 vs 131; MTH 110 vs 132; MTH elective 215+). Transcribed at the 3-credit options (MTH 109, MTH 110, 3-credit math elective), giving term totals 15+14+18+18+15+15+15+15 = 125 exactly, matching the low end of the printed 125-127 range; students choosing MTH 131/132 or a 4-credit math elective land at 126-127. Per Clarkson/UVM precedent, total_credits=125 is the sequence's own published total, not the catalog's 120-credit degree minimum (the form itself notes 'Students at Providence College must complete 120 credits'). CSC electives check out against the major-requirements list: Systems x1 (CSC SYS-1), Applications x1 (CSC APP-1), Topics x3 (CSC TOP-1/2/3). Prereqs: the planning form publishes no course prerequisites; the one officially verified prereq (PC 2024-2026 catalog Addendum, approved March 24 2025, https://catalog.providence.edu/content.php?catoid=38&navoid=1472) is that MTH 117 Discrete Mathematics and MTH 290 Foundations of Higher Mathematics are prerequisites for CSC 244 Theory of Computation — encoded as prereq ['MTH 11X'] pointing at the MTH 117-or-290 choice slot per the validator's choice-slot rule. All other prereq arrays are intentionally empty rather than invented. Form typo 'Algorithims' corrected to 'Algorithms'. Graduation notes from the form: 2.0 minimum GPA to graduate; CSC majors fulfill the Quantitative Reasoning core via MTH 109/131.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "DWC 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Development of Western Civilization I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 103",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Computer Science w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose MTH 109 Calculus I (3 cr) or MTH 131 Calculus and Analytical Geometry I (4 cr); satisfies the Quantitative Reasoning core. Transcribed at 3 credits.",
+      "code": "MTH 10X",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I or Calculus & Analytical Geometry I (Quantitative Reasoning)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "First Year Computer Science Seminar",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course or free elective, 3 credits.",
+      "code": "CORE ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Core Requirement or Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "DWC 102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Development of Western Civilization II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 104",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Software Development w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any MTH course numbered 215 or higher (the form names MTH 215 as the example), 3-4 credits; transcribed at 3 credits.",
+      "code": "MTH ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "MTH Elective (Math 215 or higher)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose MTH 117 Discrete Mathematics or MTH 290 Foundations of Higher Mathematics (3 credits each).",
+      "code": "MTH 11X",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Discrete Mathematics or Foundations of Higher Mathematics",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "DWC 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Development of Western Civilization III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 225",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 244",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH 11X"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Theory of Computation w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "DWC 202",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Development of Western Civilization IV",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 325",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Algorithms w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 387",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computer Architecture w/ Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose MTH 110 Calculus II (3 cr) or MTH 132 Calculus and Analytical Geometry II (4 cr). Transcribed at 3 credits.",
+      "code": "MTH 12X",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Calculus II or Calculus & Analytical Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One CSC elective from the applications area, 3 credits; see advisor/catalog for approved options.",
+      "code": "CSC APP-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "CSC Applications Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One CSC topics elective, 3 credits; see advisor/catalog for approved options.",
+      "code": "CSC TOP-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "CSC Topics Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One CSC elective from the systems area, 3 credits; see advisor/catalog for approved options.",
+      "code": "CSC SYS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CSC Systems Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-9",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Core-designated course, 3 credits.",
+      "code": "CORE-10",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One CSC topics elective, 3 credits; see advisor/catalog for approved options.",
+      "code": "CSC TOP-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CSC Topics Elective",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One CSC topics elective, 3 credits; see advisor/catalog for approved options.",
+      "code": "CSC TOP-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CSC Topics Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits.",
+      "code": "FREE ELEC-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://academic-advising.providence.edu/wp-content/uploads/sites/83/2024/11/rba11-CSC-Academic-Guidebook-1.pdf",
+  "total_credits": 125,
+  "content_hash": "648a619ed108bd672288ccb1723b865e4d784837f1a54a6cf9eed3f613d6081b",
+  "last_verified": "2026-10-02"
+ }
+}

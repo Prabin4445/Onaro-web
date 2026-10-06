@@ -1,0 +1,630 @@
+{
+ "institution": {
+  "city": "Cleveland, OH",
+  "kind": "private4yr",
+  "name": "Case Western Reserve University",
+  "state": "OH"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-bsm-finance",
+  "degree": "BSM",
+  "major": "Finance",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "https://bulletin.case.edu/management/programs/finance-bsm/finance-bsm.pdf",
+  "notes": "Hand-transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) Finance, BSM 'Sample Plan of Study' grid (https://bulletin.case.edu/management/programs/finance-bsm/finance-bsm.pdf). The bulletin advises majors to take ACCT 100, ECON 102 and MGMT 201 as early as possible, complete BAFI 355 by the end of the second year, and recommends MGMT 198, MGMT 205 and ACCT 106. Footnotes quoted from the bulletin: (a) Unified General Education Requirement; (b) 'Not required for the major or degree but recommended as elective course options.'; (c) in program requirements: 'Students must complete three 1 credit hour MGMT 395 offerings each of a different topic.' REPEATED COURSE: the official plan places MGMT 395 Seminar (1 cr) in Year 3 Fall, Year 3 Spring, and Year 4 Fall, matching the 'Taken three times' requirement; allow_repeated_courses is set for this reason. 'Core Requirement' and 'Major Requirement' slots are choice placeholders for student-selected courses; unlabeled slots are elective placeholders. The plan prints DESN 210 in the Year 3 Fall computational slot; the degree requirements list alternative computational courses. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Academic Inquiry Seminar, Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 198",
+      "title": "Experience in Business Problem Solving",
+      "credits": 1.5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'b': recommended, not required for the major or degree.",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 125",
+      "title": "Math and Calculus Applications for Life, Managerial, and Social Sci I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACCT 100",
+      "title": "Foundations of Accounting I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 102",
+      "title": "Principles of Microeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Academic Inquiry Seminar, Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACCT 200",
+      "title": "Foundations of Accounting II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 103",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 201",
+      "title": "Contemporary Business and Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "OPRE 207",
+      "title": "Statistics for Business and Management Science I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BAFI 355",
+      "title": "Corporate Finance",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ORBH 250",
+      "title": "Leading People: The Practice, Theory, and Reality of Leadership (LEAD I)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACCT 106",
+      "title": "Spreadsheet Basics for Business and Non-Business Majors",
+      "credits": 1,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'b': recommended, not required for the major or degree.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-3",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "ORBH 251",
+      "title": "Leading Organizations (LEAD II)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-4",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COREREQ-1",
+      "title": "Core Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Core Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-1",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "DESN 210",
+      "title": "Introduction to Programming for Business Applications",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COREREQ-2",
+      "title": "Core Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Core Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-2",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-5",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-5",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COREREQ-3",
+      "title": "Core Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Core Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-3",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-4",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-6",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "MGMT 395",
+      "title": "Seminar",
+      "credits": 1,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 205",
+      "title": "Essentials of Personal Finance",
+      "credits": 1.5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'b': recommended, not required for the major or degree.",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-6",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'a: Breadth, or Elective course' (footnote 'a': Unified General Education Requirement).",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-5",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-7",
+      "title": "Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 4-credit slot.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-8",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "MGMT 398",
+      "title": "Action Learning",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PLCY 399",
+      "title": "Business Policy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAJORREQ-6",
+      "title": "Major Requirement course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 'Major Requirement' 3-credit slot.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-9",
+      "title": "Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 4-credit slot.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "allow_repeated_courses": true,
+  "content_hash": "71feb4ac56e9e92e0954ff1ff46a98b105bd1ecd90729cd2438069b2bd1232da",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,661 @@
+{
+ "institution": {
+  "name": "Allen University",
+  "city": "Columbia, SC",
+  "state": "SC",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "allen-university-bs-mathematics-computer-science",
+  "degree": "BS",
+  "major": "Mathematics – Computer Science",
+  "total_credits": 121,
+  "catalog_year": "2025-2026",
+  "source_url": "https://allenuniversity.edu/s/Catalog-2025-2026.pdf",
+  "notes": "MAT 498 prereq 'Graduating Senior' and MAT 500 prereq 'Junior Status' are non-course and omitted.",
+  "external_prereqs": [
+   "MAT 109",
+   "BUS 103"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "courses": [
+     {
+      "code": "MAT 111",
+      "title": "College Algebra",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       {
+        "one_of": [
+         "MAT 109"
+        ],
+        "raw": "Prerequisite: MAT 109 or Placement Exam"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "REL 104",
+      "title": "Introduction to Biblical Literature",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BUS 103",
+      "title": "Computer Literacy",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ART 103",
+      "title": "Art Appreciation",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog choice: ART 103 Art Appreciation or MUS 103 Music Appreciation.",
+      "options": [
+       "ART 103",
+       "MUS 103"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UNV 101",
+      "title": "First Year Seminar",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "courses": [
+     {
+      "code": "ENG 102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SSH 104",
+      "title": "African Civilizations",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog choice: SSH 104 African Civilizations or SSH 201 History of Civilization.",
+      "options": [
+       "SSH 104",
+       "SSH 201"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 114",
+      "title": "Pre-Calculus",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       {
+        "one_of": [
+         "MAT 111"
+        ],
+        "raw": "Prerequisite: MAT 111 or Placement Exam"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 110",
+      "title": "Biological Science",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog choice: BIO 110 Biological Science or PSC 102 Physical Science.",
+      "options": [
+       "BIO 110",
+       "PSC 102"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN 121",
+      "title": "Personal Finance",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fall — Year 2",
+    "courses": [
+     {
+      "code": "CSC 200",
+      "title": "Introduction to Programming",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MAT 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSC 201",
+      "title": "Fundamentals of Networking",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MAT 111",
+         "BUS 103"
+        ],
+        "raw": "Prerequisites: MAT 111 or BUS 103"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 201",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MAT 114"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 105",
+      "title": "Public Speaking",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SSC 101",
+      "title": "Introduction to Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Spring — Year 2",
+    "courses": [
+     {
+      "code": "CSC 202",
+      "title": "Advanced Programming",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 202",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MAT 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 228",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MAT 114"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 200",
+      "title": "Introduction to Literature",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENG 102"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHIL 201",
+      "title": "Western Thought",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall — Year 3",
+    "courses": [
+     {
+      "code": "CSC 300",
+      "title": "Data Structures & Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSC 301",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 301",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MAT 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 304",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MAT 114",
+       "MAT 228"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 208",
+      "title": "Professional and Technical Writing",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring — Year 3",
+    "courses": [
+     {
+      "code": "CSC 303",
+      "title": "Database Software",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSC 304",
+      "title": "Fundamentals of Cyber Security",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 307",
+      "title": "Probability and Statistics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MAT 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY 207",
+      "title": "General Psychology",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective (catalog wording; student choice).",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fall — Year 4",
+    "courses": [
+     {
+      "code": "CSC 400",
+      "title": "Internet Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 500",
+      "title": "Internship",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective (catalog wording; student choice).",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective (catalog wording; student choice).",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective (catalog wording; student choice).",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Spring — Year 4",
+    "courses": [
+     {
+      "code": "CSC 401",
+      "title": "Introduction to Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSC 402",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSC 403",
+      "title": "Compiler",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSC 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 498",
+      "title": "Mathematics Thesis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "47b2871bcea734a49436955f8e76d2b444feda21f1158649a878997283a41ce6",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "institution": {
+  "city": "Batesville",
+  "kind": "community-college",
+  "name": "University of Arkansas Community College at Batesville",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate of Proficiency",
+  "id": "uaccb-cp-teaching-2026",
+  "major": "Teaching",
+  "notes": "Source: UACCB 2026-2027 College Catalog, General Education and Transfer Programs PDF. Suggested Course Sequence published term-by-term (Fall 6 + Spring 3 = 9). Catalog sequence table conflates the 'Introduction to Education' row with the ECED 11003 program-elective row (genuine catalog layout error); program requirements confirm the two distinct courses: EDHP 20093 Introduction to Education and the program elective (ECED 11003 Child Growth and Development or PSYC 11003 General Psychology). Program Elective slot uses first-listed ECED 11003.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "EDHP 20093",
+      "credits": 3,
+      "title": "Introduction to Education",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Program Elective: 3 credit hours from the following required; first-listed shown",
+      "code": "ECED 11003",
+      "credits": 3,
+      "options": [
+       {
+        "code": "ECED 11003",
+        "credits": 3,
+        "title": "Child Growth and Development"
+       },
+       {
+        "code": "PSYC 11003",
+        "credits": 3,
+        "title": "General Psychology"
+       }
+      ],
+      "title": "Child Growth and Development",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "EDHP 21063",
+      "credits": 3,
+      "title": "Introduction K12 Educational Technology",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring",
+    "n": 2
+   }
+  ],
+  "source_url": "https://www.uaccb.edu/images/uploads/20260720/b02e414f1cf3a95a05981cd5278bb8992d779e0b.pdf",
+  "total_credits": 9,
+  "transfer_confidence": "high",
+  "content_hash": "09dda549d401b591433760a718b8b837f52ae82d9762b87654786ed738e0d2bd",
+  "last_verified": "2026-10-02"
+ }
+}

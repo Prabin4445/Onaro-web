@@ -1,0 +1,97 @@
+{
+ "institution": {
+  "city": "Tempe",
+  "kind": "community",
+  "name": "Rio Salado College",
+  "state": "AZ",
+  "slug": "rio-salado-college",
+  "ipeds": "105668"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "CCL",
+  "id": "rio-salado-college-ccl-windows-app-development",
+  "major": "Windows App Development",
+  "notes": "Source: official Maricopa pathway-map page (https://www.riosalado.edu/degrees-certificates/computer-and-information-technology/windows-app-development-5833n-ccl). Effective Term Summer 2025; catalog_year 2025-2026 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 162AD",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "C#: Level I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 165DB or CIS 165DC. Credits shown for CIS 165DB.",
+      "code": "CIS 165DB",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 162AD"
+      ],
+      "title": "C#/VB.NET: Windows 8 App Development or Xamarin/C# Cross-Platform Development",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 262AD",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 162AD"
+      ],
+      "title": "C# Level II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   }
+  ],
+  "source_url": "https://www.riosalado.edu/degrees-certificates/computer-and-information-technology/windows-app-development-5833n-ccl",
+  "total_credits": 12,
+  "external_prereqs": [
+   "CIS 159"
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "b06ec1a26b8cf145e03880a35198e32b3cc5b34e0eef662189244e0670b3c388",
+  "last_verified": "2026-10-02"
+ }
+}

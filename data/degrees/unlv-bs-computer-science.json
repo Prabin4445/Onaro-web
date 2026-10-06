@@ -1,0 +1,606 @@
+{
+ "institution": {
+  "city": "Las Vegas, NV",
+  "kind": "public4yr",
+  "name": "University of Nevada, Las Vegas",
+  "state": "NV"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 127"
+  ],
+  "id": "unlv-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UNLV '2025-2026 Bachelor of Science - Computer Science' 4-Year Plan of Study PDF (unlv.edu, College of Engineering advising), https://www.unlv.edu/sites/default/files/media/document/2025-07/2025-26-4YearPlan-BS-CS.pdf . True program/degree name per UNLV: Bachelor of Science - Computer Science (BS). Transcription method: manual transcription of every term row (courses, credits, prerequisite column) from the official 4-year plan PDF on 2026-09-30. Catalog year note: the 2026-2027 plan had not been published by UNLV as of 2026-09-30; 2025-2026 is the most recent official term-by-term sequence. Credits are exactly as the plan lists them (e.g. CS 135/L at 3 credits). Course titles are from the official UNLV catalog (catalog.unlv.edu) and the UNLV Howard R. Hughes College of Engineering EE Handbook (Dec 2024): EGG 101 Introduction to Engineering Experience; EGG 202 Second Year Hands-on Design Experiences in Engineering and Computer Science; CS 301 Social Implications of Computer Technology; PHIL 422 Advanced Logic; CS 472 Software Product Design and Development I. Student-choice slots (Social Science, Second Year Seminar, Fine Arts, Free Elective, CS 400-level electives, Lab Science sequence, Constitution requirement) are modeled as choice:true with placeholder codes; alternatives named in choice_note. Prereq notes: ENG 101 and MATH 181 list 'PLACEMENT TEST' in the plan's prerequisite column -- placement/assessment, not courses, so prereq arrays are empty. CS 135/L lists 'MATH 127 OR HIGHER' -- MATH 127 is in external_prereqs. MATH 365 lists 'MATH 182 AND CS 135' -- recorded as MATH 182 + the plan's 'CS 135/L' course slot. ENG 102 lists 'ENG 101 or ENG 101/L+105b' -- recorded as ENG 101. PHIL 422 lists 'PHIL 114 AND JUNIOR STANDING RECOMMENDED' -- junior standing is a class-standing requirement, not a course; recorded prereq is PHIL 114. Constitution requirement: plan recommends PSC 101 or HIST 100 (4 credits). Lab science courses must be a sequence per plan notes. Per plan notes: grades of 'C' or higher required in all English, math, science, engineering, and computer science courses; 2.25 or higher UNLV GPA; last 30 credits must be taken at an NSHE institution; minimum 30 upper-division credits.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "EGG 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Engineering Experience",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 181",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 135/L",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 127"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Oral Communication",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 182",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 181"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 202",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 135/L"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 114",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Symbolic Logic",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: *SOCIAL SCIENCE (a 3-credit international and 3-credit multicultural class must be completed per UNLV general education requirements; 'Double-Dipper' courses recommended -- see approved list).",
+      "code": "SOCSCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Social Science Elective (General Education)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 218",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 202"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction to Systems Programming",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 251",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 182"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "EGG 202",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "EGG 101"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Second Year Hands-on Design Experiences in Engineering and Computer Science",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: SECOND YEAR SEMINAR -- see approved list in UNLV catalog.",
+      "code": "SYS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Second Year Seminar",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: SOCIAL SCIENCE -- 3 credits from approved general education social science list.",
+      "code": "SOCSCI-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Social Science Elective (General Education)",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: FREE ELECTIVE -- any 3-credit course.",
+      "code": "FREEELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 219",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 202",
+       "CS 218"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 202",
+       "MATH 181"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 365",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 182",
+       "CS 135/L"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computational Linear Algebra",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 407B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Technical Writing",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: *FINE ARTS REQ. -- 3 credits from approved fine arts list (international/multicultural double-dipping recommended).",
+      "code": "FINEARTS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Fine Arts Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 301",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "CS 218",
+       "COM 101"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Social Implications of Computer Technology",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 326",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 302",
+       "CS 219"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Programming Languages, Concepts and Implementation",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 370",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 302",
+       "CS 219"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 411",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 182"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Statistical Methods I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 422",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "PHIL 114"
+      ],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Advanced Logic",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 456",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 302",
+       "MATH 251"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Automata and Formal Languages",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: CS 400 LEVEL ELECT. -- see approved courses in UNLV catalog.",
+      "code": "CS4XX-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: CS 400 LEVEL ELECT. -- see approved courses in UNLV catalog.",
+      "code": "CS4XX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: LAB SCIENCE #1 -- refer to approved list; lab science courses must be a sequence (talk to an advisor).",
+      "code": "LABSCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Lab Science Sequence Course I",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: CONSTITUTION REQ. -- PSC 101 or HIST 100 recommended (4 credits).",
+      "code": "CONST-REQ",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Constitution Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 460",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 326",
+       "CS 456"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Compiler Construction",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: CS 400 LEVEL ELECT. -- see approved courses in UNLV catalog.",
+      "code": "CS4XX-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "",
+      "code": "CS4XX-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: LAB SCIENCE #2 -- second course of the lab science sequence (refer to approved list).",
+      "code": "LABSCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Lab Science Sequence Course II",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: SOCIAL SCIENCE -- 3 credits from approved general education social science list.",
+      "code": "SOCSCI-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Social Science Elective (General Education)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 472",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Product Design and Development I",
+      "xfer": []
+     },
+     {
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 477",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: CS 400 LEVEL ELECT. -- see approved courses in UNLV catalog.",
+      "code": "CS4XX-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "",
+      "code": "CS4XX-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Computer Science 400-Level Elective",
+      "xfer": []
+     },
+     {
+      "choice": true,
+      "choice_note": "Plan: FREE ELECTIVE -- any 1-credit course.",
+      "code": "FREEELEC-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.unlv.edu/sites/default/files/media/document/2025-07/2025-26-4YearPlan-BS-CS.pdf",
+  "total_credits": 120,
+  "content_hash": "3c6c30262837a7c357aa3f54aec8bc0634f964ca88a6380842737844dddb0c2a",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,713 @@
+{
+ "institution": {
+  "name": "University of Cincinnati",
+  "city": "Cincinnati, OH",
+  "kind": "public4yr",
+  "state": "OH"
+ },
+ "plan": {
+  "id": "uc-cincinnati-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2023-2024",
+  "total_credits": 125,
+  "source_url": "https://webapps2.uc.edu/ecurriculum/degreeprograms/home/guide/10739",
+  "notes": "Source: official University of Cincinnati eCurriculum 'Degree Programs' guide 10739, the UC-published term-by-term plan of study for the B.S. in Computer Science (program code 20BC-CS-BSCS), College of Engineering and Applied Science, Department of Electrical Engineering and Computer Science, covering entering cohort Fall 2023 through Spring 2028. Manually transcribed from the rendered guide on 2026-09-30. Source URL: https://webapps2.uc.edu/ecurriculum/degreeprograms/home/guide/10739. Degree name ('Bachelor of Science in Computer Science') cross-verified on the CEAS degree page (https://ceas.uc.edu/academics/departments/computer-science/degrees-programs/computer-science-bachelor-of-science.html). catalog_year '2023-2024' is the catalog year of the guide's entering term (Fall 2023). Term structure: the official guide shows 13 terms across 5 years (8 academic terms alternating with 5 required zero-credit co-op rotations; UC engineering degrees follow a five-year co-op model). The degree-tracker pipeline allows at most 12 semesters for a bachelor's plan, so the guide's final two senior-year academic terms (Fall 2027 and Spring 2028) are combined into a single entry here; every course and credit hour is unchanged. Co-op: five required 0-credit co-op rotations (COOP2011, COOP2012, COOP3011, COOP4011, COOP4012) are modeled as required_zero placeholders in their own terms, exactly as the guide shows them. Credit total: the sequence sums to 125 SH with the science elective at its 4-credit minimum (126 at 5 credits); the guide's footer describes this as the 'typical minimum number of credit hours'. Older CEAS curriculum sheets (classes of 2021/2022) stated a 124 SH minimum and used superseded course numbering (e.g. ENED1020/1090/1091, CS2021 Python Programming 2 cr); the eCurriculum guide is the current official sequence, so its own total is used. The three 'General Education course' rows in the terms map to the three requirements in the guide's General Education section (BoK: SCE contemporary-topics breadth; one additional gen-ed course from FA/HP/HU/SS/SCE; BoK distribution from FA/HP/HU/SS). Grade requirements: the guide marks many courses '(C- min)' - these are minimum-grade requirements, not prerequisites, and are recorded here as a note only. Prerequisites: the guide states no prerequisite chains, so none were invented; the plan is self-contained beginning at Calculus I, and external_prereqs is empty. Note: catalog.uc.edu could not be opened directly (network timeout on 2026-09-30); the UC eCurriculum guide, an official UC publication linked from the program's detail page, is the primary source.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS1100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Intro to Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENED1100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Foundations of Engineering Design Thinking I",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL1001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "English Composition",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH1061",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Science elective with lab: BIOL1081+1081L or PHYS2001+2001L (4-5 semester hours; modeled at 4).",
+      "code": "SCIENCE-ELECTIVE-1",
+      "credits": 4,
+      "options": [
+       "BIOL1081 + BIOL1081L",
+       "PHYS2001 + PHYS2001L"
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Science Elective with Lab (BIOL1081+1081L or PHYS2001+2001L)",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM1040",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "General Chemistry I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM1040L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "General Chemistry I Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS1021C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Science 1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENED1120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Foundations of Engineering Design Thinking II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH1062",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PD1011",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Intro to COOP for CEAS",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP2011",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Co-op for CEAS (First Semester Experience)",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS2011",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Intro to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS2023",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Python Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS2028C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IT2030C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Information Security and Assurance",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH2076",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Summer Year 2",
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP2012",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Co-op for CEAS (Second Semester Experience)",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS2071",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Discrete Computational Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS3003",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL2089",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Intermediate Composition",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PD2050",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Mid-Curricular Co-op Community for Engineering",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT2037",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Probability and Statistics I",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education course (3 SH). The guide's General Education section lists three requirements: (1) BoK: SCE - one contemporary-topics breadth course; (2) one additional general education course from FA/HP/HU/SS/SCE; (3) BoK distribution - one course from FA/HP/HU/SS.",
+      "code": "GENED-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP3011",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Co-op for CEAS (Third Semester Experience)",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Summer Year 3",
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM1071",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Intro to Effective Speaking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS4071",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS4092",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Database Design and Development",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EECE3093C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education course (3 SH). The guide's General Education section lists three requirements: (1) BoK: SCE - one contemporary-topics breadth course; (2) one additional general education course from FA/HP/HU/SS/SCE; (3) BoK distribution - one course from FA/HP/HU/SS.",
+      "code": "GENED-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP4011",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "COOP for CEAS (Fourth Semester Experience)",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS4033",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Artificial Intelligence: Principles and Applications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS4065",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Computer Networks and Networked Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EECE4029",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Operating Systems and Systems Programming",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL4092",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "Technical and Scientific Writing",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education course (3 SH). The guide's General Education section lists three requirements: (1) BoK: SCE - one contemporary-topics breadth course; (2) one additional general education course from FA/HP/HU/SS/SCE; (3) BoK distribution - one course from FA/HP/HU/SS.",
+      "code": "GENED-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-4",
+      "tccns": "",
+      "title": "General Education Course",
+      "xfer": []
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Summer Year 4",
+    "courses": [
+     {
+      "category": "coop",
+      "choice": false,
+      "choice_note": "",
+      "code": "COOP4012",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "Co-op for CEAS (Fifth Semester Experience)",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Fall Year 5 / Spring Year 5",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS5001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-0",
+      "tccns": "",
+      "title": "Computer Science Senior Design I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS5170",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-1",
+      "tccns": "",
+      "title": "The Theory of Formal Languages and Automata",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective, 3 semester hours (the guide shows 6 SH of CS electives in Fall 2027 and 9 SH in Spring 2028; split here into individual 3-SH choice slots).",
+      "code": "CS-ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-2",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective, 3 semester hours (the guide shows 6 SH of CS electives in Fall 2027 and 9 SH in Spring 2028; split here into individual 3-SH choice slots).",
+      "code": "CS-ELECTIVE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-3",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General elective, 3 semester hours.",
+      "code": "GEN-ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS5002",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-5",
+      "tccns": "",
+      "title": "Computer Science Senior Design II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective, 3 semester hours (the guide shows 6 SH of CS electives in Fall 2027 and 9 SH in Spring 2028; split here into individual 3-SH choice slots).",
+      "code": "CS-ELECTIVE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-6",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective, 3 semester hours (the guide shows 6 SH of CS electives in Fall 2027 and 9 SH in Spring 2028; split here into individual 3-SH choice slots).",
+      "code": "CS-ELECTIVE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-7",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective, 3 semester hours (the guide shows 6 SH of CS electives in Fall 2027 and 9 SH in Spring 2028; split here into individual 3-SH choice slots).",
+      "code": "CS-ELECTIVE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-8",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General elective, 3 semester hours.",
+      "code": "GEN-ELECTIVE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-9",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "f26a28dab05016338ebbe69cf1d2ae124463a6aa830045c77d9ab037b88752cf",
+  "last_verified": "2026-10-02"
+ }
+}

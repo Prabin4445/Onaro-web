@@ -1,0 +1,928 @@
+{
+ "institution": {
+  "name": "Washington State University",
+  "city": "Pullman, WA",
+  "state": "WA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "wsupullman-bs-computer-science-2023-2024",
+  "degree": "BS",
+  "major": "Computer Science",
+  "total_credits": 120,
+  "catalog_year": "2023-2024",
+  "source_url": "https://wpcdn.web.wsu.edu/wp-provost/uploads/sites/3253/2022/11/243B-upmcb-5-requirements.pdf",
+  "notes": "MERGE NOTE: this is the OLDER-catalog (2023-2024, Faculty Senate UPMCB No. 5, effective 8-23) BS CS schedule; a newer-catalog 2026-2027 plan (id wsupullman-bs-computer-science) also exists. Prereqs naming an either/or choice slot's individual options (e.g. 'CPT S 121'/'CPT S 131') were repointed at the choice slot's own code ('CPT S 121/131') per pipeline rule; verbatim catalog wording kept in each prereq's raw field. Source: official Washington State University Faculty Senate 'Undergraduate and Professional Major Change Bulletin (UPMCB) No. 5, Fall 2022', item 'Revise graduation requirements for BS in Computer Science', Faculty-Senate-approved 11-17-22, effective 8-23 (2023-2024 catalog year). Hand-transcribed 2026-09-30 from the official PDF at the source_url above. No later Faculty Senate revision to the BS in Computer Science was found (checked bulletins through 2026-09-30; later UMCB items touch other EECS programs, e.g. Cybersecurity). Program: Bachelor of Science in Computer Science, School of Electrical Engineering and Computer Science (Pullman), Voiland College of Engineering and Architecture; 120 credits. TRANSCRIPTION METHOD: the bulletin shows changes as underlined (new) / crossed-out (old) text; this plan encodes the new (underlined) schedule effective 8-23. Old text excluded: PHYS 201/211 and 202/212 lines in Year 2, 'Biological Sciences with Lab [BSCI]' in Year 4 Term 2, CPT S 427 in Year 3 Term 2 (moved into the Technical Electives list), and the Technical Elective in Year 3 Term 1. Credit-range choices: MATH 220/225 and MATH 273/301 are '2 or 3' in the bulletin; this plan uses the 2-credit options (MATH 220, MATH 273) so the plan sums to exactly 120 = total_credits; choosing MATH 225 and/or MATH 301 raises the degree total to 121-122. Bulletin footnotes transcribed in full in the relevant choice_notes: (1) C/C++ path (121, 122, 223, 360) vs Java path (131, 132, 233, 370), stay on one path; Java path not offered in Tri-Cities. (2) Lab Science: 8 cr total, one [BSCI] and one [PSCI] course with lab, from CHEM 105/106, PHYSICS 201+211, 202+212, BIOLOGY 106/107. (3) CPT S Technical Electives: 4 courses / 12 cr, at least one Software and at least one Data/Information Management course. (4) Computer Science Electives: 5 courses / 15 cr, at least 9 cr in CPT S. (5) ECONS 101/102 recommended for the SSCI slot. UCORE: per the bulletin, students must complete 6 of the 7 UCORE designations (ARTS, BSCI, DIVR, EQJS, HUM, PSCI, SSCI); this schedule pins ARTS, DIVR, SSCI, HUM plus BSCI/PSCI via the lab-science slots. Course titles verified 2026-09-30 against official WSU sources: CPT_S titles from catalog.wsu.edu course pages; MATH 171/172/216/220/225/273/301 from the WSU catalog MATH course list; STAT 360 'Probability and Statistics' from Faculty Senate curriculum bulletins; HISTORY 105 'Roots of Contemporary Issues' from ucore.wsu.edu; ENGLISH 101 'College Composition' from WSU Core-to-Career/UCORE listings; CHEM 105/106 and PHYSICS 201/211/202/212 titles from cas.wsu.edu and the WSU College of Education chemistry endorsement checksheet; BIOLOGY 106/107 from cas.wsu.edu. Two titles carry documented conflicts between official WSU sources: ENGLISH 402 is 'Technical Writing' on mme.wsu.edu and the official Tri-Cities advising worksheet but 'Technical and Professional Writing' on the WICHE Interstate Passport table for WSU; PHIL 201 is 'Introduction to Formal Logic' on online.wsu.edu, the WICHE passport table, and third-party transfer-equivalency data, but 'Elementary Logic' on the cas.wsu.edu Philosophy degree-plan page (this plan uses the majority/official-registrar form, flagged honestly). Prereqs were verified against the catalog CPT_S, MATH, and STAT course pages; catalog 'C or better' grade rules are preserved in the one_of raw text. Note: ~/workspace/degree-tracker/seed/plans/wsupullman-bs-computer-science.json already holds a newer-catalog (2026-2027, effective 8-26) BS CS plan for WSU Pullman with the same school; this file is the older-catalog (2023-2024) schedule, so its plan id is distinct: wsupullman-bs-computer-science-2023-2024.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CPT S 101",
+      "title": "Introduction to Electrical Engineering and Computer Science",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CPT S 121/131",
+      "title": "Program Design and Development",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S 121 Program Design and Development C/C++ (4 cr) or CPT S 131 Program Design and Development Java (4 cr). Per bulletin footnote (1): C/C++ path = 121, 122, 223, 360; Java path = 131, 132, 233, 370 — stay on one path (the C/C++ track is not available in Tri-Cities).",
+      "options": [
+       "CPT S 121",
+       "CPT S 131"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENGLISH 101",
+      "title": "College Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MATH 171",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "PHIL 201",
+      "title": "Introduction to Formal Logic",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CPT S 122/132",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 121/131"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 121 or 131 with a C or better"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S 122 Data Structures C/C++ or CPT S 132 Data Structures Java — same path as CPT S 121/131.",
+      "options": [
+       "CPT S 122",
+       "CPT S 132"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "HISTORY 105",
+      "title": "Roots of Contemporary Issues",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 172",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 171"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MATH 216",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CPT S 223/233",
+      "title": "Advanced Data Structures",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 122/132"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 122 or 132 with a C or better"
+       },
+       "MATH 216"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S 223 Advanced Data Structures C/C++ or CPT S 233 Advanced Data Structures Java.",
+      "options": [
+       "CPT S 223",
+       "CPT S 233"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CPT S 260",
+      "title": "Introduction to Computer Architecture",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 223 or 233 with a C or better or concurrent enrollment"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 220/225",
+      "title": "Linear Algebra",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 220 Introductory Linear Algebra (2 cr) or MATH 225 Linear Algebra with Modern Applications (3 cr). Choosing MATH 225 raises this term to 15 credits and the degree total to 121.",
+      "options": [
+       "MATH 220",
+       "MATH 225"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MATH 273/301",
+      "title": "Calculus III / Mathematical Reasoning",
+      "credits": 2,
+      "prereq": [
+       "MATH 172"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 273 Calculus III (2 cr; prereq MATH 172) or MATH 301 Introduction to Mathematical Reasoning (3 cr; prereq MATH 220, 225, or 230). Choosing MATH 301 raises this term to 15 credits and the degree total to 121.",
+      "options": [
+       "MATH 273",
+       "MATH 301"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "LAB-SCI-1",
+      "title": "Lab Science Requirement [BSCI]",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 4-credit lab science carrying the UCORE [BSCI] designation. Per bulletin footnote (2): BIOLOGY 106 Introductory Biology: Organismal Biology (4 cr) or BIOLOGY 107 Introductory Biology: Cell Biology & Genetics (4 cr).",
+      "options": [
+       "BIOLOGY 106",
+       "BIOLOGY 107"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CPT S 317",
+      "title": "Automata and Formal Languages",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 122/132"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 122 or 132 with a C or better"
+       },
+       "MATH 216"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CPT S 322",
+      "title": "Software Engineering Principles I",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 215, 223, or 233 with a C or better"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CPT S 355",
+      "title": "Programming Language Design",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 223 or 233 with a C or better"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CPTS-TECH-1",
+      "title": "CPT S Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S Technical Electives: 4 courses / 12 credits total, with at least one course from the Software area and at least one from the Data and Information Management area. Systems area: CPT S 411, 427, 428, 442, 455, 460, 464, 466. Data and Information Management: CPT S 315, 415, 451, 471, 475. Software: CPT S 321, 323, 422, 443, 479, 481, 484, 487, 489. AI and Machine Learning: CPT S 434, 437, 440. Scientific and Visual Computing: CPT S 430, 442, 453. CPT S 483 may count toward this requirement with advisor/department approval.",
+      "options": [
+       "CPT S 315",
+       "CPT S 321",
+       "CPT S 323",
+       "CPT S 411",
+       "CPT S 415",
+       "CPT S 422",
+       "CPT S 427",
+       "CPT S 428",
+       "CPT S 430",
+       "CPT S 434",
+       "CPT S 437",
+       "CPT S 440",
+       "CPT S 442",
+       "CPT S 443",
+       "CPT S 451",
+       "CPT S 453",
+       "CPT S 455",
+       "CPT S 460",
+       "CPT S 464",
+       "CPT S 466",
+       "CPT S 471",
+       "CPT S 475",
+       "CPT S 479",
+       "CPT S 481",
+       "CPT S 484",
+       "CPT S 487",
+       "CPT S 489"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "LAB-SCI-2",
+      "title": "Lab Science Requirement [PSCI]",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 4-credit lab science carrying the UCORE [PSCI] designation. Per bulletin footnote (2): CHEM 105 Principles of Chemistry I (4 cr), CHEM 106 Principles of Chemistry II (4 cr), PHYSICS 201 (3 cr) + PHYSICS 211 (1 cr), or PHYSICS 202 (3 cr) + PHYSICS 212 (1 cr).",
+      "options": [
+       "CHEM 105",
+       "CHEM 106",
+       "PHYSICS 201/211",
+       "PHYSICS 202/212"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "MILESTONE-WRITING",
+      "title": "Complete Writing Portfolio",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CPT S 302",
+      "title": "Professional Skills in Computing and Engineering",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 223 or 233 with a C or better"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CPT S 327",
+      "title": "Fundamentals of Cyber Security and Cryptography",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 223 or 233 with a C or better"
+       },
+       "CPT S 260",
+       {
+        "one_of": [
+         "CPT S 360/370"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 360 or 370 with a C or better or concurrent enrollment"
+       },
+       "MATH 216"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CPT S 350",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 215, 223, or 233 with a C or better"
+       },
+       "CPT S 317"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CPT S 360/370",
+      "title": "Systems Programming",
+      "credits": 4,
+      "prereq": [
+       {
+        "one_of": [
+         "CPT S 223/233"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 223 or 233 with a C or better"
+       },
+       "CPT S 260"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S 360 Systems Programming C/C++ or CPT S 370 Systems Programming Java — same path as earlier CPT S courses.",
+      "options": [
+       "CPT S 360",
+       "CPT S 370"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ENGLISH 402",
+      "title": "Technical Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "GE-DIVR",
+      "title": "Diversity [DIVR]",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any course carrying the UCORE Diversity [DIVR] designation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "STAT 360",
+      "title": "Probability and Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 172"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS-ELEC-1",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science Electives: 5 courses / 15 credits total, with at least 9 credits in CPT S courses. Approved non-CPT S courses: 300-400-level EE courses, CE 463, DTC 335, E M 464, MATH 315, 401, 420, 421, MBIOS 478, MSE 302, PHYSICS 303 and 443, STAT 436.",
+      "options": [
+       "CPT S 3XX/4XX",
+       "EE 3XX/4XX",
+       "CE 463",
+       "DTC 335",
+       "E M 464",
+       "MATH 315",
+       "MATH 401",
+       "MATH 420",
+       "MATH 421",
+       "MBIOS 478",
+       "MSE 302",
+       "PHYSICS 303",
+       "PHYSICS 443",
+       "STAT 436"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CS-ELEC-2",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science Electives: 5 courses / 15 credits total, with at least 9 credits in CPT S courses. Approved non-CPT S courses: 300-400-level EE courses, CE 463, DTC 335, E M 464, MATH 315, 401, 420, 421, MBIOS 478, MSE 302, PHYSICS 303 and 443, STAT 436.",
+      "options": [
+       "CPT S 3XX/4XX",
+       "EE 3XX/4XX",
+       "CE 463",
+       "DTC 335",
+       "E M 464",
+       "MATH 315",
+       "MATH 401",
+       "MATH 420",
+       "MATH 421",
+       "MBIOS 478",
+       "MSE 302",
+       "PHYSICS 303",
+       "PHYSICS 443",
+       "STAT 436"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CPTS-TECH-2",
+      "title": "CPT S Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S Technical Electives: 4 courses / 12 credits total, with at least one course from the Software area and at least one from the Data and Information Management area. Systems area: CPT S 411, 427, 428, 442, 455, 460, 464, 466. Data and Information Management: CPT S 315, 415, 451, 471, 475. Software: CPT S 321, 323, 422, 443, 479, 481, 484, 487, 489. AI and Machine Learning: CPT S 434, 437, 440. Scientific and Visual Computing: CPT S 430, 442, 453. CPT S 483 may count toward this requirement with advisor/department approval.",
+      "options": [
+       "CPT S 315",
+       "CPT S 321",
+       "CPT S 323",
+       "CPT S 411",
+       "CPT S 415",
+       "CPT S 422",
+       "CPT S 427",
+       "CPT S 428",
+       "CPT S 430",
+       "CPT S 434",
+       "CPT S 437",
+       "CPT S 440",
+       "CPT S 442",
+       "CPT S 443",
+       "CPT S 451",
+       "CPT S 453",
+       "CPT S 455",
+       "CPT S 460",
+       "CPT S 464",
+       "CPT S 466",
+       "CPT S 471",
+       "CPT S 475",
+       "CPT S 479",
+       "CPT S 481",
+       "CPT S 484",
+       "CPT S 487",
+       "CPT S 489"
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "GE-ARTS",
+      "title": "Arts [ARTS]",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any course carrying the UCORE Arts [ARTS] designation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CPT S 421",
+      "title": "Software Design Project I",
+      "credits": 3,
+      "prereq": [
+       "CPT S 322",
+       {
+        "one_of": [
+         "CPT S 360/370"
+        ],
+        "min_grade": "C",
+        "raw": "CPT S 360 or 370 with a C or better"
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Per catalog, CPT S 421 also requires one 400-level CPT S course taken at WSU, senior standing, and admission to an EECS major.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "GE-SSCI",
+      "title": "Social Sciences [SSCI]",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any course carrying the UCORE Social Sciences [SSCI] designation. ECONS 101 or 102 recommended per bulletin footnote (5).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CPTS-TECH-3",
+      "title": "CPT S Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S Technical Electives: 4 courses / 12 credits total, with at least one course from the Software area and at least one from the Data and Information Management area. Systems area: CPT S 411, 427, 428, 442, 455, 460, 464, 466. Data and Information Management: CPT S 315, 415, 451, 471, 475. Software: CPT S 321, 323, 422, 443, 479, 481, 484, 487, 489. AI and Machine Learning: CPT S 434, 437, 440. Scientific and Visual Computing: CPT S 430, 442, 453. CPT S 483 may count toward this requirement with advisor/department approval.",
+      "options": [
+       "CPT S 315",
+       "CPT S 321",
+       "CPT S 323",
+       "CPT S 411",
+       "CPT S 415",
+       "CPT S 422",
+       "CPT S 427",
+       "CPT S 428",
+       "CPT S 430",
+       "CPT S 434",
+       "CPT S 437",
+       "CPT S 440",
+       "CPT S 442",
+       "CPT S 443",
+       "CPT S 451",
+       "CPT S 453",
+       "CPT S 455",
+       "CPT S 460",
+       "CPT S 464",
+       "CPT S 466",
+       "CPT S 471",
+       "CPT S 475",
+       "CPT S 479",
+       "CPT S 481",
+       "CPT S 484",
+       "CPT S 487",
+       "CPT S 489"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "CPTS-TECH-4",
+      "title": "CPT S Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPT S Technical Electives: 4 courses / 12 credits total, with at least one course from the Software area and at least one from the Data and Information Management area. Systems area: CPT S 411, 427, 428, 442, 455, 460, 464, 466. Data and Information Management: CPT S 315, 415, 451, 471, 475. Software: CPT S 321, 323, 422, 443, 479, 481, 484, 487, 489. AI and Machine Learning: CPT S 434, 437, 440. Scientific and Visual Computing: CPT S 430, 442, 453. CPT S 483 may count toward this requirement with advisor/department approval.",
+      "options": [
+       "CPT S 315",
+       "CPT S 321",
+       "CPT S 323",
+       "CPT S 411",
+       "CPT S 415",
+       "CPT S 422",
+       "CPT S 427",
+       "CPT S 428",
+       "CPT S 430",
+       "CPT S 434",
+       "CPT S 437",
+       "CPT S 440",
+       "CPT S 442",
+       "CPT S 443",
+       "CPT S 451",
+       "CPT S 453",
+       "CPT S 455",
+       "CPT S 460",
+       "CPT S 464",
+       "CPT S 466",
+       "CPT S 471",
+       "CPT S 475",
+       "CPT S 479",
+       "CPT S 481",
+       "CPT S 484",
+       "CPT S 487",
+       "CPT S 489"
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CPT S 423",
+      "title": "Software Design Project II",
+      "credits": 3,
+      "prereq": [
+       "CPT S 421"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "GE-HUM",
+      "title": "Humanities [HUM]",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any course carrying the UCORE Humanities [HUM] designation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CS-ELEC-3",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science Electives: 5 courses / 15 credits total, with at least 9 credits in CPT S courses. Approved non-CPT S courses: 300-400-level EE courses, CE 463, DTC 335, E M 464, MATH 315, 401, 420, 421, MBIOS 478, MSE 302, PHYSICS 303 and 443, STAT 436.",
+      "options": [
+       "CPT S 3XX/4XX",
+       "EE 3XX/4XX",
+       "CE 463",
+       "DTC 335",
+       "E M 464",
+       "MATH 315",
+       "MATH 401",
+       "MATH 420",
+       "MATH 421",
+       "MBIOS 478",
+       "MSE 302",
+       "PHYSICS 303",
+       "PHYSICS 443",
+       "STAT 436"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CS-ELEC-4",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science Electives: 5 courses / 15 credits total, with at least 9 credits in CPT S courses. Approved non-CPT S courses: 300-400-level EE courses, CE 463, DTC 335, E M 464, MATH 315, 401, 420, 421, MBIOS 478, MSE 302, PHYSICS 303 and 443, STAT 436.",
+      "options": [
+       "CPT S 3XX/4XX",
+       "EE 3XX/4XX",
+       "CE 463",
+       "DTC 335",
+       "E M 464",
+       "MATH 315",
+       "MATH 401",
+       "MATH 420",
+       "MATH 421",
+       "MBIOS 478",
+       "MSE 302",
+       "PHYSICS 303",
+       "PHYSICS 443",
+       "STAT 436"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "CS-ELEC-5",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science Electives: 5 courses / 15 credits total, with at least 9 credits in CPT S courses. Approved non-CPT S courses: 300-400-level EE courses, CE 463, DTC 335, E M 464, MATH 315, 401, 420, 421, MBIOS 478, MSE 302, PHYSICS 303 and 443, STAT 436.",
+      "options": [
+       "CPT S 3XX/4XX",
+       "EE 3XX/4XX",
+       "CE 463",
+       "DTC 335",
+       "E M 464",
+       "MATH 315",
+       "MATH 401",
+       "MATH 420",
+       "MATH 421",
+       "MBIOS 478",
+       "MSE 302",
+       "PHYSICS 303",
+       "PHYSICS 443",
+       "STAT 436"
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-5",
+      "code": "MILESTONE-EXIT",
+      "title": "Complete CPT S Exit Interview and Survey",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "03cc2243f67106ad9aa57899110c0d37f375688f8b8bc33218367ca0b10aa5b1",
+  "last_verified": "2026-10-02"
+ }
+}

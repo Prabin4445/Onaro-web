@@ -1,0 +1,513 @@
+{
+ "institution": {
+  "city": "Purchase, NY",
+  "kind": "college",
+  "name": "Purchase College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BA",
+  "external_prereqs": [
+   "MAT 3880"
+  ],
+  "id": "purchase-ba-mathematics-computer-science",
+  "major": "Mathematics/Computer Science",
+  "notes": "Official eight-semester graduation plan transcribed from purchase.edu (Mathematics/Computer Science > Requirements > Eight-Semester Graduation Plan), fetched 2026-09-30; raw transcription saved in scratch dir. CREDENTIAL HONESTY: Purchase College offers NO standalone Computer Science degree; the true computing degree is the BA in Mathematics/Computer Science (program page shows 'BA / Minor', https://purchase.edu/academics/mathematics-computer-science/). Students choose upper-level electives by track: programming careers take Data Structures, Scripting for the Web, etc.; mathematics track takes Number Theory, Numerical Analysis. Catalog year 2026-2027 = current catalog (plan page updated ~mid-2026; degree requirements page gives 'For Students Entering Fall 2026 and Later' band). Caveats: (1) The published plan does not list MAT 3120 Discrete Mathematics (a Fall 2026+ requirement) or MAT 3880 Junior Seminar in Mathematics/Computer Science (official prereq for MAT 4880) as standalone rows; MAT 3120 is a 3000-level course that may occupy one of the 'MAT 3/4***' slots, and MAT 3880 is carried in external_prereqs with this explanation. (2) The plan shows five 4-credit 'MAT 3/4*** Upper Level Math/CS Elective' slots (20 credits); Fall 2026+ requires four upper-level electives (16 credits) plus MAT 3120. (3) Calculus placement is by faculty interview/transcripts; Precalculus is offered for students lacking the Calculus I background. (4) Grade minima: C or higher in MAT 1500, MAT 1510, MAT 1520, MAT 3120; C- otherwise (excluding senior project). (5) Published semester totals sum to exactly 120 = catalog minimum; upper-level content in the plan totals 45 credits = the 45 upper-level minimum. No courses, credits, or prereqs invented; choice slots transcribed verbatim as student-choice rows.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'EDG1050/First Year Learning Community OR Elective' (student chooses).",
+      "code": "EDG 1050",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "First Year Learning Community or Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'WRI1110/ College Writing (Basic Communication Core / Communication Written and Oral Gen Ed) OR Natural Science Core/Natural Science and Scientific Reasoning Gen Ed'.",
+      "code": "WRI 1110",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "College Writing or Natural Science Core",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1500",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1520",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan lists the same choice row in both Year 1 semesters; student takes the option not chosen in the fall (e.g., College Writing in fall, Natural Science in spring). Distinct code per the repeat-slot rule.",
+      "code": "WRI 1110-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "College Writing or Natural Science Core (continued)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1510",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1500"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1540",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1520"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Humanities Core'. Students under the General Education 2023 requirements choose from Humanities, US History and Civic Engagement, or World History and Global Awareness.",
+      "code": "HUM 10XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Humanities Core",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'MAT Elective or Non MAT Elective/ Creating Web Docs, Statistics, Programming Games' (examples given by the college).",
+      "code": "MAT 20XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "MAT Elective or Non-MAT Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 3150",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1510"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Language and Culture Core/ World Language Gen Ed' (4 credits).",
+      "code": "WL 10XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Language and Culture Core / World Language Gen Ed",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: 'Elective' (3 credits).",
+      "code": "ELE 10XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 3170",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Social Science Core'. Students under the General Education 2023 requirements choose a course meeting Diversity, Equity, Inclusion, Social Justice.",
+      "code": "SSC 10XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Social Science Core",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Arts Core' (3 credits).",
+      "code": "ART 10XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Arts Core",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'General Education Core Elective' (4 credits).",
+      "code": "GE 20XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Core Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'MAT 3/4*** Upper Level Math/ CS Elective'. Choose from the major's upper-level elective list (e.g., MAT 3710 Data Structures, MAT 4530 Artificial Intelligence Fundamentals, MAT 3650 Networking and Security, MAT 4230 Topics in Advanced Computing, MAT 4520 Computability, MAT 3440 Creating User Interfaces, MAT 3300 Data Science and Statistics); under the Fall 2026+ requirements one such slot may serve MAT 3120 Discrete Mathematics.",
+      "code": "MAT 3XXX-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Upper-Level Mathematics/Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: second 'MAT 3/4 ***' row in Fall Year 3; distinct code per the repeat-slot rule. See choice_note on MAT 3XXX-A for elective options.",
+      "code": "MAT 3XXX-B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Upper-Level Mathematics/Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Second Science Course'. The major requires two Science General Education courses (minimum 6-8 credits total).",
+      "code": "SCI 20XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Second Science Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective, Internship or Learning Assistant'.",
+      "code": "UL 30XX-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Upper-Level Elective, Internship, or Learning Assistant",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'MAT 3/4*** Upper Level Math/CS Elective' (Spring Year 3). See choice_note on MAT 3XXX-A for elective options.",
+      "code": "MAT 3XXX-C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Upper-Level Mathematics/Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'MAT 3/4**** Upper Level Math/CS Elective' (Spring Year 3, second row); distinct code per the repeat-slot rule. See choice_note on MAT 3XXX-A for elective options.",
+      "code": "MAT 3XXX-D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Upper-Level Mathematics/Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective' (3 credits).",
+      "code": "UL 30XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Upper-Level Elective (3000/4000)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective, Internship or Learning Assistant'.",
+      "code": "UL 30XX-C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Upper-Level Elective, Internship, or Learning Assistant",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPJ 4990",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Senior Project I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 4880",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "MAT 3880"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Mathematics Senior Seminar I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan: 'MAT 3/4*** Upper Level Math/CS Elective' (Fall Year 4). See choice_note on MAT 3XXX-A for elective options.",
+      "code": "MAT 3XXX-E",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Upper-Level Mathematics/Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official plan: 'Health and Wellness Core' (2 credits). College rule: a minimum of 1 and maximum of 4 Physical Education (Health and Wellness) credits may apply to the degree.",
+      "code": "HWL 10XX",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Health and Wellness Core",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective' (student chooses any 3000/4000-level course).",
+      "code": "UL 30XX-D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Upper-Level Elective (3000/4000)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPJ 4991",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "SPJ 4990"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 4890",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "MAT 4880"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Mathematics Senior Seminar II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective' (student chooses any 3000/4000-level course).",
+      "code": "UL 30XX-E",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Upper-Level Elective (3000/4000)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan: '3000/4000 Upper Level Elective' (student chooses any 3000/4000-level course).",
+      "code": "UL 30XX-F",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Upper-Level Elective (3000/4000)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://purchase.edu/academics/mathematics-computer-science/requirements/eight-semester-graduation-plan/",
+  "total_credits": 120,
+  "content_hash": "0739c4de4c1d6ad8bca5239233364112e133f13683870284107b814c0a26fa1b",
+  "last_verified": "2026-10-02"
+ }
+}

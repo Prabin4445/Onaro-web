@@ -1,0 +1,769 @@
+{
+ "institution": {
+  "city": "Galloway, NJ",
+  "kind": "public",
+  "name": "Stockton University",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "stockton-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Stockton University 2023-2024 Degree Maps PDF, 'Degree Map: B.S. Computer Science (Calculus-Ready)', School of Business, dated 06/20/2023: https://stockton.edu/academic-bulletin/documents/archived/degree-maps-2023-2024.pdf. Catalog year used is the map's own 2023-2024 year (the latest official term-by-term sequence found; 2024-2025/2025-2026 curriculum worksheets are requirement lists, not term-by-term sequences). Transcription: manual from the official PDF, cross-checked against the Fall 2024-Spring 2025 BS CS curriculum worksheet (Rev. 8/6/24) for course titles. Calculus-Ready variant used (the standard path; a separate Precalculus-Ready map exists for students needing MATH 1100 Precalculus first). Map's own running totals: Y1F 17, Y1S 34-35, Y2F 51-52, Y2S 67-68, Y3F 83-84, Y3S 99-102, Y4F 114, Y4S 128; published degree minimum is 128 credits. Variable-credit modeling (documented honestly): Science-with-Lab slot modeled at 5 credits (BIOL 1200/1205 or CHEM 2110/2115; PHYS 2220/2225 is 6); Math/Science Elective modeled at 4 credits (MATH 3323 Linear Algebra; other options 5-6); the Y4F 'Program/cognate OR Research OR Internship (if needed)' slot is officially 0-3 credits 'credits varies by science(s) previously chosen' and is modeled at 3 credits so the map's own Y4F total (114) and final total (128) are reached exactly. CSCI 4600 prereqs per the official B.S. in Computer Science Prereq Diagram (2024-2025 worksheet, Rev. 8/6/24): CSCI 3250, CSCI 3103, CSCI 2226, MATH 2216, and Junior/Senior status. Test-score placement/readiness rules (e.g. Precalculus- vs Calculus-ready, CIST 3230 calculus readiness) are documented here, not as external_prereqs (external_prereqs holds plain course-code strings only). CSCI 4485 is 'Software Engineering' in the 2023-2024 map and 'Software & Security Engineering' in the 2024-2025 worksheet; the fuller title is used. 'Attributes (A, H, I, V, Q1/2, W1/2, R1/2) are not additional courses' per the map; gen-ed choice slots carry the attribute guidance in choice_note.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 2101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Programming & Problem Solving I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2215",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "FRST or Gcourse with the FY Seminar attribute (per the degree map).",
+      "code": "GENED-FY-SEM",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "First-Year Seminar Gen Ed Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "FRST or Gcourse with a W1 attribute (per the degree map).",
+      "code": "GENED-W1-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Gen Ed Course (W1 attribute)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 2102",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 2101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming & Problem Solving II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2225",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Discrete Mathematics I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Choose 1 science course with lab. 5-6 credits depending on choice; modeled at 5 (BIOL 1200/1205 or CHEM 2110/2115) so the map's own totals reach 128.",
+      "code": "SCI-LAB-1",
+      "credits": 5,
+      "options": [
+       {
+        "code": "BIOL 1200/1205",
+        "credits": 5,
+        "title": "Cells and Molecules (w/ lab)"
+       },
+       {
+        "code": "CHEM 2110/2115",
+        "credits": 5,
+        "title": "Chemistry I (w/ lab)"
+       },
+       {
+        "code": "PHYS 2220/2225",
+        "credits": 6,
+        "title": "Physics I (w/ lab)"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Science Course with Lab (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "FRST or Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "GENED-ATTR-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Gen Ed Course (A, H, I, R, and/or W1/W2)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3103",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 2225"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures & Algorithms I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2216",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 2215"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "GENED-ATTR-B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Gen Ed Course (A, H, I, R, and/or W1/W2)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At-Some-Distance (ASD) or Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "ASD-GENED-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "At-Some-Distance or Gen Ed Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3250",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 2102"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 2226",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Foundations of Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At-Some-Distance (ASD) or Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "ASD-GENED-B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "At-Some-Distance or Gen Ed Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "GENED-ATTR-C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Gen Ed Course (A, H, I, R, and/or W1/W2)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 4104",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 3103"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Structures & Algorithms II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 3230",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Computer Networking Principles",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "GENED-ATTR-D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Gen Ed Course (A, H, I, R, and/or W1/W2)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At-Some-Distance (ASD) or Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "ASD-GENED-C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "At-Some-Distance or Gen Ed Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 4485",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 3103"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Software & Security Engineering",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3327",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Probability & Applied Statistics",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Choose 1 math/science elective. 4-6 credits depending on choice; modeled at 4 (MATH 3323 Linear Algebra) so the map's own totals reach 128.",
+      "code": "MATHSCI-ELEC",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOL 1400/1405",
+        "credits": 5,
+        "title": "Biodiversity & Evolution (w/ lab)"
+       },
+       {
+        "code": "CHEM 2120/2125",
+        "credits": 5,
+        "title": "Chemistry II (w/ lab)"
+       },
+       {
+        "code": "PHYS 2230/2235",
+        "credits": 6,
+        "title": "Physics II (w/ lab)"
+       },
+       {
+        "code": "MATH 2217",
+        "credits": 5,
+        "title": "Calculus III"
+       },
+       {
+        "code": "MATH 3323",
+        "credits": 4,
+        "title": "Linear Algebra"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Math/Science Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "GENED-ATTR-E",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Gen Ed Course (A, H, I, R, and/or W1/W2)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CSCI elective: choose 1. Official options (per the degree map Program Specific Notes): CSCI 4105, 4135, 4251, 4463, 4464, 4465, 4469, 4481, 4510, CIST 3222, CIST 3381. (CSCI 4481 Cryptography & Data Security lists CSCI 2101 or MATH 1100 or MATH 2215 as prereq per the official prereq diagram.)",
+      "code": "CSCI-ELEC-1",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSCI 4105",
+        "credits": 4,
+        "title": "Knowledge Discovery & Data Mining"
+       },
+       {
+        "code": "CSCI 4135",
+        "credits": 4,
+        "title": "Web Application Engineering"
+       },
+       {
+        "code": "CSCI 4251",
+        "credits": 4,
+        "title": "Operating Systems"
+       },
+       {
+        "code": "CSCI 4463",
+        "credits": 4,
+        "title": "Artificial Intelligence"
+       },
+       {
+        "code": "CSCI 4464",
+        "credits": 4,
+        "title": "Computer Vision"
+       },
+       {
+        "code": "CSCI 4465",
+        "credits": 4,
+        "title": "Machine Learning"
+       },
+       {
+        "code": "CSCI 4469",
+        "credits": 4,
+        "title": "Computer Architecture"
+       },
+       {
+        "code": "CSCI 4481",
+        "credits": 4,
+        "title": "Cryptography and Data Security"
+       },
+       {
+        "code": "CSCI 4510",
+        "credits": 4,
+        "title": "Topics in Computer Science"
+       },
+       {
+        "code": "CIST 3222",
+        "credits": 4,
+        "title": "Database Systems"
+       },
+       {
+        "code": "CIST 3381",
+        "credits": 4,
+        "title": "Information Assurance & Security"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CSCI Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CSCI elective: choose 1 (see official options in CSCI-ELEC-1).",
+      "code": "CSCI-ELEC-2",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSCI 4105",
+        "credits": 4,
+        "title": "Knowledge Discovery & Data Mining"
+       },
+       {
+        "code": "CSCI 4135",
+        "credits": 4,
+        "title": "Web Application Engineering"
+       },
+       {
+        "code": "CSCI 4251",
+        "credits": 4,
+        "title": "Operating Systems"
+       },
+       {
+        "code": "CSCI 4463",
+        "credits": 4,
+        "title": "Artificial Intelligence"
+       },
+       {
+        "code": "CSCI 4464",
+        "credits": 4,
+        "title": "Computer Vision"
+       },
+       {
+        "code": "CSCI 4465",
+        "credits": 4,
+        "title": "Machine Learning"
+       },
+       {
+        "code": "CSCI 4469",
+        "credits": 4,
+        "title": "Computer Architecture"
+       },
+       {
+        "code": "CSCI 4481",
+        "credits": 4,
+        "title": "Cryptography and Data Security"
+       },
+       {
+        "code": "CSCI 4510",
+        "credits": 4,
+        "title": "Topics in Computer Science"
+       },
+       {
+        "code": "CIST 3222",
+        "credits": 4,
+        "title": "Database Systems"
+       },
+       {
+        "code": "CIST 3381",
+        "credits": 4,
+        "title": "Information Assurance & Security"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CSCI Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At-Some-Distance (ASD) or Gcourse; select for A, H, I, R, and/or W1/W2 attributes (per the degree map).",
+      "code": "ASD-GENED-D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "At-Some-Distance or Gen Ed Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Officially 'If needed (credits varies by science(s) previously chosen): Program/cognate OR Research OR Internship, 0-3 credits'. Modeled at 3 credits so the map's own Y4F total (114) and final total (128) are reached exactly; document the 0-3 range to the student.",
+      "code": "COGNATE-PROJ",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Program/Cognate or Research or Internship (if needed)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 4600",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CSCI 3250",
+       "CSCI 3103",
+       "CSCI 2226",
+       "MATH 2216"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CSCI elective: choose 1 (see official options in CSCI-ELEC-1).",
+      "code": "CSCI-ELEC-3",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSCI 4105",
+        "credits": 4,
+        "title": "Knowledge Discovery & Data Mining"
+       },
+       {
+        "code": "CSCI 4135",
+        "credits": 4,
+        "title": "Web Application Engineering"
+       },
+       {
+        "code": "CSCI 4251",
+        "credits": 4,
+        "title": "Operating Systems"
+       },
+       {
+        "code": "CSCI 4463",
+        "credits": 4,
+        "title": "Artificial Intelligence"
+       },
+       {
+        "code": "CSCI 4464",
+        "credits": 4,
+        "title": "Computer Vision"
+       },
+       {
+        "code": "CSCI 4465",
+        "credits": 4,
+        "title": "Machine Learning"
+       },
+       {
+        "code": "CSCI 4469",
+        "credits": 4,
+        "title": "Computer Architecture"
+       },
+       {
+        "code": "CSCI 4481",
+        "credits": 4,
+        "title": "Cryptography and Data Security"
+       },
+       {
+        "code": "CSCI 4510",
+        "credits": 4,
+        "title": "Topics in Computer Science"
+       },
+       {
+        "code": "CIST 3222",
+        "credits": 4,
+        "title": "Database Systems"
+       },
+       {
+        "code": "CIST 3381",
+        "credits": 4,
+        "title": "Information Assurance & Security"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CSCI Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CSCI elective: choose 1 (see official options in CSCI-ELEC-1).",
+      "code": "CSCI-ELEC-4",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSCI 4105",
+        "credits": 4,
+        "title": "Knowledge Discovery & Data Mining"
+       },
+       {
+        "code": "CSCI 4135",
+        "credits": 4,
+        "title": "Web Application Engineering"
+       },
+       {
+        "code": "CSCI 4251",
+        "credits": 4,
+        "title": "Operating Systems"
+       },
+       {
+        "code": "CSCI 4463",
+        "credits": 4,
+        "title": "Artificial Intelligence"
+       },
+       {
+        "code": "CSCI 4464",
+        "credits": 4,
+        "title": "Computer Vision"
+       },
+       {
+        "code": "CSCI 4465",
+        "credits": 4,
+        "title": "Machine Learning"
+       },
+       {
+        "code": "CSCI 4469",
+        "credits": 4,
+        "title": "Computer Architecture"
+       },
+       {
+        "code": "CSCI 4481",
+        "credits": 4,
+        "title": "Cryptography and Data Security"
+       },
+       {
+        "code": "CIST 3222",
+        "credits": 4,
+        "title": "Database Systems"
+       },
+       {
+        "code": "CIST 3381",
+        "credits": 4,
+        "title": "Information Assurance & Security"
+       },
+       {
+        "code": "CSCI 4510",
+        "credits": 4,
+        "title": "Topics in Computer Science"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CSCI Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Gcourse with W1/W2 attribute (per the degree map).",
+      "code": "GENED-W1W2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Gen Ed Course (W1/W2 attribute)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://stockton.edu/academic-bulletin/documents/archived/degree-maps-2023-2024.pdf",
+  "total_credits": 128,
+  "content_hash": "22c58129d1441400de3f67276d96c77c241fa085ce488538185fdc769e413f75",
+  "last_verified": "2026-10-02"
+ }
+}

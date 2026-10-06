@@ -1,0 +1,300 @@
+{
+ "institution": {
+  "name": "Allen College",
+  "city": "Waterloo",
+  "state": "IA",
+  "kind": "private4yr"
+ },
+ "plan": {
+  "id": "allen-college-bhs-public-health",
+  "degree": "BHS",
+  "major": "Public Health",
+  "total_credits": 124,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.allencollege.edu/filesimages/PagePDFs/PH/Curriculum PH full time.pdf",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Allen College curriculum PDFs (allencollege.edu), hand-transcribed 2026-10-01. Bachelor of Health Sciences, Public Health (full-time curriculum): 36 Allen College credits (Fall/Spring/Summer) plus 88 transfer general-education credits = 124. A part-time curriculum variant also exists. Gen-ed prereq source: 'General Education PH.pdf'. 72 of the 88 transfer credit hours must be completed before beginning the program. PH students receive a 25% discount on tuition and fees while enrolled. Caveats: (1) Curriculum PDFs carry no dated catalog year; catalog_year '2026-2027' = retrieval year. (2) Transfer gen-ed is one requirements block (n=1): no published sequence, no course codes. (3) content_hash uses the UTF-8/sort_keys/separators convention in gen_allen.py; build.py should recompute on ingest. | Coordinator 2026-10-01: program_type='professional-phase' — Allen College teaches this as transfer gen-ed (n=1, labeled 'General Education (transfer, pre-program)') + professional terms at Allen; not 8 traditional semesters, and the catalog provides no finer split.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "General Education (transfer)",
+    "term": "General Education (transfer, pre-program)",
+    "year_label": "",
+    "declared_credits": 88,
+    "courses": [
+     {
+      "code": "TR-WRITTEN-COMP",
+      "title": "Written Composition (Intermediate Level) — transfer general education",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-ORAL-COMM",
+      "title": "Oral Communication — transfer general education",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-SOC-OR-PSYCH",
+      "title": "Sociology or Psychology — transfer general education",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Sociology or Psychology' (3 cr).",
+      "options": [
+       "Sociology",
+       "Psychology"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-COLL-MATH",
+      "title": "College Math (Statistics recommended) — transfer general education",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-NATSCI-MATH-ELECTIVES",
+      "title": "Natural Science and Mathematics Electives — transfer general education",
+      "credits": 10,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 10 cr natural science and mathematics electives; at least one course (minimum 3 cr) must have a lab component. Allen College defines these as: Biology, Chemistry, Computer Science, Earth Science, Industrial Technology, Math, and Physics.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TR-GEN-ELECTIVES",
+      "title": "General Electives (any course at the college level) — transfer general education",
+      "credits": 66,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 66 cr general electives (any course at the college level).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Fall",
+    "term": "Fall",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "PH:400",
+      "title": "Introduction to Public Health",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:410",
+      "title": "The American Health Care System",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:430",
+      "title": "Introduction to Epidemiology and Biostatistics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:440",
+      "title": "Health Promotion and Disease Prevention",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists PH:440 as a fall elective.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Spring",
+    "term": "Spring",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "PH:445",
+      "title": "Planning and Evaluating Health Promotion Programs",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:450",
+      "title": "Social Determinants of Health",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:480",
+      "title": "Public Health Research and Evaluation",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:470",
+      "title": "Environment and Public Health or Public Health Preparedness (PH:460) — spring elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog: 'PH:470 Environment and Public Health (spring elective) OR PH:460 Public Health Preparedness (spring elective)' (3 cr). Either course satisfies the slot.",
+      "options": [
+       "PH:470",
+       "PH:460"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Summer",
+    "term": "Summer",
+    "year_label": "",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "PH:420",
+      "title": "Health Care in Diverse Communities",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:495",
+      "title": "Management, Law, and Ethics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:499",
+      "title": "Capstone Project in Public Health",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH:476",
+      "title": "Introduction to Global Health",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists PH:476 as a summer elective.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "last_verified": "2026-10-01",
+  "source_hash": "",
+  "program_type": "professional-phase",
+  "content_hash": "bff8830506eae6c897470306c01338bc5d0d15592d07e5afaf23201ee7284a32"
+ }
+}

@@ -1,0 +1,220 @@
+{
+ "institution": {
+  "city": "Vincennes, IN",
+  "kind": "public4yr",
+  "name": "Vincennes University",
+  "state": "IN"
+ },
+ "plan": {
+  "id": "vincennes-university-as-general-studies",
+  "degree": "AS",
+  "major": "General Studies",
+  "catalog_year": "2025-2026",
+  "total_credits": 60,
+  "source_url": "https://catalog.vinu.edu/preview_program.php?catoid=51&poid=30278&returnto=3801&print",
+  "notes": "Source: Vincennes University 2025-2026 Catalog (official, catalog.vinu.edu), 'Program: General Studies 2250, A.S. Transfer', 'Recommended Sequence of Courses', hand-transcribed 2026-10-02. A two-year program leading to the A.S. degree (60 hours). SCHEMA NOTE: the catalog sequences Semester I and Semester II fully but combines the second year into a single 'Semester III & IV' 30-hour block (Humanities Elective 3, Social Science Elective 3 (CC), Electives 9, Clustered 200-level Electives 15). To fit the term-by-term schema, that block is split into two 15-credit semesters in the catalog's listed order (III: humanities + social science + general electives; IV: clustered 200-level electives). The split is administrative only; every course, credit value, and total is verbatim from the catalog. The catalog's dangling '-or-' after COMM 143 (no alternative course named in the requirements or the sequence) is treated as a rendering artifact; COMM 143 is modeled as a single required course. Attribute marker (CC) preserved in choice notes. The program notes one course or combination must satisfy the WR/S Intensive requirement; the sequence does not name which, so it is not assigned to a slot. Prereqs live on individual course-description pages and are not modeled.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester I",
+    "courses": [
+     {
+      "code": "COMM 143",
+      "title": "Speech",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SSKL 103 / SSKL 104 / DIRECTED",
+      "title": "Study Skills or Success Strategies or Directed Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: SSKL 103 Study Skills or SSKL 104 Success Strategies or Directed Elective.",
+      "options": [
+       "SSKL 103",
+       "SSKL 104"
+      ],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SOCSCI-ELECTIVE-Y1",
+      "title": "Social Science Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Social Science Elective.",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-ELECTIVE",
+      "title": "Mathematics Elective (100-level or higher)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 100-level or higher Mathematics (MATH) Elective.",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester II",
+    "courses": [
+     {
+      "code": "ENGL 102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SSKL 106 / DIRECTED",
+      "title": "Career Planning or Directed Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: SSKL 106 Career Planning or Directed Elective.",
+      "options": [
+       "SSKL 106"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "LABSCI-ELECTIVE",
+      "title": "Laboratory Science Elective",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Laboratory Science Elective.",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UCC-ELECTIVE-Y2",
+      "title": "UCC Elective",
+      "credits": 5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Humanities, Mathematics, Science, Social Science, or Writing elective.",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Semester III (catalog block split)",
+    "courses": [
+     {
+      "code": "HUM-ELECTIVE",
+      "title": "Humanities Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Humanities Elective (from the combined Semester III & IV block).",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SOCSCI-ELECTIVE-Y3",
+      "title": "Social Science Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Social Science Elective, marked (CC) (from the combined Semester III & IV block).",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVES-Y3",
+      "title": "Electives",
+      "credits": 9,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Electives 9 hrs (from the combined Semester III & IV block).",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Semester IV (catalog block split)",
+    "courses": [
+     {
+      "code": "CLUSTERED-200-ELECTIVES",
+      "title": "Clustered 200-level Electives",
+      "credits": 15,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: Clustered 200-level Electives 15 hrs (from the combined Semester III & IV block).",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "f68f03373d7e309583d45a254bef55fb17647ed743ee2a1e85d41e30e9e7e259",
+  "last_verified": "2026-10-02"
+ }
+}

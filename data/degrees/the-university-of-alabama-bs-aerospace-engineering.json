@@ -1,0 +1,820 @@
+{
+ "institution": {
+  "name": "The University of Alabama",
+  "city": "Tuscaloosa",
+  "state": "AL",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "the-university-of-alabama-bs-aerospace-engineering",
+  "degree": "BS",
+  "major": "Aerospace Engineering",
+  "total_credits": 126,
+  "catalog_year": "2025-2026",
+  "source_url": "https://eng.ua.edu/wp-content/uploads/2020/01/AE.pdf",
+  "notes": "Source: official UA Dept. of Aerospace Engineering and Mechanics 'BSAE Program' flowchart, Version 05/27/2025 (126 credit hours; semester subtotals 16/16/17/16/16/15/15/15). Carries the department's standard disclaimer ('unofficial flow chart ... UA Undergraduate Catalog contains the official listing of academic information'). Titles are the flowchart box labels verbatim ('Algorithm Devl Implementation', 'Prof Devel Aerospace Engr', 'Integ Aerospace Design I/II', 'Appd STEM'). The flowchart prints combined lecture/lab boxes 'AEM 250/251 Mechanics of Materials / Lab ES 3/1' and 'AEM 341/351 Aerospace Structures / Lab ES 3/1'; seeded as two courses each (AEM 250 3 cr + AEM 251 1 cr; AEM 341 3 cr + AEM 351 1 cr) preserving the printed 3/1 credit split. Prerequisites are transcribed verbatim from the flowchart's prerequisite side-boxes. W-course notes: in the 2025-2026 catalog only AEM 395 is designated a W course; AEM 402 is not a W course starting catalog year 2025-2026 but continues to be taught as a W course. Notes 1-5 (UA 201 for transfers, AEM 249 substitution, ENGR 161/171, L/HI requirements, AEM 201 prerequisites) carried in notes/choice fields. ACHE award nomenclature: B.S.A.E.",
+  "external_prereqs": [
+   "MATH 112",
+   "MATH 113",
+   "MATH 115",
+   "MATH 145",
+   "PH 125",
+   "ENGR 103",
+   "ENGR 123",
+   "CS 100",
+   "CS 110",
+   "AEM 513",
+   "AEM 508"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman — Fall",
+    "courses": [
+     {
+      "code": "MATH 125",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 101",
+      "title": "Chemistry",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 104",
+      "title": "Fundamentals of Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 112",
+         "MATH 113",
+         "MATH 115",
+         "MATH 125"
+        ],
+        "raw": "MATH 112, MATH 113, MATH 115, or MATH 125"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UA 101",
+      "title": "Legends",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 121",
+      "title": "Intro Aerospace",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU/L/FA/WL Elective",
+      "title": "HU/L/FA/WL Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HU/L/FA/WL Elective (see Note 4: at least 3 hours must be L (Literature))",
+      "options": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman — Spring",
+    "courses": [
+     {
+      "code": "MATH 126",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH 105",
+      "title": "Physics I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 103",
+      "title": "Adv English Composition",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 101",
+      "title": "The World of Engineering",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 161",
+      "title": "Small-Scale Engr Graphics",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 104"
+      ],
+      "choice": true,
+      "choice_note": "ENGR 161 (see Note 3: recommended; may be satisfied by completing ENGR 171)",
+      "options": [
+       {
+        "code": "ENGR 161",
+        "title": "Small-Scale Engr Graphics",
+        "credits": 1
+       },
+       {
+        "code": "ENGR 171",
+        "title": "ENGR 171",
+        "credits": 1
+       }
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 249",
+      "title": "Algorithm Devl Implementation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": true,
+      "choice_note": "AEM 249 (see Note 2: a student may substitute CS 100 (4 semester hours) or CS 110 (4 semester hours) for AEM 249 (3))",
+      "options": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore — Fall",
+    "courses": [
+     {
+      "code": "MATH 227",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 237",
+      "title": "Intro to Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH 106",
+      "title": "Physics II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 126",
+       "PH 105"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 201",
+      "title": "Statics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 125",
+         "MATH 145"
+        ],
+        "raw": "(MATH 125 or MATH 145)"
+       },
+       {
+        "one_of": [
+         "PH 105",
+         "PH 125"
+        ],
+        "raw": "(PH 105 or PH 125)"
+       },
+       {
+        "one_of": [
+         "ENGR 103",
+         "ENGR 104",
+         "ENGR 123"
+        ],
+        "raw": "(ENGR 103 or ENGR 104 or ENGR 123)"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective (see Note 5: at least 3 hours must be HI (History))",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore — Spring",
+    "courses": [
+     {
+      "code": "MATH 238",
+      "title": "Applied Diff Equations I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 250",
+      "title": "Mechanics of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126",
+       "AEM 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 251",
+      "title": "Mechanics of Materials Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "MATH 126",
+       "AEM 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 264",
+      "title": "Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126",
+       "AEM 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 311",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 227",
+       "AEM 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU/L/FA/WL Elective",
+      "title": "HU/L/FA/WL Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HU/L/FA/WL Elective (see Note 4: at least 3 hours must be L (Literature))",
+      "options": [],
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior — Fall",
+    "courses": [
+     {
+      "code": "AEM 313",
+      "title": "Aerodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 264",
+       "AEM 311"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 341",
+      "title": "Aerospace Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 237",
+       {
+        "one_of": [
+         "AEM 249",
+         "CS 100",
+         "CS 110"
+        ],
+        "raw": "AEM 249 (or see Note 2: a student may substitute CS 100 (4 hrs) or CS 110 (4 hrs) for AEM 249 (3 hrs))"
+       },
+       "AEM 250"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 351",
+      "title": "Aerospace Structures Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "MATH 237",
+       {
+        "one_of": [
+         "AEM 249",
+         "CS 100",
+         "CS 110"
+        ],
+        "raw": "AEM 249 (or see Note 2: a student may substitute CS 100 (4 hrs) or CS 110 (4 hrs) for AEM 249 (3 hrs))"
+       },
+       "AEM 250"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 395",
+      "title": "Prof Devel Aerospace Engr",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "AEM 313",
+         "AEM 341"
+        ],
+        "raw": "AEM 313 or AEM 341"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 215",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective (see Note 5: at least 3 hours must be HI (History))",
+      "options": [],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior — Spring",
+    "courses": [
+     {
+      "code": "AEM 368",
+      "title": "Flight Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 238",
+       {
+        "one_of": [
+         "AEM 249",
+         "CS 100",
+         "CS 110"
+        ],
+        "raw": "AEM 249 (or see Note 2: a student may substitute CS 100 (4 hrs) or CS 110 (4 hrs) for AEM 249 (3 hrs))"
+       },
+       "AEM 264"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 413",
+      "title": "Compressible Flow",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ME 215",
+       "AEM 311"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 349",
+      "title": "Applied Num Methods",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 238"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU/L/FA/WL Elective",
+      "title": "HU/L/FA/WL Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HU/L/FA/WL Elective (see Note 4: at least 3 hours must be L (Literature))",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective (see Note 5: at least 3 hours must be HI (History))",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior — Fall",
+    "courses": [
+     {
+      "code": "AEM 402",
+      "title": "Integ Aerospace Design I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 313",
+       "AEM 341",
+       "AEM 368",
+       {
+        "one_of": [
+         "AEM 413",
+         "AEM 513"
+        ],
+        "raw": "AEM 413 (or 513)"
+       },
+       {
+        "one_of": [
+         "AEM 408",
+         "AEM 508"
+        ],
+        "raw": "AEM 408 (or 508)"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 408",
+      "title": "Propulsion Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "AEM 413",
+         "AEM 513"
+        ],
+        "raw": "AEM 413 (or 513)"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 468",
+      "title": "Flight Dynamics & Control",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 237",
+       "ME 349",
+       {
+        "one_of": [
+         "AEM 249",
+         "CS 100",
+         "CS 110"
+        ],
+        "raw": "AEM 249 (or see Note 2: a student may substitute CS 100 (4 hrs) or CS 110 (4 hrs) for AEM 249 (3 hrs))"
+       },
+       "AEM 368"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM Elective",
+      "title": "AEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "AEM Elective: see https://catalog.ua.edu/ for the list of available AEM elective courses; department also offers electives on special topics by individual faculty approval.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM or Appd STEM Elective",
+      "title": "AEM or Appd STEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Approved STEM Elective: any course defined as an AEM Elective; any 300-level or 400/489-hour College of Engineering course, or MTE 271; PH 301 or PH 302 or PH 451 or ST 450 or ST 451; programs admitted to the AMP or other applicable programs may enroll in the 500/600 or 600/689 College of Engineering courses as STEM electives.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior — Spring",
+    "courses": [
+     {
+      "code": "AEM 404",
+      "title": "Integ Aerospace Design II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 402"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM Elective",
+      "title": "AEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "AEM Elective: see https://catalog.ua.edu/ for the list of available AEM elective courses; department also offers electives on special topics by individual faculty approval.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM Elective",
+      "title": "AEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "AEM Elective: see https://catalog.ua.edu/ for the list of available AEM elective courses; department also offers electives on special topics by individual faculty approval.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM or Appd STEM Elective",
+      "title": "AEM or Appd STEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Approved STEM Elective: any course defined as an AEM Elective; any 300-level or 400/489-hour College of Engineering course, or MTE 271; PH 301 or PH 302 or PH 451 or ST 450 or ST 451; programs admitted to the AMP or other applicable programs may enroll in the 500/600 or 600/689 College of Engineering courses as STEM electives.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM or Appd STEM Elective",
+      "title": "AEM or Appd STEM Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Approved STEM Elective: any course defined as an AEM Elective; any 300-level or 400/489-hour College of Engineering course, or MTE 271; PH 301 or PH 302 or PH 451 or ST 450 or ST 451; programs admitted to the AMP or other applicable programs may enroll in the 500/600 or 600/689 College of Engineering courses as STEM electives.",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "141c6f07f5b36661650c8fbea61ef4e889dd0ca16e7348d0dd4980ccd833de43",
+  "last_verified": "2026-10-02"
+ }
+}

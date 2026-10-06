@@ -1,0 +1,196 @@
+{
+ "institution": {
+  "city": "Helena-West Helena",
+  "kind": "community",
+  "name": "Phillips Community College of the University of Arkansas",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "external_prereqs": [
+   "ENGL 10103",
+   "BIOL 24004",
+   "MATH 11003"
+  ],
+  "id": "phillips-community-college-aas-nursing",
+  "major": "Nursing",
+  "notes": "Sequencing per the official ADN degree-plan PDF (Fall Level I -> Spring Level II -> Fall Level III -> Spring Level IV; the PDF states NURS courses 'must be taken in sequence prescribed'). Pre-admission prerequisites (ENGL 10103, BIOL 24004, MATH 11003) are carried in external_prereqs, not in semesters, per the PDF's 'Prerequisite completed before program admission' annotation. total_credits 53 = sequenced semester sum per envelope rule (external_prereqs excluded). The PDF's 'Total Program Hours 63 Hours' = 53 sequenced + 10 pre-admission prerequisite hours (ENGL 10103 3cr + BIOL 24004 4cr + MATH 11003 3cr), which live in external_prereqs. Group V computer-technology slot is CPSI (any approved 3-hour course) in this revision. The April 2026 PDF adds 'Nursing Success is required by all ADN students' as a non-credit program requirement (not modeled as a course). Verbatim catalog typo in PDF: 'BIOL 24104 BIOL 2414)' (missing open paren) kept for course code BIOL 24104. PDF revised April 2026. Source: https://pccua.edu/images/uploads/20260430/adn-april-2026-84378.pdf (opened in-session; supersedes the November 2025 revision).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC 11003",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "PSYC 11003",
+      "title": "General Psychology",
+      "slot_id": "s1-0",
+      "xfer": [
+       "ua-pulaski-technical-college-aas-allied-health-bhclr-completion-options",
+       "ua-pulaski-technical-college-aas-early-childhood-education",
+       "ua-pulaski-technical-college-aas-emergency-medical-sciences",
+       "ua-pulaski-technical-college-aas-health-information-technology-full-time",
+       "ua-pulaski-technical-college-aas-health-information-technology-part-time",
+       "ua-pulaski-technical-college-aas-occupational-therapy-assistant",
+       "ua-pulaski-technical-college-aas-surgical-technology",
+       "ua-pulaski-technical-college-cgs-general-studies",
+       "ua-pulaski-technical-college-tc-early-childhood-education"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 24104",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "BIOL 24104",
+      "title": "Anatomy and Physiology II",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 10757",
+      "core_area": "",
+      "credits": 7,
+      "options": [],
+      "prereq": [],
+      "tccns": "NURS 10757",
+      "title": "Concepts of Nursing Care for Patients with Chronic, Stable Conditions",
+      "slot_id": "s1-2",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Fall — Level I"
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 10203",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "ENGL 10203",
+      "title": "Composition II",
+      "slot_id": "s2-0",
+      "xfer": [
+       "phillips-community-college-aa-business-administration",
+       "phillips-community-college-aa-teaching",
+       "phillips-community-college-as-business",
+       "ua-pulaski-technical-college-aas-allied-health-bhclr-completion-options",
+       "ua-pulaski-technical-college-aas-baking-and-pastry-arts",
+       "ua-pulaski-technical-college-aas-business-entrepreneurship",
+       "ua-pulaski-technical-college-aas-crime-scene-investigation",
+       "ua-pulaski-technical-college-aas-culinary-arts",
+       "ua-pulaski-technical-college-aas-digital-media-production-audio-video-engineering",
+       "ua-pulaski-technical-college-aas-early-childhood-education",
+       "ua-pulaski-technical-college-aas-emergency-medical-sciences",
+       "ua-pulaski-technical-college-aas-health-information-technology-full-time",
+       "ua-pulaski-technical-college-aas-health-information-technology-part-time",
+       "ua-pulaski-technical-college-aas-hospitality-management",
+       "ua-pulaski-technical-college-aas-occupational-therapy-assistant",
+       "ua-pulaski-technical-college-aas-surgical-technology",
+       "ua-pulaski-technical-college-ags-general-studies",
+       "ua-pulaski-technical-college-aste-technology-and-engineering",
+       "ua-pulaski-technical-college-cgs-general-studies",
+       "ua-pulaski-technical-college-tc-education",
+       "ua-pulaski-technical-college-tc-office-supervision-and-management",
+       "ua-pulaski-technical-college-tc-paralegal-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 20959",
+      "core_area": "",
+      "credits": 9,
+      "options": [],
+      "prereq": [],
+      "tccns": "NURS 20959",
+      "title": "Concepts of Nursing Care for Patients with Acute, Stable Conditions",
+      "slot_id": "s2-1",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Spring — Level II"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Any approved 3 credit hour course in computer technology (Group V). The April 2026 PDF lists the slot as CPSI.",
+      "code": "CPSI",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CPSI",
+      "title": "Computer Technology Elective",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 21212",
+      "core_area": "",
+      "credits": 12,
+      "options": [],
+      "prereq": [],
+      "tccns": "NURS 21212",
+      "title": "Concepts of Nursing Care for Patients with Chronic and Acute, Unstable Conditions",
+      "slot_id": "s3-1",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Fall — Level III"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 21312",
+      "core_area": "",
+      "credits": 12,
+      "options": [],
+      "prereq": [],
+      "tccns": "NURS 21312",
+      "title": "Concepts of Nursing Care for Patients with Complex Conditions",
+      "slot_id": "s4-0",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Spring — Level IV"
+   }
+  ],
+  "source_url": "https://pccua.edu/images/uploads/20260430/adn-april-2026-84378.pdf",
+  "total_credits": 53,
+  "transfer_confidence": "advisory",
+  "content_hash": "4fb903bace14e765403138257e5bb47d4b2b72d49cce3b6bf4e6e2a3dfca53a6",
+  "last_verified": "2026-10-02"
+ }
+}

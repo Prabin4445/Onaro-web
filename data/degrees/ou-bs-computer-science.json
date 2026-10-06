@@ -1,0 +1,634 @@
+{
+ "institution": {
+  "name": "University of Oklahoma",
+  "city": "Norman, OK",
+  "kind": "public4yr",
+  "state": "OK"
+ },
+ "plan": {
+  "id": "ou-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://ou-public.courseleaf.com/gallogly-engineering/computer-science/computer-science-bachelor-science/",
+  "notes": "Source: official University of Oklahoma undergraduate catalog (courseleaf), 'Computer Science, B.S.' page, 'Suggested Semester Plan of Study' grid — the genuine official term-by-term sequence for the Bachelor of Science in Computer Science, Gallogly College of Engineering. Page footer reads 'Updated for 2026-2027 by The University of Oklahoma'. Transcribed 2026-09-30 by hand from the catalog page's plan-of-study grid. Course titles, credit hours, and prerequisites verified against the same catalog's official course descriptions (C S and MATH course pages, crawled 2026). Credit-resolution caveat: the official plan has two variable slots — the freshman intro-programming choice (CS 1323=3 / CS 1321=1 / CS 1324=4 credits) and a 0-3-hour sophomore open elective; footnote 3 states open electives bring the degree total to 120-121. This transcription pins the intro choice to CS 1323 (3 cr) and the sophomore open elective to 1 cr, so the plan sums to exactly 120 (semester ranges still match the official 14-17 and 15-18 ranges). Students choosing CS 1321/CS 1324 or more open-elective hours must rebalance to reach 120. Blank-grid-row caveat: the catalog grid renders some elective rows without labels; rows carrying footnote 4 (University-Wide General Education Approved Course List) are modeled as approved Gen Ed electives, footnote 3 rows as open electives, footnote 5 rows as Natural Science (Core II) electives, and the unlabeled junior/senior rows as approved CS electives (12 hours total per the catalog's Major Requirements). The catalog requires a grade of C or better in every curriculum course including prerequisites, and two college-level courses in a single world language (waivable with 2 years of high-school language).\nPlacement/external prereq details: MATH 1503 (or placement into higher mathematics; catalog prerequisite for CS 1321/CS 1323/CS 1324, CS 2334, CS 2813, CS 3203) | MATH 1823 (grade of C or better, or a satisfactory score on the OU math assessment; catalog prerequisite for MATH 1914)",
+  "external_prereqs": [
+   "MATH 1503",
+   "MATH 1823"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENGL 1113",
+      "title": "Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 1914",
+      "title": "Differential and Integral Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MATH 1823"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENGR 1413",
+      "title": "Pathways to Engineering Thinking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CS 1323",
+      "title": "Introductory Computer Programming (choose CS 1323, CS 1321, or CS 1324)",
+      "credits": 3,
+      "prereq": [
+       "MATH 1503"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official choice: CS 1323 (3 cr), CS 1321 Java for Programmers (1 cr), or CS 1324 (4 cr). Credits pinned to the CS 1323 option; choosing another option changes semester/degree totals — rebalance via open electives.",
+      "options": [
+       "CS 1323",
+       "CS 1321",
+       "CS 1324"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GENED 1XX",
+      "title": "Approved General Education elective — choose from the University-Wide General Education Approved Course List",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 4 row: approved Gen Ed elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENGL 1213",
+      "title": "Composition II (choose ENGL 1213 or EXPO 1213)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       "ENGL 1213",
+       "EXPO 1213"
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 2924",
+      "title": "Differential and Integral Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 1914"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CS 2334",
+      "title": "Programming Structures and Abstractions",
+      "credits": 4,
+      "prereq": [
+       "CS 1323",
+       "MATH 1503"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GENED 2XX",
+      "title": "Approved Natural Science elective (Core II) — choose from the University-Wide General Education Approved Course List",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 5 row: Natural Science Core II elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "ENGR 2002",
+      "title": "Professional Responsibilities and Skills of Engineers and Scientists",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "PSC 1113",
+      "title": "American Federal Government",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 2813",
+      "title": "Discrete Structures (choose CS 2813 or MATH 2513)",
+      "credits": 3,
+      "prereq": [
+       "CS 2334",
+       "MATH 1503"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS 2813 'Discrete Structures' or MATH 2513 'Discrete Mathematical Structures'. Prereq shown is the catalog prereq for the CS 2813 option.",
+      "options": [
+       "CS 2813",
+       "MATH 2513"
+      ],
+      "category": "support"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GENED 3XX",
+      "title": "Approved General Education elective — choose from the University-Wide General Education Approved Course List",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 4 row: approved Gen Ed elective.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ECE 2523",
+      "title": "Statistics (choose ECE 2523, ISE 3293, MATH 4743, or MATH 4753)",
+      "credits": 3,
+      "prereq": [
+       "MATH 2924"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Options: ECE 2523 Probability, Statistics and Random Processes; ISE 3293 Applied Engineering Statistics; MATH 4743 Introduction to Mathematical Statistics; MATH 4753 Applied Statistical Methods. OU catalogs list MATH 2433 or 2924 as the ECE 2523 prerequisite; the plan orders this after MATH 2924.",
+      "options": [
+       "ECE 2523",
+       "ISE 3293",
+       "MATH 4743",
+       "MATH 4753"
+      ],
+      "category": "support"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 2614",
+      "title": "Computer Organization",
+      "credits": 4,
+      "prereq": [
+       "CS 2334"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 2414",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CS 2334",
+       "MATH 1914",
+       "CS 2813"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GENED 4XX",
+      "title": "Approved General Education elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Unlabeled 3-hour elective row in the official sophomore-spring column; modeled as an approved Gen Ed elective.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ELEC 1XX",
+      "title": "Open elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official slot is 0-3 hours (footnote 3: open electives bring the degree total to 120-121); pinned to 1 hr so this plan sums to exactly 120.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GENED 5XX",
+      "title": "Approved Natural Science elective (Core II, 4 hours with lab) — choose from the University-Wide General Education Approved Course List",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 5 row: Natural Science Core II elective, lab requirement must be met.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 3113",
+      "title": "Introduction to Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "CS 2813",
+       "CS 2614"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 3203",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "MATH 1503",
+       "ENGR 2002"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CS 3823",
+      "title": "Theory of Computation",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "CS 2813"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CS 3XX",
+      "title": "Approved CS elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "3 of the 12 required approved-CS-elective hours.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELEC 2XX",
+      "title": "Open elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 3323",
+      "title": "Principles of Programming Languages",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "CS 2813"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "MATH 3333",
+      "title": "Linear Algebra I",
+      "credits": 3,
+      "prereq": [
+       "MATH 1914"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "ELEC 3XX",
+      "title": "Open elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ELEC 4XX",
+      "title": "Open elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GENED 6XX",
+      "title": "Approved General Education elective — choose from the University-Wide General Education Approved Course List (at least one upper-division Gen Ed course outside the major required)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 4 row: approved Gen Ed elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 4173",
+      "title": "Computer Security",
+      "credits": 3,
+      "prereq": [
+       "CS 3113"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS 4413",
+      "title": "Algorithm Analysis",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "CS 2813"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CS 4513",
+      "title": "Database Management Systems",
+      "credits": 3,
+      "prereq": [
+       "CS 2414",
+       "CS 2813"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CS 4XX-A",
+      "title": "Approved CS electives (6 hours)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "6 of the 12 required approved-CS-elective hours (e.g. two 3-credit courses from the department's approved CS elective list).",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 4273",
+      "title": "Capstone Design Project",
+      "credits": 3,
+      "prereq": [
+       "CS 3203"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS 4473",
+      "title": "Parallel, Distributed, and Network Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 3113",
+       "CS 4413"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CS 4XX-B",
+      "title": "Approved CS elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "3 of the 12 required approved-CS-elective hours.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "HIST 1483",
+      "title": "United States History (choose HIST 1483 or HIST 1493)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "HIST 1483 'United States to 1865' or HIST 1493 'United States, 1865 to the Present'.",
+      "options": [
+       "HIST 1483",
+       "HIST 1493"
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GENED 7XX",
+      "title": "Approved General Education elective — choose from the University-Wide General Education Approved Course List (at least one upper-division Gen Ed course outside the major required)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog footnote 4 row: approved Gen Ed elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "6a650edb662fae541aaa9879129eec8aee060e4def5e5439f815ece80c9ca5d7",
+  "last_verified": "2026-10-02"
+ }
+}

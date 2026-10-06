@@ -1,0 +1,317 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "scottsdale-community-college-aas-nursing",
+  "major": "Nursing",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/health-sciences/nursing-3812-aas). Effective Term Fall 2025; catalog_year 2025-2026 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: BIO 156 or BIO 181. Credits shown for BIO 156.",
+      "code": "BIO 156",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [
+       "CRE 101"
+      ],
+      "title": "Introductory Biology for Allied Health or General Biology (Majors) I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MAT 140 or MAT 141 or MAT 142. Credits shown for MAT 140.",
+      "code": "MAT 140",
+      "core_area": "MA, QNR or MA, QNR or MA, QNR",
+      "credits": 3,
+      "prereq": [],
+      "title": "College Mathematics or College Mathematics or College Mathematics",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 201",
+      "core_area": "NSI, SG",
+      "credits": 4,
+      "prereq": [
+       "BIO 156",
+       "CRE 101",
+       "CHM 130"
+      ],
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CHM 130 or CHM 130LL or CHM 130AA. Credits shown for CHM 130.",
+      "code": "CHM 130",
+      "core_area": "None or SQ",
+      "credits": 0,
+      "prereq": [
+       "CRE 101",
+       "CHM 130"
+      ],
+      "title": "( Fundamental Chemistry and Fundamental Chemistry Laboratory ) or ( Fundamental Chemistry with Lab )",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 101 or ENG 107. Credits shown for ENG 101.",
+      "code": "ENG 101",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 202",
+      "core_area": "NSI, SG",
+      "credits": 4,
+      "prereq": [
+       "BIO 201"
+      ],
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 152",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [],
+      "title": "Nursing Theory and Science I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CRE 101",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [
+       "ENG 101"
+      ],
+      "title": "College Critical Reading and Critical Thinking",
+      "required_zero": true,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 172",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [
+       "BIO 202",
+       "NUR 152"
+      ],
+      "title": "Nursing Theory and Science II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 101",
+      "core_area": "SB, SCB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Psychology",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 205",
+      "core_area": "NSI, SG",
+      "credits": 4,
+      "prereq": [
+       "BIO 156",
+       "CRE 101",
+       "CHM 130"
+      ],
+      "title": "Microbiology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 252",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [
+       "CRE 101",
+       "NUR 172",
+       "PSY 101"
+      ],
+      "title": "Nursing Theory and Science III",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 102 or ENG 108. Credits shown for ENG 102.",
+      "code": "ENG 102",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 283",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [
+       "BIO 205",
+       "NUR 252"
+      ],
+      "title": "Nursing Theory and Science IV",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Humanities, Fine Arts & Design course (HU).",
+      "code": "HU",
+      "core_area": "HU",
+      "credits": 2,
+      "prereq": [],
+      "title": "Humanities, Fine Arts & Design",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 6",
+    "n": 6
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/health-sciences/nursing-3812-aas",
+  "total_credits": 62,
+  "external_prereqs": [
+   "ALT 100",
+   "BIO 181",
+   "BIO 201CM",
+   "CHM 090",
+   "ENG 100A",
+   "ENG 101LL",
+   "ENG 107LL",
+   "ESL 097",
+   "ESL 202",
+   "MAT 052",
+   "MAT 053",
+   "MAT 055",
+   "MAT 056",
+   "MAT 057",
+   "MAT 09",
+   "MAT 090",
+   "MAT 091",
+   "MAT 092",
+   "MAT 103",
+   "MAT 103AA",
+   "MAT 103AB",
+   "MAT 114",
+   "MAT 115",
+   "MAT 12",
+   "RDG 095",
+   "RDG 100",
+   "RDG 100LL",
+   "RDG 111",
+   "RDG 112",
+   "RDG 113",
+   "WAC 101"
+  ],
+  "content_hash": "3a64591bfe8afd910653a8ffc349047c91f9730e0a9575512d9b1d99ce268418",
+  "last_verified": "2026-10-02"
+ }
+}

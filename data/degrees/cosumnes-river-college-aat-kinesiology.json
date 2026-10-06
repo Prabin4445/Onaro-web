@@ -1,0 +1,416 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AA-T",
+  "external_prereqs": [
+   "CHEM 305",
+   "CHEM 309",
+   "CHEM 400"
+  ],
+  "id": "cosumnes-river-college-aat-kinesiology",
+  "major": "Kinesiology",
+  "notes": "Transcribed from the official CRC 'Kinesiology AA-T Degree' program map, Catalog Year 2026-2027, published September 24, 2026 (mapmaker.losrios.edu/Maps/8045/PublishedPdf). GE Pattern: Cal-GETC. Map states Total Units 60-62; lower bound 60 encoded = 15+14+15+16 (semester sums verified at lower bound: Sem 1 STAT C1000E/PSYC 330 -> 3; Sem 2 CHEM 305/PHYS 350 -> 4). STATISTICS CHOICE: STAT C1000E Introduction to Statistics (4 units) or PSYC 330 Introductory Statistics for the Behavioral Sciences (3 units); both require Intermediate Algebra or equivalent (placement; documented here, not encoded). Lower bound 3 encoded. SCIENCE CHOICE: CHEM 305 Introduction to Chemistry (5 units; requires Elementary Algebra or higher; recommended) or PHYS 350 General Physics (4 units; pre-req MATH 335 — not sequenced, documented here). Lower bound 4 encoded. BIOL 430 pre-req per map: CHEM 305, 309 or 400; encoded as one_of (CHEM 305/309/400 carried under external_prereqs because CHEM 305 appears only as a choice-slot option and CHEM 309/400 are not sequenced). List A (minimum 3 units; 1 unit sequenced in each of Semesters 2, 3, and 4): activity courses including FITNS 380, 381 (0.5-1), 390, 406, 440, 306, 320, 324, 326, 328, 348, 352, 384, 393, 401 (0.5-1), 407 (0.5-1), 441 (comfort in shallow water required), Core Conditioning II: Fitness Ball, PACT 310, 311, 381, 390, 391, 430, 431, Soccer - Outdoor, Outdoor Soccer II, TMACT 300, 301, 320, 321, 330, 331. Option arrays capped at 10 entries; full list documented here. A different List A course per slot. CalGETC Area 4: a total of 6 units from 2 disciplines is required (one 3-unit Area 4 course in each of Semesters 3 and 4; Semester 3 suggestion: KINES 308 Women in Sport). Semester 4 Area 3A suggestion: DANCE 386 Dance History. Transferable electives: units needed to total 60 for graduation; Semester 1 suggestion: HEED 300 Health Science or NUTRI 300 Nutrition. This map also meets the AA degree in Physical Education (no separate sequence published). CalGETC Area 1A: map recommends meeting with a counselor.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "KINES 300",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "KINES 300",
+      "title": "Introduction to Kinesiology",
+      "slot_id": "s1-0",
+      "xfer": [
+       "american-river-college-aa-kinesiology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "STAT C1000E Introduction to Statistics (4 units) or PSYC 330 Introductory Statistics for the Behavioral Sciences (3 units). Both require Intermediate Algebra or equivalent (placement; documented here, not encoded). Lower bound 3 encoded.",
+      "code": "PSYC 330",
+      "core_area": "2",
+      "credits": 3,
+      "options": [
+       "STAT C1000E",
+       "PSYC 330"
+      ],
+      "prereq": [],
+      "tccns": "PSYC 330",
+      "title": "Introductory Statistics for the Behavioral Sciences",
+      "slot_id": "s1-1",
+      "xfer": [
+       "american-river-college-aa-art-history",
+       "cosumnes-river-college-aat-psychology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1A (English Composition). Map recommends meeting with a counselor.",
+      "code": "Any Cal-GETC Area 1A course",
+      "core_area": "1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1A (English Composition) course",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1C (Oral Communication).",
+      "code": "Any Cal-GETC Area 1C course",
+      "core_area": "1C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1C (Oral Communication) course",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any transferable elective (3 units). Suggestion: HEED 300 Health Science or NUTRI 300 Nutrition. Units needed to total 60 units for graduation.",
+      "code": "Transferable elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Transferable elective (3 units)",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHEM 305 Introduction to Chemistry (5 units; requires Elementary Algebra or higher; recommended) or PHYS 350 General Physics (4 units; pre-req MATH 335 — not sequenced, documented here). Lower bound 4 encoded. Option-specific prerequisites documented here, not encoded on the slot.",
+      "code": "CHEM 305",
+      "core_area": "5A",
+      "credits": 4,
+      "options": [
+       "CHEM 305",
+       "PHYS 350"
+      ],
+      "prereq": [],
+      "tccns": "CHEM 305",
+      "title": "Introduction to Chemistry",
+      "slot_id": "s2-0",
+      "xfer": [
+       "american-river-college-aa-kinesiology",
+       "american-river-college-as-engineering-technology",
+       "american-river-college-as-pre-health-occupations",
+       "cosumnes-river-college-as-biology-pre-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing-local-ge"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "List A (minimum 3 units): 1-unit activity courses. Full list: FITNS 380, 381 (0.5-1), 390, 406, 440, 306, 320, 324, 326, 328, 348, 352, 384, 393, 401 (0.5-1), 407 (0.5-1), 441, Core Conditioning II: Fitness Ball, PACT 310, 311, 381, 390, 391, 430, 431, Soccer - Outdoor, Outdoor Soccer II, TMACT 300, 301, 320, 321, 330, 331. A different List A course per slot.",
+      "code": "List A restricted elective",
+      "core_area": "",
+      "credits": 1,
+      "options": [
+       "FITNS 380",
+       "FITNS 390",
+       "FITNS 406",
+       "FITNS 440",
+       "PACT 310",
+       "TMACT 320",
+       "TMACT 330",
+       "FITNS 306",
+       "FITNS 320",
+       "FITNS 324"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "List A restricted elective (1 unit)",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 1B (Critical Thinking).",
+      "code": "Any Cal-GETC Area 1B course",
+      "core_area": "1B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 1B (Critical Thinking) course",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 6 (Ethnic Studies).",
+      "code": "Any Cal-GETC Area 6 course",
+      "core_area": "6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 6 (Ethnic Studies) course",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any transferable elective (3 units). Units needed to total 60 units for graduation.",
+      "code": "Transferable elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Transferable elective (3 units)",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 430",
+      "core_area": "5B",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 305",
+         "CHEM 309",
+         "CHEM 400"
+        ]
+       }
+      ],
+      "tccns": "BIOL 430",
+      "title": "Anatomy and Physiology",
+      "slot_id": "s3-0",
+      "xfer": [
+       "american-river-college-aa-kinesiology",
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-as-registered-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing-local-ge"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "List A (minimum 3 units): 1-unit activity courses. Full list documented in plan notes. A different List A course per slot.",
+      "code": "List A restricted elective",
+      "core_area": "",
+      "credits": 1,
+      "options": [
+       "FITNS 380",
+       "FITNS 390",
+       "FITNS 406",
+       "FITNS 440",
+       "PACT 310",
+       "TMACT 320",
+       "TMACT 330",
+       "FITNS 306",
+       "FITNS 320",
+       "FITNS 324"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "List A restricted elective (1 unit)",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 3B (Humanities).",
+      "code": "Any Cal-GETC Area 3B course",
+      "core_area": "3B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 3B (Humanities) course",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 4 (Social & Behavioral Sciences). A total of 6 units from 2 disciplines is required (one course in each of Semesters 3 and 4). Suggestion: KINES 308 Women in Sport.",
+      "code": "Any Cal-GETC Area 4 course",
+      "core_area": "4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 4 (Social & Behavioral Sciences) course",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any transferable elective (3 units). Units needed to total 60 units for graduation.",
+      "code": "Transferable elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Transferable elective (3 units)",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 431",
+      "core_area": "5B",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "BIOL 430"
+      ],
+      "tccns": "BIOL 431",
+      "title": "Anatomy and Physiology",
+      "slot_id": "s4-0",
+      "xfer": [
+       "american-river-college-aa-kinesiology",
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-as-registered-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing-local-ge"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "List A (minimum 3 units): 1-unit activity courses. Full list documented in plan notes. A different List A course per slot.",
+      "code": "List A restricted elective",
+      "core_area": "",
+      "credits": 1,
+      "options": [
+       "FITNS 380",
+       "FITNS 390",
+       "FITNS 406",
+       "FITNS 440",
+       "PACT 310",
+       "TMACT 320",
+       "TMACT 330",
+       "FITNS 306",
+       "FITNS 320",
+       "FITNS 324"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "List A restricted elective (1 unit)",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 3A (Arts). Suggestion: DANCE 386 Dance History.",
+      "code": "Any Cal-GETC Area 3A course",
+      "core_area": "3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 3A (Arts) course",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting Cal-GETC Area 4 (Social & Behavioral Sciences). A total of 6 units from 2 disciplines is required (one course in each of Semesters 3 and 4).",
+      "code": "Any Cal-GETC Area 4 course",
+      "core_area": "4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any Cal-GETC Area 4 (Social & Behavioral Sciences) course",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any transferable elective (1 unit). Units needed to total 60 units for graduation.",
+      "code": "Transferable elective",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Transferable elective (1 unit)",
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any transferable elective (3 units). Units needed to total 60 units for graduation.",
+      "code": "Transferable elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Transferable elective (3 units)",
+      "slot_id": "s4-5",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/8045/PublishedPdf",
+  "total_credits": 60,
+  "content_hash": "48728a095b18208fe32277189c3b96b0d5dcbfa22b56c8a319fa3262a86ce38b",
+  "last_verified": "2026-10-02"
+ }
+}

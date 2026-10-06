@@ -1,0 +1,593 @@
+{
+ "institution": {
+  "city": "Cleveland, OH",
+  "kind": "private4yr",
+  "name": "Case Western Reserve University",
+  "state": "OH"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-bs-data-science-and-analytics",
+  "degree": "BS",
+  "major": "Data Science and Analytics",
+  "catalog_year": "2026-2027",
+  "total_credits": 123,
+  "source_url": "https://bulletin.case.edu/engineering/computer-data-sciences/data-science-analytics-bs/",
+  "notes": "Hand-transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) Data Science and Analytics, BS 'Sample Plan of Study' grid (https://bulletin.case.edu/engineering/computer-data-sciences/data-science-analytics-bs/). The bulletin labels it 'a suggested program of study' and advises students to consult advisors/SIS. Footnotes quoted from the page: (a) Unified General Education Requirement; (b) 'One of STAT 302 or STAT 312 or STAT 313.'; (c) 'Two courses and six credit hours required from the Foundations list.'; (d) 'Two courses and six credit hours required from the Applications list.' The plan prints CSDS 344 and CSDS 356 marked 'c' (both on the Foundations list); the other 'c' slot is an unlabeled foundations placeholder. 'd' slots are unlabeled applications placeholders. 'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "CSDS 134",
+      "title": "Programming in Python",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 121",
+      "title": "Calculus for Science and Engineering I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "PHYS 121",
+      "title": "General Physics I - Mechanics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'PHYS 121 or PHYS 123'.",
+      "options": [
+       "PHYS 121",
+       "PHYS 123"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 122",
+      "title": "Calculus for Science and Engineering II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 122 or MATH 124'.",
+      "options": [
+       "MATH 122",
+       "MATH 124"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 133",
+      "title": "Introduction to Data Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "CSDS 233",
+      "title": "Introduction to Data Structures",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 234",
+      "title": "Structured and Unstructured Data",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 223",
+      "title": "Calculus for Science and Engineering III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 223 or MATH 227'.",
+      "options": [
+       "MATH 223",
+       "MATH 227"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 122",
+      "title": "General Physics II - Electricity and Magnetism",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'PHYS 122 or PHYS 124'.",
+      "options": [
+       "PHYS 122",
+       "PHYS 124"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-3",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "CSDS 302",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 312",
+      "title": "Introduction to Data Science Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 307",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-4",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 302",
+      "title": "Introduction to Statistical Inference",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'b': 'One of STAT 302 or STAT 312 or STAT 313.'",
+      "options": [
+       "STAT 302",
+       "STAT 312",
+       "STAT 313"
+      ],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "CSDS 313",
+      "title": "Introduction to Data Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 341",
+      "title": "Introduction to Database Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 344",
+      "title": "Computer Security",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 325",
+      "title": "Data Analysis and Linear Regression Models",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-5",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "CSDS 310",
+      "title": "Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 356",
+      "title": "Data Privacy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 380",
+      "title": "Introduction to Probability",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 399",
+      "title": "Impact of Engineering on Society",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-6",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "UGER-7",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 340",
+      "title": "Introduction to Machine Learning",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOUNDATIONS-1",
+      "title": "Foundations list course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'c': unlabeled 3-credit slot satisfying the Foundations list requirement.",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "APPLICATIONS-1",
+      "title": "Applications list course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'd': unlabeled 3-credit slot satisfying the Applications list requirement.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "CSDS 398",
+      "title": "Senior Project in Data Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-8",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "APPLICATIONS-2",
+      "title": "Applications list course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'd': unlabeled 3-credit slot satisfying the Applications list requirement.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-5",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints an unlabeled 3-credit slot.",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "abaa415d9a3c4eda6b4ac3f402a85234e78e7e6e74e45b92142460c2a9f8b922",
+  "last_verified": "2026-10-02"
+ }
+}

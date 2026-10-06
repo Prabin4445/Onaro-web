@@ -1,0 +1,636 @@
+{
+ "institution": {
+  "name": "University of South Alabama",
+  "city": "Mobile, AL",
+  "kind": "public4yr",
+  "state": "AL"
+ },
+ "plan": {
+  "id": "southal-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 124,
+  "source_url": "https://bulletin.southalabama.edu/programs-az/computing/computer-science/computer-science-bs/",
+  "notes": "Source: University of South Alabama official online catalog (bulletin.southalabama.edu — South Alabama's actual catalog domain) Computer Science (BS) page: https://bulletin.southalabama.edu/programs-az/computing/computer-science/computer-science-bs/ (catalog year 2026-2027), cross-checked against the School of Computing's official 2026-2027 CSC Undergraduate Check Sheet (https://usa50.southalabama.edu/colleges/soc/resources/csc-check-sheet-26-27.pdf). Transcription method: the catalog's official 'Graduation Plan — Plan of Study Grid (124 Total Hours)' names the required CSC/CIS/MA course for each term and leaves gen-ed/elective hours as unlabeled hour counts; those blank slots were filled as student-choice slots per the check sheet's requirement areas (History sequence, Literature, Art/Drama/Music, Fine Arts/Humanities elective, 2 Social Science electives, Natural Science sequence + 1 additional with lab, 2 approved Math minor electives, 4 CSC/CIS electives), never inventing specific courses. The check sheet itself states 'Semesters shown represent the norm but are NOT guaranteed' and 'Refer to the University Bulletin for Official Graduation Requirements.' Prerequisites transcribed from the bulletin's official course pages (minimum grade C unless noted): CSC 231 <- CSC 120; CSC 228 <- MA 125; MA 126 <- MA 125; CSC 311 <- CSC 231; CSC 320 <- CSC 228 + CSC 231; CSC 322 <- CSC 231; CSC 331 <- CSC 231 + CA 275 (CA 275 may be concurrent); CSC 333 <- CSC 231; CSC 399 <- CSC 322; CSC 434 <- CSC 333 (alt CSC 340, not in plan); CSC 440 <- CSC 331 + CSC 320 (may be concurrent; alt EE 264, not in plan); CIS 497 <- EH 372 + CSC 322 + CSC 333; CIS 498 <- CIS 497 (may be concurrent) + CSC 331. The bulletin lists NO prerequisite for CSC 332, CIS 101, or CIS 300, so none is recorded (not invented). Placement/assessment prerequisites are NOT course codes and live here, not in external_prereqs: MA 125 requires ACT Math 27 or MMT 090 or MA 113/MA 115 (C); CSC 120 requires ACT 27 or MMT 090 or MA 113/172/115/121/125/132 (C) — the official grid seats MA 125 in the same first term as CSC 120, consistent with placement-based entry; CSC 228 also accepts ACT 27 / MMT 090 / MA 113 or MA 115 (C), with in-plan MA 125 used as the recorded prereq. Catalog changes baked in: CSC 404 moved from required to elective effective Spring 2025; CSC 440 Secure Software Engineering is now a required core course. CIS 498 is a required 0-credit course (required_zero=true). Sequence rule: two courses in Social Sciences/Humanities must be a Literature or History sequence (satisfied by the HY choice slot).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 120",
+      "title": "Prob Solv and Prog Concepts",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CIS 101",
+      "title": "Freshman Seminar CIS",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CA 275",
+      "title": "Decision Making - Small Groups",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MA 125",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "EH 101",
+      "title": "English Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 231",
+      "title": "Intro Data Structures Algs",
+      "credits": 4,
+      "prereq": [
+       "CSC 120"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CSC 228",
+      "title": "Digital Logic Computer Arch",
+      "credits": 3,
+      "prereq": [
+       "MA 125"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CA 110",
+      "title": "Public Speaking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MA 126",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MA 125"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "EH 102",
+      "title": "English Composition II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 331",
+      "title": "Software Engineering Prin - W",
+      "credits": 3,
+      "prereq": [
+       "CSC 231",
+       "CA 275"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 311",
+      "title": "Networking and Communications",
+      "credits": 3,
+      "prereq": [
+       "CSC 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MA 267",
+      "title": "Discrete Math Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "ELEC-NATSCI1",
+      "title": "Natural Science sequence, part 1 (with lab)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official grid shows an unlabeled 4-credit Natural Science slot; sequence options from the 2026-2027 check sheet (4 hrs each, with lab): PH 201 & PH 202 Cal-Based Physics, CH 131 & CH 132 Chemistry, GY 111 & GY 112 Geology, or BLY 121 & BLY 122 Biology.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ELEC-HIST1",
+      "title": "History sequence, part 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved History sequences per the check sheet: HY 101-102 [WC], HY 121-122 [W], HY 135-136 [US]. A History sequence satisfies the rule that two Social Science/Humanities courses must be a Literature or History sequence.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 320",
+      "title": "Computer Org-Architect",
+      "credits": 3,
+      "prereq": [
+       "CSC 228",
+       "CSC 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 332",
+      "title": "Adv Data Structures and Algs",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSC 322",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CSC 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ELEC-HIST2",
+      "title": "History sequence, part 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved History sequences per the check sheet: HY 101-102 [WC], HY 121-122 [W], HY 135-136 [US]. A History sequence satisfies the rule that two Social Science/Humanities courses must be a Literature or History sequence.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "ELEC-NATSCI2",
+      "title": "Natural Science sequence, part 2 (with lab)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official grid shows an unlabeled 4-credit Natural Science slot; sequence options from the 2026-2027 check sheet (4 hrs each, with lab): PH 201 & PH 202 Cal-Based Physics, CH 131 & CH 132 Chemistry, GY 111 & GY 112 Geology, or BLY 121 & BLY 122 Biology.",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CIS 300",
+      "title": "Information Tech in Society",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 333",
+      "title": "Prog Language Theory",
+      "credits": 3,
+      "prereq": [
+       "CSC 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSC 399",
+      "title": "Conc and Distributed Comp",
+      "credits": 3,
+      "prereq": [
+       "CSC 322"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "ELEC-LIT",
+      "title": "Literature elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved Literature courses per the check sheet: EH 215-216, 225-226, 235-236.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELEC-NATSCI3",
+      "title": "Additional Natural Science with lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Per the check sheet it may not be a lower-level course from the same area as the chosen Natural Science sequence.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "ELEC-SOCSCI1",
+      "title": "Social Science elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Check sheet: electives from AN, ECO, GEO, HY, PSY, SY, or PSC.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 434",
+      "title": "Form Lang - Automata Theory",
+      "credits": 3,
+      "prereq": [
+       "CSC 333"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "ELEC-MA1",
+      "title": "Approved Math minor elective 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved Math minor electives per the check sheet: MA 227, MA 237, MA 238, MA 311, MA 316, MA 320, MA 321, MA 332, MA 334, MA 335, MA 354, MA 367, MA 410, MA 413, MA 414, MA 425, MA 434, MA 436, MA 437, MA 451, MA 458, MA 467, MA 481, MA 486, MA 487, MA 490.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "ELEC-CSC1",
+      "title": "CSC/CIS elective 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official bulletin degree requirements list CSC/CIS electives (12 hrs): CSC 404, CSC 410, CSC 412, CSC 413, CSC 416, CSC 417, CSC 418, CSC 426, CSC 428, CSC 433, CSC 450, CSC 457, CSC 460, CSC 485, CSC 490, CIS 324 / CSC 324, CIS 494, ISC 472.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ELEC-ADM",
+      "title": "Art, Drama, or Music elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved per the check sheet: ARS 101, DRA 110, MUL 101, ARH 200, ARH 103, ARH 123, ARH 240, ARH 242.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELEC-SOCSCI2",
+      "title": "Social Science elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Check sheet: electives from AN, ECO, GEO, HY, PSY, SY, or PSC.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "EH 372",
+      "title": "Technical Writing - W",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSC 440",
+      "title": "Secure Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CSC 331",
+       "CSC 320"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELEC-MA2",
+      "title": "Approved Math minor elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved Math minor electives per the check sheet: MA 227, MA 237, MA 238, MA 311, MA 316, MA 320, MA 321, MA 332, MA 334, MA 335, MA 354, MA 367, MA 410, MA 413, MA 414, MA 425, MA 434, MA 436, MA 437, MA 451, MA 458, MA 467, MA 481, MA 486, MA 487, MA 490.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-CSC2",
+      "title": "CSC/CIS elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official bulletin degree requirements list CSC/CIS electives (12 hrs): CSC 404, CSC 410, CSC 412, CSC 413, CSC 416, CSC 417, CSC 418, CSC 426, CSC 428, CSC 433, CSC 450, CSC 457, CSC 460, CSC 485, CSC 490, CIS 324 / CSC 324, CIS 494, ISC 472.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-FAHUM",
+      "title": "Fine/Performing Arts or Humanities elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional approved Fine & Performing Arts/Humanities course per the bulletin.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CIS 497",
+      "title": "Senior Capstone Experience-W",
+      "credits": 3,
+      "prereq": [
+       "EH 372",
+       "CSC 322",
+       "CSC 333"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CIS 498",
+      "title": "CIS Senior Seminar",
+      "credits": 0,
+      "prereq": [
+       "CIS 497",
+       "CSC 331"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ST 315",
+      "title": "Applied Probability-Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-CSC3",
+      "title": "CSC/CIS elective 3",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official bulletin degree requirements list CSC/CIS electives (12 hrs): CSC 404, CSC 410, CSC 412, CSC 413, CSC 416, CSC 417, CSC 418, CSC 426, CSC 428, CSC 433, CSC 450, CSC 457, CSC 460, CSC 485, CSC 490, CIS 324 / CSC 324, CIS 494, ISC 472.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC-CSC4",
+      "title": "CSC/CIS elective 4",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official bulletin degree requirements list CSC/CIS electives (12 hrs): CSC 404, CSC 410, CSC 412, CSC 413, CSC 416, CSC 417, CSC 418, CSC 426, CSC 428, CSC 433, CSC 450, CSC 457, CSC 460, CSC 485, CSC 490, CIS 324 / CSC 324, CIS 494, ISC 472.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "353848531bc3479bd4fd77887598df7e06b46bb672fa3532e3fafce5ebca5a10",
+  "last_verified": "2026-10-02"
+ }
+}

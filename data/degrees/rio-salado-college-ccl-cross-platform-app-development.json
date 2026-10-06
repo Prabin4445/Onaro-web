@@ -1,0 +1,152 @@
+{
+ "institution": {
+  "city": "Tempe",
+  "kind": "community",
+  "name": "Rio Salado College",
+  "state": "AZ",
+  "slug": "rio-salado-college",
+  "ipeds": "105668"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "rio-salado-college-ccl-cross-platform-app-development",
+  "major": "Cross-Platform App Development",
+  "notes": "Source: official Maricopa pathway-map page (https://www.riosalado.edu/degrees-certificates/computer-and-information-technology/cross-platform-app-development-5067-ccl). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Only a part-time sequence is published on the official page (no full-time sequence); the published part-time sequence is used verbatim. Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 0,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 133DA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Internet/Web Development Level I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 162AD",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "C#: Level I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 166AA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "Introduction to Javascript",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 165DB or CIS 165DC. Credits shown for CIS 165DB.",
+      "code": "CIS 165DB",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 162AD"
+      ],
+      "title": "C#/VB.NET: Windows 8 App Development or Xamarin/C# Cross-Platform Development",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 233DA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 133DA"
+      ],
+      "title": "Internet/Web Development Level II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 262AD",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 162AD"
+      ],
+      "title": "C# Level II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.riosalado.edu/degrees-certificates/computer-and-information-technology/cross-platform-app-development-5067-ccl",
+  "total_credits": 18,
+  "external_prereqs": [
+   "CIS 159"
+  ],
+  "content_hash": "aae995324bd0df7bb4c360d5bf82e294198b8ff51f4a3db08affc68ff7d2330a",
+  "last_verified": "2026-10-02"
+ }
+}

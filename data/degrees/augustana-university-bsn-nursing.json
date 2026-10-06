@@ -1,0 +1,685 @@
+{
+ "institution": {
+  "name": "Augustana University",
+  "city": "Sioux Falls, SD",
+  "state": "SD",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "augustana-university-bsn-nursing",
+  "degree": "BSN",
+  "major": "Nursing",
+  "total_credits": 120,
+  "catalog_year": "2022-2023",
+  "source_url": "https://augie.smartcatalogiq.com/en/2022-2023/2022-2023-undergraduate-general-catalog/academic-program/nursing/nursing-major/",
+  "notes": "Term-by-term sample plan transcribed verbatim from the official Augustana University 2022-2023 Undergraduate General Catalog, Nursing Major (BSN) page. The 2022-2023 catalog is the most recent catalog year whose sample plan is published inline in HTML; the current (2026-2027) catalog links its sample plan as a Google Sheet, which is not retrievable via text-fetch tools (direct fetches return HTTP 400 from docs.google.com). CATALOG ARITHMETIC DISCREPANCY (items transcribed verbatim): the catalog headers state Required Courses 50 cr / Required Supportive Courses 33 cr / 83 cr major total, but the listed items sum to 49 / 37 / 86 (Required: NURS 200/228/324/326/330/340/352/410/420/430/441/450/451/452/468 = 49; Supportive: BIOL 150/225/250, CHEM 116/145, HLTH 222/289, MATH 140, PSYC 210, SOCI 110 = 37). total_credits (120) is the true sum of the sample plan at base credits. 'Core, Major, Minor or Elective Course (3-4)' filler slots seeded at base 3 cr as choice:true. PSYC 210/SOCI 110 and NURS 420/NURS 430 OR-pairs seeded as single choice slots (take one per term; for NURS 420/430 take one in Year 4 Fall and the other in Year 4 Spring). Catalog rule: 'Courses must be taken in designated semester in order to complete the program in 4 years.' Catalog note on Year 3 Fall: 'NURS 200 must be taken if not yet completed.' BIOL 120 is not a Nursing major requirement per the catalog but appears in the plan as the prerequisite for BIOL 225 ('BIOL 110 or BIOL 120 are not a Nursing major requirement, however, one of these courses must be taken as a prerequisite for BIOL 225'). Catalog states 124 total credits are needed for degree completion; the plan sums to 120 at base because filler slots are 3-4 cr.",
+  "external_prereqs": [],
+  "transfer_confidence": "tccns_equivalencies",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Year 1 — Fall",
+    "courses": [
+     {
+      "code": "FYS 110",
+      "title": "First Year Seminar I (FS)",
+      "credits": 4,
+      "category": "core",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "FYS 110",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     },
+     {
+      "code": "BIOL 120",
+      "title": "Biological Principles I (NS)",
+      "credits": 4,
+      "category": "core",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 120",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [
+       "augustana-university-ba-biology"
+      ]
+     },
+     {
+      "code": "CHEM 116",
+      "title": "General Chemistry I (NS)",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CHEM 116",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [
+       "augustana-university-ba-biology"
+      ]
+     },
+     {
+      "code": "PSYC 210/SOCI 110",
+      "title": "Life-Span Human Development (WB) or Contemporary Society (SS)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "PSYC 210/SOCI 110",
+      "choice": true,
+      "choice_note": "Catalog presents PSYC 210 (WB) OR SOCI 110 (SS); take one (3 cr).",
+      "options": [
+       "PSYC 210",
+       "SOCI 110"
+      ],
+      "slot_id": "s1-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Year 1 — Interim",
+    "courses": [
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Year 1 — Spring",
+    "courses": [
+     {
+      "code": "BIOL 150",
+      "title": "Human Anatomy",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 150",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 145",
+      "title": "Survey of Organic and Biochemistry",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CHEM 145",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "PSYC 210/SOCI 110",
+      "title": "Life-Span Human Development (WB) or Contemporary Society (SS)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "PSYC 210/SOCI 110",
+      "choice": true,
+      "choice_note": "Catalog presents PSYC 210 (WB) OR SOCI 110 (SS); take the one not completed in Year 1 Fall.",
+      "options": [
+       "PSYC 210",
+       "SOCI 110"
+      ],
+      "slot_id": "s3-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Year 2 — Fall",
+    "courses": [
+     {
+      "code": "BIOL 225",
+      "title": "Human Physiology",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 225",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "MATH 140",
+      "title": "Quantitative Reasoning (MT)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "MATH 140",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "HLTH 222",
+      "title": "Nutrition (WB)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "HLTH 222",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Year 2 — Interim",
+    "courses": [
+     {
+      "code": "NURS 200",
+      "title": "Foundations of Nursing Practice I",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 200",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [
+       "ave-maria-university-bsn-nursing"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Year 2 — Spring",
+    "courses": [
+     {
+      "code": "BIOL 250",
+      "title": "Introductory Microbiology",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "BIOL 250",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [
+       "ave-maria-university-ba-exercise-physiology",
+       "ave-maria-university-ba-health-science",
+       "ave-maria-university-bs-exercise-physiology"
+      ]
+     },
+     {
+      "code": "HLTH 289",
+      "title": "Medical Terminology",
+      "credits": 1,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "HLTH 289",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "NURS 228",
+      "title": "Pathophysiology",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 228",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Year 3 — Fall",
+    "courses": [
+     {
+      "code": "NURS 324",
+      "title": "Health Assessment & Nutrition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 324",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "NURS 326",
+      "title": "Foundations of Nursing Practice II",
+      "credits": 5,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 326",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "NURS 330",
+      "title": "Pharmacology",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 330",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [
+       "ave-maria-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Year 3 — Interim",
+    "courses": [
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "label": "Year 3 — Spring",
+    "courses": [
+     {
+      "code": "NURS 340",
+      "title": "Adult Health Nursing I",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 340",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s9-0",
+      "xfer": []
+     },
+     {
+      "code": "NURS 352",
+      "title": "Pediatric Nursing",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 352",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s9-1",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s9-2",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s9-3",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "label": "Year 4 — Fall",
+    "courses": [
+     {
+      "code": "NURS 420/NURS 430",
+      "title": "Behavioral Health Nursing or Community and Population Health Nursing",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 420/NURS 430",
+      "choice": true,
+      "choice_note": "Catalog: 'NURS 420 (4) OR NURS 430 (4)'. Take one in Year 4 Fall and the other in Year 4 Spring.",
+      "options": [
+       "NURS 420",
+       "NURS 430"
+      ],
+      "slot_id": "s10-0",
+      "xfer": []
+     },
+     {
+      "code": "NURS 441",
+      "title": "Adult Health Nursing II",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 441",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s10-1",
+      "xfer": []
+     },
+     {
+      "code": "NURS 450",
+      "title": "Research and Evidence-Based Practice in Nursing (E)(SI)(W)",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 450",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s10-2",
+      "xfer": [
+       "ave-maria-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s10-3",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 11,
+    "label": "Year 4 — Interim",
+    "courses": [
+     {
+      "code": "NURS 451",
+      "title": "Transition to Leadership and Professional Practice I",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 451",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s11-0",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 12,
+    "label": "Year 4 — Spring",
+    "courses": [
+     {
+      "code": "NURS 420/NURS 430",
+      "title": "Behavioral Health Nursing or Community and Population Health Nursing",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 420/NURS 430",
+      "choice": true,
+      "choice_note": "Catalog: 'NURS 420 (4) OR NURS 430 (4)'. Take the one not completed in Year 4 Fall.",
+      "options": [
+       "NURS 420",
+       "NURS 430"
+      ],
+      "slot_id": "s12-0",
+      "xfer": []
+     },
+     {
+      "code": "NURS 410",
+      "title": "Maternal Newborn Nursing",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 410",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s12-1",
+      "xfer": [
+       "ave-maria-university-bsn-nursing"
+      ]
+     },
+     {
+      "code": "NURS 452",
+      "title": "Transition to Leadership and Professional Practice II",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 452",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s12-2",
+      "xfer": []
+     },
+     {
+      "code": "NURS 468",
+      "title": "NCLEX Review",
+      "credits": 1,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "NURS 468",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s12-3",
+      "xfer": []
+     },
+     {
+      "code": "CORE/MAJOR/MINOR/ELECTIVE",
+      "title": "Core, Major, Minor or Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "CORE/MAJOR/MINOR/ELECTIVE",
+      "choice": true,
+      "choice_note": "Catalog slot 'Core, Major, Minor or Elective Course (3-4)'; seeded at base 3 credits per collector convention for variable-credit slots.",
+      "options": [],
+      "slot_id": "s12-4",
+      "xfer": [
+       "augustana-university-ba-biology",
+       "augustana-university-ba-business-administration",
+       "augustana-university-ba-psychology"
+      ]
+     }
+    ]
+   }
+  ],
+  "content_hash": "79c27197857d559d3d39b20ee4b28816299e25f9b428b5dd4023f7984520b8b4",
+  "last_verified": "2026-10-02"
+ }
+}

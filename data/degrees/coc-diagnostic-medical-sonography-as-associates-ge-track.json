@@ -1,0 +1,462 @@
+{
+ "institution": {
+  "city": "Santa Clarita, CA",
+  "kind": "community",
+  "name": "College of the Canyons",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "coc-diagnostic-medical-sonography-as-associates-ge-track",
+  "major": "Diagnostic Medical Sonography (Associates GE Track)",
+  "notes": "Official College of the Canyons 'Diagnostic Medical Sonography AS (Associates GE Track)' program map, marked CATALOG 2026 and 'Updated 7/6/2026 CY 26-27'. Transcribed 2026-10-02 from the official PDF; every course code, title, and unit value copied verbatim. The map publishes nine numbered semesters; the Fourth Semester is a 0-unit planning semester (advisory text only: work on electives, finish Cal-GETC GE, complete the DMS application, study for the TEAS) with Term Total 0 -- it is omitted from sequencing and the remaining semesters keep their official numbers (Fifth through Ninth). Credit ranges seeded at the source's lower bound per convention: First Semester Mathematical Concepts 3-5 units seeded at 3 (dept prefers MATH 103 College Algebra); total_credits 87.5 = sequenced sum at lower bounds (11+13+14+10+13+12+3.5+11), matching the map's printed 'Total Units: 87.5 - 89.5'. 'X or Y' slots use the first-listed code: ENGL-C1000 (or ENGL-C1000H), BIOSCI 201 (or BIOSCI 204), BIOSCI 202 (or BIOSCI 205). Choice slots: Biology Group (Biology 100/101/107, 4 units), Mathematical Concepts (any college-level math, dept prefers MATH 103), Arts or Humanities GE (dept prefers PHILOS 120 Intro to Ethics), Social Science GE (dept prefers SOCI 101, title not printed), Ethnic Studies GE (any approved course). NC. DMS 100 and NC. HLTH 011 are genuine 0-credit recommended electives (required_zero). The map labels semesters 1-3 courses as Prerequisite/Area or Prerequisite/Major but prints no per-course prerequisite text, so prereq arrays are empty and sequencing follows the official placement. Admission to the professional phase (semesters 5-9) requires a separate DMS application and TEAS per the map; see source. VALIDATOR NOTE (2026-10-02): build.py::validate passes this seed on every check except the associate semester-count gate (4-7): the official map genuinely sequences 8 terms (9 numbered semesters; the 0-unit Fourth Semester planning term omitted). Per the zero-error rule the plan was NOT trimmed, merged, or re-labeled to fit the gate -- it is honestly EXCLUDED from shipment pending gate review.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one Biology course from the group (Prerequisite/Area 5): Biology 100 General Biology, Biology 101 Introductory Biology for Health Professions, or Biology 107 Molecular and Cellular Biology.",
+      "code": "BIOLOGY 100",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOLOGY 100",
+        "credits": 4,
+        "title": "General Biology"
+       },
+       {
+        "code": "BIOLOGY 101",
+        "credits": 4,
+        "title": "Introductory Biology for Health Professions"
+       },
+       {
+        "code": "BIOLOGY 107",
+        "credits": 4,
+        "title": "Molecular and Cellular Biology"
+       }
+      ],
+      "prereq": [],
+      "title": "General Biology",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENGL-C1000 or ENGL-C1000H Academic Reading and Writing (FA, WI, SP, SU).",
+      "code": "ENGL-C1000",
+      "credits": 4,
+      "options": [
+       {
+        "code": "ENGL-C1000",
+        "credits": 4,
+        "title": "Academic Reading and Writing"
+       },
+       {
+        "code": "ENGL-C1000H",
+        "credits": 4,
+        "title": "Academic Reading and Writing"
+       }
+      ],
+      "prereq": [],
+      "title": "Academic Reading and Writing",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose any college-level math class (Prerequisite/Area 2); department prefers MATH 103 College Algebra. Map prints 3-5 units; seeded at the lower bound per convention.",
+      "code": "MATH 103",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MATH 103",
+        "credits": 3,
+        "title": "College Algebra"
+       }
+      ],
+      "prereq": [],
+      "title": "College Algebra",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Genuine 0-credit recommended elective per the official map (required_zero).",
+      "code": "NC. DMS 100",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Sonography",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BIOSCI 201 Introduction to Human Anatomy or BIOSCI 204 Human Anatomy and Physiology I (5-year recency).",
+      "code": "BIOSCI 201",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOSCI 201",
+        "credits": 4,
+        "title": "Introduction to Human Anatomy"
+       },
+       {
+        "code": "BIOSCI 204",
+        "credits": 4,
+        "title": "Human Anatomy and Physiology I"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Human Anatomy",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM-C1000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HLHSCI 249",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Medical Terminology",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose any Arts or Humanities GE course (Area 3); department prefers PHILOS 120 Intro to Ethics.",
+      "code": "PHILOS 120",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PHILOS 120",
+        "credits": 3,
+        "title": "Intro to Ethics"
+       }
+      ],
+      "prereq": [],
+      "title": "Intro to Ethics",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Genuine 0-credit recommended elective per the official map (required_zero).",
+      "code": "NC. HLTH 011",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "title": "Health Professions Workforce",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BIOSCI 202 Introduction to Human Physiology or BIOSCI 205 Human Anatomy and Physiology II.",
+      "code": "BIOSCI 202",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIOSCI 202",
+        "credits": 4,
+        "title": "Introduction to Human Physiology"
+       },
+       {
+        "code": "BIOSCI 205",
+        "credits": 4,
+        "title": "Human Anatomy and Physiology II"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Human Physiology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYSIC 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Physics",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose any Social Science course (FA, WI, SP, SU) (Area 4); department prefers SOCI 101. The map prints no course title for this slot; the title below describes the slot, not an official course title.",
+      "code": "SOCI 101",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SOCI 101",
+        "credits": 3,
+        "title": "Social Science GE Course"
+       }
+      ],
+      "prereq": [],
+      "title": "Social Science GE Course",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one class from Ethnic Studies GE (Area 6).",
+      "code": "ETHNIC-STUDIES-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Ethnic Studies GE Course",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Third Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 101",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Patient Care Techniques for Sonographers",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 102",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Sectional Anatomy for Sonographers",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 110",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "title": "Abdominal Sonography with Lab",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fifth Semester (Fall)",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 120",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "title": "Obstetric and Gynecological Sonography with Lab",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 130",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Ultrasound Physics and Instrumentation",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 115",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Vascular Sonography I: Introduction to Venous Systems with Lab",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sixth Semester (Spring)",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 200",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Advanced Sonographic Practices with Lab",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Vascular Sonography II: Introduction to Arterial Systems with Lab",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 240",
+      "credits": 7,
+      "options": [],
+      "prereq": [],
+      "title": "Sonography Clinical Education I",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Seventh Semester (Fall)",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 250",
+      "credits": 3.5,
+      "options": [],
+      "prereq": [],
+      "title": "Sonography Clinical Education II",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Eighth Semester (Winter)",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 270",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Registry Review",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DMS 260",
+      "credits": 9,
+      "options": [],
+      "prereq": [],
+      "title": "Sonography Clinical Education III",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Ninth Semester (Spring)",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.canyons.edu/_documents/academics/dms/DMS-GE-Track-Program-Map.pdf",
+  "total_credits": 87.5,
+  "content_hash": "5ed353065feaffbb0980af279d321a6d7960becb8f80a54fad8546b04638bcd3",
+  "last_verified": "2026-10-06"
+ }
+}

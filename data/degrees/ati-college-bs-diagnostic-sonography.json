@@ -1,0 +1,458 @@
+{
+ "institution": {
+  "name": "ATI College",
+  "city": "Whittier, CA",
+  "state": "CA",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "ati-college-bs-diagnostic-sonography",
+  "degree": "BS",
+  "major": "Diagnostic Sonography",
+  "total_credits": 120,
+  "catalog_year": "2021",
+  "source_url": "https://www.bppe.ca.gov/webapplications/annualReports/2021/document/4f321748-90d3-47bd-92fa-61eb6208d85f",
+  "notes": "Source: ATI College Catalog January 1, 2021 - December 31, 2021 (63 pp), as filed with the California Bureau for Private Postsecondary Education (BPPE); program list cross-checked against the current BPPE approved-program listing. Hand-transcribed 2026-09-30. ATI runs a modular/continuous curriculum: the catalog publishes no semester grid, so courses are grouped here into 9 sequential 'Term' blocks ordered strictly by the catalog's prerequisite chain (each term's prereqs are satisfied by earlier terms). Curriculum: Technical 72 cr (VAS 301/302, PHY 301/302, ABD 301/302, OBG 301/302 at 7.5 cr each; EXT 400 Clinical Externship 12.0 cr) + Concentration in Healthcare Administration 18 cr + General Education 30 cr = 120 cr. Caveats: (1) The catalog's course-description text lists EXT 400 as 11.5 cr, but the program curriculum table lists 12.0 cr; 12.0 is used because it reconciles with the catalog's stated totals (72+18+30=120). (2) Technical course prereqs in the catalog also name MED 101 and PHS 101, which are legacy codes not present in the current curriculum; they are documented here, not modeled. (3) ENGL 301's catalog prereq is printed as 'ENG 101' (typo for ENGL 101); not modeled as a prereq code. (4) EXT 400's catalog prereq list prints 'COMP 201' (typo for COM 201); COM 201 is placed before EXT 400 so the chain is satisfied. (5) VAS/PHY/ABD/OBG 300-level course codes and titles also appear in ATI's earlier BPPE-filed catalog edition (2020 annual report); identical codes/credits/titles.",
+  "semesters": [
+   {
+    "term": "Term 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ANA 201",
+      "title": "Anatomy and Physiology",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "COMM 101",
+      "title": "Introduction to Communication",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENGL 101",
+      "title": "English Composition",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "COM 101",
+      "title": "Computer Fundamentals",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MAT 101",
+      "title": "College Algebra",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "PHY 101",
+      "title": "Physics",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Term 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "VAS 301",
+      "title": "Vascular Technology I",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "PHY 301",
+      "title": "Physics and Instrumentation I",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Term 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "VAS 302",
+      "title": "Vascular Technology II",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201",
+       "VAS 301"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "PHY 302",
+      "title": "Physics and Instrumentation II",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201",
+       "PHY 301"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Term 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "ABD 301",
+      "title": "Abdomen and Small Parts Sonography I",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "OBG 301",
+      "title": "Obstetrics and Gynecology Sonography I",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Term 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "ABD 302",
+      "title": "Abdomen and Small Parts Sonography II",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201",
+       "ABD 301"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "OBG 302",
+      "title": "Obstetrics and Gynecology Sonography II",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ANA 201",
+       "OBG 301"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "HEA 310",
+      "title": "Healthcare Administration",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "ACC 200",
+      "title": "Introduction to Accounting",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Term 6",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "HEA 320",
+      "title": "Human Resources Management",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "HEA 310"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "ACC 300",
+      "title": "Principles of Accounting",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ACC 200"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "COM 201",
+      "title": "Computerized Medical Administration",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COM 101"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "PHA 300",
+      "title": "Pharmacy Essentials",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Term 7",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "MED 300",
+      "title": "Medical Records and Billing",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ACC 300"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "INFO 101",
+      "title": "Introduction to Humanities",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "SOC 201",
+      "title": "Organizational Ethics",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ENGL 301",
+      "title": "Advanced Composition",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ENGL 101"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Term 8",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "EXT 400",
+      "title": "Clinical Externship",
+      "credits": 12,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "VAS 301",
+       "VAS 302",
+       "PHY 301",
+       "PHY 302",
+       "ABD 301",
+       "ABD 302",
+       "OBG 301",
+       "OBG 302",
+       "HEA 320",
+       "ACC 300",
+       "MED 300",
+       "COM 201"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Term 9",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "PRO 400",
+      "title": "Professional Development",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EXT 400"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 9
+   }
+  ],
+  "content_hash": "10d46cba20f0c047eed2f9f4befe2768a3478eda5808200854360b2d75690e89",
+  "last_verified": "2026-10-02"
+ }
+}

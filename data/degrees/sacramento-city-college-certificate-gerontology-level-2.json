@@ -1,0 +1,99 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "Certificate",
+  "external_prereqs": [],
+  "id": "sacramento-city-college-certificate-gerontology-level-2",
+  "major": "Gerontology (Level 2, Intermediate)",
+  "notes": "Transcribed from the official SCC 'Gerontology Level 2 (Intermediate) Certificate' program map, Catalog 2025-26, published July 26, 2025 (mapmaker.losrios.edu/Maps/6970/PublishedPdf). Official Total Units: 9.5-13; this seed models the first-listed/recommended path at the low end of variable-unit ranges = 3+3+3+0.5 = 9.5 units (WEXP 498 at 0.5 units), verified against the map's 9.5-13 header. This is a Certificate of Achievement (no GE pattern; all courses are major core) completed in one semester. Choice slots: (1) GERON 300 / SOC 335 (Sociology of Aging); (2) GERON 302 / PSYC 374 (Psychology of Aging: Adult Development and Aging). WEXP 498 Work Experience in (Subject): students must be in a paid or unpaid internship, volunteer position, or job related to career goals with a cooperating site supervisor (map note). Certificates of Achievement require a grade of C or better in each major course (map note). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "GERON 300 / SOC 335.",
+      "code": "GERON 300",
+      "credits": 3,
+      "options": [
+       "GERON 300",
+       "SOC 335"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "GERON 300",
+      "title": "Sociology of Aging",
+      "xfer": [
+       "sacramento-city-college-as-gerontology",
+       "sacramento-city-college-certificate-gerontology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "GERON 302 / PSYC 374.",
+      "code": "GERON 302",
+      "credits": 3,
+      "options": [
+       "GERON 302",
+       "PSYC 374"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "GERON 302",
+      "title": "Psychology of Aging: Adult Development and Aging",
+      "xfer": [
+       "sacramento-city-college-certificate-gerontology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC 390",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "PSYC 390",
+      "title": "Psychology of Death and Dying",
+      "xfer": [
+       "sacramento-city-college-as-gerontology",
+       "sacramento-city-college-certificate-gerontology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "WEXP 498 Work Experience in (Subject), 0.5-4 units modeled at 0.5. Students must be in a paid or unpaid internship, volunteer position, or job related to career goals with a cooperating site supervisor.",
+      "code": "WEXP 498",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "WEXP 498",
+      "title": "Work Experience in (Subject)",
+      "xfer": [
+       "american-river-college-certificate-para-professional-interior-planning-and-design",
+       "sacramento-city-college-as-gerontology",
+       "sacramento-city-college-certificate-gerontology"
+      ]
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/6970/PublishedPdf",
+  "total_credits": 9.5,
+  "transfer_confidence": "core_only",
+  "content_hash": "cd9e7edb6037480bdf0e49b3cbb813056c40986744cbcb6b108990a7fcd13878",
+  "last_verified": "2026-10-02"
+ }
+}

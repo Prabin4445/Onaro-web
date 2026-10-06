@@ -1,0 +1,507 @@
+{
+ "institution": {
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "name": "Occidental College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BA",
+  "external_prereqs": [],
+  "id": "occidental-ba-computer-science",
+  "major": "Computer Science",
+  "notes": "Transcribed 2026-09-30 from the official 2026-2027 Occidental College Catalog, 'Sample 4-Year Plan: Focus in Computer Science' (https://oxy.smartcatalogiq.com/en/2026-2027/catalog/programs-of-instruction/computer-science), for students required to take COMP 131 for the proficiency requirement. Occidental awards a Bachelor of Arts in Computer Science (verified via the catalog's 'Bachelor of Arts Degree' page and the 2026 Commencement program) - degree recorded as BA. Choice slots model the plan's generic slots: FYS courses are 4 units each (verified on official FYS course pages); Foreign Language 101 counted at 4 units (Oxy standard course value); Core Requirement and General Elective slots at 4 units as printed. COMP 101 recorded at 2 units as printed in the sample plan itself ('(2 units)') and on the official COMP 101 course description page; NOTE the catalog requirements table lists COMP 101 as 4 units - discrepancy documented, sample plan followed. Foreign Language 102 printed as '4 or 5 units' - counted at 4; a 5-unit FL102 would make the total 131. Term unit sums: Y1F 16, Y1S 16, Y2F 18, Y2S 16, Y3F 16, Y3S 16, Y4F 16, Y4S 16 = 130 total vs the College's 128-unit BA minimum - the sample plan exceeds the minimum by 2 units (3 if FL102 = 5). Prereqs: COMP 131 before COMP 229 / COMP 239 per Advising Information ('Once students have completed COMP 131, they should enroll in COMP 229 ... Students may also take COMP 239'); COMP 101 before COMP 390 per the department (oxy.edu: COMP 101 'required for all majors to take before their junior seminar'); COMP 390 before COMP 490 per the Junior/Senior Seminar sequence (390 offered spring junior year, 490 fall senior year). Six COMP electives satisfy the CS focus: three at 300-level, two in different subfields (AI, interfaces, security, systems/software, theory), at most two from the catalog's Additional Electives list. Placement: students with AP CS A 4/5 or qualifying self-placement skip COMP 131 and start at COMP 229.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fall First Year Seminar - any FYS topic (official FYS courses are 4 units each)",
+      "code": "FYS 1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "First Year Seminar (Fall)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Foreign language course at the 101 level",
+      "code": "LANG 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Foreign Language 101",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Occidental Core Program requirement (4 units)",
+      "code": "CORE 1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Occidental Core Program requirement (4 units)",
+      "code": "CORE 2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Spring First Year Seminar - any FYS topic (official FYS courses are 4 units each)",
+      "code": "FYS 2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "First Year Seminar (Spring)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "COMP 131 proficiency requirement; skipped by students with AP CS A 4/5 or qualifying self-placement (start at COMP 229 instead)",
+      "code": "COMP 131",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Fundamentals of Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Foreign language course at the 102 level; catalog prints '4 or 5 units' - counted at 4",
+      "code": "LANG 102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Foreign Language 102",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Occidental Core Program requirement (4 units)",
+      "code": "CORE 3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog sample plan: take COMP 229 or COMP 239 here (the other in sophomore spring)",
+      "code": "COMP 229-239 A",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMP 131"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "COMP 229 Data Structures or COMP 239 Computer Organization (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Sample plan prints '(2 units)'; the catalog requirements table lists 4 units - sample plan followed",
+      "code": "COMP 101",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Justice and Equity in Technology",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Occidental Core Program requirement (4 units)",
+      "code": "CORE 4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Sequencing follows the official sample plan (sophomore spring)",
+      "code": "COMP 149",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Mathematical Foundations of Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog sample plan: take COMP 229 or COMP 239 here (whichever was not taken in sophomore fall)",
+      "code": "COMP 229-239 B",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMP 131"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "COMP 229 Data Structures or COMP 239 Computer Organization (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Occidental Core Program requirement (4 units)",
+      "code": "CORE 5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Core Requirement",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective at the 300-level, subfield #1 (subfields: AI, interfaces, security, systems/software, theory)",
+      "code": "COMP EL3A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "COMP Elective - 300-level, subfield #1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective at the 300-level; at most two electives may come from the catalog's Additional Electives list",
+      "code": "COMP EL3B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "COMP Elective - 300-level",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Offered in the spring semester only; catalog states COMP 101 is required before the junior seminar",
+      "code": "COMP 390",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMP 101"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Science Junior Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective 200-level or above, subfield #2 (different subfield from the 300-level elective in junior fall)",
+      "code": "COMP EL2C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "COMP Elective - subfield #2",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Offered in the fall semester only; coordinated with the senior comprehensive project",
+      "code": "COMP 490",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMP 390"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computer Science Senior Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective at the 300-level",
+      "code": "COMP EL3D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "COMP Elective - 300-level",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G8",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G9",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective 200-level or above",
+      "code": "COMP ELDE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "COMP Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any COMP elective 200-level or above",
+      "code": "COMP ELDF",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "COMP Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G10",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (4 units)",
+      "code": "ELEC G11",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://oxy.smartcatalogiq.com/en/2026-2027/catalog/programs-of-instruction/computer-science",
+  "total_credits": 130,
+  "content_hash": "edf220acd2dfd7e058ac72a18a6e936b4fc9163247fbe6b222157d80b588842e",
+  "last_verified": "2026-10-02"
+ }
+}

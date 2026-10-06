@@ -1,0 +1,323 @@
+{
+ "institution": {
+  "city": "Queens, NY",
+  "kind": "community",
+  "name": "LaGuardia Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "laguardia-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official LaGuardia Community College 'Computer Science, AS' degree map, https://www.laguardia.edu/majors/computer-science/ (transcribed 2026-09-30). Program (plan code CMPSC-AS, Dept. of Mathematics, Engineering and Computer Science) and per-course credit values verified against the official 2024-2025 Academic Catalog on laguardia.edu (newest full catalog published on the site; 713-page Coursedog PDF), cross-checked with the 2023-2024 catalog and the official Queens College Computer Science articulation agreement hosted on laguardia.edu — all credit values identical across sources. Prerequisite chain MAT 115/117 -> MAT 200 -> MAT 201 -> MAT 202 is printed on the degree map itself; no other prerequisites are stated on the map, so no others are recorded. Caveats: (1) The degree map's own courses sum to 62 credits (15+16+16+15) while the catalog states the AS degree minimum is 60 credits (program core 30 + required core 12 + flexible core 18); the map exceeds the minimum because MAT 200 and MAT 201 are 4-credit courses filling flexible-core slots — total_credits uses the sequence's own total of 62. (2) The four Flexible Core slots may be any course approved for a Flexible Core area (max two courses from any one discipline). (3) The map marks MAT 200 and MAC 125 as Session II (SII) courses. (4) All students must take one Urban Study course to graduate. (5) Students apply to graduate in their final semester.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSF 101",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "First Year Seminar for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Placement scores determine ENG 101 vs ENA 101 Composition I Accelerated.",
+      "code": "ENG 10X",
+      "credits": 3,
+      "options": [
+       "ENG 101",
+       "ENA 101"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "English Composition I (ENG 101 or ENA 101 — by placement)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "MAT 117 depends on placement scores; either satisfies the Required Core math requirement.",
+      "code": "MAT 11X",
+      "credits": 3,
+      "options": [
+       "MAT 115",
+       "MAT 117"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Algebra and Trigonometry (MAT 115 or MAT 117 — by placement)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "One of: SCB 101 Topics in Biological Sciences, SCC 101 Topics in Chemistry, SCP 101 Topics in Physics, SCP 140 Topics in Astronomy.",
+      "code": "SCX 10X",
+      "credits": 3,
+      "options": [
+       "SCB 101",
+       "SCC 101",
+       "SCP 101",
+       "SCP 140"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Life and Physical Sciences (SCB 101, SCC 101, SCP 101, or SCP 140)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 200",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 11X"
+      ],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Precalculus",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 200"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Introduction to Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Discrete Math",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Advanced C/C++ Programming",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 202",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 201"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 281",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 190",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course approved for a Flexible Core area (max two courses from any one discipline); the program advises one Urban Study course to complete the college requirement.",
+      "code": "FCX 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Flexible Core Course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course approved for a Flexible Core area (max two courses from any one discipline); the program advises one Urban Study course to complete the college requirement.",
+      "code": "FCX 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Flexible Core Course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 286",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures (Capstone)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 283",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Organization & Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course approved for a Flexible Core area (max two courses from any one discipline); the program advises one Urban Study course to complete the college requirement.",
+      "code": "FCX 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Flexible Core Course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Any course approved for a Flexible Core area (max two courses from any one discipline); the program advises one Urban Study course to complete the college requirement.",
+      "code": "FCX 304",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Flexible Core Course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.laguardia.edu/majors/computer-science/",
+  "total_credits": 62,
+  "content_hash": "b2509579c85a1e8c3527173e85e7fbf76714175f0b638dcd985a3f8d1e867308",
+  "last_verified": "2026-10-02"
+ }
+}

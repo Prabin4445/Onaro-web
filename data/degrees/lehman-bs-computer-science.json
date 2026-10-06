@@ -1,0 +1,628 @@
+{
+ "institution": {
+  "name": "Lehman College",
+  "city": "Bronx, NY",
+  "kind": "public4yr",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "lehman-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 123,
+  "source_url": "https://lehman-undergraduate.catalog.cuny.edu/programs/COMSC-BS",
+  "notes": "Source: official Lehman College undergraduate catalog, Computer Science COMSC-BS (Software Engineering Track) Degree Map, 2026-2027 Undergraduate Catalog (Contemporary): https://lehman-undergraduate.catalog.cuny.edu/programs/COMSC-BS . Cross-checked against the official Lehman career-infused degree map PDF for the same track (Bachelor of Science: Computer Science, Track: Software Engineering): https://www.lehman.edu/media/Student-Affairs/Career-Exploration-amp-Development-Center/documents/Lehman-College-Career-Infused-Degree-Map---BS-Computer-Science-(Software-Engineering-Track)-.pdf . Transcription method: machine-read from the catalog page's embedded degree-map JSON (course IDs resolved against official catalog course pages for code/title/credits), then verified term-by-term against the career PDF. Track note: the BS in Computer Science (COMSC-BS) is offered in five tracks (System, Web Development, Software Engineering, Mobile Programming, Artificial Intelligence); this file transcribes the Software Engineering track, the track with a full official term-by-term degree map. Credit discrepancy (documented honestly): the career PDF prints Total Credits 122 with the Fall Year 3 major elective at 3 cr; the current catalog degree map labels that slot 'Major Elective (4 cr)', giving a transcribed term total of 14 and an overall total of 123 (18+17+16+13+14+18+12+15). total_credits uses the catalog's 123. The older career PDF also lists CMP 465 Technical Interview Preparation (prereq CMP 338) and optional CED 102 in Year 2; CMP 465 does not appear in the current catalog degree map and was omitted, while optional CED 102 and CMP 485 are kept as 0-credit required_zero entries with notes. Six catalog course pages timed out during verification (LEH 250, LEH 355, CMP 232, CMP 340, CMP 410, CMP 346); their code/title/credits are confirmed by the official career PDF at the same map positions and by the catalog's own requirement tables (CMP 232 = Discrete Mathematics 4 cr) and the Lehman math/CS department program pages. Math sequencing note: the catalog's math generic states the math course sequence is determined by placement (MAT 126, MAT 171, MAT 172, or MAT 175); this map follows the MAT 172 start. Lab/lecture corequisite pairs are placed in the same term per the official map (CMP 167+CMP 157, CMP 168+CMP 158, MAT 175+MAT 155, MAT 176+MAT 156). CMP 338 prerequisites (CMP 232, CMP 157, CMP 158, CMP 168) are from its official catalog course page. All Lehman students must also complete Writing Intensive (WI) courses (four for entering freshmen).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENG 111",
+      "title": "English Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MAT 172",
+      "title": "Precalculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "SCIW-EL-1",
+      "title": "Flexible Core: Scientific World (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Flexible Core - Scientific World course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CMP 167",
+      "title": "Programming Methods I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CMP 157",
+      "title": "Programming Methods I Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "LEH 250",
+      "title": "First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENG 121",
+      "title": "English Composition II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CMP 168",
+      "title": "Programming Methods II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CMP 158",
+      "title": "Programming Methods II Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CMP 232",
+      "title": "Discrete Mathematics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MAT 175",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "MAT 155",
+      "title": "Calculus I Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "LANG-EL-1",
+      "title": "Foreign Language I (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Two foreign language courses in the same language are required; take the first-semester course here. Students who transfer in with an associate's degree are exempt from the foreign language requirement.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CMP 334",
+      "title": "Computer Organization",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CMP 338",
+      "title": "Data Structures and Algorithms",
+      "credits": 4,
+      "prereq": [
+       "CMP 232",
+       "CMP 157",
+       "CMP 158",
+       "CMP 168"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MAT 176",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "MAT 156",
+      "title": "Calculus II Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "CED 102",
+      "title": "Introduction to Career Development",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "general",
+      "required_zero": true,
+      "note": "Optional per the official career-infused degree map (listed without a credit value and excluded from the printed 16-credit term total); not present in the catalog degree map."
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "LANG-EL-2",
+      "title": "Foreign Language II (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second foreign language course, in the same language as Foreign Language I.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "IS-EL-1",
+      "title": "Flexible Core: Individual and Society (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Flexible Core - Individual and Society course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "USED-EL-1",
+      "title": "Flexible Core: U.S. Experience in Its Diversity (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Flexible Core - U.S. Experience in Its Diversity course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MAT 226",
+      "title": "Vector Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "LEH-35X-1",
+      "title": "LEH Integration Course (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of LEH 352 / LEH 353 / LEH 354 / LEH 355 (variable-topics integration courses; take two courses with two different numbers across the degree). Requires 60 credits and declared major; LEH 351 is not a College Option for this major.",
+      "options": [
+       {
+        "code": "LEH 352",
+        "title": "Studies in Literature",
+        "credits": 3
+       },
+       {
+        "code": "LEH 353",
+        "title": "Studies in the Arts",
+        "credits": 3
+       },
+       {
+        "code": "LEH 354",
+        "title": "Studies in Historical Studies",
+        "credits": 3
+       },
+       {
+        "code": "LEH 355",
+        "title": "Studies in Philosophy, Theory and Abstract Thinking",
+        "credits": 3
+       }
+      ],
+      "category": "general"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "WCGI-EL-1",
+      "title": "Flexible Core: World Cultures and Global Issues (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Flexible Core - World Cultures and Global Issues course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CMP-EL-1",
+      "title": "Major Elective (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Advanced CMP elective at the 300- or 400-level; four such electives required in total. MAT 226 or PHY 305 may be substituted for one of these courses.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MAT 313",
+      "title": "Elements of Linear Algebra",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CMP 485",
+      "title": "Independent Study",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true,
+      "note": "Optional per the official career-infused degree map (3 cr, excluded from the printed term total); not present in the catalog degree map."
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "LEH-35X-2",
+      "title": "LEH Integration Course (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of LEH 352 / LEH 353 / LEH 354 / LEH 355 (variable-topics integration courses; take two courses with two different numbers across the degree). Requires 60 credits and declared major; LEH 351 is not a College Option for this major.",
+      "options": [
+       {
+        "code": "LEH 352",
+        "title": "Studies in Literature",
+        "credits": 3
+       },
+       {
+        "code": "LEH 353",
+        "title": "Studies in the Arts",
+        "credits": 3
+       },
+       {
+        "code": "LEH 354",
+        "title": "Studies in Historical Studies",
+        "credits": 3
+       },
+       {
+        "code": "LEH 355",
+        "title": "Studies in Philosophy, Theory and Abstract Thinking",
+        "credits": 3
+       }
+      ],
+      "category": "general"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "LPS-EL-1",
+      "title": "Required Core: Life and Physical Sciences (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Required Core - Life and Physical Sciences course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CMP 340",
+      "title": "Introduction to Probability for Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CMP 269",
+      "title": "Programming Methods III",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CMP 408",
+      "title": "Software Engineering",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMP-EL-2",
+      "title": "Major Elective (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Advanced CMP elective at the 300- or 400-level; four such electives required in total. MAT 226 or PHY 305 may be substituted for one of these courses.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CMP 410",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CMP-EL-3",
+      "title": "Major Elective (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Advanced CMP elective at the 300- or 400-level; four such electives required in total. MAT 226 or PHY 305 may be substituted for one of these courses.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CMP-EL-4",
+      "title": "Major Elective (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Advanced CMP elective at the 300- or 400-level; four such electives required in total. MAT 226 or PHY 305 may be substituted for one of these courses.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CE-EL-1",
+      "title": "Flexible Core: Creative Expression (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved CUNY Pathways Flexible Core - Creative Expression course.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CMP 346",
+      "title": "Object Oriented Techniques",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CMP 428",
+      "title": "Video Game Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "cf06744d6261638f32374b498536b5848d9a7bfec933c604a6df34280a6c8c84",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,605 @@
+{
+ "institution": {
+  "city": "Dayton, OH",
+  "kind": "private4yr",
+  "name": "University of Dayton",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "dayton-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official University of Dayton sample plan of study for the B.S. in Computer Science, 'for students starting at UD in the 2026-27 academic year' (udayton.edu/academics/programs/computer-science-bs/index.php). The page states: 'This is a sample plan of study for students starting at UD in the 2026-27 academic year. This is a recommended course sequence, but your schedule may vary depending on previously earned college credits, course availability, advisor recommendations and your personal goals and interests.' The page directs readers to the Academic Catalog (catalog.udayton.edu) for official major requirements, prerequisites, and course descriptions; course titles, credit hours, and prerequisites were cross-checked against the catalog's Computer Science course list (catalog.udayton.edu/allcourses/cps/cps.pdf). Degree name verified: the catalog's Computer Science program page lists the program as 'Bachelor of Science, Computer Science' and the department site confirms UD offers a Bachelor of Science in Computer Science. The 2026-27 sample plan uses CPS prefixes for the major core courses; the catalog's course list presents the same core under CSCI prefixes with CPS cross-equivalents (e.g. 'Prerequisite(s): CSCI 151 or CPS 151'), so CPS codes from the plan are retained in the JSON. Prerequisites in the JSON follow the catalog's course descriptions (e.g. CPS 356 requires CPS 250 and CPS 350; CPS 450 requires CPS 341 and CPS 350; CPS 490 requires CPS 420; CPS 491 requires CPS 490). The MTH calculus-chain prerequisites (MTH 169 requires MTH 168; MTH 218 requires MTH 169) are inferred from the official semester ordering, not printed as catalog prerequisite text. Credit discrepancy: the eight semester totals (16+18+16+15+15+15+15+12) sum to 122, while the degree page states the BS requires 'at least 120 credit hours'; total_credits uses the sequence's own published total of 122. The source page carries a footnote '* Choose from PHL 312, 316, 319 or 321' beneath Semester 8 (no explicit requirement named; recorded verbatim as a caveat). ASI 150, HUM 101/102, CAP slots, natural-science slots, and electives are student-choice requirements; their exact courses are chosen by the student, so they are modeled as choice slots. The two 3-credit 'CPS Electives' in Semester 6 are modeled as two separate 3-credit choice slots. Placement/assessment details: none stated in the source; external_prereqs is therefore empty. Transcription method: manual transcription of the official UD sample plan of study on 2026-09-30.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASI 150",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to the University Experience",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 150",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Algorithms & Programming I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Natural Science with Lab course",
+      "code": "CAP-NSL",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "CAP Natural Science with Lab",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "HUM 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Chaminade Seminar: Reading and Responding to the Signs of the Times",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 168",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Analytic Geometry & Calculus I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 151",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CPS 150"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Algorithms & Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 341",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 150"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 169",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH 168"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Analytic Geometry & Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any Natural Science with Lab course",
+      "code": "NATSCI-LAB",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Natural Science with Lab",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "HUM 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Marie Thérèse Seminar: Human Dignity and the Common Good",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 151"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 151"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures & Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 218",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH 169"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Analytic Geometry & Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Arts course",
+      "code": "CAP-ARTS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "CAP Arts",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMM 100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Principles of Oral Communication",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 352",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 350"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Concepts and Implementation of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 356",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 250",
+       "CPS 350"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Matrix Theory and Applications",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Writing Seminar II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any Natural Science course (Part 2)",
+      "code": "NATSCI-2A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Natural Science (Part 2)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 420",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 350"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 367",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Statistical Methods I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 341",
+       "CPS 350"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any Natural Science course (Part 2)",
+      "code": "NATSCI-2B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Natural Science (Part 2)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Faith Traditions course",
+      "code": "CAP-FAITH",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "CAP Faith Traditions",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 470",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 350"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Networks and Security",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects any CPS elective (3 credits)",
+      "code": "CPS-ELCT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CPS Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects any CPS elective (3 credits)",
+      "code": "CPS-ELCT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CPS Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any Social and Behavioral Science elective",
+      "code": "SBSCI-ELCT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Social and Behavioral Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Interdisciplinary Investigations course",
+      "code": "CAP-INTER",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "CAP Interdisciplinary Investigations",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 490",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 420"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Capstone I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects any CPS elective (3 credits)",
+      "code": "CPS-ELCT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CPS Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Social Science course",
+      "code": "CAP-SOCSCI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CAP Social Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Advanced Religious Studies course",
+      "code": "CAP-ADVREL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CAP Advanced Religious Studies",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Diversity and Social Justice course",
+      "code": "CAP-DIVSJ",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "CAP Diversity and Social Justice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 491",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPS 490"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects any CPS elective (3 credits)",
+      "code": "CPS-ELCT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CPS Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student selects any 3-credit elective",
+      "code": "ELECTIVE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects any CAP Advanced Historical Studies course",
+      "code": "CAP-ADVHIST",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CAP Advanced Historical Studies",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://udayton.edu/academics/programs/computer-science-bs/index.php",
+  "total_credits": 122,
+  "content_hash": "0ddb7661d1dcd1e7f728fec075210c3fb4e928ca9c9362982c886e3479cb0cc4",
+  "last_verified": "2026-10-02"
+ }
+}

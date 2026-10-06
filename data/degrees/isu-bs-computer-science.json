@@ -1,0 +1,729 @@
+{
+ "institution": {
+  "city": "Pocatello, ID",
+  "kind": "public4yr",
+  "name": "Idaho State University",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 1143",
+   "MATH 1144"
+  ],
+  "id": "isu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Idaho State University Department of Computer Science official '4-year Degree Plan: BS in Computer Science, BS in Artificial Intelligence Sciences w/ CS Concentration, and CS Cybersecurity Certificate (26-27)' PDF — https://www.isu.edu/media/libraries/college-of-science-and-engineering/computer-science/documents/BSAIS-BSCS-CyberCert-4YrPlan26-27.pdf — the department's published term-by-term sequence for the BS in Computer Science (listed first in the plan title), downloaded and manually transcribed on 2026-09-30. Cross-checked against the 2026-27 ISU catalog 'B.S. Computer Science' requirements page (https://coursecat.isu.edu/undergraduate/scienceengineering/computerscience/bs-computer-science/), which confirms the degree name 'B.S. Computer Science' (Pocatello, ID), 120 total credits, and the catalog titles/credits of the major courses. IMPORTANT: the source plan is a COMBINED plan for the BSCS plus the BSAIS-with-CS-concentration plus the CS Cybersecurity Certificate. Every row was transcribed exactly as printed in the plan (nothing invented, no rows added or dropped). Rows beyond the catalog's BSCS core — CS 1185, MATH 3332, MATH 4405, CS 4433, CS 4470, CS 4472, CS 4478, and the CS 4417/CS 4434 option — are marked category 'elective'; they serve the AI-sciences concentration / cybersecurity-certificate tracks in the combined plan, and for a pure BSCS student they occupy the catalog's '9 additional CS elective credits' + free-elective slots. Credits transcribed exactly as the plan prints them: the plan lists MATH 1170 and MATH 1175 at 3 credits each, while the 2026-27 catalog lists both at 4 credits each — the plan's printed semester totals sum to exactly 120. Plan title discrepancy: the plan prints 'Math1175 ... Linear Algebra' in Semester 2; MATH 1175 is Calculus II per the catalog, so it is transcribed as Calculus II. The plan's 'CS 33-0' in the CS 4478 prerequisite column is read as CS 3309. Placement/assessment: CS 1181 requires MATH 1143 or equivalent; several courses list 'Math1144/1147 or equivalent' — MATH 1143 and MATH 1144 are listed as plain external prerequisite codes; either MATH 1144 or MATH 1147 (or equivalent) satisfies the plan. ENGL 1101 lists a placement test or equivalent, kept in the notes only.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1181",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1143"
+      ],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science and Programming I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1170",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "English Composition",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 1103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Introduction to Ethics",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 3 Objective 6'. Choose any approved ISU General Education Objective 6 course.",
+      "code": "GENED-OBJ6-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education — Objective 6",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1337",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1181",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2281",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 1181",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1170"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Required in the official combined plan; serves the BSAIS-with-CS-concentration track. Plan prereq: CS 1181.",
+      "code": "CS 1185",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1181"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Artificial Intelligence Tools",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "Plan prints the title as 'Linear Algebra' for MATH 1175, but MATH 1175 is Calculus II per the catalog; transcribed as Calculus II. Plan prints 3 credits (catalog: 4).",
+      "code": "MATH 1175",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1170"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3309",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 2281",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Advanced Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3310",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 2281",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Databases",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3311",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 2281",
+       "MATH 1144",
+       "CS 3310"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Secure Client Server Web Development",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Plan prints no prerequisites for this course.",
+      "code": "CS 4416",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Foundations in Cybersecurity and Resilience",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3337",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 2281",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Secure Systems and Networks",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Plan lists CS 3310 as a pre/co-requisite; treated as a prerequisite here.",
+      "code": "CS 3321",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 3309",
+       "MATH 1144",
+       "CS 3310"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4461",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 3309",
+       "MATH 1144"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Secure Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Plan prints 'Math1187/2287 — Discrete Math'. Either option satisfies the catalog requirement (CS/MATH 1187 Applied Discrete Structures or MATH 2287 Foundations of Mathematics).",
+      "code": "MATH-1187-2287-CHOICE-1",
+      "credits": 3,
+      "options": [
+       "CS/MATH 1187",
+       "MATH 2287"
+      ],
+      "prereq": [
+       "CS 1181"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Discrete Mathematics (CS/MATH 1187 or MATH 2287)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Required in the official combined plan; serves the AI-sciences concentration track.",
+      "code": "MATH 3332",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1181",
+       "MATH 1170",
+       "MATH 2240"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Data Science & Applied Machine Learning",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Required in the official combined plan; an upper-division CS elective for BSCS students.",
+      "code": "CS 4433",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 2281",
+       "MATH 1170",
+       "MATH 2240"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Applied Neural Networks",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Plan prereq reads 'CS1337 CS3309, Math2240 Math1175 1187/2287'; the discrete-math requirement is the MATH 1187/2287 choice slot.",
+      "code": "CS 4412",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 3309",
+       "MATH 2240",
+       "MATH 1175",
+       "MATH-1187-2287-CHOICE-1"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "Catalog also allows ECE 4411, MATH 4450, or NE 4478 for this requirement; the plan sequences MATH 3352.",
+      "code": "MATH 3352",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1175"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Introduction to Probability",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Plan prereq reads 'Math1170 CS1181 Math1187/2287'; the discrete-math requirement is the MATH 1187/2287 choice slot.",
+      "code": "CS 3305",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1170",
+       "CS 1181",
+       "MATH-1187-2287-CHOICE-1"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Introduction to Computational Theory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 2211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1170"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Engineering Physics I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 3 Objective 4'. Choose any approved ISU General Education Objective 4 course.",
+      "code": "GENED-OBJ4-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "General Education — Objective 4",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 3 Objective 6'. Choose any approved ISU General Education Objective 6 course.",
+      "code": "GENED-OBJ6-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "General Education — Objective 6",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Plan notes 'Offered Even Springs'. Required in the official combined plan.",
+      "code": "MATH 4405",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 2240",
+       "CS 1181"
+      ],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Numerical Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Plan prints this row as 'CS 4417 Cybersecurity Threat Intell. / CS 4434 Generative Artificial Intelligence' — one of the two. Prerequisites shown are for the CS 4434 path as printed (CS 1185, CS 4433, CS 3309, MATH 1170, MATH 2240); the plan prints CS 4417 without prerequisites.",
+      "code": "CS-4417-4434-CHOICE-1",
+      "credits": 3,
+      "options": [
+       "CS 4417",
+       "CS 4434"
+      ],
+      "prereq": [
+       "CS 1185",
+       "CS 4433",
+       "CS 3309",
+       "MATH 1170",
+       "MATH 2240"
+      ],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Cybersecurity Threat Intelligence (CS 4417) or Generative Artificial Intelligence (CS 4434)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Required in the official combined plan; an upper-division CS elective for BSCS students.",
+      "code": "CS 4470",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 4461"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "High Performance Computing",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Required in the official combined plan; serves the AI-sciences concentration track.",
+      "code": "CS 4472",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 3309",
+       "CS 4412",
+       "MATH 1175",
+       "MATH 2240"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Artificial Intelligence Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 3 Objective 9'. Choose any approved ISU General Education Objective 9 course.",
+      "code": "GENED-OBJ9-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "General Education — Objective 9",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "Plan prints no prerequisites for this course.",
+      "code": "MATH 3350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Statistical Methods",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan prints 'Eng3307/8 — Technical Writing'. Either option satisfies the catalog technical-communication requirement (ENGL 3307 Professional and Technical Writing or ENGL 3308 Business Communications).",
+      "code": "ENGL-3307-3308-CHOICE-1",
+      "credits": 3,
+      "options": [
+       "ENGL 3307",
+       "ENGL 3308"
+      ],
+      "prereq": [
+       "ENGL 1102"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Professional and Technical Writing (ENGL 3307) or Business Communications (ENGL 3308)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4488",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3337"
+      ],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Project",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Plan prereq reads 'Math1170 Math1187/2287 CS1337 CS4412'; the discrete-math requirement is the MATH 1187/2287 choice slot.",
+      "code": "CS 4481",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1170",
+       "MATH-1187-2287-CHOICE-1",
+       "CS 1337",
+       "CS 4412"
+      ],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Compilers",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 4 Objective 5 Science + Lab'. Choose any approved ISU General Education Objective 5 science-with-lab course; plan notes a placement test score or equivalent.",
+      "code": "GENED-OBJ5-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "General Education — Objective 5 (Science + Lab)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Plan prints 'Gen Ed 3 Objective 2'. Choose any approved ISU General Education Objective 2 course.",
+      "code": "GENED-OBJ2-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "General Education — Objective 2",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Plan prints the prerequisite 'CS 33-0', read as CS 3309. Serves the AI-sciences concentration track.",
+      "code": "CS 4478",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1337",
+       "CS 3309",
+       "CS 4412",
+       "MATH 1175",
+       "MATH 2240"
+      ],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Machine Learning Algorithms",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.isu.edu/media/libraries/college-of-science-and-engineering/computer-science/documents/BSAIS-BSCS-CyberCert-4YrPlan26-27.pdf",
+  "total_credits": 120,
+  "content_hash": "b68923b6879faf6ceaf358c44636988f2255ed46d376c7270d8080e8abd56ecd",
+  "last_verified": "2026-10-02"
+ }
+}

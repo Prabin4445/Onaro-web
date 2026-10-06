@@ -1,0 +1,625 @@
+{
+ "institution": {
+  "name": "Seattle University",
+  "city": "Seattle, WA",
+  "kind": "private4yr",
+  "state": "WA"
+ },
+ "plan": {
+  "id": "seattleu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 180,
+  "source_url": "https://seattleu.edu/academics/all-programs/computer-science-ba-bs/computer-science-bs-four-year-plan/",
+  "notes": "Source: Seattle University official four-year degree plan page for the Bachelor of Science in Computer Science, College of Science & Engineering: https://seattleu.edu/academics/all-programs/computer-science-ba-bs/computer-science-bs-four-year-plan/ (Quarter-Based Degree Plan, for students who enroll prior to Summer 2027). Catalog year: 2026-2027 (current quarter-based plan as of 2026-09-30; Seattle U is a quarter school transitioning to semesters in Summer 2027 - the semester-based plan for Summer 2027+ entrants was NOT used). Transcription: manual term-by-term transcription of the official sample-plan tables; credits are QUARTER credits. The page states this is a sample, not the only way to complete the plan, and that the course order accounts for prerequisites. Course prerequisites cross-checked against official catalog.seattleu.edu course descriptions: CPSC 1430 requires B- or better in CPSC 1420; CPSC 2430/2500 require B- or better in CPSC 1430; CPSC 3200/3300/3500 require B- or better in CPSC 2430; CPSC 3400/4100 require B- or better in CPSC 2430 plus CPSC 2600 or MATH 3000; CPSC 4800 requires UCOR 1100 and B- or better in CPSC 2430 plus chair permission (taken concurrently with CPSC 4870); CPSC 4880 requires CPSC 4800 and CPSC 4870; CPSC 4890 requires CPSC 4880; MATH 2310 requires MATH 1335 (C- or better); MATH 2320 requires MATH 1336 (C- or better); CPSC 1420 requires MATH 1021 or higher (C- or better). MATH 1021 is listed in external_prereqs as a placement-level floor for CPSC 1420; UCOR 1100 (Academic Writing Seminar) is listed in external_prereqs because the catalog requires it before CPSC 4800 - it may be satisfied by one of the UCOR Module I choice slots in Year 1. Senior capstone (CPSC 4870/4880/4890) entry per catalog: 120 credits completed, two completed 3000-level CPSC courses plus one additional 3000/4000-level CPSC course with C or better, major GPA in good standing. Duplicate-looking codes (UCOR 1XXX/2XXX/3XXX, CPSC 4XXX, SCI-ELECTIVE, GEN-ELECTIVE) are intentional student-choice slots; the sample plan lists them identically each term. Grade rules: C (2.00) required in all CPSC courses used for the major; 2.0 minimum major and cumulative GPA. Degree minimums per page: 180 quarter credits to graduate; 122 quarter credits in the major.",
+  "external_prereqs": [
+   "MATH 1021",
+   "UCOR 1100"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CPSC 1420",
+      "title": "Programming & Problem Solving I",
+      "credits": 5,
+      "prereq": [
+       "MATH 1021"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 1334",
+      "title": "Calculus I",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "UCOR 1XXX",
+      "title": "University Core - Foundations",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module I course, e.g. UCOR 1100, 1300, 1400, 1600 (UCOR 1200/1800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CPSC 1430",
+      "title": "Programming & Problem Solving II",
+      "credits": 5,
+      "prereq": [
+       "CPSC 1420"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 1335",
+      "title": "Calculus II",
+      "credits": 5,
+      "prereq": [
+       "MATH 1334"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "UCOR 1XXX",
+      "title": "University Core - Foundations",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module I course, e.g. UCOR 1100, 1300, 1400, 1600 (UCOR 1200/1800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CPSC 2430",
+      "title": "Data Structures",
+      "credits": 5,
+      "prereq": [
+       "CPSC 1430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 1336",
+      "title": "Calculus III",
+      "credits": 5,
+      "prereq": [
+       "MATH 1335"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "UCOR 1XXX",
+      "title": "University Core - Foundations",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module I course, e.g. UCOR 1100, 1300, 1400, 1600 (UCOR 1200/1800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CPSC 2500",
+      "title": "Computer Organization",
+      "credits": 5,
+      "prereq": [
+       "CPSC 1430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CPSC 2600 or MATH 3000",
+      "title": "Foundations of Computer Science / Intro to Advanced Mathematics",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose CPSC 2600 - Foundations of Computer Science OR MATH 3000 - Intro to Advanced Mathematics (math minors/double majors may take MATH 3000 in lieu of CPSC 2600). CPSC 2600 requires C- or better in MATH 1335 and B- or better in CPSC 1430; check catalog for MATH 3000 prerequisites.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "UCOR 1XXX",
+      "title": "University Core - Foundations",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module I course, e.g. UCOR 1100, 1300, 1400, 1600 (UCOR 1200/1800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Winter Year 2",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CPSC 3300",
+      "title": "Fundamentals of Databases",
+      "credits": 5,
+      "prereq": [
+       "CPSC 2430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "MATH 2310 or MATH 3411",
+      "title": "Probability & Statistics for Science & Engineering / Probability",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose MATH 2310 - Probability & Statistics for Science & Engineering (prereq: MATH 1335, C- or better) OR MATH 3411 - Probability (prereq: MATH 2330, C- or better; MATH 2330 is not in this sample plan, so confirm the path with an advisor).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "UCOR 2XXX",
+      "title": "University Core - Engaging Jesuit Traditions",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module II course, e.g. UCOR 2100, 2500, 2900. See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CPSC 3500",
+      "title": "Computing Systems",
+      "credits": 5,
+      "prereq": [
+       "CPSC 2430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "PHYS 1210",
+      "title": "Mechanics (PHYS 1210 + PHYS 1211 Lab)",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "UCOR 2XXX",
+      "title": "University Core - Engaging Jesuit Traditions",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module II course, e.g. UCOR 2100, 2500, 2900. See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CPSC 3200",
+      "title": "Object-Oriented Development",
+      "credits": 5,
+      "prereq": [
+       "CPSC 2430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "SCI-ELECTIVE",
+      "title": "Science Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved science elective (5 quarter credits); consult the College of Science & Engineering advising center. The degree requires lab-science coursework including calculus-based physics.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "UCOR 2XXX",
+      "title": "University Core - Engaging Jesuit Traditions",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module II course, e.g. UCOR 2100, 2500, 2900. See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter Year 3",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CPSC 4100",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 5,
+      "prereq": [
+       "CPSC 2430",
+       "CPSC 2600 or MATH 3000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "SCI-ELECTIVE",
+      "title": "Science Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved science elective (5 quarter credits); consult the College of Science & Engineering advising center. The degree requires lab-science coursework including calculus-based physics.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "UCOR 3XXX",
+      "title": "University Core - Engaging the World",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module III course, e.g. UCOR 3100, 3400, 3600 (UCOR 3800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "CPSC 3400",
+      "title": "Languages & Computation",
+      "credits": 5,
+      "prereq": [
+       "CPSC 2430",
+       "CPSC 2600 or MATH 3000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-1",
+      "code": "CPSC 4XXX",
+      "title": "CPSC 4000-level Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4000-level CPSC elective; 20 quarter credits of 4000-level CPSC electives required by the major. CPSC 3960/4950/4960/4990 (independent study/internship) may not satisfy electives. 5000-level electives allowed with chair permission.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-2",
+      "code": "UCOR 3XXX",
+      "title": "University Core - Engaging the World",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module III course, e.g. UCOR 3100, 3400, 3600 (UCOR 3800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s10-0",
+      "code": "CPSC 4870",
+      "title": "Software Engineering & Project Development I",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-1",
+      "code": "CPSC 4800",
+      "title": "Technical Communication and Project Management",
+      "credits": 3,
+      "prereq": [
+       "UCOR 1100",
+       "CPSC 2430"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-2",
+      "code": "CPSC 4XXX",
+      "title": "CPSC 4000-level Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4000-level CPSC elective; 20 quarter credits of 4000-level CPSC electives required by the major. CPSC 3960/4950/4960/4990 (independent study/internship) may not satisfy electives. 5000-level electives allowed with chair permission.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-3",
+      "code": "MATH 2320",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "prereq": [
+       "MATH 1336"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Winter Year 4",
+    "courses": [
+     {
+      "slot_id": "s11-0",
+      "code": "CPSC 4880",
+      "title": "Software Engineering & Project Development II",
+      "credits": 3,
+      "prereq": [
+       "CPSC 4800",
+       "CPSC 4870"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-1",
+      "code": "CPSC 4XXX",
+      "title": "CPSC 4000-level Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4000-level CPSC elective; 20 quarter credits of 4000-level CPSC electives required by the major. CPSC 3960/4950/4960/4990 (independent study/internship) may not satisfy electives. 5000-level electives allowed with chair permission.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-2",
+      "code": "UCOR 3XXX",
+      "title": "University Core - Engaging the World",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved UCOR Module III course, e.g. UCOR 3100, 3400, 3600 (UCOR 3800 satisfied in major). See University Core requirements.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s11-3",
+      "code": "GEN-ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-credit general elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s12-0",
+      "code": "CPSC 4890",
+      "title": "Software Engineering & Project Development III",
+      "credits": 3,
+      "prereq": [
+       "CPSC 4880"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s12-1",
+      "code": "CPSC 4XXX",
+      "title": "CPSC 4000-level Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4000-level CPSC elective; 20 quarter credits of 4000-level CPSC electives required by the major. CPSC 3960/4950/4960/4990 (independent study/internship) may not satisfy electives. 5000-level electives allowed with chair permission.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s12-2",
+      "code": "GEN-ELECTIVE",
+      "title": "General Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 5-credit general elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "65e25d1e9b8d6d8b05fd335d38997319320a90164539ce205427484d5d3b02e9",
+  "last_verified": "2026-10-02"
+ }
+}

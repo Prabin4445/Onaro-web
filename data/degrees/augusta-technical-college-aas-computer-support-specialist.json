@@ -1,0 +1,686 @@
+{
+ "institution": {
+  "city": "Augusta, GA",
+  "kind": "community",
+  "name": "Augusta Technical College",
+  "state": "GA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "external_prereqs": [],
+  "id": "augusta-technical-college-aas-computer-support-specialist",
+  "major": "Computer Support Specialist",
+  "notes": "Guided Pathway transcribed verbatim from the official 2026-2027 Augusta Technical College catalog (Fall, Spring, and Summer Entrance; Augusta Campus Day). Length of Program: Five Terms; Credit Hours Required for Graduation: 65; pathway semesters sum to 13+13+14+11+14 = 65, reconciling exactly. DISCREPANCY DOCUMENTED: the curriculum outline prints 'Database Course, 3 credits' but the guided pathway places a 4-credit 'CIST XXXX DATABASE ELECTIVE' in Year 2 Fourth Semester; with 4 credits the outline totals 50 occupational credits and the plan totals 65, both matching the catalog's stated totals — the outline's '3 credits' is treated as a subtotal typo and the slot is seeded at 4 (CIST 1220 and CIST 2129, the database courses in the elective list, are both 4 credits). COLL 1060: students with 15+ earned semester hours are exempt and take an advisor-approved elective instead. Catalog substitution notes: CIST 2411 may substitute for CIST 1130; CIST 2451 may substitute for CIST 1401. CIST elective options transcribed from the curriculum outline's CIST Electives list; 'Additional Electives are available upon advisor approval.' Course-level prerequisites live in the catalog's course descriptions and were not individually transcribed (prereq arrays left empty). transfer_confidence is 'advisory' (AAS workforce program); tccns mirrors the local TCSG course code (no Texas TCCNS equivalencies published).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1001",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 1001",
+      "title": "Computer Concepts",
+      "slot_id": "s1-0",
+      "xfer": [
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Students who have earned at least 15 semester hours through an earned credential, transfer credit, or dual enrollment are exempt from COLL 1060 and select an advisor-approved elective instead (per catalog).",
+      "code": "COLL 1060",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "COLL 1060",
+      "title": "Introduction to College and Computers",
+      "slot_id": "s1-1",
+      "xfer": [
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ENGL 1101",
+      "title": "Composition and Rhetoric",
+      "slot_id": "s1-2",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-aas-radiologic-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "MATH 1111",
+      "title": "College Algebra",
+      "slot_id": "s1-3",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "atlanta-technical-college-aas-radiologic-technology",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     }
+    ],
+    "label": "Year 1 — First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX COMPUTER OPERATING SYSTEMS COURSE' (3 credits). Per catalog notes, CIST 1130 Operating Systems Concepts is the standard course and CIST 2411 Microsoft Client may substitute for CIST 1130; specific course selected with advisor.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Computer Operating Systems Course",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX INTRODUCTORY NETWORKING COURSE' (4 credits). Per catalog notes, CIST 2451 Introduction to Networks - Cisco may substitute for CIST 1401; specific course selected with advisor.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introductory Networking Course",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX OFFICE PRODUCTIVITY COURSE' (3 credits); specific course selected with advisor (e.g., CIST 2127 Comp Word Processing Technique or CIST 2128 Comp Spreadsheet Techniques from the catalog CIST elective list).",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CIST 2127",
+        "credits": 3,
+        "tccns": "CIST 2127",
+        "title": "Comp Word Processing Technique"
+       },
+       {
+        "code": "CIST 2128",
+        "credits": 3,
+        "tccns": "CIST 2128",
+        "title": "Comp Spreadsheet Techniques"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Office Productivity Course",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education Area II Social/Behavioral Science course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Social/Behavioral Science Area II",
+      "slot_id": "s2-3",
+      "xfer": []
+     }
+    ],
+    "label": "Year 1 — Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1122",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 1122",
+      "title": "Hardware Installation and Maintenance",
+      "slot_id": "s3-0",
+      "xfer": [
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1305",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "CIST 1305",
+      "title": "Program Design and Development",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1601",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "CIST 1601",
+      "title": "Information Security Fundamentals",
+      "slot_id": "s3-2",
+      "xfer": [
+       "augusta-technical-college-aas-cybersecurity"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX CIST ELECTIVE' (4 credits). Select from the catalog CIST elective list; additional electives available upon advisor approval.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 1135",
+        "credits": 4,
+        "tccns": "CIST 1135",
+        "title": "Operating Systems and Virtual/Cloud Computing"
+       },
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "tccns": "CIST 1220",
+        "title": "Structured Query Language"
+       },
+       {
+        "code": "CIST 1510",
+        "credits": 4,
+        "tccns": "CIST 1510",
+        "title": "Web Development I"
+       },
+       {
+        "code": "CIST 1520",
+        "credits": 4,
+        "tccns": "CIST 1520",
+        "title": "Scripting Technologies"
+       },
+       {
+        "code": "CIST 2129",
+        "credits": 4,
+        "tccns": "CIST 2129",
+        "title": "Comp Database Techniques"
+       },
+       {
+        "code": "CIST 2411",
+        "credits": 4,
+        "tccns": "CIST 2411",
+        "title": "Microsoft Client"
+       },
+       {
+        "code": "CIST 2412",
+        "credits": 4,
+        "tccns": "CIST 2412",
+        "title": "Microsoft Server Installation and Maintenance"
+       },
+       {
+        "code": "CIST 2431",
+        "credits": 4,
+        "tccns": "CIST 2431",
+        "title": "UNIX/Linux Introduction"
+       },
+       {
+        "code": "CIST 2432",
+        "credits": 4,
+        "tccns": "CIST 2432",
+        "title": "UNIX/Linux Server"
+       },
+       {
+        "code": "CIST 2451",
+        "credits": 4,
+        "tccns": "CIST 2451",
+        "title": "Introduction to Networks - Cisco"
+       },
+       {
+        "code": "CIST 2452",
+        "credits": 4,
+        "tccns": "CIST 2452",
+        "title": "Cisco Switching, Routing & Wireless Essentials"
+       },
+       {
+        "code": "CIST 2453",
+        "credits": 4,
+        "tccns": "CIST 2453",
+        "title": "Enterprise Networking, Security, and Automation"
+       },
+       {
+        "code": "CIST 2480",
+        "credits": 4,
+        "tccns": "CIST 2480",
+        "title": "AWS Cloud Foundations"
+       },
+       {
+        "code": "CIST 2601",
+        "credits": 4,
+        "tccns": "CIST 2601",
+        "title": "Implementing Operating Systems Security"
+       },
+       {
+        "code": "CIST 2602",
+        "credits": 4,
+        "tccns": "CIST 2602",
+        "title": "Network Security"
+       },
+       {
+        "code": "CIST 2742",
+        "credits": 4,
+        "tccns": "CIST 2742",
+        "title": "Beginning Python Programming"
+       },
+       {
+        "code": "CIST 2992",
+        "credits": 4,
+        "tccns": "CIST 2992",
+        "title": "CIST Internship II"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "CIST Elective",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ],
+    "label": "Year 1 — Third Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX CIST ELECTIVE' (4 credits). Select from the catalog CIST elective list; additional electives available upon advisor approval.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 1135",
+        "credits": 4,
+        "tccns": "CIST 1135",
+        "title": "Operating Systems and Virtual/Cloud Computing"
+       },
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "tccns": "CIST 1220",
+        "title": "Structured Query Language"
+       },
+       {
+        "code": "CIST 1510",
+        "credits": 4,
+        "tccns": "CIST 1510",
+        "title": "Web Development I"
+       },
+       {
+        "code": "CIST 1520",
+        "credits": 4,
+        "tccns": "CIST 1520",
+        "title": "Scripting Technologies"
+       },
+       {
+        "code": "CIST 2129",
+        "credits": 4,
+        "tccns": "CIST 2129",
+        "title": "Comp Database Techniques"
+       },
+       {
+        "code": "CIST 2411",
+        "credits": 4,
+        "tccns": "CIST 2411",
+        "title": "Microsoft Client"
+       },
+       {
+        "code": "CIST 2412",
+        "credits": 4,
+        "tccns": "CIST 2412",
+        "title": "Microsoft Server Installation and Maintenance"
+       },
+       {
+        "code": "CIST 2431",
+        "credits": 4,
+        "tccns": "CIST 2431",
+        "title": "UNIX/Linux Introduction"
+       },
+       {
+        "code": "CIST 2432",
+        "credits": 4,
+        "tccns": "CIST 2432",
+        "title": "UNIX/Linux Server"
+       },
+       {
+        "code": "CIST 2451",
+        "credits": 4,
+        "tccns": "CIST 2451",
+        "title": "Introduction to Networks - Cisco"
+       },
+       {
+        "code": "CIST 2452",
+        "credits": 4,
+        "tccns": "CIST 2452",
+        "title": "Cisco Switching, Routing & Wireless Essentials"
+       },
+       {
+        "code": "CIST 2453",
+        "credits": 4,
+        "tccns": "CIST 2453",
+        "title": "Enterprise Networking, Security, and Automation"
+       },
+       {
+        "code": "CIST 2480",
+        "credits": 4,
+        "tccns": "CIST 2480",
+        "title": "AWS Cloud Foundations"
+       },
+       {
+        "code": "CIST 2601",
+        "credits": 4,
+        "tccns": "CIST 2601",
+        "title": "Implementing Operating Systems Security"
+       },
+       {
+        "code": "CIST 2602",
+        "credits": 4,
+        "tccns": "CIST 2602",
+        "title": "Network Security"
+       },
+       {
+        "code": "CIST 2742",
+        "credits": 4,
+        "tccns": "CIST 2742",
+        "title": "Beginning Python Programming"
+       },
+       {
+        "code": "CIST 2992",
+        "credits": 4,
+        "tccns": "CIST 2992",
+        "title": "CIST Internship II"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "CIST Elective",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog pathway prints 'CIST XXXX DATABASE ELECTIVE' (4 credits). The curriculum outline's 'Database Course, 3 credits' line is treated as a subtotal typo (see plan notes); seeded at 4 credits. Database courses in the catalog CIST elective list: CIST 1220 Structured Query Language (4), CIST 2129 Comp Database Techniques (4).",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "tccns": "CIST 1220",
+        "title": "Structured Query Language"
+       },
+       {
+        "code": "CIST 2129",
+        "credits": 4,
+        "tccns": "CIST 2129",
+        "title": "Comp Database Techniques"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Database Elective",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education Area IV Humanities/Fine Arts course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Humanities/Fine Arts Area IV",
+      "slot_id": "s4-2",
+      "xfer": []
+     }
+    ],
+    "label": "Year 2 — Fourth Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2130",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2130",
+      "title": "Desktop Support Concepts",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX CIST ELECTIVE' (3 credits). The catalog CIST elective list's 3-credit courses are CIST 2127 and CIST 2128; additional electives available upon advisor approval.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CIST 2127",
+        "credits": 3,
+        "tccns": "CIST 2127",
+        "title": "Comp Word Processing Technique"
+       },
+       {
+        "code": "CIST 2128",
+        "credits": 3,
+        "tccns": "CIST 2128",
+        "title": "Comp Spreadsheet Techniques"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "CIST Elective",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog slot: 'CIST XXXX CIST ELECTIVE' (4 credits). Select from the catalog CIST elective list; additional electives available upon advisor approval.",
+      "code": "CIST XXXX",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CIST 1135",
+        "credits": 4,
+        "tccns": "CIST 1135",
+        "title": "Operating Systems and Virtual/Cloud Computing"
+       },
+       {
+        "code": "CIST 1220",
+        "credits": 4,
+        "tccns": "CIST 1220",
+        "title": "Structured Query Language"
+       },
+       {
+        "code": "CIST 1510",
+        "credits": 4,
+        "tccns": "CIST 1510",
+        "title": "Web Development I"
+       },
+       {
+        "code": "CIST 1520",
+        "credits": 4,
+        "tccns": "CIST 1520",
+        "title": "Scripting Technologies"
+       },
+       {
+        "code": "CIST 2129",
+        "credits": 4,
+        "tccns": "CIST 2129",
+        "title": "Comp Database Techniques"
+       },
+       {
+        "code": "CIST 2411",
+        "credits": 4,
+        "tccns": "CIST 2411",
+        "title": "Microsoft Client"
+       },
+       {
+        "code": "CIST 2412",
+        "credits": 4,
+        "tccns": "CIST 2412",
+        "title": "Microsoft Server Installation and Maintenance"
+       },
+       {
+        "code": "CIST 2431",
+        "credits": 4,
+        "tccns": "CIST 2431",
+        "title": "UNIX/Linux Introduction"
+       },
+       {
+        "code": "CIST 2432",
+        "credits": 4,
+        "tccns": "CIST 2432",
+        "title": "UNIX/Linux Server"
+       },
+       {
+        "code": "CIST 2451",
+        "credits": 4,
+        "tccns": "CIST 2451",
+        "title": "Introduction to Networks - Cisco"
+       },
+       {
+        "code": "CIST 2452",
+        "credits": 4,
+        "tccns": "CIST 2452",
+        "title": "Cisco Switching, Routing & Wireless Essentials"
+       },
+       {
+        "code": "CIST 2453",
+        "credits": 4,
+        "tccns": "CIST 2453",
+        "title": "Enterprise Networking, Security, and Automation"
+       },
+       {
+        "code": "CIST 2480",
+        "credits": 4,
+        "tccns": "CIST 2480",
+        "title": "AWS Cloud Foundations"
+       },
+       {
+        "code": "CIST 2601",
+        "credits": 4,
+        "tccns": "CIST 2601",
+        "title": "Implementing Operating Systems Security"
+       },
+       {
+        "code": "CIST 2602",
+        "credits": 4,
+        "tccns": "CIST 2602",
+        "title": "Network Security"
+       },
+       {
+        "code": "CIST 2742",
+        "credits": 4,
+        "tccns": "CIST 2742",
+        "title": "Beginning Python Programming"
+       },
+       {
+        "code": "CIST 2992",
+        "credits": 4,
+        "tccns": "CIST 2992",
+        "title": "CIST Internship II"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "CIST Elective",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education elective course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Education Elective",
+      "slot_id": "s5-3",
+      "xfer": []
+     }
+    ],
+    "label": "Year 2 — Fifth Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://augustatech.smartcatalogiq.com/en/2026-2027/2026-2027-academic-catalog/programs-of-study/school-of-business-cyber-and-design/computer-support-specialist-associate-of-applied-science-degree",
+  "total_credits": 65,
+  "transfer_confidence": "advisory",
+  "content_hash": "c217d798ee623072330d0a9a8568d306c8473891fc3a9b337ad2fd47fc160a6b",
+  "last_verified": "2026-10-02"
+ }
+}

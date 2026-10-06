@@ -1,0 +1,297 @@
+{
+ "institution": {
+  "city": "Greenfield, MA",
+  "kind": "community",
+  "name": "Greenfield Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [
+   "ENG 090",
+   "ENG 094",
+   "MAT 108"
+  ],
+  "id": "greenfield-as-computer-science",
+  "major": "Computer Science",
+  "notes": "MERGE NOTE: official sample 2-year sequence totals 62 credits (published term totals 18/15/16/13); catalog degree requirement is 61-62 (only one of MAT 203 or MAT 205 required), but the official sequence prints BOTH MAT 203 and MAT 205 as full entries — carried at the sequence own 62-credit total per merge-time rule; 61-credit one-math path documented below. Source: official Greenfield Community College 2025-26 Catalog (PDF) - Computer Science program page, 'Degree Map: Computer Science (Sample 2 Year Course Sequence)'. Program degree designation is Associate in Science, 61-62 total credits, 'Includes Mass STEM General Education Foundation'. Hand-transcribed 2026-09-30 from the catalog's semester-by-semester degree map (pages 114-117 of the PDF). Catalog year set to 2025-2026 (the catalog the degree map belongs to). Credit math: semester totals are the degree map's own published values (Year 1 Fall 18, Year 1 Spring 15, Year 2 Fall 16, Year 2 Spring 13) = 62 credits, matching the degree map's own General Education 34 / Major 20 / Elective 8 split (34+20+8=62). Caveats: (1) The catalog's program requirements list a total of 61-62 credits because 'Program Requirements II' requires at least ONE of MAT 203 or MAT 205; the sample 2-year degree map itself includes BOTH MAT 203 (as major) and MAT 205 (as elective), landing at 62. This file transcribes the official term-by-term degree map as printed, i.e. the 62-credit path. (2) 'ENG Comp II' slot: catalog requirement review forms list ENG 112, ENG 114, or ENG 116 (English Composition II); credit for only one of ENG 112/114/116; all require ENG 101. (3) CSC 251 and CSC 252 prereq is 'CSC 101 or permission of instructor' - modeled here as CSC 101, per-file. (4) CSC 254 official catalog prereq is 'CSC 251 (or CIS 251); and MAT 107 or satisfactory placement' - the MAT 107 piece is satisfied by placement for students entering the sequence at MAT 201, so only CSC 251 is modeled as the course prereq here. (5) MAT 201 official prereq: grade of C or better in MAT 108 OR satisfactory placement (plus ENG 090/ENG 094 or placement) - MAT 108 is listed in external_prereqs; ENG 090/ENG 094 are developmental and also listed in external_prereqs; placement is an alternative documented here. (6) PHY 111 prereq: MAT 201 or concurrent enrollment in MAT 201 (shown in the same fall semester); PHY 112 prereq: PHY 111 and MAT 202 or concurrent enrollment in MAT 202; CSC 201 prereq: MAT 201 and MAT 202 (or concurrent enrollment in MAT 202). (7) CSC 101 official prereq: ENG 090 and ENG 094, or satisfactory placement. (8) Behavioral and Social Science / Humanities and Fine Arts choice slots are any 3-credit courses from those General Education Electives lists in the catalog; two BSS courses (6 credits) and two HFA courses (6 credits) total per the catalog requirement review form. The degree is a transfer program for the Bachelor of Science in computer science and meets the requirements of the Computer Science Block approved by the Massachusetts Board of Higher Education.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Programming Foundations",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "English Composition I: Expository Writing",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus with Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 201"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "General Physics I with Calculus",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Behavioral and Social Science General Education Electives list.",
+      "code": "BSS 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Behavioral and Social Science General Education Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 251",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Java Programming",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "English Composition II: choose one of ENG 112, ENG 114, or ENG 116 (credit for only one of the three per catalog).",
+      "code": "ENG 112",
+      "credits": 3,
+      "options": [
+       "ENG 112",
+       "ENG 114",
+       "ENG 116"
+      ],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "English Composition II (ENG 112, ENG 114, or ENG 116)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 202",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 201"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus with Analytic Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHY 111",
+       "MAT 202"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Physics II with Calculus",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 252",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 101"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "C++ Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 254",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 251"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 203",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 202"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Multivariate Calculus",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 205",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 202"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Elementary Linear Algebra",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Behavioral and Social Science General Education Electives list (second of two required BSS courses, 6 credits total).",
+      "code": "BSS 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Behavioral and Social Science General Education Course",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Humanities and Fine Arts General Education Electives list (first of two required HFA courses, 6 credits total).",
+      "code": "HFA 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Humanities and Fine Arts General Education Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 201",
+       "MAT 202"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Introduction to Discrete Computation",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit course from the catalog's Humanities and Fine Arts General Education Electives list (second of two required HFA courses, 6 credits total).",
+      "code": "HFA 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Humanities and Fine Arts General Education Course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/gcc_banner_sql-catalog-1741016330449.pdf",
+  "total_credits": 62,
+  "content_hash": "e42f100bc95388db16ad017cd51c2a674613813bc0525a62da5b5b517d402649",
+  "last_verified": "2026-10-02"
+ }
+}

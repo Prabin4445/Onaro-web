@@ -1,0 +1,983 @@
+{
+ "institution": {
+  "name": "Texas State University",
+  "city": "San Marcos, TX",
+  "kind": "public4yr",
+  "state": "TX"
+ },
+ "plan": {
+  "id": "txst-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://mycatalog.txstate.edu/undergraduate/science-engineering/computer/computer-science-bs/",
+  "notes": "Source: official 2026-2027 TXST undergraduate catalog page 'Bachelor of Science (B.S.) Major in Computer Science' (catalog year verified in page HTML). Method: the catalog's official term-by-term Course Requirements table was transcribed verbatim (Freshman/Sophomore/Junior/Senior First/Second Semester mapped to Fall/Spring Year 1-4); course titles and prerequisites were verified against the official 2026-2027 catalog course-description pages (mycatalog.txstate.edu/courses/cs/, /math/, /eng/, /posi/, /phil/, /comm/, /us/). Student-choice slots (core-curriculum component codes, CS advanced electives, math minor, free electives, project course) are modeled with choice:true and placeholder codes. Caveats: (1) US 1100 is required only for students entering TXST with fewer than 16 post-high-school credit hours; exempt students may need an additional elective to reach 120 hours (catalog General Requirement 12). (2) The number of free electives varies with the 120-hour, 36-advanced-hour, and 9-writing-intensive-hour requirements; advisor consultation advised (GR 11). (3) ENG 3313 may substitute for ENG 3303, but then an additional CORE 010 course is required. (4) The official 2026-2027 BS page lists CS 4326 as a project-course option with a blank title cell, and CS 4326 does not appear in the current CS course list; its title is carried as unpublished rather than invented. (5) The Life and Physical Sciences footnote marker (1) text was not captured in extraction; the three slots are modeled as Component Code 030 choices. (6) A grade of C or higher is required in all CS and MATH courses used for the major (GR 2). Degree minimum: 120 hours, including 46 hours of CS, 36 advanced hours, and 9 writing-intensive hours.",
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 1428",
+      "title": "Foundations of Computer Science I",
+      "credits": 4,
+      "prereq": [
+       "MATH 1315",
+       "MATH 1317",
+       "MATH 1319",
+       "MATH 1329",
+       "MATH 2417",
+       "MATH 2471"
+      ],
+      "tccns": "COSC 1437",
+      "xfer": [
+       "collin-txst-pathway-computer-science",
+       "dallas-college-as-computer-engineering",
+       "dallas-college-as-computer-science",
+       "utep-bs-computer-science"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 2471",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MATH 2417"
+      ],
+      "tccns": "MATH 2413",
+      "xfer": [
+       "collin-txst-pathway-computer-science",
+       "dallas-college-aat-teaching-mathematics-8-12",
+       "dallas-college-as-biochemistry",
+       "dallas-college-as-chemistry",
+       "dallas-college-as-computer-engineering",
+       "dallas-college-as-computer-science",
+       "dallas-college-as-economics",
+       "dallas-college-as-electrical-engineering",
+       "dallas-college-as-environmental-science",
+       "dallas-college-as-geology",
+       "dallas-college-as-mathematics",
+       "dallas-college-as-physics"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "US 1100",
+      "title": "Bobcat Beginnings",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Required only for students entering TXST with fewer than 16 post-high-school credit hours; others are exempt (see notes).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ENGC01",
+      "title": "Communication Core (ENG 1310, 1320, or 1321)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "ENG 1310",
+        "title": "College Writing I",
+        "tccns": ""
+       },
+       {
+        "code": "ENG 1320",
+        "title": "College Writing II",
+        "tccns": ""
+       },
+       {
+        "code": "ENG 1321",
+        "title": "Writing and Service Learning",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "COMM 1310",
+      "title": "Fundamentals of Human Communication",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "SPCH 1311",
+      "xfer": [
+       "baptist-university-of-the-americas-ba-music",
+       "baptist-university-of-the-americas-bba-business-administration",
+       "collin-txst-pathway-computer-science",
+       "dallas-college-aa-criminal-justice-unt-criminal-justice",
+       "dallas-college-aa-history",
+       "dallas-college-bas-early-childhood-education-aas-track",
+       "dallas-college-bas-early-childhood-education-aat-track"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 2308",
+      "title": "Foundations of Computer Science II",
+      "credits": 3,
+      "prereq": [
+       "CS 1428"
+      ],
+      "tccns": "COSC 2336 OR COSC 2436",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 2472",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 2471"
+      ],
+      "tccns": "MATH 2414",
+      "xfer": [
+       "collin-txst-pathway-computer-science",
+       "dallas-college-aat-teaching-mathematics-8-12",
+       "dallas-college-as-biochemistry",
+       "dallas-college-as-chemistry",
+       "dallas-college-as-computer-engineering",
+       "dallas-college-as-computer-science",
+       "dallas-college-as-electrical-engineering",
+       "dallas-college-as-mathematics",
+       "dallas-college-as-physics"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PHILC04",
+      "title": "Language, Philosophy & Culture (PHIL 1305 or 1320)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "PHIL 1305",
+        "title": "Philosophy and Critical Thinking",
+        "tccns": "PHIL 1301"
+       },
+       {
+        "code": "PHIL 1320",
+        "title": "Ethics and Society",
+        "tccns": "PHIL 2306"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MATH 2358",
+      "title": "Discrete Mathematics I",
+      "credits": 3,
+      "prereq": [
+       "MATH 1315",
+       "MATH 1329",
+       "MATH 2417",
+       "MATH 2471"
+      ],
+      "tccns": "MATH 2305 OR MATH 2405",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "POSI 2310",
+      "title": "Principles of American Government",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "GOVT 2306",
+      "xfer": [
+       "angelina-college-aa-business-administration",
+       "angelina-college-aa-general-studies",
+       "angelina-college-aa-music",
+       "angelina-college-aa-teaching",
+       "angelina-college-aa-theater",
+       "baptist-university-of-the-americas-ba-biblical-theological-studies",
+       "baptist-university-of-the-americas-ba-human-behavior",
+       "baptist-university-of-the-americas-ba-music",
+       "baptist-university-of-the-americas-bba-business-administration",
+       "collin-txst-pathway-computer-science",
+       "dallas-college-aa-anthropology",
+       "dallas-college-aa-business",
+       "dallas-college-aa-business-admin-tarleton-general-business",
+       "dallas-college-aa-business-admin-tarleton-human-resources-management",
+       "dallas-college-aa-business-admin-texas-tech-finance",
+       "dallas-college-aa-business-admin-texas-tech-general-business",
+       "dallas-college-aa-business-admin-texas-tech-management",
+       "dallas-college-aa-business-admin-texas-tech-marketing",
+       "dallas-college-aa-business-admin-unt-general-business",
+       "dallas-college-aa-business-admin-uta-bba",
+       "dallas-college-aa-business-admin-utd-business-administration",
+       "dallas-college-aa-business-admin-utd-finance",
+       "dallas-college-aa-communication-studies",
+       "dallas-college-aa-criminal-justice-etamu-criminal-justice",
+       "dallas-college-aa-criminal-justice-tarleton-criminal-justice",
+       "dallas-college-aa-criminal-justice-unt-criminal-justice",
+       "dallas-college-aa-criminal-justice-untd-criminal-justice",
+       "dallas-college-aa-criminal-justice-uta-criminology-and-criminal-justice",
+       "dallas-college-aa-drama-general",
+       "dallas-college-aa-drama-performance",
+       "dallas-college-aa-drama-technical",
+       "dallas-college-aa-history",
+       "dallas-college-aa-journalism",
+       "dallas-college-aa-journalism-broadcast-emphasis",
+       "dallas-college-aa-music",
+       "dallas-college-aa-philosophy-and-religion",
+       "dallas-college-aa-political-science-etamu-political-science",
+       "dallas-college-aa-political-science-twu-political-science",
+       "dallas-college-aa-political-science-unt-political-science",
+       "dallas-college-aa-psychology-tarleton-psychology",
+       "dallas-college-aa-psychology-texas-state-psychology",
+       "dallas-college-aa-psychology-ttu-psychology",
+       "dallas-college-aa-psychology-twu-psychology-general-psychology",
+       "dallas-college-aa-psychology-unt-psychology",
+       "dallas-college-aa-psychology-untd-psychology",
+       "dallas-college-aa-psychology-uta-psychology",
+       "dallas-college-aa-psychology-utd-psychology",
+       "dallas-college-aa-radio-and-television",
+       "dallas-college-aa-social-work-etamu-social-work",
+       "dallas-college-aa-social-work-uta-social-work",
+       "dallas-college-aa-sociology-etamu-sociology",
+       "dallas-college-aa-sociology-twu-sociology",
+       "dallas-college-aa-sociology-uta-sociology",
+       "dallas-college-aa-studio-art-graphic-design",
+       "dallas-college-aa-transfer",
+       "dallas-college-aat-teaching-ec-6-4-8",
+       "dallas-college-aat-teaching-foreign-language-ec-12",
+       "dallas-college-aat-teaching-mathematics-8-12",
+       "dallas-college-as-agriculture",
+       "dallas-college-as-biochemistry",
+       "dallas-college-as-chemistry",
+       "dallas-college-as-computer-engineering",
+       "dallas-college-as-computer-science",
+       "dallas-college-as-economics",
+       "dallas-college-as-electrical-engineering",
+       "dallas-college-as-environmental-science",
+       "dallas-college-as-geography",
+       "dallas-college-as-geology",
+       "dallas-college-as-health-and-wellness",
+       "dallas-college-as-kinesiology-etamu-kinesiology-sports-studies",
+       "dallas-college-as-kinesiology-tarleton-kinesiology",
+       "dallas-college-as-kinesiology-unt-kinesiology",
+       "dallas-college-as-kinesiology-uta-kinesiology",
+       "dallas-college-as-mathematics",
+       "dallas-college-as-nursing-tarleton-nursing",
+       "dallas-college-as-nursing-uta-nursing",
+       "dallas-college-as-physics",
+       "dallas-college-bas-early-childhood-education-aas-track",
+       "dallas-college-bas-early-childhood-education-aat-track",
+       "twu-bsn-nursing",
+       "uta-bba-management",
+       "utsa-bs-computer-science"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 2325",
+      "title": "Computer Organization",
+      "credits": 3,
+      "prereq": [
+       "CS 2308",
+       "MATH 2358"
+      ],
+      "tccns": "COSC 2325",
+      "xfer": [
+       "collin-txst-pathway-computer-science"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 3358",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CS 2308",
+       "MATH 2358"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 3398",
+      "title": "Discrete Mathematics II",
+      "credits": 3,
+      "prereq": [
+       "MATH 2358"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GESC030",
+      "title": "Life and Physical Sciences (Component Code 030)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "LIFE030",
+        "title": "Approved Life and Physical Sciences courses, Component Code 030",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 2315",
+      "title": "Computer Ethics",
+      "credits": 3,
+      "prereq": [
+       "CS 1428",
+       "COMM 1310",
+       "ENG 1310",
+       "PHIL 1305"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 3354",
+      "title": "Object-Oriented Design and Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 3358"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GESC031",
+      "title": "Life and Physical Sciences (Component Code 030)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "LIFE030",
+        "title": "Approved Life and Physical Sciences courses, Component Code 030",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GESS080",
+      "title": "Social and Behavioral Sciences (Component Code 080)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "SBS080",
+        "title": "Approved Social and Behavioral Sciences courses, Component Code 080",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "ELECT3",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "ELECT",
+        "title": "Any approved elective course",
+        "tccns": ""
+       }
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSAADV1",
+      "title": "CS Advanced Elective (3000/4000-level CS, not a required course or the project course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "CSADV",
+        "title": "Any 3000- or 4000-level CS course that is not a required CS course and is not being used as the project course",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 3398",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CS 3354",
+       "CS 3358",
+       "CS 2315"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "GESC032",
+      "title": "Life and Physical Sciences (Component Code 030)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "LIFE030",
+        "title": "Approved Life and Physical Sciences courses, Component Code 030",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "ENG 3303",
+      "title": "Technical Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Students may take ENG 3313 Scientific Writing instead of ENG 3303; if ENG 3313 is taken, an additional CORE 010 course is required.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GEHIST1",
+      "title": "American History (Component Code 060)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "HIST060",
+        "title": "Approved American History courses, Component Code 060",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 3360",
+      "title": "Computing Systems Fundamentals",
+      "credits": 3,
+      "prereq": [
+       "CS 2325",
+       "CS 3358"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSAADV2",
+      "title": "CS Advanced Elective (3000/4000-level CS, not a required course or the project course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "CSADV",
+        "title": "Any 3000- or 4000-level CS course that is not a required CS course and is not being used as the project course",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSAADV3",
+      "title": "CS Advanced Elective (3000/4000-level CS, not a required course or the project course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "CSADV",
+        "title": "Any 3000- or 4000-level CS course that is not a required CS course and is not being used as the project course",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MATH 3305",
+      "title": "Introduction to Probability and Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 2472"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GEHIST2",
+      "title": "American History (Component Code 060)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "HIST060",
+        "title": "Approved American History courses, Component Code 060",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 4371",
+      "title": "Computer System Security",
+      "credits": 3,
+      "prereq": [
+       "CS 3358"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSAADV4",
+      "title": "CS Advanced Elective (3000/4000-level CS, not a required course or the project course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "CSADV",
+        "title": "Any 3000- or 4000-level CS course that is not a required CS course and is not being used as the project course",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "MATHMIN1",
+      "title": "Math/Applied Math Minor Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "MATHMIN",
+        "title": "Approved Mathematics or Applied Mathematics minor course",
+        "tccns": ""
+       }
+      ],
+      "category": "minor"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "GECREAT",
+      "title": "Creative Arts (Component Code 050)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog suggests HUMA 1315 as the transfer equivalent.",
+      "options": [
+       {
+        "code": "CREAT050",
+        "title": "Approved Creative Arts courses, Component Code 050",
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELECT4",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "ELECT",
+        "title": "Any approved elective course",
+        "tccns": ""
+       }
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSAADV5",
+      "title": "CS Advanced Elective (3000/4000-level CS, not a required course or the project course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "CSADV",
+        "title": "Any 3000- or 4000-level CS course that is not a required CS course and is not being used as the project course",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "MATHMIN2",
+      "title": "Math/Applied Math Minor Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "MATHMIN",
+        "title": "Approved Mathematics or Applied Mathematics minor course",
+        "tccns": ""
+       }
+      ],
+      "category": "minor"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSPROJ",
+      "title": "Computer Science Project Course (select one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Required: one CS project course from CS 4318, CS 4326, CS 4380, or CS 4398; the chosen course cannot also satisfy a CS Advanced Elective slot.",
+      "options": [
+       {
+        "code": "CS 4318",
+        "title": "Compiler Construction",
+        "tccns": ""
+       },
+       {
+        "code": "CS 4326",
+        "title": "Title not published in the 2026-2027 catalog; listed as an official project-course option",
+        "tccns": ""
+       },
+       {
+        "code": "CS 4380",
+        "title": "Parallel Programming",
+        "tccns": ""
+       },
+       {
+        "code": "CS 4398",
+        "title": "Software Engineering Project",
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELECT2",
+      "title": "Free Elective",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [
+       {
+        "code": "ELECT",
+        "title": "Any approved elective course",
+        "tccns": ""
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "POSI 2320",
+      "title": "Functions of American Government",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "GOVT 2305",
+      "xfer": [
+       "angelina-college-aa-business-administration",
+       "angelina-college-aa-general-studies",
+       "angelina-college-aa-music",
+       "angelina-college-aa-teaching",
+       "angelina-college-aa-theater",
+       "baptist-university-of-the-americas-ba-biblical-theological-studies",
+       "baptist-university-of-the-americas-ba-human-behavior",
+       "baptist-university-of-the-americas-ba-music",
+       "baptist-university-of-the-americas-bba-business-administration",
+       "collin-txst-pathway-computer-science",
+       "dallas-college-aa-anthropology",
+       "dallas-college-aa-business",
+       "dallas-college-aa-business-admin-tarleton-general-business",
+       "dallas-college-aa-business-admin-tarleton-human-resources-management",
+       "dallas-college-aa-business-admin-texas-tech-finance",
+       "dallas-college-aa-business-admin-texas-tech-general-business",
+       "dallas-college-aa-business-admin-texas-tech-management",
+       "dallas-college-aa-business-admin-texas-tech-marketing",
+       "dallas-college-aa-business-admin-unt-general-business",
+       "dallas-college-aa-business-admin-uta-bba",
+       "dallas-college-aa-business-admin-utd-business-administration",
+       "dallas-college-aa-business-admin-utd-finance",
+       "dallas-college-aa-communication-studies",
+       "dallas-college-aa-criminal-justice-etamu-criminal-justice",
+       "dallas-college-aa-criminal-justice-tarleton-criminal-justice",
+       "dallas-college-aa-criminal-justice-unt-criminal-justice",
+       "dallas-college-aa-criminal-justice-untd-criminal-justice",
+       "dallas-college-aa-criminal-justice-uta-criminology-and-criminal-justice",
+       "dallas-college-aa-drama-general",
+       "dallas-college-aa-drama-performance",
+       "dallas-college-aa-drama-technical",
+       "dallas-college-aa-history",
+       "dallas-college-aa-journalism",
+       "dallas-college-aa-journalism-broadcast-emphasis",
+       "dallas-college-aa-music",
+       "dallas-college-aa-philosophy-and-religion",
+       "dallas-college-aa-political-science-etamu-political-science",
+       "dallas-college-aa-political-science-twu-political-science",
+       "dallas-college-aa-political-science-unt-political-science",
+       "dallas-college-aa-psychology-tarleton-psychology",
+       "dallas-college-aa-psychology-texas-state-psychology",
+       "dallas-college-aa-psychology-ttu-psychology",
+       "dallas-college-aa-psychology-twu-psychology-general-psychology",
+       "dallas-college-aa-psychology-unt-psychology",
+       "dallas-college-aa-psychology-untd-psychology",
+       "dallas-college-aa-psychology-uta-psychology",
+       "dallas-college-aa-psychology-utd-psychology",
+       "dallas-college-aa-radio-and-television",
+       "dallas-college-aa-social-work-etamu-social-work",
+       "dallas-college-aa-social-work-uta-social-work",
+       "dallas-college-aa-sociology-etamu-sociology",
+       "dallas-college-aa-sociology-twu-sociology",
+       "dallas-college-aa-sociology-uta-sociology",
+       "dallas-college-aa-studio-art-graphic-design",
+       "dallas-college-aa-transfer",
+       "dallas-college-aat-teaching-ec-6-4-8",
+       "dallas-college-aat-teaching-foreign-language-ec-12",
+       "dallas-college-aat-teaching-mathematics-8-12",
+       "dallas-college-as-agriculture",
+       "dallas-college-as-biochemistry",
+       "dallas-college-as-chemistry",
+       "dallas-college-as-computer-engineering",
+       "dallas-college-as-computer-science",
+       "dallas-college-as-economics",
+       "dallas-college-as-electrical-engineering",
+       "dallas-college-as-environmental-science",
+       "dallas-college-as-geography",
+       "dallas-college-as-geology",
+       "dallas-college-as-health-and-wellness",
+       "dallas-college-as-kinesiology-etamu-kinesiology-sports-studies",
+       "dallas-college-as-kinesiology-tarleton-kinesiology",
+       "dallas-college-as-kinesiology-unt-kinesiology",
+       "dallas-college-as-kinesiology-uta-kinesiology",
+       "dallas-college-as-mathematics",
+       "dallas-college-as-nursing-tarleton-nursing",
+       "dallas-college-as-nursing-uta-nursing",
+       "dallas-college-as-physics",
+       "dallas-college-bas-early-childhood-education-aas-track",
+       "dallas-college-bas-early-childhood-education-aat-track",
+       "twu-bsn-nursing",
+       "uta-bba-management",
+       "utsa-bs-computer-science"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "external_prereqs": [
+   "ENG 1310",
+   "MATH 1315",
+   "MATH 1317",
+   "MATH 1319",
+   "MATH 1329",
+   "MATH 2417",
+   "PHIL 1305"
+  ],
+  "content_hash": "91d969aaa1dc66ce51ccc82ba55849807b1aa741770be2f55937f8a0bcdb1b7f",
+  "last_verified": "2026-10-02"
+ }
+}

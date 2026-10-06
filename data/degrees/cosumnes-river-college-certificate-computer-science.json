@@ -1,0 +1,130 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [
+   "CISP 360"
+  ],
+  "id": "cosumnes-river-college-certificate-computer-science",
+  "major": "Computer Science",
+  "notes": "Transcribed from the official CRC 'Computer Science Certificate' program map, Catalog Year 2026-2027, published September 22, 2026 (mapmaker.losrios.edu/Maps/7865/PublishedPdf). Total Units 18 = 3+0+8+7 (semester sums verified). Semester 2 is published with 0 units and no courses; it is preserved as an empty semester per the map. CISP 360 is a prerequisite of CISP 310/400/401 but is not sequenced in the map; it is carried under external_prereqs. CISP 300 requires Intermediate Algebra competency (choice_note, not a course code). CISP 440 co-requisite: CISP 430 (same semester).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: Intermediate Algebra competency (per map).",
+      "code": "CISP 300",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISP 300",
+      "title": "Algorithm Design/Problem Solving",
+      "slot_id": "s1-0",
+      "xfer": [
+       "american-river-college-certificate-3d-technical-director"
+      ]
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose CISP 400 (C++) or CISP 401 (Java). Map: please speak with a CISP professor about which of these 2 courses is best for your educational goal.",
+      "code": "CISP 400",
+      "core_area": "",
+      "credits": 4,
+      "options": [
+       "CISP 400",
+       "CISP 401"
+      ],
+      "prereq": [
+       "CISP 360"
+      ],
+      "tccns": "CISP 400",
+      "title": "Object Oriented Programming with C++",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISP 310",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CISP 360"
+      ],
+      "tccns": "CISP 310",
+      "title": "Computer Architecture and Organization",
+      "slot_id": "s3-1",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISP 430",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CISP 400"
+      ],
+      "tccns": "CISP 430",
+      "title": "Data Structures",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Co-requisite: CISP 430 (same semester, per map).",
+      "code": "CISP 440",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CISP 430"
+      ],
+      "tccns": "CISP 440",
+      "title": "Discrete Structures for Computer Science",
+      "slot_id": "s4-1",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7865/PublishedPdf",
+  "total_credits": 18,
+  "content_hash": "55a886c51629cfb3f9a7aeb3aeb1a2da5be5bfc38906d4889f133ab2b88918ff",
+  "last_verified": "2026-10-02"
+ }
+}

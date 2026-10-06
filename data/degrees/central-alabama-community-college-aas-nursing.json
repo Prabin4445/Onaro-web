@@ -1,0 +1,260 @@
+{
+ "institution": {
+  "name": "Central Alabama Community College",
+  "city": "Alexander City",
+  "state": "AL",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "central-alabama-community-college-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 66,
+  "catalog_year": "2026",
+  "source_url": "https://cacc.edu/content/userfiles/files/CACC%20ADN%20Info.pdf",
+  "notes": "Source: official CACC 'Associate Degree in Nursing' program information sheet (cacc.edu), 'Information revised 1/31/2025'. Degree Earned: Associate in Applied Science; Length of Program: 5 Semesters (66 Semester Hours); offered in Alexander City and Childersburg; ACEN-accredited. Semester subtotals: 14/18/13/11/10 = 66. Titles are the source labels verbatim. Prerequisite notes transcribed verbatim: '*BIO 103 is a prerequisite for BIO 201', '**BIO 201 is a prerequisite for BIO 202', '*** PSY 200 is a prerequisite for PSY 210' (BIO 103 and PSY 200 carried as external_prereqs). 'Classes in bold may be taken prior to entering the nursing program or taken concurrently with nursing courses as outlined above.' The source prints no catalog year; catalog_year stamped with retrieval year (2026) and documented here. Program cross-validated in the official 2026-2027 CACC catalog program listing ('Nursing Program', 66 hours).",
+  "external_prereqs": [
+   "BIO 103",
+   "PSY 200"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester I",
+    "courses": [
+     {
+      "code": "BIO 201",
+      "title": "Human Anatomy & Phys. I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 103"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 100",
+      "title": "Intermediate College Algebra or higher-level math",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MTH 100 Intermediate College Algebra or higher-level math",
+      "options": [
+       {
+        "code": "MTH 100",
+        "title": "Intermediate College Algebra",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 112",
+      "title": "Fundamentals Concepts of Nursing",
+      "credits": 7,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester II",
+    "courses": [
+     {
+      "code": "BIO 202",
+      "title": "Human Anatomy & Phys. II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY 210",
+      "title": "Human Growth & Development",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "PSY 200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 113",
+      "title": "Nursing Concepts",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester III",
+    "courses": [
+     {
+      "code": "SPH 106",
+      "title": "Fundamentals of Oral Communication (or SPH 107)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SPH 106 Fundamentals of Oral Communication (or SPH 107)",
+      "options": [
+       {
+        "code": "SPH 106",
+        "title": "Fundamentals of Oral Communication",
+        "credits": 3
+       },
+       {
+        "code": "SPH 107",
+        "title": "SPH 107",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 114",
+      "title": "Nursing Concepts II",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 115",
+      "title": "Evidence Based Clinical Reasoning",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Semester IV",
+    "courses": [
+     {
+      "code": "BIO 220",
+      "title": "General Microbiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 211",
+      "title": "Adv. Nursing Concepts",
+      "credits": 7,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Semester V",
+    "courses": [
+     {
+      "code": "Humanities Elective",
+      "title": "Humanities Elective (PHL 206 preferred but not required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Humanities Elective (PHL 206 preferred but not required)",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 221",
+      "title": "Advanced Evidence Based Clinical Reasoning",
+      "credits": 7,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "8c6197728e1688b70810a6d4e03a3c8a0331f9151a38b2e2a3398f9892446cd9",
+  "last_verified": "2026-10-02"
+ }
+}

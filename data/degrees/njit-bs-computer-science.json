@@ -1,0 +1,667 @@
+{
+ "institution": {
+  "name": "New Jersey Institute of Technology",
+  "city": "Newark, NJ",
+  "kind": "public4yr",
+  "state": "NJ"
+ },
+ "plan": {
+  "id": "njit-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://catalog.njit.edu/undergraduate/computing-sciences/computer-science/bs/",
+  "notes": "Source: official NJIT 2026-2027 catalog page 'B.S. in Computer Science' (https://catalog.njit.edu/undergraduate/computing-sciences/computer-science/bs/), 'Plan of Study Grid' -- \"The program requires the completion of a minimum of 120 credits. The following plan of study illustrates a typical path to completion.\" Catalog year 2026-2027 (site header 'Catalog 2026-2027'; the live current catalog, not an archive edition). Transcription method: fetched the page HTML with curl and manually transcribed every grid row (course code, title, credits, footnote markers) on 2026-09-30; per-term sums re-verified against the catalog's printed Term Credits (14/14, 15/16, 15/16, 15/15 = 120). Caveats: (a) The catalog's grid does not list per-course prerequisites, so all prereq arrays are intentionally empty -- no prerequisites invented; the published term ordering preserves the prerequisite chain. (b) FYS SEM (First-Year Student Seminar) is a required 0-credit course (required_zero). (c) The catalog notes this curriculum is the maximum recommended credits per semester (full-time load = 12 credits), and that first-year students are placed in a curriculum that positions them for success which may result in additional time to complete requirements -- students should consult academic advisors. (d) The degree may be earned with an optional concentration (Cybersecurity and Privacy; AI: Learning and Reasoning; AI: Systems and Infrastructure), completed within the existing elective slots of this plan -- not transcribed as a separate plan. (e) Grade requirements per catalog: B or better expected in CS 100; C or better in all CS courses that serve as prerequisites of required courses; 2.7 GPA required for co-op enrollment.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 100",
+      "title": "Roadmap to Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 111",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENGL 101",
+      "title": "English Composition: Introduction to Academic Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "PHYS 111",
+      "title": "Physics I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "PHYS 111A",
+      "title": "Physics I Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "FYS SEM",
+      "title": "First-Year Student Seminar",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened",
+      "required_zero": true
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 113",
+      "title": "Introduction to Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 112",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "ENGL 102",
+      "title": "English Composition: Introduction to Writing for Research",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "PHYS 121",
+      "title": "Physics II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "PHYS 121A",
+      "title": "Physics II Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 114",
+      "title": "Introduction to Computer Science II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 201",
+      "title": "The Artificial Neuron",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 275",
+      "title": "Learning Algorithms",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "YWCC 207",
+      "title": "Computing & Effective Com",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "professional"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "MATH 337",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "GER-HUM-200",
+      "title": "History and Humanities GER 200 level",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "History and Humanities General Education Requirement at the 200 level (per NJIT General Education Requirements).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-6",
+      "code": "ELECT-GEN-1",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General Elective (catalog footnote 1): any 3-credit course except a course already required for the program or any course covering prerequisite material for first-semester courses. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 241",
+      "title": "Foundations of Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 280",
+      "title": "Programming Language Concepts",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CS 307",
+      "title": "Graphs, Tensors, and AI Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "IS 350",
+      "title": "Computers, Society and Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "COM 312/313",
+      "title": "Effective Communication or Writing in the Workplace",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one of the following (catalog grid: 'COM 312 or COM 313').",
+      "options": [
+       {
+        "code": "COM 312",
+        "title": "Effective Communication",
+        "credits": 3
+       },
+       {
+        "code": "COM 313",
+        "title": "Writing in the Workplace",
+        "credits": 3
+       }
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "MATH 333",
+      "title": "Probability and Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 288",
+      "title": "Intensive Programming in Linux",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 332",
+      "title": "Principles of Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CS 341",
+      "title": "Foundations of Computer Science II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CS 356",
+      "title": "Introduction to Computer Networks",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELECT-CSITDS-200-1",
+      "title": "CS/IS/IT/DS Elective 200 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS/IS/IT/DS elective numbered 200 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 331",
+      "title": "Database System Design & Mgmt",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS 350",
+      "title": "Intro to Computer Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS 351",
+      "title": "Introduction to Cybersecurity",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "YWCC 307",
+      "title": "Professional Dev in Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "professional"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELECT-CS-300-1",
+      "title": "CS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-5",
+      "code": "GER-SOCSCI-1",
+      "title": "Social Science GER",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Social Science General Education Requirement (per NJIT General Education Requirements).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 435",
+      "title": "Advanced Data Structures and Algorithm Design",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS 490",
+      "title": "Guided Design in Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELECT-CS-300-2",
+      "title": "CS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELECT-CS-300-3",
+      "title": "CS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GER-HUM-300-1",
+      "title": "History and Humanities GER 300+ level",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "History and Humanities General Education Requirement at the 300+ level (per NJIT General Education Requirements).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 491",
+      "title": "Senior Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "ELECT-CS-300-4",
+      "title": "CS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELECT-CS-300-5",
+      "title": "CS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELECT-CSITDS-300-1",
+      "title": "CS/IS/IT/DS Elective 300 or above",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS/IS/IT/DS elective numbered 300 or above. Rules on Electives (catalog footnote 2): students pursuing a concentration must select electives to satisfy concentration requirements; at most 6 credits from CS 485/DS 485/IS 485/IT 485 Special Topics may count (at least 3 must be CS 485 if 6 used; only approved CS 485 topics count toward concentrations); at most 3 credits from YWCC 310/410/411 Co-OP courses may count toward general electives; the following cannot count as electives: Computing Literacy GER, ENGL 099, PHYS 102, MATH 105, MATH 107, MATH 226, MATH 244, MATH 326, MATH 341, DS 340, IS 331.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GER-HSS-SR-1",
+      "title": "Humanities and Social Science Senior Seminar GER",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Humanities and Social Science Senior Seminar General Education Requirement (per NJIT General Education Requirements).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "9d8345c33a70652cf2c48743af4a4a63aa0d46dc293c185bc96d4a1f448e85ef",
+  "last_verified": "2026-10-02"
+ }
+}

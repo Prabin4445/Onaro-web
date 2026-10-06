@@ -1,0 +1,879 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bsswe-software-engineering",
+  "degree": "BSSWE",
+  "major": "Software Engineering",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001111",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001111. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): Software Engineering represents the fastest growing segment of software professionals - men and women who solve problems and issues in the development of mission-critical software to meet the needs of business and industry. The undergraduate program in Software Engineering, which is the only one offered at a public university in the state of Georgia, has the primary objective of preparing a new generation of software developers focused on the engineering of software systems; that is, those systems that meet specified requirements, that are built with mission critical quality levels, and that a"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1190",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1112",
+         "MATH 1113"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1321",
+      "title": "Programming Problem Solving I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSE 1321L"
+      ],
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1321L",
+      "title": "Program Problem Solving I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CSE 1321"
+      ],
+      "choice": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-05",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2202",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1322",
+      "title": "Programming Problem Solving II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSE 1321",
+       "CSE 1321L",
+       "CSE 1322L",
+       {
+        "one_of": [
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1322L",
+      "title": "Program Problem Solving II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CSE 1321",
+       "CSE 1321L",
+       "CSE 1322"
+      ],
+      "choice": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(BIOL 1107 and BIOL 1107L) or (CHEM 1211 and CHEM 1211L) or (PHYS 1111 and PHYS 1111L) or (PHYS 2211 and PHYS 2211L) or (BIOL 1108 and BIOL 1108L) or (CHEM 1212 and CHEM 1212L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2212 and PHYS 2212L)",
+      "options": [
+       "BIOL 1107",
+       "BIOL 1107L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "BIOL 1108",
+       "BIOL 1108L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2212",
+       "PHYS 2212L"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SWE 3313",
+      "title": "Intro to Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1302",
+         "CSE 1322L",
+         "IT 1323L",
+         "IT 1324"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1302",
+         "CSE 1322",
+         "IT 1323",
+         "IT 1324"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1302",
+         "CSE 1322L",
+         "IT 1323",
+         "IT 1324"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1302",
+         "CSE 1322",
+         "IT 1323L",
+         "IT 1324"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-02",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(BIOL 1107 and BIOL 1107L) or (BIOL 1108 and BIOL 1108L) or (CHEM 1211 and CHEM 1211L) or (CHEM 1212 and CHEM 1212L) or (PHYS 1111 and PHYS 1111L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2211 and PHYS 2211L) or (PHYS 2212 and PHYS 2212L)",
+      "options": [
+       "BIOL 1107",
+       "BIOL 1107L",
+       "BIOL 1108",
+       "BIOL 1108L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "PHYS 2212",
+       "PHYS 2212L"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-03",
+      "title": "CSE 2300 or MATH 2345",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CSE 2300 or MATH 2345",
+      "options": [
+       "CSE 2300",
+       "MATH 2345"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-04",
+      "title": "General Education Core IMPACTS - Critical Thinking",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "AMST 1102 or ASIA 1102 or BLCK 1102 or COMM 1100 or GWST 1102 or ISD 2700 or LALS 1102 or LDRS 2300 or PAX 1102 or POLS 2401 or RELS 1102",
+      "options": [
+       "AMST 1102",
+       "ASIA 1102",
+       "BLCK 1102",
+       "COMM 1100",
+       "GWST 1102",
+       "ISD 2700",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "POLS 2401",
+       "RELS 1102"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "CSE 3153",
+      "title": "Database Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1322",
+         "IT 1113",
+         "IT 1114"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322",
+         "IT 1113",
+         "IT 1114L"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322L",
+         "IT 1113",
+         "IT 1114"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322L",
+         "IT 1113",
+         "IT 1114L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 3305",
+      "title": "Data Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 3000",
+         "CSE 1322L",
+         "MATH 2345",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CPE 3000",
+         "CSE 1322",
+         "MATH 2345",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CPE 3000",
+         "CSE 2300",
+         "MATH 2345",
+         "MTRE 2710"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 2332",
+      "title": "Probability and Data Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-03",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or PHIL 2010 or ENGL 2140 or FL 1001 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "PHIL 2010",
+       "ENGL 2140",
+       "FL 1001",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-04",
+      "title": "General Education Core IMPACTS- Political Science and US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "SWE 3623",
+      "title": "Software Systems Requirements",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 3000",
+         "SWE 3313"
+        ]
+       },
+       {
+        "one_of": [
+         "CPE 3000",
+         "CSE 2300",
+         "MATH 2345"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SWE 4324",
+      "title": "User Centered Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "SWE 3313"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 3503",
+      "title": "Computer Organization & Arch",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSE 1322",
+       "CSE 1322L"
+      ],
+      "choice": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-03",
+      "title": "MATH or SCIENCE elective (1 of 2) Select 8 credit hours from the following prefixes: PHYS (excluding PHYS 1111/L and PHYS 1112/L and if PHYS 1111/L & PHYS 1112/L were taken in Area D, students cannot retake their equivalents PHYS 2211/L & PHYS 2212/L respectively), CHEM (excluding CHEM 1151/L, CHEM 1152/L and CHEM 1210) BIOL (excluding eCore BIOL 1011K and BIOL 1012K), MATH at the level of Calculus 1 or higher (excluding MATH 0097, MATH 0098, MATH 0099, MATH 0989, MATH 0998, MATH 0999, MATH 1001, MATH 1101, MATH 1106, MATH 1107, MATH 1111, MATH 1111L, MATH 1112, MATH 1113, MATH 1160, MATH 1190, MATH 1401, MATH 1501, MATH 2202, MATH 2207, MATH 2332, MATH 2345, MATH 2590, MATH 2595, MATH 3295, MATH 3316, MATH 3317, MATH 3318, MATH 3322, MATH 3495, MATH 4495).",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "PHYS @ or CHEM @ or BIOL @ or MATH @",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "SWE 3633",
+      "title": "Sftware Archit & Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 3000",
+         "SWE 3313"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SWE 3643",
+      "title": "Software Testing & QA",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 3000",
+         "SWE 3313"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 3801",
+      "title": "Professional Practices & Ethic",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1322",
+         "IT 3123"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322L",
+         "IT 3123"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 3502",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3305",
+       "CS 3503"
+      ],
+      "choice": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-04",
+      "title": "MATH or SCIENCE elective (2 of 2) Select 8 credit hours from the following prefixes: PHYS (excluding PHYS 1111/L and PHYS 1112/L and if PHYS 1111/L & PHYS 1112/L were taken in Area D, students cannot retake their equivalents PHYS 2211/L & PHYS 2212/L respectively), CHEM (excluding CHEM 1151/L, CHEM 1152/L and CHEM 1210) BIOL (excluding eCore BIOL 1011K and BIOL 1012K), MATH at the level of Calculus 1 or higher (excluding MATH 0097, MATH 0098, MATH 0099, MATH 0989, MATH 0998, MATH 0999, MATH 1001, MATH 1101, MATH 1106, MATH 1107, MATH 1111, MATH 1111L, MATH 1112, MATH 1113, MATH 1160, MATH 1190, MATH 1401, MATH 1501, MATH 2202, MATH 2207, MATH 2332, MATH 2345, MATH 2590, MATH 2595, MATH 3295, MATH 3316, MATH 3317, MATH 3318, MATH 3322, MATH 3495, MATH 4495).",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "PHYS @ or CHEM @ or BIOL @ or MATH @",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "TCOM 2010",
+      "title": "Technical Writing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGL 1102"
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SWE 4663",
+      "title": "Software Project Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2332",
+       "SWE 3313"
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SWE 4713",
+      "title": "SWE Application Domain",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "SWE 3623",
+       "SWE 3643",
+       "SWE 4663"
+      ],
+      "choice": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-03",
+      "title": "General Education Core IMPACTS- Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ANTH 1102 or CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ECON 2106",
+      "options": [
+       "ANTH 1102",
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ECON 2106"
+      ],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-04",
+      "title": "Upper-Division List One Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SWE 3683 or SWE 4633 or SWE 4723 or SWE 4743 or SWE 4783 or SWE 4490 or SWE 4803 or CSE 4983 or CS 4720 or CS 4524 or CS 4612 or CS 4632 or CS 4712 or CS 4514 or CS 4308",
+      "options": [
+       "SWE 3683",
+       "SWE 4633",
+       "SWE 4723",
+       "SWE 4743",
+       "SWE 4783",
+       "SWE 4490",
+       "SWE 4803",
+       "CSE 4983",
+       "CS 4720",
+       "CS 4524",
+       "CS 4612",
+       "CS 4632",
+       "CS 4712",
+       "CS 4514",
+       "CS 4308"
+      ],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "SWE 4724",
+      "title": "Software Eng Capstone Proj",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "SWE 3623",
+       "SWE 3643",
+       "SWE 4663"
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-01",
+      "title": "General Education Core IMPACTS- Social Sciences (World History)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "Free Elective (1 of 2)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (1 of 2)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "Free Elective (2 of 2)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (2 of 2)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "Upper-Division List One or List Two Elective.",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SWE 3683 or SWE 4633 or SWE 4723 or SWE 4743 or SWE 4783 or SWE 4490 or SWE 4803 or CSE 4983 or CS 4720 or CS 4524 or CS 4612 or CS 4632 or CS 4712 or CS 4514 or CS 4308 or CS 4504 or CS 4523 or CS 4622 or CS 4722 or CS 4732 or IT 4823 or IT 4@ or CS 4@ or CGDD 4@",
+      "options": [
+       "SWE 3683",
+       "SWE 4633",
+       "SWE 4723",
+       "SWE 4743",
+       "SWE 4783",
+       "SWE 4490",
+       "SWE 4803",
+       "CSE 4983",
+       "CS 4720",
+       "CS 4524",
+       "CS 4612",
+       "CS 4632",
+       "CS 4712",
+       "CS 4514",
+       "CS 4308",
+       "CS 4504",
+       "CS 4523",
+       "CS 4622",
+       "CS 4722",
+       "CS 4732",
+       "IT 4823"
+      ],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "CPE 3000",
+   "CSE 1302",
+   "CSE 2300",
+   "ENGL 101",
+   "IT 1113",
+   "IT 1114",
+   "IT 1114L",
+   "IT 1323",
+   "IT 1323L",
+   "IT 1324",
+   "IT 3123",
+   "MATH 1112",
+   "MATH 1113",
+   "MATH 1179",
+   "MATH 1189",
+   "MATH 2332",
+   "MATH 2345",
+   "MTRE 2710"
+  ],
+  "content_hash": "32be84c8d2a5868a78173479fc298f9d5d6021682e25978933a9658961f05b0f",
+  "last_verified": "2026-10-02"
+ }
+}

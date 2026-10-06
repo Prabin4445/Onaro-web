@@ -1,0 +1,481 @@
+{
+ "institution": {
+  "city": "Denver, CO",
+  "ipeds": 127565,
+  "kind": "public",
+  "name": "Metropolitan State University of Denver",
+  "state": "CO"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "msu-denver-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "B.S. Computer Science, College of Aerospace, Computing, Engineering and Design. SEMESTER SYSTEM — all credits are semester hours. Built from the official MSU Denver Computer Science 4-Year Degree Plan, Fall 2025 Catalog Year (http://msudenver.edu/wp-content/uploads/2026/01/CS-4-Year-Degree-Plan-Fall-2025-2.pdf). Major: CS 1030/1050/1400/2050/2240/2400/3210/3240/3250/3600/3700/4050/4360, MTH 1110/1120/1410/3120/3130, PHI 3370, plus 3 CS Upper Division Electives (4cr each) and 6cr Natural & Physical Sciences. General Studies 33cr: Written Communication (ENG 1010/1020), Oral Communication (COMM 1010/1100), Quantitative Literacy (MTH 1410), Arts & Humanities, Historical, Natural & Physical Sciences (6cr), Social & Behavioral Sciences (6cr, one with Global Diversity), plus ESSJ and Senior Experience (CS 4360). All prerequisite/major/ancillary courses require C or better. 120 semester credits total.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 1030",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Science Principles",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "COMM 1010 Presentational Speaking or COMM 1100 Fundamentals of Oral Communication (Oral Communication).",
+      "code": "GENED-COMM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Oral Communication (student choice)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENG 1010",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composing Arguments (Written Communication)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1110",
+      "credits": 4,
+      "prereq": [],
+      "title": "College Algebra for Calculus",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "code": "ENG 1020",
+      "credits": 3,
+      "prereq": [
+       "ENG 1010"
+      ],
+      "title": "Research and Argument Writing (Written Communication)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 1050",
+      "credits": 4,
+      "prereq": [
+       "CS 1030"
+      ],
+      "title": "Computer Science I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 1400",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Organization",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1120",
+      "credits": 3,
+      "prereq": [
+       "MTH 1110"
+      ],
+      "title": "College Trigonometry",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Social and Behavioral Sciences General Studies course with Global Diversity attribute.",
+      "code": "GENED-SSGD",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social & Behavioral Sciences + Global Diversity (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 2050",
+      "credits": 4,
+      "prereq": [
+       "CS 1050"
+      ],
+      "title": "Computer Science II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 2400",
+      "credits": 4,
+      "prereq": [
+       "CS 1050",
+       "CS 1400"
+      ],
+      "title": "Assembly Language Programming & Intro to HPC",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1410",
+      "credits": 4,
+      "prereq": [
+       "MTH 1120"
+      ],
+      "title": "Calculus I (Quantitative Literacy)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHI 3370",
+      "credits": 3,
+      "prereq": [],
+      "title": "Computers, Ethics, and Society",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 2240",
+      "credits": 4,
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "Discrete Structures for Computer Science",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 3250",
+      "credits": 4,
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "Software Development Methods and Tools",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "JMP 2610",
+      "credits": 3,
+      "prereq": [
+       "ENG 1020"
+      ],
+      "title": "Introduction to Technical Writing",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Natural & Physical Sciences General Studies course from the accepted science list in the major requirements (6cr total required).",
+      "code": "GENED-SCI-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "title": "Natural & Physical Sciences (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 3240",
+      "credits": 2,
+      "prereq": [
+       "CS 2050",
+       "CS 2240"
+      ],
+      "title": "Introduction to the Theory of Computation",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 3600",
+      "credits": 4,
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "Operating Systems",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 3120",
+      "credits": 4,
+      "prereq": [
+       "MTH 1410"
+      ],
+      "title": "Probability and Statistics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Natural & Physical Sciences General Studies course from the accepted science list (6cr total required).",
+      "code": "GENED-SCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Natural & Physical Sciences (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 3210",
+      "credits": 4,
+      "prereq": [
+       "CS 2050",
+       "CS 2240",
+       "CS 2400",
+       "CS 3240",
+       "CS 3250"
+      ],
+      "title": "Principles of Programming Languages",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 3700",
+      "credits": 4,
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "Networks and Distributed Computing",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Social and Behavioral Sciences General Studies course.",
+      "code": "GENED-SS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social & Behavioral Sciences (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 3130",
+      "credits": 4,
+      "prereq": [
+       "MTH 1410"
+      ],
+      "title": "Applied Methods in Linear Algebra",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 4050",
+      "credits": 4,
+      "prereq": [
+       "CS 2050",
+       "CS 2240"
+      ],
+      "title": "Algorithms Analysis",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS upper-division elective (3000/4000-level).",
+      "code": "CS-UD-ELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "CS Upper Division Elective (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS upper-division elective (3000/4000-level).",
+      "code": "CS-UD-ELEC-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "CS Upper Division Elective (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective; take as needed to reach 120 credits.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 4360",
+      "credits": 4,
+      "prereq": [
+       "CS 3250"
+      ],
+      "title": "Senior Experience in Computer Science",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS upper-division elective (3000/4000-level).",
+      "code": "CS-UD-ELEC-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 2050"
+      ],
+      "title": "CS Upper Division Elective (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Arts and Humanities General Studies course.",
+      "code": "GENED-AH",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Arts and Humanities (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Historical General Studies course with Ethnic Studies & Social Justice (ESSJ) attribute.",
+      "code": "GENED-HIST-ESSJ",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Historical + ESSJ (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://msudenver.edu/wp-content/uploads/2026/01/CS-4-Year-Degree-Plan-Fall-2025-2.pdf",
+  "total_credits": 120,
+  "content_hash": "f69797a97eade827e4f6daea1bfdf1bcc7f80e23e2879b1e23bb35cdf5fcb145",
+  "last_verified": "2026-10-02"
+ }
+}

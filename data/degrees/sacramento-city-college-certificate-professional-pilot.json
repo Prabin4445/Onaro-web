@@ -1,0 +1,351 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-professional-pilot",
+  "degree": "Certificate",
+  "major": "Professional Pilot",
+  "catalog_year": "2026-2027",
+  "total_credits": 32.75,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7810/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Professional Pilot Certificate (Spring Start)' program map, Catalog 2026-27, published October 2, 2026 (mapmaker.losrios.edu/Maps/7810/PublishedPdf). Start Term: Spring. Official Total Units: 32.75-41; this seed models the first-listed/recommended path at the low end = 1 + 4.25 + 12 + 15.5 = 32.75 units (FLTEC 360, 362, and 364 at 0.25 units each). Semester sums verified against the map's 1 / 4.25-7 / 12 / 15.5-21 headers. External prereq (documented, not in-plan): FLTEC 360 requires FLTEC 300 with a grade of 'C' or better — FLTEC 300 does not appear in this map's sequence. In-plan prereqs: FLTEC 302, 304, 306, and 330 require FLTEC 320 with 'C' or better (OR: hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam); FLTEC 310 and 321 require FLTEC 302, 304, 306, and 330 (OR: hold FAA Private Pilot Certificate or higher); FLTEC 312 requires FLTEC 302, 304, 306, 310, and 320; FLTEC 314 requires FLTEC 302, 304, 306, 310, and 330 (OR: hold FAA Private Pilot Certificate or higher); FLTEC 362 requires FLTEC 302, 304, 306, 310, 312, 320, and 330; FLTEC 364 requires FLTEC 302, 304, 306, 312, 321, 330, 360, and 362 with 'C' or better AND an FAA First or Second Class medical certificate under 14 CFR Part 67 (documented). Certificate of Achievement requirements: grade of 'C' or better in each major course. Documented program enrollment eligibility: FAA English proficiency (ICAO Level 4 / AC60-28); minimum 'C' in FLTEC 200 Professional Pilot Orientation; at least 16.5 years of age at enrollment; FAA Class II Medical Certificate & FAA Student Pilot Certificate; no more than one alcohol-related motor vehicle action within three years, or more than three in any period. Aviation - Professional Pilot, Business & Industry Meta Majors. Distinct from the Professional Pilot A.S. (map 7804). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [
+   "FLTEC 300"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1 (Spring)",
+    "courses": [
+     {
+      "code": "FLTEC 200",
+      "title": "Introduction to Professional Pilot",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "FLTEC 200",
+      "xfer": [
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Summer Term",
+    "courses": [
+     {
+      "code": "FLTEC 320",
+      "title": "Private Pilot Ground School",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "FLTEC 320",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 360",
+      "title": "Private Pilot-Airplane Flight Techniques",
+      "credits": 0.25,
+      "category": "major",
+      "prereq": [
+       "FLTEC 300"
+      ],
+      "choice": false,
+      "choice_note": "Private Pilot-Airplane Flight Techniques (0.25-3); modeled at 0.25 units per the 32.75-unit low path. Prerequisite: FLTEC 300 with a grade of 'C' or better — FLTEC 300 is not in this map's sequence; documented as an external prereq.",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "FLTEC 360",
+      "xfer": [
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Semester 2 (Fall)",
+    "courses": [
+     {
+      "code": "FLTEC 302",
+      "title": "Aviation Weather",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of 'C' or better (OR: hold FAA Private Pilot Certificate, or successfully completed FAA Private Pilot Knowledge exam — documented).",
+      "options": [],
+      "slot_id": "s3-0",
+      "tccns": "FLTEC 302",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 304",
+      "title": "Human Factors and Risk Management in Aviation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of 'C' or better (OR: FAA Private Pilot Certificate / Knowledge exam — documented).",
+      "options": [],
+      "slot_id": "s3-1",
+      "tccns": "FLTEC 304",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 306",
+      "title": "Federal Aviation Regulations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of 'C' or better (OR: FAA Private Pilot Certificate / Knowledge exam — documented).",
+      "options": [],
+      "slot_id": "s3-2",
+      "tccns": "FLTEC 306",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 330",
+      "title": "Airplane Aerodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 320"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 320 with a grade of 'C' or better (OR: FAA Private Pilot Certificate / Knowledge exam — documented).",
+      "options": [],
+      "slot_id": "s3-3",
+      "tccns": "FLTEC 330",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Semester 3 (Spring)",
+    "courses": [
+     {
+      "code": "FLTEC 310",
+      "title": "Instrument Pilot/Instructor Ground School",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 330"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, and 330 with grades of 'C' or better (OR: hold FAA Private Pilot Certificate or higher — documented).",
+      "options": [],
+      "slot_id": "s4-0",
+      "tccns": "FLTEC 310",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 312",
+      "title": "Air Navigation, Airspace, and Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 320"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, 310, and 320 with grades of 'C' or better.",
+      "options": [],
+      "slot_id": "s4-1",
+      "tccns": "FLTEC 312",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 314",
+      "title": "Large Aircraft Systems",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 330"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, 310, and 330 with grades of 'C' or better (OR: hold FAA Private Pilot Certificate or higher — documented).",
+      "options": [],
+      "slot_id": "s4-2",
+      "tccns": "FLTEC 314",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 321",
+      "title": "Commercial Pilot Ground School",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 330"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: FLTEC 302, 304, 306, and 330 with grades of 'C' or better (OR: hold FAA Private Pilot Certificate or higher — documented).",
+      "options": [],
+      "slot_id": "s4-3",
+      "tccns": "FLTEC 321",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-aircraft-dispatcher",
+       "sacramento-city-college-as-flight-technology",
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc",
+       "sacramento-city-college-certificate-aircraft-dispatcher",
+       "sacramento-city-college-certificate-flight-technology"
+      ]
+     },
+     {
+      "code": "FLTEC 362",
+      "title": "Instrument Pilot-Airplane Flight Techniques",
+      "credits": 0.25,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 310",
+       "FLTEC 312",
+       "FLTEC 320",
+       "FLTEC 330"
+      ],
+      "choice": false,
+      "choice_note": "Instrument Pilot-Airplane Flight Techniques (0.25-3); modeled at 0.25 units per the 32.75-unit low path. Prerequisite: FLTEC 302, 304, 306, 310, 312, 320, and 330 with grades of 'C' or better.",
+      "options": [],
+      "slot_id": "s4-4",
+      "tccns": "FLTEC 362",
+      "xfer": [
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc"
+      ]
+     },
+     {
+      "code": "FLTEC 364",
+      "title": "Commercial Pilot-Airplane Flight Techniques",
+      "credits": 0.25,
+      "category": "major",
+      "prereq": [
+       "FLTEC 302",
+       "FLTEC 304",
+       "FLTEC 306",
+       "FLTEC 312",
+       "FLTEC 321",
+       "FLTEC 330",
+       "FLTEC 360",
+       "FLTEC 362"
+      ],
+      "choice": false,
+      "choice_note": "Commercial Pilot-Airplane Flight Techniques (0.25-3); modeled at 0.25 units per the 32.75-unit low path. Prerequisites: FLTEC 302, 304, 306, 312, 321, 330, 360, and 362 with grades of 'C' or better; must hold or obtain an FAA First or Second Class medical certificate under 14 CFR Part 67 (documented).",
+      "options": [],
+      "slot_id": "s4-5",
+      "tccns": "FLTEC 364",
+      "xfer": [
+       "sacramento-city-college-as-professional-pilot",
+       "sacramento-city-college-as-professional-pilot-cal-getc"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "549be478d5ae991265990381dde4b416e2903bd45dcb4bd2eca82cdf1e37fd18",
+  "last_verified": "2026-10-02"
+ }
+}

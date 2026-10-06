@@ -1,0 +1,694 @@
+{
+ "institution": {
+  "city": "Norfolk, VA",
+  "kind": "public4yr",
+  "name": "Old Dominion University",
+  "state": "VA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "odu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: '2025-2026 Old Dominion University Catalog — Bachelor of Science in Computer Science (w/ VCCS Equivalencies)', official ODU-hosted sample four-year curriculum, https://www.odu.edu/sites/default/files/2025/documents/2025-2026-vccs-computer-science-bscs.pdf (verified live 2026-09-30). TRANSCRIPTION: direct transcription of the document's 8-semester suggested ordering; VCCS equivalency columns omitted (Virginia community-college transfer mappings, not TCCNS). CATALOG YEAR: 2025-2026 is the most recent official term-by-term sequence found; no 2026-2027 edition was located as of 2026-09-30. Course titles/credits cross-checked against the live catalog requirements page (catalog.odu.edu/undergraduate/sciences/computer-science/computer-science-bscs/) and the official course list (catalog.odu.edu/courses/cs/): CS 251 = Programming with Java (4 cr), CS 260 = C++ for Programmers (1 cr), CS 315 = Computer Science Undergraduate Colloquium (1 cr), COMM 101R = Public Speaking, CS 121G = Introduction to Information Literacy and Research for Scientists, ENGL 231C = Introduction to Technical and Scientific Writing. CREDIT CAVEATS: the source PDF's own printed subtotals are internally inconsistent (e.g. Year 1 header says 32-33 but listed courses sum to 35 with Language and Culture; Junior Fall 13 only reconciles if CS 315 = 1 cr). This plan uses official catalog credit values throughout, which sum to exactly 120. 'Interpreting the Past' was placed in Fall Year 3 (the PDF's two-column layout is ambiguous in text extraction) because that placement reproduces the document's printed 13-credit Junior Fall subtotal. LANGUAGE AND CULTURE: the source lists 'Language and Culture I (may be waived)' in Fall Year 1 and 'Elective or Language and Culture II (may be waived)' in Spring Year 1. This plan includes both as student-choice slots, so the transcribed total is 123 credits — within the catalog's official 120-134 range. Students who waive Language and Culture substitute other electives to reach the 120-credit graduation minimum; the source PDF's printed year-total ranges are themselves internally inconsistent (e.g. Year 1 header 32-33 vs 32-35 from its own semester ranges) and are documented here as unreliable. PREREQUISITES: the sample plan gives a suggested ordering but states no explicit prerequisites, so prereq arrays are intentionally left empty rather than inferred; external_prereqs is therefore empty. CAVEAT: the current live catalog lists 'CS 422 or CS 480' as a required selection; the 2025-2026 sample plan covers it implicitly through the three 300/400-level CS elective slots (students should choose accordingly with an advisor). The source document states this plan is 'just one of several plans that will work' and students should consult an advisor and Degree Works.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one: CS 150 (C++), CS 151 (Java), or CS 153 (Python); 4 credits each.",
+      "code": "CS 150",
+      "credits": 4,
+      "options": [
+       "CS 150",
+       "CS 151",
+       "CS 153"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Programming (language track)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 110C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "English Composition",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Human Behavior general-education course; see catalog.",
+      "code": "GENED-HB",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Human Behavior (general education)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Competence must be at the 102 level; the source notes this requirement may be waived — substitute elective credits to reach 120.",
+      "code": "GENED-LC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Language and Culture I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 212",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 251",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Programming with Java",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 252",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Introduction to Unix for Programmers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENGL 211C or ENGL 231C (231C preferred); grade of C or better required.",
+      "code": "ENGL 211C",
+      "credits": 3,
+      "options": [
+       "ENGL 211C",
+       "ENGL 231C"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Written Communication II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 170",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introduction to Computer Architecture I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "The source lists this slot as 'Elective or Language and Culture II (may be waived, see catalog for details)'.",
+      "code": "GENED-ELEC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Elective or Language and Culture II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "First of two Nature of Science courses in sequence (8 credits total). Eligible sequences include BIOL 121N/122N, BIOL 123N/124N, CHEM 121N/122N, CHEM 123N/124N, PHYS 231N/232N, OEAS 106N with OEAS 108N or 250N; see catalog for the full list.",
+      "code": "GENED-NS1",
+      "credits": 4,
+      "options": [
+       "BIOL 121N",
+       "BIOL 123N",
+       "CHEM 121N",
+       "CHEM 123N",
+       "PHYS 231N",
+       "OEAS 106N"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Nature of Science I (in sequence)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 316",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introductory Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 270",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Introduction to Computer Architecture II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Object-Oriented Design and Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "COMM 101R (Public Speaking) or PHIL 160R.",
+      "code": "GENED-OC",
+      "credits": 3,
+      "options": [
+       "COMM 101R",
+       "PHIL 160R"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Oral Communication",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Second of the two-course Nature of Science sequence begun in Fall Year 2.",
+      "code": "GENED-NS2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Nature of Science II (in sequence)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "An Introduction to Probability and Statistics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 260",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "C++ for Programmers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "CS 121G or CS 202G.",
+      "code": "GENED-IL",
+      "credits": 3,
+      "options": [
+       "CS 121G",
+       "CS 202G"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Information Literacy and Research",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 315",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Science Undergraduate Colloquium",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 355",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Principles of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 381",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Introduction to Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Human Creativity general-education course; see catalog.",
+      "code": "GENED-HC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Human Creativity (general education)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Interpreting the Past general-education course; see catalog.",
+      "code": "GENED-IP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Interpreting the Past (general education)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 390",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Introduction to Theoretical Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS 450 Database Concepts or CS 418 Web Programming.",
+      "code": "CS 450",
+      "credits": 3,
+      "options": [
+       "CS 450",
+       "CS 418"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Database Concepts or Web Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Literature general-education course; see catalog.",
+      "code": "GENED-LIT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Literature (general education)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 300-/400-level course from outside the College of Sciences and not required by the major (Option D). Upper-division general education has other options (minor, second major); see catalog.",
+      "code": "GENED-OPD1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Upper-Division General Education (Option D)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 417",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computational Methods and Software",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 410",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Professional Workforce Development I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One course not counted toward another degree requirement, selected from BIOL, CHEM, OEAS, or PHYS (e.g. BIOL 121N, CHEM 121N, PHYS 231N, OEAS 106N); other technically oriented courses with advisor approval. 3-4 credits; this plan uses 3.",
+      "code": "CS-TECHELEC",
+      "credits": 3,
+      "options": [
+       "BIOL 121N",
+       "CHEM 121N",
+       "PHYS 231N",
+       "OEAS 106N",
+       "OEAS 250N"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of three required upper-level (300/400) CS electives, 9 credits total (excluding CS 300T and CS 315). Examples: CS 422 Introduction to Machine Learning, CS 480 Introduction to Artificial Intelligence, CS 455 Introduction to Networks and Communications, CS 462 Cybersecurity Fundamentals. See catalog for the full list.",
+      "code": "CS-ELEC1",
+      "credits": 3,
+      "options": [
+       "CS 422",
+       "CS 480",
+       "CS 455",
+       "CS 462",
+       "CS 431",
+       "CS 433"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CS 300/400-Level Elective Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Philosophy and Ethics general-education course; see catalog.",
+      "code": "GENED-PE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Philosophy and Ethics (general education)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 411W",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Professional Workforce Development II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 471",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second of three required upper-level (300/400) CS electives; see Fall Year 4 elective note.",
+      "code": "CS-ELEC2",
+      "credits": 3,
+      "options": [
+       "CS 422",
+       "CS 480",
+       "CS 455",
+       "CS 462",
+       "CS 431",
+       "CS 433"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS 300/400-Level Elective Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Third of three required upper-level (300/400) CS electives; see Fall Year 4 elective note.",
+      "code": "CS-ELEC3",
+      "credits": 3,
+      "options": [
+       "CS 422",
+       "CS 480",
+       "CS 455",
+       "CS 462",
+       "CS 431",
+       "CS 433"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS 300/400-Level Elective Course",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Second 300-/400-level course from outside the College of Sciences and not required by the major (Option D).",
+      "code": "GENED-OPD2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Upper-Division General Education (Option D)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.odu.edu/sites/default/files/2025/documents/2025-2026-vccs-computer-science-bscs.pdf",
+  "total_credits": 123,
+  "content_hash": "7b6aa8b97d502c3a1f51476c3c86e1c23ce4d2a6a05b23bff6f63cecb8b8732f",
+  "last_verified": "2026-10-02"
+ }
+}

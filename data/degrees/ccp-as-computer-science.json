@@ -1,0 +1,420 @@
+{
+ "institution": {
+  "city": "Philadelphia, PA",
+  "kind": "community",
+  "name": "Community College of Philadelphia",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "FNMT 118",
+   "MATH 161",
+   "MATH 162",
+   "CIS 103",
+   "CSCI 118",
+   "CIS 106",
+   "CIS 114"
+  ],
+  "id": "ccp-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Community College of Philadelphia program page 'Computer Science' (Associate in Science), retrieved 2026-09-30. Catalog year is not printed on the program page; '2026-2027' reflects the current catalog at retrieval (site footer © 2026). Minimum 65 credit hours; a grade of 'C' or better is required in all courses applied to the degree; 2.0 GPA required. Program entry: placement showing readiness for ENGL 101 and at least a grade of 'C' in MATH 161 (or equivalent) or placement in MATH 162. CSCI 111 + CSCI 112 satisfy the Technological Competency requirement. Directed elective: choose one of CIS 200, CIS 211, CSCI 221, MATH 263, MATH 270 (per-course prerequisites in the choice note). World Language option for the Semester 3 humanities slot: any course in Arabic, Chinese, French, Italian, Hebrew, Japanese, or Spanish.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "FNMT 118",
+         "MATH 161"
+        ],
+        "raw": "FNMT 118 or higher (or MATH 161 placement)"
+       }
+      ],
+      "title": "Computer Science I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 163",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "MATH 161",
+         "MATH 162"
+        ],
+        "raw": "MATH 161 with a grade of \"C\" or better, or placement in MATH 162 or higher"
+       }
+      ],
+      "title": "Discrete Mathematics",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 171",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "MATH 162"
+        ],
+        "raw": "MATH 162 or higher with a grade of \"C\" or better, or placement in MATH 171 or higher"
+       }
+      ],
+      "title": "Calculus I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "ENGL 101 English Composition I or ENGL 101H English Composition I (Honors). Satisfies Writing/Research/Info Lit 1.",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [
+       "ENGL 101",
+       "ENGL 101H"
+      ],
+      "prereq": [],
+      "title": "English Composition I — select ENGL 101 or 101H (Honors)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMS 115",
+      "coreq": [
+       {
+        "course": "ENGL 101",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "ENGL 101",
+        "raw": "ENGL 101, which may be taken concurrently"
+       }
+      ],
+      "title": "Public Speaking",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 18,
+    "label": "Semester 1",
+    "n": 1,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CSCI 111",
+        "min_grade": "C",
+        "raw": "CSCI 111 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "Computer Science II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 205",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CSCI 112",
+         "CIS 103",
+         "CSCI 118"
+        ],
+        "raw": "CSCI 112, which may be taken concurrently, or CIS 103 or CSCI 118"
+       }
+      ],
+      "title": "Database Management Systems",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 172",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "MATH 171"
+        ],
+        "raw": "MATH 171 or higher with a grade of \"C\" or better, or placement in MATH 172 or higher"
+       }
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "ENGL 102 The Research Paper or ENGL 102H The Research Paper (Honors). Satisfies Writing/Research/Info Lit 2.",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [
+       "ENGL 102",
+       "ENGL 102H"
+      ],
+      "prereq": [
+       {
+        "course": "ENGL 101",
+        "min_grade": "C",
+        "raw": "ENGL 101 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "The Research Paper — select ENGL 102 or 102H (Honors)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 2",
+    "n": 2,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CSCI 112",
+        "min_grade": "C",
+        "raw": "CSCI 112 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "Data Structures and Algorithms",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 140",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 171"
+        ],
+        "raw": "MATH 171 or higher"
+       }
+      ],
+      "title": "Mechanics, Heat and Sound",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 218",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "MATH 161"
+        ],
+        "raw": "MATH 161 with a grade of \"C\" or better (or higher placement)"
+       },
+       {
+        "min_grade": "C",
+        "one_of": [
+         "CSCI 111",
+         "CSCI 118"
+        ],
+        "raw": "either CSCI 111 with a grade of \"C\" or better or CSCI 118 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "Statistics for Computing and Data Science",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "HUM 101/101H Cultural Traditions: Ancient to the 13th Century (Honors), HIST 121 World History: The Distant Past, HIST 122 World History: The Recent Past, or a World Language course (Arabic, Chinese, French, Italian, Hebrew, Japanese, or Spanish).",
+      "code": "HUM 101",
+      "credits": 3,
+      "options": [
+       "HUM 101",
+       "HUM 101H",
+       "HIST 121",
+       "HIST 122"
+      ],
+      "prereq": [],
+      "title": "Cultural Traditions or World History — select one",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 3",
+    "n": 3,
+    "term": "",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 213",
+      "coreq": [
+       {
+        "course": "MATH 163",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CSCI 111",
+        "min_grade": "C",
+        "raw": "CSCI 111 with a grade of \"C\" or better and MATH 163 which may be taken concurrently"
+       }
+      ],
+      "title": "Computer Organization",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 241",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "PHYS 140",
+       "MATH 172"
+      ],
+      "title": "Electricity, Magnetism and Light",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "SOC 101/101H Introduction to Sociology (Honors), HIST 121 World History: The Distant Past, or HIST 122 World History: The Recent Past. Satisfies Cultural Analysis and Interpretation.",
+      "code": "SOC 101",
+      "credits": 3,
+      "options": [
+       "SOC 101",
+       "SOC 101H",
+       "HIST 121",
+       "HIST 122"
+      ],
+      "prereq": [],
+      "title": "Introduction to Sociology or World History — select one",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Directed elective — choose one: CIS 200 Apple App Development I (prereq: CIS 106 or CIS 114 or CSCI 111); CIS 211 Android App Development I (no prerequisite listed); CSCI 221 Machine Learning (prereq: CSCI 118 or CSCI 218 with a grade of \"C\" or better); MATH 263 Discrete Mathematics II (prereq: MATH 163 with a grade of \"C\" or better); MATH 270 Linear Algebra (prereq: MATH 171 and MATH 172 with a grade of \"C\" or better; MATH 172 may be taken concurrently).",
+      "code": "Directed Elective",
+      "credits": 4,
+      "options": [
+       "CIS 200",
+       "CIS 211",
+       "CSCI 221",
+       "MATH 263",
+       "MATH 270"
+      ],
+      "prereq": [],
+      "title": "Directed Elective — select one",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 4",
+    "n": 4,
+    "term": "",
+    "year_label": "Year 2"
+   }
+  ],
+  "source_url": "https://www.ccp.edu/college-catalog/degree-programs/associate-science/computer-science",
+  "total_credits": 65,
+  "transfer_confidence": "",
+  "content_hash": "88f45f2dbc67599c2c307277b89abec330f43fc842c529ad01b78cf3a4fe7b58",
+  "last_verified": "2026-10-02"
+ }
+}

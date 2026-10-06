@@ -1,0 +1,495 @@
+{
+ "institution": {
+  "name": "University of Northern Iowa",
+  "city": "Cedar Falls",
+  "state": "IA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "uni-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "total_credits": 120,
+  "catalog_year": "2025-2026",
+  "source_url": "http://catalog.uni.edu/chas/computerscience/computerscience.pdf",
+  "notes": "Source: official UNI catalog, 'Computer Science, B.S.' sample plan of study (catalog.uni.edu/chas/computerscience/computerscience.pdf), fetched 2026-09-30. Transcription method: manual transcription of the catalog's official Plan of Study Grid (Freshman Fall through Senior Spring, Total Hours: 120). Caveats: (1) Generic slots ('Computer Science Area', 'Computer Science Foundations', 'Computer Science Math Elective', 'Computer Science Specialty', 'Computer Science Elective', 'UNIFI/General Education or University Electives') are modeled as choice:true placeholders; eligible options from the catalog's CS B.S. major requirements. (2) CS Math Elective catalog range is 3-4 hrs; plan uses 3 to hit the 120 total exactly. (3) Catalog year labeled 2025-2026 per the /planofstudy/ catalog verification (2026-09-30); the /chas/ program page does not display a year label. (4) Prerequisites shown only where the catalog sequence implies them (CS 1520 after CS 1510; CS 2530 after CS 1520); other prereq arrays are empty (not inferred).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman Fall",
+    "term": "Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS 1510",
+      "title": "Introduction to Computing",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "STAT 1772",
+      "title": "Introduction to Statistical Methods",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 9,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman Spring",
+    "term": "Spring",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS 1520",
+      "title": "Data Structures",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CS 1510"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS 1800",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 9,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore Fall",
+    "term": "Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS 2530",
+      "title": "Intermediate Computing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CS 1520"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS 1410",
+      "title": "Computer Organization",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 10,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore Spring",
+    "term": "Spring",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS-AREA-1",
+      "title": "Computer Science Area Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: one course from a CS specialty area.",
+      "options": [
+       "CS 3140",
+       "CS 3150",
+       "CS 3610",
+       "CS 3650",
+       "CS 4620"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-FOUND-1",
+      "title": "Computer Science Foundations Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: CS Foundations (CS 3530, CS 3540, CS 3810, or CS 4550).",
+      "options": [
+       "CS 3530",
+       "CS 3540",
+       "CS 3810",
+       "CS 4550"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MATH 1420",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 6,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior Fall",
+    "term": "Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS-FOUND-2",
+      "title": "Computer Science Foundations Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: CS Foundations (CS 3530, CS 3540, CS 3810, or CS 4550).",
+      "options": [
+       "CS 3530",
+       "CS 3540",
+       "CS 3810",
+       "CS 4550"
+      ],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-MATH-1",
+      "title": "Computer Science Math Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: MATH 1421, MATH 2500, MATH 3440, MATH 3530, MATH 3752, or STAT 4784. Catalog lists 3-4 hrs; uses 3.",
+      "options": [
+       "MATH 1421",
+       "MATH 2500",
+       "MATH 3440",
+       "MATH 3530",
+       "MATH 3752",
+       "STAT 4784"
+      ],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-AREA-2",
+      "title": "Computer Science Area Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: one course from a CS specialty area.",
+      "options": [
+       "CS 3140",
+       "CS 3150",
+       "CS 3610",
+       "CS 3650",
+       "CS 4620"
+      ],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 7,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior Spring",
+    "term": "Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CS-FOUND-3",
+      "title": "Computer Science Foundations Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: CS Foundations (CS 3530, CS 3540, CS 3810, or CS 4550).",
+      "options": [
+       "CS 3530",
+       "CS 3540",
+       "CS 3810",
+       "CS 4550"
+      ],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-MATH-2",
+      "title": "Computer Science Math Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: MATH 1421, MATH 2500, MATH 3440, MATH 3530, MATH 3752, or STAT 4784. Catalog lists 3-4 hrs; uses 3.",
+      "options": [
+       "MATH 1421",
+       "MATH 2500",
+       "MATH 3440",
+       "MATH 3530",
+       "MATH 3752",
+       "STAT 4784"
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-SPEC-1",
+      "title": "Computer Science Specialty Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: one course from the student's specialty area (must include a project course).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 6,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior Fall",
+    "term": "Fall",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "CS-ELECT-1",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: CS elective (2000-level or above).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-SPEC-2",
+      "title": "Computer Science Specialty Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: one course from the student's specialty area (must include a project course).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 7,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior Spring",
+    "term": "Spring",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "CS-ELECT-2",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: CS elective (2000-level or above).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS 4800",
+      "title": "Undergraduate Research in Computer Science",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "CS-PROJECT",
+      "title": "Computer Science Project Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per UNI catalog: a project course (marked *) in the specialty area.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "UNIFI-GENED",
+      "title": "UNIFI/General Education or University Electives",
+      "credits": 5,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per UNI catalog: UNIFI/General Education program or university elective hours as needed to reach 120 total.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "2b866a166631f15565d0272f50164b49065d03b1517b11298c0ed421cf4e15fe",
+  "last_verified": "2026-10-02"
+ }
+}

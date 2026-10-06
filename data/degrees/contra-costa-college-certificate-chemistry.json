@@ -1,0 +1,154 @@
+{
+ "institution": {
+  "name": "Contra Costa College",
+  "city": "San Pablo, CA",
+  "state": "CA",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "contra-costa-college-certificate-chemistry",
+  "degree": "Certificate",
+  "major": "Chemistry",
+  "total_credits": 34,
+  "catalog_year": "2025-2026",
+  "source_url": "https://mypath.contracosta.edu/pathway/chemistry-to-certificate/?pt=map&year=2025",
+  "notes": "Source: https://mypath.contracosta.edu/pathway/chemistry-to-certificate/?pt=map&year=2025 (official Program Pathways Mapper, programmapper.org platform; catalog year 2025-2026; pathway “Chemistry Certificate of Achievement Pathway | Contra Costa College 2025”). Term-by-term sequence, course codes/titles, units, and Major/Gen Ed/Elective categories transcribed verbatim from the published pathway. Official pathway total: 34 units; this file models the 34-unit path (every unit range modeled at its lower bound). Parsed 2026-10-02. Prerequisite course(s) CHEM 119, ENGLC 1000, ENGLC 1000E, MATH 120, MATH 121, MATH 135 are listed on official course pages but are not part of the published pathway sequence; recorded in external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1 - Fall",
+    "courses": [
+     {
+      "code": "CHEM 120",
+      "title": "General College Chemistry I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "MATH 171",
+      "title": "Precalculus",
+      "credits": 5,
+      "category": "elective",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s1-1"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2 - Spring",
+    "courses": [
+     {
+      "code": "CHEM 121",
+      "title": "General College Chemistry II",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CHEM 120"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "MATH 190",
+      "title": "Analytic Geometry and Calculus I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 171"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s2-1"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3 - Fall",
+    "courses": [
+     {
+      "code": "CHEM 226",
+      "title": "Organic Chemistry I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CHEM 121"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "MATH 191",
+      "title": "Analytic Geometry and Calculus II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 190"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s3-1"
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4 - Spring",
+    "courses": [
+     {
+      "code": "CHEM 227",
+      "title": "Organic Chemistry II",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CHEM 226"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s4-0"
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "CHEM 119",
+   "ENGLC 1000",
+   "ENGLC 1000E",
+   "MATH 120",
+   "MATH 121",
+   "MATH 135"
+  ],
+  "content_hash": "72a4ef6fcd89ab0dcead2f387651922e0c5c6eaa57e7997ea2762febb806785d",
+  "last_verified": "2026-10-02"
+ }
+}

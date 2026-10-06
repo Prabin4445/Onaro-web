@@ -1,0 +1,146 @@
+{
+ "institution": {
+  "name": "El Camino College",
+  "city": "Torrance, CA",
+  "kind": "community",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "el-camino-college-certificate-data-science",
+  "degree": "Certificate",
+  "major": "Data Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 28.0,
+  "source_url": "https://programmap.elcamino.edu/pathway/data-science-to-certificate/?pt=map&year=2026",
+  "notes": "Transcribed from the official El Camino College Program Pathways Mapper, \"Data Science map for 2026-2027\" (programmap.elcamino.edu, catalog year 2026-2027): https://programmap.elcamino.edu/pathway/data-science-to-certificate/?pt=map&year=2026. Pathway units/terms per mapper card: 28–29 units, 3 terms; modeled credit sum = 28. Course codes, titles, units, term placement, and major/GE/elective categories transcribed verbatim from the published term grids. Unit ranges are modeled at the source lower bound with the range documented in choice_note. GE choice slots (\"Any ... Area ... course\") follow the published option lists; the mapper recommends meeting with a counselor for GE selection. The pathway flags some courses as having prerequisites, but the mapper's published prerequisite text is internally inconsistent (e.g., the Beginning Piano I course page lists Nursing courses as prerequisites; the General Chemistry I page lists a duplicated entry), so prereq arrays are intentionally empty; see the official El Camino College catalog course descriptions for prerequisites.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "code": "CSCI 8",
+      "title": "Foundations of Data Science",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "CSCI 8",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "CSCI 14",
+      "title": "Introduction to Programming with Python",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "CSCI 14",
+      "xfer": [
+       "el-camino-college-as-actuarial-science-cal-getc-ge-pattern-degree"
+      ],
+      "choice": true,
+      "choice_note": "Official map choice list \"CSCI 14 or CSCI 1\": choose one of CSCI 14, CSCI 1.",
+      "options": [
+       "CSCI 14",
+       "CSCI 1"
+      ],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "MATH 67",
+      "title": "General Education Algebra",
+      "credits": 5.0,
+      "prereq": [],
+      "tccns": "MATH 67",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official map choice list \"MATH 67 or MATH 73 or MATH 80\": choose one of MATH 67, MATH 73, MATH 80.",
+      "options": [
+       "MATH 67",
+       "MATH 73",
+       "MATH 80"
+      ],
+      "category": "elective",
+      "slot_id": "s1-2"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "code": "Any PSYC C1000 or PSYC C1000H or SOCI 101 or SOCI 101H course",
+      "title": "PSYC C1000 or PSYC C1000H or SOCI 101 or SOCI 101H",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official map choice list \"PSYC C1000 or PSYC C1000H or SOCI 101 or SOCI 101H\" (4 options; first: SOCI 101H); choose one.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s2-0"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "code": "CSCI 9",
+      "title": "Practical Data Science",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "CSCI 9",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "COMS 180",
+      "title": "Data-Driven Persuasion",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "COMS 180",
+      "xfer": [
+       "el-camino-college-as-actuarial-science-ecc-ge-pattern-degree"
+      ],
+      "choice": true,
+      "choice_note": "Official map choice list \"COMS 180 or PSYC 109A or SOCI 109A\": choose one of COMS 180, SOCI 109A, PSYC 109A.",
+      "options": [
+       "COMS 180",
+       "SOCI 109A",
+       "PSYC 109A"
+      ],
+      "category": "major",
+      "slot_id": "s3-1"
+     },
+     {
+      "code": "Any CSCI 2 or CSCI 3 course",
+      "title": "CSCI 2 or CSCI 3",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official map choice list \"CSCI 2 or CSCI 3\" (16 options; first: CSCI 2); choose one. Official map lists 4–5 units; modeled at lower bound.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-2"
+     }
+    ],
+    "n": 3
+   }
+  ],
+  "content_hash": "566b90cb9f28b306d378e7bf676914502351f69cb32881a23fa7d314e65a58d7",
+  "last_verified": "2026-10-02"
+ }
+}

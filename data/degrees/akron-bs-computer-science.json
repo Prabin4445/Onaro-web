@@ -1,0 +1,557 @@
+{
+ "institution": {
+  "ipeds": 200800,
+  "name": "University of Akron Main Campus",
+  "city": "Akron",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "akron-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "B.S. Computer Science (Systems variant), College of Engineering and Polymer Science. Built from the official University of Akron Undergraduate Bulletin 'Recommended Sequence' (https://bulletin.uakron.edu/undergraduate/colleges-programs/engineering-polymer-science/computer-science/computer-science-systems-bscs/computer-science-systems-bscs.pdf). Requirements summary: General Education 24 (several major courses double-count toward the 36-credit Gen Ed), Preadmission Major Core 16 (MATH 208, CPSC 209, CPSC 210, MATH 221), Mathematics and Statistics 8, Natural Science 8, Computer Science Core 27, Technical Electives 15, additional 22 credits to reach 120. Technical electives must include a minimum of 9 credits of 300/400-level CPSC coursework plus 6 additional credits of approved 300/400-level electives (CPSC 406 excluded); modeled as generic choice slots. Natural Science: 8 credits from BIOL 111, CHEM 151/152, GEOL 101, PHYS 261 or 291. CPSC 490 also satisfies the General Education Capstone requirement; MATH 221 satisfies the Mathematics, Statistics and Logic requirement. Uses Akron's new course numbering (CPSC/MATH prefixes). A 2.0 GPA is required in all major coursework.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 208",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to Discrete Mathematics",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 209",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Science I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Writing I requirement.",
+      "code": "GENED-W1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Writing I Requirement (student choice)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 221",
+      "credits": 4,
+      "prereq": [
+       "MATH 208"
+      ],
+      "title": "Analytic Geometry-Calculus I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 210",
+      "credits": 4,
+      "prereq": [
+       "CPSC 209"
+      ],
+      "title": "Computer Science II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Writing II requirement.",
+      "code": "GENED-W2",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "GENED-W1"
+      ],
+      "title": "Writing II Requirement (student choice)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 222",
+      "credits": 4,
+      "prereq": [
+       "MATH 221"
+      ],
+      "title": "Analytic Geometry-Calculus II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 475",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Database Management",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 480",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Software Engineering",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Social Science requirement.",
+      "code": "GENED-SS1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social Science Requirement (student choice)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Speaking requirement.",
+      "code": "GENED-SPK",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Speaking Requirement (student choice)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CPSC 316",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Data Structures",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 421",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Object-Oriented Programming",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300/400-level CPSC technical elective (minimum 9 credits of CPSC 300/400-level electives required overall; CPSC 406 excluded).",
+      "code": "CSTE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Science Technical Elective (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "4-credit natural science course with lab from BIOL 111, CHEM 151/152, GEOL 101, PHYS 261 or 291.",
+      "code": "NATSCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Natural Science with Laboratory Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CPSC 307",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Internet Systems Programming",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPEN 320",
+      "credits": 3,
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Systems",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "STAT 461",
+      "credits": 4,
+      "prereq": [
+       "MATH 221"
+      ],
+      "title": "Applied Statistics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Arts requirement.",
+      "code": "GENED-ARTS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Arts Requirement (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "4-credit natural science course from BIOL 111, CHEM 151/152, GEOL 101, PHYS 261 or 291.",
+      "code": "NATSCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Natural Science Requirement (student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CPSC 426",
+      "credits": 3,
+      "prereq": [
+       "CPSC 316"
+      ],
+      "title": "Operating Systems",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved 300/400-level technical elective (CPSC 406 excluded).",
+      "code": "CSTE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Science Technical Elective (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Humanities requirement.",
+      "code": "GENED-HUM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities Requirement (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Social Science requirement.",
+      "code": "GENED-SS2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social Science Requirement (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved 300/400-level technical elective (CPSC 406 excluded).",
+      "code": "CSTE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Science Technical Elective (student choice)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved 300/400-level technical elective (CPSC 406 excluded).",
+      "code": "CSTE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Science Technical Elective (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any course satisfying the Akron General Education Civic Literacy requirement.",
+      "code": "GENED-CL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Civic Literacy Requirement (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-6",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CPSC 435",
+      "credits": 3,
+      "prereq": [
+       "CPSC 316"
+      ],
+      "title": "Algorithms",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CPSC 490",
+      "credits": 3,
+      "prereq": [
+       "CPSC 480"
+      ],
+      "title": "Senior Seminar in Computer Science (Capstone)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved 300/400-level technical elective (CPSC 406 excluded).",
+      "code": "CSTE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CPSC 210"
+      ],
+      "title": "Computer Science Technical Elective (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective course chosen by the student.",
+      "code": "ELEC-8",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.uakron.edu/undergraduate/colleges-programs/engineering-polymer-science/computer-science/computer-science-systems-bscs/computer-science-systems-bscs.pdf",
+  "total_credits": 120,
+  "content_hash": "4f9723ebc3139ada5ee98c602b1effda5afd827dbde8e90c2e10ab65657325f7",
+  "last_verified": "2026-10-02"
+ }
+}

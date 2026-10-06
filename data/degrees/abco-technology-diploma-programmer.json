@@ -1,0 +1,179 @@
+{
+ "institution": {
+  "name": "ABCO Technology",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "abco-technology-diploma-programmer",
+  "degree": "Diploma",
+  "major": "Programmer",
+  "catalog_year": "2026-2027",
+  "total_credits": 40.0,
+  "source_url": "https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf",
+  "notes": "QUARTER CREDIT HOURS: ABCO Technology is a quarter-system career college; the official catalog publishes every program in 'QUARTER CREDIT UNITS' (the course-table column is labeled 'Units'). All credit values in this plan are quarter credit hours, NOT semester credits. Source: official ABCO Technology 2026-2027 Catalog (effective July 1, 2026 - June 30, 2027), https://abcotechnology.edu/wp-content/uploads/2026/07/ABCO-TECHNOLOGY-catalog-2026-2027.pdf . Transcription verified against the catalog PDF layout extraction on 2026-09-30. Award: Diploma, Programmer. Program length: 30 weeks; 40 quarter credit units required. Course codes normalized from the catalog's 'PRG70 - 001' / 'PRG70 - 010' (with spaces) to 'PRG70-001' / 'PRG70-010'. PRG70-513's catalog prerequisite is 'PRG70-010 / PRG70 - 001' (either course); encoded as one_of. The catalog publishes the complete course list without term subdivisions; the single term below presents the full program in catalog sequence (each prerequisite precedes its dependent).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Full program (30 weeks)",
+    "courses": [
+     {
+      "code": "PRG70-001",
+      "title": "Introduction to Object-Oriented Programming",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "PRG70-010",
+      "title": "Programming with mobile / web based application using HTML, CSS and JavaScript",
+      "credits": 4.0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "PRG70-513",
+      "title": "Programming with Python - Part I",
+      "credits": 3.5,
+      "prereq": [
+       {
+        "one_of": [
+         "PRG70-010",
+         "PRG70-001"
+        ]
+       }
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "PRG70-514",
+      "title": "Programming with Python - Part II",
+      "credits": 3.5,
+      "prereq": [
+       "PRG70-513"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "PRG70-515",
+      "title": "Programming with Java Fundamentals - Part I",
+      "credits": 4.5,
+      "prereq": [
+       "PRG70-001"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-4"
+     },
+     {
+      "code": "PRG70-516",
+      "title": "Programming with Java Fundamentals - Part II",
+      "credits": 4.0,
+      "prereq": [
+       "PRG70-515"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-5"
+     },
+     {
+      "code": "PRG70-520",
+      "title": "Programming for Android Operating System",
+      "credits": 4.0,
+      "prereq": [
+       "PRG70-516"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-6"
+     },
+     {
+      "code": "PRG70-525",
+      "title": "Building Mobile Applications for Android iOS",
+      "credits": 4.5,
+      "prereq": [
+       "PRG70-520"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-7"
+     },
+     {
+      "code": "CPST-070",
+      "title": "Capstone Project Design and Overview",
+      "credits": 4.0,
+      "prereq": [
+       "PRG70-525"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-8"
+     },
+     {
+      "code": "CPST-075",
+      "title": "Capstone Project Design and Overview",
+      "credits": 4.0,
+      "prereq": [
+       "CPST-070"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-9"
+     }
+    ],
+    "n": 1
+   }
+  ],
+  "content_hash": "29c989f4c1036776b613a95fc03fa9f2d10631deea3bcdfeaebc371646fb6ccc",
+  "last_verified": "2026-10-02"
+ }
+}

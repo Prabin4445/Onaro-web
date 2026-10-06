@@ -1,0 +1,626 @@
+{
+ "institution": {
+  "city": "Buffalo, NY",
+  "kind": "public4yr",
+  "name": "SUNY Buffalo State University",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "suny-buffalo-state-university-bs-chemistry",
+  "degree": "BS",
+  "major": "Chemistry",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://academicaffairs.buffalostate.edu/sites/academicaffairs/files/documents/ACADEMIC%20ROADMAP%20%28GE23%29%20BS%20Degree%20in%20Chemistry_Fall2026.pdf",
+  "notes": "Official Academic Roadmap: BS Degree in Chemistry, dated March 13, 2026, effective Fall 2026 (academicaffairs.buffalostate.edu). All 8 semester grids transcribed verbatim; semester sums match the roadmap's published year totals (28 / 59-60 / 89-90 / 120). Semester 4 mathematics requirement is a choice: MAT 263 Calculus III (4 cr, shown), MAT 202 Introduction to Linear Algebra (3), or MAT 311 Introductory Probability and Statistics (3); the 3-credit options lower the plan total to 119. Semester 8 electives published as 10-11 credits, shown as 10 (total 120). Prerequisites transcribed from the roadmap's Prerequisite(s) column with corequisites included as listed; placement/test-score alternatives (CWP 099, MAT 124, SAT/ACT) are not modeled. GE23/elective slots are choice slots (any qualifying course; see course catalog).",
+  "external_prereqs": [
+   "BIO 111"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "First Semester",
+    "courses": [
+     {
+      "code": "CWP 101",
+      "title": "College Writing I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 111",
+      "title": "Fundamentals of Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 113",
+      "title": "Fundamentals of Chemistry I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CHE 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 161",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-course-choice-s1-4",
+      "title": "GE23 Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any GE23 course; see course catalog",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Second Semester",
+    "courses": [
+     {
+      "code": "CWP 102",
+      "title": "College Writing II",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       "CWP 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 112",
+      "title": "Fundamentals of Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 111",
+       "CHE 114"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 114",
+      "title": "Fundamentals of Chemistry II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CHE 111",
+       "CHE 113",
+       "CHE 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT 162",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MAT 161"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-course-choice-s2-4",
+      "title": "GE23 Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any GE23 course; see course catalog",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Third Semester",
+    "courses": [
+     {
+      "code": "CHE 201",
+      "title": "Organic Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 203",
+      "title": "Organic Chemistry I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CHE 112",
+       "CHE 114",
+       "CHE 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHY 111",
+      "title": "University Physics I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "MAT 161"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 301",
+      "title": "Analytical Chemistry",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CHE 112",
+       "CHE 114"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-course-choice-s3-4",
+      "title": "GE23 Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any GE23 course; see course catalog",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Fourth Semester",
+    "courses": [
+     {
+      "code": "CHE 202",
+      "title": "Organic Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 204",
+      "title": "Organic Chemistry II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CHE 203",
+       "CHE 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHY 112",
+      "title": "University Physics II",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "PHY 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "mat263-mat202-mat311-choice",
+      "title": "Calculus III OR Introduction to Linear Algebra OR Introductory Probability and Statistics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Roadmap choice: MAT 263 Calculus III (4 cr, shown), MAT 202 Introduction to Linear Algebra (3), or MAT 311 Introductory Probability and Statistics (3). A 3-credit option lowers the plan total to 119.",
+      "options": [
+       "MAT 263",
+       "MAT 202",
+       "MAT 311"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-course-choice-s4-4",
+      "title": "GE23 Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any GE23 course; see course catalog",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Fifth Semester",
+    "courses": [
+     {
+      "code": "CHE 360",
+      "title": "Introduction to Inorganic Chemistry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 325",
+      "title": "Principles of Medicinal Chemistry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 211",
+      "title": "Introduction to Cell Biology and Genetics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIO 111",
+         "CHE 112"
+        ]
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-course-choice-s5-3",
+      "title": "GE23 Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any GE23 course; see course catalog",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "elective-choice-s5-4",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective course; see course catalog",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Sixth Semester",
+    "courses": [
+     {
+      "code": "CHE 331",
+      "title": "Principles of Physical Chemistry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 202",
+       "MAT 162",
+       "PHY 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 403",
+      "title": "Instrumental Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 301",
+       "CHE 331"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 465",
+      "title": "Physical and Inorganic Chemistry Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CHE 360",
+       "CHE 331"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "electives-choice-s6-3",
+      "title": "Electives",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective courses totaling 6 credits; see course catalog",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Seventh Semester",
+    "courses": [
+     {
+      "code": "CHE 470",
+      "title": "Biochemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHE 202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 471",
+      "title": "Biochemical Techniques",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CHE 204",
+       "CHE 301",
+       "CHE 470"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 327",
+      "title": "Medicinal Plant Chemistry",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CHE 202",
+       "CHE 204"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 404",
+      "title": "Instrumental Analysis Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CHE 403"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "electives-choice-s7-4",
+      "title": "Electives",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective courses totaling 6 credits; see course catalog",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Eighth Semester",
+    "courses": [
+     {
+      "code": "che406-che472-choice",
+      "title": "Analytical Toxicology OR Biochemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Roadmap choice: CHE 406 Analytical Toxicology or CHE 472 Biochemistry II (both 3 cr).",
+      "options": [
+       "CHE 406",
+       "CHE 472"
+      ],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHE 427",
+      "title": "Cannabis Analysis",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CHE 327",
+       "CHE 404"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "electives-choice-s8-2",
+      "title": "Electives",
+      "credits": 10,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Roadmap publishes 10-11 elective credits; shown as 10 (plan total 120). Elective courses; see course catalog",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "adff0cc15bb7ee553283a66f20cbd290f845419fa74e5c8e4043b9412cc49ec9",
+  "last_verified": "2026-10-02"
+ }
+}

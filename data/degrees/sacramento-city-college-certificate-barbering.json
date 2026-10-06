@@ -1,0 +1,133 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-barbering",
+  "degree": "Certificate",
+  "major": "Barbering",
+  "catalog_year": "2026-2027",
+  "total_credits": 32,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7814/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Barbering Certificate' program map, Catalog 2026-27, published June 2, 2026 (mapmaker.losrios.edu/Maps/7814/PublishedPdf). Official Total Units: 32; this seed = 2 + 15 + 15 = 32 units. Semester sums verified against the map's 2 / 15 / 15 headers. In-plan prereqs: BAR 115 and BAR 117 require BAR 100 with a grade of 'P' (pass); BAR 135 and BAR 137 require BAR 100, 115, and 117 with grades of 'C' or better. Corequisites (documented, not modeled as prereqs): BAR 115 with BAR 117; BAR 117 with BAR 115; BAR 135 with BAR 137; BAR 137 with BAR 135 — both pairs are taken together in the same semester. Certificate of Achievement requirements: grade of 'C' or better in each major course. Barbering, Business & Industry Meta Majors. Distinct from the Barbering A.S. degrees (maps 7807, 7808). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "BAR 100",
+      "title": "Introduction to Barbering",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "BAR 100",
+      "xfer": [
+       "sacramento-city-college-as-barbering",
+       "sacramento-city-college-as-barbering-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "BAR 115",
+      "title": "Foundations",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "BAR 100"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: BAR 100 with a grade of 'P'. Corequisite (same semester, documented): BAR 117.",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "BAR 115",
+      "xfer": [
+       "sacramento-city-college-as-barbering",
+       "sacramento-city-college-as-barbering-cal-getc"
+      ]
+     },
+     {
+      "code": "BAR 117",
+      "title": "Basic Skill Building in Barbering - Laboratory",
+      "credits": 10,
+      "category": "major",
+      "prereq": [
+       "BAR 100"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: BAR 100 with a grade of 'P'. Corequisite (same semester, documented): BAR 115.",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "BAR 117",
+      "xfer": [
+       "sacramento-city-college-as-barbering",
+       "sacramento-city-college-as-barbering-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Semester 3",
+    "courses": [
+     {
+      "code": "BAR 135",
+      "title": "Advanced Specialized Skill Building in Barbering",
+      "credits": 7.5,
+      "category": "major",
+      "prereq": [
+       "BAR 100",
+       "BAR 115",
+       "BAR 117"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: BAR 100, 115, and 117 with grades of 'C' or better. Corequisite (same semester, documented): BAR 137.",
+      "options": [],
+      "slot_id": "s3-0",
+      "tccns": "BAR 135",
+      "xfer": [
+       "sacramento-city-college-as-barbering",
+       "sacramento-city-college-as-barbering-cal-getc"
+      ]
+     },
+     {
+      "code": "BAR 137",
+      "title": "Advanced Skill Building",
+      "credits": 7.5,
+      "category": "major",
+      "prereq": [
+       "BAR 100",
+       "BAR 115",
+       "BAR 117"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: BAR 100, 115, and 117 with grades of 'C' or better. Corequisite (same semester, documented): BAR 135.",
+      "options": [],
+      "slot_id": "s3-1",
+      "tccns": "BAR 137",
+      "xfer": [
+       "sacramento-city-college-as-barbering",
+       "sacramento-city-college-as-barbering-cal-getc"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "166b91bf859fd9fef702f80eabb9dff4131969104ae8e4a86533f3935f0a2275",
+  "last_verified": "2026-10-02"
+ }
+}

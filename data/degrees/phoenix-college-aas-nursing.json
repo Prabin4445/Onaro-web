@@ -1,0 +1,234 @@
+{
+ "institution": {
+  "name": "Phoenix College",
+  "city": "Phoenix",
+  "state": "AZ",
+  "kind": "community"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "id": "phoenix-college-aas-nursing",
+  "major": "Nursing",
+  "notes": "Official Catalog Year 2026-27 pathway map ('Course Sequence by Term', Full-time sequence) from Phoenix College. Terms are the college's own suggested sequence; full-time status is 12-18 credits per semester. Credit ranges (e.g. 3-6, 1-3, 0-3) are summed at their minimum in total_credits. Some Term 1-2 requirements show 0-credit minimums (e.g. BIO156 0-4, CRE101 0-3), reflecting placement/waiver per the map; summed at minimum. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "label": "Term 1",
+    "n": 1,
+    "courses": [
+     {
+      "code": "BIO156",
+      "title": "Introductory Biology for Allied Health",
+      "credits": 0,
+      "category": "major",
+      "choice": true,
+      "choice_note": "options: BIO156 Introductory Biology for Allied Health; BIO181 General Biology (Majors) I | Or one year of high school biology",
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT140",
+      "title": "College Mathematics",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "options: MAT140 College Mathematics; MAT141 College Mathematics; MAT142 College Mathematics | Or satisfactory completion of higher level math course",
+      "core_area": "MA, QNR",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Term 2",
+    "n": 2,
+    "courses": [
+     {
+      "code": "BIO201",
+      "title": "Human Anatomy and Physiology I",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "core_area": "NSI, SG",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM130 and CHM130LL",
+      "title": "( Fundamental Chemistry and Fundamental Chemistry Laboratory )",
+      "credits": 0,
+      "category": "major",
+      "choice": true,
+      "choice_note": "options: ( CHM130 and CHM130LL ) ( Fundamental Chemistry and Fundamental Chemistry Laboratory ); ( CHM130AA ) ( Fundamental Chemistry with Lab ) | Or satisfactory completion of higher level college-level chemistry course and corresponding lab Or one year of high school chemistry",
+      "core_area": "None",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "options: ENG101 First-Year Composition; ENG107 First-Year Composition for ESL",
+      "core_area": "FYC, WCM",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Term 3",
+    "n": 3,
+    "courses": [
+     {
+      "code": "BIO202",
+      "title": "Human Anatomy and Physiology II",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "prereq": [
+       "BIO201"
+      ],
+      "core_area": "NSI, SG",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR152",
+      "title": "Nursing Theory and Science I",
+      "credits": 9,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Term 4",
+    "n": 4,
+    "courses": [
+     {
+      "code": "CRE101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "required_zero": true,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR172",
+      "title": "Nursing Theory and Science II",
+      "credits": 9,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY101",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "core_area": "SB, SCB",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Term 5",
+    "n": 5,
+    "courses": [
+     {
+      "code": "BIO205",
+      "title": "Microbiology",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "core_area": "NSI, SG",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR252",
+      "title": "Nursing Theory and Science III",
+      "credits": 9,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Term 6",
+    "n": 6,
+    "courses": [
+     {
+      "code": "ENG102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "options: ENG102 First-Year Composition; ENG108 First-Year Composition for ESL",
+      "prereq": [
+       "ENG101"
+      ],
+      "core_area": "FYC, WCM",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR283",
+      "title": "Nursing Theory and Science IV",
+      "credits": 9,
+      "category": "major",
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU",
+      "title": "Humanities, Fine Arts & Design",
+      "credits": 2,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select Humanities, Fine Arts & Design",
+      "core_area": "HU",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "total_credits": 62,
+  "program_type": "degree",
+  "source_url": "https://www.phoenixcollege.edu/degrees-certificates/health-sciences/nursing-3812-aas",
+  "external_prereqs": [
+   "RDG100"
+  ],
+  "content_hash": "cd209c1bdc3739d5397e10812f6debfb2ded00c7738adf7b66bf18408f89dfe3",
+  "last_verified": "2026-10-02"
+ }
+}

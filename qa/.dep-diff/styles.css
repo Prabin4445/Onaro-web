@@ -1,0 +1,775 @@
+/* ============ ORBIT 2026 design system — "Deep Ink + Volt Signal" ============
+   One signature accent (Volt), warm paper light mode, deep green-ink dark.
+   Purple is gone by rule. Volt (--accent) is a FILL color — never body text
+   in light mode (use --accent-strong for accent-colored text in light). */
+
+/* Self-hosted type — Space Grotesk (display/wordmark) + Inter (body).
+   OFL-licensed, latin subsets, font-display:swap for fast first paint. */
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;
+  src:url('brand/fonts/spacegrotesk-500-latin.woff2') format('woff2')}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;
+  src:url('brand/fonts/spacegrotesk-700-latin.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;
+  src:url('brand/fonts/inter-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;
+  src:url('brand/fonts/inter-500-latin.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;
+  src:url('brand/fonts/inter-600-latin.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:700;font-display:swap;
+  src:url('brand/fonts/inter-700-latin.woff2') format('woff2')}
+
+:root{
+  /* Light — warm paper */
+  --bg:#FAFAF7;
+  --surface:#FFFFFF;
+  --surface2:#EFF1E6;          /* app alias, used across views */
+  --surface-2:#EFF1E6;
+  --ink:#101408;
+  --ink-2:#4B5240;
+  --muted:#8A8F7E;            /* decorative / captions only in light (3.18:1) */
+  --faint:#A6A6B1;
+  --line:#E7E5DE;             /* hairline */
+  --divider:rgba(16,20,8,.10);
+
+  /* Signature accent — Volt */
+  --accent:#C6F135;           /* fills, active states — NOT body text in light */
+  --accent-ink:#131A00;       /* text & icons drawn ON accent fills (13.64:1) */
+  --accent-strong:#4A7A00;    /* accent-colored TEXT in light (4.93:1, AA) */
+  --accent-soft:#EFFAD0;      /* tinted chips, badges, highlights */
+
+  /* Secondary — signal coral, sparing (map, stories, alerts) */
+  --accent-2:#FF5C38;
+  --accent-2-strong:#C22E1F;  /* coral text in light (5.67:1, AA) */
+  --accent-2-soft:#FFE7E0;
+
+  /* Semantic (all AA-safe as text) */
+  --success:#1F7A4D; --warn:#B45309; --danger:#D92D20;
+  --ok:#3F6212;
+  --lime:#A3E635; --lime-ink:#3F6212;
+  --blue:#2563EB; --teal:#0D9488; --amber:#B45309;
+
+  /* Chrome */
+  --ring:rgba(74,122,0,.45);
+  --tabbar-bg:rgba(250,250,247,.85);
+
+  /* Buttons */
+  --btn-primary-bg:var(--accent);
+  --btn-primary-ink:var(--accent-ink);
+  --btn-secondary-bg:var(--surface2);
+  --btn-secondary-ink:var(--ink);
+  --btn-danger-bg:var(--danger);
+  --btn-danger-ink:#FFFFFF;
+
+  /* Chips + badges */
+  --chip-bg:var(--accent-soft);
+  --chip-ink:var(--accent-strong);
+  --badge-hot-bg:var(--accent-2);
+  --badge-hot-ink:#FFFFFF;
+
+  /* Map pins */
+  --pin-me:#C6F135; --pin-friend:#1F7A4D; --pin-event:#FF5C38;
+  --pin-market:#2563EB; --pin-food:#B45309;
+
+  --r:18px; --r-sm:14px;
+  --ease-spring:cubic-bezier(.32,.72,0,1); /* THE motion curve — springs everywhere */
+  --ease-pop:cubic-bezier(.34,1.56,.64,1);
+  --shadow:0 1px 2px rgba(16,20,8,.05),0 6px 18px rgba(16,20,8,.07);
+  --shadow-lg:0 -10px 36px rgba(16,20,8,.16);
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body.dark{
+  /* Dark — intentionally designed deep green-ink, NOT inverted light.
+     Tonal elevation (surface tiers), no shadows. */
+  --bg:#0D100A;
+  --surface:#161B10;
+  --surface2:#212819;
+  --surface-2:#212819;
+  --ink:#F4F6EC;
+  --ink-2:#C6CCB5;
+  --muted:#8E9482;            /* 5.90:1 — fine for secondary text in dark */
+  --faint:#6E7266;
+  --line:#2A2E22;
+  --divider:rgba(244,246,236,.12);
+
+  /* Volt goes brighter on dark — IS text-safe here (15.45:1) */
+  --accent:#D4F53F;
+  --accent-ink:#131A00;
+  --accent-strong:#D4F53F;
+  --accent-soft:rgba(212,245,63,.14);
+
+  --accent-2:#FF7A5C;
+  --accent-2-strong:#FF9B85;
+  --accent-2-soft:rgba(255,122,92,.16);
+
+  --success:#4ADE80; --warn:#FBBF24; --danger:#F87171;
+  --ok:#A3E635;
+  --lime:#A3E635; --lime-ink:#BEF264;
+  --amber:#FBBF24;
+
+  --ring:rgba(212,245,63,.55);
+  --tabbar-bg:rgba(13,16,10,.85);
+
+  --btn-danger-ink:#131A00;
+  --badge-hot-ink:#131A00;
+
+  --pin-me:#D4F53F; --pin-friend:#4ADE80; --pin-event:#FF7A5C;
+  --pin-market:#60A5FA; --pin-food:#FBBF24;
+
+  --shadow:none;
+  --shadow-lg:none;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font);font-size:16px;line-height:1.5;
+  background:var(--bg);color:var(--ink);
+  min-height:100vh;min-height:100dvh;display:flex;justify-content:center;
+  transition:background .25s,color .25s;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--accent);color:var(--accent-ink)}
+
+/* subtle volt ambience behind the phone column on desktop */
+.ambient{
+  position:fixed;inset:0;z-index:-1;
+  background:radial-gradient(700px 420px at 50% -80px,color-mix(in srgb,var(--accent) 8%,transparent),transparent 65%);
+}
+
+/* phone column */
+.phone{
+  width:100%;max-width:480px;min-height:100vh;min-height:100dvh;
+  background:var(--bg);position:relative;display:flex;flex-direction:column;
+  box-shadow:0 0 40px rgba(16,20,8,.06);
+}
+body.dark .phone{box-shadow:none}
+@media(min-width:520px){
+  .phone{border-left:1px solid var(--line);border-right:1px solid var(--line)}
+}
+
+/* ============ app bar — modern blurred header ============ */
+.appbar{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 18px;position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);
+  -webkit-backdrop-filter:blur(16px) saturate(1.25);
+  backdrop-filter:blur(16px) saturate(1.25);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{
+  width:36px;height:36px;border-radius:12px;background:var(--accent);
+  color:var(--accent-ink);font-weight:800;font-size:18px;display:grid;place-items:center;
+  box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 45%,transparent);
+}
+.brand-mark:has(img){background:transparent;box-shadow:none;padding:0}
+.brand-mark:has(svg){background:transparent;box-shadow:none;padding:0}
+.brand-mark img{width:100%;height:100%;object-fit:contain;display:block}
+.brand-mark svg{width:100%;height:100%;display:block;overflow:visible}
+.brand-mark img.logo-dark{display:none}
+body.dark .brand-mark img.logo-dark{display:block}
+body.dark .brand-mark img.logo-light{display:none}
+.brand-mark svg.logo-dark{display:none}
+body.dark .brand-mark svg.logo-dark{display:block}
+body.dark .brand-mark svg.logo-light{display:none}
+.brand-name{font-family:'Space Grotesk','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-weight:700;font-size:23px;letter-spacing:-.045em;line-height:1.02;
+  font-optical-sizing:auto}
+.iconbtn{
+  position:relative;border:1px solid var(--line);background:var(--surface);
+  border-radius:14px;width:44px;height:44px;font-size:19px;cursor:pointer;
+  color:var(--ink);transition:background .15s,transform .4s var(--ease-spring),border-color .15s;
+  display:grid;place-items:center;
+}
+.iconbtn:hover{background:var(--surface2)}
+.iconbtn:active{transform:scale(.94)}
+.iconbtn .dot{
+  position:absolute;top:9px;right:9px;width:9px;height:9px;border-radius:50%;
+  background:var(--danger);border:2px solid var(--surface);
+}
+
+/* ============ views + floating orbit tabbar ============ */
+.views{flex:1;overflow-y:auto;padding:6px 20px 158px;scroll-behavior:smooth}
+.view{animation:viewIn .4s var(--ease-spring)}
+@keyframes viewIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* floating orbit pill — blurred, safe-area aware, content scrolls under it */
+.tabbar{
+  position:fixed;bottom:calc(10px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);
+  width:calc(100% - 28px);max-width:452px;display:flex;align-items:stretch;
+  background:var(--tabbar-bg);
+  -webkit-backdrop-filter:blur(18px) saturate(1.3);
+  backdrop-filter:blur(18px) saturate(1.3);
+  border:1px solid var(--line);
+  border-radius:24px;box-shadow:var(--shadow-lg);
+  padding:6px;z-index:30;
+}
+.tab{
+  flex:1;position:relative;border:0;background:none;color:var(--muted);font-family:var(--font);
+  font-size:9px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
+  min-height:48px;padding:6px 2px;border-radius:18px;cursor:pointer;
+  transition:color .18s var(--ease-spring),background .18s var(--ease-spring),transform .18s;
+}
+.tab:hover{background:var(--surface2)}
+.tab:active{transform:scale(.95)}
+.tab-ico{display:grid;place-items:center;height:27px}
+.tab-ico .ico{width:26px;height:26px;opacity:.55;transition:opacity .18s,transform .3s var(--ease-spring)}
+/* active tab — light: volt pill + dark icon · dark: volt icon + glow dot */
+.tab.active{background:var(--accent);color:var(--accent-ink)}
+.tab.active .tab-ico .ico{opacity:1;transform:scale(1.12)}
+body.dark .tab.active{background:rgba(212,245,63,.12);color:var(--accent)}
+body.dark .tab.active::after{
+  content:'';position:absolute;bottom:4px;width:5px;height:5px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 10px var(--accent);
+}
+.tab-fab-slot{flex:0 0 64px;align-self:stretch}
+
+/* ============ type — sharper 2026 scale ============ */
+h1{font-size:clamp(28px,7.6vw,36px);font-weight:800;letter-spacing:-1px;line-height:1.12}
+h2{font-size:20px;font-weight:700;letter-spacing:-.4px;line-height:1.3}
+h3{font-size:16px;font-weight:700;letter-spacing:-.2px;line-height:1.35}
+.view h1,.view .greet{margin:12px 2px 6px}
+.view h2{margin:20px 2px 8px}
+.view .sub{margin:0 2px 16px}
+.sub{color:var(--ink-2);font-size:14px;line-height:1.55}
+.greet{font-size:clamp(30px,8vw,38px);font-weight:800;letter-spacing:-1px;line-height:1.14}
+.greet .hl{color:var(--accent-strong)} /* AA-safe accent text in both themes */
+
+/* ============ 3D clay icon family (see js/icons.js) ============ */
+.ico{display:inline-flex;flex:0 0 auto;vertical-align:-.28em}
+.ico img{width:100%;height:100%;object-fit:contain;display:block}
+.ico-fb{font-style:normal;line-height:1;display:inline-flex;align-items:center;justify-content:center}
+.stat .n .ico{width:28px;height:28px;margin-right:7px}
+h3 .ico,.askh3 .ico{width:24px;height:24px;margin-right:6px}
+h2 .ico{width:26px;height:26px;margin-right:6px;vertical-align:-.3em}
+.btn .ico{width:20px;height:20px}
+.iconbtn .ico{width:23px;height:23px}
+.chip .ico{width:18px;height:18px}
+.thumb-ico .ico{width:34px;height:34px}
+.empty-ico .ico{width:58px;height:58px}
+.ca .ico{width:44px;height:44px}
+.askpill-ico .ico{width:26px;height:26px;vertical-align:middle}
+.askh3{display:flex;align-items:center}
+.stat .n{display:flex;align-items:center}
+
+/* ============ cards, rows — refined 2026 treatment ============ */
+.card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:18px;box-shadow:var(--shadow);margin-bottom:14px;
+}
+.card.tight{padding:13px}
+.row{display:flex;align-items:center;gap:12px}
+.row.between{justify-content:space-between}
+.grow{flex:1;min-width:0}
+.divider{height:1px;background:var(--line);margin:14px 0}
+
+/* ============ buttons — volt primary ============ */
+.btn{
+  border:0;border-radius:var(--r-sm);padding:13px 18px;min-height:44px;
+  font-family:var(--font);font-size:15px;font-weight:700;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  transition:transform .4s var(--ease-spring),background .15s,box-shadow .15s,filter .15s;
+}
+.btn:hover{filter:brightness(.98)}
+.btn:active{transform:scale(.96)}
+.btn-primary{background:var(--btn-primary-bg);color:var(--btn-primary-ink);box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 38%,transparent)}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-ghost{background:var(--surface2);color:var(--ink)}
+.btn-line{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
+.btn-sm{padding:8px 14px;font-size:13px;border-radius:10px}
+.btn-block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+/* ============ chips + badges ============ */
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{
+  flex:0 0 auto;border:1px solid var(--line);background:var(--surface);
+  color:var(--muted);border-radius:999px;padding:9px 15px;min-height:40px;
+  font-size:13px;font-weight:600;cursor:pointer;font-family:var(--font);
+  display:inline-flex;align-items:center;gap:7px;
+  transition:background .15s,color .15s,border-color .15s,transform .4s var(--ease-spring);
+}
+.chip:active{transform:scale(.94)}
+.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+.badge{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10.5px;font-weight:800;letter-spacing:.6px;
+  padding:4px 9px;border-radius:999px;text-transform:uppercase;white-space:nowrap;
+}
+.badge.sample{
+  background:transparent;color:var(--faint);border:1px dashed var(--faint);
+  text-transform:none;letter-spacing:0;font-weight:600;
+}
+.b-SELL{background:var(--accent-soft);color:var(--accent-ink)}
+body.dark .b-SELL{background:var(--accent-soft);color:var(--accent-strong)}
+.b-BUY{background:#EFF6FF;color:#1D4ED8}
+.b-SWAP{background:#FFFBEB;color:#B45309}
+.b-BORROW{background:#F0FDFA;color:#0F766E}
+.b-FREE{background:#F7FEE7;color:#4D7C0F}
+.b-job{background:var(--chip-bg);color:var(--chip-ink)}
+.b-event{background:var(--accent-2-soft);color:var(--accent-2-strong)}
+.b-unverified{background:var(--surface2);color:var(--muted)}
+.b-verified{background:#F7FEE7;color:var(--lime-ink)} /* lime-tinted, tiny accent */
+body.dark .b-BUY{background:#17233B;color:#93C5FD}
+body.dark .b-SWAP{background:#2E2410;color:#FBBF24}
+body.dark .b-BORROW{background:#0F2926;color:#5EEAD4}
+body.dark .b-FREE,body.dark .b-verified{background:#1D2A10;color:#BEF264}
+
+/* ============ inputs ============ */
+.input,.textarea,select.input{
+  width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  border-radius:var(--r-sm);padding:12px 14px;font-size:15px;font-family:var(--font);
+  outline:none;transition:border-color .15s,box-shadow .15s;
+}
+.input::placeholder,.textarea::placeholder{color:var(--faint)}
+.input:focus,.textarea:focus,select.input:focus{
+  border-color:var(--accent-strong);
+  box-shadow:0 0 0 3px var(--ring);
+}
+.textarea{min-height:90px;resize:vertical;line-height:1.5}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:var(--ink-2)}
+.hint{font-size:12px;color:var(--faint);margin-top:5px;line-height:1.5}
+
+/* ============ list items ============ */
+.item{
+  display:flex;gap:12px;align-items:center;
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--r);padding:13px 14px;margin-bottom:10px;box-shadow:var(--shadow);
+}
+.item .grow{min-width:0}
+.item h3{font-size:15px;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .meta{font-size:12.5px;color:var(--muted)}
+.thumb{width:56px;height:56px;border-radius:12px;object-fit:cover;background:var(--surface2);flex:0 0 auto}
+.thumb.lg{width:100%;height:170px;border-radius:var(--r-sm)}
+.avatar{
+  width:44px;height:44px;border-radius:50%;background:var(--accent);
+  color:var(--accent-ink);font-weight:800;display:grid;place-items:center;font-size:17px;flex:0 0 auto;
+}
+.avatar.big{width:76px;height:76px;font-size:30px}
+
+/* ============ chat ============ */
+.bubbles{display:flex;flex-direction:column;gap:8px;padding:6px 2px}
+.bubble{
+  max-width:78%;padding:10px 14px;border-radius:16px;
+  font-size:14.5px;line-height:1.45;position:relative;
+}
+.bubble.in{background:var(--surface2);color:var(--ink);border-bottom-left-radius:6px;align-self:flex-start}
+.bubble.out{background:var(--accent);color:var(--accent-ink);border-bottom-right-radius:6px;align-self:flex-end}
+.bubble .t{display:block;font-size:10.5px;opacity:.6;margin-top:4px;text-align:right}
+.chathead{
+  display:flex;align-items:center;gap:12px;padding:12px 14px;
+  border-bottom:1px solid var(--line);background:var(--surface);
+  position:sticky;top:0;z-index:5;
+}
+.chatinput{
+  display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  border-top:1px solid var(--line);background:var(--surface);
+}
+.chatinput .input{border-radius:999px}
+
+/* chat overlay */
+.chatroot{
+  position:fixed;inset:0;z-index:60;background:rgba(12,12,16,.5);
+  display:flex;align-items:flex-end;justify-content:center;
+}
+.chatroot[hidden]{display:none}
+.chatpanel{
+  background:var(--bg);width:100%;max-width:480px;max-height:92%;height:92%;
+  border-radius:22px 22px 0 0;display:flex;flex-direction:column;
+  overflow:hidden;box-shadow:var(--shadow-lg);animation:sheetUp .45s var(--ease-spring);
+}
+.unread{
+  min-width:22px;height:22px;border-radius:999px;background:var(--danger);
+  color:#fff;font-size:11px;font-weight:800;display:inline-grid;place-items:center;padding:0 6px;
+}
+
+/* ============ sheet + toast ============ */
+.sheethost{
+  position:fixed;inset:0;z-index:70;background:rgba(12,12,16,.5);
+  display:flex;align-items:flex-end;justify-content:center;
+  animation:scrimIn .28s var(--ease-spring);
+}
+@keyframes scrimIn{from{opacity:0}to{opacity:1}}
+.sheethost[hidden]{display:none}
+.sheet{
+  background:var(--bg);width:100%;max-width:480px;max-height:88%;
+  border-radius:22px 22px 0 0;padding:18px 18px calc(22px + env(safe-area-inset-bottom));
+  overflow-y:auto;box-shadow:var(--shadow-lg);animation:sheetUp .45s var(--ease-spring);
+}
+/* springy sheet entrance with a touch of overshoot */
+@keyframes sheetUp{
+  0%{transform:translateY(72px) scale(.985);opacity:.4}
+  60%{transform:translateY(-7px) scale(1);opacity:1}
+  100%{transform:none;opacity:1}
+}
+.sheet h2{margin-bottom:12px}
+.sheet::before{ /* grabber */
+  content:'';display:block;width:40px;height:4px;border-radius:99px;
+  background:var(--line);margin:0 auto 14px;
+}
+.toasthost{
+  position:absolute;bottom:110px;left:0;right:0;
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  z-index:90;pointer-events:none;padding:0 20px;
+}
+.toast{
+  background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:12px;
+  font-size:13.5px;font-weight:600;box-shadow:var(--shadow-lg);
+  animation:fadeUp .28s var(--ease-spring);max-width:100%;text-align:center;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ============ segmented ============ */
+.seg{display:flex;background:var(--surface2);border-radius:var(--r-sm);padding:4px;margin-bottom:14px}
+.seg button{
+  flex:1;border:0;background:none;font-family:var(--font);font-size:13.5px;
+  font-weight:700;color:var(--muted);padding:9px;border-radius:9px;cursor:pointer;
+  transition:background .15s,color .15s,transform .3s var(--ease-spring);
+}
+.seg button:active{transform:scale(.96)}
+.seg button.on{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+
+/* ============ empty states — beautiful invitations with volt glow ============ */
+.empty{position:relative;text-align:center;padding:52px 24px;color:var(--muted)}
+.empty::before{ /* the one allowed volt→transparent glow: hero/empty-state art */
+  content:'';position:absolute;top:8px;left:50%;transform:translateX(-50%);
+  width:240px;height:240px;pointer-events:none;
+  background:radial-gradient(circle,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%);
+}
+.empty .big{position:relative;z-index:1;font-size:40px;margin-bottom:14px;line-height:1}
+.empty-ico{position:relative;z-index:1;display:grid;place-items:center;margin-bottom:16px}
+.empty h3{position:relative;z-index:1;color:var(--ink);font-size:17px;margin-bottom:6px}
+.empty .sub{position:relative;z-index:1;font-size:14px;max-width:280px;margin:0 auto 4px}
+.empty .btn{position:relative;z-index:1;margin-top:16px}
+
+/* ============ misc ============ */
+.kv{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kv:last-child{border-bottom:0}
+.money{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.money.pos{color:var(--ok)}
+.stars{color:#F59E0B;font-size:14px;letter-spacing:2px}
+.pollbar{height:8px;border-radius:99px;background:var(--surface2);overflow:hidden;margin-top:6px}
+.pollbar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.mapbox{
+  height:300px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);
+  box-shadow:var(--shadow);margin-bottom:12px;z-index:0;background:var(--surface2);
+}
+.leaflet-container{font-family:var(--font);z-index:0}
+.fab{
+  position:fixed;bottom:calc(96px + env(safe-area-inset-bottom));
+  right:max(20px,calc(50% - 220px));
+  width:56px;height:56px;border-radius:50%;border:0;background:var(--accent);
+  color:var(--accent-ink);font-size:24px;cursor:pointer;z-index:25;
+  box-shadow:0 8px 22px color-mix(in srgb,var(--accent) 45%,transparent);
+  transition:transform .4s var(--ease-spring),box-shadow .2s;
+}
+.fab:active{transform:scale(.93)}
+.demo-note{
+  background:#FFFBEB;border:1px solid #F3E3B3;color:#92400E;
+  border-radius:var(--r-sm);padding:10px 14px;font-size:12.5px;line-height:1.5;margin-bottom:14px;
+}
+body.dark .demo-note{background:#231D0E;border-color:#4A3E1E;color:#FCD34D}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 14px;box-shadow:var(--shadow)}
+.stat .n{font-size:22px;font-weight:800;letter-spacing:-.4px;font-variant-numeric:tabular-nums}
+.stat .l{font-size:12px;color:var(--muted);margin-top:2px}
+.toggle{
+  position:relative;width:50px;height:29px;border-radius:99px;
+  background:var(--surface2);border:1px solid var(--line);cursor:pointer;
+  transition:background .2s,transform .3s var(--ease-spring);flex:0 0 auto;padding:0;
+}
+.toggle.on{background:var(--accent);border-color:var(--accent)}
+.toggle:active{transform:scale(.92)}
+.toggle::after{
+  content:'';position:absolute;top:3px;left:3px;width:21px;height:21px;
+  border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:left .25s var(--ease-spring);
+}
+.toggle.on::after{left:24px}
+.askbox{display:flex;gap:8px;margin-top:10px}
+.askbox .input{border-radius:999px}
+.linklike{
+  border:0;background:none;color:var(--accent-strong);font-weight:700;
+  font-size:13.5px;cursor:pointer;font-family:var(--font);padding:0;
+}
+.hiddenfile{display:none}
+.photo-prev{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.photo-prev img{width:72px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+
+/* ============ 2026 polish: clay trust chips, pop-in, map pins, Ask pill ============ */
+/* market radius control + persistent scope pill */
+.seg-compact{margin-bottom:10px}
+.seg-compact button{font-size:12px;padding:8px 4px}
+.scope-pill{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;font-weight:700;color:var(--accent-ink);
+  background:var(--accent-soft);border-radius:999px;padding:7px 13px;margin:2px 0 10px;
+}
+body.dark .scope-pill{color:var(--accent-strong)}
+/* listing detail gallery */
+.gal-main{width:100%;height:220px;object-fit:cover;border-radius:12px;background:var(--surface2)}
+.gal-thumbs{display:flex;gap:8px;margin-top:8px;overflow-x:auto;scrollbar-width:none}
+.gal-thumbs::-webkit-scrollbar{display:none}
+.gal-thumbs img{width:58px;height:58px;object-fit:cover;border-radius:9px;border:2px solid transparent;cursor:pointer;flex:0 0 auto}
+.gal-thumbs img.on{border-color:var(--accent)}
+/* post-form photo strip with per-photo remove */
+.ph-thumb{position:relative;display:inline-block}
+.ph-thumb img{width:72px;height:72px;object-fit:cover;border-radius:10px;border:1px solid var(--line)}
+.ph-x{
+  position:absolute;top:-8px;right:-8px;width:24px;height:24px;border-radius:50%;
+  border:0;background:var(--ink);color:var(--bg);font-size:11px;cursor:pointer;
+  display:grid;place-items:center;font-family:var(--font);
+}
+.ph-x:active{transform:scale(.9)}
+/* safe meetup spot rows */
+.spot{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--surface2);border-radius:12px;margin-bottom:8px;font-size:14px;font-weight:600}
+/* safety checklist rows (chat) */
+.check-row{display:flex;gap:12px;align-items:flex-start;padding:11px 2px;border-bottom:1px solid var(--line);font-size:14.5px;cursor:pointer;line-height:1.45}
+.check-row input{width:22px;height:22px;flex:0 0 auto;margin-top:1px;accent-color:var(--accent)}
+/* trust chip — small raised clay-feel chip, real metadata only */
+.trustchip{
+  display:inline-flex;align-items:center;gap:6px;max-width:100%;
+  font-size:11px;font-weight:700;color:var(--muted);line-height:1.3;
+  background:linear-gradient(180deg,var(--surface) 0%,var(--surface2) 100%);
+  border:1px solid var(--line);border-radius:999px;padding:5px 11px;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.65),inset 0 -1px 2px rgba(0,0,0,.05),0 1px 3px rgba(16,20,8,.08);
+}
+body.dark .trustchip{box-shadow:none}
+
+/* spring pop-in for listing cards */
+.pop{animation:popIn .5s var(--ease-spring) both}
+@keyframes popIn{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+
+/* Discover map pins — circular clay pins, colored per kind */
+.hub-pin-wrap{background:none;border:0}
+.hub-pin{
+  display:block;width:26px;height:26px;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.95) 0%,var(--pin,var(--pin-me)) 52%,color-mix(in srgb,var(--pin,var(--pin-me)) 72%,#000) 100%);
+  border:2.5px solid #fff;
+  box-shadow:0 3px 8px rgba(10,10,20,.32),inset 0 -3px 5px rgba(0,0,0,.28),inset 0 2px 3px rgba(255,255,255,.55);
+}
+body.dark .hub-pin{border-color:#111;box-shadow:0 3px 8px rgba(0,0,0,.6),inset 0 -3px 5px rgba(0,0,0,.4),inset 0 2px 3px rgba(255,255,255,.35)}
+
+/* Ask Orbit global pill — quiet, floating above the tab bar on every tab */
+.askpill{
+  position:fixed;bottom:calc(100px + env(safe-area-inset-bottom));left:16px;z-index:32;
+  display:flex;align-items:center;gap:2px;
+  background:var(--surface);
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--line));
+  border-radius:999px;
+  box-shadow:var(--shadow-lg),0 0 0 1px color-mix(in srgb,var(--accent) 12%,transparent);
+  padding:5px 6px 5px 7px;
+  transition:transform .45s var(--ease-spring),box-shadow .2s;
+}
+.askpill[hidden]{display:none}
+.askpill-main{
+  border:0;background:none;cursor:pointer;font-family:var(--font);
+  display:flex;align-items:center;gap:8px;padding:7px 8px;
+  font-size:13.5px;font-weight:700;color:var(--ink);
+}
+.askpill:active .askpill-main{transform:scale(.95)}
+.askpill-x{
+  border:0;background:none;color:var(--faint);font-size:11px;cursor:pointer;
+  padding:9px 8px;border-radius:999px;font-family:var(--font);
+}
+.askpill-x:active{transform:scale(.9)}
+
+/* Ask Orbit sheet header */
+.askhead{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.askhead h2{margin:0!important}
+.askhead .ico{width:34px;height:34px}
+.askchips{margin:10px 0 2px}
+
+/* ============ skeleton loading ============ */
+.skel{
+  position:relative;overflow:hidden;background:var(--surface2);
+  border-radius:8px;color:transparent!important;pointer-events:none;user-select:none;
+}
+.skel::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(100deg,transparent 25%,rgba(255,255,255,.65) 50%,transparent 75%);
+  transform:translateX(-100%);animation:shimmer 1.4s infinite;
+}
+body.dark .skel::after{
+  background:linear-gradient(100deg,transparent 25%,rgba(255,255,255,.07) 50%,transparent 75%);
+}
+@keyframes shimmer{to{transform:translateX(100%)}}
+
+/* ============ accessibility ============ */
+.btn:focus-visible,.tab:focus-visible,.chip:focus-visible,.iconbtn:focus-visible,
+.toggle:focus-visible,.seg button:focus-visible,.linklike:focus-visible,.fab:focus-visible{
+  outline:2px solid var(--ring);outline-offset:2px;
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .views{scroll-behavior:auto}
+}
+
+/* ORBIT-3DMAP — MapLibre 3D map for the Discover tab (scoped, brand tokens only) */
+#dvMapWrap{position:relative;height:380px}
+#dvMap{position:absolute;inset:0;border-radius:var(--r)}
+.maplibregl-canvas{display:block;outline:none}
+
+/* critical MapLibre layout classes (self-contained so markers/controls
+   position correctly even if the CDN stylesheet is slow or blocked) */
+.maplibregl-canvas-container{position:absolute;inset:0;overflow:hidden}
+.maplibregl-marker{position:absolute;top:0;left:0;will-change:transform}
+.maplibregl-ctrl-top-right{position:absolute;top:0;right:0;z-index:4;margin:10px 10px 0 0}
+.maplibregl-ctrl-bottom-right{position:absolute;bottom:0;right:0;z-index:4}
+.maplibregl-ctrl-group{border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.28)}
+.maplibregl-ctrl-group button{display:block;width:32px;height:32px;padding:0;border:0;background:#fff;cursor:pointer}
+.maplibregl-ctrl-group button+button{border-top:1px solid rgba(0,0,0,.12)}
+.maplibregl-ctrl-group .maplibregl-ctrl-icon{display:block;width:100%;height:100%;background-repeat:no-repeat;background-position:center}
+.maplibregl-ctrl-attrib{font-size:10px;padding:2px 8px;background:rgba(255,255,255,.65);border-radius:8px 0 0 0}
+.maplibregl-ctrl-attrib a{color:inherit}
+body.dark .maplibregl-ctrl-group{background:#1A1E12}
+body.dark .maplibregl-ctrl-group button{background:#1A1E12;filter:invert(.9)}
+body.dark .maplibregl-ctrl-attrib{background:rgba(13,16,10,.7);color:#cfd6c2}
+
+/* in-map status chip: geolocation state, honest labels */
+.map-status{
+  position:absolute;top:10px;left:10px;z-index:5;max-width:calc(100% - 76px);
+  background:rgba(13,16,10,.85);color:#FAFAF7;
+  font-size:12px;font-weight:600;line-height:1.35;
+  padding:7px 13px;border-radius:999px;border:1px solid rgba(198,241,53,.35);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);pointer-events:none;
+}
+
+/* pulsing user-location dot (volt) */
+.orbit-loc{position:relative;width:22px;height:22px;line-height:0}
+.orbit-loc::before{
+  content:'';position:absolute;inset:5px;border-radius:50%;
+  background:#D4F53F;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.45);
+}
+.orbit-loc::after{
+  content:'';position:absolute;inset:0;border-radius:50%;
+  border:2px solid #D4F53F;animation:orbitPing 1.8s ease-out infinite;
+}
+@keyframes orbitPing{
+  0%{transform:scale(.45);opacity:.9}
+  80%{transform:scale(1.6);opacity:0}
+  100%{transform:scale(1.6);opacity:0}
+}
+
+/* discover pins reuse the existing clay .hub-pin look */
+.orbit-pin{cursor:pointer;line-height:0;transition:transform .15s ease}
+.orbit-pin:active{transform:scale(.88)}
+
+/* graceful fallback when MapLibre can't run: honest note + clean list */
+.map-fallback{
+  border:1px solid var(--line);border-radius:var(--r);
+  background:var(--surface2);padding:28px 20px;text-align:center;margin-bottom:12px;
+}
+.map-fallback .big{font-size:40px;margin-bottom:8px}
+.map-fallback p{font-size:14px;line-height:1.5;margin:0}
+
+/* dark-mode touches for map chrome */
+body.dark .maplibregl-ctrl-group{box-shadow:0 0 0 1px rgba(255,255,255,.12),0 2px 6px rgba(0,0,0,.5)}
+body.dark .map-fallback{background:rgba(255,255,255,.04)}
+
+/* ============ ORBIT-BUGFIX-C (Worker 3 scope: home/groups/me/trust) ============
+   Scoped fixes only — nothing above this marker was touched by Worker 3. */
+/* Native form controls (the MEMORY vault date picker, community select) must
+   follow the theme: without color-scheme the date-picker calendar indicator
+   renders dark-on-dark and is effectively invisible in dark mode. */
+:root{color-scheme:light}
+body.dark{color-scheme:dark}
+/* Keep the household-card balance figure on one line at 390px (it wrapped
+   mid-phrase: "owed to / you"). Scoped to Worker-3's .hh-card only. */
+.hh-card .money{white-space:nowrap}
+
+/* ============ ORBIT-BUGFIX-B (Worker 2 scope: market/work/chat/create/ai/search/pulse/notifications) ============
+   Scoped fixes only — nothing above this marker was touched by Worker 2. */
+/* The market "＋ Post" FAB (fixed, bottom ~96px, right) sat on the same row as
+   the global Ask Orbit pill (fixed, bottom 100px, left) and the two overlapped
+   on 390px screens. Lift the market FAB above the pill's row. Scoped to the
+   market view only — the shared .fab rule is untouched. */
+#view-market .fab{bottom:calc(152px + env(safe-area-inset-bottom))}
+/* Two-tap delete confirm on market listings: danger color only while armed. */
+#mkDelete[data-armed]{border-color:var(--danger)}
+
+/* ============ ORBIT-COMMUNITIES (Workstream C: Campus → Communities reframe) ============
+   Scoped styles only — first-run role picker + community picker disclosure.
+   Nothing above this marker was touched by Workstream C. */
+.ob-roles{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 6px}
+.ob-role{border:1.5px solid var(--line);background:var(--surface);border-radius:18px;
+  padding:20px 10px;font-family:var(--font);cursor:pointer;text-align:center;color:var(--ink);
+  transition:transform .25s var(--ease-spring),border-color .15s,box-shadow .15s}
+.ob-role:active{transform:scale(.95)}
+.ob-role:hover{border-color:var(--accent);box-shadow:0 6px 18px rgba(198,241,53,.25)}
+.ob-role .ob-emoji{font-size:36px;display:block;margin-bottom:10px;line-height:1}
+.ob-role .ob-t{font-weight:800;font-size:15px;display:block}
+.ob-role .ob-d{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4;display:block}
+.ob-back{background:none;border:0;color:var(--muted);font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;margin:0 0 6px;padding:4px 0}
+.ob-back:hover{color:var(--ink)}
+
+/* ============ ORBIT-PEOPLE (Workstream D: people discovery) ============
+   Scoped styles only — the People surface (Groups tab segment), person
+   cards, and the profile sheet. Nothing above this marker was touched.
+   Brand: volt #C6F135/#D4F53F, ink #0D100A, paper #FAFAF7, coral #FF5C38.
+   No purple anywhere. Dark mode via body.dark tokens. */
+
+/* ---- clay avatar (matches the ME profile clay identity) ---- */
+.ppl-avatar{
+  width:56px;height:56px;border-radius:19px;flex:0 0 auto;
+  display:grid;place-items:center;font-weight:800;font-size:20px;color:#fff;letter-spacing:.02em;
+  background:radial-gradient(circle at 32% 24%,rgba(255,255,255,.38),rgba(255,255,255,0) 56%),var(--ppl-ac,#4A7A00);
+  box-shadow:inset 0 2px 6px rgba(255,255,255,.35),inset 0 -6px 10px rgba(0,0,0,.22),0 6px 14px rgba(0,0,0,.14);
+  transition:transform .3s var(--ease-pop);
+}
+.ppl-avatar.lg{width:96px;height:96px;border-radius:30px;font-size:36px;margin:0 auto 12px;position:relative;z-index:1}
+.ppl-card:active .ppl-avatar{transform:scale(.93)}
+
+/* ---- person card ---- */
+.ppl-card{padding:16px}
+.ppl-namerow{flex-wrap:wrap;gap:6px}
+.ppl-namerow h3{font-size:16px;font-weight:800;letter-spacing:-.01em;margin:0}
+.ppl-badges{display:flex;align-items:center;gap:7px;margin-top:5px;flex-wrap:wrap}
+.ppl-badges .meta{font-size:12px;color:var(--muted)}
+.ppl-known{font-size:13.5px;color:var(--ink-2);margin-top:6px;line-height:1.5}
+.ppl-skills{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.ppl-skill{
+  display:inline-flex;align-items:center;padding:7px 12px;border-radius:999px;
+  background:var(--accent-soft);border:1px solid var(--line);
+  font-size:12.5px;font-weight:700;color:var(--ink);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4);
+}
+.ppl-skill.ppl-more{background:var(--surface2);color:var(--muted)}
+.ppl-mutual{font-size:13px;color:var(--ink-2);margin-top:10px}
+.ppl-stats{display:flex;gap:14px;margin-top:10px;font-size:13px;font-weight:600;color:var(--muted)}
+.ppl-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:14px}
+.ppl-actions .btn{padding:10px 6px;font-size:13.5px;min-height:42px}
+.ppl-actions .btn:disabled{opacity:.6}
+.ppl-sheet-actions{display:flex;gap:10px}
+.ppl-sheet-actions .btn{min-height:48px}
+
+/* ---- profile sheet (mirrors the ME profile hero layout) ---- */
+.ppl-prof .ppl-hero{position:relative;overflow:hidden;text-align:center;padding:28px 18px 22px}
+.ppl-prof .ppl-hero::before{ /* the one allowed volt→transparent glow: hero art */
+  content:'';position:absolute;top:-44px;left:50%;transform:translateX(-50%);
+  width:320px;height:200px;pointer-events:none;
+  background:radial-gradient(ellipse,color-mix(in srgb,var(--accent) 15%,transparent),transparent 70%);
+}
+.ppl-prof .ppl-name{font-size:clamp(1.45rem,6vw,1.85rem);font-weight:800;letter-spacing:-.01em;position:relative;z-index:1}
+.ppl-prof .ppl-campus{color:var(--muted);font-size:clamp(.88rem,3.6vw,1rem);margin-top:2px;position:relative;z-index:1}
+.ppl-prof .ppl-badgerow{margin-top:10px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+.ppl-prof .ppl-ribbon{
+  display:flex;gap:8px;margin-top:16px;padding:4px 2px 6px;position:relative;z-index:1;
+  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+}
+.ppl-prof .ppl-ribbon::-webkit-scrollbar{display:none}
+.ppl-prof .ppl-chip{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
+  padding:10px 15px;border-radius:999px;
+  background:var(--surface2);border:1px solid var(--line);
+  font-size:clamp(.82rem,3.4vw,.9rem);font-weight:700;color:var(--ink);white-space:nowrap;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 2px 6px rgba(0,0,0,.06);
+}
+.ppl-prof .ppl-sec{margin-top:18px}
+.ppl-prof .ppl-sec h2{font-size:clamp(1rem,4.2vw,1.12rem);font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+.ppl-prof .ppl-sec .ppl-skills{margin-top:0}
+.ppl-prof .card p{margin:0}

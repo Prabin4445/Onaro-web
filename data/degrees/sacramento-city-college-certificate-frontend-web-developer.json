@@ -1,0 +1,222 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [
+   "CISC 300",
+   "CISC 320"
+  ],
+  "id": "sacramento-city-college-certificate-frontend-web-developer",
+  "major": "Frontend Web Developer",
+  "notes": "Transcribed from the official SCC 'Frontend Web Developer Certificate' program map, Catalog 2026-27, published May 30, 2026 (mapmaker.losrios.edu/Maps/7645/PublishedPdf). Certificate of Achievement (grade of C or better in each course). Official Total Units: 26; this seed models the map path = 11+8+7 = 26 units. Semester sums verified against the map's 11 / 8 / 7 headers. Sequencing prereqs per map: CISC 324 requires CISC 323; CISC 305 requires CISC 300, 310 or 320 (CISC 310 is taken in Semester 1 of this path; CISC 300 and CISC 320 are listed in external_prereqs as accepted alternatives); CISW 400 requires CISP 301 and CISW 327. Department notes: CISC 306 & CISW 370 may be substituted for CISW 306; CISW 320 & CISW 304 may be substituted for CISW 327. CISW 400 is typically only offered during the fall semester. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "CISC 310",
+      "title": "Introduction to Computer Information Science",
+      "xfer": [
+       "american-river-college-aa-economics",
+       "american-river-college-certificate-cis-pc-support",
+       "cosumnes-river-college-as-cybersecurity-information-assurance",
+       "cosumnes-river-college-as-cybersecurity-information-assurance-calgetc",
+       "cosumnes-river-college-as-information-technology-associate",
+       "sacramento-city-college-as-computer-science",
+       "sacramento-city-college-as-information-processing",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Department substitution: CISC 306 & CISW 370 may be substituted for CISW 306.",
+      "code": "CISW 306",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "CISW 306",
+      "title": "Introduction to Web Page Creation and Web Accessibility",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 323",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "CISC 323",
+      "title": "Linux Operating System",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco",
+       "american-river-college-certificate-3d-technical-director",
+       "cosumnes-river-college-as-web-developer",
+       "cosumnes-river-college-as-web-developer-calgetc",
+       "sacramento-city-college-as-computer-science"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISC 323 with a grade of C or better.",
+      "code": "CISC 324",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "CISC 323"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "CISC 324",
+      "title": "Intermediate Linux Operating System",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco",
+       "cosumnes-river-college-as-web-developer",
+       "cosumnes-river-college-as-web-developer-calgetc",
+       "sacramento-city-college-as-computer-science"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Department substitution: CISW 320 & CISW 304 may be substituted for CISW 327.",
+      "code": "CISW 327",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "CISW 327",
+      "title": "Introduction to Web Development coding HTML and CSS",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DDSN 331",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "DDSN 331",
+      "title": "Digital Imaging I",
+      "xfer": [
+       "sacramento-city-college-certificate-game-design"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISP 301",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "CISP 301",
+      "title": "Algorithm Design and Implementation",
+      "xfer": [
+       "sacramento-city-college-as-computer-science",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science",
+       "sacramento-city-college-certificate-programming"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISC 300, 310 or 320 with a grade of C or better (CISC 310 is taken in Semester 1 of this path).",
+      "code": "CISC 305",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CISC 300",
+         "CISC 310",
+         "CISC 320"
+        ]
+       }
+      ],
+      "slot_id": "s2-2",
+      "tccns": "CISC 305",
+      "title": "Introduction to the Internet",
+      "xfer": [
+       "sacramento-city-college-as-information-processing",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science"
+      ]
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DDSN 360",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "DDSN 360",
+      "title": "User Interface Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: CISP 301 and CISW 327 with grades of C or better. Typically only offered during the fall semester.",
+      "code": "CISW 400",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CISP 301",
+       "CISW 327"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "CISW 400",
+      "title": "Clientside Web Scripting",
+      "xfer": [
+       "cosumnes-river-college-as-web-developer",
+       "cosumnes-river-college-as-web-developer-calgetc"
+      ]
+     }
+    ],
+    "n": 3,
+    "term": "Semester 3"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7645/PublishedPdf",
+  "total_credits": 26,
+  "transfer_confidence": "core_only",
+  "content_hash": "66a563f7cecc2cfba6c29d99cb38e1e04e06c782df8017b1e771f432766e4fdb",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,657 @@
+{
+ "institution": {
+  "name": "John Jay College of Criminal Justice",
+  "city": "New York, NY",
+  "kind": "college",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "johnjay-bs-computer-science-information-security",
+  "degree": "BS",
+  "major": "Computer Science and Information Security",
+  "catalog_year": "2024-2025",
+  "total_credits": 121,
+  "source_url": "https://www.jjay.cuny.edu/sites/default/files/2025-03/COMP_SCIENCE.pdf",
+  "notes": "Source: official John Jay College 'COMPUTER SCIENCE & INFORMATION SECURITY FOUR YEAR ADVISEMENT PLAN' (Academic Advisement Center, revised 12/13/24), https://www.jjay.cuny.edu/sites/default/files/2025-03/COMP_SCIENCE.pdf, linked from the official 2024-2025 Undergraduate Bulletin page for the Computer Science and Information Security, Bachelor of Science (https://jjay.smartcatalogiq.com/en/2024-2025/undergraduate-bulletin/majors/computer-science-and-information-security-bachelor-of-science/). Transcription method: manual transcription of the PDF's eight semester-by-semester term grids (Semester 1-8); course titles verified against the 2024-2025 bulletin major page (CSCI 271 Introduction to Computing and Programming; CSCI 272 Object-Oriented Programming; CSCI 274 Computer Architecture; CSCI 360 Cryptography and Cryptanalysis; CSCI 373 Advanced Data Structures; CSCI 374 Programming Languages; CSCI 375 Operating Systems; CSCI 377 Computer Algorithms; CSCI 379 Computer Networking; CSCI 400/401 Capstone Experience in Digital Forensics/Cybersecurity I/II; CSCI 411 Computer Security and Forensics; CSCI 412 Network Security & Forensics; PHI 216 Ethics and Information Technology; MAT 141 Pre-Calculus; MAT 151 Calculus I; MAT 301 Probability & Mathematical Statistics I), the 2023-2024 bulletin course page (MAT 204 Discrete Structures, 3 cr), and the 2020-2021 bulletin General Education Requirements page (ENG 101 Composition I; ENG 201 Composition II; MAT 105 College Algebra). Credit discrepancy: the plan's printed term totals sum to 121 credits (15+15+16+15+15+15+15+15) while the bulletin degree minimum is 120; total_credits uses the sequence's own published total (121) per the Clarkson/UVM/GCSU precedent. Gen-ed slot codes (JUS100C, USXPF, CREX, WCGI, LFPCO, LPSC, ADDFC, INDSOC, COMMCO, JUS300C, ELEC1-ELEC7) are placeholders for student-choice areas, marked choice:true; the plan's 'Elective or Minor' slots are general electives with distinct placeholder codes. Part Three Category A (computer science elective) and Category B (mathematics elective) option lists are transcribed verbatim from the 2024-2025 bulletin Part Three; a 4-credit Category B choice (MAT 152 or MAT 253) raises the term total. Prereqs: ENG 101 is a College prerequisite for all 200-level courses and ENG 201 for all 300/400-level courses, with ENG 101 required before ENG 201 (2020-2021 bulletin, General Education Requirements). CSCI 272 is a prerequisite for all CSCI 300-level courses; CSCI 360, CSCI 373, CSCI 375, CSCI 379 are prerequisites for CSCI 400; CSCI 400, PHI 216, CSCI 377 are prerequisites for CSCI 401 (official Department of Mathematics and Computer Science course flowchart, 'as of Fall 2025', https://www.jjay.cuny.edu/sites/default/files/2025-09/math%26computer%20sci_courseflowchart_fall2025_vert.pdf). Math placement: the CSCI major requires MAT 105 or 141 or higher to begin major courses; as of Fall 2021 MAT 151 replaces MAT 241 (per plan major note). Caveat: the 2025-2026 bulletin exists but this advisement plan (revised 12/13/24) is the official sequence linked from the 2024-2025 bulletin; catalog_year reflects the plan's source year.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENG 101",
+      "title": "Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MAT 105",
+      "title": "College Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "JUS100C",
+      "title": "100-Level Justice Course (College Option)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any 100-level Justice course meeting the College Option (CO) area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "USXPF",
+      "title": "U.S. Experience in its Diversity (Flexible Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the Flexible Core U.S. Experience in its Diversity area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CREX",
+      "title": "Creative Expression (Flexible Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the Flexible Core Creative Expression area.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENG 201",
+      "title": "Composition II",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "WCGI",
+      "title": "World Cultures & Global Issues (Flexible Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the Flexible Core World Cultures & Global Issues area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CSCI 271",
+      "title": "Introduction to Computing and Programming",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "LFPCO",
+      "title": "Learning from the Past (College Option)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the College Option (CO) Learning from the Past area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MAT 141",
+      "title": "Pre-Calculus",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "LPSC",
+      "title": "Life & Physical Sciences (Required Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the Required Core Life and Physical Sciences area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "ADDFC",
+      "title": "Additional Flexible Core Course (Flexible Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any Flexible Core area course; students not exempt from Foreign Language must take FL 101 here.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSCI 272",
+      "title": "Object-Oriented Programming",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CSCI 274",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "MAT 151",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "As of Fall 2021, MAT 151 replaces MAT 241. See major note on math placement.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "INDSOC",
+      "title": "Individual & Society (Flexible Core)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the Flexible Core Individual & Society area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "COMMCO",
+      "title": "Communications (College Option)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any course meeting the College Option (CO) Communications area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSCI 373",
+      "title": "Advanced Data Structures",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MAT 204",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "MAT 301",
+      "title": "Probability & Mathematical Statistics I",
+      "credits": 3,
+      "prereq": [
+       "ENG 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "JUS300C",
+      "title": "300-Level Justice Course (College Option)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: any 300-level Justice course meeting the College Option (CO) area.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSCI 375",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSCI 377",
+      "title": "Computer Algorithms",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CATB",
+      "title": "Part Three Category B: Mathematics Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one mathematics elective per bulletin Part Three Category B; 4-credit options raise the term total by 1.",
+      "options": [
+       "MAT 152 - Calculus II (4 credits)",
+       "MAT 242 - Calculus II (3 credits)",
+       "MAT 253 - Calculus III (4 credits)",
+       "MAT 243 - Calculus III (3 credits)",
+       "MAT 244 - Calculus IV (3 credits)",
+       "MAT 310 - Linear Algebra",
+       "MAT 351 - Introduction to Ordinary Differential Equations",
+       "MAT 371 - Numerical Analysis",
+       "MAT 380 - Selected Topics in Mathematics",
+       "MAT 385 - Faculty Mentored Research Experience in Mathematics"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELEC1",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSCI 360",
+      "title": "Cryptography and Cryptanalysis",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSCI 374",
+      "title": "Programming Languages",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSCI 379",
+      "title": "Computer Networking",
+      "credits": 3,
+      "prereq": [
+       "ENG 201",
+       "CSCI 272"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CATA",
+      "title": "Part Three Category A: Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one computer science elective per bulletin Part Three Category A.",
+      "options": [
+       "CSCI 275 - Linux System Administration and Security",
+       "CSCI 358 - Machine Learning",
+       "CSCI 362 - Databases and Data Mining",
+       "CSCI 376 - Artificial Intelligence",
+       "CSCI 380 - Selected Topics in Computer Science",
+       "CSCI 385 - Faculty Mentored Research Experience in Computer Science",
+       "CSCI 404 - Internship in Management Information Systems",
+       "CSCI 421 - Quantum Computing"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELEC2",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "PHI 216",
+      "title": "Ethics and Information Technology",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSCI 400",
+      "title": "Capstone Experience in Digital Forensics/Cybersecurity I",
+      "credits": 3,
+      "prereq": [
+       "CSCI 360",
+       "CSCI 373",
+       "CSCI 375",
+       "CSCI 379",
+       "ENG 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSCI 411",
+      "title": "Computer Security and Forensics",
+      "credits": 3,
+      "prereq": [
+       "ENG 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC3",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC4",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSCI 401",
+      "title": "Capstone Experience in Digital Forensics/Cybersecurity II",
+      "credits": 3,
+      "prereq": [
+       "CSCI 400",
+       "PHI 216",
+       "CSCI 377",
+       "ENG 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSCI 412",
+      "title": "Network Security & Forensics",
+      "credits": 3,
+      "prereq": [
+       "ENG 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC5",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC6",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC7",
+      "title": "Elective or Minor",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student's choice: general elective or minor course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "42ab0d3d4cc73c66043bf4556bb64de41abdfc5000df75914d5c844d5495c3ab",
+  "last_verified": "2026-10-02"
+ }
+}

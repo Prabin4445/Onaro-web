@@ -1,0 +1,368 @@
+{
+ "institution": {
+  "city": "Augusta, GA",
+  "kind": "community",
+  "name": "Augusta Technical College",
+  "state": "GA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "external_prereqs": [],
+  "id": "augusta-technical-college-aas-cybersecurity",
+  "major": "Cybersecurity",
+  "notes": "Guided Pathway transcribed verbatim from the official 2026-2027 Augusta Technical College catalog (Fall, Spring, and Summer Entrance; Georgia Cyber Innovation and Training Center, Day and Evening). DISCREPANCY DOCUMENTED: the catalog header states 'Credit Hours Required for Graduation: 75' and 'Occupational Courses, 60 credits', but the itemized curriculum outline sums to 61 occupational credits (3+4+4+3+3+eleven 4-credit courses) and the guided pathway semesters sum to 16+15+16+15+14 = 76; the outline item list and the pathway agree with each other at 76, so the headers are treated as subtotal typos and total_credits is seeded at the true item sum, 76. COLL 1060: students with 15+ earned semester hours are exempt and take an advisor-approved elective instead. Catalog note: CIST 2992 may substitute for CIST 2614 with program-head approval (neither appears in the pathway). Course-level prerequisites live in the catalog's course descriptions and were not individually transcribed. transfer_confidence is 'advisory' (AAS workforce program); tccns mirrors the local TCSG course code.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1001",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 1001",
+      "title": "Computer Concepts",
+      "slot_id": "s1-0",
+      "xfer": [
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Students who have earned at least 15 semester hours through an earned credential, transfer credit, or dual enrollment are exempt from COLL 1060 and select an advisor-approved elective instead (per catalog).",
+      "code": "COLL 1060",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "COLL 1060",
+      "title": "Introduction to College and Computers",
+      "slot_id": "s1-1",
+      "xfer": [
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ENGL 1101",
+      "title": "Composition and Rhetoric",
+      "slot_id": "s1-2",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-aas-radiologic-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "MATH 1111",
+      "title": "College Algebra",
+      "slot_id": "s1-3",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "atlanta-technical-college-aas-radiologic-technology",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education elective course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Education Elective",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Year 1 — First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1601",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "CIST 1601",
+      "title": "Information Security Fundamentals",
+      "slot_id": "s2-0",
+      "xfer": [
+       "augusta-technical-college-aas-computer-support-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2411",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2411",
+      "title": "Microsoft Client",
+      "slot_id": "s2-1",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2431",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2431",
+      "title": "UNIX/Linux Introduction",
+      "slot_id": "s2-2",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2451",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2451",
+      "title": "Introduction to Networks - Cisco",
+      "slot_id": "s2-3",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     }
+    ],
+    "label": "Year 1 — Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1122",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 1122",
+      "title": "Hardware Installation and Maintenance",
+      "slot_id": "s3-0",
+      "xfer": [
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2452",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2452",
+      "title": "Cisco Switching, Routing & Wireless Essentials",
+      "slot_id": "s3-1",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2601",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2601",
+      "title": "Implementing Operating Systems Security",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2602",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2602",
+      "title": "Network Security",
+      "slot_id": "s3-3",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     }
+    ],
+    "label": "Year 1 — Third Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2611",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2611",
+      "title": "Network Defense and Countermeasures",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2613",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2613",
+      "title": "Ethical Hacking and Penetration Testing",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2742",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2742",
+      "title": "Beginning Python Programming",
+      "slot_id": "s4-2",
+      "xfer": [
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education Area II Social/Behavioral Science course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Social/Behavioral Science Area II",
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ],
+    "label": "Year 2 — Fourth Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 1602",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "CIST 1602",
+      "title": "Security Policies and Procedures",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2612",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2612",
+      "title": "Computer Forensics",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIST 2640",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "CIST 2640",
+      "title": "Security Operations Analyst",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select a General Education Area IV Humanities/Fine Arts course per the catalog's General Education Core Curriculum section.",
+      "code": "XXXX XXXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Humanities/Fine Arts Area IV",
+      "slot_id": "s5-3",
+      "xfer": []
+     }
+    ],
+    "label": "Year 2 — Fifth Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://augustatech.smartcatalogiq.com/en/2026-2027/2026-2027-academic-catalog/programs-of-study/school-of-business-cyber-and-design/cybersecurity-associate-of-applied-science-degree",
+  "total_credits": 76,
+  "transfer_confidence": "advisory",
+  "content_hash": "adaa70d8763f352563377c7a4a4944fc0c9d170bbec48c4829cb055b9ff5d6ca",
+  "last_verified": "2026-10-02"
+ }
+}

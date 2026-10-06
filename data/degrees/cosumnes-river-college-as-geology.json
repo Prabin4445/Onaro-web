@@ -1,0 +1,355 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "CHEM 305",
+   "CHEM 309"
+  ],
+  "id": "cosumnes-river-college-as-geology",
+  "major": "Geology",
+  "notes": "Transcribed from the official CRC 'Geology A.S. Degree' program map, Catalog Year 2026-2027, published September 24, 2026 (mapmaker.losrios.edu/Maps/8044/PublishedPdf). GE Pattern: CRC Local GE. Map states Total Units 59 = 15+14+16+14 (all semester headers match their rows; verified). MATH 400 PREREQUISITE NOTE: the map's PRE-REQS column lists 'MATH 370', but the map sequences MATH 372 (Semester 1) then MATH 373 (Semester 2) then MATH 400 (Semester 3), and footnote 2 explicitly states 'MATH 372 and 373 are pre-reqs for MATH 400'. Encoded as MATH 372 + MATH 373 (the sequenced pathway per the footnote); the 'MATH 370' entry appears to be a typo and is documented here, not encoded. CHEM 300 footnote: may be waived with 1 year of high school chemistry with lab and MATH 120 or equivalent; CHEM 300 is pre-req for CHEM 400; meet with a counselor to determine starting course. CHEM 400 pre-req per map: Elementary Algebra and (CHEM 300, 305, 309 or 1 yr HS Chem with lab); encoded as one_of CHEM 300/305/309 (CHEM 305/309 carried under external_prereqs; Elementary Algebra is placement, documented here). CHEM 300 pre-req per map: Elementary Algebra or higher (placement; documented here, not encoded). GEOL 301 pre- or co-requisite per map: GEOL 300 (same semester; encoded). GEOL 311 co-requisite per map: GEOL 310 (same semester; encoded). Advisories (recommended, not required): GEOL 310 advisory GEOL 300 or 305; GEOL 311 advisory GEOL 300 & 301. CRC Area 1A: map recommends meeting with a counselor. This degree is designed to meet common lower-division requirements for a Geology major.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Co-requisite per map: GEOL 301 (same semester).",
+      "code": "GEOL 300",
+      "core_area": "L5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "GEOL 300",
+      "title": "Physical Geology",
+      "slot_id": "s1-0",
+      "xfer": [
+       "american-river-college-aa-geography",
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre- or co-requisite per map: GEOL 300 (same semester).",
+      "code": "GEOL 301",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "GEOL 300"
+      ],
+      "tccns": "GEOL 301",
+      "title": "Physical Geology Laboratory",
+      "slot_id": "s1-1",
+      "xfer": [
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req per map: Elementary Algebra or higher (placement). May be waived with 1 year of high school chemistry with lab and MATH 120 or equivalent.",
+      "code": "CHEM 300",
+      "core_area": "",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "CHEM 300",
+      "title": "Beginning Chemistry",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req for MATH 400 per footnote 2; meet with a counselor regarding math sequences.",
+      "code": "MATH 372",
+      "core_area": "L2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "MATH 372",
+      "title": "College Algebra for Calculus",
+      "slot_id": "s1-3",
+      "xfer": [
+       "american-river-college-certificate-3d-technical-director"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L1A (English Composition). Map recommends meeting with a counselor.",
+      "code": "Any CRC Area L1A course",
+      "core_area": "L1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L1A (English Composition) course",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): GEOL 300 or 305.",
+      "code": "GEOL 310",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "GEOL 310",
+      "title": "Historical Geology",
+      "slot_id": "s2-0",
+      "xfer": [
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Co-requisite per map: GEOL 310 (same semester). Advisory (recommended, not required): GEOL 300 & 301.",
+      "code": "GEOL 311",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "GEOL 310"
+      ],
+      "tccns": "GEOL 311",
+      "title": "Historical Geology Laboratory",
+      "slot_id": "s2-1",
+      "xfer": [
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req per map: Elementary Algebra and (CHEM 300, 305, 309 or 1 year of high school chemistry with lab).",
+      "code": "CHEM 400",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 300",
+         "CHEM 305",
+         "CHEM 309"
+        ]
+       }
+      ],
+      "tccns": "CHEM 400",
+      "title": "General Chemistry I",
+      "slot_id": "s2-2",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req for MATH 400 per footnote 2.",
+      "code": "MATH 373",
+      "core_area": "L2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "MATH 373",
+      "title": "Trigonometry for Calculus",
+      "slot_id": "s2-3",
+      "xfer": [
+       "american-river-college-as-engineering-technology",
+       "american-river-college-certificate-3d-technical-director"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L7A (Living Skills - PE).",
+      "code": "Any CRC Area L7A course",
+      "core_area": "L7A",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L7A (Living Skills - PE) course",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 401",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 400"
+      ],
+      "tccns": "CHEM 401",
+      "title": "General Chemistry II",
+      "slot_id": "s3-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology",
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map PRE-REQS column lists 'MATH 370' but footnote 2 and the sequenced MATH 372/373 state MATH 372 and 373 are the pre-reqs; encoded as the sequenced MATH 372 + MATH 373 (see plan notes).",
+      "code": "MATH 400",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 372",
+       "MATH 373"
+      ],
+      "tccns": "MATH 400",
+      "title": "Calculus I",
+      "slot_id": "s3-1",
+      "xfer": [
+       "american-river-college-aa-economics",
+       "cosumnes-river-college-aat-economics",
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L7B (Living Skills).",
+      "code": "Any CRC Area L7B course",
+      "core_area": "L7B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L7B (Living Skills) course",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L3 (Arts & Humanities).",
+      "code": "Any CRC Area L3 course",
+      "core_area": "L3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L3 (Arts & Humanities) course",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 401",
+      "core_area": "",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 400"
+      ],
+      "tccns": "MATH 401",
+      "title": "Calculus II",
+      "slot_id": "s4-0",
+      "xfer": [
+       "american-river-college-aa-economics",
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-geology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L1B (Oral Communications and Critical Thinking).",
+      "code": "Any CRC Area L1B course",
+      "core_area": "L1B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L1B (Oral Communications and Critical Thinking) course",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L4 (Social & Behavioral Sciences).",
+      "code": "Any CRC Area L4 course",
+      "core_area": "L4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L4 (Social & Behavioral Sciences) course",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Local GE Area L6 (Ethnic Studies).",
+      "code": "Any CRC Area L6 course",
+      "core_area": "L6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L6 (Ethnic Studies) course",
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/8044/PublishedPdf",
+  "total_credits": 59,
+  "content_hash": "48ad38d52d8ba00307745be544ef4a1e39accb925104990fd213fc6115938d6b",
+  "last_verified": "2026-10-02"
+ }
+}

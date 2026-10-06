@@ -1,0 +1,584 @@
+{
+ "institution": {
+  "name": "Tufts University",
+  "city": "Medford, MA",
+  "kind": "private4yr",
+  "state": "MA"
+ },
+ "plan": {
+  "id": "tufts-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 115,
+  "source_url": "https://engineering.tufts.edu/cs/current-students/policies-and-documentation",
+  "notes": "SOURCE: https://engineering.tufts.edu/cs/current-students/policies-and-documentation — Department of Computer Science, Tufts University School of Engineering, 'Bachelor of Science in Computer Science - School of Engineering' section (retrieved 2026-09-30). This plan transcribes the department's official SAMPLE PROGRAM verbatim, term by term (First Year Fall through Senior Year Spring), as published: 'The following sample program is one way of satisfying the above requirements.' Term sequences were cross-checked against the BSCS requirements text on the same page (introductory / HASS / breadth / engineering / CS-major requirements). CATALOG-YEAR CAVEAT: Tufts publishes this BSCS sample program WITHOUT a class year (it is year-agnostic); catalog_year is recorded as '2026-2027', the year of transcription (2026-09-30). Confirm currency with the department before use. CREDIT TOTAL: the sample program as transcribed sums to 115 semester-hour units (SHU) — 5 SHU BELOW the degree's stated 120-SHU minimum ('The Bachelor of Science in Computer Science (BSCS) requires a minimum of 120 semester-hours of study'). Per-course SHU basis, all from official Tufts sources: 3 SHU is the Tufts standard ('a class worth three semester-hours — the majority of classes at Tufts'); 4 SHU for laboratory/project courses — Physics 11, Chemistry 1/16, Biology 13 (all listed 'w/Lab'), Computer Science 11 (weekly lab), 15, 40, 105, 160 (Data Structures = 4 cr and Algorithms = 4 cr per the official Tufts School of Engineering online post-bacc course list); 3 SHU for Computer Science 61 (Discrete Mathematics = 3 cr), 97/98 (Senior Capstone), 170 (Theory of Computation = 3 cr, same official list), all Mathematics, all Engineering (EN 1, ES 2/3/4, ES 56, EN 54), English 1, each HASS elective (24-SHU HASS requirement / 8 courses = 3 SHU each), the breadth elective (6-SHU breadth / EN 54 + 1 elective), each CS concentration elective (3-SHU standard per the requirements text), and the natural-science/mathematics elective (requirements text says '3 or more' SHU; transcribed at the 3-SHU minimum). Students following this sample would need higher-SHU elective choices (e.g., a 4-SHU lab science or CS elective) or additional coursework to reach the 120-SHU minimum. BOX DEGREE SHEETS NOT USED: the tufts.box.com degree-sheet links were excluded as unverifiable per source policy; students.tufts.edu links only to those Box shares and was likewise not used. PREREQUISITES reflect the sample program's own term sequencing (e.g., Mathematics 34 after 32; Computer Science 15 after 11 — the latter stated explicitly as 'Prerequisite: COMP 11' on cs.tufts.edu); where a prerequisite is satisfied by a student-choice slot, the prereq points at the choice slot's own code (e.g., COMP 160 lists the Discrete Mathematics choice slot). No courses, credits, or prerequisites were invented; every student-choice slot uses choice:true with a placeholder code. Credential: BS in Computer Science, School of Engineering, Tufts University (Medford, MA).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "EN 1",
+      "title": "Applications in Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH32-39",
+      "title": "Calculus I (Mathematics 32 or 39 — student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Mathematics 32 (or 39)'.",
+      "options": [
+       "MATH 32",
+       "MATH 39"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "NATSCI-01",
+      "title": "Natural science: Physics 11, Chemistry 1 or 16, or Biology 13 (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Physics 11, Chemistry 1 or 16, or Biology 13'. Requirements text: two courses selected from Physics 11, Chemistry 1 or 16, and Biology 13.",
+      "options": [
+       "PHY 11",
+       "CHEM 1",
+       "CHEM 16",
+       "BIO 13"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ENG 1",
+      "title": "Expository Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ES2-SOE-EL",
+      "title": "Engineering Science 2 or SOE-Engineering elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Engineering Science 2 or elective with attribute SOE-Engineering'. Requirements text: 'Engineering science 2 or an elective with attribute \"Engineering requirements\" and value \"SOE-Engineering\"'.",
+      "options": [
+       "ES 2"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 34",
+      "title": "Calculus II",
+      "credits": 3,
+      "prereq": [
+       "MATH32-39"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "NATSCI-02",
+      "title": "Natural science: Physics 11, Chemistry 1 or 16, or Biology 13 (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Physics 11, Chemistry 1 or 16, or Biology 13' (second of two required natural science courses).",
+      "options": [
+       "PHY 11",
+       "CHEM 1",
+       "CHEM 16",
+       "BIO 13"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "HASS-01",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement (English 1 or 3 plus additional HASS courses).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "COMP 11",
+      "title": "Introduction to Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 42",
+      "title": "Calculus III",
+      "credits": 3,
+      "prereq": [
+       "MATH 34"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "NATSCI-MATH-EL",
+      "title": "Natural science or mathematics elective, 3+ SHU (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Natural science or mathematics elective'. Requirements text: 'one natural science or mathematics elective worth 3 or more semester hour units' (transcribed at the 3-SHU minimum).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "ES 3",
+      "title": "Introduction to Electrical Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "HASS-02",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "COMP 15",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       "COMP 11"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "COMP61-MATH61-65",
+      "title": "Discrete Mathematics: Computer Science 61, Mathematics 61, or Mathematics 65 (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer Science or Mathematics 61: Discrete Mathematics'. Requirements text: 'Computer Science 61, Mathematics 61, or Mathematics 65'.",
+      "options": [
+       "COMP 61",
+       "MATH 61",
+       "MATH 65"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "ES 4",
+      "title": "Introduction to Digital Logic Circuits",
+      "credits": 3,
+      "prereq": [
+       "ES 3"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MATH70-72",
+      "title": "Linear Algebra: Mathematics 70 or 72 (student choice)",
+      "credits": 3,
+      "prereq": [
+       "MATH 42"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Mathematics 70 or 72: Linear Algebra'. Requirements text: 'Mathematics 70 or 72'.",
+      "options": [
+       "MATH 70",
+       "MATH 72"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "HASS-03",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "COMP 40",
+      "title": "Machine Structure and Assembly-Language Programming",
+      "credits": 4,
+      "prereq": [
+       "COMP 15"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS-ELECTIVE-01",
+      "title": "Computer Science concentration elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer Science elective'. Requirements text: five or more electives in Computer Science, three numbered above 100; only one of COMP 80/105 may count; at most one course numbered 55 or 155; COMP 53/153/154 excluded; at most 3 SHU of independent study/research and 4 SHU of thesis.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "EN 54",
+      "title": "Engineering Leadership",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "HASS-04",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement. Note: EN 54 also satisfies the HASS ethics-and-social-context course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "COMP 160",
+      "title": "Algorithms",
+      "credits": 4,
+      "prereq": [
+       "COMP 15",
+       "COMP61-MATH61-65"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS-ELECTIVE-02",
+      "title": "Computer Science concentration elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer Science elective'. Same concentration-elective rules as CS-ELECTIVE-01.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "HASS-05",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "HASS-06",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, or arts elective'. Counts toward the 24-SHU HASS requirement.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "COMP 97",
+      "title": "Senior Capstone Project I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "COMP 105",
+      "title": "Programming Languages",
+      "credits": 4,
+      "prereq": [
+       "COMP 15"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CS-ELECTIVE-03",
+      "title": "Computer Science concentration elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer science elective'. Same concentration-elective rules as CS-ELECTIVE-01.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "STATS-ES56-EE24",
+      "title": "Probability & Statistics: Engineering Science 56 or Electrical Engineering 24 (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Probability & Statistics (Engineering Science 56 or Electrical Engineering 24)'. Requirements text: statistics course chosen from Mathematics 166, Engineering Science 56, Electrical Engineering 24 or 104, Biomedical Engineering 141, Biology 132, and Physics 153.",
+      "options": [
+       "ES 56",
+       "EE 24"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "HASS-07",
+      "title": "Humanities, social sciences, or arts elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Humanities, social sciences, and arts elective'. Counts toward the 24-SHU HASS requirement.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "COMP 98",
+      "title": "Senior Capstone Project II",
+      "credits": 3,
+      "prereq": [
+       "COMP 97"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "COMP 170",
+      "title": "Theory of Computation",
+      "credits": 3,
+      "prereq": [
+       "COMP61-MATH61-65"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CS-ELECTIVE-04",
+      "title": "Computer Science concentration elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer science elective'. Same concentration-elective rules as CS-ELECTIVE-01.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CS-ELECTIVE-05",
+      "title": "Computer Science concentration elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Computer science elective'. Same concentration-elective rules as CS-ELECTIVE-01.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "BREADTH-01",
+      "title": "Breadth elective: humanities, social sciences, arts, or engineering (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program: 'Breadth elective (humanities, social sciences, arts, or engineering)'. Breadth requirement is 6 SHU: EN 54 plus this elective; may include Computer Science 99 (Internship in Computer Science).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "81bad899aad37e97a4a39986ffd9ff07042bd5be80c15963f7a8a6e786885e2f",
+  "last_verified": "2026-10-02"
+ }
+}

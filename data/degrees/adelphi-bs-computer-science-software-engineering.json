@@ -1,0 +1,614 @@
+{
+ "institution": {
+  "name": "Adelphi University",
+  "city": "Garden City, NY",
+  "kind": "university",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "adelphi-bs-computer-science-software-engineering",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 122,
+  "source_url": "https://www.adelphi.edu/program/undergraduate/computer-science/software-engineering-degree-map/",
+  "notes": "Source: official Adelphi University Software Engineering track degree map (term-by-term sample schedule), https://www.adelphi.edu/program/undergraduate/computer-science/software-engineering-degree-map/ . Credential: Computer Science B.S., Software Engineering track, Garden City NY. Catalog year: 2025-2026 (current bulletin per catalog.adelphi.edu preview_program.php?catoid=28&poid=13837, 'Spring 2026 Update', verified by prior worker 2026-09-30; the degree-map page itself does not print a catalog year). Transcription: page text extracted 2026-09-30; the 8 semester tables transcribed in published order (tables are separated on the page by co-curricular advisory blocks). Course codes normalized from map form 'CSC 0145-171' to catalog form 'CSC 171' ('MTH 0144-141'->'MTH 141', 'FYS 0952-110'->'FYS 110', 'ENG 0122-107'->'ENG 107'). Site typos preserved verbatim: 'Survey of Programminag Languages', 'Database Mangement System' (CSC 263). CREDIT DISCREPANCY (reported, not adjusted): the map's term tables sum to 122 credits (16+17+16+15+15+15+13+15) while the page headline and the catalog state 120 credits to graduate; the site's own disclaimer says the map is a sample schedule and actual sequences may differ. total_credits is set to the transcribed plan sum (122) so the pipeline sum check passes; graduation requirement remains 120. Major-credit check: transcribed major/track courses sum to exactly 61, matching the page's published '61 credits for the major'. external_prereqs: ['MTH 140'] per the map's own footnote on MTH 141 (requires C or higher in MTH 140 Precalculus, OR a passed departmental exam, OR department approval). No other prereqs are published on the map; terms show the recommended sequence only, so remaining prereq fields are empty rather than inferred. Rows labeled 'BS Computer Science/General Education Requirement' (CSC 171, CSC 156, MTH 142) are categorized major; the map notes such courses may count toward both. Minimum GPA 2.0 per map page.",
+  "external_prereqs": [
+   "MTH 140"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 171",
+      "title": "Introduction to Computer Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MTH 141",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MTH 140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FYS 110",
+      "title": "First Year Seminar",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CSC 190",
+      "title": "Computer Science Orientation Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "ENG 107",
+      "title": "Art & Craft of Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 156",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MTH 142",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CSC 175",
+      "title": "Intermediate Computer Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "HUM-EL1",
+      "title": "Humanities Elective (1 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Humanities course (1 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MTH 225",
+      "title": "Statistics & Data Analysis",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 270",
+      "title": "Survey of Programminag Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 263",
+      "title": "Database Mangement System",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSC 273",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CSC 275",
+      "title": "Operating System Practicum",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ART-EL1",
+      "title": "Arts Elective (1 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Arts course (1 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "COMM-W",
+      "title": "Communication Elective: Written (select 1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects one approved written-communication course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 272",
+      "title": "Principles Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 344",
+      "title": "Algorithms & Complexity",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "INFO-LIT",
+      "title": "Information Literacy Elective (select 1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects one approved information-literacy course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ART-EL2",
+      "title": "Arts Elective (2 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Arts course (2 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "HUM-EL2",
+      "title": "Humanities Elective (2 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Humanities course (2 of 2 required).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "GLO-EL1",
+      "title": "Global Awareness/Civic Engagement Elective (1 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved global-awareness/civic-engagement course (1 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 370",
+      "title": "Computer Architecture & Organization",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSC-TRACK-EL",
+      "title": "Track Elective: select 1 of CSC 233, CSC 338, or CSC 350",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 1 course from CSC 233, CSC 338, or CSC 350 (track requirement).",
+      "options": [
+       "CSC 233",
+       "CSC 338",
+       "CSC 350"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SOC-EL1",
+      "title": "Social Science Elective (1 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Social Science course (1 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "COMM-O",
+      "title": "Communication Elective: Oral (select 1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects one approved oral-communication course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 450",
+      "title": "Computer Networks",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "GLO-EL2",
+      "title": "Global Awareness/Civic Engagement Elective (2 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved global-awareness/civic-engagement course (2 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "SOC-EL2",
+      "title": "Social Science Elective (2 of 2)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any approved Social Science course (2 of 2 required).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GEN-EL1",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GEN-EL2",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 440",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSC 481",
+      "title": "Computer Science Seminar I",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "GEN-EL3",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "GEN-EL4",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GEN-EL5",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSC 482",
+      "title": "Computer Science Seminar II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSC-INT-EL",
+      "title": "Internship or 200+ Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select an internship or a 200+ level Computer Science elective (CSC 470 or another 200+ CS elective; track requirement).",
+      "options": [
+       "CSC 470",
+       "CSC 2XX+"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSC 453",
+      "title": "Operating System",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": "Track requirement.",
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "GEN-EL6",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GEN-EL7",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student selects any course as a general elective.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "33f8514fb3bca01840a8c0d1dda8386eafe1a63f41d8ce030f90fc197ef6fe54",
+  "last_verified": "2026-10-02"
+ }
+}

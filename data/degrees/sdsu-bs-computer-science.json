@@ -1,0 +1,636 @@
+{
+ "institution": {
+  "city": "Brookings, SD",
+  "kind": "public4yr",
+  "name": "South Dakota State University",
+  "state": "SD"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [
+   "CSC 314",
+   "MATH 103",
+   "MATH 253"
+  ],
+  "id": "sdsu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official SDSU 'Computer Science (BS) 2025-2026 Sample Plan' PDF (2 pages, archived May 2025 on sdstate.edu), linked from the catalog's Academic Advising Guide Sheet for the B.S. in Computer Science. Program requirement list cross-checked against the catalog program page (catalog.sdstate.edu, 'Program: Computer Science (B.S.)', Bachelor of Science, 120 credits: System Gen Ed 33 + Major Requirements 71 + Supporting Coursework 16). Transcription: pdftotext of the official PDF, transcribed verbatim term-by-term; course titles and prerequisites taken exactly as printed in the plan's Course Title / Prerequisites-Comments columns. Semester totals re-summed from plan data and match the printed totals (15/16/16/16/15/15/15/12 = 120). 'p. Placement' prerequisite details (ENGL 101, MATH 123) recorded here rather than in external_prereqs. 'p. MATH 103 or higher' for STAT 281 is represented as plain code MATH 103 in external_prereqs. Caveats: (1) The 2025-2026 plan is the newest official CS sample plan found; no 2026-2027 CS plan exists in SDSU's file archive (2026-2027 plans exist only for other programs). The current catalog page lists some updated numbering (MATH 270 Computational Linear Algebra vs the plan's MATH 250 Introduction to Linear Algebra and Proof; CSC 464/465 as 2 credits each vs 3 in the plan; titles CSC 484 'Database Management Systems' vs plan's 'Database Management'; STAT 281 'Introduction to Statistics' vs plan's 'Statistical Methods I'; CSC 303 'Ethical and Security Issues in Computing' vs plan's '...in Computer Science'). Transcribed the plan as printed since it is the genuine official term-by-term sequence. (2) The plan places CSC 303 and CSC 317 in Fall Year 2 while its own Semester column marks both as spring-offered (S); transcribed placement as printed. (3) The plan is a sample: 'Students are not limited to this plan; it is meant to be used as a guide for planning purposes in consultation with your advisor.' (4) CSC and SE courses require a grade of C or better; graduating seniors take the Major Field Test in Computer Science. (5) SE 305/306 are marked fall/spring only in the plan's Semester column (F/S respectively), consistent with their placement.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 150",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 201",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CSC 150"
+      ],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Modern Computing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Composition I (SGR #1)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 123",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus I (SGR #5)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any SGR #4 Arts & Humanities course (3 credits).",
+      "code": "SGR4-XXXX-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Arts & Humanities (SGR #4) - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 150"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 277",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Technical Writing in Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "INFO 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Data Ethics (SGR #3)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 125",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 123"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any SGR #2 oral communication course (3 credits).",
+      "code": "SGR2-XXXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Oral Communications (SGR #2) - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 300",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 250"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Ethical and Security Issues in Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 317",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 314"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 123"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Introduction to Linear Algebra and Proof",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "First course of an SGR #6 natural science sequence (4 credits).",
+      "code": "SGR6-XXXX-1",
+      "credits": 4,
+      "options": [
+       "BIOL 151",
+       "CHEM 112",
+       "PHYS 111",
+       "PHYS 207"
+      ],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Natural Science Sequence (SGR #6) - student choice, first course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 346",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Object Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 461",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Programming Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 484",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Database Management",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 316",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 250"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Second course of the same SGR #6 natural science sequence (4 credits).",
+      "code": "SGR6-XXXX-2",
+      "credits": 4,
+      "options": [
+       "BIOL 153",
+       "CHEM 114",
+       "PHYS 113",
+       "PHYS 209"
+      ],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Natural Science Sequence (SGR #6) - student choice, second course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-01",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-02",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SE 305",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Foundations of Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any SGR #3 Social Sciences course (3 credits); must fulfill the civics requirement.",
+      "code": "SGR3-XXXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Social Sciences (SGR #3) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 281",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 103"
+      ],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Statistical Methods I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 474",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Networks",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-03",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-04",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 374",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 150",
+       "MATH 125"
+      ],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Scientific Computation I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SE 306",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "SE 305"
+      ],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Software Project Management and Testing",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 445",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 250",
+       "MATH 253",
+       "MATH 316"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Introduction to Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 456",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 300",
+       "CSC 314"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 464",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 484",
+       "SE 306"
+      ],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Senior Design I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-05",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-06",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 465",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 464"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Design II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-07",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any CSC 3/4XX or SE 3/4XX technical elective; requires grade of C or better.",
+      "code": "CSCELEC-08",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CSC Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any SGR #4 Arts & Humanities course (3 credits).",
+      "code": "SGR4-XXXX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Arts & Humanities (SGR #4) - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.sdstate.edu/sites/default/files/file-archive/2025-05/Computer%20Science%20(BS)%202025-2026%20Sample%20Plan.pdf",
+  "total_credits": 120,
+  "content_hash": "652253949e2b647984a6dc711be0d69c613df4dd5ad6627f749119f9c71201ae",
+  "last_verified": "2026-10-02"
+ }
+}

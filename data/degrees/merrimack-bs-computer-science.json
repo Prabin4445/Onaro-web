@@ -1,0 +1,512 @@
+{
+ "institution": {
+  "name": "Merrimack College",
+  "city": "North Andover, MA",
+  "kind": "private4yr",
+  "state": "MA"
+ },
+ "plan": {
+  "id": "merrimack-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 128,
+  "source_url": "https://www.merrimack.edu/wp-content/uploads/computer-science-bs-calculus-start-curriculum-map.pdf",
+  "notes": "Source: official Merrimack College sample four-year schedule 'Computer Science, BS (Starting with Calculus)' curriculum map (https://www.merrimack.edu/wp-content/uploads/computer-science-bs-calculus-start-curriculum-map.pdf), linked from the official Merrimack CS major page as the 'Curriculum Guide' sample four-year schedule. The PDF is undated; degree minimums (124 credits to graduate, 64-credit major: 8 core + 8 elective-area courses, minimum 2.0 GPA) cross-verified against the current catalog's 'Program: Computer Science, B.S.' page (https://catalog.merrimack.edu/preview_program.php?catoid=20&poid=3065&returnto=536). Catalog year recorded as 2025-2026 (current catalog at time of collection); the map is the current official sequence. Transcription method: manual transcription of the published term-by-term map; course titles, credit values, and prerequisites verified against current catalog.merrimack.edu course descriptions. CREDIT TOTAL NOTE: the catalog publishes a 124-credit degree minimum, but the official map schedules 16 credits x 8 terms = 128 credits; total_credits uses the sequence's own published total (128) per precedent. Prerequisite grade details (from catalog course descriptions): CSC 2820 needs B- or better in CSC 1610 (alternatives: CSC 1611 or P in CSC 1010); CSC 2710 needs B- or better in CSC 2820 plus C or better in MTH 1314 (MTH 1217 corequisite satisfied in Year 1); CSC 2620 needs B- or better in CSC 2820; CSC 3810 needs B- or better in CSC 2820 or (P in CSC 1011 and MTH 1314); CSC 4910 needs CSC 2620 plus instructor permission and is offered every fall; MTH 1217 needs C- or better in MTH 1016 (Precalculus) or exemption via the Mathematics Placement Assessment; MTH 1314 needs a placement score of 28+ or MTH 1016. The map's 'FIC Core Course' label (Year 2 Fall) is a PDF typo for 'FC Core Course'. A separate official 'Starting with Algebra' map exists for students placing below calculus (https://www.merrimack.edu/wp-content/uploads/computer-science-bs-algebra-start-curriculum-map.pdf); this plan follows the standard calculus-start sequence. Experiential learning (internship/co-op/research/competition/study abroad registered with the O'Brien Center) is a catalog graduation requirement for CS majors; modeled as a 0-credit required milestone.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 1610",
+      "title": "Problem Solving with Java",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MTH 1314",
+      "title": "Discrete Mathematics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FC1",
+      "title": "FC Core Course (FC Core Requirement)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Foundations and Connections (FC) Core requirement slot: counts toward the six required FC Core courses (FYS, CUS, HUM, RTS, SOSC, STEM). Students must also earn an FC Core Minor or Certificate. Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "FYS 1947",
+      "title": "First Year Seminar",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 2820",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CSC 1610"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MTH 1217",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "FC2",
+      "title": "FC Core Course (FC Core Requirement)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Foundations and Connections (FC) Core requirement slot: counts toward the six required FC Core courses (FYS, CUS, HUM, RTS, SOSC, STEM). Students must also earn an FC Core Minor or Certificate. Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "FC3",
+      "title": "FC Core Course (FC Core Elective)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "FC Core elective slot: counts toward the FC Core Minor or Certificate requirement (all students must earn an FC Core Minor or Certificate). Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 2710",
+      "title": "Analysis of Algorithms",
+      "credits": 4,
+      "prereq": [
+       "CSC 2820",
+       "MTH 1314"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "ME1",
+      "title": "Major Elective 1 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "FC4",
+      "title": "FC Core Course (FC Core Requirement)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Foundations and Connections (FC) Core requirement slot: counts toward the six required FC Core courses (FYS, CUS, HUM, RTS, SOSC, STEM). Students must also earn an FC Core Minor or Certificate. Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "FC5",
+      "title": "FC Core Course (FC Core Elective)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "FC Core elective slot: counts toward the FC Core Minor or Certificate requirement (all students must earn an FC Core Minor or Certificate). Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 2620",
+      "title": "Object Oriented Design",
+      "credits": 4,
+      "prereq": [
+       "CSC 2820"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 3810",
+      "title": "Databases",
+      "credits": 4,
+      "prereq": [
+       "CSC 2820",
+       "MTH 1314"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "FC6",
+      "title": "FC Core Course (FC Core Requirement)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Foundations and Connections (FC) Core requirement slot: counts toward the six required FC Core courses (FYS, CUS, HUM, RTS, SOSC, STEM). Students must also earn an FC Core Minor or Certificate. Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "OE1",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "ME2",
+      "title": "Major Elective 2 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "ME3",
+      "title": "Major Elective 3 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "FC7",
+      "title": "FC Core Course (FC Core Elective)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "FC Core elective slot: counts toward the FC Core Minor or Certificate requirement (all students must earn an FC Core Minor or Certificate). Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "OE2",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "ME4",
+      "title": "Major Elective 4 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "ME5",
+      "title": "Major Elective 5 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "OE3",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "OE4",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 4910",
+      "title": "Computer Science Capstone",
+      "credits": 4,
+      "prereq": [
+       "CSC 2620"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "ME6",
+      "title": "Major Elective 6 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ME7",
+      "title": "Major Elective 7 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "OE5",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "ME8",
+      "title": "Major Elective 8 (CS elective-area course)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires eight CS elective-area courses: a minimum of two courses in each elective area plus two additional electives from any area. One of the two extra electives may be replaced with CSC 4815 Directed Study, Special Projects. Choose with advisor.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "FC8",
+      "title": "FC Core Course (FC Core Elective)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "FC Core elective slot: counts toward the FC Core Minor or Certificate requirement (all students must earn an FC Core Minor or Certificate). Choose with advisor.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "OE6",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "OE7",
+      "title": "Open Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Open elective: any 4-credit course the student is eligible to take. Choose with advisor.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "EXP-REQ",
+      "title": "Experiential Learning Requirement (internship, co-op, research, competition, or study abroad - register with the O'Brien Center for Career Development)",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "879714540d544d9e33f64799d8fb0e18002107ccd936fa6f8b66d141e2922c4b",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,312 @@
+{
+ "institution": {
+  "city": "Mesa",
+  "kind": "community",
+  "name": "Mesa Community College",
+  "state": "AZ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "id": "mesa-community-college-aas-nursing",
+  "major": "Nursing",
+  "notes": "AAS in Nursing 'Course Sequence by Term' as published in the official 2026-2027 MCC pathway map (Academic Plan Code 3812, effective Fall 2025), retrieved 2026-10-01. Sequenced sum = 75 (9+11+13+15+13+14) = the catalog's Total Credits Required upper bound (62-75). Credit ranges on the map (0-4, 3-5, 0-3) are seeded at the maximum printed value and documented in choice_note; the catalog's own disclaimer notes sequence totals may differ from MCCCD curriculum documentation. Admission into the core nursing curriculum requires completing the general education/introductory courses (BIO156 or BIO181, BIO201, CHM130/CHM130AA, ENG101 or ENG107, MAT140 or MAT141 or MAT142) with a 2.0 GPA; the Oral Communication general education requirement is waived. Students must earn a grade of C or better in all program courses.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints 'BIO156 or BIO181' (0-4 credits; 0 credits possible via one year of high school biology); BIO156 seeded as first-listed option. Maximum printed credit value used.",
+      "code": "BIO156",
+      "core_area": "NSI",
+      "credits": 4,
+      "options": [
+       {
+        "code": "BIO156",
+        "credits": 4,
+        "title": "Introductory Biology for Allied Health"
+       },
+       {
+        "code": "BIO181",
+        "credits": 4,
+        "title": "General Biology (Majors) I"
+       }
+      ],
+      "prereq": [],
+      "title": "Introductory Biology for Allied Health",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints 'MAT140 or MAT141 or MAT142' (3-5 credits; or satisfactory completion of higher level math course); MAT140 seeded as first-listed option. Maximum printed credit value used.",
+      "code": "MAT140",
+      "core_area": "MA",
+      "credits": 5,
+      "options": [
+       {
+        "code": "MAT140",
+        "title": "College Mathematics"
+       },
+       {
+        "code": "MAT141",
+        "title": "College Mathematics"
+       },
+       {
+        "code": "MAT142",
+        "title": "College Mathematics"
+       }
+      ],
+      "prereq": [],
+      "title": "College Mathematics",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO201",
+      "core_area": "NSI",
+      "credits": 4,
+      "prereq": [],
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints '(CHM130 and CHM130LL) or (CHM130AA)' (0-4 credits; 0 credits possible via one year of high school chemistry or satisfactory completion of higher level college-level chemistry course and corresponding lab); CHM130 seeded as first-listed option. Maximum printed credit value used.",
+      "code": "CHM130",
+      "core_area": "SQ",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CHM130",
+        "title": "Fundamental Chemistry"
+       },
+       {
+        "code": "CHM130AA",
+        "title": "Fundamental Chemistry with Lab"
+       }
+      ],
+      "prereq": [],
+      "title": "Fundamental Chemistry",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints 'ENG101 or ENG107'; ENG101 seeded as first-listed option.",
+      "code": "ENG101",
+      "core_area": "FYC",
+      "credits": 3,
+      "options": [
+       {
+        "code": "ENG101",
+        "credits": 3,
+        "title": "First-Year Composition"
+       },
+       {
+        "code": "ENG107",
+        "credits": 3,
+        "title": "First-Year Composition for ESL"
+       }
+      ],
+      "prereq": [],
+      "title": "First-Year Composition",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO202",
+      "core_area": "NSI",
+      "credits": 4,
+      "prereq": [],
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR152",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [],
+      "title": "Nursing Theory and Science I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog prints 0-3 credits ('Or equivalent by assessment'); maximum printed credit value used.",
+      "code": "CRE101",
+      "core_area": "L",
+      "credits": 3,
+      "prereq": [],
+      "title": "College Critical Reading and Critical Thinking",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR172",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [],
+      "title": "Nursing Theory and Science II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY101",
+      "core_area": "SB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Psychology",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO205",
+      "core_area": "NSI",
+      "credits": 4,
+      "prereq": [],
+      "title": "Microbiology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR252",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [],
+      "title": "Nursing Theory and Science III",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints 'ENG102 or ENG108'; ENG102 seeded as first-listed option.",
+      "code": "ENG102",
+      "core_area": "FYC",
+      "credits": 3,
+      "options": [
+       {
+        "code": "ENG102",
+        "credits": 3,
+        "title": "First-Year Composition"
+       },
+       {
+        "code": "ENG108",
+        "credits": 3,
+        "title": "First-Year Composition for ESL"
+       }
+      ],
+      "prereq": [],
+      "title": "First-Year Composition",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR283",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [],
+      "title": "Nursing Theory and Science IV",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog prints 'HU' (Humanities, Fine Arts & Design) area placeholder, 2 credits; seeded as choice slot.",
+      "code": "HU",
+      "core_area": "HU",
+      "credits": 2,
+      "prereq": [],
+      "title": "Humanities, Fine Arts & Design Elective",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 6",
+    "n": 6
+   }
+  ],
+  "source_url": "https://mesacc.edu/programs/map/nursing-aas",
+  "total_credits": 75,
+  "content_hash": "1fd35c6c667502f8224ba906711de195d6f6317fa65787b1fc297a6ade136287",
+  "last_verified": "2026-10-02"
+ }
+}

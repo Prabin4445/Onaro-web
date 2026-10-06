@@ -1,0 +1,282 @@
+/* ============ STYLE CLOSET (2026-10-01) ============
+   Digital closet + stylist. World-class pass: staggered entrances, tactile
+   press states, sheen CTAs, animated rings, clay icon treatment.
+   2026-10-01 smoothness pass: every animation is transform/opacity-only
+   (compositor-friendly 60fps), spring physics on entrances, momentum scrolling,
+   skeleton shimmer while async content loads, THE RUNWAY 3D card stack.
+   Accent = var(--volt) (auto-rose for female profiles via body.theme-rose).
+   No purple anywhere. */
+:root{--sty-spring:cubic-bezier(.2,.9,.25,1.18);--sty-snap:cubic-bezier(.3,1.35,.4,1)}
+/* ---------- Daily entry card (glass) ---------- */
+.sty-card{overflow:hidden;position:relative;
+  background:linear-gradient(150deg,rgba(255,255,255,.06),transparent 42%),var(--surface);
+  border:1px solid color-mix(in srgb,var(--volt) 22%,var(--line));
+  box-shadow:0 14px 34px rgba(var(--volt-rgb),.1),var(--shadow),inset 0 1px 0 rgba(255,255,255,.12)}
+.sty-card::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% -20%,rgba(var(--volt-rgb),.14),transparent 60%)}
+.sty-cardhead{display:flex;align-items:center;gap:10px;margin-bottom:10px;position:relative}
+.sty-cardhead .sty-clay.lg{animation:styFloat 3.8s ease-in-out infinite}
+@keyframes styFloat{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-7px) rotate(4deg)}}
+.sty-cardtitle{font-weight:800;font-size:17px}
+.sty-cardsub{font-size:12px;color:var(--faint)}
+.sty-streak{font-weight:800;font-size:14px;background:rgba(var(--volt-rgb),.14);
+  border:1px solid rgba(var(--volt-rgb),.35);border-radius:999px;padding:4px 10px;white-space:nowrap}
+.sty-counts{display:flex;gap:8px;margin-bottom:10px;position:relative}
+.sty-counts.sm{margin-bottom:8px}
+.sty-count{flex:1;text-align:center;background:rgba(127,127,127,.08);
+  border:1px solid var(--line);border-radius:14px;padding:8px 4px}
+.sty-count b{display:block;font-size:18px}
+.sty-count span{font-size:11px;color:var(--faint)}
+.sty-today{display:flex;align-items:center;gap:8px;width:100%;text-align:left;
+  background:rgba(var(--volt-rgb),.1);border:1px dashed rgba(var(--volt-rgb),.45);
+  border-radius:14px;padding:10px;margin-bottom:10px;cursor:pointer;color:inherit;
+  animation:styIn .5s var(--sty-spring) both}
+.sty-today:active{transform:scale(.98)}
+.sty-today-l{font-size:12px;font-weight:700;color:var(--volt);white-space:nowrap}
+.sty-today-items{display:flex;gap:6px;flex:1;overflow:hidden;font-size:12px}
+.sty-today-it{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sty-today-go{color:var(--volt);font-weight:800}
+.sty-quick{display:flex;gap:8px;position:relative}
+.sty-qbtn{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;
+  padding:12px 6px;border-radius:16px;border:1px solid var(--line);
+  background:rgba(127,127,127,.07);color:inherit;font-size:12px;font-weight:700;
+  cursor:pointer;transition:transform .12s ease,box-shadow .12s ease}
+.sty-qbtn:active{transform:scale(.94)}
+.sty-qbtn.primary{background:linear-gradient(135deg,rgba(var(--volt-rgb),.22),rgba(var(--volt-rgb),.08));
+  border-color:rgba(var(--volt-rgb),.5);color:var(--volt)}
+.sty-qbtn .sty-clay{width:34px;height:34px}
+/* clay icon treatment */
+.sty-clay{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;flex:none}
+.sty-clay.lg{width:46px;height:46px}
+.sty-clay .ico{display:inline-flex;width:100%;height:100%}
+.sty-clay .ico img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 5px rgba(0,0,0,.28))}
+.chip .ico{display:inline-flex;width:22px;height:22px;vertical-align:-5px;margin-right:4px}
+.chip .ico img{width:100%;height:100%;object-fit:contain}
+.sty-tile .ico{display:inline-flex;width:70%;height:70%}
+.sty-tile .ico img{width:100%;height:100%;object-fit:contain}
+.sty-ico-fb{font-size:24px}
+/* clay icon sizing in text contexts */
+.styroot .ico img{width:100%;height:100%;object-fit:contain}
+.kv .ico{display:inline-flex;width:20px;height:20px;vertical-align:-4px;margin-right:2px}
+.sty-laugrp .ico{display:inline-flex;width:22px;height:22px;vertical-align:-4px}
+.sty-today-it .ico{display:inline-flex;width:16px;height:16px;vertical-align:-3px}
+/* ============ THE RUNWAY: 3D outfit card stack ============
+   All motion is transform/opacity-only (compositor-friendly 60fps).
+   .rw-anim enables the spring transition; during drags it is removed so the
+   stack tracks the finger 1:1 with zero lag. */
+.sty-rw-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.sty-rw-head .sub{font-size:12px;color:var(--faint);margin-top:2px}
+.sty-rw-stage{position:relative;height:440px;perspective:1300px;overflow:hidden;touch-action:pan-y;cursor:grab}
+.sty-rw-stage.rw-drag{cursor:grabbing;touch-action:none}
+.rw-card{position:absolute;left:50%;top:6px;width:min(78%,300px);height:calc(100% - 12px);
+  display:flex;flex-direction:column;gap:10px;padding:16px;border-radius:24px;
+  background:linear-gradient(165deg,rgba(255,255,255,.09),transparent 45%),var(--surface);
+  border:1px solid color-mix(in srgb,var(--volt) 26%,var(--line));
+  box-shadow:0 24px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.14);
+  will-change:transform,opacity;backface-visibility:hidden}
+.sty-rw-stage.rw-anim .rw-card{transition:transform .52s var(--sty-spring),opacity .4s ease}
+.rw-card.rw-deal{animation:rwDeal .6s var(--sty-snap) both}
+@keyframes rwDeal{from{translate:0 90px}to{translate:0 0}}
+.rw-num{font-size:11px;font-weight:800;color:var(--faint);text-transform:uppercase;letter-spacing:.1em;text-align:center}
+.rw-items{display:flex;gap:8px;overflow-x:auto;padding:4px 2px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.rw-it{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:74px;scroll-snap-align:start}
+.rw-it .sty-tile{width:64px;height:64px}
+.rw-it .sty-tile .ico{width:70%;height:70%}
+.rw-it span{font-size:11px;color:var(--faint);text-align:center;max-width:78px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rw-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.rw-chips .chip{font-size:11px;padding:7px 10px}
+.rw-wear{margin-top:auto;width:100%}
+.sty-rw-nav{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:12px}
+.rw-dots{display:flex;gap:8px}
+.rw-dots i{width:8px;height:8px;border-radius:50%;background:rgba(127,127,127,.35);cursor:pointer;
+  transition:transform .2s ease,background .2s ease}
+.rw-dots i.on{background:var(--volt);transform:scale(1.35)}
+/* runway skeleton: shimmer placeholders while the stack is scored/dealt */
+.rw-skel-row{display:flex;gap:12px;height:100%;padding:6px 0}
+.rw-skel{flex:1;border-radius:24px;border:1px solid var(--line);background:rgba(127,127,127,.06);
+  padding:16px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.rw-skel-tiles{display:flex;gap:8px;justify-content:center;margin-top:24px}
+.rw-skel-tiles i{width:64px;height:64px;border-radius:16px;background:rgba(127,127,127,.14)}
+.rw-skel-bar{height:14px;border-radius:8px;background:rgba(127,127,127,.14)}
+.rw-skel-bar.short{width:60%;margin:0 auto}
+.rw-skel::after{content:"";position:absolute;inset:0;transform:translateX(-101%);
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.22),transparent);
+  animation:styShimmer 1.15s ease-in-out infinite;pointer-events:none}
+/* ---------- overlay ---------- */
+/* PERF 2026-10-02: entrance is the fastest in the app now — .18s slide, no
+   overshoot spring, no stagger cascade. PraBin's word: "quickest". */
+.styroot .chatpanel{animation:styPanelIn .18s cubic-bezier(.2,.7,.3,1)}
+@keyframes styPanelIn{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+.sty-topbar{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.sty-topbar-t{flex:1;font-weight:800;font-size:16px;text-align:center}
+.sty-body{padding:14px 14px 90px;overflow-y:auto;max-height:calc(100dvh - 130px);
+  -webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;scrollbar-width:thin}
+/* ---------- hero ---------- */
+.sty-hero{text-align:center;padding:8px 0 4px;animation:styIn .22s ease-out both}
+/* springy view entrance (added by paint() only on real view changes) — kept
+   snappy: .2s ease-out, no overshoot, so sub-views never feel stuck mid-slide */
+.sty-view-in{animation:styViewIn .2s ease-out}
+@keyframes styViewIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sty-greet{font-size:13px;color:var(--faint)}
+.sty-ask{font-size:22px;font-weight:800;margin:2px 0 12px}
+.sty-cta{position:relative;overflow:hidden;border:none;cursor:pointer;color:#0d100a;
+  font-weight:800;font-size:16px;border-radius:18px;padding:15px 18px;
+  background:linear-gradient(135deg,var(--volt),rgba(var(--volt-rgb),.75));
+  box-shadow:0 6px 18px rgba(var(--volt-rgb),.35);transition:transform .12s ease}
+.sty-cta:active{transform:scale(.96)}
+.sty-cta::after{content:"";position:absolute;top:0;left:0;width:45%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);
+  transform:translateX(-160%) skewX(-20deg);animation:stySheen 3.2s ease-in-out infinite}
+@keyframes stySheen{0%,55%{transform:translateX(-160%) skewX(-20deg)}90%,100%{transform:translateX(320%) skewX(-20deg)}}
+.sty-cta2{margin-top:8px;width:100%;padding:12px;border-radius:16px;border:1px solid var(--line);
+  background:rgba(127,127,127,.07);color:inherit;font-weight:700;cursor:pointer;transition:transform .12s ease}
+.sty-cta2:active{transform:scale(.97)}
+.sty-wxline{margin-top:10px;font-size:13px;color:var(--faint)}
+/* ---------- menu grid ---------- */
+/* PERF 2026-10-02: no entrance stagger — all cards arrive together in .22s.
+   The old 8-card cascade (.42s of delays + .45s spring) is what made the
+   overlay feel "stuck" on iPhone. */
+.sty-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sty-menu{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;
+  padding:14px;border-radius:18px;border:1px solid var(--line);cursor:pointer;color:inherit;
+  background:linear-gradient(160deg,rgba(127,127,127,.1),rgba(127,127,127,.03));
+  transition:transform .12s ease,border-color .12s ease;animation:styIn .22s ease-out both}
+.sty-menu:active{transform:scale(.95);border-color:rgba(var(--volt-rgb),.5)}
+.sty-menu-em{font-size:26px}
+.sty-menu .sty-clay{width:40px;height:40px}
+.sty-menu-t{font-weight:800;font-size:14px}
+.sty-menu-s{font-size:11px;color:var(--faint)}
+@keyframes styIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* ---------- chips / toolbar ---------- */
+.sty-toolbar{display:flex;gap:8px;margin-bottom:10px}
+.sty-chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.sty-chips .chip{transition:transform .1s ease}
+.sty-chips .chip:active{transform:scale(.92)}
+.chip.static{cursor:default}
+.sty-bigchip{font-size:14px;padding:12px 16px;border-radius:16px}
+.sty-cta .sty-clay{width:26px;height:26px;vertical-align:-6px}
+.sty-cats{max-height:118px;overflow-y:auto;padding-bottom:4px}
+.sty-colorchip i{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:6px;
+  border:1px solid rgba(0,0,0,.25);vertical-align:-2px}
+/* ---------- item tiles ---------- */
+.sty-items{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.sty-item{position:relative;display:flex;flex-direction:column;gap:4px;padding:8px;
+  border-radius:16px;border:1px solid var(--line);background:rgba(127,127,127,.06);
+  cursor:pointer;color:inherit;transition:transform .12s ease;animation:styIn .22s ease-out both}
+.sty-item:active{transform:scale(.94)}
+/* PERF 2026-10-02: grid tiles arrive together — no per-tile cascade delay. */
+.sty-tile{aspect-ratio:1;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,rgba(127,127,127,.16),rgba(127,127,127,.04));overflow:hidden;position:relative}
+.sty-tile.big{width:86px;height:86px;flex:none}
+.sty-tile.sm{width:44px;height:44px;flex:none}
+.sty-tile-em{font-size:40px}
+/* skeleton shimmer: transform-only sweep while the async photo lookup resolves */
+.sty-tile.sty-ph-loading::after{content:"";position:absolute;inset:0;transform:translateX(-101%);
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);
+  animation:styShimmer 1.15s ease-in-out infinite;pointer-events:none}
+@keyframes styShimmer{to{transform:translateX(101%)}}
+/* ink ripple + tap pop: press feedback, transform/opacity only */
+.styroot .btn-dark,.sty-qbtn.primary{position:relative;overflow:hidden}
+.sty-ink{position:absolute;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(255,255,255,.55),transparent 70%);
+  transform:scale(0);opacity:.85;animation:styInk .6s ease-out forwards}
+@keyframes styInk{to{transform:scale(1);opacity:0}}
+.sty-chips .chip.sty-tap{animation:styTap .26s var(--sty-snap)}
+@keyframes styTap{0%{transform:scale(1)}40%{transform:scale(.88)}100%{transform:scale(1)}}
+.sty-tile.sm .sty-tile-em{font-size:24px}
+.sty-tile.has-photo{background:#111}
+.sty-tile img{width:100%;height:100%;object-fit:cover}
+.sty-item-n{font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sty-item-m{font-size:10px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sty-cdots i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:3px;border:1px solid rgba(0,0,0,.25)}
+.sty-fav{position:absolute;top:6px;right:8px;font-size:14px}
+.sty-st{position:absolute;bottom:6px;right:8px;font-size:14px}
+/* ---------- sheets ---------- */
+.sty-sheet-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.sty-sheet-photo{width:86px;height:86px;border-radius:16px;overflow:hidden;flex:none;
+  background:linear-gradient(150deg,rgba(127,127,127,.16),rgba(127,127,127,.04));
+  display:flex;align-items:center;justify-content:center}
+.sty-sheet-photo img{width:100%;height:100%;object-fit:cover}
+.sty-photo-pick{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+/* ---------- look cards ---------- */
+.sty-look{display:flex;gap:10px;overflow-x:auto;padding:6px 2px;margin:10px 0;
+  -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;overscroll-behavior-x:contain}
+.sty-look.big{flex-wrap:wrap;overflow:visible;justify-content:center}
+.sty-look-it{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:86px;max-width:110px;scroll-snap-align:start}
+.sty-look.big .sty-look-it{min-width:100px}
+.sty-look-it .sty-tile{width:86px;height:86px}
+.sty-look.big .sty-look-it .sty-tile{width:100px;height:100px}
+.sty-look-it span{font-size:11px;text-align:center;color:var(--faint)}
+/* ---------- builder slots ---------- */
+.sty-slot{display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  padding:10px;border-radius:14px;border:1px dashed var(--line);margin-bottom:8px;
+  background:transparent;color:inherit;cursor:pointer;transition:transform .1s ease}
+.sty-slot:active{transform:scale(.98)}
+.sty-slot.filled{border-style:solid;border-color:rgba(var(--volt-rgb),.4)}
+.sty-slot .grow{flex:1}
+#styNever .item .grow{flex:1;min-width:0}
+/* ---------- calendar ---------- */
+.sty-cal-head,.sty-cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.sty-cal-head span{text-align:center;font-size:11px;color:var(--faint);padding:4px 0}
+.sty-cal-d{aspect-ratio:1;border-radius:12px;border:1px solid var(--line);background:rgba(127,127,127,.05);
+  color:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-size:13px;transition:transform .1s ease;animation:styIn .3s var(--sty-spring) both}
+.sty-cal-d:active{transform:scale(.9)}
+.sty-cal-d.empty{visibility:hidden}
+.sty-cal-d.today{border-color:var(--volt);box-shadow:0 0 0 1px var(--volt)}
+.sty-cal-d.has{background:rgba(var(--volt-rgb),.12)}
+.sty-cal-o{font-size:14px}
+/* ---------- insights ---------- */
+.sty-ins-top{display:flex;gap:16px;align-items:center;margin:10px 0 16px}
+.sty-ring{position:relative;width:104px;height:104px;flex:none}
+.sty-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.sty-ring circle{fill:none;stroke:rgba(127,127,127,.18);stroke-width:9}
+.sty-ring circle.fg{stroke:var(--volt);stroke-linecap:round;
+  stroke-dasharray:var(--c);stroke-dashoffset:var(--c);animation:styRing 1.4s cubic-bezier(.2,.8,.2,1) .2s forwards}
+@keyframes styRing{to{stroke-dashoffset:calc(var(--c) * (1 - var(--p) / 100))}}
+.sty-ring b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:20px;padding-bottom:14px}
+.sty-ring span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--faint);padding-top:26px}
+.sty-ins-facts{display:flex;flex-direction:column;gap:8px}
+.sty-ins-facts div b{display:block;font-size:15px}
+.sty-ins-facts div span{font-size:11px;color:var(--faint)}
+.sty-ins-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.sty-ins-cat{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 4px;
+  border:1px solid var(--line);border-radius:14px;background:rgba(127,127,127,.05);animation:styIn .4s var(--sty-spring) both}
+.sty-ins-cat .sty-clay{width:34px;height:34px}
+.sty-ins-cat b{font-size:15px}
+.sty-ins-cat span{font-size:10px;color:var(--faint)}
+/* ---------- celebration particles ---------- */
+.sty-pop{position:fixed;z-index:9999;font-size:20px;pointer-events:none;animation:styPop 1.1s ease-out forwards}
+@keyframes styPop{0%{opacity:1;transform:translateY(0) scale(.6)}100%{opacity:0;transform:translateY(-90px) scale(1.3) rotate(30deg)}}
+/* ---------- 320px ---------- */
+@media (max-width:340px){
+  .sty-items{grid-template-columns:repeat(2,1fr)}
+  .sty-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .sty-ins-cats{grid-template-columns:repeat(3,1fr)}
+  .sty-quick{flex-wrap:wrap}
+  .sty-qbtn{min-width:30%}
+}
+/* ---------- laundry ---------- */
+.sty-laugrp{margin:16px 0 8px;font-size:14px}
+.sty-lrow{animation:styIn .4s var(--sty-spring) both}
+.sty-lrow .sty-tile .ico{width:60%;height:60%}
+/* ---------- coming-later deferrals ---------- */
+.sty-soon{display:flex;align-items:center;gap:10px;padding:9px 2px;border-bottom:1px solid var(--line);font-size:13px}
+.sty-soon:last-of-type{border-bottom:none}
+.sty-soon span:first-child{font-size:20px}
+.sty-soon span:nth-child(2){flex:1;font-weight:600}
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  .sty-menu,.sty-item,.sty-cal-d,.sty-hero,.sty-today,.sty-ins-cat,.sty-view-in,.rw-card.rw-deal,.sty-cardhead .sty-clay.lg{animation:none}
+  .sty-cta::after{display:none}
+  .sty-tile.sty-ph-loading::after,.rw-skel::after{display:none}
+  .sty-rw-stage.rw-anim .rw-card{transition:none}
+  .sty-ring circle.fg{animation:none;stroke-dashoffset:calc(var(--c) * (1 - var(--p) / 100))}
+  .sty-pop{display:none}
+}
+
+/* Clay icon chips — occasions / weather / vibes / feels (2026-10-01) */
+.sty-icchip{display:inline-flex;align-items:center;gap:8px}
+.sty-icchip .sty-clay{width:24px;height:24px}
+.sty-clay.xs{width:18px;height:18px;vertical-align:-3px}
+.sty-ask .sty-clay.xs{margin-right:2px}

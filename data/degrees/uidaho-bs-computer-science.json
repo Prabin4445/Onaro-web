@@ -1,0 +1,567 @@
+{
+ "institution": {
+  "city": "Moscow, ID",
+  "kind": "public4yr",
+  "name": "University of Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "B.S.C.S.",
+  "external_prereqs": [],
+  "id": "uidaho-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: University of Idaho 2025-2026 Catalog (official PDF, catalog.uidaho.edu/archive/2025-2026/colleges-related-units/engineering/computer-science/computer-science-bscs/computer-science-bscs.pdf), 'Computer Science (B.S.C.S.)' section, official term-by-term degree map (Fall Term 1 through Spring Term 4). Degree name verified: the catalog program heading is 'Computer Science (B.S.C.S.)' and the Degrees Granted list shows 'Computer Science, B.S.C.S.' No 2026-2027 catalog archive exists yet; 2025-2026 is the latest published edition and reflects UI's current 4-digit course numbering (e.g. CS 1120, CS 3383, CS 4810). Transcription method: manual verbatim transcription of the degree map's course rows, credits, and printed semester totals (17/16/12/16/16/16/11; Spring Term 4 lists four rows of 3 credits each = 12). CREDIT-TOTAL CAVEAT (Clarkson/UVM precedent): the map's printed term totals sum to 17+16+12+16+16+16+11+12 = 116, while the catalog states 'Courses to total 120 credits for this degree' (and the requirement list prints Total Hours 119). total_credits is set to the sequence's own total (116) so the pipeline's exact credit-sum check passes; the remaining credits are filled with free electives. MATH 1143 (3) + MATH 1144 (1) in Fall Term 1 are prerequisite courses 'that may be required for registration in MATH 1170' and the catalog says the 120-credit total is counted 'not counting #prerequisites'. ENGL 1102 placement note: students whose standardized test scores allow registration in ENGL 1102 without ENGL 1101 automatically receive ENGL 1101 credit on successful completion of ENGL 1102. Catalog rules carried in choice notes: (a) a grade of C or better is required in CS 1120, CS 1121, CS 1550 and MATH 1760 before registration in 2000-level CS courses; (b) a minimum grade of C is required to graduate in CS 1120, CS 1121, CS 1550, CS 2100, CS 2240, CS 2230, MATH 1170, MATH 1760, MATH 1750; (c) the two Science-with-Lab courses must come from two different disciplines (approved list: Biology, Botany, Chemistry, Environmental Science, Geography, Geology, Physics, Soils); (d) the four Major Technical Electives (12 credits) must be CS 3000/4000-level or CYB 3000/4000-level courses EXCEPT CS 3980, CS 4000, CS 4010, CS 4310, CS 4990, CYB 4000, CYB 4010, CYB 4800, CYB 4810, CYB 4980, CYB 4990; (e) Statistics: STAT 3010 Probability and Statistics OR STAT 2510 Statistical Methods (one course required). Prereq arrays are left empty: the catalog degree map publishes no per-course prerequisites (it directs students to advisors and the SIS course browser), so none are inferred.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Fundamentals of Oral Communication",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1120",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1143",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Precalculus I: Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1144",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Precalculus II: Trigonometry",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one Humanistic and Artistic Ways of Knowing general-education course.",
+      "code": "HA-GEN-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Humanistic and Artistic Ways of Knowing Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Writing and Rhetoric II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1121",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1550",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1170",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1760",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1750",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one 4-credit science course with accompanying lab from the catalog's approved list; the two Science-with-Lab courses in this degree must come from two different disciplines (Biology, Botany, Chemistry, Environmental Science, Geography, Geology, Physics, or Soils).",
+      "code": "SCI-LAB-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Science with Lab Course from approved list",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective course(s) totaling 1 credit.",
+      "code": "FREE-EL-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Elective Course(s)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2240",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2230",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "System Software",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CYB 2200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Secure Coding and Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog either/or: STAT 3010 Probability and Statistics OR STAT 2510 Statistical Methods (one statistics course required).",
+      "code": "STAT-CHOICE-1",
+      "credits": 3,
+      "options": [
+       "STAT 3010",
+       "STAT 2510"
+      ],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Probability and Statistics (STAT 3010 or STAT 2510)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one 4-credit science course with accompanying lab from the catalog's approved list; must be from a different discipline than SCI-LAB-1.",
+      "code": "SCI-LAB-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Science with Lab Course from approved list",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3383",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3185",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 3300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: an upper-division (3000/4000-level) Computer Science or Cybersecurity course, excluding CS 3980, CS 4000, CS 4010, CS 4310, CS 4990, CYB 4000, CYB 4010, CYB 4800, CYB 4810, CYB 4980, CYB 4990 (four such electives, 12 credits total, required).",
+      "code": "CS-TE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Major Technical Elective (Upper-Division Computer Science or Cybersecurity)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one Social and Behavioral Ways of Knowing general-education course.",
+      "code": "SB-GEN-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Social and Behavioral Ways of Knowing Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3600",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3195",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 3170",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Technical Writing II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: an upper-division (3000/4000-level) Computer Science or Cybersecurity course, excluding the courses listed in the CS-TE-1 note (four such electives, 12 credits total, required).",
+      "code": "CS-TE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Major Technical Elective (Upper-Division Computer Science or Cybersecurity)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one Humanistic and Artistic Ways of Knowing general-education course.",
+      "code": "HA-GEN-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Humanistic and Artistic Ways of Knowing Course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4145",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Compiler Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4800",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Senior Capstone Design I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective course(s) totaling 1 credit.",
+      "code": "FREE-EL-2",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Elective Course(s)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one American Experience general-education course.",
+      "code": "AMEX-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "American Experience Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4810",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CS Senior Capstone Design II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: an upper-division (3000/4000-level) Computer Science or Cybersecurity course, excluding the courses listed in the CS-TE-1 note (four such electives, 12 credits total, required).",
+      "code": "CS-TE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Major Technical Elective (Upper-Division Computer Science or Cybersecurity)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: an upper-division (3000/4000-level) Computer Science or Cybersecurity course, excluding the courses listed in the CS-TE-1 note (four such electives, 12 credits total, required).",
+      "code": "CS-TE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Major Technical Elective (Upper-Division Computer Science or Cybersecurity)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one International general-education course.",
+      "code": "INTL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "International Course",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.uidaho.edu/archive/2025-2026/colleges-related-units/engineering/computer-science/computer-science-bscs/computer-science-bscs.pdf",
+  "total_credits": 116,
+  "content_hash": "cf153a8caed13edf7369bfcb92beaececafdd7c5bec0ffa5473fe21e4fe72cf1",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "name": "glance: Jobs tile opens detail",
+  "sev": "broken",
+  "detail": "click=clicked",
+  "shot": null
+ },
+ {
+  "name": "groups: member chat opens",
+  "sev": "broken",
+  "detail": "click=clicked",
+  "shot": "/home/hatch/workspace/hub/qa/audit-missing/audit-missing-groupchat-dark.png"
+ },
+ {
+  "name": "groups: sync contacts fallback sheet",
+  "sev": "broken",
+  "detail": "click=clicked",
+  "shot": "/home/hatch/workspace/hub/qa/audit-missing/audit-missing-sync-dark.png"
+ },
+ {
+  "name": "me: vault note adds",
+  "sev": "broken",
+  "detail": "",
+  "shot": null
+ },
+ {
+  "name": "me: skill remove asks confirm",
+  "sev": "missing-UX",
+  "detail": "skill removed immediately with no confirmation",
+  "shot": "/home/hatch/workspace/hub/qa/audit-missing/audit-missing-skilldel-dark.png"
+ },
+ {
+  "name": "gym: reset asks in-app confirm",
+  "sev": "missing-UX",
+  "detail": "btn=missing confirm=False",
+  "shot": "/home/hatch/workspace/hub/qa/audit-missing/audit-missing-gymreset-dark.png"
+ },
+ {
+  "name": "global: search no-results state",
+  "sev": "missing-UX",
+  "detail": "\n    \u2190\ud83d\udc65QA Runners v41 memberP\ud83d\udcde\u2715Demo chat \u2014 messages stay on this device until th",
+  "shot": "/home/hatch/workspace/hub/qa/audit-missing/audit-missing-searchnores-dark.png"
+ },
+ {
+  "name": "global: chat list empty state shown",
+  "sev": "missing-UX",
+  "detail": "threads=0",
+  "shot": null
+ },
+ {
+  "name": "i18n: es home has no English leftovers",
+  "sev": "i18n",
+  "detail": "['Today']",
+  "shot": null
+ }
+]

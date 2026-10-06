@@ -1,0 +1,621 @@
+{
+ "institution": {
+  "name": "Quinnipiac University",
+  "city": "Hamden, CT",
+  "kind": "private4yr",
+  "state": "CT"
+ },
+ "plan": {
+  "id": "quinnipiac-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 123,
+  "source_url": "https://catalog.qu.edu/engineering/computing/computer-science-bs/",
+  "notes": "Source: https://catalog.qu.edu/engineering/computing/computer-science-bs/ (Quinnipiac 2026-2027 Academic Catalog; verified catalog year from catalog.qu.edu home page '2026-27 Catalog'). Transcription: manual transcription of the official 'Plan of Study Grid' term-by-term, cross-checked against the degree requirements table and the Department of Computing course descriptions (catalog.qu.edu/engineering/computing/computing.pdf) for titles and prerequisites. Lab components folded into parent course codes (e.g. 'CSC 110' = CSC 110 & 110L, 4 cr; 'SER 120' = SER 120 & 120L, 4 cr). CREDIT DISCREPANCY (honest): the degree requires a MINIMUM of 120 credits, but the official plan-of-study grid prints term totals 16/14/16/16/16/15/15/15 summing to 123; total_credits uses the sequence's OWN published total (123) per the Clarkson/UVM/GCSU precedent. Blank (unlabeled) grid rows are modeled as student-choice slots; they satisfy CSC electives (9 cr), additional MA courses (6 cr: MA 150/153/154/285/301/305/318/321/370/378), UC Personal Inquiry, and open coursework per catalog requirements. Catalog note: minimum grade C- required for all CS course prerequisites. ENR 395 requires junior status in the major; ENR 410 requires senior status in the major (status conditions, not course prereqs, so not modeled in prereq arrays).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 110",
+      "title": "Programming and Problem Solving (+ CSC 110L Lab)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MA 141",
+      "title": "Calculus of a Single Variable",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FYS 101",
+      "title": "First-Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "EN 101",
+      "title": "Introduction to College-Level Reading And Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "EL-1",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 111",
+      "title": "Data Structures and Abstraction (+ CSC 111L Lab)",
+      "credits": 4,
+      "prereq": [
+       "CSC 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "SER 120",
+      "title": "Object-Oriented Design and Programming (+ SER 120L Lab)",
+      "credits": 4,
+      "prereq": [
+       "CSC 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MA 205",
+      "title": "Introduction to Discrete Mathematics (CSC 205)",
+      "credits": 3,
+      "prereq": [
+       "CSC 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "EN 102",
+      "title": "Reading, Writing, & Research In College and Beyond",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "SER 225",
+      "title": "Introduction to Software Development",
+      "credits": 3,
+      "prereq": [
+       "CSC 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 215",
+      "title": "Algorithm Design and Analysis",
+      "credits": 3,
+      "prereq": [
+       "CSC 111",
+       "MA 205"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "EL-2",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "EL-3",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SCI-SEQ-1",
+      "title": "UC Science Course I (first of 2-course sequence)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice per plan footnote 1: PHY 121, CHE 110 & CHE 110L, BIO 101 & BIO 101L, or BIO 150 & BIO 150L.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 210",
+      "title": "Digital Logic and Design",
+      "credits": 3,
+      "prereq": [
+       "CSC 111",
+       "MA 205"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 340",
+      "title": "Networking and Distributed Processing",
+      "credits": 3,
+      "prereq": [
+       "CSC 215",
+       "SER 225"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MA 229",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "EL-4",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SCI-SEQ-2",
+      "title": "UC Science Course II (continuation of sequence)",
+      "credits": 4,
+      "prereq": [
+       "SCI-SEQ-1"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice per plan footnote 2; must continue the Year-2-Fall selection: BIO 102 & BIO 102L, BIO 151 & BIO 151L, CHE 111 & CHE 111L, or PHY 122.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSC 310",
+      "title": "Operating Systems and Systems Programming",
+      "credits": 3,
+      "prereq": [
+       "CSC 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 325",
+      "title": "Database Systems",
+      "credits": 3,
+      "prereq": [
+       "CSC 215",
+       "SER 225"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "EL-5",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "EL-6",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "EL-7",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "ENR 395",
+      "title": "Professional Development Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 315",
+      "title": "Theory of Computation",
+      "credits": 3,
+      "prereq": [
+       "CSC 215"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "EL-8",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "EL-9",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "EL-10",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "EL-11",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 491",
+      "title": "Senior Project I",
+      "credits": 3,
+      "prereq": [
+       "CSC 215",
+       "SER 225"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "EL-12",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "EL-13",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "EL-14",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "EL-15",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSC 492",
+      "title": "Senior Project II",
+      "credits": 3,
+      "prereq": [
+       "CSC 491"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "EL-16",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ENR 410",
+      "title": "School of Computing and Engineering Integrative Capstone",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "EL-17",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "EL-18",
+      "title": "UC / elective (catalog requirements)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Blank row in the official plan-of-study grid (not assigned by Quinnipiac); satisfies CSC electives (9 cr), additional MA courses (6 cr), UC Personal Inquiry, or open elective coursework per the 2026-2027 catalog requirements.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "83f3db56fa3e83cb35f31c96d0acc3c88a5b87360e268d1cf1bf9d2c0ae0760c",
+  "last_verified": "2026-10-02"
+ }
+}

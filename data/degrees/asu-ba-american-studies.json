@@ -1,0 +1,833 @@
+{
+ "institution": {
+  "name": "Arizona State University",
+  "city": "Tempe, AZ",
+  "state": "AZ",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "asu-ba-american-studies",
+  "degree": "BA",
+  "major": "American Studies",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://degrees.asu.edu/major-map/ASU00/LAAMRSTBA/null/ALL/2024",
+  "notes": "Source: official ASU Degree Search major map for 'American Studies, BA' (program code LAAMRSTBA), 2024-2025 catalog year: https://degrees.asu.edu/major-map/ASU00/LAAMRSTBA/null/ALL/2024 . Transcription method: automated parse of every term row (courses, credit hours, minimum grades) from the official major map page on 2026-09-30, spot-checked against the rendered page. Term names use ASU's own 'Term N' numbering. General Studies designations (HUAD, SOBE, SCIT, AMIT, GCSI, CIVI, SUST) are modeled as choice:true student-choice slots; OR-options are choice slots naming the alternatives. Per-course prerequisites are NOT listed on the ASU major map, so prereq arrays are intentionally empty. Campus: Tempe. Major map track groups (U.S. Arts, Media, and Culture Courses, Politics, Policies, and Social Movements Courses, Diversity, Inequality, and Social Justice Courses) are elective choice lists transcribed as choice slots with the group's courses as options.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Term 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "APA 210",
+      "title": "Introduction to Ethnic Studies in the U.S. (SOBE OR C)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 101",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "LIA 101",
+      "title": "Student Success in The College of Liberal Arts and Sciences",
+      "credits": 1
+     },
+     {
+      "slot_id": "s1-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "MAT 142",
+      "title": "College Mathematics (MATH OR MA)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV.'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "SECONDLA",
+      "title": "Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV. -- student choice",
+      "credits": 4
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Term 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "AMS 201",
+      "title": "Introduction to American Studies (L & C)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 102",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV.'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "SECONDLA-2",
+      "title": "Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV. -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s2-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Quantitative Reasoning (QTRS)'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "QTRS 1XX",
+      "title": "Quantitative Reasoning (QTRS) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Term 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV.'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "SECONDLA-3",
+      "title": "Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV. -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s3-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 1XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s3-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Humanities, Arts and Design (HUAD)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "HUAD 1XX",
+      "title": "Humanities, Arts and Design (HUAD) -- student choice",
+      "credits": 6
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Term 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Politics, Policies, and Social Movements Course': choose an approved course from: AFR 302: History of Black Women in America (SB & H); AFR 330: Survey of African American Politics (SB & H); AFR 365: Unruly Voices: Black Women and Cultural Narratives (HUAD OR HU & C); AFR 465: Harlem Renaissance: a Cultural History: 1877-1945; AIS 280: American Indian Sovereignty and the Courts (CIVI OR H & C); AIS 285: Federal Indian Policy (CIVI OR H & C); AMS 276: U.S. Women's Movements (CIVI OR H & C); AMS 330: American Lives (HUAD OR HU & C); AMS 412: Studies in American Politics and Law; AMS 417: Religious Traditions of the American Southwest; AMS 428: Peoples and Cultures of the American West, to 1848 (SB & H); JUS 235: Disability, Justice and Advocacy (CIVI OR C); ...; minimum grade C",
+      "options": [
+       {
+        "code": "AFR 302",
+        "title": "History of Black Women in America (SB & H)"
+       },
+       {
+        "code": "AFR 330",
+        "title": "Survey of African American Politics (SB & H)"
+       },
+       {
+        "code": "AFR 365",
+        "title": "Unruly Voices: Black Women and Cultural Narratives (HUAD OR HU & C)"
+       },
+       {
+        "code": "AFR 465",
+        "title": "Harlem Renaissance: a Cultural History: 1877-1945"
+       },
+       {
+        "code": "AIS 280",
+        "title": "American Indian Sovereignty and the Courts (CIVI OR H & C)"
+       },
+       {
+        "code": "AIS 285",
+        "title": "Federal Indian Policy (CIVI OR H & C)"
+       },
+       {
+        "code": "AMS 276",
+        "title": "U.S. Women's Movements (CIVI OR H & C)"
+       },
+       {
+        "code": "AMS 330",
+        "title": "American Lives (HUAD OR HU & C)"
+       },
+       {
+        "code": "AMS 412",
+        "title": "Studies in American Politics and Law"
+       },
+       {
+        "code": "AMS 417",
+        "title": "Religious Traditions of the American Southwest"
+       },
+       {
+        "code": "AMS 428",
+        "title": "Peoples and Cultures of the American West, to 1848 (SB & H)"
+       },
+       {
+        "code": "JUS 235",
+        "title": "Disability, Justice and Advocacy (CIVI OR C)"
+       },
+       {
+        "code": "SST 294",
+        "title": "Introduction to LGBTQ History and Culture"
+       },
+       {
+        "code": "TCL 340",
+        "title": "Chicana/o and Latina/o Politics and Policy (L & C)"
+       },
+       {
+        "code": "TCL 377",
+        "title": "Arizona, Immigration, Latinos and Politics"
+       },
+       {
+        "code": "WST 377",
+        "title": "History of American Feminist Thought (HUAD OR H & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AFR 302",
+      "title": "Politics, Policies, and Social Movements Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV.'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "SECONDLA-4",
+      "title": "Second Language: Requirement satisfied through the following: OR * Completion of a language course at the intermediate level (202 or equivalent), including American Sign Language IV. -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s4-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 2XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s4-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 5
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Term 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: AFR 428: Critical Race Theory OR AMS 380: Race, Gender, and Class (SOBE OR SB & C) OR WST 380: Race, Gender, and Class (SOBE OR SB & C) OR APA 352: Borders, Prisons and Suburbs (SB & C) OR TCL 303: Transborder Theory (SB); minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "AFR 428",
+      "title": "Critical Race Theory (choose AFR 428 / AMS 380 / WST 380 / APA 352 / TCL 303) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Sustainability (SUST)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SUST 1XX",
+      "title": "Sustainability (SUST) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 3 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-2",
+      "title": "Complete 3 courses: -- student choice",
+      "credits": 9
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Term 6",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "SST 301",
+      "title": "Mixed Research Methods for American Communities",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division U.S. Arts, Media, and Culture Course': choose an approved course from: AFR 351: Gender and Hip Hop; AMS 326: Popular Culture; AMS 336: The American Southwest in Literature and Film (HUAD OR HU & C); AMS 353: African American Literature: Beginnings through the Harlem Renaissance ((L or HU) & C); AMS 420: Theatre in America (HU); APA 310: Asian Pacific American Arts and Cultures (HU & C); APA 315: Asian Pacific American Literature (HU & C); APA 340: Asian Pacific Americans and Media (HU & C); APA 345: Asian Pacific Americans and Film (HU & C & H); TCL 363: Transborder Mexican and Chicano/a Literature of Southwest North America (HUAD OR (L or HU) & C); TCL 471: Latinos In Hollywood (HUAD OR HU & C); minimum grade C",
+      "options": [
+       {
+        "code": "AFR 351",
+        "title": "Gender and Hip Hop"
+       },
+       {
+        "code": "AMS 326",
+        "title": "Popular Culture"
+       },
+       {
+        "code": "AMS 336",
+        "title": "The American Southwest in Literature and Film (HUAD OR HU & C)"
+       },
+       {
+        "code": "AMS 353",
+        "title": "African American Literature: Beginnings through the Harlem Renaissance ((L or HU) & C)"
+       },
+       {
+        "code": "AMS 420",
+        "title": "Theatre in America (HU)"
+       },
+       {
+        "code": "APA 310",
+        "title": "Asian Pacific American Arts and Cultures (HU & C)"
+       },
+       {
+        "code": "APA 315",
+        "title": "Asian Pacific American Literature (HU & C)"
+       },
+       {
+        "code": "APA 340",
+        "title": "Asian Pacific Americans and Media (HU & C)"
+       },
+       {
+        "code": "APA 345",
+        "title": "Asian Pacific Americans and Film (HU & C & H)"
+       },
+       {
+        "code": "TCL 363",
+        "title": "Transborder Mexican and Chicano/a Literature of Southwest North America (HUAD OR (L or HU) & C)"
+       },
+       {
+        "code": "TCL 471",
+        "title": "Latinos In Hollywood (HUAD OR HU & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AFR 351",
+      "title": "Upper Division U.S. Arts, Media, and Culture Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Diversity, Inequality, and Social Justice Course': choose an approved course from: AFR 317: Genes, Race and Society (SOBE OR SB & H & C); AFR 460: Race, Gender, and Media (SOBE OR C); AIS 180: Introduction to American Indian Studies (SOBE OR C); AIS 360: Issues in Urban Indian Country (C); AMS 332: Studies in Race and Ethnicity; AMS 334: Class in America (SB); AMS 449: Hate Speech, Manifestos, and Radical Writings (CIVI OR SB & C); AMS 450: Latina/os, Schooling and Social Inequality (C); APA 330: Asian Pacific American Genders and Sexualities (SOBE OR (L or SB) & C); APA 350: Inequality and Diversity in Education (CIVI OR L & C); APA 360: Asian Pacific American Experience; APA 450: Asian Pacific American Contemporary Issues (SB & C); ...; minimum grade C",
+      "options": [
+       {
+        "code": "AFR 317",
+        "title": "Genes, Race and Society (SOBE OR SB & H & C)"
+       },
+       {
+        "code": "AFR 460",
+        "title": "Race, Gender, and Media (SOBE OR C)"
+       },
+       {
+        "code": "AIS 180",
+        "title": "Introduction to American Indian Studies (SOBE OR C)"
+       },
+       {
+        "code": "AIS 360",
+        "title": "Issues in Urban Indian Country (C)"
+       },
+       {
+        "code": "AMS 332",
+        "title": "Studies in Race and Ethnicity"
+       },
+       {
+        "code": "AMS 334",
+        "title": "Class in America (SB)"
+       },
+       {
+        "code": "AMS 449",
+        "title": "Hate Speech, Manifestos, and Radical Writings (CIVI OR SB & C)"
+       },
+       {
+        "code": "AMS 450",
+        "title": "Latina/os, Schooling and Social Inequality (C)"
+       },
+       {
+        "code": "APA 330",
+        "title": "Asian Pacific American Genders and Sexualities (SOBE OR (L or SB) & C)"
+       },
+       {
+        "code": "APA 350",
+        "title": "Inequality and Diversity in Education (CIVI OR L & C)"
+       },
+       {
+        "code": "APA 360",
+        "title": "Asian Pacific American Experience"
+       },
+       {
+        "code": "APA 450",
+        "title": "Asian Pacific American Contemporary Issues (SB & C)"
+       },
+       {
+        "code": "JUS 437",
+        "title": "The Social Construction of Disability and Justice"
+       },
+       {
+        "code": "WST 413",
+        "title": "Queer Studies (HU & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AFR 317",
+      "title": "Diversity, Inequality, and Social Justice Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Global Communities, Societies and Individuals (GCSI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "GCSI 1XX",
+      "title": "Global Communities, Societies and Individuals (GCSI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Upper Division Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "UPPERDIV",
+      "title": "Upper Division Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Term 7",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: AMS 498: Pro-Seminar (L) OR SST 484: Internship OR SST 493: Honors Thesis OR SST 499: Individualized Instruction; minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "AMS 498",
+      "title": "Pro-Seminar (L) (choose AMS 498 / SST 484 / SST 493 / SST 499) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Politics, Policies, and Social Movements Course': choose an approved course from: AFR 302: History of Black Women in America (SB & H); AFR 330: Survey of African American Politics (SB & H); AFR 365: Unruly Voices: Black Women and Cultural Narratives (HUAD OR HU & C); AFR 465: Harlem Renaissance: a Cultural History: 1877-1945; AIS 280: American Indian Sovereignty and the Courts (CIVI OR H & C); AIS 285: Federal Indian Policy (CIVI OR H & C); AMS 276: U.S. Women's Movements (CIVI OR H & C); AMS 330: American Lives (HUAD OR HU & C); AMS 412: Studies in American Politics and Law; AMS 417: Religious Traditions of the American Southwest; AMS 428: Peoples and Cultures of the American West, to 1848 (SB & H); JUS 235: Disability, Justice and Advocacy (CIVI OR C); ...; minimum grade C",
+      "options": [
+       {
+        "code": "AFR 302",
+        "title": "History of Black Women in America (SB & H)"
+       },
+       {
+        "code": "AFR 330",
+        "title": "Survey of African American Politics (SB & H)"
+       },
+       {
+        "code": "AFR 365",
+        "title": "Unruly Voices: Black Women and Cultural Narratives (HUAD OR HU & C)"
+       },
+       {
+        "code": "AFR 465",
+        "title": "Harlem Renaissance: a Cultural History: 1877-1945"
+       },
+       {
+        "code": "AIS 280",
+        "title": "American Indian Sovereignty and the Courts (CIVI OR H & C)"
+       },
+       {
+        "code": "AIS 285",
+        "title": "Federal Indian Policy (CIVI OR H & C)"
+       },
+       {
+        "code": "AMS 276",
+        "title": "U.S. Women's Movements (CIVI OR H & C)"
+       },
+       {
+        "code": "AMS 330",
+        "title": "American Lives (HUAD OR HU & C)"
+       },
+       {
+        "code": "AMS 412",
+        "title": "Studies in American Politics and Law"
+       },
+       {
+        "code": "AMS 417",
+        "title": "Religious Traditions of the American Southwest"
+       },
+       {
+        "code": "AMS 428",
+        "title": "Peoples and Cultures of the American West, to 1848 (SB & H)"
+       },
+       {
+        "code": "JUS 235",
+        "title": "Disability, Justice and Advocacy (CIVI OR C)"
+       },
+       {
+        "code": "SST 294",
+        "title": "Introduction to LGBTQ History and Culture"
+       },
+       {
+        "code": "TCL 340",
+        "title": "Chicana/o and Latina/o Politics and Policy (L & C)"
+       },
+       {
+        "code": "TCL 377",
+        "title": "Arizona, Immigration, Latinos and Politics"
+       },
+       {
+        "code": "WST 377",
+        "title": "History of American Feminist Thought (HUAD OR H & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AFR 330",
+      "title": "Upper Division Politics, Policies, and Social Movements Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'American Institutions (AMIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "AMIT 1XX",
+      "title": "American Institutions (AMIT) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-3",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Term 8",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Governance and Civic Engagement (CIVI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "CIVI 1XX",
+      "title": "Governance and Civic Engagement (CIVI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s8-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Diversity, Inequality, and Social Justice Course': choose an approved course from: AFR 317: Genes, Race and Society (SOBE OR SB & H & C); AFR 460: Race, Gender, and Media (SOBE OR C); AIS 180: Introduction to American Indian Studies (SOBE OR C); AIS 360: Issues in Urban Indian Country (C); AMS 332: Studies in Race and Ethnicity; AMS 334: Class in America (SB); AMS 449: Hate Speech, Manifestos, and Radical Writings (CIVI OR SB & C); AMS 450: Latina/os, Schooling and Social Inequality (C); APA 330: Asian Pacific American Genders and Sexualities (SOBE OR (L or SB) & C); APA 350: Inequality and Diversity in Education (CIVI OR L & C); APA 360: Asian Pacific American Experience; APA 450: Asian Pacific American Contemporary Issues (SB & C); ...; minimum grade C",
+      "options": [
+       {
+        "code": "AFR 317",
+        "title": "Genes, Race and Society (SOBE OR SB & H & C)"
+       },
+       {
+        "code": "AFR 460",
+        "title": "Race, Gender, and Media (SOBE OR C)"
+       },
+       {
+        "code": "AIS 180",
+        "title": "Introduction to American Indian Studies (SOBE OR C)"
+       },
+       {
+        "code": "AIS 360",
+        "title": "Issues in Urban Indian Country (C)"
+       },
+       {
+        "code": "AMS 332",
+        "title": "Studies in Race and Ethnicity"
+       },
+       {
+        "code": "AMS 334",
+        "title": "Class in America (SB)"
+       },
+       {
+        "code": "AMS 449",
+        "title": "Hate Speech, Manifestos, and Radical Writings (CIVI OR SB & C)"
+       },
+       {
+        "code": "AMS 450",
+        "title": "Latina/os, Schooling and Social Inequality (C)"
+       },
+       {
+        "code": "APA 330",
+        "title": "Asian Pacific American Genders and Sexualities (SOBE OR (L or SB) & C)"
+       },
+       {
+        "code": "APA 350",
+        "title": "Inequality and Diversity in Education (CIVI OR L & C)"
+       },
+       {
+        "code": "APA 360",
+        "title": "Asian Pacific American Experience"
+       },
+       {
+        "code": "APA 450",
+        "title": "Asian Pacific American Contemporary Issues (SB & C)"
+       },
+       {
+        "code": "JUS 437",
+        "title": "The Social Construction of Disability and Justice"
+       },
+       {
+        "code": "WST 413",
+        "title": "Queer Studies (HU & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AFR 460",
+      "title": "Upper Division Diversity, Inequality, and Social Justice Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s8-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division U.S. Arts, Media, and Culture Course': choose an approved course from: AFR 351: Gender and Hip Hop; AMS 326: Popular Culture; AMS 336: The American Southwest in Literature and Film (HUAD OR HU & C); AMS 353: African American Literature: Beginnings through the Harlem Renaissance ((L or HU) & C); AMS 420: Theatre in America (HU); APA 310: Asian Pacific American Arts and Cultures (HU & C); APA 315: Asian Pacific American Literature (HU & C); APA 340: Asian Pacific Americans and Media (HU & C); APA 345: Asian Pacific Americans and Film (HU & C & H); TCL 363: Transborder Mexican and Chicano/a Literature of Southwest North America (HUAD OR (L or HU) & C); TCL 471: Latinos In Hollywood (HUAD OR HU & C); minimum grade C",
+      "options": [
+       {
+        "code": "AFR 351",
+        "title": "Gender and Hip Hop"
+       },
+       {
+        "code": "AMS 326",
+        "title": "Popular Culture"
+       },
+       {
+        "code": "AMS 336",
+        "title": "The American Southwest in Literature and Film (HUAD OR HU & C)"
+       },
+       {
+        "code": "AMS 353",
+        "title": "African American Literature: Beginnings through the Harlem Renaissance ((L or HU) & C)"
+       },
+       {
+        "code": "AMS 420",
+        "title": "Theatre in America (HU)"
+       },
+       {
+        "code": "APA 310",
+        "title": "Asian Pacific American Arts and Cultures (HU & C)"
+       },
+       {
+        "code": "APA 315",
+        "title": "Asian Pacific American Literature (HU & C)"
+       },
+       {
+        "code": "APA 340",
+        "title": "Asian Pacific Americans and Media (HU & C)"
+       },
+       {
+        "code": "APA 345",
+        "title": "Asian Pacific Americans and Film (HU & C & H)"
+       },
+       {
+        "code": "TCL 363",
+        "title": "Transborder Mexican and Chicano/a Literature of Southwest North America (HUAD OR (L or HU) & C)"
+       },
+       {
+        "code": "TCL 471",
+        "title": "Latinos In Hollywood (HUAD OR HU & C)"
+       }
+      ],
+      "category": "elective",
+      "code": "AMS 326",
+      "title": "Upper Division U.S. Arts, Media, and Culture Course -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s8-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-4",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "28705e47ccce5eabf1383b999e7f44a35ea65075f73ca90f54976d7b1e43de07",
+  "last_verified": "2026-09-30"
+ }
+}

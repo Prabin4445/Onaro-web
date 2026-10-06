@@ -1,0 +1,836 @@
+{
+ "institution": {
+  "name": "St. John's University",
+  "city": "Queens, NY",
+  "kind": "private4yr",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "stjohns-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2027",
+  "total_credits": 120,
+  "source_url": "https://www.stjohns.edu/academics/programs/computer-science-bachelor-science",
+  "notes": "Source: official St. John's University program page for the BS in Computer Science (https://www.stjohns.edu/academics/programs/computer-science-bachelor-science), transcribed 2026-09-30. Degree name verified: Bachelor of Science in Computer Science (BS, not BA), 120 credits, housed in the Lesley H. and William L. Collins College of Professional Studies; program is ABET-accredited by the Computing Accreditation Commission. Catalog year 2025-2027: the current Undergraduate Bulletin cycle per https://www.stjohns.edu/academics/academic-resources-and-programs/bulletins/undergraduate-bulletin (the program page itself carries no bulletin-year stamp). Transcription method: the page's 'Computer Science Recommended Course Sequence' (Semesters 1-8) was transcribed term by term; course titles and credits come from the same page's Major Area (36 cr), Additional Area (9 cr), Common Core (39 cr), Other Liberal Arts (32-34 cr: ECO 3 + Math 15 + advanced Math 6 + Science 8-10), and Free Electives (6 cr) tables. No courses, credits, or prerequisites were invented. Caveats: (1) The sequence prints 15 credits per term (8 x 15 = 120). The catalog's lab-science options carry 4 credits (BIO 1000/2000 with lab) or 5 credits (PHY 1610/1620 or CHE 1210/1220 with lab+recitation), so a student taking those sciences carries 16-17 credits in Semesters 3-4; the science slots are framed at 3 credits here to match the sequence's published 15-credit term totals, with the catalog credits documented in each choice_note. (2) The requirement breakdown sums to 122-124 credits against the 120-credit degree minimum; the plan follows the sequence's own published total of 120. (3) The sequence's advanced-math list (MTH 1011/1012/1015/1016/1017/1019) omits MTH 1018 Differential Equations, which the requirements table also lists; documented in the Semester 5 choice_note. (4) CUS 1166 Software Engineering is listed in both Semester 7 and Semester 8 ('if not taken in semester 7'); it is modeled once, in Semester 7, since the 36-credit major requires it exactly once. (5) The sequence's Semester 1 'First Year Seminar' is fulfilled by DNY 1000C Discover New York, the university's first-year seminar and a listed common-core course. (6) Semester 2 'Theology course' and 'Philosophy course' are fulfilled by THE 1000C and PHI 1000C, the designated first courses in the published core table (this also sequences the later THE 1040-series, PHI 3000C, and PHI 1020-series requirements correctly). (7) Grade gates per the program page: a minimum grade of C in CUS 1116 is required to continue to CUS 1126, and a minimum grade of C in CUS 1126 is required to continue to upper-level CUS courses; upper-level CUS prereqs of CUS 1126 are corroborated by the CCPS bulletin course descriptions (e.g., 'Prerequisite: CUS 1126' for CUS 1161/1162). (8) The plan assumes calculus readiness; students not ready for MTH 1009 begin with preparatory math as advised. (9) Prereq codes are plain code strings; every prereq names an in-plan course code (choice-slot prereqs point at the choice slot's own code, e.g. SCI 10XX-2 -> SCI 10XX-1).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CUS 1115",
+      "title": "Computer Programming Fundamentals I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MTH 1009",
+      "title": "Calculus I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "NET 1011",
+      "title": "Networking Fundamentals",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "FYW 1000C",
+      "title": "First Year Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "DNY 1000C",
+      "title": "Discover New York (First Year Seminar)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CUS 1116",
+      "title": "Computer Programming Fundamentals II",
+      "credits": 3,
+      "prereq": [
+       "CUS 1115"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MTH 1010",
+      "title": "Calculus II",
+      "credits": 3,
+      "prereq": [
+       "MTH 1009"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "THE 1000C",
+      "title": "Perspectives on Christianity - A Catholic Approach",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "PHI 1000C",
+      "title": "Philosophy of the Human Person",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "ECO 10XX",
+      "title": "Principles of Economics (ECO 1001 or ECO 1002)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'ECO 1001 or ECO1002'. Either satisfies the 3-credit economics requirement under Other Liberal Arts Requirements.",
+      "options": [
+       {
+        "code": "ECO 1001",
+        "title": "Principles of Economics I",
+        "credits": 3
+       },
+       {
+        "code": "ECO 1002",
+        "title": "Principles of Economics II",
+        "credits": 3
+       }
+      ],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CUS 1126",
+      "title": "Introduction to Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CUS 1116"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "SCI 10XX-1",
+      "title": "Laboratory Science I (PHY 1610 or BIO 1000)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'PHY1610 or BIO lab science'. Catalog lab-science options carry 4 credits (BIO 1000/1000L) or 5 credits (PHY 1610/1611L/1612R, CHE 1210/1211L/1212R); the official sequence still prints this term as 15 credits, so the slot is framed at 3 credits here and a student taking a 4- or 5-credit science balances credits in another term.",
+      "options": [
+       {
+        "code": "PHY 1610",
+        "title": "College Physics I with Lab and Recitation",
+        "credits": 5
+       },
+       {
+        "code": "BIO 1000",
+        "title": "Biology I: Introduction to Population Biology with Lab",
+        "credits": 4
+       }
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MTH 1013",
+      "title": "Probability and Statistics I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MTH 1022",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ENG 1100C",
+      "title": "Literature in a Global Context",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CUS 1162",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CUS 1185",
+      "title": "Data Security and Cryptography",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "SCI 10XX-2",
+      "title": "Laboratory Science II (PHY 1620 or BIO 2000)",
+      "credits": 3,
+      "prereq": [
+       "SCI 10XX-1"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'PHY1620 if PHY1610 was taken in fall, else PHY1610 if offered or other BIO lab science where the prerequisite is met'. Prereq points at the Semester 3 science slot, representing the second course of the chosen science sequence (PHY 1610 -> PHY 1620, or BIO 1000 -> BIO 2000). Catalog credits are 4 (BIO 2000/2000L) or 5 (PHY 1620/1621L/1622R); slot framed at 3 credits per the sequence's published 15-credit term total.",
+      "options": [
+       {
+        "code": "PHY 1620",
+        "title": "College Physics II with Lab and Recitation",
+        "credits": 5
+       },
+       {
+        "code": "BIO 2000",
+        "title": "Biology II: Introduction to Cell and Molecular Biology with Lab",
+        "credits": 4
+       }
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MTH 1014",
+      "title": "Probability and Statistics II",
+      "credits": 3,
+      "prereq": [
+       "MTH 1013"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "HIS 1000C",
+      "title": "Emergence of a Global Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CUS 1156",
+      "title": "Software Design Methods",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CUS 11XX-A",
+      "title": "Database Management Systems or Advanced Data Structures (CUS 1165 or CUS 1151)",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CUS1165 or CUS1151'. Take one here; the other is taken in Semester 6.",
+      "options": [
+       {
+        "code": "CUS 1165",
+        "title": "Database Management Systems",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1151",
+        "title": "Advanced Data Structures",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CUS 11XX-B",
+      "title": "Operating Systems or Theory of Programming Languages (CUS 1163 or CUS 1168)",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CUS1163 or CUS1168'. Take one here; the other is taken in Semester 6.",
+      "options": [
+       {
+        "code": "CUS 1163",
+        "title": "Operating Systems",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1168",
+        "title": "Theory of Programming Languages",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "PHI 3000C",
+      "title": "Metaphysics",
+      "credits": 3,
+      "prereq": [
+       "PHI 1000C"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "MTH 10XX-A",
+      "title": "Advanced Mathematics Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'Advanced math elective (one of MTH1011, MTH1012, MTH1015, MTH1016, MTH1017, MTH1019)'. Note the sequence omits MTH 1018 Differential Equations, which the requirements table also lists as an option; either list is acceptable per advisor.",
+      "options": [
+       {
+        "code": "MTH 1011",
+        "title": "Calculus III",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1012",
+        "title": "Linear Algebra",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1015",
+        "title": "Numerical Analysis",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1016",
+        "title": "Software Applications for Mathematics",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1017",
+        "title": "Mathematical Logic",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1019",
+        "title": "Topics in Advanced Calculus",
+        "credits": 3
+       }
+      ],
+      "category": "math"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CUS 11XX-C",
+      "title": "Database Management Systems or Advanced Data Structures - whichever not taken in Semester 5",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CUS1165 or CUS1151 depending on which was taken in Semester 5'.",
+      "options": [
+       {
+        "code": "CUS 1165",
+        "title": "Database Management Systems",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1151",
+        "title": "Advanced Data Structures",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CUS 11XX-D",
+      "title": "Operating Systems or Theory of Programming Languages - whichever not taken in Semester 5",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CUS1163 or CUS1168 depending on which was taken in Semester 5'.",
+      "options": [
+       {
+        "code": "CUS 1163",
+        "title": "Operating Systems",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1168",
+        "title": "Theory of Programming Languages",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CUS 11XX-T",
+      "title": "Computer Science Theory Course (CUS 1186, CUS 1187, or CUS 1188)",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'Computer Science Theory course (CUS1186 or CUS1187 or CUS1188)'.",
+      "options": [
+       {
+        "code": "CUS 1186",
+        "title": "Theory of Computation",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1187",
+        "title": "Finite Automata and Formal Languages",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1188",
+        "title": "Analysis of Algorithms",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MTH 10XX-B",
+      "title": "Advanced Mathematics Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second advanced math elective; same option list as Semester 5 (MTH 1011/1012/1015/1016/1017/1019).",
+      "options": [
+       {
+        "code": "MTH 1011",
+        "title": "Calculus III",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1012",
+        "title": "Linear Algebra",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1015",
+        "title": "Numerical Analysis",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1016",
+        "title": "Software Applications for Mathematics",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1017",
+        "title": "Mathematical Logic",
+        "credits": 3
+       },
+       {
+        "code": "MTH 1019",
+        "title": "Topics in Advanced Calculus",
+        "credits": 3
+       }
+      ],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "SPE 1000C",
+      "title": "Public Speaking for the College Student",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CUS 1166",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CUS 11XX-E1",
+      "title": "CUS Advanced Elective (CUS 1127 or above)",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CUS advanced elective (CUS1127 or above)'. Any CUS course above 1126 qualifies; examples from the program page: CUS 1172 Web Application Development, CUS 1174 Intro: Artificial Intelligence, CUS 1177 Intro: Natural Language Processing, CUS 1179 Machine Learning.",
+      "options": [
+       {
+        "code": "CUS 1172",
+        "title": "Web Application Development",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1174",
+        "title": "Intro: Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1177",
+        "title": "Intro: Natural Language Processing",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1179",
+        "title": "Machine Learning",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ART 1000C",
+      "title": "The Creative Process",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "LAC 10XX",
+      "title": "Language and Culture (LAC 1000C) or 6 Credits of a Second Language",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "*OR 6 CREDITS FROM ANY SECOND LANGUAGE per the common core table. Choosing the 6-credit language option adds 3 credits beyond this plan's 120-credit framing.",
+      "options": [
+       {
+        "code": "LAC 1000C",
+        "title": "Language and Culture",
+        "credits": 3
+       },
+       {
+        "code": "LANG 2XXX",
+        "title": "Second Language Sequence (6 credits total)",
+        "credits": 6
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC 3XXX-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective (3 of 6 free-elective credits). Any course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CUS 11XX-E2",
+      "title": "CUS Advanced Elective (CUS 1127 or above)",
+      "credits": 3,
+      "prereq": [
+       "CUS 1126"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second CUS advanced elective; same 'CUS1127 or above' rule as Semester 7.",
+      "options": [
+       {
+        "code": "CUS 1172",
+        "title": "Web Application Development",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1174",
+        "title": "Intro: Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1177",
+        "title": "Intro: Natural Language Processing",
+        "credits": 3
+       },
+       {
+        "code": "CUS 1179",
+        "title": "Machine Learning",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "THE 1040",
+      "title": "Moral Theology (THE 1040 series)",
+      "credits": 3,
+      "prereq": [
+       "THE 1000C"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "PHI 1020",
+      "title": "Ethics (PHI 1020 series)",
+      "credits": 3,
+      "prereq": [
+       "PHI 1000C"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "THE 3XXX",
+      "title": "Any Theology Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Common core table: 'THE Elective - Any Theology Elective'. Any theology course.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC 3XXX-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective (3 of 6 free-elective credits). Any course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "030714dbbd23b093bd89a327b221006973d012088ee3ef9cb2e444ea20f0c409",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,490 @@
+{
+ "institution": {
+  "name": "Reed College",
+  "city": "Portland, OR",
+  "kind": "private",
+  "state": "OR"
+ },
+ "plan": {
+  "id": "reed-ba-computer-science",
+  "degree": "BA",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 124,
+  "source_url": "https://www.reed.edu/computer-science/scheduling.html",
+  "notes": "Source: the official Reed College Computer Science department 'Scheduling' page (https://www.reed.edu/computer-science/scheduling.html), 'Sample schedule' table - the department's published term-by-term sample sequence for a 'typical' Reed computer science major, read 2026-09-30. CREDENTIAL HONESTY: Reed awards the Bachelor of Arts; there is no BS in Computer Science - degree recorded as BA, no substitution. Transcription method: direct term-by-term transcription of the official sample-schedule table as rendered; course codes, titles, unit values, and prerequisites taken from official Reed catalog course descriptions (catalog archives at reed.edu, catalogs 2018-19 through 2022-23, plus the 2025-26 catalog course listing). Major requirements cross-checked and identical across all of those catalogs: Mathematics 111 (or equivalent), 112, 113, 201; Computer Science 121 and 221; Computer Science 382, 387, 389; four additional CS units numbered higher than 300 (excluding 470); Computer Science 470 (thesis). CATALOG YEAR: the current published catalog is 2025-26; the sample schedule is the department's current live page and matches the current catalog's requirements exactly. CREDIT CONVERSION: Reed uses a unit system; per the official Reed transcript key (reed.edu/registrar), ONE REED UNIT = 4 SEMESTER HOURS. Every full course = 1 unit = 4 credits. Two exceptions, both per the official 2025-26 catalog: (1) HUM 110 'Introduction to the Humanities' is a three-unit yearlong course, 1.5 units per semester = 6 credits per semester; (2) CSCI 470 'Thesis (Computer Science)' is a two-unit yearlong course, one unit per semester = 4 credits per semester. Repeated courses across semesters use distinct codes (HUM 110-2, CSCI 470-2) per pipeline rules. TOTAL CREDITS: the sequence sums to 31 units = 124 semester hours; the BA degree minimum is 30 units (120 semester hours, per the Faculty Code). Per the Clarkson/UVM/GCSU precedent, total_credits=124 is the sequence's OWN published total; the discrepancy is documented here, not padded: the sample's first-year semesters each carry 3.5 units because HUM 110 weighs 1.5 units per semester. PREREQS (official catalog only, never invented): CSCI 221 requires CSCI 121; CSCI 382 and CSCI 387 require CSCI 121 (or equivalent) plus MATH 112 and 113; CSCI 389 requires CSCI 221; MATH 112 requires MATH 111 (or equivalent); MATH 201 requires MATH 112. MATH 113 has no college prerequisites (official Reed math advising guide). 'Or equivalent'/placement alternatives are assessment details, kept in notes per validator rules. Junior qualifying exam (covers CSCI 121, CSCI 221, MATH 113; take before end of sophomore year) is modeled as a 0-credit required milestone (required_zero: true) in Spring Year 2. Choice slots: four 'Csci elective' slots = any CS course numbered 300+ except 382/387/389 (department's own definition; the major's 'four additional units' rule also excludes 470); Group I/II/III slots = Reed distribution requirements, freely movable per the department; remaining 'Elective' slots = free electives. CAVEAT: the department notes 'almost no one is completely typical' - this is a starting-point sample, transcribed verbatim, not an individually advised plan.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "HUM 110",
+      "title": "Introduction to the Humanities",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Yearlong 3-unit course; 1.5 units per semester (2025-26 catalog). Required of all first-year students.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 111",
+      "title": "Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official prereq: three years of high school mathematics (assessment detail; no in-plan course prereq).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CSCI 121",
+      "title": "Computer Science Fundamentals I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official prereq: three years of high school mathematics (assessment detail; no in-plan course prereq).",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "HUM 110-2",
+      "title": "Introduction to the Humanities (yearlong, spring half)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Yearlong 3-unit course; 1.5 units per semester. Distinct code: repeat of HUM 110 across semesters.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 113",
+      "title": "Discrete Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official: no college prerequisites (Reed math advising guide).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "GRP1-A",
+      "title": "Group I distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group I distribution requirement; student choice. Group requirements can be moved across semesters per the department.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSCI 221",
+      "title": "Computer Science Fundamentals II",
+      "credits": 4,
+      "prereq": [
+       "CSCI 121"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: Computer Science 121 or equivalent (placement alternative documented here).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 112",
+      "title": "Introduction to Analysis",
+      "credits": 4,
+      "prereq": [
+       "MATH 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: Mathematics 111 or equivalent (placement alternative documented here).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "GRP1-B",
+      "title": "Group I distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group I distribution requirement; student choice.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GRP3-LAB",
+      "title": "Group III distribution course with laboratory (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Group III laboratory-science distribution course; student choice.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSCI 382",
+      "title": "Algorithms and Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CSCI 121",
+       "MATH 112",
+       "MATH 113"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisites: CSCI 121 or equivalent and MATH 112 and 113.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 201",
+      "title": "Linear Algebra",
+      "credits": 4,
+      "prereq": [
+       "MATH 112"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: Mathematics 112.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSCI 389",
+      "title": "Computer Systems",
+      "credits": 4,
+      "prereq": [
+       "CSCI 221"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: Computer Science 221.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GRP2-A",
+      "title": "Group II distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group II distribution requirement; student choice.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "QUAL-JR",
+      "title": "Junior Qualifying Examination (Computer Science)",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Required degree milestone (not a course): the CS junior qualifying exam covers CSCI 121, CSCI 221, and MATH 113; students should complete those courses before the end of the second year (department scheduling page FAQ).",
+      "options": [],
+      "category": "core",
+      "required_zero": true
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSCI 387",
+      "title": "Computability and Complexity",
+      "credits": 4,
+      "prereq": [
+       "CSCI 121",
+       "MATH 112",
+       "MATH 113"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Official catalog prerequisites: CSCI 121 or equivalent and MATH 112 and 113.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSCI-EL-A",
+      "title": "CS elective, 300-level or higher (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any computer science course numbered 300 or higher, other than 382, 387, and 389 (department scheduling page definition of 'Csci elective').",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "GRP1-C",
+      "title": "Group I distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group I distribution requirement; student choice.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GRP2-B",
+      "title": "Group II distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group II distribution requirement; student choice.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSCI-EL-B",
+      "title": "CS elective, 300-level or higher (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any computer science course numbered 300 or higher, other than 382, 387, and 389 (department scheduling page definition of 'Csci elective').",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSCI-EL-C",
+      "title": "CS elective, 300-level or higher (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any computer science course numbered 300 or higher, other than 382, 387, and 389 (department scheduling page definition of 'Csci elective').",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "GRP2-C",
+      "title": "Group II distribution requirement course (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Reed's Group II distribution requirement; student choice.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ELEC-A",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSCI 470",
+      "title": "Thesis (Computer Science)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Two-unit yearlong course; one unit per semester (official catalog course description).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSCI-EL-D",
+      "title": "CS elective, 300-level or higher (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any computer science course numbered 300 or higher, other than 382, 387, and 389 (department scheduling page definition of 'Csci elective').",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELEC-B",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-C",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSCI 470-2",
+      "title": "Thesis (Computer Science) (yearlong, spring half)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Two-unit yearlong course; one unit per semester. Distinct code: continuation of CSCI 470 across semesters.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "ELEC-D",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC-E",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-F",
+      "title": "Free elective (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completely free elective course; student choice (department scheduling page).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "c6ebdd30e9c0d7dea70896c2fdedcb5788743cb0f79375bbaf897421ef478f67",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,594 @@
+{
+ "institution": {
+  "city": "Binghamton, NY",
+  "kind": "public4yr",
+  "name": "Binghamton University",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "binghamton-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "True degree name: Bachelor of Science in Computer Science (BS in Computer Science), School of Computing, Thomas J. Watson College of Engineering and Applied Science. Term-by-term sequence transcribed verbatim from the official School of Computing sample 4-year schedule ('No Waiver for CS 110, Calculus Ready' variant; labeled for students entering Fall 2023 through Spring 2027), the 'No Waiver' variant being the complete default freshman path; a parallel official 'Waiver for CS 110, Calculus Ready' variant exists in the same PDF for students granted a CS 110 waiver by the Undergraduate Director. Minimum 126 credit hours per the official 'Requirements for Bachelor of Science in Computer Science' (students matriculated Fall 2023 or after, https://www.binghamton.edu/watson/student-services/advising/undergrad-forms/cs-2023.pdf), verified against the 2025-2026 Binghamton University Academic Guide (bulletin.binghamton.edu), which publishes the same 126-credit minimum -- catalog_year recorded as 2025-2026. Transcription method: manual transcription of the official PDF schedule into term slots; credit ranges in the source were resolved to one coherent 126-credit path (sophomore-fall science-sequence lab taken (2 cr) + free elective 2 cr; senior-fall free elective 2 cr; senior-spring free elective 4 cr), with the catalog alternatives documented in choice_notes. Course-level prerequisites are NOT stated in the sample schedule itself; prereq arrays encode the official prerequisites table from the Fall-2023+ requirements handout. Validator-mapping decisions (no invented codes): where an official prereq names a course option inside a choice slot, the prereq points at the slot's own code -- 'MATH 224/225' for the official MATH 225, 'MATH 226/227' for the official MATH 226/227, 'MATH-CHOICE-1' for the official MATH 314/330 alternative. CS 110's official prereq MATH 225 may be taken concurrently (footnote 1) and is scheduled here in the same Fall Year 1 term. CS 301's official table entry also lists a Gen Ed C/J course and CS 220 or CS 310 (either); the sample schedule places CS 301 in the same term as CS 220, so its prereq array encodes only CS 101 and the remainder is documented here. Footnotes carried from the source: (0) CS 110 counts as free-elective credit and is not counted in the 52 CS credits; (2) the science sequence is CHEM 104/105/106 or 107/108 (10 or 8 cr), BIOL 113/114/115 (10 cr), or PHYS 131/132 (8 cr), and the total of science + free-elective credits (blocks 3 and 6) should be 22; (4) students take one MATH course per semester after calculus to obtain prerequisites for 300-level CS classes; (5/6) five 3-credit CS electives (15 cr) chosen across breadth areas A-E with at least one course from each of areas A, B, C and at most one from area E. Placement prerequisites documented here, not encoded: students not placing into MATH 224 take MATH 223 (or equivalent) and, if needed, MATH 108/107/106; underprepared students may need CHEM 100 before CHEM 104/105/106; CS 110 is required unless the student is placed into CS 120/210 via prior programming experience (Undergraduate Director waiver).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Professional Skills, Ethics, and CS Trends",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 110",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 224/225"
+      ],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Programming Concepts & Applications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 224/225",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I Topics: Differential Calculus & Integral Calculus",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRIT 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Research & Writing (Rhetorically)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Student-selected course from the Division of Humanities, the Division of Social Sciences, the Psychology Department, or HDEV courses offered by the College of Community and Public Affairs; many General Education courses satisfy this requirement.",
+      "code": "SSHE-CHOICE-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Social Sciences / Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 120",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 110",
+       "MATH 224/225"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming and Hardware Fundamentals",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 226/227",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II Topics: Integration Techniques & Applications, Infinite Series",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "First course of the required science sequence: Chemistry CHEM 104 & 105 & 106 or 107 & 108 (10 or 8 credits), Biology BIOL 113 & 114 & 115 (10 credits), or Physics PHYS 131 & 132 (8 credits).",
+      "code": "SCI-SEQ-1",
+      "credits": 4,
+      "options": [
+       "CHEM 104",
+       "CHEM 105",
+       "CHEM 106",
+       "CHEM 107",
+       "CHEM 108",
+       "BIOL 113",
+       "BIOL 114",
+       "BIOL 115",
+       "PHYS 131",
+       "PHYS 132"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Science Sequence Course 1 (CHEM or BIOL or PHYS)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Student-selected course from the Division of Humanities, the Division of Social Sciences, the Psychology Department, or HDEV courses offered by the College of Community and Public Affairs; many General Education courses satisfy this requirement.",
+      "code": "SSHE-CHOICE-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Social Sciences / Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 110",
+       "MATH 224/225"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Programming with Objects and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 314 Discrete Mathematics or MATH 330 Number Systems, per the bulletin Mathematics block (students strong in math are encouraged to take MATH 330 instead of MATH 314).",
+      "code": "MATH-CHOICE-1",
+      "credits": 4,
+      "options": [
+       "MATH 314",
+       "MATH 330"
+      ],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Mathematics: MATH 314 or MATH 330",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second course of the required science sequence, continuing the same CHEM, BIOL, or PHYS sequence chosen in Spring Year 1.",
+      "code": "SCI-SEQ-2",
+      "credits": 4,
+      "options": [
+       "CHEM 104",
+       "CHEM 105",
+       "CHEM 106",
+       "CHEM 107",
+       "CHEM 108",
+       "BIOL 113",
+       "BIOL 114",
+       "BIOL 115",
+       "PHYS 131",
+       "PHYS 132"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Science Sequence Course 2 (CHEM or BIOL or PHYS)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take only if the chosen science sequence requires a separate lab: 2 credits if necessary, 0 otherwise. This plan instantiates the 2-credit lab, with the free-elective slot below at 2 credits, to reach the 126-credit degree total.",
+      "code": "SCI-LAB-1",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "BIOL or CHEM Science Sequence Lab (if necessary)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Source slot 'Free Elective' (2 or 4 credits). This plan uses 2 credits here to reach the 126-credit degree total (the science-sequence lab slot above supplies the other 2); at most 2 credits of activity/wellness (S & Y, or B) may count as free-elective credit, and at least four free-elective credits overall must be in liberal arts and sciences.",
+      "code": "FREE-ELEC-1",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 301",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 101"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Ethical, Social, and Global Issues in Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 220",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 120",
+       "CS 210"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Architecture from a Programmer's Perspective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 327 Probability with Statistical Methods or MATH 448 Mathematical Statistics, per the bulletin Mathematics block (MATH 448 requires MATH 323 and MATH 447 as prerequisites).",
+      "code": "MATH-CHOICE-2",
+      "credits": 4,
+      "options": [
+       "MATH 327",
+       "MATH 448"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Mathematics: MATH 327 or MATH 448",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Block 5: MATH 323 Calculus III or a science elective chosen from courses that meet the General Education Laboratory Science requirement.",
+      "code": "LABSCI-CHOICE-1",
+      "credits": 4,
+      "options": [
+       "MATH 323"
+      ],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Math or Science Elective: MATH 323 or additional lab science",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 310",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 120",
+       "CS 210",
+       "MATH 226/227"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 320",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 220"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Advanced Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One mathematics elective per the bulletin Mathematics block, chosen from MATH 304 Linear Algebra, MATH 381 Graph Theory, MATH 407 Introduction to the Theory of Numbers, MATH 371 Ordinary Differential Equations, or MATH 386 Combinatorics (strong-math students may take MATH 381 as the math elective).",
+      "code": "MATH-CHOICE-3",
+      "credits": 4,
+      "options": [
+       "MATH 304",
+       "MATH 381",
+       "MATH 407",
+       "MATH 371",
+       "MATH 386"
+      ],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Mathematics elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Student-selected course from the Division of Humanities, the Division of Social Sciences, the Psychology Department, or HDEV courses offered by the College of Community and Public Affairs; many General Education courses satisfy this requirement.",
+      "code": "SSHE-CHOICE-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Social Sciences / Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 350",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 220",
+       "CS 310",
+       "CS 301"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 375",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 310",
+       "MATH 226/227",
+       "MATH-CHOICE-1"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Student-selected course from the Division of Humanities, the Division of Social Sciences, the Psychology Department, or HDEV courses offered by the College of Community and Public Affairs; many General Education courses satisfy this requirement.",
+      "code": "SSHE-CHOICE-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Social Sciences / Humanities Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Student-selected course from the Division of Humanities, the Division of Social Sciences, the Psychology Department, or HDEV courses offered by the College of Community and Public Affairs; many General Education courses satisfy this requirement.",
+      "code": "SSHE-CHOICE-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Social Sciences / Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 373",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 210",
+       "MATH-CHOICE-1"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Automata Theory & Formal Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of five required 3-credit CS electives (15 credits total) chosen from breadth areas A (Networking and Communications), B (Large Software Development), C (Data and Information Management), D (Other), and E (Internship, Co-op, Research); at least one course from each of areas A, B, and C; at most one course from area E (area E courses must be taken for at least 3 credits).",
+      "code": "CS-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Science Elective (400-level)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of five required 3-credit CS electives (15 credits total) chosen from breadth areas A (Networking and Communications), B (Large Software Development), C (Data and Information Management), D (Other), and E (Internship, Co-op, Research); at least one course from each of areas A, B, and C; at most one course from area E (area E courses must be taken for at least 3 credits).",
+      "code": "CS-ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer Science Elective (400-level)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of five required 3-credit CS electives (15 credits total) chosen from breadth areas A (Networking and Communications), B (Large Software Development), C (Data and Information Management), D (Other), and E (Internship, Co-op, Research); at least one course from each of areas A, B, and C; at most one course from area E (area E courses must be taken for at least 3 credits).",
+      "code": "CS-ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Computer Science Elective (400-level)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Source slot 'Free Elective (e.g. Physical Activity / Wellness)' (4 or 2 credits). This plan uses 2 credits here to reach the 126-credit degree total; at most 2 credits of activity/wellness (S & Y, or B) may count as free-elective credit.",
+      "code": "FREE-ELEC-2",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 471",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 373",
+       "CS 375"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of five required 3-credit CS electives (15 credits total) chosen from breadth areas A (Networking and Communications), B (Large Software Development), C (Data and Information Management), D (Other), and E (Internship, Co-op, Research); at least one course from each of areas A, B, and C; at most one course from area E (area E courses must be taken for at least 3 credits).",
+      "code": "CS-ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science Elective (400-level)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of five required 3-credit CS electives (15 credits total) chosen from breadth areas A (Networking and Communications), B (Large Software Development), C (Data and Information Management), D (Other), and E (Internship, Co-op, Research); at least one course from each of areas A, B, and C; at most one course from area E (area E courses must be taken for at least 3 credits).",
+      "code": "CS-ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Computer Science Elective (400-level)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Source slot 'Liberal Arts and Sciences Free Elective (e.g. Foreign Language if necessary)'. At least four free-elective credits must be in liberal arts and sciences to meet the 60-credit liberal-arts minimum for the BS degree.",
+      "code": "LAFREE-ELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Liberal Arts and Sciences Free Elective (e.g. Foreign Language if necessary)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.binghamton.edu/computer-science/pdf/ug-4yr-sched.pdf",
+  "total_credits": 126,
+  "content_hash": "99c19b08966e911aaa99661f39dac893ceeaa65035e9959220b9191392e6774c",
+  "last_verified": "2026-10-02"
+ }
+}

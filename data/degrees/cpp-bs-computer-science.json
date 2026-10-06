@@ -1,0 +1,655 @@
+{
+ "institution": {
+  "name": "California State Polytechnic University, Pomona",
+  "city": "Pomona, CA",
+  "kind": "public4yr",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "cpp-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2021-2022",
+  "total_credits": 120,
+  "source_url": "https://www.cpp.edu:443/academic-programs/academic-advising/tools/sheets-roadmaps/2021-2022/roadmaps/computer-science.pdf",
+  "notes": "Source: official Cal Poly Pomona roadmap PDF 'Computer Science, B.S.: 120 units, 2021-2022 Academic Year' (Rev. 6/23/21, approved by the Office of Undergraduate Studies and General Education), hosted on cpp.edu: https://www.cpp.edu:443/academic-programs/academic-advising/tools/sheets-roadmaps/2021-2022/roadmaps/computer-science.pdf . Catalog year 2021-2022 is the actual year of the source roadmap. Transcription method: pdftotext -layout extraction of the official Fall/Spring term grid, manually verified row by row (courses, units, prereq notes, comments, semester totals). STALENESS CAVEAT: the university catalog (catalog.cpp.edu) now carries newer roadmap editions (2022-2023 through 2025-2026 'Program: Computer Science, B.S.: Roadmap 4-year (120 units)'), but that catalog host was unreachable from this collector, so this plan is built from the newest officially published roadmap PDF that could be retrieved (Rev. 6/23/21). The program has since evolved: the College of Science's 2026-2027 CS flowchart (https://cpp.edu/sci/advising-center/documents/2026-2027-cos-flowcharts-computer-science.pdf) lists 71 major units required (vs 67 in the 2024-2025 flowchart) and includes required courses absent from this roadmap (e.g. MAT 2250 Linear Algebra, CS 2610). Cross-checked course titles/units/prereqs against the roadmap PDF's own prereq notes; older quarter-era equivalents in those notes (CS 141/CS 130/CS 241/CS 311/CS 264/MAT 208/STA 326/MAT 132/MAT 1310/CS 128) were collapsed to their in-plan semester equivalents. Placement/eligibility conditions (C or better in MAT 1050/MAT 1060, MDTP/ALEKS score, 'eligibility for MAT 1140') are NOT course prerequisites and are documented here rather than in prereq fields. Grade conditions ('C or better'/'C- or better' on roadmap prereqs) are collapsed to plain course-code prereqs. Corequisites (BIO 1110L with BIO 1110; PHY 1510L with PHY 1510) are encoded as a prereq on the same-semester lecture. CS 4630 requires senior standing and CS 3750 requires lower-division GE completion (Area A, two Area B sub-areas, two Area D sub-areas) per the roadmap — standing/GE conditions, kept in notes. Graduation Writing Test milestone (take before 75 units) and the Year-4 'File an application to graduate' step are official milestones, not courses, and are noted here. GE slots and Major Elective slots are student-choice (choice:true); Major Elective picks come from the department's curriculum sheet; the two 1-unit elective slots carry the roadmap's recommendation (CS 4610 or CS 4620 or CS 4410).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 1300",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MAT 1140",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "GE-A2",
+      "title": "GE Area A2: Written Communication (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GE-E",
+      "title": "GE Area E: Lifelong Learning and Self-Development (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GE-A1",
+      "title": "GE Area A1: Oral Communication (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 1400",
+      "title": "Introduction to Programming and Problem Solving",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MAT 1150",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MAT 1140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "BIO 1110",
+      "title": "Life Science",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "BIO 1110L",
+      "title": "Life Science Laboratory",
+      "credits": 1,
+      "prereq": [
+       "BIO 1110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "GE-A3",
+      "title": "GE Area A3: Critical Thinking (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 2400",
+      "title": "Data Structures and Advanced Programming",
+      "credits": 4,
+      "prereq": [
+       "CS 1300",
+       "CS 1400",
+       "MAT 1140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 2600",
+      "title": "Systems Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 1400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MAJELECT-1",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "PHY 1510",
+      "title": "Introduction to Newtonian Mechanics",
+      "credits": 3,
+      "prereq": [
+       "MAT 1140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "PHY 1510L",
+      "title": "Newtonian Mechanics Laboratory",
+      "credits": 1,
+      "prereq": [
+       "PHY 1510"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 2640",
+      "title": "Computer Organization and Assembly Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 1300",
+       "CS 1400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MAJELECT-2",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "STA 2260",
+      "title": "Probability and Statistics for Computer Scientists and Engineers",
+      "credits": 3,
+      "prereq": [
+       "MAT 1150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GE-D2",
+      "title": "GE Area D2: U.S. Constitution and California Government (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GE-F",
+      "title": "GE Area F: Ethnic Studies (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 3310",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CS 2400",
+       "STA 2260"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 3110",
+      "title": "Formal Languages and Automata",
+      "credits": 3,
+      "prereq": [
+       "CS 2400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "GE-C2A",
+      "title": "GE Area C2: Literature, Modern Languages, Philosophy and Civilization (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GE-C2B",
+      "title": "GE Area C2: Literature, Modern Languages, Philosophy and Civilization (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GE-C1C2",
+      "title": "GE Area C1 or C2 (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select either C1: Visual and Performing Arts or C2: Literature, Modern Languages, Philosophy and Civilization",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 3010",
+      "title": "Numerical Methods and Computing",
+      "credits": 3,
+      "prereq": [
+       "CS 2400",
+       "MAT 1150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS 3650",
+      "title": "Computer Architecture",
+      "credits": 4,
+      "prereq": [
+       "CS 2640"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS 3560",
+      "title": "Object-Oriented Design and Programming",
+      "credits": 3,
+      "prereq": [
+       "CS 2400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GE-D1",
+      "title": "GE Area D1: U.S. History, American Ideals (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GE-C3",
+      "title": "GE Area C3: Arts and Humanities Synthesis (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 4080",
+      "title": "Concepts of Programming Languages",
+      "credits": 3,
+      "prereq": [
+       "CS 3110",
+       "CS 2640"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS 4630",
+      "title": "Undergraduate Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "MAJELECT-3",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "MAJELECT-4",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "MAJELECT-5",
+      "title": "Major Elective, 1 unit (select from curriculum sheet)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Recommendation: CS 4610 or CS 4620 or CS 4410",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "CS 3750",
+      "title": "Computers and Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 4310",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CS 3650",
+       "STA 2260"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS 4800",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CS 2400"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "MAJELECT-6",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "MAJELECT-7",
+      "title": "Major Elective (select from curriculum sheet)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select from Curriculum Sheet",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "MAJELECT-8",
+      "title": "Major Elective, 1 unit (select from curriculum sheet)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Recommendation: CS 4610 or CS 4620 or CS 4410",
+      "options": [],
+      "category": "major_elective"
+     },
+     {
+      "slot_id": "s8-5",
+      "code": "GE-UDSYN",
+      "title": "Upper Division Synthesis GE: Area B5 or D4 (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "ge"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "b452dff07637ce5e5e9c9efa519aea0da9dda35eabd5dd13d0b6689eb8612599",
+  "last_verified": "2026-10-02"
+ }
+}

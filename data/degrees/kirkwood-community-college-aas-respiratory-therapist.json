@@ -1,0 +1,447 @@
+{
+ "institution": {
+  "city": "Cedar Rapids, IA",
+  "kind": "community",
+  "name": "Kirkwood Community College",
+  "state": "IA"
+ },
+ "plan": {
+  "id": "kirkwood-community-college-aas-respiratory-therapist",
+  "degree": "AAS",
+  "major": "Respiratory Therapist",
+  "catalog_year": "2026-2027",
+  "total_credits": 85.5,
+  "source_url": "https://creditcatalog.kirkwood.edu/career-programs/respiratory-therapist/respiratory-therapist-aas/",
+  "notes": "Official Plan of Study Grid: Respiratory Therapist, A.A.S., Kirkwood Community College Credit Catalog 2026-2027 (creditcatalog.kirkwood.edu). CoARC-accredited (program 200190). The pre-admission Prerequisites block (14 cr) is modeled as Semester 1; the program's published Terms 1-5 follow as semesters 2-6. Every term total and the program total (85.5) match the published grid exactly. Prerequisite choice slots are valued from the published prerequisite total (14 = anatomy 3 + BIO-186 4 + chemistry 3 + MAT-102 4): the anatomy slot is 3 credits (BIO-161, 3 cr, alone OR the BIO-168 + BIO-173 pair, 4+4 cr per the catalog course listings — the pair raises the actual total above 14); the chemistry slot is 3 credits (CHM-110, 3 cr, or CHM-165, 4 cr per the catalog course listings — likewise raising the actual total). The Term 2 speech choice (SPC-101/SPC-112/COM-222) is 3 credits, derived from the published Term 2 total (15.5 = 3+2.5+4+3+3). Clinical-sequence prerequisites (RCP-212->RCP-220->RCP-511/512->RCP-850; RCP-730->RCP-736->RCP-740; RCP-370->RCP-380) follow the source's own numbered course sequencing; the grid otherwise publishes footnote-level guidance (C- or better required; some courses may be taken before the technical portion) rather than per-course prerequisite lists.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Prerequisites (pre-admission)",
+    "courses": [
+     {
+      "code": "bio-161-bio-168+bio-173-choice",
+      "title": "Basic Anatomy and Physiology OR Human Anatomy Physiology I and II",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Published slot value is 3 credits; the published prerequisite total (14) assumes the BIO-161 pathway. The BIO-168 + BIO-173 pair carries 8 credits (4+4) per the catalog course listings and raises the actual total.",
+      "options": [
+       "BIO-161",
+       "BIO-168+BIO-173"
+      ],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO-186",
+      "title": "Microbiology",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "chm-110-chm-165-choice",
+      "title": "Introduction to Chemistry OR General Chemistry I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "3 credits per the published prerequisite total (assumes CHM-110); CHM-165 carries 4 credits per the catalog course listings and raises the actual total.",
+      "options": [
+       "CHM-110",
+       "CHM-165"
+      ],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MAT-102",
+      "title": "Intermediate Algebra (or approved math course)",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 1 - Fall",
+    "courses": [
+     {
+      "code": "RCP-101",
+      "title": "Respiratory A&P Enrichment",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-120",
+      "title": "Cardiopulmonary Assessment",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-212",
+      "title": "Introduction to Respiratory Care",
+      "credits": 3.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HSC-107",
+      "title": "Professionals in Health",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HSC-115",
+      "title": "Medical Terminology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG-105",
+      "title": "Composition I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 2 - Spring",
+    "courses": [
+     {
+      "code": "RCP-220",
+      "title": "Respiratory Care I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "RCP-212"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-730",
+      "title": "Respiratory Care Clinic I",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-300",
+      "title": "Respiratory Physiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY-111",
+      "title": "Intro to Psychology",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "spc-101-spc-112-com-222-choice",
+      "title": "Fundamentals of Oral Comm OR Public Speaking OR Communication for Health Care Professionals",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "3 credits derived from the published Term 2 total (15.5 = 3+2.5+4+3+3); take any one course",
+      "options": [
+       "SPC-101",
+       "SPC-112",
+       "COM-222"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 3 - Summer",
+    "courses": [
+     {
+      "code": "RCP-370",
+      "title": "Respiratory Pathology I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-420",
+      "title": "Pulmonary Function Testing",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-511",
+      "title": "Respiratory Care II-A",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "RCP-220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-512",
+      "title": "Respiratory Care II-B",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "RCP-220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 4 - Fall",
+    "courses": [
+     {
+      "code": "RCP-470",
+      "title": "Cardiac Monitoring",
+      "credits": 1.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-850",
+      "title": "Respiratory Care III",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "RCP-511",
+       "RCP-512"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-610",
+      "title": "Perinatology",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-380",
+      "title": "Respiratory Pathology II",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "RCP-370"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-736",
+      "title": "Respiratory Care Clinic II",
+      "credits": 6,
+      "category": "major",
+      "prereq": [
+       "RCP-730"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 5 - Spring",
+    "courses": [
+     {
+      "code": "RCP-740",
+      "title": "Respiratory Care Clinic III",
+      "credits": 6.5,
+      "category": "major",
+      "prereq": [
+       "RCP-736"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-891",
+      "title": "Respiratory Care Applications",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "RCP-480",
+      "title": "Advanced Cardiac Care",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "humanities-or-history-culture-course-choice-s6-3",
+      "title": "Humanities or History/Culture Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any AAS Humanities or History/Culture course",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "e09dfc224f41ace9142eeeaaab6aa5dc4873f7610c8e229d389b6c443c82a567",
+  "last_verified": "2026-10-02"
+ }
+}

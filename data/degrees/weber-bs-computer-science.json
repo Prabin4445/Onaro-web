@@ -1,0 +1,574 @@
+{
+ "institution": {
+  "city": "Ogden",
+  "kind": "university",
+  "name": "Weber State University",
+  "state": "UT"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "id": "weber-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Official 2025-2026 CS degree map (flowchart) from the Weber State School of Computing advising page: freshman-to-senior 8-semester sequence for the BS in Computer Science. The sophomore spring semester awards the embedded AAS in Computer Science (CS 2899 Associate Degree Assessment, 0 cr). Semester credit totals printed on the map: 17 / 17 / 16 / 16-17 / 13-14 / 14-15 / 11-12 / 12; this plan uses the upper end of each variable-credit slot (5 cr lab science, 4 cr math support course, 4 cr CS electives) for a 120-credit total. Note: older catalog editions state a 126-credit minimum for the BS, but the 2025-2026 flowchart's semester totals cap at 120 - the total here follows the source map. MATH placement: the map's full leveling sequence is MATH 0950 -> MATH 0990 -> MATH 1010 -> MATH 1050/1060 or 1080 -> MATH 1210 -> MATH 1220/3110/3160; students place via assessment. CS electives: any two upper-division CS electives; CS 4800, CS 4850, and CS 4890 may not be used as CS electives (per the catalog BS program page). 5000/6000-level CS courses may slot into the CS Elective or Other Elective sections and can later apply to a master's degree (flowchart note). The flowchart's writing-option note references COMM 2210 HU, but the course box on the map reads COMM 2110 HU - the box value is used here.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "code": "ENGL 2010",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intermediate College Writing",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 1400",
+      "credits": 4,
+      "prereq": [],
+      "title": "Programming I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 1030",
+      "credits": 4,
+      "prereq": [],
+      "title": "Foundations of Computing",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one: MATH 1040 QL Introduction to Statistics, MATH 1120 QL Foundations of Data Science, or MATH 3410 Probability and Statistics I (3 cr each). MATH 3410 is recommended for students pursuing graduate school (flowchart note *).",
+      "code": "MATH-QL-OPT",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MATH 1040",
+        "credits": 3,
+        "title": "Introduction to Statistics"
+       },
+       {
+        "code": "MATH 1120",
+        "credits": 3,
+        "title": "Foundations of Data Science"
+       },
+       {
+        "code": "MATH 3410",
+        "credits": 3,
+        "title": "Probability and Statistics I"
+       }
+      ],
+      "prereq": [],
+      "title": "Quantitative Literacy math choice",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "code": "ETC 2001",
+      "credits": 3,
+      "prereq": [],
+      "title": "Engineering Culture",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Fall",
+    "term": "Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 2550",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to Database Design and SQL",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 1410",
+      "credits": 4,
+      "prereq": [
+       "CS 1400",
+       "ENGL 2010"
+      ],
+      "title": "Object-Oriented Programming",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "WEB 1430",
+      "credits": 3,
+      "prereq": [
+       "CS 1030"
+      ],
+      "title": "Client Side Programming",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CYBR 2300",
+      "credits": 3,
+      "prereq": [
+       "CS 1030"
+      ],
+      "title": "Introduction to Networking and Cybersecurity",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "code": "COMM 2110",
+      "credits": 3,
+      "prereq": [],
+      "title": "Interpersonal and Small Group Communication",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Spring",
+    "term": "Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student option 1: a Creative Arts gen ed credit - ENGL 2250 CA/CC. Student option 2: an upper-division (UD) writing credit - PS 3250 or ENGL 3100 (flowchart note).",
+      "code": "WRT-CHOICE",
+      "credits": 3,
+      "options": [
+       "ENGL 2250",
+       "PS 3250",
+       "ENGL 3100"
+      ],
+      "prereq": [],
+      "title": "Upper-division writing or Creative Arts gen ed choice",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 2420",
+      "credits": 4,
+      "prereq": [
+       "CS 1410",
+       "MATH 1080"
+      ],
+      "title": "Introduction to Data Structures and Algorithms",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 2130",
+      "credits": 4,
+      "prereq": [
+       "CS 1400"
+      ],
+      "title": "Computational Structures",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "support",
+      "code": "MATH 1080",
+      "credits": 5,
+      "prereq": [
+       "MATH 1010"
+      ],
+      "title": "Pre-calculus",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Fall",
+    "term": "Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 2899",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Associate Degree Assessment",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 2810",
+      "credits": 4,
+      "prereq": [
+       "CS 1410"
+      ],
+      "title": "Computer Architecture/Organization",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 2450",
+      "credits": 4,
+      "prereq": [
+       "CS 1410"
+      ],
+      "title": "Software Engineering I",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "support",
+      "code": "MATH 1210",
+      "credits": 4,
+      "prereq": [
+       "MATH 1080"
+      ],
+      "title": "Calculus I",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "A Life Science or Physical Science gen ed course with attached lab (4-5 cr; 5 cr used for the 120-credit total). Life Science options: BTNY 1403, HTHS 1110, ZOOL 1110, ZOOL 2200 (4 cr each). Physical Science options: CHEM 1110 + 1115, CHEM 1130 + 1135, CHEM 1210 + 1215, PHYS 2010 + 2019, PHYS 2210 + 2219 (5 cr each); GEO 1060 + 1115, GEO 1110 + 1115 (4 cr each). Take the other of LS/PS in the junior fall semester (flowchart notes).",
+      "code": "LSPS-LAB",
+      "credits": 5,
+      "options": [
+       "BTNY 1403",
+       "HTHS 1110",
+       "ZOOL 1110",
+       "ZOOL 2200",
+       "CHEM 1110 + 1115",
+       "CHEM 1130 + 1135",
+       "CHEM 1210 + 1215",
+       "GEO 1060 + 1115",
+       "GEO 1110 + 1115",
+       "PHYS 2010 + 2019",
+       "PHYS 2210 + 2219"
+      ],
+      "prereq": [],
+      "title": "Life or Physical Science course with lab choice",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Spring",
+    "term": "Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Take the Physical or Life Science general education course not already taken with the lab science in the sophomore spring semester - ensure one LS and one PS, not two of the same (flowchart note).",
+      "code": "PSLS-GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Physical or Life Science gen ed choice",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 3100",
+      "credits": 4,
+      "prereq": [
+       "CS 2420",
+       "CS 2810"
+      ],
+      "title": "Operating Systems",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Creative Arts general education course; CS 1010 is recommended (flowchart note).",
+      "code": "CA-GENED",
+      "credits": 3,
+      "options": [
+       "CS 1010"
+      ],
+      "prereq": [],
+      "title": "Creative Arts gen ed choice (CS 1010 recommended)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "support",
+      "choice": true,
+      "choice_note": "Choose one: MATH 1216 Integral Calculus (4), MATH 1220 Calculus II (4), MATH 3110 Foundations of Algebra (3), or MATH 3160 Number Theory (3). 4 cr used for the 120-credit total. Requires MATH 1210.",
+      "code": "MATH-SUP-OPT",
+      "credits": 4,
+      "options": [
+       {
+        "code": "MATH 1216",
+        "credits": 4,
+        "title": "Integral Calculus"
+       },
+       {
+        "code": "MATH 1220",
+        "credits": 4,
+        "title": "Calculus II"
+       },
+       {
+        "code": "MATH 3110",
+        "credits": 3,
+        "title": "Foundations of Algebra"
+       },
+       {
+        "code": "MATH 3160",
+        "credits": 3,
+        "title": "Number Theory"
+       }
+      ],
+      "prereq": [
+       "MATH 1210"
+      ],
+      "title": "Math support course choice",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Fall",
+    "term": "Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 3550",
+      "credits": 4,
+      "prereq": [
+       "CS 2550",
+       "CS 1410"
+      ],
+      "title": "Advanced Database Programming",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose CS 3230 Object Oriented User Interface Development with Java or CS 3280 Object Oriented Windows Application Development. Required for CS 3750.",
+      "code": "CS-3230-3280",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CS 3230",
+        "credits": 4,
+        "title": "Object Oriented User Interface Development with Java"
+       },
+       {
+        "code": "CS 3280",
+        "credits": 4,
+        "title": "Object Oriented Windows Application Development"
+       }
+      ],
+      "prereq": [
+       "CS 2420"
+      ],
+      "title": "CS 3230 or CS 3280 choice",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Upper-division CS elective, 3-4 cr (4 cr used for the 120-credit total). CS 4800, CS 4850, and CS 4890 may not be used as CS electives. Consult a CS academic advisor.",
+      "code": "CS-ELECT-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "CS Elective 1",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "American Institutions (AI) general education course.",
+      "code": "AI-GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "American Institutions gen ed choice",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Spring",
+    "term": "Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 3750",
+      "credits": 4,
+      "note": "Prerequisites per catalog: CS 2899, CS 3550, and (CS 3230 or CS 3280) - the UI-course requirement is represented by the CS-3230-3280 choice slot.",
+      "prereq": [
+       "CS 2899",
+       "CS 3550",
+       "CS-3230-3280"
+      ],
+      "title": "Software Engineering II",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 4110",
+      "credits": 4,
+      "prereq": [
+       "CS 2420",
+       "CS 2130"
+      ],
+      "title": "Concepts of Formal Languages and Algorithms for Computing",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Upper-division CS elective, 3-4 cr (4 cr used for the 120-credit total). CS 4800, CS 4850, and CS 4890 may not be used as CS electives. Consult a CS academic advisor.",
+      "code": "CS-ELECT-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "CS Elective 2",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Fall",
+    "term": "Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "capstone",
+      "code": "CS 4760",
+      "credits": 4,
+      "prereq": [
+       "CS 3750"
+      ],
+      "title": "CS Capstone",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 4899",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Bachelor's Degree Assessment",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Other elective(s), 3 cr. 5000/6000-level CS courses may slot here and can later apply to a master's degree (flowchart note).",
+      "code": "OTHER-ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Other elective(s)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "coop",
+      "code": "CS 4890",
+      "credits": 2,
+      "prereq": [],
+      "title": "Cooperative Work Experience",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective, 3 cr.",
+      "code": "FREE-ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Spring",
+    "term": "Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://apps.weber.edu/wsuimages/CS/pdf/CS_Flowchart_2025_26.pdf",
+  "total_credits": 120,
+  "external_prereqs": [
+   "MATH 1010"
+  ],
+  "content_hash": "54355b878f7b6077272784c7c11f571bc589cf47ed9f08131d0be08e93e15fcf",
+  "last_verified": "2026-10-02"
+ }
+}

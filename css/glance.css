@@ -1,0 +1,59 @@
+/* "Today at a glance" — momentum touch carousel of water-glass stat tiles.
+   Free stop where the finger lifts (no snap); native iOS momentum via
+   -webkit-overflow-scrolling. Auto-rotate pauses on touch, resumes after idle. */
+.glwrap{margin-bottom:14px}
+.glflow{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;
+  padding:8px 2px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;
+  scroll-snap-type:none;touch-action:pan-x pan-y}
+.glflow::-webkit-scrollbar{display:none}
+.glflow:active{cursor:grabbing}
+.gltile{position:relative;flex:0 0 140px;min-height:142px;border-radius:20px;
+  display:flex;flex-direction:column;align-items:flex-start;
+  padding:14px 12px 12px;text-align:left;cursor:pointer;color:inherit;font:inherit;
+  -webkit-appearance:none;appearance:none;overflow:hidden;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  background:linear-gradient(165deg,rgba(255,255,255,.22),rgba(255,255,255,.07));
+  -webkit-backdrop-filter:blur(22px) saturate(1.6);backdrop-filter:blur(22px) saturate(1.6);
+  border:1px solid rgba(255,255,255,.30);
+  box-shadow:0 26px 50px -22px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.35);
+  animation:glfloat 5s ease-in-out infinite}
+body.dark .gltile{background:linear-gradient(165deg,rgba(255,255,255,.13),rgba(255,255,255,.04));
+  border-color:rgba(255,255,255,.17);
+  box-shadow:0 26px 50px -22px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.14)}
+.gltile::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+  background:linear-gradient(115deg,rgba(255,255,255,.30),rgba(255,255,255,0) 42%)}
+.gltile>*{position:relative;z-index:1}
+.gltile:nth-child(2n){animation-delay:-2.5s}
+@keyframes glfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@media (prefers-reduced-motion:reduce){.gltile{animation:none}}
+.gltile:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.gltile-ico{display:block;font-size:28px;margin-bottom:8px;line-height:1;transform-origin:50% 60%;
+  filter:drop-shadow(0 6px 10px rgba(0,0,0,.25))}
+.gltile-ico img{width:30px;height:30px;object-fit:contain}
+.gltile-emoji{font-size:28px;line-height:1}
+.gltile-v{display:block;font-size:21px;font-weight:800;letter-spacing:-.01em;margin-top:2px}
+.gltile-l{display:block;font-size:12px;color:var(--faint);margin-top:4px;line-height:1.35}
+
+/* ---- per-tile signature animations (PraBin 2026-09-30): each tile moves
+   like what it is. CSS-only, silent, staggered so they never march in sync. */
+[data-gl="owed"] .gltile-ico{animation:glJiggle 2.6s ease-in-out infinite}
+[data-gl="unread"] .gltile-ico{animation:glPop 2.2s ease-in-out infinite;animation-delay:-.7s}
+[data-gl="jobs"] .gltile-ico{animation:glRock 3.1s ease-in-out infinite;animation-delay:-1.4s}
+[data-gl="bill"] .gltile-ico{animation:glSway 3.4s ease-in-out infinite;animation-delay:-.4s}
+[data-gl="events"] .gltile-ico{animation:glHop 2.8s ease-in-out infinite;animation-delay:-1.9s}
+[data-gl="docs"] .gltile-ico{animation:glFlutter 3.2s ease-in-out infinite;animation-delay:-1.1s}
+[data-gl="spend"] .gltile-ico{animation:glFly 3s ease-in-out infinite;animation-delay:-2.2s}
+@keyframes glJiggle{0%,100%{transform:rotate(0)}20%{transform:rotate(-10deg)}40%{transform:rotate(8deg)}60%{transform:rotate(-5deg)}80%{transform:rotate(3deg)}}
+@keyframes glPop{0%,100%{transform:scale(1) rotate(0)}30%{transform:scale(1.18) rotate(-6deg)}55%{transform:scale(.94) rotate(4deg)}75%{transform:scale(1.06) rotate(0)}}
+@keyframes glRock{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes glSway{0%,100%{transform:rotate(5deg) translateY(0)}50%{transform:rotate(-5deg) translateY(-2px)}}
+@keyframes glHop{0%,100%{transform:translateY(0) rotate(0)}25%{transform:translateY(-7px) rotate(-8deg)}50%{transform:translateY(0) rotate(0)}75%{transform:translateY(-4px) rotate(6deg)}}
+@keyframes glFlutter{0%,100%{transform:skewX(0) rotate(0)}30%{transform:skewX(-8deg) rotate(-4deg)}60%{transform:skewX(6deg) rotate(3deg)}}
+@keyframes glFly{0%,100%{transform:translate(0,0) rotate(0)}30%{transform:translate(4px,-6px) rotate(10deg)}60%{transform:translate(-3px,-2px) rotate(-6deg)}}
+@media (prefers-reduced-motion:reduce){.gltile,.gltile-ico{animation:none!important}}
+.gltile-s{display:block;font-size:11.5px;color:var(--faint);margin-top:4px;min-height:15px;
+  max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gldots{display:flex;justify-content:center;gap:6px;margin-top:2px}
+.gldots span{width:6px;height:6px;border-radius:50%;background:var(--faint);opacity:.35;
+  transition:all .3s}
+.gldots span.on{opacity:1;background:var(--volt);transform:scale(1.3)}

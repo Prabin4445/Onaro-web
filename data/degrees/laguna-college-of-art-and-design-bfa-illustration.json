@@ -1,0 +1,676 @@
+{
+ "institution": {
+  "name": "Laguna College of Art and Design",
+  "city": "Laguna Beach, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "laguna-college-of-art-and-design-bfa-illustration",
+  "degree": "BFA",
+  "major": "Illustration",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "source_url": "https://www.lcad.edu/wp-content/uploads/2024/12/IL-CR-25-26-11.21.24.pdf",
+  "notes": "Transcribed term-by-term from LCAD's official 'Illustration — Course Requirements 2025-2026' PDF. 8 semesters x 15 credits = 120 total, matching the document's 'TOTAL CREDITS TO GRADUATE: 120'. IL001 Advancement Review is a required 0-credit milestone (required_zero). 'English Diagnostic' is a placement requirement for English 100 (external_prereqs); the 2025-2026 extraction duplicates the course title into the prerequisites column for English 100/HUM101, so the 2026-2027 CR's explicit 'English Diagnostic' placement is used and documented. IL205 lists prereq 'FA151' in the document; no FA151 exists in the plan — read as FD151 (Fundamentals of Figure Drawing) per the 2026-2027 CR, which lists FD151 for the same course; encoded as FD151. Prerequisite OR-lists are reduced to their in-plan alternatives (out-of-plan alternative courses from other majors are documented here, not encoded): IL336 doc 'FD145, FD161, FD160 OR ED218 OR ED254 OR EX284 OR FA206'; IL342 doc 'FD145, FD161, FD160 OR EX284 OR ED218 OR GD254'; IL236 doc 'FD161 OR FD118 OR FD172 OR FD154'; IL282 doc 'FD161 OR FD118 OR FD172 OR FA154'; GD239 doc 'FD160, FD161 OR FD127, FD129'; IL224 doc 'FD145 OR FD166'. IL404 doc lists 'IL418 OR FA418 OR EX418 OR ED418 OR GD418'; only IL418 is in-plan and is encoded. CAP401 is 'Concurrent with IL419' (co-enrollment, not a prerequisite). Generic elective slots are choice slots; the document names no specific courses for them.",
+  "external_prereqs": [
+   "English Diagnostic"
+  ],
+  "semesters": [
+   {
+    "term": "Freshman 1st Semester",
+    "courses": [
+     {
+      "code": "FD145",
+      "title": "Design Drawing – Form, Function, Surface",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "FD151",
+      "title": "Figure Drawing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "FD161",
+      "title": "Fundamentals of Illustration",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "English 100",
+      "title": "English 100",
+      "credits": 3,
+      "prereq": [
+       "English Diagnostic"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "HUM101",
+      "title": "Humanities Foundation 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-4"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Freshman 2nd Semester",
+    "courses": [
+     {
+      "code": "FD154/FA202",
+      "title": "Painting 1 OR Fundamentals of Figure Painting",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Document: 'FD154 Painting 1 OR FA202 Fundamentals of Figure Painting' (3 credits).",
+      "options": [
+       "FD154",
+       "FA202"
+      ],
+      "category": "major",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "FD160",
+      "title": "Pictorial Design",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "FD171",
+      "title": "Fundamentals of Digital Painting + Color",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-2"
+     },
+     {
+      "code": "English 200",
+      "title": "English 200",
+      "credits": 3,
+      "prereq": [
+       "English 100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-3"
+     },
+     {
+      "code": "HUM102",
+      "title": "Humanities Foundation 2",
+      "credits": 3,
+      "prereq": [
+       "HUM101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-4"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Sophomore 1st Semester",
+    "courses": [
+     {
+      "code": "FA201",
+      "title": "Intermediate Figure Drawing",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "GD239",
+      "title": "Visual Design + Illustration",
+      "credits": 3,
+      "prereq": [
+       "FD160",
+       "FD161"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD160, FD161 OR FD127, FD129' — in-plan alternatives encoded.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-1"
+     },
+     {
+      "code": "IL224",
+      "title": "Advanced Perspective For Illustration",
+      "credits": 3,
+      "prereq": [
+       "FD145"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD145 OR FD166' — in-plan alternative encoded.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-2"
+     },
+     {
+      "code": "IL236",
+      "title": "Voice + Vision",
+      "credits": 3,
+      "prereq": [
+       "FD161"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD161 OR FD118 OR FD172 OR FD154' — only FD161 is in-plan (FD154 appears only inside the FD154/FA202 choice slot); encoded as FD161.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-3"
+     },
+     {
+      "code": "Art History Elective (AH)",
+      "title": "Art History Elective (AH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Art History Elective (AH)' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s3-4"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Sophomore 2nd Semester",
+    "courses": [
+     {
+      "code": "IL001",
+      "title": "Advancement Review",
+      "credits": 0,
+      "prereq": [
+       "FA201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": true,
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "IL205",
+      "title": "Artistic Anatomy",
+      "credits": 3,
+      "prereq": [
+       "FD151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prints prereq 'FA151' (no such course in plan); read as FD151 per the 2026-2027 CR.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-1"
+     },
+     {
+      "code": "IL223",
+      "title": "Words, Images, and Ideas",
+      "credits": 3,
+      "prereq": [
+       "FD160",
+       "FD161",
+       "FD145"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-2"
+     },
+     {
+      "code": "IL249",
+      "title": "Applied Art Reproduction",
+      "credits": 3,
+      "prereq": [
+       "FD160",
+       "FD171"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-3"
+     },
+     {
+      "code": "IL282",
+      "title": "Illustration Industries",
+      "credits": 3,
+      "prereq": [
+       "FD161"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD161 OR FD118 OR FD172 OR FA154' — in-plan alternative encoded.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-4"
+     },
+     {
+      "code": "Liberal Arts Elective",
+      "title": "Liberal Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Liberal Arts Elective' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s4-5"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Junior 1st Semester",
+    "courses": [
+     {
+      "code": "IL336",
+      "title": "Sequential Problem Solving",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD161",
+       "FD160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD145, FD161, FD160 OR ED218 OR ED254 OR EX284 OR FA206' — in-plan alternatives encoded.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "IL330",
+      "title": "Digital Painting for Illustration 1",
+      "credits": 3,
+      "prereq": [
+       "FD171",
+       "FD160",
+       "FD161",
+       "IL224"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-1"
+     },
+     {
+      "code": "STELEC",
+      "title": "Studio Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'STELEC Studio Elective' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s5-2"
+     },
+     {
+      "code": "ARTHISM300",
+      "title": "History of Illustration",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s5-3"
+     },
+     {
+      "code": "PS300",
+      "title": "Professional Studies for Illustrators",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s5-4"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Junior 2nd Semester",
+    "courses": [
+     {
+      "code": "IL315",
+      "title": "Graphic Illustration 1",
+      "credits": 3,
+      "prereq": [
+       "IL223",
+       "FD160",
+       "FD171"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s6-0"
+     },
+     {
+      "code": "IL342",
+      "title": "Illustration Ideation Lab: Pitch in Practice",
+      "credits": 3,
+      "prereq": [
+       "FD145",
+       "FD161",
+       "FD160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'FD145, FD161, FD160 OR EX284 OR ED218 OR GD254' — in-plan alternatives encoded.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s6-1"
+     },
+     {
+      "code": "STELEC",
+      "title": "Studio Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'STELEC Studio Elective' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s6-2"
+     },
+     {
+      "code": "Language Arts (LANG OR CW)",
+      "title": "Language Arts (LANG OR CW)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Language Arts (LANG OR CW)' requirement (3 credits); no specific course named.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s6-3"
+     },
+     {
+      "code": "Art History Elective (AH)",
+      "title": "Art History Elective (AH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Art History Elective (AH)' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s6-4"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Senior 1st Semester",
+    "courses": [
+     {
+      "code": "IL337",
+      "title": "Artist as Entrepreneur",
+      "credits": 3,
+      "prereq": [
+       "FD161"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "IL418",
+      "title": "Senior Portfolio 1: Illustration",
+      "credits": 3,
+      "prereq": [
+       "IL001",
+       "GD239",
+       "IL315"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-1"
+     },
+     {
+      "code": "STELEC",
+      "title": "Studio Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'STELEC Studio Elective' (3 credits); no specific course named.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s7-2"
+     },
+     {
+      "code": "Quantitative Reasoning (MATH)",
+      "title": "Quantitative Reasoning (MATH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Quantitative Reasoning (MATH)' requirement (3 credits); no specific course named.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s7-3"
+     },
+     {
+      "code": "Social Science (SOC)",
+      "title": "Social Science (SOC)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Social Science (SOC)' requirement (3 credits); no specific course named.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s7-4"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Senior 2nd Semester",
+    "courses": [
+     {
+      "code": "IL404",
+      "title": "Contemporary Illustration Strategies",
+      "credits": 3,
+      "prereq": [
+       "IL418"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document prereq: 'IL418 OR FA418 OR EX418 OR ED418 OR GD418' — only IL418 is in-plan.",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-0"
+     },
+     {
+      "code": "IL419",
+      "title": "Senior Portfolio 2: Illustration",
+      "credits": 3,
+      "prereq": [
+       "IL418"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-1"
+     },
+     {
+      "code": "STELEC",
+      "title": "Studio Elective",
+      "credits": 3,
+      "prereq": [
+       "IL418"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'STELEC Studio Elective' (3 credits); document lists IL418 as prerequisite.",
+      "options": [],
+      "category": "elective",
+      "slot_id": "s8-2"
+     },
+     {
+      "code": "CAP401",
+      "title": "Senior Capstone and Thesis Defense",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Document note: 'Concurrent with IL419' — co-enrollment, not a prerequisite.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s8-3"
+     },
+     {
+      "code": "Science (SCI)",
+      "title": "Science (SCI)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Generic 'Science (SCI)' requirement (3 credits); no specific course named.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s8-4"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "b2de9e8803c318e4aa75cfaccd8c0ecaa872c13f96d94a87a4b356b9c46dcf76",
+  "last_verified": "2026-10-02"
+ }
+}

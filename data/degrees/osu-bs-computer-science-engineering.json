@@ -1,0 +1,689 @@
+{
+ "institution": {
+  "city": "Columbus, OH",
+  "kind": "public4yr",
+  "name": "Ohio State University",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "osu-bs-computer-science-engineering",
+  "major": "Computer Science and Engineering",
+  "notes": "Source: official BS CSE curriculum sheet, 'Bachelor of Science in Computer Science and Engineering, Individualized Specialization Option,' marked 'Effective Term: Autumn 2024' and 'Rev 07/29/2025,' published as Appendix A in the official Ohio State Office of Academic Affairs proposal document (http://oaa.osu.edu/sites/default/files/documents/ASC%20-%20Proposal%20to%20revise%20the%20BS%20and%20BA%20Computer%20Information%20Science.pdf); the sheet itself directs readers to the CSE department (cse.osu.edu) for more information. Term-by-term sequence transcribed from that sheet's official 'Sample Schedule.' Cross-checked against the CSE-department-hosted 2023-03 curriculum sheet (Effective Term: Autumn 2022, https://cse.osu.edu/sites/default/files/2023-03/CSE-Curriculum-Sheet-New-GE-IND-sample-schedule-with-GE-FINAL-1.pdf) and official OSU department course listings (math.osu.edu 2024-2025 course listing; stat.osu.edu STAT 3470.01 page). Catalog year '2024-2025' reflects the sheet's stated Effective Term: Autumn 2024. Transcription method: manual transcription of the printed Sample Schedule; no courses, credits, or titles invented. CAVEATS: (1) The schedule prints 'MATH 1152 3' in Year 1 Spring, but MATH 1152 (Calculus II) is officially 5.0 credit hours (math.osu.edu) and the printed 15-hour term total requires 5; transcribed as 5. (2) The schedule prints 'STAT 3470 4' in Year 2 Autumn with an 18-hour term total, but STAT 3470 is officially 3 credit hours (stat.osu.edu course page; also listed as 3 in this sheet's own Required Non-Major Courses table and in all prior official sheets); transcribed as 3, making Year 2 Autumn 17 hours. (3) Year 3 Autumn prints 'ECE 2060,' but ECE 2060 (Introduction to Digital Logic) already appears in Year 2 Spring, and the sheet's Required Non-Major Courses table requires ECE 2360 'Electronics for CSE Majors' (3 hrs), which appears nowhere else in the 4-year plan; transcribed as ECE 2360. (4) Credit total 129 reflects the CSE 2501 (1 cr) ethics path plus the conditional Year 3 Spring GE Theme (4 cr); the PHILOS 2338 (4 cr) path totals 128 because PHILOS 2338 overlaps the Citizenship theme. The sheet states a minimum of 126 total credit hours. (5) The source schedule does not list per-course prerequisites, so all prereq arrays are empty and external_prereqs is empty. (6) Per the schedule, CSE 2221 requires a C or better for admission to the major. (7) Majors must select a specialization option; specialization requirements may dictate core/technical elective choices.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 1100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Ohio State and Computer Science and Engineering",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 1181",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Fundamentals of Engineering I",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1151",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYSICS 1250",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Mechanics, Thermal Physics, Waves",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 1223",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Computer Programming in Java",
+      "xfer": []
+     }
+    ],
+    "term": "Autumn Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2221",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Software I: Software Components",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 1182",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Fundamentals of Engineering II",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1152",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Foundations: Writing and Information Literacy courses.",
+      "code": "GE-WRITE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "GE Foundations: Writing and Information Literacy (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "GENED 1201",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Launch Seminar",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2231",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Software II: Software Development and Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2321",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Foundations I: Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 3470",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Introduction to Probability and Statistics for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from the approved math/science list (e.g. Math 2153, Math 2255/2415, Stat 4201, Chem 1210/1250, Biology 1113/1114, Physics 1251, EarthSc 1121/1122); at least 8 hours total across the degree — see Buckeye Degree Planner for the full list.",
+      "code": "MATHSCI-ELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Math or Science Elective (choose from approved list)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Foundations: Social & Behavioral Sciences courses.",
+      "code": "GE-SBS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "GE Foundations: Social & Behavioral Sciences (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Autumn Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2331",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Foundations II: Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2421",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Systems I: Introduction to Low-Level Programming and Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 3345",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Foundations of Higher Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 2060",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Introduction to Digital Logic",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Foundations: Race, Ethnicity and Gender Diversity courses.",
+      "code": "GE-DIV",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "GE Foundations: Race, Ethnicity and Gender Diversity (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2431",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Systems II: Introduction to Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one project course.",
+      "code": "CSE 390X",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSE 3901",
+        "credits": 4,
+        "title": "Project: Design, Development, and Documentation of Web Applications"
+       },
+       {
+        "code": "CSE 3902",
+        "credits": 4,
+        "title": "Project: Design, Development, and Documentation of Interactive Systems"
+       },
+       {
+        "code": "CSE 3903",
+        "credits": 4,
+        "title": "Project: Design, Development, and Documentation of System Software"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CSE Project (choose one of 3901/3902/3903)",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 2360",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Electronics for CSE Majors",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2568",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Foundations: Historical & Cultural Studies courses.",
+      "code": "GE-HIST",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "GE Foundations: Historical & Cultural Studies (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Autumn Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one core course from this pair; specialization option requirements may dictate the choice.",
+      "code": "CSE 32X1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSE 3231",
+        "credits": 3,
+        "title": "Introduction to Software Engineering"
+       },
+       {
+        "code": "CSE 3241",
+        "credits": 3,
+        "title": "Introduction to Database Systems"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Core Choice: CSE 3231 or CSE 3241",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one core course from this pair; specialization option requirements may dictate the choice.",
+      "code": "CSE 34X1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSE 3421",
+        "credits": 3,
+        "title": "Introduction to Computer Architecture"
+       },
+       {
+        "code": "CSE 3461",
+        "credits": 3,
+        "title": "Computer Networking and Internet Technologies"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Core Choice: CSE 3421 or CSE 3461",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one core course from this pair; specialization option requirements may dictate the choice.",
+      "code": "CSE 35X1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSE 3521",
+        "credits": 3,
+        "title": "Survey of Artificial Intelligence I: Basic Techniques"
+       },
+       {
+        "code": "CSE 3541",
+        "credits": 3,
+        "title": "Computer Game and Animation Techniques"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Core Choice: CSE 3521 or CSE 3541",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from the approved math/science list; at least 8 hours total across the degree — see Buckeye Degree Planner for the full list.",
+      "code": "MATHSCI-ELEC-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Math or Science Elective (choose from approved list)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one. If CSE 2501 is taken, a 4-credit GE Theme is also required this term (see GE-THEME-A); PHILOS 2338 (4 cr) overlaps the Citizenship theme and needs no additional theme course.",
+      "code": "CSE 2501",
+      "credits": 1,
+      "options": [
+       {
+        "code": "CSE 2501",
+        "credits": 1,
+        "title": "Social, Ethical, and Professional Issues in Computing"
+       },
+       {
+        "code": "PHILOS 2338",
+        "credits": 4,
+        "title": "Computing Ethics for a Just and Diverse World"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Ethics Requirement: CSE 2501 or PHILOS 2338 (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Required in this term only if CSE 2501 (1 cr) is taken for the ethics requirement instead of PHILOS 2338. Student choice from approved GE Theme courses.",
+      "code": "GE-THEME-A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "GE Theme (student choice; only if CSE 2501 taken)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3341",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Principles of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above; at most 2 hours of CSE 4251-4256; specialization option requirements may dictate choices.",
+      "code": "TECH-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above.",
+      "code": "TECH-ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above.",
+      "code": "TECH-ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Foundations: Literary, Visual and Performing Arts courses.",
+      "code": "GE-LITVPA",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "GE Foundations: Literary, Visual and Performing Arts (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Autumn Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one capstone design course; includes the bookend requirement.",
+      "code": "CSE 591X",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSE 5911",
+        "credits": 4,
+        "title": "Capstone Design: Software Applications"
+       },
+       {
+        "code": "CSE 5912",
+        "credits": 4,
+        "title": "Capstone Design: Game Design and Development"
+       },
+       {
+        "code": "CSE 5913",
+        "credits": 4,
+        "title": "Capstone Design: Computer Animation"
+       },
+       {
+        "code": "CSE 5914",
+        "credits": 4,
+        "title": "Capstone Design: Knowledge-Based Systems"
+       },
+       {
+        "code": "CSE 5915",
+        "credits": 4,
+        "title": "Capstone Design: Information Systems"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Design (choose one of 5911-5915; includes bookend)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above.",
+      "code": "TECH-ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above.",
+      "code": "TECH-ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical electives: at least 17 hours total; at least 9 hours must be CSE courses at the 3000-level or above; at most 8 hours of approved non-CSE courses at the 2000-level or above.",
+      "code": "TECH-ELEC-6",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Technical Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice from approved GE Theme courses.",
+      "code": "GE-THEME-B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "GE Theme (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://oaa.osu.edu/sites/default/files/documents/ASC%20-%20Proposal%20to%20revise%20the%20BS%20and%20BA%20Computer%20Information%20Science.pdf",
+  "total_credits": 129,
+  "content_hash": "dbbcaf655fd675637418b71b62fa9a9b21e14080a3189e8b93f555ff5a229ed4",
+  "last_verified": "2026-10-02"
+ }
+}

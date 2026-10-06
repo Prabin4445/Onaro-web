@@ -1,0 +1,538 @@
+{
+ "institution": {
+  "name": "Marquette University",
+  "city": "Milwaukee, WI",
+  "kind": "private",
+  "state": "WI"
+ },
+ "plan": {
+  "id": "marquette-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "https://bulletin.marquette.edu/arts-sciences/computer-science/computer-science-bs/computer-science-bs.pdf",
+  "notes": "Source: Marquette University 2026-2027 Undergraduate Bulletin (official, bulletin.marquette.edu), 'Computer Science, BS' program page, 'Typical Program for Computer Science Majors' section (freshman/sophomore/junior/senior first- and second-term tables with printed semester totals). Source URL: https://bulletin.marquette.edu/arts-sciences/computer-science/computer-science-bs/computer-science-bs.pdf (official bulletin-generated PDF of the same page; 2026-2027 Bulletin confirmed as current via bulletin.marquette.edu homepage 2026-09-30). Degree name verified: 'Computer Science, BS' (bulletin heading) — credential matches target exactly, no substitution. Transcription method: manual verbatim transcription of the official term-by-term typical-program tables (course codes, titles, credit hours, printed semester totals); all course titles are the bulletin's own catalog titles (Required Computer Science Courses and Required Mathematics Cognate Courses tables on the same page), not invented. CORE 4929 title = 'The Service of Faith and Promotion of Justice' (bulletin MCC requirements); ARSC 1953 = 'Exploring Arts and Sciences' (bulletin First-Year Seminar requirement). CREDIT-TOTAL CAVEAT: total_credits=122 is the typical program's OWN printed total (16+14+16+16+15+15+15+15=122), which the bulletin states explicitly as 'Total Credit Hours: 122'. The university bachelor's minimum is 120 credits (bulletin Graduation Requirements), so the sample as printed carries 2 extra elective credits; total_credits is set to the sample's own total (122) so the pipeline's exact credit-sum check passes (Clarkson/UVM/GCSU precedent). Choice-slot modeling: official either/or requirements (MATH 2100 or 2350; COSC 3410 or COSC 4400), 'or elective' alternatives (CORE 1929, CORE 4929), 'Any 1/Any 2/Remaining 1' MCC Foundation picks, Discovery Tier (DSCV) courses, the 4-credit lab science + 3-credit science elective (footnote: 6+ hrs BIOL/CHEM/PHYS incl. lab), and the required 12 credits of upper-division COSC electives are modeled as constrained-choice slots with distinct placeholder codes. 'COSC 3xxx/4xxx' elective slots are given distinct codes (COSC-EL-1 through COSC-EL-4) since the pipeline rejects duplicate non-choice codes. The bulletin sample publishes no per-course prerequisites, so prereq arrays are left empty rather than inferred. Catalog year used: 2026-2027 (actual year of the source). Total courses: 36.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ARSC 1953",
+      "title": "Exploring Arts and Sciences",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "COSC 1010",
+      "title": "Introduction to Software Development",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH 1450",
+      "title": "Calculus 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MCC-FOUND-1",
+      "title": "MCC Foundation Course (any 1 of ENGL 1001, PHIL 1001, THEO 1001, ESSV1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any of ENGL 1001 Foundations in Rhetoric, PHIL 1001 Foundations in Philosophy, THEO 1001 Foundations in Theology: Finding God in All Things, or ESSV1 Engaging Social Systems and Values 1 (MCC Foundations tier).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "NATSCI-LAB-1",
+      "title": "Natural Science with Laboratory (BIOL, CHEM, or PHYS with lab)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Per bulletin footnote: must complete at least 6 credit hours of Natural Science electives (BIOL, CHEM or PHYS), including at least one course with a laboratory component. The typical program places 4 credits of lab science in Fall Year 1 and 3 credits of science elective in Fall Year 3 (7 credits total).",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "COSC 1020",
+      "title": "Object-Oriented Software Design",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MCC-FOUND-2",
+      "title": "MCC Foundation Courses (any 2 of ENGL 1001, PHIL 1001, THEO 1001, ESSV1)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any of ENGL 1001 Foundations in Rhetoric, PHIL 1001 Foundations in Philosophy, THEO 1001 Foundations in Theology: Finding God in All Things, or ESSV1 Engaging Social Systems and Values 1 (MCC Foundations tier).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 1455",
+      "title": "Calculus 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "COSC 2100",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "COSC 2200",
+      "title": "Hardware Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH-SEL-1",
+      "title": "MATH 2100 Discrete Mathematics or MATH 2350 Foundations of Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice per the typical program: MATH 2100 Discrete Mathematics or MATH 2350 Foundations of Mathematics.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CORE-1929-1",
+      "title": "CORE 1929 Foundations in Methods of Inquiry or Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: CORE 1929 (MCC) or a general elective.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "MCC-FOUND-3",
+      "title": "MCC Foundation Course (remaining 1 of ENGL 1001, PHIL 1001, THEO 1001, ESSV1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any of ENGL 1001 Foundations in Rhetoric, PHIL 1001 Foundations in Philosophy, THEO 1001 Foundations in Theology: Finding God in All Things, or ESSV1 Engaging Social Systems and Values 1 (MCC Foundations tier).",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "COSC 3250",
+      "title": "Operating Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "COSC-EL-1",
+      "title": "Upper-Division COSC Elective I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division (3000/4000-level) COSC course. The major requires 12 credits of upper-division COSC electives, placed here (Spring Y2), Fall Y3, Fall Y4, Spring Y4.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MATH 3100",
+      "title": "Linear Algebra and Matrix Theory",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CORE-1929-2",
+      "title": "CORE 1929 Foundations in Methods of Inquiry or Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: CORE 1929 (MCC) or a general elective.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "DSCV-1",
+      "title": "Discovery Tier Course (MCC) I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of four required Discovery Tier (DSCV) MCC courses. Per bulletin: the four DSCV courses must be completed in the same theme and include Humanities (HUM), Social Science (SSC), Natural Science and Mathematics (NSM) and one elective (ELE) content areas; a maximum of two Discovery Tier courses can apply towards a primary major. The Writing Intensive (WRIT) and ESSV2 requirements can be fulfilled through designated Discovery Tier or other degree courses.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "COSC-3410-4400",
+      "title": "COSC 3410 Programming Languages or COSC 4400 Compiler Construction",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice per the major requirements: COSC 3410 Programming Languages or COSC 4400 Compiler Construction.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "COSC-EL-2",
+      "title": "Upper-Division COSC Elective II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division (3000/4000-level) COSC course (12 credits required total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "NATSCI-EL-1",
+      "title": "Natural Science Elective (BIOL, CHEM, or PHYS)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Per bulletin footnote: must complete at least 6 credit hours of Natural Science electives (BIOL, CHEM or PHYS), including at least one course with a laboratory component. The typical program places 4 credits of lab science in Fall Year 1 and 3 credits of science elective in Fall Year 3 (7 credits total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "DSCV-2",
+      "title": "Discovery Tier Course (MCC) II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of four required Discovery Tier (DSCV) MCC courses. Per bulletin: the four DSCV courses must be completed in the same theme and include Humanities (HUM), Social Science (SSC), Natural Science and Mathematics (NSM) and one elective (ELE) content areas; a maximum of two Discovery Tier courses can apply towards a primary major. The Writing Intensive (WRIT) and ESSV2 requirements can be fulfilled through designated Discovery Tier or other degree courses.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "DSCV-3",
+      "title": "Discovery Tier Course (MCC) III",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of four required Discovery Tier (DSCV) MCC courses. Per bulletin: the four DSCV courses must be completed in the same theme and include Humanities (HUM), Social Science (SSC), Natural Science and Mathematics (NSM) and one elective (ELE) content areas; a maximum of two Discovery Tier courses can apply towards a primary major. The Writing Intensive (WRIT) and ESSV2 requirements can be fulfilled through designated Discovery Tier or other degree courses.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "COSC 3100",
+      "title": "Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "COSC 3820",
+      "title": "Professional Ethics in Computer & Data Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "MATH 4720",
+      "title": "Statistical Methods",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "DSCV-4",
+      "title": "Discovery Tier Course (MCC) IV",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of four required Discovery Tier (DSCV) MCC courses. Per bulletin: the four DSCV courses must be completed in the same theme and include Humanities (HUM), Social Science (SSC), Natural Science and Mathematics (NSM) and one elective (ELE) content areas; a maximum of two Discovery Tier courses can apply towards a primary major. The Writing Intensive (WRIT) and ESSV2 requirements can be fulfilled through designated Discovery Tier or other degree courses.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELECT-1",
+      "title": "Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective of the student's choosing.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "COSC 4920",
+      "title": "Principles of Design",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "COSC-EL-3",
+      "title": "Upper-Division COSC Elective III",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division (3000/4000-level) COSC course (12 credits required total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CORE-4929-1",
+      "title": "CORE 4929 The Service of Faith and Promotion of Justice or Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: CORE 4929 The Service of Faith and Promotion of Justice (MCC) or a general elective.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELECT-2",
+      "title": "Electives (6 credit hours)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General electives of the student's choosing.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "COSC 4998",
+      "title": "Senior Design Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "COSC-EL-4",
+      "title": "Upper-Division COSC Elective IV",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division (3000/4000-level) COSC course (12 credits required total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CORE-4929-2",
+      "title": "CORE 4929 The Service of Faith and Promotion of Justice or Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: CORE 4929 The Service of Faith and Promotion of Justice (MCC) or a general elective.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELECT-3",
+      "title": "Electives (6 credit hours)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General electives of the student's choosing.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "da759d5471a1fb374bed48fbcef53076ac56e7e7c2062475b948411531a58285",
+  "last_verified": "2026-10-02"
+ }
+}

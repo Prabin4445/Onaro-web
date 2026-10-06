@@ -1,0 +1,621 @@
+{
+ "institution": {
+  "name": "Angelo State University",
+  "city": "San Angelo, TX",
+  "state": "TX",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "angelo-state-bfa-studio-art-painting-drawing",
+  "degree": "BFA",
+  "major": "Studio Art, Painting/Drawing",
+  "total_credits": 120,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.angelo.edu/academics/programs/studio-art/four-year-plan-painting-drawing/",
+  "transfer_confidence": "tccns_equivalencies",
+  "notes": "Studio Art, Painting/Drawing four-year plan transcribed from ASU's official program page (codes only on source). Course titles from ASU's official Fall 2026 Courses & Faculty schedule (abbreviated as published); ARTS 1304 title from ASU's 2019 core-curriculum draft (older source). ARTS 3312 title not published in Fall 2026 schedule; code used as placeholder title. Per catalog footnote: ARTS 4372 Portfolio Preparation should be taken the semester the student plans to graduate. NOTE: ARTS 4324 appears in both Year 3 Spring and Year 4 Fall (3 SCH each) as printed on the official plan; the Painting/Drawing specialization requires 6 SCH of ARTS 4324. This duplicate course code conflicts with build.py validation rule 7 (no duplicate codes). Degree letters not printed on plan page; recorded as BFA per ASU Studio Art program (verify). Plan page prints no catalog year; ASU's current catalog is 2026-2027.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ENGL 1301",
+      "title": "English Composition",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1311",
+      "title": "Design I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1303",
+      "title": "Art History I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1316",
+      "title": "Drawing I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "GS 1181",
+      "title": "Freshman Seminar",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Elective, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ENGL 1302 or 2311",
+      "title": "ENGL 1302 or 2311",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "ENGL 1302 or ENGL 2311, as printed on the four-year plan.",
+      "options": [
+       {
+        "code": "ENGL 1302",
+        "title": "Writing Across the Curriculum"
+       },
+       {
+        "code": "ENGL 2311",
+        "title": "Intro to Tech and Bus Writing"
+       }
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1312",
+      "title": "Design II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1304",
+      "title": "Art History II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 1317",
+      "title": "Drawing II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "Mathematics",
+      "title": "Mathematics",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Texas Core Mathematics requirement — select a course from the Mathematics core as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fall — Year 2",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "Language, Philosophy, and Culture",
+      "title": "Language, Philosophy, and Culture",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Texas Core Language, Philosophy, and Culture requirement — select a course from the Language, Philosophy, and Culture core as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 2316",
+      "title": "Painting I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 3342",
+      "title": "Watercolor I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "Life and Physical Sciences",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Texas Core Life and Physical Sciences requirement — select a course from the Life and Physical Sciences core as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "Social and Behavioral Sciences",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Texas Core Social and Behavioral Sciences requirement — select a course from the Social and Behavioral Sciences core as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Spring — Year 2",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "COMM 1315",
+      "title": "Public Speaking",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 2373",
+      "title": "Digital Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 3311",
+      "title": "Drawing III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 4321",
+      "title": "Painting II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "History or Political Science",
+      "title": "History or Political Science",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "History or Political Science — select a History or Political Science course as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall — Year 3",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ARTS 3313",
+      "title": "Modern Art",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 3323",
+      "title": "Watercolor II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 3356",
+      "title": "Digital Imagery",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "Life and Physical Sciences",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Texas Core Life and Physical Sciences requirement — select a course from the Life and Physical Sciences core as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "Electives",
+      "title": "Electives",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Elective, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring — Year 3",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ARTS 2326",
+      "title": "Sculpture I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 3312",
+      "title": "ARTS 3312",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 4324",
+      "title": "Painting III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "History or Political Science",
+      "title": "History or Political Science",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "History or Political Science — select a History or Political Science course as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "Humanities",
+      "title": "Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Humanities requirement — select a course as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fall — Year 4",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ARTS 2333",
+      "title": "Printmaking I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 4324",
+      "title": "Painting III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Specialization course, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "Advanced Art History",
+      "title": "Advanced Art History",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Advanced Art History (Specialization), as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "History or Political Science",
+      "title": "History or Political Science",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "History or Political Science — select a History or Political Science course as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Elective, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Spring — Year 4",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ARTS 2346",
+      "title": "Ceramics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS 4372",
+      "title": "Portfolio Preparation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "History or Political Science",
+      "title": "History or Political Science",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "History or Political Science — select a History or Political Science course as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "Advanced Art History",
+      "title": "Advanced Art History",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Advanced Art History (Specialization), as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Elective, as printed on the four-year plan.",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "allow_repeated_courses": true,
+  "content_hash": "d950a869faec80e5a85cfe42e9a2c13521d9ebd98a8f579af67293aaa76f7997",
+  "last_verified": "2026-10-06"
+ }
+}

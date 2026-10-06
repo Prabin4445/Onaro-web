@@ -1,0 +1,350 @@
+{
+ "institution": {
+  "city": "Boston, MA",
+  "kind": "community",
+  "name": "Bunker Hill Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [
+   "MAT 194",
+   "MAT 197"
+  ],
+  "id": "bunkerhill-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Bunker Hill Community College catalog (catalog.bhcc.edu), College Catalog 2025-2026 (program page dated Feb 03, 2026): https://catalog.bhcc.edu/preview_program.php?catoid=13&poid=1459 . Official program title: 'Program: Computer Science Transfer Option, A.S.' BHCC also offers a separate 'Computer Science Concentration, A.A.'; this plan uses the A.S. Computer Science Transfer Option, BHCC's true CS degree. Transcription method: manual transcription of the catalog's official term-by-term sequence (Semester 1 through Semester 4). Catalog year verified on the program page header ('College Catalog 2025 - 2026'). Course credits and official prerequisite lines verified against the catalog's Course Descriptions pages (catalog.bhcc.edu/content.php?catoid=13&navoid=678, cpages 2-7). CREDIT HONESTY: the published sequence prints term totals as ranges - Semester 1: 17-18, Semester 2: 15, Semester 3: 16-17, Semester 4: 13-16 (degree range 61-66 credits). The catalog prints no single degree total; total_credits is set to 61, the sequence's own published minimum, and variable-credit slots use their minimum (GenEd-E 3-4 -> 3; Option Electives 3-4 -> 3). A student taking 4-credit options reaches up to 66 credits. No courses, credits, or prerequisites were invented. PREREQS: in-plan college-level prereqs are in prereq arrays; MAT-194 (College Algebra-STEM) and MAT-197 (Precalculus) are the official course prerequisites behind CSC-237/CSC-239 (MAT-194), CSC-242/CSC-285 (MAT-197), and MAT-281 (MAT-197) and are listed in external_prereqs as plain codes. Developmental/placement-level prerequisites (MAT-099, RDG-095, ENG-095/ELL-103, ESL-098) are placement-only and documented here, not in prereq arrays. The catalog marks CSC-120, CSC-237, CSC-239, and CSC-285 as Milestone Courses to be taken in the order shown. Advising notes from the program page: (1) GenEd Quantitative Problem Solving and Scientific Reasoning requirements are satisfied by the program; (2) new degree-seeking students in 9+ credits must take a Learning Community Seminar or cluster in their first year; (3) transfer guidance for UMass Boston (CSC-240 at UMB), UMass Lowell/Amherst (take MAT-291 as an elective), and Tufts (take MAT-283).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 120",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Intro to Comp Sci & Object Oriented Prog",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 281",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 197"
+      ],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "College Writing I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog: 'Choose one course from General Education Community and Cultural Contexts Menu.'",
+      "code": "GENED CCC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Community & Cultural Contexts (choose from GenEd menu)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog lists this elective at 3-4 credits; minimum 3 used.",
+      "code": "GENED E",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 237",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 120",
+       "MAT 194"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "C++ Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 282",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 281"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 112",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 111"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "College Writing II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 239",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 120",
+       "MAT 194"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "JAVA Programming",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog lists this elective at 3-4 credits; minimum 3 used. Option Elective menu: CSC-244 Android Development With Kotlin (3), CSC-236 SQL Programming (3), CSC-284 Advanced C++/OOP (3), CSC-287 Survey New Popular OOPL for Programmers (3), CSC-299 Computer Science Internship (3), HON-200 Honors Seminar (3), INT-299CSC Learn & Earn Computer Science Intern (3), MAT-283 Calculus III (4), MAT-285 Ordinary Differential Equations (4), MAT-291 Linear Algebra (4).",
+      "code": "OPT ELEC 1",
+      "credits": 3,
+      "options": [
+       "CSC 244",
+       "CSC 236",
+       "CSC 284",
+       "CSC 287",
+       "CSC 299",
+       "HON 200",
+       "INT 299CSC",
+       "MAT 283",
+       "MAT 285",
+       "MAT 291"
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Option Elective (choose from Option Elective menu)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 285",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 239",
+       "MAT 197"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Advanced Java Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 242",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 239",
+       "MAT 197"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 251",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 281"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Physics I/Lab",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog GenEd-CW (Creative Work) requirement; choose from the GenEd menu.",
+      "code": "GENED CW",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Creative Work (choose from GenEd menu)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 252",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHY 251",
+       "MAT 282"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Physics II/Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Same Option Elective menu as Fall Year 2 (see OPT ELEC 1 choice_note); 3-4 credits, minimum 3 used.",
+      "code": "OPT ELEC 2",
+      "credits": 3,
+      "options": [
+       "CSC 244",
+       "CSC 236",
+       "CSC 284",
+       "CSC 287",
+       "CSC 299",
+       "HON 200",
+       "INT 299CSC",
+       "MAT 283",
+       "MAT 285",
+       "MAT 291"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Option Elective (choose from Option Elective menu)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Same Option Elective menu as Fall Year 2 (see OPT ELEC 1 choice_note); 3-4 credits, minimum 3 used.",
+      "code": "OPT ELEC 3",
+      "credits": 3,
+      "options": [
+       "CSC 244",
+       "CSC 236",
+       "CSC 284",
+       "CSC 287",
+       "CSC 299",
+       "HON 200",
+       "INT 299CSC",
+       "MAT 283",
+       "MAT 285",
+       "MAT 291"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Option Elective (choose from Option Elective menu)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Same Option Elective menu as Fall Year 2 (see OPT ELEC 1 choice_note); 3-4 credits, minimum 3 used.",
+      "code": "OPT ELEC 4",
+      "credits": 3,
+      "options": [
+       "CSC 244",
+       "CSC 236",
+       "CSC 284",
+       "CSC 287",
+       "CSC 299",
+       "HON 200",
+       "INT 299CSC",
+       "MAT 283",
+       "MAT 285",
+       "MAT 291"
+      ],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Option Elective (choose from Option Elective menu)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.bhcc.edu/preview_program.php?catoid=13&poid=1459",
+  "total_credits": 61,
+  "content_hash": "9a99659b4e0074f4c9ccee0509f47a32c70e3cf456689707a96abbfd4b7c4d32",
+  "last_verified": "2026-10-02"
+ }
+}

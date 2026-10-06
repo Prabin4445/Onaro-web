@@ -1,0 +1,317 @@
+{
+ "institution": {
+  "name": "American Jewish University",
+  "city": "Los Angeles, CA",
+  "state": "CA",
+  "kind": "private4yr"
+ },
+ "plan": {
+  "id": "american-jewish-university-ba-early-childhood-education",
+  "degree": "BA",
+  "major": "Early Childhood Education",
+  "total_credits": 60,
+  "catalog_year": "2025-2026",
+  "source_url": "https://aju.edu/masor-school/early-childhood-education/bachelors/",
+  "last_verified": "2026-10-01",
+  "transfer_confidence": "core_only",
+  "notes": "Term-by-term sequence transcribed verbatim from the official AJU program page (https://aju.edu/masor-school/early-childhood-education/bachelors/), retrieved 2026-10-01. This is a BACHELOR'S DEGREE COMPLETION program: the 60 semester units below are taken at AJU over 6 semesters (2 years: Fall/Spring/Summer x 2); per the program page, 'Students will complete the remaining 60 semester units of required core courses at AJU' and 'This is a bachelor degree completion program', i.e. the other 60 units are lower-division/general-education transfer credit toward the 120-unit BA. Each semester sums to 10 units; 6 x 10 = 60 total. VALIDATION CAVEAT: the genuine published sequence has 6 semesters, but the build.py bachelor rule requires 8-10 semesters for BA/BS/BBA plans, so this plan will likely be rejected by rule 3 unless the pipeline makes an exception for published completion programs. catalog_year '2025-2026' is inferred from the live program page: AJU publishes no dated current catalog for the Masor School (the latest dated AJU catalog found is the 2019-2020 Master Catalog). The program page lists no course prerequisites. A second AJU URL (/masor-school/program/early-childhood-education/bachelors/) renders only a partial, inconsistent variant (3 semesters, some differing course titles); the complete 60-unit sequence used here is the one that sums to the advertised 60 units and whose course numbers/titles match AJU's current extension course offerings (e.g. EDU 300, EDU 303, EDU 311, EDU 313). transfer_confidence is 'core_only': AJU is a private non-Texas university with no published TCCNS/articulation equivalencies, so tccns mirrors the local course code. Distance completion program: 6-semester professional sequence; general education completed separately.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 301",
+      "title": "Child Growth & Development",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 301",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 307",
+      "title": "Introduction to Working with Young Children: Curriculum, Play, and Pedagogy",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 307",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 317",
+      "title": "Practicum: Leading Classroom Experiences",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 317",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 313",
+      "title": "Partnering with Families and Community",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 313",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 315",
+      "title": "Behavior as Communication",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 315",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 318",
+      "title": "Practicum: Leading Parent Education",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 318",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Summer — Year 1",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 304",
+      "title": "Collaboration and Adaptations for Special Needs in ECE",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 304",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 311",
+      "title": "Creative Experiences for Young Children",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 311",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 305",
+      "title": "Practicum with Special Needs in ECE",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 305",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fall — Year 2",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 306",
+      "title": "Language & Literacy Development",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 306",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 308",
+      "title": "Cognitive Development",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 308",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 312",
+      "title": "Practicum: Planning Literacy Based Activities for Young Children",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 312",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Spring — Year 2",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 309",
+      "title": "STEM Education and Experiences in ECE",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 309",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 314",
+      "title": "The Indoor & Outdoor Environments: A Classroom View",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 314",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 310",
+      "title": "Practicum: Planning, Implementing and Evaluating Lesson Plans for Young Children",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 310",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Summer — Year 2",
+    "declared_credits": 10,
+    "courses": [
+     {
+      "code": "EDU 300",
+      "title": "Infant Toddler Development and Learning",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 300",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "EDU 303",
+      "title": "Introduction to the Administration of Early Childhood Programs",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 303",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "EDU 302",
+      "title": "Practicum with Infants and Toddlers",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "EDU 302",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "19531257df5a450ea7685fc806f1e3c2b95adb611428d4b374a744037f2e0081"
+ }
+}

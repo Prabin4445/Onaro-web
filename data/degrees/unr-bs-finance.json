@@ -1,0 +1,364 @@
+{
+ "institution": {
+  "name": "University of Nevada, Reno",
+  "city": "Reno",
+  "state": "NV",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "unr-bs-finance",
+  "degree": "BS",
+  "major": "Finance",
+  "catalog_year": "2023-2024",
+  "total_credits": 60,
+  "source_url": "https://www.unr.edu/main/pdfs/verified-accessible/colleges-schools/business/advising/fin-major-checklist.pdf",
+  "program_type": "professional-phase",
+  "notes": "program_type professional-phase: the official College of Business major checklist sequences only the upper-division professional phase (junior/senior years, 4 terms). The full degree requires 120 credits; Silver Core GE and the pre-business core are completed first and listed in external_prereqs. The official checklist publishes course codes without course titles; the code is repeated as the title. See catalog.unr.edu for official titles. Prerequisite chain per flow chart: FIN 301 -> FIN 307 -> FIN 404. FIN 307 should be taken immediately after FIN 301. Emphasis requirement (choose ONE): Accounting emphasis (ACC 401 and ACC 402) or Economics emphasis (ECON 302 and ECON 303 or ECON 463). MGT 496 prerequisites: ENG 102; CH 201/202/203/212; MGT 301; FIN 301; SCM 352.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "FIN 301",
+      "title": "FIN 301",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGT 325",
+      "title": "MGT 325",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 334 / ECON 442",
+      "title": "ECON 334 / ECON 442",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECON 334 or ECON 442 (3 CR each).",
+      "options": [
+       {
+        "code": "ECON 334",
+        "title": "ECON 334",
+        "credits": 3
+       },
+       {
+        "code": "ECON 442",
+        "title": "ECON 442",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SCM 352",
+      "title": "SCM 352",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 301",
+      "title": "IS 301",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "FIN 307",
+      "title": "FIN 307",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FIN 301"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN 308",
+      "title": "FIN 308",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN-ELECTIVE-1",
+      "title": "FIN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Upper-division FIN elective (3 CR): ECON 441, FIN 321, 322, 406, 410, 415, 419, 420, 421, 430, 490, or 493** (**may be taken twice with different topics).",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGT 301",
+      "title": "MGT 301",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACC 401 / ECON 302",
+      "title": "Emphasis Course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Emphasis requirement (choose ONE emphasis): Accounting emphasis = ACC 401 and ACC 402; Economics emphasis = ECON 302 and (ECON 303 or ECON 463).",
+      "options": [
+       {
+        "code": "ACC 401",
+        "title": "Emphasis Course",
+        "credits": 3
+       },
+       {
+        "code": "ECON 302",
+        "title": "Emphasis Course",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "FIN 404",
+      "title": "FIN 404",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FIN 307"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN-ELECTIVE-2",
+      "title": "FIN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Upper-division FIN elective (3 CR): ECON 441, FIN 321, 322, 406, 410, 415, 419, 420, 421, 430, 490, or 493** (**may be taken twice with different topics).",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN-ELECTIVE-3",
+      "title": "FIN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Upper-division FIN elective (3 CR): ECON 441, FIN 321, 322, 406, 410, 415, 419, 420, 421, 430, 490, or 493** (**may be taken twice with different topics).",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGT 321",
+      "title": "MGT 321",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ACC 402 / ECON 303 / ECON 463",
+      "title": "Emphasis Course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Emphasis requirement (choose ONE emphasis): Accounting emphasis = ACC 401 and ACC 402; Economics emphasis = ECON 302 and (ECON 303 or ECON 463).",
+      "options": [
+       {
+        "code": "ACC 402",
+        "title": "Emphasis Course",
+        "credits": 3
+       },
+       {
+        "code": "ECON 303",
+        "title": "Emphasis Course",
+        "credits": 3
+       },
+       {
+        "code": "ECON 463",
+        "title": "Emphasis Course",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "MGT 496",
+      "title": "MGT 496",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "MGT 301",
+       "FIN 301",
+       "SCM 352"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN-ELECTIVE-4",
+      "title": "FIN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Upper-division FIN elective (3 CR): ECON 441, FIN 321, 322, 406, 410, 415, 419, 420, 421, 430, 490, or 493** (**may be taken twice with different topics).",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FIN-ELECTIVE-5",
+      "title": "FIN Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Upper-division FIN elective (3 CR): ECON 441, FIN 321, 322, 406, 410, 415, 419, 420, 421, 430, 490, or 493** (**may be taken twice with different topics).",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 304",
+      "title": "ECON 304",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-ELECTIVE-1",
+      "title": "General Elective (If Needed)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General elective (3 credits), taken if needed to reach 120 credits.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "ACC 201",
+   "ACC 202",
+   "ECON 102",
+   "ECON 103",
+   "ECON 261",
+   "ECON 262",
+   "IS 101",
+   "MATH 176",
+   "MKT 210",
+   "ENG 102",
+   "CH 201",
+   "CH 202",
+   "CH 203",
+   "CH 212"
+  ],
+  "content_hash": "e99714e1efb91649e5779205cc32039f4c6d8516f03a6261194b2f56efedc9f1",
+  "last_verified": "2026-10-02"
+ }
+}

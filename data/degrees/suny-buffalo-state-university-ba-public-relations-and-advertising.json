@@ -1,0 +1,618 @@
+{
+ "institution": {
+  "city": "Buffalo, NY",
+  "kind": "public4yr",
+  "name": "SUNY Buffalo State University",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "suny-buffalo-state-university-ba-public-relations-and-advertising",
+  "degree": "BA",
+  "major": "Public Relations and Advertising",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://communication.buffalostate.edu/sites/communication/files/documents/pra_roadmap_2024.pdf",
+  "notes": "Official Academic Roadmap: Public Relations and Advertising, B.A., Effective Fall 2024 (communication.buffalostate.edu). The roadmap directs five courses per semester with published year totals of 30/60/90/120 credits, i.e. 15 credits per semester; every semester lists exactly five slots and all named courses are standard 3-credit courses. GE23 Core Course / All-College Elective slots are choice slots (any qualifying course). COM 450 prerequisite chain beyond COM 100 (21 upper-division COM/SPC credits) and the COM 212-or-215 prerequisites for COM 322/COM 336 are documented here rather than modeled as slot references.",
+  "external_prereqs": [
+   "SPC 103"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "First Semester",
+    "courses": [
+     {
+      "code": "COM 100",
+      "title": "Media Literacy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SPC 205",
+      "title": "Intro to Oral Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CWP 101",
+      "title": "College Writing I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s1-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s1-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Second Semester",
+    "courses": [
+     {
+      "code": "com212-com215-choice",
+      "title": "Intro to Digital Storytelling OR Intro to Visual Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Roadmap: COM 212 Intro to Digital Storytelling or COM 215 Intro to Visual Communication",
+      "options": [
+       "COM 212",
+       "COM 215"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CWP 102",
+      "title": "College Writing II",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       "CWP 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s2-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s2-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s2-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Third Semester",
+    "courses": [
+     {
+      "code": "COM 210",
+      "title": "Media Writing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CWP 102",
+       {
+        "one_of": [
+         "COM 100",
+         "SPC 103"
+        ]
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s3-1",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s3-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s3-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s3-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Fourth Semester",
+    "courses": [
+     {
+      "code": "COM 301",
+      "title": "Principles of PR & Advertising",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "COM 210",
+       "SPC 205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SPC 307",
+      "title": "Group Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "SPC 205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s4-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s4-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s4-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Fifth Semester",
+    "courses": [
+     {
+      "code": "COM 308",
+      "title": "Public Relations Writing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "COM 210"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COM 322",
+      "title": "Communication Graphics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s5-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s5-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s5-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Sixth Semester",
+    "courses": [
+     {
+      "code": "COM 336",
+      "title": "Web & Social Media Production",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COM 401",
+      "title": "Applied Communication Research",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "COM 301"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s6-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s6-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s6-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Seventh Semester",
+    "courses": [
+     {
+      "code": "COM 418",
+      "title": "Campaigns in PR & Advertising",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "COM 401"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s7-1",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s7-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s7-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s7-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Eighth Semester",
+    "courses": [
+     {
+      "code": "COM 450",
+      "title": "Communication and Society",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "COM 100"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "com-spc-elective-300-400-level-choice-s8-1",
+      "title": "COM/SPC Elective (300/400 level)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "COM/SPC elective at the 300 or 400 level; any qualifying course",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s8-2",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s8-3",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ge23-core-course-or-all-college-elective-choice-s8-4",
+      "title": "GE23 Core Course or All-College Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GE23 Core Course or All-College Elective; any qualifying course",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "fad0489198ba76f33d30a28b37805183122ea10436e89d4e68d6b80e1010fa85",
+  "last_verified": "2026-10-02"
+ }
+}

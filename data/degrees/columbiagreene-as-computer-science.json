@@ -1,0 +1,282 @@
+{
+ "institution": {
+  "city": "Hudson, NY",
+  "kind": "community",
+  "name": "Columbia-Greene Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "columbiagreene-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official CGCC online catalog program page https://catalog.columbiagreene.edu/computer-science/associate-of-science-as/computer-science (site title: '2026-27 College Catalog'). Transcribed 2026-09-30 from the catalog's official 'Suggested Program Sequence' (1st/2nd/3rd/4th Semester), whose published semester sub-totals are 15/16/16/14 = 61, exactly matching the catalog's 'Semester Hours Required for Graduation: 61' — no discrepancy. True degree name per catalog: Computer Science, Associate of Science (A.S.), Curriculum Code 0532. Course titles, credits, and elective-slot labels copied verbatim from the sequence (e.g. 'HU ELE (3 credits)' Humanities Elective; 'MA ELE (4 credits)' Mathematics Elective; 'GN ELE' General Elective; 'SC ELE (4 credits)' Lab Science Elective; 'HU ELE or SL ELE or MA ELE or SC ELE (3 credits)' rendered as a choice slot covering all four prefixes). CS Elective note per catalog: CS-prefix courses only; CI courses not approved; AR 140/205/245/250 also allowed with advisor consultation. Verified prerequisite from the official CS 256 course page: CS 256 requires CS 134. No prerequisites were published on the fetched CS 127, CS 134 (sequence-only listing), EN 101, EN 102, MA 111, or CE 101 course pages; prereq fields were left empty rather than invented. Catalog Academic Preparation (placement, not a course prereq): 12th-grade reading level and placement readiness for EN 101 required; competency in Pre-Algebra or Pre-Statistics required by completion of 24 credits. Caveat: the college's marketing program page (www.columbiagreene.edu) lists 'CS 154 JAVA Programming' in the requirements table while the catalog's Suggested Program Sequence lists CS 127 Practical Programming — the catalog sequence was used as the authoritative term-by-term source.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "other",
+      "choice": false,
+      "choice_note": "",
+      "code": "CE 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Experience",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 134",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Computer and Informatics Science I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Composition",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any 3-credit Humanities elective (prefixes AR, CO, DA, EN, FR, HU, IT, MU, PL, SA, SN, TH)",
+      "code": "HU ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Humanities Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any 4-credit Mathematics elective (prefix MA)",
+      "code": "MA ELE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Mathematics Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 127",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Practical Programming",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any 3-credit General elective",
+      "code": "GN ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Composition and Literature",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Precalculus",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any 3-credit Social Science elective (prefixes CD, EC, ED, HI, HS, PS, PY, SL, SO)",
+      "code": "SL ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Social Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 3-credit Computer Science elective (CS-prefix courses only; CI courses not approved; AR 140/205/245/250 allowed with advisor consultation)",
+      "code": "CS ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "6 credits of General electives (may be split across multiple courses)",
+      "code": "GN ELE",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 3-credit course with prefix HU, SL, MA, or SC",
+      "code": "HU ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Humanities / Social Science / Math / Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any 4-credit Lab Science elective (prefixes BI, CH, PX, SC)",
+      "code": "SC ELE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Lab Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 256",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 134"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 3-credit Computer Science elective (CS-prefix courses only; CI courses not approved; AR 140/205/245/250 allowed with advisor consultation)",
+      "code": "CS ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "4 credits of General electives (may be split across multiple courses)",
+      "code": "GN ELE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 3-credit course with prefix HU, SL, MA, or SC",
+      "code": "HU ELE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Humanities / Social Science / Math / Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.columbiagreene.edu/computer-science/associate-of-science-as/computer-science",
+  "total_credits": 61,
+  "content_hash": "06aea5abc79da23bc4c65a9b904b1d0806b3ae78e9c5e33864bb8947fee02871",
+  "last_verified": "2026-10-02"
+ }
+}

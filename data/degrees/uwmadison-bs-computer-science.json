@@ -1,0 +1,683 @@
+{
+ "institution": {
+  "city": "Madison, WI",
+  "kind": "public4yr",
+  "name": "University of Wisconsin–Madison",
+  "state": "WI"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uwmadison-bs-computer-science",
+  "major": "Computer Sciences",
+  "notes": "Source: official UW–Madison Guide, Computer Sciences BS Four-Year Plan (guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/). Catalog year: 2026-2027 (live edition; requirements text applies to students whose first term is Summer 2026 or later). Transcription method: the Guide's own official term-by-term Four-Year Plan tables were transcribed verbatim (course placement, credits, semester totals). Student-choice/advanced-requirement slots in the Guide's plan (Linear Algebra, Probability or Statistics, COMP SCI Theory, Software & Hardware, Applications, COMP SCI Electives, all GenEd/breadth and Elective rows) are represented as choice:true with the Guide's own example/recommended courses shown where one is named, and a real 3-credit course from the corresponding requirement list otherwise; alternatives are documented in each slot's choice_note. The Guide prints semester totals of 16/15/15 for Years 3-4 assuming 3-credit advanced courses; note the Guide's own recommended Theory option (COMP SCI 577, 4 cr) would raise Third Year Fall to 17 credits — the 3-credit COMP SCI 520 is shown to match the printed totals exactly. Prereq chains were intentionally left empty rather than inferred (no course-level requisites published in the plan tables). A separate earlier attempt (~/workspace/degree-wave2-work/d2-uwmad/BLOCKED.md) claimed this page has no Four-Year Plan; the current live edition (fetched 2026-09-30) demonstrably includes one (Four-Year Plan section, Total Credits 120), so that BLOCKED conclusion is superseded.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI 200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 221",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UW–Madison course with the Communication Part A designation (or eligible placement score).",
+      "code": "COMM-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Communication Part A (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "First semester of a language other than English (third-unit requirement).",
+      "code": "LANG-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "First-Semester Language (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI 300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 222",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 3+ credit course with the Ethnic Studies designation.",
+      "code": "ETHNIC-ST",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Ethnic Studies (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Second semester of the same language.",
+      "code": "LANG-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Second-Semester Language (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI 400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Programming III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI/E C E 252",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Computer Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one Linear Algebra course: MATH 320, MATH 340 (shown), or MATH 341 (3 cr); MATH 345 (4 cr); or MATH 375 (5 cr).",
+      "code": "MATH 340",
+      "credits": 3,
+      "options": [
+       "MATH 320",
+       "MATH 341",
+       "MATH 345",
+       "MATH 375"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Elementary Matrix and Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Third semester of the same language (completes the L&S BS language requirement).",
+      "code": "LANG-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Third-Semester Language (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Social Science breadth designation (12 total Social Science credits required across the degree).",
+      "code": "SOCSCI-BR-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Social Science Breadth (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI/E C E 354",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Machine Organization and Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI/MATH 240",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Guide labels this an optional career development course; it is counted in the Guide's own 14-credit semester total.",
+      "code": "INTER-LS 210",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "L&S Career Development: Taking Initiative",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One course with the Communication B designation.",
+      "code": "COMM-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Communication Part B (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fourth semester of the same language.",
+      "code": "LANG-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Fourth-Semester Language (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Guide recommends COMP SCI 577 Introduction to Algorithms (4 cr) for Theory. COMP SCI 520 (3 cr, shown) also satisfies the Theory requirement and keeps the Guide's printed 16-credit semester total; taking 577 raises this semester to 17 credits.",
+      "code": "COMP SCI 520",
+      "credits": 3,
+      "options": [
+       "COMP SCI 577"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Introduction to Theory of Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: STAT/MATH 309, STAT 311, STAT 324 (shown), MATH 331, STAT 333, STAT 371, STAT/MATH 431, or MATH 531 (3 cr each); STAT 340 (4 cr) is the other listed option.",
+      "code": "STAT 324",
+      "credits": 3,
+      "options": [
+       "STAT/MATH 309",
+       "STAT 311",
+       "MATH 331",
+       "STAT 333",
+       "STAT 371",
+       "STAT 340",
+       "STAT/MATH 431",
+       "MATH 531"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Introduction to Statistics for Science and Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Guide labels this an optional programming course; it is counted in the Guide's own 16-credit semester total.",
+      "code": "COMP SCI 368",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Learning a Programming Language",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Humanities or Literature designation (12 total Humanities credits, including at least 6 Literature, required across the degree).",
+      "code": "HUM-BR-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Humanities Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Social Science breadth designation.",
+      "code": "SOCSCI-BR-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Social Science Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective of the student's choosing.",
+      "code": "ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of two required Software & Hardware courses; choose from COMP SCI 407, COMP SCI/E C E 506, COMP SCI 536, COMP SCI 538 (shown), COMP SCI 537, COMP SCI 542, COMP SCI 544, COMP SCI/E C E 552, COMP SCI 557, COMP SCI 564, COMP SCI 574, COMP SCI 640, or COMP SCI 642. Most are 3 cr; 537 and 564 are 4 cr.",
+      "code": "COMP SCI 538",
+      "credits": 3,
+      "options": [
+       "COMP SCI 407",
+       "COMP SCI/E C E 506",
+       "COMP SCI 536",
+       "COMP SCI 537",
+       "COMP SCI 542",
+       "COMP SCI 544",
+       "COMP SCI/E C E 552",
+       "COMP SCI 557",
+       "COMP SCI 564",
+       "COMP SCI 574",
+       "COMP SCI 640",
+       "COMP SCI 642"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to the Theory and Design of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one Applications course: COMP SCI 412, 425, 513, 514, 524, 525, 540 (shown), 541, 559, 565, 566, 570, or 571 (3 cr each).",
+      "code": "COMP SCI 540",
+      "credits": 3,
+      "options": [
+       "COMP SCI 412",
+       "COMP SCI/I SY E/MATH 425",
+       "COMP SCI/MATH 513",
+       "COMP SCI/MATH 514",
+       "COMP SCI/E C E/I SY E 524",
+       "COMP SCI/I SY E/MATH/STAT 525",
+       "COMP SCI 541",
+       "COMP SCI 559",
+       "COMP SCI 565",
+       "COMP SCI 566",
+       "COMP SCI 570",
+       "COMP SCI 571"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Introduction to Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Literature designation (at least 6 Literature credits required across the degree).",
+      "code": "LIT-BR-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Literature Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 3-credit course with the Biological Science designation (6 total Biological Science credits required).",
+      "code": "BIO-BR",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Biological Science Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective of the student's choosing.",
+      "code": "ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second required Software & Hardware course; same option list as the Year 3 Spring slot (COMP SCI 407, 506, 536, 538, 537, 542 (shown), 544, 552, 557, 564, 574, 640, 642). Per major footnote, a course may only fulfill one requirement area.",
+      "code": "COMP SCI 542",
+      "credits": 3,
+      "options": [
+       "COMP SCI 407",
+       "COMP SCI/E C E 506",
+       "COMP SCI 536",
+       "COMP SCI 538",
+       "COMP SCI 537",
+       "COMP SCI 544",
+       "COMP SCI/E C E 552",
+       "COMP SCI 557",
+       "COMP SCI 564",
+       "COMP SCI 574",
+       "COMP SCI 640",
+       "COMP SCI 642"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Introduction to Software Security",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of two required COMP SCI electives; choose from the major's Electives list (407, 412, 425, 435, 471, 475, 506, 513, 514, 518, 520, 524, 525, 526, 532, 533, 536, 537, 538, 539, 540, 541, 542, 544, 550, 552, 557, 559 (shown), 561, 564, 565, 566, 567, 570, 571, 574, 576, 577, 579, 580, 620, 640, 642, 639). Most are 3 cr; 577, 537, 564 are 4 cr.",
+      "code": "COMP SCI 559",
+      "credits": 3,
+      "options": [
+       "COMP SCI 570",
+       "COMP SCI 540",
+       "COMP SCI 564",
+       "COMP SCI 544",
+       "COMP SCI 407"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Graphics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Humanities or Literature designation.",
+      "code": "HUM-BR-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Humanities Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Social Science breadth designation.",
+      "code": "SOCSCI-BR-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Social Science Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective of the student's choosing.",
+      "code": "ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second required COMP SCI elective; same Electives list as the Year 4 Fall slot.",
+      "code": "COMP SCI 570",
+      "credits": 3,
+      "options": [
+       "COMP SCI 559",
+       "COMP SCI 540",
+       "COMP SCI 571",
+       "COMP SCI 544",
+       "COMP SCI 412"
+      ],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Introduction to Human-Computer Interaction",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One 3-credit course with the Physical Science designation (6 total Physical Science credits required).",
+      "code": "PHYS-BR",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Physical Science Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Literature designation.",
+      "code": "LIT-BR-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Literature Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course with the Social Science breadth designation.",
+      "code": "SOCSCI-BR-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Social Science Breadth (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective of the student's choosing.",
+      "code": "ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://guide.wisc.edu/undergraduate/letters-science/computer-sciences/computer-sciences-bs/",
+  "total_credits": 120,
+  "content_hash": "dd765f76365b2e2616a68a545abcd29388199209560e66898f76c8a061498fa8",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,786 @@
+{
+ "institution": {
+  "name": "Bridgewater State University",
+  "city": "Bridgewater, MA",
+  "state": "MA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "bridgewater-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2023-2024",
+  "total_credits": 120,
+  "source_url": "http://www-dev.bridgew.edu/sites/bridgew/files/media/pdf_document/BSU-CS-4-year-academic-advising-2023.pdf",
+  "notes": "Transcribed from the official Bridgewater State University 'Four Year Academic Advising Plan 2023-2024' for the major Computer Science, Degree BS, Program Code COMP, hosted on the official university domain (www-dev.bridgew.edu). Catalog year: 2023-2024. Course credits and prerequisites cross-checked against the official BSU catalog course descriptions (catalog.bridgew.edu) on 2026-09-30. The canonical path sums to exactly 120 credits, matching the catalog's minimum of 120 earned credit hours required for graduation. Documented variants that raise the total above 120: taking MATH 202 (4 cr) instead of MATH 120 (3 cr) as the linear-algebra course (+1); the ENGL 101E + ENGL 144 targeted-writing track (4 cr) instead of ENGL 101 (3 cr) (+1). The advising plan prints PHYS 243 in both the fall and spring science slots; transcribed faithfully. A student continuing a sequence should take the second course of the sequence begun in fall (catalog prereqs: CHEM 132 requires CHEM 131; CHEM 142 requires CHEM 141; PHYS 182 requires PHYS 181). MATH 162 requires MATH 161/161E, satisfied in this plan through one of the two MATH-SEL choice slots (canonical path: MATH 161 in freshman spring, MATH 120 or MATH 202 in sophomore fall). Students who do not place directly into MATH 161 may first need MATH 095, MATH 122, and/or MATH 150 (placement chain noted on the advising plan; recorded as external placement courses). Grade rule (catalog): not more than one D-range grade among COMP 151, COMP 152, COMP 206 and COMP 250 shall be accepted in partial fulfillment of the major; a student receiving a second D must repeat the higher-numbered course with a minimum grade of C- before enrolling in other computer science courses. Department note: students commonly double- or triple-dip core distribution requirements (one course satisfying multiple designations), so individual totals vary. Choice-slot pairing rules: FYS-LR-1/FYS-LR-2 = take First Year Seminar in one semester and Foundations of Logical Reasoning in the other (both plus ENGL 101 due by end of year 1); SPCH-SYS-1/SPCH-SYS-2 = take Spoken Communication in one semester and Second Year Seminar in the other (both due by end of year 2); COMP-340-430-1/COMP-340-430-2 = take one of COMP 340 / COMP 430 in sophomore spring and the other in junior spring (both offered every spring; note COMP 340 also requires MATH 130); SCI-SEQ-1/SCI-SEQ-2 = take the two courses of one science sequence. COMP electives: complete at least five courses selected from any COMP courses at the 300-level or above except required courses; each elective topic is usually offered every other year; most require COMP 250 (C-), some also require COMP 340.",
+  "external_prereqs": [
+   "MATH 095",
+   "MATH 122",
+   "MATH 150"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENGL-101",
+      "title": "Writing Rhetorically (ENGL 101 or ENGL 101E + 144)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "ENGL 101, or ENGL 101E with corequisite ENGL 144 (targeted-writing track). The ENGL 101E + ENGL 144 track totals 4 credits, raising the degree total to 121.",
+      "options": [
+       {
+        "code": "ENGL 101",
+        "credits": 3,
+        "title": "Writing Rhetorically"
+       },
+       {
+        "code": "ENGL 101E",
+        "credits": 3,
+        "title": "Writing Rhetorically (Enhanced)"
+       },
+       {
+        "code": "ENGL 144",
+        "credits": 1,
+        "title": "Academic Strategies Colloquium"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 130",
+      "title": "Discrete Mathematics I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FYS-LR-1",
+      "title": "First Year Seminar or Foundations of Logical Reasoning",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take First Year Seminar in one semester and Foundations of Logical Reasoning in the other; both plus Writing Rhetorically must be completed by the end of the first year.",
+      "options": [
+       {
+        "code": "COMP 199",
+        "credits": 3,
+        "title": "First Year Seminar"
+       },
+       {
+        "code": "PHIL 111",
+        "credits": 3,
+        "title": "Foundations of Logical Reasoning"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "COMP 151",
+      "title": "Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "SCI-SEQ-1",
+      "title": "Science Sequence, Course 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Begin one two-semester lab science sequence; take the second course of the same sequence in the spring.",
+      "options": [
+       {
+        "code": "BIOL 121",
+        "credits": 4,
+        "title": "General Biology I"
+       },
+       {
+        "code": "CHEM 131",
+        "credits": 4,
+        "title": "Survey of Chemistry I"
+       },
+       {
+        "code": "CHEM 141",
+        "credits": 4,
+        "title": "Chemical Principles I"
+       },
+       {
+        "code": "PHYS 181",
+        "credits": 4,
+        "title": "Elements of Physics I"
+       },
+       {
+        "code": "PHYS 243",
+        "credits": 4,
+        "title": "General Physics I"
+       }
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENGL 102",
+      "title": "Writing Rhetorically with Sources",
+      "credits": 3,
+      "prereq": [
+       "ENGL-101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH-SEL-1",
+      "title": "Linear Algebra or Single Variable Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take MATH 161 here and MATH 120 or MATH 202 in sophomore fall, or the reverse. The MATH 161 (or MATH 161E) course is required before MATH 162. Taking MATH 202 instead of MATH 120 adds 1 credit to the degree total.",
+      "options": [
+       {
+        "code": "MATH 120",
+        "credits": 3,
+        "title": "Introduction to Linear Algebra"
+       },
+       {
+        "code": "MATH 202",
+        "credits": 4,
+        "title": "Linear Algebra"
+       },
+       {
+        "code": "MATH 161",
+        "credits": 4,
+        "title": "Single Variable Calculus I"
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "FYS-LR-2",
+      "title": "First Year Seminar or Foundations of Logical Reasoning",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take whichever of First Year Seminar / Foundations of Logical Reasoning was not taken in the fall; both plus Writing Rhetorically must be completed by the end of the first year.",
+      "options": [
+       {
+        "code": "COMP 199",
+        "credits": 3,
+        "title": "First Year Seminar"
+       },
+       {
+        "code": "PHIL 111",
+        "credits": 3,
+        "title": "Foundations of Logical Reasoning"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "COMP 152",
+      "title": "Computer Science II",
+      "credits": 4,
+      "prereq": [
+       "COMP 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "SCI-SEQ-2",
+      "title": "Science Sequence, Course 2",
+      "credits": 4,
+      "prereq": [
+       "SCI-SEQ-1"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take the second course of the sequence begun in the fall (e.g. CHEM 132 after CHEM 131; CHEM 142 after CHEM 141; PHYS 182 after PHYS 181). The advising plan prints PHYS 243 in this term as well; transcribed faithfully.",
+      "options": [
+       {
+        "code": "BIOL 122",
+        "credits": 4,
+        "title": "General Biology II"
+       },
+       {
+        "code": "CHEM 132",
+        "credits": 4,
+        "title": "Survey of Chemistry II"
+       },
+       {
+        "code": "CHEM 142",
+        "credits": 4,
+        "title": "Chemical Principles II"
+       },
+       {
+        "code": "PHYS 182",
+        "credits": 4,
+        "title": "Elements of Physics II"
+       },
+       {
+        "code": "PHYS 243",
+        "credits": 4,
+        "title": "General Physics I"
+       }
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "SPCH-SYS-1",
+      "title": "Spoken Communication or Second Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take Spoken Communication in one semester and Second Year Seminar in the other; both must be completed by the end of the second year.",
+      "options": [
+       {
+        "code": "COMM 102",
+        "credits": 3,
+        "title": "Introduction to Public Speaking"
+       },
+       {
+        "code": "COMP 298",
+        "credits": 3,
+        "title": "Second Year Seminar (Speaking Intensive)"
+       },
+       {
+        "code": "COMP 299",
+        "credits": 3,
+        "title": "Second Year Seminar (Writing Intensive)"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH-SEL-2",
+      "title": "Linear Algebra or Single Variable Calculus I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take whichever was not taken in freshman spring: MATH 161 if MATH 120 or MATH 202 was taken first, or MATH 120 / MATH 202 if MATH 161 was taken first. MATH 161 (or MATH 161E) is required before MATH 162. Taking MATH 202 instead of MATH 120 adds 1 credit to the degree total.",
+      "options": [
+       {
+        "code": "MATH 120",
+        "credits": 3,
+        "title": "Introduction to Linear Algebra"
+       },
+       {
+        "code": "MATH 202",
+        "credits": 4,
+        "title": "Linear Algebra"
+       },
+       {
+        "code": "MATH 161",
+        "credits": 4,
+        "title": "Single Variable Calculus I"
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "COMP 206",
+      "title": "Introduction to Computer Organization",
+      "credits": 4,
+      "prereq": [
+       "COMP 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "COMP 250",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [
+       "COMP 152",
+       "MATH 130"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "CORE-HUM-GLB",
+      "title": "Core Distribution Requirement (Humanities / Global Culture)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Humanities with a Global Culture designation; students commonly double-dip designations (e.g. one course for Humanities/Global/Writing Intensive).",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "SPCH-SYS-2",
+      "title": "Spoken Communication or Second Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take whichever of Spoken Communication / Second Year Seminar was not taken in the fall; both must be completed by the end of the second year.",
+      "options": [
+       {
+        "code": "COMM 102",
+        "credits": 3,
+        "title": "Introduction to Public Speaking"
+       },
+       {
+        "code": "COMP 298",
+        "credits": 3,
+        "title": "Second Year Seminar (Speaking Intensive)"
+       },
+       {
+        "code": "COMP 299",
+        "credits": 3,
+        "title": "Second Year Seminar (Writing Intensive)"
+       }
+      ],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 162",
+      "title": "Single Variable Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH-SEL-1",
+       "MATH-SEL-2"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "COMP-340-430-1",
+      "title": "COMP 340 or COMP 430",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take COMP 340 or COMP 430 (offered every spring); take the other one in junior spring. COMP 340 also requires MATH 130; COMP 430 requires COMP 250 (C-).",
+      "options": [
+       {
+        "code": "COMP 340",
+        "credits": 3,
+        "title": "Organization of Programming Languages"
+       },
+       {
+        "code": "COMP 430",
+        "credits": 3,
+        "title": "Computer Networks"
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CORE-SS-WI",
+      "title": "Core Distribution Requirement (Social Science, writing intensive)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Social Science with a writing-intensive designation; students commonly double-dip designations.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "CORE-HUM-MC",
+      "title": "Core Distribution Requirement (Humanities / Multicultural)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Humanities with a multicultural designation; students commonly double-dip designations.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "MATH 200",
+      "title": "Probability and Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 162"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CORE-HUM",
+      "title": "Core Distribution Requirement (Humanities)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Humanities; students commonly double-dip designations.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CORE-USMA",
+      "title": "Core Distribution Requirement (U.S. and Massachusetts Constitutions)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "U.S. and Massachusetts Constitutions designation, if not already taken above (the advising plan allows satisfying it earlier through double-dipping).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "COMP 350",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "COMP 206",
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "COMP 390",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CORE-SS",
+      "title": "Core Distribution Requirement (Social Science)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Social Science; students commonly double-dip designations.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CORE-FPA-1",
+      "title": "Core Distribution Requirement (Fine and Performing Arts)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Fine and Performing Arts.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "COMP-340-430-2",
+      "title": "COMP 340 or COMP 430",
+      "credits": 3,
+      "prereq": [
+       "COMP 250",
+       "COMP-340-430-1"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take whichever of COMP 340 / COMP 430 was NOT taken in sophomore spring (offered every spring). COMP 340 also requires MATH 130; COMP 430 requires COMP 250 (C-).",
+      "options": [
+       {
+        "code": "COMP 340",
+        "credits": 3,
+        "title": "Organization of Programming Languages"
+       },
+       {
+        "code": "COMP 430",
+        "credits": 3,
+        "title": "Computer Networks"
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "COMP-EL-1",
+      "title": "COMP Elective (300/400 level)",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any COMP course at the 300-level or above except required courses. Each elective topic is usually offered every other year. Most electives require COMP 250 (C-); some (e.g. COMP 345) also require COMP 340 — check the specific elective's catalog description.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "COMP-EL-2",
+      "title": "COMP Elective (300/400 level)",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any COMP course at the 300-level or above except required courses. Each elective topic is usually offered every other year. Most electives require COMP 250 (C-); some (e.g. COMP 345) also require COMP 340 — check the specific elective's catalog description.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CORE-FPA-2",
+      "title": "Core Distribution Requirement (Fine and Performing Arts)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Core distribution requirement in Fine and Performing Arts.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CORE-GC",
+      "title": "Core Distribution Requirement (Global Culture)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Global Culture designation, if not already taken above (the advising plan allows satisfying it earlier through double-dipping).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "COMP-EL-3",
+      "title": "COMP Elective (300/400 level)",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any COMP course at the 300-level or above except required courses. Each elective topic is usually offered every other year. Most electives require COMP 250 (C-); some (e.g. COMP 345) also require COMP 340 — check the specific elective's catalog description.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "COMP 435",
+      "title": "Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [
+       "COMP 250",
+       "MATH-SEL-1",
+       "MATH-SEL-2"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CORE-QR",
+      "title": "Core Distribution Requirement (Application of Quantitative Skills)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Application of Quantitative Skills designation, if not already taken above (the advising plan allows satisfying it earlier through double-dipping).",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "COMP-EL-4",
+      "title": "COMP Elective (300/400 level)",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any COMP course at the 300-level or above except required courses. Each elective topic is usually offered every other year. Most electives require COMP 250 (C-); some (e.g. COMP 345) also require COMP 340 — check the specific elective's catalog description.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "COMP-EL-5",
+      "title": "COMP Elective (300/400 level)",
+      "credits": 3,
+      "prereq": [
+       "COMP 250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any COMP course at the 300-level or above except required courses. Each elective topic is usually offered every other year. Most electives require COMP 250 (C-); some (e.g. COMP 345) also require COMP 340 — check the specific elective's catalog description.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "COMP 490",
+      "title": "Senior Design and Development",
+      "credits": 3,
+      "prereq": [
+       "COMP 390"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "2149d22ba5191fdf3b933f92d792d7010e9b1e789093ced83ffa3ea93c7f6676",
+  "last_verified": "2026-10-02"
+ }
+}

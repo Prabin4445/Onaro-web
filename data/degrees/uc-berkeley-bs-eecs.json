@@ -1,0 +1,497 @@
+{
+ "institution": {
+  "name": "University of California, Berkeley",
+  "city": "Berkeley, CA",
+  "kind": "public4yr",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "uc-berkeley-bs-eecs",
+  "degree": "BS",
+  "major": "Electrical Engineering and Computer Sciences",
+  "total_credits": 120,
+  "catalog_year": "2026-2027",
+  "source_url": "https://eecs.berkeley.edu/resources/undergrads/eecs-2/study-plans/",
+  "notes": "Source: official EECS department 'EECS and ECE B.S. Sample Study Plans' page (https://eecs.berkeley.edu/resources/undergrads/eecs-2/study-plans/), the 4-year sample for students entering with the Math 51/52 calculus sequence complete (track verified 2026-09-30; page last modified 2026-05-28 per site metadata). Catalog year: 2026-2027. How transcribed: the department's term-by-term sample plan was transcribed row-for-row from the published table; course titles and codes use the official Berkeley catalog codes (COMPSCI/ELENG/MATH/PHYSICS). Unit values: every core course carries its official unit value from the 2026-2027 undergraduate guide curriculum table (engineering.berkeley.edu; e.g. COMPSCI 61A/61C, ELENG 64/66, MATH 53/54, COMPSCI 70 = 4) and physics.berkeley.edu (PHYSICS 7A/7B = 4, 5A/5B = 3, 5BL = 2, 89 = 4). Caveats: (1) The department publishes three math-start tracks ('No College Level Math', 'Math 51 Complete', 'Math 51 + 52 Complete'); this plan is the 'Math 51 + 52 Complete' track, the most common for incoming EECS students with AP calculus credit. (2) Generic category rows (H/SS, free electives, ethics, breadth, design, technical electives, probability) are represented as student-choice slots with planning-unit values (4 unless noted); actual units vary by the course chosen. (3) Prereq lists are left empty: the official sample plan does not publish them and the department instructs students to take prerequisite chains in the right order and see an advisor for degree checks. (4) CS 10 is an optional preparatory course for students with minimal programming experience and may be taken before CS 61A; it is not required. (5) College of Engineering minimum is 120 units; this sample sums to exactly 120, matching the page's stated 30-units-per-year average.",
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "COMPSCI 61A",
+      "title": "Structure and Interpretation of Computer Programs",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 53",
+      "title": "Multivariable Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "NATURAL SCI ELECTIVE",
+      "title": "Natural Science Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official range 3-5 units per the 2026-2027 undergraduate guide (e.g. CHEM 1A+1AL, PHYSICS 7C, BIOLOGY 1A+1AL); 4 used here for planning.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "R&C PART A",
+      "title": "Reading & Composition Part A",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved R&C Part A course; must be finished by the end of the freshman year per the official plan notes.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MATH 54 OR PHYSICS 89",
+      "title": "Linear Algebra and Differential Equations / Introduction to Mathematical Physics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official alternative: MATH 54 'Linear Algebra and Differential Equations' or PHYSICS 89 'Introduction to Mathematical Physics' (both 4 units).",
+      "options": [
+       {
+        "code": "MATH 54",
+        "title": "Linear Algebra and Differential Equations",
+        "credits": 4
+       },
+       {
+        "code": "PHYSICS 89",
+        "title": "Introduction to Mathematical Physics",
+        "credits": 4
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "COMPSCI 61C",
+      "title": "Great Ideas of Computer Architecture",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PHYSICS 7A OR 5A",
+      "title": "Physics for Scientists and Engineers / Introductory Mechanics and Relativity",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official alternative: PHYSICS 7A (4 units) or PHYSICS 5A (3 units); 4 used here for planning.",
+      "options": [
+       {
+        "code": "PHYSICS 7A",
+        "title": "Physics for Scientists and Engineers",
+        "credits": 4
+       },
+       {
+        "code": "PHYSICS 5A",
+        "title": "Introductory Mechanics and Relativity",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "R&C PART B",
+      "title": "Reading & Composition Part B",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved R&C Part B course; the R&C requirement must be complete by the end of sophomore year per the official plan notes.",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "ELENG 64",
+      "title": "Introduction to Circuits & Devices",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "PHYSICS 7B OR 5B+5BL",
+      "title": "Physics for Scientists and Engineers / Introductory Electromagnetism, Waves, and Optics + Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official alternative: PHYSICS 7B (4 units) or PHYSICS 5B (3) + PHYSICS 5BL (2); 4 used here for planning.",
+      "options": [
+       {
+        "code": "PHYSICS 7B",
+        "title": "Physics for Scientists and Engineers",
+        "credits": 4
+       },
+       {
+        "code": "PHYSICS 5B",
+        "title": "Introductory Electromagnetism, Waves, and Optics",
+        "credits": 3
+       },
+       {
+        "code": "PHYSICS 5BL",
+        "title": "Introduction to Experimental Physics I",
+        "credits": 2
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "ETHICS COURSE",
+      "title": "Engineering Ethics / Social Implications of Technology",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The EECS department requires one ethics / social implications of technology course (BIOENG 100, COMPSCI 195/H195, DATA C104, ENGIN 125/157AC/185, etc.); 1-4 units per the official guide, 4 used here for planning so the sample totals the 120-unit degree minimum / 30 units per year average stated on the page.",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "LD H/SS 1",
+      "title": "Lower-Division Humanities/Social Science 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the official CoE Humanities/Social Sciences list; 3-4 units each (4 used here for planning).",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "ELENG 66",
+      "title": "Introduction to Signals, Dynamics, and Information",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "ECE BREADTH 1",
+      "title": "ECE Breadth Course 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "EECS department ECE breadth requirement; pick from the department's official ECE breadth course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "PROBABILITY COURSE",
+      "title": "Probability Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Typically EECS 126 'Probability and Random Processes' or STAT 134 'Concepts of Probability' (both 4 units per the official curriculum).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "LD H/SS 2",
+      "title": "Lower-Division Humanities/Social Science 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the official CoE Humanities/Social Sciences list; 3-4 units each (4 used here for planning).",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "ECE BREADTH 2",
+      "title": "ECE Breadth Course 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "EECS department ECE breadth requirement; pick from the department's official ECE breadth course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "ECE BREADTH 3",
+      "title": "ECE Breadth Course 3",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "EECS department ECE breadth requirement; pick from the department's official ECE breadth course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "UD H/SS 1",
+      "title": "Upper-Division Humanities/Social Science 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the official CoE Humanities/Social Sciences list; 3-4 units each (4 used here for planning).",
+      "options": [],
+      "category": "general"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "FREE ELECTIVE 1",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "UD TECH ELECTIVE 1",
+      "title": "Upper-Division Technical Elective 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division EECS technical elective (counts toward the 20-unit upper-division EECS requirement).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "UD TECH ELECTIVE 2",
+      "title": "Upper-Division Technical Elective 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division EECS technical elective (counts toward the 20-unit upper-division EECS requirement).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "DESIGN COURSE",
+      "title": "Design Course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "EECS design requirement; pick from the department's official design-course list (e.g. EECS 149).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "UD H/SS 2",
+      "title": "Upper-Division Humanities/Social Science 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the official CoE Humanities/Social Sciences list; 3-4 units each (4 used here for planning).",
+      "options": [],
+      "category": "general"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "UD TECH ELECTIVE 3",
+      "title": "Upper-Division Technical Elective 3",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division EECS technical elective (counts toward the 20-unit upper-division EECS requirement).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "FREE ELECTIVE 2",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "FREE ELECTIVE 3",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "FREE ELECTIVE 4",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "FREE ELECTIVE 5",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "FREE ELECTIVE 6",
+      "title": "Free Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective; any technical or non-technical course per the official guide, used as needed to reach the 120-unit minimum.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "804489efd3aff29bd46d70c0923e98dd9e82ede8527ed8db58b0dce337fff1dc",
+  "last_verified": "2026-10-02"
+ }
+}

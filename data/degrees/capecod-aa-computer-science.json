@@ -1,0 +1,325 @@
+{
+ "institution": {
+  "city": "West Barnstable, MA",
+  "kind": "community",
+  "name": "Cape Cod Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AA",
+  "external_prereqs": [],
+  "id": "capecod-aa-computer-science",
+  "major": "Computer Science",
+  "notes": "DEGREE HONESTY: Cape Cod Community College does NOT offer an AS in Computer Science. The official degree is Associate in Arts (AA), Computer Science Concentration (2026-2027 Academic Catalog, p.102; catalog Degree Type line: 'Associate in Arts'). Program page confirms: 'The Associate in Arts degree does not indicate a specialized degree in a concentration.' True degree type AA used throughout. SOURCE: official 2026-2027 Academic Catalog PDF downloaded 2026-09-30 from CCCC's official catalog host (live-capecod.cleancatalog.io, successor to catalog.capecod.edu); Computer Science Concentration requirements sequence on p.102. Course titles, credits, and prerequisites cross-checked against the same catalog's course-descriptions section. TRANSCRIPTION METHOD: pdftotext extraction of official PDF, term-by-term transcription; choice rows preserved as choice slots with all printed options documented. CREDIT MATH: catalog prints 'Total Credits 60-67' because many rows are ranges (CSC110/CSC120/CSC105 3-4, CSC125/ENR110 3-4, MAT245/MAT220 3-4, STEM electives 3-4, CSC240-or-Elective 0-4). This plan uses the recommended choices — CSC110 (3), CSC125 (4), CSC240 (4; catalog recommends CSC240 for UMass-Dartmouth/UMass-Amherst transfer), MAT245 (3), 3-credit STEM electives — which sums to 65, inside the published 60-67 range. A student's actual total varies 60-67 by choice; sequence total here is the representative 65-credit path. PREREQ CAVEATS (placement/assessment, not codified as external_prereqs): MAT240 requires C- or higher in MAT195 Precalculus with Trigonometry or satisfactory basic-skills assessment score; ENL101 subject to placement; students who place into developmental math/English must begin the course sequence in the first semester and may need additional semesters. CSC230 is offered Fall; CSC125 offered Fall; sequence assumes Fall entry, so Third Semester = Fall Year 2. The 2026-2027 catalog shows no M (milestone) designations; milestone field omitted.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENL101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT240",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects one: CSC110 (3 cr, Java), CSC120 (4 cr, C++), or CSC105 (3 cr, Python).",
+      "code": "CSC 1XX",
+      "credits": 3,
+      "options": [
+       "CSC110",
+       "CSC120",
+       "CSC105"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Programming I (Java, C++, or Python)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects one: PHY151 Physics I (4 cr) or PHY211 University Physics I (4 cr).",
+      "code": "PHY 1XX",
+      "credits": 4,
+      "options": [
+       "PHY151",
+       "PHY211"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Physics I (General or University)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Behavioral & Social Sciences general education course (3 cr).",
+      "code": "BSS 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Behavioral & Social Sciences Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENL102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT250",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT240"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC130",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 1XX"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Programming II: Java",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects one: PHY152 Physics II (4 cr) or PHY212 University Physics II (4 cr).",
+      "code": "PHY 2XX",
+      "credits": 4,
+      "options": [
+       "PHY152",
+       "PHY212"
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Physics II (General or University)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC230",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC130"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student selects one: CSC125 Procedural Programming (4 cr; prereq: any college-level programming course) or ENR110 Engineering and Scientific Computing (3 cr).",
+      "code": "CSC 12X",
+      "credits": 4,
+      "options": [
+       "CSC125",
+       "ENR110"
+      ],
+      "prereq": [
+       "CSC 1XX"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Procedural Programming or Engineering and Scientific Computing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Humanities & Fine Arts general education course (3 cr).",
+      "code": "HFA 2X1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Humanities & Fine Arts Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Humanities & Fine Arts general education course (3 cr); distinct from the other humanities slot this term.",
+      "code": "HFA 2X2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Humanities & Fine Arts Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Behavioral & Social Sciences general education course (3 cr).",
+      "code": "BSS 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Behavioral & Social Sciences Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog row: 'CSC240 or Elective (if needed)', 0-4 credits. CSC240 Introduction to Computer Systems (4 cr) is recommended by the catalog for students planning to transfer to UMass-Dartmouth or UMass-Amherst; otherwise another elective may be used.",
+      "code": "CSC 240X",
+      "credits": 4,
+      "options": [
+       "CSC240"
+      ],
+      "prereq": [
+       "CSC130"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Computer Systems (or elective if not needed)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC130"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Organizational & Architecture",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student selects one: MAT245 Linear Algebra (3 cr; prereq C- or higher in MAT240) or MAT220 Discrete Mathematics & Introduction to Proofs (4 cr; prereq MAT180 Precalculus with Trigonometry or equivalent).",
+      "code": "MAT 2XX",
+      "credits": 3,
+      "options": [
+       "MAT245",
+       "MAT220"
+      ],
+      "prereq": [
+       "MAT240"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Linear Algebra or Discrete Mathematics & Introduction to Proofs",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any STEM elective (3-4 cr).",
+      "code": "STEM E1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "STEM Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any STEM elective (3-4 cr); distinct from the other STEM elective this term.",
+      "code": "STEM E2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "STEM Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://live-capecod.cleancatalog.io/node/1312",
+  "total_credits": 65,
+  "content_hash": "b2e18fd9d149afdc60d93c32e8d8d84d10723223a6b44f81c332bd3c5a013800",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,597 @@
+{
+ "institution": {
+  "city": "Grand Forks, ND",
+  "kind": "public4yr",
+  "name": "University of North Dakota",
+  "state": "ND"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "und-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official UND 2025-2026 Academic Catalog. Term-by-term sequence transcribed from the official \"Four Year Plan - B.S. in Computer Science\" in the School of Electrical Engineering and Computer Science catalog pages (und-public.courseleaf.com/archives/2025-2026/undergraduateacademicinformation/departmentalcoursesprograms/electricalengineering/electricalengineering.pdf), cross-checked against the B.S. in Computer Science requirements page (und-public.courseleaf.com/archives/2025-2026/undergraduateacademicinformation/departmentalcoursesprograms/computerscience/cs-bs/cs-bs.pdf), which states \"Required 124 credits (36 of which must be numbered 300 or above)\". Printed term totals from the map: Fall Y1 16, Spring Y1 15, Fall Y2 16, Spring Y2 15, Fall Y3 16, Spring Y3 16, Fall Y4 15, Spring Y4 15 = 124 credits, exactly matching the catalog degree minimum; no discrepancy. CATALOG-YEAR CAVEAT: the live catalog rolled to 2026-2027 (observed 2026-09-30); the verified transcription source is the archived 2025-2026 catalog because the live four-year plan page could not be re-fetched at transcription time. The 2026-2027 CSCI course index (official, und-public.courseleaf.com/courseindex/csci/csci.pdf) confirms CSCI 160/161/166/492/493 numbers and titles unchanged. COURSE RENUMBER: the 2025-2026 catalog lists required course CSCI 166 Tools and Techniques of Computing Practice (3 cr); older four-year plans show CSCI 266 in the same sophomore-spring slot, so the plan places CSCI 166 there. EE 201 (3 cr) + EE 201L (1 cr) = 4 credits per the College of Engineering and Mines requirement; course titles (Introduction to Digital Electronics / Digital Electronics Laboratory) per the official four-year plan text. FRESHMAN CHOICE: the map lists \"CSCI 160 Computer Science I 4 or CSCI 130 or Introduction to Scientific Programming\" -- one 4-credit slot satisfied by either course; CSCI 161's prerequisite points at the choice slot's code per validator rules. CSCI ELECTIVES: four 3-credit slots (12 cr total) per requirements; a combined maximum of 6 credits from EECS 397 Cooperative Education / CSCI 399 Topics in Computer Science / CSCI 494 Special Projects in Computer Science may apply toward them; the remainder must be UND Computer Science lecture courses numbered 300 or above. GRADE RULE: catalog footnote 1 -- grade of 'C' or higher required in CSCI 160, 161, 242, 265, 330, 365. PREREQS: only officially catalog-documented chains transcribed (CSCI 161 requires CSCI 160 with C or better per the 2026-2027 course index; CSCI 493 requires CSCI 492). The index also lists MATH 103/107 placement co-requisites for CSCI 161, omitted as placement details since the map begins at MATH 208. All other sequencing follows the map's term placement. Essential Studies electives (Social Science x3, Humanities x2, Fine Arts x1) are student-choice slots.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official degree map: CSCI 160 Computer Science I or CSCI 130 Introduction to Scientific Programming; either 4-credit course satisfies this slot.",
+      "code": "CSCI 160",
+      "credits": 4,
+      "options": [
+       "CSCI 160",
+       "CSCI 130"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 208",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "College Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Social Science course; see advisor.",
+      "code": "ES-SS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Essential Studies Social Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Humanities course; see advisor.",
+      "code": "ES-HUM-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Essential Studies Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 161",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 160"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EE 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to Digital Electronics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EE 201L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Digital Electronics Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 165",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 130",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Composition II: Writing for Public Audiences",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 242",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Algorithms and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 265",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 289",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Social Implications of Computer Technology",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 166",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Fine Arts course; see advisor.",
+      "code": "ES-FA-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Essential Studies Fine Arts Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 166",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Tools and Techniques of Computing Practice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 280",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Object Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 207",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Introduction to Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any UND-approved probability/statistics elective; the School of Electrical Engineering and Computer Science maintains the recommended list; other courses accepted with advisor or undergraduate program director approval.",
+      "code": "STAT-EL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Approved Probability/Statistics Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any UND-approved laboratory science course; the SEECS maintains the recommended list; other courses accepted with advisor or undergraduate program director approval.",
+      "code": "LABSCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Approved Laboratory Science Elective I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 327",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Communications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Systems Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 363",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "User Interface Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 365",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Organization of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any UND-approved laboratory science course; the SEECS maintains the recommended list; other courses accepted with advisor or undergraduate program director approval.",
+      "code": "LABSCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Approved Laboratory Science Elective II",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 364",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Concurrent and Distributed Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 370",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 455",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Database Management Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 463",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Social Science course; see advisor.",
+      "code": "ES-SS-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Essential Studies Social Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 435",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Formal Languages and Automata",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 451",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Operating Systems I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 492",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Senior Project I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "UND Computer Science lecture course numbered 300 or above. A combined total of 6 credits from EECS 397 Cooperative Education, CSCI 399 Topics in Computer Science, or CSCI 494 Special Projects in Computer Science may apply toward the 12-credit CSCI elective requirement.",
+      "code": "CSCI-EL1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "UND Computer Science lecture course numbered 300 or above. A combined total of 6 credits from EECS 397 Cooperative Education, CSCI 399 Topics in Computer Science, or CSCI 494 Special Projects in Computer Science may apply toward the 12-credit CSCI elective requirement.",
+      "code": "CSCI-EL2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 493",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 492"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "UND Computer Science lecture course numbered 300 or above. A combined total of 6 credits from EECS 397 Cooperative Education, CSCI 399 Topics in Computer Science, or CSCI 494 Special Projects in Computer Science may apply toward the 12-credit CSCI elective requirement.",
+      "code": "CSCI-EL3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "UND Computer Science lecture course numbered 300 or above. A combined total of 6 credits from EECS 397 Cooperative Education, CSCI 399 Topics in Computer Science, or CSCI 494 Special Projects in Computer Science may apply toward the 12-credit CSCI elective requirement.",
+      "code": "CSCI-EL4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Computer Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Humanities course; see advisor.",
+      "code": "ES-HUM-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Essential Studies Humanities Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any UND-approved Essential Studies Social Science course; see advisor.",
+      "code": "ES-SS-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Essential Studies Social Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://und-public.courseleaf.com/archives/2025-2026/undergraduateacademicinformation/departmentalcoursesprograms/electricalengineering/electricalengineering.pdf",
+  "total_credits": 124,
+  "content_hash": "9dc6011c7697ced556d228ad7c02253c6aff0a1715de39741870d0ee88a62dae",
+  "last_verified": "2026-10-02"
+ }
+}

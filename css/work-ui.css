@@ -1,0 +1,148 @@
+/* WORK TAB — glossy-3D redesign (2026-10-05)
+   Glossy gradient hero banner, glassy job cards with category pills, volt
+   accents on #0D100A dark — the new Home visual language. Light mode gets a
+   light-glass adaptation. Everything scoped under .wu-root so shared classes
+   (.btn .chip .badge .empty) stay untouched elsewhere. No purple anywhere:
+   volt <-> rose follow the --volt theme var automatically. transform/opacity
+   motion only. */
+.wu-root{min-width:0}
+
+/* ---------- hero: glossy gradient banner, volt gradient border ---------- */
+.wu-hero{position:relative;overflow:hidden;border-radius:24px;margin:2px 0 14px;padding:18px;
+  border:1px solid transparent;
+  background:
+    linear-gradient(135deg,#FFFFFF 0%,var(--accent-soft,#F2F7DF) 55%,#F6F9EC 100%) padding-box,
+    linear-gradient(135deg,rgba(var(--volt-rgb),.65),rgba(var(--volt-rgb),.12) 48%,rgba(var(--volt-rgb),.4)) border-box;
+  box-shadow:0 16px 38px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.7)}
+body.dark .wu-hero{
+  background:
+    linear-gradient(135deg,#141A0B 0%,#0D100A 55%,#0D100A 100%) padding-box,
+    linear-gradient(135deg,rgba(var(--volt-rgb),.6),rgba(var(--volt-rgb),.10) 48%,rgba(var(--volt-rgb),.35)) border-box;
+  box-shadow:0 18px 44px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.14)}
+.wu-hero::before{content:"";position:absolute;top:-80px;right:-50px;width:210px;height:210px;border-radius:50%;
+  background:radial-gradient(circle,rgba(var(--volt-rgb),.42),rgba(var(--volt-rgb),0) 70%);pointer-events:none}
+.wu-gloss{position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:linear-gradient(115deg,rgba(255,255,255,.28),rgba(255,255,255,0) 38%)}
+body.dark .wu-gloss{background:linear-gradient(115deg,rgba(255,255,255,.16),rgba(255,255,255,0) 38%)}
+.wu-hero-in{position:relative;z-index:1;display:flex;gap:14px;align-items:center;min-width:0}
+.wu-hero-ico{width:64px;height:64px;flex:0 0 auto;border-radius:20px;display:grid;place-items:center;
+  background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.6),rgba(255,255,255,0) 58%),
+    linear-gradient(135deg,rgba(var(--volt-rgb),.55),rgba(var(--volt-rgb),.16));
+  border:1px solid rgba(var(--volt-rgb),.55);
+  box-shadow:inset 0 2px 4px rgba(255,255,255,.45),inset 0 -6px 12px rgba(var(--volt-rgb),.28),
+    0 8px 20px rgba(var(--volt-rgb),.22);
+  animation:wuIcoBob 5s ease-in-out infinite}
+@keyframes wuIcoBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.wu-hero-ico img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.wu-hero-ico .ic-fb,.wu-hero-ico span{font-size:34px;line-height:1}
+.wu-hero-tx{min-width:0}
+.wu-hero-tx h1{margin:0;font-family:var(--font-display);font-size:clamp(26px,7vw,32px);font-weight:800;
+  letter-spacing:-.02em;line-height:1.05;color:var(--ink)}
+body.dark .wu-hero-tx h1{color:#F4F6EC}
+.wu-hero-sub{margin:5px 0 10px;font-size:13px;line-height:1.45;color:var(--muted);font-weight:600}
+body.dark .wu-hero-sub{color:rgba(244,246,236,.72)}
+.wu-rep{display:inline-flex;align-items:center;gap:7px;background:rgba(var(--volt-rgb),.16);
+  border:1px solid rgba(var(--volt-rgb),.5);border-radius:999px;padding:6px 13px;
+  font-size:12.5px;font-weight:700;color:var(--ink);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 10px rgba(var(--volt-rgb),.2)}
+body.dark .wu-rep{color:#F4F6EC}
+.wu-rep .stars{color:var(--accent-strong)}
+.wu-rep-sep{opacity:.5}
+.wu-motes{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.wu-motes i{position:absolute;bottom:-4px;border-radius:50%;opacity:0;
+  background:radial-gradient(circle,rgba(255,255,255,.95) 0%,rgba(var(--volt-rgb),.55) 45%,rgba(var(--volt-rgb),0) 72%);
+  animation:wuMote 8s linear infinite;animation-delay:var(--dl,0s)}
+.wu-motes i:nth-child(1){left:10%;width:7px;height:7px;--sx:-14px;--dl:0s}
+.wu-motes i:nth-child(2){left:38%;width:5px;height:5px;--sx:10px;--dl:2.6s}
+.wu-motes i:nth-child(3){left:64%;width:8px;height:8px;--sx:-8px;--dl:4.4s}
+.wu-motes i:nth-child(4){left:88%;width:5px;height:5px;--sx:14px;--dl:6.1s}
+@keyframes wuMote{0%{opacity:0;transform:translate(0,8px) scale(.5)}
+  15%{opacity:.8}72%{opacity:.45}
+  100%{opacity:0;transform:translate(var(--sx,0px),-120px) scale(1.1)}}
+
+/* ---------- filter chips: glass segmented control ---------- */
+.wu-chips{background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid var(--glass-brd);border-radius:999px;padding:5px;gap:5px;margin:2px 0 14px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.wu-root .wu-chips .chip{border:0;background:transparent;box-shadow:none;min-height:34px;
+  padding:7px 14px;font-size:12.5px;border-radius:999px}
+.wu-root .wu-chips .chip.on{background:linear-gradient(180deg,#D9F744,var(--volt));color:#131A00;
+  font-weight:800;
+  box-shadow:0 3px 14px rgba(var(--volt-rgb),.45),inset 0 1px 0 rgba(255,255,255,.55)}
+.wu-root .wu-chips .chip:active{transform:translateY(1px) scale(.96)}
+
+/* ---------- category pill: glossy glass chip on every job card ---------- */
+.wu-root .wu-cat{display:inline-flex;align-items:center;font-size:11px;font-weight:800;letter-spacing:.04em;
+  text-transform:uppercase;padding:4px 11px;border-radius:999px;white-space:nowrap;
+  background:linear-gradient(180deg,rgba(var(--volt-rgb),.22),rgba(var(--volt-rgb),.08));
+  border:1px solid rgba(var(--volt-rgb),.5);color:var(--accent-strong);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 2px 8px rgba(var(--volt-rgb),.18)}
+
+/* ---------- job cards: glossy gradient glass, volt gradient hairline ---------- */
+.wu-root .job{--i:0;position:relative;overflow:hidden;border-radius:20px;
+  border:1px solid transparent;
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.55),rgba(255,255,255,.12) 48%,rgba(255,255,255,.30)) padding-box,
+    linear-gradient(135deg,rgba(var(--volt-rgb),.35),rgba(255,255,255,.18) 50%,rgba(var(--volt-rgb),.22)) border-box;
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  box-shadow:0 12px 30px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.55);
+  animation:wuRise .5s cubic-bezier(.22,.9,.28,1);animation-delay:calc(var(--i)*60ms);
+  animation-fill-mode:backwards;
+  transition:transform .15s ease,box-shadow .15s ease}
+body.dark .wu-root .job{
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.075),rgba(255,255,255,.015) 48%,rgba(255,255,255,.05)) padding-box,
+    linear-gradient(135deg,rgba(var(--volt-rgb),.32),rgba(255,255,255,.07) 50%,rgba(var(--volt-rgb),.18)) border-box;
+  box-shadow:0 14px 34px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.14)}
+.wu-root .job::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:linear-gradient(115deg,rgba(255,255,255,.22),rgba(255,255,255,0) 34%)}
+@keyframes wuRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* clay press: card compresses into its shadow */
+.wu-root .job:active{transform:translateY(2px) scale(.99);
+  box-shadow:0 4px 14px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.16)}
+
+/* 3D icon tile: gradient depth + inner shadow + gloss */
+.wu-root .job-art{background:radial-gradient(circle at 30% 22%,rgba(255,255,255,.5),rgba(255,255,255,0) 56%),
+    linear-gradient(135deg,rgba(var(--volt-rgb),.30),rgba(var(--volt-rgb),.08));
+  border:1px solid rgba(var(--volt-rgb),.35);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.35),inset 0 -4px 8px rgba(var(--volt-rgb),.18),
+    0 4px 12px rgba(0,0,0,.08)}
+
+/* pay pill: volt with glow + top sheen */
+.wu-root .job-pay{background:linear-gradient(180deg,#D9F744,var(--volt));color:#131A00;
+  border:1px solid rgba(var(--volt-rgb),.6);
+  box-shadow:0 2px 12px rgba(var(--volt-rgb),.5),inset 0 1px 0 rgba(255,255,255,.55)}
+
+/* ---------- status badges: layered on the existing classes ---------- */
+.wu-root .badge.b-BORROW{background:linear-gradient(180deg,rgba(var(--volt-rgb),.24),rgba(var(--volt-rgb),.10));
+  color:var(--accent-strong);border:1px solid rgba(var(--volt-rgb),.5);
+  box-shadow:0 0 12px rgba(var(--volt-rgb),.25);
+  animation:wuPulse 2.6s ease-in-out infinite}
+@keyframes wuPulse{0%,100%{box-shadow:0 0 8px rgba(var(--volt-rgb),.18)}50%{box-shadow:0 0 16px rgba(var(--volt-rgb),.42)}}
+.wu-root .badge.b-onhold{background:linear-gradient(180deg,rgba(148,163,184,.20),rgba(148,163,184,.08));
+  color:#5F6B7A;border:1px solid rgba(148,163,184,.42);box-shadow:none}
+body.dark .wu-root .badge.b-onhold{color:#A9B6C2;
+  background:linear-gradient(180deg,rgba(148,163,184,.16),rgba(148,163,184,.06))}
+.wu-root .badge.b-verified{background:var(--surface2);color:var(--muted);
+  border:1px solid var(--line);box-shadow:none}
+
+/* ---------- CTAs: 3D clay press physics ---------- */
+.wu-root .wu-post,.wu-root .wu-accept{transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+.wu-root .wu-post:active,.wu-root .wu-accept:active{transform:translateY(2px) scale(.985);filter:brightness(.96)}
+.wu-root .wu-actions .btn{transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+.wu-root .wu-actions .btn:active{transform:translateY(2px) scale(.96)}
+
+/* ---------- empty state: frosted dashed crystal ---------- */
+.wu-root .wu-empty{border:1px dashed var(--glass-brd);border-radius:22px;
+  background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.22);padding:34px 18px}
+.wu-root .wu-empty .wu-empty-ico{margin-bottom:16px;display:flex;justify-content:center}
+.wu-root .wu-empty .wu-empty-ico img{width:72px;height:72px;object-fit:contain;
+  filter:drop-shadow(0 8px 18px rgba(var(--volt-rgb),.35))}
+.wu-root .wu-empty .wu-empty-ico .ic-fb,.wu-root .wu-empty .wu-empty-ico span{font-size:56px;line-height:1}
+.wu-root .wu-empty p{font-size:14px;max-width:280px;margin:0 auto;line-height:1.55}
+
+/* ---------- reduced motion: freeze all decoration ---------- */
+@media (prefers-reduced-motion:reduce){
+  .wu-root *,.wu-root *::before,.wu-root *::after{animation:none!important;transition:none!important}
+}

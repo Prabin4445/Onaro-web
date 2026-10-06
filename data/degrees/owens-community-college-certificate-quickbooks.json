@@ -1,0 +1,78 @@
+{
+ "institution": {
+  "name": "Owens Community College",
+  "ipeds_id": "204945",
+  "city": "Perrysburg",
+  "state": "OH",
+  "control": "public",
+  "level": "2-year"
+ },
+ "plan": {
+  "id": "owens-community-college-certificate-quickbooks",
+  "degree": "Certificate",
+  "major": "QuickBooks",
+  "catalog_year": "2025-2026",
+  "total_credits": 9,
+  "source_url": "https://catalog.owens.edu/preview_degree_planner.php?catoid=20&poid=6004&print",
+  "notes": "Transcribed 2026-10-02 from the official Owens Community College 2025-2026 College Catalog 'Plan of Study' degree planner (QuickBooks Certificate (Owens Code: ZQBK)).  'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Courses flagged '*Ohio Transfer 36 Course' in the official planner are categorized gen-ed. Prerequisites are not printed in the planner, so prereq arrays are empty; prerequisites live in the catalog's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "ACC 100",
+      "title": "Accounting for Small Business",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'ACC 100 or ACC 101'.",
+      "options": [
+       "ACC 100",
+       "ACC 101"
+      ],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IST 131",
+      "title": "Computer Concepts and Apps",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "ACC 239",
+      "title": "Quickbooks",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "335e5a2ad61d298d941667479933e1493de70212f9e92b771e9349bdb5e78e6e",
+  "last_verified": "2026-10-02"
+ }
+}

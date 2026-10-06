@@ -1,0 +1,857 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bs-criminal-justice",
+  "degree": "BS",
+  "major": "Criminal Justice",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001135",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001135. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): The Criminal Justice system is an institution that is at the crux of societal concern. When individuals are asked to define major social problems, the fear of and response to crime are found at the top of the list. People not only want to have a better understanding of these problems; many also want to become a part of the solution. It is these individuals who will be the primary beneficiaries of the Criminal Justice major at KSU. The secondary beneficiaries are members of the community; university educated criminal justice personnel make better criminal justice practitioners. This program of "
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CRJU 1101",
+      "title": "Foundation of Criminal Justice",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-03",
+      "title": "Core Field of Study Elective (1 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ACCT 2101 or GEOG 1130 or HS 2100 or ICT 2101 or LDRS 2100 or POLS 2212 or SOCI 2251 or SPAN 2034 or FL 1001 or SPAN 1001 or COMM 2240",
+      "options": [
+       "ACCT 2101",
+       "GEOG 1130",
+       "HS 2100",
+       "ICT 2101",
+       "LDRS 2100",
+       "POLS 2212",
+       "SOCI 2251",
+       "SPAN 2034",
+       "FL 1001",
+       "SPAN 1001",
+       "COMM 2240"
+      ],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-04",
+      "title": "General Education Core Curriculum Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SOCI 1101",
+      "title": "Introduction to Sociology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-02",
+      "title": "General Education Core Curriculum Institutional Priorities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or GWST 1102 or LALS 1102 or LDRS 2300 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102 or COMM 1100",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "GWST 1102",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102",
+       "COMM 1100"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-03",
+      "title": "General Education Core Curriculum Mathematics & Quantitative Skills recommended STAT 1401",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MATH 1101 or MATH 1111 or MATH 1113 or MATH 1190 or STAT 1401 or MATH 1001",
+      "options": [
+       "MATH 1101",
+       "MATH 1111",
+       "MATH 1113",
+       "MATH 1190",
+       "STAT 1401",
+       "MATH 1001"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-04",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or TPS 1107 or MUSI 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "TPS 1107",
+       "MUSI 1107"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "CRJU 2201",
+      "title": "Crimes and Defenses",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-01",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Applied Math)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "STAT 1401 or MATH 1113 or MATH 1160 or MATH 1190 or MATH 2202 or DATA 1501 or MATH 1179",
+      "options": [
+       "STAT 1401",
+       "MATH 1113",
+       "MATH 1160",
+       "MATH 1190",
+       "MATH 2202",
+       "DATA 1501",
+       "MATH 1179"
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-02",
+      "title": "General Education Core Curriculum Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-03",
+      "title": "General Education Core Curriculum Political Science and US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SCI 1101 or GEOG 1112 or GEOG 1113 or (BIOL 1107 and BIOL 1107L) or (PHYS 1111 and PHYS 1111L) or (PHYS 2211 and PHYS 2211L) or (CHEM 1211 and CHEM 1211L) or (CHEM 1151 and CHEM 1151L) or (BIOL 1108 and BIOL 1108L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2212 and PHYS 2212L) or (CHEM 1212 and CHEM 1212L) or (CHEM 1152 and CHEM 1152L) or (CSE 1321 and CSE 1321L)",
+      "options": [
+       "SCI 1101",
+       "GEOG 1112",
+       "GEOG 1113",
+       "BIOL 1107",
+       "BIOL 1107L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "CHEM 1151",
+       "CHEM 1151L",
+       "BIOL 1108",
+       "BIOL 1108L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2212",
+       "PHYS 2212L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "CHEM 1152",
+       "CHEM 1152L",
+       "CSE 1321",
+       "CSE 1321L"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-01",
+      "title": "Core Field of Study Elective (2 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ACCT 2101 or GEOG 1130 or HS 2100 or ICT 2101 or LDRS 2100 or POLS 2212 or SOCI 2251 or SPAN 2034 or FL 1001 or SPAN 1001 or COMM 2240",
+      "options": [
+       "ACCT 2101",
+       "GEOG 1130",
+       "HS 2100",
+       "ICT 2101",
+       "LDRS 2100",
+       "POLS 2212",
+       "SOCI 2251",
+       "SPAN 2034",
+       "FL 1001",
+       "SPAN 1001",
+       "COMM 2240"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-02",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or PHIL 2010 or ENGL 2140 or FL 1001 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "PHIL 2010",
+       "ENGL 2140",
+       "FL 1001",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-03",
+      "title": "Core Field of Study Elective (3 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ACCT 2101 or GEOG 1130 or HS 2100 or ICT 2101 or LDRS 2100 or POLS 2212 or SOCI 2251 or SPAN 2034 or FL 1001 or SPAN 1001 or COMM 2240",
+      "options": [
+       "ACCT 2101",
+       "GEOG 1130",
+       "HS 2100",
+       "ICT 2101",
+       "LDRS 2100",
+       "POLS 2212",
+       "SOCI 2251",
+       "SPAN 2034",
+       "FL 1001",
+       "SPAN 1001",
+       "COMM 2240"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SCI 1102 or GEOG 1112 or GEOG 1113 or GEOG 1125 or ANTH 1105 or GEOG 1110 or (BIOL 1107 and BIOL 1107L) or (BIOL 1108 and BIOL 1108L) or (CHEM 1211 and CHEM 1211L) or (CHEM 1151 and CHEM 1151L) or (CHEM 1212 and CHEM 1212L) or (CHEM 1152 and CHEM 1152L) or (PHYS 1111 and PHYS 1111L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2212 and PHYS 2212L) or (PHYS 2211 and PHYS 2211L) or (CSE 1321 and CSE 1321L)",
+      "options": [
+       "SCI 1102",
+       "GEOG 1112",
+       "GEOG 1113",
+       "GEOG 1125",
+       "ANTH 1105",
+       "GEOG 1110",
+       "BIOL 1107",
+       "BIOL 1107L",
+       "BIOL 1108",
+       "BIOL 1108L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "CHEM 1151",
+       "CHEM 1151L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "CHEM 1152",
+       "CHEM 1152L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2212",
+       "PHYS 2212L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "CSE 1321",
+       "CSE 1321L"
+      ],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "CRJU 3300",
+      "title": "Criminal Courts",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CJ 2205",
+         "CRJU 1101",
+         "CRJU 2205"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CRJU 3301",
+      "title": "Research Methods in CJ",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CRJU 1101"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-02",
+      "title": "Free Elective (1 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (1 of 4)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-03",
+      "title": "Cultural Diveristy Elective (1 of 1)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3355 or SOCI 3314 or SOCI 3350 or ANTH 3307 or ANTH 3310",
+      "options": [
+       "CRJU 3355",
+       "SOCI 3314",
+       "SOCI 3350",
+       "ANTH 3307",
+       "ANTH 3310"
+      ],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-04",
+      "title": "Upper-Division Criminal Justice Elective (1 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3305 or CRJU 3310 or CRJU 3311 or CRJU 3312 or CRJU 3320 or CRJU 3340 or CRJU 3352 or CRJU 3355 or CRJU 3365 or CRJU 3398 or CRJU 3400 or CRJU 4300 or CRJU 4305 or CRJU 4400 or CRJU 4410 or CRJU 4430 or CRJU 4490 or SOCI 3360 or SOCI 4200 or SOCI 4442",
+      "options": [
+       "CRJU 3305",
+       "CRJU 3310",
+       "CRJU 3311",
+       "CRJU 3312",
+       "CRJU 3320",
+       "CRJU 3340",
+       "CRJU 3352",
+       "CRJU 3355",
+       "CRJU 3365",
+       "CRJU 3398",
+       "CRJU 3400",
+       "CRJU 4300",
+       "CRJU 4305",
+       "CRJU 4400",
+       "CRJU 4410",
+       "CRJU 4430",
+       "CRJU 4490",
+       "SOCI 3360",
+       "SOCI 4200",
+       "SOCI 4442"
+      ],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "CRJU 3315",
+      "title": "Criminal Procedure",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CJ 2205",
+         "CRJU 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CRJU 3332",
+      "title": "Corrections",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CJ 2205",
+         "CRJU 1101",
+         "CRJU 2205"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-02",
+      "title": "Upper-Division Criminal Justice Elective (2 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3305 or CRJU 3310 or CRJU 3311 or CRJU 3312 or CRJU 3320 or CRJU 3340 or CRJU 3352 or CRJU 3355 or CRJU 3365 or CRJU 3398 or CRJU 3400 or CRJU 4300 or CRJU 4305 or CRJU 4400 or CRJU 4410 or CRJU 4430 or CRJU 4490 or SOCI 3360 or SOCI 4200 or SOCI 4442",
+      "options": [
+       "CRJU 3305",
+       "CRJU 3310",
+       "CRJU 3311",
+       "CRJU 3312",
+       "CRJU 3320",
+       "CRJU 3340",
+       "CRJU 3352",
+       "CRJU 3355",
+       "CRJU 3365",
+       "CRJU 3398",
+       "CRJU 3400",
+       "CRJU 4300",
+       "CRJU 4305",
+       "CRJU 4400",
+       "CRJU 4410",
+       "CRJU 4430",
+       "CRJU 4490",
+       "SOCI 3360",
+       "SOCI 4200",
+       "SOCI 4442"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-03",
+      "title": "Related Studies Course (1 of 2)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 3@ or BLCK 4@ or AMST 3@ or AMST 4@ or ANTH 3@ or ANTH 4@ or ASIA 3@ or ASIA 4@ or BIOL 3@ or BIOL 4@ or BUSA 3@ or BUSA 4@ or CHEM 3@ or CHEM 4@ or COM 3@ or COM 4@ or CRJU 3@ or CRJU 4@ or ECON 3@ or ECON 4@ or ENGL 3@ or ENGL 4@ or ENVS 3@ or ENVS 4@ or EUST 3@ or EUST 4@ or FILM 3@ or FILM 4@ or FL 3@ or FL 4@ or GEOG 3@ or GEOG 4@ or GIS 3@ or GIS 4@ or GWST 3@ or GWST 4@ or HIST 3@ or HIST 4@ or HON 3@ or HON 4@ or IAD 3@ or IAD 4@ or ISD 3@ or ISD 4@ or JOUR 3@ or JOUR 4@ or LING 3@ or LING 4@ or MENT 3@ or MENT 4@ or MILS 3@ or MILS 4@ or ORGC 3@ or ORGC 4@ or PAX 3@ or PAX 4@ or PHIL 3@ or PHIL 4@ or PHIL 3@ or PHIL 4@ or POLS 3@ or POLS 4@ or PR 3@ or PR 4@ or PSYC 3@ or PSYC 4@ or RELS 3@ or RELS 4@ or SA 3@ or SA 4@ or SCI 3@ or SCI 4@ or SOCI 3@ or SOCI 4@ or STAT 3@ or STAT 4@ or STS 3@ or STS 4@ or TCID 3@ or TCID 4@ or TCOM 3@ or TCOM 4@ or WRIT 3@ or WRIT 4@",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-04",
+      "title": "CRJU 3310 or CRJU 3311",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3310 or CRJU 3311",
+      "options": [
+       "CRJU 3310",
+       "CRJU 3311"
+      ],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "CRJU 4100",
+      "title": "Ethics in Criminal Justice",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CJ 2205",
+         "CRJU 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CRJU 4499",
+      "title": "Senior Seminar in CJ",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CRJU 1101",
+       "CRJU 3301"
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-02",
+      "title": "Upper-Division Criminal Justice Elective (3 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3305 or CRJU 3310 or CRJU 3311 or CRJU 3312 or CRJU 3320 or CRJU 3340 or CRJU 3352 or CRJU 3355 or CRJU 3365 or CRJU 3398 or CRJU 3400 or CRJU 4300 or CRJU 4305 or CRJU 4400 or CRJU 4410 or CRJU 4430 or CRJU 4490 or SOCI 3360 or SOCI 4200 or SOCI 4442",
+      "options": [
+       "CRJU 3305",
+       "CRJU 3310",
+       "CRJU 3311",
+       "CRJU 3312",
+       "CRJU 3320",
+       "CRJU 3340",
+       "CRJU 3352",
+       "CRJU 3355",
+       "CRJU 3365",
+       "CRJU 3398",
+       "CRJU 3400",
+       "CRJU 4300",
+       "CRJU 4305",
+       "CRJU 4400",
+       "CRJU 4410",
+       "CRJU 4430",
+       "CRJU 4490",
+       "SOCI 3360",
+       "SOCI 4200",
+       "SOCI 4442"
+      ],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-03",
+      "title": "Free Elective (2 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (2 of 4)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-04",
+      "title": "Related Studies Course (2 of 2)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 3@ or BLCK 4@ or AMST 3@ or AMST 4@ or ANTH 3@ or ANTH 4@ or ASIA 3@ or ASIA 4@ or BIOL 3@ or BIOL 4@ or BUSA 3@ or BUSA 4@ or CHEM 3@ or CHEM 4@ or COM 3@ or COM 4@ or CRJU 3@ or CRJU 4@ or ECON 3@ or ECON 4@ or ENGL 3@ or ENGL 4@ or ENVS 3@ or ENVS 4@ or EUST 3@ or EUST 4@ or FILM 3@ or FILM 4@ or FL 3@ or FL 4@ or GEOG 3@ or GEOG 4@ or GIS 3@ or GIS 4@ or GWST 3@ or GWST 4@ or HIST 3@ or HIST 4@ or HON 3@ or HON 4@ or IAD 3@ or IAD 4@ or ISD 3@ or ISD 4@ or JOUR 3@ or JOUR 4@ or LING 3@ or LING 4@ or MENT 3@ or MENT 4@ or MILS 3@ or MILS 4@ or ORGC 3@ or ORGC 4@ or PAX 3@ or PAX 4@ or PHIL 3@ or PHIL 4@ or POLS 3@ or POLS 4@ or PR 3@ or PR 4@ or PSYC 3@ or PSYC 4@ or RELS 3@ or RELS 4@ or SA 3@ or SA 4@ or SOCI 3@ or SOCI 4@ or STAT 3@ or STAT 4@ or STS 3@ or STS 4@ or TCID 3@ or TCID 4@ or TCOM 3@ or TCOM 4@ or WRIT 3@ or WRIT 4@",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "SOCI 4432",
+      "title": "Criminology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CRJU 1101",
+         "SOCI 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-01",
+      "title": "Upper-Division Criminal Justice Elective (4 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3305 or CRJU 3310 or CRJU 3311 or CRJU 3312 or CRJU 3320 or CRJU 3340 or CRJU 3352 or CRJU 3355 or CRJU 3365 or CRJU 3398 or CRJU 3400 or CRJU 4300 or CRJU 4305 or CRJU 4400 or CRJU 4410 or CRJU 4430 or CRJU 4490 or SOCI 3360 or SOCI 4200 or SOCI 4442",
+      "options": [
+       "CRJU 3305",
+       "CRJU 3310",
+       "CRJU 3311",
+       "CRJU 3312",
+       "CRJU 3320",
+       "CRJU 3340",
+       "CRJU 3352",
+       "CRJU 3355",
+       "CRJU 3365",
+       "CRJU 3398",
+       "CRJU 3400",
+       "CRJU 4300",
+       "CRJU 4305",
+       "CRJU 4400",
+       "CRJU 4410",
+       "CRJU 4430",
+       "CRJU 4490",
+       "SOCI 3360",
+       "SOCI 4200",
+       "SOCI 4442"
+      ],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "Free Elective (3 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (3 of 4)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "Free Elective (4 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Free Elective (4 of 4)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "CRJU 3396 or CRJU 3398 or SA 4490",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 3396 or CRJU 3398 or SA 4490",
+      "options": [
+       "CRJU 3396",
+       "CRJU 3398",
+       "SA 4490"
+      ],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "CJ 2205",
+   "CRJU 2205",
+   "ENGL 101"
+  ],
+  "content_hash": "a880047db9b3b0df4b87c52414f9aabb7635a986a830ccc7c899766120e8c8aa",
+  "last_verified": "2026-10-02"
+ }
+}

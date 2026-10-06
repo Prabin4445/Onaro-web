@@ -1,0 +1,630 @@
+{
+ "institution": {
+  "city": "Boone, NC",
+  "kind": "public4yr",
+  "name": "Appalachian State University",
+  "state": "NC"
+ },
+ "plan": {
+  "catalog_year": "2021-2022",
+  "degree": "BS",
+  "external_prereqs": [
+   "MAT 1025"
+  ],
+  "id": "appstate-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Official Appalachian State University Four Year Guide for BS, Computer Science (degree code BS_219A), Department of Computer Science, College of Arts & Sciences, 2021-2022 edition, published at https://fouryearguides.appstate.edu/sites/fouryearguides.appstate.edu/files/CS 219A FYG_1.pdf. The four-year-guides site publishes guides by catalog year; 2021-2022 is the NEWEST CS BS edition available (the program moved to HTML program-of-study pages afterward), so catalog_year is set honestly to 2021-2022, not the current bulletin year. Transcription method: verbatim manual transcription of the semester-by-semester plan from the official PDF text (read via public web search indexing of the official PDF). Course titles cross-verified against the department's official 2023-2024 Program of Study (https://compsci.appstate.edu/sites/default/files/computer_science_-_2023-24_0.pdf) and the Undergraduate Bulletin for RC 1000 (Expository Writing), RC 2001 (Introduction to Writing Across the Curriculum), and UCO 1200 (First Year Seminar). CAVEATS: (1) Semester 6 lists 'Liberal Studies Experience Course 2' - the identical label as Semester 5; transcribed verbatim. Logically it is the third LSE course (the Gen Ed model requires 12 hours across 4 LSE courses); slot given a distinct placeholder code (LSE GEN-2B). (2) The guide's [WID] slot reads 'CS 3100 or ENG 3695'; modeled as a constrained-choice slot with options. (3) Prereq chains: the four-year guide itself states only grade-minimum notes (C in CS 1440 for CS 2440; C- in MAT 1110 for MAT 1120; calculus-ready for CS 1440/CS 1100; PRE MAT 1025 or equivalent test score for MAT 1110). Full chain prereqs (e.g., CS 3460 needing CS 2490; CS 3481 needing CS 2450+CS 2490; CS 4100 needing CS 3460 + the WID course; CS 4800 needing CS 3667 + CS 3460) follow the department's official Program of Study prerequisite listings; the guide's semester ordering satisfies all of them. MAT 1025 is the course-code form of the guide's 'calculus-ready' / 'PRE: MAT 1025 or equivalent test score' requirement; students may also meet it via a satisfactory placement/test score, so no one must literally take MAT 1025. (4) CS 4800 note: CS 4510 Senior Honors Thesis is the honors-student alternative (per guide). (5) Credit model: science sequence courses are 4-5 credits each (taken as 4 here); the final 'Free Elective 1-3' slot is taken as 3 so the plan totals the guide's stated minimum of 120 hours ('Take enough Free Electives to reach a total of 120 hours'). Students taking 5-credit science courses would exceed 120 accordingly. No courses, credits, or prereqs invented.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "May take in fall or spring semester of first year",
+      "code": "RC 1000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Expository Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Wellness Literacy Gen Ed course, 1 credit",
+      "code": "GEN WLIT-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Gen Ed Wellness Literacy",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prereq is calculus-ready (MAT 1025 or equivalent test score); must earn minimum grade of C as prerequisite to CS 2440",
+      "code": "CS 1440",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1025"
+      ],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prereq is calculus-ready (MAT 1025 or equivalent test score)",
+      "code": "CS 1100",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1025"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Also meets Gen Ed Quantitative Literacy; must earn minimum grade of C- as prerequisite to MAT 1120",
+      "code": "MAT 1110",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1025"
+      ],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Calculus with Analytic Geometry I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "May take in fall or spring semester of first year",
+      "code": "UCO 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Must earn minimum grade of C as prerequisite to higher level CS required courses",
+      "code": "CS 2440",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 1440"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1120",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1110"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus with Analytic Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STT 3850",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1110"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Statistical Data Analysis I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Minimum grade C-",
+      "code": "CS 2490",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2440"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction to Theoretical Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Minimum grade C-",
+      "code": "CS 2450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2440",
+       "CS 1100"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Minimum grade C-",
+      "code": "CS 3460",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2440"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Integrative Learning Experience Gen Ed course with HS, LS, FA, or SS designation; minimum two disciplines across ILE courses",
+      "code": "ILE GEN-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Integrative Learning Experience Course 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Liberal Studies Experience Gen Ed course; minimum three disciplines across LSE courses",
+      "code": "LSE GEN-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Liberal Studies Experience Course 1",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3430",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2440"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Database",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3667",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2440"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1120"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Introduction to Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Integrative Learning Experience Gen Ed course with HS, LS, FA, or SS designation; minimum two disciplines across ILE courses",
+      "code": "ILE GEN-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Integrative Learning Experience Course 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "May take in fall or spring semester of sophomore year; sophomore writing",
+      "code": "RC 2001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Introduction to Writing Across the Curriculum",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3481",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2450",
+       "CS 2490"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Systems I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3490",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2490",
+       "CS 3460"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "First course of one of the department's approved 2-course science sequences (4-5 credits); will meet the General Education Science Inquiry requirement. Counts in major GPA per the guide (marked X).",
+      "code": "SCI SEQ-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "CS Science Sequence Course 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Liberal Studies Experience Gen Ed course with HS, LS, FA, or SS designation; minimum three disciplines across LSE courses",
+      "code": "LSE GEN-2A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Liberal Studies Experience Course 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Integrative Learning Experience Gen Ed course with HS, LS, FA, or SS designation; minimum two disciplines across ILE courses",
+      "code": "ILE GEN-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Integrative Learning Experience Course 3",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3482",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3481",
+       "CS 3460"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Systems II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "[WID] course: take CS 3100 Junior Seminar OR ENG 3695 Technical Writing for Computer Science; prerequisite to CS 4100.",
+      "code": "CS WID-1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CS 3100",
+        "credits": 3,
+        "title": "Junior Seminar"
+       },
+       {
+        "code": "ENG 3695",
+        "credits": 3,
+        "title": "Technical Writing for Computer Science"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CS 3100 Junior Seminar or ENG 3695 Technical Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "The official guide labels this slot 'Liberal Studies Experience Course 2' (same label as Semester Five); transcribed verbatim. Logically it is the third LSE course toward the 12-hour LSE requirement. Any LSE Gen Ed course with HS, LS, FA, or SS designation.",
+      "code": "LSE GEN-2B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Liberal Studies Experience Course 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second course of the approved 2-course science sequence (4-5 credits); will meet the General Education Science Inquiry requirement. Counts in major GPA per the guide (marked X).",
+      "code": "SCI SEQ-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Science Sequence Course 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective from the department's approved elective list (see the Computer Science Program of Study); 3 credits.",
+      "code": "CS ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "CS Elective Course 1",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4100",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3460",
+       "CS WID-1"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Senior Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective from the department's approved elective list (see the Computer Science Program of Study); 3 credits.",
+      "code": "CS ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Elective Course 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective from the department's approved elective list (see the Computer Science Program of Study); 3 credits.",
+      "code": "CS ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CS Elective Course 3",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Liberal Studies Experience Gen Ed course with HS, LS, FA, or SS designation; minimum three disciplines across LSE courses",
+      "code": "LSE GEN-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Liberal Studies Experience Course 4",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective; 3 credits",
+      "code": "FREE ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Capstone; CS 4510 Senior Honors Thesis is the honors-student alternative per the guide",
+      "code": "CS 4800",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3667",
+       "CS 3460"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Project",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective from the department's approved elective list (see the Computer Science Program of Study); 3 credits.",
+      "code": "CS ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CS Elective Course 4",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Wellness Literacy Gen Ed course, 1 credit",
+      "code": "GEN WLIT-2",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Gen Ed Wellness Literacy",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective; 3 credits",
+      "code": "FREE ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "1-3 credits; take enough free electives to reach the 120-hour degree total (official guide note)",
+      "code": "FREE ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://fouryearguides.appstate.edu/sites/fouryearguides.appstate.edu/files/CS 219A FYG_1.pdf",
+  "total_credits": 120,
+  "content_hash": "ed9f67bc204805c30be2e8dc3534b312528226aa688df2142d1bd9084deec529",
+  "last_verified": "2026-10-02"
+ }
+}

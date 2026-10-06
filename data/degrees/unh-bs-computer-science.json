@@ -1,0 +1,540 @@
+{
+ "institution": {
+  "name": "University of New Hampshire",
+  "city": "Durham, NH",
+  "kind": "public4yr",
+  "state": "NH"
+ },
+ "plan": {
+  "id": "unh-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 130,
+  "source_url": "https://catalog.unh.edu/archives/2024-2025/undergraduate/engineering-physical-sciences/programs-study/computer-science/computer-science-major-bs/computer-science-major-bs.pdf",
+  "notes": "Source: UNH 2024-2025 Undergraduate Catalog (catalog.unh.edu/archives/2024-2025/...), 'Computer Science Major (B.S.)', College of Engineering and Physical Sciences, Durham NH — 'Sample Degree Plan'. Degree name verified: 'Computer Science Major (B.S.)' (catalog heading). Transcription method: manual verbatim transcription from the official catalog PDF text via the search index (direct PDF fetch was unavailable in this environment); every term cross-checked against the 2021-2022 and 2022-2023 UNH catalog archives, which carry the same plan structure. total_credits=130 is the Sample Degree Plan's own published total (18+16+16+16+16+16+18+14=130); the catalog's requirements section prints 'Total Credits 129-130', so the plan's own total is used per pipeline rule. Caveats: (1) The published plan lists a MATH 531/539/644 choice in BOTH Year 2 Fall and Year 2 Spring; both are transcribed as printed. (2) CS 518/CS 527 are an either/or pair across Year 2 Fall/Spring (take one per term). (3) CS 501 satisfies Discovery II; CS 761 may satisfy Discovery III; CS 758 may satisfy Discovery V — the plan's '(or Discovery N)' annotations are preserved as choice slots. (4) Catalog requires a grade of C or better in CS 410C, CS 410P, CS 415, CS 416, CS 420, CS 515, CS 520, IT 403; overall GPA 2.0. (5) Discovery footnote: 7 categories (Historical Perspectives, Humanities, Fine and Performing Arts, Social Science, World Cultures, Physical Science Discovery Lab, Biological Science Discovery Lab); one Biological Science and one Physical Science course with Discovery lab required, one with Writing Intensive attribute. (6) Professional electives: CEPS approved list or non-introductory CEPS course approved by the undergraduate studies committee. No prereqs are stated in the Sample Degree Plan itself, so all prereq arrays are empty (not invented).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 400",
+      "title": "Introduction to Computing",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CS 415",
+      "title": "Introduction to Computer Science I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "IT 403",
+      "title": "Introduction to Internet Technologies",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MATH 425",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "DISC-1",
+      "title": "Discovery I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying UNH Discovery category I.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 416",
+      "title": "Introduction to Computer Science II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CS 420",
+      "title": "Foundations of Programming for Digital Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 426",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "ENGL 401",
+      "title": "First-Year Writing",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 515",
+      "title": "Data Structures and Introduction to Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS518-527-F2",
+      "title": "CS 518 Introduction to Software Engineering or CS 527 Fundamentals of Cybersecurity",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take one in Fall Year 2; take the other in Spring Year 2.",
+      "options": [
+       "CS 518",
+       "CS 527"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH531-539-644-F2",
+      "title": "MATH 531 Mathematical Proof or MATH 539 Introduction to Statistical Analysis or MATH 644 Statistics for Engineers and Scientists",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog lists a MATH 531/539/644 choice in both Year 2 Fall and Year 2 Spring.",
+      "options": [
+       "MATH 531",
+       "MATH 539",
+       "MATH 644"
+      ],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CS501-DISC2-F2",
+      "title": "CS 501 Professional Ethics and Communication in Technology-related Fields (or Discovery II)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS 501 satisfies the Discovery II requirement; alternatively take a Discovery II course here and CS 501 in Spring Year 2.",
+      "options": [
+       "CS 501"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 520",
+      "title": "Computer Organization and System-Level Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH539-644-531-S2",
+      "title": "MATH 539 Introduction to Statistical Analysis or MATH 644 Statistics for Engineers and Scientists or MATH 531 Mathematical Proof",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second MATH choice; catalog lists MATH 531/539/644 options in both Year 2 terms.",
+      "options": [
+       "MATH 539",
+       "MATH 644",
+       "MATH 531"
+      ],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CS527-518-S2",
+      "title": "CS 527 Fundamentals of Cybersecurity or CS 518 Introduction to Software Engineering",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take the one not taken in Fall Year 2.",
+      "options": [
+       "CS 527",
+       "CS 518"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "DISC2-CS501-S2",
+      "title": "Discovery II (or CS 501 Professional Ethics and Communication in Technology-related Fields)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take a Discovery II course here, or CS 501 if not taken in Fall Year 2 (CS 501 satisfies Discovery II).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 619",
+      "title": "Introduction to Object-Oriented Design and Development",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS620-PROFELEC-F3",
+      "title": "CS 620 Operating System Fundamentals (or Professional Elective)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take CS 620 here and a Professional Elective in Spring Year 3, or vice versa.",
+      "options": [
+       "CS 620"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CS 659",
+      "title": "Introduction to the Theory of Computation",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CS761-DISC3-F3",
+      "title": "CS 761 Programming Language Concepts and Features (or Discovery III)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take CS 761 here and Discovery III in Spring Year 3, or vice versa.",
+      "options": [
+       "CS 761"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS758-700E1-DISC5-S3",
+      "title": "CS 758 Algorithms (or CS 700-level Elective I or Discovery V)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take CS 758, a CS 700-level elective, or a Discovery V course; coordinates with the Year 4 CS 758 / 700-level / Discovery V options.",
+      "options": [
+       "CS 758"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "PROFELEC-CS620-S3",
+      "title": "Professional Elective (or CS 620 Operating System Fundamentals)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved professional elective (CEPS list, or non-introductory CEPS course approved by the undergraduate studies committee); take here if CS 620 was taken in Fall Year 3, otherwise take CS 620 here.",
+      "options": [
+       "CS 620"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "DISC3-CS761-S3",
+      "title": "Discovery III (or CS 761 Programming Language Concepts and Features)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Discovery III course, or CS 761 if not taken in Fall Year 3.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "DISC-4",
+      "title": "Discovery IV",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying UNH Discovery category IV.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 791",
+      "title": "Senior Project I",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS700-IMPL",
+      "title": "CS 700-level Implementation Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any CS 700-level implementation-intensive elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CS700-E1-DISC5-F4",
+      "title": "CS 700-level Elective I (or Discovery V)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS 700-level elective, or a Discovery V course; coordinates with CS 758 placement.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "DISC5-CS758-F4",
+      "title": "Discovery V (or CS 758 Algorithms)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Discovery V course, or CS 758 if not taken in Year 3.",
+      "options": [
+       "CS 758"
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "DISC-6",
+      "title": "Discovery VI",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying UNH Discovery category VI.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 792",
+      "title": "Senior Project II",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS700-E2",
+      "title": "CS 700-level Elective II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any CS 700-level elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CS700-E3-CS758-S4",
+      "title": "CS 700-level Elective III (or CS 758 Algorithms)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CS 700-level elective, or CS 758 if not taken earlier.",
+      "options": [
+       "CS 758"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "DISC-7",
+      "title": "Discovery VII",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying UNH Discovery category VII.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "72c34e10f6b01d646ca7f5aa37ca43b258a9d19350122955b9057c310360f3af",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,345 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-as-associate-in-science",
+  "degree": "AS",
+  "major": "Associate in Science",
+  "total_credits": 62,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/associate-science-8600-as",
+  "transfer_confidence": "core_only",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/associate-science-8600-as), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "QUANTITATIVE_REASONING",
+      "title": "Quantitative Reasoning",
+      "credits": 5,
+      "category": "elective",
+      "core_area": "QNR",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Quantitative Reasoning",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "NATURAL_SCIENCES",
+      "title": "Natural Sciences",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "NSI",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Natural Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "INSTITUTIONS_OF_THE_AMERICAS",
+      "title": "Institutions of the Americas",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "IAM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Institutions of the Americas",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "ORAL_COMMUNICATION",
+      "title": "Oral Communication",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "OCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Oral Communication",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "NATURAL_SCIENCES",
+      "title": "Natural Sciences",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "NSI",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Natural Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "GENERAL_ELECTIVE",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "20a19c5732258f461ff92455c516fcd766411a9f21f4d75d39b74d44c16a2103",
+  "last_verified": "2026-10-02"
+ }
+}

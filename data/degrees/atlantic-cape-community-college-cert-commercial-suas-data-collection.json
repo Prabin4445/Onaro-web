@@ -1,0 +1,154 @@
+{
+ "institution": {
+  "city": "Mays Landing",
+  "kind": "community",
+  "name": "Atlantic Cape Community College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "id": "atlantic-cape-community-college-cert-commercial-suas-data-collection",
+  "major": "Commercial sUAS Data Collection",
+  "notes": "Program code CUDC-Fall 2026. Institution-published Recommended Sequence of Courses (2 semesters). Catalog lists 32-33 credits; seeded at base 32 with the variable-credit General Education Technology slot (3-4 credits) as a 3-credit choice slot. Choice slots use catalog wording. Prereqs from 2026-2027 catalog course descriptions. Catalog lists AVIT257 prereq as CISM125 and AVIT140; CISM125 is not in this certificate plan, recorded in external_prereqs.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "AVIT140",
+      "credits": 3,
+      "prereq": [],
+      "title": "Small Unmanned Aircraft Systems Operation-Multi-Rotor",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT185",
+      "credits": 4,
+      "prereq": [],
+      "title": "Remote Sensing Using Unmanned Aircraft Systems",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENGL101",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "GIST101",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to Geographic Information Systems",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education Technology Course (3-4 credits)",
+      "code": "General Education Technology Course (3-4 credits)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Technology Course",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "AVIT257",
+      "credits": 3,
+      "prereq": [
+       "AVIT140"
+      ],
+      "title": "sUAS Data Assurance and Cybersecurity",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT285",
+      "credits": 4,
+      "prereq": [
+       "AVIT140"
+      ],
+      "title": "Advanced Aerial Data Collection",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT290",
+      "credits": 1,
+      "prereq": [
+       "AVIT140"
+      ],
+      "title": "UAS Capstone Project",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "GIST202",
+      "credits": 4,
+      "prereq": [],
+      "title": "Geodesy",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose: AVIT227-Aerial Image Analysis or AELP/AVIT104-Aviation Phraseology (3 credits)",
+      "code": "Choose: AVIT227-Aerial Image Analysis or AELP/AVIT104-Aviation Phraseology (3 credits)",
+      "credits": 3,
+      "options": [
+       "AVIT227",
+       "AELP/AVIT104"
+      ],
+      "prereq": [],
+      "title": "Aerial Image Analysis or Aviation Phraseology",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Second Semester",
+    "n": 2
+   }
+  ],
+  "source_url": "https://catalog.atlantic.edu/sites/default/files/pdf/programs/aviation.pdf",
+  "total_credits": 32,
+  "transfer_confidence": "advisory",
+  "external_prereqs": [
+   "CISM125"
+  ],
+  "content_hash": "66ef37b1203c026cd306093bfaf832df058d4467fac303e74a93f5e37c186c28",
+  "last_verified": "2026-10-02"
+ }
+}

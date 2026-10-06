@@ -1,0 +1,469 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-aas-fire-science",
+  "degree": "AAS",
+  "major": "Fire Science",
+  "total_credits": 91.5,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/behavioral-science-and-human-services/fire-science-3205-aas",
+  "transfer_confidence": "advisory",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/behavioral-science-and-human-services/fire-science-3205-aas), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "EMT 101",
+      "title": "Basic Life Support/Cardiopulmonary Resuscitation (CPR) for Health Care Providers",
+      "credits": 0.5,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "FSC 105",
+      "title": "Hazardous Materials Awareness and Operations",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "FSC 130",
+      "title": "Fitness for Firefighters/CPAT",
+      "credits": 1,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "EMT 104",
+      "title": "Emergency Medical Technology and Applied Practical Studies for Emergency Medical Technology and Emergency Medical Technology Practicum",
+      "credits": 12,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "FSC 102",
+      "title": "Fire Department Operations",
+      "credits": 11,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "FSC 105",
+       "FSC 130",
+       "FSC 134",
+       "FSC 174"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "FSC 234"
+      ],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "FSC 134",
+      "title": "Fitness and Conditioning for Firefighters",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FSC134 or FSC234: Fitness and Conditioning for Firefighters or Fitness and Wellness for Firefighter Candidates",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "FSC 174",
+      "title": "Functions of Command",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "FSC 102"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "FSC 101",
+      "title": "Introduction to Fire Service Selection and Entry",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "FSC 108",
+      "title": "Fundamentals of Fire Prevention",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FSC108 or FSC110: Fundamentals of Fire Prevention or Wildland Firefighter",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "COLLEGE_MATHEMATICS",
+      "title": "College Mathematics",
+      "credits": 6,
+      "category": "major",
+      "core_area": "MA",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "HUMANITIES_FINE_ARTS_DESIGN",
+      "title": "Humanities, Fine Arts & Design",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "HU",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Humanities, Fine Arts & Design",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "FSC 113",
+      "title": "Introduction to Fire Suppression",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "FSC 117",
+      "title": "Fire Apparatus",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "FSC 118",
+      "title": "Fire Hydraulics",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "FSC 119",
+      "title": "Introduction Fire Service Ethics",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_BEHAVIORAL_SCIENCES",
+      "title": "Social-Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social-Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-5",
+      "xfer": []
+     },
+     {
+      "code": "CRE 101",
+      "title": "College Critical Reading and Critical Thinking",
+      "credits": 3,
+      "category": "major",
+      "core_area": "L",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107",
+       "RDG 095",
+       "RDG 100",
+       "RDG 100LL",
+       "RDG 111",
+       "RDG 112",
+       "RDG 113"
+      ],
+      "slot_id": "s4-6",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Term 5",
+    "courses": [
+     {
+      "code": "ANY_FIRE_SCIENCE_TECHNOLOGY_COURSE",
+      "title": "Any Fire Science Technology course",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Fire Science Technology course",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "FSC 208",
+      "title": "Firefighter Safety and Building Construction",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "FSC 113"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "FSC 215",
+      "title": "Customer Service in the Public Sector",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "NATURAL_SCIENCES_GENERAL_OR_NATURAL_SCIENCES_QUANTITATIVE",
+      "title": "Natural Sciences General or Natural Sciences Quantitative",
+      "credits": 4,
+      "category": "elective",
+      "core_area": "SG or SQ",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Natural Sciences General or Natural Sciences Quantitative",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "COM 100",
+      "title": "Introduction to Human Communication",
+      "credits": 3,
+      "category": "major",
+      "core_area": "SB, SCB or SB, SCB or L, OCM or SB, SCB",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "COM100 or COM110 or COM225 or COM230: Introduction to Human Communication or Interpersonal Communication or Public Speaking or Small Group Communication",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "b934c6b082941fae5910f04d66e920c7d6717f4807fec61f36fe5c14b2504544",
+  "last_verified": "2026-10-02"
+ }
+}

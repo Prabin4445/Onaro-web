@@ -1,0 +1,622 @@
+{
+ "institution": {
+  "city": "Fredonia, NY",
+  "kind": "public4yr",
+  "name": "SUNY Fredonia",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "fredonia-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official SUNY Fredonia 'Computer Science, B.S. Sample Degree Map' (fredonia.edu/degreemap/computer-science-bs), transcribed 2026-09-30 from the page table; course titles copied verbatim from the map (catalog's fuller title for CSIT 311 is 'Assembly Language and Computer Organizations'). Catalog year 2026-2027: the map page carries no year stamp, but its core (CSIT 121/201/221/231/311/321/341/425/431/435/441/455 + CSIT 143 Discrete Mathematics) matches the current catalog's CS core (verified via fredonia.smartcatalogiq.com 2026-2027 current catalog; CSIT 143 is the current number of the former CSIT 241 discrete math course — confirmed by the current JCC-to-Fredonia transfer map, which notes MAT 1670 substitutes for CSIT 143). Printed term totals are 15 credits x 8 semesters; GRAND TOTAL printed on the map: 120. total_credits=120 uses the map's own published grand total (degree minimum is also 120). Choice-slot modeling at 3 credits each: the map lists '(or)' alternates (MATH 122/123 University Calculus I/II are 4 credits, MATH 231 Linear Algebra is 4 credits); students choosing the 4-credit alternates add 1 credit per slot above the 15-credit term totals, documented in each choice_note. FF slots = Fredonia Foundations (gen ed) courses, student choice. 'CSIT XXX Elective' modeled as CSIT elective choice slot. Five 'CSIT XXX Computer Science Track Course' slots = the track requirement (Advanced Computing Track, Software Development Track, or five advisor-approved electives with at least two 400-level). Two 'Required Science Course' slots = two courses from Biology/Chemistry/Geology/Physics per catalog science requirement (3-4 credits each; modeled at 3). Prereqs included only where stated in the official catalog course descriptions, reduced to in-plan codes: CSIT 221: CSIT 121; CSIT 231: CSIT 221; CSIT 311: CSIT 121; CSIT 341: CSIT 205 or CSIT 221 -> CSIT 221; CSIT 425: CSIT 221 or CSIT 205 -> CSIT 221; CSIT 431: (CSIT 311 or CSIT 312) and CSIT 341 and CSIT 231; CSIT 435: CSIT 311 or CSIT 312 or CSIT 335 -> CSIT 311; CSIT 441: catalog lists CSIT 242 and CSIT 341 — CSIT 242 (Discrete Mathematics for CS II) is NOT in the published sample map, so only CSIT 341 is listed here; CSIT 455: CSIT 121. CSIT 321's catalog prerequisite is CSIT 224 (Problem Solving Using Objects), which is not in the published sample map, so its prereq list is intentionally left empty rather than invented. Prereqs for CSIT 121, CSIT 201, CSIT 143, MATH/STAT slots and FF electives were not verified in the official catalog and are left empty (not invented). Catalog note: CSIT 121 and CSIT 221 require a minimum grade of C- or better. The BS degree is 120 hours; students must earn 66 credits outside the major.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 121",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Computer Security and Ethics",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Published map: MATH 120 Survey of Calculus I (3 cr) OR MATH 122 University Calculus I (4 cr). Modeled at 3 credits; choosing MATH 122 adds 1 credit to the term total.",
+      "code": "MATH-1",
+      "credits": 3,
+      "options": [
+       "MATH 120",
+       "MATH 122"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Craft of Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 221",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 121"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Published map: MATH 121 Survey of Calculus II (3 cr) OR MATH 123 University Calculus II (4 cr). Modeled at 3 credits; choosing MATH 123 adds 1 credit to the term total.",
+      "code": "MATH-2",
+      "credits": 3,
+      "options": [
+       "MATH 121",
+       "MATH 123"
+      ],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 143",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 221"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Systems Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Elective' — a CSIT course chosen by the student with advisor guidance.",
+      "code": "CSIT-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "CSIT elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Published map: MATH 115 Survey of Matrix Algebra (3 cr) OR MATH 231 Linear Algebra (4 cr). Modeled at 3 credits; choosing MATH 231 adds 1 credit to the term total.",
+      "code": "MATH-3",
+      "credits": 3,
+      "options": [
+       "MATH 115",
+       "MATH 231"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Matrix algebra / linear algebra (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 311",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 121"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 321",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Paradigms of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published map: 'Required Science Course' — one 3-4 credit course from Biology, Chemistry, Geology, or Physics per the catalog science requirement. Modeled at 3 credits.",
+      "code": "SCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Required science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 341",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 221"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 455",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 121"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Relational and Object Databases",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'Upper Level Elective' — an upper-level course chosen by the student.",
+      "code": "ULELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Upper level elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'Upper Level Elective' — an upper-level course chosen by the student.",
+      "code": "ULELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Upper level elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published map: 'Required Science Course' — one 3-4 credit course from Biology, Chemistry, Geology, or Physics per the catalog science requirement. Modeled at 3 credits.",
+      "code": "SCI-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Required science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 431",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 311",
+       "CSIT 341",
+       "CSIT 231"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 435",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 311"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Data Communications and Networks",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 441",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 341"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Analysis and Design of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Published map: STAT 200 Statistical Methods (3 cr) OR STAT 350 Probability and Statistics (3 cr).",
+      "code": "STAT-1",
+      "credits": 3,
+      "options": [
+       "STAT 200",
+       "STAT 350"
+      ],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Statistics (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'General Elective' — an elective course chosen by the student.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "General elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Computer Science Track Course' — one of five track courses: Advanced Computing track, Software Development track, or five advisor-approved CSIT electives.",
+      "code": "CSIT-TRACK-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computer science track course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Computer Science Track Course' — one of five track courses: Advanced Computing track, Software Development track, or five advisor-approved CSIT electives.",
+      "code": "CSIT-TRACK-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer science track course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Computer Science Track Course' — one of five track courses: Advanced Computing track, Software Development track, or five advisor-approved CSIT electives.",
+      "code": "CSIT-TRACK-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer science track course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fredonia Foundations (general education) course, student choice.",
+      "code": "FF-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Fredonia Foundations course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'General Elective' — an elective course chosen by the student.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSIT 425",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSIT 221"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Computer Science Track Course' — one of five track courses: Advanced Computing track, Software Development track, or five advisor-approved CSIT electives.",
+      "code": "CSIT-TRACK-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer science track course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published map: 'CSIT XXX Computer Science Track Course' — one of five track courses: Advanced Computing track, Software Development track, or five advisor-approved CSIT electives.",
+      "code": "CSIT-TRACK-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Computer science track course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'Upper Level Elective' — an upper-level course chosen by the student.",
+      "code": "ULELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Upper level elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published map: 'General Elective' — an elective course chosen by the student.",
+      "code": "ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "General elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.fredonia.edu/degreemap/computer-science-bs",
+  "total_credits": 120,
+  "content_hash": "37a439fcc1a503b21772cd362dba8099d145fa4bf9401d41515828c0d4af149a",
+  "last_verified": "2026-10-02"
+ }
+}

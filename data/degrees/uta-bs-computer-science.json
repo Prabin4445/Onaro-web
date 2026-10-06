@@ -1,0 +1,620 @@
+{
+ "institution": {
+  "city": "Arlington, TX",
+  "kind": "public4yr",
+  "name": "University of Texas at Arlington",
+  "state": "TX"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uta-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UTA University Catalog 2026-2027, 'Bachelor of Science in Computer Science' program page (catalog.uta.edu): https://catalog.uta.edu/engineering/computer/undergraduate/computer-science-bs/computer-science-bs.pdf . Catalog year verified on 2026-09-30 via the catalog 'About this Edition' page (Academic Year 2026-2027, published summer 2026). Transcription method: manual transcription of the catalog's official term-by-term 4-year sequence ('First Year Fall/Spring' through 'Fourth Year Fall/Spring', Total Hours: 123) from that PDF. Course titles and credit hours come from the same catalog page's curriculum listing. Caveats: (1) The catalog sequence does not state per-course prerequisites, so prereq arrays are empty (not inferred); the catalog notes only that all prerequisites for professional-program courses must be completed with a C or better. (2) Student-choice slots (history, govt/pol sci, language-philosophy-culture, creative arts, OR-options, technical/open electives) are modeled as choice:true with placeholder codes; the six required technical electives are 18 hours selected with advisor approval per the catalog, and the open elective is 'any elective sufficient to complete 123 hours.' (3) UTA also publishes an older 'Plan for Success' major map whose term layout differs slightly from the 2026-2027 catalog sequence; the catalog sequence governs here. (4) Admission to the professional program requires a 2.5 GPA in three categories (overall; required science/math/engineering; required CSE) and no more than four unsuccessful engineering attempts.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sequence: UNIV 1131, ENGR 1101, or UNIV 1101. UNIV 1131 is the freshman course; ENGR 1101 is designated for transfer students.",
+      "code": "UNIV 1131",
+      "credits": 1,
+      "options": [
+       "UNIV 1131",
+       "ENGR 1101",
+       "UNIV 1101"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Student Success (choose UNIV 1131, ENGR 1101, or UNIV 1101)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 1310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Computers & Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1426",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Rhetoric and Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved U.S. History core courses (6 hours total across the first year).",
+      "code": "HIST-US-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "U.S. History (part 1) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Language, Philosophy & Culture core course.",
+      "code": "LPC-CORE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Language, Philosophy & Culture - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 1106",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science and Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 1320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Intermediate Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2425",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 1443",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Technical Physics I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2315",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 1325",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 2312",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Organization & Assembly Language Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3318",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Algorithms & Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 1444",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Technical Physics II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved U.S. History core courses (6 hours total across the first and second year).",
+      "code": "HIST-US-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "U.S. History (part 2) - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CSE 3380 Linear Algebra for CSE or MATH 3330 Introduction to Linear Algebra and Vector Spaces.",
+      "code": "CSE 3380",
+      "credits": 3,
+      "options": [
+       "CSE 3380",
+       "MATH 3330"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Linear Algebra for CSE or Intro to Linear Algebra and Vector Spaces",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Fundamentals of Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2326",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS 2302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Professional and Technical Communication for Science and Engineering",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Database Systems and File Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3315",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Theoretical Concepts in Computer Science and Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: IE 3301 Engineering Probability or MATH 3313 Introduction to Probability.",
+      "code": "IE 3301",
+      "credits": 3,
+      "options": [
+       "IE 3301",
+       "MATH 3313"
+      ],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Engineering Probability or Introduction to Probability",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Government/Political Science core courses (6 hours total; e.g., POLS 2311).",
+      "code": "GOVT-CORE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Government/Political Science - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 4344",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Computer Network Organization",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Government/Political Science core courses (6 hours total; e.g., POLS 2312).",
+      "code": "GOVT-CORE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Government/Political Science - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval. Six technical electives (18 hours) are required in the degree.",
+      "code": "TECH-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval.",
+      "code": "TECH-ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval.",
+      "code": "TECH-ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 3314",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Professional Practices",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 4316",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer System Design Project I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one: ECON 2305 Principles of Macroeconomics or IE 2308 Economics for Engineers.",
+      "code": "ECON 2305",
+      "credits": 3,
+      "options": [
+       "ECON 2305",
+       "IE 2308"
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Principles of Macroeconomics or Economics for Engineers",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval.",
+      "code": "TECH-ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval.",
+      "code": "TECH-ELECT-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSE 4317",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer System Design Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one of: CSE 4380 Information Security, CSE 4381 Information Security II, CSE 4382 Secure Programming.",
+      "code": "CSE 4380",
+      "credits": 3,
+      "options": [
+       "CSE 4380",
+       "CSE 4381",
+       "CSE 4382"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Information Security / Information Security II / Secure Programming - choose one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CSE technical elective, selected with advisor approval.",
+      "code": "TECH-ELECT-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Technical Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any electives sufficient to complete 123 hours.",
+      "code": "OPEN-ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Open Elective - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved Creative Arts core course.",
+      "code": "CREATIVE-ARTS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Creative Arts - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.uta.edu/engineering/computer/undergraduate/computer-science-bs/computer-science-bs.pdf",
+  "total_credits": 123,
+  "content_hash": "949d06b7595cdf4b247800149323334cb135fef184813ced10c59afb96e3dff3",
+  "last_verified": "2026-10-02"
+ }
+}

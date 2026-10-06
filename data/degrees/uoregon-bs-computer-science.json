@@ -1,0 +1,679 @@
+{
+ "institution": {
+  "name": "University of Oregon",
+  "city": "Eugene, OR",
+  "kind": "public4yr",
+  "state": "OR"
+ },
+ "plan": {
+  "id": "uoregon-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 180,
+  "source_url": "https://catalog.uoregon.edu/arts-sciences/school-computer-data-sciences/computer-science/ug-computer-science/ug-computer-science.pdf",
+  "notes": "Source: official University of Oregon 2026-2027 Academic Catalog, School of Computer and Data Sciences, 'Computer Science (BA/BS)' program page PDF, 'Bachelor of Science in Computer Science' four-year degree map (PDF generated 2026-09-14; catalog covers fall 2026 through summer 2027). Transcription method: downloaded the official catalog PDF, extracted with pdftotext -layout, and transcribed the BS sample plan term by term; course codes, titles, credits, and 'or' alternatives copied verbatim. UO is a quarter school: terms are Fall/Winter/Spring and all credits are QUARTER credits; the sample plan totals 180 quarter credits (9 terms x 16 + 3 terms x 12), matching the catalog's 'Total Credits 180'. Caveats: (1) The catalog states 'The degree plan shown is only a sample of how students may complete their degrees in four years. There are alternative ways. Students should consult their advisor.' (2) Student-choice slots use choice:true with placeholder codes; 'or' alternatives are documented in choice_note, not invented as separate courses. (3) The degree map does not state course prerequisites, so all prereq arrays are empty (none invented). (4) Math placement determines the starting math course (sample starts at MATH 112Z); CS 122 is marked '(recommended)'. (5) The 12-credit science requirement must come from one science area (biology, chemistry, earth sciences, geography, or physics); modeled as a 3-term sequence. (6) The two 'mathematics option' terms each offer MATH 253Z/341/343/425/345M; the student selects a different course in each. (7) The catalog's writing core (WR 320/WR 321/HC 301H) is paired with CS 322 across Spring Year 2 and Fall Year 3 in the sample plan (one each term). (8) Upper-division CS/math electives follow the catalog's concentration and elective rules (12 cr in concentration or 410+, 8 cr upper-division CS, 4 cr upper-division math/TCS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 122",
+      "title": "Introduction to Programming and Problem Solving",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Listed as '(recommended)' in the sample plan.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 112Z",
+      "title": "Precalculus II: Trigonometry",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "WR 121Z",
+      "title": "Composition I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "writing"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CORE-AL-1",
+      "title": "Core-education course in arts and letters",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education arts-and-letters course (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 210",
+      "title": "Computer Science I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 251Z",
+      "title": "Differential Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 251Z Differential Calculus or MATH 246 Calculus for the Biological Sciences I.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "WR 122Z",
+      "title": "Composition II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "WR 122Z Composition II or WR 123 College Composition III.",
+      "options": [],
+      "category": "writing"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CORE-SS-1",
+      "title": "Core-education course in social science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education social-science course (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 211",
+      "title": "Computer Science II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 252Z",
+      "title": "Integral Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 252Z Integral Calculus or MATH 247 Calculus for the Biological Sciences II.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CORE-AL-2",
+      "title": "Core-education course in arts and letters",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education arts-and-letters course (student choice).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CORE-SS-2",
+      "title": "Core-education course in social science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education social-science course (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 212",
+      "title": "Computer Science III",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 231",
+      "title": "Elements of Discrete Mathematics I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "SCI-SEQ-1",
+      "title": "First course of additional science sequence",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "12-credit science requirement: three courses from ONE science area (biology, chemistry, earth sciences, geography, or physics). Student choice of sequence, per catalog.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CORE-SS-CL-1",
+      "title": "Core-education course in social science that also satisfies a cultural literacy requirement",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education social-science course that also carries the cultural literacy designation (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Winter Year 2",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 314",
+      "title": "Computer Organization",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "MATH 232",
+      "title": "Elements of Discrete Mathematics II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "SCI-SEQ-2",
+      "title": "Second course of additional science sequence",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "12-credit science requirement: three courses from ONE science area (biology, chemistry, earth sciences, geography, or physics). Student choice of sequence, per catalog.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CORE-AL-3",
+      "title": "Core-education course in arts & letters",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education arts-and-letters course (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS322-WR-A",
+      "title": "Introduction to Software Engineering or technical/business writing",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'or' group: CS 322 Introduction to Software Engineering, WR 320 Scientific and Technical Writing, WR 321 Business Communications, or HC 301H Research and Writing: [Topic]. The sample plan takes CS 322 in one term and the writing course in the other; either order satisfies the map.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "MATH-OPT-A",
+      "title": "Mathematics option: sequences & series / linear algebra / statistics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'or' group: MATH 253Z Calculus: Sequences and Series, MATH 341 Elementary Linear Algebra, MATH 343 Statistical Models and Methods, MATH 425 Statistical Methods I, or MATH 345M Probability and Statistics for Data Science. Student selects one here and a different one in the other mathematics-option term.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "SCI-SEQ-3",
+      "title": "Third course of additional science sequence",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "12-credit science requirement: three courses from ONE science area (biology, chemistry, earth sciences, geography, or physics). Student choice of sequence, per catalog.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CORE-AL-CL-1",
+      "title": "Core-education course in arts & letters that also satisfies a cultural literacy requirement",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any UO core-education arts-and-letters course that also carries the cultural literacy designation (student choice).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 313",
+      "title": "Intermediate Data Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "MATH-OPT-B",
+      "title": "Mathematics option: sequences & series / linear algebra / statistics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'or' group: MATH 253Z Calculus: Sequences and Series, MATH 341 Elementary Linear Algebra, MATH 343 Statistical Models and Methods, MATH 425 Statistical Methods I, or MATH 345M Probability and Statistics for Data Science. Student selects one here and a different one in the other mathematics-option term.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CS322-WR-B",
+      "title": "Technical/business writing or Introduction to Software Engineering",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'or' group: CS 322 Introduction to Software Engineering, WR 320 Scientific and Technical Writing, WR 321 Business Communications, or HC 301H Research and Writing: [Topic]. The sample plan takes CS 322 in one term and the writing course in the other; either order satisfies the map.",
+      "options": [],
+      "category": "writing"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-1",
+      "title": "Elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter Year 3",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 315",
+      "title": "Intermediate Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS 330",
+      "title": "C/C++ and Unix",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "MATH-UD-1",
+      "title": "Upper-division mathematics elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division mathematics course (student choice, per catalog).",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-2",
+      "title": "Elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "CS 415",
+      "title": "Operating Systems",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-1",
+      "code": "CS-UD-1",
+      "title": "Upper-division elective course with CS subject code",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division CS elective (student choice; follows catalog concentration/elective rules).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-2",
+      "code": "PHIL-223-123",
+      "title": "Data Ethics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "PHIL 223 Data Ethics or PHIL 123 AI, Society, and Philosophy (catalog ethics core).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s9-3",
+      "code": "ELEC-3",
+      "title": "Elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s10-0",
+      "code": "CS 425",
+      "title": "Principles of Programming Languages",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-1",
+      "code": "CS-410-A",
+      "title": "Upper-division elective course (410-499) with CS subject code",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 400-level (410-499) CS elective (student choice; follows catalog concentration/elective rules).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s10-2",
+      "code": "ELEC-4",
+      "title": "Upper-division elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Winter Year 4",
+    "courses": [
+     {
+      "slot_id": "s11-0",
+      "code": "CS 422",
+      "title": "Software Methodology I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-1",
+      "code": "CS-410-B",
+      "title": "Upper-division elective course (410-499) with CS subject code",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 400-level (410-499) CS elective (student choice; follows catalog concentration/elective rules).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-2",
+      "code": "ELEC-5",
+      "title": "Upper-division elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s12-0",
+      "code": "CS-UD-2",
+      "title": "Upper-division elective course with CS subject code",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division CS elective (student choice; follows catalog concentration/elective rules).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s12-1",
+      "code": "CS-410-C",
+      "title": "Upper-division elective course (410-499) with CS subject code",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 400-level (410-499) CS elective (student choice; follows catalog concentration/elective rules).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s12-2",
+      "code": "ELEC-6",
+      "title": "Upper-division elective course",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any upper-division elective course (student choice).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "d6add6d4d0fd6ce0793d5fbab049bb6f8f0e01d8ec49ff22cc433ca3ae440435",
+  "last_verified": "2026-10-02"
+ }
+}

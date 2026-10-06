@@ -1,0 +1,211 @@
+{
+ "institution": {
+  "name": "Chattahoochee Valley Community College",
+  "city": "Phenix City",
+  "state": "AL",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "chattahoochee-valley-community-college-aas-nursing-adn-direct-entry",
+  "degree": "AAS",
+  "major": "Nursing (ADN) - Direct Entry",
+  "total_credits": 66,
+  "catalog_year": "2025-2026",
+  "source_url": "https://catalog.cv.edu/nursing/associate-of-applied-science/nursing-adn-direct-entry-option",
+  "notes": "Suggested Course Sequence from the official 2025-2026 catalog (effective 2025-08-18). Program total: 66 credit hours. BIO 103 and PSY 200 are external_prereqs per the catalog footnote: required if the student was not accepted into the Nursing program (BIO 103 is the prerequisite pathway into BIO 201/BIO 220; PSY 200 into PSY 210). Third-term speech requirement is SPH 106 or SPH 107. Fifth term includes a 3-credit Humanities requirement (catalog wording: 'Humanities').",
+  "external_prereqs": [
+   "BIO 103",
+   "PSY 200"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 112",
+      "credits": 7,
+      "title": "Fundamental Concepts of Nursing",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MTH 100",
+      "credits": 3,
+      "title": "College Algebra or Higher",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "BIO 201",
+      "credits": 4,
+      "prereq": [
+       "BIO 103"
+      ],
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 113",
+      "credits": 8,
+      "title": "Nursing Concepts I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENG 101",
+      "credits": 3,
+      "title": "English Composition I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "PSY 210",
+      "credits": 3,
+      "prereq": [
+       "PSY 200"
+      ],
+      "title": "Human Growth and Development",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "BIO 202",
+      "credits": 4,
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 114",
+      "credits": 8,
+      "prereq": [
+       "NUR 112",
+       "NUR 113"
+      ],
+      "title": "Nursing Concepts II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "NUR 115",
+      "credits": 2,
+      "title": "Evidence-Based Clinical Reasoning",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog sequence: 'SPH 106 or SPH 107'",
+      "code": "SPH 106",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SPH 106",
+        "credits": 3,
+        "title": "Fundamentals of Oral Communication"
+       },
+       {
+        "code": "SPH 107",
+        "credits": 3,
+        "title": "Fundamentals of Public Speaking"
+       }
+      ],
+      "title": "Fundamentals of Oral Communication",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fourth Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 211",
+      "credits": 7,
+      "title": "Advanced Nursing Concepts",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "BIO 220",
+      "credits": 4,
+      "prereq": [
+       "BIO 103"
+      ],
+      "title": "General Microbiology",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fifth Term",
+    "courses": [
+     {
+      "category": "major",
+      "code": "NUR 221",
+      "credits": 7,
+      "title": "Advanced Evidence-Based Clinical Reasoning",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog sequence wording: 'Humanities'",
+      "code": "HUMANITIES ELECTIVE",
+      "credits": 3,
+      "title": "Humanities Elective",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "program_type": "standard",
+  "content_hash": "61f3d0bef9a0478bbcfadac76f9f090654f29c9b3487c6e46c04f46f36958af9",
+  "last_verified": "2026-10-02"
+ }
+}

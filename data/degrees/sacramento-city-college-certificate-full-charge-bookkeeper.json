@@ -1,0 +1,233 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-full-charge-bookkeeper",
+  "degree": "Certificate",
+  "major": "Full Charge Bookkeeper",
+  "catalog_year": "2026-2027",
+  "total_credits": 25,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7548/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Full Charge Bookkeeper Certificate' program map, Catalog 2026-27, published May 15, 2026 (mapmaker.losrios.edu/Maps/7548/PublishedPdf). Official Total Units: 25-29; this seed models the low-end first-listed path = 13+12 = 25 units (Major Elective slots modeled at the 2-unit low end of the official 2-4 range; the map does not print per-course units for the elective options). Semester sums verified against the map's 13-15 / 12-14 headers. Major Elective: minimum 6 units total across both semesters from ACCT 123, ACCT 343, ACCT 361, BUS 105 (select one this semester; in Semester 2 select one or two courses not already completed to total 6 units). This path uses ACCT 123 (Semester 1) and ACCT 343 (Semester 2). Scheduling note: take CISA 315 during the first 8-week term and CISA 316 during the second 8-week term. In-plan prereqs per the map: CISA 316 requires CISA 315 with 'C' or better; ACCT 311 requires ACCT 301 with 'C' or better; ACCT 121 requires ACCT 101 with 'C' or better; ACCT 341 requires ACCT 101 or ACCT 301 with 'C' or better; ACCT 343 requires ACCT 101 or ACCT 301 with 'C' or better AND CISA 315 with 'C' or better. Certificate of Achievement requirements: a grade of 'C' or better in each major course. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "ACCT 101",
+      "title": "Fundamentals of College Accounting",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "ACCT 101",
+      "xfer": [
+       "cosumnes-river-college-as-construction-management-technology"
+      ]
+     },
+     {
+      "code": "ACCT 301",
+      "title": "Financial Accounting",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "tccns": "ACCT 301",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "american-river-college-aa-general-business",
+       "american-river-college-certificate-retail-management-wafc",
+       "ave-maria-university-ba-accounting",
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc",
+       "cosumnes-river-college-aat-economics",
+       "cosumnes-river-college-as-agriculture-business-ag-bus-concentration",
+       "cosumnes-river-college-as-business-information-technology",
+       "cosumnes-river-college-ast-business-administration",
+       "sacramento-city-college-aa-t-economics",
+       "sacramento-city-college-certificate-global-business-economics"
+      ]
+     },
+     {
+      "code": "CISA 315",
+      "title": "Introduction to Electronic Spreadsheets",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Take during the first 8-week term.",
+      "options": [],
+      "slot_id": "s1-2",
+      "tccns": "CISA 315",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "american-river-college-aa-general-business",
+       "american-river-college-as-cis-computer-networking-management-cisco",
+       "american-river-college-certificate-cis-pc-support",
+       "american-river-college-certificate-retail-management-wafc",
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc",
+       "cosumnes-river-college-certificate-business-information-professional-i",
+       "sacramento-city-college-as-information-processing",
+       "sacramento-city-college-as-management-information-science",
+       "sacramento-city-college-certificate-management-information-science",
+       "sacramento-city-college-certificate-optical-technician"
+      ]
+     },
+     {
+      "code": "CISA 316",
+      "title": "Intermediate Electronic Spreadsheets",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "CISA 315"
+      ],
+      "choice": false,
+      "choice_note": "Take during the second 8-week term.",
+      "options": [],
+      "slot_id": "s1-3",
+      "tccns": "CISA 316",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "sacramento-city-college-as-information-processing"
+      ]
+     },
+     {
+      "code": "ACCT 123",
+      "title": "Major Elective",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Major Elective — minimum 6 units total across both semesters; select one this semester. ACCT 123 / ACCT 343 / ACCT 361 / BUS 105. Modeled at the 2-unit low end of the official 2-4 range (map does not print per-course units).",
+      "options": [
+       "ACCT 123",
+       "ACCT 343",
+       "ACCT 361",
+       "BUS 105"
+      ],
+      "slot_id": "s1-4",
+      "tccns": "ACCT 123",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "ACCT 311",
+      "title": "Managerial Accounting",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ACCT 301"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "ACCT 311",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "ave-maria-university-ba-accounting",
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc",
+       "cosumnes-river-college-ast-business-administration",
+       "sacramento-city-college-aa-t-economics"
+      ]
+     },
+     {
+      "code": "ACCT 121",
+      "title": "Payroll Accounting",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ACCT 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "ACCT 121",
+      "xfer": [
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc"
+      ]
+     },
+     {
+      "code": "ACCT 341",
+      "title": "Computerized Accounting",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ACCT 101",
+         "ACCT 301"
+        ]
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "tccns": "ACCT 341",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting",
+       "cosumnes-river-college-aa-accounting-calgetc",
+       "cosumnes-river-college-as-business-information-technology"
+      ]
+     },
+     {
+      "code": "ACCT 343",
+      "title": "Major Elective",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ACCT 101",
+         "ACCT 301"
+        ]
+       },
+       "CISA 315"
+      ],
+      "choice": true,
+      "choice_note": "Major Elective — select one or two courses not already completed to total 6 units. First-listed unused option ACCT 343 selected (prereq ACCT 101/301 AND CISA 315, both in-plan Semester 1). Modeled at the 2-unit low end of the official 2-4 range.",
+      "options": [
+       "ACCT 123",
+       "ACCT 343",
+       "ACCT 361",
+       "BUS 105"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "ACCT 343",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "5f88e31f0815de45208cd3785b80810755529a8029662afee67baf5df3149ddd",
+  "last_verified": "2026-10-02"
+ }
+}

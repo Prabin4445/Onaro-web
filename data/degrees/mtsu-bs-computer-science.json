@@ -1,0 +1,586 @@
+{
+ "institution": {
+  "city": "Murfreesboro, TN",
+  "kind": "public4yr",
+  "name": "Middle Tennessee State University",
+  "state": "TN"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 1730"
+  ],
+  "id": "mtsu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "TRUE catalog program name: 'Computer Science, Professional Computer Science Concentration, B.S.' (Department of Computer Science). Transcribed verbatim from the official MTSU 2024-25 'Computer Science-Professional Computer Science Academic Map' (Suggested Fall/Spring Four-Year Schedule), source_url above. Transcription method: downloaded the official catalog PDF (pdftotext -layout) and transcribed course-by-course; subtotals cross-checked against the map's printed per-term subtotals. CATALOG-YEAR HONESTY: the live catalog on 2026-09-30 is the 2025-2026 Undergraduate Catalog (which still lists this concentration), but no 2025-26 term-by-term academic map for this concentration is published/indexed; the 2024-25 map is the latest official term-by-term sequence, so catalog_year is set to 2024-2025. No known curriculum changes vs. 2025-26: the 2025-26 catalog program page carries the same 41-hr True Blue Core / 44-hr major / 33-hr supporting structure; verify with an advisor before use. The PDF also carries a Fall/Spring/Summer variant (sophomore summer: elective + CSCI upper-division elective, etc.); this plan uses the primary 8-term Fall/Spring schedule. Caveats: (1) MATH placement/eligibility alternatives shown on the map (MATH 1730 with C or better, ACT Math subscore 26+, Math Dept. Calculus Placement Test, MATH 1710) are placement details, not course prereqs, and are recorded here, not in prereq lists; the plan records the in-plan math path (MATH 1910) where the map allows 'MATH 1730 or 1910' / 'MATH 1710 or 1910'. (2) 'CSCI 303_' is the map's placeholder for a high-level programming language course (student/dept choice) - recorded as choice slot CSCI 303X. (3) 'One must come from Discovery' markers on TBC choice slots are preserved in choice titles. (4) Science year-long sequence: any of BIOL 1110/1111+1120/1121, CHEM 1010/1011+1020/1021, CHEM 1110/1111+1120/1121, PHYS 2010/2011+2020/2021, PHYS 2110/2111+2120/2121; third science course must use a different prefix (BIOL 1110/1111, CHEM 1010/1011, CHEM 1110/1111, PHYS 2010/2011, or PHYS 2110/2111). (5) Map note: every course counted toward the 44 CS credit hours plus MATH 1910 and COMM 2200 requires a grade of C (2.00) or higher.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 1170",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1730"
+      ],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1910",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "True Blue Core foundational-skills course of the student's choice",
+      "code": "TBC-WC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Written Communication (True Blue Core)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At least one of the two History and Civic Learning courses must be a Discovery course",
+      "code": "TBC-HCL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "History and Civic Learning (True Blue Core; one must be Discovery)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 1010",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Computer Science Colloquium",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 2170",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 1170",
+       "MATH 1730"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1920",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1910"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "True Blue Core foundational-skills course of the student's choice",
+      "code": "TBC-IL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Information Literacy (True Blue Core)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At least one of the two History and Civic Learning courses must be a Discovery course",
+      "code": "TBC-HCL-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "History and Civic Learning (True Blue Core; one must be Discovery)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "supporting",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM 2200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Audience-Centered Communication",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3130",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 2170",
+       "MATH 1910"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Assembly and Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": true,
+      "choice_note": "Start a year-long lab-science sequence in the TBC Scientific Literacy area (BIOL/CHEM/PHYS options per catalog note); the sequence continues next term",
+      "code": "TBC-SCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Scientific Literacy - year-long sequence, part 1 (True Blue Core)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3080",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 1170",
+       "MATH 1910"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "True Blue Core knowledge-domain course of the student's choice",
+      "code": "TBC-CCE-LIT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Creativity and Cultural Expression - Literature (True Blue Core)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3240",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 3130",
+       "MATH 1910"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3110",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 2170"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Algorithms and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": true,
+      "choice_note": "Complete the year-long sequence started in the TBC Scientific Literacy area (same rubric as part 1)",
+      "code": "TBC-SCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Scientific Literacy - year-long sequence, part 2 (True Blue Core)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "True Blue Core knowledge-domain course of the student's choice",
+      "code": "TBC-HSSR-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Human Society and Social Relationships (True Blue Core; one must be Discovery)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Map lists 'CSCI 303_' - a high-level programming language course chosen by the student; prereq CSCI 3110",
+      "code": "CSCI 303X",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 3110"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "High-level programming language course (CSCI 303_ series)",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2050",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1910"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Probability and Statistics",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": true,
+      "choice_note": "Science course with a different prefix from the year-long sequence (BIOL 1110/1111, CHEM 1010/1011, CHEM 1110/1111, PHYS 2010/2011, or PHYS 2110/2111)",
+      "code": "TBC-SCI-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Science course - different prefix from year-long sequence",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Elective (see dept./advisor)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Elective (see dept./advisor)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 3210",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 3110",
+       "COMM 2200"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Theory of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "CSCI-UD-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CSCI upper-division elective (see dept./advisor)",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 3170",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Ethics and Computing Technology",
+      "xfer": []
+     },
+     {
+      "category": "supporting",
+      "choice": true,
+      "choice_note": "Must be a course for Math majors",
+      "code": "MATH-EL",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Math elective (must be a course for Math majors)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Elective (see dept./advisor)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 4160",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 3080",
+       "CSCI 3110",
+       "CSCI 3130"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Compiler Design and Software Development",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "CSCI-UD-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CSCI upper-division elective (see dept./advisor)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At least one Human Society and Social Relationships course must be a Discovery course",
+      "code": "TBC-HSSR-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Human Society and Social Relationships (True Blue Core; one must be Discovery)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Elective (see dept./advisor)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At least one Creativity and Cultural Expression course must be a Discovery course",
+      "code": "TBC-CCE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Creativity and Cultural Expression (True Blue Core; one must be Discovery)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 4700",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSCI 3080",
+       "CSCI 3110",
+       "COMM 2200"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "At least one Creativity and Cultural Expression course must be a Discovery course",
+      "code": "TBC-CCE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Creativity and Cultural Expression (True Blue Core; one must be Discovery)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "ELECT-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Elective (see dept./advisor)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "See dept./advisor",
+      "code": "CSCI-UD-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CSCI upper-division elective (see dept./advisor)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.mtsu.edu/mime/media/view/42/10175/",
+  "total_credits": 120,
+  "content_hash": "a9b1b073dcaadcf705cf5bbd54b45f285d38c11f0697f79a44baeae9ce722d5d",
+  "last_verified": "2026-10-02"
+ }
+}

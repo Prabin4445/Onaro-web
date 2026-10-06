@@ -1,0 +1,538 @@
+{
+ "institution": {
+  "name": "Michigan State University",
+  "city": "East Lansing, MI",
+  "kind": "public4yr",
+  "state": "MI"
+ },
+ "plan": {
+  "id": "msu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "http://engineering.msu.edu/academics/majors-degrees/computer-science-bs",
+  "notes": "Source: http://engineering.msu.edu/academics/majors-degrees/computer-science-bs (official Michigan State University College of Engineering 'Computer Science (B.S.)' degree page, which publishes the official degree requirements together with the official 'Sample Program' term-by-term table for this program). Catalog year: 2026-2027 (the live catalog as of the 2026-09-30 access date; the page states these requirements apply to students admitted to the Computer Science major beginning Spring 2027). The reg.msu.edu Academic Programs catalog print page could not be fetched (upstream timeout on 2026-09-30), so transcription is from the College of Engineering's official degree page for this exact program, whose Sample Program table is the genuine official term-by-term sequence for the B.S. in Computer Science. Transcription method: hand-transcribed 2026-09-30 from the page's 'Sample Program' tables (First Year through Senior Year); every course code, title, and credit value copied verbatim from the table; required-course titles taken from the requirements section of the same page; student-choice slots modeled as unique choice slots with the official option lists. True program name used: the page titles it 'Computer Science (B.S.)'; no substitution made. Caveats: (1) The official Sample Program prints 'Bioscience 3/4' and 'Bioscience Lab 1/2' (ranges); this plan records the 3-credit and 1-credit minima so each term matches the table's lower total (16, 15) and the plan sums to the required 120 credits; the official table shows 16/17 and 15/16. (2) The Sample Program table lists CSE 235 at 3 credits, while the requirements section of the same page lists 'CSE 235: Tools, Teamwork, and Time - 4 cr'; the table was transcribed as printed (3 cr) and the discrepancy is flagged, not resolved. (3) Prerequisites are not listed in the official sample program, so prereq arrays are empty; the page notes that several courses have additional prerequisites not otherwise required in the program -- consult the catalog course descriptions. (4) 'CSE 4XX' slots are five required 400-level major electives; options listed in each choice_note. Optional concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) may push the total above 120 and are not modeled. (5) Term totals as printed in the official table: 14 / 14 / 15 / 16 / 16-17 / 16 / 15-16 / 14 = 120 minimum, matching the degree's 120-credit requirement.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ELECTIVE-CHOICE-1",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program prints 'Elective' (3 cr). Any course the student and advisor choose.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "PHY 183",
+      "title": "Physics for Scientists and Engineers I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MTH 132",
+      "title": "Calculus I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ISS-2XX-CHOICE-1",
+      "title": "Integrative Studies in Social Sciences (200-level)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "University ISS requirement: ISS 2XX (4 cr) plus ISS 3XX (4 cr) elsewhere in the plan. Choose an approved 200-level ISS course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSE 231",
+      "title": "Introduction to Programming I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "EGR 100",
+      "title": "Introduction to Engineering Design",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MTH 133",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "WRA 101",
+      "title": "Writing, Rhetoric and American Cultures (WRA 101)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSE 232",
+      "title": "Introduction to Programming II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSE 260",
+      "title": "Discrete Structures in Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSE 235",
+      "title": "Tools, Teamwork, and Time",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "IAH-201-210-CHOICE-1",
+      "title": "Integrative Studies in Humanities (IAH 201-210)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "University IAH requirement: IAH 201-210 (4 cr) here plus IAH 211 or higher (4 cr) in senior spring. Choose an approved course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSE 300",
+      "title": "Social, Ethical, and Professional Issues in Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSE 320",
+      "title": "Computer Organization and Architecture",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSE 331",
+      "title": "Algorithms and Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MTH 234",
+      "title": "Multivariable Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "ISS-3XX-CHOICE-1",
+      "title": "Integrative Studies in Social Sciences (300-level)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "University ISS requirement: ISS 3XX (4 cr); the other half (ISS 2XX) is in Fall Year 1. Choose an approved 300-level ISS course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSE 345",
+      "title": "Fundamentals of Artificial Intelligence",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSE 380",
+      "title": "Data Management and the Cloud",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "BIOSCI-CHOICE-1",
+      "title": "Bioscience (Group 1)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sample program prints 'Bioscience 3/4'. Select one Group 1 bioscience course. Official Group 1 options on the degree page: BS 161 Cell and Molecular Biology (3), ENT 205 Pests, Society and Environment (3), IBIO 150 Integrating Biology: From DNA to Populations (3), MGI 141 Introductory Human Genetics (3), MGI 201 Fundamentals of Microbiology (3), PLB 105 Plant Biology (3), PSL 250 Introductory Physiology (4). This plan records the 3-credit minimum so the term totals 16 and the plan sums to 120; a 4-credit choice raises the term to 17.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MTH 314",
+      "title": "Matrix Algebra with Computational Applications",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELECTIVE-CHOICE-2",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program prints 'Elective' (3 cr). Any course the student and advisor choose.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSE 325",
+      "title": "Computer Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSE 335",
+      "title": "Software Engineering I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSE-4XX-CHOICE-1",
+      "title": "CSE 400-Level Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the five required 400-level CSE major electives ('Select five of the following courses: (15 cr)' per the official degree page). Official options: CSE 402 Biometrics and Pattern Recognition (3), CSE 404 Intro to Machine Learning (3), CSE 410 Operating Systems (3), CSE 415 Parallel Programming (3), CSE 416 Software Performance Engineering (3), CSE 420 Computer Architecture (3), CSE 422 Computer Networks (3), CSE 425 Introduction to Computer Security (3), CSE 431 Algorithm Engineering (3), CSE 434 Autonomous Vehicles (3), CSE 435 Requirements Analysis and Software Engineering in Practice (3), CSE 440 Introduction to Artificial Intelligence (3), CSE 446 AI Agents (3), CSE 450 Translation of Programming Languages (3), CSE 460 Computability and Formal Language Theory (3), CSE 471 Media Processing and Multimedia Computing (3), CSE 472 Computer Graphics (3), CSE 475 Human-Computer Interaction (3), CSE 476 Mobile Application Development (3), CSE 477 Web Application Architecture and Development (3), CSE 480 Database Systems (3), CSE 482 Big Data Analysis (3), CSE 491 Selected Topics in Computer Science (1-4), MTH 451 Numerical Analysis I (3). Concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) are optional and may add credits beyond 120.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "STT 351",
+      "title": "Probability and Statistics for Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELECTIVE-CHOICE-3",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Sample program prints 'Elective' (3 cr). Any course the student and advisor choose.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSE 336",
+      "title": "Software Engineering II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "PHY 184",
+      "title": "Physics for Scientists and Engineers II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSE-4XX-CHOICE-2",
+      "title": "CSE 400-Level Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the five required 400-level CSE major electives ('Select five of the following courses: (15 cr)' per the official degree page). Official options: CSE 402 Biometrics and Pattern Recognition (3), CSE 404 Intro to Machine Learning (3), CSE 410 Operating Systems (3), CSE 415 Parallel Programming (3), CSE 416 Software Performance Engineering (3), CSE 420 Computer Architecture (3), CSE 422 Computer Networks (3), CSE 425 Introduction to Computer Security (3), CSE 431 Algorithm Engineering (3), CSE 434 Autonomous Vehicles (3), CSE 435 Requirements Analysis and Software Engineering in Practice (3), CSE 440 Introduction to Artificial Intelligence (3), CSE 446 AI Agents (3), CSE 450 Translation of Programming Languages (3), CSE 460 Computability and Formal Language Theory (3), CSE 471 Media Processing and Multimedia Computing (3), CSE 472 Computer Graphics (3), CSE 475 Human-Computer Interaction (3), CSE 476 Mobile Application Development (3), CSE 477 Web Application Architecture and Development (3), CSE 480 Database Systems (3), CSE 482 Big Data Analysis (3), CSE 491 Selected Topics in Computer Science (1-4), MTH 451 Numerical Analysis I (3). Concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) are optional and may add credits beyond 120.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CSE-4XX-CHOICE-3",
+      "title": "CSE 400-Level Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the five required 400-level CSE major electives ('Select five of the following courses: (15 cr)' per the official degree page). Official options: CSE 402 Biometrics and Pattern Recognition (3), CSE 404 Intro to Machine Learning (3), CSE 410 Operating Systems (3), CSE 415 Parallel Programming (3), CSE 416 Software Performance Engineering (3), CSE 420 Computer Architecture (3), CSE 422 Computer Networks (3), CSE 425 Introduction to Computer Security (3), CSE 431 Algorithm Engineering (3), CSE 434 Autonomous Vehicles (3), CSE 435 Requirements Analysis and Software Engineering in Practice (3), CSE 440 Introduction to Artificial Intelligence (3), CSE 446 AI Agents (3), CSE 450 Translation of Programming Languages (3), CSE 460 Computability and Formal Language Theory (3), CSE 471 Media Processing and Multimedia Computing (3), CSE 472 Computer Graphics (3), CSE 475 Human-Computer Interaction (3), CSE 476 Mobile Application Development (3), CSE 477 Web Application Architecture and Development (3), CSE 480 Database Systems (3), CSE 482 Big Data Analysis (3), CSE 491 Selected Topics in Computer Science (1-4), MTH 451 Numerical Analysis I (3). Concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) are optional and may add credits beyond 120.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "BIOSCI-LAB-CHOICE-1",
+      "title": "Bioscience Laboratory (Group 2)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sample program prints 'Bioscience Lab 1/2'. Select one Group 2 laboratory course. Official Group 2 options on the degree page: BS 171 Cell and Molecular Biology Laboratory (2), CEM 161 Chemistry Laboratory I (1), CEM 162 Chemistry Laboratory II (1), PHY 191 Physics Laboratory for Scientists I (1), PHY 192 Physics Laboratory for Scientists II (1), PLB 106 Plant Biology Laboratory (1). This plan records the 1-credit minimum so the term totals 15 and the plan sums to 120; a 2-credit choice raises the term to 16.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSE 498",
+      "title": "Collaborative Design (W)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSE-4XX-CHOICE-4",
+      "title": "CSE 400-Level Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the five required 400-level CSE major electives ('Select five of the following courses: (15 cr)' per the official degree page). Official options: CSE 402 Biometrics and Pattern Recognition (3), CSE 404 Intro to Machine Learning (3), CSE 410 Operating Systems (3), CSE 415 Parallel Programming (3), CSE 416 Software Performance Engineering (3), CSE 420 Computer Architecture (3), CSE 422 Computer Networks (3), CSE 425 Introduction to Computer Security (3), CSE 431 Algorithm Engineering (3), CSE 434 Autonomous Vehicles (3), CSE 435 Requirements Analysis and Software Engineering in Practice (3), CSE 440 Introduction to Artificial Intelligence (3), CSE 446 AI Agents (3), CSE 450 Translation of Programming Languages (3), CSE 460 Computability and Formal Language Theory (3), CSE 471 Media Processing and Multimedia Computing (3), CSE 472 Computer Graphics (3), CSE 475 Human-Computer Interaction (3), CSE 476 Mobile Application Development (3), CSE 477 Web Application Architecture and Development (3), CSE 480 Database Systems (3), CSE 482 Big Data Analysis (3), CSE 491 Selected Topics in Computer Science (1-4), MTH 451 Numerical Analysis I (3). Concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) are optional and may add credits beyond 120.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSE-4XX-CHOICE-5",
+      "title": "CSE 400-Level Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the five required 400-level CSE major electives ('Select five of the following courses: (15 cr)' per the official degree page). Official options: CSE 402 Biometrics and Pattern Recognition (3), CSE 404 Intro to Machine Learning (3), CSE 410 Operating Systems (3), CSE 415 Parallel Programming (3), CSE 416 Software Performance Engineering (3), CSE 420 Computer Architecture (3), CSE 422 Computer Networks (3), CSE 425 Introduction to Computer Security (3), CSE 431 Algorithm Engineering (3), CSE 434 Autonomous Vehicles (3), CSE 435 Requirements Analysis and Software Engineering in Practice (3), CSE 440 Introduction to Artificial Intelligence (3), CSE 446 AI Agents (3), CSE 450 Translation of Programming Languages (3), CSE 460 Computability and Formal Language Theory (3), CSE 471 Media Processing and Multimedia Computing (3), CSE 472 Computer Graphics (3), CSE 475 Human-Computer Interaction (3), CSE 476 Mobile Application Development (3), CSE 477 Web Application Architecture and Development (3), CSE 480 Database Systems (3), CSE 482 Big Data Analysis (3), CSE 491 Selected Topics in Computer Science (1-4), MTH 451 Numerical Analysis I (3). Concentrations (AI, Computer Systems, Cybersecurity, Multimedia and Graphics, Theory) are optional and may add credits beyond 120.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "IAH-211-CHOICE-1",
+      "title": "Integrative Studies in Humanities (IAH 211 or higher)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "University IAH requirement: IAH 211 or higher (4 cr); the other half (IAH 201-210) is in Fall Year 2. Choose an approved course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "8264584099a907d968fbea7fc5ae563839d3c03b160a312f6d16533c4ef5d828",
+  "last_verified": "2026-10-02"
+ }
+}

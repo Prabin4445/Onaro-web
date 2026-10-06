@@ -1,0 +1,337 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-emergency-medical-services",
+  "major": "Emergency Medical Services",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 3551, Rev. 01/2025, effective Summer 2025): semester-by-semester course sequence for full-time associate degree students finishing in two years. The guide prints semester totals 14-15 / 11 / 9 (summer) / 16 / 11 and 'TOTAL CREDIT HOURS 61-62' because the First Semester math slot is MTH124 Statistics (3), MTH105 Math for Allied Health (3), or MTH125 College Algebra (4); this seed models MTH124 (3 credits) for semesters 14 / 11 / 9 / 16 / 11 = 61, the minimum-credit instantiation, and notes the guide's 61-62 range. Course titles and credit hours as printed in the guide's technical/non-technical course lists and sequence. Prerequisites are from the guide's Pre- and Co-Requisites column and name only courses present in the plan: EMS122 requires BIO101, EMS121 and co-EMS124; EMS124 requires BIO101, EMS121 and co-EMS122; EMS221 requires EMS122, EMS124 and co-EMS223; EMS223 requires EMS122, EMS124 and co-EMS221; EMS222 requires EMS221, EMS223 and co-EMS226; EMS226 requires EMS221, EMS223 and co-EMS222; EMS224 requires EMS222, EMS226 and co-EMS225; EMS225 requires EMS222, EMS226 and co-EMS224. Footnote: EMS121 is a prerequisite for EMS122 and is waivable with current State of Ohio EMT Certification (not modeled as a waiver; the sequence includes EMS121). Footnote markers (^ placement score, ^^ take first semester, + grade minimum, Ω transfer note, ▲ advisor check) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS121",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Emergency Medical Technician",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Introduction to Anatomy and Physiology",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan row 'MTH124 Statistics or MTH125 College Algebra or MTH105 Math for Allied Health'; modeled at 3 credits (guide range 14-15 for the semester, 61-62 total).",
+      "code": "MTH124 / MTH125 / MTH105",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Statistics or College Algebra or Math for Allied Health",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "1st Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS122",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [
+       "BIO101",
+       "EMS121",
+       "EMS124"
+      ],
+      "required_zero": false,
+      "title": "Paramedic I",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS124",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "BIO101",
+       "EMS121",
+       "EMS122"
+      ],
+      "required_zero": false,
+      "title": "Paramedic I Clinical",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "2nd Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS221",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [
+       "EMS122",
+       "EMS124",
+       "EMS223"
+      ],
+      "required_zero": false,
+      "title": "Paramedic II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS223",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "EMS122",
+       "EMS124",
+       "EMS221"
+      ],
+      "required_zero": false,
+      "title": "Paramedic II Clinical",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS222",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [
+       "EMS221",
+       "EMS223",
+       "EMS226"
+      ],
+      "required_zero": false,
+      "title": "Paramedic III",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS226",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "EMS221",
+       "EMS223",
+       "EMS222"
+      ],
+      "required_zero": false,
+      "title": "Paramedic III Clinical",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS224",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [
+       "EMS222",
+       "EMS226",
+       "EMS225"
+      ],
+      "required_zero": false,
+      "title": "Paramedic IV",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMS225",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "EMS222",
+       "EMS226",
+       "EMS224"
+      ],
+      "required_zero": false,
+      "title": "Paramedic IV Clinical",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Medical Terminology",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "3rd Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITD122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Computer Applications for Professionals",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "General Psychology",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHL122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Ethics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "FST224",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Legal Aspects of Fire Service",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "4th Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/3551-AAS-Emergency-Medical-Services.pdf",
+  "total_credits": 61,
+  "content_hash": "dd9bb35626b252977d7448a8b229a21eb5eb09ef7f49295783a0fe143107b26b",
+  "last_verified": "2026-10-02"
+ }
+}

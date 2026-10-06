@@ -1,0 +1,472 @@
+{
+ "institution": {
+  "city": "Coon Rapids, MN",
+  "kind": "community",
+  "name": "Anoka-Ramsey Community College",
+  "state": "MN"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "id": "anoka-ramsey-community-college-as-nursing-lpn-to-rn",
+  "last_verified": "2026-10-01",
+  "major": "Nursing (LPN to RN Track)",
+  "notes": "Sequence transcribed verbatim from the official Anoka-Ramsey Community College 2024-2025 Academic Catalog (archived official catalog), program page 'Professional Nursing Program, AS' (Major Code 5275; https://catalog.anokaramsey.edu/preview_program.php?catoid=2&poid=221, retrieved 2026-10-01), 'Program Sequence (LPN Track)'. Semester totals print as 13 credits + 4 credits of advanced standing / 16 / 16 / 15 = 64 credits total, matching the catalog's Total Credits: 64 (30 nursing + 4 advanced standing + 30 general education). The 4-credit 'Advanced Standing Credit (LPN)' block is encoded as a Semester One entry (not a course) exactly as the catalog presents it, so that semester sums equal the 64-credit total. CURRENCY CAVEAT: the school has since published a newer official 'Nursing Curriculum Plan for LPNs (starting with application to the Fall 2025 term)' whose course credits appear to differ from this 2024-2025 catalog for some courses (notably NURS 2462 and the PSYC 1110/2235 options), but that PDF's two-column text extraction is too garbled to decode individual course credits reliably, so it could not be transcribed. This plan is therefore labeled with its actual catalog year (2024-2025) and should be re-verified against the current catalog before being treated as the current plan. Completion requirements per the catalog: minimum 64 semester credits in courses numbered 1000+, 2.0 cumulative GPA at ARCC, grade of C or higher in all program and specified general education requirements, 'safe professional practice' evaluation in clinicals, all NURS courses in each semester completed concurrently with C or higher to progress, general education courses may be taken earlier but not later than the identified semester, nursing courses must be completed within 3 years. The program is a dual-admission (DAP) pathway with Metropolitan State University and Minnesota State University Moorhead; semesters 5-8 (BSN) are completed at the partner university, not at ARCC, and are not part of this 64-credit AS plan. Prerequisite annotations transcribed verbatim from the official catalog; \"or\" alternatives (e.g. BIOL 1900 or BIOL 2201) preserved as one_of. Codes in external_prereqs are catalog-listed alternatives to in-plan courses, satisfied outside this plan's sequence.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2113",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 1050",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of General, Organic, and Biological Chemistry",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1130",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "APA Documentation",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 1162",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 1165",
+       "ENGL 1130",
+       "BIOL 2113",
+       "CHEM 1050"
+      ],
+      "title": "Health Promotion and Wellness and the Role of the Professional Nurse",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 1165",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "LPN Transition to the Role of the Professional Nurse I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Not a course: the catalog's '4 credits of advanced standing' block for licensed LPNs, listed under Semester One of the LPN track. Included so semester sums equal the catalog's 64-credit program total.",
+      "code": "ADV-STANDING",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Advanced Standing Credit (LPN)",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Semester One",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2114",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 1260",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NURS 1165",
+       "NURS 1162",
+       "BIOL 2113",
+       "CHEM 1050",
+       "ENGL 1130",
+       "NURS 1262",
+       "NURS 1265",
+       {
+        "one_of": [
+         "ENGL 1120",
+         "ENGL 1121"
+        ],
+        "raw": "Prerequisite or corequisite: ENGL 1120 or ENGL 1121, BIOL 2114"
+       },
+       "BIOL 2114"
+      ],
+      "title": "Health Maintenance: Chronic and Palliative Care",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 1262",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Pharmacology for the Professional Nurse I",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 1265",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "LPN Transition to the Role of the Professional Nurse II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Per the official catalog: 'Select one:' ENGL 1120 Cross-Current College Writing and Critical Reading (4 cr) or ENGL 1121 College Writing and Critical Reading (4 cr).",
+      "code": "ENGL 1120",
+      "credits": 4,
+      "options": [
+       {
+        "code": "ENGL 1121",
+        "credits": 4,
+        "title": "College Writing and Critical Reading"
+       }
+      ],
+      "prereq": [],
+      "title": "Cross-Current College Writing and Critical Reading",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester Two",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 1900",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Introductory Microbiology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2360",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 1260",
+       "NURS 1262",
+       "NURS 1265",
+       "BIOL 2114",
+       {
+        "one_of": [
+         "ENGL 1120",
+         "ENGL 1121"
+        ],
+        "raw": "Prerequisite (C or better): NURS 1260, NURS 1262, NURS 1265, BIOL 2114, ENGL 1120 or ENGL 1121"
+       },
+       "NURS 2362",
+       "NURS 2390",
+       {
+        "one_of": [
+         "BIOL 1900",
+         "BIOL 2201"
+        ],
+        "raw": "Prerequisite or corequisite: BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       },
+       {
+        "one_of": [
+         "PSYC 1110",
+         "PSYC 2235"
+        ],
+        "raw": "Prerequisite or corequisite: BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       }
+      ],
+      "title": "Health Restoration: Acute/Simple Alterations",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2362",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Pharmacology for the Professional Nurse II",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2390",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NURS 1260",
+       "NURS 1262",
+       "NURS 1265",
+       "BIOL 2114",
+       {
+        "one_of": [
+         "ENGL 1120",
+         "ENGL 1121"
+        ],
+        "raw": "Prerequisite (C or better): NURS 1260, NURS 1262, NURS 1265, BIOL 2114, ENGL 1120 or ENGL 1121"
+       },
+       "NURS 2360",
+       "NURS 2362",
+       {
+        "one_of": [
+         "BIOL 1900",
+         "BIOL 2201"
+        ],
+        "raw": "Prerequisite or corequisite: BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       },
+       {
+        "one_of": [
+         "PSYC 1110",
+         "PSYC 2235"
+        ],
+        "raw": "Prerequisite or corequisite: BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       }
+      ],
+      "title": "Health Restoration: Acute/Simple Alterations Experiential Learning",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Per the official catalog: 'Select one:' PSYC 1110 General Psychology (4 cr) or PSYC 2235 Lifespan Development (4 cr).",
+      "code": "PSYC 1110",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PSYC 2235",
+        "credits": 4,
+        "title": "Lifespan Development"
+       }
+      ],
+      "prereq": [],
+      "title": "General Psychology",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester Three",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2460",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NURS 2360",
+       "NURS 2362",
+       "NURS 2390",
+       {
+        "one_of": [
+         "BIOL 1900",
+         "BIOL 2201"
+        ],
+        "raw": "Prerequisite (C or better): NURS 2360, NURS 2362, NURS 2390, BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       },
+       {
+        "one_of": [
+         "PSYC 1110",
+         "PSYC 2235"
+        ],
+        "raw": "Prerequisite (C or better): NURS 2360, NURS 2362, NURS 2390, BIOL 1900 or BIOL 2201, PSYC 1110 or PSYC 2235"
+       },
+       "NURS 2462",
+       "NURS 2490",
+       {
+        "one_of": [
+         "PHIL 1110",
+         "PHIL 1200"
+        ],
+        "raw": "Prerequisite or corequisite: PHIL 1110 or PHIL 1200, CMST 1110 or CMST 2210 or CMST 2220"
+       },
+       {
+        "one_of": [
+         "CMST 1110",
+         "CMST 2210",
+         "CMST 2220"
+        ],
+        "raw": "Prerequisite or corequisite: PHIL 1110 or PHIL 1200, CMST 1110 or CMST 2210 or CMST 2220"
+       }
+      ],
+      "title": "Health Restoration: Acute/Complex Alterations",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2462",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Nursing Leadership",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 2490",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Health Restoration: Acute/Complex Alterations Experiential Learning",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Per the official catalog: 'Select one:' CMST 1110 Introduction to Communication (3 cr), CMST 2210 Intercultural Communication (3 cr), or CMST 2220 Interpersonal Communication (3 cr).",
+      "code": "CMST 1110",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CMST 2210",
+        "credits": 3,
+        "title": "Intercultural Communication"
+       },
+       {
+        "code": "CMST 2220",
+        "credits": 3,
+        "title": "Interpersonal Communication"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Communication",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Per the official catalog: 'Select one:' PHIL 1110 Introduction to Ethics (3 cr) or PHIL 1200 Medical Ethics (3 cr).",
+      "code": "PHIL 1110",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PHIL 1200",
+        "credits": 3,
+        "title": "Medical Ethics"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Ethics",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester Four",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.anokaramsey.edu/preview_program.php?catoid=2&poid=221",
+  "total_credits": 64,
+  "transfer_confidence": "core_only",
+  "external_prereqs": [
+   "BIOL 2201",
+   "CMST 2210",
+   "CMST 2220",
+   "ENGL 1121",
+   "PHIL 1200",
+   "PSYC 2235"
+  ],
+  "content_hash": "b30fad7baada6f68217711fe4b4fa47500e65b8af6a17a4235839a3513cb312e"
+ }
+}

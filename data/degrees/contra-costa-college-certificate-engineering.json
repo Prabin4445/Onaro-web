@@ -1,0 +1,143 @@
+{
+ "institution": {
+  "name": "Contra Costa College",
+  "city": "San Pablo, CA",
+  "state": "CA",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "contra-costa-college-certificate-engineering",
+  "degree": "Certificate",
+  "major": "Engineering",
+  "total_credits": 21,
+  "catalog_year": "2025-2026",
+  "source_url": "https://mypath.contracosta.edu/pathway/engineering-to-certificate/?pt=map&year=2025",
+  "notes": "Source: https://mypath.contracosta.edu/pathway/engineering-to-certificate/?pt=map&year=2025 (official Program Pathways Mapper, programmapper.org platform; catalog year 2025-2026; pathway “Engineering Certificate of Achievement Pathway | Contra Costa College 2025”). Term-by-term sequence, course codes/titles, units, and Major/Gen Ed/Elective categories transcribed verbatim from the published pathway. Official pathway total: 21–24 units; this file models the 21-unit path (every unit range modeled at its lower bound). Parsed 2026-10-02. Prerequisite course(s) MATH 121, MATH 135, MATH 171 are listed on official course pages but are not part of the published pathway sequence; recorded in external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1 - Fall",
+    "courses": [
+     {
+      "code": "MATH 190",
+      "title": "Analytic Geometry and Calculus I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "PHYS 101",
+      "title": "Preparation for Physics",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s1-1"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2 - Spring",
+    "courses": [
+     {
+      "code": "MATH 191",
+      "title": "Analytic Geometry and Calculus II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 190"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "GE1",
+      "title": "ENGIN Cert List B",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one course from the official map's “ENGIN Cert List B” list (4 options). Official map lists 3–5 units; modeled at the 3-unit lower bound.",
+      "options": [
+       "ENGIN 230",
+       "ENGIN 240",
+       "ENGIN 255",
+       "CHEM 120"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "PHYS 130",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 191",
+       "PHYS 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s2-2"
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3 - Fall",
+    "courses": [
+     {
+      "code": "GE2",
+      "title": "ENGIN Cert List A",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one course from the official map's “ENGIN Cert List A” list (10 options). Official map lists 3–4 units; modeled at the 3-unit lower bound.",
+      "options": [
+       "ENGIN 230",
+       "ENGIN 240",
+       "ENGIN 255",
+       "ENGIN 230",
+       "ENGIN 240",
+       "ENGIN 255",
+       "CHEM 120",
+       "ENGIN 230",
+       "ENGIN 240",
+       "ENGIN 255"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "slot_id": "s3-0"
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "MATH 121",
+   "MATH 135",
+   "MATH 171"
+  ],
+  "content_hash": "0a54b2392623c8d528e7c0c4788e357f0ebc0a1d3ca2f2c874f8e2bc5b680d4f",
+  "last_verified": "2026-10-02"
+ }
+}

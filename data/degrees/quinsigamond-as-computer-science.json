@@ -1,0 +1,299 @@
+{
+ "institution": {
+  "city": "Worcester, MA",
+  "kind": "community",
+  "name": "Quinsigamond Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "CSC 101",
+   "MAT 124",
+   "MAT 123",
+   "CIS 225"
+  ],
+  "id": "quinsigamond-as-computer-science",
+  "major": "Computer Science Transfer",
+  "notes": "Source: official QCC program page (Associate in Science) at https://www.qcc.edu/computer-and-information-technology/computer-science-transfer; term-by-term sequence transcribed from the page's official 'Curriculum' program-grid table (Course Title / Course # / Semester Offered / Credits / Prerequisites) on 2026-09-30. QCC program pages do not print a catalog year; the page reflects the current 2026-2027 curriculum as of the transcription date. Transcription method: fetched official page HTML and extracted the curriculum table cells verbatim (course codes, titles, credits, prerequisites); nothing invented. Total credits required per the grid's own published total: 60 (semester totals 15+15+16+14), which matches the 60-credit degree minimum stated in QCC's transfer articulations — no discrepancy. Program Code CS. Caveats: (1) Semesters 1-2 each offer an either/or OR choice (CSC 108 Computer Science I OR ROS 108 Introduction to Robotics; CSC 109 Computer Science II OR ROS 109 Intermediate Robotics), encoded as choice slots per schema; the ROS alternative is not eligible for transfer credit to WPI per the page's transfer note. (2) QCC requires a grade of 'C' or higher in CSC 108/CSC 109/ROS 108/ROS 109 for the CSC 211/208/212 prerequisite chains; prereq codes point at the choice-slot codes per validator rules. (3) Placement prerequisites (college-level English placement; MAT 100 or appropriate placement for CSC 108; MAT 124 or appropriate placement for MAT 233; MAT 123 or appropriate placement for MAT 125) are placement/assessment requirements, not courses; program admissions additionally require placement into college-level English and MAT 100 with C or higher or appropriate placement. (4) AP Computer Science A exam score of 3+ may substitute for the CSC 101 prerequisite of CSC 108. (5) Lab Science, Humanities, and Social Science electives are student-choice electives given distinct placeholder codes because QCC does not print specific course numbers for them. (6) CSC 212 Introduction to Software Engineering is the program capstone (student or instructor-chosen project).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "QCC official either/or: take CSC 108 Computer Science I or ROS 108 Introduction to Robotics. ROS 108 shares the same semester-offered (F/S/SU) and 4-credit row in the official grid.",
+      "code": "CSC 108",
+      "credits": 4,
+      "options": [
+       "CSC 108",
+       "ROS 108"
+      ],
+      "prereq": [
+       "CSC 101"
+      ],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science I or Introduction to Robotics (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 233",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 124"
+      ],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any QCC lab science elective (4 cr). Given a distinct placeholder code because QCC prints no specific course number; first of two Lab Science Electives in the plan.",
+      "code": "LABSCI-E1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Lab Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "QCC official either/or: take CSC 109 Computer Science II or ROS 109 Intermediate Robotics. Prerequisite is the semester-1 choice slot (CSC 108 with C or higher for CSC 109; ROS 108 with C or higher for ROS 109).",
+      "code": "CSC 109",
+      "credits": 4,
+      "options": [
+       "CSC 109",
+       "ROS 109"
+      ],
+      "prereq": [
+       "CSC 108"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II or Intermediate Robotics (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 234",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 233"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any QCC lab science elective (4 cr). Given a distinct placeholder code because QCC prints no specific course number; second of two Lab Science Electives in the plan.",
+      "code": "LABSCI-E2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Lab Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 225",
+       "CSC 109"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Programming with Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 123"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 237",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 234"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Probability & Statistics for Engineers and Scientists",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPH 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Speech Communication Skills",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any QCC humanities elective (3 cr). Given a distinct placeholder code because QCC prints no specific course number.",
+      "code": "HUM-ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Humanities Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 208",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 109"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Architecture and Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 212",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 109"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any QCC social science elective (3 cr). Given a distinct placeholder code because QCC prints no specific course number; first of two Social Science Electives in the plan.",
+      "code": "SOCSCI-E1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Social Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: any QCC social science elective (3 cr). Given a distinct placeholder code because QCC prints no specific course number; second of two Social Science Electives in the plan.",
+      "code": "SOCSCI-E2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Social Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.qcc.edu/computer-and-information-technology/computer-science-transfer",
+  "total_credits": 60,
+  "content_hash": "17824409d56499a1cf5659fd28449faf00254e4b35d4647330699e5f4fa9df8b",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Orbit — Everything in your orbit</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="profile.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+
+<div class="phone" id="app">
+  <header class="appbar">
+    <div class="brand"><span class="brand-mark"><svg class="logo-light" viewBox="0 0 256 256" role="img" aria-label="Orbit logo"><path id="orbitPathL" d="M 216.9 83.8 A 110 30 -26 1 1 19.1 180.2 A 110 30 -26 1 1 216.9 83.8 Z" fill="none"/><ellipse cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)" fill="none" stroke="#C6F135" stroke-width="10"/><circle r="10" fill="#FF5C38"><animateMotion dur="16s" repeatCount="indefinite" rotate="0"><mpath href="#orbitPathL"/></animateMotion></circle><circle cx="118" cy="132" r="68" fill="#101408"/><ellipse cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)" fill="none" stroke="#C6F135" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="50 50" stroke-dashoffset="0"/></svg><svg class="logo-dark" viewBox="0 0 256 256" aria-hidden="true"><path id="orbitPathD" d="M 216.9 83.8 A 110 30 -26 1 1 19.1 180.2 A 110 30 -26 1 1 216.9 83.8 Z" fill="none"/><ellipse cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)" fill="none" stroke="#D4F53F" stroke-width="10"/><circle r="10" fill="#FF7A5C"><animateMotion dur="16s" repeatCount="indefinite" rotate="0"><mpath href="#orbitPathD"/></animateMotion></circle><circle cx="118" cy="132" r="68" fill="#F4F6EC"/><ellipse cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)" fill="none" stroke="#D4F53F" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="50 50" stroke-dashoffset="0"/></svg></span><span><span class="brand-name">Orbit</span><span class="sub" style="display:block;font-size:11px;line-height:1.25;margin:0">Everything in your orbit.</span></span></div>
+    <div class="row" style="gap:8px">
+      <button class="iconbtn" id="searchBtn" aria-label="Search">🔍</button>
+      <button class="iconbtn" id="pulseBtn" aria-label="Pulse">⚡</button>
+      <button class="iconbtn" id="notifBtn" aria-label="Notifications">🔔<span class="dot" id="notifDot" hidden></span></button>
+      <button class="iconbtn" id="chatFab" aria-label="Chats">💬<span class="dot" id="chatDot" hidden></span></button>
+    </div>
+  </header>
+
+  <main class="views" id="views">
+    <section class="view" id="view-home" data-view="home"></section>
+    <section class="view" id="view-discover" data-view="discover" hidden></section>
+    <section class="view" id="view-market" data-view="market" hidden></section>
+    <section class="view" id="view-work" data-view="work" hidden></section>
+    <section class="view" id="view-groups" data-view="groups" hidden></section>
+    <section class="view" id="view-me" data-view="me" hidden></section>
+  </main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Main navigation">
+    <button data-tab="home" class="tab active" data-icon="nav-home"><span class="tab-ico">🏠</span><span>HOME</span></button>
+    <button data-tab="discover" class="tab" data-icon="nav-discover"><span class="tab-ico">📍</span><span>DISCOVER</span></button>
+    <button data-tab="market" class="tab" data-icon="nav-market"><span class="tab-ico">🔄</span><span>MARKET</span></button>
+    <span class="tab-fab-slot" aria-hidden="true"></span>
+    <button data-tab="work" class="tab" data-icon="nav-work"><span class="tab-ico">💼</span><span>WORK</span></button>
+    <button data-tab="groups" class="tab" data-icon="nav-groups"><span class="tab-ico">👥</span><span>GROUPS</span></button>
+    <button data-tab="me" class="tab" data-icon="nav-me"><span class="tab-ico">🙂</span><span>ME</span></button>
+  </nav>
+
+  <!-- Ask Orbit global pill (mounted by js/app.js) -->
+  <div class="askpill" id="askPill" hidden>
+    <button class="askpill-main" id="askPillMain" aria-label="Ask Orbit"><span class="askpill-ico" id="askPillIco">✨</span><span>Ask Orbit</span></button>
+    <button class="askpill-x" id="askPillX" aria-label="Dismiss Ask Orbit">✕</button>
+  </div>
+
+  <!-- Chat overlay (implemented by js/chat.js) -->
+  <div class="chatroot" id="chatRoot" hidden>
+    <div class="chatpanel" id="chatPanel"></div>
+  </div>
+
+  <!-- Bottom sheet / modal host -->
+  <div class="sheethost" id="sheetHost" hidden><div class="sheet" id="sheetBox" role="dialog"></div></div>
+  <div class="toasthost" id="toastHost"></div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="js/store.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/home.js"></script>
+<script src="js/discover.js"></script>
+<script src="js/market.js"></script>
+<script src="js/work.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/groups.js"></script>
+<script src="js/people.js"></script>
+<script src="js/me.js"></script>
+<script src="js/search.js"></script>
+<script src="js/pulse.js"></script>
+<script src="js/notifications.js"></script>
+<script src="js/trust.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/create.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

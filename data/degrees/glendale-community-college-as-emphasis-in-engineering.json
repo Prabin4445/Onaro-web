@@ -1,0 +1,388 @@
+{
+ "institution": {
+  "name": "Glendale Community College",
+  "city": "Glendale",
+  "state": "AZ",
+  "kind": "public2yr"
+ },
+ "plan": {
+  "id": "glendale-community-college-as-emphasis-in-engineering",
+  "degree": "AS",
+  "major": ", Emphasis in Engineering",
+  "total_credits": 78,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-engineering-8607-as",
+  "transfer_confidence": "core_only",
+  "notes": "Source: official Glendale Community College program page (https://www.gccaz.edu/degrees-certificates/science-technology-engineering-and-mathematics/associate-science-emphasis-engineering-8607-as), scraped 2026-10-01. Term-by-term Course Sequence from the catalog's published sequence. Credit ranges use the UPPER bound (e.g. '3-5' -> 5). 'X or Y' alternatives use the first-listed option as the course code. Prerequisites extracted from catalog requisite text; in-plan courses listed as prereqs, others as external_prereqs.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "courses": [
+     {
+      "code": "ECE 102",
+      "title": "Engineering Analysis Tools and Techniques",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG 101",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENG101 or ENG107: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ESL 097",
+       "WAC 101",
+       "ALT 100",
+       "ENG 101LL",
+       "ENG 107LL",
+       "ENG 100A",
+       "ESL 202"
+      ],
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "MAT 220",
+      "title": "Calculus with Analytic Geometry I",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MAT220 or MAT221: Calculus with Analytic Geometry I or Calculus with Analytic Geometry I",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 187",
+       "MAT 188"
+      ],
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "FYE 101",
+      "title": "Introduction to College, Career and Personal Success",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FYE101 or FYE103: Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "PLAN_COURSE_ELECTIVE",
+      "title": "Plan Course Elective",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan Course Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "courses": [
+     {
+      "code": "ECE 103",
+      "title": "Engineering Problem Solving and Design",
+      "credits": 2,
+      "category": "major",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [
+       "ECE 102"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG 102",
+      "title": "First-Year Composition",
+      "credits": 3,
+      "category": "major",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "tccns": "",
+      "prereq": [
+       "ENG 101"
+      ],
+      "choice": true,
+      "choice_note": "ENG102 or ENG108: First-Year Composition or First-Year Composition for ESL",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "ENG 107"
+      ],
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "MAT 230",
+      "title": "Calculus with Analytic Geometry II",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [
+       "MAT 220"
+      ],
+      "choice": true,
+      "choice_note": "MAT230 or MAT231: Calculus with Analytic Geometry II or Calculus with Analytic Geometry II",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 221"
+      ],
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "PHY 121",
+      "title": "University Physics I: Mechanics",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "MAT 220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 221"
+      ],
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "PLAN_COURSE_ELECTIVE",
+      "title": "Plan Course Elective",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan Course Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "courses": [
+     {
+      "code": "MAT 240",
+      "title": "Calculus with Analytic Geometry III",
+      "credits": 5,
+      "category": "major",
+      "core_area": "MA, QNR or MA, QNR",
+      "tccns": "",
+      "prereq": [
+       "MAT 230"
+      ],
+      "choice": true,
+      "choice_note": "MAT240 or MAT241: Calculus with Analytic Geometry III or Calculus with Analytic Geometry III",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 231"
+      ],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "PHY 131",
+      "title": "University Physics II: Electricity and Magnetism",
+      "credits": 4,
+      "category": "major",
+      "core_area": "NSI, SQ",
+      "tccns": "",
+      "prereq": [
+       "MAT 230",
+       "PHY 121"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "external_prereqs": [
+       "MAT 231",
+       "MAT 241"
+      ],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "PLAN_COURSE_ELECTIVE",
+      "title": "Plan Course Elective",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan Course Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "courses": [
+     {
+      "code": "ARTS_AND_HUMANITIES",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "AHM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Arts and Humanities",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "INSTITUTIONS_OF_THE_AMERICAS",
+      "title": "Institutions of the Americas",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "IAM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Institutions of the Americas",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "ORAL_COMMUNICATION",
+      "title": "Oral Communication",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "OCM",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Oral Communication",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "SOCIAL_AND_BEHAVIORAL_SCIENCES",
+      "title": "Social and Behavioral Sciences",
+      "credits": 3,
+      "category": "elective",
+      "core_area": "SCB",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "PLAN_COURSE_ELECTIVE",
+      "title": "Plan Course Elective",
+      "credits": 6,
+      "category": "elective",
+      "core_area": "",
+      "tccns": "",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan Course Elective",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "29cf2382e7e8ee0adf1024073f587a562e3ad03befbbec7025d90a51bf24f53a",
+  "last_verified": "2026-10-02"
+ }
+}

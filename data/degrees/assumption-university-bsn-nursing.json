@@ -1,0 +1,618 @@
+{
+ "institution": {
+  "city": "Worcester, MA",
+  "kind": "private4yr",
+  "name": "Assumption University",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BSN",
+  "id": "assumption-university-bsn-nursing",
+  "major": "Nursing",
+  "notes": "Source: Assumption University official website, Froelich School of Nursing 'Sample Program Plan Class of 2030' (PDF, published June 2026), hand-transcribed 2026-10-01 from https://www.assumption.edu/wp-content/uploads/2026/06/FSoN-Program-Plan-for-CO-2030.pdf. This is the institution's own published 8-semester sample schedule, transcribed in catalog order. CREDIT DISCREPANCIES (catalog subtotal typos; items transcribed verbatim, total_credits set to the true item sum): Semester 1 items sum to 16 but the plan prints 'TOTAL: 17'; Semester 2 items sum to 18 but prints 'TOTAL: 17'; Semester 8 items sum to 14 but prints 'TOTAL: 13'; the plan's printed '121 total program credits' does not reconcile — the true sum of all listed courses is 122. The printed '56 credits in nursing courses' is likewise off: the listed NUR courses sum to 57. Courses are categorized per the plan's own tags (Cornerstone/Pillar/Forum = core; untagged BIO/CHE/NUR/statistics support = major). The plan publishes no course-level prerequisites; its progression rules are recorded here instead: (1) Math and HSC 100 must be completed before Semester 4; (2) HUS 121 must be completed before Semester 5; (3) all BIO, HSC 100, HUS 121, and all NUR courses require a minimum final grade of 80%. Footnote '* Based on placement exam' applies to Foreign Language and Mathematics. Pillar sub-area tags (LC&E #1, Q&S #1, S&H #1, S&H #2, LC&E #2, Q&S #2) transcribed from the plan; the PDF's two-column layout interleaves the Q&S #1 tag between Mathematics and CHE 102 — it is assigned here to Mathematics (the 3-credit mathematics pillar course), the academically standard reading. transfer_confidence is core_only (Massachusetts; not a Texas transfer program).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 150",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Biological Principles",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Cornerstone.",
+      "code": "ENG 130",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "English Composition",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Introduction to Theology' (Cornerstone); specific course not named in the plan.",
+      "code": "Introduction to Theology",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Theology",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Foreign Language' (Pillar, LC&E #1); * Based on placement exam per plan footnote.",
+      "code": "Foreign Language",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Foreign Language",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Mathematics' (Pillar, Q&S #1); * Based on placement exam per plan footnote.",
+      "code": "Mathematics",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Mathematics",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1 — First Year",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 240",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Anatomy with lab",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 250",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Microbiology with lab",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Cornerstone.",
+      "code": "ENG 140",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Literature",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: '2nd Theology' (Cornerstone); specific course not named in the plan.",
+      "code": "2nd Theology",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "2nd Theology",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Pillar (S&H #1).",
+      "code": "HUS 121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Development & Disability",
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHE 102",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "title": "Chemistry for Health Sciences",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2 — First Year",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'History' (Pillar, S&H #2); specific course not named in the plan.",
+      "code": "History",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "History",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 370",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Physiology with lab",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Cornerstone; named seminar, no course code in plan.",
+      "code": "Socrates and the Search for Truth",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Socrates and the Search for Truth",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Fine Art or Music' (Pillar, LC&E #2); specific course not named in the plan.",
+      "code": "Fine Art or Music",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fine Art or Music",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog: 'PSY 224/SOC 300 Statistics'; take either course.",
+      "code": "PSY 224",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "PSY 224",
+       "SOC 300"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Statistics (PSY 224 or SOC 300)",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3 — Second Year",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Pillar.",
+      "code": "HSC 100",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Systems Approach to Delivering Healthcare in America",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Cornerstone.",
+      "code": "PHI 151",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Ethics and the Good Life",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 204",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Pathopharmacological Process",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Pillar (Q&S #2).",
+      "code": "BIO 110",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Nutrition",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 100",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Professional Nursing",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4 — Second Year",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 200",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Professional Nursing",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 201",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Prof Nursing Clinical",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 210",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Professional Nursing Concepts",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 304",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Pathopharmacological Therapeutics",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog: 'Forum course'; specific forum not named in the plan.",
+      "code": "Forum course",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Forum course",
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 5 — Third Year",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 300",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Professional Nursing",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 301",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Professional Nursing Clinical",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 310",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Evidence Based Nursing Practice",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 312",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Mental Health",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 313",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Mental Health Clinical",
+      "slot_id": "s6-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 6 — Third Year",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 400",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Complexities of Professional Nursing",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 401",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "title": "Complexities of Prof Nursing Clinical",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 420",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Family Health",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 421",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Family Health Clinical",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog: 'PHI 310 Biomedical Ethics or THE 341 Moral Issues in Medicine'.",
+      "code": "PHI 310",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "PHI 310",
+       "THE 341"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biomedical Ethics or THE 341 Moral Issues in Medicine",
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 7 — Fourth Year",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 410",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Clinical Judgment Seminar",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 412",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Global Health",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 413",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "title": "Promoting Global Health Clinical",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 490",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Transition to Professional Nursing Practice",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 491",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Transition to Professional Nursing Practice Clinical",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 8 — Fourth Year",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.assumption.edu/wp-content/uploads/2026/06/FSoN-Program-Plan-for-CO-2030.pdf",
+  "total_credits": 122,
+  "transfer_confidence": "core_only",
+  "content_hash": "d9a36708b915fb14d529a8973c88afb23529c659b51c3a0e7eb7b6bbb787003d",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,256 @@
+{
+ "institution": {
+  "city": "Tempe",
+  "kind": "community",
+  "name": "Rio Salado College",
+  "state": "AZ",
+  "slug": "rio-salado-college",
+  "ipeds": "105668"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "CCL",
+  "id": "rio-salado-college-ccl-paralegal",
+  "major": "Paralegal",
+  "notes": "Source: official Maricopa pathway-map page (https://www.riosalado.edu/degrees-certificates/behavioral-science-and-human-services/paralegal-5685-ccl). Effective Term Fall 2024; catalog_year 2024-2025 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: BPC 110 or CIS 105. Credits shown for BPC 110.",
+      "code": "BPC 110",
+      "core_area": "CS or CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Computer Usage and Applications or Survey of Computer Information Systems",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 101 or ENG 107. Credits shown for ENG 101.",
+      "code": "ENG 101",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to the Paralegal Profession",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 102",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG 101",
+       "BPC 110",
+       "CRE 101"
+      ],
+      "title": "Paralegal Research, Analysis, and Writing I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CRE 101",
+      "core_area": "L",
+      "credits": 0,
+      "prereq": [
+       "ENG 101"
+      ],
+      "title": "College Critical Reading and Critical Thinking",
+      "required_zero": true,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 103",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 102"
+      ],
+      "title": "Paralegal Research, Analysis, and Writing II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 104",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG 101",
+       "BPC 110",
+       "CRE 101",
+       "PAR 102"
+      ],
+      "title": "Ethics for the Paralegal",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 106",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 102"
+      ],
+      "title": "Legal Foundations for Paralegals",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 112",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG 101",
+       "BPC 110",
+       "CRE 101"
+      ],
+      "title": "Civil Litigation I",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 114",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 112"
+      ],
+      "title": "Civil Litigation II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 206",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 103",
+       "PAR 112"
+      ],
+      "title": "Paralegal Business Law",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 208",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 103",
+       "PAR 112"
+      ],
+      "title": "Introduction to Tort Law",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PAR 224",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "PAR 104"
+      ],
+      "title": "Law Office Technology for the Paralegal",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.riosalado.edu/degrees-certificates/behavioral-science-and-human-services/paralegal-5685-ccl",
+  "total_credits": 36,
+  "external_prereqs": [
+   "ALT 100",
+   "CIS 105",
+   "ENG 100A",
+   "ENG 101LL",
+   "ENG 107LL",
+   "ESL 097",
+   "ESL 202",
+   "RDG 095",
+   "RDG 100",
+   "RDG 111",
+   "RDG 112",
+   "RDG 113",
+   "WAC 101"
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "c97bdb597c2b1b82e14b4beb9e0740ce663897edd9eac0d8d308be515821e506",
+  "last_verified": "2026-10-02"
+ }
+}

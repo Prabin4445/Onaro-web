@@ -1,0 +1,627 @@
+{
+ "institution": {
+  "name": "Xavier University",
+  "city": "Cincinnati, OH",
+  "kind": "private",
+  "state": "OH"
+ },
+ "plan": {
+  "id": "xavier-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 119,
+  "source_url": "https://www.xavier.edu/computer-science/index",
+  "notes": "Source: official Xavier University Computer Science Major (BS, BA) program page, https://www.xavier.edu/computer-science/index ('Curriculum' sample course sequence with per-course credits; page last updated: September 11, 2026), hand-transcribed 2026-09-30. Cross-checked against the official Xavier University Catalog 2024-2025 [ARCHIVED] (https://catalog.xavier.edu/preview_program.php?catoid=42&poid=17698&print, 'Program: Computer Science, B.S.'): 'Requirements for the Computer Science Major, BS ... Major Requirements: 42 credit hours ... TOTAL Minimum Hours Required for Degree: 120 Semester Hours'. Catalog year set to 2025-2026 (the current published catalog edition at https://catalog.xavier.edu/ as of retrieval; the program page prints no catalog year). CREDIT DISCREPANCY: the official sequence's own term credits sum to 15+15+15+15+16+16+15+12 = 119, one short of the catalog's 120-semester-hour degree minimum; total_credits is set to 119 (the sequence's own published sum) per pipeline precedent. The catalog notes electives 'may need to be a flagged course fulfilling Diversity, E/RS requirement, Oral, Quantitative, or Writing requirement'. This plan follows the B.S. track (the page's FAQ: B.S. = more in-depth computer science, mathematics and science coursework and fewer free electives; B.A. = fewer requirements, room for a second major/minor). CSCI 335/340 appears in BOTH Spring Year 3 and Spring Year 4 on the official page (identically in the archived catalog B.S. block); modeled as two separate choice slots, exactly as published. The Spring Year 4 listing on the official page reads 'Computer Science 335: Databases or CSCI 340: Networking' (typo for CSCI 335). CORE 101/102 GOA are 0-credit required courses (required_zero: true). The sample-sequence page publishes no prerequisites, so all prereq fields are empty; consult the catalog for course prerequisites. CORE 100/101/102 course codes are taken from the official catalog text. Sequence difference vs the archived 2024-2025 catalog B.S. block: the current program page places MATH 156 General Statistics (or MATH 222/256) in Fall Year 1, where the archived catalog listed CSCI 160 Mathematical Thinking for CSCI (unless ADV placement); the web page is used as the current source.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSCI 170",
+      "title": "Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "ENGL-CHOICE-1A",
+      "title": "English Composition or Rhetoric",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: ENGL 101 English Composition or ENGL 115 Rhetoric.",
+      "options": [
+       "ENGL 101",
+       "ENGL 115"
+      ],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH-CHOICE-1A",
+      "title": "General Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 156 General Statistics, or MATH 222/256.",
+      "options": [
+       "MATH 156",
+       "MATH 222",
+       "MATH 256"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "THEO 111",
+      "title": "Theological Foundations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "LANG-1A",
+      "title": "Second Language I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "First course of the second-language sequence (language of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "CORE 101",
+      "title": "GOA",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed",
+      "required_zero": true
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSCI 180",
+      "title": "Computer Science II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 225",
+      "title": "Foundations of Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PHIL 100",
+      "title": "Ethics as Intro to Philosophy",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CORE 100",
+      "title": "First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "LANG-2A",
+      "title": "Second Language II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second course of the second-language sequence.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "CORE 102",
+      "title": "GOA",
+      "credits": 0,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed",
+      "required_zero": true
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSCI 220",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH-CHOICE-3A",
+      "title": "General Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 156 General Statistics, or MATH 222/240/256.",
+      "options": [
+       "MATH 156",
+       "MATH 222",
+       "MATH 240",
+       "MATH 256"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "ENGL-CHOICE-3A",
+      "title": "Literature and the Moral Imagination",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: ENGL 205 Literature and the Moral Imagination, CLAS 205 Classical Literature and Moral Imagination, or SPAN 205 Hispanic Literature and Moral Imagination.",
+      "options": [
+       "ENGL 205",
+       "CLAS 205",
+       "SPAN 205"
+      ],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GENED-HIST-3A",
+      "title": "Historical Perspectives",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Historical Perspectives core requirement (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GENED-SCI-3A",
+      "title": "Scientific Perspectives",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Scientific Perspectives core requirement (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSCI 260",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSCI 250",
+      "title": "Languages and Automata",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GENED-THEO-4A",
+      "title": "Theological Perspectives",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Theological Perspectives core requirement (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GENED-PHIL-4A",
+      "title": "Philosophical Perspectives",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Philosophical Perspectives core requirement (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GENED-CREA-4A",
+      "title": "Creative Perspectives",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Creative Perspectives core requirement (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSCI 210",
+      "title": "Machine Organization and Assembly Language",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSCI 261",
+      "title": "Software Engineering II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "SCILAB-5A",
+      "title": "Major Level Science/Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major-level science with lab, 4 credit hours (course of the student's choice).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GENED-SOC-5A",
+      "title": "Social Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Social Science elective (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GENED-HUM-5A",
+      "title": "Humanities Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Humanities elective (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSCI-335-340-6A",
+      "title": "CSCI 335: Databases or CSCI 340: Networking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: CSCI 335 Databases or CSCI 340 Networking. The official sequence lists this choice slot in both Spring Year 3 and Spring Year 4.",
+      "options": [
+       "CSCI 335",
+       "CSCI 340"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSCI 300",
+      "title": "Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "SCILAB-6A",
+      "title": "Major Level Science/Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major-level science with lab, 4 credit hours (course of the student's choice).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CSELEC-6A",
+      "title": "CSCI Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science elective, 3 credit hours (course of the student's choice).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GENED-ERS-6A",
+      "title": "E/RS Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Ethics/Religion and Society (E/RS) elective (course of the student's choice).",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSCI 320",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSELEC-7A",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Computer Science elective, 3 credit hours (course of the student's choice).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELEC-7A",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective, 3 credit hours (course of the student's choice). Catalog note: electives may need to be flagged courses fulfilling Diversity, E/RS, Oral, Quantitative, or Writing requirements.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-7B",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective, 3 credit hours (course of the student's choice). Catalog note: electives may need to be flagged courses fulfilling Diversity, E/RS, Oral, Quantitative, or Writing requirements.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-7C",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective, 3 credit hours (course of the student's choice). Catalog note: electives may need to be flagged courses fulfilling Diversity, E/RS, Oral, Quantitative, or Writing requirements.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSCI 390",
+      "title": "Senior Seminar and Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSCI-335-340-8A",
+      "title": "CSCI 335: Databases or CSCI 340: Networking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: CSCI 335 Databases or CSCI 340 Networking. The official sequence lists this choice slot in both Spring Year 3 and Spring Year 4. (The official page prints 'Computer Science 335' here - a typo for CSCI 335.) Students taking CSCI 390 should contact the chair of the Computer Science Department one semester before enrolling, per the catalog.",
+      "options": [
+       "CSCI 335",
+       "CSCI 340"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC-8A",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective, 3 credit hours (course of the student's choice). Catalog note: electives may need to be flagged courses fulfilling Diversity, E/RS, Oral, Quantitative, or Writing requirements.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-8B",
+      "title": "General Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General elective, 3 credit hours (course of the student's choice). Catalog note: electives may need to be flagged courses fulfilling Diversity, E/RS, Oral, Quantitative, or Writing requirements.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "8c56418e79bb5ff55e24792cb7fad0724cf0332da826e0ff3ed16a584b78aa03",
+  "last_verified": "2026-10-02"
+ }
+}

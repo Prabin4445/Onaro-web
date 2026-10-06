@@ -1,0 +1,565 @@
+{
+ "institution": {
+  "ipeds": 203517,
+  "name": "Kent State University at Kent",
+  "city": "Kent",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "kent-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Computer Science major, no concentration. Built directly from the official Kent State University program page 'Plan of Study Grid' (Computer Science Major - No Concentration), cross-checked against the Major Requirements table on the same page and the 2026-2027 University Catalog. Generic requirement slots (Kent Core, Foreign Language, Science Electives, General Electives) modeled as choice placeholders with documented options; specific Kent Core categories per the 2026-2027 Kent Core: Composition 6, Mathematics/Critical Reasoning satisfied by MATH 12002, Humanities/Fine Arts 9, Social Sciences 6, Basic Sciences 6-7, Additional 6, plus American Civic Literacy 3, UC 10001, Experiential Learning (CS 49999 capstone), Writing-Intensive (CS 49999), 39 upper-division hours. Prerequisites follow the standard CS course chain (CS 13001 -> CS 23001/CS 23022 -> upper-division; MATH 12002 -> MATH 12013).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 13001",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Science I: Programming and Problem Solving",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 12002",
+      "credits": 5,
+      "prereq": [],
+      "title": "Analytic Geometry and Calculus I (KMCR)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "UC 10001",
+      "credits": 1,
+      "prereq": [],
+      "title": "Flashes 101",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student (e.g., Composition).",
+      "code": "KC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any course chosen by the student to reach 120 total hours.",
+      "code": "GE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 23001",
+      "credits": 4,
+      "prereq": [
+       "CS 13001"
+      ],
+      "title": "Computer Science II: Data Structures and Abstraction",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 23022",
+      "credits": 3,
+      "prereq": [
+       "CS 13001"
+      ],
+      "title": "Discrete Structures for Computer Science",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 12013",
+      "credits": 3,
+      "prereq": [
+       "MATH 12002"
+      ],
+      "title": "Brief Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 20011",
+      "credits": 3,
+      "prereq": [],
+      "title": "Decision-Making Under Uncertainty",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 33211",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Operating Systems",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 35101",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Computer Organization",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 21002",
+      "credits": 3,
+      "prereq": [
+       "MATH 12013"
+      ],
+      "title": "Applied Linear Algebra",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Foreign language sequence required by the College (8 credits); specific language chosen by the student.",
+      "code": "FL-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Foreign Language I (student choice)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 33007",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Introduction to Database System Design",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 35201",
+      "credits": 3,
+      "prereq": [
+       "CS 35101"
+      ],
+      "title": "Computer Communication Networks",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 44001",
+      "credits": 4,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Computer Science III - Programming Patterns",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Continuation of the foreign language sequence.",
+      "code": "FL-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "FL-1"
+      ],
+      "title": "Foreign Language II (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 32301",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Human Interface Computing",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 33901",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Software Engineering",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CS 46101",
+      "credits": 3,
+      "prereq": [
+       "CS 23022",
+       "CS 23001"
+      ],
+      "title": "Design and Analysis of Algorithms",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Science elective from the approved list (BSCI, CHEM, ESCI, GEOG, PHY); must include one laboratory across the two science electives.",
+      "code": "SCI-E1",
+      "credits": 3,
+      "options": [
+       "BSCI 10110",
+       "BSCI 10120",
+       "CHEM 10060",
+       "CHEM 10061",
+       "CHEM 10062",
+       "CHEM 10063",
+       "ESCI 21062",
+       "GEOG 21062",
+       "GEOG 21063",
+       "PHY 13001",
+       "PHY 13002",
+       "PHY 13021",
+       "PHY 13022",
+       "PHY 23101",
+       "PHY 23102"
+      ],
+      "prereq": [],
+      "title": "Science Elective (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "CIVIC",
+      "credits": 3,
+      "prereq": [],
+      "title": "American Civic Literacy Requirement (e.g., HIST 12061 or POL 10101)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 33101",
+      "credits": 3,
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "Structure of Programming Languages",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS upper-division elective at the 30000 or 40000 level.",
+      "code": "CS-UD1",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "CS Upper-Division Elective 30000/40000 (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Science elective from the approved list; the two science electives together must include one laboratory.",
+      "code": "SCI-E2",
+      "credits": 3,
+      "options": [
+       "BSCI 10110",
+       "BSCI 10120",
+       "CHEM 10060",
+       "CHEM 10061",
+       "CHEM 10062",
+       "CHEM 10063",
+       "ESCI 21062",
+       "GEOG 21062",
+       "GEOG 21063",
+       "PHY 13001",
+       "PHY 13002",
+       "PHY 13021",
+       "PHY 13022",
+       "PHY 23101",
+       "PHY 23102"
+      ],
+      "prereq": [],
+      "title": "Science Elective (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CS 49999",
+      "credits": 4,
+      "prereq": [
+       "CS 33901"
+      ],
+      "title": "Capstone Project (ELR) (WIC)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS upper-division elective at the 30000 or 40000 level.",
+      "code": "CS-UD2",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "CS Upper-Division Elective 30000/40000 (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS upper-division elective at the 40000 level.",
+      "code": "CS-UD3",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "CS Upper-Division Elective 40000 (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Two CS upper-division electives at the 40000 level (modeled as one 6-credit choice slot).",
+      "code": "CS-UD45",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "CS 23001"
+      ],
+      "title": "CS Upper-Division Electives 40000 (student choice)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any course chosen by the student to reach 120 total hours.",
+      "code": "GE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.kent.edu/cs/computer-science-bs",
+  "total_credits": 120,
+  "content_hash": "568f757a7570720996408d0b04801f8edd4b05c3af59e263ee6937748c060b4e",
+  "last_verified": "2026-10-02"
+ }
+}

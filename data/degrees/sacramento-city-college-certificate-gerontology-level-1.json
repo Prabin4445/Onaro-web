@@ -1,0 +1,67 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-gerontology-level-1",
+  "degree": "Certificate",
+  "major": "Gerontology",
+  "catalog_year": "2026-2027",
+  "total_credits": 3.5,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7696/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Gerontology Level 1 (Beginning) Certificate' program map, Catalog 2026-27, published June 3, 2026 (mapmaker.losrios.edu/Maps/7696/PublishedPdf). Official Total Units: 3.5-7; this seed models the low path = 3.5 units (WEXP 498 at 0.5 units). Single-semester certificate; semester sum verified against the map's 3.5-7 header. Choice slot: Maj GERON 300 / SOC 335 Sociology of Aging (3) — GERON 300 selected (first-listed). WEXP 498 Work Experience in (Subject) (0.5-4) modeled at 0.5 units per the 3.5-unit low path. Documented: students must be in a paid or unpaid internship, volunteer position, or job related to career goals with a cooperating site supervisor; the work experience placement must be working with elders in some capacity. Certificate of Achievement requirements: grade of 'C' or better in each major course. Gerontology, People & Society Meta Majors. Distinct from the Level 2 (Intermediate) certificate (map 7695). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "GERON 300",
+      "title": "Sociology of Aging",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "GERON 300 / SOC 335 Sociology of Aging (3); GERON 300 selected (first-listed).",
+      "options": [
+       "GERON 300",
+       "SOC 335"
+      ],
+      "slot_id": "s1-0",
+      "tccns": "GERON 300",
+      "xfer": [
+       "sacramento-city-college-as-gerontology",
+       "sacramento-city-college-certificate-gerontology",
+       "sacramento-city-college-certificate-gerontology-level-2"
+      ]
+     },
+     {
+      "code": "WEXP 498",
+      "title": "Work Experience in (Subject)",
+      "credits": 0.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Work Experience in (Subject) (0.5-4); modeled at 0.5 units per the 3.5-unit low path. Students must be in a paid or unpaid internship, volunteer position, or job related to career goals with a cooperating site supervisor; the placement must be working with elders in some capacity.",
+      "options": [],
+      "slot_id": "s1-1",
+      "tccns": "WEXP 498",
+      "xfer": [
+       "american-river-college-certificate-para-professional-interior-planning-and-design",
+       "sacramento-city-college-as-gerontology",
+       "sacramento-city-college-certificate-gerontology",
+       "sacramento-city-college-certificate-gerontology-level-2"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "e112ec7c5b5df6916a8674098d9b8d9d8b087060cb1b551dedaaba36d8ed6fb1",
+  "last_verified": "2026-10-02"
+ }
+}

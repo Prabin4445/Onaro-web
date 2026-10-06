@@ -1,0 +1,566 @@
+{
+ "institution": {
+  "ipeds": 203517,
+  "name": "Kent State University at Kent",
+  "city": "Kent",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "kent-bs-psychology",
+  "major": "Psychology",
+  "notes": "Psychology major, no concentration. Built directly from the official 2026-2027 University Catalog PDF 'Psychology Major (No Concentration)' Plan of Study Grid, cross-checked against the Major Requirements table on the same document. Elective slots modeled as choice placeholders: Mathematics Elective (3 cr, MATH 11009/11010/11022/12002), Science Electives (8 cr total incl. one lab: BSCI 10110/10120/CHEM 10060/10061), Developmental Area (PSYC 20651/30651/30656), Cognition/Learning Electives (PSYC 40445/40446/41043), Application of Psychological Science Elective (3 cr, e.g., PSYC 41573/41574 or PSYC 41980 option), ANTH/BSCI/PSYC electives (e.g., BSCI 30140/30156/40515, ANTH 48623/48810), PSYC upper-division electives. Foreign Language 8 cr (College of Sciences and Humanities B.S. requirement). Prerequisites follow the standard chain: PSYC 11762 -> PSYC 21621 -> PSYC 31574/31684.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "PSYC 11762",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Psychology (KSS)",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "UC 10001",
+      "credits": 1,
+      "prereq": [],
+      "title": "Flashes 101",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Science elective, 4 credits incl. one lab across the two science electives: BSCI 10110, BSCI 10120, CHEM 10060, or CHEM 10061.",
+      "code": "SCI-E1",
+      "credits": 4,
+      "options": [
+       "BSCI 10110",
+       "BSCI 10120",
+       "CHEM 10060",
+       "CHEM 10061"
+      ],
+      "prereq": [],
+      "title": "Science Elective (student choice)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Developmental Area: PSYC 20651 Child Psychology (KSS), PSYC 30651 Adolescent Psychology, or PSYC 30656 Psychology of Aging.",
+      "code": "DEV-1",
+      "credits": 3,
+      "options": [
+       "PSYC 20651",
+       "PSYC 30651",
+       "PSYC 30656"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Developmental Area Elective (student choice)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Mathematics elective, 3 credits modeled: MATH 11009, MATH 11010, MATH 11022, or MATH 12002.",
+      "code": "MATH-E",
+      "credits": 3,
+      "options": [
+       "MATH 11009",
+       "MATH 11010",
+       "MATH 11022",
+       "MATH 12002"
+      ],
+      "prereq": [],
+      "title": "Mathematics Elective (student choice)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Science elective, 4 credits: BSCI 10110, BSCI 10120, CHEM 10060, or CHEM 10061; the two science electives together must include one laboratory.",
+      "code": "SCI-E2",
+      "credits": 4,
+      "options": [
+       "BSCI 10110",
+       "BSCI 10120",
+       "CHEM 10060",
+       "CHEM 10061"
+      ],
+      "prereq": [],
+      "title": "Science Elective (student choice)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "PSYC 21621",
+      "credits": 3,
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Quantitative Methods in Psychology I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Cognition/Learning elective: PSYC 40445 Cognitive Psychology, PSYC 40446 Cognitive Neuroscience, or PSYC 41043 Basic Learning Processes.",
+      "code": "COG-1",
+      "credits": 3,
+      "options": [
+       "PSYC 40445",
+       "PSYC 40446",
+       "PSYC 41043"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Cognition/Learning Elective (student choice)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Foreign language, Elementary I of one language (College of Sciences and Humanities B.S. requirement, 8 credits total).",
+      "code": "FL-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Foreign Language I (student choice)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "CIVIC",
+      "credits": 3,
+      "prereq": [],
+      "title": "American Civic Literacy Requirement (e.g., HIST 12061 or POL 10101)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "PSYC 31574",
+      "credits": 3,
+      "prereq": [
+       "PSYC 21621"
+      ],
+      "title": "Research Methods in Psychology (ELR)",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Foreign language, Elementary II of the same language.",
+      "code": "FL-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "FL-1"
+      ],
+      "title": "Foreign Language II (student choice)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "PSYC 31282 Personality or PSYC 31532 Social Psychology.",
+      "code": "SOCPERS",
+      "credits": 3,
+      "options": [
+       "PSYC 31282",
+       "PSYC 31532"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Personality or Social Psychology (student choice)",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PSYC 40111",
+      "credits": 3,
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Psychopathology",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Two PSYC upper-division electives (30000 or 40000 level), modeled as one 6-credit choice slot.",
+      "code": "PSYC-UD12",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "PSYC Upper-Division Electives (student choice)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any course chosen by the student to reach 120 total hours.",
+      "code": "GE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "PSYC 31684",
+      "credits": 3,
+      "prereq": [
+       "PSYC 21621"
+      ],
+      "title": "Quantitative Methods in Psychology II",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PSYC 41363",
+      "credits": 3,
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Biopsychology",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Application of Psychological Science elective (3 credits modeled): Option 1 PSYC 41980 Research Writing in Psychology (WIC), Option 2 PSYC 41573 or PSYC 41574 Laboratory Experience in Psychological Research (WIC).",
+      "code": "APP-PSY",
+      "credits": 3,
+      "options": [
+       "PSYC 41980",
+       "PSYC 41573",
+       "PSYC 41574"
+      ],
+      "prereq": [
+       "PSYC 31574"
+      ],
+      "title": "Application of Psychological Science Elective (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any courses chosen by the student to reach 120 total hours, modeled as one 6-credit slot.",
+      "code": "GE-2",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "title": "General Electives (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Anthropology, Biology and Psychology elective: e.g., ANTH 48623, ANTH 48810, BSCI 30140, BSCI 30156, BSCI 40515, or any PSYC upper-division course.",
+      "code": "ABP-1",
+      "credits": 3,
+      "options": [
+       "ANTH 48623",
+       "ANTH 48810",
+       "BSCI 30140",
+       "BSCI 30156",
+       "BSCI 40515"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Anthropology, Biology and Psychology Elective (student choice)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Cognition/Learning elective: PSYC 40445, PSYC 40446, or PSYC 41043.",
+      "code": "COG-2",
+      "credits": 3,
+      "options": [
+       "PSYC 40445",
+       "PSYC 40446",
+       "PSYC 41043"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Cognition/Learning Elective (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any PSYC upper-division elective (30000 or 40000 level).",
+      "code": "PSYC-UD3",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "PSYC Upper-Division Elective (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any courses chosen by the student, modeled as one 6-credit slot.",
+      "code": "GE-3",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "title": "General Electives (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Anthropology, Biology and Psychology elective: e.g., ANTH 48623, ANTH 48810, BSCI 30140, BSCI 30156, BSCI 40515, or any PSYC upper-division course.",
+      "code": "ABP-2",
+      "credits": 3,
+      "options": [
+       "ANTH 48623",
+       "ANTH 48810",
+       "BSCI 30140",
+       "BSCI 30156",
+       "BSCI 40515"
+      ],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "Anthropology, Biology and Psychology Elective (student choice)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any PSYC upper-division elective (30000 or 40000 level).",
+      "code": "PSYC-UD4",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "PSYC 11762"
+      ],
+      "title": "PSYC Upper-Division Elective (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any courses chosen by the student, modeled as one 10-credit slot to reach exactly 120 total hours.",
+      "code": "GE-4",
+      "credits": 10,
+      "options": [],
+      "prereq": [],
+      "title": "General Electives (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.kent.edu/colleges/sh/psys/psychology-bs/psychology-bs.pdf",
+  "total_credits": 120,
+  "content_hash": "6b6076452f5f7ef6954529fa13895ae84c639fb75cefcb0e290b1d1b7cc10e26",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,943 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bs-electrical-engineering-technology",
+  "degree": "BS",
+  "major": "Electrical Engineering Technology",
+  "catalog_year": "2026-2027",
+  "total_credits": 121,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001192",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001192. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): Engineering Technology is a branch of engineering education that emphasizes the practical aspects of engineering rather than abstract concepts or theories. It is a blend of the application of science, engineering knowledge, and technical skills used in support of engineering activities. The Electrical Engineering Technology (EET) program prepares graduates to enter the technical workforce in a variety of fields. Communications, instrumentation, automation, control systems, power, robotics, computers, and medical electronics are but a few of these fields. Within these fields, Electrical Enginee"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1113",
+      "title": "Precalculus",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1111"
+      ],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211",
+      "title": "Principles of Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211L",
+      "title": "Principles of Chemistry Lab I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 1211",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 1000",
+      "title": "Introduction to Engineering",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "MATH 1190",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1112",
+         "MATH 1113"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 1001L",
+      "title": "Intro to EET Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 1000"
+      ],
+      "choice": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-03",
+      "title": "General Education Core Curriculum Technology, Mathematics, and Science",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(PHYS 2211 and PHYS 2211L) or (PHYS 1111 and PHYS 1111L)",
+      "options": [
+       "PHYS 2211",
+       "PHYS 2211L",
+       "PHYS 1111",
+       "PHYS 1111L"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-04",
+      "title": "General Education Core Curriculum Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "ECET 1101",
+      "title": "Circuits I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 1001L",
+       "MATH 1190"
+      ],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 1101L",
+      "title": "Circuits I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 1101"
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 1200",
+      "title": "Digital I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 1101",
+       "MATH 1190"
+      ],
+      "choice": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 1200L",
+      "title": "Digital I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 1200"
+      ],
+      "choice": false,
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2202",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-05",
+      "title": "General Education Core Curriculum Technology, Mathematics, and Science",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(PHYS 2212 and PHYS 2212L) or (PHYS 1112 and PHYS 1112L)",
+      "options": [
+       "PHYS 2212",
+       "PHYS 2212L",
+       "PHYS 1112",
+       "PHYS 1112L"
+      ],
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "ECET 2111",
+      "title": "Circuits II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ECET 1101",
+         "PHYS 1112L",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "ECET 1101",
+         "PHYS 1112",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "ECET 1101L",
+         "PHYS 1112L",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "ECET 1101L",
+         "PHYS 1112",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 2202",
+         "PHYS 1112L",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 2202",
+         "PHYS 1112",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 1112",
+         "PHYS 2212",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 1112",
+         "PHYS 2212K",
+         "PHYS 2212L"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 1112L",
+         "PHYS 2212",
+         "PHYS 2212K"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 1112L",
+         "PHYS 2212K",
+         "PHYS 2212L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2111L",
+      "title": "Circuits II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 2111"
+      ],
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2300",
+      "title": "Electronics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2111",
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2300L",
+      "title": "Electronics I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 2300"
+      ],
+      "choice": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EDG 1210",
+      "title": "Survey of Engineering Graphics",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGT 2000",
+      "title": "Applied Engineering Math",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1190"
+      ],
+      "choice": false,
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s4-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "ECET 3500",
+      "title": "Survey of Electric Machines",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2111"
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3500L",
+      "title": "Survey Electric Machines Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 3500"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2310",
+      "title": "Electronics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2111",
+       "ECET 2300"
+      ],
+      "choice": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2310L",
+      "title": "Electronics II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 2310"
+      ],
+      "choice": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2210",
+      "title": "Digital II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 1200",
+       "ECET 2300"
+      ],
+      "choice": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 2210L",
+      "title": "Digital II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 2210"
+      ],
+      "choice": false,
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-06",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or PHIL 2010 or ENGL 2140 or WLC 2209 or WLC 1002",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "PHIL 2010",
+       "ENGL 2140",
+       "WLC 2209",
+       "WLC 1002"
+      ],
+      "slot_id": "s5-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "ECET 3410",
+      "title": "Frequency Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2300",
+       {
+        "one_of": [
+         "PHYS 1112",
+         "PHYS 2212"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3400",
+      "title": "Data Communications",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2300",
+       {
+        "one_of": [
+         "PHYS 1112",
+         "PHYS 2212"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3620",
+      "title": "Signals & Systems Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2300",
+       "ENGT 2000"
+      ],
+      "choice": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3710",
+      "title": "HardwarePrgmmng&Interfacing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2210",
+       "ECET 2300"
+      ],
+      "choice": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3710L",
+      "title": "Hardware Prgm Interfacing Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 3710"
+      ],
+      "choice": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-05",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "ENGT 4901",
+      "title": "ET Senior Design I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ECET 3710",
+         "MET 4501"
+        ]
+       },
+       {
+        "one_of": [
+         "ECET 3710",
+         "MET 2800"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 4610",
+      "title": "Control Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2310",
+       "ENGT 2000"
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 4610L",
+      "title": "Control Systems Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 4610"
+      ],
+      "choice": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3600",
+      "title": "Test Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECET 2310"
+      ],
+      "choice": false,
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECET 3600L",
+      "title": "Test Engineering Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ECET 3600"
+      ],
+      "choice": false,
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-05",
+      "title": "General Education Core Curriculum Political Science & US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-06",
+      "title": "Electrial Engineering Technology Electives (1 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECET 3701 or ECET 4420 or ECET 4510 or ECET 4520 or ECET 4530 or ECET 4630 or ECET 4730 or ECET 4820 or ECET 3701L or ECET 4420L",
+      "options": [
+       "ECET 3701",
+       "ECET 4420",
+       "ECET 4510",
+       "ECET 4520",
+       "ECET 4530",
+       "ECET 4630",
+       "ECET 4730",
+       "ECET 4820",
+       "ECET 3701L",
+       "ECET 4420L"
+      ],
+      "slot_id": "s7-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "ENGT 4902",
+      "title": "ET Senior Design II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGT 4901"
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-01",
+      "title": "General Education Core Curriculum Social Studies",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "Electrical Engineering Technology Elective (2 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECET 3701 or ECET 4420 or ECET 4510 or ECET 4520 or ECET 4530 or ECET 4630 or ECET 4730 or ECET 4820 or ECET 3710L or ECET 4420L",
+      "options": [
+       "ECET 3701",
+       "ECET 4420",
+       "ECET 4510",
+       "ECET 4520",
+       "ECET 4530",
+       "ECET 4630",
+       "ECET 4730",
+       "ECET 4820",
+       "ECET 3710L",
+       "ECET 4420L"
+      ],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "Electrical Engineering Technology Elective (3 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECET 3701 or ECET 4420 or ECET 4510 or ECET 4520 or ECET 4530 or ECET 4630 or ECET 4730 or ECET 4820 or ECET 3701L or ECET 4420L",
+      "options": [
+       "ECET 3701",
+       "ECET 4420",
+       "ECET 4510",
+       "ECET 4520",
+       "ECET 4530",
+       "ECET 4630",
+       "ECET 4730",
+       "ECET 4820",
+       "ECET 3701L",
+       "ECET 4420L"
+      ],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "General Education Area Curriculum Institutional Priorities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or GWST 1102 or LALS 1102 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102 or COMM 1100",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "GWST 1102",
+       "LALS 1102",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102",
+       "COMM 1100"
+      ],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "ENGL 101",
+   "MATH 1111",
+   "MATH 1112",
+   "MATH 1179",
+   "MATH 1189",
+   "MET 2800",
+   "MET 4501",
+   "PHYS 1112",
+   "PHYS 1112L",
+   "PHYS 2212",
+   "PHYS 2212K",
+   "PHYS 2212L"
+  ],
+  "content_hash": "eb93c4b55984aadb9d1f42dcc6f1360c3c5035b3984c0f8b5125fa7b7c4d8bdf",
+  "last_verified": "2026-10-02"
+ }
+}

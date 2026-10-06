@@ -1,0 +1,267 @@
+{
+ "institution": {
+  "city": "Bedford, MA",
+  "kind": "community",
+  "name": "Middlesex Community College",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "middlesex-as-computer-science",
+  "major": "Computer Science Transfer",
+  "notes": "Source: official Middlesex Community College 2025-2026 'ACADEMIC MAP 15 to FINISH' PDF for 'Computer Science Transfer — Associate in Science' (www.middlesex.edu/students/advising/downloads/maps/cs.pdf; www.middlesex.edu is MCC's official site — homepage confirms Bedford/Lowell MA addresses, MassEducate). TRUE credential per the map and the catalog program page (catalog.middlesex.mass.edu, 'Computer Science Transfer — Associate in Science — Bedford Campus - Day'; MassTransfer transfer degree). Hand-transcribed 2026-09-30 from the map's term-by-term sequence (raw transcript saved in scratch dir as source-map-transcript.txt). Credit math: printed semester totals 16 / 14 / 16 / 14 = 60 on the minimum path; the map prints Semester 4 as '14/15' because the math/science elective slot is '3/4' credits ('Three credits in MAT 250 – Discrete Math –or– MAT 295 – Linear Algebra –or– BIO 131 (4) –or– CHE 151 (4) –or– PHY 171 (4)'), so the pathway is 60 or 61 credits depending on the student's choice. Minimum 3 used for that slot (bunkerhill-as-computer-science precedent); choosing a 4-credit lab science yields a 61-credit pathway — total_credits = 60 documents the minimum. Caveats: (1) Placement notes from the map are documented here, not modeled as prereqs: students with no programming experience who have not placed into MAT 290 must take CSC 101 Intro to Computer Science before CSC 151; students placing below MAT 290 should take MAT 195 Precalculus in semester 1 and MAT 165 Trigonometry in semester 2. (2) The map publishes no per-course prerequisites, so all prereq fields are empty rather than invented; sequencing follows the map's milestone order. (3) Lab Science courses must form one sequence: PHY 171+172, CHE 151+152, or BIO 131+132 (map Helpful Hints) — modeled as two choice slots with that constraint in choice_note. (4) Map notes: register early for 200-level CSC courses; CSC 151, CSC 156, CSC 202, CSC 252, CSC 255 are often offered in the summer semester.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 151",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 156",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Operating Systems Basics and Security",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ETH 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Ethics & Technology",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Behavioral Science general education course; the 2025-2026 map gives no specific recommendation.",
+      "code": "BHV 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Behavioral Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 252",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Programming II",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Public Speaking and Professional Presentations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 290",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus I for Engineering and Science",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 255",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Programming III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 202",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Organization/Assembly Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 291",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus II for Engineering and Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Map: 'BIO 131 -or- CHE 151 -or- PHY 171', 4 credits. Lab sciences must form one sequence per map Helpful Hints: PHY 171+172, CHE 151+152, or BIO 131+132 — part 2 of the chosen sequence is taken in Spring Year 2.",
+      "code": "SCI 1XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Lab Science Sequence I (BIO 131 -or- CHE 151 -or- PHY 171)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 258",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Map: 'BIO 132 -or- CHE 152 -or- PHY 172', 4 credits. Must continue the sequence chosen in Fall Year 2: PHY 171+172, CHE 151+152, or BIO 131+132.",
+      "code": "SCI 2XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Lab Science Sequence II (BIO 132 -or- CHE 152 -or- PHY 172)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Map: 'Three credits in MAT 250 - Discrete Math -or- MAT 295 - Linear Algebra -or- BIO 131 (4) -or- CHE 151 (4) -or- PHY 171 (4)', printed at 3/4 credits. Minimum 3 used (bunkerhill precedent); choosing a 4-credit lab science yields a 61-credit pathway. Map prints the semester total as 14/15.",
+      "code": "MTS 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Mathematics/Science Elective (MAT 250 -or- MAT 295 -or- BIO 131 -or- CHE 151 -or- PHY 171)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any 3-credit Social Science general education course; the 2025-2026 map gives no specific recommendation.",
+      "code": "SSC 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Social Science Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.middlesex.edu/students/advising/downloads/maps/cs.pdf",
+  "total_credits": 60,
+  "content_hash": "d41772a4af3dde4eec9280c4cc2eba9cc505ec696bb9d25b6306722580fe1b79",
+  "last_verified": "2026-10-02"
+ }
+}

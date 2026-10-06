@@ -1,0 +1,329 @@
+{
+ "institution": {
+  "city": "West Palm Beach, FL",
+  "kind": "private",
+  "name": "Academy for Nursing and Health Occupations",
+  "state": "FL"
+ },
+ "plan": {
+  "catalog_year": "current (2026-09-30)",
+  "degree": "AS",
+  "id": "academy-for-nursing-and-health-occupations-as-nursing",
+  "major": "Nursing",
+  "notes": "Source: Academy for Nursing and Health Occupations official website, Associate of Science Degree in Nursing (Professional/RN) program page, hand-transcribed 2026-09-30. Stated program totals: 96 weeks; 59 theory + 2 lab + 11 clinical = 72 semester credit hours. All 16 listed courses sum to exactly 72 (theory subtotal 59, lab 2, clinical 11), matching the stated total. Catalog does NOT publish a term-by-term map; the program is described as linear, so the 6 terms below are an editorial sequencing derived strictly from the catalog's prerequisite chains. Prereqs are transcribed from the catalog's Pre-requisite Courses lists; the catalog prints 'ENC101 College Writing' in prereq lists, which refers to the program's ENC1101 College Writing course (recorded as ENC1101). For NUR2212 the catalog prints 'NUR1023/NUR1204L Healthcare Essentials and Healthcare Essentials Skills' - NUR1204L appears nowhere else in the program; it is almost certainly a typo for NUR1024L, the course's own skills-lab code, and is recorded as NUR1024L.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Writing",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC1105",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY2012",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introductory Psychology",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog: 'BSC2086 Anatomy & Physiology - 4 Semester Credit Hrs. Includes BSC2086L - Anatomy & Physiology Lab'. Theory 3.0 + Lab 1.",
+      "code": "BSC2086",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Anatomy & Physiology",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Theory 3.0.",
+      "code": "DEP2006",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Human Growth and Development",
+      "xfer": []
+     }
+    ],
+    "term": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MCB2001",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MAC1105",
+       "PSY2012",
+       "BSC2086",
+       "DEP2006"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Biology (Micro)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPC1017",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MAC1105",
+       "PSY2012",
+       "BSC2086",
+       "DEP2006"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Communications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 6. Catalog prints 'PHA1141/PHA1142 Dosage Calculation, Pharmacology and Medication Administration - 6 Semester Credit Hr'.",
+      "code": "PHA1141/PHA1142",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MAC1105",
+       "PSY2012",
+       "BSC2086",
+       "DEP2006"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Dosage Calculation, Pharmacology and Medication Administration",
+      "xfer": []
+     }
+    ],
+    "term": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 5 + Lab 1. Catalog header: 'NUR1023/NUR1024L Health Care Essentials and Health Care Essentials Skills - 6 Semester Credit Hrs'.",
+      "code": "NUR1023/NUR1024L",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MCB2001",
+       "MAC1105",
+       "PSY2012",
+       "SPC1017",
+       "BSC2086",
+       "DEP2006",
+       "PHA1141/PHA1142"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Health Care Essentials and Health Care Essentials Skills",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Clinical 4.",
+      "code": "NUR1023L",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MCB2001",
+       "MAC1105",
+       "PSY2012",
+       "SPC1017",
+       "BSC2086",
+       "DEP2006",
+       "PHA1141/PHA1142"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Health Care Essentials Clinical",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 3.",
+      "code": "NUR1025",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENC1101",
+       "MCB2001",
+       "MAC1105",
+       "PSY2012",
+       "SPC1017",
+       "BSC2086",
+       "DEP2006",
+       "PHA1141/PHA1142"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Contemporary Nursing",
+      "xfer": []
+     }
+    ],
+    "term": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Includes NUR2212L - Nursing Concepts 1A Clinical. Theory 6 + Clinical 2. Catalog prereq prints 'NUR1023/NUR1204L Healthcare Essentials and Healthcare Essentials Skills'; NUR1204L appears nowhere else in the program and is recorded as NUR1024L (likely typo).",
+      "code": "NUR2212",
+      "credits": 8,
+      "options": [],
+      "prereq": [
+       "NUR1023/NUR1024L",
+       "NUR1023L",
+       "NUR1025"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Nursing Concepts 1A",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Includes NUR2521L Nursing Concepts 1B Clinical. Theory 3 + Clinical 1.",
+      "code": "NUR2521",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NUR1023/NUR1024L",
+       "NUR1023L",
+       "NUR1025"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Nursing Concepts 1B",
+      "xfer": []
+     }
+    ],
+    "term": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Includes NUR2420L Nursing Concepts 2A Clinical. Theory 4 + Clinical 2.",
+      "code": "NUR2420",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "NUR2212",
+       "NUR2521"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Nursing Concepts 2A",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Includes NUR2214L Nursing Concepts 2B Clinical. Theory 5 + Clinical 1.",
+      "code": "NUR2214",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "NUR2212",
+       "NUR2521"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Nursing Concepts 2B",
+      "xfer": []
+     }
+    ],
+    "term": "Term 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Final nursing term. Theory 5 + Clinical 1. Catalog: 'All previous courses must be passed prior to entering Integration, Personal Family and Community Health.' Must be taken at ANHO (not transferable) to apply for the NCLEX-RN Exam.",
+      "code": "NUR2951/NUR2951L",
+      "credits": 6,
+      "options": [],
+      "prereq": [
+       "NUR2212",
+       "NUR2521",
+       "NUR2420",
+       "NUR2214"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Integration, Personal Family and Community Health and Clinical",
+      "xfer": []
+     }
+    ],
+    "term": "Term 6",
+    "n": 6
+   }
+  ],
+  "source_url": "https://www.anho.edu/Associate-Of-Science-Degree-Nursing-Professional",
+  "total_credits": 72,
+  "content_hash": "43cb7701f66edc3e8206510d6241fb6e846fdb1ba458608a3aebe5f5791fa1e3",
+  "last_verified": "2026-10-02"
+ }
+}

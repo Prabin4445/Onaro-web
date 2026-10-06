@@ -1,0 +1,603 @@
+{
+ "institution": {
+  "name": "Arizona State University",
+  "city": "Tempe, AZ",
+  "kind": "public4yr",
+  "state": "AZ"
+ },
+ "plan": {
+  "id": "asu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://degrees.asu.edu/major-map/ASU00/ESCSEBS/null/ALL/2024",
+  "notes": "Source: official ASU Degree Search major map for 'Computer Science, BS' (program code ESCSEBS, Ira A. Fulton Schools of Engineering), 2024-2025 catalog year, General Studies Gold: https://degrees.asu.edu/major-map/ASU00/ESCSEBS/null/ALL/2024 . Transcription method: manual transcription of every term row (courses, credit hours, minimum grades) from the official major map page on 2026-09-30. Catalog year note: the 2025-2026 and 2026-2027 major maps were not yet published on ASU Degree Search ('Major Map Unavailable. Check back soon!' for /ALL/2025 and /ALL/2026 as of 2026-09-30); 2024-2025 is the most recent official term-by-term sequence. Term names use ASU's own 'Term N' numbering (the major map does not label seasons). General Studies Gold requirements (HUAD, SCIT, SOBE, AMIT, GCSI, CIVI, SUST) are modeled as choice:true student-choice slots; the OR-options in core courses (ENG composition, MAT 267/CSE 259, CSE 412/434/445, Upper Division Technical Electives, CSE 4** electives) are also choice slots with the alternatives named in the title and choice_note. Per-course prerequisites are NOT listed on the ASU major map, so prereq arrays are intentionally empty -- no prereqs invented; the official term ordering preserves ASU's prerequisite chain. Caveats: (a) if ENG 105 is taken, a three credit hour elective must also be taken prior to graduation (major map note); (b) Technical Electives follow the SCAI technical elective course lists ('Contact SCAI Advising'); (c) CSE 485/486 capstones carry the (L) literacy designation per major map.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Term 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSE 110",
+      "title": "Principles of Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "ASU 101-CAI",
+      "title": "The ASU Experience",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENG 101",
+      "title": "First-Year Composition I (choose ENG 101, ENG 105, or ENG 107)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 or ENG 102 OR ENG 105 OR ENG 107 or ENG 108, minimum grade C. Note: if ENG 105 is taken, a three credit hour elective must also be taken prior to graduation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "FSE 100",
+      "title": "Introduction to Engineering",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MAT 265",
+      "title": "Calculus for Engineers I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "HUAD 1XX",
+      "title": "Humanities, Arts and Design (HUAD) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU HUAD general studies designation.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Term 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSE 205",
+      "title": "Object-Oriented Programming and Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "ENG 102",
+      "title": "First-Year Composition II (choose ENG 102 or ENG 108)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Completes the First-Year Composition sequence (ENG 101/102, ENG 105, or ENG 107/108 per major map).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MAT 266",
+      "title": "Calculus for Engineers II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "HUAD 2XX",
+      "title": "Humanities, Arts and Design (HUAD) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU HUAD general studies designation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "SCIT 1XX",
+      "title": "Additional Scientific Thinking in Natural Sciences (SCIT) course -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Additional SCIT general studies course per major map.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Term 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "EEE 120",
+      "title": "Digital Design Fundamentals",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSE 240",
+      "title": "Introduction to Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MAT 243",
+      "title": "Discrete Mathematical Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MAT 267",
+      "title": "Calculus for Engineers III (MAT 267) OR Logic in Computer Science (CSE 259) -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: MAT 267: Calculus for Engineers III (MATH OR MA) OR CSE 259: Logic in Computer Science.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SCIT 2XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) 4-credit lab science -- student choice",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4-credit SCIT general studies course (SQ lab science track).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Term 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSE 230",
+      "title": "Computer Organization and Assembly Language Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSE 310",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "IEE 380",
+      "title": "Probability and Statistics for Engineering Problem Solving",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SCIT 3XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) 4-credit lab science -- student choice",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "4-credit SCIT general studies course (SQ lab science track).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SOBE 1XX",
+      "title": "Social and Behavioral Sciences (SOBE) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU SOBE general studies designation.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Term 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSE 355",
+      "title": "Introduction to Theoretical Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSE 301",
+      "title": "Computing Ethics",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSE 360",
+      "title": "Introduction to Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CSE 365",
+      "title": "Information Assurance",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "MAT 343",
+      "title": "Applied Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "AMIT 1XX",
+      "title": "American Institutions (AMIT) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU AMIT general studies designation.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Term 6",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSE 340",
+      "title": "Principles of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSE 330",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSE 412",
+      "title": "Database Management (CSE 412), Computer Networks (CSE 434), or Distributed Software Development (CSE 445) -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: CSE 412: Database Management OR CSE 434: Computer Networks OR CSE 445: Distributed Software Development.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GCSI 1XX",
+      "title": "Global Communities, Societies and Individuals (GCSI) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU GCSI general studies designation.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CIVI 1XX",
+      "title": "Governance and Civic Engagement (CIVI) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU CIVI general studies designation.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Term 7",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSE 485",
+      "title": "Computer Science Capstone Project I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSE 4XX-A",
+      "title": "Upper Division Technical Elective (400-level) -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper Division Technical Elective per major map; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSE 4XX-B",
+      "title": "CSE 400-level elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the two required 'CSE 4** Elective' courses in Term 7; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CSE 4XX-C",
+      "title": "CSE 400-level elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the two required 'CSE 4** Elective' courses in Term 7; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "SUST 1XX",
+      "title": "Sustainability (SUST) general studies elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course carrying the ASU SUST general studies designation.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Term 8",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSE 486",
+      "title": "Computer Science Capstone Project II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSE 4XX-D",
+      "title": "Upper Division Technical Elective (400-level) -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper Division Technical Elective per major map; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSE 4XX-E",
+      "title": "CSE 400-level elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the two required 'CSE 4** Elective' courses in Term 8; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CSE 4XX-F",
+      "title": "CSE 400-level elective -- student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of the two required 'CSE 4** Elective' courses in Term 8; see SCAI technical elective course lists.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "97edfeb6696018aac98817efdb883a6f298c587c5f7b6f11109da66948641566",
+  "last_verified": "2026-10-02"
+ }
+}

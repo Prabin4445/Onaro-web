@@ -1,0 +1,448 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-surgical-technology",
+  "major": "Surgical Technology",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 3373, Rev. 1/2025, effective Summer 2025): semester-by-semester course sequence for full-time associate degree students finishing in two years. The guide prints semester totals 16 / 14-15 / 6 (summer) / 13 / 13 and 'TOTAL CREDIT HOURS 62-63' because the Second Semester math slot is MTH124 Statistics (3), MTH105 Math for Allied Health (3), or MTH125 College Algebra (4); this seed models MTH124 (3 credits) for semesters 16 / 14 / 6 / 13 / 13 = 62, the minimum-credit instantiation, and notes the guide's 62-63 range. Course titles and credit hours as printed in the guide's technical/non-technical course lists and sequence. Prerequisites are from the guide's Pre- and Co-Requisites column and name only courses present in the plan: SUR102 co-SUR102L; SUR102L co-SUR102; SUR104 pre/co-BIO123 (catalog lists BIO122 or BIO123); SUR105 requires SUR102 and BIO123 (catalog lists BIO121 or BIO123); SUR106 requires SUR102 and co-SUR106L; SUR106L requires SUR102L and co-SUR106; SUR200 requires SUR106 and co-SUR200L; SUR200L requires SUR106L and co-SUR200; SUR201C requires SUR200, SUR200L and co-SUR201; SUR201 co-SUR201C; SUR202 requires SUR200 and co-SUR202L; SUR202L requires SUR200L and co-SUR202; SUR203C requires SUR201C and co-SUR203 and co-SUR204; SUR203 co-SUR203C; SUR204 co-SUR203C; BIO124 lists BIO122 or BIO123 (BIO123 in plan); BIO221 lists BIO122 or BIO123 or BIO127 or BIO141 (BIO123 in plan). Footnote markers (^ placement score, ^^ take first semester, @/# biology substitution, Ω transfer note, * sociology offerings only, ▲ term availability, ++ grade minimum) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO123",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Principles of Human Structure and Function (lab)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR102",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "SUR102L"
+      ],
+      "required_zero": false,
+      "title": "Principles of Surgery I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR102L",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR102"
+      ],
+      "required_zero": false,
+      "title": "Principles of Surgery I Lab",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "SUR104",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Surgical Pharmacology",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "1st Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123 or BIO127 or BIO141; BIO123 is the in-plan prerequisite.",
+      "code": "BIO221",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Principles of Microbiology (lab)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan row 'MTH124 Statistics or MTH125 College Algebra or MTH105 Math for Allied Health'; modeled at 3 credits (guide range 14-15 for the semester, 62-63 total).",
+      "code": "MTH124 / MTH125 / MTH105",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Statistics or College Algebra or Math for Allied Health",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists BIO121 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "SUR105",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "SUR102",
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Surgical Anatomy and Pathology",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR106",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "SUR102",
+       "SUR106L"
+      ],
+      "required_zero": false,
+      "title": "Principles of Surgery II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR106L",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR102L",
+       "SUR106"
+      ],
+      "required_zero": false,
+      "title": "Principles of Surgery II Lab",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "2nd Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Medical Terminology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR200",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "SUR106",
+       "SUR200L"
+      ],
+      "required_zero": false,
+      "title": "Surgical Specialties I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR200L",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR106L",
+       "SUR200"
+      ],
+      "required_zero": false,
+      "title": "Surgical Specialties I Lab",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog lists BIO122 or BIO123; BIO123 is the in-plan prerequisite.",
+      "code": "BIO124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Human Diseases",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY121",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "General Psychology",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR201C",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "SUR200",
+       "SUR200L",
+       "SUR201"
+      ],
+      "required_zero": false,
+      "title": "Surgical Clinical Practicum I",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR201",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR201C"
+      ],
+      "required_zero": false,
+      "title": "Surgical Clinical Practicum I Seminar",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR202",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "SUR200",
+       "SUR202L"
+      ],
+      "required_zero": false,
+      "title": "Surgical Specialties II",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR202L",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR200L",
+       "SUR202"
+      ],
+      "required_zero": false,
+      "title": "Surgical Specialties II Lab",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "3rd Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Sociology Elective' (3 credits); select from sociology offerings only.",
+      "code": "SOC-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Sociology Elective",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHL122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Ethics",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR203C",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "SUR201C",
+       "SUR203",
+       "SUR204"
+      ],
+      "required_zero": false,
+      "title": "Surgical Clinical Practicum II",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR203",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [
+       "SUR203C"
+      ],
+      "required_zero": false,
+      "title": "Surgical Clinical Practicum II Seminar",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SUR204",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "SUR203C"
+      ],
+      "required_zero": false,
+      "title": "Surgical Technology Capstone",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "4th Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/3373-AAS-Surgical-Technology.pdf",
+  "total_credits": 62,
+  "content_hash": "1fd57faf8537187f963d0a6d32d55744c771f48155ae60deac80f4f5b609529d",
+  "last_verified": "2026-10-02"
+ }
+}

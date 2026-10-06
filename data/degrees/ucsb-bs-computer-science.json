@@ -1,0 +1,703 @@
+{
+ "institution": {
+  "name": "University of California, Santa Barbara",
+  "city": "Santa Barbara, CA",
+  "kind": "public4yr",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "ucsb-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 183,
+  "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/26-27_GEAR.pdf",
+  "notes": "Source: official UCSB College of Engineering GEAR 2026-2027 (General Engineering Academic Requirements, Vol. 17, Summer 2026), 'COMPUTER SCIENCE 2026-27' four-year grid (pp. 20-21 of major requirements), https://engineering.ucsb.edu/sites/default/files/docs/26-27_GEAR.pdf. Transcription: manual transcription of the grid from browser-extracted PDF text on 2026-09-30; row/column assignment verified against each year's printed TOTAL line. UCSB is on the quarter system; this plan totals 183 quarter units across 12 quarters (Fall/Winter/Spring x 4 years). The GEAR states the minimum for graduation is 180 units; the grid is advisory ('intended to serve as a guide... adjusted for individual circumstances; course availability subject to change'). Grid footnotes carried: (1) CMPSC 8 vs G.E. placement per CS academic advisor; (2) ENGR 101 may be taken any quarter of senior year. Major requirements (same GEAR section): prep CMPSC 16/24/32/41/42/64, MATH 3A-B/4A-B/6A, PSTAT 120A; upper division CMPSC 130A-B, ENGR 101, 14 field electives (at least 7 CMPSC); science electives List A 8 units + List B 12 units. Course titles verified against official UCSB sources (GEAR course descriptions, ai.cs.ucsb.edu curriculum page, PSTAT department). Prereqs included only where officially stated (CMPSC 16<-MATH 3A; 24<-16; 32<-24; 64<-16 and MATH 4A; 130B<-130A). The College of Engineering's separate 'FR Sample CS' freshman PDF corroborates the sophomore-senior sequence of this grid.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMPSC 8",
+      "title": "CMPSC 8 (Introduction to Computer Science) or General Education",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Students with no prior programming take CMPSC 8; others take a G.E. course. Consult the CS academic advisor for placement (GEAR footnote 1).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 3A",
+      "title": "Calculus with Applications I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CMPSC 16",
+      "title": "Problem Solving with Computers I",
+      "credits": 4,
+      "prereq": [
+       "MATH 3A"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 3B",
+      "title": "Calculus with Applications II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "SCI-ELECT",
+      "title": "Science elective (department-approved List A/B)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science electives from department-approved lists (List A: 8 units, List B: 12 units).",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CMPSC 24",
+      "title": "Problem Solving with Computers II",
+      "credits": 4,
+      "prereq": [
+       "CMPSC 16"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 4A",
+      "title": "Linear Algebra with Applications",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "SCI-ELECT",
+      "title": "Science elective (department-approved List A/B)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science electives from department-approved lists (List A: 8 units, List B: 12 units).",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SCI-ELECT",
+      "title": "Science elective (department-approved List A/B)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science electives from department-approved lists (List A: 8 units, List B: 12 units).",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CMPSC 32",
+      "title": "Object Oriented Design and Implementation",
+      "credits": 4,
+      "prereq": [
+       "CMPSC 24"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SCI-ELECT",
+      "title": "Science elective (department-approved List A/B)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science electives from department-approved lists (List A: 8 units, List B: 12 units).",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Winter Year 2",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CMPSC 64",
+      "title": "Computer Organization and Logic Design",
+      "credits": 4,
+      "prereq": [
+       "CMPSC 16",
+       "MATH 4A"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "MATH 4B",
+      "title": "Differential Equations",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SCI-ELECT",
+      "title": "Science elective (department-approved List A/B)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Science electives from department-approved lists (List A: 8 units, List B: 12 units).",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CMPSC 41",
+      "title": "Discrete Mathematics for Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "MATH 6A",
+      "title": "Vector Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMPSC 130A",
+      "title": "Data Structures and Algorithms I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "PSTAT 120A",
+      "title": "Probability and Statistics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CMPSC 42",
+      "title": "Logic and Automata",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "SCI-FREE-ELECT",
+      "title": "Science or free elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter Year 3",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CMPSC 130B",
+      "title": "Data Structures and Algorithms II",
+      "credits": 4,
+      "prereq": [
+       "CMPSC 130A"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s9-1",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s9-2",
+      "code": "GE-ELECT",
+      "title": "General Education elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s9-3",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s10-0",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s10-1",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s10-2",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s10-3",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Winter Year 4",
+    "courses": [
+     {
+      "slot_id": "s11-0",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s11-1",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s11-2",
+      "code": "ENGR 101",
+      "title": "Ethics in Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s11-3",
+      "code": "FREE-ELECT",
+      "title": "Free elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s12-0",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s12-1",
+      "code": "FIELD-ELECT",
+      "title": "Major field elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "14 field electives required; at least 7 must be CMPSC courses (2026-27 GEAR).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s12-2",
+      "code": "GE-FREE-ELECT",
+      "title": "General Education or free elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "e8bb7ee25e67d598019e268787e6fca450a5c1ac6edc73c8c2e85454887674f7",
+  "last_verified": "2026-10-02"
+ }
+}

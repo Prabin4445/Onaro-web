@@ -1,0 +1,122 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-railroad-operations",
+  "degree": "Certificate",
+  "major": "Railroad Operations",
+  "catalog_year": "2026-2027",
+  "total_credits": 16,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7700/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Railroad Operations Certificate' program map, Catalog 2026-27, published May 12, 2026 (mapmaker.losrios.edu/Maps/7700/PublishedPdf). Official Total Units: 16; this seed = 9 + 7 = 16 units. Semester sums verified against the map's 9 / 7 headers. In-plan prereqs: RAILR 140 requires RAILR 120 and 122 with grades of 'C' or better; RAILR 142 requires RAILR 120, 122, and 140 with grades of 'C' or better. Certificate of Achievement requirements: grade of 'C' or better in each course. Department note: students are encouraged to contact the RAIL faculty for course sequence adjustments (Parminder Estabrook, EstabrP@scc.losrios.edu). Railroad Operations, Business & Industry Meta Majors. Distinct from the Railroad Operations A.S. degrees (maps 7798, 7801). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "RAILR 102",
+      "title": "Railroad Technical Careers",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "RAILR 102",
+      "xfer": [
+       "sacramento-city-college-as-railroad-operations-cohort-1",
+       "sacramento-city-college-as-railroad-operations-cohort-2"
+      ]
+     },
+     {
+      "code": "RAILR 120",
+      "title": "Railroad Operations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "tccns": "RAILR 120",
+      "xfer": [
+       "sacramento-city-college-as-railroad-operations-cohort-1",
+       "sacramento-city-college-as-railroad-operations-cohort-2"
+      ]
+     },
+     {
+      "code": "RAILR 122",
+      "title": "Railroad Safety, Quality, and Environment",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "tccns": "RAILR 122",
+      "xfer": [
+       "sacramento-city-college-as-railroad-operations-cohort-1",
+       "sacramento-city-college-as-railroad-operations-cohort-2"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "RAILR 140",
+      "title": "Railroad General Code of Operating Rules",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "RAILR 120",
+       "RAILR 122"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: RAILR 120 and 122 with grades of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "RAILR 140",
+      "xfer": [
+       "sacramento-city-college-as-railroad-operations-cohort-1",
+       "sacramento-city-college-as-railroad-operations-cohort-2"
+      ]
+     },
+     {
+      "code": "RAILR 142",
+      "title": "Railroad Field Operations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "RAILR 120",
+       "RAILR 122",
+       "RAILR 140"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: RAILR 120, RAILR 122, and RAILR 140 with grades of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "RAILR 142",
+      "xfer": [
+       "sacramento-city-college-as-railroad-operations-cohort-1",
+       "sacramento-city-college-as-railroad-operations-cohort-2"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "01068ff463774785db268723ec3a52bb2e5e2f9d75897fe293745413be3ab6d8",
+  "last_verified": "2026-10-02"
+ }
+}

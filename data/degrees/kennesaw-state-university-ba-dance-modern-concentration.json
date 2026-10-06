@@ -1,0 +1,882 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-ba-dance-modern-concentration",
+  "degree": "BA",
+  "major": "Dance - Modern Concentration",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001153",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001153. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): The Department of Dance at Kennesaw State University fosters an environment of creative and scholarly learning by engaging students as active scholar-artists. The program offers a variety of academic and practical experiences aimed at developing a holistic understanding of dance as an art form, encourage students to investigate dance as a method of analysis, a mode of inquiry, and as an aesthetic experience. Partnerships with professional dance and art organizations provide a variety of practical performance experiences for dance students in the community. Collaborative learning with professio"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 1900",
+      "title": "Intro to Professional Practice",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 2800",
+      "title": "Embodied Wellness",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 3310",
+      "title": "Modern Dance II",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "DANC 3300"
+      ],
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-04",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-05",
+      "title": "General Education Core IMPACTS- Mathematics",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MATH 1101 or MATH 1111 or MATH 1113 or MATH 1190 or STAT 1401 or MATH 1001",
+      "options": [
+       "MATH 1101",
+       "MATH 1111",
+       "MATH 1113",
+       "MATH 1190",
+       "STAT 1401",
+       "MATH 1001"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-06",
+      "title": "Core Field of Study Dance Elective (1 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2713 or DANC 2714 or DANC 2715 or DANC 2290",
+      "options": [
+       "DANC 2713",
+       "DANC 2714",
+       "DANC 2715",
+       "DANC 2290"
+      ],
+      "slot_id": "s1-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 2000",
+      "title": "Dance History I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 3110",
+      "title": "Ballet II:Classical Dance Tech",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "DANC 3100"
+      ],
+      "choice": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Applied Math)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "STAT 1401 or DATA 1501 or MATH 1113 or MATH 1160 or MATH 1190 or MATH 2202 or MATH 1179",
+      "options": [
+       "STAT 1401",
+       "DATA 1501",
+       "MATH 1113",
+       "MATH 1160",
+       "MATH 1190",
+       "MATH 2202",
+       "MATH 1179"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-05",
+      "title": "Modern Dance Elective (1 of 3)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3310 or DANC 3320 or DANC 3330 or DANC 3600",
+      "options": [
+       "DANC 3310",
+       "DANC 3320",
+       "DANC 3330",
+       "DANC 3600"
+      ],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 3550",
+      "title": "Choreography I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "DANC 3110",
+         "DANC 3310"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-02",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or PHIL 2010 or ENGL 2140 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "PHIL 2010",
+       "ENGL 2140",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-03",
+      "title": "Modern Concentration Dance Elective- See catalog for choice",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3001 or DANC 3110 or DANC 3120 or DANC 3130 or DANC 3210 or DANC 3240 or DANC 3220 or DANC 3230 or DANC 3420 or DANC 3500 or DANC 3620 or DANC 3700",
+      "options": [
+       "DANC 3001",
+       "DANC 3110",
+       "DANC 3120",
+       "DANC 3130",
+       "DANC 3210",
+       "DANC 3240",
+       "DANC 3220",
+       "DANC 3230",
+       "DANC 3420",
+       "DANC 3500",
+       "DANC 3620",
+       "DANC 3700"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-04",
+      "title": "Core Field of Study Dance Elective (2 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2713 or DANC 2714 or DANC 2715 or DANC 2290 or DANC 2800",
+      "options": [
+       "DANC 2713",
+       "DANC 2714",
+       "DANC 2715",
+       "DANC 2290",
+       "DANC 2800"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-05",
+      "title": "General Education Core Curriculum Technology, Mathematics, and Sciences recommended SCI 1101",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SCI 1101 or GEOG 1112K or GEOG 1113K or (CHEM 1151 and CHEM 1151L) or (CHEM 1152 and CHEM 1152L) or (CHEM 1211 and CHEM 1211L) or (CHEM 1212 and CHEM 1212L) or (PHYS 1111 and PHYS 1111L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2211 and PHYS 2211L) or (PHYS 2212 and PHYS 2212L) or (BIOL 1107 and BIOL 1107L) or (BIOL 1108 and BIOL 1108L) or (CSE 1321 and CSE 1321L)",
+      "options": [
+       "SCI 1101",
+       "GEOG 1112K",
+       "GEOG 1113K",
+       "CHEM 1151",
+       "CHEM 1151L",
+       "CHEM 1152",
+       "CHEM 1152L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "PHYS 2212",
+       "PHYS 2212L",
+       "BIOL 1107",
+       "BIOL 1107L",
+       "BIOL 1108",
+       "BIOL 1108L",
+       "CSE 1321",
+       "CSE 1321L"
+      ],
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "DANC 4500",
+      "title": "Choreography II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 3550"
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-01",
+      "title": "General Education Core IMPACTS- Institutional Priority (Critical Thinking)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or COMM 1100 or GWST 1102 or LALS 1102 or LDRS 2300 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "COMM 1100",
+       "GWST 1102",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-02",
+      "title": "General Education Core IMPACTS- Political Science and US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-03",
+      "title": "Modern Concentration Elective (2 of 3)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3310 or DANC 3320 or DANC 3330 or DANC 3600",
+      "options": [
+       "DANC 3310",
+       "DANC 3320",
+       "DANC 3330",
+       "DANC 3600"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-04",
+      "title": "Core Field of Study Dance Elective (3 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2713 or DANC 2714 or DANC 2715 or DANC 2290",
+      "options": [
+       "DANC 2713",
+       "DANC 2714",
+       "DANC 2715",
+       "DANC 2290"
+      ],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-05",
+      "title": "General Education Core IMPACTS - Technology, Mathematics, and Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "SCI 1102 or GEOG 1112K or GEOG 1113K or GEOG 1125 or ANTH 1105 or GEOG 1110 or CSE 1321L or (CHEM 1151 and CHEM 1151L) or (CHEM 1152 and CHEM 1152L) or (CHEM 1211 and CHEM 1211L) or (CHEM 1212 and CHEM 1212L) or (PHYS 1111 and PHYS 1111L) or (PHYS 1112 and PHYS 1112L) or (PHYS 2211 and PHYS 2211L) or (PHYS 2212 and PHYS 2212L) or (BIOL 1107 and BIOL 1107L) or (BIOL 1108 and BIOL 1108L)",
+      "options": [
+       "SCI 1102",
+       "GEOG 1112K",
+       "GEOG 1113K",
+       "GEOG 1125",
+       "ANTH 1105",
+       "GEOG 1110",
+       "CSE 1321L",
+       "CHEM 1151",
+       "CHEM 1151L",
+       "CHEM 1152",
+       "CHEM 1152L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "PHYS 1111",
+       "PHYS 1111L",
+       "PHYS 1112",
+       "PHYS 1112L",
+       "PHYS 2211",
+       "PHYS 2211L",
+       "PHYS 2212",
+       "PHYS 2212L",
+       "BIOL 1107",
+       "BIOL 1107L",
+       "BIOL 1108",
+       "BIOL 1108L"
+      ],
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "DANC 4250",
+      "title": "Research in Dance Seminar",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 2000"
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 4100",
+      "title": "Dance Kinesiology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 2000"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-02",
+      "title": "General Education Core IMPACTS- Social Sciences (World History)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-03",
+      "title": "Modern Concentration Elective (3 of 3)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3310 or DANC 3320 or DANC 3330 or DANC 3600",
+      "options": [
+       "DANC 3310",
+       "DANC 3320",
+       "DANC 3330",
+       "DANC 3600"
+      ],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-04",
+      "title": "Core Field of Study Dance Elective (4 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2713 or DANC 2714 or DANC 2715 or DANC 2290",
+      "options": [
+       "DANC 2713",
+       "DANC 2714",
+       "DANC 2715",
+       "DANC 2290"
+      ],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-05",
+      "title": "Concentration Dance Elective",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3001 or DANC 3110 or DANC 3120 or DANC 3130 or DANC 3210 or DANC 3240 or DANC 3220 or DANC 3230 or DANC 3420 or DANC 3500 or DANC 3620 or DANC 3700",
+      "options": [
+       "DANC 3001",
+       "DANC 3110",
+       "DANC 3120",
+       "DANC 3130",
+       "DANC 3210",
+       "DANC 3240",
+       "DANC 3220",
+       "DANC 3230",
+       "DANC 3420",
+       "DANC 3500",
+       "DANC 3620",
+       "DANC 3700"
+      ],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "DANC 4010",
+      "title": "Dance History",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 2000"
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "DANC 4300",
+      "title": "Dance Pedagogy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 2000"
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-02",
+      "title": "General Education Core IMPACTS- Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-03",
+      "title": "Core Field of Study Technique Elective (1 of 2)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2100 or DANC 2200 or DANC 2210 or DANC 2500 or DANC 2900",
+      "options": [
+       "DANC 2100",
+       "DANC 2200",
+       "DANC 2210",
+       "DANC 2500",
+       "DANC 2900"
+      ],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-04",
+      "title": "Core Field of Study Technique Elective (2 of 2)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 2100 or DANC 2200 or DANC 2210 or DANC 2500 or DANC 2900",
+      "options": [
+       "DANC 2100",
+       "DANC 2200",
+       "DANC 2210",
+       "DANC 2500",
+       "DANC 2900"
+      ],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-05",
+      "title": "Upper-Division Elective (1 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ 3@ or @ 4@",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "DANC 4850",
+      "title": "Professional Pathways",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "DANC 4010"
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-01",
+      "title": "Applied Professional Skills",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "DANC 3398 or DANC 4400 or DANC 4714",
+      "options": [
+       "DANC 3398",
+       "DANC 4400",
+       "DANC 4714"
+      ],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-02",
+      "title": "Free Elective (1 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ @",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-03",
+      "title": "Free Elective (2 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ @",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-04",
+      "title": "Upper-division Elective (3 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ 3@ or @ 4@",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-05",
+      "title": "Upper-Division Elective (2 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ 3@ or @ 4@",
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "DANC 4900",
+      "title": "Senior Project",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "DANC 4800"
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-01",
+      "title": "Free Elective (3 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ @",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "Free Elective (4 of 4)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ @",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "Upper Division Elective",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ 3@ or @ 4@",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "Upper-division Elective (4 of 4)",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ 3@ or @ 4@",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "DANC 3100",
+   "DANC 3300",
+   "DANC 4800",
+   "ENGL 101"
+  ],
+  "content_hash": "9faa6baa9685db26fa4e0dce529d50f09d0448830996f5f80ea7c8582592515b",
+  "last_verified": "2026-10-02"
+ }
+}

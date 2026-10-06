@@ -1,0 +1,781 @@
+{
+ "institution": {
+  "city": "Arkadelphia, AR",
+  "ipeds": "107512",
+  "kind": "private",
+  "name": "Ouachita Baptist University",
+  "slug": "ouachita-baptist-university",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BA",
+  "external_coreqs": [],
+  "external_prereqs": [],
+  "id": "ouachita-baptist-university-ba-spanish-bsn",
+  "major": "Spanish + BSN (Double Major)",
+  "notes": "Source: official 2023-2024 Ouachita Residential Catalog, 'Suggested Course Sequence and Dual Enrollment Program Plan of Study for the Double Major of BA in Spanish and BSN' (catalog p.133). OBU-R = Ouachita Residential, OBU-O = Ouachita Online, BHCLR = Baptist Health College Little Rock (dual enrollment). BHCLR clinical-block credits from OBU's official curriculum summary (obu.edu/committees/docs/Curriculum_Change_Summary_May_2018.pdf): NSG 1010=10, NSG 2107=7, NSG 2207=7, NSG 1002=2, Pharmacology II=1, Pharmacology III=1, NSG 2004/2104/2204=4; these sum to the printed term totals exactly (14/17/15/14). Genuine catalog anomalies preserved: the sequence prints 'NSG 2004 Pharmacology II' and 'NSG 2201 Pharmacology III' while OBU's official summary lists those BHCLR courses as NSG 2101 and NSG 2401; two distinct courses are both numbered NSG 2004 in Year 4 Semester 2. 'Chapel' listed each term with no credit hours; chapel credit required per full-time semester (catalog p.30), seeded required_zero=true. FINA 4011 = 1 cr (catalog CORE summary p.51). Catalog footnote: one SPAN Topical Seminar may substitute for CORE 2233 World Literature. Genuine catalog anomaly: Year 5 Semester 2 prints 'Total Hours: 14' but its listed courses sum to 15 (NURS 4003 3 + 4014 4 + 4034 4 + 4023 3 + 4601 1 = 15); the parallel International Missions + BSN sequence prints 15 for the identical course set. The catalog's program summary states Total = 156 or 159; the sequenced sum 157 falls within that range. total_credits = 157 (sequenced sum, nothing invented).\n\nallow_repeated_courses: 'Chapel' (CHAP 1000, 0 cr, required_zero=true) is required each full-time semester per the official OBU 2023-2024 Residential Catalog (p.30/51; 'CHAP 1000 Chapel (7 credits required)' graduation requirement — '7 Chapel Credits, or 1 per semester for transfer students'); seeded each term exactly as printed.\n\n2026-10-01: 'NSG 2004 Pharmacology II (BHCLR)' corrected to NSG 2101 per OBU's official curriculum summary (see course note).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 1043",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition 1",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 1004",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Fundamentals of Chemistry",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 1113",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of the Bible",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 1014",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "General Biology I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 1013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elementary Spanish I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 1: Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 3013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Technical & Professional Writing",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 1023",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elementary Spanish II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 1123",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Interpreting the Bible",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 1023",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Contemporary World",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "College Algebra",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 1: Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 2033",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intermediate Spanish I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2014",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Anatomy & Physiology I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MSSN 4313",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intercultural Communication",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC 1013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Psychology",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Civic Engagement Menu choice: PSCI 2013, HIST 2003, or HIST 2013.",
+      "code": "PSCI 2013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "American National Government",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 2: Semester 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2024",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Anatomy & Physiology II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 2043",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Intermediate Spanish II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Artistic Engagement Menu choice: FINA 3113, 3123, or 3133.",
+      "code": "FINA 3113",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Artistic Engagement Menu",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 2243",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "History of World Societies",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CORE 2233",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "World Literature",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 2: Semester 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2604",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Applied Microbiology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 3133",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Written Expressions",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPAN 4133",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Civilizations of the Spanish-Speaking World",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 3003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Theories in Nursing",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective (3 hours) — any elective course; the catalog's suggested sequence prints a generic 'Elective' slot here (3 cr kept in sums).",
+      "code": "ELECTIVE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 3: Semester 1",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 3023",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Issues and Ethics",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 3013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Informatics in Health Care",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective (3 hours) — any elective course; the catalog's suggested sequence prints a generic 'Elective' slot here (3 cr kept in sums).",
+      "code": "ELECTIVE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "SPAN 4703-4793 Topical Seminars (6 hours). Catalog footnote: one Topical Seminar may substitute for CORE 2233 World Literature.",
+      "code": "SPAN 4703",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "title": "Topical Seminars",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "1-hour course per the catalog's CORE summary (p.51).",
+      "code": "FINA 4011",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Fine Arts Engagement Series Review",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Chapel credit required each full-time semester (catalog p.30); no credit hours.",
+      "code": "Chapel",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "required_zero": true,
+      "title": "Chapel",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 3: Semester 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 10 cr per OBU's official curriculum summary.",
+      "code": "NSG 1010",
+      "core_area": "",
+      "credits": 10,
+      "prereq": [],
+      "title": "Adult Nursing I (BHCLR)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 2 cr per OBU's official curriculum summary.",
+      "code": "NSG 1002",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "title": "Pharmacology I (BHCLR)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, first 8 weeks.",
+      "code": "NURS 3102",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "title": "Evidence-Based Nursing Research",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 4: Semester 1",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 7 cr per OBU's official curriculum summary.",
+      "code": "NSG 2107",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [],
+      "title": "Adult Nursing II (BHCLR)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 4 cr per OBU's official curriculum summary.",
+      "code": "NSG 2104",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Mental Health (BHCLR)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 4 cr per OBU's official curriculum summary.",
+      "code": "NSG 2004",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Women's Health (BHCLR)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "CORRECTED 2026-10-01 per OBU's official curriculum summary (obu.edu/committees/docs/Curriculum_Change_Summary_May_2018.pdf): the catalog sequence prints 'NSG 2004 Pharmacology II (BHCLR)' but the official summary lists this BHCLR course as NSG 2101 (1 cr). Code corrected to NSG 2101; title 'Pharmacology II (BHCLR)' and 1 cr kept as printed; printed term total (17) confirms 7+4+4+1+1.",
+      "code": "NSG 2101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Pharmacology II (BHCLR)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, first 8 weeks.",
+      "code": "NURS 3111",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Seminar: Applying Evidence-Based Nursing Research",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 4: Semester 2",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 7 cr per OBU's official curriculum summary.",
+      "code": "NSG 2207",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [],
+      "title": "Adult Nursing III (BHCLR)",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Baptist Health College Little Rock dual-enrollment course; 4 cr per OBU's official curriculum summary.",
+      "code": "NSG 2204",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Children's Health (BHCLR)",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prints 'NSG 2201 Pharmacology III (BHCLR)'; OBU's official curriculum summary lists this BHCLR course as NSG 2401 (1 cr). Credits from the official summary; printed term total (15) confirms 7+4+1+3.",
+      "code": "NSG 2201",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Pharmacology III (BHCLR)",
+      "slot_id": "s9-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, second 8 weeks.",
+      "code": "NURS 3203",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Advanced Health Assessment",
+      "slot_id": "s9-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 5: Semester 1",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, first 8 weeks.",
+      "code": "NURS 4003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Health Care Pathophysiology",
+      "slot_id": "s10-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, first 8 weeks.",
+      "code": "NURS 4014",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Community Health",
+      "slot_id": "s10-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, second 8 weeks.",
+      "code": "NURS 4034",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Leadership and Management in BSN practice",
+      "slot_id": "s10-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, second 8 weeks.",
+      "code": "NURS 4023",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Transcultural Nursing",
+      "slot_id": "s10-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Ouachita Online, second 8 weeks.",
+      "code": "NURS 4601",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Capstone",
+      "slot_id": "s10-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year 5: Semester 2",
+    "n": 10
+   }
+  ],
+  "source_url": "https://obu.edu/academics/_Catalogs/Residential-Catalog/2023-24OuachitaResidentialCatalog.pdf",
+  "total_credits": 157,
+  "allow_repeated_courses": true,
+  "content_hash": "ec62b2a28d8fe696bb0631790a6cc38eb50a8ef065ef6ff36a36bc570d5aa9a6",
+  "last_verified": "2026-10-02"
+ }
+}

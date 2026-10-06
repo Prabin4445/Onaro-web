@@ -1,0 +1,306 @@
+{
+ "institution": {
+  "city": "Syracuse, NY",
+  "kind": "community",
+  "name": "Onondaga Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "onondaga-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Onondaga Community College Undergraduate Catalog 2023-2024 (archived), program page 'Program: Computer Science (A.S.)', fetched 2026-09-30 via browser fetch of http://catalog.sunyocc.edu/preview_program.php?catoid=7&poid=495&returnto=199 and transcribed manually into the collector schema. Degree name is the catalog's TRUE name: Computer Science (A.S.). CREDIT TOTAL HONESTY: the catalog prints 'Total Program Credits: 63-64' (a range); this plan uses 63, the catalog minimum, because the Semester-3 'Computer Science or Mathematics Elective' is listed as (3-4) and is modeled here at 3 credits. A student taking that elective at 4 credits reaches the catalog's 64-credit top end. Semesters use the catalog's own printed term totals (14 / 17 / 16-17 / 16). PREREQS: the program sequence page publishes NO prerequisite chains, so every prereq array is left empty rather than invented; sequence order is the catalog's own. PLACEMENT CAVEAT (catalog note 1, verbatim in spirit): students who do not place into MAT 161 should see their advisor; a MAT 114 placement means taking MAT 114 in Semester 1 (in place of the Semester-4 General Elective), MAT 143 in Semester 2 (in place of the Semester-2 CSC/MAT elective), then MAT 161 in Semester 3 and MAT 162 in Semester 4. This placement path is documented here, not in external_prereqs. ELECTIVE RULE (catalog note 2): CSC 110 cannot be used to fulfill a CSC elective. GRADUATION REQUIREMENT: a minimum grade of C is required in all required CSC courses to receive the A.S. degree. CAVEAT ON NEWER CATALOGS: 2024-2025 and 2025-2026 (current) catalogs exist but the CS program page could not be retrieved from those catalogs at collection time; this plan honestly reflects the 2023-2024 catalog as retrieved.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Fundamentals of Computing I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Freshman Composition and Literature I",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 161",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'COM 100 Introduction to Communication Credits: (3) –or– COM 210 Public Speaking Credits: (3)'.",
+      "code": "COM 100",
+      "credits": 3,
+      "options": [
+       "COM 100",
+       "COM 210"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Introduction to Communication or Public Speaking (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Fundamentals of Computing II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 104",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Freshman Composition and Literature II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 162",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Psychology",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'General Elective Credits: (3)'. Any general elective; consult an advisor.",
+      "code": "GENELEC-S2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 211",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer System Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Foundations of Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Computer Science (CSC) or Mathematics (MAT) Elective Credits:(3-4)'. Modeled at 3 credits (the 4-credit variant reaches the catalog's 64-credit program total). CSC 110 cannot be used (catalog note 2).",
+      "code": "CSCMATEL-S3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Science or Mathematics Elective",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Catalog: 'SUNY Gen Ed Natural Science Sequence w/Lab Elective Credits: (4). Recommended courses: CHE 171/CHE 171L or PHY 105 - preferred'.",
+      "code": "NATSCI-S3",
+      "credits": 4,
+      "options": [
+       "PHY 105",
+       "CHE 171/CHE 171L"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Natural Science Sequence with Lab, Part 1 (choose PHY 105 preferred, or CHE 171/171L)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'HIS 105 Early American History (3) -or- HIS 106 American History in the 19th Century (3) -or- HIS 107 Modern American History (3)'.",
+      "code": "HIS 105",
+      "credits": 3,
+      "options": [
+       "HIS 105",
+       "HIS 106",
+       "HIS 107"
+      ],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "American History Elective (choose HIS 105, 106, or 107)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 221",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ANT 152",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Cultural Anthropology",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Catalog: 'SUNY Gen Ed Natural Science Sequence w/Lab Elective Credits: (4). Recommended courses: CHE 172/CHE 172L or PHY 205 - preferred'.",
+      "code": "NATSCI-S4",
+      "credits": 4,
+      "options": [
+       "PHY 205",
+       "CHE 172/CHE 172L"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Natural Science Sequence with Lab, Part 2 (choose PHY 205 preferred, or CHE 172/172L)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Computer Science (CSC) Electives Credits: (6)'. One of two CSC elective slots. CSC 110 cannot be used to fulfill a CSC elective (catalog note 2).",
+      "code": "CSCELEC-S4A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Computer Science Elective (1 of 2)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog: 'Computer Science (CSC) Electives Credits: (6)'. Two of two CSC elective slots. CSC 110 cannot be used to fulfill a CSC elective (catalog note 2).",
+      "code": "CSCELEC-S4B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Computer Science Elective (2 of 2)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "http://catalog.sunyocc.edu/preview_program.php?catoid=7&poid=495&returnto=199",
+  "total_credits": 63,
+  "content_hash": "8fddcccf0ecf9369c7eb5f371a12f479747cb82dd87489eef00a32c7a6fd356b",
+  "last_verified": "2026-10-02"
+ }
+}

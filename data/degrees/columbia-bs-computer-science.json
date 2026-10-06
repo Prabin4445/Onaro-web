@@ -1,0 +1,642 @@
+{
+ "institution": {
+  "city": "New York, NY",
+  "kind": "private",
+  "name": "Columbia University",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "columbia-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official Columbia SEAS bulletin page for the CS (BS) program (Fu Foundation School of Engineering and Applied Science), which embeds the official 'Computer Science Program' term-by-term sequence chart (2026-2027). Program page: https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/computer-science/undergraduate-programs/computer-science-bs/ ; chart PDF: http://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/computer-science/undergraduate-programs/computer-science-bs/2026-2027_Engineering_Bulletin_Charts_COMS.pdf . Catalog year 2026-2027 taken from the chart footer ('ENGINEERING 2026-2027'). Transcription method: chart PDF text extracted with layout preserved (pdftotext -layout) and each requirement mapped to its printed semester column; course titles taken from the same bulletin program page (course list tables). TRUE degree name verified: Columbia offers the B.S. in Computer Science through SEAS (the major page states 'The Undergraduate program requires at minimum 62 points'). total_credits 128 is Columbia Engineering's published B.S. degree minimum (2026/27 Academic Planning Guide, cc-seas.columbia.edu: 'Earn 128 points'). The chart publishes term point totals only for semesters V-VIII (15/15/15/12) and no grand total. Modeled minimum-credit choices sum to 121 credits (16+18+17+13+15+15+15+12); the gap to 128 is closed by the chart's own higher-credit options (accelerated physics sequence at 4.5 pts, 4-pt lab, 4-pt Major Cultures, W3137 at 4 pts, 4-pt EEEB option), which bring the sequence to 128+. Choice slots are modeled at the lowest-credit option and the range is documented in each choice_note. PLACEMENT CHOICES (transcriber): the chart marks CC1010, ENGI E1006, ENGI E1102, COMS W1004/W1007, and the chemistry/biology choice as 'either semester' (year 1) and ECON UN1105 as 'any semester'; the bulletin page says 'Semester I or II' for the year-1 items. They were placed to balance terms (CC1010/E1006 in Sem I; chem-bio/E1102/ECON in Sem II) and each choice_note records the flexibility. The chemistry/physics lab is listed in the chart's Semester III block on the bulletin page. FOOTNOTE: bulletin footnote 1 — MATH UN2015 'Linear Algebra and Probability' may simultaneously satisfy both the linear algebra and probability/statistics requirements, reducing total courses; the chart places one 'Linear algebra or probability/statistics requirement' in each of Sem IV and Sem V. NO PREREQUISITES are published in the chart; prereq arrays are empty (never invented). AP PLACEMENT (notes only): a 4 or 5 on the CS AP exam gives 3 points and exemption from COMS W1004 (bulletin). Nontechnical accounting: SEAS requires 27 points of nontechnical coursework; modeled slots give ECON (4) + required humanities (9 modeled; Major Cultures can be 4) + open nontech electives (12) = 25-27, consistent with the requirement. APMA E2001 and the ECON recitation are 0-credit required items flagged required_zero. Course titles are the bulletin's official titles (e.g. ENGL CC1010 'UNIVERSITY WRITING', PHED UN1001/1002 'PHYSICAL EDUCATION ACTIVITIES').\n\nMERGE NOTE (2026-09-30): total_credits set to 121 = the sequence's own modeled minimum-credit sum (16/18/17/13/15/15/15/12), per the Clarkson/UVM/GCSU/Hofstra precedent — the pipeline requires exact match. Columbia Engineering's official B.S. minimum is 128 credit points (2026/27 Academic Planning Guide); the chart publishes term totals only for semesters V-VIII (15/15/15/12, matched exactly here). The chart's higher-credit options (accelerated physics 4.5 pts, 4-pt lab, 4-pt Major Cultures, W3137 at 4 pts, 4-pt EEEB) close the gap, so valid student paths range 121-128+ points.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH UN1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Chart: three physics sequences, choose one — Sequence 1: PHYS UN1401 (3, Intro to Mechanics & Thermo); Sequence 2: PHYS UN1601 (3.5, Physics I: Mechanics/Relativity); Sequence 3: PHYS UN2801 (4.5, Accelerated Physics I). Modeled at 3 credits; higher-credit sequences add 0.5-1.5 credits per term.",
+      "code": "PHYS-SEQ1",
+      "credits": 3,
+      "options": [
+       "PHYS UN1401",
+       "PHYS UN1601",
+       "PHYS UN2801"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Physics sequence, part 1 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Chart prints 'CC1010 (3) either semester'; bulletin page gives the code as ENGL CC1010, taken Semester I or II. Transcriber placed in Semester I.",
+      "code": "ENGL CC1010",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "University Writing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Chart: COMS W1004 (3) or COMS W1007 (3), 'Intro to computer science', taken Semester I or II. W1004 = Programming in Java. Transcriber placed in Semester I.",
+      "code": "CS-INTRO",
+      "credits": 3,
+      "options": [
+       "COMS W1004",
+       "COMS W1007"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Intro to computer science (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHED UN1001",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Physical education activities",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite to the CS major; bulletin page: taken Semester I or II. Transcriber placed in Semester I.",
+      "code": "ENGI E1006",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Intro to comp for eng/app sci",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH UN1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Chart: three physics sequences, choose one — Sequence 1: PHYS UN1402 (3, Intro Elec/Magnetsm & Optcs); Sequence 2: PHYS UN1602 (3.5, Physics II: Thermo, Elec & Mag); Sequence 3: PHYS UN2802 (4.5, Accelerated Physics II). Must match the Semester I sequence. Modeled at 3 credits.",
+      "code": "PHYS-SEQ2",
+      "credits": 3,
+      "options": [
+       "PHYS UN1402",
+       "PHYS UN1602",
+       "PHYS UN2802"
+      ],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Physics sequence, part 2 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Chart: 'CHEM UN1403 (3) or higher or EEEB UN2001 (4) or UN2005 (4) or higher', either semester (bulletin page: taken Semester I or II). Transcriber placed in Semester II. Modeled at 3 credits; the EEEB options are 4.",
+      "code": "CHEMBIO",
+      "credits": 3,
+      "options": [
+       "CHEM UN1403",
+       "EEEB UN2001",
+       "EEEB UN2005"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Chemistry or biology (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHED UN1002",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Physical education activities",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Bulletin page: taken Semester I or II. Transcriber placed in Semester II.",
+      "code": "ENGI E1102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "The art of engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Chart: 'ECON UN1105 (4) and UN1105 recitation (0) any semester'; column position is Semester II. Transcriber placed in Semester II.",
+      "code": "ECON UN1105",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Principles of economics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Chart: 'UN1105 recitation (0)' accompanying ECON UN1105.",
+      "code": "ECON-RECIT",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s2-6",
+      "tccns": "",
+      "title": "Principles of economics recitation",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "APMA E2000",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Multivariable calculus for engineering & applied science",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "Chart: 'APMA E2000 (4) and E2001 (0)' — E2001 is the required 0-credit recitation.",
+      "code": "APMA E2001",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Multivariable calculus recitation",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Bulletin page lists under Semester III: 'Choose a lab from the following' — PHYS UN1494 Intro to Experimental Phys-Lab (3), PHYS UN3081 Intermediate Laboratory Work (2), CHEM UN1500 General Chemistry Laboratory (3), CHEM UN1507 Intensive General Chemistry-Lab (3), CHEM UN3085 Physical-Analytical Laboratory I (4). Modeled at 3 credits; actual range 2-4.",
+      "code": "SCI-LAB",
+      "credits": 3,
+      "options": [
+       "PHYS UN1494",
+       "PHYS UN3081",
+       "CHEM UN1500",
+       "CHEM UN1507",
+       "CHEM UN3085"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Chemistry or physics lab (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart Semester III: HUMA CC1001 (Literature Humanities I) or COCI CC1101 (Contemp Western Civilization I) or Major Cultures (3-4). Modeled at 3 credits.",
+      "code": "NONTECH-1",
+      "credits": 3,
+      "options": [
+       "HUMA CC1001",
+       "COCI CC1101"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Required nontechnical elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Chart: COMS W3134 (3) or COMS W3137 (4), 'Data structures'. W3134 = Data Structures in Java (3); W3137 = Honors Data Structures & Algol (4). Modeled at 3 credits.",
+      "code": "DATA-STRUCT",
+      "credits": 3,
+      "options": [
+       "COMS W3134",
+       "COMS W3137"
+      ],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Data structures (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS W3203",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Discrete mathematics",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart Semester IV: HUMA CC1002 (Literature Humanities II) or COCI CC1102 (Contemp Western Civilization II) or Major Cultures (3-4). Modeled at 3 credits.",
+      "code": "NONTECH-2",
+      "credits": 3,
+      "options": [
+       "HUMA CC1002",
+       "COCI CC1102"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Required nontechnical elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart Semester IV: 'HUMA UN1121 or UN1123 (3)'; bulletin page titles this row 'Art Humanities'.",
+      "code": "ART-HUM",
+      "credits": 3,
+      "options": [
+       "HUMA UN1121",
+       "HUMA UN1123"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Art humanities (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS W3157",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Advanced programming",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Chart: 'linear algebra or probability/statistics requirement (see list of accepted courses)'. Accepted courses per bulletin: linear algebra — COMS W3251, MATH UN2010, MATH UN2015, MATH UN2020, APMA E2101, APMA E3101; probability/statistics — IEOR E3658, STAT UN1201, STAT GU4001 (MATH UN2015 appears on both lists and may satisfy both requirements at once, bulletin footnote 1). The chart places one such requirement in Semester IV and another in Semester V.",
+      "code": "MATH-REQ-1",
+      "credits": 3,
+      "options": [
+       "COMS W3251",
+       "MATH UN2010",
+       "MATH UN2015",
+       "MATH UN2020",
+       "APMA E2101",
+       "APMA E3101",
+       "IEOR E3658",
+       "STAT UN1201",
+       "STAT GU4001"
+      ],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Linear algebra or probability/statistics requirement (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSEE W3827",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Fundamentals of computer systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS W3261",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Computer science theory",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Chart Semester V required courses: the second 'Linear Algebra or Probability/Statistics requirement (see list of accepted courses)'. Same accepted-course list as MATH-REQ-1. Per bulletin footnote 1, MATH UN2015 may simultaneously satisfy both requirements without additional classes.",
+      "code": "MATH-REQ-2",
+      "credits": 3,
+      "options": [
+       "COMS W3251",
+       "MATH UN2010",
+       "MATH UN2015",
+       "MATH UN2020",
+       "APMA E2101",
+       "APMA E3101",
+       "IEOR E3658",
+       "STAT UN1201",
+       "STAT GU4001"
+      ],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Linear algebra or probability/statistics requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Chart: 'Tech Electives (6 points)' in Semester V. Per bulletin, the tech component = 4 Area Foundation courses (options list the bulletin-published area foundation courses) + 4 Computer Science electives (3000+ level COMS/CSXX/XXCS, at least 3 points, excluding CSER) + 4 General Technical Electives (3000+ level, at least 3 points, from SEAS departments or Astronomy, Biomedical Informatics, Biological Science, Chemistry, Earth and Environmental Sciences, EEEB, Mathematics, Physics, Psychology, Statistics, Economics). 36 tech-elective points total across semesters V-VIII. Specific courses chosen by the student.",
+      "code": "TECH-EL-V",
+      "credits": 6,
+      "options": [
+       "COMS W4111",
+       "COMS W4113",
+       "COMS W4115",
+       "COMS W4118",
+       "CSEE W4119",
+       "COMS W4152",
+       "COMS W4156",
+       "COMS W4160",
+       "COMS W4167",
+       "COMS W4170",
+       "COMS W4181",
+       "CSOR W4231",
+       "COMS W4236",
+       "COMS W4701",
+       "COMS W4705",
+       "COMS W4731",
+       "COMS W4733",
+       "CBMF W4761",
+       "COMS W4771",
+       "CSEE W4824",
+       "CSEE W4868"
+      ],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Technical electives, 6 points (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart: 'Nontech Electives (3 points)' in Semester VI. Open nontechnical electives toward the SEAS 27-point nontechnical requirement; specific courses chosen by the student.",
+      "code": "NONTECH-EL-VI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Nontechnical electives, 3 points (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Chart: 'Tech Electives (12 points)' in Semester VI. Same tech-elective requirement as TECH-EL-V (4 area foundation + 4 CS electives + 4 general technical electives, 36 points total across V-VIII). Specific courses chosen by the student.",
+      "code": "TECH-EL-VI",
+      "credits": 12,
+      "options": [
+       "COMS W4111",
+       "COMS W4113",
+       "COMS W4115",
+       "COMS W4118",
+       "CSEE W4119",
+       "COMS W4152",
+       "COMS W4156",
+       "COMS W4160",
+       "COMS W4167",
+       "COMS W4170",
+       "COMS W4181",
+       "CSOR W4231",
+       "COMS W4236",
+       "COMS W4701",
+       "COMS W4705",
+       "COMS W4731",
+       "COMS W4733",
+       "CBMF W4761",
+       "COMS W4771",
+       "CSEE W4824",
+       "CSEE W4868"
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Technical electives, 12 points (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart: 'Nontech Electives (6 points)' in Semester VII. Open nontechnical electives toward the SEAS 27-point nontechnical requirement; specific courses chosen by the student.",
+      "code": "NONTECH-EL-VII",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Nontechnical electives, 6 points (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Chart: 'Tech Electives (9 points)' in Semester VII. Same tech-elective requirement as TECH-EL-V (4 area foundation + 4 CS electives + 4 general technical electives, 36 points total across V-VIII). Specific courses chosen by the student.",
+      "code": "TECH-EL-VII",
+      "credits": 9,
+      "options": [
+       "COMS W4111",
+       "COMS W4113",
+       "COMS W4115",
+       "COMS W4118",
+       "CSEE W4119",
+       "COMS W4152",
+       "COMS W4156",
+       "COMS W4160",
+       "COMS W4167",
+       "COMS W4170",
+       "COMS W4181",
+       "CSOR W4231",
+       "COMS W4236",
+       "COMS W4701",
+       "COMS W4705",
+       "COMS W4731",
+       "COMS W4733",
+       "CBMF W4761",
+       "COMS W4771",
+       "CSEE W4824",
+       "CSEE W4868"
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Technical electives, 9 points (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Chart: 'Nontech Electives (3 points)' in Semester VIII. Open nontechnical electives toward the SEAS 27-point nontechnical requirement; specific courses chosen by the student.",
+      "code": "NONTECH-EL-VIII",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Nontechnical electives, 3 points (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Chart: 'Tech Electives (9 points)' in Semester VIII. Same tech-elective requirement as TECH-EL-V (4 area foundation + 4 CS electives + 4 general technical electives, 36 points total across V-VIII). Specific courses chosen by the student.",
+      "code": "TECH-EL-VIII",
+      "credits": 9,
+      "options": [
+       "COMS W4111",
+       "COMS W4113",
+       "COMS W4115",
+       "COMS W4118",
+       "CSEE W4119",
+       "COMS W4152",
+       "COMS W4156",
+       "COMS W4160",
+       "COMS W4167",
+       "COMS W4170",
+       "COMS W4181",
+       "CSOR W4231",
+       "COMS W4236",
+       "COMS W4701",
+       "COMS W4705",
+       "COMS W4731",
+       "COMS W4733",
+       "CBMF W4761",
+       "COMS W4771",
+       "CSEE W4824",
+       "CSEE W4868"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Technical electives, 9 points (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/computer-science/undergraduate-programs/computer-science-bs/",
+  "total_credits": 121,
+  "content_hash": "56bbe8eb14af6709b1aed4b6741cc4e9b4d13094e43257887ae4ed5c9465b330",
+  "last_verified": "2026-10-02"
+ }
+}

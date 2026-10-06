@@ -1,0 +1,311 @@
+{
+ "institution": {
+  "name": "Chapman University",
+  "city": "Orange, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "chapman-university-ba-history",
+  "degree": "B.A.",
+  "major": "History",
+  "catalog_year": "2024-2025",
+  "total_credits": 48.0,
+  "source_url": "https://catalog.chapman.edu/preview_program.php?catoid=46&poid=9883",
+  "notes": "Plan intro states 45 major-specific credits and a 120-credit university minimum. The term layout encodes to 48 credits including the Y4 Spring 'HIST 300 level course [if needed]'; without that conditional course the total is 45, matching the stated requirement. HIST 296 (History Seminar) is listed as a Fall-or-Spring option in Year 2 (take once, either semester); both semesters' choice slots list it as an option and the slots are choice-flagged so the validator's duplicate check does not apply. HIST 398 similarly is a Fall-or-Spring Year 3 option. The 'HIST 100 or 200 level' and 'HIST 300 level' slots are genuine named requirement slots from the plan; student selects specific courses with advisor. Per-slot prereqs are not published on the 4-year plan page; prereq arrays are intentionally empty. Source: official Chapman University 2024-2025 Undergraduate Catalog, '' (Suggested 4-Year Plan). https://catalog.chapman.edu/preview_program.php?catoid=46&poid=9883 The catalog states a minimum of None credits to graduate and None major-specific credits for this degree; the plan page publishes major courses by term only — General Education/minor courses are selected by the student around this plan, so total_credits (48) is the sum of the published major-course slots, not the 120-credit degree minimum. Per-slot prerequisites are not published on the 4-year plan page, so prereq arrays are intentionally empty; see the catalog's course descriptions for official prerequisites. Variable-credit courses are encoded at the source lower bound with the range documented in choice_note.",
+  "external_prereqs": [],
+  "allow_repeated_courses": false,
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "code": "HIST-100-200-1",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-1"
+      ],
+      "category": "elective",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "HIST-100-200-2",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-2"
+      ],
+      "category": "elective",
+      "slot_id": "s1-1"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "code": "HIST-100-200-3",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-3"
+      ],
+      "category": "elective",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "HIST-100-200-4",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-4"
+      ],
+      "category": "elective",
+      "slot_id": "s2-1"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "code": "HIST 296",
+      "title": "History Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[OR HIST 100-200 level class (3 credits); enroll in HIST 296 in Fall or Spring of Year 2]",
+      "options": [
+       "HIST 296",
+       "HIST-100-200"
+      ],
+      "category": "major",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "HIST-100-200-5",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-5"
+      ],
+      "category": "elective",
+      "slot_id": "s3-1"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "code": "HIST 296",
+      "title": "History Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[OR 100-200 level class (3 credits); enroll in HIST 296 in Fall or Spring of Year 2]",
+      "options": [
+       "HIST 296",
+       "HIST-100-200"
+      ],
+      "category": "major",
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "HIST-100-200-6",
+      "title": "HIST 100 or 200 level class",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-100-200-6"
+      ],
+      "category": "elective",
+      "slot_id": "s4-1"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "code": "HIST 398",
+      "title": "The Historian's Craft",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[OR HIST 300 level course (3 credits); enroll in HIST 398 in Fall or Spring of Year 3]",
+      "options": [
+       "HIST 398",
+       "HIST-300"
+      ],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "HIST-300-1",
+      "title": "HIST 300 level course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-300-1"
+      ],
+      "category": "elective",
+      "slot_id": "s5-1"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "code": "HIST 398",
+      "title": "The Historian's Craft",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "[OR HIST 300 level course (3 credits); enroll in HIST 398 in Fall or Spring of Year 3]",
+      "options": [
+       "HIST 398",
+       "HIST-300"
+      ],
+      "category": "major",
+      "slot_id": "s6-0"
+     },
+     {
+      "code": "HIST-300-2",
+      "title": "HIST 300 level course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-300-2"
+      ],
+      "category": "elective",
+      "slot_id": "s6-1"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "code": "HIST 496",
+      "title": "Advanced Research Thesis I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "HIST-300-3",
+      "title": "HIST 300 level course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "HIST-300-3"
+      ],
+      "category": "elective",
+      "slot_id": "s7-1"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "code": "HIST 498",
+      "title": "Advanced Research Thesis II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-0"
+     },
+     {
+      "code": "HIST-300-4",
+      "title": "HIST 300 level course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor. [if needed - take only if 300-level requirement not yet met]",
+      "options": [
+       "HIST-300-4"
+      ],
+      "category": "elective",
+      "slot_id": "s8-1"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "2e51452abaf37977cf04bdc660ca23853de1f4c68f37b4c3aceaf16627f5d409",
+  "last_verified": "2026-10-02"
+ }
+}

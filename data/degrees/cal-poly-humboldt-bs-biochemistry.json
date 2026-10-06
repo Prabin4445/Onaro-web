@@ -1,0 +1,598 @@
+{
+ "institution": {
+  "city": "Arcata, CA",
+  "kind": "public",
+  "name": "Cal Poly Humboldt",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "cal-poly-humboldt-bs-biochemistry",
+  "major": "Biochemistry",
+  "notes": "Source: official Cal Poly Humboldt 2025-2026 Catalog, 'Biochemistry, B.S. MAP' (Major Academic Plan). https://catalog.humboldt.edu/preview_program.php?catoid=14&poid=8621&returnto=2302 MAPs are suggested 4-year pathways ('guide - not a rule'); GE, American Institutions, DCG, GWAR, and Elective-or-Minor slots are chosen by the student with an advisor. total_credits (120) is the exact sum of the encoded slots. 'or' options are encoded at the source lower bound per collection convention (MATH 105=3 not MATH 109=4 or MATH 109B=5; MATH 215=3 not MATH 110+210 or MATH 109C=5); each choice is documented in its choice_note. Unnamed major slots are encoded as descriptive choice slots; specific courses are chosen with an advisor. Per-slot prerequisites are not published on MAP pages, so prereq arrays are intentionally empty.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MATH 105 - Calculus for the Biological Sciences and Natural Resources Units: 3 or MATH 109B - Calculus 1 Part 1 Units: 5 or MATH 109 - Calculus I Units: 4' (Major, Core, Calculus Options) and Lower Division GE Area 2: Mathematics; encoded at source lower bound (3).",
+      "code": "MATH 105",
+      "credits": 3,
+      "options": [
+       "MATH 105",
+       "MATH 109B",
+       "MATH 109"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Calculus for the Biological Sciences and Natural Resources",
+      "xfer": [],
+      "slot_id": "s1-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division) and Lower Division GE Area 5A: Physical Science (Includes a Laboratory Activity GE Area 5C).",
+      "code": "CHEM 109",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Chemistry I",
+      "xfer": [],
+      "slot_id": "s1-1"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 1A course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 1A: Written Communication",
+      "xfer": [],
+      "slot_id": "s1-2"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "MAP: Lower Division GE Area 1B: Critical Thinking.",
+      "code": "SCI 100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Becoming a STEM Professional in the 21st Century",
+      "xfer": [],
+      "slot_id": "s1-3"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "",
+      "code": "Elective or Minor",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective or minor (1 unit)",
+      "xfer": [],
+      "slot_id": "s1-4"
+     }
+    ],
+    "n": 1,
+    "term": "Fall Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division) and Lower Division GE Area 5B: Biological Science.",
+      "code": "BIOL 105",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Principles of Biology",
+      "xfer": [],
+      "slot_id": "s2-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Lower Division).",
+      "code": "CHEM 110",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Chemistry II",
+      "xfer": [],
+      "slot_id": "s2-1"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'MATH 215 - Multivariate Calculus for the Biological Sciences and Natural Resources Units: 3 or (MATH 110 - Calculus II and MATH 210 - Calculus III) or MATH 109C - Calculus 1 Part 2 Units: 5' (Major, Core, Calculus Options); encoded at source lower bound (3).",
+      "code": "MATH 215",
+      "credits": 3,
+      "options": [
+       "MATH 215",
+       "MATH 110",
+       "MATH 210",
+       "MATH 109C"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Multivariate Calculus for the Biological Sciences and Natural Resources",
+      "xfer": [],
+      "slot_id": "s2-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 1C course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 1C: Speech Communication",
+      "xfer": [],
+      "slot_id": "s2-3"
+     }
+    ],
+    "n": 2,
+    "term": "Spring Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'BOT 105 - General Botany or ZOOL 110 - Introductory Zoology Units: 4' (Major, Core, Lower Division).",
+      "code": "BOT 105",
+      "credits": 4,
+      "options": [
+       "BOT 105",
+       "ZOOL 110"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Botany",
+      "xfer": [],
+      "slot_id": "s3-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 324",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Organic Chemistry I",
+      "xfer": [],
+      "slot_id": "s3-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 324L",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Organic Chemistry I Laboratory",
+      "xfer": [],
+      "slot_id": "s3-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 341",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Quantitative Analysis",
+      "xfer": [],
+      "slot_id": "s3-3"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "",
+      "code": "Elective or Minor",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective or minor (3 units)",
+      "xfer": [],
+      "slot_id": "s3-4"
+     }
+    ],
+    "n": 3,
+    "term": "Fall Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 323",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Nuclear Magnetic Resonance Spectroscopy (NMR) Techniques",
+      "xfer": [],
+      "slot_id": "s4-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 325",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Organic Chemistry II",
+      "xfer": [],
+      "slot_id": "s4-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 325L",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Organic Chemistry II Laboratory",
+      "xfer": [],
+      "slot_id": "s4-2"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "BIOL 340",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Genetics",
+      "xfer": [],
+      "slot_id": "s4-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 6 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting GE Area 6: Ethnic Studies and Diversity and Common Ground: Domestic",
+      "xfer": [],
+      "slot_id": "s4-4"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "",
+      "code": "Elective or Minor",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective or minor (2 units)",
+      "xfer": [],
+      "slot_id": "s4-5"
+     }
+    ],
+    "n": 4,
+    "term": "Spring Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'PHYX 106 - College Physics: Mechanics and Heat or PHYX 109 - General Physics A: Mechanics Units: 4' (Major, Core, Physics Options).",
+      "code": "PHYX 106",
+      "credits": 4,
+      "options": [
+       "PHYX 106",
+       "PHYX 109"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "College Physics: Mechanics and Heat",
+      "xfer": [],
+      "slot_id": "s5-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 434",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biochemistry I",
+      "xfer": [],
+      "slot_id": "s5-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 434L",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biochemistry I Laboratory",
+      "xfer": [],
+      "slot_id": "s5-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 3A course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 3A: Arts",
+      "xfer": [],
+      "slot_id": "s5-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 4: Social Sciences and American Institutions: U.S. History or U.S. and California Government",
+      "xfer": [],
+      "slot_id": "s5-4"
+     }
+    ],
+    "n": 5,
+    "term": "Fall Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'PHYX 107 - College Physics: Electromagnetism and Modern Physics or PHYX 210 - General Physics B: Thermodynamics, Waves and Optics Units: 4' (Major, Core, Physics Options).",
+      "code": "PHYX 107",
+      "credits": 4,
+      "options": [
+       "PHYX 107",
+       "PHYX 210"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "College Physics: Electromagnetism and Modern Physics",
+      "xfer": [],
+      "slot_id": "s6-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 435",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biochemistry II",
+      "xfer": [],
+      "slot_id": "s6-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 435L",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biochemistry II Laboratory",
+      "xfer": [],
+      "slot_id": "s6-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 3B course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 3B: Humanities",
+      "xfer": [],
+      "slot_id": "s6-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Humboldt GE Area 4: Social Sciences",
+      "xfer": [],
+      "slot_id": "s6-4"
+     }
+    ],
+    "n": 6,
+    "term": "Spring Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'PHYX 211 - General Physics C: Electricity, Magnetism Units: 4 or Elective or Minor' (Major, Core, Physics Options).",
+      "code": "PHYX 211",
+      "credits": 4,
+      "options": [
+       "PHYX 211",
+       "Elective or Minor"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Physics C: Electricity, Magnetism",
+      "xfer": [],
+      "slot_id": "s7-0"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Physical Chemistry I",
+      "xfer": [],
+      "slot_id": "s7-1"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MAP: Major (Core, Upper Division).",
+      "code": "CHEM 485",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Seminar in Chemistry",
+      "xfer": [],
+      "slot_id": "s7-2"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Core, Upper Division, Chemistry Options) Units: 3' - specific course chosen with advisor.",
+      "code": "Chemistry Options",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Chemistry Options (3 units)",
+      "xfer": [],
+      "slot_id": "s7-3"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "American Institutions requirement",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "American Institutions: U.S. History or U.S. and California Government (3 units)",
+      "xfer": [],
+      "slot_id": "s7-4"
+     }
+    ],
+    "n": 7,
+    "term": "Fall Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Core, Upper Division, Biological Science) Units: 4' - specific course chosen with advisor.",
+      "code": "Biological Science",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Biological Science (4 units)",
+      "xfer": [],
+      "slot_id": "s8-0"
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MAP: 'Major (Core, Upper Division Restricted Elective) Units: 4' - specific course chosen with advisor.",
+      "code": "Restricted Elective",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Restricted Elective (4 units)",
+      "xfer": [],
+      "slot_id": "s8-1"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt UD GE Area 3 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Upper Division GE Area 3: Arts or Humanities and Graduation Writing Assessment Requirement (GWAR)",
+      "xfer": [],
+      "slot_id": "s8-2"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "",
+      "code": "Any Humboldt UD GE Area 4 course",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any course meeting Upper Division GE Area 4: Social Sciences and Diversity and Common Ground: Domestic or Non-Domestic",
+      "xfer": [],
+      "slot_id": "s8-3"
+     }
+    ],
+    "n": 8,
+    "term": "Spring Year 4"
+   }
+  ],
+  "source_url": "https://catalog.humboldt.edu/preview_program.php?catoid=14&poid=8621&returnto=2302",
+  "total_credits": 120,
+  "content_hash": "f7ca420c2c43fbb0d44d177dc6d916b5e0928abefa335974ae0bbda9c2c075b8",
+  "last_verified": "2026-10-02"
+ }
+}

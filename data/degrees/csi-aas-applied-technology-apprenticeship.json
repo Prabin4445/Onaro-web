@@ -1,0 +1,112 @@
+{
+ "institution": {
+  "city": "Twin Falls, ID",
+  "kind": "public4yr",
+  "name": "College of Southern Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AAS",
+  "id": "csi-aas-applied-technology-apprenticeship",
+  "major": "Applied Technology and Apprenticeship",
+  "notes": "Source: official College of Southern Idaho 2024-2025 catalog, 'Applied Technology and Apprenticeship, Associate of Applied Science' program page (Major Code: 4503A), hand-transcribed 2026-10-02 from https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/trade-and-industry-department/applied-technology-and-apprenticeship/applied-technology-and-apprenticeship-associate-of-applied-science/ . Transcription method: fetched the official program page and transcribed the 'Program Requirements' list verbatim (course codes, titles, credits). TRUE award: Associate of Applied Science (page title). Catalog year 2024-2025: the newest CSI catalog with complete published program pages found (a 2025-2026 catalog exists but its program pages were not locatable; the 2024-2025 pages are complete and officially published). Total credits: 60, the catalog's published total ('Total Credit Hours: 60'). NON-SEMESTER PROGRAM (modeled as completion): the official catalog publishes a single 'Program Requirements' list, NOT semester tables - there is no official semester sequence. Per the corpus completion-program convention (program_type='completion', justified here: this is a block-transfer-in completer degree), the requirements are modeled as two requirement blocks: (1) the 45-credit apprenticeship block - the page requires 'Completion of approved, registered apprenticeship program at the journeyman level (typically 4 years)', transferring in as a 45-credit block; (2) the 15-credit General Education block taken at CSI. Term names are descriptive requirement blocks, not calendar semesters; no sequencing is implied beyond the catalog's list. Choice slots: (a) the 45-credit 'PROG ELEC - Program Electives' block is satisfied by ONE of the eleven 45-credit apprenticeship courses on the page (CTEC 280 Communications Technician, ELCL 280 Electrical, GSPC 280 Generation Specialist, GTEC 280 Generation Technician, LINE 280 Lineworker, LOTC 280 Line Operation Technician, MAIN 280 Industrial Maintenance, METR 280 Meter Technician, PLUM 280 Plumbing, RTEC 280 Relay Technician, STEC 280 Station Technician) - modeled as one 45-credit choice slot. (b) COMM GE / SOCS GE / MATH GE / ELEC GE ('Any additional Gen. Ed.') are official catalog placeholders for 'any Gen. Ed.' course in that category (student choice). Prereqs: left empty; the page carries no per-course prerequisite marks.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog requires 'Completion of approved, registered apprenticeship program at the journeyman level (typically 4 years)' and lists eleven 45-credit apprenticeship courses as the Program Electives (CTEC 280, ELCL 280, GSPC 280, GTEC 280, LINE 280, LOTC 280, MAIN 280, METR 280, PLUM 280, RTEC 280, STEC 280 - each 45 credits). The student completes ONE; modeled as a single 45-credit choice slot.",
+      "code": "APPRENTICESHIP-CHOICE",
+      "credits": 45,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Approved registered apprenticeship at journeyman level (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Apprenticeship Block (transfer-in)"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'COMM GE': any General Education Oral Communication course (student choice).",
+      "code": "COMM-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Oral Communication general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE': any General Education Social and Behavioral Way of Knowing course (student choice).",
+      "code": "SOCS-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Social and Behavioral Way of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'MATH GE': any General Education Math course (student choice).",
+      "code": "MATH-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Education Math course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'ELEC GE': any additional General Education course (student choice).",
+      "code": "ELEC-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Additional General Education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "General Education Requirements"
+   }
+  ],
+  "source_url": "https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/trade-and-industry-department/applied-technology-and-apprenticeship/applied-technology-and-apprenticeship-associate-of-applied-science/",
+  "total_credits": 60,
+  "program_type": "completion",
+  "content_hash": "5fbee70f96c48110adc83a112147c3b5ac8af08af5b299b3a23da49534f25165",
+  "last_verified": "2026-10-02"
+ }
+}

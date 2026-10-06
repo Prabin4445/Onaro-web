@@ -1,0 +1,276 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-interior-design-kitchen-and-bath",
+  "major": "Interior Design Kitchen and Bath",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/visual-and-performing-arts/interior-design-kitchen-and-bath-5070-ccl). Effective Term Spring 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 101",
+      "core_area": "HU",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Interior Design",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 115",
+      "core_area": "AHM, HU",
+      "credits": 3,
+      "prereq": [],
+      "title": "Historical Architecture and Furniture",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Digital Visualization for Design",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: ARC/INT111.",
+      "code": "ARC/INT111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "ARC/INT111",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: ARC/INT112.",
+      "code": "ARC/INT112",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "ARC/INT112",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 145",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122"
+      ],
+      "title": "Drawing and Rendering Studio",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 165",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122",
+       "INT 145"
+      ],
+      "title": "Space Planning Studio",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 120",
+      "core_area": "AHM, HU",
+      "credits": 3,
+      "prereq": [],
+      "title": "Modern Architecture and Furniture",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 201",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122",
+       "INT 145",
+       "INT 165"
+      ],
+      "title": "Color and Design Communication Studio",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 205",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122",
+       "INT 145"
+      ],
+      "title": "Custom Design Studio",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 210",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 122"
+      ],
+      "title": "Interior Materials Studio",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 212",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 101",
+       "INT 122",
+       "INT 145",
+       "INT 165",
+       "INT 210"
+      ],
+      "title": "Kitchen and Bath Studio",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 241",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 212"
+      ],
+      "title": "Advanced Kitchen and Bath Design",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 242",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "INT 212"
+      ],
+      "title": "Interior Design Professional Practices",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 265",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Building Systems",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/visual-and-performing-arts/interior-design-kitchen-and-bath-5070-ccl",
+  "total_credits": 45,
+  "external_prereqs": [
+   "INT 111",
+   "INT 112",
+   "INT 240AA",
+   "INT 240AB"
+  ],
+  "content_hash": "9018eb95e94f41dafae3232c7c5001f056e72d563ecdeae73fb46cb6f422b72c",
+  "last_verified": "2026-10-02"
+ }
+}

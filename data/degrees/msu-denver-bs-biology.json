@@ -1,0 +1,515 @@
+{
+ "institution": {
+  "city": "Denver, CO",
+  "ipeds": 127565,
+  "kind": "public",
+  "name": "Metropolitan State University of Denver",
+  "state": "CO"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "msu-denver-bs-biology",
+  "major": "Biology",
+  "notes": "B.S. Biology, Department of Biology. SEMESTER SYSTEM — all credits are semester hours. Built from the official MSU Denver Requirements for B.S. in Biology (2024-2025 or future catalogs; http://msudenver.edu/wp-content/uploads/2024/06/BIO-BS-2024-25-FINAL.pdf). Major: 47cr BIO (at least 46 required; 36cr upper-division, at least 27 required) including BIO 1080/1090, 1081/1091, 2400 General Microbiology, 3520 General Ecology, 3600 General Genetics, 3050 Cell Biology, 3350 Immunology, 3340 Endocrinology, 4300 Neurobiology, 4230 Issues in Conservation Biology (Senior Experience), 4850 Evolution, 4510 Microbial Ecology, 3000 Advances in Biology, 3020 Lab Techniques. Required non-BIO: CHE 1800/1801, CHE 1810/1811, MTH 1110, MTH 1210. Non-Biology Science Electives 10cr (at least 9 required, 6cr upper-division): CHE 3100, CHE 3110, MTH 1410. Biology/Chemistry/Math fulfill Natural & Physical Sciences and Quantitative Literacy General Studies. 42cr upper-division total (at least 39 required). C or better required in BIO courses. 120 semester credits total.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 1080/1090",
+      "credits": 4,
+      "prereq": [],
+      "title": "General Biology I with Lab",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHE 1800/1801",
+      "credits": 4,
+      "prereq": [],
+      "title": "General Chemistry I with Lab",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENG 1010",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composing Arguments (Written Communication)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1110",
+      "credits": 4,
+      "prereq": [],
+      "title": "College Algebra (Quantitative Literacy)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 1081/1091",
+      "credits": 4,
+      "prereq": [
+       "BIO 1080/1090"
+      ],
+      "title": "General Biology II with Lab",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHE 1810/1811",
+      "credits": 4,
+      "prereq": [
+       "CHE 1800/1801"
+      ],
+      "title": "General Chemistry II with Lab",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENG 1020",
+      "credits": 3,
+      "prereq": [
+       "ENG 1010"
+      ],
+      "title": "Research and Argument Writing (Written Communication)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "COMM 1010 Presentational Speaking or COMM 1100 Fundamentals of Oral Communication.",
+      "code": "GENED-COMM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Oral Communication (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 2400",
+      "credits": 5,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "General Microbiology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1210",
+      "credits": 4,
+      "prereq": [
+       "MTH 1110"
+      ],
+      "title": "Introduction to Statistics",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Arts & Humanities General Studies course (1 of 2).",
+      "code": "GENED-AH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Arts & Humanities (student choice)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Social & Behavioral Sciences General Studies course (1 of 2).",
+      "code": "GENED-SS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social & Behavioral Sciences (student choice)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 3520",
+      "credits": 3,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "General Ecology",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 3600",
+      "credits": 4,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "General Genetics",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Arts & Humanities General Studies course (2 of 2).",
+      "code": "GENED-AH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Arts & Humanities (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Social & Behavioral Sciences General Studies course (2 of 2).",
+      "code": "GENED-SS-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social & Behavioral Sciences (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Historical Studies General Studies course.",
+      "code": "GENED-HIST",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Historical Studies (student choice)",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 3050",
+      "credits": 4,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "Cell Biology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHE 3100",
+      "credits": 3,
+      "prereq": [
+       "CHE 1810/1811"
+      ],
+      "title": "Organic Chemistry I (Non-BIO Science Elective)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 3340",
+      "credits": 3,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "Endocrinology",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Ethnic Studies & Social Justice (ESSJ) General Studies course.",
+      "code": "GENED-ESSJ",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Ethnic Studies & Social Justice (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 3350",
+      "credits": 3,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "Immunology",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHE 3110",
+      "credits": 3,
+      "prereq": [
+       "CHE 3100"
+      ],
+      "title": "Organic Chemistry II (Non-BIO Science Elective)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 4300",
+      "credits": 3,
+      "prereq": [
+       "BIO 1081/1091"
+      ],
+      "title": "Neurobiology",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MTH 1410",
+      "credits": 4,
+      "prereq": [
+       "MTH 1110"
+      ],
+      "title": "Calculus I (Non-BIO Science Elective)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 4230",
+      "credits": 3,
+      "prereq": [],
+      "title": "Issues in Conservation Biology (Senior Experience)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 4850",
+      "credits": 3,
+      "prereq": [
+       "BIO 3600"
+      ],
+      "title": "Evolution",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 3000",
+      "credits": 3,
+      "prereq": [],
+      "title": "Advances in Biology",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BIO 4510",
+      "credits": 3,
+      "prereq": [
+       "BIO 2400"
+      ],
+      "title": "Microbial Ecology",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BIO 3020",
+      "credits": 2,
+      "prereq": [],
+      "title": "Laboratory Techniques",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective.",
+      "code": "ELEC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective (2cr); take as needed to reach 120 credits.",
+      "code": "ELEC-7",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://msudenver.edu/wp-content/uploads/2024/06/BIO-BS-2024-25-FINAL.pdf",
+  "total_credits": 120,
+  "content_hash": "32b2ab862bc157ef7ea2387d8d474c8989f43a7f84412ec34590436ccb585a40",
+  "last_verified": "2026-10-02"
+ }
+}

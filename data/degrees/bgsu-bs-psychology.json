@@ -1,0 +1,638 @@
+{
+ "institution": {
+  "name": "Bowling Green State University",
+  "city": "Bowling Green",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "bgsu-bs-psychology",
+  "degree": "BS",
+  "major": "Psychology",
+  "total_credits": 122,
+  "catalog_year": "2024-2025",
+  "source_url": "https://catalog.bgsu.edu/preview_degree_planner.php?catoid=20&poid=7028&print",
+  "notes": "Source: official BGSU 2024-2025 Undergraduate Catalog (catoid=20), 'Psychology, B.S.' degree planner (preview_degree_planner.php?catoid=20&poid=7028&print), fetched 2026-09-30. TRANSCRIPTION METHOD: COLLECTOR-ARRANGED 8-semester sequence. BGSU planners are requirement checksheets, not semester plans; semester placement was arranged by the collector following prerequisite chains (PSYC 1010->2700/2900/3700; PSYC 2700->3000-level labs). Caveats: (1) Semester placement is collector-arranged, not from an official BGSU semester plan. (2) Generic slots (BG Perspective, Minor/Cognate, Psychology Category, Psychology Lab, University Elective) are choice:true; specific courses chosen with advisor. (3) The 3 category courses must be from 3 different categories per the catalog. (4) Total 122 hrs = BGSU graduation minimum (verified on this planner); includes 40 hrs at 3000/4000 level per catalog (labs 6 + categories 9 + PSYC elective 3 + minor 12 + electives 12 = 42). (5) BIOL 2040+2050 and MATH 1310 per the B.S. requirements.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman Fall",
+    "term": "Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "PSYC 1010",
+      "title": "General Psychology",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MATH 1310",
+      "title": "Calculus and Analytic Geometry I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BIOL 2040",
+      "title": "Concepts in Biology I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman Spring",
+    "term": "Spring",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "PSYC 2700",
+      "title": "Research Methods in Psychology",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PSYC 1010"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BIOL 2050",
+      "title": "Concepts in Biology II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "BIOL 2040"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore Fall",
+    "term": "Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "PSYC 2900",
+      "title": "Introduction to Neuroscience",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PSYC 1010"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "PSYC-CAT-1",
+      "title": "Psychology Category Course I",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 1 course from 3 of 6 categories (3080/4050, 3500, 3020, 3030/3040/3090/3100, 3110, 3300).",
+      "options": [
+       "PSYC 3080",
+       "PSYC 3500",
+       "PSYC 3020",
+       "PSYC 3030",
+       "PSYC 3110",
+       "PSYC 3300"
+      ],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MINOR-1",
+      "title": "Minor/Cognate Course",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required; specific courses chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore Spring",
+    "term": "Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "PSYC 3700",
+      "title": "Cognitive Psychology",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PSYC 1010"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "PSYC-CAT-2",
+      "title": "Psychology Category Course II",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 1 course from 3 of 6 categories (different category from Category I).",
+      "options": [
+       "PSYC 3080",
+       "PSYC 3500",
+       "PSYC 3020",
+       "PSYC 3030",
+       "PSYC 3110",
+       "PSYC 3300"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MINOR-2",
+      "title": "Minor/Cognate Course",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior Fall",
+    "term": "Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "PSYC-CAT-3",
+      "title": "Psychology Category Course III",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 1 course from 3 of 6 categories (different from I and II).",
+      "options": [
+       "PSYC 3080",
+       "PSYC 3500",
+       "PSYC 3020",
+       "PSYC 3030",
+       "PSYC 3110",
+       "PSYC 3300"
+      ],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "PSYC-LAB-1",
+      "title": "Psychology 3000-Level Laboratory I",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 2 3000-level labs from 3130/3210/3220/3240/3280/3290/3320/3330/3580/3810.",
+      "options": [
+       "PSYC 3130",
+       "PSYC 3210",
+       "PSYC 3220",
+       "PSYC 3240",
+       "PSYC 3280"
+      ],
+      "prereq": [
+       "PSYC 2700"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MINOR-3",
+      "title": "Minor/Cognate Course (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required; 3000/4000-level for the 40-hr requirement.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior Spring",
+    "term": "Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "PSYC-LAB-2",
+      "title": "Psychology 3000-Level Laboratory II",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 2nd 3000-level lab (different from Lab I).",
+      "options": [
+       "PSYC 3130",
+       "PSYC 3210",
+       "PSYC 3220",
+       "PSYC 3240",
+       "PSYC 3280"
+      ],
+      "prereq": [
+       "PSYC 2700"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "PSYC-EL",
+      "title": "Psychology 3000/4000 Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: 3 cr of 3000/4000-level PSYC electives.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MINOR-4",
+      "title": "Minor/Cognate Course (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required; 3000/4000-level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s6-4",
+      "title": "University Elective (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum. At 3000/4000 level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior Fall",
+    "term": "Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "MINOR-5",
+      "title": "Minor/Cognate Course (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required; 3000/4000-level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "MINOR-6",
+      "title": "Minor/Cognate Course (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Per BGSU catalog: minor or cognate required; 3000/4000-level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s7-3",
+      "title": "University Elective (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum. At 3000/4000 level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s7-4",
+      "title": "University Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior Spring",
+    "term": "Spring",
+    "declared_credits": 17,
+    "courses": [
+     {
+      "code": "BGP-GENED",
+      "title": "BG Perspective (General Education)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Per BGSU 2024-2025 catalog: BG Perspective general education; specific course chosen with advisor.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s8-1",
+      "title": "University Elective (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum. At 3000/4000 level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s8-2",
+      "title": "University Elective (3000/4000)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum. At 3000/4000 level.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s8-3",
+      "title": "University Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-s8-4",
+      "title": "University Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective to reach the 122-hr graduation minimum.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-2CR",
+      "title": "University Elective",
+      "credits": 2,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "University elective (2 cr) to reach the 122-hr graduation minimum.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-5",
+      "tccns": "",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "c70611441f0c7964f146fae6747e02970fd8ca0a7ccd8a7c5ce6d57a7898e7e2",
+  "last_verified": "2026-10-02"
+ }
+}

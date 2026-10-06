@@ -1,0 +1,597 @@
+{
+ "institution": {
+  "name": "Case Western Reserve University",
+  "ipeds_id": "201645",
+  "city": "Cleveland",
+  "state": "OH",
+  "control": "private",
+  "level": "4-year"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-bse-biomedical-engineering-biomedical-computing-data-analysis-track",
+  "degree": "BSE",
+  "major": "Biomedical Engineering (Biomedical Computing & Data Analysis track)",
+  "catalog_year": "2026-2027",
+  "total_credits": 128,
+  "source_url": "https://bulletin.case.edu/engineering/biomedical-engineering/biomedical-engineering-bse/",
+  "notes": "Transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) 'Biomedical Engineering' BSE 'Sample Plan of Study' (Biomedical Computing & Data Analysis concentration) grid (https://bulletin.case.edu/engineering/biomedical-engineering/biomedical-engineering-bse/). Footnotes: 'a': Unified General Education Requirement. 'b': Requires additional approval. CREDIT RANGES: Year 3 Fall: 'CSDS 234' printed 3-4; modeled at 3 per official term total 17. 'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Rows combining lecture+lab (e.g. 'EBME 306 & EBME 356') are kept as one combined course with the official combined credit total. Unlabeled credit slots are elective choice placeholders. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "CHEM 111",
+      "title": "Principles of Chemistry for Engineers",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 121",
+      "title": "Calculus for Science and Engineering I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 130",
+      "title": "Foundations of Engineering and Programming",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EBME 105",
+      "title": "Introduction to Biomedical Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "MATH 122",
+      "title": "Calculus for Science and Engineering II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 122 or MATH 124'.",
+      "options": [
+       "MATH 122",
+       "MATH 124"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 121",
+      "title": "General Physics I - Mechanics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 132",
+      "title": "Programming in Java",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Breadth, or Elective course",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "EBME 201",
+      "title": "Physiology-Biophysics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 223",
+      "title": "Calculus for Science and Engineering III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 223 or MATH 227'.",
+      "options": [
+       "MATH 223",
+       "MATH 227"
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 122",
+      "title": "General Physics II - Electricity and Magnetism",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 145",
+      "title": "Chemistry of Materials",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Breadth, or Elective course",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "EBME 202",
+      "title": "Physiology-Biophysics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 224",
+      "title": "Elementary Differential Equations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 224 or MATH 228'.",
+      "options": [
+       "MATH 224",
+       "MATH 228"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 133",
+      "title": "Introduction to Data Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 210",
+      "title": "Introduction to Circuits and Instrumentation",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 200",
+      "title": "Statics and Strength of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "EBME 306 & EBME 356",
+      "title": "Introduction to Biomedical Materials and Introduction to Biomaterials Engineering - Laboratory",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Official plan combines these courses in one row; credits shown are the combined row total.",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EBME 308 & EBME 358",
+      "title": "Biomedical Signals and Systems and Biomedical Signals and Systems Laboratory",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Official plan combines these courses in one row; credits shown are the combined row total.",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 234",
+      "title": "Structured and Unstructured Data",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CSDS 234 or CSDS 233'.",
+      "options": [
+       "CSDS 234",
+       "CSDS 233"
+      ],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 312",
+      "title": "Basic Statistics for Engineering and Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "EBME 309 & EBME 359",
+      "title": "Modeling of Biomedical Systems and Biomedical Computer Simulation Laboratory",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Official plan combines these courses in one row; credits shown are the combined row total.",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EBME 310 & EBME 360",
+      "title": "Principles of Biomedical Instrumentation and Biomedical Instrumentation Laboratory",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Official plan combines these courses in one row; credits shown are the combined row total.",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 399",
+      "title": "Impact of Engineering on Society",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-5",
+      "title": "Breadth, or Elective course",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "EBME 370",
+      "title": "Principles of Biomedical Engineering Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSDS 313",
+      "title": "Introduction to Data Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CSDS 313 or CSDS 302'.",
+      "options": [
+       "CSDS 313",
+       "CSDS 302"
+      ],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EBME 320",
+      "title": "Biomedical Imaging",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'EBME 320 or EBME 410'.",
+      "options": [
+       "EBME 320",
+       "EBME 410"
+      ],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-6",
+      "title": "Breadth, or Elective course",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-7",
+      "title": "Engineering Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "EBME 380",
+      "title": "Biomedical Engineering Design Experience",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EBME 361",
+      "title": "Biomedical Image Processing and Analysis (or Technical Elective)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-8",
+      "title": "Engineering, Mathematics, or Natural Science Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-9",
+      "title": "Breadth, or Elective course",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "cfc658562536b64e872a4a22cec29bd98d9afef9b5c088d376b00df5e6043bb0",
+  "last_verified": "2026-10-02"
+ }
+}

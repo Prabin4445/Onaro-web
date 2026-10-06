@@ -1,0 +1,389 @@
+{
+ "institution": {
+  "name": "Chapman University",
+  "city": "Orange, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "chapman-university-ba-economics",
+  "degree": "BA",
+  "major": "Economics",
+  "catalog_year": "2024-2025",
+  "total_credits": 45.0,
+  "source_url": "https://catalog.chapman.edu/preview_program.php?catoid=46&poid=9852",
+  "notes": "The plan's intro twice misstates the degree as 'B.S. in Accounting' (catalog template error); the 45 major-specific credits figure matches this Economics plan's sums. Elective rule from the plan: minimum 15 elective credits, 9 upper-division, 9 with ECON code. ECON 357/374 may not count as an upper-division economics elective if used to satisfy the Year 4 Fall core requirement. Source: official Chapman University 2024-2025 Undergraduate Catalog, 'Economics, B.A.' (Suggested 4-Year Plan). https://catalog.chapman.edu/preview_program.php?catoid=46&poid=9852 The catalog states a minimum of 120 credits to graduate and 45 major-specific credits for this degree; the plan page publishes major courses by term only — General Education/minor courses are selected by the student around this plan, so total_credits (45) is the sum of the published major-course slots, not the 120-credit degree minimum. Per-slot prerequisites are not published on the 4-year plan page, so prereq arrays are intentionally empty; see the catalog's course descriptions for official prerequisites. Variable-credit courses are encoded at the source lower bound with the range documented in choice_note. * Also, you may substitute MATH 109 - Calculus with Applications in Business and Social Science (3 credits) for MATH 110 - Single Variable Calculus I (3 credits). However, students planning to pursue graduate studies in economics are strongly advised to take MATH 110 and additional mathematics courses under the guidance of their advisor. ** You may substitute MATH 203 - Introduction to Statistics for MGSC 209 - Introductory Business Statistics (3 credits).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "code": "MATH 110",
+      "title": "Single Variable Calculus I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Plan footnote: MATH 109 Calculus with Applications in Business and Social Science (3 credits) may substitute for MATH 110; graduate-school-bound students are strongly advised to take MATH 110 plus additional math.",
+      "options": [
+       "MATH 110",
+       "MATH 109"
+      ],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "ECON 200",
+      "title": "Principles of Microeconomics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-1"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "code": "MGSC 209",
+      "title": "Introductory Business Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Plan footnote: MATH 203 Introduction to Statistics may substitute for MGSC 209.",
+      "options": [
+       "MGSC 209",
+       "MATH 203"
+      ],
+      "category": "major",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "ECON 201",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-1"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "code": "MGSC 220",
+      "title": "Foundations of Business Analytics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "ECON 204",
+      "title": "Seminar in Ethics and Economic Thought",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-1"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "code": "ECON 350",
+      "title": "Intermediate Microeconomics Theory",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "ECONOMICS-MAJOR-ELECTIVE-1",
+      "title": "Economics Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "ACTG 210",
+       "MATH 210",
+       "CPSC 236",
+       "FIN 307",
+       "ECON 315",
+       "ECON 329",
+       "ECON 357",
+       "MATH 361",
+       "ECON 373",
+       "ECON 374",
+       "FIN 410",
+       "ECON 411",
+       "ECON 421",
+       "ECON 425",
+       "ECON 431",
+       "ECON 441",
+       "ECON 448",
+       "ECON 455",
+       "ECON 465",
+       "ECON 471",
+       "ECON 481",
+       "ECON 496"
+      ],
+      "category": "elective",
+      "slot_id": "s4-1"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "code": "ECON 351",
+      "title": "Intermediate Macroeconomic Theory",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "ECONOMICS-MAJOR-ELECTIVE-2",
+      "title": "Economics Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "ACTG 210",
+       "MATH 210",
+       "CPSC 236",
+       "FIN 307",
+       "ECON 315",
+       "ECON 329",
+       "ECON 357",
+       "MATH 361",
+       "ECON 373",
+       "ECON 374",
+       "FIN 410",
+       "ECON 411",
+       "ECON 421",
+       "ECON 425",
+       "ECON 431",
+       "ECON 441",
+       "ECON 448",
+       "ECON 455",
+       "ECON 465",
+       "ECON 471",
+       "ECON 481",
+       "ECON 496"
+      ],
+      "category": "elective",
+      "slot_id": "s5-1"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "code": "ECON 452",
+      "title": "Econometrics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s6-0"
+     },
+     {
+      "code": "ECONOMICS-MAJOR-ELECTIVE-3",
+      "title": "Economics Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "ACTG 210",
+       "MATH 210",
+       "CPSC 236",
+       "FIN 307",
+       "ECON 315",
+       "ECON 329",
+       "ECON 357",
+       "MATH 361",
+       "ECON 373",
+       "ECON 374",
+       "FIN 410",
+       "ECON 411",
+       "ECON 421",
+       "ECON 425",
+       "ECON 431",
+       "ECON 441",
+       "ECON 448",
+       "ECON 455",
+       "ECON 465",
+       "ECON 471",
+       "ECON 481",
+       "ECON 496"
+      ],
+      "category": "elective",
+      "slot_id": "s6-1"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "code": "ECON 357",
+      "title": "Topics in Humanomics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "OR ECON 374 - European Economic History (3 credits).",
+      "options": [
+       "ECON 357",
+       "ECON 374"
+      ],
+      "category": "major",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "ECONOMICS-MAJOR-ELECTIVE-4",
+      "title": "Economics Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "ACTG 210",
+       "MATH 210",
+       "CPSC 236",
+       "FIN 307",
+       "ECON 315",
+       "ECON 329",
+       "ECON 357",
+       "MATH 361",
+       "ECON 373",
+       "ECON 374",
+       "FIN 410",
+       "ECON 411",
+       "ECON 421",
+       "ECON 425",
+       "ECON 431",
+       "ECON 441",
+       "ECON 448",
+       "ECON 455",
+       "ECON 465",
+       "ECON 471",
+       "ECON 481",
+       "ECON 496"
+      ],
+      "category": "elective",
+      "slot_id": "s7-1"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "code": "ECONOMICS-MAJOR-ELECTIVE-5",
+      "title": "Economics Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Named elective slot from the official 4-year plan; specific course chosen by student/advisor.",
+      "options": [
+       "ACTG 210",
+       "MATH 210",
+       "CPSC 236",
+       "FIN 307",
+       "ECON 315",
+       "ECON 329",
+       "ECON 357",
+       "MATH 361",
+       "ECON 373",
+       "ECON 374",
+       "FIN 410",
+       "ECON 411",
+       "ECON 421",
+       "ECON 425",
+       "ECON 431",
+       "ECON 441",
+       "ECON 448",
+       "ECON 455",
+       "ECON 465",
+       "ECON 471",
+       "ECON 481",
+       "ECON 496"
+      ],
+      "category": "elective",
+      "slot_id": "s8-0"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "1df8d3b308f835f82a34efc95cbd7539af35fdab3179c44391c9324b40eef0fc",
+  "last_verified": "2026-10-02"
+ }
+}

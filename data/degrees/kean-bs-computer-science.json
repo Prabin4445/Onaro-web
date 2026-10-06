@@ -1,0 +1,790 @@
+{
+ "institution": {
+  "name": "Kean University",
+  "city": "Union, NJ",
+  "kind": "public",
+  "state": "NJ"
+ },
+ "plan": {
+  "id": "kean-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2019-2020",
+  "total_credits": 123,
+  "source_url": "https://www.Kean.edu/media/78305-cs-bs-computer-science-fa19",
+  "notes": "SOURCE: Official Kean University curriculum documents on kean.edu/yoda.kean.edu: (1) '(78305) B.S. in Computer Science: 120 S.H.' program guide sheet, EFFECTIVE DATE Fall 2019, Rev. 05/2019 (https://www.Kean.edu/media/78305-cs-bs-computer-science-fa19) and (2) '(78305) B.S. in Computer Science: 4-year Study Plan', Rev. 09/2019 (http://yoda.kean.edu/studyplans/old/78305-CPS_CurriculumSheet-09.2019.pdf), both published by the School of Computer Science & Technology. TRUE DEGREE NAME verified on the guide sheet: 'B.S. in Computer Science' (program code 78305, general option, not Information Systems/Cybersecurity/Data Science). TRANSCRIPTION: manually transcribed term-by-term from the official 4-year study plan table; course titles use the full official names from the guide sheet course list; prerequisites taken from the guide sheet's 'Additional Required Courses Prerequisites' and 'Computer Science Course List' tables (KeanWise caveat on source applies). CREDIT TOTAL HONESTY: the catalog publishes a 120 S.H. degree minimum, but the official study plan's printed term totals sum to 122-125 credits depending on choice-slot options (Spring Year 2: 16/17; Fall/Spring Year 3: 15/16 each). This file uses the canonical reading (MATH 2416 Calculus II at 4 cr; MATH/Science electives #1/#2 at 3 cr each), summing to 123 credits, which satisfies the 120 S.H. minimum. Catalog year 2019-2020 reflects the source's 'EFFECTIVE DATE: Fall 2019'. CHOICE SLOTS: student-choice electives use choice:true with placeholder codes and the either/or documented in choice_note; placeholder codes are unique across the plan. MATH 1000 is listed in external_prereqs as the official prerequisite of CPS 1231 and MATH 1054; placement testing may waive it (students placing into MATH 1054/MATH 2415 substitute free-elective credits per guide sheet notes). Some courses are offered in one semester only per the source: CPS 3440/4150 (FA), CPS 3962/4200/4222/4951 (SP). Minimum GPA 2.5 for declaration, major, and graduation; all major/additional/capstone courses require grade of C or higher.",
+  "external_prereqs": [
+   "MATH 1000"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "MATH 1054",
+      "title": "Precalculus",
+      "credits": 3,
+      "prereq": [
+       "MATH 1000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CPS 1231",
+      "title": "Fundamentals of Computer Science",
+      "credits": 4,
+      "prereq": [
+       "MATH 1000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENG 1030",
+      "title": "College Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GE 1000",
+      "title": "Transition to Kean (GE 1000, or GE 3000 Transfer Transitions for transfers)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "LABSCI-1",
+      "title": "Lab Science I (BIO 1000, CHEM 1083, or PHYS 2091/95)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one 4-credit lab science: BIO 1000, CHEM 1083, or PHYS 2091/95 (2-semester sequence from same department).",
+      "options": [
+       {
+        "code": "BIO 1000",
+        "title": "Lab Science I - Biology",
+        "credits": 4
+       },
+       {
+        "code": "CHEM 1083",
+        "title": "Lab Science I - Chemistry",
+        "credits": 4
+       },
+       {
+        "code": "PHYS 2091",
+        "title": "Lab Science I - Physics",
+        "credits": 4
+       }
+      ],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MATH 2110",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [
+       "MATH 1054"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CPS 2231",
+      "title": "Computer Organization and Programming",
+      "credits": 4,
+      "prereq": [
+       "CPS 1231",
+       "MATH 1054"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "COMM 1402",
+      "title": "Speech Communication as Critical Citizenship",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "HIST 1062",
+      "title": "Worlds of History",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "LABSCI-2",
+      "title": "Lab Science II (BIO 1300, CHEM 1084, or PHYS 2092/96)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose the second semester of the same department's lab science sequence: BIO 1300, CHEM 1084, or PHYS 2092/96.",
+      "options": [
+       {
+        "code": "BIO 1300",
+        "title": "Lab Science II - Biology",
+        "credits": 4
+       },
+       {
+        "code": "CHEM 1084",
+        "title": "Lab Science II - Chemistry",
+        "credits": 4
+       },
+       {
+        "code": "PHYS 2092",
+        "title": "Lab Science II - Physics",
+        "credits": 4
+       }
+      ],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "MATH 2415",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MATH 1054"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CPS 2232",
+      "title": "Data Structures and Algorithms",
+      "credits": 4,
+      "prereq": [
+       "CPS 2231",
+       "MATH 2110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CPS 2390",
+      "title": "Computer Organization and Architecture",
+      "credits": 3,
+      "prereq": [
+       "CPS 2231",
+       "MATH 2110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "ENG 2403",
+      "title": "World Literature",
+      "credits": 3,
+      "prereq": [
+       "ENG 1030"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GE 2024",
+      "title": "Research and Technology",
+      "credits": 3,
+      "prereq": [
+       "ENG 1030"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "MATH 24XX",
+      "title": "MATH 2416 Calculus II or MATH 2995 Matrix & Linear Algebra",
+      "credits": 4,
+      "prereq": [
+       "MATH 2415"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take either MATH 2416 Calculus II (4 cr) or MATH 2995 Matrix & Linear Algebra (3 cr). Credits shown reflect the 4-credit canonical reading used for the term total; taking MATH 2995 makes this term 16 credits.",
+      "options": [
+       {
+        "code": "MATH 2416",
+        "title": "Calculus II",
+        "credits": 4
+       },
+       {
+        "code": "MATH 2995",
+        "title": "Matrix & Linear Algebra",
+        "credits": 3
+       }
+      ],
+      "category": "support"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "TECH 2920",
+      "title": "Computer Systems",
+      "credits": 3,
+      "prereq": [
+       "CPS 1231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CPS 3250",
+      "title": "Computer Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CPS 2232",
+       "CPS 2390"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ENG 3091",
+      "title": "Technical Writing",
+      "credits": 3,
+      "prereq": [
+       "ENG 1030"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SOCSCI-1",
+      "title": "Social Sciences - GE Distribution",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One GE-approved Social Sciences course: Psychology, Economics or ES 1010 World Geography, Political Science, Sociology or Anthropology, or Interdisciplinary.",
+      "options": [
+       {
+        "code": "GESS-1",
+        "title": "Social Sciences GE Distribution course",
+        "credits": 3
+       }
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "CPS 2010",
+      "title": "Career Education (Free Elective #1)",
+      "credits": 1,
+      "prereq": [
+       "CPS 1231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "MATH 2526",
+      "title": "Applied Statistics I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CPS 3440",
+      "title": "Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CPS 2232"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CPS 41XX",
+      "title": "CPS 4150 Computer Architecture (FA) or CPS Major Elective #1",
+      "credits": 3,
+      "prereq": [
+       "CPS 3250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take CPS 4150 Computer Architecture (offered Fall only) or CPS Major Elective #1 (CPS 3xxx/4xxx/5xxx). Prerequisite shown is for CPS 4150.",
+      "options": [
+       {
+        "code": "CPS 4150",
+        "title": "Computer Architecture",
+        "credits": 3
+       },
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #1",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MATHSCI-1",
+      "title": "MATH or Science Elective #1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One MATH or Science elective (MATH must be 2000-4000 level): e.g. MATH 3120, 3155, 3225, 3415, 3455, 3526, 3544, 3815, or 3940. 3 or 4 credits; shown as 3.",
+      "options": [
+       {
+        "code": "MATH 2-4XXX",
+        "title": "MATH or Science Elective #1",
+        "credits": 3
+       }
+      ],
+      "category": "support"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "HUM-1",
+      "title": "Humanities - GE Distribution",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One GE-approved Humanities course: Fine Arts/Art History, Philosophy or Religion, Foreign Language (I and II), Music or Theatre, or Interdisciplinary.",
+      "options": [
+       {
+        "code": "GEHU-1",
+        "title": "Humanities GE Distribution course",
+        "credits": 3
+       }
+      ],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CPS 3962",
+      "title": "Object Oriented Analysis and Design",
+      "credits": 3,
+      "prereq": [
+       "CPS 2232"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CPS 42XX",
+      "title": "CPS 4200 Systems Programming (SP) or CPS Major Elective #1",
+      "credits": 3,
+      "prereq": [
+       "CPS 3250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take CPS 4200 Systems Programming (offered Spring only) or CPS Major Elective #1 (CPS 3xxx/4xxx/5xxx). Prerequisite shown is for CPS 4200.",
+      "options": [
+       {
+        "code": "CPS 4200",
+        "title": "Systems Programming",
+        "credits": 3
+       },
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #1",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CPSELEC-2",
+      "title": "CPS Major Elective #2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPS 3xxx/4xxx/5xxx major elective.",
+      "options": [
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #2",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MATHSCI-2",
+      "title": "MATH or Science Elective #2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One MATH or Science elective (MATH must be 2000-4000 level). 3 or 4 credits; shown as 3.",
+      "options": [
+       {
+        "code": "MATH 2-4XXX",
+        "title": "MATH or Science Elective #2",
+        "credits": 3
+       }
+      ],
+      "category": "support"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREEELEC-2",
+      "title": "Free Elective #2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective. At least 50% of all free-elective credits must be 3000/4000 level.",
+      "options": [
+       {
+        "code": "FREE-2",
+        "title": "Free Elective #2",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "MATH 3XXX",
+      "title": "MATH Elective (3000/4000 level)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3000/4000-level MATH elective: MATH 3120, 3155, 3225, 3415, 3455, 3526, 3544, 3815, or 3940.",
+      "options": [
+       {
+        "code": "MATH 3XXX",
+        "title": "MATH Elective 3000/4000 level",
+        "credits": 3
+       }
+      ],
+      "category": "support"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CPSELEC-3",
+      "title": "CPS Major Elective #3",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPS 3xxx/4xxx/5xxx major elective.",
+      "options": [
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #3",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CPSELEC-4",
+      "title": "CPS Major Elective #4",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPS 3xxx/4xxx/5xxx major elective.",
+      "options": [
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #4",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "FREEELEC-3",
+      "title": "Free Elective #3",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective. At least 50% of all free-elective credits must be 3000/4000 level.",
+      "options": [
+       {
+        "code": "FREE-3",
+        "title": "Free Elective #3",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "FREEELEC-4",
+      "title": "Free Elective (3000/4000 level) #4",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "3000/4000-level free elective.",
+      "options": [
+       {
+        "code": "FREE-4",
+        "title": "Free Elective 3000/4000 #4",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CPS 49XX",
+      "title": "CPS 4951 Computer Science Capstone or CPS 4961 Senior Research in CS (SP)",
+      "credits": 3,
+      "prereq": [
+       "CPS 3250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major capstone: CPS 4951 Computer Science Capstone (to be taken final spring semester) or CPS 4961 Senior Research in CS (faculty permission, by arrangement). Prerequisite shown is for CPS 4951.",
+      "options": [
+       {
+        "code": "CPS 4951",
+        "title": "Computer Science Capstone",
+        "credits": 3
+       },
+       {
+        "code": "CPS 4961",
+        "title": "Senior Research in CS",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CPS 4222",
+      "title": "Principles of Networking",
+      "credits": 3,
+      "prereq": [
+       "CPS 3250"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CPSELEC-5",
+      "title": "CPS Major Elective #5",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CPS 3xxx/4xxx/5xxx major elective.",
+      "options": [
+       {
+        "code": "CPS 3XXX",
+        "title": "CPS Major Elective #5",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREEELEC-5",
+      "title": "Free Elective (3000/4000 level) #5",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "3000/4000-level free elective.",
+      "options": [
+       {
+        "code": "FREE-5",
+        "title": "Free Elective 3000/4000 #5",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "ff9f2bad8d62cb85ddbabd55dd2c251837a1a6a28111d9ae52c41de71ebb02ca",
+  "last_verified": "2026-10-02"
+ }
+}

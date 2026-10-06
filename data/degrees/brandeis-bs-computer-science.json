@@ -1,0 +1,520 @@
+{
+ "institution": {
+  "city": "Waltham, MA",
+  "kind": "private4yr",
+  "name": "Brandeis University",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2005-2006",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "brandeis-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Brandeis University Computer Science Department sample schedule, 'Sample 4 year Schedule for BS in Cosi' (assumes no previous CS experience), hosted on the department's official curriculum pages at cs.brandeis.edu. Source URL: https://www.cs.brandeis.edu/~tim/Curriculum/sampleBS.html. Degree name verified in the University Bulletin (registrar bulletin): the department offers the 'Degree of Bachelor of Science' in Computer Science. Transcription method: manual, faithful transcription of the department's official 8-term (4-year, Autumn/Spring) sample schedule; every row on the official page is represented exactly once, in the same term. Catalog year: the sample page is undated (archived-era departmental page); its course set matches the 2005-2006 University Bulletin BS requirements verbatim (core: COSI 21a/22a, 21b/22b, 29a, 30a, 31a, 35a; mathematics: MATH 10a, 10b, 15a; two cross-listed science courses; six additional COSI electives), so catalog_year is recorded as 2005-2006 and the sequence is documented as archived-era/stale relative to the current bulletin. Caveats: (1) The official page uses informal 'CS' shorthand for course prefixes; codes are rendered with the 'COSI' prefix used by the matching 2005-2006 bulletin. (2) Brandeis standard: a full course = 4 semester-hour credits; the official page itself annotates the four half-credit labs (CS22a, CS22b, Phys19a, Phys19b) as '1/2 credit labs' and they are recorded at 2 credits; every other row is a full course at 4 credits, including PHYS 29a/29b which the page lists as full rows. (3) The official page leaves several slots as literal '???' with the note that students may take 3.0 to 5.5 courses per semester; each is recorded as a choice:true free-elective/general-education slot (4 credits) so the plan sums to the published 128-credit bachelor's total. (4) The six senior 'CSXX: Elective' rows are recorded as choice:true COSI elective slots; per the 2005-2006 bulletin the six additional COSI courses exclude 99d. (5) Intro courses COSI 2a / COSI 11a are the sample's assumed starting point for students with no prior CS experience; the official page notes COSI 2a can be skipped, and COSI placement can place students directly into higher courses. (6) PHYS 11a/11b + PHYS 19a/19b and PHYS 29a/29b are the sample student's science selections (29a/29b satisfy the bulletin's 'two cross-listed courses from other departments' BS requirement); they are not CS major requirements. (7) Prereq arrays: set only where the official sample's term ordering makes the sequence explicit (COSI 21b after 21a; MATH 10b after MATH 10a; PHYS 11b after PHYS 11a; COSI 30a after COSI 29a); all other prereq arrays are empty and no prerequisites were invented. Students should verify current requirements with the department and the current University Bulletin before using this plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 2a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computers",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 10a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-01",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-02",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 11a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Java and C",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 10b",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 10a"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 15a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-03",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 21a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Half-credit lab; official page annotates it as a '1/2 credit lab' taken with COSI 21a.",
+      "code": "COSI 22a",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Science selection from the official sample schedule (not a CS major requirement).",
+      "code": "PHYS 11a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Basic Physics I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Half-credit lab; official page annotates it as a '1/2 credit lab' taken with PHYS 11a.",
+      "code": "PHYS 19a",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Physics Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-04",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 21b",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COSI 21a"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Structure and Interpretation of Programs",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Half-credit lab; official page annotates it as a '1/2 credit lab' taken with COSI 21b.",
+      "code": "COSI 22b",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Structure and Interpretation of Programs Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Science selection from the official sample schedule (not a CS major requirement).",
+      "code": "PHYS 11b",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHYS 11a"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Basic Physics II",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Half-credit lab; official page annotates it as a '1/2 credit lab' taken with PHYS 11b.",
+      "code": "PHYS 19b",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Physics Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-05",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 29a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official page notes COSI 31a may be postponed to senior year if desired.",
+      "code": "COSI 31a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Cross-listed science course satisfying the BS 'two cross-listed courses from other departments' requirement in the official sample.",
+      "code": "PHYS 29a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Analog Electronics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-06",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSI 30a",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COSI 29a"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official page notes COSI 35a may be postponed to senior year if desired.",
+      "code": "COSI 35a",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "Cross-listed science course satisfying the BS 'two cross-listed courses from other departments' requirement in the official sample.",
+      "code": "PHYS 29b",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Digital Electronics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-07",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-08",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official page lists 'CSXX: Elective'; per the 2005-2006 bulletin the BS requires six additional COSI courses (excluding 99d).",
+      "code": "COSI-EL6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Computer Science elective (COSI, per bulletin elective rules)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official page leaves this slot as '???' (student's free choice; 3.0 to 5.5 courses per semester allowed).",
+      "code": "GENED-09",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free elective / general education course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.cs.brandeis.edu/~tim/Curriculum/sampleBS.html",
+  "total_credits": 128,
+  "content_hash": "0ea1ce5eabe14aa3a79508d3d6967155118144c715c45e9e9f44640aa32c8504",
+  "last_verified": "2026-10-02"
+ }
+}

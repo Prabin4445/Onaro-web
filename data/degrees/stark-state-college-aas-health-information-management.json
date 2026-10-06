@@ -1,0 +1,391 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-health-information-management",
+  "major": "Health Information Management",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 3050, Rev. 1/2025, effective Summer 2025): semester-by-semester course sequence for full-time associate degree students finishing in two years, including a Summer term between the second and third semesters. Semester totals as printed: 15 / 15 / 5 (summer) / 13 / 14 = 62, matching the printed 'TOTAL CREDITS 62'. Course titles and credit hours as printed in the guide's technical/non-technical course lists and sequence. Prerequisites are from the guide's Pre- and Co-requisites column and name only courses present in the plan: HIT121 co-HIT123; HIT123 co-HIT121 (catalog also lists HIT230, required for other majors); HIT124 requires HIT121 and pre/co-BIO124; HIT232 requires HIT121; HIT221 requires BIO222 and HIT124; HIT233 requires HIT124; HIT222 requires HIT124 and co-HIT224; HIT224 co-HIT222; HIT122 requires HIT121; HIT223 requires HIT224; HIT229 requires HIT224 and ITD122 (catalog alternative CIS126 is not in this plan); BIO124 and BIO222 list BIO122 or BIO123 (BIO123 is the in-plan course). Footnote markers (^ placement score, ^^ take first semester, @/# biology substitution, ▲ term availability) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO123",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Principles of Human Structure and Function (lab)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT121",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "HIT123"
+      ],
+      "required_zero": false,
+      "title": "Health Data Management and Delivery Systems",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT123",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "HIT121"
+      ],
+      "required_zero": false,
+      "title": "Healthcare Legal and Ethical Issues",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Statistics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "1st Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Human Diseases",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO222",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO123"
+      ],
+      "required_zero": false,
+      "title": "Pharmacology",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT124",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "HIT121",
+       "BIO124"
+      ],
+      "required_zero": false,
+      "title": "Clinical Classification Systems I",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT232",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "HIT121"
+      ],
+      "required_zero": false,
+      "title": "Healthcare Reimbursement Methodologies",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "2nd Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT221",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIO222",
+       "HIT124"
+      ],
+      "required_zero": false,
+      "title": "Clinical Classification Systems II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT233",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "HIT124"
+      ],
+      "required_zero": false,
+      "title": "Clinical Classification Systems III",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Medical Terminology",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT222",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "HIT124",
+       "HIT224"
+      ],
+      "required_zero": false,
+      "title": "Healthcare Statistics and Research",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT224",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "HIT222"
+      ],
+      "required_zero": false,
+      "title": "Quality Management in Healthcare",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT226",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Professional Practice Experience I/Seminar I",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITD122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Computer Applications for Professionals",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "3rd Semester",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "HIT121"
+      ],
+      "required_zero": false,
+      "title": "Alternative Health Records and Registries",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT223",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "HIT224"
+      ],
+      "required_zero": false,
+      "title": "HIM Supervision Concepts and Practices",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIT227",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Professional Practice Experience II/Seminar II",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog alternative CIS126 is not in this plan.",
+      "code": "HIT229",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "HIT224",
+       "ITD122"
+      ],
+      "required_zero": false,
+      "title": "Health Information Systems and Technology",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Psychology or Sociology Elective' (3 credits); any Psychology or Sociology course.",
+      "code": "PSY-SOC-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Psychology or Sociology Elective",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "4th Semester",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/3050-AAS-Health-Information-Management.pdf",
+  "total_credits": 62,
+  "content_hash": "3941329ade248c210a68576365722d1f3e97ecaaf57f5412a1fe24aa889425dc",
+  "last_verified": "2026-10-02"
+ }
+}

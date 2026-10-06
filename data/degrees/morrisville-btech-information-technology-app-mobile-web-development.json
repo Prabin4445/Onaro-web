@@ -1,0 +1,705 @@
+{
+ "institution": {
+  "city": "Morrisville, NY",
+  "kind": "college",
+  "name": "SUNY Morrisville",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "B.Tech.",
+  "external_prereqs": [],
+  "id": "morrisville-btech-information-technology-app-mobile-web-development",
+  "major": "Information Technology (App & Mobile Web Development Concentration)",
+  "notes": "SOURCE: official SUNY Morrisville catalog, Information Technology, B.TECH. (Major Code 2045), https://catalog.morrisville.edu/programs/information-technology-btech/ (page PDF generated/transcribed 2026-09-30). DEGREE HONESTY: Morrisville offers no degree named Computer Science; its computing bachelor's degree is the Bachelor of Technology (B.Tech.) in Information Technology. This plan uses the App & Mobile Web Development concentration (the software/app-development track: CITA 155, CITA 255, CITA 345, CITA 355, CITA 455), the closest analog to a CS degree, per the official 'Sample Course Sequence' on that catalog page. CATALOG YEAR: the live catalog prints no explicit year; 2026-2027 is used because all current-year Morrisville materials (2026-27 academic calendar, 2026-2027 housing rates/fees) reflect 2026-27 and the catalog was crawled live in September 2026. TOTALS: the catalog states a 120-credit degree minimum, but its own published Sample Course Sequence sums to 121 (17+15+15+15+15+16+16+12); total_credits uses the sequence's own published total of 121 per the Clarkson/UVM/GCSU discrepancy precedent. 'AS ADVISED' SLOTS: the catalog places Required Concentration Courses, electives, and SUNY General Education blocks 'as advised' without fixing specific courses or semester order, so those are transcribed as choice slots with honest option lists; the five concentration courses are all required and must be taken in catalog prereq order (CITA 155/CITA 255 after CITA 140; CITA 345 after CITA 245; CITA 355 after CITA 255; CITA 455 after CITA 345 and CITA 355). PREREQ POLICY: course prereq fields carry only codes of in-plan courses; catalog 'or permission of the instructor' alternatives (e.g. CITA 101 as an alternative to CITA 110 for CITA 120/CITA 405) are documented here, not encoded. Status requirements are not courses and are documented here: CITA 395 requires at least junior status; CITA 460 requires BSAD 300 plus senior status; CITA 480 requires CITA 395, senior status, and enrollment in a CIT bachelor degree program. The Year 3 Spring 'General Elective as advised' 4-credit block is kept as a single 4-credit slot exactly as published. Course titles/credits/prereqs verified against the official CITA course listings at https://catalog.morrisville.edu/course-listings/cita/ on 2026-09-30.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CITA 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Intro Information Technology",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CITA 140",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying the SUNY General Education Mathematics (and Quantitative Reasoning) requirement, as advised.",
+      "code": "GE-MATH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "SUNY General Education Mathematics (and Quantitative Reasoning) — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Composition and Research",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One lower-division (100-200) CITA course as advised. ACCT or BSAD 100-200 courses also qualify as advised.",
+      "code": "ELECT-CITA-LOW1",
+      "credits": 3,
+      "options": [
+       "CITA 100",
+       "CITA 101",
+       "CITA 113",
+       "CITA 150",
+       "CITA 190",
+       "CITA 210",
+       "CITA 212",
+       "CITA 220",
+       "CITA 225",
+       "CITA 255",
+       "CITA 260",
+       "CITA 280"
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "CITA 100-200 Lower Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GNED 100",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "First Year Experience",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists 'CITA 110 or CITA 101, or permission of the instructor'; CITA 110 is in this plan.",
+      "code": "CITA 120",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CITA 110"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Concepts & Op Sys",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One required App & Mobile Web Development concentration course as advised (catalog does not fix semester order). Required set (15 cr): CITA 155, CITA 255, CITA 345, CITA 355, CITA 455. Take in catalog prereq order: CITA 155/CITA 255 require CITA 140; CITA 345 requires CITA 245; CITA 355 requires CITA 255; CITA 455 requires CITA 345 and CITA 355.",
+      "code": "CONC-AWD-1",
+      "credits": 3,
+      "options": [
+       "CITA 155",
+       "CITA 255",
+       "CITA 345",
+       "CITA 355",
+       "CITA 455"
+      ],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "App & Mobile Web Development Concentration Course — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BSAD 116",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Business Organization & Mgmt",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CITA 200",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CITA 120"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Communications Networking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CITA 245",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CITA 140"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Intro to Database Concepts",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One required App & Mobile Web Development concentration course as advised (catalog does not fix semester order). Required set (15 cr): CITA 155, CITA 255, CITA 345, CITA 355, CITA 455. Take in catalog prereq order: CITA 155/CITA 255 require CITA 140; CITA 345 requires CITA 245; CITA 355 requires CITA 255; CITA 455 requires CITA 345 and CITA 355.",
+      "code": "CONC-AWD-2",
+      "credits": 3,
+      "options": [
+       "CITA 155",
+       "CITA 255",
+       "CITA 345",
+       "CITA 355",
+       "CITA 455"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "App & Mobile Web Development Concentration Course — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Advance Tech Communication",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One lower-division (100-200) CITA, ACCT, or BSAD course as advised.",
+      "code": "ELECT-LOW2",
+      "credits": 3,
+      "options": [
+       "CITA 100",
+       "CITA 101",
+       "CITA 113",
+       "CITA 150",
+       "CITA 190",
+       "CITA 210",
+       "CITA 212",
+       "CITA 220",
+       "CITA 225",
+       "CITA 255",
+       "CITA 260",
+       "CITA 280"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "100-200 CITA, ACCT or BSAD Lower Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying a SUNY General Education requirement, as advised.",
+      "code": "GE-ADV-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "SUNY General Education — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One required App & Mobile Web Development concentration course as advised (catalog does not fix semester order). Required set (15 cr): CITA 155, CITA 255, CITA 345, CITA 355, CITA 455. Take in catalog prereq order: CITA 155/CITA 255 require CITA 140; CITA 345 requires CITA 245; CITA 355 requires CITA 255; CITA 455 requires CITA 345 and CITA 355.",
+      "code": "CONC-AWD-3",
+      "credits": 3,
+      "options": [
+       "CITA 155",
+       "CITA 255",
+       "CITA 345",
+       "CITA 355",
+       "CITA 455"
+      ],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "App & Mobile Web Development Concentration Course — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One upper-division (300-400) CITA, ACCT, or BSAD course as advised.",
+      "code": "ELECT-UPP-1",
+      "credits": 3,
+      "options": [
+       "CITA 300",
+       "CITA 305",
+       "CITA 312",
+       "CITA 314",
+       "CITA 320",
+       "CITA 325",
+       "CITA 360",
+       "CITA 370",
+       "CITA 375",
+       "CITA 385",
+       "CITA 386",
+       "CITA 410",
+       "CITA 412",
+       "CITA 417",
+       "CITA 425",
+       "CITA 430",
+       "CITA 440"
+      ],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "300-400 CITA, ACCT, or BSAD Upper Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BSAD 300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Management Communications",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective, as advised.",
+      "code": "ELECT-GEN-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective, as advised.",
+      "code": "ELECT-GEN-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "General Elective — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One required App & Mobile Web Development concentration course as advised (catalog does not fix semester order). Required set (15 cr): CITA 155, CITA 255, CITA 345, CITA 355, CITA 455. Take in catalog prereq order: CITA 155/CITA 255 require CITA 140; CITA 345 requires CITA 245; CITA 355 requires CITA 255; CITA 455 requires CITA 345 and CITA 355.",
+      "code": "CONC-AWD-4",
+      "credits": 3,
+      "options": [
+       "CITA 155",
+       "CITA 255",
+       "CITA 345",
+       "CITA 355",
+       "CITA 455"
+      ],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "App & Mobile Web Development Concentration Course — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One upper-division (300-400) CITA, ACCT, or BSAD course as advised.",
+      "code": "ELECT-UPP-2",
+      "credits": 3,
+      "options": [
+       "CITA 300",
+       "CITA 305",
+       "CITA 312",
+       "CITA 314",
+       "CITA 320",
+       "CITA 325",
+       "CITA 360",
+       "CITA 370",
+       "CITA 375",
+       "CITA 385",
+       "CITA 386",
+       "CITA 410",
+       "CITA 412",
+       "CITA 417",
+       "CITA 425",
+       "CITA 430",
+       "CITA 440"
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "300-400 CITA, ACCT, or BSAD Upper Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One upper-division (300-400) CITA, ACCT, or BSAD course as advised.",
+      "code": "ELECT-UPP-3",
+      "credits": 3,
+      "options": [
+       "CITA 300",
+       "CITA 305",
+       "CITA 312",
+       "CITA 314",
+       "CITA 320",
+       "CITA 325",
+       "CITA 360",
+       "CITA 370",
+       "CITA 375",
+       "CITA 385",
+       "CITA 386",
+       "CITA 410",
+       "CITA 412",
+       "CITA 417",
+       "CITA 425",
+       "CITA 430",
+       "CITA 440"
+      ],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "300-400 CITA, ACCT, or BSAD Upper Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "One upper-division (300-400) CITA, ACCT, or BSAD course as advised.",
+      "code": "ELECT-UPP-4",
+      "credits": 3,
+      "options": [
+       "CITA 300",
+       "CITA 305",
+       "CITA 312",
+       "CITA 314",
+       "CITA 320",
+       "CITA 325",
+       "CITA 360",
+       "CITA 370",
+       "CITA 375",
+       "CITA 385",
+       "CITA 386",
+       "CITA 410",
+       "CITA 412",
+       "CITA 417",
+       "CITA 425",
+       "CITA 430",
+       "CITA 440"
+      ],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "300-400 CITA, ACCT, or BSAD Upper Division Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "A 4-credit general elective block, kept as a single slot exactly as the catalog publishes it.",
+      "code": "ELECT-GEN-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "General Elective — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog requires at least junior status; status requirements are documented in plan notes, not encoded as prereq codes.",
+      "code": "CITA 395",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Internship Orientation Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One required App & Mobile Web Development concentration course as advised (catalog does not fix semester order). Required set (15 cr): CITA 155, CITA 255, CITA 345, CITA 355, CITA 455. Take in catalog prereq order: CITA 155/CITA 255 require CITA 140; CITA 345 requires CITA 245; CITA 355 requires CITA 255; CITA 455 requires CITA 345 and CITA 355.",
+      "code": "CONC-AWD-5",
+      "credits": 3,
+      "options": [
+       "CITA 155",
+       "CITA 255",
+       "CITA 345",
+       "CITA 355",
+       "CITA 455"
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "App & Mobile Web Development Concentration Course — as advised",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog lists 'CITA 110 or CITA 101 and BSAD 300, or permission of the instructor'; both CITA 110 and BSAD 300 are in this plan.",
+      "code": "CITA 405",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CITA 110",
+       "BSAD 300"
+      ],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Project Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog requires BSAD 300 plus senior status; the senior-status requirement is documented in plan notes.",
+      "code": "CITA 460",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "BSAD 300"
+      ],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Organizational & End User IS",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective, as advised.",
+      "code": "ELECT-GEN-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Elective — as advised",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any general elective, as advised.",
+      "code": "ELECT-GEN-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "General Elective — as advised",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog requires CITA 395, senior status, and enrollment in a CIT bachelor degree program; status/enrollment requirements are documented in plan notes.",
+      "code": "CITA 480",
+      "credits": 12,
+      "options": [],
+      "prereq": [
+       "CITA 395"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Internship Information Tech",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.morrisville.edu/programs/information-technology-btech/",
+  "total_credits": 121,
+  "content_hash": "e4623006c9e77d97c824194637ef666ab179c5728abe3a946ac02d12238e969f",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,779 @@
+{
+ "institution": {
+  "city": "Reading, PA",
+  "kind": "private",
+  "name": "Alvernia University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "alvernia-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Official Alvernia University 2025 Academic Completion Plan (formerly 8-semester plan) for BS Computer Science - 'Applies to Students enrolling during the Academic Year beginning in August 2025' - published at https://alvernia.edu/sites/default/files/documents/Computer%20Science_ACP_AY%2025-26.pdf (PDF downloaded to evidence dir and text-extracted via pdftotext; verbatim manual transcription, cross-checked against the PDF layout). Credential honesty: the degree is a B.S. in Computer Science; no substitution. IMPORTANT CATALOG-YEAR NOTE: this is the NEWEST Computer Science completion plan Alvernia publishes. The 2026-27 Academic Completion Plans listing page (https://www.alvernia.edu/8-semester-plans-2024-25, read 2026-09-30) has NO Computer Science entry at all (programs listed run A-Z with no CS link), and no 'Computer Science ACP AY 26-27' PDF is indexed or linked; an official 2026-27 plan exists only for the sibling Artificial Intelligence major. catalog_year is therefore set honestly to 2025-2026, not the current year. TOTAL CREDITS: the ACP prints semester totals of 15/16/15/15/16/15/15/15, summing to 122; the PDF prints NO separate 'Total Credits in Program' line for CS (unlike some other majors). total_credits=122 is the sequence's own published total, used per the Clarkson/UVM/GCSU precedent. Documented discrepancy: Alvernia's general graduation policy requires a minimum of 123 semester credits for a bachelor's degree (per alvernia.edu program pages), so the plan total (122) sits 1 credit under that general minimum - reported honestly, not padded. COMMUNITY SERVICE: the ACP requires 'Complete 5 hours of Community Service' every semester; modeled as 0-credit required milestones (required_zero: true, distinct codes SVC-S1..SVC-S8). DIVERSITY/WRITING-ENHANCED: the ACP header states the Diversity graduation requirement cannot be fulfilled through major courses (fulfill with a Gen Ed SEARCH class) and the Writing Enhanced graduation requirement likewise cannot be fulfilled through major courses. RESIDENCY: students must complete 45 of their last 60 credits at Alvernia. PREREQ CHAINS (official only, nothing invented): CS 155 requires CS 115; CS 220 requires CS 155; CS 310 requires CS 155; CS 320 requires CS 220 AND MAT 230 (per 2024-25 archived undergraduate catalog course descriptions at catalog.alvernia.edu). MAT 230 requires MAT 131 or a satisfactory score on the Math Placement test (per the Alvernia Mathematics program page); the placement-test alternative is documented here, with prereq pointing at the in-plan MAT 131 slot. MAT 209 requires a satisfactory score on the Math Placement test (assessment detail, kept in notes). CS 420 requires junior or senior standing (catalog). Prereqs for AI 101/103/210/220/305, CS 140, CS 162, CS 212, CS 417, MAT 250, SCI 406/407/480 are not published in any official source found - prereq lists left empty rather than invented. CHOICE SLOTS: (1) SRH 101 Search Seminar-Enduring Questions OR HNR 160 Honor Search-Enduring Questions. (2) THE 105 Foundations of Theology and PHI 105 Introduction to Philosophy are both required; the ACP lists 'THE 105 or PHI 105' in BOTH Semester 1 and Semester 2, i.e. take one each semester in either order - modeled as two choice slots with the complementary option. (3) MAT 131 Pre-calculus OR any Gen Ed if MAT 131 is not needed (placement) - choice slot with placement documented; if MAT 131 is not needed, the Semester 6 'Gen Ed (MAT if MAT 131 was not needed)' slot takes a MAT course instead. (4) SCI 406 Research I OR SCI 480 Internship; SCI 407 Research II OR SCI 480 Internship. (5) 'CS Elective' slots (Semesters 6 and 8): any CS elective, options not enumerated officially - empty options list. (6) Generic 'Gen Ed' / 'Gen Ed (Foreign Language suggested)' / 'Gen Ed (Lab Course Suggested)' / 'Elective' slots modeled as student-choice slots with distinct placeholder codes. CAVEAT: the ACP orders some courses across semesters (e.g. CS 162 Database Systems in Semester 2, AI courses woven through) that reflect Alvernia's rotation schedule; students must enroll in the specific courses listed during the semester indicated per Alvernia's ACP policy. Second majors/minors may extend time to degree.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Take SRH 101 Search Seminar-Enduring Questions OR HNR 160 Honor Search-Enduring Questions.",
+      "code": "SRH 101",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SRH 101",
+        "credits": 3,
+        "title": "Search Seminar-Enduring Questions"
+       },
+       {
+        "code": "HNR 160",
+        "credits": 3,
+        "title": "Honor Search-Enduring Questions"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "SRH 101 Search Sem-Enduring Questions or HNR 160 Honor Search-Enduring Questions",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "THE 105 and PHI 105 are both required; take one in Semester 1 and the other in Semester 2, in either order.",
+      "code": "THE 105",
+      "credits": 3,
+      "options": [
+       {
+        "code": "THE 105",
+        "credits": 3,
+        "title": "Foundations of Theology"
+       },
+       {
+        "code": "PHI 105",
+        "credits": 3,
+        "title": "Introduction to Philosophy"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "THE 105 Foundations of Theology or PHI 105 Introduction to Philosophy",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 115",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Intro to Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Intro to IT",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take MAT 131 Pre-calculus, or any Gen Ed course if MAT 131 is not needed (math placement). If MAT 131 is not needed, the Semester 6 'Gen Ed (MAT if MAT 131 was not needed)' slot takes a MAT course instead.",
+      "code": "MAT 131",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MAT 131",
+        "credits": 3,
+        "title": "Pre-calculus"
+       },
+       {
+        "code": "GENED",
+        "credits": 3,
+        "title": "General Education elective"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "MAT 131 Pre-calculus or Gen Ed if MAT 131 is not needed",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S1",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: CS 115.",
+      "code": "CS 155",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 115"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 162",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official prerequisite: MAT 131 or satisfactory score on the Math Placement test.",
+      "code": "MAT 230",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 131"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "THE 105 and PHI 105 are both required; take one in Semester 1 and the other in Semester 2, in either order.",
+      "code": "PHI 105",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PHI 105",
+        "credits": 3,
+        "title": "Introduction to Philosophy"
+       },
+       {
+        "code": "THE 105",
+        "credits": 3,
+        "title": "Foundations of Theology"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "PHI 105 Introduction to Philosophy or THE 105 Foundations of Theology",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course; the Diversity and Writing Enhanced graduation requirements must be fulfilled with Gen Ed SEARCH classes (cannot be fulfilled through major courses).",
+      "code": "GENED-2A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S2",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AI 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "AI Tools and Technologies",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 140",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Networking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 212",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Project Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 250",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course; Foreign Language suggested by the plan.",
+      "code": "GENED-FL3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Gen Ed elective (Foreign Language suggested)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S3",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AI 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Foundations of AI I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: CS 155.",
+      "code": "CS 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 155"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official prerequisite: satisfactory score on the Math Placement test (assessment detail; no in-plan course prereq).",
+      "code": "MAT 209",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Probability & Statistics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course; Foreign Language suggested by the plan.",
+      "code": "GENED-FL4A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Gen Ed elective (Foreign Language suggested)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course; the Diversity and Writing Enhanced graduation requirements must be fulfilled with Gen Ed SEARCH classes (cannot be fulfilled through major courses).",
+      "code": "GENED-4A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S4",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AI 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Efficient Model Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: CS 155.",
+      "code": "CS 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 155"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official catalog prerequisites: CS 220 and MAT 230.",
+      "code": "CS 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 220",
+       "MAT 230"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Algorithm Design and Analysis",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course; a lab course is suggested by the plan (4-credit slot).",
+      "code": "GENED-LAB5A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Gen Ed elective (lab course suggested)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course.",
+      "code": "GENED-5A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S5",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AI 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Python for Scalable AI Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective course; specific electives not enumerated in the official plan.",
+      "code": "CSELEC-6A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Take a MAT course here if MAT 131 was not needed in Semester 1; otherwise any General Education course.",
+      "code": "GENED-MAT6A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Gen Ed elective (MAT if MAT 131 was not needed)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course.",
+      "code": "GENED-6A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective course.",
+      "code": "ELEC-6A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S6",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AI 305",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Applied M.L. & Model Validation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 417",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Governance, Risk, and Compliance",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take SCI 406 Research I OR SCI 480 Internship.",
+      "code": "SCI 406",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SCI 406",
+        "credits": 3,
+        "title": "Research I"
+       },
+       {
+        "code": "SCI 480",
+        "credits": 3,
+        "title": "Internship"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "SCI 406 Research I or SCI 480 Internship",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course.",
+      "code": "GENED-7A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course.",
+      "code": "GENED-7B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S7",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official catalog prerequisite: junior or senior standing.",
+      "code": "CS 420",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Science Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any CS elective course; specific electives not enumerated in the official plan.",
+      "code": "CSELEC-8A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CS Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Take SCI 407 Research II OR SCI 480 Internship.",
+      "code": "SCI 407",
+      "credits": 3,
+      "options": [
+       {
+        "code": "SCI 407",
+        "credits": 3,
+        "title": "Research II"
+       },
+       {
+        "code": "SCI 480",
+        "credits": 3,
+        "title": "Internship"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "SCI 407 Research II or SCI 480 Internship",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any General Education course.",
+      "code": "GENED-8A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "General Education elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective course.",
+      "code": "ELEC-8A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Per-semester graduation milestone: complete 5 hours of community service each semester.",
+      "code": "SVC-S8",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "Complete 5 hours of Community Service",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://alvernia.edu/sites/default/files/documents/Computer%20Science_ACP_AY%2025-26.pdf",
+  "total_credits": 122,
+  "content_hash": "92b68ef71c6ce1fa40e27af9b0abec28219a6e13f3bd2e93a7bb796cd3a23254",
+  "last_verified": "2026-10-02"
+ }
+}

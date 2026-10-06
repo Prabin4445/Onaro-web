@@ -1,0 +1,670 @@
+{
+ "institution": {
+  "name": "Sacred Heart University",
+  "city": "Fairfield, CT",
+  "kind": "private4yr",
+  "state": "CT"
+ },
+ "plan": {
+  "id": "sacredheart-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 119,
+  "source_url": "https://www.sacredheart.edu/media/shu-media/registrar/CS-Major-Sheet-2024.pdf",
+  "notes": "Source: official Sacred Heart University Registrar major checksheet 'BS in Computer Science (Fall 2024 & Later)', effective Fall 2024, which prints a suggested four-year sequence of study (transcribed term-by-term below). Requirements cross-checked against the official 2024-2025 Undergraduate Catalog Computer Science Major page (https://sacredheart.smartcatalogiq.com/en/2024-2025/2024-2025-undergraduate-catalog/jack-welch-college-of-business/school-of-computing/computer-science-and-engineering/computer-science-major/). Transcription method: PDF downloaded from sacredheart.edu 2026-09-30 and text-extracted with pdftotext -layout, then manually mapped to schema. CAVEATS: (1) The sheet's Year 3 Semester 6 line prints 'CS 461 Software Engineering'; the same sheet's required curriculum and the 2024-2025 catalog list Software Engineering as CS 312 (3 cr), and CS 461 exists only as a discontinued 2020-curriculum elective code - transcribed as CS 312. (2) The sequence prints 'PY111/113 General Physics I and Lab' and 'PY 112/114 General Physics II and Lab'; the same sheet's supporting-courses list shows PY151/153 and the catalog lists PY 151/PY 153 and PY 152/PY 154 - transcribed as PY 151/153 and PY 152/154. (3) CREDIT TOTAL: the sheet states a 120-credit degree minimum but the transcribed 8-term sequence sums to 119 credits; the checksheet side lists a 1-credit free elective that is not placed in any term of the printed sequence, which accounts for the gap. total_credits uses the sequence's own sum (119) per the sequence-total rule. (4) The sequence labels all four elective slots 'CS Elec'; the requirement side splits them into two CS electives (CS 421/CS 432/CS 481/CS 482 per sheet; catalog renames CS 432 to CS 332 'Cloud Computing') and two SCSE electives (ITI 350/ITI 338/CY 367/GDD 271/ENGR 212) - modeled as two CS-elective choice slots (Fall Year 4) and two SCSE-elective choice slots (Spring Year 4). (5) CORE/LAE slots are student-choice placeholders; titles/descriptions only, not catalog courses. (6) CS 390 Internship is listed on the sheet as 'Summer or Fall'; placed in Fall Year 3 per the printed sequence. (7) Prereqs transcribed only where stated in official catalog course descriptions (CS 112<-CS 111; CS 215/CS 241/CS 311/CS 339<-CS 112; CS 341<-CS 241; MA 152<-MA 151; MA 261<-MA 152; PY 152/154<-PY 151/153). MA 151 has a placement/MA-140 entry path per catalog - details not modeled.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "FYWS 125",
+      "title": "First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MA 151",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CSE 125",
+      "title": "CSE Explorations",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CS 111",
+      "title": "Introduction to Structured Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CORE 101",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CORE 102",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MA 152",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MA 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CS 125",
+      "title": "Computer Science Explorations",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CS 112",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CS 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "CS 113",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CIT 201",
+      "title": "CIT Seminar I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MA 331",
+      "title": "Probability",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 262",
+      "title": "Programming Paradigms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "PY 151/153",
+      "title": "General Physics I and Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "CORE 103",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CIT 202",
+      "title": "CIT Seminar II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 215",
+      "title": "Computer Systems Organization",
+      "credits": 3,
+      "prereq": [
+       "CS 112"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CS 241",
+      "title": "C Programming Concepts",
+      "credits": 3,
+      "prereq": [
+       "CS 112"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MA 261",
+      "title": "Linear Algebra",
+      "credits": 4,
+      "prereq": [
+       "MA 152"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "PY 152/154",
+      "title": "General Physics II and Lab",
+      "credits": 4,
+      "prereq": [
+       "PY 151/153"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 319",
+      "title": "Computer Ethics: Society & Tech",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 339",
+      "title": "Networking and Data Communication",
+      "credits": 3,
+      "prereq": [
+       "CS 112"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CS 311",
+      "title": "Database Design",
+      "credits": 3,
+      "prereq": [
+       "CS 112"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MA 332",
+      "title": "Mathematical Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CS 390",
+      "title": "Internship",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Sheet lists Internship as Summer or Fall; sequence places it Fall Year 3",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 321",
+      "title": "Research Methods Seminar",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS 312",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS 341",
+      "title": "Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CS 241"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CS 349",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CORE 104",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 417",
+      "title": "Senior Project Design",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS ELEC 1",
+      "title": "CS elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take two of: CS 421, CS 432, CS 481, CS 482",
+      "options": [
+       "CS 421 Theory of Computation",
+       "CS 432 Cloud Computing Fundamentals",
+       "CS 481 Introduction to Artificial Intelligence",
+       "CS 482 Applied Machine Learning"
+      ],
+      "category": "elective",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CS ELEC 2",
+      "title": "CS elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take two of: CS 421, CS 432, CS 481, CS 482",
+      "options": [
+       "CS 421 Theory of Computation",
+       "CS 432 Cloud Computing Fundamentals",
+       "CS 481 Introduction to Artificial Intelligence",
+       "CS 482 Applied Machine Learning"
+      ],
+      "category": "elective",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CORE 105",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "LAE 201",
+      "title": "LAE Exploration Inquiry course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Liberal Arts Exploration course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 418",
+      "title": "Senior Project Implementation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "SCSE ELEC 1",
+      "title": "SCSE elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take two of: ITI 350, ITI 338, CY 367, GDD 271, ENGR 212",
+      "options": [
+       "ITI 350 Data Analytics",
+       "ITI 338 Systems Analysis and Design",
+       "CY 367 Network Security",
+       "GDD 271 Game Development with Unity",
+       "ENGR 212 Digital Design with Lab"
+      ],
+      "category": "elective",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "SCSE ELEC 2",
+      "title": "SCSE elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Take two of: ITI 350, ITI 338, CY 367, GDD 271, ENGR 212",
+      "options": [
+       "ITI 350 Data Analytics",
+       "ITI 338 Systems Analysis and Design",
+       "CY 367 Network Security",
+       "GDD 271 Game Development with Unity",
+       "ENGR 212 Digital Design with Lab"
+      ],
+      "category": "elective",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CY 221",
+      "title": "Foundations of Cybersecurity",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "CORE 106",
+      "title": "Foundational Core course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Foundational Core course",
+      "options": [],
+      "category": "core",
+      "required_zero": false
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "126ba16729adac89ca3ed4e900d84cdea2c4f415f5b1ec4378f5e36d17550a16",
+  "last_verified": "2026-10-02"
+ }
+}

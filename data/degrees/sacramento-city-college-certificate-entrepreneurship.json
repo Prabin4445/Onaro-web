@@ -1,0 +1,118 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [],
+  "id": "sacramento-city-college-certificate-entrepreneurship",
+  "major": "Entrepreneurship",
+  "notes": "Transcribed from the official SCC 'Entrepreneurship Certificate' program map, Catalog 2026-27, published May 14, 2026 (mapmaker.losrios.edu/Maps/7549/PublishedPdf). Certificate of Achievement (grade of C or better in each major course). Official Total Units: 18; this seed models the map path = 9+9 = 18 units. Semester sums verified against the map's 9 / 9 headers. Sequencing prereqs per map: ENTR 356 requires ENTR 350; ENTR 358 requires ENTR 350 and 356 (or concurrent enrollment in ENTR 356, taken the same semester). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MKT 334",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "MKT 334",
+      "title": "Social Media Marketing Strategies",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENTR 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "ENTR 301",
+      "title": "Accounting for Entrepreneurs",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENTR 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "ENTR 350",
+      "title": "Introduction to Entrepreneurship, Strategy, and Managing People",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENTR 352",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "ENTR 352",
+      "title": "21st Century Skills & Professional Competencies for Entrepreneurs",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: ENTR 350 with a grade of C or better.",
+      "code": "ENTR 356",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENTR 350"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "ENTR 356",
+      "title": "Bootstrap Marketing for Entrepreneurs",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: ENTR 350 and 356 with grades of C or better; or concurrent enrollment (ENTR 356 is taken this same semester).",
+      "code": "ENTR 358",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENTR 350",
+       "ENTR 356"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "ENTR 358",
+      "title": "Entrepreneurship Capstone",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7549/PublishedPdf",
+  "total_credits": 18,
+  "transfer_confidence": "core_only",
+  "content_hash": "58a70f8a5317c6687b05a5bf376a21ef71187e20540c336425efafe12cdf7f4e",
+  "last_verified": "2026-10-02"
+ }
+}

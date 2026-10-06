@@ -1,0 +1,605 @@
+{
+ "institution": {
+  "name": "Stony Brook University",
+  "city": "Stony Brook, NY",
+  "kind": "public4yr",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "sbu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 122,
+  "source_url": "http://stonybrook.edu/ugrdbulletin/index.pdf",
+  "notes": "Source: Stony Brook University Undergraduate Bulletin, 'Sample Course Sequence for the Major in Computer Science (CSE)', from the official bulletin PDFs: http://stonybrook.edu/ugrdbulletin/index.pdf (Spring 2025 bulletin) and https://www.stonybrook.edu/sb/bulletin/current-fall24/index.pdf (Fall 2024 bulletin); both carry the IDENTICAL sequence. Bulletin /sb/bulletin/current/ (fetched 2026-09-30) shows Spring 2025 as current. Catalog year recorded as 2024-2025 (the academic year the source bulletins cover). Transcription method: sequence transcribed term-by-term (course, SBC tag, credits, term totals) from the official bulletin PDFs via web search extraction; course titles verified against the official bulletin 'Requirements for the Major and Minor in Computer Science (CSE)' page (stonybrook.edu) and the CS department course pages (cs.stonybrook.edu). Term credit totals match the bulletin's printed totals exactly: 17/14/17/14/15/15/15/15 = 122. Program/degree name is Stony Brook's own: 'Major in Computer Science' leading to the Bachelor of Science (BS); no substitution made. Caveats: (1) The bulletin sequence totals 122 credits, not 120 — the two 1-credit First Year Seminars (FYS 101/102) push it above Stony Brook's 120-credit degree minimum; the 122 figure is the bulletin's own arithmetic. (2) CSE 101 is listed at 4 credits in the Fall 2024 and Spring 2025 bulletin sequences (term total 17 preserved); the CS department course page lists CSE 101 at 3 credits — bulletin's value used to preserve the official sequence totals. (3) CSE 101 requires math placement level 3+; CSE 114 has an advisory prerequisite of CSE 101 (per official CSE 114 lecture materials) and math placement level 5+ — advisory/placement items, not hard course prerequisites, so no prereq codes are recorded for them. CSE 300 requires WRT 102 (official course page). CSE 214 requires C or higher in CSE 114; CSE 216 requires CSE 214 with C or higher; CSE 316 requires C or higher in CSE 214 and CSE 216 (official department syllabi). CSE 215 is cross-listed with ISE 215; its official class-schedule prerequisite is AMS 151 (or MAT 125/MAT 131). AMS 161 follows AMS 151 (official Applied Calculus I/II sequence); WRT 102 follows WRT 101 (official SBU writing sequence). Remaining course prerequisites (e.g. for CSE 220/303/310/320/373/416, CSE 312, AMS 210/301/310) could not be verified against an official source from the sandbox and are intentionally left empty rather than invented. (4) SBC/natural-science/elective/technical-elective slots are student-choice slots per the bulletin; bulletin notes SBC categories DIV, HUM, SBS, ARTS, USA, GLO, and that CSE 316 + CSE 416 satisfy the 'Pursue Deeper Understanding' category. (5) The newer Acalog catalog site (catalog.stonybrook.edu) was unreachable from the sandbox (browser + curl both failed), so the newest directly verifiable official source is the Spring 2025 bulletin; the sequence is identical in the Fall 2024 bulletin.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "FYS 101",
+      "title": "First Year Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "WRT 101",
+      "title": "Introductory Writing Workshop",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CSE 101",
+      "title": "Computer Science Principles",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "AMS 151",
+      "title": "Applied Calculus I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "SCI-CHOICE-1",
+      "title": "Natural Science (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Natural science with SNW SBC; e.g. BIO 201/204, BIO 202/204, BIO 203/204, CHE 131/133, CHE 152/154, PHY 126/133, PHY 127/133, PHY 131/133, or PHY 141/133 lecture/lab combos (per official requirement list).",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "SBC-CHOICE-1",
+      "title": "SBC General Education (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Stony Brook Curriculum category: DIV, HUM, SBS, ARTS, USA, or GLO.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "FYS 102",
+      "title": "First Year Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "WRT 102",
+      "title": "Intermediate Writing Workshop",
+      "credits": 3,
+      "prereq": [
+       "WRT 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "AMS 161",
+      "title": "Applied Calculus II",
+      "credits": 3,
+      "prereq": [
+       "AMS 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "SCI-CHOICE-2",
+      "title": "Natural Science (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Natural science lecture/lab combo continuing requirement list (BIO/CHE/PHY combos); 9 natural-science credits required total.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "CSE 114",
+      "title": "Introduction to Object-Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSE 214",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CSE 114"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSE 215",
+      "title": "Foundations of Computer Science",
+      "credits": 4,
+      "prereq": [
+       "AMS 151"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "SBC-CHOICE-2",
+      "title": "SBC General Education (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Stony Brook Curriculum category: DIV, HUM, SBS, ARTS, USA, or GLO.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SCI-CHOICE-3",
+      "title": "Natural Science (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Natural science completing the 9-credit requirement incl. at least one lecture/lab combo.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SBC-CHOICE-3",
+      "title": "SBC General Education (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Stony Brook Curriculum category: DIV, HUM, SBS, ARTS, USA, or GLO.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSE 216",
+      "title": "Programming Abstractions",
+      "credits": 4,
+      "prereq": [
+       "CSE 214"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSE 220",
+      "title": "Systems Fundamentals I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "AMS 210",
+      "title": "Applied Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SBC-CHOICE-4",
+      "title": "SBC General Education (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Stony Brook Curriculum category: DIV, HUM, SBS, ARTS, USA, or GLO.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSE 300",
+      "title": "Technical Communications",
+      "credits": 3,
+      "prereq": [
+       "WRT 102"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSE 316",
+      "title": "Fundamentals of Software Development",
+      "credits": 3,
+      "prereq": [
+       "CSE 214",
+       "CSE 216"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSE 303",
+      "title": "Introduction to the Theory of Computation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "AMS 301",
+      "title": "Finite Mathematical Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "SBC-CHOICE-5",
+      "title": "SBC General Education (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Stony Brook Curriculum category: DIV, HUM, SBS, ARTS, USA, or GLO.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSE 312",
+      "title": "Social, Legal, and Ethical Issues in Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSE 320",
+      "title": "Systems Fundamentals II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSE 373",
+      "title": "Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ELECTIVE-1",
+      "title": "Free Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any free elective; bulletin lists a plain 3-credit elective.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "AMS 310",
+      "title": "Survey of Probability and Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSE 416",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSE-TE-1",
+      "title": "CSE Technical Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division technical CSE elective (3+ credits). Excludes CSE 475, CSE 495/496, and courses designated non-technical (e.g. CSE 301).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSE 310",
+      "title": "Computer Networks",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELECTIVE-2",
+      "title": "Free Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any free elective; bulletin lists a plain 3-credit elective.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELECTIVE-3",
+      "title": "Free Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any free elective; bulletin lists a plain 3-credit elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSE-TE-2",
+      "title": "CSE Technical Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division technical CSE elective (3+ credits). Excludes CSE 475, CSE 495/496, and non-technical courses (e.g. CSE 301).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSE-TE-3",
+      "title": "CSE Technical Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division technical CSE elective (3+ credits). Excludes CSE 475, CSE 495/496, and non-technical courses (e.g. CSE 301).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CSE-TE-4",
+      "title": "CSE Technical Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Upper-division technical CSE elective (3+ credits). Excludes CSE 475, CSE 495/496, and non-technical courses (e.g. CSE 301).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELECTIVE-4",
+      "title": "Free Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any free elective; bulletin lists a plain 3-credit elective.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELECTIVE-5",
+      "title": "Free Elective (choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any free elective; bulletin lists a plain 3-credit elective.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "88d125a124848227a79a79a071b6ac15d9ecfa668f1d347c081e74a7eebfed39",
+  "last_verified": "2026-10-02"
+ }
+}

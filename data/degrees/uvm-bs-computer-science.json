@@ -1,0 +1,628 @@
+{
+ "institution": {
+  "city": "Burlington, VT",
+  "kind": "public4yr",
+  "name": "University of Vermont",
+  "state": "VT"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uvm-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "MERGE NOTE: total_credits=121 = the official checksheet as printed (15+17+16+15+15+15+13+15=121), which exceeds the catalog's stated 120 minimum. Plan kept at the checksheet's own total so the validator's exact-sum check passes. Source: official UVM 2025-2026 B.S. Computer Science checksheet (published by UVM, references the 2025-2026 Catalogue at catalogue.uvm.edu), transcribed course-by-course from the checksheet's official 8-semester sequence. Program is housed in the College of Engineering and Mathematical Sciences (CEMS). True degree name per catalogue.uvm.edu: 'Computer Science B.S.CS.' (Bachelor of Science in Computer Science). Catalog publishes a minimum of 120 credits; the checksheet's stated term totals are 15+17+16+15+15+15+13+15 = 121, so total_credits is 121 to match the transcribed sequence exactly. Checksheet year-2 note: CS 2210 Computer Organization and Catamount Core (SU Sustainability) are swappable between Fall and Spring of Year 2; transcribed as CS 2210 in Fall Y2 and SU Sustainability in Spring Y2 (first-presented arrangement). Prereq or-alternatives from the checksheet not encoded as hard prereqs: CS 1640 also accepts CS 2100 (instead of CS 1210) and MATH 1242 (instead of MATH 1234); STAT 2430 also accepts MATH 1224; STAT 2510 also accepts MATH 1242; CS 2250 also accepts MATH 2055 (instead of CS 1640); CS 3240 'Recommended: CS 2250; STAT 2430 or STAT 2510' is advisory only. Checksheet: C- or higher required in CS 1210 and CS 2100. Math elective slot: choose one of MATH 2248 Calculus III, MATH 2522 Applied Linear Algebra, MATH 2544 Linear Algebra, MATH 2678 Basic Combinatorial Theory, or MATH 3201 Advanced Engineering Mathematics (3-4 cr each; transcribed at 3). Natural Science slot Y1S2 (3 cr, non-lab) + Y2S1 'Natural Science w/ Lab' (4 cr) satisfy the catalogue's 7-credit natural science rule (2 courses from ASTR/BIOL/BCOR/CHEM/GEOL/PHYS/PBIO, one a 4-credit lab). Capstone: checksheet says 'refer to degree audit for options'; not enumerated here to avoid inventing options. No term-by-term plan exists at catalogue.uvm.edu itself (catalogue is requirement-list only); the checksheet is the only official UVM term-by-term sequence.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1234",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Arts & Humanities course, 3 credits",
+      "code": "CORE AH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Catamount Core: Arts & Humanities",
+      "xfer": []
+     },
+     {
+      "category": "college",
+      "choice": false,
+      "choice_note": "",
+      "code": "CEMS 1500",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "CEMS First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1500",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Seminar for New CS Majors",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Written Expression (WIL1)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2100",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 1210"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Intermediate Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1640",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1210",
+       "MATH 1234"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1248",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1234"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Diversity 1 or Diversity 2 course, 3 credits",
+      "code": "CORE D-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Catamount Core: Diversity 1 or 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved natural science course (non-lab), 3 credits; see degree audit for options",
+      "code": "NAT SCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Natural Science",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2100"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Struc & Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2210",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2100"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 2430",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1234"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Statistics for Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: MATH 2248 Calculus III, MATH 2522 Applied Linear Algebra, MATH 2544 Linear Algebra, MATH 2678 Basic Combinatorial Theory, or MATH 3201 Advanced Engineering Mathematics (3-4 credits)",
+      "code": "MATH ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Mathematics Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved natural science course with lab totaling 4 credits; see degree audit for options",
+      "code": "NAT SCI-LAB-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Natural Science with Lab",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2300",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2240"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Advanced Programming (WIL2)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1640",
+       "CS 2240"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computability & Complexity",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 2510",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1248"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Applied Probability",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: MATH 2248 Calculus III, MATH 2522 Applied Linear Algebra, MATH 2544 Linear Algebra, MATH 2678 Basic Combinatorial Theory, or MATH 3201 Advanced Engineering Mathematics (3-4 credits)",
+      "code": "MATH ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Mathematics Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Sustainability (SU) course, 3 credits",
+      "code": "CORE SU-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Catamount Core: Sustainability",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3010",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2300",
+       "CS 2210"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any 2000-level (or above) CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CS Elective (2000 Level)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any-level CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "CS Elective (Any Level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Diversity 1 course, 3 credits",
+      "code": "CORE D-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Catamount Core: Diversity 1",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits",
+      "code": "FREE ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2240"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Algorithm Design & Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any 2000-level (or above) CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CS Elective (2000 Level)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any 3000-level (or above) CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Elective (3000 Level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Social Science (S1) course, 3 credits",
+      "code": "CORE S1-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Catamount Core: S1 Social Science",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits",
+      "code": "FREE ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3920",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Senior Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any 3000-level (or above) CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Elective (3000 Level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Arts & Humanities course, 3 credits",
+      "code": "CORE AH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Catamount Core: Arts & Humanities",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits",
+      "code": "FREE ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits",
+      "code": "FREE ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "capstone",
+      "choice": true,
+      "choice_note": "Comprehensive project-based CS capstone experience, typically Senior year; see degree audit for options, 3 credits",
+      "code": "CS CAP-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CS Capstone Experience",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Any 3000-level (or above) CS elective per degree audit, 3 credits",
+      "code": "CS ELEC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CS Elective (3000 Level)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Global Citizenship (GC) course, 3 credits",
+      "code": "CORE GC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Catamount Core: Global Citizenship",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any Catamount Core-approved Social Science (S1) course, 3 credits",
+      "code": "CORE S1-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Catamount Core: S1 Social Science",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any free elective, 3 credits",
+      "code": "FREE ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://uvmd10.drup3.uvm.edu/d10-files/documents/2025-09/2025-2026-CS-Checksheet.pdf",
+  "total_credits": 121,
+  "content_hash": "cfcec54e648f1adf97d698d4655fa2560d9a59456a91754e0e57cf221eed9ad9",
+  "last_verified": "2026-10-02"
+ }
+}

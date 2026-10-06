@@ -1,0 +1,693 @@
+{
+ "institution": {
+  "name": "Purdue University",
+  "city": "West Lafayette, IN",
+  "kind": "public4yr",
+  "state": "IN"
+ },
+ "plan": {
+  "id": "purdue-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://www.purdue.edu/science/archive/docs/current-students/majors/computer-science-f24-dpg1.pdf",
+  "notes": "Source: https://www.purdue.edu/science/archive/docs/current-students/majors/computer-science-f24-dpg1.pdf (official Purdue University College of Science / Department of Computer Science '2024-2025 Computer Science Degree Progression Guide'). Catalog year: 2024-2025 -- the DPG's own disclaimer names the 2024-2025 Purdue West Lafayette catalog as the source for academic and programmatic requirements (students entering Fall 2024 / Spring 2025 / Summer 2025). Program's true catalog name: 'Computer Science, BS' (College of Science, West Lafayette). Hand-transcribed 2026-09-30 from the DPG's 8-semester progression table, the '2024-25 Computer Science Major Science Courses' list, and the '2024-25 Computer Science Major Tracks and Course Options' list; every course code, title, credit value, and prerequisite copied verbatim from the DPG (titles for MA 16500/16600/27101/35100, STAT 35000/51100, and CS 39100 cross-checked against official catalog.purdue.edu program pages). Transcription method: read the official PDF text via browser, mapped the two-column Fall/Spring layout term by term, and validated each term's credit range against the DPG's printed totals (all 8 terms match exactly). Caveats: (1) The live 2025-2026 catalog.purdue.edu 'Computer Science, BS' program page returned access-denied to the fetcher on 2026-09-30 and was not retried, so this plan uses the newest fully verifiable official source, the 2024-2025 DPG -- catalog_year is recorded honestly as 2024-2025. (2) DPG credit ranges are instantiated canonically to sum to exactly 120: 4-credit Calculus options (MA 16500/16600), 4-credit Multivariate Calculus (MA 26100), Science Core Options at 3 cr, free electives sized 1-3 cr per the DPG; choosing 5-credit calculus variants adds credits above 120. (3) CS 19300, CS 29100, and CS 39100 are recommended seminars, NOT degree requirements (DPG footnotes); they occupy free-elective credits here exactly as the DPG places them. (4) Track slots are student choice -- the student must declare at least one CS track; all track courses and their prerequisites require a grade of C or better. (5) 2.0 major and graduation GPA required; minimum 120 credits; 32 credits at 30000+ level taken at Purdue.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 18000",
+      "title": "Problem Solving and Object-Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Critical course (must pass to persist in major). Corequisite: Calculus I.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CS 19300",
+      "title": "Tools",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Recommended with CS 18000; NOT a degree requirement (DPG footnote).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MA 161XX",
+      "title": "Calculus I (MA 16100 or MA 16500)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Complete one: MA 16100 Plane Analytic Geometry and Calculus I (5 cr) or MA 16500 Analytic Geometry and Calculus I (4 cr). ALEKS 85+ required for placement. Critical course. Credits shown reflect the 4-credit option; the 5-credit option adds 1 credit to the degree total.",
+      "options": [
+       {
+        "code": "MA 16100",
+        "title": "Plane Analytic Geometry and Calculus I",
+        "credits": 5
+       },
+       {
+        "code": "MA 16500",
+        "title": "Analytic Geometry and Calculus I",
+        "credits": 4
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "SCO-1A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "ELEC-1A",
+      "title": "Free Elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "ELEC-1B",
+      "title": "Free Elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 18200",
+      "title": "Foundations of Computer Science",
+      "credits": 3,
+      "prereq": [
+       "CS 18000",
+       "MA 161XX"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CS 24000",
+      "title": "Programming in C",
+      "credits": 3,
+      "prereq": [
+       "CS 18000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MA 162XX",
+      "title": "Calculus II (MA 16200 or MA 16600)",
+      "credits": 4,
+      "prereq": [
+       "MA 161XX"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Complete one: MA 16200 Plane Analytic Geometry and Calculus II (5 cr) or MA 16600 Analytic Geometry and Calculus II (4 cr). Credits shown reflect the 4-credit option; the 5-credit option adds 1 credit.",
+      "options": [
+       {
+        "code": "MA 16200",
+        "title": "Plane Analytic Geometry and Calculus II",
+        "credits": 5
+       },
+       {
+        "code": "MA 16600",
+        "title": "Analytic Geometry and Calculus II",
+        "credits": 4
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "SCO-2A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "ELEC-2A",
+      "title": "Free Elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 25000",
+      "title": "Computer Architecture",
+      "credits": 4,
+      "prereq": [
+       "CS 18200",
+       "CS 24000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 25100",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CS 18200",
+       "CS 24000"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MA 261XX",
+      "title": "Multivariate Calculus (MA 26100 or MA 27101)",
+      "credits": 4,
+      "prereq": [
+       "MA 162XX"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Complete one: MA 26100 Multivariate Calculus (4 cr) or MA 27101 Honors Multivariate Calculus (5 cr). Credits shown reflect the 4-credit option.",
+      "options": [
+       {
+        "code": "MA 26100",
+        "title": "Multivariate Calculus",
+        "credits": 4
+       },
+       {
+        "code": "MA 27101",
+        "title": "Honors Multivariate Calculus",
+        "credits": 5
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SCO-3A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ELEC-3A",
+      "title": "Free Elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list). CS 29100 (Sophomore Development Seminar) recommended; optional, not a degree requirement.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 25200",
+      "title": "Systems Programming",
+      "credits": 4,
+      "prereq": [
+       "CS 25000",
+       "CS 25100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MA 265XX",
+      "title": "Linear Algebra (MA 26500 or MA 35100)",
+      "credits": 3,
+      "prereq": [
+       "MA 162XX"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Complete one: MA 26500 Linear Algebra (3 cr) or MA 35100 Elementary Linear Algebra (3 cr).",
+      "options": [
+       {
+        "code": "MA 26500",
+        "title": "Linear Algebra",
+        "credits": 3
+       },
+       {
+        "code": "MA 35100",
+        "title": "Elementary Linear Algebra",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "SCO-4A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree. COM 21700 (Science Writing and Presentation) suggested here by the DPG.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SCO-4B",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "ELEC-4A",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "TRK-5A",
+      "title": "CS Track Requirement",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track requirement for the student's declared track. Student must declare at least one track; all track courses require a grade of C or better. Example track courses from the DPG: CS 35200 Compilers, CS 35400 Operating Systems, CS 37300 Data Mining & Machine Learning, CS 42600 Computer Security, CS 47100 Introduction to Artificial Intelligence.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "TRK-5B",
+      "title": "CS Track Requirement",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track requirement for the student's declared track. Student must declare at least one track; all track courses require a grade of C or better. Example track courses from the DPG: CS 35200 Compilers, CS 35400 Operating Systems, CS 37300 Data Mining & Machine Learning, CS 42600 Computer Security, CS 47100 Introduction to Artificial Intelligence.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "STAT 350XX",
+      "title": "Statistics (STAT 35000 or STAT 51100)",
+      "credits": 3,
+      "prereq": [
+       "MA 162XX"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Complete one: STAT 35000 Introduction to Statistics (3 cr) or STAT 51100 Statistical Methods (3 cr).",
+      "options": [
+       {
+        "code": "STAT 35000",
+        "title": "Introduction to Statistics",
+        "credits": 3
+       },
+       {
+        "code": "STAT 51100",
+        "title": "Statistical Methods",
+        "credits": 3
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "SCO-5A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ELEC-5A",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "CS 39100",
+      "title": "Junior Resources Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Recommended; NOT a degree requirement (DPG footnote). Fills 1 free-elective credit.",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "TRK-6A",
+      "title": "CS Track Requirement/Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track requirement or track elective for the student's declared track (grade of C or better required). See DPG track course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "TRK-6B",
+      "title": "CS Track Requirement/Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track requirement or track elective for the student's declared track (grade of C or better required). See DPG track course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "SCO-6A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "SCO-6B",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ELEC-6A",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "TRK-7A",
+      "title": "CS Track Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track elective for the student's declared track (grade of C or better required). See DPG track course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "SCO-7A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "SCO-7B",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-7A",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-7B",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "TRK-8A",
+      "title": "CS Track Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One 3-credit CS track elective for the student's declared track (grade of C or better required). See DPG track course list.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "SCO-8A",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "SCO-8B",
+      "title": "Science Core Option",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One course from the College of Science Core list (e.g., Written Communication, Foreign Language & Culture, Lab Science, General Education, Technical Writing & Presentation, Great Issues, Science Technology & Society). Student picks with advisor; must satisfy all core areas over the degree.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-8A",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC-8B",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Purdue course approved for degree electives (excludes College of Science 'No Count' list).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "7dfbfb2a3f96e6fefb606f6333cc04501c6477a8a27a13851df24fc1e5eb47ba",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "institution": {
+  "city": "Herkimer, NY",
+  "kind": "community",
+  "name": "Herkimer College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [
+   "MA 141"
+  ],
+  "id": "herkimer-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: https://catalog.herkimer.edu/mime/media/4/503/2025-2026+College-Catalog.pdf (official Herkimer County Community College 2025-2026 College Catalog, Volume 39, published May 5, 2025), Computer Science, A.S. (HEGIS 5101, SUNY CODE 0532) Program of Study. Hand-transcribed 2026-09-30 from the PDF's term-by-term sequence (pages 58-60). The same sequence appears on the official online catalog page https://herkimer.smartcatalogiq.com/en/current/catalog/degree-programs/computer-science-as/ (verified identical). Catalog year set to 2025-2026 (the actual year of the source). Caveats: (1) Course titles transcribed from the 2025-2026 PDF; the smartcatalogiq web page abbreviates two titles ('IS 141 Intr Hardware and Software Cncpt', 'IS 207 Microcomputer Operating System') — PDF titles used here. (2) Prerequisites are the catalog's official course-description prerequisites only: IS 224 requires IS 125; IS 241 requires IS 140 (catalog: 'IS 140 or permission of instructor'); MA 245 requires MA 141 (not in this plan, listed in external_prereqs); MA 248 requires MA 245 (catalog: 'MA 245 or permission of instructor'). 'Or permission of instructor' alternatives are not modeled as prereqs since prereq fields must be plain course-code strings. (3) All 'Selective' and 'Physical Education Activity' slots are student-choice slots (choice:true) with placeholder codes; the two Physical Education Activity slots use distinct placeholder codes (PE XXXX and PE XXXX-2). (4) Sequence subtotals 14/17/17/15 sum to the catalog's published Total Credit Hours: 63 — no discrepancy. (5) No 0-credit required courses; no repeated non-choice course codes.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College Writing",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "FS 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "First Year Student Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 115",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Applications I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 124",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Principles of Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 140",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Networking Essentials",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN 112",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "College Literature",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Principles of Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 141",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Architecture and Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 245",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MA 141"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose a Social Sciences Selective from the DEISJ courses (per catalog).",
+      "code": "SS SEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Social Science Selective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any physical education activity course.",
+      "code": "PE XXXX",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Physical Education Activity",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 224",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "IS 125"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 248",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MA 245"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose any Arts Selective.",
+      "code": "ARTS SEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Arts Selective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "SC 133 is recommended (per catalog).",
+      "code": "NSCI LAB SEL",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Natural Sciences & Scientific Reasoning Lab Science Selective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose any US History and Civic Engagement Selective.",
+      "code": "USHIST SEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "US History and Civic Engagement Selective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any physical education activity course (second PE activity).",
+      "code": "PE XXXX-2",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Physical Education Activity",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HU 146",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Graphics and Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 207",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Microcomputer Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IS 241",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "IS 140"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Network Administration I",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose any Humanities Selective.",
+      "code": "HUM SEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Humanities Selective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose any World History and Global Awareness Selective.",
+      "code": "WHGA SEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "World History and Global Awareness Selective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.herkimer.edu/mime/media/4/503/2025-2026+College-Catalog.pdf",
+  "total_credits": 63,
+  "content_hash": "28d522c18542af3b4d32d657981badd6ed0152ba2c640cc40e9c42bf0872ceb9",
+  "last_verified": "2026-10-02"
+ }
+}

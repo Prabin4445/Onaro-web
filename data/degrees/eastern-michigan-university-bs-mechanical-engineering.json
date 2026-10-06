@@ -1,0 +1,590 @@
+{
+ "institution": {
+  "name": "Eastern Michigan University",
+  "city": "Ypsilanti, MI",
+  "kind": "public4yr",
+  "state": "MI"
+ },
+ "plan": {
+  "id": "eastern-michigan-university-bs-mechanical-engineering",
+  "degree": "BS",
+  "major": "Mechanical Engineering",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://catalog.emich.edu/preview_program.php?catoid=41&poid=18109",
+  "notes": "Sources (all official, retrieved 2026-09-30): (1) the official EMU catalog program page 'Program: Mechanical Engineering [BS]' (Major Requirements 85-87 hours: 32-hour Math and Science Requirements + 44-46-hour Technical Requirements) for all course codes, titles and credits; (2) the official EMU General Education worksheet (FA22) for gen-ed structure. catalog.emich.edu presents an AWS WAF challenge to automated fetching, so catalog content was verified through the search index of the official catalog pages; every code, title and credit below comes from those official sources. The 85-87-hour major total implies 9 hours of technical electives beyond the documented 76 hours; these are modeled as three 3-credit technical-elective choice slots (student selects approved ME technical electives with an advisor). ME options used throughout (ME 312, ME 316, ME 317 - not the PHY alternatives). ME 492W satisfies the Writing Intensive [GEWI] requirement in the major; this major does not require a minor. PREREQUISITES ARE NOT ENCODED: catalog course pages are WAF-blocked and prereqs are never invented per project rules - courses are sequenced in standard engineering order (calculus, physics, statics/dynamics, thermo/fluids/design, capstone); confirm official prerequisites with the catalog and an advisor before registering. 85 major + 30 gen-ed = 115 specified credits; free-elective choice slots (5 cr) reach the 120-credit minimum.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "MATH 120",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. [GEQR] - See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CHEM 121",
+      "title": "General Chemistry I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. [GEKN] - See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CHEM 122",
+      "title": "General Chemistry I Laboratory",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. [GEKN] - See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ME 100",
+      "title": "Introduction to Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "ENGL 121",
+      "title": "Composition II: Researching the Public Experience",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Effective Communication.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "ELEC-B",
+      "title": "Free Elective - student choice",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective - student choice (college-level, 100+).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MATH 121",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "PHY 223",
+      "title": "Mechanics and Sound",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. [GEKN] - See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CTAC 124",
+      "title": "Fundamentals of Speech",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Effective Communication.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "ARTH 100",
+      "title": "Art Appreciation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Arts [GEKA].",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "MATH 223",
+      "title": "Multivariable Calculus",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "PHY 224",
+      "title": "Electricity and Light",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "ME 211",
+      "title": "Statics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SOCL 105",
+      "title": "Introductory Sociology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Social Sciences [GEKS].",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Winter",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "MATH 122",
+      "title": "Elementary Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 325",
+      "title": "Differential Equations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Math and Science Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "ME 312",
+      "title": "Dynamics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement (or PHY 230 Engineering Dynamics, 4 cr). See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ME 313",
+      "title": "Mechanics of Materials",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "HIST 109",
+      "title": "World History to 1500",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Humanities [GEKH].",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "ME 316",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement (or PHY 360 Heat and Thermodynamics, 4 cr). See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "ME 317",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement (or PHY 485 Fluid Dynamics, 3 cr). See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "ME 330",
+      "title": "Machine Design",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "ME 325",
+      "title": "Mechanics of Composite Materials",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ME 326",
+      "title": "Composite Design and Processes",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "LITR 251",
+      "title": "The Bible as Literature",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Humanities [GEKH]; different prefix from HIST 109.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Winter",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "ME 418",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "ME 420",
+      "title": "Thermo/Fluids Lab",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "ME 431",
+      "title": "Mechanical Design and Analysis",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "TE-A",
+      "title": "Technical Elective - student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Technical elective - student choice (3 cr). Select from approved Mechanical Engineering technical electives (typically 300-level+ ME courses); see an advisor. 9 credits of technical electives are required beyond the named Technical Requirements.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "MUSC 107",
+      "title": "Music Appreciation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Arts [GEKA]; different prefix from ARTH 100.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "ME 432",
+      "title": "Machine Dynamics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "ME 435",
+      "title": "Computational Solid Mechanics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ME 492W",
+      "title": "Senior Capstone I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement; senior capstone. [GEWI] Writing Intensive in the major. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "TE-B",
+      "title": "Technical Elective - student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Technical elective - student choice (3 cr). Select from approved Mechanical Engineering technical electives (typically 300-level+ ME courses); see an advisor. 9 credits of technical electives are required beyond the named Technical Requirements.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "HIST 110",
+      "title": "World History Since 1500",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Perspectives on a Diverse World - Global Awareness [GEGA].",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "ME 493",
+      "title": "Senior Capstone II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Technical Requirement; senior capstone. See the official catalog for prerequisites; sequenced in standard engineering order.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "TE-C",
+      "title": "Technical Elective - student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Technical elective - student choice (3 cr). Select from approved Mechanical Engineering technical electives (typically 300-level+ ME courses); see an advisor. 9 credits of technical electives are required beyond the named Technical Requirements.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "WGST 200",
+      "title": "Introduction to Women's Studies",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Perspectives on a Diverse World - U.S. Diversity [GEUS].",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "PLSC 112",
+      "title": "American Government",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "General Education: Knowledge of the Disciplines - Social Sciences [GEKS]; different prefix from SOCL 105.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC-A",
+      "title": "Free Elective - student choice",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free elective - student choice (college-level, 100+).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "a1194d54dd44b0c5537cceea35ed1f827cae659539687b5311f1e73b8d53ed5e",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,417 @@
+{
+ "institution": {
+  "city": "Montgomery",
+  "kind": "public4yr",
+  "name": "Auburn University at Montgomery",
+  "state": "AL"
+ },
+ "plan": {
+  "catalog_year": "2022-2023",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "auburn-university-at-montgomery-bs-exercise-science-pt",
+  "major": "Exercise Science (PT Track)",
+  "notes": "Source is AUM's institution-published '4-Year Plan' for Exercise Science, PT (Physical Therapy) Track (file dated 2-3-23 via URL, currently published on aum.edu) — a sample term-by-term schedule including Summer semesters, seeded per the sample-schedule rule. Flight plan header reads 'Major: Kinesiology Degree: Exercise Science (PT Track)'. Generic slots (MATH choice, FINE ARTS, HISTORY, ENGL LIT CORE, HIST or ENGL LIT CORE, Area II or IV Elective, PHED Activity Course) are choice:true with the flight plan's own wording; specific courses are not assigned by the source. '3|1' lecture|lab pairs are seeded as a single slot at the combined credit total. The MATH slot is variable: 'MATH 1120 or MATH 1150, 3 or 4' credits; seeded at base 3 as choice:true. MATH 1550 (2 cr) is conditional — required only if MATH 1120 was taken; seeded as choice:true with that note. Credit-sum note: the plan as published sums to 127 credits on the MATH 1120 path (15+16+4+16+15+13+14+12+13+9) or 126 on the MATH 1150 path; no degree total is stated on the flight plan. total_credits is the true sum 127 (base path). Course titles for coded courses are from the official AUM 2023-2024 Undergraduate Catalog course descriptions. The flight plan does not list prerequisites, so no prereq chains are seeded. Extraction note: the PDF text extraction appends unrelated Finance-plan content after the plan's final semester; only the Exercise Science content through Year Four Summer is seeded.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "UNIV 1000",
+      "credits": 3,
+      "title": "University Success",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'MATH 1120 or MATH 1150, 3 or 4'; student selects MATH 1120 (3 cr) or MATH 1150 (4 cr). Seeded at base 3 credits.",
+      "code": "MATH 1120 or MATH 1150",
+      "credits": 3,
+      "title": "Mathematics core course",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COMM 1010",
+      "credits": 3,
+      "title": "Introduction to Human Communication",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 1010",
+      "credits": 3,
+      "title": "English Composition I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 2203",
+      "credits": 3,
+      "title": "Wellness",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year One — Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "ENGL 1020",
+      "credits": 3,
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 1010/1011",
+      "credits": 4,
+      "title": "Cellular and Molecular Basis of Life with Laboratory",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYC 1000",
+      "credits": 3,
+      "title": "General Introductory Psychology",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists generic 'FINE ARTS'; student selects a fine arts core course.",
+      "code": "FINE ARTS",
+      "credits": 3,
+      "title": "Fine arts core course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 2010/2011",
+      "credits": 3,
+      "title": "Foundations of Health and Physical Education with Lab",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year One — Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "code": "BIOL 2100/2101",
+      "credits": 4,
+      "title": "Human Anatomy and Physiology with Laboratory",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year One — Summer",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "code": "STAT 2670",
+      "credits": 3,
+      "title": "Elementary Statistics",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 1020/1021",
+      "credits": 4,
+      "title": "Organisms, Adaptations, and the Environment with Laboratory",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4003/4004",
+      "credits": 4,
+      "title": "Physiology of Exercise with Laboratory",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists generic 'HISTORY'; student selects a history core course.",
+      "code": "HISTORY",
+      "credits": 3,
+      "title": "History core course",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'MATH 1550 (if did 1120)'; required only if the student took MATH 1120 instead of MATH 1150.",
+      "code": "MATH 1550",
+      "credits": 2,
+      "title": "Trigonometry",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Two — Fall",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'ENGL LIT CORE'; student selects an English literature core course.",
+      "code": "ENGL LIT CORE",
+      "credits": 3,
+      "title": "English literature core course",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2110/2111",
+      "credits": 4,
+      "title": "Human Anatomy and Physiology II with Laboratory",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2410",
+      "credits": 3,
+      "title": "Biomedical Vocabulary",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYC 2780",
+      "credits": 3,
+      "title": "Human Growth and Development",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'PHED Activity Course'; student selects a PHED activity course.",
+      "code": "PHED Activity Course",
+      "credits": 2,
+      "title": "PHED activity course",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Two — Spring",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'HIST or ENGL LIT CORE' with footnote: Option 1 – History Sequence and Area II Course OR Option 2 – Literature Sequence and Area IV Course.",
+      "code": "HIST or ENGL LIT CORE",
+      "credits": 3,
+      "title": "History or English literature core",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4230",
+      "credits": 3,
+      "title": "Principles of Strength and Conditioning",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4043",
+      "credits": 3,
+      "title": "Kinesiology",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1100/1101",
+      "credits": 4,
+      "title": "General Chemistry I with Laboratory",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Three — Fall",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "code": "PHED 4010",
+      "credits": 3,
+      "title": "Exercise Pathophysiology",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4193",
+      "credits": 3,
+      "title": "Measurement and Evaluation in Exercise Science",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1200/1201",
+      "credits": 4,
+      "title": "General Chemistry II with Laboratory",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1610",
+      "credits": 4,
+      "title": "Calculus I",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Three — Spring",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "code": "PHYS 2100/2101",
+      "credits": 4,
+      "title": "General Physics I with Laboratory",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'Area II or IV Elective'; student selects an Area II or Area IV elective.",
+      "code": "Area II or IV Elective",
+      "credits": 3,
+      "title": "Area II or Area IV elective",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 2250",
+      "credits": 3,
+      "title": "Basic Sports Nutrition",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'PHED Activity Course'; student selects a PHED activity course.",
+      "code": "PHED Activity Course",
+      "credits": 2,
+      "title": "PHED activity course",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Four — Fall",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "code": "PHYS 2200/2201",
+      "credits": 4,
+      "title": "General Physics II with Laboratory",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4044",
+      "credits": 3,
+      "title": "Biomechanics in Human Movement",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4153",
+      "credits": 3,
+      "title": "Exercise Prescription",
+      "slot_id": "s9-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Flight plan lists 'Area II or IV Elective'; student selects an Area II or Area IV elective.",
+      "code": "Area II or IV Elective",
+      "credits": 3,
+      "title": "Area II or Area IV elective",
+      "slot_id": "s9-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Four — Spring",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "code": "PHED 4922",
+      "credits": 9,
+      "title": "Internship in Exercise Science",
+      "slot_id": "s10-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHED 4992",
+      "credits": 0,
+      "title": "Health and Fitness Test",
+      "required_zero": true,
+      "choice_note": "Catalog's flight plan lists PHED 4992 Health and Fitness Test as a 0-credit requirement; flagged required_zero per convention.",
+      "slot_id": "s10-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Year Four — Summer",
+    "n": 10
+   }
+  ],
+  "source_url": "https://aum.edu/wp-content/uploads/2022/11/Exercise-Science_PT_4-Year-Plan-2-3-23.pdf",
+  "total_credits": 127,
+  "transfer_confidence": "core_only",
+  "content_hash": "b29b0eabb843870cba82fe2fda44133909b4b79beb74dd1aca738f6d54ed774e",
+  "last_verified": "2026-10-02"
+ }
+}

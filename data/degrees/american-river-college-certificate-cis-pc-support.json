@@ -1,0 +1,322 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "American River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [
+   "BUSTEC 126",
+   "BUSTEC 127",
+   "BUS 100"
+  ],
+  "id": "american-river-college-certificate-cis-pc-support",
+  "major": "CIS: PC Support",
+  "notes": "Transcribed from the official ARC 'CIS: PC Support Certificate (Full Time)' program roadmap, Catalog 2026-27, published July 08, 2026 (mapmaker.losrios.edu/Maps/7302/PublishedPdf). Total Units 32 = 16+16 (semester sums verified). tccns mirrors ARC local course codes (California community colleges do not use TCCNS). Scheduling: CISA 126/BUSTEC 126 is offered during the 1st 8 weeks and CISA 127/BUSTEC 127 during the 2nd 8 weeks so they can be taken in the same semester; CISC 361 is offered during the 1st 8 weeks and CISC 363 during the 2nd 8 weeks so they can be taken in the same semester; CISC 362 is offered in the fall. CISC 320 must be taken using the Windows operating system. This certificate covers all of the objectives of the CompTIA A+ certification exam.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Restricted elective: CISA 126 or BUSTEC 126 (same course content, Outlook: Basics); a course selected from the list of elective courses specified for this program in the catalog, replaceable with another course from the same list.",
+      "code": "CISA 126",
+      "core_area": "",
+      "credits": 1,
+      "options": [
+       "CISA 126",
+       "BUSTEC 126"
+      ],
+      "prereq": [],
+      "tccns": "CISA 126",
+      "title": "Outlook: Basics",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Restricted elective: CISA 127 or BUSTEC 127 (same course content, Outlook: Tools). Offered the 2nd 8 weeks, following CISA 126/BUSTEC 126.",
+      "code": "CISA 127",
+      "core_area": "",
+      "credits": 1,
+      "options": [
+       "CISA 127",
+       "BUSTEC 127"
+      ],
+      "prereq": [
+       {
+        "one_of": [
+         "CISA 126",
+         "BUSTEC 126"
+        ]
+       }
+      ],
+      "tccns": "CISA 127",
+      "title": "Outlook: Tools",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Restricted elective: a course selected from the list of elective courses specified for this program in the catalog, which can be replaced with another course from the same list (map's representative course shown).",
+      "code": "CISA 305",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISA 305",
+      "title": "Beginning Word Processing",
+      "slot_id": "s1-2",
+      "xfer": [
+       "american-river-college-aa-general-business"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Restricted elective: a course selected from the list of elective courses specified for this program in the catalog, which can be replaced with another course from the same list (map's representative course shown).",
+      "code": "CISA 315",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISA 315",
+      "title": "Introduction to Electronic Spreadsheets",
+      "slot_id": "s1-3",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "american-river-college-aa-general-business",
+       "american-river-college-as-cis-computer-networking-management-cisco",
+       "american-river-college-certificate-retail-management-wafc"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 310",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 310",
+      "title": "Introduction to Computer Information Science",
+      "slot_id": "s1-4",
+      "xfer": [
+       "american-river-college-aa-economics"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 350",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 350",
+      "title": "Introduction to Data Communications",
+      "slot_id": "s1-5",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISC 351",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 351",
+      "title": "Introduction to Local Area Networks",
+      "slot_id": "s1-6",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Offered in the fall per scheduling notes.",
+      "code": "CISC 362",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 362",
+      "title": "Microcomputer and Applications Support",
+      "slot_id": "s1-7",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Restricted elective: ENGL C1000 or BUS 100 per map footnote (map's representative course: ENGL C1000).",
+      "code": "ENGL C1000",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "ENGL C1000",
+       "BUS 100"
+      ],
+      "prereq": [],
+      "tccns": "ENGL C1000",
+      "title": "College Composition",
+      "slot_id": "s1-8",
+      "xfer": [
+       "american-river-college-aa-accounting",
+       "american-river-college-aa-art-history",
+       "american-river-college-aa-art-new-media",
+       "american-river-college-aa-early-childhood-education",
+       "american-river-college-aa-economics",
+       "american-river-college-aa-entrepreneurship",
+       "american-river-college-aa-fashion-design",
+       "american-river-college-aa-general-business",
+       "american-river-college-aa-geography",
+       "american-river-college-aa-kinesiology",
+       "american-river-college-aa-management",
+       "american-river-college-aa-music-guitarist-pianist-composer",
+       "american-river-college-aa-music-instrumentalist",
+       "american-river-college-aa-music-vocalist",
+       "american-river-college-aa-spanish",
+       "american-river-college-aa-studio-art",
+       "american-river-college-as-automotive-analysis",
+       "american-river-college-as-biomedical-equipment-technology",
+       "american-river-college-as-cis-computer-networking-management-cisco",
+       "american-river-college-as-diesel-technology",
+       "american-river-college-as-engineering-technology",
+       "american-river-college-as-geographic-information-systems",
+       "american-river-college-as-landscape-design-technology",
+       "american-river-college-as-paramedic",
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-as-registered-nursing",
+       "american-river-college-certificate-retail-management-wafc"
+      ]
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BUS 310",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "BUS 100",
+         "ENGL C1000"
+        ]
+       }
+      ],
+      "tccns": "BUS 310",
+      "title": "Business Communications",
+      "slot_id": "s2-0",
+      "xfer": [
+       "american-river-college-aa-general-business",
+       "american-river-college-certificate-retail-management-wafc"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Must be taken using the Windows operating system.",
+      "code": "CISC 320",
+      "core_area": "",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 320",
+      "title": "Operating Systems",
+      "slot_id": "s2-1",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Offered during the 1st 8 weeks; CISC 363 (2nd 8 weeks) follows in the same semester.",
+      "code": "CISC 361",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISC 361",
+      "title": "Information Technology Fundamentals",
+      "slot_id": "s2-2",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Offered during the 2nd 8 weeks of the same semester as CISC 361.",
+      "code": "CISC 363",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CISC 361"
+      ],
+      "tccns": "CISC 363",
+      "title": "Microcomputer Support Technical - Preparation for A+ Certification",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISS 310",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISS 310",
+      "title": "Network Security Fundamentals",
+      "slot_id": "s2-4",
+      "xfer": [
+       "american-river-college-as-cis-computer-networking-management-cisco"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CISS 315",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "CISS 315",
+      "title": "Ethical Hacking",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7302/PublishedPdf",
+  "total_credits": 32,
+  "transfer_confidence": "advisory",
+  "content_hash": "59252b29b073bf347c68fa599673397193db9bfec0d20edb0bf1553f33061a12",
+  "last_verified": "2026-10-02"
+ }
+}

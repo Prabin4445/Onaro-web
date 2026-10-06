@@ -1,0 +1,589 @@
+{
+ "institution": {
+  "city": "College Park, MD",
+  "kind": "public4yr",
+  "name": "University of Maryland, College Park",
+  "state": "MD"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "umd-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UMD 2026-2027 Undergraduate Catalog page 'Computer Science Major' (College of Computer, Mathematical, and Natural Sciences) — https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/ — transcribed by hand from the department's official term-by-term sequence, 'Computer Science - General Track, Effective Fall 2024' (https://undergrad.cs.umd.edu/sites/undergrad.cs.umd.edu/files/images/uploads/2024/04/2401%20Computer%20Science%20General%20Track.pdf), the plan the catalog's official 4-Year Plans hub (4yearplans.umd.edu) routes to. This is the newest published CS General Track plan (it supersedes the 2301/Fall-2023 version) and was still the current department plan on 2026-09-30. UMD awards a Bachelor of Science for this major; 'General Track' is the standard degree path (Cybersecurity / Data Science / Machine Learning / Quantum Information specializations are options, not the default degree). All course codes, titles, and credit hours are verbatim from the official documents; placeholders (CMSC 4XX, STAT 4XX, MATH/STAT/AMSC elective, Upper-Level Concentration, gen-ed slots) are student-choice per the official plan. The plan sheet is labeled 'This is a generalized academic plan, not an official audit'. Credits modeled at 120: Fall Year 2 uses a 4-credit MATH/STAT/AMSC slot (per the plan's '3 or 4' credit option) and Spring Year 4 uses a 3-credit free elective (per the plan's '3 or 4' option). Benchmark rules from the official plan: CMSC131, CMSC132, and MATH140 must be completed with C- or higher by 45 credits; CMSC330, CMSC351, and a MATH/STAT course must be completed with C- or higher by 75 credits. Prereqs recorded only where the official UMD sources state them: CMSC132 requires CMSC131 (official UMD plan note); CMSC250 requires CMSC131 and MATH141 (catalog course page); CMSC330 requires CMSC216 and CMSC250 (Fall 2026 CMSC330 syllabus); CMSC351 requires CMSC216 and CMSC250 (catalog course page); STAT 4XX and the MATH/STAT/AMSC elective require MATH141 (stated on the official plan sheet itself). Diversity footnote: two Distributive Studies courses approved for Big Question (SCIS) courses are required; Understanding Plural Societies (UP) and Cultural Competence (CC) may also fulfill Distributive Studies categories. Professional Writing may be any ENGL 39X course (e.g., ENGL 393 Technical Writing). Upper Level Concentration: minimum 12 credits of 300-400 level courses in one discipline outside CMSC, each course minimum 3 credits, 2.0 average required. Upper Level Electives: 6 credits from CMSC 300- or 400-level courses (excluding CMSC330 and CMSC351).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan allows CMSC 131 or CMSC 141 (Programming with Purpose I: Data-Centric Computing).",
+      "code": "CMSC 131",
+      "credits": 4,
+      "options": [
+       "CMSC 131",
+       "CMSC 141"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Object-Oriented Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 140",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Academic Writing",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Fundamental Studies Oral Communication (FSOC) requirement.",
+      "code": "Oral Communication (FSOC)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Oral Communication",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Bits and Bytes of Computer and Information Sciences",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official plan allows CMSC 132 or CMSC 142 (Programming with Purpose II: Data Structures and Algorithms).",
+      "code": "CMSC 132",
+      "credits": 4,
+      "options": [
+       "CMSC 132",
+       "CMSC 142"
+      ],
+      "prereq": [
+       "CMSC 131"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Object-Oriented Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 141",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Natural Science with Lab (DSNL) Distributive Studies requirement.",
+      "code": "Natural Science w/ Lab (DSNL)",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Natural Science with Lab",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the History and Social Sciences (DSHS) Distributive Studies requirement.",
+      "code": "History & Social Sciences (DSHS)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "History and Social Sciences",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 216",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 250",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CMSC 131",
+       "MATH 141"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan states 'MATH/AMSC/STAT xxx with MATH 141 prerequisite', 3-4 credits; common option is MATH 240 Introduction to Linear Algebra (4 credits) per the catalog. Modeled at 4 credits so the plan totals 120.",
+      "code": "MATH/STAT/AMSC Elective",
+      "credits": 4,
+      "options": [
+       "MATH 240"
+      ],
+      "prereq": [
+       "MATH 141"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "MATH/STAT/AMSC Elective (MATH 141 prerequisite)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Scholarship in Practice (DSSP, nonmajor) requirement.",
+      "code": "Scholarship in Practice (DSSP)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Scholarship in Practice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 216",
+       "CMSC 250"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Organization of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMSC 351",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CMSC 216",
+       "CMSC 250"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan states 'STAT 4xx with MATH 141 prerequisite'; canonical option is STAT 400 Applied Probability and Statistics I (3 credits) per the catalog.",
+      "code": "STAT 4XX",
+      "credits": 3,
+      "options": [
+       "STAT 400"
+      ],
+      "prereq": [
+       "MATH 141"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Statistics Elective (MATH 141 prerequisite)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Natural Science (DSNS) Distributive Studies requirement (no lab required).",
+      "code": "Natural Science (DSNS)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Natural Science",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Humanities (DSHU) Distributive Studies requirement.",
+      "code": "Humanities (DSHU) 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Humanities",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select 5 CMSC 400-level courses total across the plan from at least 3 of the 5 areas (Systems; Information Processing; Software Engineering and Programming Languages; Theory; Numerical Analysis), no more than 3 courses in a given area, each with C- or better. See catalog area course lists.",
+      "code": "CMSC 4XX Area Course 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "CMSC 400-Level Area Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second of five required 400-level CMSC area courses.",
+      "code": "CMSC 4XX Area Course 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CMSC 400-Level Area Course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the History and Social Sciences (DSHS) Distributive Studies requirement.",
+      "code": "History & Social Sciences (DSHS) 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "History and Social Sciences",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Humanities (DSHU) Distributive Studies requirement.",
+      "code": "Humanities (DSHU) 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Humanities",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course approved as a Big Question (SCIS, formerly I-Series) course.",
+      "code": "Big Question (SCIS) 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Big Question (SCIS)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Third of five required 400-level CMSC area courses.",
+      "code": "CMSC 4XX Area Course 3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "CMSC 400-Level Area Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Fourth of five required 400-level CMSC area courses.",
+      "code": "CMSC 4XX Area Course 4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CMSC 400-Level Area Course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any Professional Writing course, e.g. ENGL 393 Technical Writing (3 credits) per UMD 4-year plans.",
+      "code": "ENGL 39X",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Professional Writing",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Scholarship in Practice (DSSP, nonmajor) requirement.",
+      "code": "Scholarship in Practice (DSSP) 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Scholarship in Practice",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course approved as a Big Question (SCIS, formerly I-Series) course.",
+      "code": "Big Question (SCIS) 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Big Question (SCIS)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Fifth of five required 400-level CMSC area courses.",
+      "code": "CMSC 4XX Area Course 5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CMSC 400-Level Area Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "6 credits of CMSC 300- or 400-level electives required (excluding CMSC 330 and CMSC 351); may count an area course beyond the five if more than three are taken in one area.",
+      "code": "CMSC Upper-Level Elective 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CMSC Upper-Level Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Minimum 12 credits of 300-400 level courses from ONE discipline outside CMSC; no CMSC or crosslisted courses; each course minimum 3 credits; 2.0 average required.",
+      "code": "Upper-Level Concentration 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Upper-Level Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second of four upper-level concentration courses.",
+      "code": "Upper-Level Concentration 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Upper-Level Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the Understanding Plural Societies (DVUP) diversity requirement.",
+      "code": "Understanding Plural Societies (DVUP)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Understanding Plural Societies",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second of two required CMSC upper-level electives (6 credits total, excluding CMSC 330 and CMSC 351).",
+      "code": "CMSC Upper-Level Elective 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CMSC Upper-Level Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Third of four upper-level concentration courses.",
+      "code": "Upper-Level Concentration 3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Upper-Level Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Fourth of four upper-level concentration courses.",
+      "code": "Upper-Level Concentration 4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Upper-Level Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying either the Understanding Plural Societies (DVUP) or Cultural Competence (DVCC) diversity requirement.",
+      "code": "Understanding Plural Societies (DVUP) or Cultural Competence (DVCC)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Understanding Plural Societies or Cultural Competence",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Plan states 'Elective 3 or 4'; modeled at 3 credits to reach the 120-credit graduation minimum.",
+      "code": "Free Elective",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://academiccatalog.umd.edu/undergraduate/colleges-schools/computer-mathematical-natural-sciences/computer-science/computer-science-major/",
+  "total_credits": 120,
+  "content_hash": "947ed1b9c6b4478508fe9c75ed80e2b88e8cf6864cdefa9dea1748ad653bf548",
+  "last_verified": "2026-10-02"
+ }
+}

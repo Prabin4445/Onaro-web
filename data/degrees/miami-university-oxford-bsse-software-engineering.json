@@ -1,0 +1,683 @@
+{
+ "institution": {
+  "name": "Miami University-Oxford",
+  "city": "Oxford, OH",
+  "state": "OH",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "miami-university-oxford-bsse-software-engineering",
+  "degree": "BSSE",
+  "major": "Software Engineering",
+  "catalog_year": "2026-2027",
+  "source_url": "https://bulletin.miamioh.edu/engineering-computing/software-bs/",
+  "notes": "Source: https://bulletin.miamioh.edu/engineering-computing/software-bs/ (Miami University Bulletin, 2026-2027). Hand-transcribed 2026-10-01. Program requires 92-98 semester hours; degree minimum 128 (College of Engineering and Computing). Major: communication (STC 135/APC 231/ENG-IMS 224, 3cr); MTH 151 (4), MTH 231 or 331 (3), STA 301/261 or ECE 345 (3-4); 8-10cr STA/MTH electives (modeled as MTH 251, STA 363, MTH 222); 3-5cr science (modeled as BIO/MBI 115, 4cr); SE core: CEC 111/112, CSE 174, CYB 134/CIT 258, CSE 201/202/212/271/274/278/301/302/374/383/401/448/449; 12cr SE electives (modeled as CSE 385, 432, CYB 331, 474, ISA 235). CEC 190 zero-credit badge required each semester (not shown; 0cr). Miami Plan placeholders (MIAMI-*) are clearly-labeled generic slots, not invented courses.",
+  "semesters": [
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSE 174",
+      "title": "Fundamentals of Problem Solving and Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MTH 151",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "ENG 111",
+      "title": "Composition and Rhetoric",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CEC 111",
+      "title": "Imagination, Ingenuity and Impact I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MIAMI-PA4-1",
+      "title": "Miami Plan: Global Citizenship Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Global Citizenship (PA4) perspectives area (12cr required).",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSE 271",
+      "title": "Object-Oriented Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 174"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MTH 231",
+      "title": "Elements of Discrete Mathematics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MTH 151"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CYB 134",
+      "title": "Introduction to Cybersecurity",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "CYB 134 or CIT 258 Introduction to Global Cybersecurity.",
+      "options": [
+       "CYB 134",
+       "CIT 258"
+      ],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CEC 112",
+      "title": "Imagination, Ingenuity, and Impact II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CEC 111"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MIAMI-PA3-1",
+      "title": "Miami Plan: Arts & Humanities Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Arts & Humanities (PA3) perspectives area (6cr required).",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "MIAMI-PA4-2",
+      "title": "Miami Plan: Global Citizenship Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Global Citizenship (PA4) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSE 201",
+      "title": "Introduction to Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 174"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSE 274",
+      "title": "Data Abstraction and Data Structures",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 271"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CSE 278",
+      "title": "Systems I: Introduction to Systems Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 271"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "STA 261",
+      "title": "Statistics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "STC 135",
+      "title": "Principles of Public Speaking",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "STC 135 or APC 231 Small Group Communication or ENG/IMS 224 Professional Communication & Digital Rhetoric.",
+      "options": [
+       "STC 135",
+       "APC 231",
+       "ENG/IMS 224"
+      ],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSE 202",
+      "title": "Software Requirements",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 201"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSE 212",
+      "title": "Software Engineering for User Interface and User Experience Design",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 201"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSE 374",
+      "title": "Algorithms I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 274",
+       "MTH 231"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "BIO/MBI 115",
+      "title": "Biological Concepts: Ecology, Evolution, Genetics, and Diversity",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Science requirement (3-5cr).",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "MIAMI-PA3-2",
+      "title": "Miami Plan: Arts & Humanities Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Arts & Humanities (PA3) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSE 301",
+      "title": "Software Architecture and Design",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 202"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSE 302",
+      "title": "Software Construction",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 202"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSE 383",
+      "title": "Web Application Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 274"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MTH 251",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "STA/MTH elective (8-10cr required).",
+      "options": [],
+      "prereq": [
+       "MTH 151"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "MIAMI-PA2-1",
+      "title": "Miami Plan: Science & Society Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Science & Society (PA2) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSE 401",
+      "title": "Software Quality Assurance and Testing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 301"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSE 385",
+      "title": "Database Systems",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "SE elective (12cr required from approved list).",
+      "options": [],
+      "prereq": [
+       "CSE 274"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "STA 363",
+      "title": "Introduction to Statistical Modeling",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "STA/MTH elective (8-10cr required).",
+      "options": [],
+      "prereq": [
+       "STA 261"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MIAMI-SI-1",
+      "title": "Miami Plan: Signature Inquiry",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a Signature Inquiry course (9cr required).",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "MIAMI-PA4-3",
+      "title": "Miami Plan: Global Citizenship Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Global Citizenship (PA4) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSE 448",
+      "title": "Senior Design Project I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 301",
+       "CSE 302"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSE 432",
+      "title": "Machine Learning",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "SE elective.",
+      "options": [],
+      "prereq": [
+       "CSE 274",
+       "STA 261"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CYB 331",
+      "title": "Software Security",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "SE elective.",
+      "options": [],
+      "prereq": [
+       "CSE 274"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "MTH 222",
+      "title": "Introduction to Linear Algebra",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "STA/MTH elective.",
+      "options": [],
+      "prereq": [
+       "MTH 151"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "MIAMI-SI-2",
+      "title": "Miami Plan: Signature Inquiry",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a Signature Inquiry course.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "MIAMI-PA4-4",
+      "title": "Miami Plan: Global Citizenship Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Global Citizenship (PA4) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSE 449",
+      "title": "Senior Design Project II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CSE 448"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSE 474",
+      "title": "Compiler Design",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "SE elective.",
+      "options": [],
+      "prereq": [
+       "CSE 374"
+      ],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ISA 235",
+      "title": "Information Technology and the Intelligent Enterprise",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "SE elective from approved list.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "MIAMI-SI-3",
+      "title": "Miami Plan: Signature Inquiry",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a Signature Inquiry course.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "MIAMI-CAP",
+      "title": "Miami Plan: Senior Capstone",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Senior Capstone Experience (3cr required).",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "slot_id": "s8-5",
+      "code": "MIAMI-PA2-2",
+      "title": "Miami Plan: Science & Society Perspectives",
+      "credits": 3,
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "Select a course from the Miami Plan Science & Society (PA2) perspectives area.",
+      "options": [],
+      "prereq": [],
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "total_credits": 128,
+  "external_prereqs": [],
+  "content_hash": "c2f64bd4d42d4aaddba5f371fbc7f769ca8e3caaa045c3b9dd74793074e8ee5b",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,554 @@
+{
+ "institution": {
+  "city": "Bloomington, IN",
+  "kind": "public4yr",
+  "name": "Indiana University Bloomington",
+  "state": "IN"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "indiana-university-bloomington-bs-informatics",
+  "major": "Informatics",
+  "notes": "Luddy School of Informatics, Computing, and Engineering B.S. in Informatics (bulletin 2026-2027). Informatics Core = 26 cr (INFO-I 101/201/202/210/211/300/308, INFO-Y 395). Additional Luddy requirements: Diversity in the U.S., English Composition (C or higher), Intensive Writing, Statistics, Ethics, 9 cr Natural & Mathematical Sciences. Plus IU Common Ground gen-ed (A&H 6, S&H 6, World Languages & Cultures 6; MATH-M 118 satisfies Math Modeling). Students complete an Informatics Cognate (15 cr, advisor-guided; e.g., Business, Biology, Cognitive Science) and Informatics electives (9 cr). Capstone via INFO-I 494 (prereq INFO-I 211) or approved capstone sequence. Prerequisite chains from the Luddy handbook flowchart: I101 -> I201/I202; I202 -> I300; I201 -> I210; I210 -> I211/I308; I211 -> I494. Minimum 2.0 GPA; C or higher in major courses.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 101",
+      "credits": 4,
+      "prereq": [],
+      "slot_id": "s1-0",
+      "title": "Introduction to Informatics",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "ENG-W 131",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-1",
+      "title": "Elementary Composition",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "code": "MATH-M 118",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-2",
+      "title": "Finite Mathematics",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Arts & Humanities course (Common Ground: 2 courses, 6+ cr total)",
+      "code": "GENED-AH1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-3",
+      "title": "Arts & Humanities choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-4",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s1-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 201",
+      "credits": 4,
+      "prereq": [
+       "INFO-I 101"
+      ],
+      "slot_id": "s2-0",
+      "title": "Mathematical Foundations of Informatics",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 202",
+      "credits": 3,
+      "prereq": [
+       "INFO-I 101"
+      ],
+      "slot_id": "s2-1",
+      "title": "Social Informatics",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Social & Historical Studies course (Common Ground: 2 courses, 6+ cr total)",
+      "code": "GENED-SH1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s2-2",
+      "title": "Social & Historical Studies choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy N&M requirement: GenEd-approved Natural & Mathematical Sciences course (9 cr total)",
+      "code": "GENED-NM1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s2-3",
+      "title": "Natural & Mathematical Sciences choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-5",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s2-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 210",
+      "credits": 4,
+      "prereq": [
+       "INFO-I 201"
+      ],
+      "slot_id": "s3-0",
+      "title": "Information Infrastructure I",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 300",
+      "credits": 3,
+      "prereq": [
+       "INFO-I 202"
+      ],
+      "slot_id": "s3-1",
+      "title": "HCI / Interaction Design",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy requirement: Statistics course (advisor-guided)",
+      "code": "STAT-XXX",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s3-2",
+      "title": "Statistics choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Arts & Humanities course",
+      "code": "GENED-AH2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s3-3",
+      "title": "Arts & Humanities choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-6",
+      "credits": 2,
+      "prereq": [],
+      "slot_id": "s3-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 211",
+      "credits": 4,
+      "prereq": [
+       "INFO-I 210"
+      ],
+      "slot_id": "s4-0",
+      "title": "Information Infrastructure II",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-I 308",
+      "credits": 3,
+      "prereq": [
+       "INFO-I 210"
+      ],
+      "slot_id": "s4-1",
+      "title": "Information Representation",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy requirement: Ethics course (advisor-guided)",
+      "code": "ETHICS-XXX",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s4-2",
+      "title": "Ethics choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved Social & Historical Studies course",
+      "code": "GENED-SH2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s4-3",
+      "title": "Social & Historical Studies choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-7",
+      "credits": 2,
+      "prereq": [],
+      "slot_id": "s4-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "code": "INFO-Y 395",
+      "credits": 1,
+      "prereq": [],
+      "slot_id": "s5-0",
+      "title": "Career Development for Informatics Majors",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics cognate course (advisor-guided; 15 cr total in a cognate area such as Business, Biology, or Cognitive Science)",
+      "code": "COG-1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s5-1",
+      "title": "Informatics Cognate choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics cognate course",
+      "code": "COG-2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s5-2",
+      "title": "Informatics Cognate choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy N&M requirement: GenEd-approved Natural & Mathematical Sciences course",
+      "code": "GENED-NM2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s5-3",
+      "title": "Natural & Mathematical Sciences choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy shared goal: Diversity in the United States (3 cr, CASE-approved listing)",
+      "code": "DIV-US",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s5-4",
+      "title": "Diversity in the U.S. choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics capstone: INFO-I 494 or approved capstone sequence (prereq INFO-I 211; advisor-guided)",
+      "code": "INFO-I 494",
+      "credits": 3,
+      "prereq": [
+       "INFO-I 211"
+      ],
+      "slot_id": "s6-0",
+      "title": "Informatics Capstone choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics cognate course",
+      "code": "COG-3",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-1",
+      "title": "Informatics Cognate choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics elective (advisor-guided)",
+      "code": "INFO-ELEC1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-2",
+      "title": "Informatics elective choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved World Culture course (Common Ground World Languages & Cultures: 2 courses, 6+ cr total)",
+      "code": "GENED-WC1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-3",
+      "title": "World Culture choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy N&M requirement: GenEd-approved Natural & Mathematical Sciences course",
+      "code": "GENED-NM3",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s6-4",
+      "title": "Natural & Mathematical Sciences choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6,
+    "term": "Spring"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics capstone continuation or second capstone course (advisor-guided)",
+      "code": "INFO-CAP2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-0",
+      "title": "Informatics Capstone choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics cognate course",
+      "code": "COG-4",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-1",
+      "title": "Informatics Cognate choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics elective (advisor-guided)",
+      "code": "INFO-ELEC2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-2",
+      "title": "Informatics elective choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "GenEd-approved World Culture course",
+      "code": "GENED-WC2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-3",
+      "title": "World Culture choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Luddy shared goal: Intensive Writing (3 cr, CASE-approved listing)",
+      "code": "INTW",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s7-4",
+      "title": "Intensive Writing choice",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7,
+    "term": "Fall"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics cognate course",
+      "code": "COG-5",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-0",
+      "title": "Informatics Cognate choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Informatics elective (advisor-guided)",
+      "code": "INFO-ELEC3",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-1",
+      "title": "Informatics elective choice",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-1",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-2",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-2",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-3",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General elective to reach 120 cr",
+      "code": "ELEC-3",
+      "credits": 3,
+      "prereq": [],
+      "slot_id": "s8-4",
+      "title": "General elective",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8,
+    "term": "Spring"
+   }
+  ],
+  "source_url": "https://iu.pressbooks.pub/luddyhandbook/chapter/informatics-degree-requirements/",
+  "total_credits": 120,
+  "content_hash": "016e8619e71676bb2c7c6c506c3b6b150e155a86af354290b7f50d00902f1459",
+  "last_verified": "2026-10-02"
+ }
+}

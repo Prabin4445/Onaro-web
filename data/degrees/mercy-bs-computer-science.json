@@ -1,0 +1,628 @@
+{
+ "institution": {
+  "name": "Mercy University",
+  "city": "Dobbs Ferry, NY",
+  "kind": "private",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "mercy-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://www.mercy.edu/media/20262027-bs-computer-science",
+  "notes": "Source: Mercy University official Academic Program Sequence Map, 'Bachelor of Science in Computer Science', Catalog Year 2026-2027 (https://www.mercy.edu/media/20262027-bs-computer-science; Office of the Provost, April 2026). Degree name verified: 'Bachelor of Science in Computer Science' (map heading). Transcription method: manual verbatim transcription of the official term-by-term sequence map on 2026-09-30; course titles use the map's wording (Mercy's own abbreviated catalog style, e.g. 'Sftwr Engineering I:Principles'). Credit totals match the map exactly: terms 15+15+15+16+15+16+15+13 = 120 = the map's printed PROGRAM TOTALS of 120 (General Education 42; Major & Major Elective 65; Open Elective 13), equal to the catalog 120-credit degree minimum — no discrepancy. MATH 201 (Precalculus) is classified as a Major course per the map's printed Y1-Spring totals (9 GE / 6 Maj): it is the second major course alongside CISC 131. The map prints MATH 201's prerequisite as 'MATH 116 or B in HS algebra' — a placement alternative; the prereq points to MATH 116 (the in-plan course) and the 'B in high school algebra' placement option is documented here. The map's 'C or Higher' entries are grade milestones, not prerequisites, and are not encoded as prereqs. Markers: GC = Gateway Course (CISC 131, CISC 231); WBE = Work-Based Experience (CISC 380, CISC 381); CA/ELC = Career Activity / Experiential Learning Course (CISC 471). The three Mercy Seminars have no published course codes in any official Mercy sequence map (CS and Nursing 2026-2027 maps both omit them); descriptive placeholder codes MERCY-SEM-1/2/3 are used. ENGL 111/112 titled 'English Composition I/II' per the same-catalog-year official Mercy Nursing sequence map (the CS map abbreviates them as 'Comp 1'/'Comp II'; course codes are identical). ENGL 110 named in the Y1-Fall Gen Ed choice appears only as a choice option, not as a required course.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENGL 111",
+      "title": "English Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MERCY-SEM-1",
+      "title": "Mercy Seminar I: First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH 116",
+      "title": "College Algebra (Quantitative Reasoning)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CISC 120",
+      "title": "Intro Computers & App Software",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GE-CHOICE-1",
+      "title": "Gen Ed elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: one General Education course — ENGL 110, LANG 115, or another elective, per the sequence map.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENGL 112",
+      "title": "English Composition II",
+      "credits": 3,
+      "prereq": [
+       "ENGL 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 201",
+      "title": "Precalculus",
+      "credits": 3,
+      "prereq": [
+       "MATH 116"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CISC 131",
+      "title": "Foundations of Computing I",
+      "credits": 3,
+      "prereq": [
+       "CISC 120"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GE-LANG-1",
+      "title": "Language elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: LANG 115/116 or another elective, per the sequence map.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MERCY-SEM-2",
+      "title": "Mercy Seminar II: Transformative Ideas",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "MATH 244",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [
+       "MATH 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CISC 231",
+      "title": "Foundations of Computing II",
+      "credits": 3,
+      "prereq": [
+       "CISC 131"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CISC-MAJELEC-1",
+      "title": "Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any major elective course.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GE-LANG-2",
+      "title": "Gen Ed: language or elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: LANG 116 or another elective, per the sequence map.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GE-SCI-1",
+      "title": "Gen Ed: Scientific Reasoning",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any General Education Scientific Reasoning course.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CISC 311",
+      "title": "Object/Structure/Algorithm I",
+      "credits": 3,
+      "prereq": [
+       "CISC 231",
+       "MATH 244"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CISC 341",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [
+       "CISC 231",
+       "MATH 244"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MATH 260",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MATH 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MERCY-SEM-3",
+      "title": "Mercy Seminar III: Big Problems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GE-HUM-1",
+      "title": "Gen Ed: Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any General Education Humanities course.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "GE-ETH-1",
+      "title": "Gen Ed: Ethical Reasoning",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any General Education Ethical Reasoning course.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CISC 339",
+      "title": "Artificial Intelligence",
+      "credits": 3,
+      "prereq": [
+       "CISC 231",
+       "MATH 244"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CISC 335",
+      "title": "Computer Network II",
+      "credits": 3,
+      "prereq": [
+       "CISC 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GE-SOC-1",
+      "title": "Gen Ed: Self & Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any General Education Self & Society course.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "OPEN-ELEC-1",
+      "title": "Open Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any open elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CISC 421",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CISC 231",
+       "MATH 244"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "MATH 261",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 260"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "GE-CRE-1",
+      "title": "Gen Ed: Creative Expression",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any General Education Creative Expression course.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CISC-MAJELEC-2",
+      "title": "Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any major elective course.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "OPEN-ELEC-2",
+      "title": "Open Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any open elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CISC 371",
+      "title": "Sftwr Engineering I:Principles",
+      "credits": 3,
+      "prereq": [
+       "CISC 311"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CISC 411",
+      "title": "Object/Structure/Algorithm II",
+      "credits": 3,
+      "prereq": [
+       "CISC 311"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "MATH 350",
+      "title": "Probability:Theory/Application",
+      "credits": 3,
+      "prereq": [
+       "MATH 261"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CISC 380",
+      "title": "Co-op Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "OPEN-ELEC-3",
+      "title": "Open Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any open elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CISC 471",
+      "title": "Sftwr Engrg II:Snr Cpstn Prj",
+      "credits": 3,
+      "prereq": [
+       "CISC 371"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CISC 381",
+      "title": "Co-op Computer Science II",
+      "credits": 3,
+      "prereq": [
+       "CISC 380"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CISC-MAJELEC-3",
+      "title": "Major Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any major elective course.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "OPEN-ELEC-4",
+      "title": "Open Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any open elective course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "OPEN-ELEC-5",
+      "title": "Open Elective",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: any 1-credit open elective course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "387e8ddea5914f0d7ed6e52eb37c42e8510262bb7ccc61cc0b55275fbbcf3f6e",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,698 @@
+{
+ "institution": {
+  "city": "Bellingham, WA",
+  "ipeds": 237011,
+  "kind": "public",
+  "name": "Western Washington University",
+  "state": "WA"
+ },
+ "plan": {
+  "id": "western-washington-university-bs-environmental-science",
+  "degree": "BS",
+  "major": "Environmental Science",
+  "source_url": "https://catalog.wwu.edu/preview_program.php?catoid=21&poid=10107",
+  "catalog_year": "2024-2025",
+  "total_credits": 180,
+  "notes": "Source: Official Western Washington University 2024-2025 catalog, Environmental Science, BS program page (catalog.wwu.edu/preview_program.php?catoid=21&poid=10107; College of the Environment, Department of Environmental Sciences). The catalog specifies 109-110 credits: Preparatory Courses (44-45 cr.: BIOL 204/205/206, CHEM 161/162/163, MATH 124, PHYS 161, ENVS 203 or GEOL 211) and the Major (65 cr.: organic chemistry, ecology, biostatistics, CENV capstone, ESCI 498A/B/C/D, ENVS/UEPP 300/400 course, two lab/lecture options, and under-advisement electives). Because the live catalog page renders its Requirements table client-side, the requirement details were retrieved from an archived copy of this official catalog page; all courses, credits, and options are from the official 2024-2025 catalog. WWU is on the quarter system: the plan uses 12 quarters (Fall/Winter/Spring). The catalog's preparatory guidance (general chemistry freshman year, general biology sophomore year) sets the Year 1-2 order. University graduation requires 180 total credits including General University Requirements; GURs are modeled as constrained-choice slots (71 cr.) to complete the 180-credit degree plan. All credit values are quarter hours. No courses, credits, or prereqs invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CHEM-161",
+      "title": "General Chemistry I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH-124",
+      "title": "Calculus and Analytic Geometry I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "GUR-1",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CHEM-162",
+      "title": "General Chemistry II",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "CHEM-161"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "GUR-2",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "GUR-3",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CHEM-163",
+      "title": "General Chemistry III",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "CHEM-162"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "GUR-4",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "GUR-5",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "BIOL-204",
+      "title": "Introduction to Evolution, Ecology and Biodiversity w/lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "PHYS-161",
+      "title": "Physics with Calculus I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "MATH-124"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "GUR-6",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Winter Year 2",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "BIOL-205",
+      "title": "Introduction to Cellular and Molecular Biology w/lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "BIOL-204"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "ENVS-203",
+      "title": "Physical Geography",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENVS 203 Physical Geography (4 cr.) or GEOL 211 Physical Geology (5 cr.). Choosing GEOL 211 brings the degree total to 110 credits.",
+      "options": [
+       "GEOL-211"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CHEM-251",
+      "title": "Elementary Organic Chemistry",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "CHEM-163"
+      ],
+      "choice": true,
+      "choice_note": "CHEM 251 Elementary Organic Chemistry (5 cr.) or the series CHEM 351 + CHEM 352 + CHEM 354 Organic Chemistry Laboratory I (11 cr. total).",
+      "options": [
+       "CHEM-351+352+354"
+      ],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "BIOL-206",
+      "title": "Introduction to Organismal Biology w/lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "BIOL-205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "ESCI-325",
+      "title": "Fundamentals of Ecology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ESCI 325 Fundamentals of Ecology (3 cr.) or BIOL 325 Ecology (4 cr.).",
+      "options": [
+       "BIOL-325"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "ESCI-340",
+      "title": "Biostatistical Analysis",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "MATH-124"
+      ],
+      "choice": true,
+      "choice_note": "ESCI 340 Biostatistical Analysis (5 cr.) or BIOL 340 Biostatistics (5 cr.).",
+      "options": [
+       "BIOL-340"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GUR-7",
+      "title": "General University Requirement",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "ESCI-361",
+      "title": "Water Quality",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Lab/lecture option (choose two): any combined lecture/lab course or lecture+lab pair from the catalog list. ESCI 431 may count toward the capstone or a lab/lecture option, but not both.",
+      "options": [
+       "ESCI-404",
+       "ESCI-407",
+       "ESCI-408",
+       "ESCI-409",
+       "ESCI-423",
+       "MACS-424",
+       "ESCI-426",
+       "ESCI-428",
+       "ESCI-429",
+       "ESCI-430",
+       "ESCI-431",
+       "ESCI-440",
+       "ESCI-442",
+       "ESCI-445",
+       "ESCI-451",
+       "ESCI-466",
+       "ESCI-477",
+       "ESCI-480",
+       "ESCI-485",
+       "ESCI-321+322",
+       "ESCI-410+411",
+       "ESCI-455+457"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "ESCI-429",
+      "title": "Stream Ecology",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-440",
+       "ESCI-407",
+       "ESCI-442",
+       "ESCI-423",
+       "ESCI-451"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "GUR-8",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Winter Year 3",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "ESCI-430",
+      "title": "Limnology and Limnology Lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Lab/lecture option (choose two): any combined lecture/lab course or lecture+lab pair from the catalog list. ESCI 431 may count toward the capstone or a lab/lecture option, but not both.",
+      "options": [
+       "ESCI-404",
+       "ESCI-407",
+       "ESCI-408",
+       "ESCI-409",
+       "ESCI-423",
+       "MACS-424",
+       "ESCI-426",
+       "ESCI-428",
+       "ESCI-429",
+       "ESCI-430",
+       "ESCI-431",
+       "ESCI-440",
+       "ESCI-442",
+       "ESCI-445",
+       "ESCI-451",
+       "ESCI-466",
+       "ESCI-477",
+       "ESCI-480",
+       "ESCI-485",
+       "ESCI-321+322",
+       "ESCI-410+411",
+       "ESCI-455+457"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "ESCI-440",
+      "title": "Wetlands Ecology",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-429",
+       "ESCI-407",
+       "ESCI-442",
+       "ESCI-423",
+       "ESCI-451"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "GUR-9",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s9-0",
+      "code": "ESCI-407",
+      "title": "Forest Ecology",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-429",
+       "ESCI-440",
+       "ESCI-442",
+       "ESCI-423",
+       "ESCI-451"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s9-1",
+      "code": "ESCI-442",
+      "title": "Introduction to Remote Sensing",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-429",
+       "ESCI-440",
+       "ESCI-407",
+       "ESCI-423",
+       "ESCI-451"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s9-2",
+      "code": "ENVS-3XX",
+      "title": "ENVS or UEPP 300/400-Level Course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "One ENVS or UEPP 300-level or 400-level course (minimum 3 credits).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s9-3",
+      "code": "GUR-10",
+      "title": "General University Requirement",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 9
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s10-0",
+      "code": "ESCI-409",
+      "title": "Riparian Conservation",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-428",
+       "ESCI-445",
+       "ESCI-466",
+       "ESCI-477",
+       "ESCI-480",
+       "ESCI-485"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s10-1",
+      "code": "ESCI-423",
+      "title": "Paleoclimate and Paleoecology",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Under advisement: any ESCI 300/400-level course (minimum 11 credits); additional electives if needed from BIOL/CHEM/ENRG/GEOL/ENVS/MACS/MATH 300/400-level, FAIR 330E, FAIR 434P, MATH 125/203/204/205/224/225/226, or PHYS (max three courses).",
+      "options": [
+       "ESCI-429",
+       "ESCI-440",
+       "ESCI-407",
+       "ESCI-442",
+       "ESCI-451"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s10-2",
+      "code": "CAPSTONE-1",
+      "title": "CENV Capstone (CPST)",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "One ENVS, ESCI, or UEPP approved course (4-5 credits) with a capstone (CPST) attribute; see cenv.wwu.edu/college-environment-capstone-courses.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 10
+   },
+   {
+    "term": "Winter Year 4",
+    "courses": [
+     {
+      "slot_id": "s11-0",
+      "code": "GUR-11",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s11-1",
+      "code": "GUR-12",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s11-2",
+      "code": "GUR-13",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 11
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s12-0",
+      "code": "ESCI-498A",
+      "title": "Senior Thesis",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Minimum 5 credits (maximum 10): ESCI 498A Senior Thesis, 498B Internship, 498C Senior Project, or 498D International Study.",
+      "options": [
+       "ESCI-498B",
+       "ESCI-498C",
+       "ESCI-498D"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s12-1",
+      "code": "GUR-14",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s12-2",
+      "code": "GUR-15",
+      "title": "General University Requirement",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course fulfilling a WWU General University Requirement (2024-25 catalog).",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 12
+   }
+  ],
+  "content_hash": "441ee66f2aea3ef01616dfa35c64207d903e890cc7422f60206846b8548b1845",
+  "last_verified": "2026-10-02"
+ }
+}

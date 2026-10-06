@@ -1,0 +1,649 @@
+{
+ "institution": {
+  "city": "Magnolia, AR",
+  "ipeds": "107983",
+  "kind": "university",
+  "name": "Southern Arkansas University",
+  "slug": "southern-arkansas-university",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BUS/MAT",
+  "external_prereqs": [],
+  "id": "southern-arkansas-university-bus-mat-university-studies-education",
+  "major": "University Studies Education",
+  "notes": "Source: official SAU 2025-2026 Undergraduate Catalog, University Studies Programs section (catalog pp. 261-270; PDF text lines ~18024-18135), 'BUS/MAT University Studies Education 4+1 Program - Suggested Plan of Study 2025-2026 Catalog'. This is a DISTINCT plan, not the base BUS plan: different general-education option lists (Mathematics choice, Biology Science choice/Lab, Physical Science choice/Lab) and 12 graduate MAT hours embedded in semesters 7-8, plus a Summer term and semesters 9-10 of graduate study. Sequence numbered n=1..11: n=1-8 = Fall/Spring Semesters 1-8, n=9 = Summer (after Semester 8), n=10 = Fall Semester 9, n=11 = Spring Semester 10 (catalog semester numbers 9-10 preserved in the labels). Semesters 1-8 sum to 120, which per the catalog text = 108 undergraduate + 12 graduate hours (the 12 MAT hours in semesters 7-8 count toward the undergraduate degree); total 138 = 108 undergraduate + 30 graduate, matching the printed 'Total hours required for major - 138 hours (108 undergraduate + 30 hours graduate)'. Concentration placeholders coded CONC1/CONC2/CONC3, choice=true (Primary 30 hours incl. 15 upper-level; 2nd 12; 3rd 12). World/Global Studies choice coded WGS (University Studies Core). Elective placeholders coded ELECTIVE, choice=true. 'X or Y' choice slots use the first-listed option's code. Credit ranges: none present. Category mapping: core = general-education courses/choices; major = university requirement (GSTD 1002), University Studies Core courses (SPCH 1113, USTD 3003, WGS choice), concentration-area courses, and all MAT graduate courses; elective = elective slots. DISCREPANCY (kept verbatim): the Summer plan prints 'MAT 5003 Survey of Exceptional Individuals' while the MAT Requirements list names 'MAT 5023 - Survey of Exceptional Individuals'; kept as printed in each location. No per-course prerequisites are stated in the plan table; external_prereqs is empty.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1113",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MATH 1023, MATH 1045, MATH 1053, or MATH 1525. Code shown for first-listed option.",
+      "code": "MATH 1023",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Mathematics choice (MATH 1023, MATH 1045, MATH 1053 or MATH 1525)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose BIOL 1043/1041 or BIOL 1203/1201 with lab. Code shown for first-listed option.",
+      "code": "BIOL 1043/1041",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Biology Science choice/Lab (BIOL 1043/1041 or BIOL 1203/1201)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Must complete one World History (HIST 1003 or HIST 1013) and one US History/Government (HIST 2013 or HIST 2023 or PSCI 2003). Code shown for first-listed option HIST 1003.",
+      "code": "HIST 1003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "History choice - must complete one World History (HIST 1003/1013) and one US History/Government (HIST 2013/2023 or PSCI 2003)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GSTD 1002",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "title": "Freshman Seminar",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall - Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1123",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CRJU 2003, ECON 2103, FIN 2003, GEOG 2003, PSCI 2003, PSYC 2003, SOC 1003, SOC 1013, or SOC 2003. Code shown for first-listed option.",
+      "code": "CRJU 2003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Social Science choice (CRJU 2003, ECON 2103, FIN 2003, GEOG 2003, PSCI 2003, PSYC 2003, SOC 1003, SOC 1013, or SOC 2003)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Must complete one World History (HIST 1003 or HIST 1013) and one US History/Government (HIST 2013 or HIST 2023 or PSCI 2003). Code shown for first-listed option HIST 1003.",
+      "code": "HIST 1003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "History choice - must complete one World History (HIST 1003/1013) and one US History/Government (HIST 2013/2023 or PSCI 2003)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ART 1103 or ART 2013, HUM 2003, HUM 2103, ENGL 2213, ENGL 2223, MUS 2003 or MUS 2013 or MUS 2023, PHIL 2403, THEA 2003, or Foreign Language. Code shown for first-listed option.",
+      "code": "ART 1103",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Fine Arts/Humanities choice (ART 1103 or ART 2013, HUM 2003, HUM 2103, ENGL 2213, ENGL 2223, MUS 2003 or MUS 2013 or MUS 2023, PHIL 2403, THEA 2003, or Foreign Language)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPCH 1113",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring - Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENGL 2213, ENGL 2223, or PHIL 2403. Code shown for first-listed option.",
+      "code": "ENGL 2213",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "World Literature I/II or Philosophy (ENGL 2213, ENGL 2223, or PHIL 2403)",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "3 hours selected from the World/Global Studies concentration area (part of the 9-hour University Studies Core).",
+      "code": "WGS",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "World/Global Studies Choice",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CHEM 1013/1011, CHEM 1023/1021, CHEM 1133/1131, GEOL 1003/1001, PHSC 2023/2021, PHYS 1133/1131, PHYS 2003/2001, PHYS 2133/2131, or PHYS 2203/2201 with lab. Code shown for first-listed option.",
+      "code": "CHEM 1013/1011",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Physical Science choice/Lab (CHEM 1013/1011, CHEM 1023/1021, CHEM 1133/1131, GEOL 1003/1001, PHSC 2023/2021, PHYS 1133/1131, PHYS 2003/2001, PHYS 2133/2131, or PHYS 2203/2201)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Primary Area of Concentration Elective",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "USTD 3003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Information Literacy",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall - Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Primary Area of Concentration Elective",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Primary Area of Concentration Elective",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ART 1103 or ART 2013, HUM 2003, HUM 2103, ENGL 2213, ENGL 2223, MUS 2003 or MUS 2013 or MUS 2023, PHIL 2403, or THEA 2003. Code shown for first-listed option.",
+      "code": "ART 1103",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Fine Arts/Humanities choice (ART 1103 or ART 2013, HUM 2003, HUM 2103, ENGL 2213, ENGL 2223, MUS 2003 or MUS 2013 or MUS 2023, PHIL 2403, or THEA 2003)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective selected from the student's second concentration area.",
+      "code": "CONC2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "2nd Area of Concentration Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Elective selected from the student's third concentration area.",
+      "code": "CONC3",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "3rd Area of Concentration Elective",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring - Semester 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Courses selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "title": "Primary Area of Concentration",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's second concentration area.",
+      "code": "CONC2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "2nd Area of Concentration",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's third concentration area.",
+      "code": "CONC3",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "3rd Area of Concentration",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective course in any area.",
+      "code": "ELECTIVE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall - Semester 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level courses selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "title": "UL Primary Area of Concentration",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's second concentration area.",
+      "code": "CONC2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "2nd Area of Concentration",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's third concentration area.",
+      "code": "CONC3",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "3rd Area of Concentration",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective course in any area.",
+      "code": "ELECTIVE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring - Semester 6",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level courses selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "UL Primary Area of Concentration",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's second concentration area.",
+      "code": "CONC2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "2nd Area of Concentration",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Course selected from the student's third concentration area.",
+      "code": "CONC3",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "3rd Area of Concentration",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5103",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Holistic Pedagogy",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: MAT 5003 Strategies for Content Area Reading or MAT 5173 Teaching Literacy I. Credits shown for MAT 5003.",
+      "code": "MAT 5003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Strategies for Content Area Reading or Teaching Literacy I",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall - Semester 7 (Conditional Admission to EPP)",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Upper-level courses selected from the student's primary concentration area.",
+      "code": "CONC1",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "title": "UL Primary Area of Concentration",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective courses in any area.",
+      "code": "ELECTIVE",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "title": "Electives",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5093",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Collaborative Practices",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5273",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Teaching Literacy II",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring - Semester 8",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5083",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Creating Environments for Learning",
+      "slot_id": "s9-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5003",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Exceptional Individuals",
+      "slot_id": "s9-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Summer",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: MAT 6033 Internship I or MAT 6053 Residency I. Credits shown for MAT 6033.",
+      "code": "MAT 6033",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Internship I or Residency I",
+      "slot_id": "s10-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5013",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Classroom Assessment",
+      "slot_id": "s10-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall - Semester 9",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: MAT 6043 Internship II or MAT 6063 Residency II. Credits shown for MAT 6043.",
+      "code": "MAT 6043",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Internship II or Residency II",
+      "slot_id": "s11-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 6073",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Learning Theory",
+      "slot_id": "s11-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring - Semester 10",
+    "n": 11
+   }
+  ],
+  "source_url": "https://web.saumag.edu/academics/files/2025/09/Undergrad-Catalog-2025-2026.pdf",
+  "total_credits": 138,
+  "content_hash": "5796a895141df2767fb9e6f78a38e2b03c26f56fa289fdf25a3bde1f34c29721",
+  "last_verified": "2026-10-02"
+ }
+}

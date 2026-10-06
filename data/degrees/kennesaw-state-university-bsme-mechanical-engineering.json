@@ -1,0 +1,945 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bsme-mechanical-engineering",
+  "degree": "BSME",
+  "major": "Mechanical Engineering",
+  "catalog_year": "2026-2027",
+  "total_credits": 125,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001197",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001197. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): Mechanical engineering is one of the largest disciplines of engineering because it is one of the broadest. It focuses on the application of the principles of mechanics and materials to design machines and devices. In this energy conscious world, a thorough understanding of energy and its uses is essential to the success of a mechanical engineer. Mechanical engineers help to design energy efficient devices such as wind-turbines as well as artificial knee joints that help society. Graduates have the qualifications to enter graduate school, become a licensed professional engineer in any state aft"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211",
+      "title": "Principles of Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211L",
+      "title": "Principles of Chemistry Lab I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 1211",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 1000",
+      "title": "Introduction to Engineering",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1190",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1112",
+         "MATH 1113"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-05",
+      "title": "General Education Core Curriculum Institutional Priorities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or GWST 1102 or LALS 1102 or LDRS 2300 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102 or COMM 1100",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "GWST 1102",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102",
+       "COMM 1100"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2202",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 1001L",
+      "title": "Intro to Mech Engr Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 1000"
+      ],
+      "choice": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2211",
+      "title": "Principles of Physics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2211L",
+      "title": "Principles of Physics I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "PHYS 2211"
+      ],
+      "choice": false,
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-06",
+      "title": "General Education Core Curriculum Political Science & US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s2-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "EDG 1211",
+      "title": "Engineering Graphics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2203",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 2214",
+      "title": "Engineering Mechanics-Statics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "PHYS 2211",
+         "PHYS 2211K"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 2211K",
+         "PHYS 2211L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 1311",
+      "title": "MATLAB for Engrs w/Application",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "AAE 1001L",
+         "ME 1001L"
+        ]
+       },
+       "MATH 1190"
+      ],
+      "choice": false,
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2212",
+      "title": "Principles of Physics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2202",
+       {
+        "one_of": [
+         "PHYS 1211K",
+         "PHYS 2211",
+         "PHYS 2211K"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2212L",
+      "title": "Principles of Physics II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "PHYS 2212"
+      ],
+      "choice": false,
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "ENGR 3122",
+      "title": "Engineering Mechanics-Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214",
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 3131",
+      "title": "Strength of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214",
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 3132",
+      "title": "Strength of Materials Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 3131"
+      ],
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 3101",
+      "title": "Materials Science & Engr",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 1211",
+         "CHEM 1211K"
+        ]
+       },
+       "PHYS 2212",
+       "PHYS 2212L"
+      ],
+      "choice": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2306",
+      "title": "Ordinary Differential Equation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EE 2305",
+      "title": "Electronic Circuits & Machines",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ISYE 2600",
+         "PHYS 2212"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "ME 3701",
+      "title": "Manufacturing Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 3131",
+       "ME 3101"
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 3345",
+      "title": "Fluid Mechanics Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGR 3343",
+         "ME 3343"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 3410",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214"
+      ],
+      "choice": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 2332",
+      "title": "Probability and Data Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 3343",
+      "title": "Fluid Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214"
+      ],
+      "choice": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-05",
+      "title": "General Education Core Curriculum Area C1",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or PHIL 2010 or ENGL 2140 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "PHIL 2010",
+       "ENGL 2140",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "ENGR 3125",
+      "title": "Machine Dynamics & Vibrations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1311",
+         "CSE 1321L",
+         "ME 1311"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1311",
+         "CSE 1321",
+         "ME 1311"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1311L",
+         "CSE 1321L",
+         "ME 1311"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1311L",
+         "CSE 1321",
+         "ME 1311"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1321",
+         "ENGR 3122",
+         "ME 1311"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1321L",
+         "ENGR 3122",
+         "ME 1311"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4141",
+      "title": "Machine Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 3131"
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4250",
+      "title": "Computer Aided Engr",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "EDG 1211",
+       "ENGR 3131",
+       "ME 3343"
+      ],
+      "choice": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 3440",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ME 3343",
+       "ME 3410"
+      ],
+      "choice": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 4402",
+      "title": "Engineering Ethics",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-05",
+      "title": "General Education Core Curriculum Social Studies",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "ME 3501",
+      "title": "DynamicSys&ControlTheory",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 3125",
+       "MATH 2306"
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4501",
+      "title": "Vibrations&CntrlsLab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 3125",
+       "ME 3501"
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4201",
+      "title": "Senior Design I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ME 3440",
+       "ME 4141",
+       "ME 4250"
+      ],
+      "choice": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4403",
+      "title": "HeatTransfer&ThermoLab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ME 3440"
+      ],
+      "choice": false,
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-04",
+      "title": "Technical Elective (1 of 2) see catalog for elective choices",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ME 3133 or ME 3705 or ME 4304 or ME 4520 or ME 3398 or ME 4400 or ME 4490 or ENGR 3501 or ENGR 3502 or ENGR 4501 or ENGR 4502 or ENGR 4503 or ENGR 4504 or ENGR 3801 or ENGR 3802 or ENGR 3803 or ENGR 4801 or ENGR 4802 or ENGR 4803",
+      "options": [
+       "ME 3133",
+       "ME 3705",
+       "ME 4304",
+       "ME 4520",
+       "ME 3398",
+       "ME 4400",
+       "ME 4490",
+       "ENGR 3501",
+       "ENGR 3502",
+       "ENGR 4501",
+       "ENGR 4502",
+       "ENGR 4503",
+       "ENGR 4504",
+       "ENGR 3801",
+       "ENGR 3802",
+       "ENGR 3803",
+       "ENGR 4801",
+       "ENGR 4802",
+       "ENGR 4803"
+      ],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-05",
+      "title": "Math or Science Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CHEM 1212 or BIOL 1107 or BIOL 2251 or MATH 2335 or MATH 3260 or MATH 3261",
+      "options": [
+       "CHEM 1212",
+       "BIOL 1107",
+       "BIOL 2251",
+       "MATH 2335",
+       "MATH 3260",
+       "MATH 3261"
+      ],
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 4202",
+      "title": "Senior Design II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ME 4201"
+      ],
+      "choice": false,
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "General Education Core Curriculum Social Studies",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "Technical Elective (2 of 2) See catalog for list of courses",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ME 3133 or ME 3705 or ME 4304 or ME 4520 or ME 3398 or ME 4400 or ME 4490 or ENGR 3501 or ENGR 3502 or ENGR 4501 or ENGR 4502 or ENGR 4503 or ENGR 4504 or ENGR 3801 or ENGR 3802 or ENGR 3803 or ENGR 4801 or ENGR 4802 or ENGR 4803",
+      "options": [
+       "ME 3133",
+       "ME 3705",
+       "ME 4304",
+       "ME 4520",
+       "ME 3398",
+       "ME 4400",
+       "ME 4490",
+       "ENGR 3501",
+       "ENGR 3502",
+       "ENGR 4501",
+       "ENGR 4502",
+       "ENGR 4503",
+       "ENGR 4504",
+       "ENGR 3801",
+       "ENGR 3802",
+       "ENGR 3803",
+       "ENGR 4801",
+       "ENGR 4802",
+       "ENGR 4803"
+      ],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "AAE 1001L",
+   "CHEM 1211K",
+   "CSE 1311",
+   "CSE 1311L",
+   "CSE 1321",
+   "CSE 1321L",
+   "ENGL 101",
+   "ENGR 3343",
+   "ISYE 2600",
+   "MATH 1111",
+   "MATH 1112",
+   "MATH 1113",
+   "MATH 1179",
+   "MATH 1189",
+   "PHYS 1211K",
+   "PHYS 2211K"
+  ],
+  "content_hash": "ddfcc0976a6adc184c0d8637adf4a9a0508aebda9b63c9746a217136ab32216d",
+  "last_verified": "2026-10-02"
+ }
+}

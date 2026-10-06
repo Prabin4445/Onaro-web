@@ -1,0 +1,432 @@
+{
+ "institution": {
+  "city": "Philadelphia, PA",
+  "kind": "community",
+  "name": "Community College of Philadelphia",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AA",
+  "external_prereqs": [
+   "FNMT 017",
+   "FNMT 019",
+   "MATH 161",
+   "CIS 103",
+   "MATH 118"
+  ],
+  "id": "ccp-aa-business-administration",
+  "major": "Business Administration",
+  "notes": "Source: official Community College of Philadelphia program page 'Business — General' (Associate in Arts), retrieved 2026-09-30. NOTE: the College's current catalog title is 'Business — General', not 'Business Administration'; this plan keeps the requested 'Business Administration' major name because it is the same program. Catalog year is not printed on the program page; '2026-2027' reflects the current catalog at retrieval (site footer © 2026). Minimum 63 credit hours; a grade of 'C' or better is required in all courses applied to the degree; 2.0 GPA required. Program entry: placement showing readiness for ENGL 101 and FNMT 118 or FNMT 019/017. Semester 2 shows the MATH 161 branch (3 cr) to reach the published 63-credit total; the catalog alternative is MATH 171 (4 cr, prereq MATH 162 with a grade of 'C' or better), which yields 64 credits. CIS 103 satisfies the Technological Competency requirement. ECON 112 is shown as the 4-credit science option; the catalog alternatives for the natural/physical science slot are CHEM 101 or BIOL 106 (either satisfies the minimum).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BUSL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Business",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "ENGL 101 English Composition I or ENGL 101H English Composition I (Honors). Satisfies Writing/Research/Info Lit 1.",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [
+       "ENGL 101",
+       "ENGL 101H"
+      ],
+      "prereq": [],
+      "title": "English Composition I — select ENGL 101 or 101H (Honors)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "FNMT 118 Intermediate Algebra or MATH 162 Precalculus II. Prereqs: FNMT 118 requires FNMT 017 or FNMT 019 completed (or FNMT 118 or higher placement); MATH 162 requires MATH 161 with a grade of 'C' or better (or MATH 162 or higher placement).",
+      "code": "FNMT 118",
+      "credits": 3,
+      "options": [
+       "FNMT 118",
+       "MATH 162"
+      ],
+      "prereq": [
+       {
+        "min_grade": "C",
+        "one_of": [
+         "FNMT 017",
+         "FNMT 019"
+        ],
+        "raw": "FNMT 017 or FNMT 019 completed, or FNMT 118 or higher placement"
+       }
+      ],
+      "title": "Intermediate Algebra or Precalculus II — select one",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Applications and Concepts",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACCT 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Financial Accounting",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 1",
+    "n": 1,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECON 181",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "FNMT 118"
+        ],
+        "raw": "FNMT 118 or higher"
+       }
+      ],
+      "title": "Principles of Economics (Macroeconomics)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Shown with the MATH 161 (3 cr) branch for the published 63-credit total. The catalog alternative is MATH 171 Calculus I (4 cr), which yields a 64-credit plan.",
+      "code": "MATH 161",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "FNMT 118",
+        "min_grade": "C",
+        "raw": "FNMT 118 with a grade of \"C\" or better (or MATH 161 or higher placement)"
+       }
+      ],
+      "title": "Precalculus I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ACCT 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "ACCT 101",
+        "min_grade": "C",
+        "raw": "ACCT 101 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "Managerial Accounting",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "ENGL 102 The Research Paper or ENGL 102H The Research Paper (Honors). Satisfies Writing/Research/Info Lit 2.",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [
+       "ENGL 102",
+       "ENGL 102H"
+      ],
+      "prereq": [
+       {
+        "course": "ENGL 101",
+        "min_grade": "C",
+        "raw": "ENGL 101 with a grade of \"C\" or better"
+       }
+      ],
+      "title": "The Research Paper — select ENGL 102 or 102H (Honors)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MNGT 121",
+      "coreq": [
+       {
+        "course": "MNGT 141",
+        "kind": "prereq_or_coreq"
+       },
+       {
+        "course": "MKTG 131",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Management",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 2",
+    "n": 2,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MNGT 141",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "MNGT 121",
+        "raw": "MNGT 121, which may be taken concurrently"
+       }
+      ],
+      "title": "Principles of Marketing",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECON 182",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "FNMT 118"
+        ],
+        "raw": "FNMT 118 or higher"
+       }
+      ],
+      "title": "Principles of Economics (Microeconomics)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MKTG 131",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "MNGT 121",
+        "raw": "MNGT 121, which may be taken concurrently"
+       }
+      ],
+      "title": "Principles of Marketing",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Shown with the ECON 112 (4 cr) branch for the published 63-credit total. Catalog alternatives: CHEM 101 General Chemistry I (4 cr) or BIOL 106 General Biology I (4 cr).",
+      "code": "ECON 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "FNMT 118",
+         "MATH 118"
+        ],
+        "raw": "FNMT 118 or MATH 118 or higher"
+       }
+      ],
+      "title": "Statistics",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "ANTH 112 Cultural Anthropology, GEOG 103 Introduction to Physical Geography, or GLS 101 Introduction to Global Studies. Satisfies Cultural Analysis and Interpretation.",
+      "code": "ANTH 112",
+      "credits": 3,
+      "options": [
+       "ANTH 112",
+       "GEOG 103",
+       "GLS 101"
+      ],
+      "prereq": [],
+      "title": "Cultural Analysis — select one",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 3",
+    "n": 3,
+    "term": "",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "ECON 114 Introduction to Microeconomic Analysis (prereq: ECON 112 and CIS 103); FIN 151 Personal Finance; or MNGT 142 Management Information Systems (prereq: MNGT 121).",
+      "code": "ECON 114",
+      "credits": 3,
+      "options": [
+       "ECON 114",
+       "FIN 151",
+       "MNGT 142"
+      ],
+      "prereq": [
+       {
+        "course": "ECON 112",
+        "raw": "ECON 112 and CIS 103"
+       }
+      ],
+      "title": "Business Elective — select ECON 114 or FIN 151 or MNGT 142",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "CHEM 101 General Chemistry I (no prerequisite listed), BIOL 106 General Biology I (no prerequisite listed), or PHYS 111 Introductory Physics I (prereq: MATH 162 or MATH 171 or higher, or MATH 161 with a grade of 'C' or better and concurrent MATH 162, or placement). Satisfies Scientific Reasoning.",
+      "code": "CHEM 101",
+      "credits": 4,
+      "options": [
+       "CHEM 101",
+       "BIOL 106",
+       "PHYS 111"
+      ],
+      "prereq": [],
+      "title": "Natural/Physical Science with Lab — select one",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "CMS 115 Public Speaking or CMS 117 Applied Oral Communication. Prereq: ENGL 101, which may be taken concurrently.",
+      "code": "CMS 115",
+      "credits": 3,
+      "options": [
+       "CMS 115",
+       "CMS 117"
+      ],
+      "prereq": [
+       {
+        "course": "ENGL 101",
+        "raw": "ENGL 101, which may be taken concurrently"
+       }
+      ],
+      "title": "Public Speaking or Applied Oral Communication — select one",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "HIST 121 World History: The Distant Past, HIST 122 World History: The Recent Past, or HIST 151 U.S. History: The Young Republic, 1783-1840. Satisfies Historical Reasoning.",
+      "code": "HIST 121",
+      "credits": 3,
+      "options": [
+       "HIST 121",
+       "HIST 122",
+       "HIST 151"
+      ],
+      "prereq": [],
+      "title": "World/U.S. History — select one",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MNGT 262",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Business Strategy",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 4",
+    "n": 4,
+    "term": "",
+    "year_label": "Year 2"
+   }
+  ],
+  "source_url": "https://www.ccp.edu/college-catalog/degree-programs/associate-arts-aa/business-general",
+  "total_credits": 63,
+  "transfer_confidence": "",
+  "content_hash": "b8dfc27fd3f1aa57b7e6720b3a2d022d51bbc1dafc0ad471ac5be655c6799553",
+  "last_verified": "2026-10-02"
+ }
+}

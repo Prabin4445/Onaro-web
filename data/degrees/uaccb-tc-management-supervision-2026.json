@@ -1,0 +1,139 @@
+{
+ "institution": {
+  "city": "Batesville",
+  "kind": "community-college",
+  "name": "University of Arkansas Community College at Batesville",
+  "state": "AR"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Technical Certificate",
+  "id": "uaccb-tc-management-supervision-2026",
+  "major": "Management and Supervision",
+  "notes": "Source: Suggested Course Sequence - Technical Certificate Management and Supervision (2026-2027 catalog, Business and Computer Science area; catalog prints term labels as plain 'Fall'/'Spring'). Genuine catalog discrepancy kept verbatim: the p.107 summary table prints 30 required credit hours, while the program section prints 'Total Credit Hours Required for Credential Completion: 27'; the sequenced sum is 27 and total_credits uses it. Choice slots use the first-listed option of each Program Requirements group. Catalog footnote kept verbatim: 'If electing to take Principles of Accounting I (ACCT 10003) to satisfy Finance Requirement, complete in the Fall term and complete Math Requirement in the Spring term.' The sequence table prints the Finance row as 'Principles of Finance BUSI 22543'; the slot encodes the Finance Requirement choice (first-listed ACCT 10003, full options).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "BUSI 10103",
+      "credits": 3,
+      "title": "Introduction to Business",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CESC 22363",
+      "credits": 3,
+      "title": "Introduction to Cybersecurity",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 10103",
+      "credits": 3,
+      "title": "English Composition I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 20163",
+      "credits": 3,
+      "title": "Principles of Management",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Math Requirement - first-listed option of the requirement group",
+      "code": "MATH 10103",
+      "credits": 3,
+      "options": [
+       {
+        "code": "MATH 10103",
+        "credits": 3,
+        "title": "Technical Mathematics"
+       },
+       {
+        "code": "MATH 11003",
+        "credits": 3,
+        "title": "College Algebra"
+       },
+       {
+        "code": "MATH 11103",
+        "credits": 3,
+        "title": "Quantitative Literacy"
+       }
+      ],
+      "title": "Technical Mathematics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "BUSI 20053",
+      "credits": 3,
+      "title": "Entrepreneurship Strategies and Tools",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Finance Requirement - first-listed option of the requirement group; the sequence table prints 'Principles of Finance BUSI 22543' with the footnote swap documented in plan notes",
+      "code": "ACCT 10003",
+      "credits": 3,
+      "options": [
+       {
+        "code": "ACCT 10003",
+        "credits": 3,
+        "title": "Principles of Accounting I"
+       },
+       {
+        "code": "BUSI 22543",
+        "credits": 3,
+        "title": "Principles of Finance"
+       }
+      ],
+      "title": "Principles of Accounting I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MGMT 10153",
+      "credits": 3,
+      "title": "Customer Relations Management",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MKTG 25183",
+      "credits": 3,
+      "title": "Principles of Marketing",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring",
+    "n": 2
+   }
+  ],
+  "source_url": "https://www.uaccb.edu/images/uploads/20260720/ee572c13408f36ae18a4a13af4b14d7a09139898.pdf",
+  "total_credits": 27,
+  "transfer_confidence": "medium",
+  "content_hash": "581a511d5a64e6b9cf6b361eeb0a35ceb74b18f1d63dc2d585a10b41092ed185",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,542 @@
+{
+ "institution": {
+  "name": "Case Western Reserve University",
+  "ipeds_id": "201645",
+  "city": "Cleveland",
+  "state": "OH",
+  "control": "private",
+  "level": "4-year"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-ba-astronomy",
+  "degree": "BA",
+  "major": "Astronomy",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://bulletin.case.edu/arts-sciences/astronomy/astronomy-ba/",
+  "notes": "Transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) 'Astronomy' BA 'Sample Plan of Study' grid (https://bulletin.case.edu/arts-sciences/astronomy/astronomy-ba/). Footnotes: 'a': Unified General Education Requirement. 'b': A Capstone Experience is required of all students. The Astronomy BA does not require the Astronomy Capstone but only that 3 credit hours of Capstone be taken in some field. Depending on the Capstone taken, the 3 credit hours may be spread over two semesters. 'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Rows combining lecture+lab (e.g. 'EBME 306 & EBME 356') are kept as one combined course with the official combined credit total. Unlabeled credit slots are elective choice placeholders. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "MATH 121",
+      "title": "Calculus for Science and Engineering I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 121",
+      "title": "General Physics I - Mechanics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'PHYS 121 or PHYS 123'.",
+      "options": [
+       "PHYS 121",
+       "PHYS 123"
+      ],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Open Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "MATH 122",
+      "title": "Calculus for Science and Engineering II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 122 or MATH 124'.",
+      "options": [
+       "MATH 122",
+       "MATH 124"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 122",
+      "title": "General Physics II - Electricity and Magnetism",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'PHYS 122 or PHYS 124'.",
+      "options": [
+       "PHYS 122",
+       "PHYS 124"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 131",
+      "title": "Elementary Computer Programming",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "ASTR 221",
+      "title": "Stars and Planets",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 223",
+      "title": "Calculus for Science and Engineering III",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 223 or MATH 227'.",
+      "options": [
+       "MATH 223",
+       "MATH 227"
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 221",
+      "title": "Introduction to Modern Physics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-3",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Open Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "ASTR 222",
+      "title": "Galaxies and Cosmology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 224",
+      "title": "Elementary Differential Equations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 224 or MATH 228'.",
+      "options": [
+       "MATH 224",
+       "MATH 228"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 250",
+      "title": "Computational Methods in Physics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 310",
+      "title": "Classical Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-4",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "ASTR 328",
+      "title": "Cosmology and the Structure of the Universe",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 313",
+      "title": "Thermodynamics and Statistical Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-5",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Open Electives",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "ASTR 311",
+      "title": "Stellar Physics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 324",
+      "title": "Electricity and Magnetism I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-6",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-5",
+      "title": "Open Electives",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "PHYS 331",
+      "title": "Introduction to Quantum Mechanics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-6",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOOTNOTE-B-1",
+      "title": "Program elective (footnote b)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote(s): 'b': A Capstone Experience is required of all students. The Astronomy BA does not require the Astronomy Capstone but only that 3 credit hours of Capstone be taken in some field. Depending on the Capstone taken, the 3 credit hours may be spread over two semesters..",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-7",
+      "title": "Open Electives",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "ASTR 306",
+      "title": "Astronomical Techniques",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-7",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-8",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-9",
+      "title": "Open Electives",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "75959cc27d5aa9cad917e5490ebf2adac0572effe31d158037d5e2482b7ff317",
+  "last_verified": "2026-10-02"
+ }
+}

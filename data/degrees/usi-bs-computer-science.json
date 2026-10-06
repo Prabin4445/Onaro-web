@@ -1,0 +1,933 @@
+{
+ "institution": {
+  "city": "Evansville, IN",
+  "kind": "public",
+  "name": "University of Southern Indiana",
+  "state": "IN"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "usi-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official USI 'BS Computer Science Degree Map' (Math 085 entry track), Romain College of Business, 'Created Spring 2025 - Subject to Change', https://www.usi.edu/media/31blsrsx/bs-computer-science-map-math-085-1.pdf - the only official term-by-term sequence USI publishes for the Computer Science Major, B.S.; hand-transcribed 2026-09-30 from the PDF. Course titles verified against the official USI bulletin (2025-2026 course descriptions and the 2021-2022 CS degree planner at bulletin.usi.edu): MATH 085 Foundations for College Algebra; MATH 111 College Algebra; MATH 215 Survey of Calculus; ENG 101 Rhetoric and Composition I / ENG 201 Rhetoric and Composition II; CMST 101 Introduction to Public Speaking / CMST 107 Introduction to Interpersonal Communication; CS 215 Discrete Structures for Computer Science; CS 258 Introduction to Object-Oriented Programming Using C#; CS 311 Data Structures and Analysis of Algorithms; CS 321 Architecture of Digital Computers; CS 358 Advanced Object-Oriented Programming Using C#; CS 365 Operating Systems; CS 379 Programming Languages; CS 458 Advanced Programming in C#; CS 461 Artificial Intelligence; CS 478 Software Development; CS 483 Senior Software Development Project; CIS 367 Data Communications; CIS 375 Systems Analysis and Design; CIS 377 Introduction to Database Concepts; ECE 241 Digital Logic; ECE 347 Microcomputer Engineering; BCOM 231 Business Communication; BCOM 361 Business Career Planning and Professional Development; KIN 192 Fitness/Wellness. Catalog year set to 2025-2026 (the map prints 'Created Spring 2025' but no catalog year; 2025-2026 is the current published bulletin edition). CREDIT DISCREPANCY: the map's printed term totals are 16+16+16+16+16+15+15+15 = 125, but summing the individual course credits as printed yields 126 (Fall Year 2: 3+3+3+4+3+1 = 17, while the map prints 16 for that term - the map's own term arithmetic is inconsistent). total_credits is set to 126, the course-level sum of the sequence exactly as published, per pipeline precedent of using the sequence's own total; both the map's printed 125 and the catalog's 120-credit baccalaureate minimum (USI program page: Gen Ed 39 + Major 65 + Additional 16 = 120) are documented here. MATH 085 caveat: the 2025-2026 bulletin lists MATH 085 as 4 credits whose 'Credit in this course will not apply to a degree'; the map (created Spring 2025) lists it at 3 credits - transcribed exactly as the map prints it. Placement: ENG 101 and MATH 085 require satisfactory placement scores (no placement course codes used in prereq fields). Either/or prereqs from the map, pointed at the in-plan course and documented here: CS 358 lists 'CS 201 or CS 258' (CS 201 is not in the plan - pointed at CS 258); ECE 241 lists 'MATH 111, 118, 215, or 230' (pointed at MATH 111, taken the prior spring); CS 311 lists 'CS 215 and either CS 301 or CS 358' (pointed at CS 215 + CS 358); CS 458 lists 'CS 301 or CS 358' (pointed at CS 358); MATH 111 lists 'MATH 082/085' (pointed at MATH 085). Standing requirements from the map (not course codes, documented here): CIS 367, CIS 375, CIS 377 require junior standing; BCOM 361 requires BCOM 231 and junior standing (pointed at the BCOM 231/ENG 317 choice slot per the map); CS 478 requires CS 311 and senior standing; CS 483 requires senior standing. The map lists CS Directed Elective slots (4 x 3 credits = 12 hours) with no option list printed; options shown are the 'Directed Electives (12 hours)' list from the official USI bulletin CS degree planner - options are illustrative of the directed-elective pool, not from the map itself. Core 39 category abbreviations are the map's own: NS (Natural Science), WLS, WoK (Ways of Knowing: CAE/HI/MER/SMI/SI categories), SS (Social Science), NSL (Natural Science with Lab), DEE/WEE/GEE (Embedded Experiences); option lists are the map's 'Most Common Core 39 Courses for CS Majors'.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "ENG 101 Rhetoric and Composition I, or ENG 100 (grade of C or better); placement required.",
+      "code": "ENG-COMP-Y1F",
+      "credits": 3,
+      "options": [
+       "ENG 101",
+       "ENG 100"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Rhetoric and Composition I or ENG 100 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 085",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Foundations for College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "CMST 101 Introduction to Public Speaking or CMST 107 Introduction to Interpersonal Communication.",
+      "code": "CMST-COMM-Y1F",
+      "credits": 3,
+      "options": [
+       "CMST 101",
+       "CMST 107"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Public Speaking / Interpersonal Communication (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Natural Science (Core 39 NS) - student choice from the map's common options.",
+      "code": "NS-SCI-Y1F",
+      "credits": 3,
+      "options": [
+       "ANTH 131",
+       "BIOL 251",
+       "GEOG 112",
+       "GEOG 123",
+       "GEOL 121",
+       "PHYS 101"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Natural Science (NS, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Core 39 WLS requirement - student choice from the map's common options.",
+      "code": "WLS-CORE-Y1F",
+      "credits": 3,
+      "options": [
+       "ANTH 111",
+       "ECON 306",
+       "GEOG 330",
+       "HUM 203",
+       "HUM 303",
+       "WLC 155"
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "WLS Core Requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "USI 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "USI 101 - First-Year Experience",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG-COMP-Y1F"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Rhetoric and Composition II: Literacy and the World",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 111",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 085"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "College Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Ways of Knowing (Core 39 WoK) - student choice from the CAE/HI/MER/SMI/SI categories.",
+      "code": "WOK-Y1S-A",
+      "credits": 3,
+      "options": [
+       "ENG 185",
+       "KIN 201",
+       "ART 104",
+       "ART 201",
+       "ARTP 221",
+       "HIST 101",
+       "HIST 102",
+       "HIST 111",
+       "HIST 112",
+       "PHIL 201",
+       "IPH 356",
+       "PRFS 301",
+       "ANTH 131",
+       "GEOG 112",
+       "GEOG 123",
+       "ECON 208",
+       "CRIM 101",
+       "GLST 101",
+       "POLS 102",
+       "PSY 201",
+       "SOCI 121"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Ways of Knowing (WoK, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Ways of Knowing (Core 39 WoK) - student choice from the CAE/HI/MER/SMI/SI categories.",
+      "code": "WOK-Y1S-B",
+      "credits": 3,
+      "options": [
+       "ENG 185",
+       "KIN 201",
+       "ART 104",
+       "ART 201",
+       "ARTP 221",
+       "HIST 101",
+       "HIST 102",
+       "HIST 111",
+       "HIST 112",
+       "PHIL 201",
+       "IPH 356",
+       "PRFS 301",
+       "ANTH 131",
+       "GEOG 112",
+       "GEOG 123",
+       "ECON 208",
+       "CRIM 101",
+       "GLST 101",
+       "POLS 102",
+       "PSY 201",
+       "SOCI 121"
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Ways of Knowing (WoK, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 258",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introduction to Object-Oriented Programming Using C#",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Social Science (Core 39 SS) - student choice from the map's common options.",
+      "code": "SS-Y2F",
+      "credits": 3,
+      "options": [
+       "ANTH 121",
+       "CRIM 101",
+       "ECON 175",
+       "ECON 209",
+       "POLS 102",
+       "PSY 201",
+       "SOC 121"
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Social Science (SS, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 215",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'CS 201 or CS 258' as the prerequisite; CS 201 is not in this plan, so the prereq points at the in-plan CS 258.",
+      "code": "CS 358",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 258"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Advanced Object-Oriented Programming Using C#",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 215",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 111"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Survey of Calculus",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Ways of Knowing (Core 39 WoK) - student choice from the CAE/HI/MER/SMI/SI categories.",
+      "code": "WOK-Y2F",
+      "credits": 3,
+      "options": [
+       "ENG 185",
+       "KIN 201",
+       "ART 104",
+       "ART 201",
+       "ARTP 221",
+       "HIST 101",
+       "HIST 102",
+       "HIST 111",
+       "HIST 112",
+       "PHIL 201",
+       "IPH 356",
+       "PRFS 301",
+       "ANTH 131",
+       "GEOG 112",
+       "GEOG 123",
+       "ECON 208",
+       "CRIM 101",
+       "GLST 101",
+       "POLS 102",
+       "PSY 201",
+       "SOCI 121"
+      ],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Ways of Knowing (WoK, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "KIN 192",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Fitness/Wellness (KIN 192)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS Directed Elective - student choice; options are the directed-electives pool from the official USI bulletin CS degree planner (the map prints no list).",
+      "code": "CSDIR-Y2S",
+      "credits": 3,
+      "options": [
+       "ARTD 231",
+       "ARTD 332",
+       "ARTD 376",
+       "ARTD 381",
+       "ARTD 382",
+       "ARTD 475",
+       "CIS 201",
+       "CIS 276",
+       "CIS 301",
+       "CIS 305",
+       "CIS 335",
+       "CIS 345",
+       "CIS 376",
+       "CIS 385",
+       "CIS 477",
+       "CIS 487",
+       "CS 421",
+       "CS 499",
+       "ECE 447",
+       "FIN 335",
+       "HI 301",
+       "MATH 235",
+       "MATH 335",
+       "MATH 362",
+       "MATH 366",
+       "MATH 437",
+       "MNGT 352",
+       "MNGT 353",
+       "MNGT 354",
+       "MNGT 455"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "CS Directed Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'MATH 111, 118, 215, or 230' as the prerequisite (any one); pointed at the in-plan MATH 111 taken the prior spring.",
+      "code": "ECE 241",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 111"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Digital Logic",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Natural Science with Lab (Core 39 NSL) - student choice from the map's common options.",
+      "code": "NSL-Y2S",
+      "credits": 4,
+      "options": [
+       "ASTR 201",
+       "BIOL 105",
+       "BIOL 112",
+       "GEOL 151",
+       "GEOL 161"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Natural Science with Lab (NSL, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Required to take either BCOM 231 Business Communication or ENG 317 - per the map this choice determines the level of the second WEE course.",
+      "code": "BCOM-WRIT-Y2S",
+      "credits": 3,
+      "options": [
+       "BCOM 231",
+       "ENG 317"
+      ],
+      "prereq": [
+       "CMST-COMM-Y1F",
+       "ENG 201"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Business Communication or ENG 317 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'CS 215 and either CS 301 or CS 358' as the prerequisite; CS 301 is not in this plan, so the prereq points at the in-plan CS 215 and CS 358.",
+      "code": "CS 311",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 215",
+       "CS 358"
+      ],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Data Structures and Analysis of Algorithms",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Embedded Experience - Diversity (Core 39 DEE) - student choice from the map's common options.",
+      "code": "DEE-Y3F",
+      "credits": 3,
+      "options": [
+       "ECON 306",
+       "ANTH 111",
+       "ENG 185",
+       "IPH 356",
+       "PHIL 201",
+       "POLS 121",
+       "SOC 121"
+      ],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Embedded Experience - Diversity (DEE, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 365",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 379",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Embedded Experience - Writing (Core 39 WEE) - student choice; one WEE must be 300 or 400 level; per the map the BCOM 231/ENG 317 choice determines the level of this second WEE course.",
+      "code": "WEE-Y3F",
+      "credits": 3,
+      "options": [
+       "BCOM 231",
+       "ENG 210",
+       "ENG 317",
+       "ECON 306",
+       "PHIL 350",
+       "PRFS 301"
+      ],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Embedded Experience - Writing (WEE, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 347",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ECE 241"
+      ],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Microcomputer Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'BCOM 231 & JR' (junior standing); pointed at the in-plan BCOM 231/ENG 317 choice slot.",
+      "code": "BCOM 361",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "BCOM-WRIT-Y2S"
+      ],
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "Business Career Planning and Professional Development",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Junior standing required per the map.",
+      "code": "CIS 367",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Data Communications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Junior standing required per the map.",
+      "code": "CIS 375",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Systems Analysis and Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 321",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311",
+       "ECE 241"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Architecture of Digital Computers",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Junior standing required per the map.",
+      "code": "CIS 377",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Introduction to Database Concepts",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Ways of Knowing (Core 39 WoK) - student choice from the CAE/HI/MER/SMI/SI categories.",
+      "code": "WOK-Y3S",
+      "credits": 3,
+      "options": [
+       "ENG 185",
+       "KIN 201",
+       "ART 104",
+       "ART 201",
+       "ARTP 221",
+       "HIST 101",
+       "HIST 102",
+       "HIST 111",
+       "HIST 112",
+       "PHIL 201",
+       "IPH 356",
+       "PRFS 301",
+       "ANTH 131",
+       "GEOG 112",
+       "GEOG 123",
+       "ECON 208",
+       "CRIM 101",
+       "GLST 101",
+       "POLS 102",
+       "PSY 201",
+       "SOCI 121"
+      ],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Ways of Knowing (WoK, Core 39 - student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS Directed Elective - student choice; options are the directed-electives pool from the official USI bulletin CS degree planner (the map prints no list).",
+      "code": "CSDIR-Y4F-A",
+      "credits": 3,
+      "options": [
+       "ARTD 231",
+       "ARTD 332",
+       "ARTD 376",
+       "ARTD 381",
+       "ARTD 382",
+       "ARTD 475",
+       "CIS 201",
+       "CIS 276",
+       "CIS 301",
+       "CIS 305",
+       "CIS 335",
+       "CIS 345",
+       "CIS 376",
+       "CIS 385",
+       "CIS 477",
+       "CIS 487",
+       "CS 421",
+       "CS 499",
+       "ECE 447",
+       "FIN 335",
+       "HI 301",
+       "MATH 235",
+       "MATH 335",
+       "MATH 362",
+       "MATH 366",
+       "MATH 437",
+       "MNGT 352",
+       "MNGT 353",
+       "MNGT 354",
+       "MNGT 455"
+      ],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CS Directed Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'CS 311 and SR' (senior standing).",
+      "code": "CS 478",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Software Development",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Embedded Experience - Global (Core 39 GEE) - student choice from the map's common options.",
+      "code": "GEE-Y4F",
+      "credits": 3,
+      "options": [
+       "GEOG 330",
+       "ECON 241",
+       "GLST 101",
+       "HIST 111",
+       "WLC 155",
+       "SPTM 492"
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Embedded Experience - Global (GEE, Core 39 - student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective - student choice; map notes options to reach 120 hours include a minor/certificate or electives in any area.",
+      "code": "ELEC-Y4F",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS Directed Elective - student choice; options are the directed-electives pool from the official USI bulletin CS degree planner (the map prints no list).",
+      "code": "CSDIR-Y4F-B",
+      "credits": 3,
+      "options": [
+       "ARTD 231",
+       "ARTD 332",
+       "ARTD 376",
+       "ARTD 381",
+       "ARTD 382",
+       "ARTD 475",
+       "CIS 201",
+       "CIS 276",
+       "CIS 301",
+       "CIS 305",
+       "CIS 335",
+       "CIS 345",
+       "CIS 376",
+       "CIS 385",
+       "CIS 477",
+       "CIS 487",
+       "CS 421",
+       "CS 499",
+       "ECE 447",
+       "FIN 335",
+       "HI 301",
+       "MATH 235",
+       "MATH 335",
+       "MATH 362",
+       "MATH 366",
+       "MATH 437",
+       "MNGT 352",
+       "MNGT 353",
+       "MNGT 354",
+       "MNGT 455"
+      ],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "CS Directed Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'CS 311' as the prerequisite.",
+      "code": "CS 461",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'SR' (senior standing) as the prerequisite.",
+      "code": "CS 483",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Senior Software Development Project",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 'CS 301 or CS 358' as the prerequisite; CS 301 is not in this plan, so the prereq points at the in-plan CS 358.",
+      "code": "CS 458",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 358"
+      ],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Advanced Programming in C#",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS Directed Elective - student choice; options are the directed-electives pool from the official USI bulletin CS degree planner (the map prints no list).",
+      "code": "CSDIR-Y4S",
+      "credits": 3,
+      "options": [
+       "ARTD 231",
+       "ARTD 332",
+       "ARTD 376",
+       "ARTD 381",
+       "ARTD 382",
+       "ARTD 475",
+       "CIS 201",
+       "CIS 276",
+       "CIS 301",
+       "CIS 305",
+       "CIS 335",
+       "CIS 345",
+       "CIS 376",
+       "CIS 385",
+       "CIS 477",
+       "CIS 487",
+       "CS 421",
+       "CS 499",
+       "ECE 447",
+       "FIN 335",
+       "HI 301",
+       "MATH 235",
+       "MATH 335",
+       "MATH 362",
+       "MATH 366",
+       "MATH 437",
+       "MNGT 352",
+       "MNGT 353",
+       "MNGT 354",
+       "MNGT 455"
+      ],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS Directed Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective - student choice; map notes options to reach 120 hours include a minor/certificate or electives in any area.",
+      "code": "ELEC-Y4S",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.usi.edu/media/31blsrsx/bs-computer-science-map-math-085-1.pdf",
+  "total_credits": 126,
+  "content_hash": "32da710ae876799658cc2acd3a0009a077c222be7ea310c12a21a113d3463ca0",
+  "last_verified": "2026-10-02"
+ }
+}

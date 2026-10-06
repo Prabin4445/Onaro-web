@@ -1,0 +1,412 @@
+{
+ "institution": {
+  "city": "Santa Clara, CA",
+  "kind": "private",
+  "name": "Santa Clara University",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "scu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: official sample curriculum PDF 'COMPUTER SCIENCE MAJOR — Sample curriculum based on requirements effective for students entering Fall 2025', Department of Mathematics and Computer Science, Santa Clara University: https://www-dev.scu.edu/media/college-of-arts-and-sciences/math-and-cs/documents/CS-Sample-Curriculum-2025.pdf (official scu.edu media host; the identical www.scu.edu copy of this file returned HTTP 404 on 2026-09-30). Cross-checked against the Undergraduate Bulletin 2025-26, 'Mathematics and Computer Science' chapter, 'Major in Computer Science' requirement list (MATH 11,12,13,14,51,53; CSCI 10,60,61,62; one of PHYS 31/CHEM 11/ENVS 21/ENVS 23; CSEN/COEN 20+20L, ECEN 21+21L; MATH 122, CSCI 161, CSCI 163, CSEN/COEN 177+177L; five additional 4- or 5-unit upper-division emphasis courses). TRUE DEGREE: Bachelor of Science in Computer Science (bulletin: 'major programs leading to the bachelor of science in mathematics or the bachelor of science in computer science'), College of Arts and Sciences. Transcription method: faithful term-by-term transcription of the sample grid; SCU runs on quarters, so the plan has 12 terms labeled 'Fall/Winter/Spring Year N'. CREDIT TOTAL (documented discrepancy, Clarkson/UVM/GCSU precedent): the sample grid schedules ONLY major requirements = 102 quarter units (sum of the entries below). The bulletin requires a minimum of 175 quarter units for the BS; the sample's own note states 'courses for the major and core add up to 163 units, 55 of which are necessarily upper division' and 'Students need at least 175 units total' — the remaining ~73 units are University Core Curriculum courses and electives, which the sample grid does not schedule term-by-term. total_credits=102 is the sequence's own published sum, not the catalog minimum. Sanity checks on the transcription: 17 core courses counted in the sample note = CSCI 10,60,61,62 (4) + MATH 11,12,13,14,51,53,122 (7) + CSCI 161,163 (2) + CSEN 20&L, 21&L, 177&L (3) + natural-science choice (1); upper-division major units = MATH 122 + CSCI 161 + CSCI 163 + CSEN 177&L + 5 emphasis courses = 45 (all 5-unit), consistent with the sample's '55 necessarily upper division' (45 major + ~10 core). EMPHASIS SLOTS: bulletin requires five additional 4- or 5-unit upper-division courses in ONE emphasis (Algorithms and Complexity, Data Science, Security, or Software); the sample numbers them I-V in the order taken: I = Sophomore Winter, II = Junior Winter, III = Senior Fall, IV = Senior Winter, V = Senior Spring. Slots recorded at 5 units, consistent with the sample's 163-unit note and with all listed emphasis courses carrying 5 units. TRANSCRIPTION JUDGMENT (flagged): in the source PDF's Spring row, 'CSEN/ELEN 21 & L' and 'CSCI Emphasis V' appear in adjacent cells with ambiguous column alignment; Emphasis V is placed in Senior Spring because the I-II-III-IV-V numbering is chronological only under that reading (placing it in Junior Spring would order them I, II, V, III, IV). NATURAL SCIENCE SLOT: bulletin requires one of PHYS 31, CHEM 11, ENVS 21, ENVS 23 (each 5 units); the sample grid does not schedule it (it is counted among the 17 core courses) — placed in Fall Year 1 as the typical first-year science slot. '& L' COURSES: the sample lists combined lecture+lab entries (CSCI 10 & L, CSCI 60 & L, CSEN 20 & L, CSEN 177 & L, CSEN/ELEN 21 & L); units verified in the bulletin — CSCI 10: 5 units (includes weekly lab), CSCI 60: 5 units (includes weekly lab), CSEN 20: 4 + 20L: 1, CSEN 177: 4 + 177L: 1, ECEN 21: 4 + 21L: 1. The sample's literal label 'CSEN/ELEN 21 & L' is transcribed verbatim; the bulletin names the course ECEN 21 and 21L ('Introduction to Logic Design'). PREREQS: taken from bulletin course descriptions, expressed as plain in-plan code strings. MATH 11's bulletin entry lists MATH 9/9S/9B or a Calculus Readiness Exam score as placement ALTERNATIVES (not hard prereqs), so no prereq is encoded for MATH 11. All other per-course units verified in the bulletin: CSCI 61: 4, CSCI 62: 4, MATH 11/12/13/14: 4 each, MATH 51 (Discrete Mathematics): 4, MATH 53 (Linear Algebra): 4, MATH 122 (Probability and Statistics I): 5, CSCI 161 (Theory of Automata and Languages): 5, CSCI 163 (Theory of Algorithms): 5, PHYS 31: 5, CHEM 11: 5, ENVS 21 (L&L): 5, ENVS 23 (L&L): 5.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 10 & L",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 11",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Bulletin requirement: one of PHYS 31, CHEM 11, ENVS 21, or ENVS 23 (each 5 units). The sample grid does not schedule this requirement (it is counted among the sample's '17 core courses'); placed in Fall Year 1 as the typical first-year science slot — it may be taken in any quarter.",
+      "code": "NATSCI-CHOICE-1",
+      "credits": 5,
+      "options": [
+       "PHYS 31",
+       "CHEM 11",
+       "ENVS 21",
+       "ENVS 23"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Natural Science Requirement (PHYS 31 / CHEM 11 / ENVS 21 / ENVS 23)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 60 & L",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSCI 10 & L"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to C++ and Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 12",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 11"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry II",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 61",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 60 & L"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 13",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 12"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry III",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 62",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSCI 60 & L",
+       "CSCI 61"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Advanced Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 14",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 13"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry IV",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 51",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 122",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 14"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Probability and Statistics I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Emphasis course I (first of five). One 4- or 5-unit upper-division course in the student's declared emphasis (Algorithms and Complexity, Data Science, Security, or Software); sample assumes 5 units — see the Undergraduate Bulletin for the emphasis course lists. The sample recommends an emphasis course with a significant programming component in winter or spring of sophomore year. Emphasis must be declared by end of junior year; only one emphasis allowed.",
+      "code": "CSCI-EMPH-1",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CS Emphasis Course I (upper-division)",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 163",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 51",
+       "CSCI 61"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Theory of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 53",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 13"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSCI 161",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 51"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Theory of Automata and Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSEN 20 & L",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSCI 61"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Introduction to Embedded Systems",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Emphasis course II (second of five). One 4- or 5-unit upper-division course in the student's declared emphasis (Algorithms and Complexity, Data Science, Security, or Software); sample assumes 5 units — see the Undergraduate Bulletin for the emphasis course lists.",
+      "code": "CSCI-EMPH-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CS Emphasis Course II (upper-division)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSEN 177 & L",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CSCI 61",
+       "CSEN 20 & L"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSEN/ELEN 21 & L",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Introduction to Logic Design",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Emphasis course III (third of five). One 4- or 5-unit upper-division course in the student's declared emphasis (Algorithms and Complexity, Data Science, Security, or Software); sample assumes 5 units — see the Undergraduate Bulletin for the emphasis course lists.",
+      "code": "CSCI-EMPH-3",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "CS Emphasis Course III (upper-division)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Emphasis course IV (fourth of five). One 4- or 5-unit upper-division course in the student's declared emphasis (Algorithms and Complexity, Data Science, Security, or Software); sample assumes 5 units — see the Undergraduate Bulletin for the emphasis course lists.",
+      "code": "CSCI-EMPH-4",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "CS Emphasis Course IV (upper-division)",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 4",
+    "n": 11
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Emphasis course V (fifth of five). One 4- or 5-unit upper-division course in the student's declared emphasis (Algorithms and Complexity, Data Science, Security, or Software); sample assumes 5 units — see the Undergraduate Bulletin for the emphasis course lists. PLACEMENT NOTE: in the source PDF's Spring row, 'CSEN/ELEN 21 & L' and 'CSCI Emphasis V' sit in adjacent cells with ambiguous column alignment; Emphasis V is transcribed in Senior Spring because the sample's I-II-III-IV-V numbering is chronological only under that reading.",
+      "code": "CSCI-EMPH-5",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-0",
+      "tccns": "",
+      "title": "CS Emphasis Course V (upper-division)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 12
+   }
+  ],
+  "source_url": "https://www-dev.scu.edu/media/college-of-arts-and-sciences/math-and-cs/documents/CS-Sample-Curriculum-2025.pdf",
+  "total_credits": 102,
+  "content_hash": "8973631a434062a91345aef41a7c9cf5ca178a4f74b534c5c4236360089d2366",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,413 @@
+{
+ "institution": {
+  "city": "Pasadena, TX",
+  "kind": "community",
+  "name": "San Jacinto College",
+  "state": "TX"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "id": "sanjac-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official San Jacinto College Academic Catalog (current catalog; page footer reads 'San Jacinto College 2026-2027'), 'Computer Science, Associate of Science' program page: https://publications.sanjac.edu/areas-study/science-technology-engineering-math/computer-science-as/ — 'Plan of Study' grid (intended for students who do not yet know their transfer university). Named courses (ENGL 1301, EDUC 1100, COSC 1436, ENGL 1302 or ENGL 2311, COSC 1437, GOVT 2305, GOVT 2306), term credit totals (14 / 16 / 14 / 16), the 60-credit total, and the Transfer Path course list are transcribed verbatim from the 2026-2027 page. The current page's grid renders category rows as interactive core-selection dropdowns with no extractable text, so their labels were taken from the official 2025-2026 plan-of-study PDF for the identical grid (same named courses in the same positions, same term credits, same transfer-path list): https://publications.sanjac.edu/previous-catalogs/2025-2026/areas-study/science-technology-engineering-math/computer-science-as/computer-science-as_planofstudytext.pdf. Category-slot labels: 'Transfer Path Courses (see list below)' (3/3/4 SCH), American History (3/3), Social and Behavioral Sciences (3), Life and Physical Science (Natural Science) lecture and lab (4/4), Creative Arts (Fine Arts) (3), Language Philosophy and Culture (Humanities) (3), Mathematics (3), Component Area Option (3). CREDIT VERIFICATION: 14+16+14+16 = 60, matching the catalog's stated Total Credits 60; core slots sum to 42 SCH (the catalog's Core Curriculum requirement incl. EDUC 1100), major/transfer slots sum to 18 SCH (COSC 1436 + COSC 1437 + 10 SCH of transfer-path selections = 8+10 = 18), matching the catalog's 42 + 18 structure. CAVEATS: (1) The plan grid publishes no course-level prerequisites, so all prereq fields are empty — do not assume sequencing beyond the published order. (2) Students who know their transfer university should use the official Transfer Plans (MAPs) instead — the page lists UH Main and UHCL Computer Science BS full-time/part-time maps. (3) For math/science majors the catalog excludes MATH 1324, MATH 1325, MATH 1332 and non-major science lectures (BIOL 1308/1309, CHEM 1305, GEOL 1301, BIOL 2301/2302) from degree requirements; representative math/science options here reflect the major-appropriate choices. (4) Co-enrollment in the science lab is required with the science lecture. Speak to a San Jacinto advisor; transfer-institution requirements may differ.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Transfer Path Courses — select from the official Transfer Path list for a total of 10 SCH across this slot and slots s2-4 (3 SCH) and s3-3 (4 SCH): COSC 2436 Programming Fundamentals III, COSC 2325 Computer Organization, MATH 2413 Calculus I, MATH 2414 Calculus II, PHYS 2325 + PHYS 2125 University Physics I lecture/lab, PHYS 2326 + PHYS 2126 University Physics II lecture/lab. The transfer path requires 18 SCH total (COSC 1436 + COSC 1437 + at least 6 SCH from the list + remaining hours per the transfer institution).",
+      "code": "TPCS",
+      "credits": 3,
+      "options": [
+       "COSC2436",
+       "COSC2325",
+       "MATH2413",
+       "MATH2414",
+       "PHYS2325/PHYS2125",
+       "PHYS2326/PHYS2126"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Transfer Path Courses (see list below)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "American History (060) — select one: HIST 1301 United States History I, HIST 1302 United States History II, HIST 2301 Texas History, HIST 2327 Mexican American History I, HIST 2328 Mexican American History II, HIST 2381 African American History I, HIST 2382 African American History II.",
+      "code": "HIST 1301",
+      "credits": 3,
+      "options": [
+       "HIST1301",
+       "HIST1302",
+       "HIST2301",
+       "HIST2327",
+       "HIST2328",
+       "HIST2381",
+       "HIST2382"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "American History — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "EDUC 1100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Learning Framework",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSC 1436",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Programming Fundamentals I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Select ENGL 1302 Composition II or ENGL 2311 Technical and Business Writing.",
+      "code": "ENGL 1302",
+      "credits": 3,
+      "options": [
+       "ENGL1302",
+       "ENGL2311"
+      ],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "American History (060) — select one: HIST 1301 United States History I, HIST 1302 United States History II, HIST 2301 Texas History, HIST 2327 Mexican American History I, HIST 2328 Mexican American History II, HIST 2381 African American History I, HIST 2382 African American History II.",
+      "code": "HIST 1302",
+      "credits": 3,
+      "options": [
+       "HIST1301",
+       "HIST1302",
+       "HIST2301",
+       "HIST2327",
+       "HIST2328",
+       "HIST2381",
+       "HIST2382"
+      ],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "American History — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Social and Behavioral Sciences (080) — select one, e.g. SOCI 1301 Introduction to Sociology. Full official list: ANTH 2302, ANTH 2346, ANTH 2351, ECON 2301, ECON 2302, GEOG 1303, GOVT 2304, HIST 2311, HIST 2312, PSYC 2301, SOCI 1301, SOCI 2319, TECA 1354.",
+      "code": "SOCI 1301",
+      "credits": 3,
+      "options": [
+       "ANTH2302",
+       "ANTH2346",
+       "ANTH2351",
+       "ECON2301",
+       "ECON2302",
+       "GEOG1303",
+       "GOVT2304",
+       "HIST2311",
+       "HIST2312",
+       "PSYC2301",
+       "SOCI1301",
+       "SOCI2319",
+       "TECA1354"
+      ],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Social and Behavioral Sciences — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COSC 1437",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Programming Fundamentals II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Transfer Path Courses — select from the official Transfer Path list (see choice note on slot s1-1).",
+      "code": "TPCS",
+      "credits": 3,
+      "options": [
+       "COSC2436",
+       "COSC2325",
+       "MATH2413",
+       "MATH2414",
+       "PHYS2325/PHYS2125",
+       "PHYS2326/PHYS2126"
+      ],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Transfer Path Courses (see list below)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Life and Physical Science (030) lecture + lab, 4 SCH — select one science for majors with its lab (co-enrollment in the lab is required). Representative: PHYS 2325 + PHYS 2125 University Physics I (lecture + lab). Major-appropriate official options include ASTR 1303/1304, BIOL 1306/1307, CHEM 1311/1312, GEOL 1303/1304, PHYS 1301/1302, PHYS 2325/2326. Non-major lectures (BIOL 1308/1309, CHEM 1305, GEOL 1301, BIOL 2301/2302) do not meet science-major requirements.",
+      "code": "PHYS 2325",
+      "credits": 4,
+      "options": [
+       "ASTR1303",
+       "ASTR1304",
+       "BIOL1306",
+       "BIOL1307",
+       "CHEM1311",
+       "CHEM1312",
+       "GEOL1303",
+       "GEOL1304",
+       "PHYS1301",
+       "PHYS1302",
+       "PHYS2325",
+       "PHYS2326"
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Life and Physical Science (Natural Science) lecture and lab — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Creative Arts (Fine Arts) (050) — select one: ARTS 1301 Art Appreciation, ARTS 1303 Art History I, ARTS 1304 Art History II, DANC 1305 World Dance, DANC 2303 Dance Appreciation, DRAM 1310 Theater Appreciation, DRAM 2366 Film Appreciation, MUSI 1306 Music Appreciation, MUSI 1307 Music Literature, MUSI 1310 American Music.",
+      "code": "ARTS 1301",
+      "credits": 3,
+      "options": [
+       "ARTS1301",
+       "ARTS1303",
+       "ARTS1304",
+       "DANC1305",
+       "DANC2303",
+       "DRAM1310",
+       "DRAM2366",
+       "MUSI1306",
+       "MUSI1307",
+       "MUSI1310"
+      ],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Creative Arts (Fine Arts) — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "GOVT 2305",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Federal Government (Federal Constitution and Topics)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Transfer Path Courses — select from the official Transfer Path list (see choice note on slot s1-1).",
+      "code": "TPCS",
+      "credits": 4,
+      "options": [
+       "COSC2436",
+       "COSC2325",
+       "MATH2413",
+       "MATH2414",
+       "PHYS2325/PHYS2125",
+       "PHYS2326/PHYS2126"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Transfer Path Courses (see list below)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Life and Physical Science (030) lecture + lab, 4 SCH — select one science for majors with its lab (co-enrollment in the lab is required). Representative: CHEM 1311 + CHEM 1111 General Chemistry I (lecture + lab). See choice note on slot s3-0 for the official major-appropriate options and exclusions.",
+      "code": "CHEM 1311",
+      "credits": 4,
+      "options": [
+       "ASTR1303",
+       "ASTR1304",
+       "BIOL1306",
+       "BIOL1307",
+       "CHEM1311",
+       "CHEM1312",
+       "GEOL1303",
+       "GEOL1304",
+       "PHYS1301",
+       "PHYS1302",
+       "PHYS2325",
+       "PHYS2326"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Life and Physical Science (Natural Science) lecture and lab — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Language, Philosophy and Culture (Humanities) (040) — select one, e.g. PHIL 1301 Introduction to Philosophy. Full official list: ENGL 2322, ENGL 2323, ENGL 2327, ENGL 2328, ENGL 2332, ENGL 2333, ENGL 2341, ENGL 2351, GEOG 1302, HIST 2321, HIST 2322, HUMA 1301, PHIL 1301, PHIL 2306.",
+      "code": "PHIL 1301",
+      "credits": 3,
+      "options": [
+       "ENGL2322",
+       "ENGL2323",
+       "ENGL2327",
+       "ENGL2328",
+       "ENGL2332",
+       "ENGL2333",
+       "ENGL2341",
+       "ENGL2351",
+       "GEOG1302",
+       "HIST2321",
+       "HIST2322",
+       "HUMA1301",
+       "PHIL1301",
+       "PHIL2306"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Language, Philosophy and Culture (Humanities) — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Mathematics (020) — select one 3-SCH course appropriate for math/science majors, e.g. MATH 2413 Calculus I (MATH 2413 is 4 SCH; the 1-SCH overflow is absorbed in the Component Area Option per the catalog). Official math options: MATH 1314, MATH 1316, MATH 2318, MATH 2320, MATH 2412, MATH 2413, MATH 2414. MATH 1324, MATH 1325, and MATH 1332 do NOT meet the requirements for students pursuing mathematics or science.",
+      "code": "MATH 2413",
+      "credits": 3,
+      "options": [
+       "MATH1314",
+       "MATH1316",
+       "MATH2318",
+       "MATH2320",
+       "MATH2412",
+       "MATH2413",
+       "MATH2414"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Mathematics — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Component Area Option (090), 6 SCH total across the core — select courses not used elsewhere, e.g. SPCH 1315 Public Speaking. Official options include SPCH 1311/1315/1318/1321, science labs, EDUC 1100/PSYC 1100, GOVT 2107, PHED 1164, and world languages.",
+      "code": "SPCH 1315",
+      "credits": 3,
+      "options": [
+       "SPCH1311",
+       "SPCH1315",
+       "SPCH1318",
+       "SPCH1321",
+       "GOVT2107",
+       "PHED1164"
+      ],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Component Area Option — select one",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "GOVT 2306",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Texas Government (Texas Constitution and Topics)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "total_credits": 60,
+  "source_url": "https://publications.sanjac.edu/areas-study/science-technology-engineering-math/computer-science-as/",
+  "content_hash": "715410031b8f2fe858e5a9d9b3d1b79915db0b563838f9a29d000152926b357b",
+  "last_verified": "2026-10-02"
+ }
+}

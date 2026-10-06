@@ -1,0 +1,667 @@
+{
+ "institution": {
+  "city": "Wichita, KS",
+  "kind": "public4yr",
+  "name": "Wichita State University",
+  "state": "KS"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 111"
+  ],
+  "id": "wsu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Wichita State University College of Engineering '2024 - 2025 Computer Science Course Sequence' sheet (Catalog Term: Fall 2024, 120 total credits, last updated 1/30/2024), the edition for students required to take a First-Year Seminar. Hand-transcribed 2026-09-30 from the official PDF at the source_url above, which is linked as the newest Computer Science sequence on the official CoE degree-sheets page (https://www.wichita.edu/academics/engineering/advising/degree-sheets.php). Program: Bachelor of Science in Computer Science, School of Computing, College of Engineering, Wichita State University (Wichita, KS); ABET (CAC) accredited. Staleness: the 2024-2025 sheet is the newest official CS term-by-term sequence published (the CoE page lists 2025-2026 sheets for other majors but none for Computer Science). Known curriculum differences vs the current catalog edition: the current catalog lists CS 346 Introduction to Computer Networks and CS 356 Introduction to Computer Security, while this Fall 2024 sheet uses CS 664 Computer Networks and titles CS 356 'Introduction to Cybersecurity' (sheet title transcribed verbatim); prereqs were cross-checked against the archived 2024-2025 catalog CS course list and match. Sheet notes transcribed: (a) at least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives; the First-Year Seminar counts as a departmental (SoC) technical elective, giving 15 technical-elective hours total (FYS + 4 elective slots). (b) One of the two General Education slots must be Fine Arts and the other Social/Behavioral Sciences, both from the approved General Education list. (c) PHIL 354 fulfils the Humanities requirement. (d) CS 599 may only be taken after earning a C or better in CS 598 in exactly the previous long semester. Standing/grade rules from the sheet: PHIL 354 requires junior standing or departmental consent; CS 598 requires senior standing (CS 580 listed as prerequisite, PHIL 354 as concurrent prerequisite); all SoC/ECE prerequisite courses must be passed with a C or better. MATH 111 (or equivalent) is the sheet's prerequisite for ECE 194 and CS 211 and for MATH 242 placement ('See Course Catalog'); it is listed in external_prereqs since it is not part of the degree plan. IME 254 may alternatively use MATH 252 as prerequisite. 'Engineering+ Requirement (1/2/3 of 3)' is the College of Engineering's 3-part applied-learning requirement and carries 0 credits. Concurrent prerequisites (MATH 243 for PHYS 313; PHYS 314 for PHYS 316) are listed in the prereq arrays.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "College English I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 242",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved First-Year Seminar in FA/HU/SB. Per the sheet, all FYS courses count as departmental (SoC) technical electives.",
+      "code": "FYS 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "First-Year Seminar in Fine Arts / Humanities / Social & Behavioral Sciences",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 194",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 111"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Introduction to Digital Design",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "College English II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 243",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "MATH 242"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Introductory Logic",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 111"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Programming",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Public Speaking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 321",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 242"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 313",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 243"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Physics for Scientists I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 311",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 211"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 238",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 211"
+      ],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Assembly Language Programming for Engineers",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 356",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 211"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Introduction to Cybersecurity",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 322",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 321"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Discrete Structures II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 314",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 243",
+       "PHYS 313"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Physics for Scientists II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 316",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "PHYS 314"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "University Physics Lab II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 400",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "other",
+      "choice": true,
+      "choice_note": "College of Engineering 3-part applied-learning requirement; 0 credits.",
+      "code": "ENGRPLUS-1",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Engineering+ Requirement (1 of 3)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IME 254",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 243"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Engineering Probability and Statistics I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 511",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 243"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 580",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 410",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Programming Paradigms",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved technical elective. At least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives.",
+      "code": "TECH 3XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 354",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Ethics and Computers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of the two General Education slots must be Fine Arts and the other Social/Behavioral Sciences; both must be from the approved General Education list.",
+      "code": "GENED 1XX-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "General Education - Social/Behavioral Sciences or Fine Arts",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 510",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311",
+       "MATH 322"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Programming Language Concepts",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of the two General Education slots must be Fine Arts and the other Social/Behavioral Sciences; both must be from the approved General Education list.",
+      "code": "GENED 1XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Education - Social/Behavioral Sciences or Fine Arts",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved technical elective. At least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives.",
+      "code": "TECH 3XX-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 540",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ECE 238",
+       "CS 311"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 664",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311",
+       "IME 254"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Networks",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 394",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ECE 194",
+       "CS 211"
+      ],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Introduction to Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 598",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CS 580",
+       "PHIL 354"
+      ],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Senior Design Project I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved technical elective. At least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives.",
+      "code": "TECH 3XX-C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 560",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 400",
+       "MATH 322",
+       "IME 254"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 665",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 311",
+       "MATH 322"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Introduction to Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 599",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CS 598"
+      ],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Senior Design Project II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved technical elective. At least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives.",
+      "code": "TECH 3XX-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any approved technical elective. At least 12 of the 15 technical elective hours must be from the School of Computing or ECE; up to 2 credit hours of Coop courses may count as nondepartmental technical electives.",
+      "code": "TECH 3XX-E",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "other",
+      "choice": true,
+      "choice_note": "College of Engineering 3-part applied-learning requirement; 0 credits.",
+      "code": "ENGRPLUS-2",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s8-5",
+      "tccns": "",
+      "title": "Engineering+ Requirement (2 of 3)",
+      "xfer": []
+     },
+     {
+      "category": "other",
+      "choice": true,
+      "choice_note": "College of Engineering 3-part applied-learning requirement; 0 credits.",
+      "code": "ENGRPLUS-3",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s8-6",
+      "tccns": "",
+      "title": "Engineering+ Requirement (3 of 3)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://WWW.WICHITA.EDU/academics/engineering/advising/_documents/CSCOURSESEQSHEET1Jan2024.pdf",
+  "total_credits": 120,
+  "content_hash": "4ef4d684b2f4301425ad17645cedd657fafad1af1d69485470611e51c104b40d",
+  "last_verified": "2026-10-02"
+ }
+}

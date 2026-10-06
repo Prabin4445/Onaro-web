@@ -1,0 +1,668 @@
+{
+ "institution": {
+  "city": "Orem, UT",
+  "kind": "public4yr",
+  "name": "Utah Valley University",
+  "state": "UT"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uvu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UVU Computer Science department 'COMPUTER SCIENCE - COMPUTER SCIENCE (2026-2027)' recommended sequence flowchart, https://www.uvu.edu/cs/docs/computer-science/cs-cs.pdf — the department's published term-by-term plan for the Computer Science track of the B.S. in Computer Science (catalog year 2026-2027, current). The current catalog program page (catalog.uvu.edu/engineering-technology/computer-science/computer-science-bs/, 'Computer Science, B.S.') publishes no term-by-term sequence, so the department flowchart is the authoritative official sequence. Per the department program page (uvu.edu/cs/computer-science), as of Fall 2026 prior emphases were converted to tracks (Computer Science, Full Stack Web Design, Secure Programming, Artificial Intelligence); this plan is the Computer Science track. Transcription: PDF fetched 2026-09-30; cells extracted with pdftotext -layout and every course/credit verified against 220-DPI renderings of the chart. Chart term totals (16/16/15/14/15/15/15/15) sum to 121 while the department states 120 credits minimum to graduate; total_credits=121 per the chart's own arithmetic. Prerequisite arrows traced visually from the flowchart; only unambiguous arrows encoded (CS 3060 takes the red arrow fed by CS 1380, CS 2420 and CS 2810; CS 3450 and CS 4470 take the choice slot CS 3250/3260/3270/3370/3380 via its slot code). 'See WT' = see Wolverine Track (UVU degree audit); electives are advisor-approved. Starred courses require University Advanced Standing (UAS). Matriculation before 3000/4000-level CS (except CS 3050): (CS 1400 and CS 1410) or CS 1420; CS 2300 and CS 2420 with C+ or higher; MATH 1210 and ENGL 1010 with C or higher; each class max 2 attempts; 2.5 cumulative GPA. Math placement: CS 1400 requires math through high-school algebra & trigonometry; CS 1410 and CS 1380 require math through college algebra (placement guidance, not course prerequisites). Alternate entry: CS 1420 (by entrance exam in SE 407) plus 1 CS elective may substitute for CS 1400 + CS 1410. 'PPCG (See WT)' transcribed verbatim as printed on the chart (a general-education distribution slot; specific course via Wolverine Track). CS 4380 chart text 'Advanced/High Performance C Architecture' rendered with the full official catalog course title 'Advanced High Performance Computer Architecture'.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Fundamentals of Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1380",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Modern Programming Essentials",
+      "xfer": []
+     },
+     {
+      "category": "writing",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1010",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Intro to Academic Writing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1210",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "American Institutions requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-AMINST-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "American Institutions course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1410",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1400"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Object-Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2810",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1400"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Computer Organization & Architecture",
+      "xfer": []
+     },
+     {
+      "category": "writing",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 2010",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 1010"
+      ],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Intermediate Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "PPCG distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-PPCG-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "PPCG course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 2050",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Intro to Statistical Methods",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2300",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1410"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Discrete Mathematical Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2420",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1410"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Intro to Algorithms & Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2600",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2810"
+      ],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Networks I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Humanities distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-HUM-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Humanities course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Fine Arts distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-FA-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Fine Arts course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2300",
+       "CS 2420"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2550",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2420"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Web Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2900",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2420"
+      ],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Data Privacy & Security",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Core Science distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-CSCI-A1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Core Science course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Core Science Lab requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-CSCILAB-A1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Core Science Lab (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2300",
+       "CS 2420"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Discrete Mathematical Structures II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3520",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 2420"
+      ],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Database Theory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one software development course: CS 3250 Java Software Development, CS 3260 C#/.NET Software Development, CS 3270 Python Software Development, CS 3370 C++ Software Development, or CS 3380 JavaScript Software Development (see Wolverine Track)",
+      "code": "CS-LANG-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "CS 3250, 3260, 3270, 3370, or 3380 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Physical Science distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-PHYSCI-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Physical Science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3060",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1380",
+       "CS 2420",
+       "CS 2810"
+      ],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Operating Systems Theory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS-LANG-A1"
+      ],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Principles and Patterns of Software Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #1 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Elective #1 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #2 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Elective #2 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Biology distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-BIO-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Biology course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4380",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3060"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Advanced High Performance Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 3240"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Analysis of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4470",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS-LANG-A1"
+      ],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Artificial Intelligence",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #3 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "CS Elective #3 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Social/Behavioral Science distribution requirement (student choice; specific course via Wolverine Track)",
+      "code": "GE-SOCBEH-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Social/Behavioral Science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3050G",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 2010"
+      ],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Global Social & Ethical Issues in Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Senior CS elective (student choice; see advisor)",
+      "code": "CS-SR-ELEC-A1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Senior CS Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #4 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS Elective #4 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #5 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS Elective #5 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS elective #6 (student choice; advisor-approved; see Wolverine Track)",
+      "code": "CS-ELEC-A6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "CS Elective #6 (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.uvu.edu/cs/docs/computer-science/cs-cs.pdf",
+  "total_credits": 121,
+  "content_hash": "78f98ecf11e85bbe26c168456a90a964f9f645408f9dd9302bba5e9b4c08afbf",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,332 @@
+{
+ "institution": {
+  "city": "Brooklyn, NY",
+  "kind": "community",
+  "name": "CUNY Kingsborough Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "kingsborough-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Official term-by-term sequence transcribed 2026-09-30 from Kingsborough's 2025-2026 Degree Map for A.S. Computer Science, MAT 1500 (Calculus I) placement variant (Required Credits: 60; semesters 15/16/17/12). Parsed positionally from the official PDF (pypdf layout mode), not from scrambled text extraction. Each semester is split into Session A and Session B on the map; the session is recorded per course. Grade requirements printed on the map: minimum C+ in MAT 1500 (to advance to MAT 1600), minimum C+ in CS 1200 (prerequisite for CS 13A0 and CS 1400), minimum C+ in CS 13A0, minimum C in MAT 1600. Curriculum-committee prerequisites: CS 13A0 requires CS 1200 (C+ or higher); CS 1400 requires CS 1200 (C+ or higher); CS 3500 requires CS 1200 (C or higher) and MAT 1500 (C+ or higher); CS 3700 requires CS 13A0 (C or higher). Map footnotes: (1) course usually offered every semester; (2) usually offered Fall and Spring; (3) usually offered every Fall (occasionally Spring). Statistics requirement is satisfied by either MAT/BIO 9100 Biostatistics or MAT/BA 2200 Business Statistics (4 credits each in 2025-2026). Students also select one Writing Intensive and one Civic Engagement course from within the plan (some courses satisfy both). Cross-checked against the 2026-2027 MAT 1500 degree map (same course set and 15/16/17/12 totals). HEGIS 5103.00, Program Code 01040, Department of Mathematics and Computer Science.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Flexible Core Individual & Society course; CIS 100 Digital Society is recommended for Computer Science majors.",
+      "code": "FLEX-IS",
+      "credits": 3,
+      "options": [
+       "CIS 100"
+      ],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Flexible Core - Individual & Society (CIS 100 Digital Society recommended)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Introduction to Computing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Flexible Core World Cultures & Global Issues course.",
+      "code": "FLEX-WC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "B",
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Flexible Core - World Cultures & Global Issues",
+      "xfer": []
+     }
+    ],
+    "term": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 2400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 13A0",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 1200"
+      ],
+      "session": "A",
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Advanced Programming Techniques",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1600",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1500"
+      ],
+      "session": "A",
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Flexible Core U.S. Experience in Its Diversity course.",
+      "code": "FLEX-USD",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Flexible Core - U.S. Experience in Its Diversity",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Life & Physical Sciences Required Core course.",
+      "code": "LIFE-PHYS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "B",
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Life & Physical Sciences (Required Core)",
+      "xfer": []
+     }
+    ],
+    "term": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one Flexible Core Creative Expression course.",
+      "code": "FLEX-CE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Flexible Core - Creative Expression",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3500",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1200",
+       "MAT 1500"
+      ],
+      "session": "A",
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 5600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1400",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 1200"
+      ],
+      "session": "A",
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Computer Organization and Assembly Language Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Satisfy the statistics requirement with either Biostatistics (MAT 9100 or BIO 9100) or Business Statistics (MAT 2200 or BA 2200).",
+      "code": "STATS",
+      "credits": 4,
+      "options": [
+       "MAT 9100",
+       "BIO 9100",
+       "MAT 2200",
+       "BA 2200"
+      ],
+      "prereq": [],
+      "session": "B",
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Statistics - MAT/BIO 9100 Biostatistics or MAT/BA 2200 Business Statistics",
+      "xfer": []
+     }
+    ],
+    "term": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective: 0-6 elective credits sufficient to total 60 credits for the degree.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3700",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 13A0"
+      ],
+      "session": "A",
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2100",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1600"
+      ],
+      "session": "A",
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective: 0-6 elective credits sufficient to total 60 credits for the degree.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "session": "A",
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.kbcc.cuny.edu/DegreeMaps/documents/2025-2026/hsstem/DegreeMapforComputerScienceAS-MAT1500Placement-CalculusI.pdf",
+  "total_credits": 60,
+  "content_hash": "27e0f224e042d4f9e947534fc80fe30fb1b02bb8be9581b65b6ac7aa22368e71",
+  "last_verified": "2026-10-02"
+ }
+}

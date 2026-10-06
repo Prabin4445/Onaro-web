@@ -1,0 +1,672 @@
+{
+ "institution": {
+  "city": "Fairfield, CT",
+  "kind": "private4yr",
+  "name": "Fairfield University",
+  "state": "CT"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "fairfield-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Fairfield University 2026-2027 Academic Catalog (current catalog at catalog.fairfield.edu as of 2026-09-30), Computer Science Major (BS) — ABET-accredited track — official 'Plan of Study' grid (typical four-year, full-time plan). Transcription method: catalog plan-of-study PDF text extracted via browser fetch and manually de-interleaved/reconstructed against the requirement footnotes; term credit totals (17/17/17/14-15/16/16/15/15) and degree total (127) match the catalog's published figures exactly. Caveats: (1) The Math Elective in Spring Year 2 is listed as 3-4 credits; 3 credits are used here so the term (14) and degree (127) totals match the published totals. (2) Magis Core tier slots are student-choice slots with placeholder codes; footnote guidance from the catalog is preserved in each choice_note. (3) The four Major Elective slots follow catalog footnote 4: one must come from the Data/AI group (CPSC 4322, CPSC 4350, CPSC 4355, CPSC 4357, CPSC 4360, CPSC 4366, CPSC 4521), one from the Systems group (CPSC 3349, CPSC 4314), and the remaining two are chosen from the department under advisement of the faculty advisor and department chair. (4) Prerequisite chains are not published in the plan-of-study grid, so prereq arrays are left empty per the no-invention rule. (5) Catalog uses 'Object-Orientated' spelling; kept verbatim.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placement-based choice: CPSC 1101 Introduction to Computing or ENGR 1031 Fundamentals of Engineering.",
+      "code": "CPSC 1101",
+      "credits": 3,
+      "options": [
+       "CPSC 1101",
+       "ENGR 1031"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computing (or Fundamentals of Engineering)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1141",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I for Chemistry, Engineering, and Physics Majors",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 5: choose any language offered by the Department of Modern Languages and Literatures, based on a placement exam.",
+      "code": "LANG 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Modern/Classical Language (Orientation Tier)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 9: lab science elective is typically met by any lab course in Biology, Chemistry, or Physics.",
+      "code": "NSCI 1XXX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Natural Sciences Exploration Tier",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 1: choose an appropriate History or Religious Studies course at the 1000 level.",
+      "code": "HIST 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "History Orientation Tier",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 1131",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Fundamentals of Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1001",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to Rhetoric and Composition",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1142",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II for Chemistry, Engineering, and Physics Majors",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Introduction to Philosophy",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 9: lab science elective is typically met by any lab course in Biology, Chemistry, or Physics. Distinct placeholder from the Fall Year 1 Natural Sciences slot.",
+      "code": "NSCI 1XXX-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Natural Sciences Exploration Tier",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Object-Orientated Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2231L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Object-Orientated Programming Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2250L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Science Sophomore Clinic",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2304",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Web Development",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 2217 Statistics I or MATH 3317 Applied Statistics I.",
+      "code": "MATH 2217",
+      "credits": 3,
+      "options": [
+       "MATH 2217",
+       "MATH 3317"
+      ],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Statistics I (or Applied Statistics I)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 1: choose an appropriate History or Religious Studies course at the 1000 level.",
+      "code": "RLST 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-6",
+      "tccns": "",
+      "title": "Religious Studies Orientation Tier",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 2245",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Digital Design I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 2245L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Digital Design I Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2232",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 2232L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Data Structures Lab",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 7: approved English, Modern Languages and Literatures, or Classics courses.",
+      "code": "LITR 1XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Literature Exploration Tier",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog lists the Math Elective as 3-4 credits; 3 credits are used here so the term and degree totals match the catalog's published totals.",
+      "code": "MATH ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Math Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPEG 3346",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Computer Systems Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 3343",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 3351L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Computer Science Junior Clinic I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SWEG 3301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Software Engineering Methods",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 2256",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "The Ethical Dimension of Engineering & Computing: The Social Responsibilities of Engineers",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 2: choose any appropriate Religious Studies, History, or Philosophy core course.",
+      "code": "HRS 2XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "History or Religious Studies Exploration Tier",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 4331",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 3352L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Science Junior Clinic II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 3354",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Theory of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SWEG 3302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Software Design Methods",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 3: core social science course may be filled by appropriate courses in Communication, Economics, Psychology, Politics, or Sociology and Anthropology.",
+      "code": "BSS 2XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Behavioral and Social Sciences Exploration Tier",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 6: visual and performing art history courses may be chosen from Art History, Music, Film, Television, and Media Arts, Studio Art, or Theatre.",
+      "code": "VPA 2XXX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "Visual and Performing Arts Exploration Tier",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPSC 3333",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Introduction to Cybersecurity",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 4961",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Senior Design Project I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog footnote 3: core social science course may be filled by appropriate courses in Communication, Economics, Psychology, Politics, or Sociology and Anthropology. Distinct placeholder from the Spring Year 3 Behavioral and Social Sciences slot.",
+      "code": "BSS 2XXX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Behavioral and Social Sciences Exploration Tier",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 4: choose one elective from this Data/AI group: CPSC 4322 Visual Analytics, CPSC 4350 Introduction to Data Science, CPSC 4355 Artificial Intelligence, CPSC 4357 Database Management Systems, CPSC 4360 Machine Learning, CPSC 4366 Deep Learning, CPSC 4521 Information Visualization.",
+      "code": "CPSC ELEC-1",
+      "credits": 3,
+      "options": [
+       "CPSC 4322",
+       "CPSC 4350",
+       "CPSC 4355",
+       "CPSC 4357",
+       "CPSC 4360",
+       "CPSC 4366",
+       "CPSC 4521"
+      ],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Major Elective (Data/AI group)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 8: general electives may be chosen from any courses offered at the university, and are frequently chosen to help fulfill requirements toward a chosen minor.",
+      "code": "GEN ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 4962",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Design Project II",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 4: choose one elective from this Systems group: CPSC 3349 Cloud Computing, CPSC 4314 Network Security.",
+      "code": "CPSC ELEC-2",
+      "credits": 3,
+      "options": [
+       "CPSC 3349",
+       "CPSC 4314"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Major Elective (Systems group)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 4: remaining major electives are chosen from the department under advisement of the faculty advisor and department chair.",
+      "code": "CPSC ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Major Elective (department, advisor-approved)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 4: remaining major electives are chosen from the department under advisement of the faculty advisor and department chair.",
+      "code": "CPSC ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Major Elective (department, advisor-approved)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog footnote 8: general electives may be chosen from any courses offered at the university, and are frequently chosen to help fulfill requirements toward a chosen minor.",
+      "code": "GEN ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "General Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://catalog.fairfield.edu/undergraduate/engineering/computer-science-software-engineering/computer-science-accredited/computer-science-accredited_planofstudytext.pdf",
+  "total_credits": 127,
+  "content_hash": "a17f4c0f2890b9866c371e1b7e6978f2560d3679f4f548129cb79d58340cc5bc",
+  "last_verified": "2026-10-02"
+ }
+}

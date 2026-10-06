@@ -1,0 +1,773 @@
+{
+ "institution": {
+  "city": "Waco, TX",
+  "kind": "private4yr",
+  "name": "Baylor University",
+  "state": "TX"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "baylor-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Baylor School of Engineering & Computer Science flowchart 'COMPUTER SCIENCE MAJOR (CS Concentration) (2026-2027)' (https://web.ecs.baylor.edu/flowchart/flowcharts/bscs-cs.pdf, revised 4/25 SEM). The CS Concentration is the general track of Baylor's Bachelor of Science in Computer Science (B.S.C.S.); the Software and Cybersecurity concentrations publish their own separate flowcharts and were NOT used. Course titles, credit hours, and prerequisites were cross-checked against the official Baylor Undergraduate Catalog course-description pages (catalog.baylor.edu/undergraduate/courses-instruction/csi/ and the ECS program requirement tables). Transcription method: flowchart PDF downloaded from Baylor ECS, rendered to a high-resolution image, and transcribed term by term; every term's hours were re-summed to match the flowchart's published term totals (16/16/15/16/16/15/15/15 = 124). Caveats: (1) CSI 3351 'Foundations of AI' is new for 2026-2027 and not yet listed on the catalog CSI course-description page; its title, 3 credits, and prerequisite (CSI 3336, solid prereq arrow on the flowchart, verified by zooming the rendered image) come from the official flowchart. (2) CHA 10XX Chapel is required for two semesters at 0 credits each per the catalog ('Chapel: Two Semesters | 0'); the same official code appears twice, both flagged required_zero. (3) Courses marked with beta on the flowchart (CSI 1430, CSI 1440) must be completed with a grade of B or better; a C or better is required in all major courses and math prerequisites. (4) CSI 43C9 Capstone Design Project additionally requires senior standing, which is not encodable as a course prerequisite. (5) Science requirement per the flowchart: one 8-hour group (BIO 1305/1105 + 1306/1106, CHE 1301/1101 + 1302/1102, GEO 1305/1105 + 1306/1106, or PHY 1408 + 1409 / PHY 1420 + 1430) plus six to eight additional hours; the flowchart places four 4-hour SCIENCE slots (Fall Y1, Fall Y3, Spring Y3, Fall Y4). (6) Foreign Language & Culture is 3 hours from the ECS distribution list in the Undergraduate Catalog (flowchart '*' note). (7) English Literature slot: ENG 2310, Foreign Literature, or Literature in Context distribution list (flowchart star note). (8) Contemporary Social Issues: one 3-hour course from the corresponding A&S distribution list (HIS 1300 included). ENCODING: second Chapel coded \"CHA 10XX-2\" (title preserved) because the pipeline rejects duplicate course codes; the catalog requires the same 0-credit CHA 10XX in two semesters.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 1430",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science I with Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 1101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Computer Science and Informatics New Student Experience",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 1321",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "REL 1310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "The Christian Scriptures",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Student choice: one 8-hour lab-science group (BIO 1305/1105 + 1306/1106, CHE 1301/1101 + 1302/1102, GEO 1305/1105 + 1306/1106, or PHY 1408 + 1409 / PHY 1420 + 1430) plus 6-8 additional science hours, per the flowchart science note.",
+      "code": "SCIENCE",
+      "credits": 4,
+      "options": [
+       "BIO 1305",
+       "BIO 1105",
+       "BIO 1306",
+       "BIO 1106",
+       "CHE 1301",
+       "CHE 1101",
+       "CHE 1302",
+       "CHE 1102",
+       "GEO 1305",
+       "GEO 1105",
+       "GEO 1306",
+       "GEO 1106",
+       "PHY 1408",
+       "PHY 1409",
+       "PHY 1420",
+       "PHY 1430"
+      ],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Lab Science (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: any LF 11XX lifetime fitness course.",
+      "code": "LF 11XX",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Lifetime Fitness (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 1440",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSI 1430"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science II with Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 2350",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 1440",
+       "MTH 1321"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 1322",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH 1321"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Research Writing: Writing and Academic Inquiry Seminars",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "REL 1350",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "REL 1310"
+      ],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "The Christian Heritage",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHA 10XX",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Chapel",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 2334",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 1440",
+       "CSI 2350"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3334",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 1440",
+       "CSI 2350"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Student choice: MTH 2311 Linear Algebra or MTH 2321 Calculus III.",
+      "code": "MTH 2311",
+      "credits": 3,
+      "options": [
+       "MTH 2311",
+       "MTH 2321"
+      ],
+      "prereq": [
+       "MTH 1322"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Linear Algebra or Calculus III (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSS 1302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Speech for Business and Professional Students",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice per the flowchart star note: ENG 2310, Foreign Literature, or Literature in Context distribution list.",
+      "code": "ENG LIT",
+      "credits": 3,
+      "options": [
+       "ENG 2310"
+      ],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "English Literature (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Catalog requirement is literally \"Chapel: Two Semesters | 0\" — same official 0-credit course taken twice; coded -2 only to satisfy the pipeline duplicate-code rule.",
+      "code": "CHA 10XX-2",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "Chapel (second semester)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3471",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSI 3334",
+       "CSI 3344"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Software Engineering I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3344",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3334"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3336",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 2334",
+       "CSI 3344"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Systems Programming",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STA 3381",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH 1322"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Probability and Statistics",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSC 1387",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "The U.S. Constitution, Its Interpretation, and the American Political Experience",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3372",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3344",
+       "CSI 3471"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Software Engineering II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3335",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3344"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Database Design and Applications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 3351",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3336"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Foundations of AI",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one of GTX 2301, GTX 2302, GTX 3343, or GTX 4341.",
+      "code": "GTX ELECT",
+      "credits": 3,
+      "options": [
+       "GTX 2301",
+       "GTX 2302",
+       "GTX 3343",
+       "GTX 4341"
+      ],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Great Texts (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Student choice: continuation of the lab-science group or additional science hours, per the flowchart science note.",
+      "code": "SCIENCE",
+      "credits": 4,
+      "options": [
+       "BIO 1305",
+       "BIO 1105",
+       "BIO 1306",
+       "BIO 1106",
+       "CHE 1301",
+       "CHE 1101",
+       "CHE 1302",
+       "CHE 1102",
+       "GEO 1305",
+       "GEO 1105",
+       "GEO 1306",
+       "GEO 1106",
+       "PHY 1408",
+       "PHY 1409",
+       "PHY 1420",
+       "PHY 1430"
+      ],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Lab Science (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 4323",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3471"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to Cybersecurity",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 4321",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3336"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Data Communications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHI 3180",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "CSI 1440"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Character and Computing",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: 3 hours of general elective credit, if needed to reach the 124-hour graduation requirement.",
+      "code": "GEN ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Student choice: additional science hours, per the flowchart science note.",
+      "code": "SCIENCE",
+      "credits": 4,
+      "options": [
+       "BIO 1305",
+       "BIO 1105",
+       "BIO 1306",
+       "BIO 1106",
+       "CHE 1301",
+       "CHE 1101",
+       "CHE 1302",
+       "CHE 1102",
+       "GEO 1305",
+       "GEO 1105",
+       "GEO 1306",
+       "GEO 1106",
+       "PHY 1408",
+       "PHY 1409",
+       "PHY 1420",
+       "PHY 1430"
+      ],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Lab Science (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: any LF 11XX lifetime fitness course.",
+      "code": "LF 11XX",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "Lifetime Fitness (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 4337",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3336"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Introduction to Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-level CSI elective.",
+      "code": "CSI ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CSI Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: 2 hours of general elective credit, if needed to reach the 124-hour graduation requirement.",
+      "code": "GEN ELECT",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "General Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 3 hours from the Foreign Language & Culture distribution list for ECS in the Undergraduate Catalog (flowchart '*' note).",
+      "code": "LANG DL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Foreign Language & Culture (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Student choice: additional science hours, per the flowchart science note.",
+      "code": "SCIENCE",
+      "credits": 4,
+      "options": [
+       "BIO 1305",
+       "BIO 1105",
+       "BIO 1306",
+       "BIO 1106",
+       "CHE 1301",
+       "CHE 1101",
+       "CHE 1302",
+       "CHE 1102",
+       "GEO 1305",
+       "GEO 1105",
+       "GEO 1306",
+       "GEO 1106",
+       "PHY 1408",
+       "PHY 1409",
+       "PHY 1420",
+       "PHY 1430"
+      ],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Lab Science (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 43C9",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3335",
+       "CSI 3372",
+       "CSI 4321",
+       "CSI 4337"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Design Project",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-level CSI elective.",
+      "code": "CSI ELECT",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CSI Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSI 4330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSI 3344"
+      ],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Foundations of Computing",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: one 3-hour course from the Contemporary Social Issues A&S distribution list (HIS 1300 included).",
+      "code": "SOC ISSUES",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Contemporary Social Issues (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PWR 3300",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 1310"
+      ],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Technical Writing",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://web.ecs.baylor.edu/flowchart/flowcharts/bscs-cs.pdf",
+  "total_credits": 124,
+  "content_hash": "28c03f2704264dd4674685c663a372d44603ef1f5a617f8d2b462c10fb43a73e",
+  "last_verified": "2026-10-02"
+ }
+}

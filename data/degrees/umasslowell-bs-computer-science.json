@@ -1,0 +1,603 @@
+{
+ "institution": {
+  "name": "University of Massachusetts Lowell",
+  "city": "Lowell, MA",
+  "kind": "public4yr",
+  "state": "MA"
+ },
+ "plan": {
+  "id": "umasslowell-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://www.uml.edu/catalog/undergraduate/sciences/departments/computer-science/degree-pathways/dp-cs-general-2020.aspx",
+  "notes": "Transcribed 2026-09-30 from UML's official 'Degree Pathway for Computer Science, General Option' (Academic Catalog, Kennedy College of Sciences, fetched live). catalog_year=2026-2027 reflects the catalog edition in which this pathway is published (the UML catalog site currently publishes the 2026 edition; other departments show 'fall 2026 and beyond' pathways). The pathway itself is officially versioned 'For students who entered fall 2020 and beyond' (page dp-cs-general-2020.aspx). Degree name per UML's official program page: 'Computer Science Major, Bachelor of Science (B.S.)'; the general option is the plain/no-concentration track (options also offered: Data Science, Cybersecurity, Bio-Cheminformatics). Semester totals as printed: 14+14+14+16+16+16+15+15 = 120, which matches the catalog's own 'Total Minimum Credits = 120' exactly; no discrepancy. MATH sequence note (catalog footnote 1): the student's math sequence is determined by ALEKS placement score and/or AP credit; Calculus IA/IB may be required instead of Calculus I. No prerequisites are published on the pathway page, so every prereq list is empty; nothing was invented. ENGL.1010 College Writing I and HONR.1100 First Year Seminar in Honors are an either/or choice slot. The catalog prints the project course and CS electives as COMP.xxxx; these became distinct choice slots (COMP.PROJ1/2, COMP.ELECT1/2) so no placeholder code repeats. Core Curriculum notes from the page: DCA and SRE Essential Learning Outcomes are fulfilled outside the CS major; no more than two Breadth of Knowledge courses may share the same prefix; courses in slots may be taken in any order subject to prerequisites.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENGL.1XX",
+      "title": "College Writing I / First Year Seminar in Honors: Text in the City (CW)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Either ENGL.1010 College Writing I or HONR.1100 First Year Seminar in Honors: Text in the City.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "COMP.1010",
+      "title": "Computing I (STEM)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "COMP.1030L",
+      "title": "Computing I Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MATH.1310",
+      "title": "Calculus I (MATH)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GENED.SS1",
+      "title": "Social Sciences Perspective (SS)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student chooses any approved Social Sciences perspective course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENGL.1020",
+      "title": "College Writing II (CW)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "COMP.1020",
+      "title": "Computing II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "COMP.1040L",
+      "title": "Computing II Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MATH.1320",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "GENED.AH1",
+      "title": "Arts and Humanities Perspective (AH)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student chooses any approved Arts and Humanities perspective course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "COMP.2010",
+      "title": "Computing III",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "COMP.2010R",
+      "title": "Computing III Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH.2190",
+      "title": "Discrete Structures I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "EECE.2650",
+      "title": "Logic Design",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "NATSCI.1XX",
+      "title": "Natural Science with Lab",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of 12 required natural science credits (Biological Sciences, Chemistry, Environmental/Earth/Atmospheric Sciences, or Physics and Applied Physics); the pathway recommends three 4-credit courses with labs.",
+      "options": [],
+      "category": "science"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "ENGL.2200",
+      "title": "Oral & Written Communication for Computer Science (AH), (WOC)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "COMP.2030",
+      "title": "Assembly Language Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "COMP.2030R",
+      "title": "Assembly Language Programming Lab",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "COMP.2040",
+      "title": "Computing IV (AIL)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "MATH.3220",
+      "title": "Discrete Structures II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "MATH.3860",
+      "title": "Probability & Statistics I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "COMP.3040",
+      "title": "Foundations of Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "COMP.3050",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "NATSCI.2XX",
+      "title": "Natural Science with Lab (SCL)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of 12 required natural science credits (Biological Sciences, Chemistry, Environmental/Earth/Atmospheric Sciences, or Physics and Applied Physics); the pathway recommends three 4-credit courses with labs.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GENED.AH2",
+      "title": "Arts and Humanities Perspective (AH) - CS Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any approved Arts and Humanities course satisfying the CS Ethics requirement.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "FREEELECT.1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Almost any university course, not below the level of any required course (12 free-elective credits total).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "COMP.3010",
+      "title": "Organization of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "COMP.3080",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "NATSCI.3XX",
+      "title": "Natural Science with Lab (SCL)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of 12 required natural science credits (Biological Sciences, Chemistry, Environmental/Earth/Atmospheric Sciences, or Physics and Applied Physics); the pathway recommends three 4-credit courses with labs.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "GENED.SS2",
+      "title": "Social Sciences Perspective (SS)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student chooses any approved Social Sciences perspective course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREEELECT.2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Almost any university course, not below the level of any required course (12 free-elective credits total).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "COMP.4040",
+      "title": "Analysis of Algorithms (CTPS), (IL), (QL)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "COMP.PROJ1",
+      "title": "Project Course I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Two-semester CS project sequence; catalog prints it as COMP.xxxx.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "COMP.ELECT1",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any non-required CS-department course at the 3000 level or higher; cannot double-count (6 credits total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "TECH.ELECT1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Course offered by the College of Sciences or College of Engineering that is required or elective for that department's majors; CS courses used here must be 3000/4000/5000 level (6 credits total).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GENED.SS3",
+      "title": "Social Sciences Perspective (SS)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student chooses any approved Social Sciences perspective course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "COMP.PROJ2",
+      "title": "Project Course II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Two-semester CS project sequence; catalog prints it as COMP.xxxx.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "COMP.ELECT2",
+      "title": "Computer Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any non-required CS-department course at the 3000 level or higher; cannot double-count (6 credits total).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "TECH.ELECT2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Course offered by the College of Sciences or College of Engineering that is required or elective for that department's majors; CS courses used here must be 3000/4000/5000 level (6 credits total).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREEELECT.3",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Almost any university course, not below the level of any required course (12 free-elective credits total).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "FREEELECT.4",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Almost any university course, not below the level of any required course (12 free-elective credits total).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "f7212523a22650a35b7e7b5d9716d576fdde1fe2be7df1a25b459dddf4c7c884",
+  "last_verified": "2026-10-02"
+ }
+}

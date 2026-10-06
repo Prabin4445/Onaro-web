@@ -1,0 +1,303 @@
+{
+ "institution": {
+  "city": "Sanborn, NY",
+  "kind": "community",
+  "name": "Niagara County Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AS",
+  "external_prereqs": [
+   "MAT 116"
+  ],
+  "id": "niagara-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official SUNY Niagara (Niagara County Community College) 'Computer Science, A.S.' program info sheet, dated 3/9/2026, hosted on the college's official site sunyniagara.edu (https://sunyniagara.edu/wp-content/uploads/2026/04/Program-Info-Sheet-Computer-Science-AS.pdf). Sequence transcribed verbatim from the sheet's First- through Fourth-Semester tables, including the sheet's own published term totals (17/16/16/14 = 63 credits). Catalog year 2025-2026: the sheet was produced 3/9/2026 while the 2025-2026 catalog was the in-effect catalog; the 2026-2027 online catalog (catalog.niagaracc.suny.edu catoid=36) is unreachable from our network (TCP connects, never returns data), and the 2025-2026 catalog's program pages stall or return empty, so the info sheet is the authoritative current sequence. The degree is the Associate in Science (catalog: HEGIS 5101, SUNY Code 0532, Major Code COMP); the college now brands publicly as 'SUNY Niagara' while the legal catalog name remains Niagara County Community College. Credit total: the sheet's term totals sum to 63 credits; that sequence-published total is used as total_credits (Clarkson/UVM/GCSU precedent) even if the catalog's stated AS degree minimum differs. Prereqs verified against official NCCC catalog course descriptions (archived catalogs at catalog.niagaracc.suny.edu): CPS 130 requires CPS 120; CPS 247 requires CPS 130; CPS 250 requires CPS 130; MAT 121 requires MAT 120 or equivalent; MAT 120 requires MAT 116 or equivalent (MAT 116 listed in external_prereqs; catalog says placement/equivalent may also satisfy). CPS 120 has no hard prereq (catalog notes 'MAT 110 or equivalent may be met concurrently'). No published prereqs could be verified for CIS 119, MAT 230, MAT 255, ENG 101/102/103, or SPE 101/102/103 in reachable sources -- left empty rather than invented. ENG 102/ENG 103, SPE 101/102/103, and CIS-CPS-200-level/MAT 255 are either/or student-choice slots; the writing choice slot's prereq points at ENG 101 (in-plan), not at either option. Older archived catalogs list CPS 130 and CPS 250 at 3 credits ('Computer Programming Logic II' / 'Introduction to Data Structures'); the current 2026 sheet lists both at 4 credits ('Computer Science II' / 'Data Structures') -- the current sheet's titles and credits are used.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 119",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 120",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Writing I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 120",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 116"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "General education elective from the Social Science (SOCS), US History/Civics (USCV), Global (GLBL), or World Language (WLNG) category per the info sheet.",
+      "code": "GENED 1XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Elective (SOCS, USCV, GLBL, or WLNG)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 130",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CPS 120"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENG 102 - Writing II or ENG 103 - Writing for STEM.",
+      "code": "ENG 1XX",
+      "credits": 3,
+      "options": [
+       "ENG 102",
+       "ENG 103"
+      ],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Writing II OR Writing for STEM",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 121",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 120"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "General education elective from the Arts (ARTS) and Humanities (HUMN) category per the info sheet.",
+      "code": "GENED 2XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Education Elective (Arts and Humanities)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Health or Physical Education elective per the info sheet.",
+      "code": "PED 1XX",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Health or Physical Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 247",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CPS 130"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Organization & Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 230",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Lab-based Natural Science & Scientific Reasoning (NSCI) general education elective.",
+      "code": "NSCI 1XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Natural Science & Scientific Reasoning (NSCI) Lab-based General Education Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SPE 101 - Foundations of Communication or SPE 102 - Public Speaking or SPE 103 - Interpersonal Communication.",
+      "code": "SPE 1XX",
+      "credits": 3,
+      "options": [
+       "SPE 101",
+       "SPE 102",
+       "SPE 103"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Foundations of Communication OR Public Speaking OR Interpersonal Communication",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPS 250",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CPS 130"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Second lab-based Natural Science & Scientific Reasoning (NSCI) general education elective.",
+      "code": "NSCI 2XX",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Natural Science & Scientific Reasoning (NSCI) Lab-based General Education Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "A CIS or CPS 200-level elective or MAT 255 - Linear Algebra.",
+      "code": "CPS 2XX",
+      "credits": 3,
+      "options": [
+       "MAT 255"
+      ],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "CIS/CPS 200-level Elective OR Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "General education elective from the Diversity: Equity, Inclusion & Social Justice (DVRS) category per the info sheet.",
+      "code": "GENED 3XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Diversity: Equity, Inclusion & Social Justice (DVRS) General Education Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://sunyniagara.edu/wp-content/uploads/2026/04/Program-Info-Sheet-Computer-Science-AS.pdf",
+  "total_credits": 63,
+  "content_hash": "fda9f0ba39051d7ec71d58f24bed534da029736db514d42a763828c0e00cee0d",
+  "last_verified": "2026-10-02"
+ }
+}

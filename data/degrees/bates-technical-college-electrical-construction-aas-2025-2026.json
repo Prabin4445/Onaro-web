@@ -1,0 +1,557 @@
+{
+ "institution": {
+  "name": "Bates Technical College",
+  "city": "Tacoma, WA",
+  "state": "WA",
+  "kind": "technical"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "bates-technical-college-electrical-construction-aas-2025-2026",
+  "major": "Electrical Construction",
+  "notes": "NOTE: 9-quarter Associate in Applied Science (Plan Code ELEECAPT, Transportation and Trades pathway; catalog describes it as 'AAS in 9 quarters'). The catalog PDF publishes a genuine labeled Quarter 1-9 sequence. General education (15cr: 5cr COLL 101 in Q1 + 5cr Quantitative + 5cr Communications or Sciences and Humanities) is shown as flexible 5cr placeholders in Q2, Q3, Q4 with the note 'Take Communications, Quantitative, or Sciences-Humanities requirement only if not already taken.' This seed places the 5cr Quantitative and 5cr Communications-or-Sciences-Humanities requirements in Q2 and Q3 (first-available quarters). Sequenced ELCON courses (129cr) + COLL 101 (5cr) + 10cr gen-ed = 144cr, matching the catalog Total Credits. A 2025-2026 catalog addendum 'Electrical Construction AAS & CoC - COLL 101 Course' exists; the PDF already incorporates COLL 101 in Q1. Graduates may earn up to 4000 hours from the Department of Labor & Industries towards EL01 electrical license (program description). total_credits (144) = sum of sequenced course credits. Source: official Bates Technical College catalog PDF, observed 2026-10-01. Catalog edition 2025-2026 per https://www.batestech.edu/catalog/. [Coordinator 2026-10-01: genuine 9-quarter AAS (Bates Technical College quarter system); pipeline-excluded by build.py's associate 4-7 semester gate (quarter-system precedent).]",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Quarter 1",
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COLL 101",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "College Success",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Electrical Construction",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 102",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "Applied Physical Science",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 103",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Hand and PowerTools",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 104",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Electrical Service Installation",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Quarter 2",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 105",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Electrical Components",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 106",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Residential Wiring",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 107",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "National Electric Code",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 108",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "NFPA 70E Standards",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog shows 'AAS GENED Requirement: Communications or Quantitative or Sciences-Humanities' (5cr) as a flexible placeholder in Q2-Q4 ('take only if not already taken'). This slot represents the 5cr Quantitative requirement, placed in Q2 (first-available quarter).",
+      "code": "AAS GENED Requirement: Quantitative Distribution",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "AAS GENED Requirement: Quantitative Distribution",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Quarter 3",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 109",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Residential Design",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 110",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Residential Wiring Techniques",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Systems Troubleshooting",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 112",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Blueprint Reading",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 113",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "Blueprint Reading Applications",
+      "slot_id": "s3-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog shows 'AAS GENED Requirement: Communications or Quantitative or Sciences-Humanities' (5cr) as a flexible placeholder in Q2-Q4 ('take only if not already taken'). This slot represents the 5cr Communications or Sciences and Humanities requirement, placed in Q3 (first-available quarter after Q2).",
+      "code": "AAS GENED Requirement: Communications or Sciences-Humanities Distribution",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "AAS GENED Requirement: Communications or Sciences-Humanities Distribution",
+      "slot_id": "s3-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Quarter 4",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 114",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "New Residential Technologies",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 201",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Specialty Tools",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 202",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Commercial Wiring",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 203",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Commercial Codes and Regulations",
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Quarter 5",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 204",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Commercial Material Identification",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 205",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Commercial Installation",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 206",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Industrial Wiring",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 207",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Industrial Material Identification",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 208",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Industrial Installation",
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Quarter 6",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 209",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Industrial Hazards",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 210",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "Motors and Controllers",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 211",
+      "core_area": "",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "title": "Project Estimation",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 212",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Control Circuits",
+      "slot_id": "s6-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Quarter 7",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 213",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Motors and Controllers Applications",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 214",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Transformers",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 215",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "title": "Advanced Motor Controls",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 216",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "title": "New Technology Commercial",
+      "slot_id": "s7-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Quarter 8",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 224",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "title": "Advanced Projects I",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 225",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "title": "Advanced Projects II",
+      "slot_id": "s8-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "label": "Quarter 9",
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 226",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "title": "Advanced Projects III",
+      "slot_id": "s9-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELCON 227",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "title": "Advanced Projects IV",
+      "slot_id": "s9-1",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "total_credits": 144,
+  "source_url": "https://catalog.batestech.edu/sites/default/files/pdf/degree/electrical-construction-2435.pdf?generated=1763728957",
+  "term_system": "quarter",
+  "content_hash": "23435b11a3cfe56c69e3bb40605ac8c80fc9bf9ebd704b78e9dff4e2d25d3fc2",
+  "last_verified": "2026-10-06"
+ }
+}

@@ -1,0 +1,247 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-enhanced-air-traffic-control",
+  "degree": "Certificate",
+  "major": "Enhanced Air Traffic Control",
+  "catalog_year": "2026-2027",
+  "total_credits": 29,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7802/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Enhanced Air Traffic Control Certificate' program map, Catalog 2026-27, published May 10, 2026 (mapmaker.losrios.edu/Maps/7802/PublishedPdf). Official Total Units: 29; this seed = 1 + 12 + 12 + 4 = 29 units. Semester sums verified against the map's 1 / 12 / 12 / 4 headers. This seed models the Tower Cohort path (first-listed options); the En Route Cohort substitutes ATC 320-323 for 310-313 and ATC 325 for 315. Choice slots: (1) ATC 310 / 320 Enhanced Air Traffic Control Terminal 1/En Route 1 (3) — ATC 310 selected; (2) ATC 311 / 321 (3) — ATC 311 selected; (3) ATC 312 / 322 (3) — ATC 312 selected; (4) ATC 313 / 323 (3) — ATC 313 selected; (5) ATC 315 / 325 Terminal/En Route Simulation Training (4) — ATC 315 selected. In-plan prereqs (Tower path): ATC 300 requires ATC 200; ATC 301 requires ATC 300; ATC 302 requires ATC 301; ATC 303 requires ATC 302; ATC 310 requires ATC 300, 301, 302, and 303; ATC 311 requires ATC 310; ATC 312 requires ATC 311; ATC 313 requires ATC 312; ATC 315 requires ATC 313 — all with grades of 'C' or better. En Route path prereqs documented (not in-plan): ATC 320 requires 300-303; ATC 321 requires 320; ATC 322 requires 321; ATC 323 requires 322; ATC 325 requires 323. PreReq ATC 200 is a program-entry prerequisite, modeled as a major course. Certificate of Achievement requirements: grade of 'C' or better in each major course. Documented enrollment eligibility (FAA): English language proficiency (ICAO Level 4 / AC60-28); under 31 years old by tentative job offer (FAA direct hire; nonFAA contract facilities exempt); minimum one year of general work experience, one year of full-time college, or equivalent combination; Federal Security Clearance background check; Class 3 Airman Medical Exam to enter, FAA-endorsed medical/drug/psychological exams at graduation; qualifying ATSA score before program completion for FAA direct-hire consideration. Air Traffic Control, Business and Industry Meta Majors. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Pre-Cohort (Summer)",
+    "courses": [
+     {
+      "code": "ATC 200",
+      "title": "Introduction to Air Traffic Control",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "PreReq — program-entry prerequisite, modeled as a major course.",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "ATC 200",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 1 (Fall)",
+    "courses": [
+     {
+      "code": "ATC 300",
+      "title": "Basic Air Traffic Control Part 1",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 200"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: ATC 200 with a grade of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "ATC 300",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 301",
+      "title": "Basic Air Traffic Control Part 2",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 300"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: ATC 300 with a grade of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "ATC 301",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 302",
+      "title": "Basic Air Traffic Control Part 3",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 301"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: ATC 301 with a grade of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-2",
+      "tccns": "ATC 302",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 303",
+      "title": "Basic Air Traffic Control Part 4",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 302"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: ATC 302 with a grade of 'C' or better.",
+      "options": [],
+      "slot_id": "s2-3",
+      "tccns": "ATC 303",
+      "xfer": [
+       "sacramento-city-college-as-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Semester 2 (Spring)",
+    "courses": [
+     {
+      "code": "ATC 310",
+      "title": "Enhanced Air Traffic Control Terminal 1/En Route 1",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 300",
+       "ATC 301",
+       "ATC 302",
+       "ATC 303"
+      ],
+      "choice": true,
+      "choice_note": "ATC 310 / 320 Enhanced Air Traffic Control Terminal 1/En Route 1 (3); ATC 310 selected (Tower Cohort, first-listed). Prerequisite: ATC 300, 301, 302, and 303 with grades of 'C' or better.",
+      "options": [
+       "ATC 310",
+       "ATC 320"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "ATC 310",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 311",
+      "title": "Enhanced Air Traffic Control Terminal 2/En Route 2",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 310"
+      ],
+      "choice": true,
+      "choice_note": "ATC 311 / 321 Terminal 2/En Route 2 (3); ATC 311 selected (Tower Cohort). Prerequisite: ATC 310 with a grade of 'C' or better (En Route: ATC 320).",
+      "options": [
+       "ATC 311",
+       "ATC 321"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "ATC 311",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 312",
+      "title": "Enhanced Air Traffic Control Terminal 3/En Route 3",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 311"
+      ],
+      "choice": true,
+      "choice_note": "ATC 312 / 322 Terminal 3/En Route 3 (3); ATC 312 selected (Tower Cohort). Prerequisite: ATC 311 with a grade of 'C' or better (En Route: ATC 321).",
+      "options": [
+       "ATC 312",
+       "ATC 322"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "ATC 312",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     },
+     {
+      "code": "ATC 313",
+      "title": "Enhanced Air Traffic Control Terminal 4/En Route 4",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ATC 312"
+      ],
+      "choice": true,
+      "choice_note": "ATC 313 / 323 Terminal 4/En Route 4 (3); ATC 313 selected (Tower Cohort). Prerequisite: ATC 312 with a grade of 'C' or better (En Route: ATC 322).",
+      "options": [
+       "ATC 313",
+       "ATC 323"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "ATC 313",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Summer Term",
+    "courses": [
+     {
+      "code": "ATC 315",
+      "title": "Air Traffic Control Terminal/En Route Simulation Training",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ATC 313"
+      ],
+      "choice": true,
+      "choice_note": "ATC 315 / 325 Air Traffic Control Terminal/En Route Simulation Training (4); ATC 315 selected (Tower Cohort). Prerequisite: ATC 313 with a grade of 'C' or better (En Route: ATC 323).",
+      "options": [
+       "ATC 315",
+       "ATC 325"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "ATC 315",
+      "xfer": [
+       "sacramento-city-college-as-enhanced-air-traffic-control",
+       "sacramento-city-college-as-enhanced-air-traffic-control-cal-getc"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "7913b085971a0bcb769837242fc677fb03e4ba6ef0d3ae9dbfb578019e4fe284",
+  "last_verified": "2026-10-02"
+ }
+}

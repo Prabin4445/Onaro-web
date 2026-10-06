@@ -1,0 +1,632 @@
+{
+ "institution": {
+  "name": "Pennsylvania State University",
+  "city": "University Park, PA",
+  "kind": "public4yr",
+  "state": "PA"
+ },
+ "plan": {
+  "id": "psu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 127,
+  "source_url": "https://bulletins.psu.edu/undergraduate/colleges/engineering/computer-science-bs/",
+  "notes": "Source: official Penn State University Bulletin, College of Engineering, 'Computer Science, B.S. (Engineering)' page, section 'Suggested Academic Plan -> Computer Science, B.S. at University Park Campus (CMPSC_BS)', in effect for the 2026-27 academic year. Transcribed term-by-term directly from the official table; no courses, credits, or prereqs invented. Bulletin states a minimum of 127 credits for the B.S. and a plan total of 127-130. Credit ranges in the bulletin (MATH 220: 2-3; Natural Science GN elective: 2-3; Spring Year 2 General Education Course: 3-4) are recorded at their lower bounds so the plan totals exactly 127, the stated degree minimum. Prereqs included only where officially documented (CMPSC 122/132 requires CMPSC 121/131; CMPSC 221 requires CMPSC 122/132, per the EECS Undergraduate Handbook course sequence) and are referenced to the plan's choice-slot codes; all other prereq fields are intentionally left empty rather than inferred. Entrance-to-major (University Park): CMPSC 121/131, CMPSC 122/132, MATH 140, MATH 141, PHYS 211 with C or better plus 3.20 cumulative GPA. STAT 318/319 transcribed as shown in the suggested plan; the bulletin requirements list also allows STAT/MATH 414 or 418 in place of 318, and STAT/MATH 415 in place of 319. Bulletin footnotes: (*) requires grade of C or better for the major; (#) entrance to major; (dagger) satisfies General Education and degree requirement; elective footnotes 1 and 2 point to the Computer Science Undergraduate Handbook for the 400-level and department-list elective lists. Beaver, Brandywine, and Hazleton use a separate suggested plan (CSENG_BS); only the University Park plan is transcribed here.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMPSC-121-131-CHOICE",
+      "title": "Introductory Programming (CMPSC 121 or CMPSC 131)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CMPSC 121 Introduction to Programming Techniques or CMPSC 131 Programming and Computation I: Fundamentals. Entrance-to-major course; requires a grade of C or better for the major.",
+      "options": [
+       "CMPSC 121",
+       "CMPSC 131"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CMPSC 150N",
+      "title": "Computing and Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH 140",
+      "title": "Calculus With Analytic Geometry I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ENGL 15",
+      "title": "Rhetoric and Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GENED-CHOICE-1",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CMPSC-122-132-CHOICE",
+      "title": "Intermediate Programming (CMPSC 122 or CMPSC 132)",
+      "credits": 3,
+      "prereq": [
+       "CMPSC-121-131-CHOICE"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CMPSC 122 Intermediate Programming or CMPSC 132 Programming and Computation II: Data Structures. Entrance-to-major course; requires a grade of C or better for the major.",
+      "options": [
+       "CMPSC 122",
+       "CMPSC 132"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 141",
+      "title": "Calculus with Analytic Geometry II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "PHYS 211",
+      "title": "General Physics: Mechanics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GENED-CHOICE-2",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "FYS-CHOICE-1",
+      "title": "First-Year Seminar",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "First-Year Seminar (1 credit) per University degree requirements.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CMPSC 221",
+      "title": "Object Oriented Programming with Web-Based Applications",
+      "credits": 3,
+      "prereq": [
+       "CMPSC-122-132-CHOICE"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 230",
+      "title": "Calculus and Vector Analysis",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 220",
+      "title": "Matrices",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "PHYS 212",
+      "title": "General Physics: Electricity and Magnetism",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "CAS-100A-100B-CHOICE",
+      "title": "Effective Speech (CAS 100A or CAS 100B)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "CAS 100A or CAS 100B Effective Speech (GWS requirement).",
+      "options": [
+       "CAS 100A",
+       "CAS 100B"
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CMPSC 222",
+      "title": "Advanced Data Structures and Algorithms in C",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CMPSC 360",
+      "title": "Discrete Mathematics for Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CMPEN 270",
+      "title": "Digital Design: Theory and Practice",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "PHYS-213-214-CHOICE",
+      "title": "Natural Science (GN) Elective (PHYS 213 or PHYS 214)",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Natural Science (GN) elective per the bulletin requirements list: PHYS 213 General Physics: Fluids and Thermal Physics or PHYS 214 General Physics: Wave Motion and Quantum Physics.",
+      "options": [
+       "PHYS 213",
+       "PHYS 214"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GENED-CHOICE-3",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CMPSC 315",
+      "title": "Computer Systems I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CMPSC 320",
+      "title": "Software Engineering Principles",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CMPSC 465",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "STAT 318",
+      "title": "Elementary Probability",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GENED-CHOICE-4",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CMPSC 316",
+      "title": "Computer Systems II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CMPSC 461",
+      "title": "Programming Language Concepts",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "STAT 319",
+      "title": "Elementary Mathematical Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ENGL 202C",
+      "title": "Effective Writing: Technical Writing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GENED-CHOICE-5",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMPSC 483W",
+      "title": "Software Design Methods",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CMPSC-CMPEN-400-CHOICE-1",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CMPSC-CMPEN-400-CHOICE-2",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CMPSC-CMPEN-400-CHOICE-3",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "DEPT-ELECTIVE-CHOICE-1",
+      "title": "General Elective (Department List)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The \"department list\" general elective may include ROTC credits, co-op credits, and other credits as specified in the Computer Science Undergraduate Handbook (bulletin footnote 2).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-5",
+      "code": "GENED-GHW-CHOICE-1",
+      "title": "General Education Course (GHW)",
+      "credits": 1.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General Education GHW (Health and Wellness) course, 1.5 credits.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CMPSC-CMPEN-400-CHOICE-4",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CMPSC-CMPEN-400-CHOICE-5",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CMPSC-CMPEN-400-CHOICE-6",
+      "title": "CMPSC/CMPEN 400-Level Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective chosen from the lists in the Computer Science Undergraduate Handbook (bulletin footnote 1).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "DEPT-ELECTIVE-CHOICE-2",
+      "title": "General Elective (Department List)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The \"department list\" general elective may include ROTC credits, co-op credits, and other credits as specified in the Computer Science Undergraduate Handbook (bulletin footnote 2).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GENED-CHOICE-6",
+      "title": "General Education Course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any General Education course per the bulletin's suggested academic plan.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s8-5",
+      "code": "GENED-GHW-CHOICE-2",
+      "title": "General Education Course (GHW)",
+      "credits": 1.5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General Education GHW (Health and Wellness) course, 1.5 credits.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "0b97f6f0a220c247a80c614b98386f55822f0f1cd71c2f740e2a53e47afedcf9",
+  "last_verified": "2026-10-02"
+ }
+}

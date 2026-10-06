@@ -1,0 +1,338 @@
+{
+ "institution": {
+  "name": "Fulton-Montgomery Community College",
+  "city": "Johnstown, NY",
+  "kind": "community",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "fmcc-as-computer-science",
+  "degree": "AS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 63,
+  "source_url": "http://fmcc.edu/images/Downloads/SUNY%20FMCC%20Catalog.pdf",
+  "notes": "Source: official FMCC catalog PDF served at fmcc.edu (2026-2027 cover; Academic Calendar 2026-2027 inside), Computer Science (A.S.), APC 0532, page 111. Program page: https://fmcc.edu/computers-technology/computer-science-as (page still cites the 2025-2026 catalog and says '61 Credits'; the live 2026-2027 catalog is authoritative). Transcription: downloaded the official PDF 2026-09-30 and extracted text with pdftotext; reconstructed the two-column term layout and verified every semester against the catalog's own printed term totals (Fall Y1 15 / Spring Y1 18 / Fall Y2 17 / Spring Y2 13-14). Catalog credit-minimum statement: 'A minimum of 63 credits are required to complete this program, which must include 30 credits of General Education Liberal Arts and Sciences, plus two different physical or wellness education courses.' (Statement sits at the end of the CS program body, after its footnotes; the adjacent '62 credits' statement belongs to Computer Networking & Cybersecurity and the '61 credits' statement to the preceding program.) Sequence term totals sum to 63-64: the Spring Year 2 Science Elective is listed as 3-4 credits; 3 credits used as the published minimum so the sequence total (63) matches the catalog degree minimum of 63. No discrepancy. The official sequence lists no per-course prerequisites, so all prereq lists are empty and external_prereqs is empty; placement details live in the catalog's course descriptions, not the sequence. Student-choice slots use choice:true with distinct placeholder codes. Either/or slots (CIS 289/INT 292; MAT 173/MAT 175) use the first option's code with options listed and the official 'or' wording preserved in the title and choice_note.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENG 103",
+      "title": "English I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CIS 110",
+      "title": "Spreadsheets and Databases for Professionals",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CIS 116",
+      "title": "Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "LA ELEC-1",
+      "title": "Liberal Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'Liberal Arts Elective' (footnote 3): elective must be used to meet a SUNY General Education requirement.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "LA ELEC-2",
+      "title": "Liberal Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'Liberal Arts Elective' (footnote 3): elective must be used to meet a SUNY General Education requirement.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENG 104",
+      "title": "English II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CIS 216",
+      "title": "Computer Science II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CIS 160",
+      "title": "Database Design and Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CIS ELEC-1",
+      "title": "CIS Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'CIS Elective' (footnote 1,2): CIS 105 Computer Applications does not apply. Suggested course pairs: CIS 144 Hardware Concepts + CIS 165 Networking Concepts, or CIS 170 Web Site Development + CIS 230 Internet Programming.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "LA ELEC-3",
+      "title": "Liberal Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'Liberal Arts Elective' (footnote 3): elective must be used to meet a SUNY General Education requirement.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "DEISJ ELEC",
+      "title": "DEISJ Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'DEISJ Elective' (footnote 4): must be selected from the approved SUNY General Education Diversity: Equity, Inclusion and Social Justice category.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CIS 256",
+      "title": "Data Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CIS ELEC-2",
+      "title": "CIS Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'CIS Elective' (footnote 1,2): CIS 105 Computer Applications does not apply. Suggested course pairs: CIS 144 Hardware Concepts + CIS 165 Networking Concepts, or CIS 170 Web Site Development + CIS 230 Internet Programming.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MAT 170",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "LA ELEC-4",
+      "title": "Liberal Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'Liberal Arts Elective' (footnote 3): elective must be used to meet a SUNY General Education requirement.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SS ELEC",
+      "title": "Social Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog 'Social Science Elective' (footnote 3): elective must be used to meet a SUNY General Education requirement.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "PE 1XX-1",
+      "title": "Physical Education or Wellness Education",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires two different physical or wellness education courses; the official sequence places one in Fall Year 2 and one in Spring Year 2.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CIS 289",
+      "title": "Professional Development Seminar or Internship (CIS 289 or INT 292)",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'CIS 289 Professional Development Seminar or INT 292 Internship' (2 credits).",
+      "options": [
+       "CIS 289",
+       "INT 292"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CIS 238",
+      "title": "Game Design & Development",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MAT 173",
+      "title": "Discrete Math or Calculus II (MAT 173 or MAT 175)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence: 'MAT 173 Discrete Math or MAT 175 Calculus II' (4 credits).",
+      "options": [
+       "MAT 173",
+       "MAT 175"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "SCI ELEC",
+      "title": "Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog lists the Science Elective as 3-4 credits (footnote 3: must meet a SUNY General Education requirement); 3 credits used as the published minimum, giving the sequence total of 63.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "PE 1XX-2",
+      "title": "Physical Education or Wellness Education",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog requires two different physical or wellness education courses; the official sequence places one in Fall Year 2 and one in Spring Year 2.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 4
+   }
+  ],
+  "content_hash": "0a2b8df29556fd6dcb215d4d8305805daec92d541d6dd25c4fa71f04097f1c02",
+  "last_verified": "2026-10-02"
+ }
+}

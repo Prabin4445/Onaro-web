@@ -1,0 +1,532 @@
+{
+ "institution": {
+  "name": "Northern Virginia Community College",
+  "city": "Annandale, VA",
+  "kind": "community",
+  "state": "VA"
+ },
+ "plan": {
+  "id": "nova-as-computer-science",
+  "degree": "AS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "notes": "Source: official NOVA Academic Catalog program page https://catalog.nvcc.edu/programs/computer-science-as/ and its linked official program PDF https://catalog.nvcc.edu/programs/computer-science-as/computer-science-as.pdf (NOVA Code 2460, CIP 11.0701, titled 'Computer Science, A.S.' — verified as an A.S., not A.A.S.). Catalog year 2025-2026: the catalog homepage (checked 2026-09-30) identifies the official catalog as the '2025-2026 NOVA Catalog'; no 2026-2027 catalog was published on catalog.nvcc.edu as of that date. Transcribed 2026-09-30 from the PDF's semester-by-semester tables (codes, titles, credits copied verbatim); semester subtotals and course order cross-checked against the official NOVA/GMU ADVANCE 2025-2026 A.S. Computer Science pathway, which lists the same NOVA degree requirements in the same sequence. Credit verification: catalog semester subtotals are 15-16 + 14 + 15 + 16-18 = 60-63 total, matching the catalog's stated 'Total Credits 60-63'; the standard path transcribed here (minimum option credits: MTH 167, CSC 208, CSC 205, 3-cr approved elective) sums to exactly 60. Caveats: (1) Semester 1 math is an either/or block (5-6 cr). Option 1 (PreCalculus needed): MTH 167 (5 cr), or MTH 161 (3 cr) + MTH 162 (3 cr) — transcribed. Option 2 (placed out of PreCalculus): catalog footnote 1 directs these students to follow the alternate option-2 course sequence and consult an advisor; the option-2 courses did not extract legibly from the official catalog PDF, so they are NOT transcribed here (nothing invented). (2) The two Humanities/Fine Arts electives must be chosen from two of the three areas (Fine Arts, Humanities, Literature); no credit if both come from the same area. (3) The Social/Behavioral Sciences elective must not be a History course (catalog footnote; semester 1 already requires a HIS elective). (4) MTH 245 Statistics I may satisfy a math area if the transfer institution requires it. (5) CSC courses used for this program may not be more than 10 years old as of the first day of the fall semester of the graduation academic year, unless approved by the pathway dean. (6) Per-course prerequisites are not stated in the program sequence and are left empty (not inferred). (7) 'Approved Elective (p. 2)' = 3-4 credits from the catalog's 21-course Approved Electives list (transcribed as options; CSC 195/295 are 1-5 variable-credit topics courses).",
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 221",
+      "title": "Introduction to Problem Solving and Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "ENG 111",
+      "title": "College Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "HIS",
+      "title": "HIS Elective — History (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select any HIS course from the social/behavioral science General Education Electives; choose with an advisor to meet the transfer institution's requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MTH 167",
+      "title": "PreCalculus with Trigonometry",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog Option 1 (PreCalculus needed): MTH 167 (5 cr), or MTH 161 (3 cr) + MTH 162 (3 cr). Catalog Option 2 (placed out of PreCalculus): per catalog footnote 1, follow the alternate option-2 course sequence — consult an academic advisor. The option-2 courses did not extract legibly from the official catalog PDF and are not transcribed here.",
+      "options": [
+       {
+        "code": "MTH 167",
+        "title": "PreCalculus with Trigonometry",
+        "credits": 5,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 161",
+        "title": "PreCalculus I",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 162",
+        "title": "PreCalculus II",
+        "credits": 3,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "SDV 100",
+      "title": "College Success Skills",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "SDV 100 College Success Skills or SDV 101 Orientation to (a Specific Discipline).",
+      "options": [
+       {
+        "code": "SDV 100",
+        "title": "College Success Skills",
+        "credits": 1,
+        "tccns": ""
+       },
+       {
+        "code": "SDV 101",
+        "title": "Orientation to (a Specific Discipline)",
+        "credits": 1,
+        "tccns": ""
+       }
+      ],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 222",
+      "title": "Object Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "ENG 112",
+      "title": "College Composition II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "HUM-FA",
+      "title": "Humanities/Fine Arts Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "See humanities/fine arts courses under General Education Electives. The two Hum/FA electives in this plan must be chosen from two of the three areas (Fine Arts, Humanities, Literature); credit will not be awarded if both come from the same area. Select with an advisor to meet the transfer institution's requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MTH 263",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 208",
+      "title": "Introduction to Discrete Structures",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one: CSC 208 Introduction to Discrete Structures or MTH 288 Discrete Mathematics.",
+      "options": [
+       {
+        "code": "CSC 208",
+        "title": "Introduction to Discrete Structures",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 288",
+        "title": "Discrete Mathematics",
+        "credits": 3,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 223",
+      "title": "Data Structures and Analysis of Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MTH 264",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "BIO 101 / CHM 111 / PHY 241 / GOL 105 / GOL 106",
+      "title": "Physical or Life Science Elective with Lab (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one Physical or Life Science elective with lab: BIO 101, CHM 111, PHY 241, GOL 105, or GOL 106. Choose with an advisor to meet the transfer institution's requirements.",
+      "options": [
+       {
+        "code": "BIO 101",
+        "title": "General Biology I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "CHM 111",
+        "title": "General Chemistry I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "PHY 241",
+        "title": "University Physics I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 105",
+        "title": "Physical Geology",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 106",
+        "title": "Historical Geology",
+        "credits": 4,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "APPR-ELEC",
+      "title": "Approved Elective (catalog p. 2, choose 3-4 cr)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 3-4 credits from the catalog's Approved Electives list (p. 2). CSC 195/295 are 1-5 variable-credit topics courses. Select with an advisor to meet the transfer institution's requirements.",
+      "options": [
+       {
+        "code": "CSC 205",
+        "title": "Computer Organization",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "CSC 215",
+        "title": "Computer Systems",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "CSC 195",
+        "title": "Topics In:",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "CSC 295",
+        "title": "Topics In:",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "EGR 121",
+        "title": "Foundations of Engineering",
+        "credits": 2,
+        "tccns": ""
+       },
+       {
+        "code": "EGR 122",
+        "title": "Engineering Design",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "EGR 270",
+        "title": "Fundamentals of Computer Engineering",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "CST 100",
+        "title": "Principles of Public Speaking",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "CST 110",
+        "title": "Introduction to Human Communication",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 265",
+        "title": "Calculus III",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 266",
+        "title": "Linear Algebra",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 283",
+        "title": "Probability and Statistics",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "BIO 101",
+        "title": "General Biology I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "BIO 102",
+        "title": "General Biology II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "CHM 111",
+        "title": "General Chemistry I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "CHM 112",
+        "title": "General Chemistry II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "PHY 241",
+        "title": "University Physics I",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "PHY 242",
+        "title": "University Physics II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 105",
+        "title": "Physical Geology",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 106",
+        "title": "Historical Geology",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "PHY 201",
+        "title": "General College Physics I",
+        "credits": 4,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "HUM-FA",
+      "title": "Humanities/Fine Arts Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "See humanities/fine arts courses under General Education Electives. The two Hum/FA electives in this plan must be chosen from two of the three areas (Fine Arts, Humanities, Literature); credit will not be awarded if both come from the same area. Select with an advisor to meet the transfer institution's requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "SOC-BEH",
+      "title": "Social/Behavioral Sciences Elective (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "See social/behavioral science courses under General Education Electives. Per catalog footnote, select a class which is not a History course (semester 1 already requires a HIS elective). Select with an advisor to meet the transfer institution's requirements.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CSC 205 / CSC 215 / MTH 265",
+      "title": "Computer Science/Math Select (choose one)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one of the following (3-4 cr): CSC 205 Computer Organization, CSC 215 Computer Systems, or MTH 265 Calculus III.",
+      "options": [
+       {
+        "code": "CSC 205",
+        "title": "Computer Organization",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "CSC 215",
+        "title": "Computer Systems",
+        "credits": 3,
+        "tccns": ""
+       },
+       {
+        "code": "MTH 265",
+        "title": "Calculus III",
+        "credits": 4,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "BIO 102 / CHM 112 / PHY 242 / GOL 105 / GOL 106",
+      "title": "Physical or Life Science Elective with Lab (choose one)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select one Physical or Life Science elective with lab: BIO 102, CHM 112, PHY 242, GOL 105, or GOL 106. Choose with an advisor to meet the transfer institution's requirements.",
+      "options": [
+       {
+        "code": "BIO 102",
+        "title": "General Biology II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "CHM 112",
+        "title": "General Chemistry II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "PHY 242",
+        "title": "University Physics II",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 105",
+        "title": "Physical Geology",
+        "credits": 4,
+        "tccns": ""
+       },
+       {
+        "code": "GOL 106",
+        "title": "Historical Geology",
+        "credits": 4,
+        "tccns": ""
+       }
+      ],
+      "category": "major"
+     }
+    ],
+    "n": 4
+   }
+  ],
+  "total_credits": 60,
+  "source_url": "https://catalog.nvcc.edu/programs/computer-science-as/",
+  "content_hash": "f0356d353450307f5fee4d07c1ce54acf13ba72fb508c4187138f238416379db",
+  "last_verified": "2026-10-02"
+ }
+}

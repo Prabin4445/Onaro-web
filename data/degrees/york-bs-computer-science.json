@@ -1,0 +1,562 @@
+{
+ "institution": {
+  "city": "Jamaica, NY",
+  "kind": "college",
+  "name": "York College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 115",
+   "MATH 141"
+  ],
+  "id": "york-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: the official York College (CUNY) Catalog, Computer Science BS program page (https://york-undergraduate.catalog.cuny.edu/programs/COMPSCI-BS). Term-by-term sequence transcribed 2026-09-30 from the official catalog degree map '2025-Present | Computer Science BS | 4 year Plan' (Total DegreeMap Credits 120; Degree Map Effective Catalog Year 2024 -), as published in York College's official catalog PDF export for the Department of Mathematics & Computer Science (PDF generated 2026-05-11; identical 8-semester sequence verified in the 2026-02-02 export). Course codes, titles, credits, semester placement, and requisite-group text transcribed from that official map; catalog_year '2025-2026' reflects the degree map's '2025-Present' name and the source PDF's 2025-2026 publication. Caveats: (1) The degree map sequences CS 351 Algorithm Design and Analysis in Year 2 Spring, while the catalog's Major Requirements - Required Courses list names CS 451 Operating Systems (not CS 351); transcription follows the published degree map faithfully. (2) The May 2026 catalog PDF export's requirement-group text for CS 341 additionally lists 'COREQUISITE: MATH 261' (Foundations of Advanced Mathematics); the February 2026 export's single-column rendering of the same requisite group (021918) shows only 'PREREQUISITE: [MATH 141 OR MATH 225] and CS291', and MATH 261 is not scheduled anywhere in the published degree map, so it is not included as a requisite here. (3) Placement details from the official requisite groups (not course requisites, documented here): ENG 125 requires passing writing-skills/exemption; CS 172 requires MATH 104 or placement with corequisite MATH 120 or MATH 121; MATH 121 requires math placement scores or MATH 120; foreign-language placement via the World Languages department. (4) CS 401 requires CS 341 and [ENG 126 or a WRIT 300-level course]; only the specific codes CS 341 and ENG 126 are listed as prereq codes. (5) Computer Science majors must pass CS 341 with a C grade or better (official program requirement). (6) Major electives (official program requirements, not individually sequenced in the map): complete at least 2 of CS 334/377/381/382/391/392/452/461/465, AND at least 1 course from that CS list plus MATH 230/243/333/335/336/395; the map's elective slots are placeholders to be filled under advisement. (7) Degree requirements: 120 credits minimum, 2.0 GPA minimum, three Writing Intensive courses including one upper-division WI in the major (CS 401 carries the WRIC writing-intensive attribute).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I: Introduction to College Writing",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose one: any course carrying the Mathematical and Quantitative Reasoning requirement designation, OR MATH 120 Precalculus (4 credits), per the official degree map.",
+      "code": "GENED-MQR",
+      "credits": 4,
+      "options": [
+       "MATH 120"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Mathematical and Quantitative Reasoning (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official requisite group: PREREQUISITE MATH 104 or placement, COREQUISITE MATH 120 or MATH 121 (placement conditions documented in plan notes).",
+      "code": "CS 172",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Required Core Life and Physical Sciences (3 credits).",
+      "code": "GENED-LPS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Required Core Life and Physical Sciences (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 126",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 125"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II: Writing About Literature",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official requisite group is placement-based (math placement scores or MATH 120); see plan notes.",
+      "code": "MATH 121",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Flexible Core Scientific World (3 credits).",
+      "code": "GENED-SW",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Flexible Core Scientific World (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 291",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 172",
+       "MATH 141",
+       "MATH 225"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Flexible Core World Cultures and Global Issues (3 credits).",
+      "code": "GENED-WC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Flexible Core World Cultures and Global Issues (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 122",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 121"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 225",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 115",
+       "MATH 121"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Discrete Mathematical Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 397",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 291"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Assembly Language Programming",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Flexible Core U.S. Experience in Its Diversity (3 credits).",
+      "code": "GENED-US",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Flexible Core U.S. Experience in Its Diversity (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Computer Science majors must pass CS 341 with a C grade or better (official program requirement).",
+      "code": "CS 341",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 141",
+       "MATH 225",
+       "CS 291"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Algorithms and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official requisite group: PREREQUISITE MATH 210 and COREQUISITE CS 341. (A May 2025 curriculum change moved the CS 341 requisite from corequisite to prerequisite; the degree map sequences both in the same term.)",
+      "code": "CS 351",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 210",
+       "CS 341"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Algorithm Design and Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 122"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Probability and Statistics I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the College Option Foreign Language I requirement (see World Languages department for placement); 3 credits.",
+      "code": "GENED-FL1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Foreign Languages I (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 357",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 341",
+       "MATH 225"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Principles of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 457",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 341"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Introduction to Automata and Computability",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Computer Science or Mathematics elective, 4 credits; choose under advisement per the official degree map.",
+      "code": "ELECT-CSMATH",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Computer Science/Math Elective (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any course satisfying the College Option Foreign Language II requirement; 3 credits.",
+      "code": "GENED-FL2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Foreign Languages II (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Flexible Core Individual and Society (3 credits).",
+      "code": "GENED-IS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Flexible Core Individual and Society (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Additional Flexible Core course from any area (3 credits).",
+      "code": "GENED-FCA",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Flexible Core - Any Area (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Free elective, 3 credits.",
+      "code": "ELECT-FREE1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Free Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Writing Intensive elective, 3 credits (degree requires three WI courses total).",
+      "code": "ELECT-WI1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Writing Intensive Elective (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "College Option requirement.",
+      "code": "HE 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Health and the Individual",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 485",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS 397"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Any York College course approved for Flexible Core Creative Expression (3 credits).",
+      "code": "GENED-CE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Flexible Core Creative Expression (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Minor course or free elective, 3 credits; choose under advisement.",
+      "code": "ELECT-MINOR1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Minor Course or Free Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Writing Intensive elective, 3 credits (degree requires three WI courses total).",
+      "code": "ELECT-WI2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Writing Intensive Elective (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Writing Intensive (WRIC attribute). Official requisite group: PREREQUISITE CS 341 and [ENG 126 or WRIT 300-level]; not open to non-degree students.",
+      "code": "CS 401",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CS 341",
+       "ENG 126"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Independent Study in Computer Science: Research and Writing",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Computer Science elective, 3 credits; choose under advisement per the official degree map.",
+      "code": "ELECT-CS1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Minor course or free elective, 3 credits; choose under advisement.",
+      "code": "ELECT-MINOR2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Minor Course or Free Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Minor course or free elective, 4 credits; choose under advisement.",
+      "code": "ELECT-MINOR3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Minor Course or Free Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Minor course or free elective, 4 credits; choose under advisement.",
+      "code": "ELECT-MINOR4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Minor Course or Free Elective (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://york-undergraduate.catalog.cuny.edu/programs/COMPSCI-BS",
+  "total_credits": 120,
+  "content_hash": "361cd55a9b0a2065719c10adb589746df906a8436904d4e09e06f3ffbe799024",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,631 @@
+{
+ "institution": {
+  "name": "Virginia Commonwealth University",
+  "city": "Richmond, VA",
+  "kind": "public4yr",
+  "state": "VA"
+ },
+ "plan": {
+  "id": "vcu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://bulletin.vcu.edu/undergraduate/engineering/computer-science/computer-science-bs/",
+  "notes": "Source: VCU Academic Bulletin (bulletin.vcu.edu), program page 'Computer Science, Bachelor of Science (B.S.)', https://bulletin.vcu.edu/undergraduate/engineering/computer-science/computer-science-bs/ ; transcribed from the official 'Recommended course sequence/plan of study' (also published as the program PDF: https://bulletin.vcu.edu/undergraduate/engineering/computer-science/computer-science-bs/computer-science-bs.pdf). Catalog year: 2026-2027. Note: as of the fetch date (2026-09-30) the bulletin still labels itself the preliminary/launch version of the 2026-2027 edition; curriculum content matches the published program requirements. Transcription method: every row of the official sample plan transcribed 1:1, in order; choice slots represent official 'or'/'select' rows and use choice:true with descriptive codes. No courses invented. Credit accounting: term hours match the bulletin exactly (17/14/14/16/17/15/15/12 = 120). Caveats: (1) Natural science option is 3-5 credits officially (CHEM 101+CHEZ 101 = 4, PHYS 207+PHYZ 207 = 5, BIOL 151+BIOZ 151 = 4); 4 credits recorded so the plan totals the official 120 - choosing the 5-credit physics option makes the degree 121 credits. (2) Spring Year 4 open electives are 2-3 credits officially; 3 recorded to reach 120. (3) Based on the VCU Computer Science Placement Test, students may be required to take CMSC 254 (it can count as an elective); MATH 200 entry is via MATH 151 (min C) or a satisfactory score on the VCU Mathematics Placement Test. (4) Students must earn a minimum grade of C in all computer science courses to graduate; CMSC 254 enrollment is restricted to College of Engineering majors. (5) Prerequisite chains are from the official bulletin course pages (azcourses). Where the bulletin lists 'or' alternatives (e.g. CMSC 255 accepts BNFO 201, CLSE 115, CMSC 210, CMSC 254, EGRB 215, or INFO 202), the plan records the in-sequence in-plan course (CMSC 254). CMSC 256/302 also accept MATH 151 or MATH 201 or calculus-level placement; MATH 200 recorded as the in-plan path. (6) Bulletin sample plan lists STAT 212 or STAT 210, but the official STAT course page states STAT 210 is not open to computer science majors, so CS students take STAT 212. (7) CMSC 441/451/442/452 are the senior capstone sequence; CMSC 442/452 require CMSC 441 and CMSC 451 plus CMSC 408.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMSC 235",
+      "title": "Computing and Data Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CMSC 254",
+      "title": "Introduction to Problem-solving",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "UNIV 1XX",
+      "title": "Introduction to the University (UNIV 101, UNIV 103, or UNIV 191 - student choice)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Bulletin sample plan: UNIV 101 Introduction to the University, UNIV 103 Education and Career Planning, or UNIV 191 Student Success Special Topics (1 credit taken as the 1-credit version).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "UNIV 111",
+      "title": "Introduction to Focused Inquiry: Investigation and Communication",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GENED 1XX-A",
+      "title": "General Education Course (student choice; consult adviser)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 30 credits of general education courses in consultation with an adviser.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "HUM 1XX-A",
+      "title": "Humanities Elective (from approved list - student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved programs/subject areas: African-American studies, American studies, anthropology, School of the Arts, English, foreign language, history, philosophy, psychology, religious studies, social work, sociology, urban studies; other courses may count with departmental approval.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CMSC 255",
+      "title": "Object-oriented Programming",
+      "credits": 4,
+      "prereq": [
+       "CMSC 254"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "ECON 2XX",
+      "title": "Economics Requirement (ECON 205, ECON 210, or ECON 211 - student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "ECON 205 The Economics of Product Development and Markets is intended for engineering students and satisfies general education BOK for social/behavioral science and AOI for global perspectives. ECON 210 Principles of Microeconomics and ECON 211 Principles of Macroeconomics are the alternates (ECON 211 officially requires ECON 203/205/210 first).",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 200",
+      "title": "Calculus with Analytic Geometry I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GENED 1XX-B",
+      "title": "General Education Course (student choice; consult adviser)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 30 credits of general education courses in consultation with an adviser.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CMSC 256",
+      "title": "Introduction to Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CMSC 255",
+       "MATH 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CMSC 302",
+      "title": "Introduction to Discrete Structures",
+      "credits": 3,
+      "prereq": [
+       "CMSC 255",
+       "MATH 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 201",
+      "title": "Calculus with Analytic Geometry II",
+      "credits": 4,
+      "prereq": [
+       "MATH 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "UNIV 200",
+      "title": "Advanced Focused Inquiry: Literacies, Research and Communication",
+      "credits": 3,
+      "prereq": [
+       "UNIV 111"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CMSC 304",
+      "title": "Programming Languages",
+      "credits": 3,
+      "prereq": [
+       "CMSC 256"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CMSC 311",
+      "title": "Computer Organization",
+      "credits": 3,
+      "prereq": [
+       "CMSC 302"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "ENGR 395",
+      "title": "Professional Development",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "support"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "STAT 2XX",
+      "title": "Concepts of Statistics (STAT 212 - student choice)",
+      "credits": 3,
+      "prereq": [
+       "MATH 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Bulletin sample plan lists STAT 212 Concepts of Statistics or STAT 210 Basic Practice of Statistics. Per the official STAT course page, STAT 210 is NOT open to mathematical sciences or computer science majors, so CS majors take STAT 212. Prerequisite per course page: satisfactory math placement score, or MATH 151, MATH 200, or MATH 201.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GENED 1XX-C",
+      "title": "General Education Course (student choice; consult adviser)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 30 credits of general education courses in consultation with an adviser.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "HUM 1XX-B",
+      "title": "Humanities Elective (from approved list - student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved programs/subject areas: African-American studies, American studies, anthropology, School of the Arts, English, foreign language, history, philosophy, psychology, religious studies, social work, sociology, urban studies; other courses may count with departmental approval.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CMSC 303",
+      "title": "Introduction to the Theory of Computation",
+      "credits": 3,
+      "prereq": [
+       "CMSC 302"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CMSC 355",
+      "title": "Fundamentals of Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CMSC 256"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CMSC 357",
+      "title": "Computer Systems",
+      "credits": 4,
+      "prereq": [
+       "CMSC 304"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "NATSCI 1XX",
+      "title": "Natural Science Option with Lab (BIOL, CHEM, or PHYS - student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Bulletin natural science option: Option A CHEM 101 General Chemistry I + CHEZ 101 General Chemistry Laboratory I (4 credits); Option B PHYS 207 University Physics I + PHYZ 207 University Physics I Laboratory (5 credits); Option C BIOL 151 Introduction to Biological Sciences I + BIOZ 151 Introduction to Biological Science Laboratory I (4 credits). Credits recorded as 4 to match the sample plan's 17 term hours (Options A/C); choosing Option B makes this term 18 credits. Satisfies general education BOK for natural science and AOI for scientific and logical reasoning.",
+      "options": [],
+      "category": "science"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GENED 1XX-D",
+      "title": "General Education Course (student choice; consult adviser)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Select 30 credits of general education courses in consultation with an adviser.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CMSC 401",
+      "title": "Algorithm Analysis with Advanced Data Structures",
+      "credits": 3,
+      "prereq": [
+       "CMSC 256",
+       "CMSC 302"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CMSC 405",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CMSC 311",
+       "CMSC 357"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CMSC 408",
+      "title": "Databases",
+      "credits": 3,
+      "prereq": [
+       "CMSC 355"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MATH 3XX",
+      "title": "MATH Course, 300 to 400 Level (student choice)",
+      "credits": 3,
+      "prereq": [
+       "MATH 201"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 300- to 400-level MATH course. Official prerequisites vary by course; MATH 201 is the typical entry prerequisite.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "GENED 1XX-E",
+      "title": "General Education Course - select BOK for humanities/fine arts (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "General education course satisfying the BOK for humanities/fine arts, selected in consultation with an adviser.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMSC 441",
+      "title": "Senior Design Studio I (Laboratory/Project Time)",
+      "credits": 2,
+      "prereq": [
+       "CMSC 355",
+       "CMSC 357",
+       "CMSC 401",
+       "UNIV 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CMSC 451",
+      "title": "Senior Project I",
+      "credits": 1,
+      "prereq": [
+       "CMSC 355",
+       "CMSC 357",
+       "CMSC 401",
+       "UNIV 200"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CMSC 440",
+      "title": "Data Communication and Networking",
+      "credits": 3,
+      "prereq": [
+       "CMSC 357"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "CMSC 4XX-A",
+      "title": "CMSC Upper-level Elective (from approved list - student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved list per bulletin: CMSC 410, 411, 412, 413, 414, 415, 420, 425, 426, 427, 428, 435, 436, 437, 438, 491, 492, 506 (each carries its own prerequisites; consult adviser).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "OPEN 1XX-A",
+      "title": "Open Electives - any course (student choice)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 6 credits of coursework.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CMSC 442",
+      "title": "Senior Design Studio II (Laboratory/Project Time)",
+      "credits": 2,
+      "prereq": [
+       "CMSC 408",
+       "CMSC 441",
+       "CMSC 451"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CMSC 452",
+      "title": "Senior Project II",
+      "credits": 1,
+      "prereq": [
+       "CMSC 408",
+       "CMSC 441",
+       "CMSC 451"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CMSC 4XX-B",
+      "title": "CMSC Upper-level Electives (from approved list - student choice)",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Approved list per bulletin: CMSC 410, 411, 412, 413, 414, 415, 420, 425, 426, 427, 428, 435, 436, 437, 438, 491, 492, 506 (each carries its own prerequisites; consult adviser).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "OPEN 1XX-B",
+      "title": "Open Electives - any course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Bulletin sample plan lists 2-3 credits of open electives; 3 credits recorded to reach the 120 total.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "803d79d1bbb75b81d2c8f2ed9c818395c9e5096b873089ced1c0aa4a312b216d",
+  "last_verified": "2026-10-02"
+ }
+}

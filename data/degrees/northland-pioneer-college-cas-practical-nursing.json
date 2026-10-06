@@ -1,0 +1,240 @@
+{
+ "institution": {
+  "name": "Northland Pioneer College",
+  "city": "Holbrook",
+  "state": "AZ",
+  "kind": "community"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "CAS",
+  "id": "northland-pioneer-college-cas-practical-nursing",
+  "major": "Practical Nursing",
+  "program_type": "certificate",
+  "notes": "Official 2025-26 Practical Nursing CAS program map (checksheet) from the NPC catalog. Courses with an asterisk (*) are prerequisites to the Nursing Program and must be completed no later than July 1st of the program entry year; NUR-prefixed courses must be taken sequentially as shown. Block 4 (summer, prior to nursing courses) is NOT required for acceptance. Completing the 2nd semester of the Nursing Program and the CAS qualifies students to apply for the NCLEX-PN.",
+  "source_url": "https://www.npc.edu/sites/default/files/checksheets/2025-26-cas-practical-nursing-program-map.pdf",
+  "semesters": [
+   {
+    "label": "Block 1 - Summer",
+    "n": 1,
+    "courses": [
+     {
+      "code": "ENL 101",
+      "title": "College Composition I",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Requires placement",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 181",
+      "title": "General Biology",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Requires placement",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 2 - Fall",
+    "n": 2,
+    "courses": [
+     {
+      "code": "ENL 102",
+      "title": "College Composition II",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Requires ENL 101; can be taken with NUR 121, but NOT later",
+      "prereq": [
+       "ENL 101"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 130",
+      "title": "Fundamental Chemistry",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Requires placement or MAT 109 prerequisite",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 201",
+      "title": "Anatomy & Physiology I",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "BIO 181 prerequisite & CHM 130 corequisite",
+      "prereq": [
+       "BIO 181"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 3 - Spring",
+    "n": 3,
+    "courses": [
+     {
+      "code": "NAT 101",
+      "title": "NAT 101",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Required only if student does not already hold CNA or LNA. Requires math and reading placement, Healthcare Provider CPR and First Aid certification (EMT 104), DPS level 1 fingerprint clearance card; random urine testing prior to clinical.",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 205",
+      "title": "Microbiology",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "BIO 181 & CHM 130 prerequisites",
+      "prereq": [
+       "BIO 181"
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 202",
+      "title": "Anatomy & Physiology",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "BIO 201 prerequisite",
+      "prereq": [
+       "BIO 201"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 4 - Summer (prior to nursing courses; not required for acceptance)",
+    "n": 4,
+    "courses": [
+     {
+      "code": "PSY 240",
+      "title": "Developmental Psychology",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Can be taken with NUR 122, but NOT later",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ANT 102",
+      "title": "Cultural Anthropology",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "ANT 102 or SOC 101 Intro to Sociology - can be taken with NUR 221, but NOT later",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 5 - Fall (1st semester of Nursing Program)",
+    "n": 5,
+    "courses": [
+     {
+      "code": "NUR 117",
+      "title": "Pharmacology I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Requires admission into Nursing Program",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 121",
+      "title": "Nursing I",
+      "credits": 8,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Requires admission into Nursing Program",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "label": "Block 6 - Spring (2nd semester of Nursing Program)",
+    "n": 6,
+    "courses": [
+     {
+      "code": "NUR 118",
+      "title": "Pharmacology II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "prereq": [
+       "NUR 117"
+      ],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 122",
+      "title": "Nursing II",
+      "credits": 8,
+      "category": "major",
+      "choice": false,
+      "prereq": [
+       "NUR 117",
+       "NUR 121"
+      ],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 125",
+      "title": "Practical Nurse Completion",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "NUR 122 corequisite",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "total_credits": 59,
+  "content_hash": "1925627cbb9a93008c726456ce5f4719ff365b12a89fb2897cf105d587eb73f1",
+  "last_verified": "2026-10-02"
+ }
+}

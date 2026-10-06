@@ -1,0 +1,1322 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bs-mechatronics-engineering",
+  "degree": "BS",
+  "major": "Mechatronics Engineering",
+  "catalog_year": "2026-2027",
+  "total_credits": 127,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001196",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001196. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): Mechatronic systems can be a complete product or a sub-component of a product. Examples of mechatronic systems include aircraft flight control and navigation systems; automotive electronic fuel injection and anti-lock brake systems; automated manufacturing systems including robots, numerical control machining centers, packaging systems and plastic injection-molding systems; artificial organs; health monitoring and surgical systems; copy machines; and many more. Some common element of all these systems is the integration of analog and digital circuits, microprocessors and computers, mechanical "
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1190",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1112",
+         "MATH 1113"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 1000",
+      "title": "Introduction to Engineering",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211",
+      "title": "Principles of Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1211L",
+      "title": "Principles of Chemistry Lab I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CHEM 1211",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1179",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-05",
+      "title": "General Education Core Curriculum Institutional Priories",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or GWST 1102 or LALS 1102 or LDRS 2300 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102 or COMM 1100",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "GWST 1102",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102",
+       "COMM 1100"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 1001L",
+      "title": "Intro to Mechatronics Eng Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 1000"
+      ],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2202",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2211",
+      "title": "Principles of Physics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2211L",
+      "title": "Principles of Physics I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "PHYS 2211"
+      ],
+      "choice": false,
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "PHYS 2212",
+      "title": "Principles of Physics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2202",
+       {
+        "one_of": [
+         "PHYS 1211K",
+         "PHYS 2211",
+         "PHYS 2211K"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2212L",
+      "title": "Principles of Physics II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "PHYS 2212"
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2306",
+      "title": "Ordinary Differential Equation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1321",
+      "title": "Programming Problem Solving I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSE 1321L"
+      ],
+      "choice": false,
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 1321L",
+      "title": "Program Problem Solving I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "CSE 1321"
+      ],
+      "choice": false,
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EDG 1211",
+      "title": "Engineering Graphics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-06",
+      "title": "General Education Core Curriculum Political Science & US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s3-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "ENGR 2214",
+      "title": "Engineering Mechanics-Statics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "PHYS 2211",
+         "PHYS 2211K"
+        ]
+       },
+       {
+        "one_of": [
+         "PHYS 2211K",
+         "PHYS 2211L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2203",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 2710",
+      "title": "Interm Programfor Mechatronics",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1321",
+         "MATH 1113",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1321L",
+         "MATH 1113",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1111",
+         "MATH 1113",
+         "MATH 1190",
+         "MATH 2202"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 2710L",
+      "title": "Programming Mechatronics Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 2610",
+         "MTRE 2710"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 2110",
+      "title": "Electric Circuits & Machines",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "PHYS 2212",
+         "PHYS 2212K"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 2110L",
+      "title": "Elec Circuits & Machines Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EE 2301",
+         "MTRE 2110"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-06",
+      "title": "General Education Core Curriculum Area C1",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or ENGL 2300 or PHIL 2010 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "ENGL 2300",
+       "PHIL 2010",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s4-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "MATH 3260",
+      "title": "Linear Algebra I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 1179",
+         "MATH 1190"
+        ]
+       },
+       {
+        "one_of": [
+         "MATH 1189",
+         "MATH 1190"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3110",
+      "title": "Fluid Power",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214",
+       "MATH 2306"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3110L",
+      "title": "Fluid Power Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 3110",
+         "MTRE 3343"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3610",
+      "title": "Mod & Feed Control Dyn Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CS 3503",
+         "EE 2301",
+         "EE 2305",
+         "MTRE 2110"
+        ]
+       },
+       "MATH 2202",
+       {
+        "one_of": [
+         "PHYS 2211",
+         "PHYS 2211K"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3610L",
+      "title": "Mod & Feed Contrl Dyn Syst Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 3610",
+         "MTRE 4001"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EE 2501",
+      "title": "Digital Logic Design",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 1000",
+         "EE 1000",
+         "EE 1001L",
+         "EE 2301",
+         "ENGR 1000",
+         "MTRE 1000"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T5-06",
+      "title": "General Education Core Curriculum Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s5-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "ENGR 3122",
+      "title": "Engineering Mechanics-Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214",
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4710",
+      "title": "Instruments and Controls",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CPE 4010",
+         "EE 3701",
+         "EE 4201",
+         "ENGR 3343",
+         "MTRE 3110",
+         "MTRE 3610"
+        ]
+       },
+       {
+        "one_of": [
+         "CPE 4010",
+         "EE 3701",
+         "EE 4201",
+         "ENGR 3343",
+         "MTRE 3110",
+         "MTRE 3610L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2306",
+         "MTRE 3610"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MTRE 3610",
+         "MTRE 3720"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MTRE 3610L",
+         "MTRE 3720"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2306",
+         "MTRE 3610L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4710L",
+      "title": "Instruments and Controls Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 4100",
+         "MTRE 4710"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3720",
+      "title": "Intro to PLC & Microcontollers",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322L",
+         "EE 2305",
+         "EE 2501",
+         "MTRE 2110"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322L",
+         "EE 2305",
+         "MTRE 2110",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322L",
+         "EE 2301",
+         "EE 2305",
+         "MTRE 2110"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322",
+         "EE 2305",
+         "MATH 3260",
+         "MTRE 2110"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322",
+         "EE 2305",
+         "EE 2501",
+         "MTRE 2110"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322",
+         "EE 2305",
+         "MTRE 2110",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322",
+         "EE 2301",
+         "EE 2305",
+         "MTRE 2110"
+        ]
+       },
+       {
+        "one_of": [
+         "CS 3503",
+         "CSE 1322L",
+         "EE 2305",
+         "MATH 3260",
+         "MTRE 2110"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3720L",
+      "title": "Intro PLC and Microcontrol Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "MTRE 3720"
+      ],
+      "choice": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3810",
+      "title": "Dev Control & Sim of Mob Robot",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CSE 1322",
+         "MATH 3260",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322",
+         "MTRE 2610",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322L",
+         "MATH 3260",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "CSE 1322L",
+         "MTRE 2610",
+         "MTRE 2710"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 3810L",
+      "title": "Dev Con & Sim of Mob Robot Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 3710",
+         "MTRE 3810"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s6-6",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T6-07",
+      "title": "General Education Core Curriculum Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s6-7",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "ENGR 3131",
+      "title": "Strength of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2214",
+       "MATH 2202"
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4810",
+      "title": "Robotics Analysis & Synthesis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2203",
+         "MATH 3260",
+         "MTRE 3610L",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2203",
+         "MATH 3260",
+         "MTRE 3610",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2203",
+         "MATH 3260",
+         "MTRE 3610L",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "MATH 2203",
+         "MATH 3260",
+         "MTRE 3610",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 1311",
+         "MTRE 3610L",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610L",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610L",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 1311",
+         "MTRE 3610L",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 1311",
+         "MTRE 3610",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 3501",
+         "MTRE 3610L",
+         "MTRE 4001"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 1311",
+         "MTRE 3610",
+         "MTRE 4002L"
+        ]
+       },
+       {
+        "one_of": [
+         "EE 4201",
+         "ME 4501",
+         "MTRE 3610L",
+         "MTRE 4002L"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4810L",
+      "title": "Robot Analys & Synthesis Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 4200",
+         "MTRE 4810"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4911",
+      "title": "Design & Int Mechatronic Systs",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 2610",
+         "MTRE 2710"
+        ]
+       },
+       {
+        "one_of": [
+         "MTRE 4100",
+         "MTRE 4710"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4820",
+      "title": "Machine Learn Robot Perception",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 2203",
+       "MATH 3260",
+       "MTRE 2710"
+      ],
+      "choice": false,
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTRE 4820L",
+      "title": "Machine Learn Robot Percep Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "MTRE 4820"
+      ],
+      "choice": false,
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "MTRE 4912",
+      "title": "Mechatronic Prototype Develop",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MTRE 4800",
+         "MTRE 4911"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-01",
+      "title": "General Education Core Curriculum Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-02",
+      "title": "Technical Elective (1 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MTRE 3@ or MTRE 4@",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-03",
+      "title": "Technical Elective (2 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MTRE 3@ or MTRE 4@",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T8-04",
+      "title": "Technical Elective (3 of 3)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MTRE 3@ or MTRE 4@",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "CPE 1000",
+   "CPE 4010",
+   "CS 3503",
+   "CSE 1322",
+   "CSE 1322L",
+   "EE 1000",
+   "EE 1001L",
+   "EE 2301",
+   "EE 2305",
+   "EE 3701",
+   "EE 4201",
+   "ENGL 101",
+   "ENGR 3343",
+   "MATH 1111",
+   "MATH 1112",
+   "MATH 1113",
+   "MATH 1179",
+   "MATH 1189",
+   "ME 1311",
+   "ME 3501",
+   "ME 4501",
+   "MTRE 1000",
+   "MTRE 2610",
+   "MTRE 3343",
+   "MTRE 3710",
+   "MTRE 4001",
+   "MTRE 4002L",
+   "MTRE 4100",
+   "MTRE 4200",
+   "MTRE 4800",
+   "PHYS 1211K",
+   "PHYS 2211K",
+   "PHYS 2212K"
+  ],
+  "content_hash": "7cc798463bb2f95e4929f97e2993491af3835964c4d596c91888d34c5b31bcdf",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "institution": {
+  "city": "Twin Falls, ID",
+  "kind": "public4yr",
+  "name": "College of Southern Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "id": "csi-as-science-technology-engineering-math",
+  "major": "Science, Technology, Engineering & Math",
+  "notes": "Source: official College of Southern Idaho 2024-2025 catalog, 'Science, Technology, Engineering, and Math (STEM), Associate of Science' program page (Major Code: 2006S), hand-transcribed 2026-10-02 from https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/engineering-physical-and-computer-sciences-department/science-technology-engineering-and-math-stem/science-technology-engineering-and-math-stem-associate-of-science . Transcription method: fetched the official program page and transcribed the published requirement tables verbatim (course codes, titles, credits, printed semester totals).  TRUE award: Associate of Science (page title). Catalog year 2024-2025: the newest CSI catalog with complete published program pages found (a 2025-2026 catalog exists but its program pages were not locatable; the 2024-2025 pages are complete and officially published). Total credits: 60 - the shared minimum of the two totals the page prints ('Total Credit Hours: 60-65' after the semester tables and 'Total Credit Hours: 60-63' at the bottom); semester tables print 14-17/16/15/15. Modeled honestly per corpus convention (minimum-credit path + notes): 'ELEC College level Elective Courses 4-6 Credits' in Fall Freshman at 5 (the value that makes the semester sum to the printed 14 with MATH at minimum 3); 'MATH 143 College Algebra (3 cr) OR MATH 147 College Algebra and Trigonometry (5 cr) OR MATH 170 Calculus 1 (5 cr)' at 3 (MATH 143). Semester totals 14/16/15/15 = 60. Choice slots: PROG ELEC 4 + 5 + 9 = 18 credits (the catalog's required minimum of 18 program-elective credits; at least one course from each of the Life Science, Physical Science/Engineering, and Math/Technology groups on the page); COMM GE / SCIG GE / WELL GE / SCIG GE2 / SOCS GE / HUMA GE / HUMA GE2 / SOCS GE2 are official catalog placeholders (student choice). Catalog rules: credits cannot be earned in both MATH 143 & MATH 147, nor in both MATH 144 & MATH 147. Footnotes: Science courses must be from 2 different disciplines; Humanistic & Artistic Way of Knowing courses must be from 2 different disciplines; Social and Behavioral Way of Knowing courses must be from 2 different disciplines. The catalog notes 'Alternative plans of study available by contacting your advisor.' Prereqs: left empty. The catalog marks courses with '*' as 'Prerequisite or corequisite required' but does not name the prerequisite on the plan page; per-course prerequisites live on the official catalog course pages, not the plan page.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'COMM GE': any General Education Oral Communication course (student choice).",
+      "code": "COMM-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Oral Communication general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog 'ELEC - College level Elective Courses 4-6 Credits'; modeled at 5, the value that makes the semester sum to the printed 14 with the MATH choice at its 3-credit minimum.",
+      "code": "ELEC-1-CHOICE",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "College level Elective Courses (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog lists 'MATH 143 College Algebra (3 cr) OR MATH 147 College Algebra and Trigonometry (5 cr) OR MATH 170 Calculus 1 (5 cr)'; modeled at 3 (MATH 143, minimum-credit path).",
+      "code": "MATH-143-147-170-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "College Algebra OR College Algebra and Trigonometry OR Calculus 1 (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Fall Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Writing and Rhetoric II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "GNED 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to General Education",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE': any General Education Science course (student choice).",
+      "code": "SCIG-GE-CHOICE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "General Education Science course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'WELL GE': any Wellness course (student choice).",
+      "code": "WELL-CHOICE",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Wellness course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog 'PROG ELEC - Program Electives 4 Credits'; 18 program-elective credits required minimum (4 modeled here + 5 + 9), at least one course from each of the Life Science, Physical Science/Engineering, and Math/Technology groups.",
+      "code": "PROG-ELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Program Electives (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Spring Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE2': any 2nd General Education Science course (student choice).",
+      "code": "SCIG-GE2-CHOICE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "2nd General Education Science course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE': any General Education Social and Behavioral Ways of Knowing course (student choice).",
+      "code": "SOCS-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Social and Behavioral Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE': any General Education Humanistic & Artistic Ways of Knowing course (student choice).",
+      "code": "HUMA-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog 'PROG ELEC - Program Elective 5 Credits'; 18 program-elective credits required minimum (4 + 5 modeled here + 9), at least one course from each of the three elective groups.",
+      "code": "PROG-ELEC-2",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Program Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Fall Semester Sophomore Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE2': any 2nd General Education Humanistic & Artistic Ways of Knowing course (student choice).",
+      "code": "HUMA-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "2nd Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE2': any 2nd General Education Social and Behavioral Ways of Knowing course (student choice).",
+      "code": "SOCS-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "2nd Social and Behavioral Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog 'PROG ELEC - Program Electives 9 Credits'; 18 program-elective credits required minimum (4 + 5 + 9 modeled here), at least one course from each of the three elective groups.",
+      "code": "PROG-ELEC-3",
+      "credits": 9,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Program Electives (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Spring Semester Sophomore Year"
+   }
+  ],
+  "source_url": "https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/engineering-physical-and-computer-sciences-department/science-technology-engineering-and-math-stem/science-technology-engineering-and-math-stem-associate-of-science",
+  "total_credits": 60,
+  "content_hash": "58f97a8dad6ddfc7c183653c45af1126c64289bd69ecf954f2d365acb54e0d65",
+  "last_verified": "2026-10-02"
+ }
+}

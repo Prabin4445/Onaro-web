@@ -1,0 +1,1562 @@
+{
+ "institution": {
+  "name": "Rowan University",
+  "city": "Glassboro, NJ",
+  "kind": "public",
+  "state": "NJ"
+ },
+ "plan": {
+  "id": "rowan-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2019-2020",
+  "total_credits": 121,
+  "source_url": "https://csm.rowan.edu/departments/cs/advising/undergrad/bs_cs/BSsuggestedCourseSequence.pdf",
+  "notes": "SOURCE: Official Rowan University term-by-term sequence: 'Suggested Course Sequence -- BACHELOR OF SCIENCE IN COMPUTER SCIENCE' (csm.rowan.edu/departments/cs/advising/undergrad/bs_cs/BSsuggestedCourseSequence.pdf), revised 29 October 2019 -- this is the official term-by-term plan still posted by the Rowan CS department. Term placement, credits, and semester totals (15/15/16/16/16/16/15/12 = 121 sh) are transcribed exactly as printed. Course-number verification source: 'Accelerated Dual Degree Program Computer Science (O700/G700)' academic program guide, updated June 2026 (csm.rowan.edu/departments/cs/advising/program-guides/4+1s/cadp-bscs-to-mscs-program-guide---rowan-core.pdf), which contains the full current BS CS requirement list (64-65 sh program + 27 sh Rowan Core/Experience + 28 sh free electives = 120-121 sh total). RENUMBERING (1:1 verified against the June 2026 guide): CS 01205 -> CS 04215 Computer Lab Techniques; CS 07321 -> CS 04321 Software Engineering I; CS 04390 -> CS 06395 Operating Systems; CS 07351 -> CS 03351 Cyber Security: Fundamentals, Principles, & Applications; MATH 03160 -> MATH 03150 Discrete Mathematics; INTR 01266 -> INTR 01265 Computers and Society. Titles use current catalog wording. CREDIT CAVEAT: the printed sequence gives CS 04114 Object-Oriented Programming & Data Abstraction 2 sh (semester 2 totals 15 sh as printed); the June 2026 catalog lists that course at 3 sh. Credits are kept as printed so the plan sums to the sequence's own published total of 121 sh, which sits inside the catalog's published 120-121 sh degree total. CURRENT-CATALOG ADDITIONS NOT IN THE 2019 SEQUENCE (not placed in any term -- see advisor): WA 01302 Technical Writing (3 sh, Writing Intensive) became a required non-program course in Fall 2022 (it replaced the WI version of Computers and Society; the 2019 sequence carried WI on CS 07321 Software Engineering I); CS 06210 Advanced Computing Technologies (3 sh) was added to the foundational major list after 2019. TRANSCRIPTION: PDF downloaded via curl and text extracted with pdftotext; two-column semester layout manually reconciled against the department's own search-index rendering of the same document. Prereqs are asserted ONLY where verified from Rowan Banner catalog records (CS 04114 requires CS 04113; CS 04222 requires CS 04114 + MATH 03150 and CS 04215, which may be taken concurrently per Banner; CS 07210 requires CS 04113 + MATH 03150). CS 04113 has math-readiness placement (Calculus I readiness); not a course prereq. Free-elective slots total 27 sh across the sequence vs 28 sh in the current guide; use free electives to finish any remaining Rowan Core/Experience attributes per advisor. Rowan Core recommendation (June 2026): scientific literacy via BIOL 01104, CHEM 06100, or PHYS 00220; full authorized lab-science bank (ASTR/BIOL/CHEM/PHYS/BINF/MCB) is listed in the June 2026 guide. DS 02395 Topics in Data Science (1-3 sh) is also an eligible restricted elective per the guide but excluded from option lists because of its variable credit. catalog.rowan.edu content pages return bot-protection (http-202) responses, so all data above comes from the two official rowan.edu-hosted PDFs.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 00100",
+      "title": "Computer Science Learning Community",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CS 04113",
+      "title": "Introduction to Object-Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "COMP 01111",
+      "title": "College Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MATH 01130",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MATH 03150",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 04114",
+      "title": "Object-Oriented Programming & Data Abstraction",
+      "credits": 2,
+      "prereq": [
+       "CS 04113"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CS 07210",
+      "title": "Foundations of Computer Science",
+      "credits": 3,
+      "prereq": [
+       "CS 04113",
+       "MATH 03150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "COMP 01112",
+      "title": "College Composition II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MATH 01131",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "ROWAN-GENED-LIT",
+      "title": "General Education Course (Literature)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh course carrying the Rowan Core LIT Broad-Based Literature attribute.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 06205",
+      "title": "Computer Organization",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 04222",
+      "title": "Data Structures and Algorithms",
+      "credits": 4,
+      "prereq": [
+       "CS 04114",
+       "CS 04215",
+       "MATH 03150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 04215",
+      "title": "Computer Lab Techniques",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "ROWAN-GENED-ARTL",
+      "title": "General Education Course (Artistic Literacy)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh course carrying the Rowan Core ARTL Artistic Literacy attribute.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "ROWAN-FREE1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 07340",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH 01210",
+      "title": "Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "ROWAN-LABSCI1",
+      "title": "Authorized Lab Science (first of two)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of two 4-sh authorized lab science courses verified by advisor (Astronomy, Biology, Chemistry, or Physics).",
+      "options": [
+       {
+        "code": "BIOL 01104",
+        "title": "Introduction to Evolution and Scientific Inquiry",
+        "credits": 4
+       },
+       {
+        "code": "CHEM 06100",
+        "title": "Chemistry I",
+        "credits": 4
+       },
+       {
+        "code": "PHYS 00220",
+        "title": "Introductory Mechanics",
+        "credits": 4
+       },
+       {
+        "code": "ASTR 11230",
+        "title": "Introductory Astronomy",
+        "credits": 4
+       },
+       {
+        "code": "ASTR 11240",
+        "title": "Observational Astronomy",
+        "credits": 4
+       }
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "ROWAN-GENED-GLBL",
+      "title": "General Education Course (Global Literacy)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh course carrying the Rowan Core GLBL Global Literacy attribute.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "CMS 04205",
+      "title": "Public Speaking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "INTR 01265",
+      "title": "Computers and Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 03351",
+      "title": "Cyber Security: Fundamentals, Principles, & Applications",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CS 04315",
+      "title": "Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "ROWAN-LABSCI2",
+      "title": "Authorized Lab Science (second of two)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One of two 4-sh authorized lab science courses verified by advisor (Astronomy, Biology, Chemistry, or Physics).",
+      "options": [
+       {
+        "code": "BIOL 01104",
+        "title": "Introduction to Evolution and Scientific Inquiry",
+        "credits": 4
+       },
+       {
+        "code": "CHEM 06100",
+        "title": "Chemistry I",
+        "credits": 4
+       },
+       {
+        "code": "PHYS 00220",
+        "title": "Introductory Mechanics",
+        "credits": 4
+       },
+       {
+        "code": "ASTR 11230",
+        "title": "Introductory Astronomy",
+        "credits": 4
+       },
+       {
+        "code": "ASTR 11240",
+        "title": "Observational Astronomy",
+        "credits": 4
+       }
+      ],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "STAT 02290",
+      "title": "Probability and Statistical Inference for Computing Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 04321",
+      "title": "Software Engineering I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS 06395",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "ROWAN-CS-RE1",
+      "title": "CS Restricted Elective #1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose any 3-sh course from the official CS Restricted Elective bank (see options).",
+      "options": [
+       {
+        "code": "CS 01303",
+        "title": "Bioinformatics - Computational Aspects",
+        "credits": 3
+       },
+       {
+        "code": "CS 01395",
+        "title": "Topics in Computer Science",
+        "credits": 3
+       },
+       {
+        "code": "CS 01400",
+        "title": "Independent Study",
+        "credits": 3
+       },
+       {
+        "code": "CS 02370",
+        "title": "Introduction to Information Visualization",
+        "credits": 3
+       },
+       {
+        "code": "CS 02421",
+        "title": "Big Data Tools and Techniques",
+        "credits": 3
+       },
+       {
+        "code": "CS 02435",
+        "title": "Database Systems: Theory and Program",
+        "credits": 3
+       },
+       {
+        "code": "CS 02440",
+        "title": "Data Warehousing",
+        "credits": 3
+       },
+       {
+        "code": "CS 02480",
+        "title": "Intro to Data Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 02485",
+        "title": "Web and Text Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 03351",
+        "title": "Cyber Security: Fundamentals, Principles, & Applications",
+        "credits": 3
+       },
+       {
+        "code": "CS 03353",
+        "title": "Security of Mobile Devices",
+        "credits": 3
+       },
+       {
+        "code": "CS 03440",
+        "title": "Cloud Computing and the Internet of Things",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 01470",
+        "title": "Cyber Operations",
+        "credits": 3
+       },
+       {
+        "code": "CS 04305",
+        "title": "Web Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04322",
+        "title": "Software Engineering II",
+        "credits": 3
+       },
+       {
+        "code": "CS 04350",
+        "title": "Blockchain Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04372",
+        "title": "Advanced Android Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04376",
+        "title": "Advanced IOS Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04380",
+        "title": "Object Oriented Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04391",
+        "title": "Parallel and Concurrent Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04392",
+        "title": "System Programming and OS Internals",
+        "credits": 3
+       },
+       {
+        "code": "CS 04394",
+        "title": "Distributed Systems",
+        "credits": 3
+       },
+       {
+        "code": "CS 04401",
+        "title": "Compiler Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04444",
+        "title": "Human Computer Interaction",
+        "credits": 3
+       },
+       {
+        "code": "CS 04471",
+        "title": "Topics in Mobile Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06310",
+        "title": "Principles of Digital Computers",
+        "credits": 3
+       },
+       {
+        "code": "CS 06390",
+        "title": "Introduction to Systems Simulation and Modeling",
+        "credits": 3
+       },
+       {
+        "code": "CS 06420",
+        "title": "Embedded Systems Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06447",
+        "title": "Introduction to IoT Upper Stack",
+        "credits": 3
+       },
+       {
+        "code": "CS 07310",
+        "title": "Robotics",
+        "credits": 3
+       },
+       {
+        "code": "CS 07350",
+        "title": "Computer Cryptography",
+        "credits": 3
+       },
+       {
+        "code": "CS 07422",
+        "title": "Theory of Computing",
+        "credits": 3
+       },
+       {
+        "code": "CS 07450",
+        "title": "Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CS 07455",
+        "title": "Machine Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07459",
+        "title": "Models of Deep Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07460",
+        "title": "Computer Vision",
+        "credits": 3
+       },
+       {
+        "code": "CS 08360",
+        "title": "Introduction to Computer Graphics",
+        "credits": 3
+       },
+       {
+        "code": "CS 08380",
+        "title": "Introduction to Computer Animation",
+        "credits": 3
+       },
+       {
+        "code": "CS 08390",
+        "title": "Intro to Computer Game Design and Development",
+        "credits": 3
+       },
+       {
+        "code": "CS 09410",
+        "title": "Data Communications and Networking",
+        "credits": 3
+       },
+       {
+        "code": "CS 09415",
+        "title": "Wireless Networks, Protocols and Apps.",
+        "credits": 3
+       },
+       {
+        "code": "CS 09416",
+        "title": "TCP/IP and Internet Protocols and Tech.",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 03427",
+        "title": "Principles of Network Security",
+        "credits": 3
+       },
+       {
+        "code": "CS 99300",
+        "title": "Computer Field Experience",
+        "credits": 3
+       },
+       {
+        "code": "CS 99310",
+        "title": "Advanced Learning Asst Experience in CS",
+        "credits": 3
+       },
+       {
+        "code": "CS 99490",
+        "title": "Computer Science Research II",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ROWAN-FREE2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "ROWAN-FREE3",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 04400",
+      "title": "Senior Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "ROWAN-CS-RE2",
+      "title": "CS Restricted Elective #2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose any 3-sh course from the official CS Restricted Elective bank (see options).",
+      "options": [
+       {
+        "code": "CS 01303",
+        "title": "Bioinformatics - Computational Aspects",
+        "credits": 3
+       },
+       {
+        "code": "CS 01395",
+        "title": "Topics in Computer Science",
+        "credits": 3
+       },
+       {
+        "code": "CS 01400",
+        "title": "Independent Study",
+        "credits": 3
+       },
+       {
+        "code": "CS 02370",
+        "title": "Introduction to Information Visualization",
+        "credits": 3
+       },
+       {
+        "code": "CS 02421",
+        "title": "Big Data Tools and Techniques",
+        "credits": 3
+       },
+       {
+        "code": "CS 02435",
+        "title": "Database Systems: Theory and Program",
+        "credits": 3
+       },
+       {
+        "code": "CS 02440",
+        "title": "Data Warehousing",
+        "credits": 3
+       },
+       {
+        "code": "CS 02480",
+        "title": "Intro to Data Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 02485",
+        "title": "Web and Text Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 03351",
+        "title": "Cyber Security: Fundamentals, Principles, & Applications",
+        "credits": 3
+       },
+       {
+        "code": "CS 03353",
+        "title": "Security of Mobile Devices",
+        "credits": 3
+       },
+       {
+        "code": "CS 03440",
+        "title": "Cloud Computing and the Internet of Things",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 01470",
+        "title": "Cyber Operations",
+        "credits": 3
+       },
+       {
+        "code": "CS 04305",
+        "title": "Web Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04322",
+        "title": "Software Engineering II",
+        "credits": 3
+       },
+       {
+        "code": "CS 04350",
+        "title": "Blockchain Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04372",
+        "title": "Advanced Android Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04376",
+        "title": "Advanced IOS Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04380",
+        "title": "Object Oriented Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04391",
+        "title": "Parallel and Concurrent Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04392",
+        "title": "System Programming and OS Internals",
+        "credits": 3
+       },
+       {
+        "code": "CS 04394",
+        "title": "Distributed Systems",
+        "credits": 3
+       },
+       {
+        "code": "CS 04401",
+        "title": "Compiler Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04444",
+        "title": "Human Computer Interaction",
+        "credits": 3
+       },
+       {
+        "code": "CS 04471",
+        "title": "Topics in Mobile Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06310",
+        "title": "Principles of Digital Computers",
+        "credits": 3
+       },
+       {
+        "code": "CS 06390",
+        "title": "Introduction to Systems Simulation and Modeling",
+        "credits": 3
+       },
+       {
+        "code": "CS 06420",
+        "title": "Embedded Systems Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06447",
+        "title": "Introduction to IoT Upper Stack",
+        "credits": 3
+       },
+       {
+        "code": "CS 07310",
+        "title": "Robotics",
+        "credits": 3
+       },
+       {
+        "code": "CS 07350",
+        "title": "Computer Cryptography",
+        "credits": 3
+       },
+       {
+        "code": "CS 07422",
+        "title": "Theory of Computing",
+        "credits": 3
+       },
+       {
+        "code": "CS 07450",
+        "title": "Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CS 07455",
+        "title": "Machine Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07459",
+        "title": "Models of Deep Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07460",
+        "title": "Computer Vision",
+        "credits": 3
+       },
+       {
+        "code": "CS 08360",
+        "title": "Introduction to Computer Graphics",
+        "credits": 3
+       },
+       {
+        "code": "CS 08380",
+        "title": "Introduction to Computer Animation",
+        "credits": 3
+       },
+       {
+        "code": "CS 08390",
+        "title": "Intro to Computer Game Design and Development",
+        "credits": 3
+       },
+       {
+        "code": "CS 09410",
+        "title": "Data Communications and Networking",
+        "credits": 3
+       },
+       {
+        "code": "CS 09415",
+        "title": "Wireless Networks, Protocols and Apps.",
+        "credits": 3
+       },
+       {
+        "code": "CS 09416",
+        "title": "TCP/IP and Internet Protocols and Tech.",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 03427",
+        "title": "Principles of Network Security",
+        "credits": 3
+       },
+       {
+        "code": "CS 99300",
+        "title": "Computer Field Experience",
+        "credits": 3
+       },
+       {
+        "code": "CS 99310",
+        "title": "Advanced Learning Asst Experience in CS",
+        "credits": 3
+       },
+       {
+        "code": "CS 99490",
+        "title": "Computer Science Research II",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ROWAN-CS-RE3",
+      "title": "CS Restricted Elective #3",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose any 3-sh course from the official CS Restricted Elective bank (see options).",
+      "options": [
+       {
+        "code": "CS 01303",
+        "title": "Bioinformatics - Computational Aspects",
+        "credits": 3
+       },
+       {
+        "code": "CS 01395",
+        "title": "Topics in Computer Science",
+        "credits": 3
+       },
+       {
+        "code": "CS 01400",
+        "title": "Independent Study",
+        "credits": 3
+       },
+       {
+        "code": "CS 02370",
+        "title": "Introduction to Information Visualization",
+        "credits": 3
+       },
+       {
+        "code": "CS 02421",
+        "title": "Big Data Tools and Techniques",
+        "credits": 3
+       },
+       {
+        "code": "CS 02435",
+        "title": "Database Systems: Theory and Program",
+        "credits": 3
+       },
+       {
+        "code": "CS 02440",
+        "title": "Data Warehousing",
+        "credits": 3
+       },
+       {
+        "code": "CS 02480",
+        "title": "Intro to Data Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 02485",
+        "title": "Web and Text Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 03351",
+        "title": "Cyber Security: Fundamentals, Principles, & Applications",
+        "credits": 3
+       },
+       {
+        "code": "CS 03353",
+        "title": "Security of Mobile Devices",
+        "credits": 3
+       },
+       {
+        "code": "CS 03440",
+        "title": "Cloud Computing and the Internet of Things",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 01470",
+        "title": "Cyber Operations",
+        "credits": 3
+       },
+       {
+        "code": "CS 04305",
+        "title": "Web Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04322",
+        "title": "Software Engineering II",
+        "credits": 3
+       },
+       {
+        "code": "CS 04350",
+        "title": "Blockchain Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04372",
+        "title": "Advanced Android Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04376",
+        "title": "Advanced IOS Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04380",
+        "title": "Object Oriented Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04391",
+        "title": "Parallel and Concurrent Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04392",
+        "title": "System Programming and OS Internals",
+        "credits": 3
+       },
+       {
+        "code": "CS 04394",
+        "title": "Distributed Systems",
+        "credits": 3
+       },
+       {
+        "code": "CS 04401",
+        "title": "Compiler Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04444",
+        "title": "Human Computer Interaction",
+        "credits": 3
+       },
+       {
+        "code": "CS 04471",
+        "title": "Topics in Mobile Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06310",
+        "title": "Principles of Digital Computers",
+        "credits": 3
+       },
+       {
+        "code": "CS 06390",
+        "title": "Introduction to Systems Simulation and Modeling",
+        "credits": 3
+       },
+       {
+        "code": "CS 06420",
+        "title": "Embedded Systems Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06447",
+        "title": "Introduction to IoT Upper Stack",
+        "credits": 3
+       },
+       {
+        "code": "CS 07310",
+        "title": "Robotics",
+        "credits": 3
+       },
+       {
+        "code": "CS 07350",
+        "title": "Computer Cryptography",
+        "credits": 3
+       },
+       {
+        "code": "CS 07422",
+        "title": "Theory of Computing",
+        "credits": 3
+       },
+       {
+        "code": "CS 07450",
+        "title": "Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CS 07455",
+        "title": "Machine Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07459",
+        "title": "Models of Deep Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07460",
+        "title": "Computer Vision",
+        "credits": 3
+       },
+       {
+        "code": "CS 08360",
+        "title": "Introduction to Computer Graphics",
+        "credits": 3
+       },
+       {
+        "code": "CS 08380",
+        "title": "Introduction to Computer Animation",
+        "credits": 3
+       },
+       {
+        "code": "CS 08390",
+        "title": "Intro to Computer Game Design and Development",
+        "credits": 3
+       },
+       {
+        "code": "CS 09410",
+        "title": "Data Communications and Networking",
+        "credits": 3
+       },
+       {
+        "code": "CS 09415",
+        "title": "Wireless Networks, Protocols and Apps.",
+        "credits": 3
+       },
+       {
+        "code": "CS 09416",
+        "title": "TCP/IP and Internet Protocols and Tech.",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 03427",
+        "title": "Principles of Network Security",
+        "credits": 3
+       },
+       {
+        "code": "CS 99300",
+        "title": "Computer Field Experience",
+        "credits": 3
+       },
+       {
+        "code": "CS 99310",
+        "title": "Advanced Learning Asst Experience in CS",
+        "credits": 3
+       },
+       {
+        "code": "CS 99490",
+        "title": "Computer Science Research II",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ROWAN-FREE4",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ROWAN-FREE5",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "ROWAN-CS-RE4",
+      "title": "CS Restricted Elective #4",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose any 3-sh course from the official CS Restricted Elective bank (see options).",
+      "options": [
+       {
+        "code": "CS 01303",
+        "title": "Bioinformatics - Computational Aspects",
+        "credits": 3
+       },
+       {
+        "code": "CS 01395",
+        "title": "Topics in Computer Science",
+        "credits": 3
+       },
+       {
+        "code": "CS 01400",
+        "title": "Independent Study",
+        "credits": 3
+       },
+       {
+        "code": "CS 02370",
+        "title": "Introduction to Information Visualization",
+        "credits": 3
+       },
+       {
+        "code": "CS 02421",
+        "title": "Big Data Tools and Techniques",
+        "credits": 3
+       },
+       {
+        "code": "CS 02435",
+        "title": "Database Systems: Theory and Program",
+        "credits": 3
+       },
+       {
+        "code": "CS 02440",
+        "title": "Data Warehousing",
+        "credits": 3
+       },
+       {
+        "code": "CS 02480",
+        "title": "Intro to Data Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 02485",
+        "title": "Web and Text Mining",
+        "credits": 3
+       },
+       {
+        "code": "CS 03351",
+        "title": "Cyber Security: Fundamentals, Principles, & Applications",
+        "credits": 3
+       },
+       {
+        "code": "CS 03353",
+        "title": "Security of Mobile Devices",
+        "credits": 3
+       },
+       {
+        "code": "CS 03440",
+        "title": "Cloud Computing and the Internet of Things",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 01470",
+        "title": "Cyber Operations",
+        "credits": 3
+       },
+       {
+        "code": "CS 04305",
+        "title": "Web Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04322",
+        "title": "Software Engineering II",
+        "credits": 3
+       },
+       {
+        "code": "CS 04350",
+        "title": "Blockchain Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04372",
+        "title": "Advanced Android Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04376",
+        "title": "Advanced IOS Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04380",
+        "title": "Object Oriented Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04391",
+        "title": "Parallel and Concurrent Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 04392",
+        "title": "System Programming and OS Internals",
+        "credits": 3
+       },
+       {
+        "code": "CS 04394",
+        "title": "Distributed Systems",
+        "credits": 3
+       },
+       {
+        "code": "CS 04401",
+        "title": "Compiler Design",
+        "credits": 3
+       },
+       {
+        "code": "CS 04444",
+        "title": "Human Computer Interaction",
+        "credits": 3
+       },
+       {
+        "code": "CS 04471",
+        "title": "Topics in Mobile Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06310",
+        "title": "Principles of Digital Computers",
+        "credits": 3
+       },
+       {
+        "code": "CS 06390",
+        "title": "Introduction to Systems Simulation and Modeling",
+        "credits": 3
+       },
+       {
+        "code": "CS 06420",
+        "title": "Embedded Systems Programming",
+        "credits": 3
+       },
+       {
+        "code": "CS 06447",
+        "title": "Introduction to IoT Upper Stack",
+        "credits": 3
+       },
+       {
+        "code": "CS 07310",
+        "title": "Robotics",
+        "credits": 3
+       },
+       {
+        "code": "CS 07350",
+        "title": "Computer Cryptography",
+        "credits": 3
+       },
+       {
+        "code": "CS 07422",
+        "title": "Theory of Computing",
+        "credits": 3
+       },
+       {
+        "code": "CS 07450",
+        "title": "Artificial Intelligence",
+        "credits": 3
+       },
+       {
+        "code": "CS 07455",
+        "title": "Machine Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07459",
+        "title": "Models of Deep Learning",
+        "credits": 3
+       },
+       {
+        "code": "CS 07460",
+        "title": "Computer Vision",
+        "credits": 3
+       },
+       {
+        "code": "CS 08360",
+        "title": "Introduction to Computer Graphics",
+        "credits": 3
+       },
+       {
+        "code": "CS 08380",
+        "title": "Introduction to Computer Animation",
+        "credits": 3
+       },
+       {
+        "code": "CS 08390",
+        "title": "Intro to Computer Game Design and Development",
+        "credits": 3
+       },
+       {
+        "code": "CS 09410",
+        "title": "Data Communications and Networking",
+        "credits": 3
+       },
+       {
+        "code": "CS 09415",
+        "title": "Wireless Networks, Protocols and Apps.",
+        "credits": 3
+       },
+       {
+        "code": "CS 09416",
+        "title": "TCP/IP and Internet Protocols and Tech.",
+        "credits": 3
+       },
+       {
+        "code": "CYBR 03427",
+        "title": "Principles of Network Security",
+        "credits": 3
+       },
+       {
+        "code": "CS 99300",
+        "title": "Computer Field Experience",
+        "credits": 3
+       },
+       {
+        "code": "CS 99310",
+        "title": "Advanced Learning Asst Experience in CS",
+        "credits": 3
+       },
+       {
+        "code": "CS 99490",
+        "title": "Computer Science Research II",
+        "credits": 3
+       }
+      ],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "ROWAN-FREE6",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ROWAN-FREE7",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ROWAN-FREE8",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 3-sh free elective; use to satisfy remaining Rowan Core/Experience attributes.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "2166e7334166997c10c9a7f9f90d61e380fe20cbb647c374bb75acf3b031ed11",
+  "last_verified": "2026-10-02"
+ }
+}

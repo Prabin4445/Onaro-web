@@ -1,0 +1,1169 @@
+{
+ "institution": {
+  "name": "Kennesaw State University",
+  "city": "Kennesaw, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "kennesaw-state-university-bsn-nursing",
+  "degree": "BSN",
+  "major": "Nursing",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://public-apps.kennesaw.edu/academic-maps/programs/T0001074",
+  "notes": [
+   "Source: Kennesaw State University official Academic Maps (4-Year Suggested Program Map), https://public-apps.kennesaw.edu/academic-maps/programs/T0001074. Map label suffix \"26\" denotes the 2026-2027 catalog.",
+   "Prerequisites converted from KSU's boolean prerequisite expressions (AND/OR with minimum grades); minimum-grade qualifiers omitted; non-course requirements (null-code entries) omitted.",
+   "Choice slots (code null in source) carry the official option text in choice_note and parsed course options in options; prerequisite references to option courses not placed in-plan are listed in external_prereqs per the collection rule.",
+   "Program description (from official map): The purpose of the Bachelor of Science in Nursing is to prepare graduates for generalist nursing practice. Graduates will be prepared to practice with patients including individuals, families, groups, and populations across the lifespan and across the continuum of healthcare environments. Upon completion of this program graduates will: Synthesize knowledge from a liberal education including social science, natural science, nursing science, and the art and ethics of caring as a foundation for providing holistic nursing care. Implement competent, patient-centered care of individuals, families, g"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Term 1",
+    "courses": [
+     {
+      "code": "ENGL 1101",
+      "title": "English Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECON 1000",
+      "title": "Contemporary Economic Issues",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-03",
+      "title": "General Education Core IMPACTS- Mathematics",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MATH 1001 or MATH 1101 or MATH 1111 or MATH 1113 or MATH 1190 or STAT 1401",
+      "options": [
+       "MATH 1001",
+       "MATH 1101",
+       "MATH 1111",
+       "MATH 1113",
+       "MATH 1190",
+       "STAT 1401"
+      ],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T1-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(CHEM 1151 and CHEM 1151L) or (CHEM 1211 and CHEM 1211L) or (BIOL 1107 and BIOL 1107L) or (BIOL 1108 and BIOL 1108L)",
+      "options": [
+       "CHEM 1151",
+       "CHEM 1151L",
+       "CHEM 1211",
+       "CHEM 1211L",
+       "BIOL 1107",
+       "BIOL 1107L",
+       "BIOL 1108",
+       "BIOL 1108L"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Term 2",
+    "courses": [
+     {
+      "code": "ENGL 1102",
+      "title": "English Composition II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 101",
+         "ENGL 1101"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYC 1101",
+      "title": "Intro to General Psychology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-02",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Applied Math)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "STAT 1401 or DATA 1501 or MATH 1113 or MATH 1160 or MATH 1190 or MATH 2202 or MATH 1179",
+      "options": [
+       "STAT 1401",
+       "DATA 1501",
+       "MATH 1113",
+       "MATH 1160",
+       "MATH 1190",
+       "MATH 2202",
+       "MATH 1179"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-03",
+      "title": "General Education Core IMPACTS- Social Sciences (World History)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 1100 or HIST 1111 or HIST 1112",
+      "options": [
+       "HIST 1100",
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T2-04",
+      "title": "General Education Core IMPACTS- Technology, Mathematics, and Sciences (Technology and Science)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "(CHEM 1152 and CHEM 1152L) or (CHEM 1212 and CHEM 1212L) or (BIOL 1108 and BIOL 1108L)",
+      "options": [
+       "CHEM 1152",
+       "CHEM 1152L",
+       "CHEM 1212",
+       "CHEM 1212L",
+       "BIOL 1108",
+       "BIOL 1108L"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Term 3",
+    "courses": [
+     {
+      "code": "BIOL 2251",
+      "title": "Anatomy & Physiology I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211",
+         "CHEM 1211K",
+         "PHYS 1111"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 1107L",
+         "BIOL 1108L",
+         "CHEM 1151L",
+         "CHEM 1211K",
+         "CHEM 1211L",
+         "PHYS 1111"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2251L",
+      "title": "Anatomy & Physiology I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 1401",
+      "title": "Elementary Statistics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-03",
+      "title": "General Education Core IMPACTS- Institutional Priority (Critical Thinking)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "BLCK 1102 or AMST 1102 or ASIA 1102 or COMM 1100 or GWST 1102 or LALS 1102 or LDRS 2300 or PAX 1102 or ISD 2700 or POLS 2401 or RELS 1102",
+      "options": [
+       "BLCK 1102",
+       "AMST 1102",
+       "ASIA 1102",
+       "COMM 1100",
+       "GWST 1102",
+       "LALS 1102",
+       "LDRS 2300",
+       "PAX 1102",
+       "ISD 2700",
+       "POLS 2401",
+       "RELS 1102"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-04",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ENGL 2110 or ENGL 2120 or ENGL 2130 or ENGL 2140 or PHIL 2010 or FL 1001 or WLC 1002 or WLC 2209",
+      "options": [
+       "ENGL 2110",
+       "ENGL 2120",
+       "ENGL 2130",
+       "ENGL 2140",
+       "PHIL 2010",
+       "FL 1001",
+       "WLC 1002",
+       "WLC 2209"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T3-05",
+      "title": "General Education Core IMPACTS- Political Science and US History",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HIST 2111 or HIST 2112",
+      "options": [
+       "HIST 2111",
+       "HIST 2112"
+      ],
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Term 4",
+    "courses": [
+     {
+      "code": "BIOL 2252",
+      "title": "Anatomy & Physiology II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2252L",
+      "title": "Anatomy & Physiology II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2252"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2222",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2222",
+         "BIOL 2252"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2260",
+      "title": "Foundations of Microbiology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2251"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 2260L",
+      "title": "Founds of Microbiology Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2260"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2251L"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2260"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2221L",
+         "BIOL 2251"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2251",
+         "BIOL 2261"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2251L",
+         "BIOL 2261"
+        ]
+       },
+       {
+        "one_of": [
+         "BIOL 2260",
+         "BIOL 2261"
+        ]
+       }
+      ],
+      "choice": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-04",
+      "title": "General Education Core IMPACTS- Social Sciences",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CRJU 1101 or GEOG 1101 or PSYC 1101 or SOCI 1101 or STS 1101 or ANTH 1102 or ECON 2106",
+      "options": [
+       "CRJU 1101",
+       "GEOG 1101",
+       "PSYC 1101",
+       "SOCI 1101",
+       "STS 1101",
+       "ANTH 1102",
+       "ECON 2106"
+      ],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T4-05",
+      "title": "General Education Core IMPACTS- Arts and Humanities",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ART 1107 or DANC 1107 or MUSI 1107 or TPS 1107",
+      "options": [
+       "ART 1107",
+       "DANC 1107",
+       "MUSI 1107",
+       "TPS 1107"
+      ],
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Term 5",
+    "courses": [
+     {
+      "code": "NURS 3101",
+      "title": "Nursing Care I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3102",
+      "title": "Experiential Learning I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3103"
+      ],
+      "choice": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3103",
+      "title": "Health Assessment Lifespan",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3104",
+      "title": "Clinical Pathophysiology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3105",
+      "title": "Pharmacology For Nurses I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3106",
+      "title": "Leadership Seminar I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Term 6",
+    "courses": [
+     {
+      "code": "NURS 3201",
+      "title": "Nursing Care II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3102",
+       "NURS 3103",
+       {
+        "one_of": [
+         "NURS 3104",
+         "NURS 3304"
+        ]
+       },
+       "NURS 3105",
+       "NURS 3106"
+      ],
+      "choice": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3202",
+      "title": "Experiential Learning II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3102",
+       "NURS 3103",
+       {
+        "one_of": [
+         "NURS 3104",
+         "NURS 3304"
+        ]
+       },
+       "NURS 3105",
+       "NURS 3106",
+       "NURS 3201"
+      ],
+      "choice": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3205",
+      "title": "Pharmacology for Nurses II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3102",
+       "NURS 3103",
+       {
+        "one_of": [
+         "NURS 3104",
+         "NURS 3304"
+        ]
+       },
+       "NURS 3105",
+       "NURS 3106"
+      ],
+      "choice": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3203",
+      "title": "Nursing Scholarship",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3102",
+       "NURS 3103",
+       {
+        "one_of": [
+         "NURS 3104",
+         "NURS 3304"
+        ]
+       },
+       "NURS 3105",
+       "NURS 3106"
+      ],
+      "choice": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3206",
+      "title": "Leadership Seminar II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 3101",
+       "NURS 3102",
+       "NURS 3103",
+       {
+        "one_of": [
+         "NURS 3104",
+         "NURS 3304"
+        ]
+       },
+       "NURS 3105",
+       "NURS 3106"
+      ],
+      "choice": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Term 7",
+    "courses": [
+     {
+      "code": "NURS 4101",
+      "title": "Nursing Care III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NURS 3201",
+       "NURS 3202",
+       "NURS 3203",
+       "NURS 3205",
+       "NURS 3206"
+      ],
+      "choice": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4102",
+      "title": "Experiential Learning III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NURS 3201",
+       "NURS 3202",
+       "NURS 3203",
+       "NURS 3205",
+       "NURS 3206",
+       "NURS 4101"
+      ],
+      "choice": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4106",
+      "title": "Leadership Seminar III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NURS 3201",
+       "NURS 3202",
+       "NURS 3203",
+       "NURS 3205",
+       "NURS 3206"
+      ],
+      "choice": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHOICE-T7-03",
+      "title": "NURS elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "@ @",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Term 8",
+    "courses": [
+     {
+      "code": "NURS 4201",
+      "title": "Nursing Care IV",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NURS 4101",
+       "NURS 4102",
+       "NURS 4106"
+      ],
+      "choice": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4202",
+      "title": "Experiential Learning IV",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "NURS 4101",
+       "NURS 4102",
+       "NURS 4106",
+       "NURS 4201"
+      ],
+      "choice": false,
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4206",
+      "title": "Leadership Seminar IV",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "NURS 4101",
+       "NURS 4102",
+       "NURS 4106"
+      ],
+      "choice": false,
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "BIOL 1107",
+   "BIOL 1107L",
+   "BIOL 1108",
+   "BIOL 1108L",
+   "BIOL 2221",
+   "BIOL 2221L",
+   "BIOL 2222",
+   "BIOL 2261",
+   "CHEM 1151",
+   "CHEM 1151L",
+   "CHEM 1211",
+   "CHEM 1211K",
+   "CHEM 1211L",
+   "ENGL 101",
+   "NURS 3304",
+   "PHYS 1111",
+   "PHYS 1111L"
+  ],
+  "content_hash": "f16490330ef7a4cc6fc11f78211b30d4cdfe673b8e632cc684e23d55c19aecdc",
+  "last_verified": "2026-10-02"
+ }
+}

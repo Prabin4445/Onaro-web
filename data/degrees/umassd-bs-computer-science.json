@@ -1,0 +1,588 @@
+{
+ "institution": {
+  "city": "Dartmouth, MA",
+  "kind": "public4yr",
+  "name": "University of Massachusetts Dartmouth",
+  "state": "MA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "umassd-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Transcribed 2026-09-30 from the official UMass Dartmouth Department of Computer & Information Science curriculum page (https://www.umassd.edu/engineering/cis/undergraduate/curriculum-and-courses/bachelor-of-science-in-computer-science/, 'Total Credits: 120', fetched live 2026-09-30). Degree name per the UMass Dartmouth catalog: 'BS degree in Computer Science'; the catalog's current published edition is the 2025-2026 Undergraduate Catalog (published July 2025), so catalog_year=2025-2026. Prerequisites cross-checked against the official CIS checkoff sheet 'Requirements for Bachelor of Science in Computer Science, Catalog Year 2021-22 to present' (t.umassd.edu, updated 11/10/2025) and the catalog's course listings. Semester totals as printed on the curriculum page: 14+14+15+14+16+16+16+15 = 120, which matches the catalog's own 'Total credits: 120' exactly; no discrepancy. Title choices: CIS 190 uses the catalog/checkoff title 'Introduction to Procedural Programming' (the curriculum overview page renders it as 'Systems Programming'); CIS 180/181 use the catalog titles 'Object-Oriented Programming I/II'; ENL 266 uses the catalog title 'Technical Communication'; CIS 481 uses the checkoff title 'Parallel and Distributed Software Systems' (overview page renders 'Parallel & Distributed Computing'). The current sequence places CIS 246 Foundations of Secure Computing (3 cr) in sophomore spring; no official prerequisite is published for CIS 246 on the curriculum page or the checkoff sheet, so its prereq list is empty rather than invented. CIS 272's catalog entry is a corequisite (Co: CIS 190, MTH 181) taken in the same term, encoded as empty prereq with this note. MTH 181 requires placement into MTH 153 (MTH 150/MTH 100 path delays calculus and may extend the program beyond four years per the catalog); MTH 154's catalog prereq reads 'MTH 153 or 151' and the math-elective slot reads 'MTH 154 or 152' - the alternate MTH 151/152 routes are documented here, not encoded, because those courses are not part of this plan. Lab Science I must be PHY 113, or CHM 151+161, or BIO 121+131; Lab Science II must be the continuation (PHY 114, CHM 152+162, or BIO 122+132); the Science Elective may be any course in BIO, CHM, MAR, MLS, or PHY and ideally either the lab-science or science-elective choice also satisfies University Studies Cluster 2A. University Studies slots must be chosen from Clusters 3 and 4 (catalog: Clusters 3 and 4 = 15 credits; Clusters 1, 2B, 5 are satisfied by required major courses). Technical electives: four courses from the approved CIS technical elective list, each with a grade of C or better; technical electives count in the major GPA. Catalog rules carried verbatim: any CIS core course or technical elective that is a prerequisite to another CIS course must be passed with a grade of C or better to satisfy the prerequisite; minimum 2.000 cumulative GPA and 2.000 major GPA to graduate; all majors complete the CIS Department Exit Survey in the final semester. Nothing invented; every course code, title, credit value, term placement, and prereq comes from the sources above.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Critical Writing and Reading I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 180",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Object-Oriented Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Engineering and Computing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 153",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus for Applied Science and Engineering I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENL 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Critical Writing and Reading II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 181",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 180"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Object-Oriented Programming II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student-chosen course from University Studies Clusters 3 and 4.",
+      "code": "UNIV.STU1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "University Studies (Clusters 3 & 4)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 154",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH 153"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus for Applied Science and Engineering II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 181",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Discrete Structures I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 190",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 180"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Procedural Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 272",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Introduction to Computing Systems",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Must be one of: PHY 113; CHM 151 + CHM 161; or BIO 121 + BIO 131. Ideally also satisfies University Studies Cluster 2A.",
+      "code": "LAB.SCI1",
+      "credits": 4,
+      "options": [
+       "PHY 113",
+       "CHM 151 + CHM 161",
+       "BIO 121 + BIO 131"
+      ],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Laboratory Science I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 182",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH 181"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Discrete Structures II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 246",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Foundations of Secure Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 280",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 181"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Software Specification and Design",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Must be the continuation of the Laboratory Science I track: PHY 114, or CHM 152 + CHM 162, or BIO 122 + BIO 132.",
+      "code": "LAB.SCI2",
+      "credits": 4,
+      "options": [
+       "PHY 114",
+       "CHM 152 + CHM 162",
+       "BIO 122 + BIO 132"
+      ],
+      "prereq": [
+       "LAB.SCI1"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Laboratory Science II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 360",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 181",
+       "CIS 190",
+       "MTH 181"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Algorithms and Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 381",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Social and Ethical Aspects of Computing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "Must be one of MTH 211 (or MTH 213), MTH 221, or MTH 331. Catalog prerequisite reads 'MTH 154 or 152'; consult advisor. Must be passed with a grade of C or better.",
+      "code": "MTH.ELEC",
+      "credits": 3,
+      "options": [
+       "MTH 211",
+       "MTH 213",
+       "MTH 221",
+       "MTH 331"
+      ],
+      "prereq": [
+       "MTH 154"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Mathematics Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENL 266",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENL 102"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Technical Communication",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student-chosen course from University Studies Clusters 3 and 4.",
+      "code": "UNIV.STU2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "University Studies (Clusters 3 & 4)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIS 181",
+       "MTH 182"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Models of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 362",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIS 280"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Empirical Methods for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 370",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 272"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Design of Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Any course in BIO, CHM, MAR, MLS, or PHY (3 credits). Ideally also satisfies University Studies Cluster 2A.",
+      "code": "SCI.ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student-chosen course from University Studies Clusters 3 and 4.",
+      "code": "UNIV.STU3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "University Studies (Clusters 3 & 4)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 498",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CIS 280",
+       "CIS 362"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Software Engineering Project I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Selected from the approved list of CIS technical electives; must be passed with a grade of C or better. Counts in the Computer Science major GPA.",
+      "code": "CIS.ELEC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CIS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Selected from the approved list of CIS technical electives; must be passed with a grade of C or better. Counts in the Computer Science major GPA.",
+      "code": "CIS.ELEC2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CIS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student-chosen course from University Studies Clusters 3 and 4.",
+      "code": "UNIV.STU4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "University Studies (Clusters 3 & 4)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "A single course or combination that adds up to 3 credits.",
+      "code": "FREE.ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 499",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIS 498"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Engineering Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 481",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CIS 280",
+       "CIS 370"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Parallel and Distributed Software Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Selected from the approved list of CIS technical electives; must be passed with a grade of C or better. Counts in the Computer Science major GPA.",
+      "code": "CIS.ELEC3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CIS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Selected from the approved list of CIS technical electives; must be passed with a grade of C or better. Counts in the Computer Science major GPA.",
+      "code": "CIS.ELEC4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CIS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student-chosen course from University Studies Clusters 3 and 4.",
+      "code": "UNIV.STU5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "University Studies (Clusters 3 & 4)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.umassd.edu/engineering/cis/undergraduate/curriculum-and-courses/bachelor-of-science-in-computer-science/",
+  "total_credits": 120,
+  "content_hash": "6c8b0bb021e4769854673b0711a197ca2089d719c99a31c20c06fc13028dea92",
+  "last_verified": "2026-10-02"
+ }
+}

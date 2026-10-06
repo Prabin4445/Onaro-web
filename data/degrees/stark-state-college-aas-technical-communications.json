@@ -1,0 +1,355 @@
+{
+ "institution": {
+  "city": "North Canton, OH",
+  "ipeds": "205841",
+  "kind": "community",
+  "name": "Stark State College",
+  "slug": "stark-state-college",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "AAS",
+  "id": "stark-state-college-aas-technical-communications",
+  "major": "Technical Communications",
+  "notes": "Official Stark State College 2025-2026 Catalog curriculum guide (program code 1200, Rev. 1-2025, effective Summer 2025): semester-by-semester course sequence for full-time associate degree students finishing in two years. The guide prints semester ranges 16 / 15-16 / 15-16 / 15 and 'TOTAL CREDITS 61-63' because the two Natural Science Elective slots are 3-4 credits each; this seed models both at 3 credits (semesters 16 / 15 / 15 / 15 = 61), the minimum-credit instantiation, and notes the guide's 61-63 range. Course titles and credit hours as printed. Prerequisites are from the guide's Pre- and Co-requisites column and name only courses present in the plan: ENG231, ENG221, ENG227, ENG125, ENG126, ENG228, ENG229 each require ENG124. Elective menus: English Composition and Oral Communication (COM121, COM123, COM125); Natural Science (BIO101, BIO121, BIO126, BIO127, BIO128, BIO129, BIO130, CHM101, PHY101); Social & Behavioral Sciences (BUS122, BUS221, BUS222, PSC121, PSY121, PSY123, PSY221, SOC121, SOC123); Arts and Humanities (ENG233, ENG234, ENG236, ENG237, HIS121, HIS122, PHL122); Technical (AOT235, IMT121, IMT122, WDD121). Footnote markers (^ placement score, ^^ take first semester, Ω transfer note, -/+ term availability) are advising notes, not course prerequisites.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SSC101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "College Composition",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Interpersonal Communication",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'English Composition and Oral Communication Elective' (3 credits); COM121, COM123, COM125.",
+      "code": "ENG-COMP-ORAL-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "English Composition and Oral Communication Elective",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan row 'MTH118 Quantitative Reasoning or MTH124 Statistics'.",
+      "code": "MTH118 / MTH124",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Quantitative Reasoning or Statistics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ITD122",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Computer Applications for Professionals",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "1st Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG231",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "College Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Natural Science Elective' (guide lists 3-4 credits; modeled at 3). Menu: BIO101, BIO121, BIO126, BIO127, BIO128, BIO129, BIO130, CHM101, PHY101.",
+      "code": "NAT-SCI-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Natural Science Elective",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM223",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Interviewing I",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG221",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Technical Report Writing",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG227",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Writing for Media",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "2nd Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG125",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Technical Editing and Layout",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG126",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Technical Grammar and Style",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Social & Behavioral Sciences Elective' (3 credits). Menu: BUS122, BUS221, BUS222, PSC121, PSY121, PSY123, PSY221, SOC121, SOC123.",
+      "code": "SOC-BEH-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Social & Behavioral Sciences Elective",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Natural Science Elective' (guide lists 3-4 credits; modeled at 3). Menu: BIO101, BIO121, BIO126, BIO127, BIO128, BIO129, BIO130, CHM101, PHY101.",
+      "code": "NAT-SCI-ELECTIVE-2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Natural Science Elective",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Arts and Humanities Elective' (3 credits). Menu: ENG233, ENG234, ENG236, ENG237, HIS121, HIS122, PHL122.",
+      "code": "ARTS-HUM-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Arts and Humanities Elective",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "3rd Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG228",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Writing for the Web",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG229",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "ENG124"
+      ],
+      "required_zero": false,
+      "title": "Grant Writing",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG250",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Technical Communications Internship",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Plan slot 'Social & Behavioral Sciences Elective' (3 credits). Menu: BUS122, BUS221, BUS222, PSC121, PSY121, PSY123, PSY221, SOC121, SOC123.",
+      "code": "SOC-BEH-ELECTIVE-2",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Social & Behavioral Sciences Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan slot 'Technical Elective' (3 credits). Menu: AOT235, IMT121, IMT122, WDD121.",
+      "code": "TECH-ELECTIVE-1",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "required_zero": false,
+      "title": "Technical Elective",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "4th Semester",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.starkstate.edu/wp-content/uploads/2025/05/1200-AAS-Technical-Communications.pdf",
+  "total_credits": 61,
+  "content_hash": "38e6a96c21d183d547314d4fffb040b3334fc2fc1997a8418fa4c459aca3e59d",
+  "last_verified": "2026-10-02"
+ }
+}

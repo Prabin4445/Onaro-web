@@ -1,0 +1,492 @@
+{
+ "institution": {
+  "ipeds": 203517,
+  "name": "Kent State University at Kent",
+  "city": "Kent",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "kent-bs-biology",
+  "major": "Biology",
+  "notes": "Molecular and Cellular Biology concentration. Built directly from the official 2026-2027 University Catalog PDF 'Molecular and Cellular Biology Concentration' semester-by-semester roadmap, cross-checked against the Major Requirements table. Slots modeled as student-choice: General Chemistry Elective (4 cr; CHEM 10058&10059 or CHEM 10060&10061), Organic Chemistry I (CHEM 20481 or CHEM 30481), Organic Chemistry II (CHEM 20482 or CHEM 30475 or CHEM 30482; the official grid shows this slot in both Semesters 3 and 4 at 0-4 credits -- modeled as completed in Semester 3 at 4 credits, the recommended path), Quantitative Methods elective (BSCI 40224, MATH 12003, or MATH 30011; modeled at 3 credits), Biology Electives and/or Biology, Chemistry, Physics (BCP) Electives (total 31 credits combined across the plan, e.g., PHY 13001/13002 with labs, additional BSCI courses chosen with advisor). Foreign Language 8 credits (College of Sciences and Humanities B.S. requirement). Prerequisite chain follows the natural course sequence: BSCI 10110 -> BSCI 10120 -> BSCI 30140 -> BSCI 40158; CHEM 10062 -> CHEM 10063; General Chemistry -> Organic Chemistry I -> Organic Chemistry II; BSCI 30156 -> BSCI 40163.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 10110",
+      "credits": 4,
+      "prereq": [],
+      "title": "Biological Diversity (ELR) (KBS) (KLAB)",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 10062",
+      "credits": 1,
+      "prereq": [],
+      "title": "General Chemistry I Laboratory (KBS) (KLAB)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "UC 10001",
+      "credits": 1,
+      "prereq": [],
+      "title": "Flashes 101",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "General Chemistry Elective, 4 credits: CHEM 10058 & CHEM 10059 (General Chemistry for Life Sciences I & II), or CHEM 10060 & CHEM 10061 (General Chemistry I & II; strongly encouraged for professional/graduate programs).",
+      "code": "GCE-1",
+      "credits": 4,
+      "options": [
+       "CHEM 10060",
+       "CHEM 10061"
+      ],
+      "prereq": [],
+      "title": "General Chemistry Elective (student choice)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 10120",
+      "credits": 4,
+      "prereq": [
+       "BSCI 10110"
+      ],
+      "title": "Biological Foundations (ELR) (KBS) (KLAB)",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 10063",
+      "credits": 1,
+      "prereq": [
+       "CHEM 10062"
+      ],
+      "title": "General Chemistry II Laboratory (KBS) (KLAB)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "General Chemistry Elective, 4 credits: CHEM 10058 & CHEM 10059 (General Chemistry for Life Sciences I & II), or CHEM 10060 & CHEM 10061 (General Chemistry I & II; strongly encouraged for professional/graduate programs).",
+      "code": "GCE-2",
+      "credits": 4,
+      "options": [
+       "CHEM 10060",
+       "CHEM 10061"
+      ],
+      "prereq": [],
+      "title": "General Chemistry Elective (student choice)",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 30140",
+      "credits": 4,
+      "prereq": [
+       "BSCI 10120"
+      ],
+      "title": "Cell Biology",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHEM 20481 Basic Organic Chemistry I or CHEM 30481 Organic Chemistry I. Prerequisite: General Chemistry Elective.",
+      "code": "OC-1",
+      "credits": 4,
+      "options": [
+       "CHEM 20481",
+       "CHEM 30481"
+      ],
+      "prereq": [
+       "GCE-2"
+      ],
+      "title": "Basic Organic Chemistry I or Organic Chemistry I (student choice)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHEM 20482 Basic Organic Chemistry II, CHEM 30475 Organic Chemistry Laboratory I (ELR), or CHEM 30482 Organic Chemistry II. The official roadmap shows this slot in Semesters 3 and 4 at 0-4 credits; modeled as completed in Semester 3 (4 credits). CHEM 20482 may be substituted with CHEM 30284 with advisor approval.",
+      "code": "OC-2",
+      "credits": 4,
+      "options": [
+       "CHEM 20482",
+       "CHEM 30475",
+       "CHEM 30482"
+      ],
+      "prereq": [
+       "OC-1"
+      ],
+      "title": "Basic Organic Chemistry II / Organic Chemistry Lab I / Organic Chemistry II (student choice)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 12002",
+      "credits": 5,
+      "prereq": [],
+      "title": "Analytic Geometry and Calculus I (KMCR)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 30156",
+      "credits": 3,
+      "prereq": [
+       "BSCI 10120"
+      ],
+      "title": "Elements of Genetics",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BSCI 40224 Quantitative Methods in Biology, MATH 12003 Analytic Geometry and Calculus II, or MATH 30011 Basic Probability and Statistics. Modeled at 3 credits.",
+      "code": "QTM",
+      "credits": 3,
+      "options": [
+       "BSCI 40224",
+       "MATH 12003",
+       "MATH 30011"
+      ],
+      "prereq": [
+       "MATH 12002"
+      ],
+      "title": "Quantitative Methods / Calc II / Statistics (student choice)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student (2 credits modeled; the official grid shows 2 credits in this semester).",
+      "code": "KC-7",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Biology Elective and/or Biology, Chemistry, Physics Electives (9 credits modeled): BSCI, CHEM, or PHY upper-division courses chosen with a faculty advisor (e.g., PHY 13001 & PHY 13021 Physics I with lab).",
+      "code": "BCP-A",
+      "credits": 9,
+      "options": [],
+      "prereq": [],
+      "title": "Biology Elective and/or BCP Electives (student choice)",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Foreign language, Elementary I of one language (College of Sciences and Humanities B.S. requirement, 8 credits total).",
+      "code": "FL-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Foreign Language I (student choice)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Any Kent Core requirement course chosen by the student.",
+      "code": "KC-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Kent Core Requirement (student choice)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 40158",
+      "credits": 3,
+      "prereq": [
+       "BSCI 30140"
+      ],
+      "title": "Molecular Biology",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Biology Elective and/or Biology, Chemistry, Physics Electives (8 credits modeled): BSCI, CHEM, or PHY upper-division courses chosen with a faculty advisor.",
+      "code": "BCP-B",
+      "credits": 8,
+      "options": [],
+      "prereq": [],
+      "title": "Biology Elective and/or BCP Electives (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Foreign language, Elementary II of the same language.",
+      "code": "FL-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "FL-1"
+      ],
+      "title": "Foreign Language II (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "BSCI 40163",
+      "credits": 3,
+      "prereq": [
+       "BSCI 30156"
+      ],
+      "title": "Evolution",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "BSCI 40600",
+      "credits": 1,
+      "prereq": [
+       "BSCI 30140"
+      ],
+      "title": "Writing in the Biological Sciences (WIC)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Biology Elective and/or Biology, Chemistry, Physics Electives (8 credits modeled): BSCI, CHEM, or PHY upper-division courses chosen with a faculty advisor.",
+      "code": "BCP-C",
+      "credits": 8,
+      "options": [],
+      "prereq": [],
+      "title": "Biology Elective and/or BCP Electives (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any course chosen by the student.",
+      "code": "GE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Biology Elective and/or Biology, Chemistry, Physics Elective (3 credits modeled): BSCI, CHEM, or PHY upper-division course chosen with a faculty advisor.",
+      "code": "BCP-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Biology Elective and/or BCP Elective (student choice)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any courses chosen by the student (9 credits modeled) to reach exactly 120 total hours.",
+      "code": "GE-2",
+      "credits": 9,
+      "options": [],
+      "prereq": [],
+      "title": "General Electives (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.kent.edu/colleges/sh/bsci/biology-bs/biology-bs.pdf",
+  "total_credits": 120,
+  "content_hash": "2f2c7fff9b33a052ab88852c1f8e091fcbf5479e76ecf2a811185be9de2b2c6b",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,654 @@
+{
+ "institution": {
+  "city": "Syracuse, NY",
+  "kind": "private",
+  "name": "Le Moyne College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "lemoyne-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Le Moyne College 2023-2024 undergraduate catalog (PDF), 'Typical Program for Computer Science Major (B.S.)', catalog pp. 197-198; transcribed 2026-09-30 into ~/workspace/degree-wave2-work/d2-lemoyne/. TRUE degree name is 'Computer Science Major (B.S.)' (catalog heading). Catalog year 2023-2024: the 2024-2025 catalog PDF was unreachable (server timeout), so the newest accessible catalog was used. CREDIT TOTAL: the catalog's degree minimum is 120 credit hours ('Total Credit Hours 120' in the requirements table), but the published 'Typical Program' prints 'Total Credit Hours 126'; per the sequence-wins rule this plan uses the sequence's own total of 126 (17+17+17+16+16+15+13+15). TRANSCRIPTION NOTE: the catalog lays the typical program out in two side-by-side columns and the PDF text extraction interleaves them; Freshman Spring's five courses are CSC 185 (4), MTH 146 (4), EAC (3), HST 111 (3), PHL 110 (3) = 17, with 'PHL 110 Introduction to Philosophy 3' and its 'Credit Hours 17' line extracted at the top of p. 197; the eight printed semester totals sum exactly to the printed 126. A stray 'ENG 310 Literature and Culture 3 / Credit Hours 16' fragment extracted on p. 198 is extraction noise (ENG 310 is confirmed in the Junior Spring 15-credit semester). PREREQS are the catalog's stated course prerequisites. The catalog lists a 0-credit 'CSC 175L Lab' in the course descriptions, but the typical program does not list it separately, so it is not modeled as a slot. CSC electives: the catalog requires one project-based elective (CSC 441, CSC 445), one systems-based elective (CSC 411, CSC 425, CSC 480 & CSC 481), one theory-based elective (CSC 355, CSC 471), and two additional CSC courses numbered 300+ (not 499); the four 'CSC Elective' slots are student-choice with these options (known catalog prereqs: CSC 355 req. CSC 185; CSC 411 and CSC 425 req. CSC 276). Capstone: 'CS Capstone Experience' (3 cr; catalog lists CSC 490, CSC 496, CSC 498 as capstone experience courses; prerequisite: Senior Standing). EAC = Encountering Another Culture/Language; the catalog recommends world language at intermediate/advanced level (6 cr total). Natural Science = the 8-credit lab-based science sequence (4+4).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 175",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Algorithms and Program Design",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 145",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'EAC Encountering Another Culture/Language (p. 62)'. The catalog recommends world language at intermediate or advanced level (6 cr total across the two EAC slots).",
+      "code": "EAC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Encountering Another Culture/Language (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRT 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Critical Writing",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COR 100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "First Year Seminars: Transitions",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 185",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 175"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Data Structures & Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 146",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH 145"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'EAC Encountering Another Culture/Language (p. 62)'. The catalog recommends world language at intermediate or advanced level (6 cr total across the two EAC slots).",
+      "code": "EAC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Encountering Another Culture/Language (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "HST 111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "World Civilization II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHL 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introduction to Philosophy",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 276",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC 185"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Object Oriented Software Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 281",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH 145"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published sequence: 'Natural Science (p. 62)'. Part 1 of the catalog-required 8-credit lab-based natural science sequence (4+4).",
+      "code": "NATSCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Natural Science lab sequence, part 1 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "HST 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "World Civilization I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHL 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Moral Philosophy",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 289",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 185"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Bits, Nibbles, and Bytes",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published sequence: 'CSC Elective'. Satisfies one of the catalog's CSC elective requirements: one project-based (CSC 441, CSC 445), one systems-based (CSC 411, CSC 425, CSC 480 & CSC 481), one theory-based (CSC 355, CSC 471), or one of the two additional CSC 300+ courses (not 499). Known catalog prereqs: CSC 355 req. CSC 185; CSC 411 and CSC 425 req. CSC 276.",
+      "code": "CSC-ELC1",
+      "credits": 3,
+      "options": [
+       "CSC 441",
+       "CSC 445",
+       "CSC 411",
+       "CSC 425",
+       "CSC 480 & CSC 481",
+       "CSC 355",
+       "CSC 471",
+       "Other CSC course numbered 300 or above (not CSC 499)"
+      ],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "CSC elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published sequence: 'Natural Science (p. 62)'. Part 2 of the catalog-required 8-credit lab-based natural science sequence (4+4).",
+      "code": "NATSCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Natural Science lab sequence, part 2 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Major Authors",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 375",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 185",
+       "CSC 281"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published sequence: 'CSC Elective' (4 cr). Satisfies one of the catalog's CSC elective requirements: one project-based (CSC 441, CSC 445), one systems-based (CSC 411, CSC 425, CSC 480 & CSC 481), one theory-based (CSC 355, CSC 471), or one of the two additional CSC 300+ courses (not 499). Known catalog prereqs: CSC 355 req. CSC 185; CSC 411 and CSC 425 req. CSC 276.",
+      "code": "CSC-ELC2",
+      "credits": 4,
+      "options": [
+       "CSC 441",
+       "CSC 445",
+       "CSC 411",
+       "CSC 425",
+       "CSC 480 & CSC 481",
+       "CSC 355",
+       "CSC 471",
+       "Other CSC course numbered 300 or above (not CSC 499)"
+      ],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "CSC elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'Social Science (p. 62)'.",
+      "code": "SOCSCI-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Social Science (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'Theology (p. 62)'.",
+      "code": "THEO-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Theology (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 346",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC 276"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Software Operating Environments",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published sequence: 'CSC Elective'. Satisfies one of the catalog's CSC elective requirements: one project-based (CSC 441, CSC 445), one systems-based (CSC 411, CSC 425, CSC 480 & CSC 481), one theory-based (CSC 355, CSC 471), or one of the two additional CSC 300+ courses (not 499). Known catalog prereqs: CSC 355 req. CSC 185; CSC 411 and CSC 425 req. CSC 276.",
+      "code": "CSC-ELC3",
+      "credits": 3,
+      "options": [
+       "CSC 441",
+       "CSC 445",
+       "CSC 411",
+       "CSC 425",
+       "CSC 480 & CSC 481",
+       "CSC 355",
+       "CSC 471",
+       "Other CSC course numbered 300 or above (not CSC 499)"
+      ],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CSC elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'Ethics Course'. Catalog options: CMM 350, PHL 343, PHL 344, PHL 347, PHL 349, PHL 359, REL 336, THE 237.",
+      "code": "ETHICS-1",
+      "credits": 3,
+      "options": [
+       "CMM 350",
+       "PHL 343",
+       "PHL 344",
+       "PHL 347",
+       "PHL 349",
+       "PHL 359",
+       "REL 336",
+       "THE 237"
+      ],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Ethics course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Literature and Culture",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published sequence: 'CS Capstone Experience'. The catalog lists CSC 490, CSC 496, and CSC 498 as capstone experience courses; prerequisite: Senior Standing.",
+      "code": "CSC-CAP",
+      "credits": 3,
+      "options": [
+       "CSC 490",
+       "CSC 496",
+       "CSC 498"
+      ],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "CS Capstone Experience (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'VPA Visual & Performing Arts (p. 62)'.",
+      "code": "VPA-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Visual & Performing Arts (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'IDS Interdisciplinary Studies (p. 62)'.",
+      "code": "IDS-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Interdisciplinary Studies (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published sequence: 'CSC Elective'. Satisfies one of the catalog's CSC elective requirements: one project-based (CSC 441, CSC 445), one systems-based (CSC 411, CSC 425, CSC 480 & CSC 481), one theory-based (CSC 355, CSC 471), or one of the two additional CSC 300+ courses (not 499). Known catalog prereqs: CSC 355 req. CSC 185; CSC 411 and CSC 425 req. CSC 276.",
+      "code": "CSC-ELC4",
+      "credits": 3,
+      "options": [
+       "CSC 441",
+       "CSC 445",
+       "CSC 411",
+       "CSC 425",
+       "CSC 480 & CSC 481",
+       "CSC 355",
+       "CSC 471",
+       "Other CSC course numbered 300 or above (not CSC 499)"
+      ],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CSC elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Published sequence: 'Religion (p. 62)'.",
+      "code": "REL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Religion (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COR 400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Senior Studies: Transformations",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published sequence: 'Elective'.",
+      "code": "FREE-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://collegecatalog.lemoyne.edu/pdf/2023-2024.pdf",
+  "total_credits": 126,
+  "content_hash": "bff304d118547ed5a6c895fd0ab9269ad65811c0634a3868529bacb12c164f99",
+  "last_verified": "2026-10-02"
+ }
+}

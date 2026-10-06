@@ -1,0 +1,561 @@
+{
+ "institution": {
+  "name": "Georgia Southern University",
+  "city": "Statesboro, GA",
+  "state": "GA",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "georgia-southern-university-bs-computer-engineering",
+  "degree": "BS",
+  "major": "Computer Engineering",
+  "catalog_year": "2018-2019",
+  "total_credits": 130,
+  "source_url": "https://ww2.georgiasouthern.edu/cec/advisement/files/BSCmpE-Curriculum-Effective-Fall-2018-03_29_2018-rev4-1.pdf",
+  "external_prereqs": [
+   "MATH 2243",
+   "EENG 5431"
+  ],
+  "notes": "Official 4-year program curriculum for the Bachelor of Science in Computer Engineering, Georgia Southern University, Effective Fall 2018 (2018-2019 catalog), published by the Allen E. Paulson College of Engineering and Information Technology. Course codes, titles, credits, prerequisites, and Fall/Spring placement transcribed verbatim from the curriculum table. Generic slots use synthetic codes marked choice:true; elective option lists taken from the sheet footnotes (Notes 1-7). Legend: (c)=co-requisite, (R)=concurrent or before; co-requisites and 'concurrent or before' courses are recorded as prerequisites (e.g. ENGR 1731 and PHYS 2211K record MATH 1441, taken the same semester in this plan). Where the sheet lists 'or' alternatives, the prerequisite recorded is the course placed in this plan (EENG 3341 records EENG 3345, not the ENGR 3335 alternative). Placement-level prerequisites (MATH 1111/MATH 1113 'or above') are not recorded as course prerequisites. MATH 2243 (prerequisite of EENG 3421) and EENG 5431 (concurrent prerequisite of EENG 4620) are named on the sheet but are not sequenced in the 4-year plan; they are listed in external_prereqs. Minimum grade of C required in all Engineering, Math, and Science courses; at least 30 semester hours of approved upper-division Electrical/Computer Engineering credits must be earned at GSU. Total degree requirements: 130 hours. Per-semester totals as published: 16/17, 18/17, 17/15, 15/15.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "MATH 1441",
+      "title": "Calculus I w/ Lab",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 1310",
+      "title": "Comprehen. General Chemistry",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 1731",
+      "title": "Computing for Engineers",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1441"
+      ],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 1101",
+      "title": "Composition I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FYE 1220",
+      "title": "First Year Seminar",
+      "credits": 2,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "MATH 2242",
+      "title": "Calculus II w/ Lab",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "MATH 1441"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2211K",
+      "title": "Principles of Physics I",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "MATH 1441"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 1732",
+      "title": "Program Design for Engineers",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 1731"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 2332",
+      "title": "Intro to Computer Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 1731"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 1102",
+      "title": "Composition II",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "MATH 2130",
+      "title": "Discrete Mathematics",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 1301",
+      "title": "Programming Principles I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2212K",
+      "title": "Principles of Physics II",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "PHYS 2211K"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 2341",
+      "title": "Intro to Signal Processing w/ Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ENGR 1731",
+       "MATH 2242"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WRIT 2130",
+      "title": "Technical Communication",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENGL 1102"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "MATH 3230",
+      "title": "Ordinary Differential Equations",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "MATH 2242"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 2334",
+      "title": "Circuit Analysis I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 2341",
+       "PHYS 2212K",
+       "MATH 3230"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 2323",
+      "title": "Digital Design Lab",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENGR 1732",
+       "ENGR 2332"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 1302",
+      "title": "Programming Principles II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1441",
+       "MATH 2130",
+       "CSCI 1301"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HIST 2110",
+      "title": "US-A Comprehensive Survey",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AREA-B-ELECTIVE-CMPE",
+      "title": "Global Engagement Elective (ANTH 1150, CRJU 2010, FORL 2001, FORL 2002, FORL 2060, GEOG 1130, HLPR 2010, IDS 2000, INTS 2130, PSYC 2300, RELS 2100, RELS 2130, SABR 2960, SOCI 2000, or WGSS 2200)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "EENG 3340",
+      "title": "Microcontrollers w/ Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ENGR 2323"
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EENG 3345",
+      "title": "Circuit Analysis II w/ Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ENGR 2334"
+      ],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EENG 3421",
+      "title": "Advanced Engineering Analysis",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENGR 2334",
+       "MATH 2243"
+      ],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 3230",
+      "title": "Data Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI 1302",
+       "MATH 2130"
+      ],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CORE 2000",
+      "title": "CORE Capstone Course",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "POLS 1101",
+      "title": "American Government",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "CSCI 3232",
+      "title": "Systems Software",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI 1302",
+       "CSCI 3230"
+      ],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 3432",
+      "title": "Database Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI 1301",
+       "MATH 2130"
+      ],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EENG 3341",
+      "title": "Microelectronics w/ Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "EENG 3345"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "KINS 1525",
+      "title": "Concepts of Health & Physical Activity",
+      "credits": 2,
+      "category": "core",
+      "prereq": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FREE-ELECTIVE-CMPE",
+      "title": "SACS Free Elective (ENGR 2231, ENGR 2232, or ENGR 3431)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "options": [
+       "ENGR 2231",
+       "ENGR 2232",
+       "ENGR 3431"
+      ],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "EENG 4620",
+      "title": "Senior Project I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "EENG 3340",
+       "EENG 3341",
+       "EENG 5431"
+      ],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EENG 5342",
+      "title": "Computer Syst Design w/Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "EENG 3340"
+      ],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CMPE-ELECTIVE-1",
+      "title": "CmpE Elective (minimum 6 credit hours total; see sheet elective list)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HIST 1111",
+      "title": "World History Elective (HIST 1111 or HIST 1112)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "options": [
+       "HIST 1111",
+       "HIST 1112"
+      ],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AREA-C-ELECTIVE-1-CMPE",
+      "title": "Humanities/Fine Arts Elective I (ENGL 2100, ENGL 2112, PHIL 2010, or PHIL 2030)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "EENG 4621",
+      "title": "Senior Project II",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "EENG 4620"
+      ],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CMPE-ELECTIVE-2",
+      "title": "CmpE Elective (minimum 6 credit hours total; see sheet elective list)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AREA-E-ELECTIVE-CMPE",
+      "title": "Social Science (ANTH 1102, ECON 1101, ECON 1150, ECON 2105, PSYC 1101, SOCI 1101, or WGSS 2100)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AREA-D-SCI-CMPE",
+      "title": "Environmental Sci w/ Lab (BIOL 1230 w/ lab 1230L, CHEM 1040, GEOL 1340, or PHYS 1149)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AREA-C-ELECTIVE-2-CMPE",
+      "title": "Humanities/Fine Arts Elective II (ART 1000, ARTH 2531, COMM 1110, HUMN 2321, HUMN 2322, HUMN 2433, HUMN 2434, MUSC 1100, or THEA 1100)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "0880b01db3eb8ba2fa7efc57d44b16bdecfde981c7ae12e654103d4424714f09",
+  "last_verified": "2026-10-02"
+ }
+}

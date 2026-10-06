@@ -1,0 +1,1331 @@
+{
+ "institution": {
+  "city": "Owosso, MI",
+  "kind": "private",
+  "name": "Baker College",
+  "state": "MI"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BSN",
+  "external_prereqs": [
+   "Acceptance into the Nursing program",
+   "MTH 1110"
+  ],
+  "id": "baker-college-nursing-pre-licensure-bs-2024-2025",
+  "last_verified": "2026-10-01",
+  "major": "Nursing (Pre-Licensure)",
+  "notes": "Source: official Baker College 'Nursing (Pre-Licensure) Bachelor of Science in Nursing Degree Academic Plan' 2024-2025 (my.baker.edu), transcribed 2026-10-01. The plan labels each term 'Fall or Spring Year N' / 'Spring or Fall Year N'; modeled as 8 sequential semesters. Term subtotals (15/13/16/16/15/14/15/16) reconcile to Program Total 120. 0-credit lab/clinical courses (NUR 2150L, 2150CL, 2250L, 2550L, 2550CL, 3450CL, 3550CL, 3650CL, 3750CL, 3150CL, 4150CL, 4250CL, 4350CL) are genuine requirements flagged required_zero. Prereq/coreq cells print 'NUR 2150' without the A suffix; normalized to the course's printed code 'NUR 2150A'. 'NUR3570' normalized to 'NUR 3570'. The plan's note on BIO 2410: students who may seek licensure in another state may want to consider taking the Micro Lab, as some states require a lab for licensure. Selective admission program; the catalog notes B- GPA admission requirements. [Coordinator 2026-10-01: MTH 1110 added to external_prereqs — the catalog names it as an alternative prerequisite (one_of MTH 1010 / MTH 1110) but places only MTH 1010 in the sequence.]",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 1210",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIO 1211",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Anatomy and Physiology I",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 1211",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIO 1210",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Human Anatomy and Physiology I Lab",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Composition and Critical Thinking I",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 2050",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "COM 1010",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "MTH 1010",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Self and Society",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HSC 1010",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Health Professions",
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 1010",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Quantitative Literacy",
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ],
+    "label": "Fall or Spring — Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 1220",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIO 1221",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "BIO 1210",
+       "BIO 1211"
+      ],
+      "tccns": "",
+      "title": "Human Anatomy and Physiology II",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 1221",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIO 1220",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "BIO 1210",
+       "BIO 1211"
+      ],
+      "tccns": "",
+      "title": "Human Anatomy and Physiology II Lab",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 2150",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIO 1220",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Pathophysiology",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 1020",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COM 1010",
+       "MTH 1010"
+      ],
+      "tccns": "",
+      "title": "Composition and Critical Thinking II",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHM 1410",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MTH 1010",
+         "MTH 1110"
+        ]
+       }
+      ],
+      "tccns": "",
+      "title": "Chemistry of Life",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ],
+    "label": "Spring or Fall — Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 2410",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Microbiology",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2150A",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2150L",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2150CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fundamentals of Nursing for the BSN",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2150L",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2150A",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2150CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Fundamentals of Nursing for the BSN Lab",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2150CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2150A",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2150L",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Fundamentals of Nursing for the BSN Clinical",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2250A",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2250L",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Health Assessment for the BSN",
+      "slot_id": "s3-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2250L",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2250A",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Health Assessment for the BSN Lab",
+      "slot_id": "s3-5",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 2210",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "PSY 1110",
+         "PSY 2050"
+        ]
+       }
+      ],
+      "tccns": "",
+      "title": "Developmental Psychology",
+      "slot_id": "s3-6",
+      "xfer": []
+     }
+    ],
+    "label": "Fall or Spring — Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO 2210",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Nutrition",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2350",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NUR 2150A",
+       "NUR 2250A"
+      ],
+      "tccns": "",
+      "title": "Pharmacology and Medication Administration for the BSN",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2550",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2550L",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2550CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 7,
+      "options": [],
+      "prereq": [
+       "NUR 2150A",
+       "NUR 2250A"
+      ],
+      "tccns": "",
+      "title": "Medical/Surgical Nursing I for the BSN",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2550L",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2550",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2550CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2150A",
+       "NUR 2250A"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Medical/Surgical Nursing I for the BSN Lab",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 2550CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 2550",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 2550L",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2150A",
+       "NUR 2250A"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Medical/Surgical Nursing I for the BSN Clinical",
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 1110",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Psychology",
+      "slot_id": "s4-5",
+      "xfer": []
+     }
+    ],
+    "label": "Spring or Fall — Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SOC 3050",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COM 1010",
+       "MTH 1010",
+       "PSY 2050"
+      ],
+      "tccns": "",
+      "title": "Personal, Civic, and Global Perspectives",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH 2750",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MTH 1010",
+         "MTH 1110"
+        ]
+       }
+      ],
+      "tccns": "",
+      "title": "Statistical Methods",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3450",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3450CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PSY 1110",
+       "NUR 2550"
+      ],
+      "tccns": "",
+      "title": "Mental Health Nursing for the BSN",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3450CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3450",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2550"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Mental Health Nursing for the BSN Clinical",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3550",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3550CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "NUR 2550"
+      ],
+      "tccns": "",
+      "title": "Medical/Surgical Nursing II for the BSN",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3550CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3550",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2550"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Medical/Surgical Nursing II for the BSN Clinical",
+      "slot_id": "s5-5",
+      "xfer": []
+     }
+    ],
+    "label": "Fall or Spring — Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3050",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH 2750",
+       "NUR 2350",
+       "NUR 2550"
+      ],
+      "tccns": "",
+      "title": "Evidence Based Practice for the BSN",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3650",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3650CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NUR 2550",
+       "PSY 2210"
+      ],
+      "tccns": "",
+      "title": "Child and Family Nursing for the BSN",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3650CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3650",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2550",
+       "PSY 2210"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Child and Family Nursing for the BSN Clinical",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3750",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3750CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NUR 2550",
+       "PSY 2210"
+      ],
+      "tccns": "",
+      "title": "Maternal/Child Nursing for the BSN",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3750CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3750",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2550",
+       "PSY 2210"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Maternal/Child Nursing for the BSN Clinical",
+      "slot_id": "s6-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose 1 course from the following.",
+      "code": "NUR 4650",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "NUR 4650",
+        "credits": 3,
+        "prereq": [
+         "NUR 3550"
+        ],
+        "tccns": "",
+        "title": "Global Health"
+       },
+       {
+        "code": "NUR 4710",
+        "credits": 3,
+        "prereq": [
+         "NUR 3550"
+        ],
+        "tccns": "",
+        "title": "Cultural Competence in Nursing: The Hispanic Patient"
+       },
+       {
+        "code": "NUR 4630",
+        "credits": 3,
+        "prereq": [
+         {
+          "one_of": [
+           "NUR 3550",
+           "NUR 3570"
+          ]
+         }
+        ],
+        "tccns": "",
+        "title": "Palliative Care"
+       },
+       {
+        "code": "NUR 4680",
+        "credits": 3,
+        "prereq": [
+         {
+          "one_of": [
+           "NUR 3550",
+           "NUR 3570"
+          ]
+         }
+        ],
+        "tccns": "",
+        "title": "Holistic Care"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Global Health",
+      "slot_id": "s6-5",
+      "xfer": []
+     }
+    ],
+    "label": "Spring or Fall — Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HUM 3910",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COM 1010",
+       "MTH 1010",
+       "PSY 2050",
+       "SOC 3050"
+      ],
+      "tccns": "",
+      "title": "Integrated Seminar",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3150",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3150CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NUR 2250A",
+       "NUR 2350",
+       "NUR 3450",
+       "NUR 3550",
+       "NUR 3650",
+       "NUR 3750"
+      ],
+      "tccns": "",
+      "title": "Community Nursing for the BSN",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 3150CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 3150",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 2250A",
+       "NUR 2350",
+       "NUR 3450",
+       "NUR 3550",
+       "NUR 3650",
+       "NUR 3750"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Community Nursing for the BSN Clinical",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4150",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4150CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "NUR 3050",
+       "NUR 3450",
+       "NUR 3550",
+       "NUR 3650",
+       "NUR 3750"
+      ],
+      "tccns": "",
+      "title": "Medical/Surgical Nursing III for the BSN",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4150CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4150",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 3450",
+       "NUR 3550",
+       "NUR 3650",
+       "NUR 3750"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Medical/Surgical Nursing III for the BSN Clinical",
+      "slot_id": "s7-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4050",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NUR 3450",
+       "NUR 3550",
+       "NUR 3650",
+       "NUR 3750"
+      ],
+      "tccns": "",
+      "title": "Nursing Pathophysiology",
+      "slot_id": "s7-5",
+      "xfer": []
+     }
+    ],
+    "label": "Fall or Spring — Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 3710",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Healthcare Informatics",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose a 3-credit course from the Option 1 category in the chart below. Prerequisite: COM 1010.",
+      "code": "General Education Elective — Option 1",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "COM 2050",
+        "credits": 3,
+        "tccns": "",
+        "title": "Public Speaking"
+       },
+       {
+        "code": "COM 2110",
+        "credits": 3,
+        "tccns": "",
+        "title": "Group Dynamics"
+       },
+       {
+        "code": "COM 2150",
+        "credits": 3,
+        "tccns": "",
+        "title": "Advanced Professional Communications"
+       },
+       {
+        "code": "ENG 2410",
+        "credits": 3,
+        "tccns": "",
+        "title": "Creative Writing"
+       },
+       {
+        "code": "GEO 1050",
+        "credits": 3,
+        "tccns": "",
+        "title": "Introduction to Geography"
+       },
+       {
+        "code": "HIS 1110",
+        "credits": 3,
+        "tccns": "",
+        "title": "Introduction to American history: 1865 – Present"
+       },
+       {
+        "code": "HUM 3610",
+        "credits": 3,
+        "tccns": "",
+        "title": "Art Appreciation"
+       },
+       {
+        "code": "HUM 3650",
+        "credits": 3,
+        "tccns": "",
+        "title": "Music Appreciation"
+       },
+       {
+        "code": "LIT 2010",
+        "credits": 3,
+        "tccns": "",
+        "title": "Introduction to Literature"
+       },
+       {
+        "code": "PHY 3210",
+        "credits": 3,
+        "tccns": "",
+        "title": "Principles of Astronomy"
+       },
+       {
+        "code": "POL 1010",
+        "credits": 3,
+        "tccns": "",
+        "title": "Introduction to Political Science"
+       },
+       {
+        "code": "SPN 1010",
+        "credits": 3,
+        "tccns": "",
+        "title": "Spanish I"
+       },
+       {
+        "code": "SPN 1020",
+        "credits": 3,
+        "tccns": "",
+        "title": "Spanish II"
+       }
+      ],
+      "prereq": [
+       "COM 1010"
+      ],
+      "tccns": "",
+      "title": "General Education Elective (Option 1: Art, Communication, History)",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose a 3-credit course from the Option 2 category in the chart below. Prerequisite: COM 1010.",
+      "code": "General Education Elective — Option 2",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PHY 2150",
+        "credits": 3,
+        "tccns": "",
+        "title": "Integrated Physics"
+       },
+       {
+        "code": "PSY 2110",
+        "credits": 3,
+        "tccns": "",
+        "title": "Psychology of Death and Dying"
+       },
+       {
+        "code": "PSY 2310",
+        "credits": 3,
+        "tccns": "",
+        "title": "Industrial Organizational Psychology"
+       },
+       {
+        "code": "PSY 3110",
+        "credits": 3,
+        "tccns": "",
+        "title": "Abnormal Psychology"
+       },
+       {
+        "code": "PSY 3210",
+        "credits": 3,
+        "tccns": "",
+        "title": "Psychology of Disability"
+       },
+       {
+        "code": "PSY 3350",
+        "credits": 3,
+        "tccns": "",
+        "title": "Human Sexuality"
+       },
+       {
+        "code": "PSY 3410",
+        "credits": 3,
+        "tccns": "",
+        "title": "Child Psychology"
+       },
+       {
+        "code": "PSY 3510",
+        "credits": 3,
+        "tccns": "",
+        "title": "Adolescent Psychology"
+       },
+       {
+        "code": "PSY 4010",
+        "credits": 3,
+        "tccns": "",
+        "title": "Social Psychology"
+       },
+       {
+        "code": "PSY 4150",
+        "credits": 3,
+        "tccns": "",
+        "title": "Gerontology"
+       },
+       {
+        "code": "SCI 2710",
+        "credits": 3,
+        "tccns": "",
+        "title": "Environmental Science"
+       },
+       {
+        "code": "SOC 2010",
+        "credits": 3,
+        "tccns": "",
+        "title": "Sociology"
+       }
+      ],
+      "prereq": [
+       "COM 1010"
+      ],
+      "tccns": "",
+      "title": "General Education Elective (Option 2: Math, Science, Psychology)",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4250",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4350",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4350CL",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4250CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NUR 3150",
+       "NUR 4050",
+       "NUR 4150",
+       "HUM 3910"
+      ],
+      "tccns": "",
+      "title": "Nursing Leadership for the BSN",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4250CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4350",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4350CL",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4250",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 3150",
+       "NUR 4050",
+       "NUR 4150"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Nursing Leadership for the BSN Clinical",
+      "slot_id": "s8-4",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4350",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4350CL",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4250",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "NUR 4150"
+      ],
+      "tccns": "",
+      "title": "Nursing Synthesis for the BSN",
+      "slot_id": "s8-5",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUR 4350CL",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NUR 4350",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4250",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 4250CL",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 0,
+      "options": [],
+      "prereq": [
+       "NUR 4150"
+      ],
+      "required_zero": true,
+      "tccns": "",
+      "title": "Nursing Synthesis for the BSN Clinical",
+      "slot_id": "s8-6",
+      "xfer": []
+     }
+    ],
+    "label": "Spring or Fall — Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://my.baker.edu/icsfileserver/docs/docs/about_us/program_information/academic_plans/bachelor/school-of-nursing/2024-2025_Nursing_Pre-licensure_BS.pdf",
+  "total_credits": 120,
+  "transfer_confidence": "core_only",
+  "content_hash": "68fbf6e8c7ecc0ee64df91376949316b7f4ca0cc671518b86b08b3dc1ff0a486"
+ }
+}

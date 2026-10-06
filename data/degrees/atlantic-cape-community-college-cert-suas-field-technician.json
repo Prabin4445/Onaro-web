@@ -1,0 +1,162 @@
+{
+ "institution": {
+  "city": "Mays Landing",
+  "kind": "community",
+  "name": "Atlantic Cape Community College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "id": "atlantic-cape-community-college-cert-suas-field-technician",
+  "major": "Small Unmanned Aircraft Systems Field Technician",
+  "notes": "Program code UAST-Fall 2026. Institution-published Recommended Sequence of Courses (2 semesters). Students must pass an FAA aeronautical knowledge exam. All coursework applies toward the sUAS Field Technician AAS. Choice slots use catalog wording. Prereqs from 2026-2027 catalog course descriptions.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "code": "ENGL101",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "CISM125",
+      "credits": 3,
+      "prereq": [],
+      "title": "Foundations of Information Technology",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT140",
+      "credits": 3,
+      "prereq": [],
+      "title": "Small Unmanned Aircraft Systems Operation-Multi-Rotor",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT185",
+      "credits": 4,
+      "prereq": [],
+      "title": "Remote Sensing Using Unmanned Aircraft Systems",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT245",
+      "coreq": [
+       {
+        "course": "AVIT140",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 3,
+      "prereq": [],
+      "title": "Professional sUAS Operations",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "AVIT250",
+      "credits": 4,
+      "prereq": [
+       "AVIT140"
+      ],
+      "title": "sUAS Maintenance & Repair",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "TVRF/AVIT263",
+      "credits": 1,
+      "prereq": [],
+      "title": "Aerial Video Production",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "AVIT290",
+      "credits": 1,
+      "prereq": [
+       "AVIT140"
+      ],
+      "title": "UAS Capstone Project",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose: ATCT120-Aviation Weather or AELP/AVIT104-Aviation Phraseology (3 credits)",
+      "code": "Choose: ATCT120-Aviation Weather or AELP/AVIT104-Aviation Phraseology (3 credits)",
+      "credits": 3,
+      "options": [
+       "ATCT120",
+       "AELP/AVIT104"
+      ],
+      "prereq": [],
+      "title": "Aviation Weather or Aviation Phraseology",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CISM148",
+      "credits": 4,
+      "prereq": [],
+      "title": "Problem Solving Using Python",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "GIST101",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to Geographic Information Systems",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Second Semester",
+    "n": 2
+   }
+  ],
+  "source_url": "https://catalog.atlantic.edu/sites/default/files/pdf/programs/aviation.pdf",
+  "total_credits": 33,
+  "transfer_confidence": "advisory",
+  "content_hash": "76a85b14b73cc4b984cb9a864384f6df034cf22f597379b11eb8f9221709ce2c",
+  "last_verified": "2026-10-02"
+ }
+}

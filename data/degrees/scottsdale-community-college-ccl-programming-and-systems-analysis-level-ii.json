@@ -1,0 +1,216 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-programming-and-systems-analysis-level-ii",
+  "major": "Programming and Systems Analysis Level II",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/programming-and-systems-analysis-level-ii-5962-ccl). Effective Term Fall 2025; catalog_year 2025-2026 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 3,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 150 or CIS 150AB. Credits shown for CIS 150.",
+      "code": "CIS 150",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Programming Fundamentals or Object-Oriented Programming Fundamentals",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 133DA",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Internet/Web Development Level I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GBS 151",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Business",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 126DL or CIS 126RH or MST150++. Credits shown for CIS 126DL.",
+      "code": "CIS 126DL",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Linux Operating System or Red Hat System Administration I or Any Microsoft Windows course",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: CIS 156 or CIS 159 or CIS162++ or CIS 163AA or CIS165++. Credits shown for CIS 156.",
+      "code": "CIS 156",
+      "core_area": "None or CS or None",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Python Programming: Level I or Visual Basic Programming I or Any C Programming: Level I course or Java Programming: Level I or Any Mobile Application Development course",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 119DO or CIS 276DA or CIS 276DB. Credits shown for CIS 119DO.",
+      "code": "CIS 119DO",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Introduction to Oracle: SQL or MySQL Database or SQL Server Database",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Placeholder slot: Any Web Scripting course.",
+      "code": "CIS166++",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Any Web Scripting course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 190 or CNT 140AB or MST 140. Credits shown for CIS 190.",
+      "code": "CIS 190",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Introduction to Networking or Introduction to Networks or Microsoft Networking Essentials",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 256 or CIS 259 or CIS262++ or CIS 263AA or CIS 265. Credits shown for CIS 256.",
+      "code": "CIS 256",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 150"
+      ],
+      "title": "Python Programming: Level II or Visual Basic Programming II or Any C Programming: Level II course or Java Programming: Level II or Advanced iOS Application Development",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: CIS 225AB or CIS 250. Credits shown for CIS 225AB.",
+      "code": "CIS 225AB",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "CIS 105"
+      ],
+      "title": "Object-Oriented Analysis and Design or Management of Information Systems",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: Restricted Electives.",
+      "code": "RE",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "Restricted Electives",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/programming-and-systems-analysis-level-ii-5962-ccl",
+  "total_credits": 36,
+  "external_prereqs": [
+   "CIS 117DM",
+   "CIS 159",
+   "CIS 163AA",
+   "CIS 165"
+  ],
+  "program_type": "professional-phase",
+  "content_hash": "a8690d8aefc25612bcec19926b50833ed9d9d9d0dc98d02bb70ddc3bea21b679",
+  "last_verified": "2026-10-02"
+ }
+}

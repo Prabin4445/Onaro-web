@@ -1,0 +1,645 @@
+{
+ "institution": {
+  "city": "Potsdam, NY",
+  "kind": "college",
+  "name": "SUNY Potsdam",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2012-2013",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "potsdam-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official SUNY Potsdam 'Transfer Articulation Agreement between Orange County Community College and SUNY Potsdam' (Computer Science A.S. -> Computer Science B.S.), hosted on www.potsdam.edu. This is the ONLY official term-by-term sample sequence SUNY Potsdam publishes for the B.S. in Computer Science; the official academic catalog program pages list degree requirements but no term-by-term sequence. Transcribed 2026-09-30 by direct layout-preserving PDF extraction (pdftotext -layout), cross-checked against the agreement's own printed term totals. STRUCTURE: Years 1-2 are completed at Orange County Community College (OCCC) under the 2+2 agreement; Years 3-4 are completed at SUNY Potsdam. OCCC course codes/titles transcribed verbatim; the agreement's official Potsdam course equivalencies (e.g. CSC 102 = CIS 201, MAT 205 = MATH 151, CIT 225 = CIS 420) are recorded in each mapped course's choice_note. CATALOG YEAR: no explicit catalog year is printed in the agreement; Potsdam's transfer-office filename convention (ORA0712CSBS = Orange, July 2012) dates it to 2012, recorded as 2012-2013. CAVEATS/DISCREPANCIES: (1) The agreement prints 'Total semester hours: (15)' for both Third Year semesters, but lists SIX 3-credit courses in each (18 credits) - an arithmetic error in the official document. This file transcribes the listed courses faithfully (18+18) and totals 136, not the printed 15s. (2) Second Year Second Semester lists 'Electives (recommend SUNY GE-4 or GE-5 gen ed) (2/4)' with a printed term total of (15/17); this file uses the 4-credit option (term = 17) and documents the choice here. (3) The agreement predates the current three-track BS structure (General/Cybersecurity/Data Analytics); the sequence reflects the common core identical to the current catalog's required BS courses (CIS 301/303/310/380/405/410/443/480-490). No prereq information is printed in the source; all prereq lists are empty.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Freshman English 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of SUNY GE-3 social science course. Taken at OCCC in Year 1.",
+      "code": "GENED-SS-GE3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Social Science general education (SUNY GE-3)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC; no Potsdam equivalent listed in the agreement's equivalency table.",
+      "code": "CSC 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computer Science 1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: MATH 151 Calculus I.",
+      "code": "MAT 205",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Taken at OCCC.",
+      "code": "COM 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Foundations of Communication",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Taken at OCCC.",
+      "code": "PES 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Concepts of Physical Wellness",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Taken at OCCC.",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Freshman English 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Restricted HIS elective; SUNY GE-4 or GE-5 recommended. Taken at OCCC in Year 1.",
+      "code": "GENED-HIS-GE45",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "History elective (SUNY GE-4 or GE-5)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: MATH 152 Calculus II.",
+      "code": "MAT 206",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: CIS 201 Computer Science I.",
+      "code": "CSC 102",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Computer Science 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC.",
+      "code": "EET 104",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Digital Electronics 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Taken at OCCC; printed as 'PES Physical Education activity'.",
+      "code": "PES-ACT",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "tccns": "",
+      "title": "Physical Education activity",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: PHYS 103 University Physics I.",
+      "code": "PHY 105",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "General Physics 1 with Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: MATH 375 Linear Algebra I.",
+      "code": "MAT 211",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: CIS 203 Computer Science II.",
+      "code": "CSC 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Restricted elective; SUNY GE-8 gen ed recommended. Taken at OCCC in Year 2.",
+      "code": "GENED-ELECT-GE8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Restricted elective (SUNY GE-8)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: CIS 420 Database Systems.",
+      "code": "CIT 225",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Database Fundamentals and Design",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: PHYS 204 University Physics II.",
+      "code": "PHY 106",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "General Physics 2 with Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: MATH 125 Probability and Statistics I.",
+      "code": "MAT 125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Statistics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: CIS 300 Foundations of Computer Science.",
+      "code": "MAT 136",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at OCCC. Official Potsdam equivalent per the agreement: CIS 356 Assembly Language and Computer Architecture.",
+      "code": "CSC 204",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Computer Organization and Assembly Language Programming",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Agreement prints '(2/4)' credits with a term total of (15/17); this file uses the 4-credit option (term = 17). Taken at OCCC in Year 2.",
+      "code": "GENED-ELECT-GE45",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Electives (SUNY GE-4 or GE-5)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at SUNY Potsdam.",
+      "code": "CIS 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Counts as [WI] gen ed per the agreement. Taken at SUNY Potsdam.",
+      "code": "CIS 405",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of [SB] gen ed course. Taken at SUNY Potsdam.",
+      "code": "GENED-SB",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "General education requirement [SB]",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of language. Taken at SUNY Potsdam.",
+      "code": "MODLANG-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Modern Language 101",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam. (The agreement lists two upper-division electives this term though it prints a total of 15; the file transcribes the listed courses, 18 credits.)",
+      "code": "UD-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam. (See term note: agreement lists 18 credits here, prints 15.)",
+      "code": "UD-ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at SUNY Potsdam.",
+      "code": "CIS 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Algorithm Analysis and Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Counts as [SI] gen ed per the agreement. Taken at SUNY Potsdam.",
+      "code": "CIS 380",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Professional Practice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at SUNY Potsdam.",
+      "code": "CIS 443",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of language; counts as [ML] gen ed. Taken at SUNY Potsdam.",
+      "code": "MODLANG-102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Modern Language 102 [ML]",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of [XC] gen ed course. Taken at SUNY Potsdam.",
+      "code": "GENED-XC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "General education requirement [XC]",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam. (The agreement lists six 3-credit courses this term though it prints a total of 15; the file transcribes the listed courses, 18 credits.)",
+      "code": "UD-ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-5",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Capstone: student's choice of CIS 480 Senior Project or CIS 490 CS Internship. Taken at SUNY Potsdam.",
+      "code": "CIS-480-490",
+      "credits": 3,
+      "options": [
+       "CIS 480",
+       "CIS 490"
+      ],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Senior Project or CS Internship",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at SUNY Potsdam.",
+      "code": "CIS 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student's choice of [PI] gen ed course. Taken at SUNY Potsdam.",
+      "code": "GENED-PI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "General education requirement [PI]",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam.",
+      "code": "UD-ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student's choice. Taken at SUNY Potsdam.",
+      "code": "ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student's choice of CIS 300/400-level major elective. Taken at SUNY Potsdam.",
+      "code": "CIS-MAJ-ELECT-300-400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CIS 300 or 400 level major elective",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Taken at SUNY Potsdam.",
+      "code": "CIS 410",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Networks",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam.",
+      "code": "UD-ELECT-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "300/400-level elective; student's choice. Taken at SUNY Potsdam.",
+      "code": "UD-ELECT-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Upper-division elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student's choice. Taken at SUNY Potsdam.",
+      "code": "ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.potsdam.edu/sites/default/files/documents/admissions/transfer/ORA0712CSBS.pdf",
+  "total_credits": 136,
+  "content_hash": "dc8ac0bff398207c3bf346e6333d8fb4967dac7a02489e2844838b4ecc51f406",
+  "last_verified": "2026-10-02"
+ }
+}

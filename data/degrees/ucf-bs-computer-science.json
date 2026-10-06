@@ -1,0 +1,596 @@
+{
+ "institution": {
+  "city": "Orlando, FL",
+  "kind": "public4yr",
+  "name": "University of Central Florida",
+  "state": "FL"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "id": "ucf-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UCF CECS 'Bachelor of Science Computer Science 2024-2025 Catalog' four-year plan PDF, transcribed course by course 2026-09-30 from https://advising.cecs.ucf.edu/wp-content/uploads/2024/07/2024-2025-Computer-Science-Four-Year-Plan.pdf (identical copy also hosted at https://advising.cecs.ucf.edu/wp-content/uploads/2024/07/2024-2025-Computer-Science-Four-Year-Plan.pdf). Program name per source: Bachelor of Science, Computer Science (College of Engineering and Computer Science, Orlando FL). Course titles use the plan's wording with standard expansions of abbreviations only; nothing invented. CAVEAT (staleness): this is the 2024-2025 catalog edition, not the current 2026-2027 edition. A 'Bachelor of Science in Computer Science Four-Year Plan 2026-2027' is listed on https://www.cs.ucf.edu/current-students/ but its link resolves to an SSO-gated form and the PDF could not be retrieved; no other official 2026-2027 term-by-term CS sequence is retrievable in full, so catalog_year is set honestly to 2024-2025. Credit math: per-term printed hours sum to 121 (122 if the Year-3-Fall Math Elective is taken at 4 hours instead of 3); the plan sheet states no explicit total; the UCF degree requirement is a minimum of 120 unduplicated semester hours, so total_credits is set to the printed-plan sum (121) to satisfy the credit-sum rule. Student-choice slots carry placeholder codes (GEP-1..5, MATH-ELEC, AREA-ELEC-A..F, MATHSTAT-ELEC, FREE-ELEC-A/B) since the plan does not name specific courses. Placement/prereq notes from the plan footnotes: COP 3223C requires a passing CS Placement Test score (or AP CS A 3+ or COP 2500 C or better); COT 3960 (CS Foundation Exam, 0 credits, required_zero) requires COP 3502C and must be passed within one year of COP 3502C. Individual course prereqs are not listed on the plan, so prereq fields are empty (not invented). No TCCNS codes (Florida institution; TCCNS is a Texas system) and no transfer mappings on the source, so tccns/xfer are empty. 11 terms (8-12 required for a bachelor).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPC 1603C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Technical Presentations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3223C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Programming with C",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2311C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COT 3100C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Introduction to Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3502C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3103",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Computer Logic and Organization",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3330",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Object Oriented Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "0-credit CS Foundation Exam; must be passed within one year of COP 3502C (C or better)",
+      "code": "COT 3960",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "CS Foundation Exam",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2048 & PHY 2048L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Physics I & Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3402",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Systems Software",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3503C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: one General Education Program (GEP) course per UCF catalog.",
+      "code": "GEP-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Program course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2049 & PHY 2049L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Physics II & Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4331C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Object Oriented Software Development",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 3241",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Technical Writing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 3360",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Security in Computing",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STA 2023",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Statistical Methods I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: one General Education Program (GEP) course per UCF catalog.",
+      "code": "GEP-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "General Education Program course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one math elective; plan lists 3 or 4 credit hours, transcribed at 3.",
+      "code": "MATH-ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Math Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BSC 2010C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Biology I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: one General Education Program (GEP) course per UCF catalog.",
+      "code": "GEP-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General Education Program course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHM 2045C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Chemistry Fundamentals I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one restricted math/statistics elective (2 slots, 6 hours total required); the 2024-2025 plan does not enumerate the allowed courses.",
+      "code": "MATHSTAT-ELEC",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Math/Stat Restricted Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: any free elective course.",
+      "code": "FREE-ELEC-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: one General Education Program (GEP) course per UCF catalog.",
+      "code": "GEP-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "General Education Program course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4934",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Senior Design I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Student choice: one General Education Program (GEP) course per UCF catalog.",
+      "code": "GEP-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "General Education Program course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COT 4210",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Discrete II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4935",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "Senior Design II",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: any free elective course.",
+      "code": "FREE-ELEC-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-1",
+      "tccns": "",
+      "title": "Free Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-E",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-2",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: one approved CS technical elective (18 hours total across plan).",
+      "code": "AREA-ELEC-F",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-3",
+      "tccns": "",
+      "title": "Area Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 11
+   }
+  ],
+  "source_url": "https://advising.cecs.ucf.edu/wp-content/uploads/2024/07/2024-2025-Computer-Science-Four-Year-Plan.pdf",
+  "external_prereqs": [],
+  "total_credits": 121,
+  "content_hash": "f20b5a1b46ad327d20a36e990fb5eee19b709bd0eb5f3ae023ce1f18e2ff7c91",
+  "last_verified": "2026-10-02"
+ }
+}

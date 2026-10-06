@@ -1,0 +1,684 @@
+{
+ "institution": {
+  "name": "University of South Carolina",
+  "city": "Columbia, SC",
+  "kind": "public4yr",
+  "state": "SC"
+ },
+ "plan": {
+  "id": "usc-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://itunesu.sc.edu/about/offices_and_divisions/advising/documents/major_maps/2026-2027/2026_cs_map.pdf",
+  "notes": "Source: official USC 'Major Map: Computer Science' for the Bachelor of Science in Computer Science (B.S.C.S.), Molinaroli College of Engineering and Computing, Department of Computer Science & Engineering, Bulletin Year 2026-2027: https://itunesu.sc.edu/about/offices_and_divisions/advising/documents/major_maps/2026-2027/2026_cs_map.pdf . Transcription method: manual transcription of every semester row (course subject/title, credit hours, prerequisites, notes) from the official major map PDF on 2026-09-30. Term names use the map's own 'Semester One' ... 'Semester Eight' numbering. Student-choice slots (choice:true) cover the Carolina Core requirements (AIU, SCI, CMS, GSS, GFL, GHS), the Laboratory Science Requirement (any 4-credit CC-SCI lab science), CSCE Major Electives (any CSCE course 500 or higher; a 12-hour AI or Cybersecurity concentration may replace them per map note), and free electives (4-13 hours per map note). The ENGL 462 / ENGL 463 alternative is a choice slot with both options named. Prerequisites follow the map; where the map lists alternative entry paths (e.g. CSCE 106 instead of CSCE 145, MATH 174/574 instead of MATH 374, MATH 544 instead of MATH 344), the prereq array uses the course on this plan's path and the alternative is listed in external_prereqs. Minimum-grade and '* included in CS program GPA' markers from the map are not modeled in the schema. Caveats: (a) map notes say students who place into MATH 115 must complete it before MATH 141; (b) GFL requirement: proficiency equivalent to the 121 course (placement score 2+, or 109+110 in FREN/GERM/LATN/SPAN, or 121 in another language) -- students who do not place out may need additional hours; (c) CSCE 490 is fall only, CSCE 492 is spring only, CSCE 330 is fall only; (d) all undergraduates must complete a 3-credit founding-documents course, which may overlap a requirement (see Bulletin); (e) last 25% of degree must be completed in residence; (f) the major map is a recommended sequence -- the map's disclaimer advises consulting an academic advisor. Graduation Requirements Summary on the map: 120 total hours, 30 major, 46-55 college & program, 35-41 Carolina Core, 2.00 institutional GPA.",
+  "external_prereqs": [
+   "CSCE 104",
+   "CSCE 106",
+   "CSCE 205",
+   "CSCE 210",
+   "MATH 111",
+   "MATH 112",
+   "MATH 115",
+   "MATH 116",
+   "MATH 122",
+   "MATH 174",
+   "MATH 544",
+   "MATH 574"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "ENGL 101",
+      "title": "Critical Reading and Composition",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 141",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [
+       "MATH 112",
+       "MATH 115",
+       "MATH 116"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CSCE 145",
+      "title": "Algorithmic Design I",
+      "credits": 4,
+      "prereq": [
+       "MATH 111",
+       "MATH 115"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "CSCE 190",
+      "title": "Computing in the Modern World",
+      "credits": 1,
+      "prereq": [
+       "CSCE 145"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CC-AIU",
+      "title": "Carolina Core AIU -- Aesthetic and Interpretive Understanding (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Carolina Core AIU.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "ENGL 102",
+      "title": "Rhetoric and Composition",
+      "credits": 3,
+      "prereq": [
+       "ENGL 101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 142",
+      "title": "Calculus II",
+      "credits": 4,
+      "prereq": [
+       "MATH 141"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CC-SCI-1",
+      "title": "Carolina Core SCI -- Scientific Literacy lab science (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 4-credit Carolina Core SCI (lab science) course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "CSCE 146",
+      "title": "Algorithmic Design II",
+      "credits": 4,
+      "prereq": [
+       "CSCE 145",
+       "MATH 141"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "CSCE 215",
+      "title": "UNIX/Linux Fundamentals",
+      "credits": 1,
+      "prereq": [
+       "CSCE 145"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSCE 211",
+      "title": "Digital Logic Design",
+      "credits": 3,
+      "prereq": [
+       "MATH 141"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSCE 240",
+      "title": "Advanced Programming Techniques",
+      "credits": 3,
+      "prereq": [
+       "CSCE 215",
+       "CSCE 146"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH 374",
+      "title": "Discrete Structures",
+      "credits": 3,
+      "prereq": [
+       "MATH 142",
+       "CSCE 146"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "CC-SCI-2",
+      "title": "Carolina Core SCI -- Scientific Literacy lab science (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any 4-credit Carolina Core SCI (lab science) course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "CC-CMS",
+      "title": "Carolina Core CMS -- Effective, Engaged, and Persuasive Communication: Spoken Component (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Carolina Core CMS.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSCE 212",
+      "title": "Introduction to Computer Architecture",
+      "credits": 3,
+      "prereq": [
+       "CSCE 211",
+       "CSCE 145"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSCE 247",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [
+       "CSCE 146"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "LAB-SCI",
+      "title": "Laboratory Science Requirement -- 4-credit CC-SCI laboratory science (student choice)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "A 4-credit-hour CC-SCI laboratory science course; see Bulletin listing.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "MATH 241",
+      "title": "Vector Calculus",
+      "credits": 3,
+      "prereq": [
+       "MATH 142"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "CC-GSS",
+      "title": "Carolina Core GSS -- Social Sciences (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Carolina Core GSS.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSCE 311",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [
+       "CSCE 240",
+       "CSCE 212"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSCE 330",
+      "title": "Programming Language Structures (fall only)",
+      "credits": 3,
+      "prereq": [
+       "CSCE 240",
+       "MATH 374"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSCE 350",
+      "title": "Data Structures and Algorithms",
+      "credits": 3,
+      "prereq": [
+       "CSCE 240",
+       "MATH 374",
+       "MATH 141"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "CSCE 390",
+      "title": "Professional Issues in Computer Science and Engineering",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "ENGL 462/463",
+      "title": "ENGL 462 Technical Writing or ENGL 463 Business Writing (student choice)",
+      "credits": 3,
+      "prereq": [
+       "ENGL 101",
+       "ENGL 102"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists ENGL 462 Technical Writing or ENGL 463 Business Writing.",
+      "options": [
+       "ENGL 462",
+       "ENGL 463"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-5",
+      "code": "CC-GFL/ELEC-1",
+      "title": "Carolina Core GFL or Elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Carolina Core GFL course or any elective; see Bulletin.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSCE 416",
+      "title": "Introduction to Computer Networks",
+      "credits": 3,
+      "prereq": [
+       "CSCE 146"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSCE-MAJ-ELEC-1",
+      "title": "CSCE Major Elective -- any CSCE course 500 or higher (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any CSCE course 500 or higher; see Bulletin listing. A 12-hour Artificial Intelligence or Cybersecurity concentration may replace the major electives.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "STAT 509",
+      "title": "Statistics for Engineers",
+      "credits": 3,
+      "prereq": [
+       "MATH 142"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "ELECTIVE-1",
+      "title": "Elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course in the university; the CS curriculum includes 4-13 hours of electives.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "CC-GFL/ELEC-2",
+      "title": "Carolina Core GFL or Elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Carolina Core GFL course or any elective; see Bulletin.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSCE 490",
+      "title": "Capstone Computing Project I (fall only)",
+      "credits": 3,
+      "prereq": [
+       "CSCE 240",
+       "CSCE 350"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSCE 355",
+      "title": "Foundations of Computation",
+      "credits": 3,
+      "prereq": [
+       "CSCE 211",
+       "CSCE 212",
+       "CSCE 350"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSCE-MAJ-ELEC-2",
+      "title": "CSCE Major Elective -- any CSCE course 500 or higher (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any CSCE course 500 or higher; see Bulletin listing. A 12-hour Artificial Intelligence or Cybersecurity concentration may replace the major electives.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "MATH 344",
+      "title": "Applied Linear Algebra",
+      "credits": 3,
+      "prereq": [
+       "MATH 142"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "MATH 344L",
+      "title": "Applied Linear Algebra Lab",
+      "credits": 1,
+      "prereq": [
+       "MATH 344"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSCE 492",
+      "title": "Capstone Computing Project II (spring only)",
+      "credits": 3,
+      "prereq": [
+       "CSCE 240",
+       "CSCE 350",
+       "CSCE 490"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSCE-MAJ-ELEC-3",
+      "title": "CSCE Major Elective -- any CSCE course 500 or higher (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any CSCE course 500 or higher; see Bulletin listing. A 12-hour Artificial Intelligence or Cybersecurity concentration may replace the major electives.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELECTIVE-2",
+      "title": "Elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course in the university; the CS curriculum includes 4-13 hours of electives.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELECTIVE-3",
+      "title": "Elective (student choice)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course in the university; the CS curriculum includes 4-13 hours of electives.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "CC-GHS",
+      "title": "Carolina Core GHS -- Historical Thinking (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any course satisfying Carolina Core GHS.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "a1b913ca22b383231d5d25b6512cef655cce2b23abeb5f6fa3b4d159678b33c6",
+  "last_verified": "2026-10-02"
+ }
+}

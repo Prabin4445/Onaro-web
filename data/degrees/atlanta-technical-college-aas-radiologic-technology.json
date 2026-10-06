@@ -1,0 +1,494 @@
+{
+ "institution": {
+  "city": "Atlanta, GA",
+  "kind": "community",
+  "name": "Atlanta Technical College",
+  "state": "GA"
+ },
+ "plan": {
+  "catalog_year": "2024-2026",
+  "degree": "AAS",
+  "external_prereqs": [],
+  "id": "atlanta-technical-college-aas-radiologic-technology",
+  "major": "Radiologic Technology",
+  "notes": "Term-by-term sequence transcribed verbatim from the official Atlanta Technical College '2024-2026 Radiologic Technology Program Information Packet' Student Academic Advisement Form (Health & Public Safety Technologies Division; advisement form pages rev 3/15/2022; packet effective 8/25/2025 per filename). Printed semester totals verified: 9 + 7 + 12 + 13 + 6 + 15 + 15 = 77 = the form's stated 'TOTAL PROGRAM CREDIT HOURS: 77'. Prereq [P] and coreq [C] chains transcribed from the form; 'BIOL 2113 & Lab' expanded to BIOL 2113 + BIOL 2113L and 'BIOL 2114 & Lab' to BIOL 2114 + BIOL 2114L. Where the form states 'and permission of the instructor' (RADT 1060, RADT 2340), the course codes are seeded and the instructor-permission requirement is documented here. The three 'XXX Psych, Spch, Huma or elective' slots are the form's own code/label; per packet text they are Introduction to Psychology (PSYC 1101), Introduction to Speech (SPCH 1101), and a Humanities elective, and 'may be taken prior to or during the five semesters of the program'. tccns mirrors the local course code (non-Texas school). transfer_confidence is 'advisory' (AAS/workforce).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1101",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ENGL 1101",
+      "title": "Composition and Rhetoric",
+      "slot_id": "s1-0",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2113",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIOL 2113L",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "tccns": "BIOL 2113",
+      "title": "Anatomy & Physiology I",
+      "slot_id": "s1-1",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2113L",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIOL 2113",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "prereq": [
+       "ENGL 1101"
+      ],
+      "tccns": "BIOL 2113L",
+      "title": "Anatomy & Physiology Lab I",
+      "slot_id": "s1-2",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ALHS 1090",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "ALHS 1090",
+      "title": "Medical Terminology for Allied Health Science",
+      "slot_id": "s1-3",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology"
+      ]
+     }
+    ],
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2114",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIOL 2114L",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "prereq": [
+       "BIOL 2113",
+       "BIOL 2113L"
+      ],
+      "tccns": "BIOL 2114",
+      "title": "Anatomy & Physiology II",
+      "slot_id": "s2-0",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 2114L",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "BIOL 2114",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "prereq": [
+       "BIOL 2113",
+       "BIOL 2113L"
+      ],
+      "tccns": "BIOL 2114L",
+      "title": "Anatomy & Physiology Lab II",
+      "slot_id": "s2-1",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "athens-technical-college-aas-radiologic-technology",
+       "athens-technical-college-aas-surgical-technology",
+       "atlanta-technical-college-asn-nursing-lpn-to-rn-bridge"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1111",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "MATH 1111",
+      "title": "College Algebra",
+      "slot_id": "s2-2",
+      "xfer": [
+       "athens-technical-college-aas-dental-hygiene",
+       "augusta-technical-college-aas-business-technology-office-management",
+       "augusta-technical-college-aas-computer-support-specialist",
+       "augusta-technical-college-aas-cybersecurity",
+       "augusta-technical-college-aas-networking-specialist"
+      ]
+     }
+    ],
+    "label": "Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1030",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "BIOL 2114",
+       "BIOL 2114L"
+      ],
+      "tccns": "RADT 1030",
+      "title": "Radiographic Procedures I",
+      "slot_id": "s3-0",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1065",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "RADT 1065",
+      "title": "Radiographic Sciences",
+      "slot_id": "s3-1",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1010",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "RADT 1010",
+      "title": "Introduction to Radiology",
+      "slot_id": "s3-2",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Form code/label 'XXX Psych, Spch, Huma or elective'. Per packet text the three XXX slots are Introduction to Psychology (PSYC 1101), Introduction to Speech (SPCH 1101), and a Humanities elective; may be taken prior to or during the five professional semesters.",
+      "code": "XXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "PSYC 1101",
+       "SPCH 1101"
+      ],
+      "prereq": [],
+      "tccns": "XXX",
+      "title": "Psych, Spch, Huma or elective",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ],
+    "label": "Third Semester - Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Form also requires permission of the instructor (see plan notes).",
+      "code": "RADT 2340",
+      "core_area": "",
+      "credits": 6,
+      "prereq": [],
+      "tccns": "RADT 2340",
+      "title": "Clinical Radiography I",
+      "slot_id": "s4-0",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Form prerequisite: 'RADT 1010, RADT 1030 and permission of the instructor'.",
+      "code": "RADT 1060",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "RADT 1010",
+       "RADT 1030"
+      ],
+      "tccns": "RADT 1060",
+      "title": "Radiographic Procedures II",
+      "slot_id": "s4-1",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1075",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "RADT 1065"
+      ],
+      "tccns": "RADT 1075",
+      "title": "Radiographic Imaging",
+      "slot_id": "s4-2",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     }
+    ],
+    "label": "Fourth Semester - Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1320",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "RADT 2340"
+      ],
+      "tccns": "RADT 1320",
+      "title": "Clinical Radiography II",
+      "slot_id": "s5-0",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 2090",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "RADT 1060"
+      ],
+      "tccns": "RADT 2090",
+      "title": "Radiographic Procedures III",
+      "slot_id": "s5-1",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     }
+    ],
+    "label": "Fifth Semester - Summer",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1330",
+      "core_area": "",
+      "credits": 7,
+      "prereq": [
+       "RADT 1320"
+      ],
+      "tccns": "RADT 1330",
+      "title": "Clinical Radiography III",
+      "slot_id": "s6-0",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1200",
+      "core_area": "",
+      "credits": 2,
+      "prereq": [
+       "RADT 1075"
+      ],
+      "tccns": "RADT 1200",
+      "title": "Principles of Radiation Biology and Protection",
+      "slot_id": "s6-1",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 1085",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [
+       "RADT 1075"
+      ],
+      "tccns": "RADT 1085",
+      "title": "Radiologic Equipment",
+      "slot_id": "s6-2",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Form code/label 'XXX Psych, Spch, Huma or elective'. Per packet text the three XXX slots are Introduction to Psychology (PSYC 1101), Introduction to Speech (SPCH 1101), and a Humanities elective; may be taken prior to or during the five professional semesters.",
+      "code": "XXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "PSYC 1101",
+       "SPCH 1101"
+      ],
+      "prereq": [],
+      "tccns": "XXX",
+      "title": "Psych, Spch, Huma or elective",
+      "slot_id": "s6-3",
+      "xfer": []
+     }
+    ],
+    "label": "Sixth Semester - Fall",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 2260",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "RADT 2260",
+      "title": "Radiographic Technology Review",
+      "slot_id": "s7-0",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RADT 2360",
+      "core_area": "",
+      "credits": 9,
+      "prereq": [
+       "RADT 1330"
+      ],
+      "tccns": "RADT 2360",
+      "title": "Clinical Radiography IV",
+      "slot_id": "s7-1",
+      "xfer": [
+       "athens-technical-college-aas-radiologic-technology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Form code/label 'XXX Psych, Spch, Huma or elective'. Per packet text the three XXX slots are Introduction to Psychology (PSYC 1101), Introduction to Speech (SPCH 1101), and a Humanities elective; may be taken prior to or during the five professional semesters.",
+      "code": "XXX",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "PSYC 1101",
+       "SPCH 1101"
+      ],
+      "prereq": [],
+      "tccns": "XXX",
+      "title": "Psych, Spch, Huma or elective",
+      "slot_id": "s7-2",
+      "xfer": []
+     }
+    ],
+    "label": "Seventh Semester - Spring",
+    "n": 7
+   }
+  ],
+  "source_url": "https://iq3.smartcatalogiq.com/-/media/institution/atlanta-technical-college/ay-24/20242026-radiologic-technology-program-information-packet-effective8252325.ashx?la=en",
+  "total_credits": 77,
+  "transfer_confidence": "advisory",
+  "content_hash": "d5825ab299bb14c21e5e1450d88b01b1d6f7a38cea7c9b3e4c5656264b9babf3",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Certificate",
+  "external_prereqs": [],
+  "id": "sacramento-city-college-certificate-game-design",
+  "major": "Game Design",
+  "notes": "Transcribed from the official SCC 'Game Design Certificate' program map, Catalog 2026-27, published June 04, 2026 (mapmaker.losrios.edu/Maps/7604/PublishedPdf). Certificate of Achievement (grade of C or better in each major course). Official Total Units: 21; this seed models the map path = 9+6+3+3 = 21 units. Semester sums verified against the map's 9 / 6 / 3 / 3 headers. Sequencing prereqs per map: ANIM 302 requires ANIM 301; MODL 302 requires MODL 301; GAME 303 requires GAME 301 and MODL 302 (GAME 303 is only offered during the spring semester). tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ANIM 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "ANIM 301",
+      "title": "Animation I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GAME 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "GAME 301",
+      "title": "Video Game Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DDSN 331",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "DDSN 331",
+      "title": "Digital Imaging I",
+      "xfer": [
+       "sacramento-city-college-certificate-frontend-web-developer"
+      ]
+     }
+    ],
+    "n": 1,
+    "term": "Semester 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: ANIM 301 with a grade of C or better.",
+      "code": "ANIM 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ANIM 301"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "ANIM 302",
+      "title": "Animation II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MODL 301",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "MODL 301",
+      "title": "3D Modeling I",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Semester 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: MODL 301 with a grade of C or better.",
+      "code": "MODL 302",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MODL 301"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "MODL 302",
+      "title": "3D Modeling II",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Semester 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Prerequisite: GAME 301 and MODL 302 with grades of C or better. GAME 303 is only offered during the spring semester.",
+      "code": "GAME 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "GAME 301",
+       "MODL 302"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "GAME 303",
+      "title": "Video Game Level Design",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Semester 4"
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7604/PublishedPdf",
+  "total_credits": 21,
+  "transfer_confidence": "core_only",
+  "content_hash": "3a49dc4f6540c54e4e1e260a90b299d03e937952e2480e9c6076473bd94100d8",
+  "last_verified": "2026-10-02"
+ }
+}

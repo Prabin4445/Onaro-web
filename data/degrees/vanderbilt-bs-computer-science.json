@@ -1,0 +1,616 @@
+{
+ "institution": {
+  "city": "Nashville, TN",
+  "kind": "private4yr",
+  "name": "Vanderbilt University",
+  "state": "TN"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "vanderbilt-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Vanderbilt School of Engineering official 'Four-Year Roadmap and Checklist (2026–2027 Catalog Year) — COMPUTER SCIENCE – B.S., 120 hours' (hosted on cdn.vanderbilt.edu, the university's official CDN), which is the genuine official term-by-term sequence for this program. The document itself states the VU Undergraduate Catalog is the definitive source. Course titles and prereqs verified against Vanderbilt's official 2026–2027 Computer Science Curriculum + Prerequisite Sheets (same official CDN) and other official VUSE curriculum/prerequisite sheets for 2026–2027. Transcription method: roadmap PDF read directly, transcribed term-by-term by an agent; elective categories (Liberal Arts Core, Open Elective, CS Depth, Technical Elective, CS Project) transcribed exactly as the roadmap places them and marked as student-choice slots. CS Depth = 15 hours (CS 3000+ except CS 3262, selected ECE courses per catalog). Technical electives = 6 hours. CS Project = one of CS 3862, 3892, 4239, 4249, 4269, 4279, 4287, 4289, 4359. ES 2100W satisfies the writing (W) component. CS 1151 (Computers and Ethics) doubles as Liberal Arts Core, per the roadmap. Calculus-variant sequences (e.g., MATH 2500/2501 track) and statistics alternatives (MATH 2810/3640) exist per the curriculum sheet; the roadmap's accelerated sequence (MATH 1300/1301/2300, 2820, 2410) is what is transcribed. No invented courses; all requirements are from official Vanderbilt documents.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 1601+1601L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "General Chemistry I and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1300",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Accelerated Single-Variable Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ES 1401-1403",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying Vanderbilt's Liberal Arts Core requirement (18 hours total across the plan).",
+      "code": "CHOICE-LAC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Liberal Arts Core course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 1601+1601L",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1300"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "General Physics I and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1301",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1300"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Accelerated Single-Variable Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Programming and Problem Solving",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 1602+1602L",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 1301"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "General Physics II and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS/ECE 2201",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 1101"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Program Design & Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 2212",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2300",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 1301"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Multivariable Calculus",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS/ECE 2281+2281L",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CS/ECE 2201"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Architecture and Laboratory",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS/ECE 3251",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS/ECE 2201"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Intermediate Software Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Also satisfies three hours of the Liberal Arts Core per the official curriculum sheet.",
+      "code": "CS 1151",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Computers and Ethics",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2820",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 2300"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Introduction to Probability and Mathematical Statistics",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3270",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS/ECE 2201",
+       "CS/ECE 2281+2281L"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3281",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS/ECE 3251",
+       "CS/ECE 2281+2281L"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Principles of Operating Systems I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying Vanderbilt's Liberal Arts Core requirement (18 hours total across the plan).",
+      "code": "CHOICE-LAC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Liberal Arts Core course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-5",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2410",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 2300"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 3250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS/ECE 2201",
+       "CS 2212"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS depth: CS courses numbered 3000 or higher (except CS 3262), selected ECE courses (4353, 4354, 4375), and at most two of MATH 3320, 3620, 4600, 4620; at most 6 hours from CS 3860/3861. Check the VU Undergraduate Catalog.",
+      "code": "CHOICE-DEPTH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Computer Science depth elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying Vanderbilt's Liberal Arts Core requirement (18 hours total across the plan).",
+      "code": "CHOICE-LAC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Liberal Arts Core course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "W-designated; satisfies the writing component requirement.",
+      "code": "ES 2100W",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Technical Communications",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 4959",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "CS/ECE 3251"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Computer Science Project Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS depth: CS courses numbered 3000 or higher (except CS 3262), selected ECE courses (4353, 4354, 4375), and at most two of MATH 3320, 3620, 4600, 4620; at most 6 hours from CS 3860/3861. Check the VU Undergraduate Catalog.",
+      "code": "CHOICE-DEPTH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Science depth elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS depth: CS courses numbered 3000 or higher (except CS 3262), selected ECE courses (4353, 4354, 4375), and at most two of MATH 3320, 3620, 4600, 4620; at most 6 hours from CS 3860/3861. Check the VU Undergraduate Catalog.",
+      "code": "CHOICE-DEPTH-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer Science depth elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS depth: CS courses numbered 3000 or higher (except CS 3262), selected ECE courses (4353, 4354, 4375), and at most two of MATH 3320, 3620, 4600, 4620; at most 6 hours from CS 3860/3861. Check the VU Undergraduate Catalog.",
+      "code": "CHOICE-DEPTH-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Computer Science depth elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "2000-level or higher courses in the School of Engineering (per catalog exclusions) or MNS-listed College of Arts and Science courses.",
+      "code": "CHOICE-TE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Technical elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying Vanderbilt's Liberal Arts Core requirement (18 hours total across the plan).",
+      "code": "CHOICE-LAC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-5",
+      "tccns": "",
+      "title": "Liberal Arts Core course (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Selected from CS 3862, 3892, 4239, 4249, 4269, 4279, 4287, 4289, 4359 per the official curriculum sheet.",
+      "code": "CHOICE-PROJ-1",
+      "credits": 3,
+      "options": [
+       "CS 3862",
+       "CS 3892",
+       "CS 4239",
+       "CS 4249",
+       "CS 4269",
+       "CS 4279",
+       "CS 4287",
+       "CS 4289",
+       "CS 4359"
+      ],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Computer Science project (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS depth: CS courses numbered 3000 or higher (except CS 3262), selected ECE courses (4353, 4354, 4375), and at most two of MATH 3320, 3620, 4600, 4620; at most 6 hours from CS 3860/3861. Check the VU Undergraduate Catalog.",
+      "code": "CHOICE-DEPTH-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science depth elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "2000-level or higher courses in the School of Engineering (per catalog exclusions) or MNS-listed College of Arts and Science courses.",
+      "code": "CHOICE-TE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Technical elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any course satisfying Vanderbilt's Liberal Arts Core requirement (18 hours total across the plan).",
+      "code": "CHOICE-LAC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Liberal Arts Core course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any open elective course.",
+      "code": "CHOICE-OE-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Open elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://cdn.vanderbilt.edu/vu-sub/wp-content/uploads/sites/282/2026/07/24153218/2026-2027-Computer-Science-Roadmap.pdf",
+  "total_credits": 120,
+  "content_hash": "d19b4b29988ea04cc11f3c419d040b2c9ee66da78867c031e5759f9f45aaf767",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,186 @@
+colleges.json — world institution directory (bundled, static).
+Source: Wikidata (https://www.wikidata.org), structured data under CC0 1.0
+(https://creativecommons.org/publicdomain/zero/1.0/).
+Built 2026-09-21: universities/colleges (P31 instance of university/college
+subclasses) with coordinates (P625) and country (P17); city from P131.
+Records: 33347. Fields: name, country, city, lat, lng.
+No live lookups: this file ships with the app; the picker labels it a
+"Bundled institution directory". Coordinates are as published on Wikidata.
+
+Supplement 2026-09-21: ~4,300 additional U.S. institutions (including community
+colleges) merged from the U.S. Department of Education College Scorecard API
+(https://collegescorecard.ed.gov/data/), a U.S. federal public-domain dataset.
+A handful of well-known campus aliases (e.g. Dallas College - North Lake
+Campus, Irving TX) were added manually with real coordinates.
+
+-----------------------------------------------------------------------
+
+professors — Professors directory seed (js/professors.js), verified 2026-09-23.
+Every seed professor record was checked against a university-owned public page
+(name + campus + title + department). The `src` field on each record points at
+the verifying page. No RateMyProfessors data is used. No ratings, comments,
+courses, likes or dislikes are seeded — all user-generated content starts
+empty and is stored only in the user's own browser (localStorage) unless a
+future backend ships.
+
+The University of Texas at Dallas — Computer Science
+- Latifur Khan — Professor
+  https://news.utdallas.edu/faculty-staff/aaas-fellow-2025/
+- Kevin Hamlen — Professor
+  https://cs.utdallas.edu/25302/dean-cybersecurity-researchers-recognized-in-ut-dallas-investiture-ceremony/
+- Bhavani Thuraisingham — Founders Chair Professor
+  https://cs.utdallas.edu/30713/elevating-education-a-conversation-with-bhavani-thuraisingham-taylor-l-booth-education-award-winner-2/
+- Andrian Marcus — Professor
+  https://cs.utdallas.edu/10412/drs-andrian-marcus-and-vincent-ng-create-automated-system-for-improving-computer-bug-reports/
+- Cong Liu — Associate Professor
+  https://profiles.utdallas.edu/cong
+- Abusayeed Salifullah — Associate Professor
+  https://cs.utdallas.edu/34033/introducing-new-faculty-members-to-computer-science-department/
+- Congyi Zhang — Assistant Professor
+  https://cs.utdallas.edu/34033/introducing-new-faculty-members-to-computer-science-department/
+- Wafa Jaffal — Assistant Professor of Instruction
+  https://cs.utdallas.edu/34033/introducing-new-faculty-members-to-computer-science-department/
+
+Southern Methodist University — Cox School of Business
+- Trey Bowles — Adjunct Professor, Caruth Institute for Entrepreneurship
+  https://www.smu.edu/cox/academics/faculty/trey-bowles
+- Michael Braun — Associate Professor, Marketing
+  https://smu.edu/cox/our-people-and-community/faculty/
+- Marcus Butts — Professor, Management, Strategy, and Entrepreneurship
+  https://smu.edu/cox/our-people-and-community/faculty/
+- Emily Choi — Professor of Practice, Management, Strategy, and Entrepreneurship
+  http://www.smu.edu/cox/academics/faculty/emily-choi
+- Aren Cambre — Clinical Professor, Information Technology and Operations Management
+  https://smu.edu/cox/our-people-and-community/faculty/
+- Chester Chambers — Clinical Professor, Information Technology and Operations Management
+  https://smu.edu/cox/our-people-and-community/faculty/
+
+Dallas College
+- Michael Shepard — Faculty, English (Richland)
+  https://www.dallascollege.edu/employee-directory/faculty/sshepard/
+- Haven Abedin — Faculty, English (Brookhaven)
+  https://www.dallascollege.edu/employee-directory/faculty/habedin/
+- Jennifer Baggett — Faculty, Biology
+  https://www.dallascollege.edu/resources/career-services/spotlights/
+- Natalie Pleimann — Faculty, English
+  https://www.dallascollege.edu/resources/career-services/spotlights/
+- Minjung Park — Professor, ESOL
+  http://blog.dallascollege.edu/2024/10/breast-cancer-awareness-month-cards/
+- Geoffrey Grimes — Professor, English
+  http://blog.dallascollege.edu/2023/05/importance-of-magic/
+
+----- faculty batch: ca (2026-09-23) -----
+McGill University (mcgill): 94 professors. Source: https://www.cs.mcgill.ca/people/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+McMaster University (mcmaster): 330 professors. Source: https://www.eng.mcmaster.ca/wp-json/wp/v2/faculty (retrieved 2026-09-23). Public university faculty directory.
+Queen's University (queens): 29 professors. Source: https://www.queensu.ca/mathstat/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of British Columbia (ubc): 115 professors. Source: https://www.cs.ubc.ca/people/faculty; https://www.iam.ubc.ca/people/faculty-members/ (retrieved 2026-09-23). Public university faculty directory.
+University of Calgary (ucalgary): 171 professors. Source: https://science.ucalgary.ca/mathematics-statistics/contacts/faculty-members; https://science.ucalgary.ca/computer-science/contacts/faculty-members (retrieved 2026-09-23). Public university faculty directory.
+University of Toronto (university-of-toronto): 178 professors. Source: https://web.cs.toronto.edu/people/faculty-directory (retrieved 2026-09-23). Public university faculty directory.
+University of Ottawa (uottawa): 191 professors. Source: https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory; https://www.uottawa.ca/faculty-science/mathematics-statistics/professor-directory (retrieved 2026-09-23). Public university faculty directory.
+University of Waterloo (waterloo): 27 professors. Source: https://uwaterloo.ca/pure-mathematics/department-members/faculty-members (retrieved 2026-09-23). Public university faculty directory.
+Western University (western): 66 professors. Source: https://www.csd.uwo.ca/people/faculty/index.html; https://www.math.uwo.ca/people/faculty.html; https://www.csd.uwo.ca/people/faculty/cross_appointed.html (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+----- faculty batch: us-south-ne (2026-09-23) -----
+University of Virginia (uva): 79 professors. Source: https://engineering.virginia.edu/department/computer-science/people?keyword=&position=2&impact_area=All&research_area=All (retrieved 2026-09-23). Public university faculty directory.
+Duke University (duke): 94 professors. Source: https://www.cs.duke.edu/people/ (retrieved 2026-09-23). Public university faculty directory.
+University of Georgia (uga): 137 professors. Source: https://www.cs.uga.edu/directory/faculty (retrieved 2026-09-23). Public university faculty directory.
+Florida State University (fsu): 66 professors. Source: https://www.cs.fsu.edu/department/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+Texas Tech University (texas-tech): 114 professors. Source: https://www.depts.ttu.edu/cs/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+University of Houston (uhouston): 42 professors. Source: https://www.uh.edu/nsm/computer-science/people/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+Rice University (rice): 58 professors. Source: https://csweb.rice.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of Maryland (umd): 264 professors. Source: https://www.cs.umd.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+Rutgers University (rutgers): 160 professors. Source: https://www.cs.rutgers.edu/people/professors (retrieved 2026-09-23). Public university faculty directory.
+University of Pennsylvania (upenn): 163 professors. Source: https://directory.seas.upenn.edu/computer-and-information-science/ (retrieved 2026-09-23). Public university faculty directory.
+Cornell University (cornell): 209 professors. Source: https://www.cs.cornell.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+----- faculty batch: us-midwest (2026-09-23) -----
+University of Illinois Urbana-Champaign (illinois): 313 professors. Source: https://siebelschool.illinois.edu/about/people/all-faculty (retrieved 2026-09-23). Public university faculty directory.
+University of Minnesota (minnesota): 149 professors. Source: https://cse.umn.edu/cs/faculty-instructor-directory (retrieved 2026-09-23). Public university faculty directory.
+Michigan State University (michigan-state): 148 professors. Source: https://engineering.msu.edu/directory (retrieved 2026-09-23). Public university faculty directory.
+University of Iowa (iowa): 90 professors. Source: https://cs.uiowa.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of Kansas (kansas): 113 professors. Source: https://eecs.ku.edu/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of Nebraska-Lincoln (nebraska): 128 professors. Source: https://math.unl.edu/about/directory/ (retrieved 2026-09-23). Public university faculty directory.
+University of Missouri (missouri): 205 professors. Source: https://engineering.missouri.edu/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+Northwestern University (northwestern): 127 professors. Source: https://www.mccormick.northwestern.edu/computer-science/people/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+The University of Chicago (uchicago): 136 professors. Source: https://cs.uchicago.edu/people/uchicago-faculty/full-time-faculty/ (retrieved 2026-09-23). Public university faculty directory.
+University of Notre Dame (notre-dame): 94 professors. Source: https://cse.nd.edu/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+----- faculty batch: us-west (2026-09-23) -----
+Stanford University (stanford): 91 professors. Source: https://www.cs.stanford.edu/people/faculty/ (+ adjunct-faculty, courtesy-faculty, emeritus-faculty) (retrieved 2026-09-23). Public university faculty directory.
+California Institute of Technology (caltech): 99 professors. Source: https://www.cms.caltech.edu/people/faculty, https://www.ee.caltech.edu/people, https://www.mce.caltech.edu/people (retrieved 2026-09-23). Public university faculty directory.
+University of California, San Diego (uc-san-diego): 140 professors. Source: https://cse.ucsd.edu/people/faculty-profiles/faculty, https://www.ece.ucsd.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of California, Davis (uc-davis): 94 professors. Source: https://www.math.ucdavis.edu/people/text_listing (retrieved 2026-09-23). Public university faculty directory.
+University of Colorado Boulder (colorado-boulder): 141 professors. Source: https://www.colorado.edu/physics/jsonapi/node/ucb_person (retrieved 2026-09-23). Public university faculty directory.
+University of Arizona (arizona): 167 professors. Source: https://cs.arizona.edu/people/faculty, https://www.math.arizona.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+University of Utah (utah): 161 professors. Source: https://www.cs.utah.edu/people/faculty/, https://www.math.utah.edu/directory/faculty.php (retrieved 2026-09-23). Public university faculty directory.
+Oregon State University (oregon-state): 112 professors. Source: https://engineering.oregonstate.edu/EECS/About/People (retrieved 2026-09-23). Public university faculty directory.
+Washington State University (wsu): 122 professors. Source: https://people.wsu.edu/wp-json/peopleapi/v1/people?directory=36993, ?directory=36385 (EECS + Math directories via school.eecs.wsu.edu/directory/ and math.wsu.edu/faculty/) (retrieved 2026-09-23). Public university faculty directory.
+University of California, Irvine (uc-irvine): 157 professors. Source: https://ics.uci.edu/people/ (pages 1-13) (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+----- faculty batch: mx (2026-09-23) -----
+Universidad Nacional Autónoma de México (unam): 2554 professors. Source: https://www.fciencias.unam.mx/gql/busquedadirectorio/ (official Facultad de Ciencias directory GraphQL API) (retrieved 2026-09-23). Public university faculty directory.
+Instituto Tecnológico y de Estudios Superiores de Monterrey (itesm): 88 professors. Source: https://tec.mx/en/search?field_campus_target_id=6&search=&page=N (N=1..45) -> https://tec.mx/en/our-faculty/<school>/<slug> profile pages (retrieved 2026-09-23). Public university faculty directory.
+Instituto Politécnico Nacional (ipn): 229 professors. Source: https://www.upiita.ipn.mx/adjuntos/academica/avisos/2020/DOCENTES.pdf (retrieved 2026-09-23). Public university faculty directory.
+Instituto Tecnológico Autónomo de México (itam): 233 professors. Source: https://facultad.itam.mx/sites/default/files/faculty-2021.pdf (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+----- faculty batch: us-core (2026-09-23) -----
+The University of Texas at Austin (ut-austin): 130 professors. Source: https://www.cs.utexas.edu/people (retrieved 2026-09-23). Public university faculty directory.
+Texas A&M University (texas-am): 50 professors. Source: https://engineering.tamu.edu/cse/research/areas/cybersecurity.html; https://engineering.tamu.edu/cse/research/areas/artificial-intelligence.html; https://engineering.tamu.edu/cse/research/areas/systems.html; https://engineering.tamu.edu/cse/research/areas/data-science.html; https://engineering.tamu.edu/cse/research/areas/software.html; https://engineering.tamu.edu/cse/research/areas/computer-science-education.html (retrieved 2026-09-23). Public university faculty directory.
+Dallas College (dallas-college): 207 professors. Source: https://www.dallascollege.edu/employee-directory/; https://www.dallascollege.edu/employee-directory/?page=5; https://www.dallascollege.edu/employee-directory/?page=9; https://www.dallascollege.edu/employee-directory/?page=13; https://www.dallascollege.edu/employee-directory/?page=17; https://www.dallascollege.edu/employee-directory/?page=21; https://www.dallascollege.edu/employee-directory/?page=25; https://www.dallascollege.edu/employee-directory/?page=29; https://www.dallascollege.edu/employee-directory/?page=33; https://www.dallascollege.edu/employee-directory/?page=37; https://www.dallascollege.edu/employee-directory/?page=41; https://www.dallascollege.edu/employee-directory/?page=45; https://www.dallascollege.edu/employee-directory/?page=49; https://www.dallascollege.edu/employee-directory/?page=53; https://www.dallascollege.edu/employee-directory/?page=57; https://www.dallascollege.edu/employee-directory/?page=61; https://www.dallascollege.edu/employee-directory/?page=65; https://www.dallascollege.edu/employee-directory/?page=69; https://www.dallascollege.edu/employee-directory/?page=73; https://www.dallascollege.edu/employee-directory/?page=77; https://www.dallascollege.edu/employee-directory/?page=81; https://www.dallascollege.edu/employee-directory/?page=85; https://www.dallascollege.edu/employee-directory/?page=89; https://www.dallascollege.edu/employee-directory/?page=93; https://www.dallascollege.edu/employee-directory/?page=97; https://www.dallascollege.edu/employee-directory/?page=101; https://www.dallascollege.edu/employee-directory/?page=105; https://www.dallascollege.edu/employee-directory/?page=109; https://www.dallascollege.edu/employee-directory/?page=113; https://www.dallascollege.edu/employee-directory/?page=117; https://www.dallascollege.edu/employee-directory/?page=121; https://www.dallascollege.edu/employee-directory/?page=125; https://www.dallascollege.edu/employee-directory/?page=129; https://www.dallascollege.edu/employee-directory/?page=133; https://www.dallascollege.edu/employee-directory/?page=137; https://www.dallascollege.edu/employee-directory/?page=141; https://www.dallascollege.edu/employee-directory/?page=145; https://www.dallascollege.edu/employee-directory/?page=149 (retrieved 2026-09-23). Public university faculty directory.
+Southern Methodist University (smu): 79 professors. Source: https://www.smu.edu/lyle/departments/cs/people/faculty; https://www.smu.edu/lyle/departments/ece/people/faculty; https://www.smu.edu/lyle/departments/me/people/faculty; https://www.smu.edu/lyle/departments/cee/faculty (retrieved 2026-09-23). Public university faculty directory.
+The University of Texas at Dallas (ut-dallas): 110 professors. Source: https://cs.utdallas.edu/people/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+University of Michigan-Ann Arbor (umich): 98 professors. Source: https://cse.engin.umich.edu/people/faculty/core-cse-faculty/ (retrieved 2026-09-23). Public university faculty directory.
+University of California-Berkeley (uc-berkeley): 128 professors. Source: https://www2.eecs.berkeley.edu/Faculty/Lists/CS/faculty.html (retrieved 2026-09-23). Public university faculty directory.
+University of California-Los Angeles (ucla): 104 professors. Source: https://samueli.ucla.edu/search-faculty/ (results via directory AJAX: admin-ajax.php action=load_seas_search_results, category=core-cs, department=cs); https://samueli.ucla.edu/search-faculty/ (category=joint-cs); https://samueli.ucla.edu/search-faculty/ (category=adjunct-cs); https://samueli.ucla.edu/search-faculty/ (category=core-ece, department=ece) (retrieved 2026-09-23). Public university faculty directory.
+Ohio State University-Main Campus (ohio-state): 105 professors. Source: https://cse.osu.edu/directory/faculty; https://cse.osu.edu/directory/faculty?page=1; https://cse.osu.edu/directory/faculty?page=2; https://cse.osu.edu/directory/faculty?page=3; https://cse.osu.edu/directory/faculty?page=4 (retrieved 2026-09-23). Public university faculty directory.
+Pennsylvania State University (penn-state): 116 professors. Source: https://www.eecs.psu.edu/departments/cse-faculty-list.aspx; https://www.eecs.psu.edu/departments/ee-faculty-list.aspx (retrieved 2026-09-23). Public university faculty directory.
+University of Florida (ufl): 120 professors. Source: https://www.cise.ufl.edu/people/faculty; https://www.math.ufl.edu/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+University of Washington-Seattle Campus (uw): 93 professors. Source: https://www.cs.washington.edu/people/faculty (retrieved 2026-09-23). Public university faculty directory.
+Georgia Institute of Technology-Main Campus (georgia-tech): 203 professors. Source: https://www.cc.gatech.edu/people/faculty/a; https://www.cc.gatech.edu/people/faculty/b; https://www.cc.gatech.edu/people/faculty/c; https://www.cc.gatech.edu/people/faculty/d; https://www.cc.gatech.edu/people/faculty/e; https://www.cc.gatech.edu/people/faculty/f; https://www.cc.gatech.edu/people/faculty/g; https://www.cc.gatech.edu/people/faculty/h; https://www.cc.gatech.edu/people/faculty/i; https://www.cc.gatech.edu/people/faculty/j; https://www.cc.gatech.edu/people/faculty/k; https://www.cc.gatech.edu/people/faculty/l; https://www.cc.gatech.edu/people/faculty/m; https://www.cc.gatech.edu/people/faculty/n; https://www.cc.gatech.edu/people/faculty/o; https://www.cc.gatech.edu/people/faculty/p; https://www.cc.gatech.edu/people/faculty/q; https://www.cc.gatech.edu/people/faculty/r; https://www.cc.gatech.edu/people/faculty/s; https://www.cc.gatech.edu/people/faculty/t; https://www.cc.gatech.edu/people/faculty/u; https://www.cc.gatech.edu/people/faculty/v; https://www.cc.gatech.edu/people/faculty/w; https://www.cc.gatech.edu/people/faculty/x; https://www.cc.gatech.edu/people/faculty/y; https://www.cc.gatech.edu/people/faculty/z (retrieved 2026-09-23). Public university faculty directory.
+Purdue University-Main Campus (purdue): 150 professors. Source: https://www.cs.purdue.edu/people/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+New York University (nyu): 125 professors. Source: https://cs.nyu.edu/dynamic/people/faculty/ (sections: Tenure-Track Faculty, Associated/Affiliated Faculty) (retrieved 2026-09-23). Public university faculty directory.
+University of Southern California (usc): 150 professors. Source: https://www.cs.usc.edu/directory/faculty/ (retrieved 2026-09-23). Public university faculty directory.
+Arizona State University (asu): 118 professors. Source: https://faculty.engineering.asu.edu/directory/scai/computer-science-and-engineering/ (data via official API https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?sort-by=last_name_asc&size=100&page=1&dept_ids=1661); https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?sort-by=last_name_asc&size=100&page=2&dept_ids=1661; https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?sort-by=last_name_asc&size=100&page=3&dept_ids=1661 (retrieved 2026-09-23). Public university faculty directory.
+University of North Carolina at Chapel Hill (unc): 113 professors. Source: https://cs.unc.edu/people/ (retrieved 2026-09-23). Public university faculty directory.
+Note: directory data only (names/titles/departments). All ratings/comments are user-generated in-app and start empty. RateMyProfessors was not used.
+
+-----------------------------------------------------------------------
+
+schools_us.json — USA K-12 institution directory (bundled, static).
+Built 2026-09-24 by data/build_schools_us.py (re-runnable). Official NCES
+data only; no coordinates were invented.
+
+Public schools: NCES Common Core of Data (CCD), Public Elementary/Secondary
+School Universe, school year 2024-25
+(https://nces.ed.gov/ccd/Data/zip/ccd_sch_029_2425_w_1a_073025.zip).
+CCD rows scanned: 102,178.
+Statuses INCLUDED (operating schools): Open, New, Reopened, Future, Added,
+"Changed Boundary/Agency". Statuses EXCLUDED: Closed (1,068), Inactive (501).
+All school levels included (elementary, middle, high, pre-K, secondary,
+other, ungraded, adult education). All 50 states + DC + outlying areas
+(PR, GU, VI, MP, AS) present.
+Public coordinates: NCES EDGE 2023-24 public-school geocodes
+(https://nces.ed.gov/programs/edge/data/EDGE_GEOCODE_PUBLICSCH_2324.zip),
+joined by NCES school ID. Schools with no 2023-24 EDGE match (e.g. schools
+new in 2024-25) keep null lat/lng — never estimated or invented.
+
+Private schools: NCES Private School Universe Survey (PSS) 2023-24
+public-use file (https://nces.ed.gov/surveys/pss/zip/pss2324_pu_csv.zip),
+the latest PSS release (2025-26 data not yet published). The public-use file
+contains responding eligible schools only; it ships its own latitude/longitude
+(LATITUDE24/LONGITUDE24). PSS rows scanned: 22,510.
+
+Exact duplicates on (normalized name, city, state) collapsed once: 499.
+Final counts: 100,514 public + 22,106 private = 122,620 school records.
+Geocoded: 121,597. Null coordinates (searchable, not mappable): 1,023.
+City format: "City, ST" (e.g. "Austin, TX") to disambiguate same-name schools.
+Fields: name, country, city, lat, lng. Records sorted by name.
+Transparency: 197 school names also appear in colleges.json (separate files;
+K-12 directory is not merged into or deduped against the college directory).
+Merged with colleges.json at runtime in js/store.js (loadColleges); cache key
+bumped to orbit_colleges_v3.

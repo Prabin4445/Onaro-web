@@ -1,0 +1,318 @@
+{
+ "institution": {
+  "city": "Valhalla, NY",
+  "kind": "community",
+  "name": "Westchester Community College",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "external_prereqs": [],
+  "id": "westchester-as-computer-science",
+  "major": "Computer Science",
+  "notes": "SOURCE: Official Westchester Community College Academic Catalog, 'Program: Computer Science A.S.' (School: Mathematics, Science and Engineering; Academic Dept: Computer Science; HEGIS 5101), Fall 2024 - Summer 2025 Academic Catalog [ARCHIVED CATALOG] (catoid=50). Program Map table transcribed verbatim 2026-09-30 from https://catalog.sunywcc.edu/preview_program.php?catoid=50&poid=4859&returnto=8835&print . Degree name verified as the TRUE 'Computer Science A.S.' via sunywcc.edu (transfer-agreement listing and https://www.sunywcc.edu/academics/majors-programs/computer-science-as/). CATALOG-YEAR CAVEAT: WCC's live catalog is now Fall 2025 - Summer 2026 (verified on catalog.sunywcc.edu homepage 2026-09-30), but its Computer Science A.S. program page could not be retrieved from the sandbox (the sunywcc.edu program page renders its Program Map via JavaScript; direct catalog program-page requests timed out). This file is therefore the 2024-2025 variant, built from the most recent fully retrievable official term-by-term sequence. Course titles, credits, and stated prerequisites were cross-checked against the Fall 2025 - Summer 2026 catalog's official course descriptions (COMSC 101/106/110/116/118/120/201/207/208/210/214/217 all match). If the 2025-2026 program map differs, add it as a year-suffixed file (westchester-as-computer-science-2025-2026.json) -- never overwrite this file. TRANSCRIPTION: the official Program Map's published term totals are 14/16/17/14 = 61 credits, exactly matching the catalog's published degree minimum of 61 credits (General Education 31 + Required Degree Courses 30); no discrepancy. PLACEMENT (not courses, hence absent from external_prereqs): COMSC 101 requires Reading placement >=80 or READ 105, and MATH placement >=41.01 or MATH 93. COMSC 210 additionally lists MATH 161 (or course placement / SAT MATH >=630 / ACT >=28) as math preparation -- the plan's MATH 181 (Semester 2) satisfies this preparation. PREREQ GROUNDING: COMSC 110/217 require COMSC 101 (C or higher); COMSC 201/207 require COMSC 110 (C or higher) -- all per official catalog course descriptions. ENG 102 (prereq ENG 101) and MATH 191 (prereq MATH 181) follow the official program-map term ordering (ENG 101 Sem 1 -> ENG 102 Sem 4; MATH 181 Sem 2 -> MATH 191 Sem 3). ELECTIVES: the two 'Computer Science Elective' choice slots (Semesters 3 and 4) must be two DIFFERENT courses from the catalog list; each elective carries its own catalog prerequisites students must satisfy (e.g. COMSC 208 requires COMSC 207; COMSC 214 requires COMSC 110; COMSC 116 requires COMSC 101; COMSC 120 requires COMSC 101 + one other CS course + ENG 101 + 2.5 GPA; COMSC 118 requires reading/elementary-algebra placement). SCIENCE SEQUENCE: the Part 1 choice determines Part 2 -- both semesters must continue the same track (BIOL 115->117, CHEM 107->111, CHEM 201->205, or PHYSC 121->122).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Programming 1",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Writing and Research",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Two-course natural-science sequence; the Part 1 track chosen here determines Part 2 in Semester 2 (BIOL 115->BIOL 117, CHEM 107->CHEM 111, CHEM 201->CHEM 205, or PHYSC 121->PHYSC 122). Catalog recommends PHYSC 121 for best transfer.",
+      "code": "NSCI SEQ1",
+      "credits": 4,
+      "options": [
+       "BIOL 115",
+       "CHEM 107",
+       "CHEM 201",
+       "PHYSC 121"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Natural Sciences Gen Ed Sequence, Part 1",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose any course from the catalog's Social Sciences general education category.",
+      "code": "SOSC EL1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Social Sciences Gen Ed Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 110",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMSC 101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Computer Programming 2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 217",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMSC 101"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 181",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus 1",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Part 2 of the natural-science sequence -- must continue the same track chosen in Semester 1 (BIOL 117, CHEM 111, CHEM 205, or PHYSC 122).",
+      "code": "NSCI SEQ2",
+      "credits": 4,
+      "options": [
+       "BIOL 117",
+       "CHEM 111",
+       "CHEM 205",
+       "PHYSC 122"
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Natural Sciences Gen Ed Sequence, Part 2",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select TWO different electives total across Semesters 3 and 4 from the catalog's Computer Science elective list. Each elective carries its own catalog prerequisites (e.g. COMSC 208 requires COMSC 207; COMSC 214 requires COMSC 110; COMSC 116 requires COMSC 101; COMSC 120 requires COMSC 101 + one other CS course + ENG 101 + 2.5 GPA; COMSC 118 requires reading/elementary-algebra placement).",
+      "code": "CSEL 3XX",
+      "credits": 3,
+      "options": [
+       "COMSC 106",
+       "COMSC 118",
+       "COMSC 116",
+       "COMSC 120",
+       "COMSC 208",
+       "COMSC 214",
+       "MATH 215",
+       "MATH 230",
+       "MATH 240"
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Computer Science Elective (1 of 2)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMSC 101"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Structures for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Diversity, Equity, Inclusion, and Social Justice AND US History and Civic Engagement (3 credits) -- choose one of the catalog-listed courses.",
+      "code": "DEI 3XX",
+      "credits": 3,
+      "options": [
+       "ANTHR 120",
+       "HIS 110",
+       "HIS 111",
+       "HIS 112",
+       "HIS 133",
+       "HIS 134"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Diversity/DEI and US History Gen Ed Elective",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 191",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 181"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Calculus 2",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Choose one course from either The Arts or World Languages general education category.",
+      "code": "ARTS 3XX",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "The Arts OR World Languages Gen Ed Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Second of the two required Computer Science electives -- must differ from the Semester 3 selection. Same catalog elective list and prerequisite rules apply.",
+      "code": "CSEL 4XX",
+      "credits": 3,
+      "options": [
+       "COMSC 106",
+       "COMSC 118",
+       "COMSC 116",
+       "COMSC 120",
+       "COMSC 208",
+       "COMSC 214",
+       "MATH 215",
+       "MATH 230",
+       "MATH 240"
+      ],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Science Elective (2 of 2)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMSC 110"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMSC 207",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "COMSC 110"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Java Programming",
+      "xfer": []
+     },
+     {
+      "category": "gen-ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 101"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Writing and Literature",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.sunywcc.edu/preview_program.php?catoid=50&poid=4859&returnto=8835&print",
+  "total_credits": 61,
+  "content_hash": "1832e887d9b104df7d05d096de0bd4993d31cee6653598c64ada7373608137e2",
+  "last_verified": "2026-10-02"
+ }
+}

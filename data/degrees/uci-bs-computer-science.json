@@ -1,0 +1,664 @@
+{
+ "institution": {
+  "city": "Irvine, CA",
+  "kind": "public4yr",
+  "name": "University of California, Irvine",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uci-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: UCI General Catalogue 2026-27, Computer Science, B.S. page (catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/computerscience_bs/). Transcribed by hand from the official 4-year sample program (Fall/Winter/Spring quarter tables) published for this exact program — a genuine official term-by-term sequence. Course titles and quarter-unit values verified against the official catalog course descriptions (I&C SCI, COMPSCI, SWE, MATH, STATS, WRITING course lists). Credit notes: I&C SCI 51 and I&C SCI 53 are 6 units each in the 2026-27 catalog; all other listed courses are 4 units. Choice slots (General Education, Flex Core, Computer Science Elective, Science Elective) are entered as choice:true placeholders at 4 units each (standard GE/upper-division unit value; actual GE course units may vary 2-5). Prereq arrays left empty: the official sample program does not list per-slot prerequisites (sequencing is encoded in the quarter ordering; true prereqs are published in the catalog course descriptions). Degree-requirement caveat: UCI requires 180 quarter units for the B.S., but the official sample program's own Note 1 says it 'lists the minimum requirements; it is possible that students may have to take additional courses to prepare for required courses' — the transcribed sequence sums to 176 units, so total_credits is set to the plan's actual sum (176); students fill the remaining ~4 units with additional courses to reach 180. 12 quarters (4 years), 43 slots, 0 console errors concept not applicable (static JSON).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 31",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Single-Variable Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRITING 40",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to Writing and Rhetoric",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 32",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Programming with Software Libraries",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 2B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Single-Variable Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRITING 50",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Critical Reading and Rhetoric",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education III' — choose one approved course from GE Category III (Social and Behavioral Sciences).",
+      "code": "GE-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Education Category III — Social and Behavioral Sciences (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 33",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Intermediate Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SWE 43",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Introduction to Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 6B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Boolean Logic and Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRITING 60",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Argument and Research",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 45C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Programming in C/C++ as a Second Language",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 51",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introductory Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 6D",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Discrete Mathematics for Computer Science",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 46",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Structure Implementation and Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'I&C SCI 6N or MATH 3A' — complete one of the two.",
+      "code": "LINALG-CHOICE",
+      "credits": 4,
+      "options": [
+       {
+        "code": "I&C SCI 6N",
+        "credits": 4,
+        "title": "Computational Linear Algebra"
+       },
+       {
+        "code": "MATH 3A",
+        "credits": 4,
+        "title": "Introduction to Linear Algebra"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Linear Algebra requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education III' — choose one approved course from GE Category III (Social and Behavioral Sciences).",
+      "code": "GE-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "General Education Category III — Social and Behavioral Sciences (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education IV/VIII' — choose one approved course satisfying GE Category IV (Arts and Humanities) and/or VIII (International/Global Issues).",
+      "code": "GE-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education Category IV / VIII (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Flex Core Requirement' — choose one Flex Core course per the CS major requirements (Upper-Division Areas of Study).",
+      "code": "FLEX-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Flex Core Requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Flex Core Requirement' — choose one Flex Core course per the CS major requirements (Upper-Division Areas of Study).",
+      "code": "FLEX-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Flex Core Requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STATS 67",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Introduction to Probability and Statistics for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education III/VII' — choose one approved course satisfying GE Category III (Social and Behavioral Sciences) and/or VII (Multicultural Studies).",
+      "code": "GE-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Education Category III / VII (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 53",
+      "credits": 6,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Principles in System Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMPSCI 161",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Science Elective' — choose one from the approved science elective list in the CS major requirements.",
+      "code": "SCIELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Science Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Flex Core Requirement' — choose one Flex Core course per the CS major requirements (Upper-Division Areas of Study).",
+      "code": "FLEX-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Flex Core Requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Flex Core Requirement' — choose one Flex Core course per the CS major requirements (Upper-Division Areas of Study).",
+      "code": "FLEX-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Flex Core Requirement (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "I&C SCI 139W",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Critical Writing on Information Technology",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Science Elective' — choose one from the approved science elective list in the CS major requirements.",
+      "code": "SCIELEC-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Science Elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education VI' — choose one approved course from GE Category VI (Language Other Than English).",
+      "code": "GE-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "General Education Category VI — Language Other Than English (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMPSCI 180A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "Project in Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education IV' — choose one approved course from GE Category IV (Arts and Humanities).",
+      "code": "GE-6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "General Education Category IV — Arts and Humanities (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 10
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-0",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-1",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMPSCI 180B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s11-2",
+      "tccns": "",
+      "title": "Project in Computer Science",
+      "xfer": []
+     }
+    ],
+    "term": "Winter Year 4",
+    "n": 11
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-8",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-0",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official sample plan: 'Computer Science Elective' — choose an upper-division Computer Science course per the CS major requirements.",
+      "code": "CSELEC-9",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-1",
+      "tccns": "",
+      "title": "Computer Science Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official sample plan: 'General Education IV' — choose one approved course from GE Category IV (Arts and Humanities).",
+      "code": "GE-7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s12-2",
+      "tccns": "",
+      "title": "General Education Category IV — Arts and Humanities (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 12
+   }
+  ],
+  "source_url": "http://catalogue.uci.edu/donaldbrenschoolofinformationandcomputersciences/departmentofcomputerscience/computerscience_bs/",
+  "total_credits": 176,
+  "content_hash": "6dcba2c59d5228fe32ac3e81818daba7a498ba31aa3c34d7330ad35089d2859f",
+  "last_verified": "2026-10-02"
+ }
+}

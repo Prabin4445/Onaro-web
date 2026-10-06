@@ -1,0 +1,528 @@
+{
+ "institution": {
+  "city": "Glenside, PA",
+  "kind": "private",
+  "name": "Arcadia University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "arcadia-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Arcadia University \"BS, Computer Science, Course Pathway\" PDF (Math and CS Course Pathways), hosted at arcadia.edu, URL below. Degree name \"Computer Science, B.S.\" verified in the official Arcadia catalog (catalog.arcadia.edu, Programs by Area, Computer Science and Mathematics department, College of Arts and Sciences). Transcription method: direct term-by-term transcription of the official pathway table as rendered; course codes, titles, and credit values copied verbatim (Arcadia courses are 4 credits each). The pathway's printed total is \"TOTAL = 128 Credits\" (16 credits x 8 semesters), which is used as total_credits. Catalog year caveat: the PDF is undated internally; it was uploaded to arcadia.edu in January 2024 (WP uploads path, search-index update dates), so the catalog cycle in effect at publication is labeled 2023-2024. If a later year-suffixed pathway variant is collected, it must use a distinct filename per the seed-merge rule. The pathway lists no prerequisite information, so all prereq arrays are intentionally empty (never invented). Year 3 carries the official note \"OR Possible Study Abroad\" as an option for either/both semesters; it is not a required course and is not modeled as a slot. The three 0-credit lab co-requisites (CS101L, CS202L, CS203L) are required and flagged required_zero. \"AUC/ Elective\" slots are student-choice: an Arcadia Undergraduate Curriculum (AUC) requirement or general elective. \"200-Level CS Elective\" (2) and \"300-Level CS Elective\" (1) are major-choice slots.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Problem-Solving with Algorithms and Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS101L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Problem-Solving with Algorithms and Programming I Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA201",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "FY103",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "First Year Seminar",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": false,
+      "choice_note": "",
+      "code": "EN101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Thought, Expression, and Advocacy",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS202",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Problem-Solving with Algorithms and Programming II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS202L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Problem-Solving with Algorithms and Programming II Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA202",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS203",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Structures and Algorithm Analysis",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS203L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures and Algorithm Analysis Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 200-level Computer Science elective — student selects the course.",
+      "code": "CS2XXEL1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "200-level Computer Science elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA230",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS358",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS317",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS354",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Database Management System Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS362",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Computer Organization and Architecture",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS225",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Research Writing for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 200-level Computer Science elective — student selects the course.",
+      "code": "CS2XXEL2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "200-level Computer Science elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL8",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL9",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS490",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Capstone Course I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any 300-level Computer Science elective — student selects the course.",
+      "code": "CS3XXEL1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "300-level Computer Science elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL10",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL11",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS491",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Course II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS341",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Ethics",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL12",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gen_ed",
+      "choice": true,
+      "choice_note": "Arcadia Undergraduate Curriculum (AUC) requirement or general elective — student selects any qualifying course.",
+      "code": "AUCEL13",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "AUC requirement or elective (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://arcadia.edu/wp-content/uploads/2024/01/BS-in-Computer-Science-Arcadia-University-Course-Pathways-Course-Sequence.pdf",
+  "total_credits": 128,
+  "content_hash": "b8687d64d9d1ec92c7b4f7a5b35ae52aafc8d0ac2ba758b51d377f00b338c179",
+  "last_verified": "2026-10-02"
+ }
+}

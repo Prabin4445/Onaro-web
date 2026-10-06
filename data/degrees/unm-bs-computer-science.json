@@ -1,0 +1,551 @@
+{
+ "institution": {
+  "city": "Albuquerque, NM",
+  "kind": "public4yr",
+  "name": "University of New Mexico",
+  "state": "NM"
+ },
+ "plan": {
+  "catalog_year": "2021-2022",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "unm-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UNM Catalog page 'Undergraduate Program — Computer Science', http://catalog.unm.edu/catalogs/2021-2022/colleges/engineering/computer-science/undergraduate-program.html (UNM 2021-2022 Catalog). Transcription: manual transcription of the catalog's official model schedule ('Bachelor of Science in Computer Science' — the catalog's term-by-term planning guide) on 2026-09-30; course titles copied as printed in the catalog. Catalog year is 2021-2022 because the current (2026-2027) catalog's Computer Science program page could not be fetched (upstream access failure); re-verify against the current catalog before release. Official degree name per catalog: 'Bachelor of Science in Computer Science' (B.S.C.S.); 120 total credit hours. The catalog states the schedule is a guide and must be adjusted for deficiencies/advanced preparation: ACT/SAT placement governs math and English entry, and students should not begin CS courses until they have mathematics equivalent to MATH 1240 Pre-Calculus; it is recommended not to attempt more than 12 credit hours of technical material in one semester. Choice slots (choice:true) represent student selections prescribed by the catalog; their placeholder codes (e.g. SCI-CHOICE-1) are NOT real UNM courses. Context from the catalog's graduation requirements: (4) math sequence MATH 1512, MATH 1522, MATH 314 or 321, STAT 345; (5) 9 communications credits — ENGL 1110, ENGL 1120, plus one of COMM 1130 Public Speaking, ENGL 2120 Intermediate Composition, or ENGL 2210 Professional and Technical Communication; (6) General Education Areas 4-7 plus other non-technical courses to at least 30 credits; (7) four 3+ credit science courses for science/engineering majors, two from one sequence including labs — ASTR 2110/2110L+2115/2115L, BIOL 2110C+2410C, CHEM 1215/1215L+1225/1225L, (ENVS 1130/1130L or GEOL 1110/1110L)+GEOL 2110C, or PHYS 1310/1310L+1320/1320L (physics recommended); (8) a minor outside computer science is required; (3) 51 CS credits incl. 9 technical-elective credits at 300-level or above from CS Department offerings, advisor-approved, grade B or better (at most 3 cr of CS 499; CS 494 excluded). Grades: C- or better for all requirements; C or better (not C-) in the 42 required CS credits; B- or better in MATH 1512 and CS 152L for department admission. Prereq fields are intentionally empty: the catalog's model schedule does not state course-level prerequisites, and per instructions none are invented — consult the catalog/advisor for sequencing.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 152L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Programming Fundamentals for Computer Science Majors",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog lists ENGL 1110 (Composition I), ENGL 1110Y (Composition I: Stretch II), or ENGL 1110Z (Enhanced Composition).",
+      "code": "ENGL-CHOICE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Composition I — student choice (ENGL 1110 / 1110Y / 1110Z)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1512",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Four 3+ credit science courses for science/engineering majors; two must come from one sequence including labs (e.g. PHYS 1310/1310L+1320/1320L — physics recommended; or CHEM 1215/1215L+1225/1225L; BIOL 2110C+2410C; ASTR 2110/2110L+2115/2115L; (ENVS 1130/1130L or GEOL 1110/1110L)+GEOL 2110C). See catalog graduation requirement 7.",
+      "code": "SCI-CHOICE-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Laboratory Science I — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 251L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Intermediate Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 261",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Mathematical Foundations of Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 1120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 1522",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "See catalog graduation requirement 7 (lab science sequences listed in plan notes).",
+      "code": "SCI-CHOICE-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Laboratory Science II — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 241L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Data Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 293",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Social and Ethical Issues in Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE 238L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Logic Design",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": true,
+      "choice_note": "MATH 314 Linear Algebra with Applications or MATH 321 Linear Algebra (catalog graduation requirement 4).",
+      "code": "MATH-CHOICE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Linear Algebra — student choice (MATH 314 or MATH 321)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "See catalog graduation requirement 7 (lab science sequences listed in plan notes).",
+      "code": "SCI-CHOICE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Laboratory Science III — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — courses used to satisfy General Education Areas 4-7 (social/behavioral sciences, humanities, second language, arts and design; 30-credit minimum, catalog requirement 6) and/or the required minor outside computer science (catalog requirement 8).",
+      "code": "GENED-CHOICE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-5",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 351L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Design of Large Programs",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of COMM 1130 Public Speaking, ENGL 2120 Intermediate Composition, or ENGL 2210 Professional and Technical Communication (catalog graduation requirement 5).",
+      "code": "ENGCOMM-CHOICE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "English Communications Elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "See catalog graduation requirement 7 (lab science sequences listed in plan notes).",
+      "code": "SCI-CHOICE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Laboratory Science IV — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 361L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Data Structures and Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 375",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Introduction to Numerical Computing",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 345",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Elements of Mathematical Statistics and Probability Theory",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 357L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Declarative Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 362",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Data Structures and Algorithms II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "9 credit hours of technical electives from Computer Science Department offerings at 300-level or above, subject to advisor approval, grade B or better; at most 3 credits of CS 499; CS 494 excluded (catalog graduation requirement 3).",
+      "code": "CSELECT-CHOICE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Technical Elective (400-level) — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 341L",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Introduction to Computer Architecture and Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "See choice note on CSELECT-CHOICE-1 (catalog graduation requirement 3).",
+      "code": "CSELECT-CHOICE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Technical Elective (400-level) — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "See choice note on CSELECT-CHOICE-1 (catalog graduation requirement 3).",
+      "code": "CSELECT-CHOICE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CS Technical Elective (400-level) — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-8",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Education / minor / elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 460",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 481",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Catalog: 'General Education/Minor/Electives' — see choice note on GENED-CHOICE-1.",
+      "code": "GENED-CHOICE-9",
+      "credits": 8,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "General Education / minor / electives — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://catalog.unm.edu/catalogs/2021-2022/colleges/engineering/computer-science/undergraduate-program.html",
+  "total_credits": 120,
+  "content_hash": "f5d12f68787566eb42d63378d6a09b64e899c5e272933682250c735738bf3985",
+  "last_verified": "2026-10-02"
+ }
+}

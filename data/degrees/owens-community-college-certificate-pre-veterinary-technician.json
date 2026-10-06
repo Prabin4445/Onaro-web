@@ -1,0 +1,129 @@
+{
+ "institution": {
+  "name": "Owens Community College",
+  "ipeds_id": "204945",
+  "city": "Perrysburg",
+  "state": "OH",
+  "control": "public",
+  "level": "2-year"
+ },
+ "plan": {
+  "id": "owens-community-college-certificate-pre-veterinary-technician",
+  "degree": "Certificate",
+  "major": "Pre-Veterinary Technician",
+  "catalog_year": "2025-2026",
+  "total_credits": 20,
+  "source_url": "https://catalog.owens.edu/preview_degree_planner.php?catoid=20&poid=6072&print",
+  "notes": "Transcribed 2026-10-02 from the official Owens Community College 2025-2026 College Catalog 'Plan of Study' degree planner (Pre-Veterinary Technician Certificate (Owens Code: PVET)). Officially 20-22 credits depending on option choices; lower bound modeled. 'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Courses flagged '*Ohio Transfer 36 Course' in the official planner are categorized gen-ed. Prerequisites are not printed in the planner, so prereq arrays are empty; prerequisites live in the catalog's course descriptions.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "ENG 111",
+      "title": "Composition I",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'ENG 111 or ENG 111P or HON 101'. Options carry [3, 4] credits; first option modeled.",
+      "options": [
+       "ENG 111",
+       "ENG 111P",
+       "HON 101"
+      ],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 105",
+      "title": "Chemistry for Biol Sciences",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY 101",
+      "title": "General Psychology",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'PSY 101 or SOC 101'.",
+      "options": [
+       "PSY 101",
+       "SOC 101"
+      ],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "SPE 100",
+      "title": "Intro to Human Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'SPE 100 or SPE 101 or SPE 102'.",
+      "options": [
+       "SPE 100",
+       "SPE 101",
+       "SPE 102"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HIT 125",
+      "title": "Language of Medicine",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO 101",
+      "title": "Life-An Intro to Biology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'BIO 101 or BIO 201 or BIO 202'. Options carry [4, 5] credits; first option modeled.",
+      "options": [
+       "BIO 101",
+       "BIO 201",
+       "BIO 202"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "178bd417220e7776ae977541405bd46a8d323c18bff0cf994585072bd2c06fb3",
+  "last_verified": "2026-10-02"
+ }
+}

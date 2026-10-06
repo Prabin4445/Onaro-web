@@ -1,0 +1,368 @@
+{
+ "institution": {
+  "name": "Amarillo College",
+  "city": "Amarillo",
+  "state": "TX",
+  "kind": "community"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "external_prereqs": [],
+  "major": "Computer Networking/Cybersecurity",
+  "notes": "Official CIS department degree plan (2026–2027). Courses are scheduled in First/Second 8-week sessions and 16-week sessions as published. CIS–IT Foundations Certificate earned upon completion of Year 1 Fall; CIS–Network Technician Certificate earned upon completion of Year 1; CIS–Cybersecurity Technician Certificate and the AAS degree earned at the end of Year 2. ITSY 2330 Intrusion Detection (CySA+ / Internship): Pre/Co-Req is printed as 'See Catalog'. Year 2 Spring is five General Education slots (the first 8-weeks slot is labeled 'Any Term' in the source).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Year 1 — Fall",
+    "courses": [
+     {
+      "category": "core",
+      "code": "EDUC 1100",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "EDUC 1100",
+      "title": "Learning Frameworks",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [
+       "amarillo-college-aas-cis-game-design",
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "BCIS 1305",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "BCIS 1305",
+      "title": "Business Computer Applications (MS Office)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [
+       "amarillo-college-aas-cis-game-design",
+       "amarillo-college-aas-cis-information-technology",
+       "angelina-college-aas-business-supervision",
+       "arlington-baptist-university-bs-bible-business-sport-management",
+       "dallas-college-aa-business-admin-tarleton-general-business",
+       "dallas-college-aa-business-admin-tarleton-human-resources-management",
+       "dallas-college-aa-business-admin-unt-general-business",
+       "dallas-college-aa-business-admin-uta-bba",
+       "uta-bba-management"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "ITSC 1307",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ITSC 1307",
+      "title": "UNIX Operating System I",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [
+       "amarillo-college-aas-cis-game-design",
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "ITCC 1314",
+      "credits": 3,
+      "prereq": [
+       "CPMT 1351"
+      ],
+      "tccns": "ITCC 1314",
+      "title": "CCNA 1: Introduction to Networks (Network+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "ITSY 1342",
+      "credits": 3,
+      "prereq": [
+       "CPMT 1351"
+      ],
+      "tccns": "ITSY 1342",
+      "title": "Information Technology Security (Security+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "CPMT 1351",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "CPMT 1351",
+      "title": "IT Essentials: PC Hardware/Software (A+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-5",
+      "xfer": [
+       "amarillo-college-aas-cis-game-design",
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Year 1 — Spring",
+    "courses": [
+     {
+      "category": "major",
+      "code": "ITCC 1344",
+      "credits": 3,
+      "prereq": [
+       "ITCC 1314"
+      ],
+      "tccns": "ITCC 1344",
+      "title": "CCNA 2: Switching, Routing, & Wireless Essentials",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITNW 1309",
+      "credits": 3,
+      "prereq": [
+       "CPMT 1351"
+      ],
+      "tccns": "ITNW 1309",
+      "title": "Fundamentals of Cloud Computing (AZ–900 / SC–900)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     },
+     {
+      "category": "major",
+      "code": "ITMT 2305",
+      "credits": 3,
+      "prereq": [
+       "CPMT 1351"
+      ],
+      "tccns": "ITMT 2305",
+      "title": "Designing & Implementing a Server Infrastructure (Server+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITCC 2320",
+      "credits": 3,
+      "prereq": [
+       "ITCC 1344"
+      ],
+      "tccns": "ITCC 2320",
+      "title": "CCNA 3: Enterprise Networking, Security, & Automation (CCNA)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITSC 1391",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ITSC 1391",
+      "title": "Special Topics in Computer & Information Sciences, General",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [
+       "amarillo-college-aas-cis-game-design",
+       "amarillo-college-aas-cis-information-technology"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Year 2 — Fall",
+    "courses": [
+     {
+      "category": "major",
+      "code": "ITDF 1300",
+      "credits": 3,
+      "prereq": [
+       "BCIS 1305"
+      ],
+      "tccns": "ITDF 1300",
+      "title": "Introduction to Digital Forensics",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITSC 2325",
+      "credits": 3,
+      "prereq": [
+       "ITSC 1307"
+      ],
+      "tccns": "ITSC 2325",
+      "title": "Advanced Linux (Linux+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITSY 2341",
+      "credits": 3,
+      "prereq": [
+       "ITSY 1342"
+      ],
+      "tccns": "ITSY 2341",
+      "title": "Security Management Practices (PenTest+)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITSY 2342",
+      "credits": 3,
+      "prereq": [
+       "ITSY 1342"
+      ],
+      "tccns": "ITSY 2342",
+      "title": "Incident Response & Handling (ECIH)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "code": "ITSY 2330",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "ITSY 2330",
+      "title": "Intrusion Detection (CySA+ / Internship)",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Year 2 — Spring",
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education (See Catalog) — listed as 'Any Term' in the source",
+      "code": "GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education (See Catalog)",
+      "code": "GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education (See Catalog)",
+      "code": "GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education (See Catalog)",
+      "code": "GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education (See Catalog)",
+      "code": "GENED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "total_credits": 61,
+  "transfer_confidence": "advisory",
+  "id": "amarillo-college-aas-networking-cybersecurity",
+  "source_url": "https://cis.actx.edu/static/degreeplans/net_cyber.pdf",
+  "content_hash": "e52ec70251485a74086af515b441f4c12a48ef5f98ae4e82d3138515bbf6ce60",
+  "last_verified": "2026-10-02"
+ }
+}

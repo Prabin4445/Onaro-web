@@ -1,0 +1,775 @@
+{
+ "institution": {
+  "city": "New York, NY",
+  "country": "USA",
+  "kind": "senior",
+  "name": "City College of New York",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BS",
+  "external_prereqs": [
+   "MATH 19500",
+   "MATH 20300",
+   "CSC 21000",
+   "EE 21000"
+  ],
+  "id": "ccny-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official City College of New York (Grove School of Engineering) Computer Science Curriculum Sheet, 8-semester grid, dated July 6, 2023, 'Fall 2023 - Spring 2024': https://www.ccny.cuny.edu/sites/default/files/2024-03/csc-curric-2023-2024--2023-07-06.pdf. Transcribed 2026-09-30 from the PDF text layer; semester layout, course codes, titles, credits, and per-course prerequisites copied from the sheet. Course codes normalized to 'CSC 10300' style (the sheet prints 'CSc 10300'; the official catalog uses 'CSC 10300'). catalog_year '2023-2024' is the honest source year: no newer CSc curriculum sheet is published as of 2026-09-30 (Civil and Mechanical Engineering have 2026-2027 sheets; Computer Science does not). Cross-checks: (1) the official CUNY Academic Undergraduate Report, City College, October 2021 (cuny.edu) confirms program course titles/credits and the 127-credit degree total; (2) the official CpE 2023-2024 curriculum sheet and its prerequisite flowchart confirm the shared-course prerequisite chains (CSC 33200 requires CSC 22000 & CSC 22100; CSC 34200 requires (CSC 21000 & EE 21000) or CSC 21100, with corequisite CSC 34300); (3) the official CSC 113 syllabus page (ccny.cuny.edu/compsci/csc-113-syllabus) confirms CSC 11300's prerequisite is CSC 10300. Caveats: (a) sheet footnote 1: the latest curriculum sheet supersedes any curriculum or pre-/corequisite information in the Undergraduate Bulletin or online; (b) 'or permission' alternatives on the sheet are not course codes and are documented here, not in prereqs; (c) the sheet lists FIQWS as an alternative prerequisite for ENGL 21007 and '2100x' as an alternative for CSC 22100 - neither is a standard course code, so only ENGL 11000 and ENGL 21007 appear in prereqs; (d) the sheet lists CSC 34200 and CSC 34300 as corequisites of each other; both are sequenced in the same semester here, with the lab (34300) shown depending on the lecture (34200); (e) CSC 59866 requires senior standing and permission (not a course code); (f) MATH 19500 is the placement-level prerequisite the sheet names for MATH 20100 and CSC 10300; (g) sheet titles abbreviated for layout (e.g. 'Fund.', 'Probability & Statistics for Computer Sci') were expanded using the official CUNY October 2021 report wording; elective A/B/C option titles are quoted verbatim as printed on the sheet, including abbreviations.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 20100",
+      "credits": 4,
+      "options": [],
+      "prereqs": [
+       "MATH 19500"
+      ],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "A 4-credit science course with laboratory; approved options per the curriculum sheet footnote.",
+      "code": "SCI-EL-1",
+      "credits": 4,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Science Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 11000",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Freshman Composition",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "SPEECH 11100",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Foundations of Speech Comm.",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Approved liberal arts course satisfying Pathways Flexible Core (Creative Expression, World Cultures & Global Issues, Individual & Society, U.S. Experience areas).",
+      "code": "LA-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Liberal Arts (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 21200",
+      "credits": 4,
+      "options": [],
+      "prereqs": [
+       "MATH 20100"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "A 4-credit science course with laboratory; approved options per the curriculum sheet footnote.",
+      "code": "SCI-EL-2",
+      "credits": 4,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Science Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 10300",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "MATH 19500",
+       "MATH 20100"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Intro to Computing for Majors",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 10400",
+      "credits": 4,
+      "options": [],
+      "prereqs": [
+       "MATH 20100"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Discrete Math Structures",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 21007",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "ENGL 11000"
+      ],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Writing for Engineering",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 21300",
+      "credits": 4,
+      "options": [],
+      "prereqs": [
+       "MATH 21200"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 21100",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 10300"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Fundamentals of Computer Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 21200",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 10300",
+       "CSC 10400"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 21700",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 10300",
+       "CSC 10400",
+       "MATH 20100"
+      ],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Probability and Statistics for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Approved liberal arts course satisfying Pathways Flexible Core (Creative Expression, World Cultures & Global Issues, Individual & Society, U.S. Experience areas).",
+      "code": "LA-EL-2",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Liberal Arts (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 34600",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "MATH 21200",
+       "MATH 20300"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Elements of Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "A 4-credit science course with laboratory; approved options per the curriculum sheet footnote.",
+      "code": "SCI-EL-3",
+      "credits": 4,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Science Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 22000",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 21200"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 22100",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 21200",
+       "ENGL 21007"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Software Design Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 11300",
+      "credits": 1,
+      "options": [],
+      "prereqs": [
+       "CSC 10300"
+      ],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Programming Language",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Cooperative study or any course except remedial, lower-level-than-required, duplicate, worker-education, or independent-study courses (per the curriculum sheet).",
+      "code": "FREE-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s4-5",
+      "tccns": "",
+      "title": "Free Elective (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 30400",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 22000"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Theoretical Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 30100",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 21700",
+       "CSC 22000",
+       "MATH 21300",
+       "MATH 20300",
+       "MATH 34600"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Numerical Issues in Scientific Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 38000",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 21100",
+       "CSC 21000",
+       "EE 21000",
+       "CSC 22000"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Computer Security",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 33500",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 22000",
+       "CSC 22100"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Programming Language Paradigms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 32200",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 22000"
+      ],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 33600",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 22000",
+       "CSC 22100"
+      ],
+      "slot_id": "s5-5",
+      "tccns": "",
+      "title": "Introduction to Database Systems",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one course from the official A. Theory & Application elective list.",
+      "code": "EL-A",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSC 42200",
+        "title": "Sim of Discrete Systems"
+       },
+       {
+        "code": "CSC 45000",
+        "title": "Computer Graphics"
+       },
+       {
+        "code": "CSC 42300",
+        "title": "Computer Vision"
+       },
+       {
+        "code": "CSC 48000",
+        "title": "Digital Image Process"
+       },
+       {
+        "code": "CSC 42800",
+        "title": "Formal Lang & Automa"
+       },
+       {
+        "code": "CSC 48600",
+        "title": "Computa Complex"
+       },
+       {
+        "code": "CSC 44800",
+        "title": "Networks: Design & Applica"
+       }
+      ],
+      "prereqs": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "A. Theory & Application Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 33200",
+      "credits": 4,
+      "options": [],
+      "prereqs": [
+       "CSC 22000",
+       "CSC 22100"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 34200",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 21100",
+       "CSC 21000",
+       "EE 21000"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 34300",
+      "credits": 1,
+      "options": [],
+      "prereqs": [
+       "CSC 34200"
+      ],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Computer Organization Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the two required economics/engineering-economics courses (per curriculum sheet).",
+      "code": "ECON-EL",
+      "credits": 3,
+      "options": [
+       {
+        "code": "ENGR 27600",
+        "title": "Engineering Economics"
+       },
+       {
+        "code": "ECON 10400",
+        "title": "Introduction to Quantitative Economics"
+       }
+      ],
+      "prereqs": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Engr 27600 or Eco 10400 (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one course from the official B. Computational Techniques elective list.",
+      "code": "EL-B",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSC 44000",
+        "title": "Intro. to Comput. Biology"
+       },
+       {
+        "code": "CSC 44200",
+        "title": "Machine Learning"
+       },
+       {
+        "code": "CSC 44500",
+        "title": "Digital & Computer Interfacing"
+       },
+       {
+        "code": "CSC 44600",
+        "title": "Bioinformatics"
+       },
+       {
+        "code": "CSC 44700",
+        "title": "Applied Genomics"
+       },
+       {
+        "code": "CSC 46000",
+        "title": "Software Tools & Technology"
+       }
+      ],
+      "prereqs": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "B. Computational Techniques Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved technical elective.",
+      "code": "TECH-EL-1",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Technical Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 36000",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 33200"
+      ],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Modern Distributed Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Requires senior standing and permission (per the curriculum sheet); not a course-code prerequisite.",
+      "code": "CSC 59866",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Senior Design I",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Approved liberal arts course at the 20000 level or higher, satisfying Pathways Flexible Core areas (per curriculum sheet).",
+      "code": "LA-EL-3",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Liberal Arts 20000+ (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one course from the official C. Computer Systems elective list.",
+      "code": "EL-C",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CSC 31800",
+        "title": "Internet Programming"
+       },
+       {
+        "code": "CSC 41200",
+        "title": "Compiler Implementa"
+       },
+       {
+        "code": "CSC 42000",
+        "title": "Parallel & Distri Systems"
+       },
+       {
+        "code": "CSC 43000",
+        "title": "Web Site Management"
+       },
+       {
+        "code": "CSC 43500",
+        "title": "Parallelism"
+       },
+       {
+        "code": "CSC 43800",
+        "title": "Mobile Computing"
+       },
+       {
+        "code": "CSC 45600",
+        "title": "Data Networks"
+       },
+       {
+        "code": "CSC 47300",
+        "title": "Network Programming"
+       },
+       {
+        "code": "CSC 49200",
+        "title": "Adv Topics"
+       }
+      ],
+      "prereqs": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "C. Computer Systems Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved technical elective.",
+      "code": "TECH-EL-2",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Technical Elective (choose one)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC 59867",
+      "credits": 3,
+      "options": [],
+      "prereqs": [
+       "CSC 59866"
+      ],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Senior Design II",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Approved liberal arts course at the 20000 level or higher, satisfying Pathways Flexible Core areas (per curriculum sheet).",
+      "code": "LA-EL-4",
+      "credits": 3,
+      "options": [],
+      "prereqs": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Liberal Arts 20000+ (choose one)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.ccny.cuny.edu/sites/default/files/2024-03/csc-curric-2023-2024--2023-07-06.pdf",
+  "total_credits": 127,
+  "content_hash": "d03c76255a904cf9fb4736af5e6e74073a31b274014680fc863ba082d89592d8",
+  "last_verified": "2026-10-02"
+ }
+}

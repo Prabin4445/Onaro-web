@@ -1,0 +1,292 @@
+{
+ "institution": {
+  "name": "North Shore Community College",
+  "city": "Danvers, MA",
+  "kind": "community",
+  "state": "MA"
+ },
+ "plan": {
+  "id": "northshore-aa-computer-science-transfer",
+  "degree": "AA",
+  "major": "Computer Science Transfer",
+  "catalog_year": "2026-2027",
+  "total_credits": 64,
+  "source_url": "https://northshore.smartcatalogiq.com/en/current/college-catalog/credit-programs/programs-of-study/degrees/computer-science-transfer-cst",
+  "notes": "Source: NSCC 2026-2027 College Catalog (smartcatalogiq, official). Primary sequence source: https://northshore.smartcatalogiq.com/en/current/college-catalog/credit-programs/programs-of-study/degrees/computer-science-transfer-cst (First Year Fall/Spring + Second Year Fall/Spring tables; sequence sums to 64, matching the catalog's published Total Credit Hours: 64 - no discrepancy). Program header: Type: Transfer, Degree (AA); '2026-2027 Information Technology Pathway', Associate in Arts, STEM and Business Division. TRUE program name is Computer Science Transfer (CST) - not 'AS Computer Science'. Transcription method: manual transcription of the official semester tables on 2026-09-30; course titles/credits/prereqs copied verbatim from each official course-description page. Prereq caveats: CPS101 requires MAT151 or higher with C or better (or placement above MAT151) AND either CPS100 or EGS102 - MAT151/CPS100 listed as external_prereqs, placement alternative documented here. CPS203 corequisite MAT241 (same semester in the official sequence) noted here rather than as a prereq. PHY201 catalog prereq is 'Communications Proficiency, MAT152 w/C or better, or CCMR 56 or above, or NGQA 268 or above and NGAA 237 or above' with corequisite MAT251 (satisfied by the sequence: MAT251 in Fall Year 1, PHY201 in Spring Year 1) - alternatives documented here; not modeled as a course-code prereq since placement scores qualify. EGS216 official prereq is 'EGS211 or PHY203 or faculty permission' - PHY203 (in-plan, preceding semester) modeled as the prereq; EGS211 alternative documented here. MAT251/MAT241 catalog prereqs are placement levels (STEM Math Level 5 / Level 4), not course codes - documented here. Program notes: open admissions; must demonstrate minimum CPS100-level competency to enroll; day program; Lynn campus based; graduation requires cumulative CLGPA >= 2.0 and an Intent to Graduate form.",
+  "external_prereqs": [
+   "MAT151",
+   "CPS100"
+  ],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMP101",
+      "title": "Composition 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CPS101",
+      "title": "Computer Science 1 (Java 1)",
+      "credits": 4,
+      "prereq": [
+       "MAT151",
+       "CPS100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "CPS170",
+      "title": "Database Theory and Applications",
+      "credits": 4,
+      "prereq": [
+       "CPS100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MAT251",
+      "title": "Calculus 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "MAT252",
+      "title": "Calculus 2",
+      "credits": 4,
+      "prereq": [
+       "MAT251"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CMP102-150",
+      "title": "Composition 2 Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any Composition 2 course, CMP102 through CMP150",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "CPS102",
+      "title": "Computer Science 2 (Java 2)",
+      "credits": 4,
+      "prereq": [
+       "CPS101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "PHY201",
+      "title": "Physics 1: Mechanics",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CPS203",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [
+       "CPS102"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "HUM-ELECTIVE",
+      "title": "Humanities Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any humanities elective",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MAT241",
+      "title": "Discrete Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "PHY203",
+      "title": "Physics 2: Electricity and Magnetism",
+      "credits": 4,
+      "prereq": [
+       "PHY201",
+       "MAT252"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SS-ELECTIVE",
+      "title": "Social Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any social science elective",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CPS218",
+      "title": "UNIX",
+      "credits": 4,
+      "prereq": [
+       "CPS100"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CPS224",
+      "title": "Object Oriented Programming in C++",
+      "credits": 4,
+      "prereq": [
+       "CPS101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CPS226",
+      "title": "Computer Organization and Architecture",
+      "credits": 4,
+      "prereq": [
+       "CPS101"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "EGS216",
+      "title": "Introduction to Digital Logic Design",
+      "credits": 4,
+      "prereq": [
+       "PHY203"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     }
+    ],
+    "n": 4
+   }
+  ],
+  "content_hash": "70616d1dfb5556a1d0b9353bafbbe62f8e4926d054011ef002aaca0d57c1123c",
+  "last_verified": "2026-10-02"
+ }
+}

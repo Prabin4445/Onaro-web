@@ -1,0 +1,670 @@
+{
+ "institution": {
+  "city": "Jersey City, NJ",
+  "kind": "public",
+  "name": "New Jersey City University",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2022-2023",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "njcu-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official NJCU catalog archive program page (PDF): http://catalog.njcu.edu/archives/2022-2023/undergraduate/arts-sciences/computer-science/computer-science-bs/computer-science-bs.pdf. Catalog year 2022-2023 is the most recent official NJCU catalog year publishing a full term-by-term 8-semester sequence; the current live catalog page for 'Computer Science, B.S.' (https://catalog.njcu.edu/undergraduate/arts-sciences/computer-science/computer-science-bs/) only lists a major-courses-only plan grid totaling 52 credits with no General Education tiers, insufficient for a full degree plan, so the 2022-2023 full sequence was transcribed. Transcription: manual, semester by semester from the archived program PDF's plan-of-study grid. Credit totals: the PDF prints 'Total Credits 120-125'; the catalog degree minimum is 120. total_credits is set to 120 using the minimum values of variable-credit courses (ENGL 101/102 listed 4-6, MATH 175/165 listed 3-4); students placing into more composition/ESL credit combinations can reach up to 125. Per-semester minimums: 16, 17, 15, 15, 15, 15, 12, 15 = 120. Catalog footnotes: (1) INTD 180 is used to satisfy a General Education Tier I course; (2) MATH 192, CS 214, and CS 215 are used to satisfy Tier II Scientific and Quantitative Inquiries for CS majors. The four 'Computer Science Elective 3XX or 4XX' slots map to the PDF's Advanced Major Electives: select 12 credits from CS 302, CS 355, CS 360, CS 365, CS 401, CS 402, CS 404, CS 405, CS 407, CS 408, CS 409, CS 410, CS 417, CS 420, CS 430, CS 599, SPFD XXXX. Major rules printed in the catalog: 2.5 minimum GPA in all courses credited toward the major; grade of C or above in all major courses including MATH 192 and MATH 193; admission to the track requires a minimum grade of C in MATH 175 or its equivalent. Prereq evidence comes only from official NJCU course descriptions ('CS 102 is a continuation of CS 101', 'CS 203 is a continuation of CS 202', 'CS 351 uses the concepts and techniques developed in CS 350'); all other courses carry no stated prereq in the source and sequence order alone was not used to invent prereqs. The PDF grid spells the INTD 180 title 'Computers Tools for Science and Math'; transcribed as printed.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENGL 101 English Composition I (4-6 cr) or ESL 101 English Composition I for English as a Second Language Students. Minimum 4 credits used in the sequence total of 120; catalog notes the degree total can run to 125.",
+      "code": "ENGL 101",
+      "credits": 4,
+      "options": [
+       "ENGL 101",
+       "ESL 101"
+      ],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "English Composition I (or ESL 101)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 175 Enhanced Precalculus (3-4 cr) or MATH 165 Pre Calculus (3-4 cr). Minimum 3 credits used in the sequence total.",
+      "code": "MATH 175",
+      "credits": 3,
+      "options": [
+       "MATH 175",
+       "MATH 165"
+      ],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Enhanced Precalculus (or MATH 165)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Computers and Information Technology",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier I course.",
+      "code": "TIER1-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Tier I Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "ENGL 102 English Composition II (4-6 cr) or ESL 102 English Composition II for English as a Second Language Students. Minimum 4 credits used in the sequence total of 120.",
+      "code": "ENGL 102",
+      "credits": 4,
+      "options": [
+       "ENGL 102",
+       "ESL 102"
+      ],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "English Composition II (or ESL 102)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog footnote: used to satisfy Tier II Scientific and Quantitative Inquiries for Computer Science majors.",
+      "code": "MATH 192",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus and Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official course description: 'continuation of CS 101 Fundamentals of Computer Science'.",
+      "code": "CS 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 101"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 202",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Discrete Structures I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Catalog footnote: used to satisfy a General Education Tier I course. Title transcribed as printed in the catalog grid ('Computers Tools for Science and Math').",
+      "code": "INTD 180",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Computers Tools for Science and Math",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official course description: 'continuation of CS 202'.",
+      "code": "CS 203",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 202"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Discrete Structures II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 209",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Collateral requirement: choose one of MATH 140 Statistics I or MATH 193 Calculus and Analytic Geometry II (MATH 192 is the required collateral math course).",
+      "code": "MATH 140",
+      "credits": 3,
+      "options": [
+       "MATH 140",
+       "MATH 193"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Statistics I (or MATH 193)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier I course.",
+      "code": "TIER1-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "General Education Tier I Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier II course.",
+      "code": "TIER2-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "General Education Tier II Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog footnote: used to satisfy Tier II Scientific and Quantitative Inquiries for Computer Science majors.",
+      "code": "CS 204",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 306",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Data Base Design",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier II course.",
+      "code": "TIER2-B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "General Education Tier II Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier II course.",
+      "code": "TIER2-C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Tier II Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any minor or elective course chosen by the student.",
+      "code": "ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Minor or Elective Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 206",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Concepts of Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog footnote: used to satisfy Tier II Scientific and Quantitative Inquiries for Computer Science majors.",
+      "code": "CS 214",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Business Applications on the Microcomputer I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog 'Advanced Major Electives': select from CS 302, CS 355, CS 360, CS 365, CS 401, CS 402, CS 404, CS 405, CS 407, CS 408, CS 409, CS 410, CS 417, CS 420, CS 430, CS 599, SPFD XXXX.",
+      "code": "CSEL-1",
+      "credits": 3,
+      "options": [
+       "CS 302",
+       "CS 355",
+       "CS 360",
+       "CS 365",
+       "CS 401",
+       "CS 402",
+       "CS 404",
+       "CS 405",
+       "CS 407",
+       "CS 408",
+       "CS 409",
+       "CS 410",
+       "CS 417",
+       "CS 420",
+       "CS 430",
+       "CS 599",
+       "SPFD XXXX"
+      ],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Computer Science Elective (3XX or 4XX) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier II course.",
+      "code": "TIER2-D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education Tier II Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier II course.",
+      "code": "TIER2-E",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "General Education Tier II Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS 215 Business Applications on the Microcomputer II (official description: continuation of CS 214; catalog footnote: used to satisfy Tier II Scientific and Quantitative Inquiries for CS majors) or CS 252 Programming for All in Python and Computer Science Principles.",
+      "code": "CS 215",
+      "credits": 3,
+      "options": [
+       "CS 215",
+       "CS 252"
+      ],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Business Applications on the Microcomputer II (or CS 252)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective or minor course chosen by the student.",
+      "code": "ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Elective or Minor Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective or minor course (or Co-Op) chosen by the student.",
+      "code": "ELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Elective or Minor Course (or Co-Op) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any elective or minor course (or Co-Op) chosen by the student.",
+      "code": "ELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Elective or Minor Course (or Co-Op) - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Software Engineering I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog 'Advanced Major Electives': select from CS 302, CS 355, CS 360, CS 365, CS 401, CS 402, CS 404, CS 405, CS 407, CS 408, CS 409, CS 410, CS 417, CS 420, CS 430, CS 599, SPFD XXXX.",
+      "code": "CSEL-2",
+      "credits": 3,
+      "options": [
+       "CS 302",
+       "CS 355",
+       "CS 360",
+       "CS 365",
+       "CS 401",
+       "CS 402",
+       "CS 404",
+       "CS 405",
+       "CS 407",
+       "CS 408",
+       "CS 409",
+       "CS 410",
+       "CS 417",
+       "CS 420",
+       "CS 430",
+       "CS 599",
+       "SPFD XXXX"
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Computer Science Elective (3XX or 4XX) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog 'Advanced Major Electives': select from CS 302, CS 355, CS 360, CS 365, CS 401, CS 402, CS 404, CS 405, CS 407, CS 408, CS 409, CS 410, CS 417, CS 420, CS 430, CS 599, SPFD XXXX.",
+      "code": "CSEL-3",
+      "credits": 3,
+      "options": [
+       "CS 302",
+       "CS 355",
+       "CS 360",
+       "CS 365",
+       "CS 401",
+       "CS 402",
+       "CS 404",
+       "CS 405",
+       "CS 407",
+       "CS 408",
+       "CS 409",
+       "CS 410",
+       "CS 417",
+       "CS 420",
+       "CS 430",
+       "CS 599",
+       "SPFD XXXX"
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Computer Science Elective (3XX or 4XX) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved General Education Tier III course.",
+      "code": "TIER3-A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General Education Tier III Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Official course description: 'uses the concepts and techniques developed in CS 350'.",
+      "code": "CS 351",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CS 350"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Software Engineering II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog 'Advanced Major Electives': select from CS 302, CS 355, CS 360, CS 365, CS 401, CS 402, CS 404, CS 405, CS 407, CS 408, CS 409, CS 410, CS 417, CS 420, CS 430, CS 599, SPFD XXXX.",
+      "code": "CSEL-4",
+      "credits": 3,
+      "options": [
+       "CS 302",
+       "CS 355",
+       "CS 360",
+       "CS 365",
+       "CS 401",
+       "CS 402",
+       "CS 404",
+       "CS 405",
+       "CS 407",
+       "CS 408",
+       "CS 409",
+       "CS 410",
+       "CS 417",
+       "CS 420",
+       "CS 430",
+       "CS 599",
+       "SPFD XXXX"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Computer Science Elective (3XX or 4XX) - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any minor or elective course chosen by the student.",
+      "code": "ELECT-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Minor or Elective Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any minor or elective course chosen by the student.",
+      "code": "ELECT-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Minor or Elective Course - student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Any minor or elective course chosen by the student.",
+      "code": "ELECT-7",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Minor or Elective Course - student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "http://catalog.njcu.edu/archives/2022-2023/undergraduate/arts-sciences/computer-science/computer-science-bs/computer-science-bs.pdf",
+  "total_credits": 120,
+  "content_hash": "02098f81edbc2916170b63d430afc3010cff9de523ded8d0f5b583645a9698f3",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,647 @@
+{
+ "institution": {
+  "name": "Lincoln University",
+  "city": "Oakland, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "lincoln-university-bs-diagnostic-imaging",
+  "degree": "BS",
+  "major": "Diagnostic Imaging",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "http://file.lincolnuca.edu/catalog/LU Catalog.pdf",
+  "notes": "Transcribed from the official Lincoln University 2026-2027 Academic Year Catalog. BS in Diagnostic Imaging: 45 units General Education + 16 units core + 34 units general ultrasound + 27 units concentrations/externships = 122 units. Term layout follows the catalog's published 'SUGGESTED COURSE SEQUENCING FOR THE BS IN DI DEGREE PROGRAM'. Concentration shown is Sonography (first-listed); the Echocardiography alternate is documented below and in the choice options. The catalog's suggested sequence sums to 115 units, not 122: it omits the 7 required concentration-elective units ('DI 234 or DI 235' 4 units + 'DI 244 or DI 245' 3 units for Sonography). Those two choice slots are placed here in Year 3 Fall and Year 3 Spring, the earliest prerequisite-satisfying positions (DI 234 requires DI 124; DI 235 requires DI 125; DI 244 requires DI 234; DI 245 requires DI 235); the catalog notes 'The order of major courses can be changed only with permissions of an advisor and the Program Director.' Year 4 Fall's 'Elective (General Education Course)' slot is ECON 10, the only required GE course not otherwise scheduled. The sequence lists 'ENG 82A Written Communications'; the course-description catalog lists ENG 82, shown as ENG 82A per the sequence. Externship codes are rendered 'DI 291A'/'DI 291B' (the sequence prints 'DI 291 A/B'). DI 210's prerequisite is 'Completion of all DI 100 series coursework' (satisfied by Year 2 Summer); DI 291A requires senior standing plus advisor/Program Director permission; DI 291B requires the last term of the program plus DI 291A/295A. Echocardiography alternate: Year 3 Fall DI 235, Year 3 Spring DI 245, Year 3 Summer DI 255, Year 4 Fall DI 265 + DI 295A, Year 4 Spring DI 295B; electives 'DI 231 or DI 234' (Year 3 Fall) and 'DI 241 or DI 244' (Year 3 Spring).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "n": 1,
+    "courses": [
+     {
+      "code": "DI 20",
+      "title": "Medical Terminology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "MATH 10",
+      "title": "College Mathematics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "PSYCH 10",
+      "title": "Fundamentals Of Psychology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-2"
+     },
+     {
+      "code": "SCI 10",
+      "title": "Physical Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-3"
+     },
+     {
+      "code": "SCI 31",
+      "title": "Human Biology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s1-4"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 1",
+    "n": 2,
+    "courses": [
+     {
+      "code": "DI 10",
+      "title": "Physical Principles Of Ultrasound",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "DI 30",
+      "title": "Anatomy And Physiology",
+      "credits": 3,
+      "prereq": [
+       "SCI 31"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "CS 10",
+      "title": "Introduction To Computer Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-2"
+     },
+     {
+      "code": "ENG 75",
+      "title": "Critical Thinking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-3"
+     },
+     {
+      "code": "HIST 10",
+      "title": "World History",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s2-4"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 1",
+    "n": 3,
+    "courses": [
+     {
+      "code": "DI 110",
+      "title": "Ultrasound Principles And Protocols",
+      "credits": 4,
+      "prereq": [
+       "DI 10",
+       "DI 20",
+       "DI 30"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-0"
+     },
+     {
+      "code": "DI 115",
+      "title": "Ecg And Arrhythmias Interpretation",
+      "credits": 3,
+      "prereq": [
+       "DI 30"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s3-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 2",
+    "n": 4,
+    "courses": [
+     {
+      "code": "DI 114",
+      "title": "Vascular Anatomy And Hemodynamics",
+      "credits": 3,
+      "prereq": [
+       "DI 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-0"
+     },
+     {
+      "code": "DI 120",
+      "title": "Ob/Gyn Ultrasound I",
+      "credits": 4,
+      "prereq": [
+       "DI 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-1"
+     },
+     {
+      "code": "DI 125",
+      "title": "Introduction To Echocardiography",
+      "credits": 4,
+      "prereq": [
+       "DI 110",
+       "DI 115"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s4-2"
+     },
+     {
+      "code": "HUM 10",
+      "title": "Introduction To Humanities",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s4-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 2",
+    "n": 5,
+    "courses": [
+     {
+      "code": "DI 124",
+      "title": "Peripheral Vascular",
+      "credits": 4,
+      "prereq": [
+       "DI 114"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-0"
+     },
+     {
+      "code": "DI 130",
+      "title": "Ob/Gyn Ultrasound Ii",
+      "credits": 3,
+      "prereq": [
+       "DI 120"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-1"
+     },
+     {
+      "code": "DI 150",
+      "title": "Abdomen And Small Parts I",
+      "credits": 4,
+      "prereq": [
+       "DI 110"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s5-2"
+     },
+     {
+      "code": "BA 10",
+      "title": "Business Foundations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s5-3"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 2",
+    "n": 6,
+    "courses": [
+     {
+      "code": "DI 140",
+      "title": "Ob/Gyn Scanning (Lab)",
+      "credits": 3,
+      "prereq": [
+       "DI 130"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s6-0"
+     },
+     {
+      "code": "DI 160",
+      "title": "Abdomen And Small Parts Ii",
+      "credits": 3,
+      "prereq": [
+       "DI 150"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s6-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 3",
+    "n": 7,
+    "courses": [
+     {
+      "code": "DI 170",
+      "title": "Abdomen And Small Parts Scanning (Lab)",
+      "credits": 3,
+      "prereq": [
+       "DI 160"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s7-0"
+     },
+     {
+      "code": "BA 19",
+      "title": "Fundamentals Of Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s7-1"
+     },
+     {
+      "code": "DI 231",
+      "title": "Advanced Ob/Gyn Ultrasound",
+      "credits": 4,
+      "prereq": [
+       "DI 140"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 3 Fall concentration slot: 'A. Sonography DI 231 / B. Echocardiography DI 235'. DI 231 shown.",
+      "options": [
+       "DI 235"
+      ],
+      "category": "major",
+      "slot_id": "s7-2"
+     },
+     {
+      "code": "DI 234",
+      "title": "Abdominal Vascular",
+      "credits": 4,
+      "prereq": [
+       "DI 124"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Required concentration elective (4 units) omitted from the catalog's suggested sequence (which sums to 115, not 122). Sonography: 'DI 234 or DI 235'; Echocardiography: 'DI 231 or DI 234'. Placed at the earliest prerequisite-satisfying term.",
+      "options": [
+       "DI 235",
+       "DI 231"
+      ],
+      "category": "major",
+      "slot_id": "s7-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 3",
+    "n": 8,
+    "courses": [
+     {
+      "code": "DI 210",
+      "title": "Advanced Ultrasound Physics And Technology",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "slot_id": "s8-0"
+     },
+     {
+      "code": "BA 115",
+      "title": "Statistics",
+      "credits": 3,
+      "prereq": [
+       "MATH 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s8-1"
+     },
+     {
+      "code": "DI 241",
+      "title": "Advanced Ob/Gyn Scanning (Lab)",
+      "credits": 3,
+      "prereq": [
+       "DI 231"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 3 Spring concentration slot: 'A. Sonography DI 241 / B. Echocardiography DI 245'. DI 241 shown.",
+      "options": [
+       "DI 245"
+      ],
+      "category": "major",
+      "slot_id": "s8-2"
+     },
+     {
+      "code": "DI 244",
+      "title": "Vascular Scanning (Lab)",
+      "credits": 3,
+      "prereq": [
+       "DI 234"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Required concentration elective (3 units) omitted from the catalog's suggested sequence. Sonography: 'DI 244 or DI 245'; Echocardiography: 'DI 241 or DI 244'. Placed at the earliest prerequisite-satisfying term.",
+      "options": [
+       "DI 245",
+       "DI 241"
+      ],
+      "category": "major",
+      "slot_id": "s8-3"
+     }
+    ]
+   },
+   {
+    "term": "Summer Year 3",
+    "n": 9,
+    "courses": [
+     {
+      "code": "ENG 82A",
+      "title": "Written Communications",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Sequence lists 'ENG 82A Written Communications'; the course-description catalog lists ENG 82.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s9-0"
+     },
+     {
+      "code": "DI 251",
+      "title": "Advanced Abdomen And Small Parts",
+      "credits": 4,
+      "prereq": [
+       "DI 170"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 3 Summer: 'A. Sonography DI 251 / B. Echocardiography DI 255'. DI 251 shown.",
+      "options": [
+       "DI 255"
+      ],
+      "category": "major",
+      "slot_id": "s9-1"
+     }
+    ]
+   },
+   {
+    "term": "Fall Year 4",
+    "n": 10,
+    "courses": [
+     {
+      "code": "BA 146",
+      "title": "Applications Software",
+      "credits": 3,
+      "prereq": [
+       "CS 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s10-0"
+     },
+     {
+      "code": "ECON 10",
+      "title": "Economic Geography",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "The sequence's Year 4 Fall 'Elective (General Education Course)' slot; ECON 10 is the only required GE course not otherwise scheduled.",
+      "options": [],
+      "category": "core",
+      "slot_id": "s10-1"
+     },
+     {
+      "code": "DI 261",
+      "title": "Advanced Abdomen And Small Parts Scanning (Lab)",
+      "credits": 3,
+      "prereq": [
+       "DI 251"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 4 Fall: 'A. Sonography DI 261 / B. Echocardiography DI 265'. DI 261 shown.",
+      "options": [
+       "DI 265"
+      ],
+      "category": "major",
+      "slot_id": "s10-2"
+     },
+     {
+      "code": "DI 291A",
+      "title": "Practicum / Externship I In Sonography / Echocardiography",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 4 Fall externship: 'A. Sonography DI 291 A / B. Echocardiography DI 295 A'. Requires senior standing plus DI Advisor and Program Director permission.",
+      "options": [
+       "DI 295A"
+      ],
+      "category": "major",
+      "slot_id": "s10-3"
+     }
+    ]
+   },
+   {
+    "term": "Spring Year 4",
+    "n": 11,
+    "courses": [
+     {
+      "code": "BA 110",
+      "title": "Management Principles",
+      "credits": 3,
+      "prereq": [
+       "BA 10"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core",
+      "slot_id": "s11-0"
+     },
+     {
+      "code": "DI 291B",
+      "title": "Practicum / Externship Ii In Sonography / Echocardiography",
+      "credits": 3,
+      "prereq": [
+       "DI 291A"
+      ],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog sequence Year 4 Spring externship: 'A. Sonography DI 291 B / B. Echocardiography DI 295 B'. Requires the last term of the program plus DI 291A/295A.",
+      "options": [
+       "DI 295B"
+      ],
+      "category": "major",
+      "slot_id": "s11-1"
+     }
+    ]
+   }
+  ],
+  "content_hash": "92d7fcfd6b9f8b4e936082f65b5cec73998a75b6833a42ff177ca1ac70c255c6",
+  "last_verified": "2026-10-02"
+ }
+}

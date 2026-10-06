@@ -1,0 +1,1019 @@
+{
+ "institution": {
+  "city": "University Park, PA",
+  "kind": "public4yr",
+  "name": "Pennsylvania State University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [
+   "CMPEN 271",
+   "MATH 022",
+   "MATH 040",
+   "MATH 041",
+   "MATH 026",
+   "MATH 081",
+   "MATH 082",
+   "PHYS 211T",
+   "CHEM 110",
+   "MATH 151",
+   "MATH 152",
+   "MATH 311W",
+   "STAT 414",
+   "STAT 415",
+   "STAT 416",
+   "STAT 417",
+   "STAT 418",
+   "STAT 440",
+   "STAT 460",
+   "STAT 480",
+   "MATH 451",
+   "MATH 455",
+   "MATH 456",
+   "MATH 457"
+  ],
+  "id": "penn-state-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official Penn State University Bulletin 'Computer Science, B.S.' (University Park), suggested academic plan effective 2026-27, retrieved 2026-09-30. The campus shown by the Bulletin is University Park; the plan applies to students admitted to the College of Engineering. Degree minimum is 127 credits; the published plan totals 127-130 credits depending on the chosen branches. This file encodes the 127-credit branch exactly as printed: MATH 220 (2 cr, Semester 3), Natural Science GN elective (2 cr, Semester 4), and the 3-credit Semester 4 General Education option. Branch alternatives printed on the Bulletin: MATH 220 (2 cr) vs MATH 230E is not printed here; Natural Science GN elective 2 or 3 credits; Semester 4 General Education 3 or 4 credits. Prerequisites below are transcribed from the official Penn State Bulletin course descriptions (undergraduate bulletins.psu.edu course pages) on 2026-09-30. External placement/transfer prerequisites (MATH 022/040/041/026/081/082, PHYS 211T, CHEM 110, MATH 151/152, MATH 311W, STAT 414/415/416/417/418/440/460/480, MATH 451/455/456/457) are listed in external_prereqs. CMPSC 131 prerequisite verified on the Bulletin course page: 'CMPSC 121 or CMPSC 131 or department approval; prior knowledge of programming expected'. CMPSC 132 prerequisite verified on the Bulletin course page: 'CMPSC 121 and CMPSC 122, or CMPSC 131 and CMPSC 132, or CMPSC 121 and CMPSC 132; MATH 140 recommended'. CMPSC 121 prerequisite verified: 'MATH 21 or satisfactory performance on the mathematics placement examination or MATH 22 and MATH 26 concurrent' (encoded via MATH 022/026 external codes). CMPSC 122 prerequisite verified: 'CMPSC 121 or CMPSC 131 or CMPSC 201 or IST 256'. PHYS 212 prerequisite verified: 'MATH 141, PHYS 211'. MATH 141 prerequisite verified: 'MATH 140 or MATH 140B or MATH 140E or MATH 140G or MATH 140H'. MATH 230 prerequisite verified: 'MATH 141'. MATH 220 prerequisite verified: 'MATH 110 or MATH 140 or MATH 141 or MATH 140B or MATH 141B or satisfactory performance on the mathematics placement exam or equivalent AP credit'. CMPSC 221 prerequisite verified: 'CMPSC 122 or CMPSC 132'. CMPSC 222 prerequisite verified: 'CMPSC 122 or CMPSC 132'. CMPSC 360 prerequisite verified: 'MATH 141 or MATH 141B or MATH 140H'. CMPEN 270 prerequisite verified: 'CMPEN 271 or CMPEN 270T' (encoded as external prereq alternatives CMPEN 271). CMPSC 315 prerequisite verified: 'CMPSC 221 or CMPSC 224; CMPSC 360 concurrent'. CMPSC 320 prerequisite verified: 'CMPSC 221 or CMPSC 224'. CMPSC 465 prerequisite verified: 'CMPSC 360 and (CMPSC 221 or CMPSC 222 or CMPSC 224)'. STAT 318 prerequisite verified: 'MATH 141 or MATH 141B or MATH 140H or MATH 141H'. CMPSC 316 prerequisite verified: 'CMPSC 315'. CMPSC 461 prerequisite verified: 'CMPSC 360 and CMPSC 221 or CMPSC 224'. STAT 319 prerequisite verified: 'STAT 318 or (STAT 414 or STAT 415 or STAT 416 or STAT 417 or STAT 418 or STAT 440 or STAT 460 or STAT 480 or MATH 451 or MATH 455 or MATH 456 or MATH 457)'. ENGL 202C prerequisite verified: 'ENGL 15 or ENGL 30'. CMPSC 483W prerequisite verified: 'CMPSC 320 and CMPSC 461'. Note: CMPSC 131/132 are the newer sequence; the Bulletin lists 'CMPSC 121 or CMPSC 131' and 'CMPSC 122 or CMPSC 132' as alternates in the plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CMPSC 121 Introduction to Programming Techniques or CMPSC 131 Programming and Computation I: Fundamentals. CMPSC 121 requires MATH 21 or placement or MATH 22 + MATH 26 concurrent; CMPSC 131 requires CMPSC 121 or 131 or department approval (encoded with CMPSC 121).",
+      "code": "CMPSC 121",
+      "credits": 3,
+      "options": [
+       "CMPSC 121",
+       "CMPSC 131"
+      ],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 022",
+         "MATH 026"
+        ],
+        "raw": "MATH 21 or satisfactory performance on the mathematics placement examination or MATH 22 and MATH 26 concurrent"
+       }
+      ],
+      "title": "Introduction to Programming Techniques — select CMPSC 121 or 131",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 150N",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Computing and Society",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 140",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Calculus With Analytic Geometry I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 15",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Rhetoric and Composition",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. The Bulletin's suggested plan does not name the course; any General Education course may be used.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 1",
+    "n": 1,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CMPSC 122 Intermediate Programming or CMPSC 132 Programming and Computation II: Data Structures. Prereq: CMPSC 121 or CMPSC 131 or CMPSC 201 or IST 256.",
+      "code": "CMPSC 122",
+      "credits": 3,
+      "options": [
+       "CMPSC 122",
+       "CMPSC 132"
+      ],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPSC 121"
+        ],
+        "raw": "CMPSC 121 or CMPSC 131 or CMPSC 201 or IST 256"
+       }
+      ],
+      "title": "Intermediate Programming — select CMPSC 122 or 132",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 141",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 140"
+        ],
+        "raw": "MATH 140 or MATH 140B or MATH 140E or MATH 140G or MATH 140H"
+       }
+      ],
+      "title": "Calculus with Analytic Geometry II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141",
+         "MATH 151",
+         "MATH 152"
+        ],
+        "raw": "MATH 141 or MATH 151 or MATH 152 or MATH 141B or MATH 141H; or MATH 140 or MATH 140B or MATH 140E or MATH 140G or MATH 140H or MATH 141B or MATH 141H concurrent"
+       }
+      ],
+      "title": "General Physics: Mechanics",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. The Bulletin's suggested plan does not name the course; any General Education course may be used.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "First-Year Seminar",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "First-Year Seminar",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 2",
+    "n": 2,
+    "term": "",
+    "year_label": "Year 1"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 221",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPSC 122"
+        ],
+        "raw": "CMPSC 122 or CMPSC 132"
+       }
+      ],
+      "title": "Object Oriented Programming with Web-Based Applications",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 230",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141"
+        ],
+        "raw": "MATH 141"
+       }
+      ],
+      "title": "Calculus and Vector Analysis",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Shown with the 2-credit branch for the 127-credit plan total.",
+      "code": "MATH 220",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141",
+         "MATH 040",
+         "MATH 041"
+        ],
+        "raw": "MATH 110 or MATH 140 or MATH 141 or MATH 140B or MATH 141B or satisfactory performance on the mathematics placement exam or equivalent AP credit"
+       }
+      ],
+      "title": "Matrices",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 212",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141"
+        ],
+        "raw": "MATH 141, PHYS 211"
+       },
+       {
+        "course": "PHYS 211",
+        "raw": "PHYS 211 and MATH 141"
+       }
+      ],
+      "title": "General Physics: Electricity and Magnetism",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "CAS 100A Effective Speech or CAS 100B Effective Speech. The Bulletin's suggested plan does not name which; either satisfies the requirement.",
+      "code": "CAS 100A",
+      "credits": 3,
+      "options": [
+       "CAS 100A",
+       "CAS 100B"
+      ],
+      "prereq": [],
+      "title": "Effective Speech — select CAS 100A or 100B",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 3",
+    "n": 3,
+    "term": "",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 222",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPSC 122"
+        ],
+        "raw": "CMPSC 122 or CMPSC 132"
+       }
+      ],
+      "title": "Advanced Data Structures and Algorithms in C",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 360",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141"
+        ],
+        "raw": "MATH 141 or MATH 141B or MATH 140H"
+       }
+      ],
+      "title": "Discrete Mathematics for Computer Science",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPEN 270",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPEN 271"
+        ],
+        "raw": "CMPEN 271 or CMPEN 270T"
+       }
+      ],
+      "title": "Digital Design: Theory and Practice",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Natural Science (GN) elective, 2 credits. Shown with the 2-credit branch for the 127-credit plan total; the Bulletin also prints a 3-credit option (plan total then 128-131).",
+      "code": "Natural Science GN Elective",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Natural Science (GN) Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. Shown with the 3-credit branch for the 127-credit plan total; the Bulletin also prints a 4-credit option.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 4",
+    "n": 4,
+    "term": "",
+    "year_label": "Year 2"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 315",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPSC 221"
+        ],
+        "raw": "CMPSC 221 or CMPSC 224; CMPSC 360 concurrent"
+       },
+       {
+        "course": "CMPSC 360",
+        "kind": "prereq_or_coreq",
+        "raw": "CMPSC 360 concurrent"
+       }
+      ],
+      "title": "Computer Systems I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "CMPSC 221"
+        ],
+        "raw": "CMPSC 221 or CMPSC 224"
+       }
+      ],
+      "title": "Software Engineering Principles",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 465",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CMPSC 360",
+        "raw": "CMPSC 360 and (CMPSC 221 or CMPSC 222 or CMPSC 224)"
+       },
+       {
+        "one_of": [
+         "CMPSC 221",
+         "CMPSC 222"
+        ],
+        "raw": "CMPSC 221 or CMPSC 222 or CMPSC 224"
+       }
+      ],
+      "title": "Data Structures and Algorithms",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 318",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "MATH 141"
+        ],
+        "raw": "MATH 141 or MATH 141B or MATH 140H or MATH 141H"
+       }
+      ],
+      "title": "Elementary Probability",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. The Bulletin's suggested plan does not name the course; any General Education course may be used.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 5",
+    "n": 5,
+    "term": "",
+    "year_label": "Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 316",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CMPSC 315",
+        "raw": "CMPSC 315"
+       }
+      ],
+      "title": "Computer Systems II",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 461",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CMPSC 360",
+        "raw": "CMPSC 360 and CMPSC 221 or CMPSC 224"
+       },
+       {
+        "one_of": [
+         "CMPSC 221",
+         "CMPSC 222"
+        ],
+        "raw": "CMPSC 221 or CMPSC 222 or CMPSC 224"
+       }
+      ],
+      "title": "Programming Language Concepts",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 319",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "STAT 318",
+         "STAT 414",
+         "STAT 415",
+         "STAT 416",
+         "STAT 417",
+         "STAT 418",
+         "STAT 440",
+         "STAT 460",
+         "STAT 480",
+         "MATH 451",
+         "MATH 455",
+         "MATH 456",
+         "MATH 457"
+        ],
+        "raw": "STAT 318 or (STAT 414 or STAT 415 or STAT 416 or STAT 417 or STAT 418 or STAT 440 or STAT 460 or STAT 480 or MATH 451 or MATH 455 or MATH 456 or MATH 457)"
+       }
+      ],
+      "title": "Elementary Mathematical Statistics",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 202C",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "one_of": [
+         "ENGL 15"
+        ],
+        "raw": "ENGL 15 or ENGL 30"
+       }
+      ],
+      "title": "Effective Writing: Technical Writing",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. The Bulletin's suggested plan does not name the course; any General Education course may be used.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 6",
+    "n": 6,
+    "term": "",
+    "year_label": "Year 3"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CMPSC 483W",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       {
+        "course": "CMPSC 320",
+        "raw": "CMPSC 320 and CMPSC 461"
+       },
+       {
+        "course": "CMPSC 461",
+        "raw": "CMPSC 320 and CMPSC 461"
+       }
+      ],
+      "title": "Software Design Methods",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456. Select three electives in this semester (9 cr total) and three in Semester 8 (9 cr total).",
+      "code": "400-Level Elective A",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456.",
+      "code": "400-Level Elective B",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456.",
+      "code": "400-Level Elective C",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General elective from the department list, 3 credits. The Bulletin prints this as 'General elective (from department list)'.",
+      "code": "General Elective (Dept List)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (from department list)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Health and Wellness (GHW) course — student choice, 1.5 credits each semester (two semesters shown).",
+      "code": "GHW",
+      "credits": 1.5,
+      "options": [],
+      "prereq": [],
+      "title": "Health and Wellness",
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.5,
+    "label": "Semester 7",
+    "n": 7,
+    "term": "",
+    "year_label": "Year 4"
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456.",
+      "code": "400-Level Elective D",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456.",
+      "code": "400-Level Elective E",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "400-level CMPSC/CMPEN elective (3 cr). Official options: CMPEN 362, CMPEN 431, CMPEN 454, CMPEN 462, CMPSC 431W, CMPSC 432, CMPSC 442, CMPSC 443, CMPSC 444, CMPSC 447, CMPSC 448, CMPSC 449, CMPSC 450, CMPSC 451, CMPSC 455, CMPSC 456, CMPSC 458, CMPSC 464, CMPSC 466, CMPSC 467, CMPSC 471, CMPSC 473, CMPSC 475, CMPSC 476, CMPSC 478, CMPSC 489, EE 456.",
+      "code": "400-Level Elective F",
+      "credits": 3,
+      "options": [
+       "CMPEN 362",
+       "CMPEN 431",
+       "CMPEN 454",
+       "CMPEN 462",
+       "CMPSC 431W",
+       "CMPSC 432",
+       "CMPSC 442",
+       "CMPSC 443",
+       "CMPSC 444",
+       "CMPSC 447",
+       "CMPSC 448",
+       "CMPSC 449",
+       "CMPSC 450",
+       "CMPSC 451",
+       "CMPSC 455",
+       "CMPSC 456",
+       "CMPSC 458",
+       "CMPSC 464",
+       "CMPSC 466",
+       "CMPSC 467",
+       "CMPSC 471",
+       "CMPSC 473",
+       "CMPSC 475",
+       "CMPSC 476",
+       "CMPSC 478",
+       "CMPSC 489",
+       "EE 456"
+      ],
+      "prereq": [],
+      "title": "400-Level CMPSC/CMPEN Elective",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General elective from the department list, 3 credits. The Bulletin prints this as 'General elective (from department list)'.",
+      "code": "General Elective (Dept List)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Elective (from department list)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "General Education course, 3 credits. The Bulletin's suggested plan does not name the course; any General Education course may be used.",
+      "code": "General Education",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Health and Wellness (GHW) course — student choice, 1.5 credits each semester (two semesters shown).",
+      "code": "GHW",
+      "credits": 1.5,
+      "options": [],
+      "prereq": [],
+      "title": "Health and Wellness",
+      "slot_id": "s8-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.5,
+    "label": "Semester 8",
+    "n": 8,
+    "term": "",
+    "year_label": "Year 4"
+   }
+  ],
+  "source_url": "https://bulletins.psu.edu/undergraduate/colleges/engineering/computer-science-bs/",
+  "total_credits": 127,
+  "transfer_confidence": "",
+  "content_hash": "a59ea7642e198fa1878c9f49aabb7185ad922a5d526adc3d84881a5fd01986f2",
+  "last_verified": "2026-10-02"
+ }
+}

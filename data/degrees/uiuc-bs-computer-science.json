@@ -1,0 +1,615 @@
+{
+ "institution": {
+  "city": "Urbana, IL",
+  "kind": "public4yr",
+  "name": "University of Illinois Urbana-Champaign",
+  "state": "IL"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "uiuc-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UIUC 2026-2027 Course Catalog page 'Computer Science, BS' (for the degree of Bachelor of Science in Computer Science, Grainger College of Engineering, Siebel School of Computing and Data Science), transcribed by hand from the catalog's 'Sample Sequence' tables on 2026-09-30 from https://catalog.illinois.edu/undergraduate/engineering/computer-science-bs/. 128 credit hours across 8 semesters (Fall Year 1 through Spring Year 4), matching the catalog's stated minimum of 128 hours for graduation. All course codes, titles, and credit hours are verbatim from the official sample sequence. The catalog explicitly states the sample sequence is only a guide: students must work with their academic advisor on actual course selection and sequencing, and course availability is not guaranteed in the indicated semester. 'or' slots (MATH 221/MATH 220, Composition I/Gen Ed, CS 210/CS 211, MATH 257/MATH 415/MATH 416) reflect official catalog alternatives; choice_note records the details. Science Elective, CS Technical Elective (18 hours), CS Advanced Elective (6 hours), and Free Elective slots are student-choice courses per the official degree requirements; free electives are additional coursework, subject to Grainger College of Engineering restrictions, to reach at least 128 hours. Language Other Than English: students must fulfill the requirement by successfully completing a third level of a language other than English. CS 100 is listed as optional but highly recommended. The catalog does not publish per-slot prerequisites in the sample sequence, so prereq arrays are intentionally left empty — consult the official catalog course pages and an academic advisor.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "Optional course, highly recommended; counts as a Free Elective per the official sample sequence.",
+      "code": "CS 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science Orientation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 124",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction to Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "MATH 220 may be substituted. MATH 220 is appropriate for students with no background in calculus; 4 of 5 credit hours count towards degree.",
+      "code": "MATH 221",
+      "credits": 4,
+      "options": [
+       "MATH 221",
+       "MATH 220"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": false,
+      "choice_note": "External transfer students take ENG 300.",
+      "code": "ENG 100",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Grainger Engineering Orientation Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Science Elective course (student choice) per the official sample sequence.",
+      "code": "Science Elective 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Science Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose a Humanities or Social/Behavioral Science course per the official sample sequence.",
+      "code": "Composition I or Gen Ed 1",
+      "credits": 4,
+      "options": [
+       "Composition I",
+       "General Education (Humanities or Social/Behavioral Science)"
+      ],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "Composition I or General Education",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 128",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 173",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose a Humanities or Social/Behavioral Science course with Cultural Studies designation per the official sample sequence.",
+      "code": "Gen Ed Cultural Studies 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "General Education course",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose a Humanities or Social/Behavioral Science course, or a Composition I course, per the official sample sequence.",
+      "code": "Composition I or Gen Ed 2",
+      "credits": 3,
+      "options": [
+       "General Education (Humanities or Social/Behavioral Science)",
+       "Composition I"
+      ],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "General Education or Composition I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 222",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Software Design Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 225",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 241",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 211",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "University Physics: Mechanics",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose a Humanities or Social/Behavioral Science course with Cultural Studies designation per the official sample sequence.",
+      "code": "Gen Ed Cultural Studies 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "General Education course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 233",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Probability & Statistics for Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "MATH 415 (Applied Linear Algebra) or MATH 416 (Abstract Linear Algebra) may be taken instead per the official degree requirements.",
+      "code": "MATH 257",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Linear Algebra with Computational Applications",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 212",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "University Physics: Elec & Mag",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CS 211 (Ethical and Professional Conduct) may be chosen instead; CS 211 satisfies a core course requirement and the Campus General Education Advanced Composition requirement. The catalog lists CS 210 as 2 or 3 hours; the sample sequence places it as 2.",
+      "code": "CS 210",
+      "credits": 2,
+      "options": [
+       "CS 210",
+       "CS 211"
+      ],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Ethical & Professional Issues",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 341",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "System Programming",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 357",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Numerical Methods I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Students must fulfill their Language Other Than English requirement by successfully completing a third level of a language other than English.",
+      "code": "Language Other Than English 1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Language Other Than English (3rd level)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 374",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction to Algorithms & Models of Computation",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "general",
+      "choice": true,
+      "choice_note": "Choose a Humanities or Social/Behavioral Science course with Cultural Studies designation per the official sample sequence.",
+      "code": "Gen Ed Cultural Studies 3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "General Education course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 421",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Programming Languages & Compilers",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Advanced Elective course (student choice, 6 hours required) per the official degree requirements.",
+      "code": "CS Advanced Elective 1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Advanced Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Advanced Elective course (student choice, 6 hours required) per the official degree requirements.",
+      "code": "CS Advanced Elective 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CS Advanced Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Technical Elective course (student choice, 18 hours required) per the official degree requirements.",
+      "code": "CS Technical Elective 6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS Technical Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective course (student choice) per the official sample sequence.",
+      "code": "Free Elective 6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Free Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.illinois.edu/undergraduate/engineering/computer-science-bs/",
+  "total_credits": 128,
+  "content_hash": "ef81c10b4b3d0fc82cf2d78f44ccc822c6237379a9a2f0946f66c975987836be",
+  "last_verified": "2026-10-02"
+ }
+}

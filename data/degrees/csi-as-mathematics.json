@@ -1,0 +1,293 @@
+{
+ "institution": {
+  "city": "Twin Falls, ID",
+  "kind": "public4yr",
+  "name": "College of Southern Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AS",
+  "id": "csi-as-mathematics",
+  "major": "Mathematics",
+  "notes": "Source: official College of Southern Idaho 2024-2025 catalog, 'Mathematics, Associate of Science' program page (Major Code: 1720S), hand-transcribed 2026-10-02 from https://csi.smartcatalogiq.com/en/2024-2025/catalog/math-department/mathematics/mathematics-associate-of-science . Transcription method: fetched the official program page and transcribed the four 'Fall/Spring Semester Freshman/Sophomore Year' tables verbatim (course codes, titles, credits). TRUE award: Associate of Science. Total credits: 60, the catalog's published minimum ('Total Credit Hours: 60-61'). DISCREPANCY NOTED HONESTLY: the official page prints 'Total Credit Hours: 16' for Fall Semester Sophomore Year, but the official course credits listed in that table (MATH 275 4 + MATH 176 4 + COMM GE 3 + COMS 229 4 + COMS 229L 0) sum to 15. Transcribed per the official course credits (semester sums to 15); the catalog's overall 60-61 total still holds (15+15+15+15=60 minimum with SCIG GE2 at 3 cr; 61 maximum with SCIG GE2 at 4 cr). COMS 229L is a required 0-credit corequisite lab, modeled with required_zero=true per validator convention. Choice slots: SCIG GE / HUMA GE1 / WELL GE / SOCS GE / COMM GE / HUMA GE2 / SOCS GE2 / SCIG GE2 are official catalog placeholders for 'any Gen. Ed.' course in that category (student choice). SCIG GE2 is '3-4 Credits'; modeled here as 3 SCH for the 60-credit minimum path. Prereqs: left empty. The catalog marks courses with '*' as 'Prerequisite or corequisite required' but does not name the prerequisite on the plan page. Footnotes: Humanities, Social Science, and Science courses must each be from 2 different disciplines. The catalog notes 'Alternative plans of study available by contacting your advisor.'",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 170",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Calculus 1",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "GNED 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Introduction to General Education",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE': any General Education Science course (student choice). Science courses must be from 2 different disciplines (catalog footnote).",
+      "code": "SCIG-GE-CHOICE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "General Education Science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Fall Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 175",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Calculus 2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Writing and Rhetoric II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE1': any General Education Humanistic & Artistic Ways of Knowing course (student choice). Humanities courses must be from 2 different disciplines (catalog footnote).",
+      "code": "HUMA-GE1-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'WELL GE': any General Education Wellness elective (student choice).",
+      "code": "WELL-GE-CHOICE",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Wellness elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE': any General Education Social and Behavioral Ways of Knowing course (student choice). Social Science courses must be from 2 different disciplines (catalog footnote).",
+      "code": "SOCS-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Social and Behavioral Ways of Knowing course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Spring Semester Freshman Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 275",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus 3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 176",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'COMM GE': any General Education Oral Communication course (student choice).",
+      "code": "COMM-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Oral Communication general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMS 229",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Computer Science and Programming 1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Required 0-credit corequisite lab (official catalog lists 0 Credits).",
+      "code": "COMS 229L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Computer Science & Programming 1 Lab",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Fall Semester Sophomore Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Ordinary Differential Equations",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 230",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Introduction to Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE2': any 2nd General Education Humanistic & Artistic Ways of Knowing course (student choice). Humanities courses must be from 2 different disciplines (catalog footnote).",
+      "code": "HUMA-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "2nd Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE2': any 2nd General Education Social and Behavioral Ways of Knowing course (student choice). Social Science courses must be from 2 different disciplines (catalog footnote).",
+      "code": "SOCS-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "2nd Social and Behavioral Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE2': any 2nd General Education Science course, 3-4 Credits (student choice). Modeled here as 3 SCH for the 60-credit minimum path. Science courses must be from 2 different disciplines (catalog footnote).",
+      "code": "SCIG-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "2nd General Education Science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Spring Semester Sophomore Year"
+   }
+  ],
+  "source_url": "https://csi.smartcatalogiq.com/en/2024-2025/catalog/math-department/mathematics/mathematics-associate-of-science",
+  "total_credits": 60,
+  "content_hash": "51f2668ba3beb8ce670d6328541ae4b3e685f06bff2908fde0b463f80e849293",
+  "last_verified": "2026-10-02"
+ }
+}

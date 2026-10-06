@@ -1,0 +1,391 @@
+{
+ "institution": {
+  "city": "Twin Falls, ID",
+  "kind": "public4yr",
+  "name": "College of Southern Idaho",
+  "state": "ID"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BAS",
+  "id": "csi-bas-operations-management",
+  "major": "Operations Management",
+  "notes": "Source: official College of Southern Idaho 2024-2025 catalog, 'Operations Management, Bachelor of Applied Science' program page (Major Code: 8122B), hand-transcribed 2026-10-02 from https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/business-and-information-systems-department/operations-management/operations-management-bachelor-of-applied-science . Transcription method: fetched the official program page and transcribed the published requirement tables verbatim (course codes, titles, credits, printed semester totals).  TRUE award: Bachelor of Applied Science (page title). Catalog year 2024-2025: the newest CSI catalog with complete published program pages found (a 2025-2026 catalog exists but its program pages were not locatable; the 2024-2025 pages are complete and officially published). This is a degree-completion BAS (program_type 'completion'): the 60-credit pre-admission AAS block transfers in and only the 60-credit post-admission sequence is published semester-by-semester. Modeled on the AAS Concentration (the flagship BAS path): semester 1 is the published 'Pre-Admission Requirements (AAS Concentration)' block - 5 listed GE courses (15 cr) plus the catalog-required 45 credits from the student's accredited CTE/AAS program, modeled as one 45-credit transfer block (student's earned AAS). Semesters 2-5 are the published Fall/Spring Junior/Senior tables (15/15/15/15). Total 120 = the catalog's published total. REPEATED COURSE (official catalog): 'ENGL 101 Writing and Rhetoric I' is printed in BOTH the pre-admission block and Fall Semester Junior Year; the catalog's post-admission semesters include remaining GE core for students whose AAS did not include them ('36 credits of general education core classes; 15 credits will have been completed through the AAS degree'), so the code legitimately appears twice; plan sets allow_repeated_courses per the validator contract. Variable credit: 'SCIG GE Any Gen. Ed. Science Course 3-4 Credits' in Fall Senior modeled at 3 (minimum-credit path). Choice slots: 'BUSA 201 Business Communications OR ENGL 202 Technical Communication' (both 3 cr); COMM GE / MATH GE / SOCS GE / ELEC GE / HUMA GE1 / HUMA GE2 / SCIG GE / SCIG GE2 / WELL GE are official catalog placeholders (student choice). The catalog notes the ELEC GE 'should not be of the same discipline as' the SOCS GE course. The same page also publishes an AA/AS Concentration (60-credit AA/AS block + 21 credits of CTE coursework + the junior/senior tables with CTE courses); per the one-plan-per-major corpus convention only the AAS Concentration is modeled here. Prereqs: left empty. The catalog marks courses with '*' as 'Prerequisite or corequisite required' but does not name the prerequisite on the plan page; per-course prerequisites live on the official catalog course pages, not the plan page.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'COMM GE': any General Education Oral Communication course (student choice).",
+      "code": "COMM-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Oral Communication general education course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'MATH GE': any General Education Math course (student choice).",
+      "code": "MATH-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "General Education Math course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SOCS GE': any General Education Social and Behavioral Ways of Knowing course (student choice).",
+      "code": "SOCS-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Social and Behavioral Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'ELEC GE': any General Education Elective (student choice).",
+      "code": "ELEC-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official catalog: the AAS Concentration requires a completed AAS degree of at least 60 credits from an accredited institution - 15 credits of general education plus 45 credits from a CTE program. Modeled as one 45-credit transfer block (the student's earned AAS).",
+      "code": "CTE-TRANSFER-45",
+      "credits": 45,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "tccns": "",
+      "title": "CTE program credits from earned AAS (45 credits)",
+      "xfer": []
+     }
+    ],
+    "n": 1,
+    "term": "Pre-Admission Requirements (AAS Concentration) - transfer block"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 300",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Principles of Business Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Operations Project Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "BUSA 215",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Information Science and Data Management",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Writing and Rhetoric I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "GNED 101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "Introduction to General Education",
+      "xfer": []
+     }
+    ],
+    "n": 2,
+    "term": "Fall Semester Junior Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Business Law & Human Resources",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 370",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Operational Planning",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 385",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Industry Internship Experience",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE': any General Education Humanistic & Artistic Ways of Knowing course (student choice).",
+      "code": "HUMA-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog lists 'BUSA 201 Business Communications OR ENGL 202 Technical Communication' (both 3 credits).",
+      "code": "BUSA-201-ENGL-202-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "Business Communications OR Technical Communication (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 3,
+    "term": "Spring Semester Junior Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Ethical Leadership",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 410",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Cost Analysis & Control",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 420",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Production & Supply Chain Management",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE': any General Education Science course, 3-4 credits; modeled at 3 (minimum-credit path).",
+      "code": "SCIG-GE-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "General Education Science course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'HUMA GE2': any 2nd General Education Humanistic & Artistic Ways of Knowing course (student choice).",
+      "code": "HUMA-GE2-CHOICE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "2nd Humanistic & Artistic Ways of Knowing course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 4,
+    "term": "Fall Semester Senior Year"
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 440",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Human Performance Improvement",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 450",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Total Quality Management",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ASOM 480",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Operations Management Projects",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'WELL GE': any Wellness course (student choice).",
+      "code": "WELL-CHOICE",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Wellness course (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Official catalog placeholder 'SCIG GE2': any 2nd General Education Science course (student choice).",
+      "code": "SCIG-GE2-CHOICE",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "2nd General Education Science course (student choice)",
+      "xfer": []
+     }
+    ],
+    "n": 5,
+    "term": "Spring Semester Senior Year"
+   }
+  ],
+  "source_url": "https://csi.smartcatalogiq.com/en/2024-2025/2024-2025-catalog/business-and-information-systems-department/operations-management/operations-management-bachelor-of-applied-science",
+  "total_credits": 120,
+  "program_type": "completion",
+  "allow_repeated_courses": true,
+  "content_hash": "4f36ad7e8f05bc3fe91dacf6dc001964d992760c5c0d5ef39e70b6c2d33a92a7",
+  "last_verified": "2026-10-02"
+ }
+}

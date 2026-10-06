@@ -1,0 +1,153 @@
+{
+ "institution": {
+  "name": "Loma Linda University",
+  "city": "Loma Linda, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "loma-linda-university-certificate-computed-tomography",
+  "degree": "Certificate",
+  "major": "Computed Tomography",
+  "catalog_year": "2026-2027",
+  "total_credits": 14,
+  "source_url": "https://llucatalog.llu.edu/allied-health-professions/special-imaging-ct-certificate/",
+  "notes": "Transcribed from the official Loma Linda University 2026-2027 Catalog (effective Summer Quarter 2026) program page 'Computed Tomography (CT) - Certificate' (School of Allied Health Professions, Department of Radiation Technology, Special Imaging). The catalog publishes the two-quarter curriculum: Autumn: 8, Winter: 6 = 14 = catalog Total Units 14. RTSI 970 (Special Imaging (CT/MRI) Affiliation) is listed at 2-3 units in both quarters; the catalog's Total Units 14 corresponds exactly to the 3-unit-per-quarter composition (fixed courses 8 + affiliation 3+3 = 14), and the catalog footnote describes registering for 3 units over two quarters to fulfill the 6-unit affiliation requirement - consistent with the 3-unit composition - so it is encoded at 3 units with the 2-unit alternative documented. RTSI 970 repeats in both quarters exactly as published; allow_repeated_courses is set. The Winter Quarter religion row is a catalog placeholder ('REL__4____ Lower or Upperdivision religion'); it is encoded as a REL-ELECT choice slot whose options are the religion courses the catalog lists for this program: RELT 423 Loma Linda Perspectives, RELE 457 Christian Ethics and Health Care, RELT 415 Christian Theology and Popular Culture. Per-course prerequisites are not published; the published quarter order is the official sequence, so prereq arrays are intentionally empty.",
+  "external_prereqs": [],
+  "allow_repeated_courses": true,
+  "semesters": [
+   {
+    "term": "Autumn Quarter",
+    "courses": [
+     {
+      "code": "RTSI 367",
+      "title": "Cross-sectional Radiographic Anatomy",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "RTSI 367",
+      "xfer": [
+       "loma-linda-university-bs-nuclear-medicine-technology",
+       "loma-linda-university-bs-radiation-therapy-technology",
+       "loma-linda-university-certificate-magnetic-resonance-imaging"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false,
+      "slot_id": "s1-0"
+     },
+     {
+      "code": "RTSI 369",
+      "title": "CT Physics",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "RTSI 369",
+      "xfer": [
+       "loma-linda-university-bs-nuclear-medicine-technology",
+       "loma-linda-university-bs-radiation-therapy-technology"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false,
+      "slot_id": "s1-1"
+     },
+     {
+      "code": "RTSI 970",
+      "title": "Special Imaging (CT/MRI) Affiliation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "RTSI 970",
+      "xfer": [
+       "loma-linda-university-certificate-magnetic-resonance-imaging"
+      ],
+      "choice": false,
+      "choice_note": "Catalog lists RTSI 970 at 2-3 units per quarter. Encoded at 3 units per quarter because the catalog's Total Units 14 corresponds exactly to the 3-unit-per-quarter composition (fixed courses: 8 + affiliation 3+3 = 14); the catalog footnote describes registering for 3 units over two quarters to fulfill the 6-unit affiliation requirement, consistent with the 3-unit composition. The 2-unit option (spread over three quarters) is documented here.",
+      "options": [],
+      "category": "major",
+      "required_zero": false,
+      "slot_id": "s1-2"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Winter Quarter",
+    "courses": [
+     {
+      "code": "REL-ELECT",
+      "title": "Religion elective",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "REL-ELECT",
+      "xfer": [
+       "loma-linda-university-as-cardiac-electrophysiology-technology",
+       "loma-linda-university-certificate-cardiac-and-vascular-imaging",
+       "loma-linda-university-certificate-magnetic-resonance-imaging"
+      ],
+      "choice": true,
+      "choice_note": "Catalog placeholder row 'REL__4____ Lower or Upperdivision religion' (2 units). Options per catalog footnote 2: RELT 423 Loma Linda Perspectives, RELE 457 Christian Ethics and Health Care, RELT 415 Christian Theology and Popular Culture.",
+      "options": [
+       {
+        "code": "RELT 423",
+        "title": "Loma Linda Perspectives",
+        "credits": 2
+       },
+       {
+        "code": "RELE 457",
+        "title": "Christian Ethics and Health Care",
+        "credits": 2
+       },
+       {
+        "code": "RELT 415",
+        "title": "Christian Theology and Popular Culture",
+        "credits": 2
+       }
+      ],
+      "category": "religion",
+      "required_zero": false,
+      "slot_id": "s2-0"
+     },
+     {
+      "code": "RTSI 364",
+      "title": "CT Patient Care and Procedures",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "RTSI 364",
+      "xfer": [
+       "loma-linda-university-bs-nuclear-medicine-technology",
+       "loma-linda-university-bs-radiation-therapy-technology"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "required_zero": false,
+      "slot_id": "s2-1"
+     },
+     {
+      "code": "RTSI 970",
+      "title": "Special Imaging (CT/MRI) Affiliation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "RTSI 970",
+      "xfer": [
+       "loma-linda-university-certificate-magnetic-resonance-imaging"
+      ],
+      "choice": false,
+      "choice_note": "Catalog lists RTSI 970 at 2-3 units per quarter. Encoded at 3 units per quarter because the catalog's Total Units 14 corresponds exactly to the 3-unit-per-quarter composition (fixed courses: 8 + affiliation 3+3 = 14); the catalog footnote describes registering for 3 units over two quarters to fulfill the 6-unit affiliation requirement, consistent with the 3-unit composition. The 2-unit option (spread over three quarters) is documented here.",
+      "options": [],
+      "category": "major",
+      "required_zero": false,
+      "slot_id": "s2-2"
+     }
+    ],
+    "n": 2
+   }
+  ],
+  "content_hash": "59e473b57acd19e09954d604d0cf787a17c5421c8e532f11cf057be687eb0063",
+  "last_verified": "2026-10-02"
+ }
+}

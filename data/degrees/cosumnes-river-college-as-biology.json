@@ -1,0 +1,317 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "id": "cosumnes-river-college-as-biology",
+  "major": "Biology",
+  "notes": "Transcribed from the official CRC 'Biology A.S. Degree - Local GE' program map, Catalog Year 2026-2027, published August 25, 2026 (mapmaker.losrios.edu/Maps/7890/PublishedPdf). GE Pattern: CRC Local. Total Units 61-64; lower bound 61 encoded per range rule (semester sums 15+14+16+16 = 61). Calculus track choice: MATH 400 (5 units) or MATH 355 (4 units) in Semester 1, continuing to MATH 401 (5) or MATH 356 (4) in Semester 2 — lower-credit options encoded, ranges documented in choice_notes. Semester 3 'Local Area 7B-Living Skills' 2-3 units: lower bound 2 encoded. Pre-program preparation noted per map (Intermediate Algebra, CHEM 300/305/309, MATH 373/384, MATH 120, ENGWR 300 eligibility) is placement/advisory, not sequenced; in-plan prerequisite chains (CHEM 400>401>420>421, BIOL 400>410/420) are encoded.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Pre-req per map (pre-program preparation): Intermediate Algebra or equivalent AND CHEM 300 or CHEM 305 or CHEM 309.",
+      "code": "CHEM 400",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "CHEM 400",
+      "title": "General Chemistry I",
+      "slot_id": "s1-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Calculus track choice: MATH 400 Calculus I (5 units; pre-req MATH 370 or MATH 372 and MATH 373) or MATH 355 Calculus for Biology and Medicine I (4 units; pre-req MATH 373 or MATH 384). Lower bound (4) encoded; continues in Semester 2.",
+      "code": "MATH 355",
+      "core_area": "L2",
+      "credits": 4,
+      "options": [
+       "MATH 400",
+       "MATH 355"
+      ],
+      "prereq": [],
+      "tccns": "MATH 355",
+      "title": "Calculus for Biology and Medicine I",
+      "slot_id": "s1-1",
+      "xfer": [
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L1A (English Composition).",
+      "code": "Any CRC Area L1A course",
+      "core_area": "L1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L1A (English Composition) course",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L3 (Arts & Humanities).",
+      "code": "Any CRC Area L3 course",
+      "core_area": "L3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L3 (Arts & Humanities) course",
+      "slot_id": "s1-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Per map also requires MATH 120 (pre-program); advisory: eligibility for ENGWR 300.",
+      "code": "BIOL 400",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 400"
+      ],
+      "tccns": "BIOL 400",
+      "title": "Principles of Biology",
+      "slot_id": "s2-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Continues the Semester 1 calculus choice: MATH 401 Calculus II (5 units; pre-req MATH 400) or MATH 356 Calculus for Biology and Medicine II (4 units; pre-req MATH 355). Lower bound (4) encoded.",
+      "code": "MATH 356",
+      "core_area": "L2",
+      "credits": 4,
+      "options": [
+       "MATH 401",
+       "MATH 356"
+      ],
+      "prereq": [
+       "MATH 355"
+      ],
+      "tccns": "MATH 356",
+      "title": "Calculus for Biology and Medicine II",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 401",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 400"
+      ],
+      "tccns": "CHEM 401",
+      "title": "General Chemistry II",
+      "slot_id": "s2-2",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-as-geology",
+       "cosumnes-river-college-ast-biology",
+       "cosumnes-river-college-ast-geology",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): eligibility for ENGWR 300.",
+      "code": "BIOL 410",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "BIOL 400"
+      ],
+      "tccns": "BIOL 410",
+      "title": "Principles of Botany",
+      "slot_id": "s3-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 420",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 401"
+      ],
+      "tccns": "CHEM 420",
+      "title": "Organic Chemistry I",
+      "slot_id": "s3-1",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L4 (Social & Behavioral Science).",
+      "code": "Any CRC Area L4 course",
+      "core_area": "L4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L4 (Social & Behavioral Science) course",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L7A (Living Skills - PE).",
+      "code": "Any CRC Area L7A course",
+      "core_area": "L7A",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L7A (Living Skills - PE) course",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L7B (Living Skills). Map lists 2-3 units; lower bound 2 encoded.",
+      "code": "Any CRC Area L7B course",
+      "core_area": "L7B",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L7B (Living Skills) course",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): eligibility for ENGWR 300.",
+      "code": "BIOL 420",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "BIOL 400"
+      ],
+      "tccns": "BIOL 420",
+      "title": "Principles of Zoology",
+      "slot_id": "s4-0",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc",
+       "cosumnes-river-college-ast-biology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 421",
+      "core_area": "L5",
+      "credits": 5,
+      "options": [],
+      "prereq": [
+       "CHEM 420"
+      ],
+      "tccns": "CHEM 421",
+      "title": "Organic Chemistry II",
+      "slot_id": "s4-1",
+      "xfer": [
+       "cosumnes-river-college-as-biology-calgetc"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L1B (Oral Communication & Critical Thinking).",
+      "code": "Any CRC Area L1B course",
+      "core_area": "L1B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L1B (Oral Communication & Critical Thinking) course",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L6 (Ethnic Studies).",
+      "code": "Any CRC Area L6 course",
+      "core_area": "L6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L6 (Ethnic Studies) course",
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7890/PublishedPdf",
+  "total_credits": 61,
+  "content_hash": "c0b0d8ae5d983c41792255cd37129cd13b78d0b54fb28c8a0dbea0e5e8fb68fd",
+  "last_verified": "2026-10-02"
+ }
+}

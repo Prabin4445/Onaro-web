@@ -1,0 +1,727 @@
+{
+ "institution": {
+  "name": "Arizona State University",
+  "city": "Tempe, AZ",
+  "state": "AZ",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "asu-ba-computer-science",
+  "degree": "BA",
+  "major": "Computer Science",
+  "catalog_year": "2024-2025",
+  "total_credits": 120,
+  "source_url": "https://degrees.asu.edu/major-map/ASU00/ESCSEBA/null/ALL/2024",
+  "notes": "Source: official ASU Degree Search major map for 'Computer Science, BA' (program code ESCSEBA), 2024-2025 catalog year: https://degrees.asu.edu/major-map/ASU00/ESCSEBA/null/ALL/2024 . Transcription method: automated parse of every term row (courses, credit hours, minimum grades) from the official major map page on 2026-09-30, spot-checked against the rendered page. Term names use ASU's own 'Term N' numbering. General Studies designations (HUAD, SOBE, SCIT, AMIT, GCSI, CIVI, SUST) are modeled as choice:true student-choice slots; OR-options are choice slots naming the alternatives. Per-course prerequisites are NOT listed on the ASU major map, so prereq arrays are intentionally empty. Campus: West Valley. Major map track groups (Upper Division Computing Electives, Computing Capstone/Experiential Learning Requirement, Upper Division Communication Elective) are elective choice lists transcribed as choice slots with the group's courses as options.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Term 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 110",
+      "title": "Principles of Programming (QTRS OR CS)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "ASU 101-CAI: The ASU Experience",
+      "title": "ASU 101-CAI: The ASU Experience",
+      "credits": 1
+     },
+     {
+      "slot_id": "s1-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 101",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: MAT 210: Brief Calculus (MATH OR MA) OR MAT 251: Calculus for Life Sciences (MATH OR MA) OR MAT 265: Calculus for Engineers I (MATH OR MA) OR MAT 270: Calculus with Analytic Geometry I (MATH OR MA); minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "MAT 210",
+      "title": "Brief Calculus (MATH OR MA) (choose MAT 210 / MAT 251 / MAT 265 / MAT 270) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Humanities, Arts and Design (HUAD)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "HUAD 1XX",
+      "title": "Humanities, Arts and Design (HUAD) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s1-5",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Term 2",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 205",
+      "title": "Object-Oriented Programming and Data Structures (QTRS OR CS)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "STP 226",
+      "title": "Elements of Statistics (QTRS OR CS)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ENG 101 OR ENG 102: First-Year Composition OR ENG 105: Advanced First-Year Composition OR ENG 107 OR ENG 108: First-Year Composition; minimum grade C",
+      "options": [],
+      "category": "gened",
+      "code": "ENG 102",
+      "title": "First-Year Composition (choose ENG 101 / ENG 102 / ENG 105 / ENG 107 / ENG 108) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Humanities, Arts and Design (HUAD)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "HUAD 2XX",
+      "title": "Humanities, Arts and Design (HUAD) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s2-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 1XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Term 3",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 240",
+      "title": "Introduction to Programming Languages",
+      "credits": 3
+     },
+     {
+      "slot_id": "s3-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "MAT 243",
+      "title": "Discrete Mathematical Structures",
+      "credits": 3
+     },
+     {
+      "slot_id": "s3-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Scientific Thinking in Natural Sciences (SCIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SCIT 2XX",
+      "title": "Scientific Thinking in Natural Sciences (SCIT) -- student choice",
+      "credits": 4
+     },
+     {
+      "slot_id": "s3-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Social and Behavioral Sciences (SOBE)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SOBE 1XX",
+      "title": "Social and Behavioral Sciences (SOBE) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s3-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE-2",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Term 4",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: ACO 201: Data Structures and Algorithms (QTRS OR CS) OR SER 222: Design and Analysis of Data Structures and Algorithms OR CPI 220: Applied Data Structures and Algorithms OR CSE 310: Data Structures and Algorithms; minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "ACO 201",
+      "title": "Data Structures and Algorithms (QTRS OR CS) (choose ACO 201 / SER 222 / CPI 220 / CSE 310) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 225",
+      "title": "Introduction to Modern Computing Systems",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 301",
+      "title": "Computing Ethics",
+      "credits": 1
+     },
+     {
+      "slot_id": "s4-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "CSE 360",
+      "title": "Introduction to Software Engineering",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Governance and Civic Engagement (CIVI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "CIVI 1XX",
+      "title": "Governance and Civic Engagement (CIVI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s4-5",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE-3",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Term 5",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "ACO 330",
+      "title": "Computer Networks",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "ACO 350",
+      "title": "Systems Programming (QTRS OR CS)",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Communication Elective': choose an approved course from: COM 316: Gender and Communication (SOBE OR SB & C); COM 317: Nonverbal Communication (SOBE OR SB); COM 353: Professional Communication; COM 371: Language, Culture, and Communication (GCSI OR SB & C & G); COM 415: Risk Communication; COM 416: Gender and Race in the Media; COM 457: New Media; COM 459: Theory and Methods of Social Media Networks; COM 471: Global Media and Cultural Identity (GCSI OR G); COM 477: Sport, Culture, and Discourses; minimum grade C",
+      "options": [
+       {
+        "code": "COM 316",
+        "title": "Gender and Communication (SOBE OR SB & C)"
+       },
+       {
+        "code": "COM 317",
+        "title": "Nonverbal Communication (SOBE OR SB)"
+       },
+       {
+        "code": "COM 353",
+        "title": "Professional Communication"
+       },
+       {
+        "code": "COM 371",
+        "title": "Language, Culture, and Communication (GCSI OR SB & C & G)"
+       },
+       {
+        "code": "COM 415",
+        "title": "Risk Communication"
+       },
+       {
+        "code": "COM 416",
+        "title": "Gender and Race in the Media"
+       },
+       {
+        "code": "COM 457",
+        "title": "New Media"
+       },
+       {
+        "code": "COM 459",
+        "title": "Theory and Methods of Social Media Networks"
+       },
+       {
+        "code": "COM 471",
+        "title": "Global Media and Cultural Identity (GCSI OR G)"
+       },
+       {
+        "code": "COM 477",
+        "title": "Sport, Culture, and Discourses"
+       }
+      ],
+      "category": "elective",
+      "code": "COM 316",
+      "title": "Upper Division Communication Elective -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Computing Elective': choose an approved course from: ACO 321: Database Development & Applications; ACO 331: Network Forensics Analysis; ACO 351: Governance, Risk and Compliance; ACO 361: Secure Coding Concepts; ACO 394: Special Topics; ACO 420: Big Data Systems; ACO 423: Data Science; ACO 430: Wireless Networks and Security; ACO 431: Network Security; ACO 432: Distributed Systems; ACO 461: Security Operations; ACO 494: Special Topics; ...; minimum grade C",
+      "options": [
+       {
+        "code": "ACO 321",
+        "title": "Database Development & Applications"
+       },
+       {
+        "code": "ACO 331",
+        "title": "Network Forensics Analysis"
+       },
+       {
+        "code": "ACO 351",
+        "title": "Governance, Risk and Compliance"
+       },
+       {
+        "code": "ACO 361",
+        "title": "Secure Coding Concepts"
+       },
+       {
+        "code": "ACO 394",
+        "title": "Special Topics"
+       },
+       {
+        "code": "ACO 420",
+        "title": "Big Data Systems"
+       },
+       {
+        "code": "ACO 423",
+        "title": "Data Science"
+       },
+       {
+        "code": "ACO 430",
+        "title": "Wireless Networks and Security"
+       },
+       {
+        "code": "ACO 431",
+        "title": "Network Security"
+       },
+       {
+        "code": "ACO 432",
+        "title": "Distributed Systems"
+       },
+       {
+        "code": "ACO 461",
+        "title": "Security Operations"
+       },
+       {
+        "code": "ACO 494",
+        "title": "Special Topics"
+       },
+       {
+        "code": "CPI 310",
+        "title": "Web-Based Information Management Systems"
+       },
+       {
+        "code": "CPI 350",
+        "title": "Evaluation of Informatics Systems"
+       },
+       {
+        "code": "CPI 360",
+        "title": "Decision Making and Problem Solving"
+       },
+       {
+        "code": "CSE 335",
+        "title": "Principles of Mobile Application Development"
+       },
+       {
+        "code": "CSE 365",
+        "title": "Information Assurance"
+       },
+       {
+        "code": "CSE 445",
+        "title": "Distributed Software Development"
+       },
+       {
+        "code": "CSE 446",
+        "title": "Software Integration and Engineering"
+       },
+       {
+        "code": "CSE 460",
+        "title": "Software Analysis and Design"
+       },
+       {
+        "code": "CSE 463",
+        "title": "Introduction to Human Computer Interaction"
+       },
+       {
+        "code": "CSE 494",
+        "title": "Special Topics"
+       }
+      ],
+      "category": "elective",
+      "code": "ACO 321",
+      "title": "Upper Division Computing Elective -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s5-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Sustainability (SUST)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "SUST 1XX",
+      "title": "Sustainability (SUST) -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Term 6",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major",
+      "code": "ACO 320",
+      "title": "Database Systems",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     },
+     {
+      "slot_id": "s6-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Global Communities, Societies and Individuals (GCSI)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "GCSI 1XX",
+      "title": "Global Communities, Societies and Individuals (GCSI) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s6-3",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Upper Division Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "UPPERDIV",
+      "title": "Upper Division Elective -- student choice",
+      "credits": 2
+     },
+     {
+      "slot_id": "s6-4",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE-4",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Term 7",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map: CSE 484: Internship OR CSE 499: Individualized Instruction OR ACO 499: Individualized Instruction; minimum grade C",
+      "options": [],
+      "category": "major",
+      "code": "CSE 484",
+      "title": "Internship (choose CSE 484 / CSE 499 / ACO 499) -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s7-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-2",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     },
+     {
+      "slot_id": "s7-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Elective'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "ELECTIVE-5",
+      "title": "Elective -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Term 8",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map track group 'Upper Division Computing Capstone/Experiential Learning Requirement': choose an approved course from: ACO 482: Design Thinking for National Security; ACO 484: Internship; ACO 494: Industry Capstone Projects; ACO 499: Individualized Instruction; CSE 484: Internship; CSE 492: Honors Directed Study; CSE 493: Honors Thesis (L); CSE 499: Individualized Instruction; minimum grade C",
+      "options": [
+       {
+        "code": "ACO 482",
+        "title": "Design Thinking for National Security"
+       },
+       {
+        "code": "ACO 484",
+        "title": "Internship"
+       },
+       {
+        "code": "ACO 494",
+        "title": "Industry Capstone Projects"
+       },
+       {
+        "code": "ACO 499",
+        "title": "Individualized Instruction"
+       },
+       {
+        "code": "CSE 484",
+        "title": "Internship"
+       },
+       {
+        "code": "CSE 492",
+        "title": "Honors Directed Study"
+       },
+       {
+        "code": "CSE 493",
+        "title": "Honors Thesis (L)"
+       },
+       {
+        "code": "CSE 499",
+        "title": "Individualized Instruction"
+       }
+      ],
+      "category": "elective",
+      "code": "ACO 482",
+      "title": "Upper Division Computing Capstone/Experiential Learning Requirement -- student choice",
+      "credits": 3
+     },
+     {
+      "slot_id": "s8-1",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'Complete 2 courses:'; student selects an approved course",
+      "options": [],
+      "category": "elective",
+      "code": "COMPLETE-3",
+      "title": "Complete 2 courses: -- student choice",
+      "credits": 6
+     },
+     {
+      "slot_id": "s8-2",
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Major map lists 'American Institutions (AMIT)'; student selects an approved course",
+      "options": [],
+      "category": "gened",
+      "code": "AMIT 1XX",
+      "title": "American Institutions (AMIT) -- student choice",
+      "credits": 3
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "380534510fcdea48ffb0d0cc30f58f47713b971bda7dbcfedde3337efae107bd",
+  "last_verified": "2026-09-30"
+ }
+}

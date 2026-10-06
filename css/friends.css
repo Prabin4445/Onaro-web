@@ -1,0 +1,15 @@
+/* FRIENDS + HOUSEHOLD JOIN REQUESTS (2026-09-22)
+   Mobile-first, dark default via body.dark. All new classes live here so
+   styles.css stays untouched. */
+.fr-row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:14px;
+  background:var(--surface);border:1px solid var(--line);margin-bottom:8px}
+.fr-row[hidden]{display:none}
+.fr-avatar{width:42px;height:42px;flex:none;border-radius:50%;display:flex;align-items:center;
+  justify-content:center;font-weight:800;font-size:15px;color:var(--accent-ink);
+  background:linear-gradient(135deg,var(--clay-hi),var(--volt) 55%,var(--clay-lo))}
+.fr-onaro{display:inline-flex;align-items:center;gap:4px;flex:none;font-size:12px;font-weight:800;
+  color:var(--accent-ink);background:var(--volt);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.frq-card{border:1px solid var(--line)}
+.frq-card .kv{padding:10px 0;border-bottom:1px solid var(--line)}
+.frq-card .kv:last-child{border-bottom:0}
+/* friends header buttons sit on the existing .btn system; nothing extra needed */

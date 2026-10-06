@@ -1,0 +1,614 @@
+{
+ "institution": {
+  "name": "Western Michigan University",
+  "city": "Kalamazoo, MI",
+  "state": "MI",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "western-michigan-university-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "total_credits": 122,
+  "catalog_year": "2025-2026",
+  "source_url": "https://images.shiksha.com/mediadata/pdf/1767945188phpF8QmCX.pdf",
+  "notes": "Source is verbatim print-PDF of WMU Undergraduate Catalog 2025-26 Computer Science Major (CSIJ) program page (poid=15534). Semester arrangement follows prerequisite chains; WES/technical/free electives are choice slots per catalog.",
+  "transfer_confidence": "tccns_equivalencies",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "CS 1110",
+      "title": "Computer Science I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1220",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IEE 1020",
+      "title": "Technical Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-INQ",
+      "title": "WES Level 1: Inquiry and Engagement",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES Inquiry and Engagement category",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "CS 1120",
+      "title": "Computer Science II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CS 1110"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 1230",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 1220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CYCS 1200",
+      "title": "Programming in C for Cybersecurity",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-WELL",
+      "title": "WES Level 2: Personal Wellness",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES Personal Wellness category",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fall — Year 2",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CS 1310",
+      "title": "Foundations of Computer Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CS 1120"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 2300",
+      "title": "Elementary Linear Algebra",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 1230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECE 2500",
+      "title": "Digital Logic",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 2050",
+      "title": "University Physics I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 1220"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Spring — Year 2",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CS 2230",
+      "title": "Computer Organization and Assembly Language",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 1310",
+       "ECE 2500"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 3240",
+      "title": "System Programming Concepts",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 1120"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IEE 2610",
+      "title": "Engineering Statistics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-ART",
+      "title": "WES Level 2: Artistic Theory and Practice",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES Artistic Theory and Practice category",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-SOC",
+      "title": "WES Level 2: Societies and Cultures",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES Societies and Cultures category",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall — Year 3",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CS 3310",
+      "title": "Data and File Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 1120",
+       "CS 1310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 3550",
+      "title": "Network Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 1120"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 3620",
+      "title": "Probability",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 1230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHIL 3160",
+      "title": "Ethics in Engineering and Technology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-LANG",
+      "title": "WES Level 2: World Language and Culture",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES World Language and Culture category",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring — Year 3",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "CS 4310",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 4430",
+      "title": "Database Management Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECE 4570",
+      "title": "Introduction to Computer Architecture",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ECE 2500",
+       "CS 2230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EM 3020",
+      "title": "Engineering Teams: Theory and Practice",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-1",
+      "title": "Approved Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from CS 5000-level, ECE, MATH (1180+ prereq), or STAT (1180+ prereq)",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fall — Year 4",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CS 4850",
+      "title": "Foundations of Programming Languages",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CYCS 4540",
+      "title": "Operating Systems for Cybersecurity",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 4900",
+      "title": "Software Systems Development I: Requirements and Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 5820",
+      "title": "Artificial Intelligence",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 3310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-2",
+      "title": "Approved Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from CS 5000-level, ECE, MATH (1180+ prereq), or STAT (1180+ prereq)",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Spring — Year 4",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "code": "CS 4910",
+      "title": "Software Systems Development II: Implementation, Testing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CS 4900"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-3",
+      "title": "Approved Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from CS 5000-level, ECE, MATH (1180+ prereq), or STAT (1180+ prereq)",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FREE-1",
+      "title": "Free WMU Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course offered at the University",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FREE-2",
+      "title": "Free WMU Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course offered at the University",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FREE-3",
+      "title": "Free WMU Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any course offered at the University",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WES-GLOB",
+      "title": "WES Level 3: Global Perspectives",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Choose from WES Global Perspectives category",
+      "options": [],
+      "slot_id": "s8-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "last_verified": "2026-09-30",
+  "content_hash": "7805c268420f5bd37e7b6231e3b66c676f9dbadb05a0b3f2f2262d78e21dfc3d"
+ }
+}

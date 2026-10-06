@@ -1,0 +1,662 @@
+{
+ "institution": {
+  "city": "Fort Myers, FL",
+  "kind": "public4yr",
+  "name": "Florida Gulf Coast University",
+  "state": "FL"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [
+   "MAC 1147",
+   "MAC 2157"
+  ],
+  "id": "fgcu-bs-computer-science-data-science",
+  "major": "Computer Science (Data Science Concentration)",
+  "notes": "TRACK DISCLOSURE (merge): This plan is the OFFICIAL \"Bachelor of Science in Computer Science (Data Science Concentration) — Suggested Plan of Study\" (2025-2026, U.A. Whitaker College of Engineering, updated 7/15/2025), NOT the plain no-concentration track. The no-concentration degree map could not be cleanly recovered from official sources (exists only as a track-changes composite inside a faculty-senate revision proposal), so per the no-invention rule only the Data Science concentration was transcribed. \n\nSource: http://fgcu.edu/eng/computing-software-engineering/files/cs-data-science-25-26.pdf (official FGCU Department of Computing and Software Engineering, U.A. Whitaker College of Engineering; 'Bachelor of Science in Computer Science (Data Science Concentration) — Suggested Plan of Study', 2025-2026 Academic Year, updated 7/15/2025). True degree name verified at catalog.fgcu.edu (program PDF fetched 2026-09-30): 'Computer Science (B.S.)' — 'The Bachelor of Science (B.S.) in Computer Science', minimum 120 credits (https://catalog.fgcu.edu/programs/computer-science-bs/computer-science-bs.pdf). IMPORTANT TRACK DISCLOSURE: this plan is the Data Science Concentration track of the BS in Computer Science, not the no-concentration track. The BS also offers Cybersecurity and Software Engineering concentrations plus a no-concentration option; a standalone official no-concentration degree map was not available in clean form (the only official copy sits inside a faculty-senate curriculum revision proposal with track-changes insertions from the cybersecurity concentration plan, so it was not used rather than reconstructed). Hand-transcribed 2026-09-30 from the PDF's term-by-term table. Printed semester totals (14/17/9/13/12/16/15/12/12) sum to 120, matching the catalog's 120-credit minimum. Catalog year is 2025-2026, the actual year of the source (catalog.fgcu.edu still publishes 2025-2026 requirements as of 2026-09-30; a 2026-2027 revision was proposed effective Fall 2026 but is not yet published). Caveats: (1) MAC 2311 entry prerequisite is printed as 'MAC 1147 or MAC 2157' — both listed in external_prereqs as plain codes; either satisfies. Catalog footnotes add the full placement alternative (MAT 1033 then MAC 1105 then MAC 1147 with minimum grade of C, or relevant accelerated credit, or placement exam). (2) COP 4020's prereq column prints 'COP 4420 and CEN 3031 and COP 3530'; no COP 4420 exists in the program, so it is recorded as COT 4420 (Theory of Computation, the plan's theory course). (3) COP 4610 prereq is printed as 'COP 3530 & (CDA 3200 or CDA 3104)' — either CDA course satisfies; all three codes are in-plan so all are listed, and the either/or is documented here. (4) 'PHY 2048 &L' and 'PHY 2049/L' are the combined lecture+lab (4 credits each), recorded under the lecture codes PHY 2048 / PHY 2049. (5) STA 2023's entry requirement is printed as 'Test score or (MAT 1033 or MAC 1105 or MAC 1147 or MAC 2233 or MGF 1107 or MGF 1106 with minimum grade of C)' — a placement detail, so no in-plan prereq is recorded. (6) Fall Year 4 uses a two-column layout in the PDF; prereq cells were re-aligned using the same four courses/prereqs in the official 2026-2027 AI & Data Science concentration map attached to the faculty-senate revision proposal (COP 4951 requires COP 3530 and CEN 3031; STA 3038 requires STA 2023). (7) Map-wide graduation notes: students must satisfy 12 credits of College-Level Writing Skills (CLWS), Civic Literacy, Service Learning, and Foreign Language requirements in order to graduate.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2311",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAC 1147",
+       "MAC 2157"
+      ],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective; any course. The map shows a 4-credit free elective in Fall Year 1.",
+      "code": "ELECT-FREE1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Free Elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 1500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Intro to Computer Science",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENC 1101"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAC 2311"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "GECO or GEHM attribute; select a Communication or Humanities general education course.",
+      "code": "GE-COMMHUM-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Communication or Humanities General Education Course — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 2006",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 1500"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Programming I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2048",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAC 2311"
+      ],
+      "slot_id": "s2-4",
+      "tccns": "",
+      "title": "General Physics 1 and Lab",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STA 2023",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Statistical Methods",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: AMH 2010 US History to 1877, AMH 2020 US History Since 1877, or POS 2041 American National Government. Satisfies Civic Literacy and State Core Social Sciences.",
+      "code": "GE-CIVIC-1",
+      "credits": 3,
+      "options": [
+       "AMH 2010",
+       "AMH 2020",
+       "POS 2041"
+      ],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "US History or American National Government (Civic Literacy) — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one from: ARH 2000, HUM 1020, LIT 2000, MUL 2010, PHI 1010, THE 2000.",
+      "code": "GE-HUMCORE-1",
+      "credits": 3,
+      "options": [
+       "ARH 2000",
+       "HUM 1020",
+       "LIT 2000",
+       "MUL 2010",
+       "PHI 1010",
+       "THE 2000"
+      ],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Humanities State Core Requirement — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2049",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHY 2048",
+       "MAC 2312"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "General Physics 2 and Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAD 3107",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAC 2311"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "IDS 3920",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "University Colloquium",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3003",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 2006"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Programming II",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "GEHM attribute; select a Humanities general education course.",
+      "code": "GE-HUM-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Humanities General Education Course — student choice",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "GESO attribute; select a Social Science general education course.",
+      "code": "GE-SOC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Social Science General Education Course — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3200",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 2006",
+       "PHY 2048"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Digital Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3530",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3003",
+       "MAD 3107"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Data Structures & Algorithms",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CDA 3104",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 2006",
+       "PHY 2048"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Comp Org & Assembly",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CEN 3031",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3003"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Software Engng Fundamentals",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4610",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3530",
+       "CDA 3200",
+       "CDA 3104"
+      ],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2313",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Calculus III",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective; any course.",
+      "code": "ELECT-FREE2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "Free Elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COT 4420",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3003"
+      ],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Theory of Computation",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3635",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 4610"
+      ],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Systems and Networks",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 3710",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3530"
+      ],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Intro to Data Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CEN 3078",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3003"
+      ],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Computer Security",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "IDC 3140",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3003"
+      ],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "Intro to Data Science",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4020",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COT 4420",
+       "CEN 3031",
+       "COP 3530"
+      ],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Principles of Prog Lang",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4951",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 3530",
+       "CEN 3031"
+      ],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Senior Comp Sci Project I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "STA 3038",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "STA 2023"
+      ],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Prob & Stat for Data Sci",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Select one from: CAI 4203 Neural Networks & Deep Learning, CAI 4313 Applied Natural Language Proc, CAP 4767 Exploratory Data Analysis, CAP 4770 Knowledge Disc. & Data Mining.",
+      "code": "ELECT-DS1",
+      "credits": 3,
+      "options": [
+       "CAI 4203",
+       "CAI 4313",
+       "CAP 4767",
+       "CAP 4770"
+      ],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Data Science Concentration Elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COP 4952",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "COP 4951"
+      ],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Senior Comp Sci Project II",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Per the 2025-2026 catalog: complete 3 credits from CAI 4105 Machine Learning, CAP 4324 Predictive Analysis, CAP 4662 Introduction to Robotics, CAP 4730 Computer Graphics, CDA 4150 Computer Architecture, CEN 4026 Software Maint & Evolution, CEN 4083 Intro. to Cloud Computing, CEN 4216 Cyberphysical Systems, CIS 3941 Internship in Computer Science, COP 3350 Systems Admin and Programming, COP 4908 Independent Study, COP 4931 Special Topics in Comp. Sci., COT 3400 Design&Analysis of Algorithms, or from any concentration.",
+      "code": "ELECT-RSTR1",
+      "credits": 3,
+      "options": [
+       "CAI 4105",
+       "CAP 4324",
+       "CAP 4662",
+       "CAP 4730",
+       "CDA 4150",
+       "CEN 4026",
+       "CEN 4083",
+       "CEN 4216",
+       "CIS 3941",
+       "COP 3350",
+       "COP 4908",
+       "COP 4931",
+       "COT 3400"
+      ],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Restricted Elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Select one from: CAI 4203 Neural Networks & Deep Learning, CAI 4313 Applied Natural Language Proc, CAP 4767 Exploratory Data Analysis, CAP 4770 Knowledge Disc. & Data Mining.",
+      "code": "ELECT-DS2",
+      "credits": 3,
+      "options": [
+       "CAI 4203",
+       "CAI 4313",
+       "CAP 4767",
+       "CAP 4770"
+      ],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "Data Science Concentration Elective — student choice",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective; any course.",
+      "code": "ELECT-FREE3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "Free Elective — student choice",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 9
+   }
+  ],
+  "source_url": "http://fgcu.edu/eng/computing-software-engineering/files/cs-data-science-25-26.pdf",
+  "total_credits": 120,
+  "content_hash": "0627219ad50108b8fd065bc1fdf88cf547f02649edc4355d782731e4ed206b39",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,456 @@
+{
+ "institution": {
+  "name": "University at Buffalo",
+  "city": "Buffalo, NY",
+  "kind": "public4yr",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2022-2023",
+  "degree": "BS",
+  "id": "ubuffalo-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Official term-by-term Curricular Plan for the standalone Computer Science BS, from the official 2022-2023 University at Buffalo Undergraduate Catalog (UB's official catalog archive at catalog-archives.apps.buffalo.edu). This is the most recent UB catalog that publishes a complete term-by-term sequence for this program: the current Acalog catalog's (2023-2024 and later) standalone BS program pages publish degree requirements but no term-by-term table. The source lists several slots as '3 or 4' credits ('Pathway or ENG 105' in both freshman semesters; the 'CSE 442 or CSE 494' senior capstone) while stating 'Total Credits Required for Degree: 120'. This file instantiates one coherent 120-credit path: ENG 105 (4 cr) in freshman fall, a 3-credit UB Curriculum Pathway course in freshman spring, and CSE 442 (4 cr) as the senior capstone; catalog alternatives are documented in the choice_note of each affected slot. Prerequisites are not listed in the curricular-plan source, so prereq arrays are left empty — consult the catalog course descriptions. UB Curriculum key from the source: 6 Pathway courses required (3 Global + 3 Thematic); Scientific Literacy & Inquiry SLI1/SLI2; UB Seminar (UBS); UB Capstone (CAP). Course titles are given as printed in the 2022-2023 curricular plan.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "code": "CSE 199",
+      "credits": 3,
+      "prereq": [],
+      "title": "UB Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 115",
+      "credits": 4,
+      "prereq": [],
+      "title": "Intro to CS Majors 1",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 141",
+      "credits": 4,
+      "prereq": [],
+      "title": "College Calculus 1",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Source slot: 'Pathway or ENG 105LEC Writing and Rhetoric' (3 or 4 cr). This plan uses ENG 105 (4 cr) to reach the 120-credit degree total; a 3-credit UB Curriculum Pathway course is the catalog alternative.",
+      "code": "CL1-CHOICE-1",
+      "credits": 4,
+      "options": [
+       "ENG 105LEC Writing and Rhetoric",
+       "UB Curriculum Pathway course"
+      ],
+      "prereq": [],
+      "title": "Communication Literacy 1 (ENG 105 or UB Curriculum Pathway)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "code": "CSE 116",
+      "credits": 4,
+      "prereq": [],
+      "title": "Intro to CS Majors 2",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 191",
+      "credits": 4,
+      "prereq": [],
+      "title": "Intro Discrete Structures",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 142",
+      "credits": 4,
+      "prereq": [],
+      "title": "College Calculus 2",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Source slot: 'Pathway or ENG 105LEC Writing and Rhetoric' (3 or 4 cr). This plan uses a 3-credit student-selected UB Curriculum Pathway course here (6 Pathway courses required total: 3 Global + 3 Thematic).",
+      "code": "PATHWAY-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "UB Curriculum Pathway Course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Freshman Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "code": "CSE 220",
+      "credits": 4,
+      "prereq": [],
+      "title": "Systems Programming",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 250",
+      "credits": 4,
+      "prereq": [],
+      "title": "Data Structures",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Student-selected Scientific Literacy & Inquiry (SLI1) course from the UB Curriculum approved list.",
+      "code": "SCILIT-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Scientific Literacy and Inquiry 1",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Student-selected Pathway course from the UB Curriculum approved list (6 required total: 3 Global + 3 Thematic).",
+      "code": "PATHWAY-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "UB Curriculum Pathway Course",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "code": "CSE 341",
+      "credits": 4,
+      "prereq": [],
+      "title": "Computer Organization",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSE 331",
+      "credits": 4,
+      "prereq": [],
+      "title": "Intro to Algorithms",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Student-selected Pathway course from the UB Curriculum approved list (6 required total: 3 Global + 3 Thematic).",
+      "code": "PATHWAY-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "UB Curriculum Pathway Course",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Student-selected Pathway course from the UB Curriculum approved list (6 required total: 3 Global + 3 Thematic).",
+      "code": "PATHWAY-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "UB Curriculum Pathway Course",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Student-selected Scientific Literacy & Inquiry (SLI2) course from the UB Curriculum approved list.",
+      "code": "SCILIT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Scientific Literacy and Inquiry 2",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Sophomore Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE breadth course in one of the department's breadth topic areas, per CSE breadth/depth rules.",
+      "code": "CSE-BREADTH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Breadth Course",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 309",
+      "credits": 4,
+      "prereq": [],
+      "title": "Intro Linear Algebra",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EAS 360",
+      "credits": 3,
+      "prereq": [],
+      "title": "STEM Communications",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "4-credit probability/statistics course required for the major; confirm the current department-approved list with an advisor.",
+      "code": "PROBSTAT-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Probability/Statistics Course",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE breadth course in one of the department's breadth topic areas, per CSE breadth/depth rules.",
+      "code": "CSE-BREADTH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Breadth Course",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE breadth course in one of the department's breadth topic areas, per CSE breadth/depth rules.",
+      "code": "CSE-BREADTH-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Breadth Course",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE breadth course in one of the department's breadth topic areas, per CSE breadth/depth rules.",
+      "code": "CSE-BREADTH-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Breadth Course",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE technical elective at the 300 or 400 level.",
+      "code": "CSE-TECH-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE 300/400 Technical Elective",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Any 3-credit course; elective not required for the major or UB Curriculum.",
+      "code": "FREE-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UBC 399",
+      "credits": 1,
+      "prereq": [],
+      "title": "UB Capstone",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Junior Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "3-credit CSE depth course in the student's specialization area, per CSE breadth/depth rules.",
+      "code": "CSE-DEPTH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Depth Course",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "3-credit additional mathematics or science course required for the major.",
+      "code": "MATHSCI-ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Math or Science Elective",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Any 3-credit elective course.",
+      "code": "ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Any 3-credit elective course.",
+      "code": "ELECTIVE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "Source slot: 'CSE 442LR Software Eng Concepts or CSE 494SEM Sr Capstone/Seminar' (4 or 3 cr). This plan uses CSE 442 (4 cr) to reach the 120-credit degree total; choosing CSE 494 (3 cr) requires 1 additional credit elsewhere.",
+      "code": "CSE-CAPSTONE-1",
+      "credits": 4,
+      "options": [
+       "CSE 442",
+       "CSE 494"
+      ],
+      "prereq": [],
+      "title": "CSE Capstone",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "4-credit CSE depth course in the student's specialization area, per CSE breadth/depth rules.",
+      "code": "CSE-DEPTH-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "CSE Depth Course",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Any 4-credit elective course.",
+      "code": "ELECTIVE-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Any 4-credit elective course.",
+      "code": "ELECTIVE-4",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Senior Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog-archives.apps.buffalo.edu/2223/academicprograms/computer_science_bs_curricular_plan.html",
+  "total_credits": 120,
+  "content_hash": "043e271e7aa5fbc3718801549cf342f8186af61399f0213b448932afb33343fe",
+  "last_verified": "2026-10-02"
+ }
+}

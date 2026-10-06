@@ -1,0 +1,531 @@
+{
+ "institution": {
+  "location": "Atlanta, GA",
+  "name": "Georgia State University",
+  "city": "Atlanta, GA",
+  "kind": "public4yr",
+  "state": "GA"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "georgiastate-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Sequence: official Department of Computer Science 'B.S. in Computer Science Four-Year Plan of Study' (csds.gsu.edu/b-s-in-computer-science-four-year-plan-of-study), live undated page captured 2026-09-30; the department notes it is 'one of many possible combinations of courses for students starting in MATH 1113.' Catalog_year 2024-2025 reflects the Undergraduate Catalog program page actually read and cross-verified (catalogs.gsu.edu, catoid=38, 'Computer Science, B.S.'); the live catalog as of collection is 2025-2026 (catoid=42) with the same program structure. Credits cross-verified against 2024-2025 catalog program pages, official GSU syllabi (math.gsu.edu; tinman.cs.gsu.edu), and the 2024-2025 Graduate Catalog CSC foundation list. Course-code note: the plan page writes 'ENG 1101/1102' but the official catalog registration code is ENGL 1101/1102 ('English Composition I/II'), used here. HIST 2210 is named on the plan (Area E) with no title published; its title is left descriptive rather than invented. Credit caveats: CSC 4351/4352 (2 hrs each), CSC 3350 (4), CSC 3320 (3) per the university-published B.S. curriculum transcription; CSC 3210 = 3 hrs per the current (2024-2025) Graduate Catalog foundation list (an older transcription listed 4). The four CSC 4xxx elective slots are 4 hrs each toward the catalog's 16-hour elective requirement ('at least four courses... at the 3000- or 4000-level'); individual electives vary, so confirm selections with an advisor. Placement: the plan assumes starting in MATH 1113; GSU recommends the math placement test for students without Area A math credit. Major eligibility (catalog): grade C or higher on first attempt in CSC 1301, CSC 2510 (or MATH 2420), and MATH 1113/2211/2212/2215, with a 2.5 average across them, is required to enroll in CSC 2720 and all 3000-/4000-level CSC courses; prereqs are strictly enforced. Prereq sources: CSC 2720 eligibility per catalog; CSC 3210 per official Summer 2024 syllabus (CSC 1302 and CSC 2510, or MATH 2420 in place of CSC 2510, C or better); MATH 3020 and MATH 2641 per official math.gsu.edu syllabi (MATH 2212 with C or higher); CSC 4351 per department news (passed CSC 4520, CSC 4320, or CSC 4330 — the latter two are the options of the CSC-OS-PL choice slot); CSC 4352 follows CSC 4351 in the two-semester capstone sequence. Calculus rollover: only 3 of each 4-credit calculus course's hours count in Areas A/D; the 4th 'rollover hour' counts in the Field of Study area (catalog). total_credits 120 = the term-by-term sequence sum and the published B.S. degree minimum.",
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "category": "Area A",
+      "code": "ENGL 1101",
+      "credits": 3,
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area B",
+      "choice": true,
+      "code": "CORE-B-1",
+      "credits": 2,
+      "options": [
+       "Any approved Area B (Institutional Options) 2-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Institutional Options elective (Area B)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area C",
+      "choice": true,
+      "code": "CORE-C-1",
+      "credits": 3,
+      "options": [
+       "Any approved Area C (Humanities, Fine Arts, and World Languages) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Humanities/Fine Arts elective (Area C)",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area A",
+      "code": "MATH 1113",
+      "credits": 3,
+      "prereq": [],
+      "title": "Precalculus",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area F",
+      "code": "CSC 1301",
+      "credits": 4,
+      "prereq": [],
+      "title": "Principles of Computer Science I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "category": "Area A",
+      "code": "ENGL 1102",
+      "credits": 3,
+      "prereq": [],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area B",
+      "choice": true,
+      "code": "CORE-B-2",
+      "credits": 2,
+      "options": [
+       "Any approved Area B (Institutional Options) 2-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Institutional Options elective (Area B)",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area D",
+      "code": "MATH 2211",
+      "credits": 4,
+      "prereq": [],
+      "title": "Calculus of One Variable I",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area F",
+      "code": "CSC 1302",
+      "credits": 4,
+      "prereq": [],
+      "title": "Principles of Computer Science II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area F",
+      "code": "CSC 2510",
+      "credits": 3,
+      "prereq": [],
+      "title": "Theoretical Foundations of Computer Science",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "category": "Area C",
+      "choice": true,
+      "code": "CORE-C-2",
+      "credits": 3,
+      "options": [
+       "Any approved Area C (Humanities, Fine Arts, and World Languages) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Humanities/Fine Arts elective (Area C)",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area E",
+      "code": "HIST 2210",
+      "credits": 3,
+      "prereq": [],
+      "title": "HIST 2210 - Area E social science (title not published on the department plan page)",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area D",
+      "code": "MATH 2212",
+      "credits": 4,
+      "prereq": [
+       "MATH 2211"
+      ],
+      "title": "Calculus of One Variable II",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 2720",
+      "credits": 3,
+      "prereq": [
+       "CSC 1301",
+       "CSC 2510"
+      ],
+      "title": "Data Structures",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 3210",
+      "credits": 3,
+      "prereq": [
+       "CSC 1302",
+       "CSC 2510"
+      ],
+      "title": "Computer Organization and Programming",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "category": "Area E",
+      "choice": true,
+      "code": "CORE-E-1",
+      "credits": 3,
+      "options": [
+       "Any approved Area E (Social Sciences) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Social science elective (Area E)",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area F",
+      "choice": true,
+      "code": "CORE-F-1",
+      "credits": 3,
+      "options": [
+       "Any approved Area F (Courses Appropriate for the Major) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Major-directed elective (Area F)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "MATH 3020",
+      "credits": 3,
+      "prereq": [
+       "MATH 2212"
+      ],
+      "title": "Applied Probability and Statistics for Computer Science",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 3320",
+      "credits": 3,
+      "prereq": [],
+      "title": "System-Level Programming",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 3350",
+      "credits": 4,
+      "prereq": [],
+      "title": "Software Development-CTW",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "category": "Area H",
+      "choice": true,
+      "code": "CORE-H-1",
+      "credits": 3,
+      "options": [
+       "Any approved Area H (Minor and Additional Courses) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Additional course elective (Area H)",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area D",
+      "choice": true,
+      "code": "SCI-SEQ-1",
+      "credits": 4,
+      "options": [
+       "Approved Area D two-course lab-science sequence, part I (e.g. BIOL, CHEM, GEOL, or PHYS sequence) - see catalog"
+      ],
+      "prereq": [],
+      "title": "Science sequence course I (Area D)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "MATH 2641",
+      "credits": 3,
+      "prereq": [
+       "MATH 2212"
+      ],
+      "title": "Linear Algebra I",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "choice": true,
+      "code": "CSC-OS-PL",
+      "credits": 4,
+      "options": [
+       "CSC 4320",
+       "CSC 4330"
+      ],
+      "prereq": [],
+      "title": "CSC 4320 Operating Systems or CSC 4330 Programming Language Concepts (Area G)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 4520",
+      "credits": 4,
+      "prereq": [],
+      "title": "Design and Analysis of Algorithms",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "category": "Area E",
+      "code": "POLS 1101",
+      "credits": 3,
+      "prereq": [],
+      "title": "American Government",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area D",
+      "choice": true,
+      "code": "SCI-SEQ-2",
+      "credits": 4,
+      "options": [
+       "Approved Area D two-course lab-science sequence, part II (continuation of part I) - see catalog"
+      ],
+      "prereq": [],
+      "title": "Science sequence course II (Area D)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "choice": true,
+      "code": "CSC-ELEC-1",
+      "credits": 4,
+      "options": [
+       "Any CSC 3000- or 4000-level elective course (4 hours) - see catalog"
+      ],
+      "prereq": [],
+      "title": "CSC 3000/4000-level elective (Area G)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "choice": true,
+      "code": "CSC-ELEC-2",
+      "credits": 4,
+      "options": [
+       "Any CSC 3000- or 4000-level elective course (4 hours) - see catalog"
+      ],
+      "prereq": [],
+      "title": "CSC 3000/4000-level elective (Area G)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "category": "Area E",
+      "choice": true,
+      "code": "CORE-E-2",
+      "credits": 3,
+      "options": [
+       "Any approved Area E (Social Sciences) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Social science elective (Area E)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area H",
+      "choice": true,
+      "code": "CORE-H-2",
+      "credits": 3,
+      "options": [
+       "Any approved Area H (Minor and Additional Courses) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Additional course elective (Area H)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 4351",
+      "credits": 2,
+      "prereq": [
+       "CSC 4520",
+       "CSC-OS-PL"
+      ],
+      "title": "Capstone Senior Design I-CTW",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "choice": true,
+      "code": "CSC-ELEC-3",
+      "credits": 4,
+      "options": [
+       "Any CSC 3000- or 4000-level elective course (4 hours) - see catalog"
+      ],
+      "prereq": [],
+      "title": "CSC 3000/4000-level elective (Area G)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "category": "Area H",
+      "choice": true,
+      "code": "CORE-H-3",
+      "credits": 3,
+      "options": [
+       "Any approved Area H (Minor and Additional Courses) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Additional course elective (Area H)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area H",
+      "choice": true,
+      "code": "CORE-H-4",
+      "credits": 3,
+      "options": [
+       "Any approved Area H (Minor and Additional Courses) 3-hour course - see catalog"
+      ],
+      "prereq": [],
+      "title": "Additional course elective (Area H)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "code": "CSC 4352",
+      "credits": 2,
+      "prereq": [
+       "CSC 4351"
+      ],
+      "title": "Capstone Senior Design II-CTW",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "Area G",
+      "choice": true,
+      "code": "CSC-ELEC-4",
+      "credits": 4,
+      "options": [
+       "Any CSC 3000- or 4000-level elective course (4 hours) - see catalog"
+      ],
+      "prereq": [],
+      "title": "CSC 3000/4000-level elective (Area G)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalogs.gsu.edu/preview_program.php?catoid=38&poid=11267&returnto=5012",
+  "total_credits": 120,
+  "content_hash": "fdaa08e7b8e38aba583dc3bb40b60aa334b122c37b8ce9290c2563cddba566fa",
+  "last_verified": "2026-10-02"
+ }
+}

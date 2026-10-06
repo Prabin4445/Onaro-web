@@ -1,0 +1,641 @@
+{
+ "institution": {
+  "name": "Boise State University",
+  "city": "Boise",
+  "state": "ID",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "boisestate-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 119,
+  "source_url": "https://www.boisestate.edu/coen-cs/bscsplan/",
+  "notes": "Official 'B.S. CS Four Year Plan', Dept. of Computer Science, 2026-2027 Academic Catalog. CS 121 CORRECTION: the plan page prints 'CS 121: Computer Science I (3 CR)', but the page's own Semester 1 total (15) requires 4 credits (4+3+3+3+1=15), the university catalog (Kuali) lists CS 121 as fixed 4 credits, and the sibling Computer Engineering plan lists CS 121 at 4 credits. This seed uses the catalog-official 4 credits. TOTAL NOTE: the page headlines 'Total Credits: 120', but the minimum-credit elective choices sum to 119; the 'General Electives to Total 120 Credits' slot (listed at 0 CR) and higher-credit options in the variable slots (Math Elective 3-4, Science 4-5, FH 3-4, PHYS/CHEM) bring the plan to 120. This seed models the minimum-credit path (119). Variable slots are modeled at their minimums with the ranges documented in choice_notes. CS 488 (0 CR) is a required zero-credit course. The page publishes no prerequisite lists; prereq fields are empty. 'See Catalog for Additional Requirements.'",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "MATH 170",
+      "title": "Calculus I (FM)",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COMM 101",
+      "title": "Fundamentals of Oral Communication (FC)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 101",
+      "title": "Writing and Rhetoric I (FW)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 121",
+      "title": "Computer Science I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 153",
+      "title": "Navigating Computer Systems",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "MATH 175",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 221",
+      "title": "Computer Science II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 102",
+      "title": "Writing and Rhetoric II (FW)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UF-100-ELECTIVE",
+      "title": "Foundations of Intellectual Life (100-Level UF)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "100-Level UF: Foundations of Intellectual Life — specific course chosen with advisor.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "MATH 189",
+      "title": "Discrete Mathematics",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 211/L / CHEM 111/L",
+      "title": "Physics I with Calculus and Lab / General Chemistry and Lab",
+      "credits": 5,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "PHYS 211/L (Physics I with Calculus and Lab, 5 CR) OR CHEM 111/L (General Chemistry and Lab, 4 CR). Seed models PHYS 211/L (5 cr).",
+      "options": [
+       {
+        "code": "PHYS 211/L",
+        "title": "Physics I with Calculus and Lab",
+        "credits": 5
+       },
+       {
+        "code": "CHEM 111/L",
+        "title": "General Chemistry and Lab",
+        "credits": 4
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 208",
+      "title": "Intro to Full Stack Web Development",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 155",
+      "title": "Introduction to Version Control",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 253",
+      "title": "Software Development in C",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "MATH-ELECTIVE",
+      "title": "Math Elective",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Math Elective listed as 3-4 CR; seed models 3 cr (4 cr yields 120 total). See catalog for eligible courses.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 321",
+      "title": "Data Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UF-200-ELECTIVE",
+      "title": "Foundations of Ethics (200-Level UF)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "200-Level UF: Foundations of Ethics — specific course chosen with advisor.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECE 230/230L",
+      "title": "Digital Systems and Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WRITE 212",
+      "title": "Introduction to Technical Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "MATH 360 / MATH 361",
+      "title": "Engineering Statistics / Probability and Statistics I",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MATH 360 or MATH 361 (3 CR each).",
+      "options": [
+       {
+        "code": "MATH 360",
+        "title": "Engineering Statistics",
+        "credits": 3
+       },
+       {
+        "code": "MATH 361",
+        "title": "Probability and Statistics I",
+        "credits": 3
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 230",
+      "title": "Ethical Issues in Computing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 354",
+      "title": "Programming Languages",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECE 330/330L",
+      "title": "Microprocessors and Lab",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS-ELECTIVE-1",
+      "title": "Additional Computer Science Courses",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Additional Computer Science courses (3 CR) — specific courses chosen with advisor. See catalog for additional requirements.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "CS 361",
+      "title": "Introduction to the Theory of Computation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 331",
+      "title": "Computer Security and Information Assurance",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS-ELECTIVE-2",
+      "title": "Additional Computer Science Courses",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Additional Computer Science courses (3 CR) — specific courses chosen with advisor. See catalog for additional requirements.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FA-ELECTIVE",
+      "title": "Foundations of Arts Course (FA)",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Arts (FA) — specific course chosen with advisor.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SCIENCE-FN-ELECTIVE",
+      "title": "Science Elective (FN)",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Science elective (FN) listed as 4-5 CR; seed models 4 cr (5 cr yields 120 total). Options: BIOL 191, BIOL 227, CHEM 111/L, GEOL 101, or PHYS 211/L.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "CS 452",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 471",
+      "title": "Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 421",
+      "title": "Algorithms",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FS-ELECTIVE-1",
+      "title": "Foundations of Social Science Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FS: Foundations of Social Science — specific course chosen with advisor.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FH-ELECTIVE",
+      "title": "Foundations of Humanities Course",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "FH: Foundations of Humanities listed as 3-4 CR; seed models 3 cr (4 cr yields 120 total).",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "CS 481 / CS 483",
+      "title": "Senior Design Project / Senior Design Clinical Project (FF)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CS 481 or CS 483 (3 CR each).",
+      "options": [
+       {
+        "code": "CS 481",
+        "title": "Senior Design Project",
+        "credits": 3
+       },
+       {
+        "code": "CS 483",
+        "title": "Senior Design Clinical Project (FF)",
+        "credits": 3
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS 488",
+      "title": "Senior Outcome Assessment",
+      "credits": 0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": true,
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CS-ELECTIVE-3",
+      "title": "Additional Computer Science Courses",
+      "credits": 6,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Additional Computer Science courses (6 CR) — specific courses chosen with advisor. See catalog for additional requirements.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FS-ELECTIVE-2ND",
+      "title": "Foundations of Social Science in 2nd Field",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Foundations of Social Science in 2nd field — specific course chosen with advisor.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEN-ELECTIVE",
+      "title": "General Electives to Total 120 Credits",
+      "credits": 0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "General electives 'to Total 120 Credits' listed at 0 CR; taken as needed to reach 120 credits.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [],
+  "content_hash": "bde406085d38aaac7fe0f907b233f214d86cac51571a50b2ca2b399f9bdea22b",
+  "last_verified": "2026-10-02"
+ }
+}

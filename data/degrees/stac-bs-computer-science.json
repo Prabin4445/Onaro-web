@@ -1,0 +1,629 @@
+{
+ "institution": {
+  "name": "St. Thomas Aquinas College",
+  "city": "Sparkill, NY",
+  "kind": "private",
+  "state": "NY"
+ },
+ "plan": {
+  "id": "stac-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2022-2023",
+  "total_credits": 123,
+  "source_url": "https://stac.edu/academics/school-of-stem/program-courses/computer-science-program-courses/",
+  "notes": "Source: official St. Thomas Aquinas College (stac.edu) sample four-year sequence for the Computer Science major, transcribed manually 2026-09-30 from https://stac.edu/academics/school-of-stem/program-courses/computer-science-program-courses/ (School of STEM > Program Courses > Computer Science). Transcription method: fetched the official page, extracted the <tr> table rows from the raw HTML, and transcribed codes, titles, credits, requirement labels, and printed term totals verbatim. TRUE degree name: BS in Computer Science (program page https://stac.edu/program/computer-science/ lists 'At a glance: ... BS, 4 years'). Catalog year 2022-2023: the official sequence page carries no catalog-year stamp; article:published_time is 2022-12-19 with no modified date; it remains the live official sequence page as of 2026-09-30. The official 2026-2027 Undergraduate Catalog PDF (linked from https://stac.edu/academics/college-catalogs/) stalls on download from this environment, so cross-year verification against the newest catalog could not be completed — coordinator may re-check on a clean connection. Total credits: 123, the sequence's own published term totals (16/16, 16/16, 15/15, 15/15), NOT the college's 120-credit published degree length (STAC's official policy states 'The published length for an undergraduate degree at St Thomas Aquinas College is 120 credits' — https://stac.edu/wp-content/uploads/2023/05/STAC-SAP-Policy.pdf). Per the established Clarkson/UVM/GCSU precedent, total_credits follows the sequence's own published total; the 3-credit discrepancy is documented honestly here. No prereqs are published on the sequence page (prereq arrays left empty; external_prereqs empty) — prereqs are stated in the course catalog, not the sequence page. Choice slots: SCIENCE rows (choose one of ASTR, BIO, CHEM, FS, KIN, PHY, or SCI, a Major Requirement); 'Breadth & Proficiency' rows (Stage Requirement); 'CS Elective' rows; 'Free Elective / Minor' rows; 'Gateway 1/2' rows (Stage Requirement). STAC 101/102/201 are required 1-credit courses whose titles are not published on the sequence page — labeled verbatim with that caveat. Category mapping follows the page's own requirement labels: Major Requirement -> major, Stage Requirement -> gened, Elective Requirement -> elective. Page oddity transcribed verbatim: Fall Year 4 lists one 'Free Elective / Minor' row as 'Major Requirement' (likely a page typo; flagged in the course note).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 101",
+      "title": "Computational Thinking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 120",
+      "title": "Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "SCI-CHOICE-1",
+      "title": "Science course (student choice: ASTR, BIO, CHEM, FS, KIN, PHY, or SCI)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'SCIENCE — ASTR, BIO, CHEM, FS, KIN, PHY, or SCI' as a Major Requirement; student selects one qualifying science course.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "FYS 101",
+      "title": "First Year Seminar",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "STAC 101",
+      "title": "STAC 101 (title not published on the official sample sequence page)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "WRT 101",
+      "title": "Academic Writing I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 150",
+      "title": "Computer Science I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 109",
+      "title": "Applied Calculus",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "SCI-CHOICE-2",
+      "title": "Science course (student choice: ASTR, BIO, CHEM, FS, KIN, PHY, or SCI)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'SCIENCE — ASTR, BIO, CHEM, FS, KIN, PHY, or SCI' as a Major Requirement; student selects one qualifying science course.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "WRT 102",
+      "title": "Academic Writing II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "BREADTH-1",
+      "title": "Breadth & Proficiency course (Stage Requirement, student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Breadth & Proficiency N' as a Stage Requirement; student selects a qualifying STAGE breadth/proficiency course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "STAC 102",
+      "title": "STAC 102 (title not published on the official sample sequence page)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 250",
+      "title": "Computer Science II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "MATH 308",
+      "title": "Discrete Math",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CS 270",
+      "title": "Computer Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "BREADTH-2",
+      "title": "Breadth & Proficiency course (Stage Requirement, student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Breadth & Proficiency N' as a Stage Requirement; student selects a qualifying STAGE breadth/proficiency course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "BREADTH-3",
+      "title": "Breadth & Proficiency course (Stage Requirement, student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Breadth & Proficiency N' as a Stage Requirement; student selects a qualifying STAGE breadth/proficiency course.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "STAC 201",
+      "title": "STAC 201 (title not published on the official sample sequence page)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 350",
+      "title": "Data Structures & Algorithm Analysis",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 360",
+      "title": "Human-Computer Interaction",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CS-ELECTIVE-1",
+      "title": "Computer Science elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'CS Elective' (Elective Requirement); student selects a qualifying CS elective.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "FREE-ELECT-1",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "BREADTH-4",
+      "title": "Breadth & Proficiency course (Stage Requirement, student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Breadth & Proficiency N' as a Stage Requirement; student selects a qualifying STAGE breadth/proficiency course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 420",
+      "title": "Database Management Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 435",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "FREE-ELECT-2",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "FREE-ELECT-3",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "BREADTH-5",
+      "title": "Breadth & Proficiency course (Stage Requirement, student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Breadth & Proficiency N' as a Stage Requirement; student selects a qualifying STAGE breadth/proficiency course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS 320",
+      "title": "Ethics in a Technological Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS 380",
+      "title": "Networking",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CS 485",
+      "title": "Web Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CS-ELECTIVE-2",
+      "title": "Computer Science elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'CS Elective' (Major Requirement); student selects a qualifying CS elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREE-ELECT-4",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS-ELECTIVE-3",
+      "title": "Computer Science elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'CS Elective' (Major Requirement); student selects a qualifying CS elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CS-ELECTIVE-4",
+      "title": "Computer Science elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'CS Elective' (Major Requirement); student selects a qualifying CS elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "FREE-ELECT-5",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Major Requirement); student selects any free elective or minor course. NOTE: the official page labels this particular row 'Major Requirement'; transcribed verbatim (likely a page typo).",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "FREE-ELECT-6",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "GATEWAY-1",
+      "title": "Gateway 1 (title not published on the official sample sequence page)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Gateway N' as a Stage Requirement; student selects a qualifying STAGE Gateway course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 450",
+      "title": "Software Engineering",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CS 490",
+      "title": "Senior Project",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "CS-ELECTIVE-5",
+      "title": "Computer Science elective (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'CS Elective' (Major Requirement); student selects a qualifying CS elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREE-ELECT-7",
+      "title": "Free Elective / Minor course (student choice)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Free Elective / Minor' (Elective Requirement); student selects any free elective or minor course.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "GATEWAY-2",
+      "title": "Gateway 2 (title not published on the official sample sequence page)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Official sequence lists 'Gateway N' as a Stage Requirement; student selects a qualifying STAGE Gateway course.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "81515e17d31bcd2b66d584cc7b1587d1246bb8a3e938fbd43a3ddf6023033e7c",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,611 @@
+{
+ "institution": {
+  "city": "Albany, NY",
+  "kind": "public4yr",
+  "name": "University at Albany, SUNY",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "albany-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official UAlbany Academic Advising four-year plan for Computer Science BS (https://www.albany.edu/academic-advising/four-year-plans/bs-computer-science), transcribed manually 2026-09-30; course prefix style (ICSI/AMAT/APHY/ACHM) follows the plan page. Catalog year 2024-2025: the advising page is undated, but its sequence (ICSI 333, 404, 412, 416, 418Y, 499) matches the BS curriculum for students matriculating BEFORE Fall 2025, verified against the 2022-2023 archived Undergraduate Bulletin course descriptions (https://www.albany.edu/undergraduate_bulletin_archive/2022-2023/I_csi.html). The current 2026-2027 Undergraduate Bulletin (https://www.albany.edu/undergraduate-bulletin/department-computer-science.php) revised the BS core for Fall 2025+ matriculants (required core: ICSI 201, 207, 210, 213, 300Z, 302, 311, 402, 403, 409, 410, 418, 424 or 426, 499; 77-credit combined major/minor) and publishes no term-by-term sequence for the new curriculum. True degree name per the 2026-2027 bulletin: Bachelor of Science in Computer Science (Combined) (CSIC), ABET-accredited. Total 120 = the published B.S. minimum (https://www.albany.edu/undergraduate-bulletin/requirements-for-bachelors-degree.php). Credit modeling: Languages Other than English modeled at 3 cr (plan allows 3-5); Fall Year 1 science choice modeled at 3 cr on the APHY 140/142 physics option (the 4-cr ACHM 115 chemistry option adds 1 cr to that term). Progression gates from the plan page: grade of C or better in ICSI 201, ICSI 210 and ICSI 213 required to progress after year one; grade of C or better in ICSI 311 and ICSI 333 required after year two. Course titles and prereqs from the 2022-2023 archived bulletin (same curriculum generation). ICSI 499's official prereq is 'nine credits at the 400 level of computer science courses' (not expressible as named course codes; left empty). ICSI 300Z carries the CH GenEd tag in the plan. APHY 145's official pre/corequisite is APHY 140; modeled here as the Fall science choice slot (students choosing the ACHM 115 chemistry track should confirm the lab pairing with an advisor). Era title note: the 2022-2023 bulletin titles ICSI 333 'System Fundamentals' and ICSI 404 'Assembly Programming and Computer Organization'; the 2026-2027 bulletin renames them 'Program Hardware-Software Interface' and 'Computer Organization'.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 201",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Introduction to Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "AMAT 112",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published plan: APHY 140 or APHY 142 Physics I: Mechanics (3 cr), or ACHM 115 General Chemistry and Lab (4 cr, satisfies DP-NATSCI). Modeled at 3 credits; choosing the 4-credit ACHM 115 adds 1 credit to the term total.",
+      "code": "SCI-SEQ1",
+      "credits": 3,
+      "options": [
+       "APHY 140",
+       "APHY 142",
+       "ACHM 115"
+      ],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Science sequence, part 1 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": false,
+      "choice_note": "",
+      "code": "APHY 145",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "SCI-SEQ1"
+      ],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Physics Lab I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Writing and Critical Inquiry GenEd; specific course chosen by the student.",
+      "code": "GE-WCI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "Writing and Critical Inquiry (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "AMAT 112"
+      ],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Discrete Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 213",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ICSI 201"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "science",
+      "choice": true,
+      "choice_note": "Published plan: APHY 150 or APHY 152 Physics II: Electromagnetism (3 cr) together with the 1-credit APHY 155 lab, or ACHM 116 General Chemistry II and Lab (4 cr). Modeled as one 4-credit choice; prereq reflects the plan's two-part science sequence.",
+      "code": "SCI-SEQ2",
+      "credits": 4,
+      "options": [
+       "APHY 150",
+       "APHY 152",
+       "ACHM 116"
+      ],
+      "prereq": [
+       "SCI-SEQ1"
+      ],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Science sequence, part 2 (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "AMAT 113",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "AMAT 112"
+      ],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Calculus II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 311",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ICSI 210",
+       "ICSI 213"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Principles of Programming Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 333",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ICSI 213"
+      ],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "System Fundamentals",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "AMAT 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "AMAT 113"
+      ],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan allows 3-5 credits; modeled at 3 credits to reach the 120-credit degree total.",
+      "code": "GE-LANG",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Languages Other than English (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 403",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 210",
+       "ICSI 213"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Design and Analysis of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 404",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 333"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Assembly Programming and Computer Organization",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 410",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 210",
+       "ICSI 213"
+      ],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Arts GenEd (DP-ARTS); specific course chosen by the student.",
+      "code": "GE-ARTS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Arts — DP-ARTS (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 300Z",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 201"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Societal and Ethical Implications of Computing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 412",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 404"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Operating Systems",
+      "xfer": []
+     },
+     {
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "code": "AMAT 367",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "AMAT 113",
+       "AMAT 220"
+      ],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Discrete Probability",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 418Y",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 311"
+      ],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Humanities GenEd (DP-HUM); specific course chosen by the student.",
+      "code": "GE-HUM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Humanities — DP-HUM (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 409",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 311"
+      ],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Automata and Formal Languages",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 416",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ICSI 404",
+       "AMAT 367"
+      ],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Computer Communication Networks",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Department rule for this curriculum era: ICSI courses numbered 400-470 or 500-550 (see plan notes).",
+      "code": "ICSI-ELEC1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "ICSI elective, 400-level (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "CH-USHIS1 if NYS Regents score below 85; CH-USHIS2 if 85 or above, per the published plan.",
+      "code": "GE-USHIS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "U.S. History (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Department rule for this curriculum era: ICSI courses numbered 400-470 or 500-550 (see plan notes).",
+      "code": "ICSI-ELEC2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "ICSI elective, 400-level (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Department rule for this curriculum era: ICSI courses numbered 400-470 or 500-550 (see plan notes).",
+      "code": "ICSI-ELEC3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "ICSI elective, 400-level (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "International Perspectives GenEd (INTLPER); specific course chosen by the student.",
+      "code": "GE-INTL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "International Perspectives — INTLPER (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ICSI 499",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Capstone Project in Computer Science",
+      "xfer": []
+     },
+     {
+      "category": "major_elective",
+      "choice": true,
+      "choice_note": "Department rule for this curriculum era: ICSI courses numbered 400-470 or 500-550 (see plan notes).",
+      "code": "ICSI-ELEC4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "ICSI elective, 400-level (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective chosen by the student.",
+      "code": "ELEC-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Free elective (student choice)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Social Sciences GenEd (DP-SOCSCI); specific course chosen by the student.",
+      "code": "GE-SOCSCI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Social Sciences — DP-SOCSCI (student choice)",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://www.albany.edu/academic-advising/four-year-plans/bs-computer-science",
+  "total_credits": 120,
+  "content_hash": "0f6bd043caf5b29126b40b6d29f613a8ebc778d12cb90ae98dee2766a74c5c2a",
+  "last_verified": "2026-10-02"
+ }
+}

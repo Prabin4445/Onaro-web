@@ -1,0 +1,535 @@
+{
+ "institution": {
+  "city": "Columbus, OH",
+  "kind": "private2yr",
+  "name": "American Institute of Alternative Medicine",
+  "state": "OH"
+ },
+ "plan": {
+  "catalog_year": "2024-2025",
+  "degree": "AAS",
+  "external_prereqs": [
+   "BIOL 102B"
+  ],
+  "id": "american-institute-of-alternative-medicine-aas-registered-nursing-advanced-placement",
+  "major": "Registered Nursing",
+  "notes": "Advanced Placement track of the AAS in Registered Nursing, transcribed from the official AIAM School Catalog, Edition 2024.5 (published December 2024, 'WI25' Winter 2025 catalog), 'Program of Study — Registered Nursing — Five 12-week Quarters, 15 months'. This track requires, as an admission condition, 19 quarter credit hours and 269 clock hours of transfer credit from a Board of Nursing approved Practical Nursing program (catalog 'PLEASE NOTE' box); the catalog does not enumerate the transfer-block courses by code. The plan below totals the 91 quarter credit hours taken at AIAM (18.5+18.5+16.5+20.0+17.5 = 91.0, matching the catalog's 'Total Credit Hours Taken at AIAM: 91'); the degree requires 110 quarter credit hours minimum including the 19-credit PN transfer block. BIOL 102B (Anatomy & Physiology II) is listed in external_prereqs: the catalog lists it as prerequisite-or-corequisite for BIOL 103, BIOL 104, BIOL 105 and NRS 204c, and for Advanced Placement students it is satisfied by the PN transfer block rather than taken at AIAM (the same transfer block satisfies the MT 100 / BIOL 102A chain and the NRS 111c / NRS 117B references in the NRS 200/201c/204c descriptions). Quarter 4's unlabeled '0 56 3.5' row is recorded as NRS 203Bc Obstetric Nursing: it is the only other 56-clock-hour / 3.5-credit course in the RN curriculum besides NRS 203A Pediatric Nursing (labeled in Quarter 3), and its catalog prerequisites (Prerequisite: NRS 203A; Prerequisite or Corequisite: NRS 202Bc) match exactly the Quarter 3 -> Quarter 4 placement. Quarter 3's 'Pediatric Nursing' row is recorded as NRS 203A per the course-description header 'NRS 203 A Pediatric Nursing 56 hours/3.5 credits'; Quarter 4's 'Cultural Diversity' row is SOC 200 Cultural Diversity per its description header. NRS 115 and NRS 116c list 'Admission to Advanced Placement Option' (an admission status, not a course) as prerequisite, so their prereq arrays are empty. The catalog also publishes a direct-entry (traditional) 8-quarter / 110-credit program of study, but its quarter tables did not extract with course names intact, so it is not transcribed here. transfer_confidence is 'advisory': AAS workforce nursing program; AIAM publishes no TCCNS/articulation equivalencies, so tccns mirrors the local course code.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 115",
+      "core_area": "",
+      "credits": 3.5,
+      "prereq": [],
+      "tccns": "NRS 115",
+      "title": "Pharmacology",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 116c",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "NRS 116C",
+      "title": "PN-RN Transitions",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 101",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "CHEM 101",
+      "title": "Chemistry",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSS 102",
+      "core_area": "",
+      "credits": 1.5,
+      "prereq": [],
+      "tccns": "CSS 102",
+      "title": "College Success Skills",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 101",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "MAT 101",
+      "title": "College Math",
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 100c",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NRS 115",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 2.0,
+      "prereq": [],
+      "tccns": "MAT 100C",
+      "title": "Dosage Calculation",
+      "slot_id": "s1-5",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prerequisite for Advanced Placement standing is admission to the Advanced Placement Option (the 19-credit PN transfer block); BIOL 102B corequisite satisfied via that transfer block.",
+      "code": "NRS 204c",
+      "core_area": "",
+      "credits": 2.5,
+      "prereq": [
+       "BIOL 102B"
+      ],
+      "tccns": "NRS 204C",
+      "title": "Community Nursing",
+      "slot_id": "s1-6",
+      "xfer": []
+     }
+    ],
+    "label": "Quarter 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prerequisites for Advanced Placement Standing: NRS 115, NRS 116c, CSS 102.",
+      "code": "NRS 201c",
+      "core_area": "",
+      "credits": 5.0,
+      "prereq": [
+       "NRS 115",
+       "NRS 116c",
+       "CSS 102"
+      ],
+      "tccns": "NRS 201C",
+      "title": "Mental Health Nursing",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 101",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "ENG 101",
+      "title": "Basic Composition",
+      "slot_id": "s2-1",
+      "xfer": [
+       "arizona-college-nursing-chesapeake-bsn-nursing",
+       "arizona-college-nursing-hartford-bsn-nursing",
+       "arizona-college-nursing-phoenix-bsn-nursing",
+       "arizona-college-nursing-st-louis-bsn-nursing",
+       "arizona-western-college-aas-medical-assistant",
+       "arizona-western-college-aas-nursing",
+       "arizona-western-college-aas-paralegal-studies",
+       "arizona-western-college-aas-welding",
+       "arizona-western-college-cert-nursing-practical",
+       "ashland-community-and-technical-college-aas-electrical-technology",
+       "ashland-community-and-technical-college-aas-interdisciplinary-early-childhood-education",
+       "ashland-community-and-technical-college-aas-nursing",
+       "ashland-university-ba-computer-science",
+       "ashland-university-ba-psychology",
+       "ashland-university-bs-biology-forensic-biology-concentration",
+       "ashland-university-bs-criminal-justice",
+       "ashland-university-bs-emergency-management-homeland-security",
+       "ashland-university-bsba-economics",
+       "ashland-university-bsba-entrepreneurship",
+       "ashland-university-bsba-supply-chain-management"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 105",
+      "core_area": "",
+      "credits": 4.0,
+      "prereq": [
+       "BIOL 102B"
+      ],
+      "tccns": "BIOL 105",
+      "title": "Pathophysiology",
+      "slot_id": "s2-2",
+      "xfer": [
+       "ave-maria-university-ba-environmental-science"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 102",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [
+       "MAT 101"
+      ],
+      "tccns": "MAT 102",
+      "title": "Introduction to Algebra",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prerequisite-or-corequisite for Advanced Placement Standing: INT 103, CSS 102 (CSS 102 completed in Quarter 1; INT 103 concurrent this quarter).",
+      "code": "NRS 200",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "INT 103",
+        "kind": "prereq_or_coreq"
+       },
+       {
+        "course": "CSS 102",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 2.5,
+      "prereq": [],
+      "tccns": "NRS 200",
+      "title": "Holistic Nursing Concepts",
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "INT 103",
+      "core_area": "",
+      "credits": 1.0,
+      "prereq": [],
+      "tccns": "INT 103",
+      "title": "Massage",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ],
+    "label": "Quarter 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 202Ac",
+      "core_area": "",
+      "credits": 7.0,
+      "prereq": [
+       "NRS 201c",
+       "BIOL 105"
+      ],
+      "tccns": "NRS 202AC",
+      "title": "Adult Nursing I",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 203A",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NRS 202Ac",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 3.5,
+      "prereq": [
+       "NRS 201c"
+      ],
+      "tccns": "NRS 203A",
+      "title": "Pediatric Nursing",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 102",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "ENG 102",
+      "title": "Essay & Research",
+      "slot_id": "s3-2",
+      "xfer": [
+       "anne-arundel-community-college-aas-addiction-counseling-online",
+       "anne-arundel-community-college-aas-database-administration-online",
+       "anne-arundel-community-college-aas-entrepreneurship",
+       "anne-arundel-community-college-aas-hospitality-management",
+       "anne-arundel-community-college-aat-early-childhood-education",
+       "anne-arundel-community-college-aat-elementary-education",
+       "arizona-college-nursing-chesapeake-bsn-nursing",
+       "arizona-college-nursing-hartford-bsn-nursing",
+       "arizona-college-nursing-phoenix-bsn-nursing",
+       "arizona-college-nursing-st-louis-bsn-nursing",
+       "arizona-western-college-aas-accounting",
+       "arizona-western-college-aas-business",
+       "arizona-western-college-aas-nursing",
+       "ashland-community-and-technical-college-aas-interdisciplinary-early-childhood-education",
+       "ashland-university-ba-computer-science",
+       "ashland-university-ba-psychology",
+       "ashland-university-bs-biology-forensic-biology-concentration",
+       "ashland-university-bs-criminal-justice",
+       "ashland-university-bs-emergency-management-homeland-security",
+       "ashland-university-bsba-economics",
+       "ashland-university-bsba-entrepreneurship",
+       "ashland-university-bsba-supply-chain-management"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 104",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [
+       "BIOL 102B"
+      ],
+      "tccns": "BIOL 104",
+      "title": "Nutrition",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ],
+    "label": "Quarter 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 202Bc",
+      "core_area": "",
+      "credits": 7.0,
+      "prereq": [
+       "NRS 202Ac",
+       "BIOL 105"
+      ],
+      "tccns": "NRS 202BC",
+      "title": "Adult Nursing II",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "SOC 200",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "SOC 200",
+      "title": "Cultural Diversity",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 103",
+      "core_area": "",
+      "credits": 3.5,
+      "prereq": [
+       "BIOL 102B",
+       "BIOL 105"
+      ],
+      "tccns": "BIOL 103",
+      "title": "Microbiology",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 101",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "COM 101",
+      "title": "Effective Communications",
+      "slot_id": "s4-3",
+      "xfer": [
+       "ashland-university-ba-psychology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed in the catalog's Quarter 4 table as an unlabeled '0 56 3.5' row; identified as NRS 203Bc Obstetric Nursing (the only other 56-hour/3.5-credit RN course; its prerequisites NRS 203A and corequisite NRS 202Bc match this placement).",
+      "code": "NRS 203Bc",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NRS 202Bc",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 3.5,
+      "prereq": [
+       "NRS 203A"
+      ],
+      "tccns": "NRS 203BC",
+      "title": "Obstetric Nursing",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "label": "Quarter 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 205c",
+      "core_area": "",
+      "credits": 8.0,
+      "prereq": [
+       "NRS 202Ac",
+       "NRS 202Bc",
+       "NRS 203A",
+       "NRS 203Bc",
+       "NRS 204c"
+      ],
+      "tccns": "NRS 205C",
+      "title": "Advanced Care Nursing",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HUM 101",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [],
+      "tccns": "HUM 101",
+      "title": "Ethics: Humanities",
+      "slot_id": "s5-1",
+      "xfer": [
+       "anne-arundel-community-college-aat-early-childhood-education",
+       "anne-arundel-community-college-aat-elementary-education"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 102",
+      "core_area": "",
+      "credits": 3.0,
+      "prereq": [
+       "ENG 101"
+      ],
+      "tccns": "COM 102",
+      "title": "Business Communications",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog prerequisites for Advanced Placement Standing: NRS 115, NRS 202Ac, NRS 202Bc, NRS 203A, NRS 203B, NRS 204c; NRS 205c is prerequisite-or-corequisite (concurrent this quarter).",
+      "code": "NRS 206c",
+      "core_area": "",
+      "coreq": [
+       {
+        "course": "NRS 205c",
+        "kind": "prereq_or_coreq"
+       }
+      ],
+      "credits": 2.5,
+      "prereq": [
+       "NRS 115",
+       "NRS 202Ac",
+       "NRS 202Bc",
+       "NRS 203A",
+       "NRS 203Bc",
+       "NRS 204c"
+      ],
+      "tccns": "NRS 206C",
+      "title": "Professional Transitions",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NRS 120",
+      "core_area": "",
+      "credits": 1.0,
+      "prereq": [
+       "NRS 202Bc"
+      ],
+      "tccns": "NRS 120",
+      "title": "Leadership and Management",
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ],
+    "label": "Quarter 5",
+    "n": 5
+   }
+  ],
+  "source_url": "http://www.aiam.edu/wp-content/uploads/2025/06/AIAM_Catalog_WI25.pdf",
+  "total_credits": 91,
+  "transfer_confidence": "advisory",
+  "content_hash": "1ad669562bfab6b8444517305c3ab76d09dccde3f5bc2f9b01afa95ef186883c",
+  "last_verified": "2026-10-02"
+ }
+}

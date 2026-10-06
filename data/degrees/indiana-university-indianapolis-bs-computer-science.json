@@ -1,0 +1,622 @@
+{
+ "institution": {
+  "name": "Indiana University-Indianapolis",
+  "ipeds": "151111",
+  "city": "Indianapolis",
+  "state": "IN",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "indiana-university-indianapolis-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "source_url": "https://luddy.indianapolis.iu.edu/academics/undergraduate/computer-science/bs-requirements.html",
+  "catalog_year": "2025-2026",
+  "total_credits": 120,
+  "notes": "Source: Official Luddy School B.S. in Computer Science degree requirements (luddy.indianapolis.iu.edu/academics/undergraduate/computer-science/bs-requirements.html). The B.S. is a 120 credit hour program: Core A (27 cr.), Core B (9 cr. of 300+ CSCI-B/C/P), General Education (42 cr.), Career Readiness (2 cr.), Experiential Learning (3 cr.), Selectives (18 cr.), General Electives (19 cr.). Students must earn a C- or higher in all courses with a 2.0 cumulative GPA. Semester layout arranged in prerequisite order following the standard CS course sequence; the school's official interactive degree map (pathways.iu.edu) requires JavaScript and could not be transcribed, so term placement follows catalog course sequencing. Core B, Experiential Learning, Selectives, and General Education blocks are modeled as constrained-choice slots. No courses, credits, or prereqs invented.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "INFO-I 100",
+      "title": "First-Year Experience",
+      "credits": 1,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CSCI-C 200",
+      "title": "Introduction to Computers and Programming",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH-I 153",
+      "title": "College Algebra",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "GEN-COMM1",
+      "title": "Core Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Core Communication course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "GEN-SCI1",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Life and Physical Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSCI-C 212",
+      "title": "Introduction to Software Systems",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CSCI-C 200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CSCI-C 241",
+      "title": "Discrete Structures for Computer Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH-I 154",
+      "title": "Trigonometry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-I 153"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "GEN-COMM2",
+      "title": "Core Communication",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Core Communication course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "GEN-CULT",
+      "title": "Cultural Understanding",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Cultural Understanding course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSCI-C 310",
+      "title": "Data Structures - Python",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI-C 212"
+      ],
+      "choice": true,
+      "choice_note": "Either CSCI-C 310 Data Structures - Python or CSCI-C 343 Data Structures - Java (both 3 credits).",
+      "options": [
+       "CSCI-C 343"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSCI-C 335",
+      "title": "Computer Structures",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI-C 212"
+      ],
+      "choice": true,
+      "choice_note": "Either CSCI-C 335 Computer Structures or CSCI-B 443 Introduction to Computer Architecture (both 3 credits).",
+      "options": [
+       "CSCI-B 443"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MATH-I 241",
+      "title": "Calculus for Data Science I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-I 154"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "GEN-SCI2",
+      "title": "Life and Physical Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Life and Physical Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GEN-SS1",
+      "title": "Social Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Social Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSCI-B 401",
+      "title": "Fundamentals of Computer Theory",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI-C 310",
+       "CSCI-C 241"
+      ],
+      "choice": true,
+      "choice_note": "Either CSCI-B 401 Fundamentals of Computer Theory or CSCI-C 455 Analysis of Algorithms (both 3 credits).",
+      "options": [
+       "CSCI-C 455"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "MATH-I 242",
+      "title": "Calculus for Data Science II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-I 241"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MATH-I 243",
+      "title": "Linear Algebra for Data Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-I 241"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "GEN-SS2",
+      "title": "Social Sciences",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Social Sciences course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GEN-AH1",
+      "title": "Arts and Humanities",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any Arts and Humanities course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSCI-C 435",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CSCI-C 310"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "INFO-I 453",
+      "title": "Computer and Information Ethics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "PBHL-B 302",
+      "title": "Biostatistics for Informatics - Python",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Either PBHL-B 302 Biostatistics for Informatics - Python or PBHL-B 304 Biostatistics for Health Data Science - R (both 3 credits).",
+      "options": [
+       "PBHL-B 304"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "COREB-1",
+      "title": "Core B Elective (CSCI 300+)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300-level or higher CSCI-B, CSCI-C, or CSCI-P course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "NEWM-N 299",
+      "title": "Career Readiness",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "COREB-2",
+      "title": "Core B Elective (CSCI 300+)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300-level or higher CSCI-B, CSCI-C, or CSCI-P course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "COREB-3",
+      "title": "Core B Elective (CSCI 300+)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 300-level or higher CSCI-B, CSCI-C, or CSCI-P course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSCI-Y 399",
+      "title": "Project in Professional Practice",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Experiential Learning: CSCI-Y 399, CSCI-C 460 Senior Project I, CSCI-P 465 Software Engineering for Information Systems I, or INFO-I 491 Capstone Internship (all 3 credits).",
+      "options": [
+       "CSCI-C 460",
+       "CSCI-P 465",
+       "INFO-I 491"
+      ],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "SEL-1",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "SEL-2",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "SEL-3",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "SEL-4",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "SEL-5",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "ELEC-1",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "ELEC-2",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "SEL-6",
+      "title": "Selective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Any 3-credit selective: minor/certificate/specialization course, Core B course, or CSCI 300+ course.",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "ELEC-3",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELEC-4",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "ELEC-5",
+      "title": "General Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "ELEC-6",
+      "title": "General Elective",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "d7bfe182d1623feb393d1cd5f73abebf9dff6d5c74e71222ab0387c610a49dc8",
+  "last_verified": "2026-10-02"
+ }
+}

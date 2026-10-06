@@ -1,0 +1,216 @@
+{
+ "institution": {
+  "city": "West Palm Beach, FL",
+  "kind": "private",
+  "name": "Academy for Nursing and Health Occupations",
+  "state": "FL"
+ },
+ "plan": {
+  "catalog_year": "current (2026-09-30)",
+  "degree": "OAD",
+  "id": "academy-for-nursing-and-health-occupations-oad-practical-nursing",
+  "major": "Practical Nursing",
+  "notes": "Source: Academy for Nursing and Health Occupations official website, 'Practical Nursing Including IV Skills and Critical Thinking' program page, hand-transcribed 2026-09-30. Award as printed: 'Occupational Associate Degree' (abbreviated OAD here). Stated program totals: 64 weeks, 74 credit hours. The 10 listed courses sum to exactly 74 using the catalog's detailed theory/lab/clinical breakdowns (the companion AS-page header prints a rounded '11' for PRN0690D; the Occupational page itself prints the precise 10.89, which is used). Catalog does NOT publish a term-by-term map; the program is described as linear ('no Prerequisite required prior to entering the Practical Nursing Program... all courses... are linear in nature'), so the 5 terms below are an editorial sequencing derived strictly from the catalog's prerequisite chains. Prereqs transcribed from the catalog's Prerequisite Courses lists. CATALOG TYPO: this page states PRN0690D must be passed 'in order to apply for the NCLEX-RN Exam' - the parallel Associate of Science in Practical Nursing page correctly states NCLEX-PN for this practical-nursing program; recorded as printed with this flag. This program has no general-education courses (unlike the 80-week/90-credit AS in Practical Nursing).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: 'PRN0098A(Th) / PRN0098A/L (Lab) Basic Skills: 5.07 Semester Credit hrs'. Theory 3.8 + Lab 1.27. Th and Lab are corequisites. Completion qualifies a student to sit for the Florida CNA exam.",
+      "code": "PRN0098A",
+      "credits": 5.07,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Basic Skills",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 5.67.",
+      "code": "PRN0098B",
+      "credits": 5.67,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Anatomy and Physiology",
+      "xfer": []
+     }
+    ],
+    "term": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: 'PRN0099A (Th) / PRN0099A/CL (Clin) - Nursing Process & Geriatric Nursing - 9.42 Semester Credit Hrs'. Theory 5.13 + Clinical 4.29. Th and Clinical are corequisites.",
+      "code": "PRN0099A",
+      "credits": 9.42,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Nursing Process & Geriatric Nursing",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: 'PRN0099B (Th) / PRN0099B/L (Lab) - Pharmacology & Medication Administration & IV Skills - 5.5 Semester Credit Hrs'. Theory 3.67 + Lab 1.83. Th and Lab are corequisites.",
+      "code": "PRN0099B",
+      "credits": 5.5,
+      "options": [],
+      "prereq": [
+       "PRN0098A",
+       "PRN0098B",
+       "PRN0099A"
+      ],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Pharmacology & Medication Administration & IV Skills",
+      "xfer": []
+     }
+    ],
+    "term": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Catalog: 'PRN0290/0291 (Th) / PRN0290/0291/CL (Clin) - Medical Surgical Nursing - 15.02 Semester Credit Hrs'. Theory 11.2 + Clinical 3.82.",
+      "code": "PRN0290/0291",
+      "credits": 15.02,
+      "options": [],
+      "prereq": [
+       "PRN0098A",
+       "PRN0098B",
+       "PRN0099A"
+      ],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Medical Surgical Nursing",
+      "xfer": []
+     }
+    ],
+    "term": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 3.47 + Clinical 1.51.",
+      "code": "PRN0690A",
+      "credits": 4.98,
+      "options": [],
+      "prereq": [
+       "PRN0099B",
+       "PRN0290/0291"
+      ],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Obstetrics/Family Care",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 3.47 + Clinical 1.51.",
+      "code": "PRN0690B",
+      "credits": 4.98,
+      "options": [],
+      "prereq": [
+       "PRN0099B",
+       "PRN0290/0291"
+      ],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Pediatrics/Family Care",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 2 + Clinical 0.87.",
+      "code": "PRN0099C",
+      "credits": 2.87,
+      "options": [],
+      "prereq": [
+       "PRN0099B",
+       "PRN0290/0291"
+      ],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Mental Health/Family Care",
+      "xfer": []
+     }
+    ],
+    "term": "Term 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 9.6.",
+      "code": "PRN0690C",
+      "credits": 9.6,
+      "options": [],
+      "prereq": [
+       "PRN0098A",
+       "PRN0098B",
+       "PRN0099A",
+       "PRN0099B",
+       "PRN0290/0291",
+       "PRN0690A",
+       "PRN0690B",
+       "PRN0099C"
+      ],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Transitional Skills and Critical Thinking",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Theory 10.89. Must be taken at ANHO (not transferable) to apply for the NCLEX exam; the page prints 'NCLEX-RN' here (likely typo - NCLEX-PN on the parallel AS page).",
+      "code": "PRN0690D",
+      "credits": 10.89,
+      "options": [],
+      "prereq": [
+       "PRN0098A",
+       "PRN0098B",
+       "PRN0099A",
+       "PRN0099B",
+       "PRN0290/0291",
+       "PRN0690A",
+       "PRN0690B",
+       "PRN0099C"
+      ],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Integration",
+      "xfer": []
+     }
+    ],
+    "term": "Term 5",
+    "n": 5
+   }
+  ],
+  "source_url": "https://www.anho.edu/Practical-Nursing-Including-Critical-Thinking-and-IV-Certification",
+  "total_credits": 74,
+  "content_hash": "2e376782e96fbe4d8fc8898ac6103fed488a97f9154bec43f574c0796d29698d",
+  "last_verified": "2026-10-02"
+ }
+}

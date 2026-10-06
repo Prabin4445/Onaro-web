@@ -1,0 +1,258 @@
+{
+ "institution": {
+  "city": "Mays Landing",
+  "kind": "community",
+  "name": "Atlantic Cape Community College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "id": "atlantic-cape-community-college-as-chemistry",
+  "major": "Chemistry",
+  "notes": "Program code CHMI-Fall 2026. Transfer-oriented; with biology courses also appropriate for pharmacy, medicine, dentistry, environmental science, chemical engineering. Institution-published Recommended Sequence of Courses (4 semesters). Catalog Program Requirements list PHYS225/PHYS226 but the Recommended Sequence uses PHYS125 in Semester 3 and suggests PHYS126 or PHYS226 for the Semester 4 Program Elective; sequence transcribed as published. Program Electives section says 'Choose 7 credits' but the sequence includes 11 credits of Program Elective slots (4+3+4); transcribed as published. CHEM211 offered spring only; CHEM210 offered fall. Choice slots use catalog wording. Prereqs verified from catalog course descriptions.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM110",
+      "credits": 4,
+      "prereq": [],
+      "title": "General Chemistry I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENGL101",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH155",
+      "credits": 4,
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective Course (4 credits)",
+      "code": "Program Elective Course (4 credits) - Semester 1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Program Elective",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM111",
+      "credits": 4,
+      "prereq": [
+       "CHEM110"
+      ],
+      "title": "General Chemistry II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "ENGL102",
+      "credits": 3,
+      "prereq": [],
+      "title": "Composition II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "code": "MATH254",
+      "credits": 4,
+      "prereq": [],
+      "title": "Calculus II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective Course (3 credits)",
+      "code": "Program Elective Course (3 credits) - Semester 2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Program Elective",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education Social Science Course (3 credits)",
+      "code": "General Education Social Science Course (3 credits)",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Education Social Science Course",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM210",
+      "credits": 4,
+      "prereq": [
+       "CHEM111"
+      ],
+      "title": "Organic Chemistry I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS125",
+      "credits": 4,
+      "prereq": [],
+      "title": "College Physics I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education Humanities Course (3 credits)",
+      "code": "General Education Humanities Course (3 credits)",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Education Humanities Course",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose: ARTS103, ARTS108, ARTS109, ARTS115, DANC170, MUSC100 or THEA110 (3 credits)",
+      "code": "Choose: ARTS103, ARTS108, ARTS109, ARTS115, DANC170, MUSC100 or THEA110 (3 credits)",
+      "credits": 3,
+      "options": [
+       "ARTS103",
+       "ARTS108",
+       "ARTS109",
+       "ARTS115",
+       "DANC170",
+       "MUSC100",
+       "THEA110"
+      ],
+      "prereq": [],
+      "title": "ARTS/DANC/MUSC/THEA Choice",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Third Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM211",
+      "credits": 4,
+      "prereq": [
+       "CHEM210"
+      ],
+      "title": "Organic Chemistry II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective Course (4 credits) - PHYS126 or PHYS226 suggested",
+      "code": "Program Elective Course (4 credits) - Semester 4",
+      "credits": 4,
+      "options": [
+       "PHYS126",
+       "PHYS226"
+      ],
+      "prereq": [],
+      "title": "Program Elective",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General Education Course (3 credits)",
+      "code": "General Education Course (3 credits)",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Education Course",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free Elective(s): Choose a minimum of 3 credits from any college-level course(s). Recommendation: Students should consider taking CISM125 or CISM132 to meet the Technological Competency requirement.",
+      "code": "Free Elective (3 credits)",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Fourth Semester",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.atlantic.edu/sites/default/files/pdf/programs/chemistry.pdf",
+  "total_credits": 60,
+  "transfer_confidence": "core_only",
+  "content_hash": "7789c8064bdfe6e6431d35261ddfc63de68f6d52b0e081460231be73248b7396",
+  "last_verified": "2026-10-02"
+ }
+}

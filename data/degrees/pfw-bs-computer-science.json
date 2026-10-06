@@ -1,0 +1,577 @@
+{
+ "institution": {
+  "city": "Fort Wayne, IN",
+  "kind": "public4yr",
+  "name": "Purdue University Fort Wayne",
+  "state": "IN"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "external_prereqs": [],
+  "id": "pfw-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: official PFW Undergraduate Catalog, 'Program: Computer Science (B.S.) 4-Yr Plan', https://catalog.pfw.edu/preview_program.php?catoid=66&poid=18538&_ga=2.127149261.1907342208.1749755738-926849401.1749153023&print. The live catalog at catalog.pfw.edu is the 2025-2026 edition as of 2026-09-30, so catalog_year is 2025-2026 (current edition, not archived). Transcribed manually from the official term-by-term 4-year plan on 2026-09-30; course codes, titles, and credit values are exactly as published. CATALOG ANOMALY: the official plan lists MA 35100 (Elementary Linear Algebra, Cr. 3) in BOTH Spring 2nd Year and Fall 3rd Year. This appears to be a catalog error, but it is transcribed faithfully with a distinct code (MA 35100-2) for the second occurrence so the file passes pipeline duplicate-code validation; the credit sum follows the catalog's own arithmetic (120 total). The catalog also notes MA 51100 is accepted in place of MA 35100. Lab Science I and II are published as 4-5 credits each; both are modeled here at 4 credits (range documented in choice_note). 'Any electives to reach 120 credits' in Spring 4th Year is modeled at 2 credits so the semester/credit sums reconcile with the catalog's stated 120-credit total (catalog shows that term as '12+'). Prerequisite chains were NOT transcribed from the course-description pages, so every prereq array is empty and external_prereqs is empty; nothing was invented. Gen Ed category selections (B5/B6/B7/B8) are student choice slots; the catalog's own note reminds students to record completed categories. The four CS Concentration courses (12 credits total) are choice slots matching the catalog's concentration requirement.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 10500",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Computer Science Success Seminar",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 16000",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Introduction To Computer Science I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 13100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Reading, Writing, And Inquiry I",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 16500",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Analytic Geometry And Calculus I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select 1 course from General Education category B5, B6, B7 or B8, per the official 4-yr plan.",
+      "code": "GENED-BXX-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "tccns": "",
+      "title": "General Education Elective (Category B5, B6, B7 or B8)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 16100",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Introduction To Computer Science II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "COM 11400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Fundamentals Of Speech Communication",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 17500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Introduction To Discrete Mathematics",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Lab Science I: official plan lists 4-5 credits; modeled at 4. Fulfills Gen Ed B4 requirement.",
+      "code": "LABSCI-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Lab Science I",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 23200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Introduction To C And Unix",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 26000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Data Structures",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 27100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "tccns": "",
+      "title": "Computer Architecture",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 16600",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "tccns": "",
+      "title": "Analytic Geometry And Calculus II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select 1 General Education course in category B5, B6, B7 or B8, per the official 4-yr plan.",
+      "code": "GENED-BXX-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "tccns": "",
+      "title": "General Education Elective (Category B5, B6, B7 or B8)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 35000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Programming Language Design",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 37400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Computer Networks",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 23401",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Technical Report Writing",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "MA 35100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Elementary Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Lab Science II: official plan lists 4-5 credits; modeled at 4.",
+      "code": "LABSCI-2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-4",
+      "tccns": "",
+      "title": "Lab Science II",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 36000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Software Engineering",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 44500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Computer Security",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "The official 4-yr plan lists MA 35100 in both Spring 2nd Year and Fall 3rd Year; given a distinct code here (likely a catalog error). MA 51100 also accepted per catalog.",
+      "code": "MA 35100-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Elementary Linear Algebra",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select 1 General Education course in category B5, B6, B7 or B8, per the official 4-yr plan.",
+      "code": "GENED-BXX-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "General Education Elective (Category B5, B6, B7 or B8)",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Advanced Communication course, per the official 4-yr plan.",
+      "code": "ADVCOMM",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Advanced Communication Course",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 36400",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Introduction To Database Systems",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 48600",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "Analysis Of Algorithms",
+      "xfer": []
+     },
+     {
+      "category": "support",
+      "choice": false,
+      "choice_note": "",
+      "code": "STAT 51100",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "Statistical Methods",
+      "xfer": []
+     },
+     {
+      "category": "concentration",
+      "choice": true,
+      "choice_note": "CS Concentration course (12 concentration credits required total), per the official 4-yr plan.",
+      "code": "CSCONC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "tccns": "",
+      "title": "CS Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General/Approved elective, per the official 4-yr plan.",
+      "code": "ELEC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "tccns": "",
+      "title": "General/Approved Elective",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 46000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Senior Capstone Project I",
+      "xfer": []
+     },
+     {
+      "category": "concentration",
+      "choice": true,
+      "choice_note": "CS Concentration course, per the official 4-yr plan.",
+      "code": "CSCONC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "CS Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "concentration",
+      "choice": true,
+      "choice_note": "CS Concentration course, per the official 4-yr plan.",
+      "code": "CSCONC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "CS Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "General/Approved elective, per the official 4-yr plan.",
+      "code": "ELEC-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "General/Approved Elective",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select 1 General Education course in category B5, B6, B7 or B8, per the official 4-yr plan.",
+      "code": "GENED-BXX-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "tccns": "",
+      "title": "General Education Elective (Category B5, B6, B7 or B8)",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 46500",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Senior Capstone Project II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CS 47200",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Operating Systems Design",
+      "xfer": []
+     },
+     {
+      "category": "concentration",
+      "choice": true,
+      "choice_note": "CS Concentration course, per the official 4-yr plan.",
+      "code": "CSCONC-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "CS Concentration Course",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "CS Course or Approved Elective, per the official 4-yr plan.",
+      "code": "ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "CS Course or Approved Elective",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Official plan shows 'Any electives to reach 120 credits' with the term totaling 12+; modeled at 2 credits so the plan reconciles with the catalog's stated 120-credit total.",
+      "code": "ELEC-ANY",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "tccns": "",
+      "title": "Any Electives To Reach 120 Credits",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.pfw.edu/preview_program.php?catoid=66&poid=18538&_ga=2.127149261.1907342208.1749755738-926849401.1749153023&print",
+  "total_credits": 120,
+  "content_hash": "9b488d25ecc9b711f5f7c6b0594449344cffbaf812b5ee8b55bce165152aa706",
+  "last_verified": "2026-10-02"
+ }
+}

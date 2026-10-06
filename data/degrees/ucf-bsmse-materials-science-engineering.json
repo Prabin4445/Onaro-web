@@ -1,0 +1,617 @@
+{
+ "institution": {
+  "name": "University of Central Florida",
+  "city": "Orlando, FL",
+  "state": "FL",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BSMSE",
+  "id": "ucf-bsmse-materials-science-engineering",
+  "last_verified": "2026-09-30",
+  "major": "Materials Science and Engineering",
+  "notes": "Source: official UCF CECS 'Materials Science and Engineering Suggested Program of Study 2025-2026', transcribed course by course 2026-09-30 from https://academicaffairs.cecs.ucf.edu/wp-content/uploads/2025/06/Materials-Science-4yr.pdf. Program name per source: Materials Science and Engineering (College of Engineering and Computer Science, Orlando FL). Course titles use the plan's wording. LAYOUT: the PDF uses a two-column layout; the 'Summer 9 hours' block (STA 3032, Communication/Speech Foundation, Humanities 1) is placed at the top of the right column before THIRD YEAR and is transcribed as the summer after Year 2 (STA 3032 requires MAC 2312 from Year 1 Spring). CREDIT DISCREPANCIES (flagged, not resolved): (1) Spring Year 1 header says 16 hours but only 13 credits of courses are listed (CHM 2046/L 4 + MAC 2312 4 + PHY 2048/L 4 + EGN 1007C 1); (2) Summer Year 1 header says 10 hours but only 7 credits are listed (MAC 2313 4 + ENC 1102 3). The listed courses sum to 122; the term headers sum to 128. Transcribed faithfully as printed; verify against the official PDF. (1) 'EGN 3310 Engineering Anylysis-Statics' corrected to 'Engineering Analysis-Statics' (page typo). (2) Third Year Spring 'Select 1' is a choice slot (choice:true) with three options: CHM 2211 Organic Chemistry II, PHY 3101 Gen Physics using Calc. III, EGN 3310 Engineering Analysis-Statics. (3) 'Technical Elective' slots are TECHEL choice placeholders; Communication/Speech, Humanities, Social Sciences rows are GEP choice placeholders. (4) The page prints prerequisite/corequisite annotations in parentheses (e.g., MAC 2311C, EGS 1006C, co-req MAP 2302); prereq arrays are left empty for schema consistency — consult the source PDF for the full prerequisite chains. (5) total_credits 128 is the sum of the printed term headers; see discrepancies above. Catalog arithmetic note: the official UCF program-of-study PDF declares 128 total hours (term headers sum to 128), but the transcribed semester rows sum to 122; 6 credits could not be reconciled from the source PDF. Plan transcribes the 122 listed credits faithfully.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHM 2045C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "tccns": "",
+      "title": "Chemistry Fundamentals I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2311C",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "tccns": "",
+      "title": "Calculus w/ Analytic Geometry I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "tccns": "",
+      "title": "Composition I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGS 1006C",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "tccns": "",
+      "title": "Intro to the Engineering Profession",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Header says Spring Year 1 is 16 hours; listed courses sum to 13 — see notes",
+      "code": "CHM 2046/L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "tccns": "",
+      "title": "Chemistry Fundamentals II w/Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAC 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "tccns": "",
+      "title": "Calculus w/ Analytic Geometry II",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2048/L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "tccns": "",
+      "title": "Gen Physics using Calc. I w/Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 1007C",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "tccns": "",
+      "title": "Engineering Concepts & Methods",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Header says Summer Year 1 is 10 hours; listed courses sum to 7 — see notes",
+      "code": "MAC 2313",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "tccns": "",
+      "title": "Calculus w/ Analytic Geometry III",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENC 1102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "tccns": "",
+      "title": "Composition II",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 1",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHM 2210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "tccns": "",
+      "title": "Organic Chemistry I",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY 2049/L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "tccns": "",
+      "title": "Gen Physics using Calc. II w/Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3365",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "tccns": "",
+      "title": "Structure & Prop. of Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3211",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "tccns": "",
+      "title": "Engineering Analy. & Compu.",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAP 2302",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "tccns": "",
+      "title": "Ordinary Differential Equations I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 3012C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "tccns": "",
+      "title": "Exp. Techniques in Materials I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 3102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "tccns": "",
+      "title": "Thermodynamics of Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 3124",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "tccns": "",
+      "title": "Design & Selection of Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGN 3373",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-4",
+      "tccns": "",
+      "title": "Principles of Electrical Engineering",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Page places this 'Summer 9 hours' block before THIRD YEAR; transcribed as the summer after Year 2",
+      "code": "STA 3032",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "tccns": "",
+      "title": "Prob. & Stats for Engrs.",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Communication/Speech Foundation'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "tccns": "",
+      "title": "General Education — Communication/Speech Foundation, select one",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Humanities 1'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "tccns": "",
+      "title": "General Education — Humanities 1, select one",
+      "xfer": []
+     }
+    ],
+    "term": "Summer Year 2",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 3000",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "tccns": "",
+      "title": "Engineering Polymeric Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4513",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "tccns": "",
+      "title": "Structures of Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4223",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "tccns": "",
+      "title": "Fund. of Mech. Behav. of Mats.",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4307",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "tccns": "",
+      "title": "Kinetics of Materials",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4115",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "tccns": "",
+      "title": "Transport Phenomena in Mats.",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4125",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "tccns": "",
+      "title": "Phase Transformations and Microstructural Development in Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4013C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "tccns": "",
+      "title": "Exp. Techniques in Materials II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Select 1' with three options; page reads 'Engineering Anylysis-Statics' (typo corrected)",
+      "code": "CHM 2211",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CHM 2211",
+        "credits": 3,
+        "title": "Organic Chemistry II"
+       },
+       {
+        "code": "PHY 3101",
+        "credits": 3,
+        "title": "Gen Physics using Calc. III"
+       },
+       {
+        "code": "EGN 3310",
+        "credits": 3,
+        "title": "Engineering Analysis-Statics"
+       }
+      ],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "tccns": "",
+      "title": "Select 1 — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 8
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4915",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-0",
+      "tccns": "",
+      "title": "Materials Senior Design I",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4602C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-1",
+      "tccns": "",
+      "title": "Materials Processing Lab",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4413",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-2",
+      "tccns": "",
+      "title": "Fund. of Electronic Materials",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-3",
+      "tccns": "",
+      "title": "Technical Elective — select one",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Plan lists 'Technical Elective'",
+      "code": "TECHEL",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s9-4",
+      "tccns": "",
+      "title": "Technical Elective — select one",
+      "xfer": []
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 9
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4916",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-0",
+      "tccns": "",
+      "title": "Materials Senior Design II",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EMA 4009",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-1",
+      "tccns": "",
+      "title": "Materials in Society",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Humanities 2'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-2",
+      "tccns": "",
+      "title": "General Education — Humanities 2, select one",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Social Sciences 1'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-3",
+      "tccns": "",
+      "title": "General Education — Social Sciences 1, select one",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Plan lists 'Social Sciences 2'; student selects an approved GEP course",
+      "code": "GEP",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "slot_id": "s10-4",
+      "tccns": "",
+      "title": "General Education — Social Sciences 2, select one",
+      "xfer": []
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 10
+   }
+  ],
+  "source_url": "https://academicaffairs.cecs.ucf.edu/wp-content/uploads/2025/06/Materials-Science-4yr.pdf",
+  "total_credits": 122,
+  "content_hash": "e05069f830780e7b227a1430bbf1f089bed35ac96821674e15c7b872c5d7a930"
+ }
+}

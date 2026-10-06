@@ -1,0 +1,308 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AA",
+  "id": "scottsdale-community-college-aa-arts-emphasis-in-psychology",
+  "major": "Arts, Emphasis in Psychology",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/behavioral-science-and-human-services/associate-arts-emphasis-psychology-8122-aa). Effective Term Fall 2026; catalog_year 2026-2027 derived from Effective Term. Full-time 'sequence of suggested courses' used; Rio Salado/Scottsdale are online/rolling-start so terms are numbered Term 1..N (no Fall/Spring labels). Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY 101",
+      "core_area": "SB, SCB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Psychology",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 101 or ENG 107. Credits shown for ENG 101.",
+      "code": "ENG 101",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: MAT14+ or MAT15+ or MAT 187 or MAT 188 or MAT 212 or MAT 213. Credits shown for MAT14+.",
+      "code": "MAT14+",
+      "core_area": "MA or MA or MA, QNR or MA, QNR or MA, QNR or MA, QNR",
+      "credits": 3,
+      "prereq": [],
+      "title": "College Mathematics or College Algebra/Functions or Precalculus or Precalculus or Brief Calculus or Brief Calculus",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Choose one: FYE 101 or FYE 103. Credits shown for FYE 101.",
+      "code": "FYE 101",
+      "core_area": "",
+      "credits": 1,
+      "prereq": [],
+      "title": "Introduction to College, Career and Personal Success or Exploration of College, Career and Personal Success",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Electives.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "title": "General Electives",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: ENG 102 or ENG 108. Credits shown for ENG 102.",
+      "code": "ENG 102",
+      "core_area": "FYC, WCM or FYC, WCM",
+      "credits": 3,
+      "prereq": [
+       "ENG 101"
+      ],
+      "title": "First-Year Composition or First-Year Composition for ESL",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Natural Sciences course (NSI).",
+      "code": "NSI",
+      "core_area": "NSI",
+      "credits": 4,
+      "prereq": [],
+      "title": "Natural Sciences",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 182",
+      "core_area": "QNR in combo w/ MAT150 or MAT151 or MAT152 or MAT155 or MAT156;",
+      "credits": 0,
+      "prereq": [],
+      "title": "Plane Trigonometry",
+      "required_zero": true,
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Electives.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Electives",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: PSY 230 or PSY 230 or PSY 231 or PSY 230WL. Credits shown for PSY 230.",
+      "code": "PSY 230",
+      "core_area": "CS, QNR or CS, QNR or QNR, CS",
+      "credits": 3,
+      "prereq": [
+       "PSY 101",
+       "PSY 230"
+      ],
+      "title": "Introduction to Statistics or ( Introduction to Statistics and Laboratory for Statistics ) or Introduction to Statistics with Lab",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Arts and Humanities course (AHM).",
+      "code": "AHM",
+      "core_area": "AHM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Arts and Humanities",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Oral Communication course (OCM).",
+      "code": "OCM",
+      "core_area": "OCM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Oral Communication",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Social and Behavioral Sciences course (SCB).",
+      "code": "SCB",
+      "core_area": "SCB",
+      "credits": 3,
+      "prereq": [],
+      "title": "Social and Behavioral Sciences",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Electives.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 0,
+      "prereq": [],
+      "title": "General Electives",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose one: PSY 290AB or PSY 290AC. Credits shown for PSY 290AB.",
+      "code": "PSY 290AB",
+      "core_area": "L, NSI, SG or L, SG",
+      "credits": 3,
+      "prereq": [
+       "ENG 101",
+       "PSY 230"
+      ],
+      "title": "Research Methods or Research Methods",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Arts and Humanities course (AHM).",
+      "code": "AHM",
+      "core_area": "AHM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Arts and Humanities",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose an approved Institutions of the Americas course (IAM).",
+      "code": "IAM",
+      "core_area": "IAM",
+      "credits": 3,
+      "prereq": [],
+      "title": "Institutions of the Americas",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Choose from approved electives per catalog: General Electives.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "prereq": [],
+      "title": "General Electives",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/behavioral-science-and-human-services/associate-arts-emphasis-psychology-8122-aa",
+  "total_credits": 44,
+  "external_prereqs": [
+   "ALT 100",
+   "ENG 100A",
+   "ENG 101LL",
+   "ENG 107LL",
+   "ESL 097",
+   "ESL 202",
+   "MAT 114",
+   "MAT 115",
+   "MAT 12",
+   "MAT 14",
+   "MAT 15",
+   "MAT 187",
+   "MAT 188",
+   "PSY 230WL",
+   "PSY 290AC",
+   "WAC 101"
+  ],
+  "content_hash": "8ce2012e46248555caf7bd9b93a5b2b465084fbf2c96fca169209e68d05eace4",
+  "last_verified": "2026-10-02"
+ }
+}

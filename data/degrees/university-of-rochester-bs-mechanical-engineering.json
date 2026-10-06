@@ -1,0 +1,472 @@
+{
+ "institution": {
+  "city": "Rochester, NY",
+  "kind": "private4yr",
+  "name": "University of Rochester",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "university-of-rochester-bs-mechanical-engineering",
+  "major": "Mechanical Engineering",
+  "notes": "Source: University of Rochester Department of Mechanical Engineering, 'Program Schedule' (http://www.hajim.rochester.edu/me/undergraduate/recommended-schedule.html), hand-transcribed 2026-10-02. The department states all majors should follow this schedule because most courses require prerequisites and are offered only once a year. Each semester is published as 16 credit hours (128 total); per-course credits are published for WRT 273 (2), ME 160 (2), ME 260 (2), and ME 110 (2); the remaining courses in each 16-credit semester are 4 credits each by arithmetic from the published semester totals. 'Cluster Course #1/#2/#3', 'Natural Science Distribution Requirement (NSDR)', 'Additional Course in Social Sciences of Humanities', and 'Elective *if additional credit needed' rows are modeled as choice slots carrying the catalog's wording; see advisor. Prerequisites are taken from the program schedule's own prerequisites list; where the catalog gives an OR prerequisite (e.g. PHYS 121 requires MATH 161 and either ME 104 or ME 102), only the first-named option that appears in this schedule is listed. A minimum of 128 credit hours and a 2.0 GPA (overall and in ME courses) are required for graduation.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "choice": true,
+      "choice_note": "OR: ME 104 (highly recommended) or Other Technical Elective",
+      "code": "ME 104",
+      "credits": 4,
+      "options": [
+       "ME 104"
+      ],
+      "prereq": [],
+      "title": "Engineering of Bridges",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "OR",
+      "code": "CHEM 131",
+      "credits": 4,
+      "options": [
+       "CHEM 131",
+       "CHM 137"
+      ],
+      "prereq": [],
+      "title": "Chemistry Concepts",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WRTG 105",
+      "credits": 4,
+      "prereq": [],
+      "title": "Primary Writing Requirement",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 161",
+      "credits": 4,
+      "prereq": [],
+      "title": "Calculus IA",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 1,
+    "term": "First Year, Fall"
+   },
+   {
+    "courses": [
+     {
+      "code": "MATH 162",
+      "credits": 4,
+      "prereq": [
+       "MATH 161"
+      ],
+      "title": "Calculus IIA",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 121",
+      "credits": 4,
+      "prereq": [
+       "MATH 161",
+       "ME 104"
+      ],
+      "title": "Mechanics",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 120",
+      "credits": 4,
+      "prereq": [
+       "MATH 161"
+      ],
+      "title": "Engineering Mechanics I - Statics",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Cluster Course #1; see advisor",
+      "code": "CLUSTER-1-S2",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Cluster Course",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 2,
+    "term": "First Year, Spring"
+   },
+   {
+    "courses": [
+     {
+      "code": "MATH 165",
+      "credits": 4,
+      "prereq": [
+       "MATH 162"
+      ],
+      "title": "Linear Algebra with Differential Equations",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 122",
+      "credits": 4,
+      "prereq": [
+       "PHYS 121",
+       "MATH 162"
+      ],
+      "title": "Electricity and Magnetism",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WRT 273",
+      "credits": 2,
+      "prereq": [],
+      "title": "Communicating Your Professional Identity",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 121",
+      "credits": 4,
+      "prereq": [
+       "ME 120",
+       "MATH 161",
+       "MATH 162"
+      ],
+      "title": "Engineering Mechanics II - Dynamics",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 160",
+      "credits": 2,
+      "prereq": [
+       "ME 120"
+      ],
+      "title": "Engineering Computation I",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 3,
+    "term": "Second Year, Fall"
+   },
+   {
+    "courses": [
+     {
+      "code": "MATH 164",
+      "credits": 4,
+      "prereq": [
+       "MATH 162"
+      ],
+      "title": "Multidimensional Calculus",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 123",
+      "credits": 4,
+      "prereq": [
+       "MATH 162",
+       "PHYS 121"
+      ],
+      "title": "Thermodynamics",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 226",
+      "credits": 4,
+      "prereq": [
+       "ME 120"
+      ],
+      "title": "Intro to Solid Mechanics",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 260",
+      "credits": 2,
+      "prereq": [
+       "ME 160",
+       "MATH 161",
+       "MATH 162",
+       "MATH 164",
+       "MATH 165"
+      ],
+      "title": "Engineering Computations II",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 110",
+      "credits": 2,
+      "prereq": [],
+      "title": "Intro to CAD and Drawing",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 4,
+    "term": "Second Year, Spring"
+   },
+   {
+    "courses": [
+     {
+      "code": "ME 225",
+      "credits": 4,
+      "prereq": [
+       "MATH 164",
+       "MATH 165",
+       "PHYS 121",
+       "ME 120"
+      ],
+      "title": "Intro to Fluid Dynamics",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 280",
+      "credits": 4,
+      "prereq": [
+       "ME 226",
+       "PHYS 122"
+      ],
+      "title": "Intro to Materials Science",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 240",
+      "credits": 4,
+      "prereq": [
+       "ME 226",
+       "PHYS 122",
+       "ME 160"
+      ],
+      "title": "Fundamentals in Instrumentation",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Cluster Course #2; see advisor",
+      "code": "CLUSTER-2-S5",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Cluster Course",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 5,
+    "term": "Third Year, Fall"
+   },
+   {
+    "courses": [
+     {
+      "code": "ME 223",
+      "credits": 4,
+      "prereq": [
+       "ME 123",
+       "ME 225",
+       "MATH 165"
+      ],
+      "title": "Heat Transfer",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 241",
+      "credits": 4,
+      "prereq": [
+       "ME 225",
+       "ME 226",
+       "ME 240"
+      ],
+      "title": "Mechanics Lab",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OPT 210",
+      "credits": 4,
+      "prereq": [
+       "MATH 165",
+       "PHYS 122"
+      ],
+      "title": "Circuits and Microcontrollers for Engineers",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Cluster Course #3; see advisor",
+      "code": "CLUSTER-3-S6",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Cluster Course",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 6,
+    "term": "Third Year, Spring"
+   },
+   {
+    "courses": [
+     {
+      "code": "ME 204",
+      "credits": 4,
+      "prereq": [
+       "ME 226"
+      ],
+      "title": "Mechanical Design",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Natural Science Distribution Requirement (NSDR); see advisor",
+      "code": "NSDR-S7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Natural Science Distribution Requirement",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 213",
+      "credits": 4,
+      "prereq": [
+       "ME 121",
+       "ME 226",
+       "MATH 165"
+      ],
+      "title": "Mechanical Systems - Vibrations",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Additional Course in Social Sciences or Humanities; see advisor",
+      "code": "SS-HUM-S7",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Social Sciences or Humanities course",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 7,
+    "term": "Fourth Year, Fall"
+   },
+   {
+    "courses": [
+     {
+      "code": "ME 205",
+      "credits": 4,
+      "prereq": [
+       "ME 204"
+      ],
+      "title": "Advanced Mechanical Design",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 251",
+      "credits": 4,
+      "prereq": [
+       "ME 123",
+       "ME 225"
+      ],
+      "title": "Heat Power Application",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog: 'Elective *if additional credit needed'; see advisor",
+      "code": "ELECTIVE-S8A",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "choice_note": "Catalog: 'Elective *if additional credit needed'; see advisor",
+      "code": "ELECTIVE-S8B",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Elective",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "n": 8,
+    "term": "Fourth Year, Spring"
+   }
+  ],
+  "source_url": "http://www.hajim.rochester.edu/me/undergraduate/recommended-schedule.html",
+  "total_credits": 128,
+  "content_hash": "ecd2dae95e216a9830d6968302dac007298b16e4405d58f4922d4813fe6b222d",
+  "last_verified": "2026-10-02"
+ }
+}

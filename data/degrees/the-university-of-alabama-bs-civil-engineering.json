@@ -1,0 +1,707 @@
+{
+ "institution": {
+  "name": "The University of Alabama",
+  "city": "Tuscaloosa",
+  "state": "AL",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "the-university-of-alabama-bs-civil-engineering",
+  "degree": "BS",
+  "major": "Civil Engineering",
+  "total_credits": 124,
+  "catalog_year": "2024-2025",
+  "source_url": "https://eng.ua.edu/wp-content/uploads/2020/01/CCEE-Flowcharts-Updated-2024-civil.pdf",
+  "notes": "Source: official UA Dept. of Civil, Construction and Environmental Engineering 'BSCE Curriculum' flowchart, Rev 12/29/2024 (124 credit hours; semester subtotals 15/15/16/16/16/15/15/16). Carries the department note: 'This is a coursework planning tool. The UA Undergraduate Catalog contains the official listing of academic information.' Titles are the flowchart box labels verbatim. Elective slots are catalog-presented placeholders seeded as choice slots. COM 123 is printed without a title; it carries an HU/L/FA core designation. ACHE award nomenclature: B.S.C.E.",
+  "external_prereqs": [
+   "MATH 115"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman — Fall",
+    "courses": [
+     {
+      "code": "MATH 125",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 101",
+      "title": "Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 103",
+      "title": "Engineering Foundations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 121",
+      "title": "Intro to CCEE",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CE 121*: ENGR 111 or any engineering major intro course will meet requirements of CE 121.",
+      "options": [
+       {
+        "code": "CE 121",
+        "title": "Intro to CCEE",
+        "credits": 1
+       },
+       {
+        "code": "ENGR 111",
+        "title": "ENGR 111 or any engineering major intro course",
+        "credits": 1
+       }
+      ],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 101",
+      "title": "English Comp I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman — Spring",
+    "courses": [
+     {
+      "code": "MATH 126",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PH 105",
+      "title": "Physics I w/CAL I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 125"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 171",
+      "title": "Large Scale Graphics",
+      "credits": 1,
+      "category": "major",
+      "prereq": [
+       "ENGR 103"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 102",
+      "title": "English Comp II",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "EN 101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore — Fall",
+    "courses": [
+     {
+      "code": "MATH 227",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Approved Natural Science",
+      "title": "Approved Natural Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Approved Natural Science (4 cr): Required: CH 101 or 117, PH 105 or 125, CH 102 or 118 or PH 106 or 126; Natural Science (N) Elective: BSC 114/115 or 118, or GEO 101, 102, 104 or 105, or GY 101, 102, 202 or 207. Cannot be CH or PH.",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 260",
+      "title": "Surveying",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENGR 171",
+       "MATH 115"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 201",
+      "title": "Statics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 103",
+       "MATH 125",
+       "PH 105"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GES 255",
+      "title": "Engineering Statistics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR 103",
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore — Spring",
+    "courses": [
+     {
+      "code": "MATH 238",
+      "title": "Differential Equations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 102",
+      "title": "CH 102 or PH 106",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "CH 101",
+         "PH 105"
+        ],
+        "raw": "CH 101 or PH 105"
+       }
+      ],
+      "choice": true,
+      "choice_note": "CH 102 or PH 106 (Chemistry II or Physics II)",
+      "options": [
+       {
+        "code": "CH 102",
+        "title": "Chemistry II",
+        "credits": 4
+       },
+       {
+        "code": "PH 106",
+        "title": "Physics II",
+        "credits": 4
+       }
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 262",
+      "title": "Civil & Const Engr Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 201",
+       "AEM 250"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 250",
+      "title": "Mechanics of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 201",
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AEM 264",
+      "title": "Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 201",
+       "MATH 126"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior — Fall",
+    "courses": [
+     {
+      "code": "AEM 311",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 201",
+       "MATH 227"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 331",
+      "title": "Intro to Structural Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 250",
+       "CE 262"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 340",
+      "title": "Geotechnical Engineering",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "AEM 250",
+       "CE 262"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 350",
+      "title": "Intro to Transportation Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CE 260",
+       "GES 255"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior — Spring",
+    "courses": [
+     {
+      "code": "CE 320",
+      "title": "Intro to Environmental Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CH 101",
+       "AEM 311"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 366",
+      "title": "Intro to Construction Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CE 262"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 378",
+      "title": "Water Resources Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AEM 264",
+       "AEM 311"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECE 320",
+      "title": "ECE 320 or ME 215 or ME 216",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "ECE 320 Fund of Elec Engr or ME 215 Thermodynamics or ME 216 Thermal Engr Survey (3 cr)",
+      "options": [
+       {
+        "code": "ECE 320",
+        "title": "Fund of Elec Engr",
+        "credits": 3
+       },
+       {
+        "code": "ME 215",
+        "title": "Thermodynamics",
+        "credits": 3
+       },
+       {
+        "code": "ME 216",
+        "title": "Thermal Engr Survey",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HI/SB Elective",
+      "title": "HI/SB Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HI/SB Elective",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior — Fall",
+    "courses": [
+     {
+      "code": "Senior Plan of Study Elective",
+      "title": "Senior Plan of Study Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Senior Plan of Study Elective",
+      "title": "Senior Plan of Study Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Capstone Design Elective",
+      "title": "Capstone Design Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COM 123",
+      "title": "COM 123 (HU/L/FA core)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU/L/FA Elective",
+      "title": "HU/L/FA Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HU/L/FA Elective",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior — Spring",
+    "courses": [
+     {
+      "code": "Senior Plan of Study Elective",
+      "title": "Senior Plan of Study Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Senior Plan of Study Elective",
+      "title": "Senior Plan of Study Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Capstone Design Elective",
+      "title": "Capstone Design Elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Senior Plan of Study and Capstone Design electives must be CE courses numbered 400 or above or other approved electives. At least six hours of the electives must be Capstone Design designated (CD). Not more than two electives may be professional practice (P), including any non-civil engineering courses. See department list for electives (CD, P, G designations).",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CE 401",
+      "title": "CE 401 or CE 403 Capstone Design",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CE 320",
+       "CE 331",
+       "CE 340",
+       "CE 350",
+       "CE 366",
+       "CE 378"
+      ],
+      "choice": true,
+      "choice_note": "CE 401 or CE 403 Capstone Design (W) (4 cr). CE 401 Capstone Design Site: CivE — Prerequisites: CE 320, CE 331, CE 340, CE 350, CE 366 and CE 378; with concurrency: 1 of CE (424, 451, 458, 461, 475) and 1 of CE (424, 425, 433, 434, 451, 458, 459, 461, 462, 475). CE 403 Capstone Design Building: CivE — Prerequisites: CE 331, CE 340 and 3 of CE (320, 350, 366, 378) and 1 of CE (433 or 434); with concurrency: 1 of CE (424, 425, 433, 434, 451, 458, 459, 461, 462, 475). CE 401 and CE 403 must be taken at UA and cannot be transferred from another institution.",
+      "options": [
+       {
+        "code": "CE 401",
+        "title": "Capstone Design Site: CivE",
+        "credits": 4
+       },
+       {
+        "code": "CE 403",
+        "title": "Capstone Design Building: CivE",
+        "credits": 4
+       }
+      ],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HU/L/FA Elective",
+      "title": "HU/L/FA Elective",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "HU/L/FA Elective",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "c09b297f531cbd6022ecf3160fe904136694d74116c37caf7d718427786281d2",
+  "last_verified": "2026-10-02"
+ }
+}

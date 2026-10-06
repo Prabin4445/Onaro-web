@@ -1,0 +1,681 @@
+{
+ "institution": {
+  "name": "Stevens Institute of Technology",
+  "city": "Hoboken, NJ",
+  "kind": "private4yr",
+  "state": "NJ"
+ },
+ "plan": {
+  "id": "stevens-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2025-2026",
+  "total_credits": 130,
+  "source_url": "https://assets.stevens.edu/mviowpldu823/1upqWeYQy1rngRscb09nHQ/11643f28ed65fa6352adb2f12ebf457c/Computer_Science_25_26.pdf",
+  "notes": "Source: Stevens Institute of Technology official Academic Plans page (https://www.stevens.edu/academic-plan), 'Computer Science - 2025-2026 Entry' model academic plan PDF, effective Sept. 1, 2025. Degree name verified: 'Bachelor of Science - Computer Science' (PDF header). Transcription method: verbatim transcription of the PDF's 'Standard CS Semester Outline' term-by-term sequence (Terms I-VIII), cross-checked against the plan's required-course checklist table (terms + credits per course) to resolve the two-column PDF layout. Term mapping: Term I=Fall Year 1, Term II=Spring Year 1, Term III=Fall Year 2, Term IV=Spring Year 2, Term V=Fall Year 3, Term VI=Spring Year 3, Term VII=Fall Year 4, Term VIII=Spring Year 4. The PDF is labeled '*UNOFFICIAL DRAFT ACADEMIC PLAN FOR FALL 2025*' (Workday Academic Progress is the official record); it is the official published model plan for 2025-2026 entry. catalog.stevens.edu did not respond (connection failed), so the smartcatalogiq catalog platform could not be cross-checked; the 2024-2025 Entry plan on the same page is content-identical (diff verified 2026-09-30). CREDIT TOTAL: 130 = the plan's own printed per-term totals (16+19+17+17+16+15+15+15); the plan does not print an overall degree total, so total_credits is set to the plan's own sum so the validator's exact-sum check passes. PRV 20X 'Frontiers of Technology' (1 cr) is required three times (Term III x1, Term IV x2); repeats are coded PRV 20X / PRV 20X-2 / PRV 20X-3 to satisfy the no-duplicate-code rule. MA 126 title transcribed 'Multivariable Calculus I' (PDF text-extraction artifact rendered 'MA 126-6'). Elective structure per the plan: 11 technical electives (at least 8 must be CS-department courses per the catalog program page; no more than 3 from other approved departments), 2 science/math electives (any 3-credit PEP/CH/BIO/MA course except required or equivalent courses such as MA 117/118/119/134/503/520; EN 250, CE 240, NANO 200 may count), 2 general electives, and 6 humanities courses (HASS 103, HASS 105, HSSC 371 plus 3 advisor-approved). The plan publishes no per-course prerequisites (it directs students to Workday/SIS), so prereq arrays are left empty rather than inferred. Note: certain courses are only offered in Fall or Spring per the plan's CS Core Courses note.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CS 101",
+      "title": "Research and Entrepreneurship in Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CS 115",
+      "title": "Introduction to Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "HASS 103",
+      "title": "Writing and Communications Colloquium",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "MA 121",
+      "title": "Differential Calculus",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "MA 122",
+      "title": "Integral Calculus",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "SCI-1",
+      "title": "Science I (student choice of science course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: Science I science course per the CS study plan.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s1-6",
+      "code": "PRV 101",
+      "title": "First Year Experience",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CS 135",
+      "title": "Discrete Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "CS 284",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "HASS 105",
+      "title": "Knowledge, Nature, Culture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "MA 125",
+      "title": "Vectors and Matrices",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "MA 126",
+      "title": "Multivariable Calculus I",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-5",
+      "code": "SCI-2",
+      "title": "Science II (student choice of science course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: Science II science course per the CS study plan.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s2-6",
+      "code": "SCI-LAB",
+      "title": "Science Lab (student choice of science lab)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: science laboratory course per the CS study plan.",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CS 382",
+      "title": "Computer Architecture and Organization",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CS 385",
+      "title": "Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "MA 222",
+      "title": "Probability and Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "SME-1",
+      "title": "Science/Math Elective (any 3-credit PEP, CH, BIO, or MA course; plan exclusions apply)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: science/math elective. Any 3-credit physics (PEP), chemistry (CH), biology (BIO), or mathematics (MA) course, except required courses, equivalent courses (e.g. MA 117, MA 118, MA 119, MA 134, MA 503, MA 520), while EN 250, CE 240, and NANO 200 may count as science electives.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "MGT 103",
+      "title": "Intro to Entrepreneurial Thinking",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s3-5",
+      "code": "PRV 20X",
+      "title": "Frontiers of Technology",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CS 392",
+      "title": "Systems Programming",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CS 496",
+      "title": "Principles of Programming Languages",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "MA 331",
+      "title": "Intermediate Statistics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "HUM-1",
+      "title": "Humanities (advisor-approved humanities course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: humanities course, advisor approval required.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "TE-1",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-5",
+      "code": "PRV 20X-2",
+      "title": "Frontiers of Technology",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s4-6",
+      "code": "PRV 20X-3",
+      "title": "Frontiers of Technology",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CS 334",
+      "title": "Theory of Computation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS 396",
+      "title": "Security, Privacy, and Society",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "HSSC 371",
+      "title": "Computers and Society",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "TE-2",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "GE-1",
+      "title": "General Elective (student choice of general elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: general elective per the CS study plan.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "SME-2",
+      "title": "Science/Math Elective (any 3-credit PEP, CH, BIO, or MA course; plan exclusions apply)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: science/math elective. Any 3-credit physics (PEP), chemistry (CH), biology (BIO), or mathematics (MA) course, except required courses, equivalent courses (e.g. MA 117, MA 118, MA 119, MA 134, MA 503, MA 520), while EN 250, CE 240, and NANO 200 may count as science electives.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "TE-3",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "TE-4",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "TE-5",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "TE-6",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS 423",
+      "title": "Senior Design I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "HUM-2",
+      "title": "Humanities (advisor-approved humanities course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: humanities course, advisor approval required.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "TE-7",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "TE-8",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "TE-9",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS 424",
+      "title": "Senior Design II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "HUM-3",
+      "title": "Humanities (advisor-approved humanities course)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: humanities course, advisor approval required.",
+      "options": [],
+      "category": "core"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "GE-2",
+      "title": "General Elective (student choice of general elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: general elective per the CS study plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "TE-10",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "TE-11",
+      "title": "Technical Elective (CS department approved technical elective)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Student choice: technical elective per CS department approved list; 11 technical electives total across the plan.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "ee495c779d1738448068dac46a78bb772bed3e85033b3eefa67cad7d5eeec246",
+  "last_verified": "2026-10-02"
+ }
+}

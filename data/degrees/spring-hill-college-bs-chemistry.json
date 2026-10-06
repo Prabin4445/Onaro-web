@@ -1,0 +1,634 @@
+{
+ "institution": {
+  "name": "Spring Hill College",
+  "city": "Mobile, AL",
+  "state": "AL",
+  "kind": "college"
+ },
+ "plan": {
+  "id": "spring-hill-college-bs-chemistry",
+  "degree": "BS",
+  "major": "Chemistry",
+  "catalog_year": "2022-2023",
+  "total_credits": 121,
+  "source_url": "https://www.shc.edu/wp-content/uploads/2022/06/BS-Chemistry-Plan.pdf",
+  "notes": "Source: 'Sample Degree Plan: Bachelor of Science (BS) Chemistry', Bulletin Year 2022-2023 (shc.edu Program Checklists page). Sample plan; the Degree Audit in BadgerWeb is the official degree plan per the plan's own footer. Genuine catalog quirks kept verbatim: semester 2 prints 'PTh100I' (capital T); CHM442's prerequisite prints 'MTH323' while the sequenced calculus course is MTH223 Calculus III; semester 7's Visual/Performing Arts row is 4 credits (unusual, kept); the semester 7 CHM461 row prints garbled prerequisite text ('BIO360 Cell Biology is recommended-prerequisites BIO205/BIO207-prerequisite CHM112 or BIO241 prerequisite BIO101 and CHM232)') - recorded verbatim in choice_note. Sequenced sum 121 matches the printed 'Total Semester Hours: 121'.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester One",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "PTH 100P",
+      "title": "Philosophy/Theology Pathway Seminar (first 7 weeks)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PTH 100L",
+      "title": "Literature Pathway Seminar (second 7 weeks)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PTH 101",
+      "title": "Community and Well-Being",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 121",
+      "title": "Composition I",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "ENG121 Composition I OR ENG190 Honors English (asterisk = pending advising review for placement).",
+      "options": [
+       "ENG 121",
+       "ENG 190"
+      ],
+      "prereq": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 121",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Mathematics course: MTH121 Calculus I (asterisk = pending advising review for placement).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 111",
+      "title": "General Chemistry I with lab and recitation",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM111/113/115 (lecture/lab/recitation); prerequisite MTH111.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester Two",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "PTH 100H",
+      "title": "History/Social Sciences Pathway Seminar (first 7 weeks)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PTH 100I",
+      "title": "Interdisciplinary/Humanities Pathway Seminar (first 7 weeks)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "Printed as 'PTh100I' in source.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PTH 102",
+      "title": "Engagement and Outreach",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG 123",
+      "title": "Composition II",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "ENG123 Composition II OR ENG290 Honors English.",
+      "options": [
+       "ENG 123",
+       "ENG 290"
+      ],
+      "prereq": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 122",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 112",
+      "title": "General Chemistry II with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM112/114 (lecture/lab); prerequisite CHM111/113.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester Three",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "code": "ENG XXX",
+      "title": "ENG prefix (200 level course)",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "ENG prefix (200 level course) OR WRI276 Intro to Creative Writing.",
+      "options": [
+       "ENG XXX",
+       "WRI 276"
+      ],
+      "prereq": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHL 101",
+      "title": "Introduction to Logic",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "PHL101 Intro to Logic OR PHL190 Honors Logic.",
+      "options": [
+       "PHL 101",
+       "PHL 190"
+      ],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MTH 223",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 231",
+      "title": "Organic Chemistry I with lab and recitation",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM231/233/235 (lecture/lab/recitation); prerequisite CHM112/114.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHY 221",
+      "title": "Physics with Calculus I and lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as PHY221/214 (lecture/lab); prerequisite MTH121.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Semester Four",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "PHL XXX",
+      "title": "PHL prefix (200 or 300 level course)",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "PHL prefix (200 or 300 level course).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHY 222",
+      "title": "Physics with Calculus II and lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as PHY 222/214.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 232",
+      "title": "Organic Chemistry II with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM232/234 (lecture/lab); prerequisite CHM231/233.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 351",
+      "title": "Analytical Chemistry with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM351/353 (lecture/lab); prerequisite CHM112/114.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Semester Five",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "LAN XXX",
+      "title": "Foreign Language I",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Foreign Language I (asterisk = pending advising review for placement).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 302",
+      "title": "Instrumental Analysis with lab",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM302/304 (lecture/lab).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 441",
+      "title": "Physical Chemistry I with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM441/443 (lecture/lab); prerequisites PHY222, MTH122.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 451",
+      "title": "Advanced Inorganic Chemistry I with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM451/453 (lecture/lab); prerequisite CHM232.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Semester Six",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "LAN XXX",
+      "title": "Foreign Language 2",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Foreign Language 2.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 442",
+      "title": "Physical Chemistry II with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM442/444 (lecture/lab); prerequisites printed as 'PHY222, MTH323' in source.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 392",
+      "title": "Junior Seminar in Chemistry",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 395",
+      "title": "Chemistry Research",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELEC XXX",
+      "title": "Elective (100 to 400 level course)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective (100-400 level course) - any eligible degree program.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Semester Seven",
+    "declared_credits": 17,
+    "courses": [
+     {
+      "code": "HIS 110",
+      "title": "The Global Community",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "HIS110 The Global Community/HIS290 OR HIS211 Western Civilization to 1648 OR HIS212 Western Civilization Since 1648 OR POL151 Intro to Comparative Politics OR POL161 Intro to International Relations.",
+      "options": [
+       "HIS 110",
+       "HIS 290",
+       "HIS 211",
+       "HIS 212",
+       "POL 151",
+       "POL 161"
+      ],
+      "prereq": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "THL 101",
+      "title": "Introduction to Christian Theology",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "THL101 Introduction to Christian Theology OR THL190 Honors Theology I.",
+      "options": [
+       "THL 101",
+       "THL 190"
+      ],
+      "prereq": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ART XXX",
+      "title": "Visual/Performing Arts",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Visual/Performing Arts: ART, ARH, MUS, THR prefix (choose one). Printed at 4 credits in source.",
+      "options": [
+       "ART",
+       "ARH",
+       "MUS",
+       "THR"
+      ],
+      "prereq": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 461",
+      "title": "Biochemistry I with lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "Printed as CHM461/464 (lecture/lab). Prerequisite note printed verbatim: 'prerequisite CHM231; BIO360 Cell Biology is recommended-prerequisites BIO205/BIO207-prerequisite CHM112 or BIO241 prerequisite BIO101 and CHM232)'.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELEC XXX",
+      "title": "Program Elective (300 or 400 level course)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Program Elective (300 or 400 level course).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Semester Eight",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "THL XXX",
+      "title": "THL prefix (200 or 300 level course)",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "THL prefix (200 or 300 level course).",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HIS 120",
+      "title": "The American National Community",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "HIS120 The American National Community OR HIS 213 US to 1876 OR HIS214 US Since 1876 OR POL112 Intro to American Politics.",
+      "options": [
+       "HIS 120",
+       "HIS 213",
+       "HIS 214",
+       "POL 112"
+      ],
+      "prereq": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY XXX",
+      "title": "Social Science",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Social Science: PSY, POL, ECO, or SOC prefix (choose one).",
+      "options": [
+       "PSY",
+       "POL",
+       "ECO",
+       "SOC"
+      ],
+      "prereq": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHM 492",
+      "title": "Senior Seminar in Chemistry",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELEC XXX",
+      "title": "Elective (100 to 400 level course)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective (100-400 level course) - any eligible degree program.",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "de57252ca4d02d547004eb3c42168065fc1bff92c4eaef42f3750fa203969883",
+  "last_verified": "2026-10-02"
+ }
+}

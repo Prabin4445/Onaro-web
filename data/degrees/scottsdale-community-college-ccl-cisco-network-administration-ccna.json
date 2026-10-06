@@ -1,0 +1,99 @@
+{
+ "institution": {
+  "city": "Scottsdale",
+  "kind": "community",
+  "name": "Scottsdale Community College",
+  "state": "AZ",
+  "slug": "scottsdale-community-college",
+  "ipeds": "105747"
+ },
+ "plan": {
+  "catalog_year": "2022-2023",
+  "degree": "CCL",
+  "id": "scottsdale-community-college-ccl-cisco-network-administration-ccna",
+  "major": "Cisco Network Administration: CCNA",
+  "notes": "Source: official Maricopa pathway-map page (https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/cisco-network-administration-ccna-5969n-ccl). Effective Term Fall 2022 Part-time Part-time Sequence Part-time status is 11 credit hours or less. Term 1 A sequence of suggested courses that should be taken during Term 1 Course Number Course Name Requisites; catalog_year 2022-2023 derived from Effective Term. Only a part-time sequence is published on the official page (no full-time sequence); the published part-time sequence is used verbatim. Sequence reflects the page's DEFAULT base pathway-map view (option-specific rows are hidden until a pathway option is selected). Credit ranges (e.g. '1-3') use the lower bound, per collection convention; 'X or Y' choices use the first-listed option's credits. Category mapping: core = AGEC/program area value present; major = no area value; elective = restricted/general-elective placeholders. Choices flagged choice=true. Coordinator remediation 2026-10-01 (source-verified mechanical fixes; see merge/REMEDIATION-LOG.md).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CIS 105",
+      "core_area": "CS",
+      "credits": 0,
+      "prereq": [],
+      "title": "Survey of Computer Information Systems",
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CNT 140AB",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [],
+      "title": "Introduction to Networks",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CNT 150AB",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "CNT 140AB"
+      ],
+      "title": "Switching, Routing, and Wireless Essentials",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CNT 160AB",
+      "core_area": "",
+      "credits": 4,
+      "prereq": [
+       "CNT 150AB"
+      ],
+      "title": "Enterprise Networking, Security, and Automation",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Term 3",
+    "n": 3
+   }
+  ],
+  "source_url": "https://www.scottsdalecc.edu/degrees-certificates/computer-and-information-technology/cisco-network-administration-ccna-5969n-ccl",
+  "total_credits": 12,
+  "program_type": "professional-phase",
+  "content_hash": "ba65aee51840da7e971432c4d5b01faafc4bffd10bc630e41b9c26abc53a6621",
+  "last_verified": "2026-10-02"
+ }
+}

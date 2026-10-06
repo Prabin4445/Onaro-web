@@ -1,0 +1,629 @@
+{
+ "date": "2026-09-30",
+ "method": "UNITID-by-UNITID diff of inventory/dir.json (4025 schools, IPEDS 2023-based) against NCES IPEDS 2024 Institutional Characteristics HD file (6072 institutions; universe = degree-granting 4yr/2yr = 4090)",
+ "universe_count": 4090,
+ "list_count_before": 4025,
+ "missing_from_list": 90,
+ "administrative_offices_correctly_excluded": [
+  {
+   "unitid": 100733,
+   "name": "University of Alabama System Office",
+   "city": "Tuscaloosa",
+   "state": "AL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 103529,
+   "name": "University of Alaska System of Higher Education",
+   "city": "Fairbanks",
+   "state": "AK",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 105136,
+   "name": "Maricopa Community College System Office",
+   "city": "Tempe",
+   "state": "AZ",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 108056,
+   "name": "University of Arkansas System Office",
+   "city": "Little Rock",
+   "state": "AR",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 110501,
+   "name": "California State University-Chancellors Office",
+   "city": "Long Beach",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 112376,
+   "name": "Coast Community College District Office",
+   "city": "Costa Mesa",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 112817,
+   "name": "Contra Costa Community College District Office",
+   "city": "Martinez",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 114831,
+   "name": "Foothill-De Anza Community College District",
+   "city": "Los Altos Hills",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 115287,
+   "name": "Grossmont-Cuyamaca Community College District",
+   "city": "El Cajon",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 117681,
+   "name": "Los Angeles Community College District Office",
+   "city": "Los Angeles",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 117900,
+   "name": "Los Rios Community College District Office",
+   "city": "Sacramento",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 120023,
+   "name": "North Orange County Community College District",
+   "city": "Anaheim",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 121178,
+   "name": "Peralta Community College System Office",
+   "city": "Oakland",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 122320,
+   "name": "San Diego Community College District-District Office",
+   "city": "San Diego",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 122737,
+   "name": "San Jose-Evergreen Community College District",
+   "city": "San Jose",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 122782,
+   "name": "San Mateo County Community College District Office",
+   "city": "San Mateo",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 123925,
+   "name": "State Center Community College District",
+   "city": "Fresno",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 124557,
+   "name": "University of California-System Administration Central Office",
+   "city": "Oakland",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 125019,
+   "name": "Ventura County Community College System Office",
+   "city": "Camarillo",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 125222,
+   "name": "West Valley Mission Community College District Office",
+   "city": "Saratoga",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 126100,
+   "name": "Yosemite Community College District Office",
+   "city": "Modesto",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 128300,
+   "name": "University of Colorado System Office",
+   "city": "Denver",
+   "state": "CO",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 130882,
+   "name": "Delaware Technical Community College-Central Office",
+   "city": "Dover",
+   "state": "DE",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 141963,
+   "name": "University of Hawaii System Office",
+   "city": "Honolulu",
+   "state": "HI",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 144500,
+   "name": "City Colleges of Chicago-District Office",
+   "city": "Chicago",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 144777,
+   "name": "DeVry University-Administrative Office",
+   "city": "Lisle",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 149240,
+   "name": "Southern Illinois University-System Office",
+   "city": "Carbondale",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 149587,
+   "name": "University of Illinois System Offices",
+   "city": "Urbana",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 157854,
+   "name": "Kentucky Community and Technical College System",
+   "city": "Versailles",
+   "state": "KY",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 160533,
+   "name": "Southern University-Board and System",
+   "city": "Baton Rouge",
+   "state": "LA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 161280,
+   "name": "University of Maine-System Central Office",
+   "city": "Orono",
+   "state": "ME",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 164146,
+   "name": "University System of Maryland",
+   "city": "Baltimore",
+   "state": "MD",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 166665,
+   "name": "University of Massachusetts-Central Office",
+   "city": "Boston",
+   "state": "MA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 175999,
+   "name": "Board of Trustees-Mississippi State Institutions of Higher Learning",
+   "city": "Jackson",
+   "state": "MS",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 178439,
+   "name": "University of Missouri-System Office",
+   "city": "Columbia",
+   "state": "MO",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 181747,
+   "name": "University of Nebraska-Central Administration System Office",
+   "city": "Lincoln",
+   "state": "NE",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 182519,
+   "name": "Nevada System of Higher Education-System Office",
+   "city": "Reno",
+   "state": "NV",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 183327,
+   "name": "University System of New Hampshire System Office",
+   "city": "Concord",
+   "state": "NH",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 190035,
+   "name": "CUNY System Office",
+   "city": "New York",
+   "state": "NY",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 195827,
+   "name": "SUNY-System Office",
+   "city": "Albany",
+   "state": "NY",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 199175,
+   "name": "University of North Carolina System",
+   "city": "Raleigh",
+   "state": "NC",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 214661,
+   "name": "Pennsylvania State System of Higher Education-Central Office",
+   "city": "Harrisburg",
+   "state": "PA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 222497,
+   "name": "Alamo Community College District Central Office",
+   "city": "San Antonio",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 228732,
+   "name": "Texas A & M University-System Office",
+   "city": "College Station",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 229090,
+   "name": "The University of Texas System Office",
+   "city": "Austin",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 229407,
+   "name": "University of Houston-System Administration",
+   "city": "Houston",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 231156,
+   "name": "Vermont State Colleges-Office of the Chancellor",
+   "city": "Montpelier",
+   "state": "VT",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 240435,
+   "name": "University of Wisconsin-System Administration",
+   "city": "Madison",
+   "state": "WI",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 242671,
+   "name": "Inter American University of Puerto Rico-Central Office",
+   "city": "San Juan",
+   "state": "PR",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 243160,
+   "name": "University of Puerto Rico-Central Administration",
+   "city": "San Juan",
+   "state": "PR",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 247083,
+   "name": "University of Louisiana-System Administration",
+   "city": "Baton Rouge",
+   "state": "LA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 247737,
+   "name": "Mississippi Community College Board",
+   "city": "Jackson",
+   "state": "MS",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 404480,
+   "name": "University System of Maryland-Research Centers",
+   "city": "Baltimore",
+   "state": "MD",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 409379,
+   "name": "Tennessee Board of Regents",
+   "city": "Nashville",
+   "state": "TN",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 420802,
+   "name": "Arizona Board of Regents",
+   "city": "Phoenix",
+   "state": "AZ",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 428426,
+   "name": "San Bernardino Community College District",
+   "city": "San Bernardino",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 428453,
+   "name": "Minnesota State Colleges and Universities System Office",
+   "city": "ST PAUL",
+   "state": "MN",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 432144,
+   "name": "South Orange County Community College District",
+   "city": "Mission Viejo",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 438665,
+   "name": "Rancho Santiago Community College District Office",
+   "city": "Santa Ana",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 439154,
+   "name": "Texas Tech University System Administration",
+   "city": "Lubbock",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 440138,
+   "name": "Antioch University-System Administration",
+   "city": "Yellow Springs",
+   "state": "OH",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 443368,
+   "name": "Illinois Eastern Community College-System Office",
+   "city": "Olney",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 443711,
+   "name": "University of North Texas System",
+   "city": "Dallas",
+   "state": "TX",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 446978,
+   "name": "Colorado State University-System Office",
+   "city": "Denver",
+   "state": "CO",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 448336,
+   "name": "Arkansas State University System",
+   "city": "Little Rock",
+   "state": "AR",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 448381,
+   "name": "San Joaquin Valley College-Central Administrative Office",
+   "city": "Visalia",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 448637,
+   "name": "West Hills Community College District",
+   "city": "Coalinga",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 454218,
+   "name": "Chamberlain University-Administrative Office",
+   "city": "Chicago",
+   "state": "IL",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 485467,
+   "name": "Carrington College-Administrative Office",
+   "city": "Sacramento",
+   "state": "CA",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  },
+  {
+   "unitid": 492263,
+   "name": "The University of Tennessee System Office",
+   "city": "Knoxville",
+   "state": "TN",
+   "reason": "administrative/system office — non-teaching, correctly excluded"
+  }
+ ],
+ "genuinely_missing_added": 20,
+ "list_count_after": 4045,
+ "stale_entries_flagged": [
+  {
+   "unitid": 114123,
+   "name": "Empire College",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 149763,
+   "name": "Oak Point University",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 201751,
+   "name": "Chatfield College",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 206279,
+   "name": "Union Institute & University",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 206394,
+   "name": "The North Coast College",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 214944,
+   "name": "Pennco Tech-Bristol",
+   "reason": "in IPEDS 2024 but no longer degree-granting 4yr/2yr (deggrant=2, level=2) — verify before collecting"
+  },
+  {
+   "unitid": 237598,
+   "name": "Mountain State College",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 241128,
+   "name": "American University of Puerto Rico",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 246345,
+   "name": "Houston Graduate School of Theology",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 249609,
+   "name": "Fortis Institute-Forty Fort",
+   "reason": "in IPEDS 2024 but no longer degree-granting 4yr/2yr (deggrant=2, level=3) — verify before collecting"
+  },
+  {
+   "unitid": 406547,
+   "name": "City College-Gainesville",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 434821,
+   "name": "Blue Cliff College-Metairie",
+   "reason": "in IPEDS 2024 but no longer degree-granting 4yr/2yr (deggrant=2, level=3) — verify before collecting"
+  },
+  {
+   "unitid": 440749,
+   "name": "National American University-Ellsworth",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 441238,
+   "name": "Irell & Manella Graduate School of Biological Sciences at City of Hope",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 454184,
+   "name": "The King's College",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 456171,
+   "name": "Urbana Theological Seminary",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 456977,
+   "name": "CBT Technology Institute-Cutler Bay",
+   "reason": "in IPEDS 2024 but no longer degree-granting 4yr/2yr (deggrant=2, level=3) — verify before collecting"
+  },
+  {
+   "unitid": 460376,
+   "name": "Fairfax University of America",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 461643,
+   "name": "Bergin University of Canine Studies",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 475635,
+   "name": "Beverly Hills Design Institute",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 482565,
+   "name": "DeVry University-North Carolina",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 490197,
+   "name": "Regan Career Institute",
+   "reason": "in IPEDS 2024 but no longer degree-granting 4yr/2yr (deggrant=2, level=3) — verify before collecting"
+  },
+  {
+   "unitid": 490559,
+   "name": "Gwinnett Institute",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 492087,
+   "name": "The Continents States University",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  },
+  {
+   "unitid": 497666,
+   "name": "California University-Silicon Valley",
+   "reason": "not listed in IPEDS 2024 HD — likely closed or merged; do not treat as collectable pending until verified"
+  }
+ ],
+ "note": "The 90 \"missing\" were NOT teaching institutions: 70 system/district/board administrative offices plus 20 real schools now added. True coverage gap was 20, now closed."
+}

@@ -1,0 +1,552 @@
+{
+ "institution": {
+  "name": "Loyola Marymount University",
+  "city": "Los Angeles, CA",
+  "kind": "private",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "lmu-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 124,
+  "source_url": "https://bulletin.lmu.edu/schools-colleges/science-engineering/computer-science/computer-science-bs/computer-science-bs.pdf",
+  "notes": "Source: official Loyola Marymount University Academic Bulletin (bulletin.lmu.edu, Westchester main campus, 1 LMU Drive, Los Angeles, CA 90045) - 'Computer Science, B.S.' program page and its official program PDF (https://bulletin.lmu.edu/schools-colleges/science-engineering/computer-science/computer-science-bs/computer-science-bs.pdf), section 'Curriculum (124 Semester Hours): A typical course of study leading to the B.S. degree in computer science'. Catalog year 2026-2027 confirmed as the current '2026-2027 Edition' on the bulletin homepage (retrieved 2026-09-30). Transcription method: program PDF downloaded from bulletin.lmu.edu and text-extracted (pdftotext + pymupdf cross-check), transcribed term by term, every term total re-summed against the chart's published term totals (16/16/17-18/17-18/16/16/14-18/12-18). NOTE - LMU disambiguation: this is Loyola Marymount University (Los Angeles, CA, private, bulletin.lmu.edu), NOT Lincoln Memorial University (Harrogate, TN, lmunet.edu), which also brands as 'LMU' and also publishes a BS Computer Science plan - the Lincoln Memorial documents were identified and excluded. CAVEATS: (1) Variable elective slots were encoded at their range MINIMUMS so the encoded total equals the catalog's published degree minimum: Fall Y2 'Elective 3-4'->3, Spring Y2 'Elective 3-4'->3, Fall Y4 'Elective 2-6'->2, Spring Y4 'Elective 0-6'->0 (the 0-credit slot means no elective is needed at the minimum). Encoded total = 16+16+17+17+16+16+14+12 = 124, exactly the catalog's published minimum of 124 semester hours ('Graduation Requirements: Completion of at least 124 semester hours'); the chart's printed degree range is 124-136 and term ranges as printed above. (2) Footnote 1: only ONE of CMSI 2021 Web Application Development or CMSI 2022 Mobile Application Development is required (students may take both); the official chart lists both (2 cr each, one per sophomore semester) and both are transcribed as printed. (3) Footnote 2: exploration electives that also satisfy University Core (e.g., CMSI 3700, CMSI 3710, CMSI 3920) free up additional free-elective slots. (4) MATH 361 Probability and Mathematical Statistics (Spring Y3, as printed in the chart) is WAIVED for students who take CMSI 4320 Cognitive Systems Design - in that case the major minimum drops by 4 semester hours; transcribed as printed with the waiver noted here. (5) CMSI 1900 Exploring Computer Science (0 cr) is required for all incoming first-year CS majors (transfer students entering after their first semester are exempt); ORNT 1000 Intro to LMU for First Years (0 cr) also printed in the chart - both flagged required_zero. (6) FFYS 1000 First Year Seminar transcribed at 4 semester hours as printed in the chart (catalog course listing shows 3-4). (7) The official sequence chart publishes no course prerequisites, so all prereq lists are empty - none were invented. (8) No summer terms in the official chart; 8 semesters. (9) University Core minimum is 32 semester hours; the chart satisfies it via FFYS 1000, RHET 1000, five 4-hour 'University Core' slots, and the two 'Elective or University Core if needed' slots.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CMSI 1010",
+      "title": "Computer Programming Laboratory",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "MATH 131",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "FFYS 1000",
+      "title": "First Year Seminar",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "UNIV CORE",
+      "title": "University Core (student choice)",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 4 semester hours from the LMU-approved University Core curriculum (Seaver College students must complete a minimum of 32 core semester hours including FFYS 1000, RHET 1000, Philosophical Inquiry, Theological Inquiry, American Diversity, Faith and Reason, and Ethics and Justice).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "CMSI 1900",
+      "title": "Exploring Computer Science",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "required_zero": true
+     },
+     {
+      "slot_id": "s1-5",
+      "code": "ORNT 1000",
+      "title": "Intro to LMU for First Years",
+      "credits": 0,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "required_zero": true
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CMSI 2120",
+      "title": "Data Structures and Applications",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "MATH 132",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "RHET 1000",
+      "title": "Rhetorical Arts",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "UNIV CORE",
+      "title": "University Core (student choice)",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 4 semester hours from the LMU-approved University Core curriculum (Seaver College students must complete a minimum of 32 core semester hours including FFYS 1000, RHET 1000, Philosophical Inquiry, Theological Inquiry, American Diversity, Faith and Reason, and Ethics and Justice).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CMSI 2130",
+      "title": "Algorithms and Analysis",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CMSI 2210",
+      "title": "Computer Systems Organization",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "CMSI 2021",
+      "title": "Web Application Development",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "MATH 266 / CMSI 2820",
+      "title": "Methods of Proof and Discrete Mathematics or Discrete Mathematics for Computer Science",
+      "credits": 4,
+      "category": "math",
+      "choice": true,
+      "choice_note": "Student choice: MATH 266 Methods of Proof and Discrete Mathematics or CMSI 2820 Discrete Mathematics for Computer Science (4 semester hours either way).",
+      "options": [
+       "MATH 266",
+       "CMSI 2820"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "GEN ELECT",
+      "title": "Free Elective (student choice)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective. Official chart prints 3-4 semester hours; encoded at 3.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "MATH 241 / MATH 251",
+      "title": "Multivariable Calculus and Linear Algebra or Applied Linear Algebra",
+      "credits": 4,
+      "category": "math",
+      "choice": true,
+      "choice_note": "Student choice: MATH 241 Multivariable Calculus and Linear Algebra (recommended for most CS majors) or MATH 251 Applied Linear Algebra.",
+      "options": [
+       "MATH 241",
+       "MATH 251"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CMSI 2022",
+      "title": "Mobile Application Development",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "EECE 2242",
+      "title": "Logic and Computer Design",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "UNIV CORE",
+      "title": "University Core (student choice)",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 4 semester hours from the LMU-approved University Core curriculum (Seaver College students must complete a minimum of 32 core semester hours including FFYS 1000, RHET 1000, Philosophical Inquiry, Theological Inquiry, American Diversity, Faith and Reason, and Ethics and Justice).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "GEN ELECT",
+      "title": "Free Elective (student choice)",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective. Official chart prints 3-4 semester hours; encoded at 3.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CMSI 3801",
+      "title": "Theories of Computer and Human Languages",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CMSI ELECT",
+      "title": "CMSI Exploration Elective (student choice)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-division CMSI exploration course. Per catalog requirements, beyond the two required theory courses (CMSI 3801, CMSI 3802), students select four additional breadth courses - one from each of the three tracks (Artificial Intelligence, Systems/Architecture, Games and Interaction) plus one additional upper-division CMSI course.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "UNIV CORE",
+      "title": "University Core (student choice)",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 4 semester hours from the LMU-approved University Core curriculum (Seaver College students must complete a minimum of 32 core semester hours including FFYS 1000, RHET 1000, Philosophical Inquiry, Theological Inquiry, American Diversity, Faith and Reason, and Ethics and Justice).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "GEN ELECT",
+      "title": "Free Elective (student choice)",
+      "credits": 4,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective. Official chart prints a range; encoded at the range minimum so the encoded total equals the catalog's published degree minimum (see plan notes).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CMSI 3802",
+      "title": "Programming Language Concepts and Implementation",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CMSI ELECT",
+      "title": "CMSI Exploration Elective (student choice)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-division CMSI exploration course. Per catalog requirements, beyond the two required theory courses (CMSI 3801, CMSI 3802), students select four additional breadth courses - one from each of the three tracks (Artificial Intelligence, Systems/Architecture, Games and Interaction) plus one additional upper-division CMSI course.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "UNIV CORE",
+      "title": "University Core (student choice)",
+      "credits": 4,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Student choice: 4 semester hours from the LMU-approved University Core curriculum (Seaver College students must complete a minimum of 32 core semester hours including FFYS 1000, RHET 1000, Philosophical Inquiry, Theological Inquiry, American Diversity, Faith and Reason, and Ethics and Justice).",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "MATH 361",
+      "title": "Probability and Mathematical Statistics",
+      "credits": 4,
+      "category": "math",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CMSI 4071 / CMSI 4081",
+      "title": "Senior Project I or Senior Thesis I",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: CMSI 4071 Senior Project I or CMSI 4081 Senior Thesis I.",
+      "options": [
+       "CMSI 4071",
+       "CMSI 4081"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CMSI ELECT",
+      "title": "CMSI Exploration Elective (student choice)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-division CMSI exploration course. Per catalog requirements, beyond the two required theory courses (CMSI 3801, CMSI 3802), students select four additional breadth courses - one from each of the three tracks (Artificial Intelligence, Systems/Architecture, Games and Interaction) plus one additional upper-division CMSI course.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "ELECT OR CORE",
+      "title": "Elective or University Core if needed (student choice)",
+      "credits": 4,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective or University Core course if core hours remain.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "GEN ELECT",
+      "title": "Free Elective (student choice)",
+      "credits": 2,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective. Official chart prints 2-6 semester hours; encoded at 2.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CMSI 4072 / CMSI 4082",
+      "title": "Senior Project II or Senior Thesis II",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: CMSI 4072 Senior Project II or CMSI 4082 Senior Thesis II.",
+      "options": [
+       "CMSI 4072",
+       "CMSI 4082"
+      ],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CMSI ELECT",
+      "title": "CMSI Exploration Elective (student choice)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Student choice: upper-division CMSI exploration course. Per catalog requirements, beyond the two required theory courses (CMSI 3801, CMSI 3802), students select four additional breadth courses - one from each of the three tracks (Artificial Intelligence, Systems/Architecture, Games and Interaction) plus one additional upper-division CMSI course.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "ELECT OR CORE",
+      "title": "Elective or University Core if needed (student choice)",
+      "credits": 4,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective or University Core course if core hours remain.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "GEN ELECT",
+      "title": "Free Elective (student choice)",
+      "credits": 0,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Student choice: free elective. Official chart prints 0-6 semester hours; encoded at 0 because remaining degree hours are already satisfied at the plan minimum.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "bb8823f949b861de18666f9aae9fa7a460296139d62bcdf496a0476d1d981d5a",
+  "last_verified": "2026-10-02"
+ }
+}

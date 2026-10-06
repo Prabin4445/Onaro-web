@@ -1,0 +1,142 @@
+{
+ "institution": {
+  "city": "Sacramento",
+  "kind": "community",
+  "name": "Sacramento City College",
+  "state": "CA"
+ },
+ "plan": {
+  "id": "sacramento-city-college-certificate-industrial-controls-technician",
+  "degree": "Certificate",
+  "major": "Industrial Controls Technician",
+  "catalog_year": "2026-2027",
+  "total_credits": 14,
+  "source_url": "https://mapmaker.losrios.edu/Maps/7698/PublishedPdf",
+  "notes": "Transcribed from the official SCC 'Industrial Controls Technician Certificate' program map, Catalog 2026-27, published June 3, 2026 (mapmaker.losrios.edu/Maps/7698/PublishedPdf). Official Total Units: 14; this seed = 8 + 6 = 14 units. Semester sums verified against the map's 8 / 6 headers. In-plan prereqs: IMMT 230 requires IMMT 120, 130, and 140 with grades of 'C' or better; IMMT 250 requires IMMT 230 with a grade of 'C' or better; IMMT 252 requires IMMT 250 with a grade of 'C' or better. Sequencing note (documented): in Semester 1, IMMT 120, 130, and 140 are taken during the 1st 8-week term and IMMT 230 during the 2nd 8-week term; in Semester 2, IMMT 250 during the 1st 8-week term and IMMT 252 during the 2nd 8-week term. Certificate of Achievement requirements: grade of 'C' or better in each major course. Industrial Controls Technician, Business & Industry Meta Majors. Distinct from the Electro-Mechanical Technician (map 7697) and Industrial Maintenance Technician (map 7699) certificates. tccns mirrors SCC local course codes (California community colleges do not use TCCNS).",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Semester 1",
+    "courses": [
+     {
+      "code": "IMMT 120",
+      "title": "Technical Documentation and Communication",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Taken during the 1st 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s1-0",
+      "tccns": "IMMT 120",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician",
+       "sacramento-city-college-certificate-industrial-maintenance-technician"
+      ]
+     },
+     {
+      "code": "IMMT 130",
+      "title": "Technical Calculations",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Taken during the 1st 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s1-1",
+      "tccns": "IMMT 130",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician",
+       "sacramento-city-college-certificate-industrial-maintenance-technician"
+      ]
+     },
+     {
+      "code": "IMMT 140",
+      "title": "Cal/OSHA 10 General Safety",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Taken during the 1st 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s1-2",
+      "tccns": "IMMT 140",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician",
+       "sacramento-city-college-certificate-industrial-maintenance-technician"
+      ]
+     },
+     {
+      "code": "IMMT 230",
+      "title": "Industrial Electricity I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IMMT 120",
+       "IMMT 130",
+       "IMMT 140"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: IMMT 120, 130, and 140 with grades of 'C' or better. Taken during the 2nd 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s1-3",
+      "tccns": "IMMT 230",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Semester 2",
+    "courses": [
+     {
+      "code": "IMMT 250",
+      "title": "Industrial Control Systems I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IMMT 230"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: IMMT 230 with a grade of 'C' or better. Taken during the 1st 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s2-0",
+      "tccns": "IMMT 250",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician"
+      ]
+     },
+     {
+      "code": "IMMT 252",
+      "title": "Industrial Control Systems II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IMMT 250"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite: IMMT 250 with a grade of 'C' or better. Taken during the 2nd 8-week term (per map note).",
+      "options": [],
+      "slot_id": "s2-1",
+      "tccns": "IMMT 252",
+      "xfer": [
+       "sacramento-city-college-as-electro-mechanical-technician",
+       "sacramento-city-college-certificate-electro-mechanical-technician"
+      ]
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "core_only",
+  "content_hash": "e2ae34d9e45cec3e159f0d679b7a989df2e96dc6f7418fbb02faad6deb2cae7a",
+  "last_verified": "2026-10-02"
+ }
+}

@@ -1,0 +1,614 @@
+{
+ "institution": {
+  "name": "Case Western Reserve University",
+  "ipeds_id": "201645",
+  "city": "Cleveland",
+  "state": "OH",
+  "control": "private",
+  "level": "4-year"
+ },
+ "plan": {
+  "id": "case-western-reserve-university-ba-biochemistry",
+  "degree": "BA",
+  "major": "Biochemistry",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://bulletin.case.edu/medicine/biochemistry/biochemistry-ba/",
+  "notes": "Transcribed 2026-10-02 from the official Case Western Reserve University General Bulletin (2026-27) 'Biochemistry' BA 'Sample Plan of Study' grid (https://bulletin.case.edu/medicine/biochemistry/biochemistry-ba/). Footnotes: 'a': Unified General Education Requirement. 'b': Selected students may be invited to take CHEM 323 or CHEM 324. 'c': Selected students may be invited to take PHYS 123 and PHYS 124 in place of PHYS 121 and PHYS 122. 'd': Students must take two of the three Biochemistry core courses: BIOC 312, BIOC 334, or BIOC 350. For students who take all three courses, the third course can serve as a technical elective. 'e': 3 credit hours of BIOC 391 are required; an additional 3 credit hours of BIOC 391 are required for the Research Honors Concentration. Students should consult their academic advisers about the elective parts of the curriculum. 'f': Each optional concentration is defined by three courses: one of BIOC 312/BIOC 334/BIOC 350 and two technical electives. Students can satisfy the requirements of an optional concentration by choosing their BIOC and technical elective courses appropriately. The exception is the Research Honors concentration, which requires students to apply at the end of their first year. 'or' rows are modeled per convention with choice:true, first option as code, and all options in options[]. Rows combining lecture+lab (e.g. 'EBME 306 & EBME 356') are kept as one combined course with the official combined credit total. Unlabeled credit slots are elective choice placeholders. Prerequisites are not printed in the sample plan, so prereq arrays are empty; prerequisites live in the bulletin's course descriptions. REPEATED COURSES: BIOC 391 appears in multiple semesters per the official plan. Official plan footnote 'e': '3 credit hours of BIOC 391 are required; an additional 3 credit hours of BIOC 391 are required for the Research Honors Concentration.' allow_repeated_courses is set for this reason.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "n": 1,
+    "term": "Year 1 Fall",
+    "courses": [
+     {
+      "code": "BIOC 101",
+      "title": "Frontiers in Biochemistry",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 214",
+      "title": "Genes, Evolution and Ecology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 214L",
+      "title": "Genes, Evolution and Ecology Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 105",
+      "title": "Principles of Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CHEM 105 or CHEM 111'.",
+      "options": [
+       "CHEM 105",
+       "CHEM 111"
+      ],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 125",
+      "title": "Math and Calculus Applications for Life, Managerial, and Social Sci I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'MATH 125 or MATH 121'.",
+      "options": [
+       "MATH 125",
+       "MATH 121"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-1",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "term": "Year 1 Spring",
+    "courses": [
+     {
+      "code": "BIOL 215",
+      "title": "Cells and Proteins",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 215L",
+      "title": "Cells and Proteins Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 106",
+      "title": "Principles of Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CHEM 106 or ENGR 145'.",
+      "options": [
+       "CHEM 106",
+       "ENGR 145"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 113",
+      "title": "Principles of Chemistry Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 126",
+      "title": "Math and Calculus Applications for Life, Managerial, and Social Sci II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan: 'Choose one of the following: MATH 126, MATH 122, MATH 124.'",
+      "options": [
+       "MATH 126",
+       "MATH 122",
+       "MATH 124"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-2",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "term": "Year 2 Fall",
+    "courses": [
+     {
+      "code": "CHEM 223",
+      "title": "Introductory Organic Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CHEM 223 or CHEM 323'.",
+      "options": [
+       "CHEM 223",
+       "CHEM 323"
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 233",
+      "title": "Introductory Organic Chemistry Laboratory I",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 115",
+      "title": "Introductory Physics I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan: 'Choose one of the following: PHYS 115, PHYS 121, PHYS 123.'",
+      "options": [
+       "PHYS 115",
+       "PHYS 121",
+       "PHYS 123"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 201",
+      "title": "Basic Statistics for Social and Life Sciences",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'STAT 201 or STAT 312 or STAT 313'.",
+      "options": [
+       "STAT 201",
+       "STAT 312",
+       "STAT 313"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-3",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "term": "Year 2 Spring",
+    "courses": [
+     {
+      "code": "CHEM 224",
+      "title": "Introductory Organic Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'CHEM 224 or CHEM 324'.",
+      "options": [
+       "CHEM 224",
+       "CHEM 324"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 234",
+      "title": "Introductory Organic Chemistry Laboratory II",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 116",
+      "title": "Introductory Physics II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan: 'Choose one of the following: PHYS 116, PHYS 122, PHYS 124.'",
+      "options": [
+       "PHYS 116",
+       "PHYS 122",
+       "PHYS 124"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 131",
+      "title": "Elementary Computer Programming",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan prints 'ENGR 131 or CSDS 132'.",
+      "options": [
+       "ENGR 131",
+       "CSDS 132"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-4",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "term": "Year 3 Fall",
+    "courses": [
+     {
+      "code": "BIOC 307",
+      "title": "Introduction to Biochemistry: From Molecules To Medical Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-5",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOOTNOTE-F-1",
+      "title": "Program elective (footnote f)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote(s): 'f': Each optional concentration is defined by three courses: one of BIOC 312/BIOC 334/BIOC 350 and two technical electives. Students can satisfy the requirements of an optional concentration by choosing their BIOC and technical elective courses appropriately. The exception is the Research Honors concentration, which requires students to apply at the end of their first year..",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Electives",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "term": "Year 3 Spring",
+    "courses": [
+     {
+      "code": "BIOC 308",
+      "title": "Molecular Biology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOC 391",
+      "title": "Capstone Research",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-6",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOOTNOTE-D-1",
+      "title": "Program elective (footnote d)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote(s): 'd': Students must take two of the three Biochemistry core courses: BIOC 312, BIOC 334, or BIOC 350. For students who take all three courses, the third course can serve as a technical elective. 'f': Each optional concentration is defined by three courses: one of BIOC 312/BIOC 334/BIOC 350 and two technical electives. Students can satisfy the requirements of an optional concentration by choosing their BIOC and technical elective courses appropriately. The exception is the Research Honors concentration, which requires students to apply at the end of their first year..",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "term": "Year 4 Fall",
+    "courses": [
+     {
+      "code": "BIOC 373",
+      "title": "Biochemistry Senior Seminar",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOC 391",
+      "title": "Capstone Research",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOOTNOTE-D-2",
+      "title": "Program elective (footnote d)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote(s): 'd': Students must take two of the three Biochemistry core courses: BIOC 312, BIOC 334, or BIOC 350. For students who take all three courses, the third course can serve as a technical elective. 'f': Each optional concentration is defined by three courses: one of BIOC 312/BIOC 334/BIOC 350 and two technical electives. Students can satisfy the requirements of an optional concentration by choosing their BIOC and technical elective courses appropriately. The exception is the Research Honors concentration, which requires students to apply at the end of their first year..",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UGER-7",
+      "title": "Unified General Education Requirement course",
+      "credits": 3,
+      "category": "gen-ed",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote 'a': Unified General Education Requirement.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "term": "Year 4 Spring",
+    "courses": [
+     {
+      "code": "BIOC 393",
+      "title": "Senior Capstone Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOOTNOTE-F-2",
+      "title": "Program elective (footnote f)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan footnote(s): 'f': Each optional concentration is defined by three courses: one of BIOC 312/BIOC 334/BIOC 350 and two technical electives. Students can satisfy the requirements of an optional concentration by choosing their BIOC and technical elective courses appropriately. The exception is the Research Honors concentration, which requires students to apply at the end of their first year..",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Elective courses",
+      "credits": 9,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Official plan elective slot; student chooses a course.",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "allow_repeated_courses": true,
+  "content_hash": "ac77fcc0312dbd72a7e191d84cfdee5811a15d3df2aed7a5801bc9e669d7e871",
+  "last_verified": "2026-10-02"
+ }
+}

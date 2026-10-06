@@ -1,0 +1,569 @@
+{
+ "institution": {
+  "ipeds": 200800,
+  "name": "University of Akron Main Campus",
+  "city": "Akron",
+  "state": "OH",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BS",
+  "id": "akron-bs-civil-engineering",
+  "major": "Civil Engineering",
+  "notes": "B.S. Civil Engineering, Department of Civil Engineering, College of Engineering and Polymer Science — ABET-accredited. Built from the official University of Akron Undergraduate Bulletin 'Recommended Schedule without Cooperative Education' (nominal four-year plan; https://bulletin.uakron.edu/undergraduate/colleges-programs/engineering-polymer-science/civil-engineering/civil-engineering-bs/). Requirements: General Education 24 (several major courses double-count), program-specific GenEd 11, math/natural science 19, engineering core 5, non-engineering core 3, civil engineering 48, technical electives 15; total 125. Technical electives: 15 credits from the catalog's CE Technical Electives list (CIVE 407, 414, 418, 423, 426-428, 441, 443, 445, 451-454, 463-468, 472-474, 480, 482, 497). ENGL 111 is the recommended first writing course; one General Education slot satisfies the second writing course requirement. Uses Akron's new course numbering.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM 151",
+      "credits": 3,
+      "prereq": [],
+      "title": "Principles of Chemistry I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CHEM 152",
+      "credits": 1,
+      "prereq": [
+       "CHEM 151"
+      ],
+      "title": "Principles of Chemistry I Laboratory",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 221",
+      "credits": 4,
+      "prereq": [],
+      "title": "Analytic Geometry-Calculus I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 101",
+      "credits": 3,
+      "prereq": [],
+      "title": "Introduction to Civil Engineering Fundamentals",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "code": "ENGL 111",
+      "credits": 3,
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CHEM 153",
+      "credits": 3,
+      "prereq": [
+       "CHEM 151"
+      ],
+      "title": "Principles of Chemistry II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 222",
+      "credits": 4,
+      "prereq": [
+       "MATH 221"
+      ],
+      "title": "Analytic Geometry-Calculus II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 102",
+      "credits": 3,
+      "prereq": [
+       "CIVE 101"
+      ],
+      "title": "Tools for Civil Engineering",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "Second writing course: any course satisfying the General Education second writing requirement.",
+      "code": "GENED-W2",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENGL 111"
+      ],
+      "title": "Second Writing Course (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "SURV 101 Basic Surveying or GEOG 405 Geographic Information Systems.",
+      "code": "SURV 101",
+      "credits": 3,
+      "options": [
+       "SURV 101",
+       "GEOG 405"
+      ],
+      "prereq": [],
+      "title": "Basic Surveying or Geographic Information Systems",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MATH 223",
+      "credits": 4,
+      "prereq": [
+       "MATH 222"
+      ],
+      "title": "Analytic Geometry-Calculus III",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 291",
+      "credits": 4,
+      "prereq": [
+       "MATH 221"
+      ],
+      "title": "Elementary Classical Physics I",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 201",
+      "credits": 3,
+      "prereq": [
+       "MATH 222"
+      ],
+      "title": "Engineering Statics",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "MATH 335",
+      "credits": 3,
+      "prereq": [
+       "MATH 223"
+      ],
+      "title": "Introduction to Ordinary Differential Equations",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "PHYS 292",
+      "credits": 4,
+      "prereq": [
+       "PHYS 291"
+      ],
+      "title": "Elementary Classical Physics II",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 202",
+      "credits": 3,
+      "prereq": [
+       "CIVE 201"
+      ],
+      "title": "Introduction to Mechanics of Solids",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 321",
+      "credits": 3,
+      "prereq": [
+       "CHEM 153"
+      ],
+      "title": "Introduction to Environmental Engineering",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MECE 203",
+      "credits": 3,
+      "prereq": [
+       "CIVE 201"
+      ],
+      "title": "Dynamics",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CIVE 306",
+      "credits": 3,
+      "prereq": [
+       "CIVE 202"
+      ],
+      "title": "Theory of Structures",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 313",
+      "credits": 3,
+      "prereq": [
+       "CIVE 202"
+      ],
+      "title": "Soil Mechanics",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 323",
+      "credits": 3,
+      "prereq": [
+       "CIVE 321"
+      ],
+      "title": "Water Supply and Pollution Control",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "MECE 310",
+      "credits": 2,
+      "prereq": [
+       "MECE 203"
+      ],
+      "title": "Fluid Mechanics I",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CIVE 314",
+      "credits": 3,
+      "prereq": [
+       "CIVE 313"
+      ],
+      "title": "Foundation Design",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 341",
+      "credits": 3,
+      "prereq": [
+       "MECE 310"
+      ],
+      "title": "Hydraulic Engineering",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 361",
+      "credits": 3,
+      "prereq": [],
+      "title": "Transportation Engineering",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 380",
+      "credits": 3,
+      "prereq": [
+       "CIVE 202"
+      ],
+      "title": "Engineering Materials Laboratory",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 401",
+      "credits": 3,
+      "prereq": [
+       "CIVE 306"
+      ],
+      "title": "Steel Design",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CIVE 403",
+      "credits": 3,
+      "prereq": [
+       "CIVE 401"
+      ],
+      "title": "Reinforced Concrete Design",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "code": "CIVE 471",
+      "credits": 3,
+      "prereq": [],
+      "title": "Construction Administration",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CE Technical Elective from the catalog list (e.g. CIVE 407, 414, 426, 441, 464), chosen with advisor.",
+      "code": "CIVETECH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CE Technical Elective (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CE Technical Elective from the catalog list, chosen with advisor.",
+      "code": "CIVETECH-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CE Technical Elective (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CE Technical Elective from the catalog list, chosen with advisor.",
+      "code": "CIVETECH-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CE Technical Elective (student choice)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "code": "CIVE 490",
+      "credits": 3,
+      "prereq": [
+       "CIVE 401",
+       "CIVE 403"
+      ],
+      "title": "Senior Design in Civil Engineering",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CE Technical Elective from the catalog list, chosen with advisor.",
+      "code": "CIVETECH-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CE Technical Elective (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CE Technical Elective from the catalog list, chosen with advisor.",
+      "code": "CIVETECH-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "CE Technical Elective (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "gen-ed",
+      "choice": true,
+      "choice_note": "General Education or Honors Distribution course chosen by the student.",
+      "code": "GENED-6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education (student choice)",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "term": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.uakron.edu/undergraduate/colleges-programs/engineering-polymer-science/civil-engineering/civil-engineering-bs/",
+  "total_credits": 125,
+  "content_hash": "ad08dbaaf67ba3822583b75ab90065e4135a2baaa0cf122b1431c41e19366c50",
+  "last_verified": "2026-10-02"
+ }
+}

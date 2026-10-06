@@ -1,0 +1,515 @@
+{
+ "institution": {
+  "name": "University of Pittsburgh",
+  "city": "Pittsburgh, PA",
+  "kind": "public4yr",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2023-2024",
+  "degree": "BS",
+  "id": "pitt-bs-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: University of Pittsburgh, Pittsburgh campus, 2023-2024 Undergraduate Catalog [Archived Catalog], page titled 'Program: Computer Science, BS' (https://catalog.upp.pitt.edu/preview_program.php?catoid=223&poid=69375). The plan below is a faithful transcription of the catalog's official 'Sample Plan of Study' (eight Fall/Spring terms); course credits match the catalog's per-term totals exactly. The catalog presents the sample as customizable and assumes: (1) introductory programming completed before admission to the School of Computing and Information, (2) placement readiness for ENGCMP 0200, and (3) mathematics readiness for MATH 0220. GER = General Education Requirement (student-choice slots; the SCI catalog defines 14 GER categories). Elective slots are student choice and may support SCI's secondary-field requirement. One course must satisfy the Diversity requirement. The catalog notes that CS Upper-Level 7 may be used for departmental honors, and lists the Year-4 Spring slot as 'CS Upper-Level 7 or Elective'. The capstone slot is shown as 3 credits in the sample plan; the catalog allows the capstone requirement to be satisfied via an internship, directed research, or a capstone-designated project course (2-3 credits). CREDIT CAVEAT: the catalog states the BS degree requires 120 credits, but the catalog's own published Sample Plan of Study sums to 122 credits (verified against the catalog's per-term totals: 16+15+16+15+15+15+15+15 = 122). total_credits is therefore set to 122 so the plan's credit sum matches the transcribed official sample exactly; no credits were added or removed. Prereqs are included only where confirmed by official Pitt catalog pages (CS 0445 requires CMPINF 0401; MATH 0280 requires MATH 0220; CS 1501 requires CS 0441); all other prereq arrays are left empty rather than inferred. The 2026-2027 Pittsburgh catalog program page for this major was not reachable at collection time, so the latest accessible official Pittsburgh-campus catalog version with a published term-by-term plan (2023-2024) is used and cited by its actual catalog year.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "choice": false,
+      "code": "CMPINF 0401",
+      "credits": 4,
+      "notes": "SCI gateway programming course.",
+      "prereq": [],
+      "title": "Intermediate Programming",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "MATH 0220",
+      "credits": 4,
+      "notes": "",
+      "prereq": [],
+      "title": "Analytic Geometry and Calculus 1",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "CMPINF 0001",
+      "credits": 1,
+      "notes": "Required SCI first-year seminar.",
+      "prereq": [],
+      "title": "SCI First-Year Seminar",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "CMPINF 0010",
+      "credits": 4,
+      "notes": "SCI gateway course (CMPINF 0011 is the alternate gateway per the current catalog).",
+      "prereq": [],
+      "title": "Big Ideas in Computing and Information",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "ENGCMP 0200",
+      "credits": 3,
+      "notes": "Introductory composition requirement.",
+      "prereq": [],
+      "title": "Seminar in Composition",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall Year 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "code": "CS 0445",
+      "credits": 3,
+      "notes": "Catalog prerequisite: a C or better grade in CMPINF 0401.",
+      "prereq": [
+       "CMPINF 0401"
+      ],
+      "title": "Algorithms and Data Structures 1",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "MATH 0280",
+      "credits": 3,
+      "notes": "Catalog prerequisite: MATH 0220.",
+      "prereq": [
+       "MATH 0220"
+      ],
+      "title": "Intro to Matrices & Linear Alg",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "CS 0441",
+      "credits": 3,
+      "notes": "",
+      "prereq": [],
+      "title": "Discrete Structures for CS",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-01",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-02",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Year 1",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "code": "CS 1503",
+      "credits": 4,
+      "notes": "",
+      "prereq": [],
+      "title": "Mathematical Foundations of Machine Learning",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "CS 0447",
+      "credits": 3,
+      "notes": "",
+      "prereq": [],
+      "title": "Computer Organization and Assembly Language",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-03",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-01",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-02",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall Year 2",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "code": "CS 0449",
+      "credits": 3,
+      "notes": "",
+      "prereq": [],
+      "title": "Introduction to Systems Software",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": false,
+      "code": "CS 1501",
+      "credits": 3,
+      "notes": "Catalog prerequisite: CS 0441.",
+      "prereq": [
+       "CS 0441"
+      ],
+      "title": "Algorithms and Data Structures 2",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-04",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-05",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-03",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Year 2",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "choice": false,
+      "code": "CS 1502",
+      "credits": 3,
+      "notes": "",
+      "prereq": [],
+      "title": "Formal Methods in Computer Science",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "CS-UL-01",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-06",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-07",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-04",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall Year 3",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "code": "CS-UL-02",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "CS-UL-03",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-08",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-09",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-05",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Year 3",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "code": "CS-UL-04",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "CS-UL-05",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "CAPSTONE-01",
+      "credits": 3,
+      "notes": "Capstone experience; the catalog allows satisfaction via internship, directed research, or a capstone-designated project course (2-3 credits).",
+      "prereq": [],
+      "title": "Capstone Experience (student choice)",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-10",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-06",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Fall Year 4",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "choice": true,
+      "code": "CS-UL-06",
+      "credits": 3,
+      "notes": "Upper-level CS elective (CS 1000-level or above per the major requirements); consult the catalog/advisor for qualifying courses.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective (student choice)",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "CS-UL7-OR-ELECTIVE",
+      "credits": 3,
+      "notes": "The catalog lists this slot as 'CS Upper-Level 7 or Elective'; CS Upper-Level 7 may be used for departmental honors.",
+      "prereq": [],
+      "title": "CS Upper-Level Elective 7 or Free Elective (student choice)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "GER-11",
+      "credits": 3,
+      "notes": "Choose any course satisfying an SCI general education requirement.",
+      "prereq": [],
+      "title": "General Education Requirement (student choice)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-07",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "choice": true,
+      "code": "ELECTIVE-08",
+      "credits": 3,
+      "notes": "Electives may support the SCI secondary-field requirement; consult an advisor.",
+      "prereq": [],
+      "title": "Free Elective (student choice)",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "label": "Spring Year 4",
+    "n": 8
+   }
+  ],
+  "source_url": "https://catalog.upp.pitt.edu/preview_program.php?catoid=223&poid=69375",
+  "total_credits": 122,
+  "content_hash": "32da792ee32aaed7a4a7b230dc71cf802e16d33ef0c1e720bd851d6c1541e87a",
+  "last_verified": "2026-10-02"
+ }
+}

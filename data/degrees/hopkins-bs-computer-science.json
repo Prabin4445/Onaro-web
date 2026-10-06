@@ -1,0 +1,615 @@
+{
+ "institution": {
+  "name": "Johns Hopkins University",
+  "city": "Baltimore, MD",
+  "kind": "private4yr",
+  "state": "MD"
+ },
+ "plan": {
+  "id": "hopkins-bs-computer-science",
+  "degree": "B.S.",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "https://e-catalogue.jhu.edu/engineering/full-time-residential-programs/degree-programs/computer-science/computer-science-bs/computer-science-bs.pdf",
+  "notes": "Source: https://e-catalogue.jhu.edu/engineering/full-time-residential-programs/degree-programs/computer-science/computer-science-bs/computer-science-bs.pdf (official Johns Hopkins e-catalogue, Computer Science, Bachelor of Science, Whiting School of Engineering). Catalog year: 2026-2027 -- the catalog page states the requirements apply to students entering JHU as degree-seeking students in Fall 2026; this is the live (non-archived) e-catalogue edition read 2026-09-30. Hand-transcribed 2026-09-30 from the catalog's official 'Sample Program' term-by-term table; every course code, title, and credit value copied verbatim. Caveats: (1) The catalog's minimum degree requirement is 120 credits, but the official sample program prints 'Total Credits 122-125'. Ranges were resolved at the low end: First-Year Seminar = 2 credits (requirement is 2-3) and core science lectures = 3 credits (Biology/Chemistry; Physics lecture is 4). The arithmetic sum of the transcribed sample is therefore 122 (15+17+15+14+16+15+15+15), and total_credits is set to 122, the transcribed sample total, NOT the 120-credit minimum. (2) The catalog also publishes an alternate 'Sample Program with Hopkins Semester' (junior spring replaced by a Hopkins Semester abroad, total 122-125); only the standard sample is transcribed here. (3) The sample's ePortfolio assignments (FA1.1eP, FA1.2eP, FA5eP, FA6eP) and the CS TEAM course are typically integrated into the courses shown; the sample explicitly flags the slots that carry them. (4) Either/or options (Gateway Java/Python, writing, ethics, science lecture+lab, probability/statistics) are modeled as choice slots using the catalog's exact 'choose one' language; paired labs carry the same semester as their lecture. (5) Prereq arrays are empty: the sample program table states courses per term but not prerequisites; consult the catalog's course descriptions for prerequisites. (6) Accreditation: the Bachelor of Science in Computer Science is accredited by the Computing Accreditation Commission of ABET.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "AS.110.108",
+      "title": "Calculus I (Physical Sciences & Engineering)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "EN.500.112",
+      "title": "Gateway Computing: JAVA",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: EN.500.112 (Java) or EN.500.113 (Python). Java is preferred -- a Java background is needed for EN.601.226 Data Structures. A grade of C+ or higher is required.",
+      "options": [
+       "EN.500.113"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "EN.661.110",
+      "title": "Professional Writing and Ethics",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Either satisfies the FA1 Foundational Course in Writing requirement.",
+      "options": [
+       "AS.004.101"
+      ],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "FYS 1XX",
+      "title": "First-Year Seminar or Design Cornerstone course",
+      "credits": 2,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Catalog: all WSE primary majors complete one First-Year Seminar or Design Cornerstone course with a Satisfactory (S) grade (2-3 credits); the requirement is waived for students who transfer in after the first year. The low end (2 credits) is used for the credit total.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "FREE-ELEC-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "AS.110.109",
+      "title": "Calculus II (For Physical Sciences and Engineering)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "EN.601.124",
+      "title": "The Ethics of Artificial Intelligence and Automation",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one: EN.601.124 or EN.601.164 (Human and Machine Intelligence Alignment). Satisfies the FA5 Foundational Course in Ethical Reflection (carries FA1.1eP and FA5eP tags) and a CS Ethics course (POS tag CSCI-ETHS).",
+      "options": [
+       "EN.601.164"
+      ],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "EN.601.220",
+      "title": "Intermediate Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "EN.661.250",
+      "title": "Oral Presentations",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "FA3 3XX",
+      "title": "Course with EN Foundational Ability tag FA3 (Creative Expression)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "A minimum of 12 combined FA3/FA4 credits is required; at least 3 must be earned through an FA3-tagged course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "SCI 1XX",
+      "title": "Core Science I lecture: General Biology I (AS.020.151), Introductory Chemistry I (AS.030.101), or General Physics: Physical Science Major I (AS.171.101)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one lecture (3-4 credits by choice; 3 used here). Must pair with the matching laboratory. Two semesters of core science with labs are required, in any Physics/Chemistry/Biology combination; one lecture+lab satisfies the FA2 Natural Science requirement, the other satisfies the major's Basic Sciences requirement.",
+      "options": [
+       "AS.020.151",
+       "AS.030.101",
+       "AS.171.101"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "SCI 1XXL",
+      "title": "Core Science I laboratory: General Biology Laboratory I (AS.020.153), Introductory Chemistry Laboratory I (AS.030.105), or General Physics Laboratory I (AS.173.111)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Laboratory paired with the chosen semester-1 science lecture.",
+      "options": [
+       "AS.020.153",
+       "AS.030.105",
+       "AS.173.111"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "EN.601.226",
+      "title": "Data Structures",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "EN.601.230",
+      "title": "Mathematical Foundations for Computer Science",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "FA4 4XX",
+      "title": "Course with EN Foundational Ability tag FA4 (Engagement with Society)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "A minimum of 12 combined FA3/FA4 credits is required; at least 3 must be earned through an FA4-tagged course.",
+      "options": [],
+      "category": "gen-ed"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "SCI 2XX",
+      "title": "Core Science II lecture: General Biology II (AS.020.152), Introductory Chemistry II (AS.030.102), or General Physics: Physical Science Major II (AS.171.102)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose one lecture (3-4 credits by choice; 3 used here). Must pair with the matching laboratory.",
+      "options": [
+       "AS.020.152",
+       "AS.030.102",
+       "AS.171.102"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "SCI 2XXL",
+      "title": "Core Science II laboratory: General Biology Laboratory II (AS.020.154), Introductory Chemistry Laboratory II (AS.030.106), or General Physics Laboratory II (AS.173.112)",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Laboratory paired with the chosen semester-2 science lecture.",
+      "options": [
+       "AS.020.154",
+       "AS.030.106",
+       "AS.173.112"
+      ],
+      "category": "science"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "EN.601.229",
+      "title": "Computer System Fundamentals",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CS-EL-1",
+      "title": "CS Elective: additional EN.601.xxx or TR.601.xxx course",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Additional CS courses as needed to reach the 40-credit CS total. At most 6 credits with POS tag CSCI-OTHER and at most 4 credits with POS tag CSCI-SHORT may apply to the 40 credits.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "STAT 2XX",
+      "title": "Course in Probability and Statistics (FA2 requirement)",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "One combined 4-credit course (EN.553.211 Probability and Statistics for the Life Sciences, or EN.553.311 Intermediate Probability and Statistics) satisfies both the FA2 Probability and Statistics requirement and the CS Mathematics requirement. The catalog also allows two separate courses (EN.553.420/421 plus EN.553.413/430/431), which would exceed this 4-credit sample slot.",
+      "options": [
+       "EN.553.211",
+       "EN.553.311"
+      ],
+      "category": "math"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "EN.601.433",
+      "title": "Intro Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CS-UL-1",
+      "title": "CS Upper-Level course (EN.601.3xx/4xx)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Part of the 12-credit upper-level requirement (excluding EN.601.433): at least 6 credits from two of the four classification areas (Applications, Reasoning, Software, Systems); the remaining 6 may carry any of the five area tags including Theory.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "MATH 2XX",
+      "title": "Math Elective",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Additional course(s) to reach 16 math credits; must be at least 200 level (AS.110.2xx-4xx, EN.553.2xx-4xx, TR.110.2xx-4xx, or TR.553.2xx-4xx). Recommended prerequisites for many upper-level CS courses: AS.110.201 Linear Algebra and AS.110.202 Calculus III.",
+      "options": [],
+      "category": "math"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "FA3-FA4-1",
+      "title": "Course with EN Foundational Ability tag FA3 (Creative Expression) or FA4 (Engagement with Society)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Plus 6 additional credits from any FA3/FA4 combination to reach the 12-credit total.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "FREE-ELEC-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CS-UL-2",
+      "title": "CS Upper-Level course (EN.601.3xx/4xx)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Part of the 12-credit upper-level requirement; see the Fall Year 3 note for area rules.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CS-EL-2",
+      "title": "CS Elective: additional EN.601.xxx or TR.601.xxx course (Team, FA1.2eP, FA6eP)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "The sample designates this elective to also satisfy the CS TEAM course (POS tag CSCI-TEAM) plus the FA1.2eP oral-communication and FA6eP conceiving-of-and-realizing-projects ePortfolio assignments. At most 6 credits CSCI-OTHER / 4 credits CSCI-SHORT toward the 40-credit CS total.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "FA3-FA4-2",
+      "title": "Course with EN Foundational Ability tag FA3 (Creative Expression) or FA4 (Engagement with Society)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Toward the 12-credit combined FA3/FA4 total.",
+      "options": [],
+      "category": "gen-ed"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "FREE-ELEC-3",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "FREE-ELEC-4",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CS-UL-3",
+      "title": "CS Upper-Level course (EN.601.3xx/4xx, FA6eP)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Part of the 12-credit upper-level requirement; the sample designates this slot to satisfy the FA6 (conceiving of and realizing projects) ePortfolio assignment.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "FREE-ELEC-5",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "FREE-ELEC-6",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "FREE-ELEC-7",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-4",
+      "code": "FREE-ELEC-8",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CS-UL-4",
+      "title": "CS Upper-Level course (EN.601.3xx/4xx)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Part of the 12-credit upper-level requirement; see the Fall Year 3 note for area rules.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "FREE-ELEC-9",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "FREE-ELEC-10",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "FREE-ELEC-11",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-4",
+      "code": "FREE-ELEC-12",
+      "title": "Free Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Free electives may be any credit-bearing courses, chosen with advisor guidance.",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "a29a17bb1590270aaffb017b2be029b522698d13518544b50c84a13ac147614c",
+  "last_verified": "2026-10-02"
+ }
+}

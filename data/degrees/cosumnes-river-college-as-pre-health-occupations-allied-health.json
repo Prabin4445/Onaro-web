@@ -1,0 +1,402 @@
+{
+ "institution": {
+  "city": "Sacramento, CA",
+  "kind": "community",
+  "name": "Cosumnes River College",
+  "state": "CA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "external_prereqs": [
+   "BIOL 302"
+  ],
+  "id": "cosumnes-river-college-as-pre-health-occupations-allied-health",
+  "major": "Pre-Health Occupations",
+  "notes": "Transcribed from the official CRC 'Pre-Health Occupations A.S. Degree - Allied Health Local GE' program map, Catalog Year 2026-2027, published September 30, 2026 (mapmaker.losrios.edu/Maps/7817/PublishedPdf). GE Pattern: CRC Local. Map states Total Units 57.5-64; lower bound 57.5 encoded = 14+16+12.5+15 (semester sums verified at lower bound: Sem 1 Area L2 3-5 -> 3; Sem 2 BIOL 102/302 -> 3; Sem 3 AH 498 0.5-4 -> 0.5). AH 108 formerly AH 110. BIOL choice: BIOL 102 Essentials of Human Anatomy and Physiology (4 units) or BIOL 302 Concepts of Human Anatomy and Physiology (3 units; advisory ENGL C1000) — lower bound 3 encoded. Map footnote: alternatively BIOL 430 A&P (5 u) and BIOL 431 A&P (5 u), recommended in Semesters 3 and 4 respectively; the map's 'Selecting the Right BIOL Course' note directs students to consult a counselor to determine the right Anatomy & Physiology course for their career. AH 120 co- or pre-requisite per map: AH 311 and (BIOL 102 or BIOL 302); both precede Semester 3, encoded as prereq with one_of. BIOL 302 is carried under external_prereqs because it appears only as an option of the Semester 2 BIOL choice slot (validator resolves slot codes, not options). AH 498 Work Experience in Allied Health (0.5-4 units, lower bound 0.5): student must be in a paid or unpaid internship, volunteer position or job. Elective suggestions: PSYC C1000 Intro to Psych (Sem 3). Elective units are determined by the number needed to total 60 units for graduation; refer to Course Number for the appropriate course level. Advisories (recommended, not required, per map legend): BIOL 302 advisory ENGL C1000; COMM C1000/COMM 331 advisory eligible for ENGWR 300; COMM C1004 advisory eligible for ENGL C1000; PHYS 310 advisory Elementary Algebra or HS Equivalent; ANTH 313 advisory eligible for ENGL C1000. Completion of this degree does not guarantee enrollment/admission in any health occupation program.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Formerly AH 110.",
+      "code": "AH 108",
+      "core_area": "",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "tccns": "AH 108",
+      "title": "Introduction to Health Occupations",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "AH 311",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "AH 311",
+      "title": "Medical Language for Health-Care Providers",
+      "slot_id": "s1-1",
+      "xfer": [
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-certificate-slpa-specialization-adult-neurogenic"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL 341",
+      "core_area": "L1A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "ENGL 341",
+      "title": "Introduction to Technical and Professional Writing",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Map lists 3-5 units; lower bound 3 encoded. General education: any course meeting CRC Area L2 (Math Concepts and Quantitative Reasoning). Map recommends meeting with a counselor.",
+      "code": "Any CRC Area L2 course",
+      "core_area": "L2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L2 (Math Concepts and Quantitative Reasoning) course",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L6 (Ethnic Studies).",
+      "code": "Any CRC Area L6 course",
+      "core_area": "L6",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L6 (Ethnic Studies) course",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "BIOL 102 Essentials of Human Anatomy and Physiology (4 units) or BIOL 302 Concepts of Human Anatomy and Physiology (3 units; advisory ENGL C1000). Lower bound 3 encoded. Map footnote alternative: BIOL 430 A&P (5 u) and BIOL 431 A&P (5 u), recommended in Semesters 3 and 4 respectively — consult a counselor per the map's 'Selecting the Right BIOL Course' note.",
+      "code": "BIOL 102",
+      "core_area": "",
+      "credits": 3,
+      "options": [
+       "BIOL 102",
+       "BIOL 302"
+      ],
+      "prereq": [],
+      "tccns": "BIOL 102",
+      "title": "Essentials of Human Anatomy and Physiology",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "COMM C1000 Introduction to Public Speaking, COMM 331 Group Discussion (advisory: eligible for ENGWR 300 for both), or COMM C1004 Interpersonal Communication (advisory: eligible for ENGL C1000); 3 units each. General education: CRC Area L1B.",
+      "code": "COMM C1000",
+      "core_area": "L1B",
+      "credits": 3,
+      "options": [
+       "COMM C1000",
+       "COMM 331",
+       "COMM C1004"
+      ],
+      "prereq": [],
+      "tccns": "COMM C1000",
+      "title": "Introduction to Public Speaking",
+      "slot_id": "s2-1",
+      "xfer": [
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-as-registered-nursing",
+       "cosumnes-river-college-aa-advertising-public-relations",
+       "cosumnes-river-college-aa-advertising-public-relations-calgetc",
+       "cosumnes-river-college-aa-broadcast-journalism",
+       "cosumnes-river-college-aa-communication-organizational",
+       "cosumnes-river-college-aat-communication-studies",
+       "cosumnes-river-college-as-agriculture-business-ag-bus-concentration",
+       "cuesta-college-aa-elementary-education-liberal-studies-with-child-development-emphasis-pk-6-prep-cal-getc-cuesta-ge-included",
+       "cuesta-college-aat-communication-studies-2-0",
+       "cuesta-college-aat-communication-studies-2-0-3-year-map",
+       "cuesta-college-aat-communication-studies-2-0-cal-poly-slo-communication",
+       "cuesta-college-aat-elementary-teacher-education",
+       "cuesta-college-aat-elementary-teacher-education-cal-poly-slo-liberal-studies",
+       "cuesta-college-as-nursing-registered",
+       "cuesta-college-as-nursing-registered-accelerated-lvn-rn-nursing-registered",
+       "cuesta-college-as-pre-nursing",
+       "cuesta-college-as-pre-nursing-cal-getc"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "PSYC 371 Life Span Developmental Psychology or FCS 324 Human Development: A Life Span (3 units each). General education: CRC Area L4 & L7B.",
+      "code": "PSYC 371",
+      "core_area": "L4",
+      "credits": 3,
+      "options": [
+       "PSYC 371",
+       "FCS 324"
+      ],
+      "prereq": [],
+      "tccns": "PSYC 371",
+      "title": "Life Span Developmental Psychology",
+      "slot_id": "s2-2",
+      "xfer": [
+       "cosumnes-river-college-aat-psychology"
+      ]
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUTRI 300",
+      "core_area": "L7B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "NUTRI 300",
+      "title": "Nutrition",
+      "slot_id": "s2-3",
+      "xfer": [
+       "american-river-college-as-pre-health-occupations",
+       "american-river-college-as-registered-nursing",
+       "cosumnes-river-college-aa-culinary-arts-management",
+       "cosumnes-river-college-aa-restaurant-food-service-entrepreneurship",
+       "cosumnes-river-college-as-biology-pre-nursing",
+       "cosumnes-river-college-as-biology-pre-nursing-local-ge",
+       "cosumnes-river-college-ast-nutrition-dietetics"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L7A (Physical Education).",
+      "code": "Any CRC Area L7A course",
+      "core_area": "L7A",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L7A (Physical Education) course",
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective; units needed to total 60 units for graduation. Refer to Course Number for the appropriate course level.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective (3 units)",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Co- or pre-requisite per map: AH 311 and (BIOL 102 or BIOL 302).",
+      "code": "AH 120",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "AH 311",
+       {
+        "one_of": [
+         "BIOL 102",
+         "BIOL 302"
+        ]
+       }
+      ],
+      "tccns": "AH 120",
+      "title": "Human Disease",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Advisory (recommended, not required): Elementary Algebra or HS Equivalent.",
+      "code": "PHYS 310",
+      "core_area": "L5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "PHYS 310",
+      "title": "Conceptual Physics",
+      "slot_id": "s3-1",
+      "xfer": [
+       "american-river-college-as-engineering-technology",
+       "cosumnes-river-college-as-construction-management-technology"
+      ]
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "General education: any course meeting CRC Area L3 (Arts and Humanities).",
+      "code": "Any CRC Area L3 course",
+      "core_area": "L3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L3 (Arts and Humanities) course",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Map lists 0.5-4 units; lower bound 0.5 encoded. Student must be in a paid or unpaid internship, volunteer position or job.",
+      "code": "AH 498",
+      "core_area": "",
+      "credits": 0.5,
+      "options": [],
+      "prereq": [],
+      "tccns": "AH 498",
+      "title": "Work Experience in Allied Health",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective; units needed to total 60 units for graduation. Refer to Course Number for the appropriate course level. Map suggestion: PSYC C1000 Intro to Psych.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective (3 units)",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "COMM 325 Intercultural Communication or ANTH 313 Introduction to Cultural Anthropology: Medical Focus (advisory: eligible for ENGL C1000); 3 units each. General education: CRC Area L4.",
+      "code": "COMM 325",
+      "core_area": "L4",
+      "credits": 3,
+      "options": [
+       "COMM 325",
+       "ANTH 313"
+      ],
+      "prereq": [],
+      "tccns": "COMM 325",
+      "title": "Intercultural Communication",
+      "slot_id": "s4-0",
+      "xfer": [
+       "cosumnes-river-college-aa-communication-organizational",
+       "cosumnes-river-college-aat-communication-studies",
+       "cosumnes-river-college-as-business-information-technology"
+      ]
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective meeting CRC Area L4; units needed to total 60 units for graduation.",
+      "code": "Any CRC Area L4 course",
+      "core_area": "L4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Any CRC Area L4 (Social & Behavioral Sciences) elective course",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective; units needed to total 60 units for graduation. Refer to Course Number for the appropriate course level.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective (3 units)",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective; units needed to total 60 units for graduation. Refer to Course Number for the appropriate course level.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective (3 units)",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective; units needed to total 60 units for graduation. Refer to Course Number for the appropriate course level.",
+      "code": "Elective",
+      "core_area": "",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elective (3 units)",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "label": "Semester 4",
+    "n": 4
+   }
+  ],
+  "source_url": "https://mapmaker.losrios.edu/Maps/7817/PublishedPdf",
+  "total_credits": 57.5,
+  "content_hash": "68c54fc57c4c921c9416090122821b75703ed393c4633e048b78b11749cd3bff",
+  "last_verified": "2026-10-02"
+ }
+}

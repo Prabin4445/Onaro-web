@@ -1,0 +1,564 @@
+{
+ "institution": {
+  "name": "Tennessee Tech University",
+  "city": "Cookeville, TN",
+  "kind": "public4yr",
+  "state": "TN"
+ },
+ "plan": {
+  "id": "tntech-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://www.tntech.edu/engineering/pdf/degree-map/2026-27/BS_CS_Degree_Map_2026-27.pdf",
+  "notes": "Source: 'Degree Map' — official Tennessee Tech University College of Engineering suggested degree map for CATALOG YEAR: 2026-2027, Degree: BS, MAJOR: Computer Science (no concentration), retrieved 2026-09-30 from https://www.tntech.edu/engineering/pdf/degree-map/2026-27/BS_CS_Degree_Map_2026-27.pdf. Degree name verified as 'Bachelor of Science, Major: Computer Science' on TTU's official majors page (www.tntech.edu/majors; TTU Department of Computer Science, Bruner Hall 238). The TTU online catalog at catalog.tntech.edu (Coursedog) was reachable but its program pages are JS-driven and not directly readable; the degree map is TTU's official catalog-year term-by-term sequence and is the document the catalog's program page points to. Transcribed manually from the PDF (pdftotext -layout) on 2026-09-30; per-semester totals verified against the document (Fall Y1: 15; Spring Y1: 16; Fall Y2: 17; Spring Y2: 16; Fall Y3: 15; Spring Y3: 15; Fall Y4: 12; Spring Y4: 14; TOTAL 120). CSC 3040's full title 'Professionalism, Communication, and Research in Computing' verified from TTU Computer Science official ABET self-study curriculum tables and TTU University Curriculum Committee minutes (the degree map truncates it to 'Prfess, Comm, and Research'). The degree map lists no course prerequisites, so all prereq arrays are left empty rather than inferred. Choice slots represent student-choice selections per the degree-map footnotes: footnote 1 = CSC 1020 not required for transfer students with more than 12 hours (transfer students take a 1 credit hour free elective); footnote 2 = one science sequence from BIOL 1113+BIOL 1123, BIOL 1113+BIOL 2310, CHEM 1110+CHEM 1120, GEOL 1040+GEOL 1045, PHYS 2010+PHYS 2020, or PHYS 2110+PHYS 2120; footnote 3 = any additional 3000 or 4000 level CSC course; footnote 4 = two of the three gateway courses (CSC 2220, CSC 2570, CSC 2770); footnote 5 = any additional 2000 or above level CSC course. Caveats: the Senior Spring 'Elective' is a 5-credit free elective as printed (without it Senior Spring would total 12, not the official 14); the map says it 'illustrates one path' per faculty advice, not a mandatory sequence.",
+  "external_prereqs": [],
+  "semesters": [
+   {
+    "term": "Fall Year 1",
+    "courses": [
+     {
+      "slot_id": "s1-0",
+      "code": "CSC 1020",
+      "title": "Connections to Computing",
+      "credits": 1,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "Degree-map footnote 1: not required for transfer students with more than 12 hours; transfer students take a 1 credit hour free elective.",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-1",
+      "code": "CSC 1300",
+      "title": "Intro to Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s1-2",
+      "code": "MATH 1910",
+      "title": "Calculus I",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting"
+     },
+     {
+      "slot_id": "s1-3",
+      "code": "ENGL 1010",
+      "title": "Writing Composition I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s1-4",
+      "code": "HIST 2010",
+      "title": "Early US History",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 1
+   },
+   {
+    "term": "Spring Year 1",
+    "courses": [
+     {
+      "slot_id": "s2-0",
+      "code": "CSC 1310",
+      "title": "Data Structures & Algorithms",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s2-1",
+      "code": "HUM-FA-ELEC-1",
+      "title": "Humanities/Fine Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the TTU general education Humanities/Fine Arts list.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-2",
+      "code": "MATH 2010",
+      "title": "Intro to Linear Algebra",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "supporting"
+     },
+     {
+      "slot_id": "s2-3",
+      "code": "ENGL 1020",
+      "title": "Writing Composition II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s2-4",
+      "code": "HIST 2020",
+      "title": "Modern US History",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 2
+   },
+   {
+    "term": "Fall Year 2",
+    "courses": [
+     {
+      "slot_id": "s3-0",
+      "code": "CSC 2310",
+      "title": "Object Oriented Programming",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-1",
+      "code": "CSC 2510",
+      "title": "Intro to DevOps with Unix",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s3-2",
+      "code": "SOC-BEHAV-ELEC-1",
+      "title": "Social/Behavioral Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the TTU general education Social/Behavioral Science list.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-3",
+      "code": "COMM-2025-PC-2500",
+      "title": "Communications (COMM 2025 or PC 2500)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "COMM 2025 or PC 2500.",
+      "options": [],
+      "category": "gened"
+     },
+     {
+      "slot_id": "s3-4",
+      "code": "SCI-SEQ-1",
+      "title": "Science Sequence, Course 1",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "First course of one science sequence (degree-map footnote 2): BIOL 1113+BIOL 1123, BIOL 1113+BIOL 2310, CHEM 1110+CHEM 1120, GEOL 1040+GEOL 1045, PHYS 2010+PHYS 2020, or PHYS 2110+PHYS 2120.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 3
+   },
+   {
+    "term": "Spring Year 2",
+    "courses": [
+     {
+      "slot_id": "s4-0",
+      "code": "CSC 2400",
+      "title": "Design of Algorithms",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-1",
+      "code": "CSC 2700",
+      "title": "Discrete Structure for CompSci",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s4-2",
+      "code": "CSC-LOWER-DIV-ELEC-1",
+      "title": "CSC Lower Division Elective 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Two of the three gateway courses (degree-map footnote 4): CSC 2220, CSC 2570, CSC 2770. CSC 2220 and CSC 2570 also satisfy the Financial or Digital Literacy general education requirement.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-3",
+      "code": "CSC-LOWER-DIV-ELEC-2",
+      "title": "CSC Lower Division Elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second of the two required gateway courses (footnote 4): CSC 2220, CSC 2570, CSC 2770.",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s4-4",
+      "code": "SCI-SEQ-2",
+      "title": "Science Sequence, Course 2",
+      "credits": 4,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Second course of the chosen science sequence (degree-map footnote 2).",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 4
+   },
+   {
+    "term": "Fall Year 3",
+    "courses": [
+     {
+      "slot_id": "s5-0",
+      "code": "CSC 3300",
+      "title": "Database Management Sys",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-1",
+      "code": "CSC 3410",
+      "title": "Comp Org and Assembly",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-2",
+      "code": "CSC 3710",
+      "title": "Found of Comp Science",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s5-3",
+      "code": "MATH-3070-3470",
+      "title": "Introductory Probability and Statistics (MATH 3070 or MATH 3470)",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "MATH 3070 or MATH 3470.",
+      "options": [],
+      "category": "supporting"
+     },
+     {
+      "slot_id": "s5-4",
+      "code": "CSC-ELEC-1",
+      "title": "CSC Elective 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional 2000 or above level CSC course (degree-map footnote 5).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 5
+   },
+   {
+    "term": "Spring Year 3",
+    "courses": [
+     {
+      "slot_id": "s6-0",
+      "code": "CSC 3040",
+      "title": "Professionalism, Communication, and Research in Computing",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-1",
+      "code": "CSC 4320",
+      "title": "Comp Architecture",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s6-2",
+      "code": "CSC-UPPER-DIV-ELEC-1",
+      "title": "CSC Upper Division Elective 1",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional 3000 or 4000 level CSC course (degree-map footnote 3).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-3",
+      "code": "CSC-ELEC-2",
+      "title": "CSC Elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional 2000 or above level CSC course (degree-map footnote 5).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s6-4",
+      "code": "HUM-FA-ELEC-2",
+      "title": "Humanities/Fine Arts Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the TTU general education Humanities/Fine Arts list.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 6
+   },
+   {
+    "term": "Fall Year 4",
+    "courses": [
+     {
+      "slot_id": "s7-0",
+      "code": "CSC 4100",
+      "title": "Operating Systems",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-1",
+      "code": "CSC 4610",
+      "title": "Software Engineering I",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s7-2",
+      "code": "CSC-UPPER-DIV-ELEC-2",
+      "title": "CSC Upper Division Elective 2",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional 3000 or 4000 level CSC course (degree-map footnote 3).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s7-3",
+      "code": "SOC-BEHAV-ELEC-2",
+      "title": "Social/Behavioral Science Elective",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Choose from the TTU general education Social/Behavioral Science list.",
+      "options": [],
+      "category": "gened"
+     }
+    ],
+    "n": 7
+   },
+   {
+    "term": "Spring Year 4",
+    "courses": [
+     {
+      "slot_id": "s8-0",
+      "code": "CSC 4200",
+      "title": "Comp Networks",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-1",
+      "code": "CSC 4620",
+      "title": "Software Engineering II",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "category": "major"
+     },
+     {
+      "slot_id": "s8-2",
+      "code": "FREE-ELECTIVE",
+      "title": "Free Elective",
+      "credits": 5,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "5-credit free elective as printed on the official degree map (Senior Spring totals 14).",
+      "options": [],
+      "category": "elective"
+     },
+     {
+      "slot_id": "s8-3",
+      "code": "CSC-UPPER-DIV-ELEC-3",
+      "title": "CSC Upper Division Elective 3",
+      "credits": 3,
+      "prereq": [],
+      "tccns": "",
+      "xfer": [],
+      "choice": true,
+      "choice_note": "Any additional 3000 or 4000 level CSC course (degree-map footnote 3).",
+      "options": [],
+      "category": "elective"
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "content_hash": "4084e46e75595122a470ecf45ea2f47972b4cb24d4ec7908dfde9d88494acf8d",
+  "last_verified": "2026-10-02"
+ }
+}
