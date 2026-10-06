@@ -134,6 +134,18 @@ Object.assign(M,{
  /* Home-screen redesign artwork (2026-10-05): hm-* hero/banners + module
     icons, qa-* quick-access icons. Glossy 3D, all original, no purple. */
  'hm-hero-astro':{fb:'🚀',src:'icons/hm-hero-astro.png',src2x:'icons/hm-hero-astro@2x.png'},
+ 'zodiac-capricorn':{fb:'♑',src:'icons/zodiac-capricorn.png'},
+ 'zodiac-aquarius':{fb:'♒',src:'icons/zodiac-aquarius.png'},
+ 'zodiac-pisces':{fb:'♓',src:'icons/zodiac-pisces.png'},
+ 'zodiac-aries':{fb:'♈',src:'icons/zodiac-aries.png'},
+ 'zodiac-taurus':{fb:'♉',src:'icons/zodiac-taurus.png'},
+ 'zodiac-gemini':{fb:'♊',src:'icons/zodiac-gemini.png'},
+ 'zodiac-cancer':{fb:'♋',src:'icons/zodiac-cancer.png'},
+ 'zodiac-leo':{fb:'♌',src:'icons/zodiac-leo.png'},
+ 'zodiac-virgo':{fb:'♍',src:'icons/zodiac-virgo.png'},
+ 'zodiac-libra':{fb:'♎',src:'icons/zodiac-libra.png'},
+ 'zodiac-scorpio':{fb:'♏',src:'icons/zodiac-scorpio.png'},
+ 'zodiac-sagittarius':{fb:'♐',src:'icons/zodiac-sagittarius.png'},
  'hm-ask-robot':{fb:'🤖',src:'icons/hm-ask-robot.png',src2x:'icons/hm-ask-robot@2x.png'},
  'hm-mod-daily':{fb:'📓',src:'icons/hm-mod-daily.png',src2x:'icons/hm-mod-daily@2x.png'},
  'hm-mod-memory':{fb:'🗂️',src:'icons/hm-mod-memory.png',src2x:'icons/hm-mod-memory@2x.png'},

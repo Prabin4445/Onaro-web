@@ -280,3 +280,32 @@
 .sty-icchip .sty-clay{width:24px;height:24px}
 .sty-clay.xs{width:18px;height:18px;vertical-align:-3px}
 .sty-ask .sty-clay.xs{margin-right:2px}
+
+/* ---------- 3D floating zodiac picker (2026-10-06) ---------- */
+@keyframes astroFloat{
+  0%,100%{transform:translateY(0) rotate(-2deg)}
+  50%{transform:translateY(-6px) rotate(2deg)}
+}
+@keyframes astroBtnFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-4px)}
+}
+.astro-sign-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.astro-sign-btn{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  padding:12px 6px;border-radius:16px;cursor:pointer;
+  background:linear-gradient(145deg,var(--card),var(--bg-soft,#1a1e14));
+  border:1px solid var(--line);
+  box-shadow:0 4px 12px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.08);
+  animation:astroBtnFloat 3.5s ease-in-out infinite;
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+  font-family:inherit;color:inherit;
+}
+.astro-sign-btn:hover{transform:translateY(-2px) scale(1.03);border-color:var(--volt)}
+.astro-sign-btn:active{transform:scale(.96)}
+.astro-sign-icon{width:52px;height:52px;display:block;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.astro-sign-icon img{width:100%;height:100%;object-fit:contain}
+.astro-sign-name{font-size:11px;font-weight:700;color:var(--text)}
+@media (prefers-reduced-motion:reduce){
+  .astro-sign-btn{animation:none}
+}

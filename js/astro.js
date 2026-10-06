@@ -57,18 +57,18 @@ function bsToday(){ const n=new Date(); return adToBs(n.getFullYear(),n.getMonth
 
 /* ================= zodiac ================= */
 const SIGNS=[
-  {n:'Capricorn',i:'♑',from:[12,22],to:'Jan 19'},
-  {n:'Aquarius', i:'♒',from:[1,20], to:'Feb 18'},
-  {n:'Pisces',   i:'♓',from:[2,19], to:'Mar 20'},
-  {n:'Aries',    i:'♈',from:[3,21], to:'Apr 19'},
-  {n:'Taurus',   i:'♉',from:[4,20], to:'May 20'},
-  {n:'Gemini',   i:'♊',from:[5,21], to:'Jun 20'},
-  {n:'Cancer',   i:'♋',from:[6,21], to:'Jul 22'},
-  {n:'Leo',      i:'♌',from:[7,23], to:'Aug 22'},
-  {n:'Virgo',    i:'♍',from:[8,23], to:'Sep 22'},
-  {n:'Libra',    i:'♎',from:[9,23], to:'Oct 22'},
-  {n:'Scorpio',  i:'♏',from:[10,23],to:'Nov 21'},
-  {n:'Sagittarius',i:'♐',from:[11,22],to:'Dec 21'}
+  {n:'Capricorn',i:'♑',icon:'zodiac-capricorn',from:[12,22],to:'Jan 19'},
+  {n:'Aquarius', i:'♒',icon:'zodiac-aquarius',from:[1,20], to:'Feb 18'},
+  {n:'Pisces',   i:'♓',icon:'zodiac-pisces',from:[2,19], to:'Mar 20'},
+  {n:'Aries',    i:'♈',icon:'zodiac-aries',from:[3,21], to:'Apr 19'},
+  {n:'Taurus',   i:'♉',icon:'zodiac-taurus',from:[4,20], to:'May 20'},
+  {n:'Gemini',   i:'♊',icon:'zodiac-gemini',from:[5,21], to:'Jun 20'},
+  {n:'Cancer',   i:'♋',icon:'zodiac-cancer',from:[6,21], to:'Jul 22'},
+  {n:'Leo',      i:'♌',icon:'zodiac-leo',from:[7,23], to:'Aug 22'},
+  {n:'Virgo',    i:'♍',icon:'zodiac-virgo',from:[8,23], to:'Sep 22'},
+  {n:'Libra',    i:'♎',icon:'zodiac-libra',from:[9,23], to:'Oct 22'},
+  {n:'Scorpio',  i:'♏',icon:'zodiac-scorpio',from:[10,23],to:'Nov 21'},
+  {n:'Sagittarius',i:'♐',icon:'zodiac-sagittarius',from:[11,22],to:'Dec 21'}
 ];
 function signFor(m,d){
   /* Capricorn spans the year boundary (Dec 22 - Jan 19): handle it first,
@@ -277,16 +277,19 @@ function homeCardHTML(){
   const p=store.state.profile||{};
   const dob=p.dob||'';
   if(!dob){
-    /* No DOB: let them pick their sign directly instead of forcing profile */
-    return '<div class="card" id="astroCard" style="cursor:pointer">'
-      +'<div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">'
-      +'<div style="font-size:26px">🔮</div>'
+    /* No DOB: 3D wax zodiac picker with floating animation */
+    return '<div class="card astro-picker" id="astroCard" style="cursor:pointer">'
+      +'<div style="display:flex;gap:10px;align-items:center;margin-bottom:10px">'
+      +'<div style="font-size:26px;animation:astroFloat 3s ease-in-out infinite">🔮</div>'
       +'<div class="grow"><h3 style="margin:0;font-size:15px">'+ui.esc(t('astro.cardT'))+'</h3>'
       +'<div class="meta">'+ui.esc(t('astro.pickSign'))+'</div></div>'
       +'<span class="chev">›</span></div>'
-      +'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px" id="astroSignGrid">'
+      +'<div class="astro-sign-grid" id="astroSignGrid">'
       +SIGNS.map(function(s,i){
-        return '<button data-sign="'+i+'" style="background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 4px;font-size:20px;cursor:pointer" title="'+ui.esc(s.n)+'">'+s.i+'<div style="font-size:10px;margin-top:2px">'+ui.esc(s.n.slice(0,4))+'</div></button>';
+        const delay=(i*0.15).toFixed(2);
+        return '<button class="astro-sign-btn" data-sign="'+i+'" style="animation-delay:'+delay+'s" title="'+ui.esc(s.n)+'">'
+          +'<span class="astro-sign-icon">'+HUB.icons.icon(s.icon,'astro-sign-img')+'</span>'
+          +'<span class="astro-sign-name">'+ui.esc(s.n)+'</span></button>';
       }).join('')
       +'</div></div>';
   }
