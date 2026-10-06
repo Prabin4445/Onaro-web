@@ -134,8 +134,10 @@ function womanSVG(){
   /* 3D wax-figure walker — FEMALE variant with backpack, side profile facing
      the door (right). Puppet hierarchy, joint pivots and CSS class names are
      IDENTICAL to manSVG() so css/logout.css drives the same 8-phase walk
-     cycle with zero CSS changes. Female read: long ponytail with volt tie,
-     narrower shoulders, fitted maroon jacket (rose theme), slimmer limbs;
+     cycle with zero CSS changes. Female read: LONG flowing hair with full
+     crown coverage (no baldness), volt hair clip, feminine face (soft tapered
+     jaw, eyelashes, fuller lips, blush), fitted maroon DRESS (bodice + flared
+     skirt, rose theme — never purple), slim skin-tone legs below the hem;
      same wax materials, same backpack, same rim light from the doorway. */
   var s='';
   s+='<svg viewBox="0 0 48 96" aria-hidden="true">';
@@ -146,12 +148,9 @@ function womanSVG(){
     +'<linearGradient id="wxwHair" x1="0" y1="0" x2="1" y2="0">'
     +'<stop offset="0%" stop-color="#1d140d"/><stop offset="45%" stop-color="#4a3421"/>'
     +'<stop offset="100%" stop-color="#241a10"/></linearGradient>'
-    +'<linearGradient id="wxwTop" x1="0" y1="0" x2="1" y2="0">'
-    +'<stop offset="0%" stop-color="#2c161d"/><stop offset="45%" stop-color="#572b37"/>'
-    +'<stop offset="100%" stop-color="#331a21"/></linearGradient>'
-    +'<linearGradient id="wxwPants" x1="0" y1="0" x2="1" y2="0">'
-    +'<stop offset="0%" stop-color="#161b24"/><stop offset="45%" stop-color="#2a3140"/>'
-    +'<stop offset="100%" stop-color="#1a1f29"/></linearGradient>'
+    +'<linearGradient id="wxwDress" x1="0" y1="0" x2="1" y2="0">'
+    +'<stop offset="0%" stop-color="#2c1219"/><stop offset="45%" stop-color="#6b2237"/>'
+    +'<stop offset="100%" stop-color="#3d1a24"/></linearGradient>'
     +'<linearGradient id="wxwPack" x1="0" y1="0" x2="1" y2="0">'
     +'<stop offset="0%" stop-color="#232a38"/><stop offset="50%" stop-color="#3d4659"/>'
     +'<stop offset="100%" stop-color="#2a3140"/></linearGradient>'
@@ -170,23 +169,39 @@ function womanSVG(){
       +'</g></g>';
   }
 
-  /* ---- FAR LEG (darker, behind): hip (22,52) -> knee (21,70) -> ankle (21,86) ---- */
+  /* ---- FAR LEG (behind): hip (22,52) -> knee (21,70) -> ankle (21,86).
+        Slim skin-tone leg; thigh hides under the dress skirt. ---- */
   s+='<g transform="translate(22,52)"><g class="wx-thighF">'
-    +'<line x1="0" y1="0" x2="-1" y2="18" stroke="url(#wxwPants)" stroke-width="6.5" stroke-linecap="round"/>'
+    +'<line x1="0" y1="0" x2="-1" y2="18" stroke="url(#wxwSkin)" stroke-width="6" stroke-linecap="round"/>'
     +'<g transform="translate(-1,18)"><g class="wx-shinF">'
-    +'<line x1="0" y1="0" x2="0" y2="16" stroke="url(#wxwPants)" stroke-width="5" stroke-linecap="round"/>'
+    +'<line x1="0" y1="0" x2="0" y2="16" stroke="url(#wxwSkin)" stroke-width="4.5" stroke-linecap="round"/>'
     +shoe('wx-footF',0,16)
     +'</g></g></g></g>';
 
-  /* ---- FAR ARM (behind): shoulder (21,30) -> elbow (19,44) -> hand (18,56) ---- */
+  /* ---- FAR ARM (behind): shoulder (21,30) -> elbow (19,44) -> hand (18,56).
+        Short maroon sleeve, skin forearm. ---- */
   s+='<g transform="translate(21,30)"><g class="wx-uarmF">'
-    +'<line x1="0" y1="0" x2="-2" y2="14" stroke="url(#wxwTop)" stroke-width="5.5" stroke-linecap="round"/>'
+    +'<line x1="0" y1="0" x2="-2" y2="14" stroke="url(#wxwDress)" stroke-width="5.5" stroke-linecap="round"/>'
     +'<g transform="translate(-2,14)"><g class="wx-farmF">'
     +'<line x1="0" y1="0" x2="-1" y2="12" stroke="url(#wxwSkin)" stroke-width="4" stroke-linecap="round"/>'
     +'<circle cx="-1" cy="13" r="2.8" fill="url(#wxwSkin)"/>'
     +'</g></g></g></g>';
 
-  /* ---- BACKPACK (on her back, left side) ---- */
+  /* ---- NEAR LEG: hip (26,52) -> knee (27,70) -> ankle (27,86). ---- */
+  s+='<g transform="translate(26,52)"><g class="wx-thighN">'
+    +'<line x1="0" y1="0" x2="1" y2="18" stroke="url(#wxwSkin)" stroke-width="6" stroke-linecap="round"/>'
+    +'<g transform="translate(1,18)"><g class="wx-shinN">'
+    +'<line x1="0" y1="0" x2="0" y2="16" stroke="url(#wxwSkin)" stroke-width="4.5" stroke-linecap="round"/>'
+    +shoe('wx-footN',0,16)
+    +'</g></g></g></g>';
+
+  /* ---- BACK HAIR MASS (behind torso & backpack): long hair flowing down
+        her back. Drawn before the pack so straps sit over the hair. ---- */
+  s+='<path d="M27,3 Q17,2 11.5,9 Q6,17 5,29 Q4.5,40 8,47.5 Q11,49.5 13.5,45.5 Q10.5,37 12.5,27 Q14.5,17 21,10 Q25,6.5 27,5 Z" fill="url(#wxwHair)"/>'
+    +'<path d="M20,9 Q14,15 12,27 Q11,37 13,44" stroke="#0f0b07" stroke-width="1" fill="none" opacity=".45"/>'
+    +'<ellipse cx="10" cy="22" rx="1.8" ry="7" fill="#fff" opacity=".08" transform="rotate(10 10 22)"/>';
+
+  /* ---- BACKPACK (on her back, over the hair) ---- */
   s+='<g>'
     +'<rect x="7" y="28" width="13" height="24" rx="6.5" fill="url(#wxwPack)"/>'
     +'<rect x="7" y="28" width="13" height="24" rx="6.5" fill="none" stroke="#12161d" stroke-width="1" opacity=".6"/>'
@@ -198,39 +213,52 @@ function womanSVG(){
     +'<ellipse cx="11" cy="33" rx="2.2" ry="4" fill="#fff" opacity=".10"/>'
     +'</g>';
 
-  /* ---- TORSO (fitted jacket, narrower shoulders, slight forward lean) ---- */
+  /* ---- DRESS SKIRT (flared A-line): waist y~49 to hem y~66.
+        Static piece drawn OVER both thighs — thighs swing beneath it,
+        shins emerge below the hem. ---- */
+  s+='<g>'
+    +'<path d="M19.5,48.5 Q24,50.5 28.5,48.5 L35.5,65 Q24,69.5 12.5,65 Z" fill="url(#wxwDress)"/>'
+    +'<path d="M19.5,48.5 Q24,50.5 28.5,48.5" stroke="#1c0d12" stroke-width="1.4" fill="none"/>'
+    +'<path d="M22,52.5 Q21.2,58.5 20.2,63.5" stroke="#1c0d12" stroke-width="1" fill="none" opacity=".5"/>'
+    +'<path d="M26,52.5 Q26.4,58.5 27,64" stroke="#1c0d12" stroke-width="1" fill="none" opacity=".5"/>'
+    +'<path d="M14.5,63.2 Q24,67 33.8,63.2" stroke="#a05a6c" stroke-width="1.2" fill="none" opacity=".55"/>'
+    +'<ellipse cx="17.5" cy="57" rx="2.4" ry="5" fill="#fff" opacity=".07" transform="rotate(10 17.5 57)"/>'
+    +'</g>';
+
+  /* ---- BODICE (fitted dress top, slight forward lean like his) ---- */
   s+='<g transform="rotate(3 24 40)">'
-    +'<path d="M18.5,27 Q24,23.8 29.5,27 L28.5,52 Q24,54.2 19.5,52 Z" fill="url(#wxwTop)"/>'
-    +'<line x1="24" y1="27" x2="24" y2="52" stroke="#c6f135" stroke-width="1.6"/>'
-    +'<path d="M21,28 Q24,26.5 27,28" stroke="#0f0a0c" stroke-width="1.2" fill="none" opacity=".7"/>'
+    +'<path d="M18.5,27 Q24,23.8 29.5,27 L28.5,49 Q24,51 19.5,49 Z" fill="url(#wxwDress)"/>'
+    +'<path d="M21.5,28.5 Q24,30.5 26.5,28.5" stroke="#1c0d12" stroke-width="1.2" fill="none" opacity=".8"/>'
     +'<ellipse cx="27.5" cy="34" rx="1.4" ry="5" fill="#fff" opacity=".08"/>'
     +'</g>';
 
-  /* ---- HAIR: back mass + ponytail flowing left, volt tie ---- */
-  s+='<ellipse cx="16.5" cy="17" rx="7" ry="13" fill="url(#wxwHair)" transform="rotate(12 16.5 17)"/>'
-    +'<path d="M13,11 Q8,19 4.5,29 Q3.5,32 6,31.5 Q10.5,25.5 14.5,15 Z" fill="url(#wxwHair)"/>'
-    +'<rect x="10.5" y="11.5" width="4.5" height="3.2" rx="1.6" fill="#c6f135" transform="rotate(-28 12.7 13.1)"/>'
-    +'<ellipse cx="12" cy="20" rx="1.6" ry="5" fill="#fff" opacity=".10" transform="rotate(18 12 20)"/>';
+  /* ---- NECK ---- */
+  s+='<rect x="22.8" y="18" width="4.6" height="10" rx="2" fill="url(#wxwSkin)"/>';
 
-  /* ---- HEAD ---- */
-  s+='<circle cx="25" cy="14" r="8" fill="url(#wxwSkin)"/>'
-    +'<path d="M17,13 Q17.5,5 25,4 Q32.5,5 33,13 Q31,8.8 25,8.3 Q19,8.8 17,13 Z" fill="url(#wxwHair)"/>'
-    +'<ellipse cx="21.5" cy="6.8" rx="3.6" ry="1.4" fill="#fff" opacity=".12" transform="rotate(-16 21.5 6.8)"/>'
-    +'<circle cx="29.5" cy="14" r="1.1" fill="#2b2118"/>'
-    +'<circle cx="31.6" cy="16.6" r="1.2" fill="#e8907a" opacity=".45"/>'
-    +'<path d="M30,18.5 Q31.5,19.5 33,18.5" stroke="#b3855a" stroke-width="1" fill="none" stroke-linecap="round"/>';
+  /* ---- HEAD: feminine — softer tapered jaw, narrower chin.
+        (Neck drawn first; head overlaps it. Hair cap below covers the crown
+        fully — no skin shows on top.) ---- */
+  s+='<path d="M18.3,10 Q18.8,5 25,4.4 Q31.2,5 32.2,10.5 Q32.4,14.5 30.8,17.8 Q29.4,20.6 27.2,21.6 Q25.4,22.3 23.6,21.6 Q21.4,20.6 20.2,17.8 Q18.6,14.5 18.3,10 Z" fill="url(#wxwSkin)"/>'
+    +'<circle cx="29.3" cy="13.6" r="1.15" fill="#2b2118"/>'
+    +'<path d="M30,12.4 L31.6,11.2" stroke="#2b2118" stroke-width="0.9" stroke-linecap="round"/>'
+    +'<path d="M30.6,12.9 L32.3,12" stroke="#2b2118" stroke-width="0.9" stroke-linecap="round"/>'
+    +'<path d="M27.3,11.3 Q29.3,10.3 31.4,11.4" stroke="#4a3220" stroke-width="1" fill="none" stroke-linecap="round"/>'
+    +'<circle cx="30.8" cy="16.2" r="1.3" fill="#e8907a" opacity=".5"/>'
+    +'<path d="M28.6,18.4 Q29.5,17.8 30.3,18.3 Q31.1,17.8 31.9,18.4 Q31.1,19 30.3,18.9 Q29.5,19 28.6,18.4 Z" fill="#b34a5e"/>'
+    +'<path d="M29.1,19.1 Q30.3,20 31.5,19.1 Q30.3,19.5 29.1,19.1 Z" fill="#d4707f"/>'
+    +'<ellipse cx="26.5" cy="14.8" rx="2" ry="1.2" fill="#fff" opacity=".10"/>';
 
-  /* ---- NEAR LEG: hip (26,52) -> knee (27,70) -> ankle (27,86) ---- */
-  s+='<g transform="translate(26,52)"><g class="wx-thighN">'
-    +'<line x1="0" y1="0" x2="1" y2="18" stroke="url(#wxwPants)" stroke-width="6.5" stroke-linecap="round"/>'
-    +'<g transform="translate(1,18)"><g class="wx-shinN">'
-    +'<line x1="0" y1="0" x2="0" y2="16" stroke="url(#wxwPants)" stroke-width="5" stroke-linecap="round"/>'
-    +shoe('wx-footN',0,16)
-    +'</g></g></g></g>';
+  /* ---- HAIR CAP: fully opaque over the crown — NO baldness.
+        Covers the entire top of the head; front hairline scallops sit
+        above the brow. Merges into the back mass on the left. ---- */
+  s+='<path d="M15.5,14.5 Q14,5 23,3 Q32,2.5 34,10.5 Q34.2,13 33.2,15.5 L32,15.5 Q32.5,12.5 31.5,11 Q30,10 28.6,11 Q27,10 25.5,11 Q23,10.2 21,11.2 Q18.5,11.5 17,13.5 Q16,14.2 15.5,14.5 Z" fill="url(#wxwHair)"/>'
+    +'<path d="M32.6,10.5 Q33.4,15 32.4,20 Q31.8,22.5 30.7,21.8 Q31.9,17 31.9,13 Z" fill="url(#wxwHair)"/>'
+    +'<ellipse cx="22" cy="6" rx="5" ry="2.2" fill="#fff" opacity=".12" transform="rotate(-15 22 6)"/>'
+    +'<rect x="15.5" y="8.5" width="5" height="2.8" rx="1.4" fill="#c6f135" transform="rotate(-18 18 10)"/>';
 
-  /* ---- NEAR ARM: shoulder (29,30) -> elbow (31,44) -> hand (32,56) ---- */
+  /* ---- NEAR ARM: shoulder (29,30) -> elbow (31,44) -> hand (32,56). ---- */
   s+='<g transform="translate(29,30)"><g class="wx-uarmN">'
-    +'<line x1="0" y1="0" x2="2" y2="14" stroke="url(#wxwTop)" stroke-width="5.5" stroke-linecap="round"/>'
+    +'<line x1="0" y1="0" x2="2" y2="14" stroke="url(#wxwDress)" stroke-width="5.5" stroke-linecap="round"/>'
     +'<g transform="translate(2,14)"><g class="wx-farmN">'
     +'<line x1="0" y1="0" x2="1" y2="12" stroke="url(#wxwSkin)" stroke-width="4" stroke-linecap="round"/>'
     +'<circle cx="1" cy="13" r="3" fill="url(#wxwSkin)"/>'
