@@ -107,6 +107,74 @@ function setSelectedCampus(slug,name){
   if(typeof updatePickerResults==='function') updatePickerResults();
 }
 
+/* ---------------- game-like loading screen ----------------
+   Makes API cold-start waits (30-60s) feel fun instead of broken.
+   Shows animated planet, progress stages, time estimate, and tips. */
+let degLoadStart=0;
+let degLoadTipsTimer=null;
+const DEG_LOAD_TIPS=[
+  'tip1','tip2','tip3','tip4','tip5'
+];
+function degLoadingHTML(){
+  degLoadStart=Date.now();
+  return '<div class="deg-loading">'
+    +'<div class="deg-load-planet"><div class="deg-load-ring"></div><div class="deg-load-core">🪐</div>'
+    +'<div class="deg-load-orbit deg-load-o1">🎓</div>'
+    +'<div class="deg-load-orbit deg-load-o2">📚</div>'
+    +'<div class="deg-load-orbit deg-load-o3">✨</div></div>'
+    +'<div class="deg-load-stage" id="degLoadStage">'+esc(t('deg.loadStage1'))+'</div>'
+    +'<div class="deg-load-bar"><div class="deg-load-fill" id="degLoadFill"></div></div>'
+    +'<div class="deg-load-time" id="degLoadTime"></div>'
+    +'<div class="deg-load-tip"><span class="deg-load-tipicon">💡</span><span id="degLoadTip">'+esc(t('deg.loadTip1'))+'</span></div>'
+    +'</div>';
+}
+function degLoadingStart(){
+  const stage=document.getElementById('degLoadStage');
+  const fill=document.getElementById('degLoadFill');
+  const timeEl=document.getElementById('degLoadTime');
+  const tipEl=document.getElementById('degLoadTip');
+  if(!stage) return;
+  degLoadStart=Date.now();
+  /* Progress stages */
+  const stages=[t('deg.loadStage1'),t('deg.loadStage2'),t('deg.loadStage3'),t('deg.loadStage4')];
+  let stageIdx=0;
+  const stageTimer=setInterval(function(){
+    if(!document.getElementById('degLoadStage')){ clearInterval(stageTimer); return; }
+    stageIdx=Math.min(stageIdx+1, stages.length-1);
+    stage.textContent=stages[stageIdx];
+    if(fill) fill.style.width=((stageIdx+1)/stages.length*100)+'%';
+  }, 8000);
+  /* Time estimate countdown */
+  const timeTimer=setInterval(function(){
+    if(!document.getElementById('degLoadTime')){ clearInterval(timeTimer); clearInterval(stageTimer); return; }
+    const elapsed=Math.floor((Date.now()-degLoadStart)/1000);
+    const estimate=Math.max(0, 45-elapsed);
+    if(timeEl){
+      if(estimate>0) timeEl.textContent=t('deg.loadEta',{s:estimate});
+      else timeEl.textContent=t('deg.loadAlmost');
+    }
+  }, 1000);
+  /* Rotating tips */
+  let tipIdx=0;
+  degLoadTipsTimer=setInterval(function(){
+    if(!document.getElementById('degLoadTip')){ clearInterval(degLoadTipsTimer); return; }
+    tipIdx=(tipIdx+1)%5;
+    if(tipEl){
+      tipEl.style.opacity='0';
+      setTimeout(function(){
+        tipEl.textContent=t('deg.loadTip'+(tipIdx+1));
+        tipEl.style.opacity='1';
+      }, 300);
+    }
+  }, 6000);
+  /* Store timers for cleanup */
+  degLoadingCleanup.timers=[stageTimer, timeTimer];
+}
+const degLoadingCleanup={timers:[]};
+function degLoadingStop(){
+  degLoadingCleanup.timers.forEach(function(t){ clearInterval(t); });
+  if(degLoadTipsTimer) clearInterval(degLoadTipsTimer);
+}
 /* ---------------- progress state ---------------- */
 function dstate(){
   const st=store().state;
@@ -556,7 +624,7 @@ function open(slug){
       '<button class="iconbtn deg-back" id="degBack" aria-label="'+esc(t('common.back'))+'">‹</button>'+
       '<div class="deg-topbar-t" id="degTitle">'+esc(t('deg.entryTitle'))+'</div>'+
       '<button class="iconbtn" id="degClose" aria-label="'+esc(t('common.close'))+'">✕</button></div>'+
-    '<div class="deg-body" id="degBody"><div class="empty"><div class="big">🎓</div><p>'+esc(t('common.loading'))+'</p></div></div>'+
+    '<div class="deg-body" id="degBody">'+degLoadingHTML()+'</div>'+
     '</div>';
   app.appendChild(d);
   d.addEventListener('click',function(e){ if(e.target===d) close(); });
@@ -566,7 +634,7 @@ function open(slug){
   };
   document.addEventListener('keydown',onKey,true);
   if(slug) openPlan(slug);
-  else renderPicker();
+  else { renderPicker(); degLoadingStart(); }
 }
 function openPlan(slug){
   const seq=++loadSeq;
@@ -641,7 +709,14 @@ function renderPicker(){
 function updatePickerResults(){
   const seq=++loadSeq;
   if(!document.getElementById('degResults')) return null;
+  /* Show game-like loading while fetching (cold starts take 30-60s) */
+  const box0=document.getElementById('degResults');
+  if(box0 && !box0.innerHTML.trim()){
+    box0.innerHTML=degLoadingHTML();
+    degLoadingStart();
+  }
   return Promise.all([degIndex(), campusData()]).then(function(results){
+    degLoadingStop();
     const idx=results[0];
     if(seq!==loadSeq) return;
     const box=document.getElementById('degResults');

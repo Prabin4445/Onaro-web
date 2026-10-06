@@ -342,3 +342,26 @@ body.dark .deg-req .no{color:var(--amber)}
 .deg-campus-check{position:absolute;top:4px;right:6px;color:var(--volt);font-size:14px;font-weight:900}
 .deg-campus-loc{font-size:11px;font-weight:600;color:var(--muted)}
 .deg-campus-note{font-size:10.5px;font-weight:600;color:var(--volt);font-style:italic}
+
+/* ---------- game-like loading screen (2026-10-06) ---------- */
+.deg-loading{display:flex;flex-direction:column;align-items:center;padding:40px 20px;text-align:center}
+.deg-load-planet{position:relative;width:140px;height:140px;margin-bottom:20px}
+.deg-load-core{font-size:64px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:degCoreFloat 3s ease-in-out infinite}
+.deg-load-ring{position:absolute;top:50%;left:50%;width:110px;height:110px;border:2px dashed var(--volt);border-radius:50%;transform:translate(-50%,-50%) rotate(0deg);animation:degRingSpin 8s linear infinite;opacity:.5}
+.deg-load-orbit{position:absolute;font-size:24px;animation:degOrbit 4s ease-in-out infinite}
+.deg-load-o1{top:10%;left:20%}
+.deg-load-o2{top:60%;right:10%;animation-delay:1.3s}
+.deg-load-o3{bottom:5%;left:30%;animation-delay:2.6s}
+@keyframes degCoreFloat{0%,100%{transform:translate(-50%,-50%) translateY(0)}50%{transform:translate(-50%,-50%) translateY(-10px)}}
+@keyframes degRingSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes degOrbit{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-12px) scale(1.15)}}
+.deg-load-stage{font-size:16px;font-weight:700;margin-bottom:12px;min-height:24px}
+.deg-load-bar{width:200px;height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:10px}
+.deg-load-fill{height:100%;width:10%;background:linear-gradient(90deg,var(--volt),#a3e635);border-radius:99px;transition:width 1s ease}
+.deg-load-time{font-size:13px;color:var(--muted);margin-bottom:16px;min-height:20px}
+.deg-load-tip{display:flex;align-items:center;gap:8px;max-width:280px;padding:10px 14px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:12.5px;line-height:1.4}
+.deg-load-tipicon{font-size:18px;flex-shrink:0}
+#degLoadTip{transition:opacity .3s}
+@media (prefers-reduced-motion:reduce){
+  .deg-load-core,.deg-load-ring,.deg-load-orbit{animation:none}
+}
