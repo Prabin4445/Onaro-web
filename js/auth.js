@@ -339,6 +339,10 @@ function loginHTML(){
   +'<div id="aFaceWrap" hidden><button class="btn btn-line btn-block auth-face" id="aFace">🪪 '+esc(t('auth.faceIdBtn'))+'</button></div>'
  +'<p class="auth-note" id="aFaceNote" hidden></p>'
   +'<div class="auth-links"><button class="linklike" id="aForgot">'+esc(t('auth.forgotPw'))+'</button></div>'
+  +'<div class="auth-divider"><span>'+esc(t('auth.or'))+'</span></div>'
+  +'<button class="btn btn-block auth-google" id="aGoogle">'
+  +'<svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> '
+  +esc(t('auth.googleBtn'))+'</button>'
   +'<p class="auth-switch"><button class="linklike" id="aToSignup">'+esc(t('auth.toSignup'))+'</button></p>'
   +'</div>';
 }
@@ -424,6 +428,127 @@ function wireLogin(){
   document.getElementById('aFace').onclick=function(){ loginWithFaceId(); };
   document.getElementById('aForgot').onclick=function(){ ui.toast(t('auth.forgotNote')); };
   document.getElementById('aToSignup').onclick=function(){ suReset(); curView='signup'; goStep(1,false); };
+  /* Sign in with Google */
+  var gBtn=document.getElementById('aGoogle');
+  if(gBtn) gBtn.onclick=function(){ googleSignIn(); };
+}
+
+/* Google Sign-In via Google Identity Services */
+var GOOGLE_CLIENT_ID='313093898252-po7oadmbimkp3p75ihgpgtdtakjv7vjq.apps.googleusercontent.com';
+function loadGoogleScript(){
+  return new Promise(function(res,rej){
+    if(window.google&&window.google.accounts){ res(); return; }
+    var s=document.createElement('script');
+    s.src='https://accounts.google.com/gsi/client';
+    s.async=true; s.defer=true;
+    s.onload=function(){ res(); };
+    s.onerror=function(){ rej(new Error('google script failed')); };
+    document.head.appendChild(s);
+  });
+}
+function googleSignIn(){
+  if(!(window.HUB&&HUB.api&&HUB.api.on())){
+    ui.toast(t('auth.errNeedOnline'));
+    return;
+  }
+  ui.toast(t('auth.googleLoading'));
+  loadGoogleScript().then(function(){
+    google.accounts.oauth2.initTokenClient({
+      client_id:GOOGLE_CLIENT_ID,
+      scope:'openid email profile',
+      callback:function(resp){
+        if(!resp||!resp.access_token){
+          ui.toast(t('auth.errGoogleFailed'));
+          return;
+        }
+        /* Get user info, then get ID token via tokeninfo */
+        fetch('https://www.googleapis.com/oauth2/v3/userinfo',{
+          headers:{'Authorization':'Bearer '+resp.access_token}
+        }).then(function(r){ return r.json(); }).then(function(uinfo){
+          /* We need an ID token. Use the credential flow instead:
+             re-request with initIdTokenClient for proper ID token */
+          google.accounts.id.initialize({
+            client_id:GOOGLE_CLIENT_ID,
+            callback:function(credResp){
+              handleGoogleCredential(credResp);
+            }
+          });
+          google.accounts.id.prompt();
+        }).catch(function(){
+          ui.toast(t('auth.errGoogleFailed'));
+        });
+      }
+    }).requestAccessToken();
+  }).catch(function(){
+    ui.toast(t('auth.errGoogleFailed'));
+  });
+}
+function handleGoogleCredential(resp){
+  if(!resp||!resp.credential){
+    ui.toast(t('auth.errGoogleFailed'));
+    return;
+  }
+  var idToken=resp.credential;
+  /* Decode to get name/email for phone prompt if new user */
+  var payload={};
+  try{
+    payload=JSON.parse(atob(idToken.split('.')[1]));
+  }catch(e){}
+  /* Try login without phone first (existing user) */
+  HUB.api.authGoogle(idToken,'','',payload.name||'').then(function(j){
+    completeGoogleSignin(j);
+  }).catch(function(e){
+    if(e.message&&e.message.indexOf('phone required')>=0){
+      /* New user: need phone number */
+      promptGooglePhone(idToken, payload);
+    }else{
+      ui.toast(e.message||t('auth.errGoogleFailed'));
+    }
+  });
+}
+function promptGooglePhone(idToken, payload){
+  /* Show phone collection sheet */
+  var rootEl=document.getElementById('authRoot');
+  if(!rootEl) return;
+  rootEl.innerHTML=
+    '<div class="card auth-card"><div class="auth-gloss" aria-hidden="true"></div>'
+    +'<h1 class="auth-title">'+esc(t('auth.phoneNeeded'))+'</h1>'
+    +'<p class="auth-sub">'+esc(t('auth.phoneNeededSub'))+'</p>'
+    +'<div class="field"><label>'+esc(t('auth.phoneLabel'))+'</label><div class="auth-phonerow">'
+    +'<select class="input auth-cc" id="gCC">'+ccOptions(defaultIso())+'</select>'
+    +'<input class="input" id="gNum" inputmode="tel" placeholder="'+esc(t('auth.phonePh'))+'"></div></div>'
+    +'<p class="auth-err" id="gErr" role="alert" hidden></p>'
+    +'<button class="btn btn-primary btn-block auth-cta" id="gContinue">'+esc(t('auth.continueBtn'))+'</button>'
+    +'</div>';
+  document.getElementById('gContinue').onclick=function(){
+    var cc=document.getElementById('gCC').value;
+    var num=document.getElementById('gNum').value.replace(/\D/g,'');
+    if(num.length<7||num.length>15){
+      errShow('gErr',t('auth.errBadPhone'));
+      return;
+    }
+    var phone='+'+DIAL[cc]+num;
+    HUB.api.authGoogle(idToken,phone,cc,payload.name||'').then(function(j){
+      completeGoogleSignin(j);
+    }).catch(function(e2){
+      errShow('gErr',e2.message||t('auth.errGoogleFailed'));
+    });
+  };
+}
+function completeGoogleSignin(j){
+  var u=j.user||{};
+  var local={
+    id:u.id||j.user_id,
+    name:u.name||u.display_name||'',
+    email:u.email||'',
+    phoneE164:u.phone||'',
+    backendId:u.id||j.user_id,
+    faceId:null,
+    createdAt:Date.now()
+  };
+  signIn(local,true);
+  ui.toast(t('auth.signedInAs',{name:local.name||local.email}));
+  close();
 }
 
 /* ================= SIGNUP ================= */
