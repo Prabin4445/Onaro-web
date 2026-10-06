@@ -1306,14 +1306,23 @@ function bindEntry(scope){
     b.onkeydown=function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } };
   }
   /* honest live counts: complete plans + full national inventory
-     ("7 plans · 3,898 schools") */
-  degIndex().then(function(idx){
-    const sub=root.querySelector?root.querySelector('#homeDegSub'):document.getElementById('homeDegSub');
-    if(!sub) return;
-    const nSchools=idx.national_schools||(idx.schools||[]).length;
-    sub.textContent=t('deg.entrySub',{n:(idx.plans||[]).length,
-      s:Number(nSchools).toLocaleString('en-US')});
-  });
+     ("7 plans · 3,898 schools"). If the API is still waking up (Render free
+     tier sleeps), retry instead of showing "0 plans". */
+  function updateCounts(tries){
+    degIndex().then(function(idx){
+      const sub=root.querySelector?root.querySelector('#homeDegSub'):document.getElementById('homeDegSub');
+      if(!sub) return;
+      const nPlans=(idx.plans||[]).length;
+      const nSchools=idx.national_schools||(idx.schools||[]).length;
+      if(nPlans===0 && !DATA.idxFailed && (tries||0)<3){
+        setTimeout(function(){ updateCounts((tries||0)+1); }, 8000);
+        return;
+      }
+      sub.textContent=t('deg.entrySub',{n:nPlans,
+        s:Number(nSchools).toLocaleString('en-US')});
+    });
+  }
+  updateCounts(0);
 }
 
 HUB.degree={open:open,close:close,entryHTML:entryHTML,bindEntry:bindEntry,_state:dstate};

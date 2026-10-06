@@ -24,10 +24,16 @@
   }
   function on(){ return !!base(); }
   function aj(path){
-    return fetch(base()+path).then(function(r){
-      if(!r.ok) throw new Error('api '+r.status+' '+path);
-      return r.json();
-    });
+    /* Use the safe fetch with retries (js/safeboot.js) — Render free tier
+       sleeps and needs 30-60s to wake. Plain fetch fails once and gives up,
+       leaving the app with "0 plans". */
+    var f=(window.HUB&&HUB.safe&&HUB.safe.fetchJSON)||function(u){
+      return fetch(u).then(function(r){
+        if(!r.ok&&r.status!==0) throw new Error('http '+r.status);
+        return r.json();
+      });
+    };
+    return f(base()+path);
   }
 
   /* ---------- degree plans ---------- */
