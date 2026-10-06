@@ -1006,7 +1006,7 @@ var CV=(function(){
     return out; /* 'color': natural, untouched */
   }
   return {detectQuad:detectQuad,detectLive:detectLive,guideRect:guideRect,warp:warp,applyFilter:applyFilter,gray:gray,
-    refineCapture:refineCapture,
+    refineCapture:refineCapture,quadArea:quadArea,
     /* QA/debug hook: scored candidate list for one live frame (not used by the app itself) */
     _dbgLive:function(px,w,h){ return scoreCandidates(px,w,h); },
     /* QA/debug hook: EVERY candidate incl. rejected ones, with fail reasons */
@@ -2066,10 +2066,19 @@ var SCAN={
              different aspect): mapping the video quad over with independent
              x/y scale stretches it. Re-detect directly in photo space so the
              quad is self-consistent with the pixels being warped. Falls back
-             to the video-mapped quad when detection finds nothing. */
+             to the video-mapped quad when detection finds nothing.
+             IMPORTANT: detectQuad returns a near-full-frame quad (4% inset ≈
+             85% of frame area) when it finds nothing. Accept the re-detected
+             quad ONLY if it covers <82% of the photo — otherwise the user gets
+             an uncropped full photo instead of the paper they saw locked on
+             screen. */
           try{
             var pq=SCAN.detectQuad(fc);
-            if(pq&&pq.length===4) q=pq;
+            if(pq&&pq.length===4){
+              var pArea=0;
+              try{ pArea=CV.quadArea(pq); }catch(e2){ pArea=0; }
+              if(pArea>0&&pArea<fc.width*fc.height*0.82) q=pq;
+            }
           }catch(e){}
         }
         /* capture-time refinement: re-snap the live-tracked quad on the
@@ -2364,6 +2373,12 @@ var SCAN={
     handles.forEach(function(h){
       h.addEventListener('pointerdown',function(e){
         e.preventDefault();
+        e.stopPropagation();
+        /* Pointer capture: retargets all subsequent pointermove/up to this
+           handle, so the browser never starts a scroll/zoom gesture even when
+           the finger slides off the 48px dot. This is the iOS Safari fix for
+           "whole screen moves when dragging a corner". */
+        try{ if(h.setPointerCapture) h.setPointerCapture(e.pointerId); }catch(e2){}
         var cur=it(), W=cur.W, H=cur.H, hidx=parseInt(h.getAttribute('data-h'),10);
         unconfirm(cur);
         /* magnifier loupe: a zoomed view around the active corner follows the
@@ -2399,21 +2414,31 @@ var SCAN={
         }
         paintLoupe(e.clientX,e.clientY);
         function mv(ev){
+          if(ev.cancelable) ev.preventDefault();
           var r=adj.getBoundingClientRect();
           var x=(ev.clientX-r.left)/r.width*W, y=(ev.clientY-r.top)/r.height*H;
           cur.q[hidx]={x:Math.max(0,Math.min(W,x)),y:Math.max(0,Math.min(H,y))};
           paintOverlay(); schedulePreview(); paintLoupe(ev.clientX,ev.clientY);
         }
         function up(){
+          try{ if(h.releasePointerCapture) h.releasePointerCapture(e.pointerId); }catch(e2){}
           window.removeEventListener('pointermove',mv);
           window.removeEventListener('pointerup',up);
           window.removeEventListener('pointercancel',up);
+          h.removeEventListener('pointermove',mv);
+          h.removeEventListener('pointerup',up);
+          h.removeEventListener('pointercancel',up);
           if(loupe.parentNode) loupe.parentNode.removeChild(loupe);
           renderPreview();
         }
-        window.addEventListener('pointermove',mv);
+        window.addEventListener('pointermove',mv,{passive:false});
         window.addEventListener('pointerup',up);
         window.addEventListener('pointercancel',up);
+        /* With pointer capture, move/up retarget to the handle itself — listen
+           there too so the drag survives even if window listeners miss. */
+        h.addEventListener('pointermove',mv,{passive:false});
+        h.addEventListener('pointerup',up);
+        h.addEventListener('pointercancel',up);
       });
     });
     body.querySelectorAll('[data-f]').forEach(function(b){
