@@ -79,13 +79,32 @@ function campusData(){
 function campusHTML(slug){
   const entry=(CAMPUSES.data||{})[slug];
   if(!entry||!entry.campuses||!entry.campuses.length) return '';
+  const sel=selectedCampus(slug);
   let h='<div class="deg-campuses"><div class="deg-campuses-hd">'+esc(entry.note||'Campuses')+'</div><div class="deg-campus-list">';
-  entry.campuses.forEach(function(c){
-    h+='<span class="deg-campus-chip">'+esc(c.name)+
+  entry.campuses.forEach(function(c,i){
+    const isSel=sel===c.name;
+    h+='<button class="deg-campus-chip'+(isSel?' sel':'')+'" data-campus="'+esc(c.name)+'" data-school="'+esc(slug)+'">'+esc(c.name)+
        '<span class="deg-campus-loc">'+esc(c.city)+', '+esc(c.state)+'</span>'+
-       (c.note?'<span class="deg-campus-note">'+esc(c.note)+'</span>':'')+'</span>';
+       (c.note?'<span class="deg-campus-note">'+esc(c.note)+'</span>':'')+(isSel?'<span class="deg-campus-check">✓</span>':'')+'</button>';
   });
   return h+'</div></div>';
+}
+/* Selected campus per school, persisted in profile */
+function selectedCampus(slug){
+  try{
+    const p=(store().state.profile||{});
+    return (p.campuses||{})[slug]||'';
+  }catch(e){ return ''; }
+}
+function setSelectedCampus(slug,name){
+  const st=store().state;
+  if(!st.profile) st.profile={};
+  if(!st.profile.campuses) st.profile.campuses={};
+  if(st.profile.campuses[slug]===name) delete st.profile.campuses[slug];
+  else st.profile.campuses[slug]=name;
+  store().save();
+  /* Re-render to show the checkmark */
+  if(typeof updatePickerResults==='function') updatePickerResults();
 }
 
 /* ---------------- progress state ---------------- */
@@ -724,6 +743,16 @@ function updatePickerResults(){
     });
     const rt=document.getElementById('degRetry');
     if(rt) rt.onclick=function(){ DATA.idxP=null; DATA.idx=null; DATA.idxFailed=false; updatePickerResults(); };
+    /* Campus selection: tapping a campus chip saves it as "where I'm going" */
+    const box2=document.getElementById('degResults');
+    if(box2) box2.onclick=function(e){
+      const cb=e.target.closest('[data-campus]');
+      if(cb){
+        e.stopPropagation();
+        setSelectedCampus(cb.getAttribute('data-school'), cb.getAttribute('data-campus'));
+        return;
+      }
+    };
     updateDirectory();
   });
 }
