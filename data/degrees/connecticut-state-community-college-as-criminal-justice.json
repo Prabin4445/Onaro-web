@@ -1,0 +1,329 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-criminal-justice",
+    "degree": "AS",
+    "major": "Criminal Justice",
+    "total_credits": 60,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/criminal-justice-as/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Criminal Justice, AS (https://catalog.ctstate.edu/programs/criminal-justice-as/). General Education Core: ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (3), SCRX/SCKX (3), PSY 1011 General Psychology I (3), ORAX (3), CCS 1001 (3). Additional General Education: CJS 2570 Writing and Research in Criminal Justice (3), SOC 1001 Principles of Sociology (3). Program Core: CJS 1010 Introduction to Criminal Justice (3), CJS 2110 Criminal Law I (3), CJS 2130 Evidence and Criminal Procedure (3), CJS 2010 Criminology (3), CJS 2095 Practicum in Criminal Justice (3), CJS 2450 Diversity and Multiculturalism in Criminal Justice (3), POLS 1002 American Government (3). CJS electives (12). Official total 60-63; this file models the 60-credit path. Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Catalog notes: MATH 1100 Quantitative Reasoning or MATH 1200 Statistics I recommended; recommended science CJS 2260 or CJS 2850; courses taken as part of the core may not satisfy concentration electives.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS 1010",
+            "title": "Introduction to Criminal Justice",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 1011",
+            "title": "General Psychology I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1000 or higher (3-4 credits; MATH 1100 Quantitative Reasoning or MATH 1200 Statistics I recommended; modeled at 3).",
+            "options": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "CJS 2110",
+            "title": "Criminal Law I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS 2010",
+            "title": "Criminology",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "CJS 2010 or SOC 2040 Criminology.",
+            "options": [
+              "CJS 2010",
+              "SOC 2040"
+            ],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SOC 1001",
+            "title": "Principles of Sociology",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ORAX",
+            "title": "Oral Communication Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ORAX (Oral Communication) category.",
+            "options": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "CJS 2130",
+            "title": "Evidence and Criminal Procedure",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS 2450",
+            "title": "Diversity and Multiculturalism in Criminal Justice",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "CJS 2450, CJS 2470 Fair and Impartial Policing, CJS 2550 Ethical Issue in Criminal Justice, or CJS 2940 Contemporary Issues in Criminal Justice.",
+            "options": [
+              "CJS 2450",
+              "CJS 2470",
+              "CJS 2550",
+              "CJS 2940"
+            ],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "POLS 1002",
+            "title": "American Government",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "POLS 1002 American Government or POLS 1003 State and Local Government.",
+            "options": [
+              "POLS 1002",
+              "POLS 1003"
+            ],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCRX-SCKX",
+            "title": "Scientific Reasoning or Scientific Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCRX or SCKX category (3-4 credits; modeled at 3). Recommended: CJS 2260 Introduction to Forensic Science or CJS 2850 Forensic Science with Laboratory.",
+            "options": [],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS-ELECT",
+            "title": "Criminal Justice Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any CJS elective course.",
+            "options": [
+              "CJS 2260",
+              "CJS 2850",
+              "CJS 2470",
+              "CJS 2550",
+              "CJS 2940",
+              "CJS 2880"
+            ],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "CJS 2570",
+            "title": "Writing and Research in Criminal Justice",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "WRIX (Written Communication II) course or CJS 2570 Writing and Research in Criminal Justice.",
+            "options": [
+              "CJS 2570"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS 2095",
+            "title": "Practicum in Criminal Justice",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "CJS 2095 Practicum in Criminal Justice or CJS 2880 Careers in Criminal Justice.",
+            "options": [
+              "CJS 2095",
+              "CJS 2880"
+            ],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS-ELECT",
+            "title": "Criminal Justice Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any CJS elective course.",
+            "options": [
+              "CJS 2260",
+              "CJS 2850",
+              "CJS 2470",
+              "CJS 2550",
+              "CJS 2940",
+              "CJS 2880"
+            ],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS-ELECT",
+            "title": "Criminal Justice Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any CJS elective course.",
+            "options": [
+              "CJS 2260",
+              "CJS 2850",
+              "CJS 2470",
+              "CJS 2550",
+              "CJS 2940",
+              "CJS 2880"
+            ],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CJS-ELECT",
+            "title": "Criminal Justice Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any CJS elective course.",
+            "options": [
+              "CJS 2260",
+              "CJS 2850",
+              "CJS 2470",
+              "CJS 2550",
+              "CJS 2940",
+              "CJS 2880"
+            ],
+            "slot_id": "s4-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "af41f51ee630f21578b677c5e8425804973526ef63690bc77ae49142049d7617",
+    "last_verified": "2026-10-06"
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-biotechnology",
+    "degree": "AS",
+    "major": "Biotechnology",
+    "total_credits": 60,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/biotechnology/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Biotechnology, AS (https://catalog.ctstate.edu/programs/biotechnology/). General Education: ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (4), CHEM 1210 General Chemistry I (4), SBSX (3), COMM 1301 Public Speaking (3), CCS 1001 College and Career Success (3). Program: MATH 1600 College Algebra (3), CHEM 1220 General Chemistry II (4), BIO 1210 General Biology I (4), BIO 1220 General Biology II (4), BIO 1810 Basic Techniques in Biotechnology (4), BIO 2350 Microbiology (4), ENG 1020 Composition II and Literature (3), BIO 1809 Principles of Biotechnology (3), advanced science electives (8). Official total 60-62; this file models the 60-credit path (ARHX at 4 credits as listed; catalog footnote allows a 3-credit ARHX choice if the 60-credit minimum is met). Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Numbered sequences (Chemistry I->II, Biology I->II, ENG 1010->1020) are prerequisite chains. Students employed in the Biotechnology field may prefer an advanced science elective in place of BIO 1809/BIO 2095.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "CHEM 1210",
+            "title": "General Chemistry I",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIO 1210",
+            "title": "General Biology I",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (4 credits as listed; a 3-credit choice is allowed if the 60-credit minimum is met).",
+            "options": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "CHEM 1220",
+            "title": "General Chemistry II",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "CHEM 1210"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIO 1220",
+            "title": "General Biology II",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "BIO 1210"
+            ],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIO 1810",
+            "title": "Basic Techniques in Biotechnology",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BIO 1810 Basic Techniques in Biotechnology or BIO 2822 Molecular Biotechniques (4 credits).",
+            "options": [
+              "BIO 1810",
+              "BIO 2822"
+            ],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "BIO 2350",
+            "title": "Microbiology",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ENG 1020",
+            "title": "Composition II and Literature",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [
+              "ENG 1010"
+            ],
+            "choice": true,
+            "choice_note": "ENG 1020 Composition II and Literature or ENG 1080 Composition II: Technical Writing.",
+            "options": [
+              "ENG 1020",
+              "ENG 1080"
+            ],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1600",
+            "title": "College Algebra",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1012 Trigonometry with Embedded Algebra or MATH 1600 College Algebra (recommended) (3-4 credits; modeled at 3).",
+            "options": [
+              "MATH 1012",
+              "MATH 1600"
+            ],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "COMM 1301",
+            "title": "Public Speaking",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIO 1809",
+            "title": "Principles of Biotechnology",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BIO 1809 Principles of Biotechnology or BIO 2095 Biotechnology Internship (3-4 credits; modeled at 3). Students employed in the Biotechnology field may prefer an advanced science elective.",
+            "options": [
+              "BIO 1809",
+              "BIO 2095"
+            ],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "SBSX",
+            "title": "Social / Behavioral Science Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SBSX (Social/Behavioral Science) category.",
+            "options": [],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ADV-SCI",
+            "title": "Advanced Science Elective",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any two of: BIO 2020 Biochemistry or CHEM 2410 Biochemistry, BIO 2830 Advanced Techniques in Biotechnology, BIO 2630 Molecular Genetics, BIO 2840 Fundamentals of Biomanufacturing, BIO 2865 Principles of Synthetic Biology, CHEM 1120 Principles of Organic Chemistry and Biochemistry, CHEM 2310 Organic Chemistry I, CHEM 2320 Organic Chemistry II, CHEM 2510 Instrumental Analysis.",
+            "options": [
+              "BIO 2020",
+              "CHEM 2410",
+              "BIO 2830",
+              "BIO 2630",
+              "BIO 2840",
+              "BIO 2865",
+              "CHEM 1120",
+              "CHEM 2310",
+              "CHEM 2320",
+              "CHEM 2510"
+            ],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ADV-SCI",
+            "title": "Advanced Science Elective",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any two of: BIO 2020 Biochemistry or CHEM 2410 Biochemistry, BIO 2830 Advanced Techniques in Biotechnology, BIO 2630 Molecular Genetics, BIO 2840 Fundamentals of Biomanufacturing, BIO 2865 Principles of Synthetic Biology, CHEM 1120 Principles of Organic Chemistry and Biochemistry, CHEM 2310 Organic Chemistry I, CHEM 2320 Organic Chemistry II, CHEM 2510 Instrumental Analysis.",
+            "options": [
+              "BIO 2020",
+              "CHEM 2410",
+              "BIO 2830",
+              "BIO 2630",
+              "BIO 2840",
+              "BIO 2865",
+              "CHEM 1120",
+              "CHEM 2310",
+              "CHEM 2320",
+              "CHEM 2510"
+            ],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "0eb134045d278de6020ca2620d5afae600bae44571807c2e96e33eae4d2a64c6",
+    "last_verified": "2026-10-06"
+  }
+}

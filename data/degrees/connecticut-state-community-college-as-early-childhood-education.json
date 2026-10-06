@@ -1,0 +1,269 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-early-childhood-education",
+    "degree": "AS",
+    "major": "Early Childhood Education",
+    "total_credits": 60,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/early-childhood-education-as/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Early Childhood Education, AS (https://catalog.ctstate.edu/programs/early-childhood-education-as/). General Education: CCS 1001 (3), ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (3), SCRX/SCKX (3), HIST 1015 US History to 1877 (3), ENG 1020 Composition II and Literature (3). Program: PSY 1011 General Psychology I (3), ECED 1001 Introduction to Early Childhood Care and Education (3), ECED 1002 The Foundations of Child Development (3), ECED 2410 Observation, Documentation, and Assessment of Young Children (3), ECED 2515 Exceptional Learners (3), ECED 2331 Language Development and Emergent Literacy in Young Children (3), ECED 2875 Children, Families, and Communities (3), ECED 2322 Curriculum and Methods for Diverse Learners (3), ECED 2695 Student Teaching Practicum (6), ECED/EDUC/SPED electives (6), ECED elective (3). Official total 60-63; this file models the 60-credit path. Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 1011",
+            "title": "General Psychology I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 1001",
+            "title": "Introduction to Early Childhood Care and Education",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 1002",
+            "title": "The Foundations of Child Development",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "ENG 1020",
+            "title": "Composition II and Literature",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [
+              "ENG 1010"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 2410",
+            "title": "Observation, Documentation, and Assessment of Young Children",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 2515",
+            "title": "Exceptional Learners",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1000 or higher (3-4 credits; modeled as MATH 1200 Statistics I at 3).",
+            "options": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "ECED 2331",
+            "title": "Language Development and Emergent Literacy in Young Children",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 2875",
+            "title": "Children, Families, and Communities",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED 2322",
+            "title": "Curriculum and Methods for Diverse Learners",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "HIST 1015",
+            "title": "US History to 1877",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "HIST 1015 US History to 1877 or HIST 1016 US History from Reconstruction.",
+            "options": [
+              "HIST 1015",
+              "HIST 1016"
+            ],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCRX-SCKX",
+            "title": "Scientific Reasoning or Scientific Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCRX or SCKX category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "ECED 2695",
+            "title": "Student Teaching Practicum",
+            "credits": 6,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "ECED 2690 & ECED 2692 Student Teaching I and Student Teaching II, or ECED 2695 Student Teaching Practicum (6 credits).",
+            "options": [
+              "ECED 2695",
+              "ECED 2690",
+              "ECED 2692"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECE-ELECT",
+            "title": "ECED/EDUC/SPED Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any ECED, EDUC, or SPED elective - consult advisor for choices.",
+            "options": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECE-ELECT",
+            "title": "ECED/EDUC/SPED Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any ECED, EDUC, or SPED elective - consult advisor for choices.",
+            "options": [],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECED-ELECT",
+            "title": "ECED Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any ECED elective course.",
+            "options": [],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "525045ee834c386563d629e7e52585912b5510c2d93056348c3f9dd2ce2f8113",
+    "last_verified": "2026-10-06"
+  }
+}

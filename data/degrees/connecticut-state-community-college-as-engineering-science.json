@@ -1,0 +1,310 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-engineering-science",
+    "degree": "AS",
+    "major": "Engineering Science",
+    "total_credits": 68,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/engineering-science-as/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Engineering Science, AS (https://catalog.ctstate.edu/programs/engineering-science-as/). General Education Core: ENG 1010 (3), MATH 2600 Calculus I (4), PHIL 1101 Ethics (3), CHEM 1210 General Chemistry I (4), HISX (3), ENG 1020 Composition II and Literature (3), CCS 1001 (3). Program: BHEL Behavioral Science elective (3), SSCI Social Science elective (3), PHYS 2201 Calculus-Based Physics I (4), PHYS 2202 Calculus-Based Physics II (4), MATH 2610 Calculus II (4), MATH 2620 Calculus III: Multivariable (4), MATH 2622 Differential Equations (4), EGR 1110 Introduction to Engineering (3), EGR 2215 Thermodynamics I (4), EGR 2211 Engineering Statics (3), EGR 2201 MATLAB for Engineers (3), specialization electives (6). Official total 68-70; this file models the 68-credit path (6 specialization-elective credits). Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Numbered sequences (Calculus I->II->III, Physics I->II, ENG 1010->1020) are prerequisite chains. Catalog recommends specialization sequences by transfer track (BioMedical, Mechanical/Robotics/Aerospace, Electrical, Civil, Chemical, Environmental) - see catalog.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 2600",
+            "title": "Calculus I",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CHEM 1210",
+            "title": "General Chemistry I",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "EGR 1110",
+            "title": "Introduction to Engineering",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "MATH 2610",
+            "title": "Calculus II",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "MATH 2600"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PHYS 2201",
+            "title": "Calculus-Based Physics I",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "EGR 2201",
+            "title": "MATLAB for Engineers",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any one introductory programming course: CSC 1201, CSC 1203, CSC 1211, CSC 2212, CSC 2214, EGR 1115, EGR 2230, EGR 2201, or EGR 2250 (3 credits).",
+            "options": [
+              "CSC 1201",
+              "CSC 1203",
+              "CSC 1211",
+              "CSC 2212",
+              "CSC 2214",
+              "EGR 1115",
+              "EGR 2230",
+              "EGR 2201",
+              "EGR 2250"
+            ],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PHIL 1101",
+            "title": "Ethics",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BHEL",
+            "title": "Behavioral Science Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any behavioral science elective (ANTH, PSY, or SOC/ANTH recommended for transfer).",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "MATH 2620",
+            "title": "Calculus III: Multivariable",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "MATH 2610"
+            ],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PHYS 2202",
+            "title": "Calculus-Based Physics II",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "PHYS 2201"
+            ],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "EGR 2211",
+            "title": "Engineering Statics",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ENG 1020",
+            "title": "Composition II and Literature",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [
+              "ENG 1010"
+            ],
+            "choice": true,
+            "choice_note": "ENG 1020 Composition II and Literature or ENG 1080 Composition II: Technical Writing.",
+            "options": [
+              "ENG 1020",
+              "ENG 1080"
+            ],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SSCI",
+            "title": "Social Science Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any social science elective (Economics recommended).",
+            "options": [],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "MATH 2622",
+            "title": "Differential Equations",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "MATH 2620"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "EGR 2215",
+            "title": "Thermodynamics I",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "HISX",
+            "title": "Historical Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework HISX (Historical Knowledge) category.",
+            "options": [],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SPEC-ELECT",
+            "title": "Specialization Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any EGR course, any CAD course, BIO 1210/1220, CHEM 1210/1220, EETA 2052, MATH 2621, or MFG 1010 (6-8 credits total; modeled as two 3-credit slots).",
+            "options": [
+              "EGR 2212",
+              "EGR 2221",
+              "EETA 2052",
+              "CHEM 1220",
+              "BIO 1210",
+              "BIO 1220",
+              "MATH 2621",
+              "MFG 1010",
+              "CAD 1330"
+            ],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SPEC-ELECT",
+            "title": "Specialization Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any EGR course, any CAD course, BIO 1210/1220, CHEM 1210/1220, EETA 2052, MATH 2621, or MFG 1010 (6-8 credits total; modeled as two 3-credit slots).",
+            "options": [
+              "EGR 2212",
+              "EGR 2221",
+              "EETA 2052",
+              "CHEM 1220",
+              "BIO 1210",
+              "BIO 1220",
+              "MATH 2621",
+              "MFG 1010",
+              "CAD 1330"
+            ],
+            "slot_id": "s4-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "7893f634c74ee6e7c8b421ae2c8a3a10c2724c60cd43a249d1267b8411813b39",
+    "last_verified": "2026-10-06"
+  }
+}

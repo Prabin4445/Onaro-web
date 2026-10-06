@@ -1,0 +1,327 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-accounting",
+    "degree": "AS",
+    "major": "Accounting",
+    "total_credits": 60,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/accounting-as/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Accounting, AS (https://catalog.ctstate.edu/programs/accounting-as/). General Education: ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (3), BUSN 2100 Business Communication (3), SCRX/SCKX (3), ECON 1001 Principles of Macroeconomics (3), CCS 1001 (3). Program: ACCT 1130 Principles of Financial Accounting (3), ACCT 1170 Principles of Managerial Accounting (3), ACCT 1250 Accounting Applications I (3), ACCT 2710 Intermediate Accounting I (3), ACCT 2720 Intermediate Accounting II (3), ACCT 2410 Federal Taxes I (3), BMGT 2020 Principles of Management (3), BFIN 2100 Principles of Finance (3), BUSN 1100 Introduction to Business (3), BUSN 2310 Business Law I (3), business electives (9). Official total 60-63; this file models the 60-credit path. Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Numbered accounting sequences (1130->1170->2710->2720) are prerequisite chains. Catalog note: the directed business elective is any ACCT course above 1100 or BUSN 1150 Business Software Applications.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1000 or higher (3-4 credits; modeled as MATH 1200 Statistics I at 3).",
+            "options": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUSN 1100",
+            "title": "Introduction to Business",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BUSN 1100 Introduction to Business or BENT 2180 Entrepreneurship.",
+            "options": [
+              "BUSN 1100",
+              "BENT 2180"
+            ],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ACCT 1130",
+            "title": "Principles of Financial Accounting",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "ACCT 1170",
+            "title": "Principles of Managerial Accounting",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "ACCT 1130"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ECON 1001",
+            "title": "Principles of Macroeconomics",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "ECON 1001 Principles of Macroeconomics or ECON 1002 Principles of Microeconomics.",
+            "options": [
+              "ECON 1001",
+              "ECON 1002"
+            ],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUSN 2100",
+            "title": "Business Communication",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCRX-SCKX",
+            "title": "Scientific Reasoning or Scientific Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCRX (Scientific Reasoning) or SCKX (Scientific Knowledge) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "ACCT 1250",
+            "title": "Accounting Applications I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ACCT 2710",
+            "title": "Intermediate Accounting I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "ACCT 1170"
+            ],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BMGT 2020",
+            "title": "Principles of Management",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BMGT 2020 Principles of Management or BMGT 2100 Organizational Behavior.",
+            "options": [
+              "BMGT 2020",
+              "BMGT 2100"
+            ],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BFIN 2100",
+            "title": "Principles of Finance",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BFIN 2100 Principles of Finance or BFIN 1100 Personal Finance.",
+            "options": [
+              "BFIN 2100",
+              "BFIN 1100"
+            ],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUSN 2310",
+            "title": "Business Law I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "BUSN 2340 Legal Environment of Business or BUSN 2310 Business Law I.",
+            "options": [
+              "BUSN 2340",
+              "BUSN 2310"
+            ],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "ACCT 2720",
+            "title": "Intermediate Accounting II",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "ACCT 2710"
+            ],
+            "choice": true,
+            "choice_note": "ACCT 2720 Intermediate Accounting II or other directed business elective (any ACCT course above 1100 or BUSN 1150).",
+            "options": [
+              "ACCT 2720",
+              "BUSN 1150"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ACCT 2410",
+            "title": "Federal Taxes I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUS-ELECT",
+            "title": "Business Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ACCT, BENT, BMGT, BFIN, BUSN, BMKT, MATH 1200, or ECON.",
+            "options": [
+              "BMKT 2010",
+              "BFIN 1100",
+              "BUSN 1150",
+              "BENT 2180",
+              "BMGT 2100",
+              "ECON 1002"
+            ],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUS-ELECT",
+            "title": "Business Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ACCT, BENT, BMGT, BFIN, BUSN, BMKT, MATH 1200, or ECON.",
+            "options": [
+              "BMKT 2010",
+              "BFIN 1100",
+              "BUSN 1150",
+              "BENT 2180",
+              "BMGT 2100",
+              "ECON 1002"
+            ],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BUS-ELECT",
+            "title": "Business Elective",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ACCT, BENT, BMGT, BFIN, BUSN, BMKT, MATH 1200, or ECON.",
+            "options": [
+              "BMKT 2010",
+              "BFIN 1100",
+              "BUSN 1150",
+              "BENT 2180",
+              "BMGT 2100",
+              "ECON 1002"
+            ],
+            "slot_id": "s4-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "ca6dabfa214d234a4bf002c7f0db64a185198dbb5c27e0572250ed0fc9b4fa06",
+    "last_verified": "2026-10-06"
+  }
+}

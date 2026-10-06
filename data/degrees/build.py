@@ -233,9 +233,12 @@ def validate(d):
     #   block-transfer-in completion degrees like Bryan University's)
     # - accelerated: accelerated second-degree / LPN-to-RN tracks
     # - 3-plus-2: 3+2 dual programs (only the home-institution years sequenced)
+    # - 3-plus-3: 3+3 dual programs, e.g. 3-3 Law Programs (3 yrs undergrad +
+    #   3 yrs law school; only the home-institution years sequenced).
+    #   (coordinator decision 2026-10-06, UNL pre-law wave 36)
     # - part-time: officially published part-time cohort tracks (more, lighter
     #   terms than the full-time sequence, e.g. UA-PTC HIT AAS part-time: 8 terms)
-    if prog_type in ('professional-phase', 'completion', 'accelerated', '3-plus-2') and (
+    if prog_type in ('professional-phase', 'completion', 'accelerated', '3-plus-2', '3-plus-3') and (
         deg.startswith('AA') or deg.startswith('AS') or deg.startswith('B')
     ):
         # cap 9 (was 7): genuine 9-term health completion/professional-phase

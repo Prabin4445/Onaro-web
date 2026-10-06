@@ -1,0 +1,304 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-aa-psychology-studies",
+    "degree": "AA",
+    "major": "Psychology Studies",
+    "total_credits": 61,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/psychology-studies-cscu-transfer-degree-aa/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, Psychology Studies - CSCU Transfer Degree, AA (https://catalog.ctstate.edu/programs/psychology-studies-cscu-transfer-degree-aa/). Framework: ENG 1010 (3), MATH 1200/1201 (3), ARHX (3), SCRX (4), SBSX (3), WRIX (3), SCKX (3), HISX (3), ORAX (3), CCS 1001 (3). Pathway: PSY 1011 General Psychology I (3), PSY 2001 Lifespan Development (3), GLKY (3), CRTY (3), pathway electives PSY 2040 Social Psychology (3) + PSY 2043 Theories of Personality (3), PSY 1012 General Psychology II (3, catalog-recommended), unrestricted electives (9). Official total 61-64; this file models the 61-credit path (6 pathway-elective credits + 12 unrestricted credits including the recommended PSY 1012). Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Catalog notes: for CCSU transfer PSY 2001 is the recommended developmental choice; for WCSU any other listed developmental course is recommended. PSY 2001/1012 list PSY 1011 as prerequisite.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 1011",
+            "title": "General Psychology I",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SBSX",
+            "title": "Social / Behavioral Science Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SBSX (Social/Behavioral Science) category.",
+            "options": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1200 Statistics I or MATH 1201 Statistics I with Computer Applications (3-4 credits; modeled at 3).",
+            "options": [
+              "MATH 1200",
+              "MATH 1201"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 2001",
+            "title": "Lifespan Development",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "PSY 1011"
+            ],
+            "choice": true,
+            "choice_note": "PSY 2001 Lifespan Development (recommended for CCSU transfer), PSY 2004 Child and Adolescent Development, PSY 2008 Psychology of Adult Development and Aging, or PSY 2045 Psychological Disorders.",
+            "options": [
+              "PSY 2001",
+              "PSY 2004",
+              "PSY 2008",
+              "PSY 2045"
+            ],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "WRIX",
+            "title": "Written Communication II Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework WRIX (Written Communication II) category.",
+            "options": [],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCRX",
+            "title": "Scientific Reasoning Course",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCRX (Scientific Reasoning) category.",
+            "options": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "GLKY",
+            "title": "Global Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework GLKY (Global Knowledge) category.",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "PSY 2040",
+            "title": "Social Psychology",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "PSY 1011"
+            ],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 1012",
+            "title": "General Psychology II",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [
+              "PSY 1011"
+            ],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "HISX",
+            "title": "Historical Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework HISX (Historical Knowledge) category.",
+            "options": [],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ORAX",
+            "title": "Oral Communication Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ORAX (Oral Communication) category.",
+            "options": [],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCKX",
+            "title": "Scientific Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCKX (Scientific Knowledge) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "PSY 2043",
+            "title": "Theories of Personality",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "PSY 1011"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CRTY",
+            "title": "Creativity Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework CRTY (Creativity) category.",
+            "options": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "UNRESTRICTED",
+            "title": "Unrestricted Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any unrestricted elective course (1000-level or above).",
+            "options": [],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "UNRESTRICTED",
+            "title": "Unrestricted Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any unrestricted elective course (1000-level or above).",
+            "options": [],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "UNRESTRICTED",
+            "title": "Unrestricted Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any unrestricted elective course (1000-level or above).",
+            "options": [],
+            "slot_id": "s4-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "ce05f989f4b19316ccaf478ac3227b438f230e2be1cc6fc1f46f84004d269cbc",
+    "last_verified": "2026-10-06"
+  }
+}

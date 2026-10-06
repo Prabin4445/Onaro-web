@@ -1,0 +1,244 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-nursing",
+    "degree": "AS",
+    "major": "Nursing",
+    "total_credits": 71,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/nursing-connecticut-community-college-program-as/",
+    "external_prereqs": [
+      "Pre-requisite coursework for BIO 2111 Anatomy and Physiology I (up to 8 credits with BIO 2350 prerequisites; catalog notes total could reach 79)"
+    ],
+    "notes": "Source: CT State 2026-2027 catalog, Nursing: Connecticut Community College Program, AS (https://catalog.ctstate.edu/programs/nursing-connecticut-community-college-program-as/). General Education: ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (3), BIO 2350 Microbiology (4), PSY 1011 General Psychology I (3), WRIX (3), CCS 1001 (3). Program: BIO 2111 Anatomy and Physiology I (4), BIO 2112 Anatomy and Physiology II (4), SOC 1001 Principles of Sociology (3), PSY 2001 Lifespan Development (3), NUR 1120C Nursing in Health and Illness I (9), NUR 1125C Nursing in Health and Illness II (8), NUR 2220C Nursing in Health and Illness III (9), NUR 2225C Nursing in Health and Illness IV (8), NUR 2226 Transition to Professional Practice (1). Total 71. Catalog notes: all general education courses require a minimum grade of C; program courses require C except BIO 2111/2112 which require C+. Pre-requisite courses for BIO 2111 and BIO 2350 may add up to 8 additional credits (total could reach 79). Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "BIO 2111",
+            "title": "Anatomy and Physiology I",
+            "credits": 4,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 1011",
+            "title": "General Psychology I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1200 Statistics I or MATH 1011 Applied Algebra with Modeling (higher-level math also fulfills the requirement).",
+            "options": [
+              "MATH 1200",
+              "MATH 1011"
+            ],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "BIO 2112",
+            "title": "Anatomy and Physiology II",
+            "credits": 4,
+            "category": "major",
+            "prereq": [
+              "BIO 2111"
+            ],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIO 2350",
+            "title": "Microbiology",
+            "credits": 4,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSY 2001",
+            "title": "Lifespan Development",
+            "credits": 3,
+            "category": "major",
+            "prereq": [
+              "PSY 1011"
+            ],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SOC 1001",
+            "title": "Principles of Sociology",
+            "credits": 3,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "WRIX",
+            "title": "Written Communication II Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework WRIX (Written Communication II) category.",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "NUR 1120C",
+            "title": "Nursing in Health and Illness I",
+            "credits": 9,
+            "category": "major",
+            "prereq": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category.",
+            "options": [],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "NUR 1125C",
+            "title": "Nursing in Health and Illness II",
+            "credits": 8,
+            "category": "major",
+            "prereq": [
+              "NUR 1120C"
+            ],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      },
+      {
+        "term": "Fall Year 3",
+        "courses": [
+          {
+            "code": "NUR 2220C",
+            "title": "Nursing in Health and Illness III",
+            "credits": 9,
+            "category": "major",
+            "prereq": [
+              "NUR 1125C"
+            ],
+            "slot_id": "s5-0",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 5
+      },
+      {
+        "term": "Spring Year 3",
+        "courses": [
+          {
+            "code": "NUR 2225C",
+            "title": "Nursing in Health and Illness IV",
+            "credits": 8,
+            "category": "major",
+            "prereq": [
+              "NUR 2220C"
+            ],
+            "slot_id": "s6-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "NUR 2226",
+            "title": "Transition to Professional Practice",
+            "credits": 1,
+            "category": "major",
+            "prereq": [
+              "NUR 2225C"
+            ],
+            "slot_id": "s6-1",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 6
+      }
+    ],
+    "content_hash": "9e050d64c943ffc591454a6f942134e18466ecdee1a3c0f41b456f16da175a6b",
+    "last_verified": "2026-10-06"
+  }
+}

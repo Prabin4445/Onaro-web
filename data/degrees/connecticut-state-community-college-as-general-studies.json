@@ -1,0 +1,300 @@
+{
+  "institution": {
+    "name": "Connecticut State Community College",
+    "city": "Hartford, CT",
+    "state": "CT",
+    "kind": "community"
+  },
+  "plan": {
+    "id": "connecticut-state-community-college-as-general-studies",
+    "degree": "AS",
+    "major": "General Studies",
+    "total_credits": 60,
+    "catalog_year": "2026-2027",
+    "source_url": "https://catalog.ctstate.edu/programs/general-studies-as/",
+    "external_prereqs": [],
+    "notes": "Source: CT State 2026-2027 catalog, General Studies, AS (https://catalog.ctstate.edu/programs/general-studies-as/). General Education: ENG 1010 (3), MATH 1200 Statistics I (3), ARHX (3), SCRX/SCKX (3), HISX (3), ORAX (3), CCS 1001 (3). Program: WRIX (3); Arts & Humanities - two courses from two different disciplines (ART, ARTH, COMM, HUM, ENG, MUS, PHL, THR, ARAB, ASL, CHNS, FREN, GERM, ITAL, JAPN, LATN, POLH, RUSN, SPAN) (6); Social/Behavioral Science - two courses from ANTH, ECON, GEOG, POLS, PSY, SOC, or WGS (6); Science or Math elective - one course from ASTR, BIO, CHEM, ENV, ERTH, GEOL, HORT, METR, OCEN, PHYS, SCI, or MATH (3); Technological Literacy elective - one course from CIS, CSA, or GRA (3); open electives - 1000-level or above, no more than 15 credits from any one discipline (18). Official total 60-66; this file models the 60-credit path. Framework slots (ARHX, SCRX, SCKX, SBSX, WRIX, HISX, ORAX, GLKY, CRTY) are modeled as choice slots: any course approved for that CSCU Framework category satisfies the slot - see the catalog or an advisor for the approved list. Catalog notes: MATH 1100 Quantitative Reasoning recommended; ESOL 1402/1502 may substitute for one Arts & Humanities course; technological literacy excludes GRA 2201 and GRA 2202.",
+    "semesters": [
+      {
+        "term": "Fall Year 1",
+        "courses": [
+          {
+            "code": "ENG 1010",
+            "title": "Composition",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "CCS 1001",
+            "title": "College and Career Success",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "slot_id": "s1-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 1200",
+            "title": "Statistics I",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "MATH 1000 or above (3-4 credits; MATH 1100 Quantitative Reasoning recommended; modeled at 3).",
+            "options": [],
+            "slot_id": "s1-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ARHX",
+            "title": "Arts & Humanities Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ARHX (Arts & Humanities) category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s1-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "WRIX",
+            "title": "Written Communication II Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework WRIX (Written Communication II) category.",
+            "options": [],
+            "slot_id": "s1-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 1
+      },
+      {
+        "term": "Spring Year 1",
+        "courses": [
+          {
+            "code": "AH-ELECT",
+            "title": "Arts & Humanities Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ART, ARTH, COMM, HUM, ENG, MUS, PHL, THR, ARAB, ASL, CHNS, FREN, GERM, ITAL, JAPN, LATN, POLH, RUSN, or SPAN - two courses from two different disciplines required.",
+            "options": [],
+            "slot_id": "s2-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SBS-ELECT",
+            "title": "Social/Behavioral Science Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ANTH, ECON, GEOG, POLS, PSY, SOC, or WGS.",
+            "options": [],
+            "slot_id": "s2-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCRX-SCKX",
+            "title": "Scientific Reasoning or Scientific Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework SCRX or SCKX category (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s2-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "TECH-ELECT",
+            "title": "Technological Literacy Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from CIS, CSA, or GRA, or other computer-skills course approved by the program coordinator (excludes GRA 2201, GRA 2202).",
+            "options": [],
+            "slot_id": "s2-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "HISX",
+            "title": "Historical Knowledge Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework HISX (Historical Knowledge) category.",
+            "options": [],
+            "slot_id": "s2-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 2
+      },
+      {
+        "term": "Fall Year 2",
+        "courses": [
+          {
+            "code": "AH-ELECT",
+            "title": "Arts & Humanities Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ART, ARTH, COMM, HUM, ENG, MUS, PHL, THR, ARAB, ASL, CHNS, FREN, GERM, ITAL, JAPN, LATN, POLH, RUSN, or SPAN - must be a different discipline from the first Arts & Humanities elective.",
+            "options": [],
+            "slot_id": "s3-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SBS-ELECT",
+            "title": "Social/Behavioral Science Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ANTH, ECON, GEOG, POLS, PSY, SOC, or WGS.",
+            "options": [],
+            "slot_id": "s3-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-MATH",
+            "title": "Science or Math Elective",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course from ASTR, BIO, CHEM, ENV, ERTH, GEOL, HORT, METR, OCEN, PHYS, SCI, or MATH (3-4 credits; modeled at 3).",
+            "options": [],
+            "slot_id": "s3-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "ORAX",
+            "title": "Oral Communication Course",
+            "credits": 3,
+            "category": "gen-ed",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course approved for the CSCU Framework ORAX (Oral Communication) category.",
+            "options": [],
+            "slot_id": "s3-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s3-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 3
+      },
+      {
+        "term": "Spring Year 2",
+        "courses": [
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s4-0",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s4-1",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s4-2",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s4-3",
+            "xfer": [],
+            "tccns": ""
+          },
+          {
+            "code": "OPEN-ELECT",
+            "title": "Open Elective",
+            "credits": 3,
+            "category": "elective",
+            "prereq": [],
+            "choice": true,
+            "choice_note": "Any course 1000-level or above (no more than 15 credits from any one discipline).",
+            "options": [],
+            "slot_id": "s4-4",
+            "xfer": [],
+            "tccns": ""
+          }
+        ],
+        "n": 4
+      }
+    ],
+    "content_hash": "c1f2a1cbfe92bf8add99764d3bebc56dd32f35350b0e9b17b7896d8d23fd74c8",
+    "last_verified": "2026-10-06"
+  }
+}
