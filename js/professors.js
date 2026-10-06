@@ -120,9 +120,13 @@ function facIndex(){
       return null;
     })
     .then(function(apiIdx){ return apiIdx||_fj('data/faculty/index.json'); })
-    .then(function(j){ FAC.idx=(j&&Array.isArray(j.colleges))?j:{colleges:[]}; return FAC.idx; })
-    .catch(function(){ FAC.idx={colleges:[]}; return FAC.idx; });
+    .then(function(j){ FAC.idx=(j&&Array.isArray(j.colleges))?j:{colleges:[]}; FAC.loadFailed=false; return FAC.idx; })
+    .catch(function(){ FAC.idx={colleges:[]}; FAC.loadFailed=true; return FAC.idx; });
   return FAC.idxP;
+}
+/* True if the device is offline (browser API) */
+function isOffline(){
+  try{ return typeof navigator!=='undefined' && navigator.onLine===false; }catch(e){ return false; }
 }
 function facultySlugFor(cp){
   if(!FAC.idx) return null;
@@ -303,10 +307,19 @@ function paintList(){
   if(!box) return;
   const list=sortedList(searchProfs(query,campus()));
   if(!list.length){
-    box.innerHTML='<div class="empty"><div class="big">🔍</div><p>'+
-      (query?U.esc(t('prof.noResults',{q:query})):U.esc(t('prof.noProfs',{campus:campus()})))+'</p>'+
-      '<p class="hint">➕ '+U.esc(t('prof.addMissing'))+'</p>'+
-      '<button class="btn btn-dark btn-sm" id="profAddEmpty">＋ '+U.esc(t('prof.addProf'))+'</button></div>';
+    /* Offline or load failure: show clear message with retry */
+    if(isOffline()||FAC.loadFailed){
+      box.innerHTML='<div class="empty"><div class="big">📡</div><p><b>'+U.esc(t('prof.offlineT'))+'</b></p>'
+        +'<p class="hint">'+U.esc(t('prof.offlineS'))+'</p>'
+        +'<button class="btn btn-dark btn-sm" id="profRetry">↻ '+U.esc(t('common.retry'))+'</button></div>';
+      const rt=document.getElementById('profRetry');
+      if(rt) rt.onclick=function(){ FAC.idx=null; FAC.idxP=null; FAC.loadFailed=false; paintList(); ensureFaculty(campus()).then(function(){ paintList(); }); };
+    }else{
+      box.innerHTML='<div class="empty"><div class="big">🔍</div><p>'+
+        (query?U.esc(t('prof.noResults',{q:query})):U.esc(t('prof.noProfs',{campus:campus()})))+'</p>'+
+        '<p class="hint">➕ '+U.esc(t('prof.addMissing'))+'</p>'+
+        '<button class="btn btn-dark btn-sm" id="profAddEmpty">＋ '+U.esc(t('prof.addProf'))+'</button></div>';
+    }
   }else{
     box.innerHTML=list.map(cardHTML).join('');
   }

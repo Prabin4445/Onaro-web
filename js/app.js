@@ -250,6 +250,15 @@ function ensureOnboarded(){
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
+  /* Connectivity monitor: toast when going offline/online */
+  try{
+    window.addEventListener('offline',function(){
+      if(HUB.ui&&HUB.ui.toast) HUB.ui.toast('📡 '+HUB.i18n.t('common.offline'));
+    });
+    window.addEventListener('online',function(){
+      if(HUB.ui&&HUB.ui.toast) HUB.ui.toast('✅ '+HUB.i18n.t('common.online'));
+    });
+  }catch(e){}
   /* Self-healing: any synchronous init fault shows the branded recovery
      screen instead of a blank page (see js/safeboot.js). */
   try{
