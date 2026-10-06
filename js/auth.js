@@ -452,22 +452,64 @@ function googleSignIn(){
     return;
   }
   loadGoogleScript().then(function(){
-    /* Use Google Identity Services One Tap / button flow for ID token */
     google.accounts.id.initialize({
       client_id:GOOGLE_CLIENT_ID,
       callback:handleGoogleCredential,
       auto_select:false,
       cancel_on_tap_outside:true
     });
+    /* Try One Tap prompt first */
     google.accounts.id.prompt(function(notification){
-      if(notification.isNotDisplayed()||notification.isSkippedMoment()){
-        /* Fallback: render a button */
-        ui.toast(t('auth.errGoogleFailed'));
+      var notShown=notification.isNotDisplayed();
+      var skipped=notification.isSkippedMoment();
+      if(notShown||skipped){
+        var reason='';
+        try{
+          reason=notShown?notification.getNotDisplayedReason():notification.getSkippedReason();
+        }catch(e){}
+        console.warn('[google] One Tap not shown:',reason);
+        /* Fallback: render the official Google button in a popup sheet */
+        showGoogleButtonFallback();
       }
     });
   }).catch(function(){
     ui.toast(t('auth.errGoogleFailed'));
   });
+}
+function showGoogleButtonFallback(){
+  /* Render Google's official button in a modal — works even when One Tap is blocked */
+  var host=document.createElement('div');
+  host.id='googleBtnSheet';
+  host.innerHTML=
+    '<div style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.6)">'
+    +'<div style="background:#1a1d12;border:1px solid rgba(190,242,0,.3);border-radius:16px;padding:24px;max-width:320px;text-align:center">'
+    +'<p style="color:#fff;margin:0 0 16px;font-weight:600">'+esc(t('auth.googleChoose'))+'</p>'
+    +'<div id="googleBtnRender"></div>'
+    +'<button id="googleBtnCancel" style="margin-top:16px;background:none;border:0;color:#bef200;font-weight:600;cursor:pointer">'+esc(t('auth.cancel'))+'</button>'
+    +'</div></div>';
+  document.body.appendChild(host);
+  document.getElementById('googleBtnCancel').onclick=function(){
+    document.body.removeChild(host);
+  };
+  host.firstChild.onclick=function(e){
+    if(e.target===host.firstChild) document.body.removeChild(host);
+  };
+  try{
+    google.accounts.id.renderButton(document.getElementById('googleBtnRender'),{
+      theme:'outline', size:'large', width:280,
+      text:'continue_with', shape:'pill'
+    });
+  }catch(e){
+    document.body.removeChild(host);
+    ui.toast(t('auth.errGoogleFailed'));
+  }
+  /* Close sheet on successful credential */
+  var origHandle=handleGoogleCredential;
+  handleGoogleCredential=function(resp){
+    var s=document.getElementById('googleBtnSheet');
+    if(s&&s.parentNode) s.parentNode.removeChild(s);
+    origHandle(resp);
+  };
 }
 function handleGoogleCredential(resp){
   if(!resp||!resp.credential){
