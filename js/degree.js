@@ -690,7 +690,7 @@ function updatePickerResults(){
           h+='<button class="deg-planrow" data-slug="'+esc(pl.slug)+'">'+
             '<span class="deg-degree">'+esc(pl.degree)+'</span>'+
             '<span class="grow"><b>'+esc(pl.major)+'</b>'+
-            '<span class="meta">'+esc(t('deg.creditsSemesters',{c:pl.credits,s:pl.semesters}))+'</span></span>'+
+            '<span class="meta">'+esc(pl.credits+(pl.semesters?' · '+pl.semesters+' '+t('deg.semesters'):''))+'</span></span>'+
             tcBadge(pl.transfer_confidence)+'<span class="chev">›</span></button>';
         });
         if(pendRows.length){

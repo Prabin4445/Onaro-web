@@ -95,7 +95,8 @@
               return {slot_id:c.slot_id, code:c.code, title:c.title,
                       credits:c.credits, category:c.category,
                       choice:!!c.is_choice, choice_note:c.choice_note,
-                      prereq:c.prereq||[], tccns:c.tccns};
+                      prereq:c.prereq||[], tccns:c.tccns,
+                      xfer:c.xfer||c.transfer_to||[]};
             })};
           })
         }
