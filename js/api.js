@@ -58,7 +58,22 @@
       });
       var schools=(sj.items||[]).map(function(s){
         return {slug:s.slug, name:s.name, city:s.city||'', state:s.state||'',
-                kind:s.kind||'', country:s.country||'US'};
+                kind:s.kind||'', country:s.country||'US', programs:[],
+                programs_collected:0, programs_total:0};
+      });
+      /* Group plans by school to build the programs array the UI expects */
+      var schoolBySlug={};
+      schools.forEach(function(sch){ schoolBySlug[sch.slug]=sch; });
+      plans.forEach(function(pl){
+        var sch=schoolBySlug[pl.school_slug];
+        if(sch){
+          sch.programs.push({
+            status:'collected', plan_id:pl.slug,
+            program:pl.major, degree:pl.degree
+          });
+          sch.programs_collected++;
+          sch.programs_total++;
+        }
       });
       return {plans:plans, schools:schools};
     });
