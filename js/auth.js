@@ -306,7 +306,6 @@ function errShow(id,msg){
   if(!p) return;
   p.textContent=msg; p.hidden=false;
   p.classList.remove('auth-err-pop'); void p.offsetWidth; p.classList.add('auth-err-pop');
-  ui.toast(msg);
 }
 function brandHTML(){
   var mark='';
