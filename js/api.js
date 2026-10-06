@@ -13,6 +13,8 @@
 (function(){
   'use strict';
   var LS_KEY='onaro_api_base';
+  var TOKEN_KEY='onaro_auth_token';
+  var USER_KEY='onaro_auth_user';
   function base(){
     try{
       if(window.__ONARO_API_BASE) return String(window.__ONARO_API_BASE).replace(/\/+$/,'');
@@ -23,6 +25,33 @@
     return '';
   }
   function on(){ return !!base(); }
+  /* ---------- auth token management ---------- */
+  function getToken(){
+    try{ return localStorage.getItem(TOKEN_KEY)||''; }catch(e){ return ''; }
+  }
+  function setToken(t){
+    try{
+      if(t) localStorage.setItem(TOKEN_KEY,t);
+      else localStorage.removeItem(TOKEN_KEY);
+    }catch(e){}
+  }
+  function getUser(){
+    try{
+      var s=localStorage.getItem(USER_KEY);
+      return s?JSON.parse(s):null;
+    }catch(e){ return null; }
+  }
+  function setUser(u){
+    try{
+      if(u) localStorage.setItem(USER_KEY,JSON.stringify(u));
+      else localStorage.removeItem(USER_KEY);
+    }catch(e){}
+  }
+  function isLoggedIn(){ return !!getToken(); }
+  function authHeaders(){
+    var t=getToken();
+    return t?{'Authorization':'Bearer '+t}:{};
+  }
   function aj(path){
     /* Use the safe fetch with retries (js/safeboot.js) — Render free tier
        sleeps and needs 30-60s to wake. Plain fetch fails once and gives up,
@@ -128,11 +157,91 @@
   // -> {date, signs:{...}} — same shape the app already reads.
   function horoscopeURL(){ return base()+'/api/horoscopes/today'; }
 
+  /* ---------- auth (Phase 2) ---------- */
+  function apiPost(path, body){
+    var b=base();
+    if(!b) return Promise.reject(new Error('no api'));
+    var headers=Object.assign({'Content-Type':'application/json'}, authHeaders());
+    return fetch(b+path, {
+      method:'POST',
+      headers:headers,
+      body:JSON.stringify(body||{})
+    }).then(function(r){
+      return r.json().then(function(j){
+        if(!r.ok) throw new Error((j&&j.detail)||('http '+r.status));
+        return j;
+      });
+    });
+  }
+  function apiGet(path){
+    var b=base();
+    if(!b) return Promise.reject(new Error('no api'));
+    return fetch(b+path, {headers:authHeaders()}).then(function(r){
+      return r.json().then(function(j){
+        if(!r.ok) throw new Error((j&&j.detail)||('http '+r.status));
+        return j;
+      });
+    });
+  }
+  function authSignup(data){
+    return apiPost('/v1/auth/signup', data).then(function(j){
+      // j = {user_id, verification_required}
+      return j;
+    });
+  }
+  function authVerify(userId, code, via){
+    return apiPost('/v1/auth/verify', {user_id:userId, code:code, via:via||'email'}).then(function(j){
+      // j = {token, user}
+      if(j.token) setToken(j.token);
+      if(j.user) setUser(j.user);
+      return j;
+    });
+  }
+  function authLogin(identifier, password){
+    return apiPost('/v1/auth/login', {identifier:identifier, password:password}).then(function(j){
+      if(j.token) setToken(j.token);
+      if(j.user) setUser(j.user);
+      return j;
+    });
+  }
+  function authMe(){
+    return apiGet('/v1/auth/me');
+  }
+  function authLogout(){
+    setToken(''); setUser(null);
+    return Promise.resolve({ok:true});
+  }
+
+  /* ---------- read receipts (Phase 2) ---------- */
+  function markRead(messageId){
+    if(!isLoggedIn()) return Promise.resolve({ok:false, reason:'not_logged_in'});
+    return apiPost('/v1/receipts/messages/'+encodeURIComponent(messageId)+'/read', {});
+  }
+  function getReads(messageId){
+    if(!isLoggedIn()) return Promise.resolve({reads:[]});
+    return apiGet('/v1/receipts/messages/'+encodeURIComponent(messageId)+'/reads');
+  }
+  function markGroupRead(groupId, messageKeys){
+    if(!isLoggedIn()) return Promise.resolve({ok:false, reason:'not_logged_in'});
+    return apiPost('/v1/receipts/groups/'+encodeURIComponent(groupId)+'/read', {message_keys:messageKeys});
+  }
+  function getGroupReads(groupId){
+    if(!isLoggedIn()) return Promise.resolve({reads:{}});
+    return apiGet('/v1/receipts/groups/'+encodeURIComponent(groupId)+'/reads');
+  }
+
   window.HUB=window.HUB||{};
   window.HUB.api={
     on:on, base:base,
     degreeIndex:degreeIndex, degreeFile:degreeFile,
     facultyIndex:facultyIndex, facultyFile:facultyFile,
-    horoscopeURL:horoscopeURL
+    horoscopeURL:horoscopeURL,
+    // auth
+    getToken:getToken, setToken:setToken, getUser:getUser, isLoggedIn:isLoggedIn,
+    authSignup:authSignup, authVerify:authVerify, authLogin:authLogin,
+    authMe:authMe, authLogout:authLogout,
+    // receipts
+    markRead:markRead, getReads:getReads,
+    markGroupRead:markGroupRead, getGroupReads:getGroupReads
   };
 })();
