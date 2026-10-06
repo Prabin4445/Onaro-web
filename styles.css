@@ -224,6 +224,9 @@ body.dark .phone{box-shadow:none}
   .appbar .appbar-icons{gap:5px}
   .appbar .iconbtn{width:32px;height:32px;font-size:16px;border-radius:11px}
   .brand-name{font-size:19px}
+  /* tighter tab labels so MARKET/GROUPS fit at 320px without ellipsis */
+  .tab{font-size:8px;letter-spacing:.3px;padding:6px 1px}
+  .tab-fab-slot{flex-basis:56px}
 }
 .brand{display:flex;align-items:center;gap:11px;min-width:0;flex-shrink:1;overflow:hidden}
 .brand-lockup{min-width:0}
@@ -264,7 +267,7 @@ body.dark .brand-mark svg.logo-light{display:none}
 }
 
 /* ============ views + floating orbit tabbar ============ */
-.views{flex:1;overflow-y:auto;overflow-x:clip;padding:6px 20px 158px;scroll-behavior:smooth}
+.views{flex:1;overflow-y:auto;overflow-x:hidden;overflow-x:clip;padding:6px 20px 158px;scroll-behavior:smooth}
 /* horizontal strips must never chain-scroll the page (iOS Safari swipe-chain) */
 .chips,.adcarousel,.mksim,.evphotostrip,.wxstrip,.stkrec,.seg-compact,.gal-thumbs,.ppl-ribbon{overscroll-behavior-x:contain}
 .view{animation:viewIn .4s var(--ease-spring)}
@@ -272,12 +275,13 @@ body.dark .brand-mark svg.logo-light{display:none}
 
 /* floating orbit pill — blurred, safe-area aware, content scrolls under it */
 .tabbar{
-  position:fixed;bottom:calc(10px + env(safe-area-inset-bottom,0px));left:50%;
-  /* -webkit prefix + translateZ(0): dedicated compositor layer so iOS Safari
-     never repaints/repositions the bar during toolbar show/hide or scroll. */
-  -webkit-transform:translateX(-50%);
-  transform:translateX(-50%) translateZ(0);
-  width:calc(100% - 28px);max-width:452px;display:flex;align-items:stretch;
+  position:fixed;bottom:calc(10px + env(safe-area-inset-bottom,0px));
+  /* Rock-solid iOS pinning (2026-10-06): left/right + margin auto instead of
+     left:50% + translateX(-50%). Transform-based centering is fragile on iOS
+     (compositor bugs during Safari toolbar show/hide); left/right pinning is
+     the most basic layout primitive and never mis-centers. */
+  left:14px;right:14px;margin:0 auto;
+  width:auto;max-width:452px;display:flex;align-items:stretch;
   background:var(--tabbar-bg);
   -webkit-backdrop-filter:blur(18px) saturate(1.3);
   backdrop-filter:blur(18px) saturate(1.3);
@@ -286,7 +290,7 @@ body.dark .brand-mark svg.logo-light{display:none}
   padding:6px;z-index:30;
 }
 .tab{
-  flex:1;position:relative;border:0;background:none;color:var(--muted);font-family:var(--font);
+  flex:1;min-width:0;position:relative;border:0;background:none;color:var(--muted);font-family:var(--font);
   font-size:9px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
   min-height:48px;padding:6px 2px;border-radius:18px;cursor:pointer;
@@ -310,6 +314,10 @@ body.dark .tab.active::after{
   background:var(--accent);box-shadow:0 0 10px var(--accent);
 }
 .tab-fab-slot{flex:0 0 64px;align-self:stretch}
+/* tab labels must never force the tab wider than its flex share (iOS renders
+   emoji/text wider than Chrome; without this the centered tabbar overflows
+   both viewport edges). */
+.tab>span:last-child{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ============ type — sharper 2026 scale ============ */
 h1{font-family:var(--font-display);font-size:clamp(28px,7.6vw,36px);font-weight:700;letter-spacing:-.02em;line-height:1.12}

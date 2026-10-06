@@ -71,9 +71,9 @@ function showRecovery(reason){
     var ov = document.createElement('div');
     ov.id = 'saferecov';
     ov.setAttribute('role','alert');
-    ov.style.cssText = 'position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#0D100A;color:#F2F5E9;font-family:system-ui,-apple-system,sans-serif;padding:24px;box-sizing:border-box;';
+    ov.style.cssText = 'position:fixed;inset:0;z-index:99999;display:block;background:#0D100A;color:#F2F5E9;font-family:system-ui,-apple-system,sans-serif;padding:24px;box-sizing:border-box;';
     ov.innerHTML =
-      '<div style="max-width:340px;text-align:center;">'+
+      '<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 48px);max-width:340px;text-align:center;">'+
       '<div style="font-size:44px;margin-bottom:12px;">🪐</div>'+
       '<div style="font-size:20px;font-weight:800;margin-bottom:8px;">Onaro couldn\'t start</div>'+
       '<div style="font-size:14px;opacity:.75;margin-bottom:20px;">Something blocked the app from loading. Your data is safe — pick a fix below.</div>'+
