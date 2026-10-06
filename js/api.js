@@ -26,14 +26,15 @@
   function aj(path){
     /* Use the safe fetch with retries (js/safeboot.js) — Render free tier
        sleeps and needs 30-60s to wake. Plain fetch fails once and gives up,
-       leaving the app with "0 plans". */
+       leaving the app with "0 plans". Use generous retries for cold starts. */
     var f=(window.HUB&&HUB.safe&&HUB.safe.fetchJSON)||function(u){
       return fetch(u).then(function(r){
         if(!r.ok&&r.status!==0) throw new Error('http '+r.status);
         return r.json();
       });
     };
-    return f(base()+path);
+    /* 5 retries × 15s timeout = up to ~75s for Render cold start */
+    return f(base()+path, {retries:5, timeout:15000});
   }
 
   /* ---------- degree plans ---------- */
