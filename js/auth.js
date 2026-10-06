@@ -293,11 +293,11 @@ function render(){
   if(!pageEl) return;
   var html='';
   if(curView==='login') html=loginHTML();
-  else if(curView==='signup') html=(curStep===1?su1HTML():(curStep===2?su2HTML():su3HTML()));
+  else if(curView==='signup') html=(curStep===1?su1HTML():su3HTML());
   else if(curView==='enroll') html=enrollHTML();
   pageEl.innerHTML='<div class="auth-step'+(backDir?' back':'')+'">'+html+'</div>';
   if(curView==='login') wireLogin();
-  else if(curView==='signup'){ if(curStep===1) wireSu1(); else if(curStep===2) wireSu2(); else wireSu3(); }
+  else if(curView==='signup'){ if(curStep===1) wireSu1(); else wireSu3(); }
   else if(curView==='enroll') wireEnroll();
 }
 function goStep(n,back){ curStep=n; backDir=!!back; render(); }
@@ -314,9 +314,10 @@ function brandHTML(){
   return '<div class="auth-brand"><span class="auth-mark">'+mark+'</span><span><span class="auth-brandname">Onaro</span>'
     +'<span class="auth-brandsub">'+esc(t('app.brandSub'))+'</span></span></div>';
 }
-function stepDots(n){
+function stepDots(n,total){
+  total=total||3;
   var h='<div class="auth-dots" aria-hidden="true">';
-  for(var i=1;i<=3;i++) h+='<i class="'+(i===n?'on':(i<n?'done':''))+'"></i>';
+  for(var i=1;i<=total;i++) h+='<i class="'+(i===n?'on':(i<n?'done':''))+'"></i>';
   return h+'</div>';
 }
 
@@ -578,7 +579,7 @@ function su1HTML(){
   return brandHTML()
   +'<div class="card auth-card with-back"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<button class="auth-back" id="suBack1" aria-label="'+esc(t('auth.back'))+'">‹</button>'
-  +'<p class="auth-steps">'+esc(t('auth.stepOf',{a:1}))+'</p>'+stepDots(1)
+  +'<p class="auth-steps">'+esc(t('auth.stepOf2',{a:1}))+'</p>'+stepDots(1,2)
   +'<h1 class="auth-title">'+esc(t('auth.signupTitle'))+'</h1>'
   +'<p class="auth-sub">'+esc(t('auth.realNote'))+'</p>'
   +'<div class="field"><label for="suName">'+esc(t('auth.nameLabel'))+'</label>'
@@ -640,8 +641,9 @@ function wireSu1(){
         name:su.name
       }).then(function(j){
         su.backendUserId=j.user_id;
+        su.via='email'; /* email-only: skip method selection */
         if(btn) btn.disabled=false;
-        goStep(2,false);
+        goStep(3,false);
       }).catch(function(e){
         if(btn) btn.disabled=false;
         errShow('suErr1', e.message||t('auth.errSignupFailed'));
@@ -699,7 +701,11 @@ function su3HTML(){
   return brandHTML()
   +'<div class="card auth-card with-back"><div class="auth-gloss" aria-hidden="true"></div>'
   +'<button class="auth-back" id="suBack3" aria-label="'+esc(t('auth.back'))+'">‹</button>'
-  +'<p class="auth-steps">'+esc(t('auth.stepOf',{a:3}))+'</p>'+stepDots(3)
+  +'<p class="auth-steps">'+esc(t('auth.stepOf2',{a:2}))+'</p>'+stepDots(2,2)
+  +'<div class="auth-mail3d" aria-hidden="true">'
+  +'<div class="mail3d-env"><div class="mail3d-flap"></div><div class="mail3d-body"></div>'
+  +'<div class="mail3d-spark s1"></div><div class="mail3d-spark s2"></div><div class="mail3d-spark s3"></div></div>'
+  +'</div>'
   +'<h1 class="auth-title">'+esc(t('auth.verifyTitle'))+'</h1>'
   +'<p class="auth-sub">'+esc(t('auth.codeSentNote'))+'</p>'
   +'<div class="auth-codes" id="suCodes">'
@@ -758,7 +764,7 @@ function wireSu3(){
     issueCode(su.via,label);
     goStep(3,false);
   };
-  document.getElementById('suBack3').onclick=function(){ goStep(2,true); };
+  document.getElementById('suBack3').onclick=function(){ goStep(1,true); };
 }
 function completeBackendSignup(backendUser){
   /* Real backend signup completion — token already stored by authVerify.

@@ -2884,6 +2884,19 @@ body.auth-open .toasthost{z-index:240}
 .auth-google{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#1f1f1f;border:1px solid #dadce0;font-weight:600;margin-top:4px}
 .auth-google:active{transform:scale(.98)}
 body.dark .auth-google{background:#f8f9fa}
+/* 3D floating mail icon with glow + sparkles (email verification) */
+.auth-mail3d{display:flex;justify-content:center;margin:6px 0 2px;perspective:400px}
+.mail3d-env{position:relative;width:84px;height:60px;transform-style:preserve-3d;animation:mailFloat 3.2s ease-in-out infinite;filter:drop-shadow(0 10px 22px rgba(190,242,0,.28))}
+.mail3d-body{position:absolute;inset:0;border-radius:14px;background:linear-gradient(145deg,#2a2f1a,#171a0e);border:1px solid rgba(190,242,0,.45);box-shadow:inset 0 2px 6px rgba(255,255,255,.12),inset 0 -8px 14px rgba(0,0,0,.45)}
+.mail3d-flap{position:absolute;left:6px;right:6px;top:4px;height:34px;border-radius:10px;background:linear-gradient(145deg,#3a411f,#22260f);border:1px solid rgba(190,242,0,.5);transform-origin:top center;transform:rotateX(18deg);box-shadow:0 4px 10px rgba(0,0,0,.4)}
+.mail3d-flap::after{content:"";position:absolute;left:50%;top:8px;width:34px;height:34px;transform:translateX(-50%) rotate(45deg);background:linear-gradient(145deg,#bef200,#8fc400);border-radius:8px;box-shadow:0 0 14px rgba(190,242,0,.8)}
+.mail3d-spark{position:absolute;width:8px;height:8px;border-radius:50%;background:#bef200;box-shadow:0 0 10px #bef200;animation:sparkTw 2.2s ease-in-out infinite}
+.mail3d-spark.s1{left:-8px;top:6px;animation-delay:0s}
+.mail3d-spark.s2{right:-10px;top:26px;animation-delay:.7s}
+.mail3d-spark.s3{left:30px;bottom:-10px;animation-delay:1.3s}
+@keyframes mailFloat{0%,100%{transform:translateY(0) rotateX(6deg) rotateY(-8deg)}50%{transform:translateY(-9px) rotateX(-4deg) rotateY(8deg)}}
+@keyframes sparkTw{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.25)}}
+@media (prefers-reduced-motion:reduce){.mail3d-env,.mail3d-spark{animation:none}}
 .linklike{background:none;border:0;color:var(--accent-strong);font-weight:700;font-size:14px;cursor:pointer;padding:6px}
 /* verification: radio cards, demo code, code boxes */
 .auth-viarow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
