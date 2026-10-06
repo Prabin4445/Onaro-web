@@ -309,3 +309,10 @@
 @media (prefers-reduced-motion:reduce){
   .astro-sign-btn{animation:none}
 }
+
+/* ---------- smaller Groups-near-you cards on Home (2026-10-06) ---------- */
+#homeCg .gcard{transform:scale(.88);transform-origin:top left;margin-right:-12px}
+#homeCg .gcard-media{height:90px}
+#homeCg .gcard-body h3{font-size:13px}
+#homeCg .gcard-body p{font-size:11px;-webkit-line-clamp:2}
+#homeCg .gcard-emoji{font-size:32px}
