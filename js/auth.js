@@ -451,34 +451,20 @@ function googleSignIn(){
     ui.toast(t('auth.errNeedOnline'));
     return;
   }
-  ui.toast(t('auth.googleLoading'));
   loadGoogleScript().then(function(){
-    google.accounts.oauth2.initTokenClient({
+    /* Use Google Identity Services One Tap / button flow for ID token */
+    google.accounts.id.initialize({
       client_id:GOOGLE_CLIENT_ID,
-      scope:'openid email profile',
-      callback:function(resp){
-        if(!resp||!resp.access_token){
-          ui.toast(t('auth.errGoogleFailed'));
-          return;
-        }
-        /* Get user info, then get ID token via tokeninfo */
-        fetch('https://www.googleapis.com/oauth2/v3/userinfo',{
-          headers:{'Authorization':'Bearer '+resp.access_token}
-        }).then(function(r){ return r.json(); }).then(function(uinfo){
-          /* We need an ID token. Use the credential flow instead:
-             re-request with initIdTokenClient for proper ID token */
-          google.accounts.id.initialize({
-            client_id:GOOGLE_CLIENT_ID,
-            callback:function(credResp){
-              handleGoogleCredential(credResp);
-            }
-          });
-          google.accounts.id.prompt();
-        }).catch(function(){
-          ui.toast(t('auth.errGoogleFailed'));
-        });
+      callback:handleGoogleCredential,
+      auto_select:false,
+      cancel_on_tap_outside:true
+    });
+    google.accounts.id.prompt(function(notification){
+      if(notification.isNotDisplayed()||notification.isSkippedMoment()){
+        /* Fallback: render a button */
+        ui.toast(t('auth.errGoogleFailed'));
       }
-    }).requestAccessToken();
+    });
   }).catch(function(){
     ui.toast(t('auth.errGoogleFailed'));
   });
