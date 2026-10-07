@@ -61,7 +61,7 @@ def shot(c, path):
 
 SEED = """(function(){
   var st=HUB.store.state;
-  st.degree={active:'aaniiih-nakoda-college-aas-industrial-trades',progress:{
+  st.degree={active:'aaniiih-nakoda-college-aas-industrial-trades',tracked:'aaniiih-nakoda-college-aas-industrial-trades',progress:{
     'aaniiih-nakoda-college-aas-industrial-trades':{
       done:{'s1-0':{code:'GS 110',credits:1,ts:1000},'s1-1~~0:1':{code:'M 101',credits:2,ts:2000,at:'0:1'}},
       startYear:2026, intake:{term:'fall',year:2026}, pace:0
@@ -152,7 +152,7 @@ for width in (390, 320):
     # ---- 2. tap card -> opens enrolled plan ----
     j(c, "document.getElementById('degprogCard').click(); return 1;")
     title = ''
-    for _ in range(20):
+    for _ in range(40):
         time.sleep(0.5)
         opened = j(c, "return !!document.querySelector('.degroot .deg-panel');")
         title = j(c, "return (document.getElementById('degTitle')||{}).textContent||'';")
@@ -163,7 +163,7 @@ for width in (390, 320):
     j(c, "var b=document.getElementById('degClose'); if(b) b.click(); return 1;")
     time.sleep(1)
     # ---- 3. empty state: no plan enrolled ----
-    j(c, "(function(){ HUB.store.state.degree={active:null,progress:{}}; HUB.store.save(); HUB.showTab('home'); return 1; })()")
+    j(c, "(function(){ HUB.store.state.degree={active:null,tracked:null,progress:{}}; HUB.store.save(); HUB.showTab('home'); return 1; })()")
     time.sleep(2)
     empty = j(c, "return !!document.querySelector('[data-degprog-empty]');")
     check('%d: honest empty state with no plan' % width, empty is True)
