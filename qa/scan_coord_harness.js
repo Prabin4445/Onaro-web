@@ -122,8 +122,49 @@ function liveQuadScale(trkQ, trkW, trkH, vw, vh) {
   else { pass++; }
 })();
 
-console.log(`\n${pass} passed, ${fail} failed`);
-process.exit(fail ? 1 : 0);
+// Test 6: sharpenDoc — document clarity (PraBin 2026-10-07 "not clear image")
+(function () {
+  if (typeof CV.sharpenDoc !== 'function') { fail++; console.log('FAIL: CV.sharpenDoc not exposed'); return; }
+  pass++;
+  function mkImg(w, h, fn) {
+    const px = new Uint8ClampedArray(w * h * 4);
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const v = fn(x, y), o = (y * w + x) * 4;
+      px[o] = px[o+1] = px[o+2] = v; px[o+3] = 255;
+    }
+    return px;
+  }
+  // 6a: flat gray field must be UNCHANGED (threshold gate kills noise amp)
+  const flat = mkImg(64, 64, () => 128);
+  const flatOut = CV.sharpenDoc(flat, 64, 64, 0.7);
+  let maxDiff = 0;
+  for (let i = 0; i < flatOut.length; i += 4) maxDiff = Math.max(maxDiff, Math.abs(flatOut[i] - 128));
+  if (maxDiff === 0) pass++; else { fail++; console.log(`FAIL sharpen flat-field changed: maxDiff=${maxDiff}`); }
+  // 6b: step edge must get STEEPER (edge contrast improves) — text edges
+  // are steps, not linear ramps (box blur preserves ramps, so unsharp
+  // masking a ramp is correctly a no-op)
+  const soft = mkImg(64, 64, (x) => x < 32 ? 60 : 200);
+  const lum = (px, x, y) => px[(y * 64 + x) * 4];
+  const before = lum(soft, 33, 32) - lum(soft, 31, 32);
+  const sharp = CV.sharpenDoc(soft, 64, 64, 0.7);
+  const after = lum(sharp, 33, 32) - lum(sharp, 31, 32);
+  if (after > before) pass++; else { fail++; console.log(`FAIL sharpen no edge gain: before=${before} after=${after}`); }
+  // 6c: dimensions preserved
+  if (sharp.length === soft.length) pass++; else { fail++; console.log('FAIL sharpen changed buffer size'); }
+  // 6d: performance — 640x360 (preview size) well under 1s
+  const big = mkImg(640, 360, (x, y) => ((x >> 3) + (y >> 3)) % 2 ? 200 : 60);
+  const t0 = Date.now();
+  CV.sharpenDoc(big, 640, 360, 0.7);
+  const ms = Date.now() - t0;
+  if (ms < 1000) pass++; else { fail++; console.log(`FAIL sharpen too slow: ${ms}ms`); }
+  console.log(`  (sharpen 640x360 took ${ms}ms in Node)`);
+})();
 
-console.log(`\n==== ${pass} passed, ${fail} failed ====`);
+// Test 7: default filter for new captures is 'magic' (Enhance), not 'color'
+(function () {
+  if (/filter:'magic',size:'auto',pgRef:-1/.test(src)) pass++;
+  else { fail++; console.log('FAIL: _mkItem default filter is not magic'); }
+})();
+
+console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

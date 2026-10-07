@@ -1053,7 +1053,47 @@ var CV=(function(){
     if(filter==='magic') return whiteBalanced(px,w,h);
     return out; /* 'color': natural, untouched */
   }
-  return {detectQuad:detectQuad,detectLive:detectLive,guideRect:guideRect,warp:warp,applyFilter:applyFilter,gray:gray,
+  /* Document sharpening (PraBin 2026-10-07: "not clear image after click",
+     software-only order — no camera/resolution changes). Fast separable 3x3
+     unsharp mask tuned for text: threshold-gated so flat paper areas don't
+     pick up amplified noise, amount ~0.7 crisps edges without halos.
+     Runs on the WARPED crop (post-geometry), so it can never break the
+     green-box invariant. */
+  function sharpenDoc(px,w,h,amount){
+    var n=w*h,i,o,x,y;
+    if(!n) return px;
+    amount=(amount==null)?0.7:amount;
+    var THR=7; /* luma edge threshold: ignore flat areas */
+    var lum=new Float32Array(n);
+    for(i=0;i<n;i++){ o=i*4; lum[i]=(px[o]+px[o+1]+px[o+2])/3; }
+    var tmp=new Float32Array(n);
+    for(y=0;y<h;y++){ /* horizontal 3-tap */
+      var row=y*w;
+      for(x=0;x<w;x++){
+        i=row+x;
+        tmp[i]=(lum[row+(x>0?x-1:0)]+2*lum[i]+lum[row+(x<w-1?x+1:w-1)])/4;
+      }
+    }
+    for(y=0;y<h;y++){ /* vertical 3-tap into lum (reuse as blur buffer) */
+      var rup=Math.max(0,y-1)*w, rdn=Math.min(h-1,y+1)*w, row2=y*w;
+      for(x=0;x<w;x++){
+        i=row2+x;
+        lum[i]=(tmp[rup+x]+2*tmp[i]+tmp[rdn+x])/4;
+      }
+    }
+    tmp=null;
+    var out=new Uint8ClampedArray(px);
+    for(i=0;i<n;i++){
+      o=i*4;
+      var orig=(px[o]+px[o+1]+px[o+2])/3, d=orig-lum[i];
+      if(d>THR||d<-THR){
+        var add=amount*d;
+        out[o]=px[o]+add; out[o+1]=px[o+1]+add; out[o+2]=px[o+2]+add;
+      }
+    }
+    return out;
+  }
+  return {detectQuad:detectQuad,detectLive:detectLive,guideRect:guideRect,warp:warp,applyFilter:applyFilter,gray:gray,sharpenDoc:sharpenDoc,
     refineCapture:refineCapture,quadArea:quadArea,
     /* QA/debug hook: scored candidate list for one live frame (not used by the app itself) */
     _dbgLive:function(px,w,h){ return scoreCandidates(px,w,h); },
@@ -1735,7 +1775,10 @@ var SCAN={
     return {cv:cv,W:W,H:H,
       srcPx:cv.getContext('2d').getImageData(0,0,W,H).data,
       q:(qq&&qq.length===4)?qq.map(function(p){ return {x:p.x,y:p.y}; }):SCAN.detectQuad(cv),
-      filter:'color',size:'auto',pgRef:-1,
+      /* default filter is 'magic' (Enhance): the white-balanced + contrast-
+         stretched + sharpened version is what looks clear on his phone.
+         'color' stays one tap away. (PraBin 2026-10-07: "not clear image") */
+      filter:'magic',size:'auto',pgRef:-1,
       cache:{key:null,imgs:null,w:0,h:0}};
   },
   start:function(body,keep){
@@ -1762,7 +1805,7 @@ var SCAN={
             else{
               /* multi-pick: auto-crop each with the detected quad, no per-file stop */
               var q=SCAN.detectQuad(srcCv);
-              SCAN.pages.push({cv:SCAN.makePage(srcCv,q,'color','auto'),filter:'color'});
+              SCAN.pages.push({cv:SCAN.makePage(srcCv,q,'magic','auto'),filter:'magic'});
               added++;
             }
           })
@@ -1889,6 +1932,7 @@ var SCAN={
         var wdt=tiers[ti][0], hgt=tiers[ti][1];
         var warped=CV.warp(px,srcCv.width,srcCv.height,q,wdt,hgt);
         var filtered=CV.applyFilter(warped,wdt,hgt,filter);
+        filtered=CV.sharpenDoc(filtered,wdt,hgt,0.6); /* crisp text on exports */
         var out=document.createElement('canvas'); out.width=wdt; out.height=hgt;
         out.getContext('2d').putImageData(new ImageData(filtered,wdt,hgt),0,0);
         return out;
@@ -2364,14 +2408,17 @@ var SCAN={
     function renderPreview(){
       var cur=it(), k=warpKey();
       if(k!==cur.cache.key){
-        var asp=SCAN.pageAspect(cur.q,cur.size), pw=480, ph=Math.round(pw/asp);
-        if(ph>700){ ph=700; pw=Math.max(200,Math.round(ph*asp)); }
+        var asp=SCAN.pageAspect(cur.q,cur.size), pw=640, ph=Math.round(pw/asp);
+        if(ph>900){ ph=900; pw=Math.max(260,Math.round(ph*asp)); }
         var warped=CV.warp(cur.srcPx,cur.W,cur.H,cur.q,pw,ph);
+        /* sharpen the warped crop (post-geometry: cannot move the quad) so the
+           hero looks crisp on his phone even from a 1080p video frame */
+        var sharp=function(px){ return CV.sharpenDoc(px,pw,ph,0.7); };
         cur.cache={key:k,w:pw,h:ph,imgs:{
-          color:warped,
-          gray:CV.applyFilter(warped,pw,ph,'gray'),
-          bw:CV.applyFilter(warped,pw,ph,'bw'),
-          magic:CV.applyFilter(warped,pw,ph,'magic')
+          color:sharp(warped),
+          gray:sharp(CV.applyFilter(warped,pw,ph,'gray')),
+          bw:sharp(CV.applyFilter(warped,pw,ph,'bw')),
+          magic:sharp(CV.applyFilter(warped,pw,ph,'magic'))
         }};
         paintThumbs(); /* quad/size changed -> refresh thumbnails too */
       }
