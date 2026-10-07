@@ -613,7 +613,10 @@ var CV=(function(){
     if(Math.min.apply(null,L)<Math.max(w,h)*0.05) return rej('sliver'); /* sliver, not paper */
     var wA=(L[0]+L[2])/2, hA=(L[1]+L[3])/2;
     var aspect=Math.max(wA,hA)/Math.max(1e-6,Math.min(wA,hA));
-    var dA=Math.min(Math.abs(aspect-1.4142),Math.abs(aspect-1.2941)); /* A4, Letter */
+    /* A4, Letter, and square: many journals/notebooks are square-ish, and
+       rejecting them outright made real documents undetectable. The other
+       gates (edges, contrast, texture) still kill non-paper rectangles. */
+    var dA=Math.min(Math.abs(aspect-1.4142),Math.abs(aspect-1.2941),Math.abs(aspect-1.0));
     var aspS=Math.exp(-Math.pow(dA/0.20,2));
     if(aspS<0.25) return rej('aspect');
     var angS=1;
@@ -647,15 +650,21 @@ var CV=(function(){
       sideS.push(stn2?sh2/stn2:0); sideRun.push(best2);
     }
     var sup=tot?hit/tot:0;
-    /* every side must be a real edge — a quad with one or two phantom sides
-       (the lazy-rectangle signature) is rejected, never averaged away */
-    var smin=Math.min(sideS[0],sideS[1],sideS[2],sideS[3]);
-    if(smin<Math.max(0.30,(ed||0)*1.8)) return rej('side');
-    /* ...and each side must be CONTINUOUS: a true page edge gives a long
+    /* Every side should be a real edge — but a real sheet photographed in a
+       real room can have ONE weak side (shadow, glare, or an edge lying
+       against a similar-colored background). Reject only when TWO or more
+       sides are weak: sort and gate on the 2nd-weakest. The remaining gates
+       below (orientation, support, contrast, texture, flat) still kill
+       hallucinated rectangles, so this softening costs no false positives. */
+    var sSorted=sideS.slice().sort(function(a,b){ return a-b; });
+    if(sSorted[1]<Math.max(0.25,(ed||0)*1.6)) return rej('side');
+    /* ...and each side should be CONTINUOUS: a true page edge gives a long
        unbroken run of edge pixels; accidental alignments of texture (grille
-       rings crossing an imaginary line) give scattered hits -> reject */
-    var rmin=Math.min(sideRun[0],sideRun[1],sideRun[2],sideRun[3]);
-    if(rmin<8) return rej('run');
+       rings crossing an imaginary line) give scattered hits. Same one-weak-
+       side allowance: gate on the 2nd-weakest run, floor lowered 8->6 for
+       noisy 320px live frames where real edges are 1-2px wide. */
+    var rSorted=sideRun.slice().sort(function(a,b){ return a-b; });
+    if(rSorted[1]<6) return rej('run');
     /* gradient orientation coherence: along a true page edge every gradient
        points (anti-)parallel to the side normal; texture edges point every
        which way. Mean |cos| ~0.95+ for a real edge, ~0.64 for noise. */
@@ -701,7 +710,11 @@ var CV=(function(){
         csum+=Math.abs(gry[oy*w+ox]-gry[iy2*w+ix2]); cn++;
       }
     }
-    if(cn>0&&csum/cn<30) return rej('contrast');
+    /* A real sheet separates from its background, but the step can be modest
+       (~20) when the cover is mid-tone against a soft background — the old
+       floor of 30 rejected genuine documents. 18 still rejects rectangles
+       hallucinated on uniform texture (their step is ~5-12, just noise). */
+    if(cn>0&&csum/cn<18) return rej('contrast');
     /* border-vs-interior: a page boundary is far denser in edges than the
        page interior. A rectangle hallucinated on busy texture (fan grilles,
        carpet weave) has strong edges everywhere -> reject. */
