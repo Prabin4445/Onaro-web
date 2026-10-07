@@ -227,7 +227,7 @@ function ensureRoot(){
   if(rootEl) return;
   rootEl=document.createElement('div');
   rootEl.className='authroot'; rootEl.id='authRoot'; rootEl.hidden=true;
-  rootEl.innerHTML='<div class="auth-bg" aria-hidden="true"></div><div class="auth-scrim" aria-hidden="true"></div>'
+  rootEl.innerHTML='<div class="auth-bg" aria-hidden="true"></div><canvas class="auth-planet" id="authPlanet" aria-hidden="true"></canvas><div class="auth-scrim" aria-hidden="true"></div>'
     +'<div class="auth-motes" aria-hidden="true">'+motesHTML()+'</div>'
     +'<div class="authpage" id="authPage" role="dialog" aria-modal="true"></div>';
   document.body.appendChild(rootEl);
@@ -247,6 +247,7 @@ function open(view,step){
   document.body.classList.add('auth-open');
   rootEl.hidden=false;
   render();
+  try{ if(HUB.authplanet) HUB.authplanet.start(); }catch(e){}
   try{ var f=pageEl.querySelector('input:not([type=hidden])')||pageEl.querySelector('select'); if(f) f.focus({preventScroll:true}); }catch(e){}
 }
 function openLogin(){ open('login',0); }
@@ -268,6 +269,7 @@ function gate(){
 function close(){
   if(rootEl) rootEl.hidden=true;
   document.body.classList.remove('auth-open');
+  try{ if(HUB.authplanet) HUB.authplanet.stop(); }catch(e){}
   curView=null;
 }
 /* Escape: this listener registered at parse time, before app.js's global
