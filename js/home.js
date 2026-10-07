@@ -299,6 +299,8 @@ HUB.views.home={
       '<div class="hsec">'+capsuleRowHTML()+'</div>'+
       // today at a glance — auto-rotating water-glass stat carousel
       ((HUB.glance&&HUB.glance.sectionHTML)?HUB.glance.sectionHTML():'')+
+      // degree progress card — real numbers from the enrolled plan, directly above "Your classes"
+      ((HUB.degree&&HUB.degree.homeProgressHTML)?HUB.degree.homeProgressHTML():'')+
       // next-class card
       HUB.classes.cardHTML()+
       // Professors entry — the original blackboard-scene banner
@@ -326,6 +328,8 @@ HUB.views.home={
     // ---- bindings (after innerHTML) ----
     /* Workstream H: start the class countdown ticker + reminder scheduler. */
     try{ HUB.classes.startTicker(); }catch(e){}
+    /* degree progress card: fill real numbers, wire tap -> tracker */
+    try{ if(HUB.degree&&HUB.degree.bindHomeProgress) HUB.degree.bindHomeProgress(el); }catch(e){}
     /* module cards */
     el.querySelectorAll('[data-hmod]').forEach(function(b){
       const m=HM_MODS.find(function(x){ return x.k===b.dataset.hmod; });

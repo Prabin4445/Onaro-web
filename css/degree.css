@@ -466,3 +466,70 @@ body.dark .deg-req .no{color:var(--amber)}
 @media (prefers-reduced-motion:reduce){
   .deg-load-core,.deg-load-ring,.deg-load-orbit{animation:none}
 }
+
+/* ---------- Home "Degree progress" card (2026-10-07, PraBin order) ----------
+   Sits directly above "Your classes". 3D glass + volt glow, animated
+   progress ring, count-up hero numbers. Dark only. */
+.degprog{position:relative;overflow:hidden;cursor:pointer;border-radius:22px;
+  padding:18px 16px 14px;color:var(--ink);
+  background:linear-gradient(145deg,rgba(38,44,26,.92),rgba(18,21,13,.96) 60%,rgba(28,32,18,.94));
+  border:1px solid rgba(var(--volt-rgb),.28);
+  box-shadow:0 10px 28px rgba(0,0,0,.5),0 2px 6px rgba(0,0,0,.4),
+    inset 0 1px 0 rgba(255,255,255,.09),inset 0 -8px 18px rgba(0,0,0,.35),
+    0 0 34px rgba(var(--volt-rgb),.10);
+  transition:transform .18s var(--ease-spring),box-shadow .25s ease}
+.degprog:active{transform:scale(.975)}
+.degprog:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.degprog-glow{position:absolute;inset:-40%;pointer-events:none;
+  background:radial-gradient(ellipse 60% 45% at 50% 0%,rgba(var(--volt-rgb),.16),transparent 70%);
+  animation:dpgGlow 5s ease-in-out infinite}
+@keyframes dpgGlow{0%,100%{opacity:.7;transform:translateY(0)}50%{opacity:1;transform:translateY(6px)}}
+.degprog-top{display:flex;gap:14px;align-items:center;position:relative}
+.degprog-ringwrap{flex:0 0 108px;width:108px;height:108px;filter:drop-shadow(0 4px 14px rgba(var(--volt-rgb),.35));
+  animation:dpgFloat 4.5s ease-in-out infinite}
+@keyframes dpgFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.degprog-ring{width:108px;height:108px;display:block}
+.dpg-track{fill:none;stroke:rgba(255,255,255,.10);stroke-width:11}
+.dpg-bar{fill:none;stroke:url(#dpg-g);stroke-width:11;stroke-linecap:round;
+  transition:stroke-dashoffset 1.1s cubic-bezier(.22,.9,.28,1)}
+.dpg-pct{fill:var(--ink);font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}
+.dpg-done{fill:var(--muted);font-size:10.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.degprog-main{flex:1;min-width:0}
+.degprog-label{font-size:12px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;
+  color:var(--volt);margin-bottom:2px}
+.degprog-plan{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:6px}
+.degprog-big{display:flex;align-items:baseline;gap:8px}
+.degprog-big span{font-size:40px;font-weight:800;line-height:1;color:var(--ink);
+  font-variant-numeric:tabular-nums;text-shadow:0 2px 12px rgba(var(--volt-rgb),.25)}
+.degprog-big small{font-size:12.5px;color:var(--muted);font-weight:600}
+.degprog-stats{display:flex;gap:8px;margin-top:14px;position:relative}
+.degprog-stat{flex:1;min-width:0;background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:9px 6px;text-align:center;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.degprog-stat b{display:block;font-size:16.5px;font-weight:800;color:var(--volt);
+  font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.degprog-stat span{display:block;font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.3}
+.degprog-stat span em{display:block;font-style:normal;font-size:10px;opacity:.85}
+/* skeleton while the plan file loads */
+.degprog-skel{display:flex;gap:14px;align-items:center;padding:6px 2px}
+.degprog-skel .sk{border-radius:12px;
+  background:linear-gradient(100deg,rgba(255,255,255,.05) 40%,rgba(255,255,255,.12) 50%,rgba(255,255,255,.05) 60%);
+  background-size:200% 100%;animation:dpgSk 1.4s linear infinite}
+@keyframes dpgSk{to{background-position:-200% 0}}
+.degprog-skel .sk-ring{width:108px;height:108px;border-radius:50%;flex:0 0 108px}
+.degprog-skel .sk-l1{height:22px;flex:1}
+.degprog-skel .sk-l2{height:16px;width:40%}
+/* honest empty state — never faked */
+.degprog-empty{text-align:center;padding:26px 18px;cursor:pointer}
+.degprog-ecap{font-size:44px;margin-bottom:8px;filter:drop-shadow(0 4px 12px rgba(var(--volt-rgb),.4));
+  animation:dpgFloat 4.5s ease-in-out infinite}
+.degprog-et{font-size:12px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:var(--volt);margin-bottom:6px}
+.degprog-empty p{font-size:13.5px;color:var(--muted);margin:0 0 14px;line-height:1.45}
+.degprog-cta{display:inline-block;background:linear-gradient(145deg,#d8f75e,var(--volt) 60%,#a8cc2e);
+  color:#10130a;font-weight:800;font-size:14px;padding:11px 22px;border-radius:99px;
+  box-shadow:0 4px 16px rgba(var(--volt-rgb),.4),inset 0 1px 0 rgba(255,255,255,.5)}
+@media (prefers-reduced-motion:reduce){
+  .degprog-glow,.degprog-ringwrap,.degprog-ecap{animation:none}
+  .degprog-skel .sk{animation-duration:4s}
+  .dpg-bar{transition:none}
+}

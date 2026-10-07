@@ -1089,7 +1089,7 @@ function natDir(){
         return HUB.api.dirSchools().catch(function(){ return null; });
       return null;
     })
-    .then(function(apiDir){ return apiDir||_fj('data/degrees/inventory/dir.json'); })
+    .then(function(apiDir){ return apiDir||_fj('data/inventory/dir.json'); })
     .then(function(j){
       /* Normalize the API object shape {schools:[{slug,name,...}]} to the
          dir.json row shape [[unitid|slug,name,city,state,kind,pt,pc]]. */
@@ -1107,7 +1107,7 @@ function natDir(){
 }
 function natState(st){
   if(NAT.states[st]) return Promise.resolve(NAT.states[st]);
-  if(!NAT.stateP[st]) NAT.stateP[st]=_fj('data/degrees/inventory/p-'+st+'.json')
+  if(!NAT.stateP[st]) NAT.stateP[st]=_fj('data/inventory/p-'+st+'.json')
     .then(function(j){ NAT.states[st]=j; return j; })
     .catch(function(){ NAT.states[st]={}; return NAT.states[st]; });
   return NAT.stateP[st];
