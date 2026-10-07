@@ -1,0 +1,485 @@
+{
+ "institution": {
+  "name": "Austin Community College",
+  "city": "Austin, TX",
+  "state": "TX",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "austin-community-college-bat-manufacturing-engineering-technology-as-engineering-pathway",
+  "degree": "BAT",
+  "major": "Manufacturing Engineering Technology — AS Engineering Pathway",
+  "total_credits": 121,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www6.austincc.edu/cms/site/www/awardplans/programmap.php?ap=10617&aos=DMCAT&yr=2027",
+  "notes": "Catalog states Total Program Hours: 120-121; total_credits set to upper bound 121. The program map includes a Prerequisites block (transcribed as the first section); those courses must be completed before the program semesters per the catalog. Semester sequence transcribed from ACC's official Program Map (2026-2027 College Credit Catalog). Course codes shown with ACC's printed hyphenation (e.g. EDUC-1300); tccns carries the canonical spaced TCCNS form. PROGRAM_TYPE (2026-10-07 repair): set to completion — this is an AS-to-BAT block-transfer degree-completion program per the ACC catalog (60cr AS Engineering prerequisite block + technical prerequisites + upper-division BAT semesters). PREREQ NOTES: CETT-1405 catalog prerequisite is \"CETT 1403, MATH 1314 or higher, or instructional program approval\". CETT-1403 is in the plan; the 60cr AS Engineering prerequisite block includes calculus (higher than MATH 1314), satisfying the math requirement. Full catalog wording in the course raw note.",
+  "transfer_confidence": "tccns_equivalencies",
+  "external_prereqs": [
+   "MATD 0370",
+   "NCBM 0270"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Prerequisites",
+    "courses": [
+     {
+      "code": "associate of science in engineering coursework",
+      "title": "Associate of Science in Engineering Coursework (catalog lists 59-60)",
+      "credits": 60,
+      "category": "core",
+      "core_area": "030 Life and Physical Sciences",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Note: Prerequisite: Completion of the Associate of Science in Engineering is required.",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Technical Prerequisites",
+    "courses": [
+     {
+      "code": "COSC-1336",
+      "title": "Programming Fundamentals I",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "COSC 1336",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [
+       "austin-community-college-aas-applications-development-coding-and-design-specialization",
+       "austin-community-college-aas-computer-programming",
+       "austin-community-college-aas-computer-programming-game-and-visualization-programming-specialization",
+       "austin-community-college-aas-computer-programming-software-testing-specialization",
+       "austin-community-college-aas-computer-programming-web-programming-specialization",
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-local-area-network-systems-cybersecurity-specialization",
+       "austin-community-college-aas-local-area-network-systems-network-administration-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "austin-community-college-as-computer-information-systems",
+       "austin-community-college-as-computer-science",
+       "austin-community-college-as-physics",
+       "austin-community-college-bas-cybersecurity",
+       "austin-community-college-bas-software-development"
+      ]
+     },
+     {
+      "code": "CETT-1403",
+      "title": "DC Circuits",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "MATD 0370/NCBM 0270 or higher; or instructional program approval."
+       }
+      ],
+      "tccns": "CETT 1403",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [
+       "austin-community-college-aas-electronic-graphics-specialization",
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-manufacturing-technology-advanced-manufacturing-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "dallas-college-aas-electrical-engineering-technology",
+       "dallas-college-aas-electro-mechanical-technology",
+       "dallas-college-aas-robotics-and-industrial-automation",
+       "houston-community-college-aas-electronics-engineering-technology-biomedical-electronics-specialization",
+       "houston-community-college-aas-electronics-engineering-technology-computer-engineering-specialization",
+       "houston-community-college-aas-instrumentation-controls-engineering-technology"
+      ]
+     },
+     {
+      "code": "DFTG-1405",
+      "title": "Introduction to Technical Drawing",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "DFTG 1405",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [
+       "austin-community-college-aas-architectural-specialization",
+       "austin-community-college-aas-civil-specialization",
+       "austin-community-college-aas-electronic-graphics-specialization",
+       "austin-community-college-aas-geospatial-engineering",
+       "austin-community-college-aas-manufacturing-technology-advanced-manufacturing-specialization",
+       "austin-community-college-aas-mechanical-specialization",
+       "dallas-college-aas-computer-aided-design-and-drafting"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "BAT Semester I",
+    "courses": [
+     {
+      "code": "APMT-3310",
+      "title": "Automation Controls",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "APMT 3310",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     },
+     {
+      "code": "APMT-3320",
+      "title": "Continuous Improvement Methods",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "APMT 3320",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "BAT Semester II",
+    "courses": [
+     {
+      "code": "CETT-1425",
+      "title": "Digital Fundamentals",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "MATD-0370/NCBM-0270 or higher or instructional program approval."
+       }
+      ],
+      "tccns": "CETT 1425",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [
+       "austin-community-college-aas-electronic-graphics-specialization",
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-manufacturing-technology-advanced-manufacturing-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "collin-college-aas-biomedical-equipment-technology",
+       "collin-college-aas-electronic-engineering-technology",
+       "collin-college-aas-robotics-and-automation-technology",
+       "dallas-college-aas-electrical-engineering-technology",
+       "dallas-college-aas-electro-mechanical-technology",
+       "dallas-college-aas-robotics-and-industrial-automation",
+       "houston-community-college-aas-electronics-engineering-technology-biomedical-electronics-specialization",
+       "houston-community-college-aas-electronics-engineering-technology-computer-engineering-specialization",
+       "houston-community-college-aas-instrumentation-controls-engineering-technology"
+      ]
+     },
+     {
+      "code": "CETT-1405",
+      "title": "AC Circuits",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       "CETT-1403",
+       {
+        "raw": "CETT 1403, MATH 1314 or higher, or instructional program approval."
+       }
+      ],
+      "tccns": "CETT 1405",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "dallas-college-aas-electrical-engineering-technology",
+       "dallas-college-aas-electro-mechanical-technology",
+       "dallas-college-aas-robotics-and-industrial-automation",
+       "houston-community-college-aas-electronics-engineering-technology-biomedical-electronics-specialization",
+       "houston-community-college-aas-electronics-engineering-technology-computer-engineering-specialization",
+       "houston-community-college-aas-instrumentation-controls-engineering-technology"
+      ]
+     },
+     {
+      "code": "SCLM-3310",
+      "title": "Supply Chain Management",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "SCLM 3310",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     },
+     {
+      "code": "APMT-3330",
+      "title": "Industrial Safety and Ergonomics",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "APMT 3330",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "BAT Semester III",
+    "courses": [
+     {
+      "code": "PTAC-2314",
+      "title": "Principles of Quality",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "PTAC 2314",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [
+       "austin-community-college-aas-manufacturing-technology-advanced-manufacturing-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "lone-star-college-aas-process-technology"
+      ]
+     },
+     {
+      "code": "CETT-1429",
+      "title": "Solid State Devices",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       "CETT-1405",
+       {
+        "raw": "CETT 1405."
+       }
+      ],
+      "tccns": "CETT 1429",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization",
+       "dallas-college-aas-electrical-engineering-technology",
+       "houston-community-college-aas-electronics-engineering-technology-biomedical-electronics-specialization",
+       "houston-community-college-aas-electronics-engineering-technology-computer-engineering-specialization"
+      ]
+     },
+     {
+      "code": "SCLM-4310",
+      "title": "Applied Senior Project",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "SCLM 4310",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     },
+     {
+      "code": "APMT-4310",
+      "title": "Manufacturing and Production",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "APMT 4310",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "BAT Semester IV",
+    "courses": [
+     {
+      "code": "ELMT-2473",
+      "title": "Electrical, Electronic, and Fluid Schematics",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       "CETT-1429",
+       {
+        "raw": "CETT 1429."
+       }
+      ],
+      "tccns": "ELMT 2473",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [
+       "austin-community-college-aas-electronics-technician-specialization",
+       "austin-community-college-aas-engineering-technology-specialization",
+       "austin-community-college-aas-robotics-and-semiconductor-technology-specialization"
+      ]
+     },
+     {
+      "code": "APMT-4420",
+      "title": "Process HMI Integration with Lab",
+      "credits": 4,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "APMT 4420",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     },
+     {
+      "code": "SCLM-4320",
+      "title": "Leadership and Operation Management",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "SCLM 4320",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     },
+     {
+      "code": "SCLM-4330",
+      "title": "Applied Quality Management in Manufacturing",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [
+       {
+        "raw": "Admission to the Manufacturing Engineering Technology BAT program. By petition only."
+       }
+      ],
+      "tccns": "SCLM 4330",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "APMT-4388",
+      "title": "Internship - Automation and Production",
+      "credits": 3,
+      "category": "major",
+      "core_area": "",
+      "prereq": [],
+      "tccns": "APMT 4388",
+      "choice": true,
+      "choice_note": "Skills Requirement(s) APMT-4388: O - Reading, Writing, Math, & Special Approval. \nPrerequisite(s) APMT-4388: Admission to the Manufacturing Engineering Technology BAT program. By petition only. \nSkills Requirement(s) SCLM-4388: O - Reading, Writing, Math, & Special Approval. \nPrerequisite(s) SCLM-4388: Admission to the Manufacturing Engineering Technology BAT program. By petition only.",
+      "options": [
+       "APMT 4388",
+       "SCLM 4388"
+      ],
+      "slot_id": "s6-4",
+      "xfer": [
+       "austin-community-college-bat-manufacturing-engineering-technology-aas-pathway"
+      ]
+     }
+    ]
+   }
+  ],
+  "program_type": "completion",
+  "content_hash": "ffce494f86138708f40432eaae9572c0c7c7d8f1c1ee4e84431f62646c9870d4",
+  "last_verified": "2026-10-07"
+ }
+}
