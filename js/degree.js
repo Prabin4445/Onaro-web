@@ -1599,6 +1599,10 @@ function toggleSlot(slotId,at){
   }
   if(c.choice){ openChoiceSheet(plan,c,occKey(occ.si,occ.ci)); return; }
   done[dk]={code:c.code,title:c.title,credits:Number(c.credits)||0,ts:Date.now(),at:occKey(occ.si,occ.ci)};
+  /* Completing a course is an explicit "this is my plan" signal — auto-track
+     it so the Home card picks it up without forcing a manual tap. Browsing
+     alone never tracks (PraBin 2026-10-07). */
+  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug; }
   save(); emitProgress();
   ui().toast(t('deg.doneToast',{code:c.code}));
   try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
@@ -1612,6 +1616,7 @@ function completeChoice(plan,c,pick,at){
   const done=curDone();
   done[dk]={code:pick.code,title:pick.title||c.title,
     credits:(typeof pick.credits==='number'?pick.credits:(Number(c.credits)||0)),ts:Date.now(),at:occKey(si,ci)};
+  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug; }
   save(); emitProgress();
   ui().closeSheet();
   ui().toast(t('deg.doneToast',{code:pick.code}));
