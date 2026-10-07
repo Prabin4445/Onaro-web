@@ -369,7 +369,7 @@ function editSheet(){
     downscalePhoto(f,url=>{ pedit.photo=url; pedit.photoTouched=true; prev.innerHTML='<img class="avimg" src="'+ui.esc(url)+'" alt="">'; });
   };
   const rm=document.getElementById('peditRemove');
-  if(rm) rm.onclick=()=>{ pedit.photo=null; pedit.photoTouched=true; prev.innerHTML=ui.initials(document.getElementById('peditName').value||p.name||'?'); };
+  if(rm) rm.onclick=()=>{ pedit.photo=null; pedit.photoTouched=true; prev.innerHTML=ui.esc(ui.initials(document.getElementById('peditName').value||p.name||'?')); };
   document.getElementById('peditCampus').onclick=()=>{
     /* the institution picker closes this sheet; reopen it with pending state kept */
     ui.openInstitutionPicker({mode:p.audience==='community'?'community':'student',onPick:rec=>{ pedit.campusRec=rec; pedit._keepPub=true; pedit._keepGender=true; editSheet(); }});

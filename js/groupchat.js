@@ -465,7 +465,7 @@ function open(groupId){
     const img=e.target.closest?e.target.closest('img.gcimg'):null;
     if(!img||!img.dataset.full) return;
     gcSheet('<h2>'+ui.esc(t('gc.photo'))+'</h2>'
-      +'<img src="'+img.dataset.full+'" style="width:100%;border-radius:14px;margin-top:8px" alt="'+ui.esc(t('gc.imgAlt'))+'">');
+      +'<img src="'+ui.esc(img.dataset.full)+'" style="width:100%;border-radius:14px;margin-top:8px" alt="'+ui.esc(t('gc.imgAlt'))+'">');
   };
   renderBubbles(g);
   setTimeout(function(){ const i2=document.getElementById('gcText'); if(i2) i2.focus(); },60);
@@ -490,12 +490,12 @@ function contentHTML(m){
     const badge=kind==='gif'?'<span class="gcbadge">GIF</span>'
       :kind==='meme'?'<span class="gcbadge">MEME</span>'
       :kind==='sticker'?'<span class="gcbadge">STICKER</span>':'';
-    const img=src?'<img class="gcimg'+(kind==='sticker'?' stkimg':'')+'" src="'+src+'" data-full="'+ui.esc(src)+'" alt="'+ui.esc(t('gc.imgAlt'))+'" loading="lazy">':'';
+    const img=src?'<img class="gcimg'+(kind==='sticker'?' stkimg':'')+'" src="'+ui.esc(src)+'" data-full="'+ui.esc(src)+'" alt="'+ui.esc(t('gc.imgAlt'))+'" loading="lazy">':'';
     return badge+img;
   }
   if(kind==='file'){
     const src=m.data||'';
-    const dl=src?'<div style="margin-top:6px"><a class="cblink" href="'+src+'" download="'+ui.esc(m.name||'file')+'">'+ui.esc(t('gc.download'))+'</a></div>':'';
+    const dl=src?'<div style="margin-top:6px"><a class="cblink" href="'+ui.esc(src)+'" download="'+ui.esc(m.name||'file')+'">'+ui.esc(t('gc.download'))+'</a></div>':'';
     return '<div class="cbfile">📎 <b>'+ui.esc(m.name||t('gc.file'))+'</b>'
       +(m.size!=null?' <span class="meta">'+ui.esc(fmtSize(m.size))+'</span>':'')+'</div>'+dl;
   }

@@ -169,12 +169,12 @@ function render(q){
     if(!rows.length&&toks.length) rows=collectors[intent.mode]([]);
     html=rows.length
       ? rows.slice(0,12).map(rowHTML).join('')
-      : '<div class="empty"><div class="big">🤷</div><p>'+t('search.noIn',{q:q,label:intentLabel(intent)})+'</p></div>';
+      : '<div class="empty"><div class="big">🤷</div><p>'+t('search.noIn',{q:ui.esc(q),label:intentLabel(intent)})+'</p></div>';
   }else{
     if(tag) tag.innerHTML='<span class="hint">'+t('search.mixed')+'</span>';
     const m=searchMarket(toks), j=searchJobs(toks), e=searchEvents(toks), v=searchMemory(toks), r=searchReports(toks);
     html=groupHTML(t('search.grp.market'),m)+groupHTML(t('search.grp.jobs'),j)+groupHTML(t('search.grp.events'),e)+groupHTML(t('search.grp.memory'),v)+groupHTML(t('search.grp.reports'),r);
-    if(!html) html='<div class="empty"><div class="big">🤷</div><p>'+t('search.noAny',{q:q})+'</p></div>';
+    if(!html) html='<div class="empty"><div class="big">🤷</div><p>'+t('search.noAny',{q:ui.esc(q)})+'</p></div>';
   }
   host.innerHTML=html;
   host.querySelectorAll('.item').forEach(el=>{

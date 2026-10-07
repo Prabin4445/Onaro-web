@@ -291,7 +291,7 @@ function openThread(threadId){
     const img=e.target.closest?e.target.closest('img[data-full]'):null;
     if(!img) return;
     ui.openSheet('<h2>'+ui.esc(t('chat.photo'))+'</h2>'
-      +'<img src="'+img.dataset.full+'" style="width:100%;border-radius:14px;margin-top:8px" alt="'+ui.esc(t('chat.imgAlt'))+'">');
+      +'<img src="'+ui.esc(img.dataset.full)+'" style="width:100%;border-radius:14px;margin-top:8px" alt="'+ui.esc(t('chat.imgAlt'))+'">');
   };
   renderBubbles(th.id);
   setTimeout(()=>input.focus(),60);
@@ -308,21 +308,21 @@ async function bubbleHTML(m,txt,th){
     const badge=kind==='gif'?'<span class="gcbadge">GIF</span>'
       :kind==='meme'?'<span class="gcbadge">MEME</span>'
       :'<span class="gcbadge">STICKER</span>';
-    const img=src?'<img class="cbimg'+(kind==='sticker'?' stkimg':'')+'" src="'+src+'" data-full="'+ui.esc(src)+'" alt="'+ui.esc(t('gc.imgAlt'))+'" loading="lazy">':'';
+    const img=src?'<img class="cbimg'+(kind==='sticker'?' stkimg':'')+'" src="'+ui.esc(src)+'" data-full="'+ui.esc(src)+'" alt="'+ui.esc(t('gc.imgAlt'))+'" loading="lazy">':'';
     return '<div class="bubble '+cls+'">'+badge+img+time+'</div>';
   }
   if(kind==='image'){
     let src='';
     try{ src=await HUB.crypto.textOf(m); }catch(e){}
     src=src||m.data||'';
-    const img=src?'<img class="cbimg" src="'+src+'" alt="'+ui.esc(t('chat.imgAlt'))+'">':'<span class="meta">'+ui.esc(t('crypto.locked'))+'</span>';
+    const img=src?'<img class="cbimg" src="'+ui.esc(src)+'" alt="'+ui.esc(t('chat.imgAlt'))+'">':'<span class="meta">'+ui.esc(t('crypto.locked'))+'</span>';
     return '<div class="bubble '+cls+'">'+img+time+'</div>';
   }
   if(kind==='file'){
     let src='';
     try{ src=await HUB.crypto.textOf(m); }catch(e){}
     src=src||m.data||'';
-    const dl=src?'<div style="margin-top:6px"><a class="cblink" href="'+src+'" download="'+ui.esc(m.name||'file')+'">'+ui.esc(t('chat.download'))+'</a></div>':'';
+    const dl=src?'<div style="margin-top:6px"><a class="cblink" href="'+ui.esc(src)+'" download="'+ui.esc(m.name||'file')+'">'+ui.esc(t('chat.download'))+'</a></div>':'';
     return '<div class="bubble '+cls+'"><div class="cbfile">📎 <b>'+ui.esc(m.name||t('chat.file'))+'</b>'
       +(m.size!=null?' <span class="meta">'+ui.esc(fmtSize(m.size))+'</span>':'')+'</div>'+dl+time+'</div>';
   }

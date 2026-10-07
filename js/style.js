@@ -348,7 +348,7 @@ function hydratePhotos(root){
       el.classList.remove('sty-ph-loading');
       if(!url) return;
       el.classList.add('has-photo');
-      el.innerHTML='<img src="'+url+'" alt="">';
+      el.innerHTML='<img src="'+esc(url)+'" alt="">';
     });
   });
 }
@@ -610,7 +610,7 @@ function openItemForm(id){
   );
   if(it&&it.id) photoGet(it.id).then(function(url){
     const ph=document.getElementById('styFormPhoto');
-    if(url&&ph) ph.innerHTML='<img src="'+url+'" alt="">';
+    if(url&&ph) ph.innerHTML='<img src="'+esc(url)+'" alt="">';
   });
   const single=function(rootId,attr){
     document.querySelectorAll('#'+rootId+' [data-c]').forEach(function(b){
@@ -640,7 +640,7 @@ function openItemForm(id){
       if(!url){ U.toast(t('style.photoFail')); return; }
       pendingPhoto=url;
       const ph=document.getElementById('styFormPhoto');
-      if(ph) ph.innerHTML='<img src="'+url+'" alt="">';
+      if(ph) ph.innerHTML='<img src="'+esc(url)+'" alt="">';
     });
   };
   fc.onchange=function(){ onFile(fc.files); fc.value=''; };
