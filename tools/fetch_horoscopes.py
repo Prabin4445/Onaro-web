@@ -3,8 +3,9 @@
 
 Tries each source in order until one delivers all 12 signs, then bakes them
 into data/horoscopes.json (the app reads it same-origin; phones cannot call
-the APIs directly because they send no CORS headers). Deploys to surge only
-when the baked content actually changed. Never invents readings: if no source
+the APIs directly because they send no CORS headers). Pushes to GitHub only
+when the baked content actually changed (Cloudflare Pages auto-deploys on
+push since the 2026-10-06 migration off Surge). Never invents readings: if no source
 delivers all 12 signs, the old file is left untouched and the run exits
 non-zero so the miss is reported honestly.
 
@@ -79,7 +80,7 @@ def live_date():
     try:
         r = subprocess.run(
             ["curl", "-s", "--max-time", "15",
-             "https://hub-preview.surge.sh/data/horoscopes.json"],
+             "https://onaro-web.pages.dev/data/horoscopes.json"],
             capture_output=True, text=True, timeout=20)
         if r.returncode == 0 and r.stdout.strip():
             return json.loads(r.stdout).get("date")
@@ -116,13 +117,39 @@ def fetch_source(name, template, parse):
     return date, signs
 
 def deploy():
+    """Publish the baked file: git commit + push; Cloudflare Pages
+    auto-deploys the onaro-web.pages.dev site on push. Replaces the
+    pre-2026-10-06 surge deploy path (Surge was abandoned)."""
+    today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+    subprocess.run(["git", "add", "data/horoscopes.json"], cwd=HUB,
+                   capture_output=True, text=True, timeout=DEPLOY_TIMEOUT)
+    rr = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=HUB,
+                        capture_output=True, text=True, timeout=DEPLOY_TIMEOUT)
+    if rr.returncode == 0:
+        print("deploy: nothing staged; file unchanged")
+        return True
+    msg = "Daily horoscope refresh: %s readings" % today
     for a in range(DEPLOY_ATTEMPTS):
-        r = subprocess.run(["npx", "--yes", "surge@latest", "./", "hub-preview.surge.sh"],
-                           cwd=HUB, capture_output=True, text=True, timeout=DEPLOY_TIMEOUT)
-        if r.returncode == 0:
-            print("deploy ok:", r.stdout.strip().splitlines()[-1] if r.stdout.strip() else "success")
+        rc = subprocess.run(["git", "commit", "-m", msg], cwd=HUB,
+                            capture_output=True, text=True,
+                            timeout=DEPLOY_TIMEOUT)
+        if rc.returncode != 0:
+            out = ((rc.stdout or "") + (rc.stderr or "")).lower()
+            if "nothing to commit" not in out and \
+               "no changes added to commit" not in out:
+                print("deploy attempt %d commit failed: %s"
+                      % (a + 1, (rc.stderr or rc.stdout)[-300:]))
+                time.sleep(10)
+                continue
+            # already committed on an earlier attempt; just push
+        rp = subprocess.run(["git", "push", "origin", "HEAD"], cwd=HUB,
+                            capture_output=True, text=True,
+                            timeout=DEPLOY_TIMEOUT)
+        if rp.returncode == 0:
+            print("deploy ok: pushed data/horoscopes.json for date=%s" % today)
             return True
-        print("deploy attempt %d failed: %s" % (a + 1, (r.stderr or r.stdout)[-300:]))
+        print("deploy attempt %d push failed: %s"
+              % (a + 1, (rp.stderr or rp.stdout)[-300:]))
         time.sleep(10)
     return False
 
