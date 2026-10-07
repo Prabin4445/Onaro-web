@@ -175,7 +175,12 @@ function drawParticles(s,ctx,back,cx,cy,tilt,e,t){
 /* ---------- one frame ------------------------------------------------------ */
 function draw(s,now){
   var ctx=s.ctx, w=s.w, h=s.h;
-  var t=(now-s.t0)/1000;
+  /* rAF timestamps can predate the performance.now() sampled in start()
+     (synthetic BeginFrames in headless, vsync edge on device): a negative t
+     would make Math.floor(t*1.4)%3 === -1 and kill the loop with a TypeError
+     on s.frames[-1].width — and the throw would skip the next rAF schedule,
+     freezing the scene. Clamp. */
+  var t=Math.max(0,(now-s.t0)/1000);
   var e=easeOutCubic((now-s.t0)/2000); /* 2s intro: fade + scale + ring sweep */
   ctx.setTransform(s.d,0,0,s.d,0,0);
   ctx.clearRect(0,0,w,h);
