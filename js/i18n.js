@@ -7670,7 +7670,14 @@ Object.assign(HUB.i18n._dict('en'),{
 'deg.paceFull':'As published',
 'deg.paceBanner':'Your pace: {n} credits/semester · {s} semesters',
 'deg.paceFinish':'finishes {term} at your pace',
-'deg.finishHintPace':'{n} credits/semester finishes this plan by {term}'
+'deg.finishHintPace':'{n} credits/semester finishes this plan by {term}',
+'deg.kind2yr':'2-year college',
+'deg.kind4yr':'4-year university',
+'deg.trackTransfer':'Transfer track',
+'deg.trackCareer':'Career track',
+'deg.trackOf':'{track} track',
+'deg.catYr':'{year} Catalog',
+'deg.noSourceUrl':'Official catalog link not on file — ask the school for the current catalog.'
 });
 Object.assign(HUB.i18n._dict('es'),{
 'deg.entryTitle':'Planes de estudio',
@@ -7741,7 +7748,14 @@ Object.assign(HUB.i18n._dict('es'),{
 'deg.paceFull':'Como publicado',
 'deg.paceBanner':'Tu ritmo: {n} créditos/semestre · {s} semestres',
 'deg.paceFinish':'termina en {term} a tu ritmo',
-'deg.finishHintPace':'{n} créditos/semestre terminan este plan en {term}'
+'deg.finishHintPace':'{n} créditos/semestre terminan este plan en {term}',
+'deg.kind2yr':'Universidad de 2 años',
+'deg.kind4yr':'Universidad de 4 años',
+'deg.trackTransfer':'Rama de transferencia',
+'deg.trackCareer':'Rama profesional',
+'deg.trackOf':'{track} (rama)',
+'deg.catYr':'Catálogo {year}',
+'deg.noSourceUrl':'Enlace al catálogo oficial no disponible — pide el catálogo actual a la escuela.'
 });
 Object.assign(HUB.i18n._dict('ne'),{
 'deg.entryTitle':'डिग्री योजनाहरू',
@@ -7812,7 +7826,14 @@ Object.assign(HUB.i18n._dict('ne'),{
 'deg.paceFull':'प्रकाशित अनुसार',
 'deg.paceBanner':'तपाईंको गति: {n} क्रेडिट/सेमेस्टर · {s} सेमेस्टर',
 'deg.paceFinish':'{term} मा तपाईंको गतिमा सकिन्छ',
-'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टरले यो योजना {term} सम्म सकिन्छ'
+'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टरले यो योजना {term} सम्म सकिन्छ',
+'deg.kind2yr':'२-वर्षे कलेज',
+'deg.kind4yr':'४-वर्षे विश्वविद्यालय',
+'deg.trackTransfer':'ट्रान्सफर ट्र्याक',
+'deg.trackCareer':'करियर ट्र्याक',
+'deg.trackOf':'{track} ट्र्याक',
+'deg.catYr':'{year} क्याटलग',
+'deg.noSourceUrl':'आधिकारिक क्याटलग लिङ्क उपलब्ध छैन — विद्यालयसँग हालको क्याटलग माग्नुहोस्।'
 });
 Object.assign(HUB.i18n._dict('hi'),{
 'deg.entryTitle':'डिग्री प्लान',
@@ -7883,7 +7904,14 @@ Object.assign(HUB.i18n._dict('hi'),{
 'deg.paceFull':'प्रकाशित अनुसार',
 'deg.paceBanner':'आपकी गति: {n} क्रेडिट/सेमेस्टर · {s} सेमेस्टर',
 'deg.paceFinish':'आपकी गति से {term} में समाप्त',
-'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टर से यह प्लान {term} तक पूरा होगा'
+'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टर से यह प्लान {term} तक पूरा होगा',
+'deg.kind2yr':'2-वर्षीय कॉलेज',
+'deg.kind4yr':'4-वर्षीय विश्वविद्यालय',
+'deg.trackTransfer':'ट्रांसफर ट्रैक',
+'deg.trackCareer':'करियर ट्रैक',
+'deg.trackOf':'{track} ट्रैक',
+'deg.catYr':'{year} कैटलॉग',
+'deg.noSourceUrl':'आधिकारिक कैटलॉग लिंक उपलब्ध नहीं है — स्कूल से वर्तमान कैटलॉग मांगें।'
 });
 
 /* ---- Daily health check 2026-09-30: missing key backfill ---- */

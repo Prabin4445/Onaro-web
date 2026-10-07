@@ -844,22 +844,46 @@ function openPlan(slug){
       if(seq!==loadSeq) return; /* user hit back while loading */
       if(!file||!file.plan){ if(body) body.innerHTML='<div class="empty ps-empty"><div class="big">🎓</div><p>'+esc(t('deg.loadFail'))+'</p></div>'; return; }
       cur={slug:slug,plan:file.plan,meta:meta};
+      cur.track=planTrack(idx,slug,meta.degree,meta.major);
       normSemNumbers(cur.plan); /* plans missing semester `n` get 1-based numbers */
       xferMode=false; collapsed={}; lastPop=null; lastFloat=null;
       progFor(slug); /* ensure startYear is stamped on first activation */
       migrateDoneOcc(slug,cur.plan); /* one-time: legacy done records gain occurrence identity */
       dstate().active=slug; save();
       const dt=document.getElementById('degTitle');
-      if(dt) dt.textContent=meta.degree+' · '+meta.major;
+      if(dt) dt.textContent=meta.degree+' · '+meta.major+(cur.track?' — '+cur.track:'');
       renderTracker();
     });
   });
 }
 
 /* ---------------- picker ---------------- */
+/* Degree-level classifier: normalizes dotted/abbreviated catalog codes
+   (A.A.S., AA-T, B.S.) so award badges, the associate/bachelor filter, and
+   the school-kind fallback all agree. Returns 'associate' | 'certificate' |
+   'graduate' | 'bachelor' ('' when the degree string is empty). */
+function degLevel(deg){
+  const d=String(deg||'').toUpperCase().replace(/[^A-Z-]/g,'');
+  if(!d) return '';
+  if(/^(AA|AS|AAA|AAS|AAT|AFA|ADN|AOS|AGS|DTA)(-|$)/.test(d)||/^ASSOCIATE/.test(d)) return 'associate';
+  if(/CERT/.test(d)||/^(CCL|CP|CA|TC|DIPLOMA|OCCUPATIONAL)/.test(d)) return 'certificate';
+  if(/^(MA|MS|MBA|MED|MSN|MPH|MFA|MPA|PHD|EDD|JD|DBA|GRADUATE|DOCTOR)/.test(d)) return 'graduate';
+  return 'bachelor';
+}
 function levelOfDegree(deg){
-  /* catalog codes (AA/AS/AAS/AAT) and CIP-derived award levels */
-  return /^(AA|AS|AAS|AAT|Associate)\b/i.test(String(deg||'').trim())?'associate':'bachelor';
+  /* Sub-baccalaureate (associate + certificate) vs bachelor's-and-up.
+     Keeps the picker filter contract ('associate'|'bachelor'); the row
+     badge (natBadge) still shows the exact award. */
+  const lv=degLevel(deg);
+  return (lv==='associate'||lv==='certificate')?'associate':'bachelor';
+}
+/* Transfer vs career disambiguator for associate degrees: AA/AS (incl. -T)
+   are transfer tracks, AAS/AAT are workforce/career tracks. '' otherwise. */
+function degreeTrack(deg){
+  const d=String(deg||'').toUpperCase().replace(/[^A-Z-]/g,'');
+  if(/^(AA|AS)(-|$)/.test(d)||/^ASSOCIATE(OF)?(ARTS|SCIENCE)/.test(d)) return 'transfer';
+  if(/^AAS(-|$)/.test(d)||/^(AAT|AGS|AAA)(-|$)/.test(d)||/^ASSOCIATE(OF)?APPLIED/.test(d)) return 'career';
+  return '';
 }
 function pickFilterOK(meta, prog){
   /* meta = index plan entry (collected) or pending program row */
@@ -971,17 +995,27 @@ function updatePickerResults(){
         anySchool=true;
         const moreComing=(sch.programs_collected||0)<(sch.programs_total||0);
         const isMine=myUniSlug&&(sch.slug||sch.name)===myUniSlug;
+        const kindPill=schoolKindLabel(sch, plansBySlug);
+        let schoolSub='';
+        if(kindPill) schoolSub+='<span class="deg-kind">'+esc(kindPill)+'</span> ';
+        if(sch.city) schoolSub+=esc(sch.city)+' · ';
+        schoolSub+=esc(t('deg.ofPrograms',{a:sch.programs_collected||0,b:sch.programs_total||0}));
         h+='<div class="deg-school"><div class="deg-school-hd"><div class="grow"><h3>'+esc(sch.name)+
           (isMine?' <span class="deg-mine">'+esc(t('deg.yourUni'))+'</span>':'')+'</h3>'+
-          '<div class="meta">'+esc(t('deg.ofPrograms',{a:sch.programs_collected||0,b:sch.programs_total||0}))+'</div>'+
+          '<div class="meta">'+schoolSub+'</div>'+
           campusHTML(sch.slug||'')+'</div>'+
           (moreComing?'<span class="deg-more">'+esc(t('deg.moreComing'))+'</span>':'')+'</div>';
         collRows.forEach(function(p){
           const pl=plansBySlug[p.plan_id];
+          const trk=trackLabel(pl.slug, sch.slug||'', pl.degree, pl.major);
+          let rmeta=String(pl.credits||'');
+          if(pl.semesters) rmeta+=' · '+pl.semesters+' '+t('deg.semesters');
+          if(pl.catalog) rmeta+=' · '+pl.catalog;
           h+='<button class="deg-planrow" data-slug="'+esc(pl.slug)+'">'+
             '<span class="deg-degree">'+esc(pl.degree)+'</span>'+
             '<span class="grow"><b>'+esc(pl.major)+'</b>'+
-            '<span class="meta">'+esc(pl.credits+(pl.semesters?' · '+pl.semesters+' '+t('deg.semesters'):''))+'</span></span>'+
+            (trk?'<span class="deg-track">'+esc(t('deg.trackOf',{track:trk}))+'</span>':'')+
+            '<span class="meta">'+esc(rmeta)+'</span></span>'+
             tcBadge(pl.transfer_confidence)+'<span class="chev">›</span></button>';
         });
         if(pendRows.length){
@@ -1057,9 +1091,73 @@ function natState(st){
   return NAT.stateP[st];
 }
 function natBadge(degree){
-  /* Associate-level degrees (AA/AS/AAS/AAT/Associate) are 2-year.
-     Matches levelOfDegree() so badges agree with the collected plans. */
-  return /^(AA|AS|AAS|AAT|Associate)\b/i.test(String(degree||'').trim())?'2YR':'4YR';
+  /* Award-level badge that agrees with degLevel(): dotted codes (A.A.S.),
+     ADN, certificates and graduate degrees no longer misbadge as 4YR. */
+  const lv=degLevel(degree);
+  if(lv==='associate') return '2YR';
+  if(lv==='certificate') return 'CERT';
+  if(lv==='graduate') return 'GRAD';
+  if(!lv) return '';
+  return '4YR';
+}
+/* School-kind label: normalizes the messy catalog kind strings
+   (community_college, public4yr, cc, ...) to a student-facing
+   "2-year college" / "4-year university" pill, or '' when unknown. */
+function kindLabel(kind){
+  const k=String(kind||'').toLowerCase();
+  if(!k.trim()) return '';
+  if(/community|technical/.test(k)||/(^|[^0-9])2\s?y(ea)?r([^a-z]|$)/.test(k)||
+     /(^|[^a-z])cc([^a-z]|$)/.test(k)||/\bjunior\b/.test(k)) return t('deg.kind2yr');
+  if(/university|senior/.test(k)||/(^|[^0-9])4\s?y(ea)?r([^a-z]|$)/.test(k)) return t('deg.kind4yr');
+  return '';
+}
+function schoolKindLabel(sch, plansBySlug){
+  const direct=kindLabel(sch&&sch.kind);
+  if(direct) return direct;
+  /* fallback: infer from the school's collected plan award levels */
+  let assoc=false, bach=false;
+  ((sch&&sch.programs)||[]).forEach(function(p){
+    const pl=plansBySlug&&plansBySlug[p.plan_id];
+    const lv=pl&&pl.level?String(pl.level).toLowerCase():degLevel(p.degree);
+    if(lv==='associate'||lv==='certificate') assoc=true;
+    else if(lv==='bachelor') bach=true;
+  });
+  if(bach) return t('deg.kind4yr');
+  if(assoc) return t('deg.kind2yr');
+  return '';
+}
+/* Slug-derived concentration label, e.g.
+   'appalachian-bible-college-ba-music-missions' -> 'Missions'.
+   Only to disambiguate rows that would otherwise look identical
+   (same school + degree + major); '' when there is nothing to show. */
+function trackLabel(planSlug, schoolSlug, degree, major){
+  const ps=String(planSlug||'').toLowerCase();
+  const ss=String(schoolSlug||'').toLowerCase();
+  if(!ps||!ss||ps.indexOf(ss)!==0) return '';
+  const tail=ps.slice(ss.length).replace(/^-+/,'');
+  if(!tail) return '';
+  const drop={};
+  String(degree||'').toLowerCase().replace(/[^a-z-]/g,'').split('-').forEach(function(w){ if(w) drop[w]=1; });
+  String(major||'').toLowerCase().split(/[^a-z0-9]+/).forEach(function(w){ if(w) drop[w]=1; });
+  /* catalog filler + stop-words: never part of a track name */
+  ['degree','program','track','concentration','major','plan','map',
+   'bachelor','bachelors','science','arts','associate','transfer',
+   'a','an','the','and','or','of','in','to','for','with','on','at','by','from','via','plus'
+  ].forEach(function(w){ drop[w]=1; });
+  const ACR={csu:'CSU',uc:'UC',lpn:'LPN',rn:'RN',cna:'CNA',uafs:'UAFS',ec:'EC',esl:'ESL'};
+  const keep=tail.split('-').filter(function(w){ return w&&!drop[w]&&!/^[0-9]/.test(w); });
+  if(!keep.length) return '';
+  return keep.map(function(w){ return ACR[w]||(w.charAt(0).toUpperCase()+w.slice(1)); }).join(' ');
+}
+/* trackLabel without a known school slug: longest school-slug prefix wins. */
+function planTrack(idx, planSlug, degree, major){
+  let best='';
+  (idx.schools||[]).forEach(function(s){
+    const ss=s.slug||'';
+    if(ss&&String(planSlug).indexOf(ss)===0&&ss.length>best.length) best=ss;
+  });
+  if(!best) return '';
+  return trackLabel(planSlug, best, degree, major);
 }
 function updateDirectory(){
   const host=document.getElementById('degBrowse');
@@ -1095,9 +1193,10 @@ function updateDirectory(){
     }
     let h='';
     rows.forEach(function(r){
+      const dk=kindLabel(r[4]);
       h+='<button class="deg-planrow" data-bunit="'+r[0]+'" data-bstate="'+esc(r[3])+'">'+
         '<span class="grow" style="text-align:left"><b>'+esc(r[1])+'</b>'+
-        '<span class="meta">'+esc(r[2]+', '+r[3])+' · '+esc(t('deg.programsN',{n:r[5]}))+'</span></span>'+
+        '<span class="meta">'+esc(r[2]+', '+r[3])+(dk?' · '+esc(dk):'')+' · '+esc(t('deg.programsN',{n:r[5]}))+'</span></span>'+
         '<span class="chev">›</span></button>';
     });
     box.innerHTML=h;
@@ -1114,17 +1213,21 @@ function renderBrowseSchool(box){
   natDir().then(function(d){
     const row=(d.schools||[]).filter(function(r){ return String(r[0])===String(s.u); })[0]||[];
     const name=row[1]||'', loc=(row[2]||'')+', '+(row[3]||'');
+    const bkind=kindLabel(row[4]||'');
     natState(s.st).then(function(st){
       if(!document.getElementById('degBResults')) return;
       const progs=st[String(s.u)]||[];
       let h='<div class="deg-school"><div class="deg-school-hd"><div class="grow"><h3>'+esc(name)+'</h3>'+
-        '<div class="meta">'+esc(loc)+' · '+esc(t('deg.programsN',{n:progs.length}))+'</div></div></div>';
+        '<div class="meta">'+esc(loc)+(bkind?' · '+esc(bkind):'')+' · '+esc(t('deg.programsN',{n:progs.length}))+'</div></div></div>';
+      let needTrack=false;
       progs.forEach(function(p){
         if(!pickFilterOK(null,{degree:p[1]})) return;
         if(p[3]==='collected'&&p[2]){
+          needTrack=true;
           h+='<button class="deg-planrow" data-slug="'+esc(p[2])+'">'+
             '<span class="deg-degree">'+esc(natBadge(p[1]))+'</span>'+
             '<span class="grow"><b>'+esc(p[0])+'</b>'+
+            '<span class="deg-track" data-trackslug="'+esc(p[2])+'" hidden></span>'+
             '<span class="meta">'+esc(p[1])+'</span></span><span class="chev">›</span></button>';
         }else{
           h+='<div class="deg-pending-row"><span class="deg-degree" style="opacity:.6">'+esc(natBadge(p[1]))+'</span>'+
@@ -1136,6 +1239,20 @@ function renderBrowseSchool(box){
       box.innerHTML=h;
       box.querySelectorAll('.deg-planrow').forEach(function(r2){
         r2.onclick=function(){ openPlan(r2.dataset.slug); };
+      });
+      /* Track disambiguators fill in once the plan index arrives (it can lag
+         on API cold start; rows must not wait for it). */
+      if(needTrack) degIndex().then(function(gidx){
+        const host=document.getElementById('degBResults');
+        if(!host) return;
+        const bySlug={};
+        (gidx.plans||[]).forEach(function(x){ bySlug[x.slug]=x; });
+        host.querySelectorAll('[data-trackslug]').forEach(function(el){
+          const pr=bySlug[el.getAttribute('data-trackslug')];
+          const tr=pr?planTrack(gidx,pr.slug,pr.degree,pr.major):'';
+          if(tr){ el.textContent=t('deg.trackOf',{track:tr}); el.hidden=false; }
+          else el.remove();
+        });
       });
     });
   });
@@ -1214,6 +1331,20 @@ function paceHTML(plan,done,cap,view){
   }
   return h;
 }
+/* Official-source block: a prominent full-width catalog button when the
+   plan file carries a source_url, honest muted text when it doesn't. */
+function sourceHTML(plan,meta){
+  let h='';
+  if(plan.source_url){
+    h+='<a class="deg-srcbtn" href="'+esc(plan.source_url)+'" target="_blank" rel="noopener">'+
+      '<span aria-hidden="true">📖</span> '+esc(t('deg.viewCatalog'))+'</a>';
+  }else{
+    h+='<div class="deg-nosrc">'+esc(t('deg.noSourceUrl'))+'</div>';
+  }
+  h+='<div class="deg-source">'+esc(t('deg.source',{school:meta.school,year:plan.catalog_year||''}))+'</div>';
+  if(plan.last_verified) h+='<div class="deg-verified">'+esc(t('deg.lastVerified',{date:plan.last_verified}))+'</div>';
+  return h;
+}
 function headerHTML(plan,meta,done,earned,total,cap,view){
   const startYear=progFor(cur.slug).startYear;
   const pace=paceOf(plan,earned,startYear,cap);
@@ -1222,6 +1353,15 @@ function headerHTML(plan,meta,done,earned,total,cap,view){
   const paceCls=pace.onTrack?'on':'off';
   const paceTxt=pace.onTrack?t('deg.onTrack'):t('deg.behind',{n:pace.behind});
   const fin=cap?termAfter(remainingViewSems(plan,view,done)):finishTerm(plan,earned);
+  /* Plan identity block: school (+kind/city confirmation), program, degree,
+     concentration/track, catalog year — everything a student needs to be
+     sure this is THEIR plan before tapping courses. */
+  const conc=(plan&&plan.concentration)||(typeof cur!=='undefined'&&cur&&cur.track)||'';
+  const dtrk=degreeTrack(meta.degree);
+  const klabel=kindLabel(meta.kind||'');
+  let schoolLine=meta.school||'';
+  if(klabel) schoolLine+=' · '+klabel;
+  if(meta.city) schoolLine+=' · '+meta.city;
   let h='<div class="deg-head"><div class="deg-ring">'+
     '<svg width="76" height="76" viewBox="0 0 76 76" aria-hidden="true">'+
     '<circle cx="38" cy="38" r="32" fill="none" stroke="var(--surface2)" stroke-width="8"/>'+
@@ -1230,14 +1370,15 @@ function headerHTML(plan,meta,done,earned,total,cap,view){
     '<div class="deg-ring-num">'+pct+'%</div></div>'+
     '<div class="deg-head-meta">'+
     '<div class="deg-planname">'+esc(meta.degree)+' · '+esc(meta.major)+'</div>'+
-    '<div class="deg-schoolname">'+esc(meta.school)+'</div>'+
+    (conc?'<div class="deg-conc">'+esc(t('deg.trackOf',{track:conc}))+'</div>':'')+
+    (dtrk?'<span class="deg-trackchip '+dtrk+'">'+esc(t(dtrk==='transfer'?'deg.trackTransfer':'deg.trackCareer'))+'</span>':'')+
+    (plan.catalog_year?'<div class="deg-catyr">'+esc(t('deg.catYr',{year:plan.catalog_year}))+'</div>':'')+
+    '<div class="deg-schoolname">'+esc(schoolLine)+'</div>'+
     '<div class="deg-pace '+paceCls+'">'+esc(paceTxt)+'</div>'+
     '<div class="deg-earned">'+esc(t('deg.earnedOf',{a:earned,b:total}))+'</div>'+
     '</div></div>';
   if(fin) h+='<div class="deg-finish">'+esc(t(cap?'deg.finishHintPace':'deg.finishHint',{n:cap,term:fin}))+'</div>';
-  h+='<div class="deg-source">'+esc(t('deg.source',{school:meta.school,year:plan.catalog_year||''}))+
-    ' · <a href="'+esc(plan.source_url||'#')+'" target="_blank" rel="noopener">'+esc(t('deg.viewCatalog'))+'</a></div>';
-  if(plan.last_verified) h+='<div class="deg-verified">'+esc(t('deg.lastVerified',{date:plan.last_verified}))+'</div>';
+  h+=sourceHTML(plan,meta);
   if(plan.transfer_confidence==='advisory')
     h+='<div class="deg-advisory">'+esc(t('deg.advisoryNote'))+'</div>';
   return h;
@@ -1585,9 +1726,7 @@ function xferHTML(plan,meta,done,earned,total){
   const idxPlans=(DATA.idx&&DATA.idx.plans)||[];
   const bySlug={};
   idxPlans.forEach(function(p){ bySlug[p.slug]=p; });
-  let h='<div class="deg-source">'+esc(t('deg.source',{school:meta.school,year:plan.catalog_year||''}))+
-    ' · <a href="'+esc(plan.source_url||'#')+'" target="_blank" rel="noopener">'+esc(t('deg.viewCatalog'))+'</a></div>';
-  if(plan.last_verified) h+='<div class="deg-verified">'+esc(t('deg.lastVerified',{date:plan.last_verified}))+'</div>';
+  let h=sourceHTML(plan,meta);
   if(plan.transfer_confidence==='advisory')
     h+='<div class="deg-advisory">'+esc(t('deg.advisoryNote'))+'</div>';
   const perSchool={}; /* school -> {credits} */

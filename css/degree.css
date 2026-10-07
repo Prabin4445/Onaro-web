@@ -182,6 +182,35 @@ body.dark .deg-pace.off{color:var(--amber)}
   font-size:11.5px;color:var(--muted);text-align:center;margin:0 4px 12px;
 }
 .deg-source a{color:var(--accent-strong);font-weight:700;text-decoration:none}
+.deg-kind{
+  display:inline-block;font-size:10.5px;font-weight:800;color:var(--accent-strong);
+  background:rgba(var(--volt-rgb),.14);border:1px solid rgba(var(--volt-rgb),.4);
+  border-radius:999px;padding:2px 9px;white-space:nowrap;vertical-align:1px;
+}
+.deg-track{display:block;font-size:12px;font-weight:700;color:var(--accent-strong);margin-top:1px}
+/* author display beats UA [hidden] — re-hide explicitly (hidden-vs-display lesson) */
+.deg-track[hidden]{display:none}
+/* plan-view identity: concentration, catalog year, transfer/career track */
+.deg-conc{font-size:13px;font-weight:800;color:var(--accent-strong);margin-top:3px}
+.deg-catyr{font-size:12.5px;font-weight:800;color:var(--ink-2);margin-top:3px}
+.deg-trackchip{
+  display:inline-block;font-size:10.5px;font-weight:800;border-radius:999px;
+  padding:3px 10px;margin:5px 6px 0 0;white-space:nowrap;
+}
+.deg-trackchip.transfer{
+  color:var(--accent-strong);background:rgba(var(--volt-rgb),.14);
+  border:1px solid rgba(var(--volt-rgb),.4);
+}
+.deg-trackchip.career{color:var(--warn);background:rgba(180,83,9,.10);border:1px solid rgba(180,83,9,.35)}
+body.dark .deg-trackchip.career{color:var(--amber);background:rgba(251,191,36,.10);border-color:rgba(251,191,36,.3)}
+.deg-srcbtn{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin:2px 0 8px;padding:12px 14px;border-radius:14px;
+  font-size:13.5px;font-weight:800;color:var(--accent-ink);background:var(--volt);
+  text-decoration:none;
+}
+.deg-srcbtn:active{transform:scale(.98)}
+.deg-nosrc{font-size:11.5px;color:var(--muted);text-align:center;margin:0 4px 12px}
 .deg-verified{
   font-size:11px;color:var(--muted);text-align:center;margin:-8px 4px 12px;opacity:.85;
 }
