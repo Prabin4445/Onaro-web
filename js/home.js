@@ -121,13 +121,79 @@ function capsuleRowHTML(){
 
 /* ============ new glossy sections (2026-10-05) ============ */
 
+/* ============ time-aware hero personality (2026-10-07) ============ */
+/* Onaro's voice: confident, warm, slightly playful. Confident orbit/space
+   metaphors are on-brand ("Everything in your orbit"); no cringe, no
+   corporate slang. Greetings rotate per band by day-of-year so they don't
+   repeat daily. The contextual line draws ONLY from real store state. */
+function greetBand(h){
+  if(h>=5&&h<7)  return 'early';
+  if(h>=7&&h<12) return 'morn';
+  if(h>=12&&h<14) return 'mid';
+  if(h>=14&&h<17) return 'aft';
+  if(h>=17&&h<23) return 'eve';
+  return 'night'; /* 23-5 */
+}
+function dayOfYear(d){
+  return Math.floor((d-new Date(d.getFullYear(),0,0))/86400000);
+}
+/* Band variant, deterministic per day: variant count is probed (not
+   hardcoded) so key changes never break the math. */
+function heroGreeting(){
+  const now=new Date(), band=greetBand(now.getHours());
+  let n=0;
+  while(t('hm.greet.'+band+'.'+n)!=='hm.greet.'+band+'.'+n) n++;
+  if(!n) return ui.greeting(); /* safety: fall back to the classic greeting */
+  return t('hm.greet.'+band+'.'+(dayOfYear(now)%n));
+}
+/* One contextual line: class/shift in session or starting soon, cached
+   weather, style wear streak, else a day-of-week line. The candidates are
+   built from real data; one is picked by daily rotation so the hero feels
+   alive without inventing anything. */
+function heroNote(){
+  const cands=[], now=new Date(), nowTs=now.getTime();
+  try{
+    if(HUB.classes){
+      const cur=(HUB.classes.currentClass&&HUB.classes.currentClass(nowTs))||null;
+      const shift=HUB.classes.isShiftMode&&HUB.classes.isShiftMode();
+      if(cur&&cur.cls&&cur.cls.subject){
+        cands.push(t(shift?'hm.note.shiftNow':'hm.note.classNow',{subj:cur.cls.subject}));
+      }else{
+        const nx=(HUB.classes.nextClass&&HUB.classes.nextClass(nowTs))||null;
+        if(nx&&nx.cls&&nx.cls.subject&&nx.startTs&&nx.startTs-nowTs<3*3600000&&nx.startTs>=nowTs){
+          const when=HUB.classes.fmtTime?HUB.classes.fmtTime(nx.cls.start):'';
+          cands.push(t(shift?'hm.note.shiftNext':'hm.note.classNext',{subj:nx.cls.subject,time:when}));
+        }
+      }
+    }
+  }catch(e){}
+  try{
+    if(HUB.wx&&HUB.wx.data){
+      const d=HUB.wx.data(); /* cached Open-Meteo only; null when not fetched yet */
+      if(d&&d.current&&d.current.weather_code!==undefined){
+        const g=HUB.wx.group(d.current.weather_code);
+        cands.push(g[2]+' '+t('hm.note.wx',{cond:t('daily.'+g[1]),temp:HUB.wx.temp(d.current.temperature_2m)}));
+      }
+    }
+  }catch(e){}
+  try{
+    if(HUB.style&&HUB.style.streak){
+      const n=HUB.style.streak(); /* consecutive days with a logged outfit */
+      if(n>=2) cands.push(t('hm.note.streak',{n:n}));
+    }
+  }catch(e){}
+  cands.push(t('hm.note.day.'+now.getDay()));
+  return cands[dayOfYear(now)%cands.length];
+}
+
 /* Hero banner: time-aware greeting + date line, astro art right, and the
    EXISTING 120-quote daily rotation inside a "TODAY'S MOTIVATION" card.
    Quote markup is untouched (same ids) so quote.bindQuoteCard keeps working. */
 function heroHTML(dateStr,me){
   return '<section class="hm-hero">'
     +'<div class="hm-hero-top"><div class="hm-hero-txt">'
-    +'<div class="hm-greet">'+ui.esc(ui.greeting())+', <span class="hm-hl">'+ui.esc(me)+'</span></div>'
+    +'<div class="hm-greet">'+ui.esc(heroGreeting())+', <span class="hm-hl">'+ui.esc(me)+'</span></div>'
+    +'<div class="hm-note">'+ui.esc(heroNote())+'</div>'
     +'<div class="hm-date">'+ui.esc(dateStr)+' · '+ui.esc(t('home.worldToday'))+'</div>'
     +'</div><div class="hm-hero-art">'+HUB.icons.icon('hm-hero-astro','hm-art')+'</div></div>'
     +((HUB.quote&&HUB.quote.cardHTML)?'<div class="hm-quote">'+HUB.quote.cardHTML()+'</div>':'')
