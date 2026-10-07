@@ -2966,7 +2966,7 @@ body.dark .auth-google{background:#f8f9fa}
 /* 3D CTA: clay press physics — lift at rest, compress on press */
 .auth-cta{box-shadow:0 12px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.45),inset 0 -3px 8px rgba(0,0,0,.12);
   transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
-.auth-cta:active{transform:translateY(2px) scale(.99);
+.auth-cta:active{transform:translateY(2px) scale(.98);
   box-shadow:0 5px 14px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 6px rgba(0,0,0,.14)}
 .auth-cta:hover{filter:brightness(1.04)}
 /* via-cards get depth too */
@@ -2994,6 +2994,73 @@ body.dark .auth-google{background:#f8f9fa}
 /* reduced motion: freeze the new moments too */
 @media (prefers-reduced-motion:reduce){
   .auth-mark,.auth-mark svg,.auth-bmote,.auth-wake{animation:none!important}
+}
+
+/* ============ auth entrance choreography + interaction (2026-10-07) ==========
+   Premium motion design for the login/signup/forgot overlay. Everything is
+   transform/opacity-only (iOS-safe) — the one exception is the card's blur-in,
+   explicitly requested. Fill mode is `backwards` (not `both`) so a finished
+   entrance releases the element: :active presses keep working afterwards.
+   Trigger: #authPage.auth-enter, added by render() via double-rAF after
+   innerHTML is set; stagger offsets (--st, 70ms steps) are assigned in JS
+   in DOM order: brand, title, fields, CTA. */
+#authPage.auth-enter .auth-step{animation:none}
+#authPage.auth-enter .auth-card{animation:authCardIn .7s cubic-bezier(.22,1,.36,1) backwards}
+@keyframes authCardIn{
+  0%{opacity:0;transform:perspective(900px) rotateX(8deg) translateY(26px);filter:blur(8px)}
+  100%{opacity:1;transform:none;filter:blur(0)}}
+/* staggered field entrances: subtle rise + fade, 70ms apart */
+#authPage.auth-enter .auth-brand,
+#authPage.auth-enter .auth-card .auth-title,
+#authPage.auth-enter .auth-card .field,
+#authPage.auth-enter .auth-card .auth-cta{
+  animation:authStagger .5s cubic-bezier(.22,1,.36,1) backwards;
+  animation-delay:var(--st,0ms)}
+@keyframes authStagger{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* brand logo: gentle continuous float (±4px, 5s) + shine sweep every ~6s.
+   The sweep lives on .auth-markclip::after so the drop-shadow filter on
+   .auth-mark (which would clip under overflow:hidden) is untouched. */
+.auth-markclip{position:relative;display:block;width:100%;height:100%;overflow:hidden;border-radius:14px}
+#authPage .auth-markclip svg{animation:authFloatLogo 5s ease-in-out infinite}
+@keyframes authFloatLogo{0%,100%{transform:translateY(4px)}50%{transform:translateY(-4px)}}
+.auth-markclip::after{content:"";position:absolute;top:-12%;bottom:-12%;left:0;width:45%;
+  border-radius:8px;pointer-events:none;
+  background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);
+  transform:translateX(-170%) skewX(-18deg);
+  animation:authShine 6s ease-in-out infinite}
+@keyframes authShine{0%{transform:translateX(-170%) skewX(-18deg)}
+  32%{transform:translateX(380%) skewX(-18deg)}
+  100%{transform:translateX(380%) skewX(-18deg)}}
+/* CTA press: 3D press + volt glow ripple (pseudo, scale+fade only) */
+.auth-cta{position:relative;overflow:hidden}
+.auth-cta::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(circle at 50% 50%,rgba(var(--volt-rgb),.5),rgba(var(--volt-rgb),0) 70%);
+  opacity:0;transform:scale(.5);
+  transition:opacity .22s ease,transform .22s ease}
+.auth-cta:active::after{opacity:1;transform:scale(1.35);transition-duration:.1s}
+/* input focus: volt glow ring + border brighten + subtle lift, 200ms */
+.auth-card .input{transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.auth-card .input:focus{transform:translateY(-1px)}
+/* success beat: card pop (1 -> 1.03 -> 1, 320ms) + volt glow flash, then the
+   overlay fades out. successClose() dismisses at 360ms — under the 450ms
+   budget from the lingering-dialog fix (d63220e). */
+.authroot{transition:opacity .18s ease-out}
+.authroot.auth-leaving{opacity:0}
+#authPage .auth-card.auth-success{animation:authPop .32s cubic-bezier(.22,1,.36,1)}
+@keyframes authPop{0%{transform:scale(1)}40%{transform:scale(1.03)}100%{transform:scale(1)}}
+#authPage .auth-card.auth-success .auth-gloss{
+  background:linear-gradient(115deg,rgba(var(--volt-rgb),.6),rgba(var(--volt-rgb),0) 48%);
+  animation:authFlash .32s ease-out}
+@keyframes authFlash{0%{opacity:0}35%{opacity:1}100%{opacity:0}}
+/* reduced motion: everything instant, final state visible */
+@media (prefers-reduced-motion:reduce){
+  #authPage.auth-enter .auth-brand,#authPage.auth-enter .auth-card,
+  #authPage.auth-enter .auth-card .auth-title,#authPage.auth-enter .auth-card .field,
+  #authPage.auth-enter .auth-card .auth-cta,#authPage .auth-markclip svg,
+  .auth-markclip::after,#authPage .auth-card.auth-success,
+  #authPage .auth-card.auth-success .auth-gloss{animation:none!important;transition:none!important}
+  .authroot{transition:none!important}
+  .authroot.auth-leaving{opacity:1!important}
 }
 
 /* ================= HOME MANAGED (2026-09-29) — one visual language ============

@@ -216,7 +216,7 @@ function loginWithFaceId(){
   }).then(function(assertion){
     if(!assertion) throw new Error('no-assertion');
     signIn(u,true);
-    close();
+    successClose();
     ui.toast(t('auth.signedInAs',{name:u.name}));
   }).catch(function(){ ui.toast(t('auth.faceIdNA')); });
 }
@@ -243,9 +243,12 @@ function motesHTML(){
 }
 function open(view,step){
   ensureRoot();
+  /* a celebration timer from a previous success must never hide a fresh view */
+  if(celebrateTimer){ clearTimeout(celebrateTimer); celebrateTimer=null; }
   curView=view; curStep=step||0; backDir=false;
   document.body.classList.add('auth-open');
   rootEl.hidden=false;
+  rootEl.classList.remove('auth-leaving');
   render();
   try{ if(HUB.authplanet) HUB.authplanet.start(); }catch(e){}
   try{ var f=pageEl.querySelector('input:not([type=hidden])')||pageEl.querySelector('select'); if(f) f.focus({preventScroll:true}); }catch(e){}
@@ -294,11 +297,43 @@ function render(){
   else if(curView==='signup') html=(curStep===1?su1HTML():su3HTML());
   else if(curView==='enroll') html=enrollHTML();
   pageEl.innerHTML='<div class="auth-step'+(backDir?' back':'')+'">'+html+'</div>';
+  playEnter();
   if(curView==='login') wireLogin();
   else if(curView==='signup'){ if(curStep===1) wireSu1(); else wireSu3(); }
   else if(curView==='enroll') wireEnroll();
 }
 function goStep(n,back){ curStep=n; backDir=!!back; render(); }
+/* Entrance choreography trigger: drop .auth-enter, assign 70ms stagger
+   offsets (--st) in DOM order (brand, title, fields, CTA), then re-add the
+   class after paint via double-rAF so every render replays the 3D card rise
+   + staggered entrances. */
+function playEnter(){
+  if(!pageEl) return;
+  pageEl.classList.remove('auth-enter');
+  try{
+    var ts=pageEl.querySelectorAll('.auth-brand,.auth-card .auth-title,.auth-card .field,.auth-card .auth-cta');
+    for(var i=0;i<ts.length;i++) ts[i].style.setProperty('--st',(i*70)+'ms');
+  }catch(e){}
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){ if(pageEl) pageEl.classList.add('auth-enter'); });
+  });
+}
+/* Success beat: card pop + volt flash, then the overlay fades out.
+   Total added delay ~360ms — under the 450ms budget from the lingering-dialog
+   fix (d63220e). Reduced motion skips the beat and dismisses immediately. */
+var celebrateTimer=null;
+function successClose(){
+  var reduced=false;
+  try{ reduced=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches); }catch(e){}
+  if(reduced){ close(); return; }
+  try{
+    var card=pageEl?pageEl.querySelector('.auth-card'):null;
+    if(card) card.classList.add('auth-success');
+    if(rootEl) rootEl.classList.add('auth-leaving');
+  }catch(e){}
+  if(celebrateTimer) clearTimeout(celebrateTimer);
+  celebrateTimer=setTimeout(function(){ celebrateTimer=null; close(); },360);
+}
 function errShow(id,msg){
   var p=document.getElementById(id);
   if(!p) return;
@@ -308,7 +343,7 @@ function errShow(id,msg){
 function brandHTML(){
   var mark='';
   try{ mark=(HUB.icons&&HUB.icons.logoMark)?HUB.icons.logoMark('H'):''; }catch(e){}
-  return '<div class="auth-brand"><span class="auth-mark">'+mark+'</span><span><span class="auth-brandname">Onaro</span>'
+  return '<div class="auth-brand"><span class="auth-mark"><span class="auth-markclip">'+mark+'</span></span><span><span class="auth-brandname">Onaro</span>'
     +'<span class="auth-brandsub">'+esc(t('app.brandSub'))+'</span></span></div>';
 }
 function stepDots(n,total){
@@ -412,11 +447,10 @@ function wireLogin(){
         curView='signup'; goStep(3,false);
         return;
       }
-      /* Dismiss-first: Firebase auth succeeded — close the overlay immediately
-         so the user sees Home, then do the backend handshake in the background.
-         The old code gated close() on the backend round-trip + a 520ms timer,
-         leaving the dialog up for seconds (PraBin 2026-10-07). */
-      close();
+      /* Dismiss-first: Firebase auth succeeded — play the quick success beat
+         (pop + volt flash, ~360ms, under the 450ms budget), then close so the
+         user sees Home; the backend handshake runs in the background. */
+      successClose();
       done(true);
       finishFirebaseLogin(user, remember).catch(function(e){
         try{ ui.toast(t('auth.errBackend')||'Sign-in sync failed — please retry.'); }catch(e2){}
@@ -674,7 +708,7 @@ function completeBackendSignup(backendUser){
       if(p){ p.name=''; p.campus=''; }
       HUB.store.save();
     }catch(e){}
-    close();
+    successClose();
     ui.toast(t('auth.welcomeNew',{name:u.name}));
     if(HUB.i18n&&HUB.i18n.ensureWelcome){
       HUB.i18n.ensureWelcome(function(){
@@ -685,7 +719,7 @@ function completeBackendSignup(backendUser){
     }
   }else{
     ui.toast(t('auth.signedInAs',{name:u.name||u.email}));
-    close();
+    successClose();
   }
 }
 
@@ -706,7 +740,7 @@ function wireEnroll(){
   var u=currentUser();
   document.getElementById('enRoll').onclick=function(){
     if(!u){ close(); return; }
-    enrollFaceId(u).then(function(ok){ if(ok) close(); });
+    enrollFaceId(u).then(function(ok){ if(ok) successClose(); });
   };
   document.getElementById('enSkip').onclick=function(){ close(); };
   /* the magical moment: a burst of sparkles rises off the checkmark */
