@@ -135,6 +135,18 @@
 
   /* ---------- professor directory ---------- */
   // -> {colleges:[{slug,name,country,match,source,retrieved,count}]}
+  /* National directory schools for the degree-plan directory search.
+     API-first: the static data/degrees/inventory/dir.json is not served by
+     the live host (SPA fallback), so the directory search must not depend
+     on it. Returns {schools:[{slug,name,city,state,country,kind}]}. */
+  function dirSchools(){
+    return aj('/api/schools?limit=20000').then(function(j){
+      return {schools:(j.items||[]).map(function(s){
+        return {slug:s.slug, name:s.name, city:s.city||'', state:s.state||'',
+                country:s.country||'US', kind:s.kind||''};
+      })};
+    });
+  }
   function facultyIndex(){
     return aj('/api/schools?limit=20000').then(function(j){
       return {colleges:(j.items||[]).map(function(s){
@@ -298,7 +310,7 @@
   window.HUB=window.HUB||{};
   window.HUB.api={
     on:on, base:base,
-    degreeIndex:degreeIndex, degreeFile:degreeFile,
+    degreeIndex:degreeIndex, degreeFile:degreeFile, dirSchools:dirSchools,
     facultyIndex:facultyIndex, facultyFile:facultyFile,
     horoscopeURL:horoscopeURL,
     // auth

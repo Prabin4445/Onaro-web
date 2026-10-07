@@ -847,6 +847,7 @@ function openPlan(slug){
       cur.track=planTrack(idx,slug,meta.degree,meta.major);
       normSemNumbers(cur.plan); /* plans missing semester `n` get 1-based numbers */
       xferMode=false; collapsed={}; lastPop=null; lastFloat=null;
+      try{ ui().closeSheet(); }catch(e){} /* plan-switch reset: fresh plan, no leftover sheet */
       progFor(slug); /* ensure startYear is stamped on first activation */
       migrateDoneOcc(slug,cur.plan); /* one-time: legacy done records gain occurrence identity */
       dstate().active=slug; save();
@@ -905,6 +906,7 @@ function renderPicker(){
   if(!body) return null;
   cur=null; xferMode=false;
   browseState.school=null;
+  try{ ui().closeSheet(); }catch(e){} /* plan-switch reset: no sheet may survive into the picker */
   document.getElementById('degTitle').textContent=t('deg.entryTitle');
   body.innerHTML=
     '<div class="deg-search"><div class="field" style="margin:0"><input class="input" id="degQ" autocomplete="off" placeholder="'+esc(t('deg.searchPh'))+'" value="'+esc(pickState.q)+'"></div></div>'+
@@ -1078,9 +1080,29 @@ let browseState={school:null};
 const NAT={dir:null,dirP:null,states:{},stateP:{}};
 function natDir(){
   if(NAT.dir) return Promise.resolve(NAT.dir);
-  if(!NAT.dirP) NAT.dirP=_fj('data/degrees/inventory/dir.json')
-    .then(function(j){ NAT.dir=j; return j; })
-    .catch(function(){ NAT.dir={schools:[]}; return NAT.dir; });
+  if(!NAT.dirP) NAT.dirP=Promise.resolve()
+    /* API first: the static dir.json is not served by the live host
+       (SPA fallback returns index.html), so the directory search must
+       prefer the backend. Static file remains the offline/dev fallback. */
+    .then(function(){
+      if(window.HUB&&HUB.api&&HUB.api.on()&&HUB.api.dirSchools)
+        return HUB.api.dirSchools().catch(function(){ return null; });
+      return null;
+    })
+    .then(function(apiDir){ return apiDir||_fj('data/degrees/inventory/dir.json'); })
+    .then(function(j){
+      /* Normalize the API object shape {schools:[{slug,name,...}]} to the
+         dir.json row shape [[unitid|slug,name,city,state,kind,pt,pc]]. */
+      if(j&&j.schools&&j.schools.length&&typeof j.schools[0]==='object'&&!Array.isArray(j.schools[0])){
+        NAT.dir={schools:j.schools.map(function(s){
+          return [s.slug||'', s.name||'', s.city||'', s.state||'', s.kind||'', 0, 0];
+        }), api:true};
+      }else{
+        NAT.dir=j; NAT.dir.api=false;
+      }
+      return NAT.dir;
+    })
+    .catch(function(){ NAT.dir={schools:[],api:false}; return NAT.dir; });
   return NAT.dirP;
 }
 function natState(st){
@@ -1210,13 +1232,40 @@ function updateDirectory(){
 function renderBrowseSchool(box){
   const s=browseState.school;
   box.innerHTML=degSkelRows(8);
-  natDir().then(function(d){
+  Promise.all([
+    natDir(),
+    natState(s.st).catch(function(){ return {}; }),
+    degIndex().catch(function(){ return {plans:[],schools:[]}; })
+  ]).then(function(res){
+    const d=res[0], st=res[1], gidx=res[2];
+    if(!document.getElementById('degBResults')) return;
     const row=(d.schools||[]).filter(function(r){ return String(r[0])===String(s.u); })[0]||[];
     const name=row[1]||'', loc=(row[2]||'')+', '+(row[3]||'');
     const bkind=kindLabel(row[4]||'');
-    natState(s.st).then(function(st){
-      if(!document.getElementById('degBResults')) return;
-      const progs=st[String(s.u)]||[];
+    /* Programs from two sources:
+       - IPEDS "coming soon" rows (static p-<ST>.json; unavailable on live)
+       - collected plans from the degree index (API on live, static offline).
+       Collected plans win; IPEDS rows dedupe against them by title. */
+    const ipeds=st[String(s.u)]||[];
+    let apiProgs=[];
+    try{
+      const norm=function(x){ return String(x||'').toLowerCase().replace(/^the\s+/,'').replace(/[^a-z0-9]/g,''); };
+      const gsch=(gidx.schools||[]).filter(function(g){
+        return String(g.slug)===String(s.u)||norm(g.name)===norm(name);
+      })[0];
+      if(gsch&&gsch.programs) apiProgs=gsch.programs;
+    }catch(e){}
+    const seen={};
+    const progs=[];
+    apiProgs.forEach(function(p){
+      const key=String(p.program||'').toLowerCase();
+      seen[key]=1;
+      progs.push([p.program||'', p.degree||'', p.plan_id||'', 'collected']);
+    });
+    ipeds.forEach(function(p){
+      if(seen[String(p[0]||'').toLowerCase()]) return;
+      progs.push(p);
+    });
       let h='<div class="deg-school"><div class="deg-school-hd"><div class="grow"><h3>'+esc(name)+'</h3>'+
         '<div class="meta">'+esc(loc)+(bkind?' · '+esc(bkind):'')+' · '+esc(t('deg.programsN',{n:progs.length}))+'</div></div></div>';
       let needTrack=false;
@@ -1254,7 +1303,6 @@ function renderBrowseSchool(box){
           else el.remove();
         });
       });
-    });
   });
 }
 
@@ -1844,5 +1892,173 @@ function bindEntry(scope){
   updateCounts(0);
 }
 
-HUB.degree={open:open,close:close,entryHTML:entryHTML,bindEntry:bindEntry,_state:dstate};
+/* ---------------- home progress card ----------------
+   "Degree progress" card for Home, directly above "Your classes".
+   Shows the ENROLLED plan's real numbers — same store, same done-record
+   model, same reflow/pace logic as the tracker view, so the card can never
+   disagree with the plan. No plan yet -> honest empty state, never faked.
+   - enrolledSlug(): dstate().active (set when a plan is opened); else the
+     plan with the most recently checked-off course; else null.
+   - snapshot(slug): loads the plan file, sums earned via occRec() (the same
+     function the tracker uses to paint checkmarks), reflows at the user's
+     pace, finds the current semester by calendar (intakeTerm vs today) with
+     fallback to the first semester that still has incomplete courses. */
+function enrolledSlug(){
+  const ds=dstate();
+  if(ds.active) return ds.active;
+  let best=null, bestTs=0;
+  Object.keys(ds.progress||{}).forEach(function(slug){
+    const p=ds.progress[slug]; if(!p||!p.done) return;
+    Object.keys(p.done).forEach(function(k){
+      const r=p.done[k], ts=(r&&typeof r==='object'&&r.ts)||0;
+      if(ts>bestTs){ bestTs=ts; best=slug; }
+    });
+  });
+  return best;
+}
+function progSnapshot(slug,plan,meta){
+  const p=progFor(slug), done=p.done||{};
+  const total=Math.max(0,Number(plan.total_credits)||0);
+  let earned=0;
+  semsOf(plan).forEach(function(sem,si){
+    (sem.courses||[]).forEach(function(c,ci){
+      if(occRec(done,plan,c,si,ci)) earned+=Math.max(0,Number(c.credits)||0);
+    });
+  });
+  earned=Math.min(earned,total);
+  const left=Math.max(0,total-earned);
+  const cap=(Number(p.pace)>0)?Number(p.pace):0;
+  const per=cap||15;
+  const view=reflowView(plan,cap);
+  /* current semester: calendar match first ... */
+  const now=new Date(), m=now.getMonth();
+  const cTerm=m>=8?'fall':(m<=4?'spring':'summer'), cYear=now.getFullYear();
+  let curIdx=-1;
+  for(let n=1;n<=view.length;n++){
+    const r=intakeTerm(n,p.intake);
+    if(r.term===cTerm&&r.year===cYear){ curIdx=n-1; break; }
+  }
+  /* ... else first semester with anything left to do ... */
+  if(curIdx<0){
+    for(let i=0;i<view.length;i++){
+      const items=view[i].items||[];
+      for(let j=0;j<items.length;j++){
+        if(!occRec(done,plan,items[j].c,items[j].si,items[j].ci)){ curIdx=i; break; }
+      }
+      if(curIdx>=0) break;
+    }
+  }
+  if(curIdx<0) curIdx=view.length?view.length-1:0;
+  let semCredits=0;
+  const semItems=(view[curIdx]&&view[curIdx].items)||[];
+  semItems.forEach(function(it){ semCredits+=Math.max(0,Number(it.c.credits)||0); });
+  const semLabel=semTermLabel(curIdx+1,p.intake,(view[curIdx]||{}).term);
+  const pct=total>0?Math.round(earned/total*100):0;
+  const fin=left>0?termAfter(Math.ceil(left/per)):null;
+  const name=meta?((meta.degree||'')+(meta.major?' · '+meta.major:'')):'';
+  return {slug:slug,total:total,earned:earned,left:left,pct:pct,
+    semCredits:semCredits,semLabel:semLabel,fin:fin,name:name,done:left<=0};
+}
+function homeProgressHTML(){
+  return '<div class="hsec" id="homeDegProg"><div class="degprog" id="degprogCard">'+
+    '<div class="degprog-skel"><div class="sk sk-ring"></div>'+
+    '<div class="sk sk-l1"></div><div class="sk sk-l2"></div></div></div></div>';
+}
+function homeProgressEmpty(){
+  return '<div class="degprog degprog-empty" id="degprogCard" role="button" tabindex="0" data-degprog-empty="1">'+
+    '<div class="degprog-ecap" aria-hidden="true">🎓</div>'+
+    '<div class="degprog-et">'+esc(t('deg.progTitle'))+'</div>'+
+    '<p>'+esc(t('deg.progEmpty'))+'</p>'+
+    '<span class="degprog-cta">'+esc(t('deg.progEmptyCta'))+'<span aria-hidden="true"> →</span></span></div>';
+}
+/* Renders the ring SVG. C = 2*pi*54 ≈ 339.292. */
+function progRingSVG(pct){
+  const C=339.292, off=(C*(1-Math.max(0,Math.min(100,pct))/100)).toFixed(1);
+  return '<svg class="degprog-ring" viewBox="0 0 120 120" aria-hidden="true">'+
+    '<defs><linearGradient id="dpg-g" x1="0" y1="0" x2="1" y2="1">'+
+    '<stop offset="0" stop-color="#E4FF7A"/><stop offset="1" stop-color="#9DC22B"/>'+
+    '</linearGradient></defs>'+
+    '<circle cx="60" cy="60" r="54" class="dpg-track"/>'+
+    '<circle cx="60" cy="60" r="54" class="dpg-bar" stroke-dasharray="'+C.toFixed(1)+
+    '" stroke-dashoffset="'+off+'" transform="rotate(-90 60 60)"/>'+
+    '<text x="60" y="56" text-anchor="middle" class="dpg-pct" id="dpgPct">0%</text>'+
+    '<text x="60" y="74" text-anchor="middle" class="dpg-done" id="dpgDoneLbl">'+esc(t('deg.progDone'))+'</text>'+
+    '</svg>';
+}
+function bindHomeProgress(scope){
+  const root=(scope&&scope.querySelector)?scope:document;
+  const host=root.querySelector?root.querySelector('#homeDegProg'):document.getElementById('homeDegProg');
+  if(!host) return;
+  const slug=enrolledSlug();
+  if(!slug){ host.innerHTML=homeProgressEmpty(); wireProgCard(host,null); return; }
+  Promise.all([degFile(slug),degIndex()]).then(function(res){
+    const file=res[0];
+    if(!host.isConnected) return;
+    if(!file||!file.plan){ host.innerHTML=homeProgressEmpty(); wireProgCard(host,null); return; }
+    const meta=((res[1]||{}).plans||[]).filter(function(x){ return x.slug===slug; })[0]||null;
+    const s=progSnapshot(slug,file.plan,meta);
+    const fx=(window.HUB&&HUB.fx)||null;
+    host.innerHTML=
+    '<div class="degprog" id="degprogCard" role="button" tabindex="0" data-degprog-open="'+esc(slug)+'">'+
+      '<div class="degprog-glow" aria-hidden="true"></div>'+
+      '<div class="degprog-top">'+
+        '<div class="degprog-ringwrap">'+progRingSVG(0)+'</div>'+
+        '<div class="degprog-main">'+
+          '<div class="degprog-label">'+esc(t('deg.progTitle'))+'</div>'+
+          (s.name?'<div class="degprog-plan">'+esc(s.name)+'</div>':'')+
+          '<div class="degprog-big"><span id="dpgLeft">0</span>'+
+          '<small>'+esc(t('deg.progLeft'))+'</small></div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="degprog-stats">'+
+        '<div class="degprog-stat"><b id="dpgSem">0</b><span>'+esc(t('deg.progThisSem'))+
+          '<em id="dpgSemLbl"></em></span></div>'+
+        '<div class="degprog-stat"><b id="dpgEarn">0</b><span>'+esc(t('deg.progDone'))+'</span></div>'+
+        '<div class="degprog-stat"><b id="dpgFin">—</b><span>'+esc(t('deg.progFinishes',{term:' '}))+'</span></div>'+
+      '</div>'+
+    '</div>';
+    wireProgCard(host,slug);
+    /* paint the real numbers: ring sweep + count-ups (Stripe/Revolut pattern) */
+    const bar=host.querySelector('.dpg-bar');
+    const C=339.292;
+    requestAnimationFrame(function(){
+      if(bar) bar.style.strokeDashoffset=(C*(1-s.pct/100)).toFixed(1);
+    });
+    const pctEl=host.querySelector('#dpgPct');
+    const leftEl=host.querySelector('#dpgLeft');
+    const semEl=host.querySelector('#dpgSem');
+    const earnEl=host.querySelector('#dpgEarn');
+    const semLbl=host.querySelector('#dpgSemLbl');
+    const finEl=host.querySelector('#dpgFin');
+    if(semLbl) semLbl.textContent=s.semLabel||'';
+    if(finEl) finEl.textContent=s.fin||'✓';
+    if(fx&&fx.countUp){
+      fx.countUp(pctEl,0,s.pct,{dur:900,format:function(v){ return Math.round(v)+'%'; }});
+      fx.countUp(leftEl,0,s.left,{dur:900});
+      fx.countUp(semEl,0,s.semCredits,{dur:900});
+      fx.countUp(earnEl,0,s.earned,{dur:900});
+    }else{
+      if(pctEl) pctEl.textContent=s.pct+'%';
+      if(leftEl) leftEl.textContent=String(s.left);
+      if(semEl) semEl.textContent=String(s.semCredits);
+      if(earnEl) earnEl.textContent=String(s.earned);
+    }
+  }).catch(function(){
+    if(!host.isConnected) return;
+    host.innerHTML=homeProgressEmpty(); wireProgCard(host,null);
+  });
+}
+function wireProgCard(host,slug){
+  const card=host.querySelector?host.querySelector('#degprogCard'):null;
+  if(!card||card._dpgWired) return;
+  card._dpgWired=1;
+  const go=function(){ open(slug||null); };
+  card.addEventListener('click',go);
+  card.addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); }
+  });
+}
+
+HUB.degree={open:open,close:close,entryHTML:entryHTML,bindEntry:bindEntry,_state:dstate,
+  homeProgressHTML:homeProgressHTML,bindHomeProgress:bindHomeProgress};
 })();
