@@ -528,17 +528,17 @@ function completedTerms(startYear){
   else n=(y-startYear)*2;              /* summer: fall+spring done */
   return Math.max(0,n);
 }
-function paceOf(plan,earned,startYear){
+function paceOf(plan,earned,startYear,cap){
   const total=Number(plan.total_credits)||0;
-  const expected=Math.min(completedTerms(startYear)*15,total);
+  const per=cap||15;
+  const expected=Math.min(completedTerms(startYear)*per,total);
   const onTrack=earned>=expected-3;
   return {expected:expected,earned:earned,onTrack:onTrack,behind:Math.max(0,expected-earned)};
 }
-/* Project the finishing term at 15 credits/semester from now. */
-function finishTerm(plan,earned){
-  const total=Number(plan.total_credits)||0;
-  const need=Math.ceil((total-earned)/15);
-  if(need<=0) return null;
+/* Project the finishing term `need` fall/spring terms from now
+   (summers don't count as terms, same as completedTerms). */
+function termAfter(need){
+  if(!(need>0)) return null;
   const now=new Date(), m=now.getMonth(), y=now.getFullYear();
   let season, yr;
   if(m>=8){ season='fall'; yr=y; }
@@ -549,6 +549,190 @@ function finishTerm(plan,earned){
     else { season='fall'; }
   }
   return t(season==='fall'?'deg.fall':'deg.spring')+' '+yr;
+}
+/* Project the finishing term at 15 credits/semester from now. */
+function finishTerm(plan,earned){
+  const total=Number(plan.total_credits)||0;
+  return termAfter(Math.ceil((total-earned)/15));
+}
+
+/* ---------------- my pace ----------------
+   "My pace": the student picks a credits-per-semester cap (9-18) and the
+   plan re-flows to that pace. 0 = "as published" (full-time, the default —
+   existing users see zero change until they touch the control).
+   Persisted per plan alongside intake/startYear in progFor(). */
+function paceCap(slug){
+  const p=progFor(slug);
+  const v=Math.floor(Number(p.pace)||0);
+  return (v>=9&&v<=18)?v:0;
+}
+function setPaceCap(slug,v){
+  if(!cur||cur.slug!==slug) return;
+  const p=progFor(slug);
+  const n=Math.floor(Number(v)||0);
+  p.pace=(n>=9&&n<=18)?n:0;
+  save(); renderTracker();
+}
+/* Flat course list in published order, each item keeping its published
+   (si,ci) identity. Completion keys, tiles, findCourse() and occRec() all
+   operate on published coordinates, so checkmarks survive any re-flow. */
+function paceItems(plan){
+  const out=[];
+  semsOf(plan).forEach(function(sem,si){
+    (sem.courses||[]).forEach(function(c,ci){ out.push({c:c,si:si,ci:ci}); });
+  });
+  return out;
+}
+/* Prereq constraints for item i, split by how the catalog itself schedules
+   the dependency relative to the course:
+   - strict: dep is published in an EARLIER semester -> the course must land
+     in a strictly later view semester.
+   - coreq: dep shares the course's published semester (corequisites like
+     NURS 2360 + NURS 2390, scheduled together) -> the course may share the
+     view semester but never land earlier than the dep.
+   - A dep published LATER than the course is broken catalog data (130 cases
+     in 13,112 plans); it gets no constraint so the published order is
+     preserved rather than "repaired" into something the catalog never said.
+   Conservative: a one_of group constrains against ALL its options, so the
+   course always lands after whichever option the student actually takes. */
+function paceDeps(flat,byCode,i){
+  const seen={}, strict=[], coreq=[];
+  const psi=flat[i].si;
+  function add(cd){
+    const h=byCode[normCode(cd)];
+    if(h==null||h===i||seen[h]) return;
+    seen[h]=1;
+    const psd=flat[h].si;
+    if(psd<psi) strict.push(h);
+    else if(psd===psi) coreq.push(h);
+  }
+  const items=flat[i].c.prereq||[];
+  for(let k=0;k<items.length;k++){
+    const p=items[k];
+    if(typeof p==='string') add(p);
+    else if(p&&Array.isArray(p.one_of)) p.one_of.forEach(add);
+    else if(p&&p.raw) extractCodes(p.raw).forEach(add);
+  }
+  return {strict:strict,coreq:coreq};
+}
+/* Re-flow a plan into semesters capped at `cap` credits.
+   - Published relative order is ALWAYS preserved (the safe fallback for the
+     ~89% of plans with no usable prereq data, and the task's requirement).
+   - Where prereq data exists: a genuine prereq (published earlier) forces
+     the course into a strictly later semester; a corequisite (same
+     published semester) may share the semester but never precede it.
+   - A single course over the cap gets its own semester — a course is never
+     split, and overflow is honest rather than silently dropped.
+   - Pathological catalog data (prereq published AFTER its dependent —
+     130 cases in 13,112 plans) gets no constraint: the published order is
+     preserved, never "repaired" into something the catalog never said.
+   - A single greedy pass in published order is exact: strict deps are
+     always published earlier (already placed); later-published coreq deps
+     need no constraint because monotonicity lands them at-or-after. */
+function reflowView(plan,cap){
+  const flat=paceItems(plan), n=flat.length;
+  const pubView=semsOf(plan).map(function(sem,si){
+    return {n:si+1,term:sem.term,pub:true,semN:sem.n,
+      items:(sem.courses||[]).map(function(c,ci){ return {c:c,si:si,ci:ci}; })};
+  });
+  if(!(cap>0)||!n) return pubView;
+  const byCode0={};
+  flat.forEach(function(it,i){
+    [it.c.code,it.c.tccns].forEach(function(cd){
+      const k=normCode(cd);
+      if(k&&byCode0[k]==null) byCode0[k]=i;
+    });
+  });
+  /* Within each published semester, stable topo-sort by corequisite edges so
+     a same-semester prereq is always processed before its dependent (the
+     catalog's prereq direction is honored even inside one semester).
+     Only intra-semester coreq edges participate; strict deps (earlier
+     semesters) and backward data are untouched. Cycles keep published order.
+     Stable: non-constrained pairs keep their catalog listing order. */
+  (function(){
+    const bySem={};
+    flat.forEach(function(it,i){ (bySem[it.si]=bySem[it.si]||[]).push(i); });
+    const newOrder=[];
+    Object.keys(bySem).forEach(function(sk){
+      const members=bySem[sk], pos={};
+      members.forEach(function(mi,k){ pos[mi]=k; });
+      const succ=members.map(function(){ return []; });
+      const indeg=members.map(function(){ return 0; });
+      members.forEach(function(mi,k){
+        paceDeps(flat,byCode0,mi).coreq.forEach(function(x){
+          if(x===mi||pos[x]==null) return;
+          succ[pos[x]].push(k); /* x before mi */
+          indeg[k]++;
+        });
+      });
+      const done=members.map(function(){ return false; });
+      for(let t=0;t<members.length;t++){
+        let pick=-1;
+        for(let k=0;k<members.length;k++)
+          if(!done[k]&&indeg[k]===0){ pick=k; break; }
+        if(pick<0){ /* cycle: keep the rest in published order */
+          for(let k=0;k<members.length;k++)
+            if(!done[k]){ newOrder.push(members[k]); done[k]=true; }
+          break;
+        }
+        done[pick]=true;
+        newOrder.push(members[pick]);
+        succ[pick].forEach(function(k){ indeg[k]--; });
+      }
+    });
+    const sorted=newOrder.map(function(i){ return flat[i]; });
+    flat.length=0;
+    sorted.forEach(function(it){ flat.push(it); });
+  })();
+  const byCode={};
+  flat.forEach(function(it,i){
+    [it.c.code,it.c.tccns].forEach(function(cd){
+      const k=normCode(cd);
+      if(k&&byCode[k]==null) byCode[k]=i;
+    });
+  });
+  const deps=flat.map(function(_,i){ return paceDeps(flat,byCode,i); });
+  const cr=function(i){ return Math.max(0,Number(flat[i].c.credits)||0); };
+  /* Single greedy pass in published order. This is exact (no fixpoint
+     needed): a strict dep is always published earlier, hence already placed;
+     a coreq dep published earlier is likewise placed; a coreq dep published
+     later gets no constraint and monotonicity lands it at-or-after the
+     course. Published order is therefore always preserved. */
+  const placed=new Array(n), semCr=[];
+  for(let i=0;i<n;i++){
+    let m=-1, mc=-1;
+    const ds=deps[i];
+    for(let k=0;k<ds.strict.length;k++){ const v=placed[ds.strict[k]]; if(v!=null&&v>m) m=v; }
+    for(let k=0;k<ds.coreq.length;k++){ const v=placed[ds.coreq[k]]; if(v!=null&&v>mc) mc=v; }
+    let j=m+1;
+    if(mc>j) j=mc;                        /* corequisite: never earlier */
+    if(i>0&&placed[i-1]>j) j=placed[i-1]; /* published order preserved */
+    const c=cr(i);
+    for(;;j++){
+      const used=semCr[j]||0;
+      if(used===0||used+c<=cap) break;
+    }
+    placed[i]=j;
+    semCr[j]=(semCr[j]||0)+c;
+  }
+  const groups=[];
+  for(let i=0;i<n;i++){
+    const j=placed[i];
+    (groups[j]=groups[j]||[]).push(flat[i]);
+  }
+  return groups.map(function(g,j){ return {n:j+1,term:null,pub:false,items:g}; });
+}
+/* View semesters (at the student's pace) that still have incomplete courses.
+   Used for the pace-aware graduation estimate. */
+function remainingViewSems(plan,view,done){
+  let need=0;
+  view.forEach(function(vs){
+    const allDone=vs.items.every(function(it){
+      return !!occRec(done,plan,it.c,it.si,it.ci);
+    });
+    if(!allDone) need++;
+  });
+  return need;
 }
 /* ---------------- start-intake term labels ----------------
    Semester n (1-based) -> {term, year} rotated from the student's intake.
@@ -969,9 +1153,12 @@ function renderTracker(){
   let h=tabs;
   h+='<div style="text-align:center;margin:0 0 10px"><button class="btn btn-line btn-sm" id="degSwitch">'+esc(t('deg.switch'))+'</button></div>';
   if(!xferMode){
-    h+=headerHTML(plan,meta,done,earned,total);
+    const cap=paceCap(cur.slug);
+    const view=reflowView(plan,cap);
+    h+=headerHTML(plan,meta,done,earned,total,cap,view);
     h+=intakeHTML(cur.slug);
-    semsOf(plan).forEach(function(sem,si){ h+=semHTML(plan,sem,done,si); });
+    h+=paceHTML(plan,done,cap,view);
+    view.forEach(function(vs){ h+=semHTML(plan,done,vs); });
   }else{
     h+=xferHTML(plan,meta,done,earned,total);
   }
@@ -1007,14 +1194,34 @@ function setIntakeYear(slug,delta){
   p.startYear=y; /* intake year IS the start year the pace calc uses */
   save(); renderTracker();
 }
-function headerHTML(plan,meta,done,earned,total){
+/* "My pace" control: credits-per-semester chips. 0 = as published.
+   When a custom pace is active, a banner states the reshaped timeline and
+   the graduation estimate at that pace. */
+function paceHTML(plan,done,cap,view){
+  const opts=[0,12,13,14,15,16];
+  const chips=opts.map(function(v){
+    const lab=v===0?t('deg.paceFull'):String(v);
+    return '<button class="deg-pace-chip'+(cap===v?' on':'')+'" data-pace="'+v+'" aria-pressed="'+(cap===v)+'">'+
+      esc(lab)+'</button>';
+  }).join('');
+  let h='<div class="deg-pace-ctl" role="group" aria-label="'+esc(t('deg.paceT'))+'">'+
+    '<span class="deg-intake-lab">'+esc(t('deg.paceT'))+'</span>'+
+    '<div class="deg-pace-chips">'+chips+'</div></div>';
+  if(cap&&view&&view.length){
+    const fin=termAfter(remainingViewSems(plan,view,done));
+    h+='<div class="deg-pace-banner">'+esc(t('deg.paceBanner',{n:cap,s:view.length}))+
+      (fin?' · '+esc(t('deg.paceFinish',{term:fin})):'')+'</div>';
+  }
+  return h;
+}
+function headerHTML(plan,meta,done,earned,total,cap,view){
   const startYear=progFor(cur.slug).startYear;
-  const pace=paceOf(plan,earned,startYear);
+  const pace=paceOf(plan,earned,startYear,cap);
   const pct=total?Math.min(100,Math.round(earned/total*100)):0;
   const C=2*Math.PI*32, off=(C*(1-pct/100)).toFixed(1);
   const paceCls=pace.onTrack?'on':'off';
   const paceTxt=pace.onTrack?t('deg.onTrack'):t('deg.behind',{n:pace.behind});
-  const fin=finishTerm(plan,earned);
+  const fin=cap?termAfter(remainingViewSems(plan,view,done)):finishTerm(plan,earned);
   let h='<div class="deg-head"><div class="deg-ring">'+
     '<svg width="76" height="76" viewBox="0 0 76 76" aria-hidden="true">'+
     '<circle cx="38" cy="38" r="32" fill="none" stroke="var(--surface2)" stroke-width="8"/>'+
@@ -1027,7 +1234,7 @@ function headerHTML(plan,meta,done,earned,total){
     '<div class="deg-pace '+paceCls+'">'+esc(paceTxt)+'</div>'+
     '<div class="deg-earned">'+esc(t('deg.earnedOf',{a:earned,b:total}))+'</div>'+
     '</div></div>';
-  if(fin) h+='<div class="deg-finish">'+esc(t('deg.finishHint',{term:fin}))+'</div>';
+  if(fin) h+='<div class="deg-finish">'+esc(t(cap?'deg.finishHintPace':'deg.finishHint',{n:cap,term:fin}))+'</div>';
   h+='<div class="deg-source">'+esc(t('deg.source',{school:meta.school,year:plan.catalog_year||''}))+
     ' · <a href="'+esc(plan.source_url||'#')+'" target="_blank" rel="noopener">'+esc(t('deg.viewCatalog'))+'</a></div>';
   if(plan.last_verified) h+='<div class="deg-verified">'+esc(t('deg.lastVerified',{date:plan.last_verified}))+'</div>';
@@ -1035,28 +1242,35 @@ function headerHTML(plan,meta,done,earned,total){
     h+='<div class="deg-advisory">'+esc(t('deg.advisoryNote'))+'</div>';
   return h;
 }
-function semHTML(plan,sem,done,si){
-  const crs=sem.courses||[];
+/* Render one semester section. `vw` is a pace-view semester:
+   {n, term, pub, items:[{c,si,ci}]}. Published coordinates (si,ci) are
+   preserved on every item, so completion keys, tiles and swipe handlers
+   work identically in the re-flowed view. Collapse keys are namespaced so
+   the "as published" and "my pace" views keep independent open state. */
+function semHTML(plan,done,vw){
+  const items=vw.items, n=vw.n;
+  const ckey=vw.pub?vw.semN:('pace:'+n);
   let semCr=0, semEarn=0, allDone=true;
-  crs.forEach(function(c,ci){
+  items.forEach(function(it){
+    const c=it.c;
     semCr+=Number(c.credits)||0;
-    const rec=occRec(done,plan,c,si,ci);
+    const rec=occRec(done,plan,c,it.si,it.ci);
     if(rec) semEarn+=Number(rec.credits!=null?rec.credits:c.credits)||0;
     else allDone=false;
   });
-  const isOpen=collapsed[sem.n]!==undefined?!collapsed[sem.n]:!allDone;
-  collapsed[sem.n]=!isOpen;
+  const isOpen=collapsed[ckey]!==undefined?!collapsed[ckey]:!allDone;
+  collapsed[ckey]=!isOpen;
   const pct=semCr?Math.round(semEarn/semCr*100):0;
-  let h='<section class="deg-sem'+(isOpen?' open':'')+'" data-sem="'+sem.n+'">'+
-    '<button class="deg-sem-hd" data-semtgl="'+sem.n+'"><span class="grow">'+
-    '<span class="t">'+esc(semTermLabel(sem.n,intakeOf(cur.slug),sem.term))+'</span>'+
+  let h='<section class="deg-sem'+(isOpen?' open':'')+'" data-sem="'+esc(String(ckey))+'">'+
+    '<button class="deg-sem-hd" data-semtgl="'+esc(String(ckey))+'"><span class="grow">'+
+    '<span class="t">'+esc(semTermLabel(n,intakeOf(cur.slug),vw.term))+'</span>'+
     '<span class="s">'+esc(t('deg.semCredits',{n:semCr}))+
     (allDone?' · '+esc(t('deg.semDone')):'')+'</span>'+
     '<span class="deg-sem-bar"><i style="width:'+pct+'%"></i></span></span>'+
     (allDone?'<span class="deg-sem-done">✓</span>':'')+
     '<span class="deg-sem-chev">›</span></button>'+
     '<div class="deg-sem-body">';
-  crs.forEach(function(c,ci){ h+=tileHTML(plan,c,done,si,ci); });
+  items.forEach(function(it){ h+=tileHTML(plan,it.c,done,it.si,it.ci); });
   h+='</div></section>';
   return h;
 }
@@ -1095,12 +1309,15 @@ function bindTracker(){
   if(tx) tx.onclick=function(){ xferMode=true; renderTracker(); };
   body.querySelectorAll('[data-semtgl]').forEach(function(btn){
     btn.onclick=function(){
-      const n=Number(btn.dataset.semtgl);
-      collapsed[n]=!collapsed[n];
-      const sec=body.querySelector('[data-sem="'+n+'"]');
-      if(sec) sec.classList.toggle('open',!collapsed[n]);
+      const key=btn.dataset.semtgl;
+      collapsed[key]=!collapsed[key];
+      const sec=body.querySelector('[data-sem="'+key+'"]');
+      if(sec) sec.classList.toggle('open',!collapsed[key]);
       btn.querySelector('.deg-sem-chev').style.transform='';
     };
+  });
+  body.querySelectorAll('[data-pace]').forEach(function(btn){
+    btn.onclick=function(){ setPaceCap(cur.slug,btn.dataset.pace); };
   });
   body.querySelectorAll('.deg-tile').forEach(function(tile){
     tileDrag(tile);

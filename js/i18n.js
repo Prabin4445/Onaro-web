@@ -7665,7 +7665,12 @@ Object.assign(HUB.i18n._dict('en'),{
 'deg.catCore':'Core',
 'deg.catMajor':'Major',
 'deg.catElective':'Elective',
-'deg.yourChoice':'Your choice'
+'deg.yourChoice':'Your choice',
+'deg.paceT':'My pace',
+'deg.paceFull':'As published',
+'deg.paceBanner':'Your pace: {n} credits/semester · {s} semesters',
+'deg.paceFinish':'finishes {term} at your pace',
+'deg.finishHintPace':'{n} credits/semester finishes this plan by {term}'
 });
 Object.assign(HUB.i18n._dict('es'),{
 'deg.entryTitle':'Planes de estudio',
@@ -7731,7 +7736,12 @@ Object.assign(HUB.i18n._dict('es'),{
 'deg.catCore':'Tronco común',
 'deg.catMajor':'Carrera',
 'deg.catElective':'Optativa',
-'deg.yourChoice':'Tu elección'
+'deg.yourChoice':'Tu elección',
+'deg.paceT':'Mi ritmo',
+'deg.paceFull':'Como publicado',
+'deg.paceBanner':'Tu ritmo: {n} créditos/semestre · {s} semestres',
+'deg.paceFinish':'termina en {term} a tu ritmo',
+'deg.finishHintPace':'{n} créditos/semestre terminan este plan en {term}'
 });
 Object.assign(HUB.i18n._dict('ne'),{
 'deg.entryTitle':'डिग्री योजनाहरू',
@@ -7797,7 +7807,12 @@ Object.assign(HUB.i18n._dict('ne'),{
 'deg.catCore':'कोर',
 'deg.catMajor':'मेजर',
 'deg.catElective':'ऐच्छिक',
-'deg.yourChoice':'तपाईंको रोजाइ'
+'deg.yourChoice':'तपाईंको रोजाइ',
+'deg.paceT':'मेरो गति',
+'deg.paceFull':'प्रकाशित अनुसार',
+'deg.paceBanner':'तपाईंको गति: {n} क्रेडिट/सेमेस्टर · {s} सेमेस्टर',
+'deg.paceFinish':'{term} मा तपाईंको गतिमा सकिन्छ',
+'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टरले यो योजना {term} सम्म सकिन्छ'
 });
 Object.assign(HUB.i18n._dict('hi'),{
 'deg.entryTitle':'डिग्री प्लान',
@@ -7863,7 +7878,12 @@ Object.assign(HUB.i18n._dict('hi'),{
 'deg.catCore':'कोर',
 'deg.catMajor':'मेजर',
 'deg.catElective':'इलेक्टिव',
-'deg.yourChoice':'आपकी पसंद'
+'deg.yourChoice':'आपकी पसंद',
+'deg.paceT':'मेरी गति',
+'deg.paceFull':'प्रकाशित अनुसार',
+'deg.paceBanner':'आपकी गति: {n} क्रेडिट/सेमेस्टर · {s} सेमेस्टर',
+'deg.paceFinish':'आपकी गति से {term} में समाप्त',
+'deg.finishHintPace':'{n} क्रेडिट/सेमेस्टर से यह प्लान {term} तक पूरा होगा'
 });
 
 /* ---- Daily health check 2026-09-30: missing key backfill ---- */

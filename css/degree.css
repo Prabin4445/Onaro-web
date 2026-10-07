@@ -56,6 +56,29 @@
 .deg-yrbtn:active{transform:scale(.92)}
 .deg-yrval{font-size:13.5px;font-weight:800;min-width:46px;text-align:center}
 
+/* ---------- my pace ---------- */
+.deg-pace-ctl{
+  background:var(--surface);border:1px solid var(--line);border-radius:16px;
+  padding:10px 12px;margin-bottom:10px;
+}
+.deg-pace-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px}
+.deg-pace-chip{
+  min-width:0;border:1px solid var(--line);background:var(--surface2);color:var(--ink-2);
+  border-radius:999px;padding:9px 4px;font-size:12.5px;font-weight:800;cursor:pointer;white-space:nowrap;
+  overflow:hidden;text-overflow:ellipsis;
+  transition:transform .15s var(--ease-spring),border-color .15s,background .15s;
+}
+.deg-pace-chip:active{transform:scale(.96)}
+.deg-pace-chip.on{background:rgba(var(--volt-rgb),.16);border-color:rgba(var(--volt-rgb),.55);color:var(--ink)}
+.deg-pace-banner{
+  margin:0 0 10px;padding:10px 12px;border-radius:14px;font-size:13px;font-weight:700;
+  color:var(--ink);background:rgba(var(--volt-rgb),.10);border:1px solid rgba(var(--volt-rgb),.35);
+}
+@media (prefers-reduced-motion:reduce){
+  .deg-pace-chip{transition:none}
+  .deg-pace-chip:active{transform:none}
+}
+
 /* ---------- picker ---------- */
 .deg-search{margin:2px 0 10px}
 .deg-chips{display:flex;gap:8px;margin-bottom:12px}
