@@ -196,6 +196,11 @@ function dstate(){
   return st.degree;
 }
 function save(){ store().save(); }
+/* Notify Home (and any other subscriber) that degree progress/tracking
+   changed. The subscriber re-binds only the progress card — targeted,
+   never a full Home re-render. Safe to call even when HUB.emit is missing
+   (very old cached shell): guarded. */
+function emitProgress(){ try{ if(window.HUB&&HUB.emit) HUB.emit('degree:progress'); }catch(e){} }
 function progFor(slug){
   const ds=dstate();
   let p=ds.progress[slug];
@@ -571,7 +576,7 @@ function setPaceCap(slug,v){
   const p=progFor(slug);
   const n=Math.floor(Number(v)||0);
   p.pace=(n>=9&&n<=18)?n:0;
-  save(); renderTracker();
+  save(); emitProgress(); renderTracker();
 }
 /* Flat course list in published order, each item keeping its published
    (si,ci) identity. Completion keys, tiles, findCourse() and occRec() all
@@ -799,7 +804,7 @@ function ensureClosed(){
   if(old) old.remove();
   document.removeEventListener('keydown',onKey,true);
 }
-function close(){ loadSeq++; /* invalidate any in-flight plan load */ ensureClosed(); cur=null; }
+function close(){ loadSeq++; /* invalidate any in-flight plan load */ ensureClosed(); cur=null; emitProgress(); /* Home progress card refreshes underneath */ }
 function onKey(e){
   if(e.key!=='Escape') return;
   const sh=document.getElementById('sheetHost');
@@ -1353,7 +1358,7 @@ function setIntakeTerm(slug,term){
   if(!cur||cur.slug!==slug) return;
   const p=progFor(slug);
   p.intake.term=(term==='spring'||term==='summer')?term:'fall';
-  save(); renderTracker();
+  save(); emitProgress(); renderTracker();
 }
 function setIntakeYear(slug,delta){
   if(!cur||cur.slug!==slug) return;
@@ -1361,7 +1366,7 @@ function setIntakeYear(slug,delta){
   const y=Math.min(2100,Math.max(1990,p.intake.year+Number(delta)));
   p.intake.year=y;
   p.startYear=y; /* intake year IS the start year the pace calc uses */
-  save(); renderTracker();
+  save(); emitProgress(); renderTracker();
 }
 /* "My pace" control: credits-per-semester chips. 0 = as published.
    When a custom pace is active, a banner states the reshaped timeline and
@@ -1552,14 +1557,14 @@ function bindTracker(){
     const ds=dstate();
     if(ds.tracked===cur.slug){ ds.tracked=null; }
     else{ ds.tracked=cur.slug; ds.active=cur.slug; }
-    save(); renderTracker();
+    save(); emitProgress(); renderTracker();
   };
   const rp=document.getElementById('degResetProg');
   if(rp) rp.onclick=function(){
     if(!cur) return;
     if(!window.confirm(t('deg.resetProgConfirm'))) return;
     const p=progFor(cur.slug);
-    p.done={}; p._occMig=0; save();
+    p.done={}; p._occMig=0; save(); emitProgress();
     renderTracker();
     if(window.HUB&&HUB.showTab) HUB.showTab('home');
   };
@@ -1586,7 +1591,7 @@ function toggleSlot(slotId,at){
   }
   if(rec){
     delete done[rkey];
-    save();
+    save(); emitProgress();
     ui().toast(t('deg.undoneToast',{code:c.code}));
     lastPop=null; lastFloat=null;
     renderTracker();
@@ -1594,7 +1599,7 @@ function toggleSlot(slotId,at){
   }
   if(c.choice){ openChoiceSheet(plan,c,occKey(occ.si,occ.ci)); return; }
   done[dk]={code:c.code,title:c.title,credits:Number(c.credits)||0,ts:Date.now(),at:occKey(occ.si,occ.ci)};
-  save();
+  save(); emitProgress();
   ui().toast(t('deg.doneToast',{code:c.code}));
   try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
   lastPop=dk; lastFloat={slot:dk,text:(Number(c.credits)||0)};
@@ -1607,7 +1612,7 @@ function completeChoice(plan,c,pick,at){
   const done=curDone();
   done[dk]={code:pick.code,title:pick.title||c.title,
     credits:(typeof pick.credits==='number'?pick.credits:(Number(c.credits)||0)),ts:Date.now(),at:occKey(si,ci)};
-  save();
+  save(); emitProgress();
   ui().closeSheet();
   ui().toast(t('deg.doneToast',{code:pick.code}));
   try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}

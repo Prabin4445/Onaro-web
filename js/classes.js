@@ -46,11 +46,13 @@ function addClass(o){
     start:o.start||'', end:o.end||'', sample:!!o.sample, createdAt:Date.now()
   });
   store.save();
+  try{ if(window.HUB&&HUB.emit) HUB.emit('classes:changed'); }catch(e){}
 }
 function removeClass(id){
   ensureState();
   store.state.classes=store.state.classes.filter(c=>c.id!==id);
   store.save();
+  try{ if(window.HUB&&HUB.emit) HUB.emit('classes:changed'); }catch(e){}
 }
 function setLead(min){ ensureState(); store.state.prefs.classLead=min; store.save(); }
 function setRemOn(on){ ensureState(); store.state.prefs.classRemOn=!!on; store.save(); }
@@ -398,6 +400,26 @@ function refreshHome(){
     if(el&&HUB.views&&HUB.views.home&&!document.getElementById('view-home').hidden) HUB.views.home.render(el);
   }catch(e){}
 }
+/* Targeted card swap for the 'classes:changed' event: replaces only the
+   "Your classes" card's .hsec wrapper, never a full Home re-render.
+   Delegated [data-class-manage] clicks + the global ticker survive the swap,
+   so no re-binding is needed. No-op when Home isn't visible. */
+function refreshCard(){
+  try{
+    const view=document.getElementById('view-home');
+    if(!view||view.hidden) return false;
+    const old=view.querySelector('#classCard');
+    if(!old) return false;
+    const wrap=old.closest('.hsec');
+    if(!wrap) return false;
+    const tmp=document.createElement('div');
+    tmp.innerHTML=cardHTML();
+    const fresh=tmp.firstElementChild;
+    if(!fresh) return false;
+    wrap.replaceWith(fresh);
+    return true;
+  }catch(e){ return false; }
+}
 
 /* Delegated clicks for [data-class-manage] (Home card buttons survive re-renders). */
 document.addEventListener('click',e=>{
@@ -413,6 +435,6 @@ HUB.classes={
   fmtTime:fmtTime, fmtTs:fmtTs, whenLabel:whenLabel,
   cardHTML:cardHTML, manageSheet:manageSheet,
   startTicker:startTicker, stopTicker:stopTicker,
-  checkReminders:checkReminders, dueEntries:dueEntries, refreshHome:refreshHome
+  checkReminders:checkReminders, dueEntries:dueEntries, refreshHome:refreshHome, refreshCard:refreshCard
 };
 })();

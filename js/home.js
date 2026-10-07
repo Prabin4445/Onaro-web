@@ -422,4 +422,34 @@ HUB.views.home={
 };
 /* shared with the Daily tab: same 3D water-flow events carousel */
 HUB.evCarousel={html:eventsCarouselHTML,bind:bindEventCards};
+
+/* ---------- event-driven auto-refresh (2026-10-07) ----------
+   Subscribed ONCE at load (not in render — render runs on every tab switch
+   and must never stack duplicate listeners). Handlers are targeted card
+   updates, never full re-renders; each no-ops when Home isn't visible.
+   prefers-reduced-motion: these are silent data syncs, no animation. */
+try{
+  if(window.HUB&&HUB.on){
+    /* degree progress changed under Home (overlay closed, course toggled) */
+    HUB.on('degree:progress',function(){
+      try{
+        var view=document.getElementById('view-home');
+        if(!view||view.hidden) return;
+        if(HUB.degree&&HUB.degree.bindHomeProgress) HUB.degree.bindHomeProgress(document);
+      }catch(e){}
+    });
+    /* class added/removed/edited under Home (manage sheet) */
+    HUB.on('classes:changed',function(){
+      try{
+        if(HUB.classes&&HUB.classes.refreshCard) HUB.classes.refreshCard();
+      }catch(e){}
+    });
+    /* appointment added/updated/removed under Home (form sheet) */
+    HUB.on('appts:changed',function(){
+      try{
+        if(HUB.appts&&HUB.appts.refreshCard) HUB.appts.refreshCard();
+      }catch(e){}
+    });
+  }
+}catch(e){}
 })();

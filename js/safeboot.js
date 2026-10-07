@@ -204,6 +204,31 @@ function saveState(key, obj){
   }
 }
 
+/* ---------- tiny event bus: HUB.emit / HUB.on ----------
+   Event-driven UI invalidation (2026-10-07, PraBin: "auto refresh when there
+   is change need"). Modules emit when shared state mutates; views subscribe
+   and re-render only the affected cards. No polling, no timers.
+   Events: 'degree:progress' (course check/uncheck, track, reset, pace),
+           'classes:changed' (class added/removed),
+           'appts:changed' (appointment added/updated/removed).
+   Handlers run synchronously, guarded per-listener so one bad subscriber
+   can never break the emitter. on() returns an unsubscribe function. */
+var _evListeners={};
+HUB.on=function(ev,fn){
+  if(typeof fn!=='function') return function(){};
+  (_evListeners[ev]=_evListeners[ev]||[]).push(fn);
+  return function(){
+    var l=_evListeners[ev]; if(!l) return;
+    var i=l.indexOf(fn); if(i!==-1) l.splice(i,1);
+  };
+};
+HUB.emit=function(ev,data){
+  var l=_evListeners[ev]; if(!l||!l.length) return;
+  l.slice().forEach(function(fn){
+    try{ fn(data); }catch(e){ record('event', 'handler failed: '+ev, String((e&&e.message)||e), 0); }
+  });
+};
+
 /* Public surface. report() is local-only diagnostics for QA. */
 HUB.safe = {
   booted: function(){ booted = true; },

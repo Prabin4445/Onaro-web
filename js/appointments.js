@@ -48,6 +48,7 @@ function addAppt(o){
     createdAt:Date.now()
   });
   store.save();
+  try{ if(window.HUB&&HUB.emit) HUB.emit('appts:changed'); }catch(e){}
 }
 function updateAppt(id,o){
   ensureState();
@@ -57,12 +58,33 @@ function updateAppt(id,o){
   /* edited time -> allow the reminder to fire again for the new slot */
   store.state.apptFires=store.state.apptFires.filter(f=>f.apptId!==id);
   store.save();
+  try{ if(window.HUB&&HUB.emit) HUB.emit('appts:changed'); }catch(e){}
 }
 function removeAppt(id){
   ensureState();
   store.state.appointments=store.state.appointments.filter(x=>x.id!==id);
   store.state.apptFires=store.state.apptFires.filter(f=>f.apptId!==id);
   store.save();
+  try{ if(window.HUB&&HUB.emit) HUB.emit('appts:changed'); }catch(e){}
+}
+
+/* Targeted card swap for the 'appts:changed' event: replaces only the
+   appointments card's .hsec wrapper. No-op when Home isn't visible. */
+function refreshCard(){
+  try{
+    var view=document.getElementById('view-home');
+    if(!view||view.hidden) return false;
+    var old=view.querySelector('#apptCard');
+    if(!old) return false;
+    var wrap=old.closest('.hsec');
+    if(!wrap) return false;
+    var tmp=document.createElement('div');
+    tmp.innerHTML=cardHTML();
+    var fresh=tmp.firstElementChild;
+    if(!fresh) return false;
+    wrap.replaceWith(fresh);
+    return true;
+  }catch(e){ return false; }
 }
 
 /* ---- reminder scheduler (browser-local, in-app only) ---- */
@@ -186,6 +208,6 @@ document.addEventListener('click',e=>{
 HUB.appts={
   list:list, addAppt:addAppt, updateAppt:updateAppt, removeAppt:removeAppt,
   upcoming:upcoming, tsOf:tsOf, cardHTML:cardHTML, formSheet:formSheet,
-  checkReminders:checkReminders, dueEntries:dueEntries
+  checkReminders:checkReminders, dueEntries:dueEntries, refreshCard:refreshCard
 };
 })();
