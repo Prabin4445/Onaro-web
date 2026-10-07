@@ -139,12 +139,25 @@ def check_surgeignore(autofix=False):
             if line and not line.startswith('#'):
                 rules.append(line)
     import fnmatch
+    # gitignore-faithful matching: '*' does NOT cross '/' (fnmatch's '*' does,
+    # which falsely flagged data/degrees/inventory/* as blocked by
+    # data/degrees/*.json — real Surge deploys never excluded it).
+    def _glob_re(pat):
+        out = []
+        for c in pat:
+            if c == '*':
+                out.append('[^/]*')
+            elif c == '?':
+                out.append('[^/]')
+            else:
+                out.append(re.escape(c))
+        return '^' + ''.join(out) + '$'
     def is_ignored(path):
         ignored = False
         for r in rules:
             neg = r.startswith('!')
-            pat_r = r[1:] if neg else r
-            if fnmatch.fnmatch(path, pat_r):
+            rx = _glob_re(r[1:] if neg else r)
+            if re.match(rx, path):
                 ignored = not neg
         return ignored
 
@@ -160,8 +173,16 @@ def check_surgeignore(autofix=False):
     ]
     blocked = [p for p in must_ship if is_ignored(p)]
     # Check dynamic patterns: does any rule block data/degrees/*.json style?
+    # 2026-10-07: per-school degree slugs are API-served by design —
+    # window.__ONARO_API_BASE is hardcoded in index.html and js/degree.js
+    # tries the API first (/api/degrees/<slug>), static file is fallback-only.
+    # The ~13k-file bundle is deliberately excluded from Surge deploys (the
+    # host structurally fails past ~13k files, 2026-10-03/06). Exempt here.
+    API_SERVED = ['data/degrees/<slug>.json']
     dyn_blocked = []
     for dp in dynamic_patterns:
+        if dp in API_SERVED:
+            continue
         probe = dp.replace('<slug>', 'probe-test-slug').replace('<ST>', 'CA')
         if is_ignored(probe):
             dyn_blocked.append(dp)
@@ -179,8 +200,11 @@ def check_surgeignore(autofix=False):
         with open(ig_path) as f:
             content = f.read()
         orig = content
-        # Drop blanket blocks on runtime data dirs; keep narrow excludes
-        for bad_rule in ['data/degrees/*.json', 'data/faculty/*.json']:
+        # Drop blanket blocks on runtime data dirs; keep narrow excludes.
+        # NOTE 2026-10-07: data/degrees/*.json is a DELIBERATE exclusion, never
+        # auto-removed — per-school plans are API-served (/api/degrees/<slug>)
+        # and Surge structurally fails past ~13k files (2026-10-03/06).
+        for bad_rule in ['data/faculty/*.json']:
             if bad_rule in content:
                 content = content.replace(bad_rule + '\n', '')
                 content = content.replace(bad_rule, '')

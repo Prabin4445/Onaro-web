@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <style>
+    .planet { fill: #101408; } .ring { stroke: #C6F135; } .dot { fill: #FF5C38; }
+    @media (prefers-color-scheme: dark) {
+      .planet { fill: #F4F6EC; } .ring { stroke: #D4F53F; } .dot { fill: #FF7A5C; }
+    }
+  </style>
+  <ellipse class="ring" cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)"
+           fill="none" stroke-width="10"/>
+  <circle class="planet" cx="118" cy="132" r="68"/>
+  <ellipse class="ring" cx="118" cy="132" rx="110" ry="30" transform="rotate(-26 118 132)"
+           fill="none" stroke-width="10" stroke-linecap="round"
+           pathLength="100" stroke-dasharray="50 50" stroke-dashoffset="0"/>
+  <circle class="dot" cx="203.0" cy="77.0" r="10"/>
+</svg>

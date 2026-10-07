@@ -1,0 +1,287 @@
+/* ONARO group voice calls (2026-09-22): full-screen glass call UI.
+   Layering: .callroot sits ABOVE sheets (z 70) and the market lightbox
+   (z 300). Escape is deferred by app.js while .callroot is visible; call.js
+   owns Escape dismissal. Overlays are position:fixed (viewport-anchored),
+   inners capped at the 480px phone column. body.dark drives dark mode. */
+/* iOS-safe: plain block host (never flex-center inside a fixed host; same bug
+   family as .sheethost/.chatroot). The call column docks itself with
+   left:50% + translateX(-50%). */
+.callroot{position:fixed;inset:0;z-index:400;display:block;
+  background:rgba(247,248,243,.86);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);}
+body.dark .callroot{background:rgba(9,11,7,.78);}
+.callroot[hidden]{display:none;}
+.callwrap{position:absolute;left:50%;top:0;transform:translateX(-50%);
+  width:100%;max-width:480px;height:100%;display:flex;flex-direction:column;
+  padding:calc(14px + env(safe-area-inset-top)) 16px calc(20px + env(safe-area-inset-bottom));}
+.callhead{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+.callhead .grow{flex:1;min-width:0;}
+.callhead h2{margin:0;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.callhead .meta{font-size:12px;color:var(--muted);}
+.calltimer{font-variant-numeric:tabular-nums;font-weight:800;font-size:15px;color:var(--accent-strong);}
+body.dark .calltimer{color:var(--volt);}
+.calldemo{font-size:11.5px;line-height:1.45;color:var(--ink-2);background:var(--accent-soft);
+  border:1px solid var(--line);border-radius:10px;padding:7px 10px;margin:8px 0;}
+body.dark .calldemo{background:rgba(var(--volt-rgb),.10);border-color:rgba(var(--volt-rgb),.35);color:var(--ink);}
+.calltiles{flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;
+  gap:10px;align-content:start;padding:4px 0 10px;}
+.calltile{position:relative;border-radius:18px;padding:14px 10px 12px;text-align:center;
+  background:var(--surface);border:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(16,20,8,.08);
+  transform:translateZ(0);
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;}
+body.dark .calltile{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);
+  box-shadow:0 8px 24px rgba(0,0,0,.35);}
+/* 3D speaking glow (PraBin's order): while someone talks their tile LIFTS
+   toward the viewer with a glowing volt ring + halo. When silent the glow
+   is FULLY off — no ring, no lift — so it's obvious at a glance who is
+   talking. VAD drives the .speaking class with a ~500ms hangover. */
+.calltile.speaking{transform:translateY(-7px) scale(1.045);border-color:var(--volt);
+  box-shadow:0 0 0 2px var(--volt),0 16px 36px rgba(16,20,8,.20),0 0 30px rgba(var(--volt-rgb),.65);
+  animation:callspeak 1.15s ease-in-out infinite;z-index:1;}
+@keyframes callspeak{
+  0%,100%{box-shadow:0 0 0 2px var(--volt),0 16px 36px rgba(16,20,8,.20),0 0 24px rgba(var(--volt-rgb),.50);}
+  50%{box-shadow:0 0 0 3px var(--volt),0 20px 44px rgba(16,20,8,.24),0 0 44px rgba(var(--volt-rgb),.90);}}
+@media (prefers-reduced-motion:reduce){
+  .calltile.speaking{animation:none;transform:translateY(-4px);
+    box-shadow:0 0 0 3px var(--volt),0 10px 26px rgba(16,20,8,.16);}}
+.calltile .avatar{width:56px;height:56px;font-size:22px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;}
+.calltile .nm{font-weight:700;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.calltile .role{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--accent-strong);background:var(--accent-soft);
+  border-radius:999px;padding:2px 8px;margin-top:5px;}
+body.dark .calltile .role{color:var(--volt);background:rgba(var(--volt-rgb),.14);}
+.calltile .mutedby{font-size:11px;color:var(--accent-2-strong);margin-top:5px;min-height:15px;}
+body.dark .calltile .mutedby{color:#FF8A70;}
+.calltile .micon{position:absolute;top:8px;right:8px;width:26px;height:26px;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;font-size:13px;
+  background:var(--accent-2-soft);color:var(--accent-2-strong);}
+body.dark .calltile .micon{background:rgba(255,92,56,.18);color:#FF8A70;}
+/* 3D clay mic-mute badge: the .ico span gets an explicit box (its img is 100%) */
+.calltile .micon .ico{width:19px;height:19px;}
+.calltile .conn{font-size:11px;color:var(--muted);margin-top:4px;min-height:15px;}
+.callhint{font-size:12.5px;color:var(--ink-2);text-align:center;padding:6px 12px 10px;line-height:1.5;}
+/* ---- empty-call demo entry (PraBin's order 2026-09-22): the pre-call
+   picker buried the demo-20 option — this button is unmissable ---- */
+.callsim20{display:block;width:100%;max-width:340px;margin:12px auto 6px;padding:14px 18px;
+  font-size:15.5px;font-weight:800;border:0;border-radius:18px;cursor:pointer;min-height:52px;
+  background:var(--accent);color:#0D100A;
+  box-shadow:0 8px 26px color-mix(in srgb,var(--accent) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.4);}
+.callsim20:active{transform:scale(.97);}
+.callnotice{font-size:12.5px;text-align:center;color:var(--accent-2-strong);
+  background:var(--accent-2-soft);border-radius:10px;padding:8px 10px;margin-bottom:10px;line-height:1.5;}
+body.dark .callnotice{background:rgba(255,92,56,.14);color:#FF8A70;}
+/* ---- floating call controls (2026-09-22 redesign #2, PraBin's order):
+   NO rectangular dock — four floating 3D glass-dome circles in the open,
+   FaceTime/Zoom-style, with small fully-readable labels BELOW each circle
+   (never clipped inside the dome). Mic live = volt glow, muted domes
+   (mic / speaker-output) = sunken terracotta, raise hand = volt glow while
+   raised, end call = confident red dome. Custom SVG icons, no emoji.
+   The loudspeaker<->earpiece route switch lives separately in the header
+   (see .callroute below). */
+.callcontrols{position:relative;display:flex;justify-content:center;align-items:flex-start;gap:20px;
+  width:fit-content;max-width:100%;margin:10px auto 0;}
+.cb-wrap{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:68px;}
+.cb-label{font-size:11px;font-weight:600;letter-spacing:.01em;line-height:1.35;color:var(--muted);
+  text-align:center;max-width:80px;}
+body.dark .cb-label{color:rgba(244,247,234,.72);}
+.callbtn{position:relative;width:62px;height:62px;border:1px solid rgba(255,255,255,.65);cursor:pointer;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;padding:0;
+  color:#232a12;
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(255,255,255,.85) 0%, rgba(255,255,255,.15) 46%, rgba(255,255,255,0) 72%),
+    linear-gradient(180deg,#ffffff,#dfe4d2);
+  box-shadow:0 10px 24px rgba(16,22,8,.22),
+    inset 0 2px 3px rgba(255,255,255,.9),
+    inset 0 -4px 7px rgba(16,22,8,.14);
+  transition:transform .16s cubic-bezier(.34,1.4,.64,1), box-shadow .28s ease, background .28s ease, border-color .28s ease, color .28s ease;}
+body.dark .callbtn{color:#f4f7ea;border-color:rgba(255,255,255,.22);
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(255,255,255,.28) 0%, rgba(255,255,255,.06) 46%, rgba(255,255,255,0) 72%),
+    linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.04));
+  box-shadow:0 10px 26px rgba(0,0,0,.5),
+    inset 0 2px 3px rgba(255,255,255,.3),
+    inset 0 -4px 7px rgba(0,0,0,.35);}
+/* tactile press: the dome physically depresses */
+.callcontrols .callbtn:active{transform:translateY(2px) scale(.94);
+  box-shadow:0 4px 12px rgba(16,22,8,.2),
+    inset 0 3px 9px rgba(16,22,8,.28),
+    inset 0 -1px 2px rgba(255,255,255,.25);
+  transition-duration:.07s;}
+/* 3D flip between the two icon faces (mic<->muted, speaker<->routed) */
+.cb-ic{position:relative;display:block;width:27px;height:27px;perspective:160px;}
+.cb-face{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  transition:transform .32s cubic-bezier(.45,.05,.3,1.25);}
+.cb-face svg{width:27px;height:27px;display:block;}
+.cb-back{transform:rotateY(180deg);}
+.callbtn.off .cb-front,.callbtn.live .cb-front{transform:rotateY(-180deg);}
+.callbtn.off .cb-back,.callbtn.live .cb-back{transform:rotateY(0deg);}
+/* LIVE (mic hot / speaker routed): volt 3D glow + one-shot bloom on activation */
+.callcontrols .callbtn.cblive{color:#242c0e;border-color:rgba(var(--volt-rgb),.9);
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(255,255,255,.75) 0%, rgba(255,255,255,.1) 46%, rgba(255,255,255,0) 72%),
+    linear-gradient(180deg,#dcf96a,#b9e02e);
+  box-shadow:0 0 0 2px rgba(var(--volt-rgb),.55), 0 10px 30px rgba(178,214,40,.45), 0 8px 22px rgba(16,22,8,.18),
+    inset 0 2px 3px rgba(255,255,255,.8), inset 0 -4px 7px rgba(80,100,8,.28);
+  animation:cb-bloom .55s ease-out;}
+@keyframes cb-bloom{
+  0%{box-shadow:0 0 0 0 rgba(var(--volt-rgb),.8), 0 10px 24px rgba(16,22,8,.22),
+    inset 0 2px 3px rgba(255,255,255,.8), inset 0 -4px 7px rgba(80,100,8,.28);}
+  100%{box-shadow:0 0 0 2px rgba(var(--volt-rgb),.55), 0 10px 30px rgba(178,214,40,.45), 0 8px 22px rgba(16,22,8,.18),
+    inset 0 2px 3px rgba(255,255,255,.8), inset 0 -4px 7px rgba(80,100,8,.28);}}
+/* MUTED: sunken terracotta dome — unmistakable at a glance */
+.callcontrols .callbtn.off{transform:translateY(1px);color:var(--accent-2-strong);border-color:var(--accent-2);
+  background:linear-gradient(180deg,var(--accent-2-soft),rgba(255,255,255,.04));
+  box-shadow:0 4px 12px rgba(16,22,8,.16),
+    inset 0 3px 9px rgba(150,40,15,.35),
+    inset 0 -1px 2px rgba(255,255,255,.18);}
+body.dark .callcontrols .callbtn.off{color:#FF8A70;border-color:rgba(255,92,56,.55);
+  background:linear-gradient(180deg,rgba(255,92,56,.26),rgba(255,92,56,.07));
+  box-shadow:0 4px 12px rgba(0,0,0,.4),
+    inset 0 3px 9px rgba(120,25,8,.5),
+    inset 0 -1px 2px rgba(255,255,255,.12);}
+/* end call: confident red dome, white handset-down glyph */
+.callcontrols .callbtn.callleave{color:#fff;border-color:rgba(255,255,255,.45);
+  background:
+    radial-gradient(130% 100% at 50% 0%, rgba(255,255,255,.5) 0%, rgba(255,255,255,.08) 46%, rgba(255,255,255,0) 72%),
+    linear-gradient(180deg,#f2674a,#d92d20 60%,#b02116);
+  box-shadow:0 12px 30px rgba(217,45,32,.5), 0 8px 20px rgba(16,22,8,.22),
+    inset 0 2px 4px rgba(255,255,255,.55), inset 0 -5px 9px rgba(110,12,4,.45);}
+.callcontrols .callbtn.callleave:active{transform:translateY(2px) scale(.93);
+  box-shadow:0 5px 14px rgba(217,45,32,.45),
+    inset 0 3px 10px rgba(110,12,4,.55), inset 0 -1px 2px rgba(255,255,255,.3);
+  transition-duration:.07s;}
+.callcontrols .callbtn.callleave .cb-ic{width:30px;height:30px;}
+.callcontrols .callbtn.callleave .cb-face svg{width:30px;height:30px;}
+/* reduced motion: static states, no ambient motion, instant flips */
+@media (prefers-reduced-motion:reduce){
+  .callcontrols .callbtn{transition:none;}
+  .callcontrols .callbtn.cblive{animation:none;}
+  .cb-face{transition:none;}}
+.callerror{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;gap:8px;padding:0 24px;}
+.callerror .big{font-size:52px;}
+.callerror h2{margin:6px 0 0;font-size:18px;}
+.callerror p{font-size:13.5px;color:var(--ink-2);line-height:1.55;margin:0 0 8px;}
+/* incoming-call banner: fixed to the viewport, docked to the phone column */
+.callbanner{position:fixed;top:calc(10px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);
+  width:min(440px,calc(100% - 32px));z-index:460;border-radius:18px;padding:12px 14px;
+  background:var(--surface);border:1px solid var(--volt);
+  box-shadow:0 12px 40px rgba(16,20,8,.22);display:flex;gap:12px;align-items:center;}
+body.dark .callbanner{background:#15180F;box-shadow:0 12px 40px rgba(0,0,0,.5);}
+.callbanner[hidden]{display:none;}
+.callbanner .ring{width:44px;height:44px;border-radius:999px;background:var(--accent-soft);
+  display:flex;align-items:center;justify-content:center;font-size:22px;flex:0 0 auto;
+  animation:callring 1.6s ease-in-out infinite;}
+@keyframes callring{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+.callbanner .grow{flex:1;min-width:0;}
+.callbanner h3{margin:0;font-size:14.5px;}
+.callbanner .sub{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.4;}
+.callbanner .row{display:flex;gap:8px;flex:0 0 auto;}
+.callbanner .btn{padding:9px 14px;font-size:13px;}
+.callremoteaudio{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+/* in-call sheet (admin controls, worker URL): lives INSIDE the call overlay
+   because ui.openSheet (z-70) would render under the call UI (z-400) */
+/* iOS-safe bottom sheet (same bug family as .sheethost/.chatroot): plain block
+   host, the box docks itself with left:50% + translateX(-50%). */
+.callsheet{position:absolute;inset:0;z-index:5;display:block;
+  background:rgba(10,12,8,.5);}
+.callsheet[hidden]{display:none;}
+.callsheet-box{position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+  width:100%;max-width:480px;max-height:72%;overflow-y:auto;background:var(--surface);
+  border:1px solid var(--line);border-bottom:none;border-radius:22px 22px 0 0;
+  padding:18px 18px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -12px 40px rgba(16,20,8,.25);}
+body.dark .callsheet-box{background:#16190F;border-color:rgba(255,255,255,.12);}
+
+/* ---- speaker-output mute + raise-hand + route switch (2026-09-22,
+   PraBin's orders): the speaker dome is now a real incoming-audio mute
+   toggle (one tap = all remote audio off, sunken terracotta + slash icon via
+   the existing .off styles). The 4th dock dome is Raise hand (volt glow
+   while raised); a raised hand puts a volt badge on the participant's tile
+   for everyone. The loudspeaker<->earpiece route switch is a SEPARATE compact
+   3D pill in the call header — visually distinct from the mute dome — and is
+   disabled with an honest note wherever the platform can't really route. */
+.calltile .handbadge{position:absolute;top:8px;left:8px;z-index:2;display:flex;align-items:center;gap:5px;
+  background:var(--volt);color:#242c0e;border-radius:999px;padding:4px 10px 4px 7px;
+  font-size:10px;font-weight:800;letter-spacing:.02em;white-space:nowrap;
+  box-shadow:0 4px 14px rgba(178,214,40,.55);}
+body.dark .calltile .handbadge{box-shadow:0 4px 16px rgba(var(--volt-rgb),.45);}
+.calltile .handbadge svg{width:14px;height:14px;transform-origin:50% 80%;animation:handwave 1.4s ease-in-out infinite;}
+.calltile .handbadge .hb-t{line-height:1;}
+@keyframes handwave{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-14deg)}}
+/* loudspeaker<->earpiece route pill: compact 3D, lives in the header so it
+   can't be confused with the speaker-mute dome in the dock */
+.callroute{display:flex;align-items:center;gap:7px;min-width:56px;min-height:44px;max-width:150px;
+  padding:8px 12px;border-radius:999px;cursor:pointer;color:var(--ink);
+  background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.14));
+  border:1px solid var(--line);
+  box-shadow:0 6px 16px rgba(16,22,8,.14),inset 0 1px 0 rgba(255,255,255,.6),inset 0 -2px 4px rgba(16,22,8,.08);
+  transition:transform .16s cubic-bezier(.34,1.4,.64,1),box-shadow .2s ease,opacity .2s ease;}
+.callroute[hidden]{display:none;}
+body.dark .callroute{color:#f4f7ea;
+  background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.05));
+  border-color:rgba(255,255,255,.16);
+  box-shadow:0 6px 16px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.22),inset 0 -2px 4px rgba(0,0,0,.3);}
+.callroute:active{transform:translateY(1px) scale(.96);}
+.callroute .cb-face{position:static;width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.callroute .cb-face svg{width:22px;height:22px;display:block;}
+.callroute .cb-cap{font-size:10px;font-weight:800;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.callroute:disabled{opacity:.55;cursor:default;}
+.callroute:disabled:active{transform:none;}
+.callroutenote{font-size:11px;color:var(--muted);text-align:center;padding:0 10px 6px;line-height:1.4;}
+.callroutenote[hidden]{display:none;}
+/* 4 floating controls: keep the row inside 320px screens */
+@media (max-width:360px){
+  .callcontrols{gap:14px;}
+  .cb-wrap{min-width:62px;}
+  .callbtn{width:58px;height:58px;}
+}
+/* reduced motion: no hand wave, no route-pill transitions */
+@media (prefers-reduced-motion:reduce){
+  .calltile .handbadge svg{animation:none;}
+  .callroute{transition:none;}
+}
+
+/* ---- demo-20 crowd grid (PraBin's order, compact 2026-09-22): 20 simulated
+   participants + self in a COMPACT 5-column gallery so all 21 tiles fit on
+   one phone screen with NO scrolling. The old scrollable 3-column grid
+   failed to paint on PraBin's iPhone (Safari) — he wants to see everyone
+   at once. flex:0 1 auto (content height, shrinks with an internal scroll
+   only when the screen is too short) so the grid can never collapse to
+   zero height. Speaking glow, mute/hand badges stay
+   legible at small size; tiles remain tappable for the admin sheet. */
+.calltiles.demo20{flex:0 1 auto;min-height:0;max-height:100%;overflow-y:auto;
+  grid-template-columns:repeat(5,1fr);gap:6px;align-content:start;}
+.calltiles.demo20 .calltile{padding:6px 4px 6px;border-radius:13px;min-width:0;}
+.calltiles.demo20 .calltile .avatar{width:30px;height:30px;font-size:14px;margin:0 auto 4px;}
+.calltiles.demo20 .calltile .nm{font-size:10px;}
+.calltiles.demo20 .calltile .role{font-size:8px;padding:1px 6px;margin-top:2px;}
+.calltiles.demo20 .calltile .mutedby{font-size:8.5px;margin-top:1px;min-height:11px;}
+.calltiles.demo20 .calltile .conn{display:none;}
+.calltiles.demo20 .calltile .mutedby{display:none;} /* mic-mute badge already shows it; saves a full row-height */
+.calltiles.demo20 .calltile .micon{width:18px;height:18px;font-size:10px;top:5px;right:5px;}
+.calltiles.demo20 .calltile .handbadge{top:5px;left:5px;padding:3px 6px;}
+.calltiles.demo20 .calltile .handbadge svg{width:12px;height:12px;}
+.calltiles.demo20 .handbadge .hb-t{display:none;}
+@media (prefers-reduced-motion:reduce){
+  .calltiles.demo20 .handbadge svg{animation:none;}
+}
+
+/* ---- admin row (PraBin's order 2026-09-22): "Mute all" — admin-only,
+   thumb-reachable right above the tiles. The old "As admin, tap a tile to
+   manage it." banner is gone by his order: no dead space; tiles are
+   tappable and the admin sheet explains the rest. */
+.calladminrow{display:flex;justify-content:flex-end;align-items:center;padding:2px 0 8px;}
+.calladminrow[hidden]{display:none;}
+.callmuteall{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 16px;
+  border-radius:999px;border:1px solid var(--accent-2);cursor:pointer;
+  font-size:13px;font-weight:800;color:var(--accent-2-strong);
+  background:linear-gradient(180deg,var(--accent-2-soft),rgba(255,255,255,.04));
+  box-shadow:0 6px 16px rgba(16,22,8,.14),inset 0 1px 0 rgba(255,255,255,.5);
+  transition:transform .15s ease;}
+.callmuteall:active{transform:scale(.96);}
+.callmuteall .ico{width:22px;height:22px;}
+body.dark .callmuteall{color:#FF8A70;border-color:rgba(255,92,56,.55);
+  background:linear-gradient(180deg,rgba(255,92,56,.26),rgba(255,92,56,.07));
+  box-shadow:0 6px 16px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.18);}
+@media (prefers-reduced-motion:reduce){.callmuteall{transition:none;}}

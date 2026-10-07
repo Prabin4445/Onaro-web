@@ -1,0 +1,205 @@
+/* ================= Groups tab — water-crystal UI (2026-09-23) =================
+   Elevates the Groups tab (js/groups.js surfaces) to the water-crystal 3D look
+   of the auth screens: frosted glass cards, top gloss sheen, volt accents,
+   3D clay press physics on CTAs, staggered card entrances, floating motes.
+   Scoping rules (hard):
+   - `.gu` wrapper (added by groups.js around every Groups-tab surface) scopes
+     overrides of SHARED classes (.card, .item, .btn, .input, .sechd, .sub, .kv).
+     The people.js surface renders its own seg markup without `.gu`, and sheets
+     render into .sheethost — both stay untouched.
+   - Groups-only classes (.gcard, .flowwrap, .flow, .cghero, .cgchips/.cgchip,
+     .livebadge/.draftbadge, .hh-card, .hhphoto, .hhpriv, .frq-card, .hhb,
+     .bill-thumb, .pollbar) are styled directly — they only ever appear in
+     groups markup. (.gcard/.flow are intentionally shared with the Home
+     events carousel and the market photo flow, which reuse the same shell.)
+   All motion is transform/opacity-only (iOS-safe) and frozen under
+   prefers-reduced-motion. Brand: volt #C6F135, dark #0D100A. No purple. */
+
+/* ---- scope wrapper ---- */
+.gu{position:relative;min-width:0}
+.gu[hidden]{display:none}
+
+/* ---- surface headers: title + floating sparkle motes ---- */
+.gu-head{position:relative;overflow:hidden;border-radius:20px;padding:2px 6px 0;margin:0 -6px}
+.gu-head[hidden]{display:none}
+.gu-head .gu-title{margin:10px 2px 4px}
+.gu-motes{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.gu-motes[hidden]{display:none}
+.gu-motes i{position:absolute;bottom:-10px;border-radius:50%;opacity:0;
+  background:radial-gradient(circle,rgba(255,255,255,.95) 0%,rgba(var(--volt-rgb),.6) 45%,rgba(var(--volt-rgb),0) 72%);
+  animation:guMote var(--d,7s) linear infinite;animation-delay:var(--dl,0s)}
+.gu-motes i:nth-child(1){left:8%;width:7px;height:7px;--d:6.5s;--dl:0s;--sx:14px}
+.gu-motes i:nth-child(2){left:26%;width:5px;height:5px;--d:8s;--dl:1.2s;--sx:-10px}
+.gu-motes i:nth-child(3){left:48%;width:8px;height:8px;--d:7s;--dl:2.4s;--sx:8px}
+.gu-motes i:nth-child(4){left:66%;width:5px;height:5px;--d:9s;--dl:.6s;--sx:-14px}
+.gu-motes i:nth-child(5){left:82%;width:6px;height:6px;--d:7.5s;--dl:3.1s;--sx:10px}
+.gu-motes i:nth-child(6){left:93%;width:4px;height:4px;--d:8.5s;--dl:1.8s;--sx:-6px}
+@keyframes guMote{0%{opacity:0;transform:translate(0,8px) scale(.5)}15%{opacity:.8}80%{opacity:.4}
+  100%{opacity:0;transform:translate(var(--sx,0px),-92px) scale(1.1)}}
+
+/* ---- staggered entrance (rise + fade). --i is set inline per card/row.
+   bindFlow's JS tilt sets inline transform on .gcard — keyframe animation
+   overrides it while running, then the tilt takes over. Fine. ---- */
+@keyframes guRise{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.gcard{animation:guRise .55s cubic-bezier(.22,.9,.28,1) backwards;animation-delay:calc(var(--i,0)*60ms)}
+
+/* ---- mode switcher: glass pill, volt active (bare .seg untouched — me.js
+   gender picker shares it, people.js renders its own without .gu) ---- */
+.seg.gu-seg{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-brd);border-radius:18px;padding:5px;
+  box-shadow:0 10px 24px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.35)}
+.seg.gu-seg button{border-radius:13px;color:var(--ink-2)}
+.seg.gu-seg button.on{background:var(--volt);color:#131A00;
+  box-shadow:0 6px 16px color-mix(in srgb,var(--volt) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.5)}
+.seg.gu-seg button:active{transform:scale(.95)}
+
+/* ---- search input: crystal with volt focus glow (only #cgSearch lives in .gu) ---- */
+.gu .input{border-radius:18px;padding:13px 16px;background:var(--glass);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-brd);
+  box-shadow:inset 0 2px 8px rgba(0,0,0,.06),0 8px 20px rgba(0,0,0,.06)}
+.gu .input:focus{border-color:var(--volt);outline:none;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--volt) 30%,transparent),
+  0 0 18px color-mix(in srgb,var(--volt) 18%,transparent)}
+
+/* ---- CTAs: 3D clay press physics + volt glow (mirrors auth-cta) ---- */
+.gu .btn{transition:transform .12s ease,box-shadow .12s ease,filter .12s ease}
+.gu .btn-primary{border-radius:16px;
+  box-shadow:0 12px 26px rgba(0,0,0,.22),0 0 22px color-mix(in srgb,var(--volt) 30%,transparent),
+  inset 0 1px 0 rgba(255,255,255,.55),inset 0 -3px 8px rgba(0,0,0,.10)}
+.gu .btn-primary:hover{filter:brightness(1.05)}
+.gu .btn-primary:active{transform:translateY(2px) scale(.99);
+  box-shadow:0 5px 12px rgba(0,0,0,.22),0 0 10px color-mix(in srgb,var(--volt) 22%,transparent),
+  inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 6px rgba(0,0,0,.12)}
+.gu .btn-line{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-brd);border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.3)}
+.gu .btn-line:active{transform:translateY(2px);
+  box-shadow:0 3px 10px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.25)}
+.gu .btn-ghost{border-radius:16px;
+  box-shadow:0 8px 18px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.25)}
+.gu .btn-ghost:active{transform:translateY(2px)}
+/* "New household": dashed crystal create-button */
+.gu .gu-new{border:1.5px dashed color-mix(in srgb,var(--volt) 55%,transparent);
+  background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.gu-back{color:var(--ink-2);border-radius:10px}
+.gu-back:active{transform:translateX(-2px)}
+
+/* ---- section headers shared with Home ("Groups near you") ---- */
+.sechd.gu-sechd h2{font-family:var(--font-display);letter-spacing:-.01em}
+.sechd.gu-sechd .meta{background:var(--glass);border:1px solid var(--glass-brd);border-radius:999px;
+  padding:3px 11px;font-weight:800;color:var(--ink-2);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+
+/* ---- carousel cards: deeper crystal + LIVE pulse ---- */
+.gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.6),0 0 26px color-mix(in srgb,var(--volt) 8%,transparent),
+  inset 0 1px 0 rgba(255,255,255,.4)}
+body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(in srgb,var(--volt) 8%,transparent),
+  inset 0 1px 0 rgba(255,255,255,.16)}
+.gcard-live{animation:guLivePulse 2.2s ease-in-out infinite}
+@keyframes guLivePulse{0%,100%{box-shadow:0 4px 14px rgba(0,0,0,.28),0 0 0 0 color-mix(in srgb,var(--volt) 65%,transparent)}
+  50%{box-shadow:0 4px 14px rgba(0,0,0,.28),0 0 16px 3px color-mix(in srgb,var(--volt) 55%,transparent)}}
+.livebadge.gu-live{animation:guLivePulse 2.2s ease-in-out infinite}
+/* draft: muted glass */
+.gcard-draft,.draftbadge.gu-draft{background:var(--glass);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border:1px solid var(--glass-brd);color:var(--ink-2)}
+
+/* ---- "Your groups" + campus rows: crystal, staggered entrance ---- */
+.gu .gu-row{border-radius:18px;background:var(--glass);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border:1px solid var(--glass-brd);
+  box-shadow:0 10px 24px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3);
+  animation:guRise .45s cubic-bezier(.22,.9,.28,1) backwards;animation-delay:calc(var(--i,0)*60ms)}
+.gu .gu-row:active{transform:scale(.985)}
+
+/* ---- household cards: crystal, staggered entrance, press ---- */
+.gu-hh{position:relative;overflow:hidden;border-radius:22px;background:var(--glass-strong);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1px solid var(--glass-brd);
+  box-shadow:0 18px 44px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.4);
+  animation:guRise .5s cubic-bezier(.22,.9,.28,1) backwards;animation-delay:calc(var(--i,0)*70ms);
+  transition:transform .18s ease,box-shadow .18s ease}
+.gu-hh::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(115deg,rgba(255,255,255,.22),rgba(255,255,255,0) 38%)}
+.gu-hh:active{transform:scale(.98)}
+.gu-hh[hidden]{display:none}
+.hhphoto{border:2px solid var(--glass-brd);
+  box-shadow:0 8px 20px rgba(0,0,0,.16),0 0 14px color-mix(in srgb,var(--volt) 25%,transparent)}
+
+/* ---- group detail: hero, member chips, glass cards ---- */
+.gu-ctitle{position:relative}
+.gu-ctitle[hidden]{display:none}
+.gu-hero{position:relative;overflow:hidden;border-radius:24px;
+  background:linear-gradient(135deg,rgba(var(--volt-rgb),.45),rgba(var(--volt-rgb),.12));
+  border:1px solid var(--glass-brd);
+  box-shadow:0 20px 48px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.35)}
+.gu-hero::after{content:'';position:absolute;inset:0;border-radius:24px;pointer-events:none;
+  background:linear-gradient(115deg,rgba(255,255,255,.28),rgba(255,255,255,0) 40%)}
+.gu-hero img{position:relative;z-index:1}
+.gu-hero span{position:relative;z-index:1}
+.cgchip{background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border:1px solid var(--glass-brd);
+  box-shadow:0 6px 16px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3)}
+.gu-hhrow{position:relative}
+.gu .card{background:var(--glass-strong);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1px solid var(--glass-brd);border-radius:22px;
+  box-shadow:0 18px 44px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.35)}
+/* join-request card: dashed volt invitation */
+.frq-card{background:var(--glass);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1.5px dashed color-mix(in srgb,var(--volt) 45%,transparent);border-radius:20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.3)}
+/* bill rows: glass shell, swipe transform untouched */
+.gu .hhb{background:var(--glass);border:1px solid var(--glass-brd);border-radius:16px;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.bill-thumb{border:2px solid var(--glass-brd);box-shadow:0 6px 14px rgba(0,0,0,.14)}
+/* balances / request key-value rows */
+.gu .kv{border-radius:14px;padding:10px 12px;background:var(--glass);
+  border:1px solid var(--glass-brd);margin-bottom:8px;
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+/* poll bars: volt fill with glow */
+.gu .pollbar i{background:var(--volt);
+  box-shadow:0 0 8px color-mix(in srgb,var(--volt) 50%,transparent)}
+
+/* ---- communities: featured community card ---- */
+.gu-camp{position:relative;overflow:hidden;border-radius:22px;background:var(--glass-strong);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1px solid var(--glass-brd);
+  box-shadow:0 18px 44px rgba(0,0,0,.12),0 0 30px color-mix(in srgb,var(--volt) 10%,transparent),
+  inset 0 1px 0 rgba(255,255,255,.35)}
+.gu-camp::before{content:'';position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:linear-gradient(115deg,rgba(255,255,255,.2),rgba(255,255,255,0) 36%)}
+
+/* ---- reduced motion: freeze every decorative animation ---- */
+@media (prefers-reduced-motion:reduce){
+  .gu *,.gu *::before,.gu *::after,
+  .gcard,.gcard::before,.flow,.livebadge,.draftbadge,.gcard-live,.gcard-draft,
+  .cghero,.cgchip,.hh-card,.frq-card,.hhphoto,.bill-thumb,.sechd.gu-sechd{
+    animation:none!important;transition:none!important}
+}
+
+/* ---- People mode (rendered by people.js into this view; .gu is toggled on
+   the view root by the groups view render — people.js itself untouched).
+   Crystal cards, glass skill chips, clay press on action buttons. ---- */
+.gu .ppl-card{position:relative;overflow:hidden;background:var(--glass);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  border:1px solid var(--glass-brd);border-radius:22px;
+  box-shadow:0 14px 30px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.35);
+  animation:guRise .5s cubic-bezier(.22,.9,.28,1) backwards}
+.gu .ppl-card::before{content:'';position:absolute;inset:0;border-radius:inherit;
+  pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,0) 32%)}
+.gu .ppl-card:active{transform:translateY(2px)}
+.gu .ppl-prof{background:var(--glass);border:1px solid var(--glass-brd);border-radius:22px;
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  box-shadow:0 14px 30px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.35)}
+.gu .ppl-actions .btn:active{transform:translateY(2px) scale(.98)}
+.gu #pplChips .chip{background:var(--glass);border:1px solid var(--glass-brd);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:999px;
+  box-shadow:0 6px 14px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3)}
+.gu #pplChips .chip.on{background:var(--volt);color:#131A00;border-color:transparent;
+  box-shadow:0 6px 16px color-mix(in srgb,var(--volt) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.5)}
+.gu #pplChips .chip:active{transform:scale(.95)}
+.gu .ppl-skill{background:var(--glass);border:1px solid var(--glass-brd);border-radius:999px;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.gu .demo-note{border-radius:14px}

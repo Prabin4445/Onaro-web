@@ -1,0 +1,112 @@
+/* ============ DAILY tab redesign (2026-10-05): glossy-3D card system ============
+   Same visual language as the new Home: dark #0D100A glass, glossy gradient
+   cards, volt-green accents, rounded-3xl, gradient borders, NO purple.
+   Chrome-only: every feature's behavior/logic lives in js/daily.js and the
+   feature modules (calc, wellness, scan, style, gym) — untouched. */
+
+/* ---- hero banner ---- */
+.dly-hero{position:relative;overflow:hidden;border-radius:28px;margin:2px 0 16px;
+  padding:20px 18px;display:flex;align-items:center;gap:14px;
+  border:1.5px solid transparent;
+  background:
+    linear-gradient(155deg,rgba(255,255,255,.94),rgba(255,255,255,.60)) padding-box,
+    linear-gradient(135deg,#C6F135,rgba(198,241,53,.12) 42%,rgba(125,211,252,.55)) border-box;
+  box-shadow:0 14px 34px rgba(110,150,40,.20);}
+.dly-hero::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.38),rgba(255,255,255,0) 46%);}
+.dly-hero::after{content:'';position:absolute;right:-48px;top:-48px;width:170px;height:170px;
+  border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(198,241,53,.45),rgba(198,241,53,0) 70%);}
+body.dark .dly-hero{
+  background:
+    linear-gradient(155deg,rgba(54,64,32,.95),rgba(13,16,10,.97)) padding-box,
+    linear-gradient(135deg,#D4F53F,rgba(212,245,63,.10) 42%,rgba(125,211,252,.45)) border-box;
+  box-shadow:0 14px 38px rgba(0,0,0,.5),0 0 28px rgba(198,241,53,.12);}
+body.dark .dly-hero::before{background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,0) 46%);}
+.dly-hero-ico{position:relative;z-index:1;flex:0 0 auto;width:64px;height:64px;border-radius:20px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#F6FFC8,#C6F135 58%,#9DBF22);
+  box-shadow:0 8px 20px rgba(140,180,40,.45),
+    inset 0 2px 3px rgba(255,255,255,.85),inset 0 -3px 6px rgba(90,110,20,.35);
+  animation:dlyfloat 5s ease-in-out infinite;}
+.dly-hero-ico .ico img{width:46px;height:46px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.28));}
+.dly-hero-ico .ico-fb{font-size:34px;line-height:1}
+@keyframes dlyfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.dly-hero-tx{position:relative;z-index:1;min-width:0}
+.dly-hero-t{font:800 26px/1.15 var(--font-display);color:#151b08;letter-spacing:-.01em}
+body.dark .dly-hero-t{color:#F4F6EC;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+.dly-hero-s{margin-top:4px;font-size:13px;font-weight:600;color:#4b5433}
+body.dark .dly-hero-s{color:#C6CCB5}
+
+/* ---- glossy section card (gradient border + glass body + sheen) ---- */
+.dly-card{position:relative;border-radius:24px;margin:0 0 14px;padding:1.5px;
+  background:linear-gradient(140deg,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 65%,transparent),
+    color-mix(in srgb,var(--dly-ac,#C6F135) 10%,transparent) 48%,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 40%,transparent));
+  box-shadow:0 10px 26px color-mix(in srgb,var(--dly-ac,#C6F135) 14%,transparent);}
+.dly-card-in{position:relative;border-radius:22.5px;overflow:hidden;padding:15px 14px 16px;
+  background:linear-gradient(165deg,rgba(255,255,255,.95),rgba(255,255,255,.68));}
+.dly-card-in::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(255,255,255,0) 34%);}
+body.dark .dly-card-in{background:linear-gradient(165deg,rgba(40,48,28,.95),rgba(13,16,10,.97));}
+body.dark .dly-card-in::before{background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,0) 34%);}
+
+/* floating 3D clay icon badge (module cards: calc, wellness, scan, style, gym) */
+.dly-badge{position:absolute;top:10px;right:10px;z-index:3;width:50px;height:50px;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;pointer-events:none; /* decorative: taps pass through to card controls */
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 36%,#ffffff),
+    color-mix(in srgb,var(--dly-ac,#C6F135) 14%,#ffffff));
+  box-shadow:0 6px 16px color-mix(in srgb,var(--dly-ac,#C6F135) 38%,transparent),
+    inset 0 1.5px 2.5px rgba(255,255,255,.85),
+    inset 0 -3px 5px color-mix(in srgb,var(--dly-ac,#C6F135) 24%,transparent);}
+.dly-badge .ico img{width:38px;height:38px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.25));}
+.dly-badge .ico-fb{font-size:26px;line-height:1}
+body.dark .dly-badge{
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 42%,#232a12),
+    color-mix(in srgb,var(--dly-ac,#C6F135) 16%,#0d100a));}
+
+/* header row (capsule + happening: icon, title, sub, action slot) */
+.dly-chead{position:relative;z-index:1;display:flex;align-items:center;gap:12px;margin:0 0 12px}
+.dly-chead-ico{flex:0 0 auto;width:48px;height:48px;border-radius:15px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 40%,#ffffff),
+    color-mix(in srgb,var(--dly-ac,#C6F135) 16%,#ffffff));
+  box-shadow:0 6px 14px color-mix(in srgb,var(--dly-ac,#C6F135) 35%,transparent),
+    inset 0 1.5px 2.5px rgba(255,255,255,.85),
+    inset 0 -3px 5px color-mix(in srgb,var(--dly-ac,#C6F135) 24%,transparent);}
+.dly-chead-ico .ico img{width:36px;height:36px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.25));}
+.dly-chead-ico .ico-fb{font-size:26px;line-height:1}
+.dly-chead-ico .dly-emoji{font-size:26px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.2));}
+body.dark .dly-chead-ico{
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--dly-ac,#C6F135) 44%,#232a12),
+    color-mix(in srgb,var(--dly-ac,#C6F135) 18%,#0d100a));}
+.dly-chead-tx{flex:1;min-width:0}
+.dly-chead-t{font:800 17px/1.25 var(--font-display);color:#1a2009}
+body.dark .dly-chead-t{color:#F4F6EC}
+.dly-chead-s{margin-top:2px;font-size:12.5px;line-height:1.45;color:#5a6344}
+body.dark .dly-chead-s{color:#9aa184}
+.dly-chead-act{flex:0 0 auto;display:flex;align-items:center;max-width:46%}
+.dly-cbody{position:relative;z-index:1}
+/* neutralize module cards' own bottom margins inside the frame */
+.dly-cbody>.card{margin-bottom:0!important}
+.dly-cbody>.hsec{margin-bottom:0}
+
+/* 320px narrow: keep hero compact, header text never collides with action */
+@media (max-width:360px){
+  .dly-hero{padding:16px 14px;gap:12px;border-radius:24px}
+  .dly-hero-ico{width:54px;height:54px;border-radius:17px}
+  .dly-hero-ico .ico img{width:40px;height:40px}
+  .dly-hero-t{font-size:22px}
+  .dly-hero-s{font-size:12px}
+  .dly-card-in{padding:13px 12px 14px}
+  .dly-chead{gap:10px}
+  .dly-chead-ico{width:42px;height:42px;border-radius:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  .dly-hero-ico{animation:none}
+}

@@ -6656,11 +6656,11 @@ Object.assign(HUB.i18n._dict('ne'),{'auth.idPh':"you@example.com वा फो�
 Object.assign(HUB.i18n._dict('hi'),{'auth.idPh':"you@example.com या फ़ोन"});
 /* Firebase email-verification flow keys */
 Object.assign(HUB.i18n._dict('en'),{'auth.checkEmailTitle':"Check your inbox",'auth.checkEmailNote':"We sent a verification link to {email}. Tap the link in the email, then come back here and continue.",'auth.iveVerified':"I've verified — continue",'auth.resendEmail':"Resend verification email",'auth.emailResent':"Verification email sent — check your inbox.",'auth.errNotVerified':"Not verified yet — tap the link in your email first.",'auth.resetSent':"Password reset email sent — check your inbox."});
-Object.assign(HUB.i18n._dict('es'),{'auth.checkEmailTitle':"Revisa tu correo",'auth.checkEmailNote':"Enviamos un enlace de verificación a {email}. Toca el enlace del correo y vuelve aquí para continuar.",'auth.iveVerified':"Ya verifiqué — continuar",'auth.resendEmail':"Reenviar correo de verificación",'auth.emailResent':"Correo de verificación enviado — revisa tu bandeja.",'auth.errNotVerified':"Aún no verificado — toca primero el enlace de tu correo.",'auth.resetSent':"Correo de restablecimiento enviado — revisa tu bandeja."});
-Object.assign(HUB.i18n._dict('ne'),{'auth.checkEmailTitle':"आफ्नो इमेल जाँच्नुहोस्",'auth.checkEmailNote':"हामीले {email} मा प्रमाणीकरण लिङ्क पठाएका छौं। इमेलमा भएको लिङ्क थिच्नुहोस्, अनि यहाँ फर्केर जारी राख्नुहोस्।",'auth.iveVerified':"मैले प्रमाणित गरेँ — जारी राख्नुहोस्",'auth.resendEmail':"प्रमाणीकरण इमेल फेरि पठाउनुहोस्",'auth.emailResent':"प्रमाणीकरण इमेल पठाइयो — आफ्नो इनबक्स जाँच्नुहोस्।",'auth.errNotVerified':"अझै प्रमाणित भएको छैन — पहिले आफ्नो इमेलको लिङ्क थिच्नुहोस्।",'auth.resetSent':"पासवर्ड रिसेट इमेल पठाइयो — आफ्नो इनबक्स जाँच्नुहोस्।"});
-Object.assign(HUB.i18n._dict('hi'),{'auth.checkEmailTitle':"अपना ईमेल देखें",'auth.checkEmailNote':"हमने {email} पर एक सत्यापन लिंक भेजा है। ईमेल में लिंक दबाएं, फिर यहां वापस आकर जारी रखें।",'auth.iveVerified':"मैंने सत्यापित कर दिया — जारी रखें",'auth.resendEmail':"सत्यापन ईमेल फिर से भेजें",'auth.emailResent':"सत्यापन ईमेल भेज दिया गया — अपना इनबॉक्स देखें।",'auth.errNotVerified':"अभी सत्यापित नहीं हुआ — पहले अपने ईमेल का लिंक दबाएं।",'auth.resetSent':"पासवर्ड रीसेट ईमेल भेज दिया गया — अपना इनबॉक्स देखें।"});
-/* Firebase custom action handler page (auth/action) — en only; other locales
-   fall back to English pending translation. */
+Object.assign(HUB.i18n._dict('es'),{'auth.checkEmailTitle':"Revisa tu correo",'auth.checkEmailNote':"Enviamos un enlace de verificación a {email}. Toca el enlace del correo y vuelve aquí para continuar.",'auth.iveVerified':"Ya verifiqué — continuar",'auth.resendEmail':"Reenviar correo de verificación",'auth.emailResent':"Correo de verificación enviado — revisa tu bandeja.",'auth.errNotVerified':"Aún no verificado — toca primero el enlace de tu correo.",'auth.resetSent':"Correo de restablecimiento enviado — revisa tu bandeja.",'auth.actionVerifying':"Verificando tu correo…",'auth.actionVerifyOk':"¡Correo verificado!",'auth.actionVerifyOkSub':"Tu correo electrónico ya está verificado. Entra en Onaro para terminar de configurar tu cuenta.",'auth.actionContinue':"Entrar en Onaro",'auth.actionLinkBad':"Este enlace no funcionó",'auth.actionLinkBadSub':"El enlace no es válido, caducó o ya se usó.",'auth.actionResendVerifyNote':"Inicia sesión en Onaro con tu correo y contraseña — la pantalla de verificación te permite reenviar el enlace.",'auth.actionResetTitle':"Elige una nueva contraseña",'auth.actionResetFor':"para {email}",'auth.actionNewPw':"Nueva contraseña",'auth.actionSetPw':"Establecer nueva contraseña",'auth.actionResetOk':"¡Contraseña actualizada!",'auth.actionResetOkSub':"Tu contraseña ha cambiado. Inicia sesión con tu nueva contraseña.",'auth.actionSignIn':"Iniciar sesión",'auth.actionNewLink':"Enviarme un nuevo enlace de restablecimiento",'auth.actionLinkSent':"Nuevo enlace enviado — revisa tu bandeja (y el correo no deseado).",'auth.actionModeUnknown':"Acción desconocida",'auth.actionModeUnknownSub':"Este enlace no parece una acción de correo de Onaro. Si estabas verificando tu correo o restableciendo tu contraseña, solicita un correo nuevo desde la app.",'auth.actionOpenApp':"Abrir Onaro",'auth.actionChecking':"Comprobando el enlace…",'auth.actionErrGeneric':"Algo salió mal. Inténtalo de nuevo.",'auth.actionEmailLabel':"Correo electrónico"});
+Object.assign(HUB.i18n._dict('ne'),{'auth.checkEmailTitle':"आफ्नो इमेल जाँच्नुहोस्",'auth.checkEmailNote':"हामीले {email} मा प्रमाणीकरण लिङ्क पठाएका छौं। इमेलमा भएको लिङ्क थिच्नुहोस्, अनि यहाँ फर्केर जारी राख्नुहोस्।",'auth.iveVerified':"मैले प्रमाणित गरेँ — जारी राख्नुहोस्",'auth.resendEmail':"प्रमाणीकरण इमेल फेरि पठाउनुहोस्",'auth.emailResent':"प्रमाणीकरण इमेल पठाइयो — आफ्नो इनबक्स जाँच्नुहोस्।",'auth.errNotVerified':"अझै प्रमाणित भएको छैन — पहिले आफ्नो इमेलको लिङ्क थिच्नुहोस्।",'auth.resetSent':"पासवर्ड रिसेट इमेल पठाइयो — आफ्नो इनबक्स जाँच्नुहोस्।",'auth.actionVerifying':"तपाईंको इमेल प्रमाणित हुँदैछ…",'auth.actionVerifyOk':"इमेल प्रमाणित भयो!",'auth.actionVerifyOkSub':"तपाईंको इमेल ठेगाना अब प्रमाणित भएको छ। आफ्नो खाता सेटअप पूरा गर्न Onaro मा जारी राख्नुहोस्।",'auth.actionContinue':"Onaro मा जारी राख्नुहोस्",'auth.actionLinkBad':"यो लिङ्कले काम गरेन",'auth.actionLinkBadSub':"लिङ्क अमान्य छ, म्याद सकिएको छ, वा पहिले नै प्रयोग भइसकेको छ।",'auth.actionResendVerifyNote':"आफ्नो इमेल र पासवर्डले Onaro मा साइन इन गर्नुहोस् — त्यहाँको प्रमाणीकरण स्क्रिनबाट तपाईंले लिङ्क फेरि पठाउन सक्नुहुन्छ।",'auth.actionResetTitle':"नयाँ पासवर्ड छान्नुहोस्",'auth.actionResetFor':"{email} का लागि",'auth.actionNewPw':"नयाँ पासवर्ड",'auth.actionSetPw':"नयाँ पासवर्ड सेट गर्नुहोस्",'auth.actionResetOk':"पासवर्ड अद्यावधिक भयो!",'auth.actionResetOkSub':"तपाईंको पासवर्ड परिवर्तन भएको छ। आफ्नो नयाँ पासवर्डले साइन इन गर्नुहोस्।",'auth.actionSignIn':"साइन इन",'auth.actionNewLink':"मलाई नयाँ रिसेट लिङ्क इमेल गर्नुहोस्",'auth.actionLinkSent':"नयाँ रिसेट लिङ्क पठाइयो — आफ्नो इनबक्स (र स्पाम फोल्डर) जाँच्नुहोस्।",'auth.actionModeUnknown':"अज्ञात कार्य",'auth.actionModeUnknownSub':"यो लिङ्क Onaro इमेल कार्यजस्तो देखिँदैन। यदि तपाईं आफ्नो इमेल प्रमाणित गर्दै वा पासवर्ड रिसेट गर्दै हुनुहुन्थ्यो भने, एपबाट नयाँ इमेल मगाउनुहोस्।",'auth.actionOpenApp':"Onaro खोल्नुहोस्",'auth.actionChecking':"लिङ्क जाँचिँदै…",'auth.actionErrGeneric':"केही गडबड भयो। कृपया फेरि प्रयास गर्नुहोस्।",'auth.actionEmailLabel':"इमेल"});
+Object.assign(HUB.i18n._dict('hi'),{'auth.checkEmailTitle':"अपना ईमेल देखें",'auth.checkEmailNote':"हमने {email} पर एक सत्यापन लिंक भेजा है। ईमेल में लिंक दबाएं, फिर यहां वापस आकर जारी रखें।",'auth.iveVerified':"मैंने सत्यापित कर दिया — जारी रखें",'auth.resendEmail':"सत्यापन ईमेल फिर से भेजें",'auth.emailResent':"सत्यापन ईमेल भेज दिया गया — अपना इनबॉक्स देखें।",'auth.errNotVerified':"अभी सत्यापित नहीं हुआ — पहले अपने ईमेल का लिंक दबाएं।",'auth.resetSent':"पासवर्ड रीसेट ईमेल भेज दिया गया — अपना इनबॉक्स देखें।",'auth.actionVerifying':"आपका ईमेल सत्यापित हो रहा है…",'auth.actionVerifyOk':"ईमेल सत्यापित हो गया!",'auth.actionVerifyOkSub':"आपका ईमेल पता अब सत्यापित हो गया है। अपना खाता सेटअप पूरा करने के लिए Onaro में जारी रखें।",'auth.actionContinue':"Onaro में जारी रखें",'auth.actionLinkBad':"यह लिंक काम नहीं कर रहा",'auth.actionLinkBadSub':"लिंक अमान्य है, समाप्त हो गया है, या पहले ही इस्तेमाल हो चुका है।",'auth.actionResendVerifyNote':"अपने ईमेल और पासवर्ड से Onaro में साइन इन करें — वहां की सत्यापन स्क्रीन से आप लिंक फिर से भेज सकते हैं।",'auth.actionResetTitle':"नया पासवर्ड चुनें",'auth.actionResetFor':"{email} के लिए",'auth.actionNewPw':"नया पासवर्ड",'auth.actionSetPw':"नया पासवर्ड सेट करें",'auth.actionResetOk':"पासवर्ड अपडेट हो गया!",'auth.actionResetOkSub':"आपका पासवर्ड बदल दिया गया है। अपने नए पासवर्ड से साइन इन करें।",'auth.actionSignIn':"साइन इन",'auth.actionNewLink':"मुझे नया रीसेट लिंक ईमेल करें",'auth.actionLinkSent':"नया रीसेट लिंक भेज दिया गया — अपना इनबॉक्स (और स्पैम फ़ोल्डर) देखें।",'auth.actionModeUnknown':"अज्ञात कार्रवाई",'auth.actionModeUnknownSub':"यह लिंक Onaro की ईमेल कार्रवाई जैसा नहीं लग रहा। अगर आप अपना ईमेल सत्यापित कर रहे थे या पासवर्ड रीसेट कर रहे थे, तो ऐप से नया ईमेल मंगवाएं।",'auth.actionOpenApp':"Onaro खोलें",'auth.actionChecking':"लिंक जांचा जा रहा है…",'auth.actionErrGeneric':"कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",'auth.actionEmailLabel':"ईमेल"});
+/* Firebase custom action handler page (auth/action) — translated for en/es/ne/hi
+   2026-10-07; other locales fall back to English. */
 Object.assign(HUB.i18n._dict('en'),{'auth.actionVerifying':"Verifying your email…",'auth.actionVerifyOk':"Email verified!",'auth.actionVerifyOkSub':"Your email address is now verified. Continue into Onaro to finish setting up your account.",'auth.actionContinue':"Continue into Onaro",'auth.actionLinkBad':"This link didn't work",'auth.actionLinkBadSub':"The link is invalid, expired, or was already used.",'auth.actionResendVerifyNote':"Sign in to Onaro with your email and password — the verification screen there lets you resend the link.",'auth.actionResetTitle':"Choose a new password",'auth.actionResetFor':"for {email}",'auth.actionNewPw':"New password",'auth.actionSetPw':"Set new password",'auth.actionResetOk':"Password updated!",'auth.actionResetOkSub':"Your password has been changed. Sign in with your new password.",'auth.actionSignIn':"Sign in",'auth.actionNewLink':"Email me a new reset link",'auth.actionLinkSent':"New reset link sent — check your inbox (and spam folder).",'auth.actionModeUnknown':"Unknown action",'auth.actionModeUnknownSub':"This link doesn't look like an Onaro email action. If you were verifying your email or resetting your password, request a fresh email from the app.",'auth.actionOpenApp':"Open Onaro",'auth.actionChecking':"Checking link…",'auth.actionErrGeneric':"Something went wrong. Please try again.",'auth.actionEmailLabel':"Email"});
 
 /* ---- Ask Onaro v2: full-app guide knowledge base (2026-09-24) ----
@@ -7623,7 +7623,7 @@ Object.assign(HUB.i18n._dict('en'),{
 Object.assign(HUB.i18n._dict('es'),{
 'deg.entryTitle':'Planes de estudio',
 'deg.entryHook':'Tu carrera, clase por clase.',
-'deg.entrySub':'{n} planes · {s} universidades',
+'deg.entrySub':'{n} planes · {s} universidades','deg.entryCta':"Encuentra tu camino",
 'deg.searchPh':'Buscar universidad o carrera…',
 'deg.all':'Todos',
 'deg.associate':'Técnico',
@@ -7637,6 +7637,7 @@ Object.assign(HUB.i18n._dict('es'),{
 'deg.checkAdvisor':'Consulta a un asesor',
 'deg.noMatch':'Ningún plan coincide con tu búsqueda.',
 'deg.loadFail':'No se pudieron cargar los planes — revisa tu conexión e inténtalo de nuevo.',
+'deg.sampleNote':"Muestra de vista previa · {n} de {total} planes — el catálogo completo llega con el backend.",
 'deg.pendingMore':'{n} más próximamente',
 'deg.browseAll':'Buscar en todas las universidades de EE. UU.',
 'deg.browseSub':'{n} escuelas · todas las universidades que otorgan títulos',
@@ -7688,7 +7689,7 @@ Object.assign(HUB.i18n._dict('es'),{
 Object.assign(HUB.i18n._dict('ne'),{
 'deg.entryTitle':'डिग्री योजनाहरू',
 'deg.entryHook':'तपाईंको डिग्री, एक-एक कक्षा।',
-'deg.entrySub':'{n} योजना · {s} कलेज',
+'deg.entrySub':'{n} योजना · {s} कलेज','deg.entryCta':"आफ्नो बाटो खोज्नुहोस्",
 'deg.searchPh':'कलेज वा मेजर खोज्नुहोस्…',
 'deg.all':'सबै',
 'deg.associate':'एशोसिएट',
@@ -7702,6 +7703,7 @@ Object.assign(HUB.i18n._dict('ne'),{
 'deg.checkAdvisor':'सल्लाहकारसँग सोध्नुहोस्',
 'deg.noMatch':'तपाईंको खोजसँग कुनै योजना मिलेन।',
 'deg.loadFail':'डिग्री योजनाहरू लोड हुन सकेन — जडान जाँचेर पुन: प्रयास गर्नुहोस्।',
+'deg.sampleNote':"प्रिभ्यु नमूना · जम्मा {total} मध्ये {n} योजनाहरू — पूर्ण क्याटलग ब्याकएन्डसँगै आउनेछ।",
 'deg.pendingMore':'{n} वटा चाँडै आउँदैछन्',
 'deg.browseAll':'सबै अमेरिकी कलेजहरू खोज्नुहोस्',
 'deg.browseSub':'{n} विद्यालयहरू · उपाधि दिने सबै कलेज तथा विश्वविद्यालय',
@@ -7753,7 +7755,7 @@ Object.assign(HUB.i18n._dict('ne'),{
 Object.assign(HUB.i18n._dict('hi'),{
 'deg.entryTitle':'डिग्री प्लान',
 'deg.entryHook':'आपकी डिग्री, एक-एक क्लास।',
-'deg.entrySub':'{n} प्लान · {s} कॉलेज',
+'deg.entrySub':'{n} प्लान · {s} कॉलेज','deg.entryCta':"अपना रास्ता खोजें",
 'deg.searchPh':'कॉलेज या मेजर खोजें…',
 'deg.all':'सभी',
 'deg.associate':'एसोसिएट',
@@ -7767,6 +7769,7 @@ Object.assign(HUB.i18n._dict('hi'),{
 'deg.checkAdvisor':'एडवाइज़र से पूछें',
 'deg.noMatch':'आपकी खोज से कोई प्लान नहीं मिला।',
 'deg.loadFail':'डिग्री प्लान लोड नहीं हुए — कनेक्शन जांचकर फिर कोशिश करें।',
+'deg.sampleNote':"प्रीव्यू नमूना · कुल {total} में से {n} प्लान — पूरा कैटलॉग बैकएंड के साथ आएगा।",
 'deg.pendingMore':'{n} और जल्द आ रहे हैं',
 'deg.browseAll':'सभी अमेरिकी कॉलेज खोजें',
 'deg.browseSub':'{n} स्कूल · सभी डिग्री देने वाले कॉलेज और विश्वविद्यालय',

@@ -1,0 +1,20 @@
+# Surge deploy ignore.
+# 2026-10-06: the backend API (window.__ONARO_API_BASE) now serves degree
+# plans and professors on demand from the database. The bundled per-school
+# JSONs are excluded so the project fits Surge's size limit again.
+# Kept: data/degrees/inventory/ (7MB national directory, loaded directly).
+
+# Degree plans: ~10,700 files, ~170MB — served by /api/degrees/*
+data/degrees/*.json
+
+# Faculty: per-school files + build scripts — served by /api/schools and
+# /v1/institutions/*/professors. Nothing in here is needed at runtime.
+data/faculty/
+
+data/degrees/__pycache__/
+
+# QA tooling never ships to the public preview
+qa/
+
+# Source/generation files, not app assets (no references in code)
+icons/raw/

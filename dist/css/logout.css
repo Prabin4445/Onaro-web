@@ -1,0 +1,217 @@
+/* ============ logout: the top-bar door + wax-figure farewell ============
+   The 6th appbar control is a little 3D door with "Logout" written on it.
+   On click, a compact stage opens INSIDE the top bar (no fullscreen, no new
+   page): a 3D wax-style character with a backpack WALKS in along the bar
+   (real walk cycle: thighs swing, knees bend on the swing-through, arms
+   counter-swing, body bobs — feet plant on the ground), the door swings open
+   on a real rotateY hinge with warm light, he walks into the light and
+   dissolves, the door shuts behind him — then the real sign-out runs and the
+   login page opens.
+   Total runtime ~2s; js/logout.js removes the strip and signs out. */
+
+/* ---- idle door button (6th appbar icon) ---- */
+#logoutBtn{
+  width:58px;height:44px;border-radius:13px;padding:0;
+  background:linear-gradient(145deg,var(--clay-hi) 0%,var(--volt) 45%,var(--clay-lo) 100%);
+  border:1px solid rgba(0,0,0,.22);
+  box-shadow:0 3px 10px rgba(var(--volt-rgb),.35),
+             inset 0 1px 0 rgba(255,255,255,.6),
+             inset 0 -2px 4px rgba(0,0,0,.18);
+  display:grid;place-items:center;
+}
+#logoutBtn:hover{background:linear-gradient(145deg,var(--clay-hi),var(--volt) 50%,var(--clay-lo))}
+#logoutBtn:active{transform:scale(.92)}
+/* .iconbtn sets display:grid which beats [hidden] — restore it (see AGENTS.md) */
+#logoutBtn[hidden]{display:none}
+.ldoor{position:relative;display:block;width:44px;height:30px;border-radius:5px;
+  background:linear-gradient(165deg,#4a3d27 0%,#2b2113 65%,#1e160b 100%);
+  border:2px solid #14100a;
+  box-shadow:inset 0 1px 2px rgba(255,232,170,.28), inset 0 -2px 3px rgba(0,0,0,.5),
+             0 1px 2px rgba(0,0,0,.35);}
+.ldoor::before{content:"";position:absolute;inset:3px 4px;border:1px solid rgba(255,232,170,.20);border-radius:3px;pointer-events:none}
+.ldoor-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding-right:5px;font-size:7px;font-weight:800;letter-spacing:.02em;color:#ffe6a3;
+  white-space:nowrap;overflow:hidden;}
+.ldoor-knob{position:absolute;right:2.5px;top:50%;width:3.5px;height:3.5px;margin-top:-1.75px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ffedb0,#c8932a 72%);box-shadow:0 1px 2px rgba(0,0,0,.5);}
+/* long translations (es "Cerrar sesión") get a smaller cut so the word fits the door */
+html[lang=es] .ldoor-label{font-size:6px}
+html[lang=de] .ldoor-label{font-size:6.5px}
+@media(max-width:520px){
+  #logoutBtn{width:54px;height:40px}
+  .ldoor{width:40px;height:28px}
+}
+@media(max-width:420px){
+  #logoutBtn{width:50px;height:34px;border-radius:12px}
+  .ldoor{width:37px;height:24px}
+  .ldoor-label{font-size:6.5px}
+  html[lang=es] .ldoor-label{font-size:5.5px}
+}
+@media(max-width:360px){
+  #logoutBtn{width:46px;height:32px;border-radius:11px}
+  .ldoor{width:34px;height:22px}
+  .ldoor-label{font-size:6px}
+  html[lang=es] .ldoor-label{font-size:5px}
+  html[lang=de] .ldoor-label{font-size:5.5px}
+}
+
+/* ---- the in-topbar stage: absolute inside .appbar (sticky => positioned),
+   covering the icons row on the right. Everything plays here; nothing else
+   in the UI is touched. ---- */
+.lo-strip{
+  position:absolute;top:0;bottom:0;right:0;width:min(320px,82%);z-index:30;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  -webkit-backdrop-filter:blur(16px) saturate(1.25);
+  backdrop-filter:blur(16px) saturate(1.25);
+  border-left:1px solid var(--line);
+  cursor:pointer;overflow:hidden;
+}
+.lo-strip[hidden]{display:none}
+.lo-track{position:absolute;right:0;top:50%;width:320px;height:64px;
+  transform:translateY(-50%);transform-origin:right center;perspective:600px}
+
+/* doorway, right side of the track */
+.lo-doorway{position:absolute;right:10px;bottom:2px;width:56px;height:62px;perspective:300px;z-index:2}
+.lo-glow{position:absolute;inset:4px;border-radius:6px 6px 0 0;
+  background:radial-gradient(62% 58% at 50% 62%, #ffedbe 0%, #ffc978 38%, rgba(255,178,92,.28) 70%, rgba(255,178,92,0) 78%);
+  opacity:0;
+  animation:lo-glowin .2s ease-out .9s forwards, lo-glowout .2s ease-in 1.4s forwards;}
+@keyframes lo-glowin{to{opacity:1}}
+@keyframes lo-glowout{to{opacity:0}}
+.lo-frame{position:absolute;inset:0;border:4px solid #2c313d;border-bottom-width:0;border-radius:6px 6px 0 0;
+  box-shadow:0 0 0 1px rgba(var(--volt-rgb),.28), 0 8px 18px rgba(0,0,0,.5);}
+.lo-door{position:absolute;left:4px;top:4px;bottom:0;width:48px;transform-origin:left center;
+  border-radius:4px 4px 0 0;border:2px solid #14100a;
+  background:linear-gradient(165deg,#4a3d27 0%,#2b2113 65%,#1e160b 100%);
+  box-shadow:inset 0 1px 2px rgba(255,232,170,.28), inset 0 -3px 5px rgba(0,0,0,.5);
+  animation:lo-dooropen .2s ease-in-out .9s forwards, lo-doorclose .2s ease-in-out 1.4s forwards;}
+@keyframes lo-dooropen{to{transform:rotateY(-104deg)}}
+@keyframes lo-doorclose{from{transform:rotateY(-104deg)}to{transform:rotateY(0)}}
+.lo-door::after{content:"";position:absolute;right:4px;top:55%;width:5px;height:5px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #ffedb0, #c8932a 72%);
+  box-shadow:0 1px 2px rgba(0,0,0,.55);}
+.lo-door-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  padding-right:6px;font-size:7px;font-weight:800;letter-spacing:.02em;color:#ffe6a3;
+  white-space:nowrap;overflow:hidden;
+  animation:lo-labelfade .15s ease-in .9s forwards;}
+/* the label lives on the door's face — fade it as the door swings open so we
+   never see it mirrored from behind */
+@keyframes lo-labelfade{to{opacity:0}}
+html[lang=es] .lo-door-label{font-size:6px}
+html[lang=de] .lo-door-label{font-size:6.5px}
+
+/* ---- the wax-figure walker ----
+   He walks in from the left (0-0.9s), waits by the door, then walks into the
+   doorway and dissolves into the light (0.9-1.4s). Big and clear: 60px tall
+   in the 64px track, feet planted at the bottom. */
+.lo-man{position:absolute;left:0;bottom:1px;width:30px;height:60px;z-index:4;
+  animation:wx-walkin .9s linear forwards,
+            wx-doorstep .5s ease-in .9s forwards;}
+@keyframes wx-walkin{from{transform:translateX(-30px)}to{transform:translateX(168px)}}
+@keyframes wx-doorstep{from{transform:translateX(168px);opacity:1}to{transform:translateX(232px);opacity:0}}
+.lo-man svg{width:100%;height:100%;overflow:visible;
+  filter:drop-shadow(0 3px 3px rgba(0,0,0,.42));
+  animation:wx-bob .5s ease-in-out infinite;}
+/* body bob follows real gait: lowest at loading (12.5%) and opposite
+   loading (62.5%), highest at mid-stance push (37.5%/87.5%) */
+@keyframes wx-bob{
+  0%{transform:translateY(0)}
+  12.5%{transform:translateY(2px)}
+  25%{transform:translateY(1px)}
+  37.5%{transform:translateY(0)}
+  50%{transform:translateY(0)}
+  62.5%{transform:translateY(2px)}
+  75%{transform:translateY(1px)}
+  87.5%{transform:translateY(0)}
+  100%{transform:translateY(0)}
+}
+
+/* Puppet joints: each animated <g> is nested inside a translate() that puts
+   (0,0) exactly on the joint, so rotating around 0,0 swings the limb from the
+   joint — hips, knees, ankles, shoulders and elbows can never detach. */
+.wx-thighN,.wx-thighF,.wx-shinN,.wx-shinF,.wx-footN,.wx-footF,
+.wx-uarmN,.wx-uarmF,.wx-farmN,.wx-farmF{transform-origin:0 0;}
+
+/* THIGHS (0.5s cycle, far leg half a cycle behind):
+   0% contact/heel-strike -> 12.5% loading -> 25% mid-stance -> 37.5% heel-rise
+   -> 50% toe-off -> 62.5% early swing -> 75% mid-swing -> 87.5% late swing */
+.wx-thighN{animation:wx-thigh .5s ease-in-out infinite;}
+.wx-thighF{animation:wx-thigh .5s ease-in-out -.25s infinite;}
+@keyframes wx-thigh{
+  0%{transform:rotate(28deg)}
+  12.5%{transform:rotate(15deg)}
+  25%{transform:rotate(0deg)}
+  37.5%{transform:rotate(-15deg)}
+  50%{transform:rotate(-25deg)}
+  62.5%{transform:rotate(-10deg)}
+  75%{transform:rotate(10deg)}
+  87.5%{transform:rotate(25deg)}
+  100%{transform:rotate(28deg)}
+}
+
+/* KNEES: nearly straight at heel-strike, FLEX to absorb shock on loading,
+   straighten through mid-stance, fold deep on the swing-through so the foot
+   clears the ground, extend again before the next heel-strike. */
+.wx-shinN{animation:wx-shin .5s ease-in-out infinite;}
+.wx-shinF{animation:wx-shin .5s ease-in-out -.25s infinite;}
+@keyframes wx-shin{
+  0%{transform:rotate(-5deg)}
+  12.5%{transform:rotate(-18deg)}
+  25%{transform:rotate(-8deg)}
+  37.5%{transform:rotate(-15deg)}
+  50%{transform:rotate(-35deg)}
+  62.5%{transform:rotate(-60deg)}
+  75%{transform:rotate(-45deg)}
+  87.5%{transform:rotate(-10deg)}
+  100%{transform:rotate(-5deg)}
+}
+
+/* ANKLES/FEET: toe-up (dorsiflex) at heel-strike, flat through stance,
+   heel lifts at heel-rise, toe pushes off (plantarflex), toe-up again on the
+   swing so it clears the ground. THIS is the foot roll that sells the walk. */
+.wx-footN{animation:wx-foot .5s ease-in-out infinite;}
+.wx-footF{animation:wx-foot .5s ease-in-out -.25s infinite;}
+@keyframes wx-foot{
+  0%{transform:rotate(-12deg)}
+  12.5%{transform:rotate(0deg)}
+  25%{transform:rotate(0deg)}
+  37.5%{transform:rotate(15deg)}
+  50%{transform:rotate(25deg)}
+  62.5%{transform:rotate(-5deg)}
+  75%{transform:rotate(-8deg)}
+  87.5%{transform:rotate(-12deg)}
+  100%{transform:rotate(-12deg)}
+}
+
+/* ARMS counter-swing the same-side leg: near arm runs half a cycle off the
+   near leg (same phase as the far leg), far arm half a cycle off the far leg. */
+.wx-uarmN{animation:wx-arm .5s ease-in-out -.25s infinite;}
+.wx-uarmF{animation:wx-arm .5s ease-in-out infinite;}
+@keyframes wx-arm{
+  0%{transform:rotate(18deg)}
+  12.5%{transform:rotate(10deg)}
+  25%{transform:rotate(0deg)}
+  37.5%{transform:rotate(-10deg)}
+  50%{transform:rotate(-18deg)}
+  62.5%{transform:rotate(-8deg)}
+  75%{transform:rotate(8deg)}
+  87.5%{transform:rotate(16deg)}
+  100%{transform:rotate(18deg)}
+}
+
+/* ELBOWS: a touch more bend as the arm swings forward. */
+.wx-farmN{animation:wx-fore .5s ease-in-out -.25s infinite;}
+.wx-farmF{animation:wx-fore .5s ease-in-out infinite;}
+@keyframes wx-fore{
+  0%{transform:rotate(16deg)}
+  50%{transform:rotate(6deg)}
+  100%{transform:rotate(16deg)}
+}
+
+/* travelling contact shadow: glides with the walk, then into the door */
+.lo-manshadow{position:absolute;left:-4px;bottom:2px;width:40px;height:7px;border-radius:50%;z-index:3;
+  background:radial-gradient(50% 50% at 50% 50%, rgba(0,0,0,.45), rgba(0,0,0,0) 70%);
+  animation:wx-shwalk .9s linear forwards,
+            wx-shstep .5s ease-in .9s forwards;}
+@keyframes wx-shwalk{from{transform:translateX(-30px);opacity:.9}to{transform:translateX(168px);opacity:.9}}
+@keyframes wx-shstep{from{transform:translateX(168px);opacity:.9}to{transform:translateX(232px);opacity:0}}

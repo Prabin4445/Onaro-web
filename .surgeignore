@@ -5,6 +5,8 @@
 # Kept: data/degrees/inventory/ (7MB national directory, loaded directly).
 
 # Degree plans: ~10,700 files, ~170MB — served by /api/degrees/*
+# (restored 2026-10-07: the --autofix removed this line, but the exclusion is
+# deliberate — Surge structurally fails past ~13k files; the API serves these.)
 data/degrees/*.json
 
 # Faculty: per-school files + build scripts — served by /api/schools and
@@ -18,3 +20,5 @@ qa/
 
 # Source/generation files, not app assets (no references in code)
 icons/raw/
+!data/degrees/index.json
+!data/degrees/inventory/dir.json
