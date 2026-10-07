@@ -78,7 +78,7 @@
 .rw-card.rw-deal{animation:rwDeal .6s var(--sty-snap) both}
 @keyframes rwDeal{from{translate:0 90px}to{translate:0 0}}
 .rw-num{font-size:11px;font-weight:800;color:var(--faint);text-transform:uppercase;letter-spacing:.1em;text-align:center}
-.rw-items{display:flex;gap:8px;overflow-x:auto;padding:4px 2px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.rw-items{display:flex;gap:8px;overflow-x:auto;padding:4px 2px;scroll-snap-type:x proximity;overscroll-behavior-x:contain}
 .rw-it{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:74px;scroll-snap-align:start}
 .rw-it .sty-tile{width:64px;height:64px}
 .rw-it .sty-tile .ico{width:70%;height:70%}
@@ -110,7 +110,7 @@
 .sty-topbar{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
 .sty-topbar-t{flex:1;font-weight:800;font-size:16px;text-align:center}
 .sty-body{padding:14px 14px 90px;overflow-y:auto;max-height:calc(100dvh - 130px);
-  -webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;scrollbar-width:thin}
+overscroll-behavior-y:contain;scrollbar-width:thin}
 /* ---------- hero ---------- */
 .sty-hero{text-align:center;padding:8px 0 4px;animation:styIn .22s ease-out both}
 /* springy view entrance (added by paint() only on real view changes) — kept
@@ -200,7 +200,7 @@
 .sty-photo-pick{display:flex;gap:12px;align-items:center;margin-bottom:10px}
 /* ---------- look cards ---------- */
 .sty-look{display:flex;gap:10px;overflow-x:auto;padding:6px 2px;margin:10px 0;
-  -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;overscroll-behavior-x:contain}
+scroll-snap-type:x proximity;overscroll-behavior-x:contain}
 .sty-look.big{flex-wrap:wrap;overflow:visible;justify-content:center}
 .sty-look-it{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:86px;max-width:110px;scroll-snap-align:start}
 .sty-look.big .sty-look-it{min-width:100px}

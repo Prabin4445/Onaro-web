@@ -45,7 +45,7 @@
 
 /* ---- mode switcher: glass pill, volt active (bare .seg untouched — me.js
    gender picker shares it, people.js renders its own without .gu) ---- */
-.seg.gu-seg{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+.seg.gu-seg{background:var(--glass);
   border:1px solid var(--glass-brd);border-radius:18px;padding:5px;
   box-shadow:0 10px 24px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.35)}
 .seg.gu-seg button{border-radius:13px;color:var(--ink-2)}
@@ -55,7 +55,6 @@
 
 /* ---- search input: crystal with volt focus glow (only #cgSearch lives in .gu) ---- */
 .gu .input{border-radius:18px;padding:13px 16px;background:var(--glass);
-  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   border:1px solid var(--glass-brd);
   box-shadow:inset 0 2px 8px rgba(0,0,0,.06),0 8px 20px rgba(0,0,0,.06)}
 .gu .input:focus{border-color:var(--volt);outline:none;
@@ -71,7 +70,7 @@
 .gu .btn-primary:active{transform:translateY(2px) scale(.99);
   box-shadow:0 5px 12px rgba(0,0,0,.22),0 0 10px color-mix(in srgb,var(--volt) 22%,transparent),
   inset 0 1px 0 rgba(255,255,255,.4),inset 0 -2px 6px rgba(0,0,0,.12)}
-.gu .btn-line{background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+.gu .btn-line{background:var(--glass);
   border:1px solid var(--glass-brd);border-radius:16px;
   box-shadow:0 8px 20px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.3)}
 .gu .btn-line:active{transform:translateY(2px);
@@ -81,7 +80,7 @@
 .gu .btn-ghost:active{transform:translateY(2px)}
 /* "New household": dashed crystal create-button */
 .gu .gu-new{border:1.5px dashed color-mix(in srgb,var(--volt) 55%,transparent);
-  background:var(--glass);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+  background:var(--glass);}
 .gu-back{color:var(--ink-2);border-radius:10px}
 .gu-back:active{transform:translateX(-2px)}
 
@@ -89,7 +88,7 @@
 .sechd.gu-sechd h2{font-family:var(--font-display);letter-spacing:-.01em}
 .sechd.gu-sechd .meta{background:var(--glass);border:1px solid var(--glass-brd);border-radius:999px;
   padding:3px 11px;font-weight:800;color:var(--ink-2);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+}
 
 /* ---- carousel cards: deeper crystal + LIVE pulse ---- */
 .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.6),0 0 26px color-mix(in srgb,var(--volt) 8%,transparent),
@@ -102,12 +101,10 @@ body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(
 .livebadge.gu-live{animation:guLivePulse 2.2s ease-in-out infinite}
 /* draft: muted glass */
 .gcard-draft,.draftbadge.gu-draft{background:var(--glass);
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
   border:1px solid var(--glass-brd);color:var(--ink-2)}
 
 /* ---- "Your groups" + campus rows: crystal, staggered entrance ---- */
 .gu .gu-row{border-radius:18px;background:var(--glass);
-  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   border:1px solid var(--glass-brd);
   box-shadow:0 10px 24px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3);
   animation:guRise .45s cubic-bezier(.22,.9,.28,1) backwards;animation-delay:calc(var(--i,0)*60ms)}
@@ -115,7 +112,6 @@ body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(
 
 /* ---- household cards: crystal, staggered entrance, press ---- */
 .gu-hh{position:relative;overflow:hidden;border-radius:22px;background:var(--glass-strong);
-  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
   border:1px solid var(--glass-brd);
   box-shadow:0 18px 44px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.4);
   animation:guRise .5s cubic-bezier(.22,.9,.28,1) backwards;animation-delay:calc(var(--i,0)*70ms);
@@ -138,33 +134,31 @@ body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(
   background:linear-gradient(115deg,rgba(255,255,255,.28),rgba(255,255,255,0) 40%)}
 .gu-hero img{position:relative;z-index:1}
 .gu-hero span{position:relative;z-index:1}
-.cgchip{background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+.cgchip{background:var(--glass);
   border:1px solid var(--glass-brd);
   box-shadow:0 6px 16px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3)}
 .gu-hhrow{position:relative}
 .gu .card{background:var(--glass-strong);
-  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
   border:1px solid var(--glass-brd);border-radius:22px;
   box-shadow:0 18px 44px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.35)}
 /* join-request card: dashed volt invitation */
-.frq-card{background:var(--glass);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+.frq-card{background:var(--glass);
   border:1.5px dashed color-mix(in srgb,var(--volt) 45%,transparent);border-radius:20px;
   box-shadow:0 12px 30px rgba(0,0,0,.10),inset 0 1px 0 rgba(255,255,255,.3)}
 /* bill rows: glass shell, swipe transform untouched */
 .gu .hhb{background:var(--glass);border:1px solid var(--glass-brd);border-radius:16px;
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+}
 .bill-thumb{border:2px solid var(--glass-brd);box-shadow:0 6px 14px rgba(0,0,0,.14)}
 /* balances / request key-value rows */
 .gu .kv{border-radius:14px;padding:10px 12px;background:var(--glass);
   border:1px solid var(--glass-brd);margin-bottom:8px;
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+}
 /* poll bars: volt fill with glow */
 .gu .pollbar i{background:var(--volt);
   box-shadow:0 0 8px color-mix(in srgb,var(--volt) 50%,transparent)}
 
 /* ---- communities: featured community card ---- */
 .gu-camp{position:relative;overflow:hidden;border-radius:22px;background:var(--glass-strong);
-  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
   border:1px solid var(--glass-brd);
   box-shadow:0 18px 44px rgba(0,0,0,.12),0 0 30px color-mix(in srgb,var(--volt) 10%,transparent),
   inset 0 1px 0 rgba(255,255,255,.35)}
@@ -183,7 +177,6 @@ body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(
    the view root by the groups view render — people.js itself untouched).
    Crystal cards, glass skill chips, clay press on action buttons. ---- */
 .gu .ppl-card{position:relative;overflow:hidden;background:var(--glass);
-  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
   border:1px solid var(--glass-brd);border-radius:22px;
   box-shadow:0 14px 30px rgba(0,0,0,.14),inset 0 1px 0 rgba(255,255,255,.35);
   animation:guRise .5s cubic-bezier(.22,.9,.28,1) backwards}
@@ -191,15 +184,14 @@ body.dark .gcard{box-shadow:0 30px 56px -22px rgba(0,0,0,.8),0 0 26px color-mix(
   pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.26),rgba(255,255,255,0) 32%)}
 .gu .ppl-card:active{transform:translateY(2px)}
 .gu .ppl-prof{background:var(--glass);border:1px solid var(--glass-brd);border-radius:22px;
-  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
   box-shadow:0 14px 30px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.35)}
 .gu .ppl-actions .btn:active{transform:translateY(2px) scale(.98)}
 .gu #pplChips .chip{background:var(--glass);border:1px solid var(--glass-brd);
-  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:999px;
+border-radius:999px;
   box-shadow:0 6px 14px rgba(0,0,0,.08),inset 0 1px 0 rgba(255,255,255,.3)}
 .gu #pplChips .chip.on{background:var(--volt);color:#131A00;border-color:transparent;
   box-shadow:0 6px 16px color-mix(in srgb,var(--volt) 45%,transparent),inset 0 1px 0 rgba(255,255,255,.5)}
 .gu #pplChips .chip:active{transform:scale(.95)}
 .gu .ppl-skill{background:var(--glass);border:1px solid var(--glass-brd);border-radius:999px;
-  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+}
 .gu .demo-note{border-radius:14px}

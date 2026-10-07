@@ -162,7 +162,7 @@ h2.mkd-title{font-size:18px;font-weight:700;margin:0 0 4px;line-height:1.4}
 .mkphoto-zoomhint{position:absolute;bottom:8px;right:14px;z-index:5;color:#fff;opacity:.75;pointer-events:none}
 .mkphoto-zoomhint svg{width:14px;height:14px;display:block}
 /* "you may also like" cards: mini glossy */
-.mksim{display:flex;gap:10px;overflow-x:auto;padding:6px 2px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.mksim{display:flex;gap:10px;overflow-x:auto;padding:6px 2px 12px;scrollbar-width:none;overscroll-behavior-x:contain}
 .mksim::-webkit-scrollbar{display:none}
 .mksim-card{flex:0 0 132px;min-width:0;cursor:pointer;background:linear-gradient(155deg,rgba(255,255,255,.06),rgba(255,255,255,0) 45%),var(--surface);
   border:1px solid var(--line);border-radius:16px;padding:6px;color:var(--ink);text-align:left;

@@ -7,7 +7,7 @@
    family as .sheethost/.chatroot). The call column docks itself with
    left:50% + translateX(-50%). */
 .callroot{position:fixed;inset:0;z-index:400;display:block;
-  background:rgba(247,248,243,.86);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);}
+  background:rgba(247,248,243,.86);}
 body.dark .callroot{background:rgba(9,11,7,.78);}
 .callroot[hidden]{display:none;}
 .callwrap{position:absolute;left:50%;top:0;transform:translateX(-50%);

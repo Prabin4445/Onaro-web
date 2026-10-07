@@ -65,8 +65,6 @@
    deepens so the sheet reads as a raised glass plane. */
 .sheethost {
   background: rgba(5, 7, 3, 0.62);
-  -webkit-backdrop-filter: blur(6px) saturate(1.1);
-  backdrop-filter: blur(6px) saturate(1.1);
 }
 .sheet {
   background: var(--pd-glass-sheet);
@@ -104,15 +102,11 @@
 }
 .chatroot {
   background: rgba(5, 7, 3, 0.55);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 
 /* Toasts: floating glass pills with lift. */
 .toast {
   background: var(--pd-glass-toast);
-  -webkit-backdrop-filter: blur(16px) saturate(1.25);
-  backdrop-filter: blur(16px) saturate(1.25);
   box-shadow:
     var(--pd-edge-hi),
     0 14px 30px -10px rgba(0, 0, 0, 0.65);
@@ -219,8 +213,6 @@ button[class]:not(.iconbtn):not(.sheetx):not([class*="ghost"]):active {
 /* The universal sheet dismiss ✕: glassy disc with a lit rim. */
 .sheetx {
   background: rgba(255, 255, 255, 0.06);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   box-shadow:
     var(--pd-edge-hi),
     0 6px 14px -6px rgba(0, 0, 0, 0.6);

@@ -1,9 +1,9 @@
 /* "Today at a glance" — momentum touch carousel of water-glass stat tiles.
-   Free stop where the finger lifts (no snap); native iOS momentum via
-   -webkit-overflow-scrolling. Auto-rotate pauses on touch, resumes after idle. */
+   Free stop where the finger lifts (no snap); native iOS momentum; scroll chaining tamed
+   via overscroll-behavior-x. Auto-rotate pauses on touch, resumes after idle. */
 .glwrap{margin-bottom:14px}
 .glflow{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;
-  padding:8px 2px 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;
+  padding:8px 2px 12px;scrollbar-width:none;cursor:grab;
   scroll-snap-type:none;touch-action:pan-x pan-y}
 .glflow::-webkit-scrollbar{display:none}
 .glflow:active{cursor:grabbing}
@@ -13,7 +13,6 @@
   -webkit-appearance:none;appearance:none;overflow:hidden;
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
   background:linear-gradient(165deg,rgba(255,255,255,.22),rgba(255,255,255,.07));
-  -webkit-backdrop-filter:blur(22px) saturate(1.6);backdrop-filter:blur(22px) saturate(1.6);
   border:1px solid rgba(255,255,255,.30);
   box-shadow:0 26px 50px -22px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.35);
   animation:glfloat 5s ease-in-out infinite}
