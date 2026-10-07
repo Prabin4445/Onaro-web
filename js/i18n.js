@@ -74,6 +74,10 @@ function getLang(){
   var l=readStore().lang;
   return LOCALES[l]?l:DEFAULT_LANG;
 }
+/* Guards setLang against out-of-order lazy loads: tapping language A (slow
+   download) then language B must leave B applied, not A when its fetch
+   lands later. Every setLang bumps the sequence; a stale .then bails. */
+var langReqSeq=0;
 function setLang(code, opts){
   if(!LOCALES[code]) code=DEFAULT_LANG;
   /* Lazy locale not in memory yet: fetch first (memory -> localStorage ->
@@ -83,14 +87,17 @@ function setLang(code, opts){
      the locale is NOT applied or persisted — the current language stays
      active and the row shows a localized tap-to-retry error state. */
   if(LOCALES[code].lazy && !localeReady(code)){
+    var my=++langReqSeq;
     markLangLoading(code,true);
     loadLocale(code).then(function(ok){
       markLangLoading(code,false);
+      if(my!==langReqSeq) return; /* superseded by a newer setLang — don't clobber it */
       if(ok){ doSetLang(code,opts); }
       else{ markLangError(code); }
     });
     return;
   }
+  langReqSeq++; /* a sync apply also invalidates any in-flight lazy load */
   doSetLang(code,opts);
 }
 /* Right-to-left layout for ar/fa/ur: dir on the root flips flex/grid order,

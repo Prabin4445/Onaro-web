@@ -71,6 +71,17 @@ function data(){
 /* one-shot: painter(null) while loading, painter(false) on error,
    painter(data) on success. Painters must re-query their target node —
    the view may have re-rendered while the fetch was in flight. */
+function validWx(d){
+  /* Open-Meteo answers HTTP 200 even for error payloads ({error:true});
+     a malformed truthy body must never reach the painters — they index
+     d.daily.*[0] directly. Invalid shape => honest failure UI. */
+  return !!(d&&d.current&&typeof d.current==='object'
+    &&isFinite(d.current.temperature_2m)&&isFinite(d.current.weather_code)
+    &&d.daily&&typeof d.daily==='object'
+    &&Array.isArray(d.daily.temperature_2m_max)&&d.daily.temperature_2m_max.length
+    &&Array.isArray(d.daily.temperature_2m_min)&&d.daily.temperature_2m_min.length
+    &&Array.isArray(d.daily.weather_code)&&d.daily.weather_code.length);
+}
 function refresh(painter){
   /* Weather needs internet */
   if(window.HUB&&HUB.offline&&HUB.offline.is()){ painter(false); return; }
@@ -79,7 +90,10 @@ function refresh(painter){
   if(wxCache&&wxCache.key===k&&now-wxCache.at<30*60*1000){ painter(wxCache.data); return; }
   painter(null);
   _fj(wxURL(l))
-    .then(function(d){ wxCache={key:k,at:now,data:d}; painter(d); })
+    .then(function(d){
+      if(!validWx(d)) throw new Error('bad wx shape');
+      wxCache={key:k,at:now,data:d}; painter(d);
+    })
     .catch(function(){ painter(false); });
 }
 

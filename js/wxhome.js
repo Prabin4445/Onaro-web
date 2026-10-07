@@ -28,11 +28,13 @@ function dayCell(dayLbl, code, big, hi, lo, rainP){
     '<span class="wxdash-sub wxdash-rain">🌧️ '+(rainP||0)+'%</span>'+
   '</div>';
 }
-function stripInner(){
+function stripInner(d){
   const w=wx(); if(!w) return '';
   const l=w.loc();
   if(!l) return '<span class="wxdash-set">🌦️ '+esc(t('wx.setLoc'))+' <span class="wxdash-chev">›</span></span>';
-  const d=w.data();
+  /* d is the painter value from HUB.wx.refresh (null=loading, false=failed,
+     object=data). When omitted, read the sync cache like before. */
+  if(d===undefined) d=w.data();
   if(d===null||d===undefined) return '<span class="wxdash-load">⏳ '+esc(t('daily.wxLoading'))+'</span>';
   if(d===false) return '<span class="wxdash-set">🌦️ '+esc(t('daily.wxFail'))+' <span class="wxdash-chev">›</span></span>';
   const day=d.daily, c=d.current;
@@ -46,9 +48,9 @@ function stripInner(){
 function stripHTML(){
   return '<button class="wxdash" id="wxStrip" aria-label="'+esc(t('daily.weather'))+'">'+stripInner()+'</button>';
 }
-function paintStrip(){
+function paintStrip(d){
   const el=document.getElementById('wxStrip'); if(!el) return;
-  el.innerHTML=stripInner();
+  el.innerHTML=stripInner(d);
 }
 /* one-shot: paint from cache now, then live-fill when the fetch lands */
 function refresh(){
@@ -69,23 +71,25 @@ function bind(el){
 function detailBodyHTML(d){
   const w=wx();
   if(d===null||d===undefined) return '<div class="sub" style="padding:18px 0">⏳ '+esc(t('daily.wxLoading'))+'</div>';
-  if(d===false||!d.current)
+  if(d===false||!d.current||!d.daily)
     return '<div class="empty"><span class="empty-ico">🌦️</span><p class="sub">'+esc(t('daily.wxFail'))+'</p>'+
       '<button class="btn btn-ghost btn-sm" id="wxdRetry">'+esc(t('common.retry'))+'</button></div>';
   const c=d.current, g=w.group(c.weather_code), day=d.daily, today=0;
   const hi=w.temp(day.temperature_2m_max[today]), lo=w.temp(day.temperature_2m_min[today]);
-  /* hourly: next 12 entries from now */
+  /* hourly: next 12 entries from now (hourly block is optional in the payload) */
+  const H=d.hourly||{};
   let h0=0;
   try{
-    const times=d.hourly.time, nowIso=new Date().toISOString().slice(0,13);
+    const times=H.time||[], nowIso=new Date().toISOString().slice(0,13);
     for(let i=0;i<times.length;i++){ if(times[i].slice(0,13)>=nowIso){ h0=i; break; } }
   }catch(e){}
   let hours='';
-  for(let i=h0;i<Math.min(h0+12,(d.hourly.time||[]).length);i++){
-    const hg=w.group(d.hourly.weather_code[i]);
-    const hh=d.hourly.time[i].slice(11,16);
-    hours+='<div class="wxh"><div class="sub">'+esc(hh)+'</div><div style="font-size:22px">'+hg[2]+'</div><div><b>'+w.temp(d.hourly.temperature_2m[i])+'</b></div>'+
-      '<div class="sub" style="color:var(--info)">'+(d.hourly.precipitation_probability[i]||0)+'%</div></div>';
+  const hTime=H.time||[], hCode=H.weather_code||[], hTemp=H.temperature_2m||[], hProb=H.precipitation_probability||[];
+  for(let i=h0;i<Math.min(h0+12,hTime.length);i++){
+    const hg=w.group(hCode[i]);
+    const hh=String(hTime[i]||'').slice(11,16);
+    hours+='<div class="wxh"><div class="sub">'+esc(hh)+'</div><div style="font-size:22px">'+hg[2]+'</div><div><b>'+w.temp(hTemp[i])+'</b></div>'+
+      '<div class="sub" style="color:var(--info)">'+(hProb[i]||0)+'%</div></div>';
   }
   let week='';
   const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];

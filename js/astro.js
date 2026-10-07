@@ -135,7 +135,6 @@ function kindEmoji(k){ return KINDS[k]||KINDS.other; }
 function notesOn(cal,y,m,d){ return notes().filter(n=>n.cal===cal&&n.y===y&&n.m===m&&n.d===d); }
 function addNote(o){ o.id=store.uid(); o.createdAt=Date.now(); notes().push(o); store.save(); return o; }
 function delNote(id){ store.state.calNotes=(store.state.calNotes||[]).filter(n=>n.id!==id); store.save(); }
-function userCal(){ return (HUB.i18n.getCountry()==='NP')?'BS':'AD'; }
 
 /* ================= month grid ================= */
 const AD_MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];

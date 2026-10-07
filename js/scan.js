@@ -216,7 +216,6 @@ var CV=(function(){
     }
     return {m:mag,x:gx,y:gy};
   }
-  function sobel(g,w,h){ return sobelXY(g,w,h).m; }
   function otsu(mag,w,h){
     var hist=new Uint32Array(256), max=0, i;
     for(i=0;i<w*h;i++) if(mag[i]>max) max=mag[i];

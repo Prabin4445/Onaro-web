@@ -610,7 +610,6 @@ function closeOverlay(id){
   }
 }
 function topOverlay(){ return OV.length?OV[OV.length-1]:null; }
-function overlayOpen(id){ return OV.some(function(o){ return o.id===id; }); }
 function closeAll(){
   for(var i=OV.length-1;i>=0;i--) closeOverlay(OV[i].id);
   PL=null;

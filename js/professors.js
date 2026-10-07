@@ -268,14 +268,6 @@ function avaHTML(name,cls){
   const U=ui();
   return '<span class="prof-ava '+(cls||'')+'" style="--h:'+hueFor(name)+'">'+U.esc(U.initials(name))+'</span>';
 }
-function ratingLine(pid){
-  const U=ui(), s=statsOf(pid);
-  if(!s.n) return '<span class="prof-norate">'+U.esc(t('prof.noRatings'))+'</span>';
-  const cnt=s.n===1?t('prof.rating1'):t('prof.ratingsN',{n:s.n});
-  return '<span class="prof-stars">'+U.esc(U.stars(s.avgQ))+'</span>'+
-    ' <b>'+s.avgQ.toFixed(1)+'</b><span class="meta"> · '+U.esc(cnt)+
-    ' · '+U.esc(t('prof.againPct',{p:s.againPct}))+'</span>';
-}
 function sortedList(list){
   const arr=list.slice();
   if(sortMode==='most') arr.sort((a,b)=>statsOf(b.id).n-statsOf(a.id).n||statsOf(b.id).avgQ-statsOf(a.id).avgQ);
