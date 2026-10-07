@@ -155,8 +155,8 @@ function askBannerHTML(){
     +'</div></div></div>';
 }
 
-/* Quick Access: Style Closet (style overlay), central big volt + (create
-   composer), Groups (groups tab). Beauty Hub / Room & Decor / Travel /
+/* Quick Access: Style Closet (style overlay), Student Scanner, Degree Plans,
+   Groups (groups tab). Beauty Hub / Room & Decor / Travel /
    Safety have NO feature code in the codebase — their icons are excluded
    rather than invented (verified 2026-10-05). */
 function quickAccessHTML(){
@@ -167,7 +167,8 @@ function quickAccessHTML(){
     +'<span class="hm-qa-l">'+ui.esc(t('style.title'))+'</span></button>'
     +'<button class="hm-qa-item" id="hmQaScan"><span class="hm-qa-c">'+HUB.icons.icon('scan-doc')+'</span>'
     +'<span class="hm-qa-l">'+ui.esc(t('scan.title'))+'</span></button>'
-    +'<button class="hm-qa-plus" id="hmQaCreate" aria-label="'+ui.esc(t('create.aria'))+'"><span aria-hidden="true">+</span></button>'
+    +'<button class="hm-qa-item" id="hmQaDegree"><span class="hm-qa-c"><svg viewBox="0 0 24 24" width="40" height="40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12,3.5 21.5,8 12,12.5 2.5,8"/><path d="M7,10.2 V14 c0,1.6 10,1.6 10,0 V10.2"/></g><circle cx="12" cy="8" r="1.1" fill="currentColor"/><g><path d="M12,8 C15.5,8.6 17.5,10.5 17.5,13.5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.5" cy="15" r="1.6" fill="currentColor"/></g></svg></span>'
+    +'<span class="hm-qa-l">'+ui.esc(t('deg.entryTitle'))+'</span></button>'
     +'<button class="hm-qa-item" id="hmQaGroups"><span class="hm-qa-c">'+HUB.icons.icon('qa-groups')+'</span>'
     +'<span class="hm-qa-l">'+ui.esc(t('groups.title'))+'</span></button>'
     +'</div></div>';
@@ -266,8 +267,8 @@ HUB.views.home={
     if(qs) qs.onclick=()=>{ if(HUB.scan) HUB.scan.studio(); };
     const qg=document.getElementById('hmQaGroups');
     if(qg) qg.onclick=()=>HUB.showTab('groups');
-    const qp=document.getElementById('hmQaCreate');
-    if(qp) qp.onclick=()=>{ if(HUB.create) HUB.create.open(); };
+    const qd=document.getElementById('hmQaDegree');
+    if(qd) qd.onclick=()=>{ if(HUB.degree) HUB.degree.open(); };
     /* time capsule row: tap -> Daily; setup row opens Daily + capsule sheet */
     const hcc=document.getElementById('homeCapCard');
     if(hcc){
