@@ -380,6 +380,7 @@ async function sendMessage(threadId){
       clientId:'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,8)},
       enc?{enc}:{text});
     await pushMessage(th,msg);
+    try{ if(window.HUB&&HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
     /* Phase 2: sync to server when online + logged in */
     syncMessageToServer(th,msg);
   }catch(e){

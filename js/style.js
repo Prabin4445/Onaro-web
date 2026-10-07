@@ -313,21 +313,23 @@ function greetKey(){
   const h=new Date().getHours();
   return h<12?'style.gm':(h<18?'style.ga':'style.ge');
 }
-/* countUp(root) — rAF number tween for [data-count]; textContent-only, respects reduced motion. */
+/* countUp(root) — rAF number tween for [data-count]; textContent-only, respects reduced motion.
+   Delegates to the shared HUB.fx.countUp (same ease-out, 750ms). Plays on
+   first paint and whenever a value actually changes; identical re-renders
+   set the number directly with no animation (per-element last-shown cache). */
 function countUp(root){
   try{
-    const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fx=(window.HUB&&HUB.fx)||null;
     root.querySelectorAll('[data-count],[data-ringpct]').forEach(function(el){
       const target=+(el.getAttribute('data-count')||el.getAttribute('data-ringpct'))||0;
       const suffix=el.hasAttribute('data-ringpct')?'%':'';
-      if(reduce||!target){ el.textContent=String(target)+suffix; return; }
-      const t0=performance.now(), dur=750;
-      const step=function(now){
-        const p=Math.min(1,(now-t0)/dur), e=1-Math.pow(1-p,3);
-        el.textContent=String(Math.round(target*e))+suffix;
-        if(p<1) requestAnimationFrame(step);
-      };
-      requestAnimationFrame(step);
+      const prev=(typeof el._fxShown==='number')?el._fxShown:null;
+      el._fxShown=target;
+      if(fx&&fx.countUp&&(prev==null||prev!==target)){
+        fx.countUp(el,prev==null?0:prev,target,{dur:750,format:function(v){return String(Math.round(v))+suffix;}});
+      }else{
+        el.textContent=String(target)+suffix;
+      }
     });
   }catch(e){}
 }
@@ -366,13 +368,6 @@ function itemCardHTML(it,pickMode){
 function chipRow(opts,sel,attr){
   return '<div class="sty-chips">'+opts.map(function(o){
     return '<button class="chip'+(sel===o[0]?' on':'')+'" data-'+attr+'="'+esc(o[0])+'">'+
-      (o[2]?'<span>'+esc(o[2])+'</span> ':'')+esc(o[1])+'</button>';
-  }).join('')+'</div>';
-}
-function multiChips(opts,selArr,attr){
-  return '<div class="sty-chips">'+opts.map(function(o){
-    const on=selArr.indexOf(o[0])>=0;
-    return '<button class="chip'+(on?' on':'')+'" data-'+attr+'="'+esc(o[0])+'">'+
       (o[2]?'<span>'+esc(o[2])+'</span> ':'')+esc(o[1])+'</button>';
   }).join('')+'</div>';
 }
@@ -1528,7 +1523,7 @@ function cardHTML(){
     '<div class="sty-cardhead"><span class="sty-clay lg">'+clayIcon('st-closet','👗')+'</span>'+
     '<div style="flex:1"><div class="sty-cardtitle">'+esc(t('style.title'))+'</div>'+
     '<div class="sty-cardsub">'+esc(t('style.tagline'))+'</div></div>'+
-    (st>1?'<div class="sty-streak" title="'+esc(t('style.streak'))+'"><span class="sty-clay xs">'+clayIcon('st-vibe-bold','🔥')+'</span> '+st+'</div>':'')+'</div>'+
+    (st>1?'<div class="sty-streak" title="'+esc(t('style.streak'))+'"><span class="sty-clay xs">'+clayIcon('st-vibe-bold','🔥')+'</span> <b data-count="'+st+'">0</b></div>':'')+'</div>'+
     '<div class="sty-counts sm"><div class="sty-count"><b data-count="'+n+'">0</b><span>'+esc(t('style.items'))+'</span></div>'+
     '<div class="sty-count"><b data-count="'+no+'">0</b><span>'+esc(t('style.outfits'))+'</span></div>'+
     '<div class="sty-count"><b data-count="'+favCount()+'">0</b><span>'+esc(t('style.favs'))+'</span></div></div>'+

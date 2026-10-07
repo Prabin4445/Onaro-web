@@ -186,7 +186,6 @@ function householdOwed(){ // {owedToMe, billDue}
 }
 function unreadCount(){ return state.threads.reduce((a,t)=>a+(t.unread||0),0); }
 function isBlocked(name){ return !!name && state.blocked.some(b=>b.toLowerCase()===String(name).toLowerCase()); }
-function openReportCount(){ return (state.reports||[]).filter(r=>!r.resolved).length; }
 function clearSamples(){
   for(const k of ['listings','jobs','events','campusPosts','memory','contacts','threads','people','classes','cgroups']) state[k]=state[k].filter(x=>!x.sample);
   state.households=state.households.filter(h=>!h.sample);
@@ -563,8 +562,62 @@ function dodgeKeyboard(){
   return kbVvApply;
 }
 
+/* ================= HUB.fx — feel-polish helpers =================
+   countUp(el, from, to, opts): Stripe/Revolut-style digit morph for hero
+   numbers. ~700ms ease-out cubic; tabular-nums so digits never jitter;
+   reduced-motion -> final value instantly, no animation. Only animates
+   when from!==to; a re-triggered tween cancels the stale one via a token
+   on the element. opts is a duration number OR {dur, decimals, format},
+   where format(v) maps the raw tween value to display text (thousand
+   separators, %, etc.).
+   haptic(kind): Android-only vibration vocabulary. iOS Safari does NOT
+   implement navigator.vibrate, so everything is feature-guarded and a
+   no-op where unsupported. Kinds: light (button press), select (picker
+   change), medium (send / sheet dismiss), success (action completed),
+   celebrate (milestone). Never fire on scroll, page load, or typing —
+   call sites own that discipline. */
+function fxReduced(){ return !!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches); }
+var _fxToken=0;
+function countUp(el, from, to, opts){
+  try{
+    if(!el) return;
+    var o=(typeof opts==='number')?{dur:opts}:(opts||{});
+    var durMs=Math.max(0, o.dur!=null?o.dur:700);
+    var dec=(o.decimals!=null)?o.decimals:0;
+    var fmt=o.format||function(v){ return dec>0?Number(v).toFixed(dec):String(Math.round(v)); };
+    from=Number(from); to=Number(to);
+    if(!isFinite(from)) from=0; if(!isFinite(to)) to=0;
+    try{ el.style.fontVariantNumeric='tabular-nums'; }catch(e2){} /* no layout shift mid-tween */
+    if(from===to||fxReduced()){ el.textContent=fmt(to); return; }
+    var token=++_fxToken; el._fxCountToken=token;
+    var t0=performance.now();
+    (function frame(now){
+      try{
+        if(el._fxCountToken!==token) return; /* superseded by a newer tween */
+        var ms=(typeof now==='number')?now:performance.now();
+        /* clamp p to [0,1]: a stale rAF timestamp (seen in headless
+           Chromium) would otherwise drive the cubic ease far outside
+           [from,to] and flash a bogus number. */
+        var p=Math.min(1,Math.max(0,(ms-t0)/Math.max(1,durMs)));
+        var e=1-Math.pow(1-p,3); /* ease-out cubic */
+        el.textContent=fmt(from+(to-from)*e);
+        if(p<1) requestAnimationFrame(frame);
+        else el.textContent=fmt(to); /* land exactly on the target */
+      }catch(e3){}
+    })();
+  }catch(e){}
+}
+var FX_HAPTIC={light:10, select:15, medium:50, success:[15,30,15], celebrate:[50,30,50]};
+function haptic(kind){
+  try{
+    if(!navigator.vibrate) return; /* iOS Safari / desktop: no-op */
+    navigator.vibrate(FX_HAPTIC[kind]||FX_HAPTIC.light);
+  }catch(e){}
+}
+
 window.HUB=Object.assign(window.HUB||{},{
   intl:{loadColleges,searchColleges,collegeCountries,collegesMeta},
+  fx:{countUp:countUp,haptic:haptic},
   store:{get state(){return state;},save,uid,clearSamples,householdOwed,unreadCount,myName,todayStr,cgHome:CG_HOME,
     add(k,obj){state[k].unshift(Object.assign({id:uid(),createdAt:Date.now(),sample:false},obj));save();},
     remove(k,id){state[k]=state[k].filter(x=>x.id!==id);save();},

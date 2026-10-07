@@ -1169,6 +1169,7 @@ function toggleSlot(slotId,at){
   done[dk]={code:c.code,title:c.title,credits:Number(c.credits)||0,ts:Date.now(),at:occKey(occ.si,occ.ci)};
   save();
   ui().toast(t('deg.doneToast',{code:c.code}));
+  try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
   lastPop=dk; lastFloat={slot:dk,text:(Number(c.credits)||0)};
   renderTracker();
   lastPop=null; lastFloat=null;
@@ -1182,6 +1183,7 @@ function completeChoice(plan,c,pick,at){
   save();
   ui().closeSheet();
   ui().toast(t('deg.doneToast',{code:pick.code}));
+  try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
   lastPop=dk; lastFloat={slot:dk,text:done[dk].credits};
   renderTracker();
   lastPop=null; lastFloat=null;
@@ -1443,6 +1445,9 @@ function entryHTML(){
     '<div class="deg-hero-cta">'+esc(t('deg.entryCta'))+'<span aria-hidden="true"> →</span></div>'+
     '</div></div>';
 }
+/* last rendered counts on #homeDegSub — the count-up only plays on first
+   paint and when the values actually change, never on identical re-renders. */
+var degCountsShown=null;
 function bindEntry(scope){
   const root=(scope&&scope.querySelector)?scope:document;
   const b=root.querySelector?root.querySelector('#homeDegEntry'):document.getElementById('homeDegEntry');
@@ -1453,7 +1458,10 @@ function bindEntry(scope){
   }
   /* honest live counts: complete plans + full national inventory
      ("7 plans · 3,898 schools"). If the API is still waking up (Render free
-     tier sleeps), retry instead of showing "0 plans". */
+     tier sleeps), retry instead of showing "0 plans".
+     The plans number count-ups (Stripe/Revolut pattern) on first paint and
+     whenever the value actually changes — identical re-renders set the text
+     directly with no animation. */
   function updateCounts(tries){
     degIndex().then(function(idx){
       const sub=root.querySelector?root.querySelector('#homeDegSub'):document.getElementById('homeDegSub');
@@ -1464,8 +1472,17 @@ function bindEntry(scope){
         setTimeout(function(){ updateCounts((tries||0)+1); }, 8000);
         return;
       }
-      sub.textContent=t('deg.entrySub',{n:nPlans,
-        s:Number(nSchools).toLocaleString('en-US')});
+      const schoolsStr=Number(nSchools).toLocaleString('en-US');
+      const prev=degCountsShown;
+      degCountsShown={plans:nPlans, schools:nSchools};
+      const fx=(window.HUB&&HUB.fx)||null;
+      if(fx&&fx.countUp&&(!prev||prev.plans!==nPlans)){
+        fx.countUp(sub, prev?prev.plans:0, nPlans, {dur:750, format:function(v){
+          return t('deg.entrySub',{n:Math.round(v).toLocaleString('en-US'), s:schoolsStr});
+        }});
+      }else{
+        sub.textContent=t('deg.entrySub',{n:Number(nPlans).toLocaleString('en-US'), s:schoolsStr});
+      }
     });
   }
   updateCounts(0);

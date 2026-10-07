@@ -257,6 +257,9 @@ function reportSheet(){
 }
 
 /* ================= SECTION BUILDERS ================= */
+/* last shown safety-score — the hero numeral count-ups on first paint and
+   only when the score actually changes (identical re-renders stay static). */
+let meScoreShown=null;
 function secHead(iconName,emoji,title){
   const ic=icons(iconName);
   return '<div class="me-sec"><span class="me-secico">'+(ic||ui.esc(emoji))+'</span><h2>'+ui.esc(title)+'</h2></div>';
@@ -413,6 +416,7 @@ function editSheet(){
     if(HUB.paintChrome) HUB.paintChrome(); /* gender may have changed the ME tab icon */
     if(HUB.theme) HUB.theme.apply(true); /* gender may have flipped volt<->rose: water-flow transition */
     ui.toast(t('pedit.saved'));
+    try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
   };
 }
 
@@ -747,6 +751,20 @@ HUB.views.me={ render(el){
     +'<p class="hint">'+t('me.resetHint')+'</p></div>';
 
   el.innerHTML=html;
+
+  /* Count-up the safety-score hero numeral (Stripe/Revolut pattern): plays
+     on first paint and whenever the score actually changed since the last
+     render; identical re-renders keep the static number. */
+  try{
+    const fx=(window.HUB&&HUB.fx)||null;
+    const num=el.querySelector('#meScoreStrip .me-score-num');
+    if(fx&&fx.countUp&&num){
+      const to=parseFloat(num.textContent)||0;
+      const from=(meScoreShown==null)?0:meScoreShown;
+      meScoreShown=to;
+      if(from!==to) fx.countUp(num,from,to,{dur:750});
+    }
+  }catch(e){}
 
   document.getElementById('verifyBtn').onclick=verifySheet;
   wireVault(el);

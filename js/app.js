@@ -311,8 +311,20 @@ document.addEventListener('DOMContentLoaded',()=>{
   /* Global sheet close: every [data-close] ✕ button (appointments, horoscope,
      calendar day-notes…) closes the current sheet. One handler, no dead Xs. */
   document.addEventListener('click',e=>{
-    if(e.target.closest('[data-close]')){ try{ ui.closeSheet(); }catch(err){} }
+    if(e.target.closest('[data-close]')){ try{ ui.closeSheet(); if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('medium'); }catch(err){} }
   });
+  /* Haptic vocabulary (Android-only, progressive enhancement): a light buzz
+     on every button press-down. pointerdown fires before click so the tap
+     feels immediate. iOS Safari has no navigator.vibrate — HUB.fx.haptic()
+     no-ops there. Text inputs/selects excluded: typing never buzzes. */
+  document.addEventListener('pointerdown',e=>{
+    try{
+      if(e.target.closest('input,textarea,select,[contenteditable]')) return;
+      const b=e.target.closest('button,[role="button"],a');
+      if(!b||b.disabled) return;
+      if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('light');
+    }catch(err){}
+  },{passive:true});
   /* Workstream G: warm a lazy-stored language from cache/network before the
      first render so repeat visits apply it instantly (no English flash). */
   }catch(__initErr){ try{ if(HUB.safe) HUB.safe.showRecovery('init fault'); }catch(e){} return; }
