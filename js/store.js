@@ -193,10 +193,19 @@ function clearSamples(){
 }
 
 /* ---- ui helpers ---- */
-function toast(msg, silent){ const h=document.getElementById('toastHost'); const d=document.createElement('div'); d.className='toast'; d.textContent=msg; h.appendChild(d); setTimeout(()=>{d.style.opacity='0';d.style.transition='opacity .3s';setTimeout(()=>d.remove(),320);},2400);
+/* Toast: snappy single-toast. A new toast replaces the old one immediately
+   (no stacking — 3 quick taps used to queue 8+ seconds of toasts), visible
+   1.2s + 0.25s fade. Cleared on tab switch via clearToasts(). */
+function clearToasts(){ try{ document.getElementById('toastHost').innerHTML=''; }catch(e){} }
+function toast(msg, silent){
+  const h=document.getElementById('toastHost'); if(!h) return;
+  h.innerHTML='';
+  const d=document.createElement('div'); d.className='toast'; d.textContent=msg; h.appendChild(d);
+  setTimeout(function(){ d.style.opacity='0'; d.style.transition='opacity .25s'; setTimeout(function(){ d.remove(); },260); },1200);
+}
   /* 2026-09-29: all in-app sound effects removed on PraBin's order —
      toasts (incl. profile/gender saves) are now completely silent.
-     Only the call ringtone remains audible anywhere in the app. */ }
+     Only the call ringtone remains audible anywhere in the app. */
 function openSheet(html){ const host=document.getElementById('sheetHost'),box=document.getElementById('sheetBox');
   /* Universal ✕: every bottom sheet gets a dismiss button unless it already
      ships its own close control (astro calendar
@@ -623,6 +632,6 @@ window.HUB=Object.assign(window.HUB||{},{
     remove(k,id){state[k]=state[k].filter(x=>x.id!==id);save();},
     find(k,id){return state[k].find(x=>x.id===id);},
   },
-  ui:{toast,openSheet,closeSheet,esc,fmt$,timeAgo,stars,sampleBadge,initials,greeting,isBlocked,communityOptions,isCampusCommunity,openInstitutionPicker,campusEmoji,mePhoto,isMe,avatarFor,verifiedBadge,dodgeKeyboard,kbSnap,_kbApply:kbVvApply},
+  ui:{toast,clearToasts,openSheet,closeSheet,esc,fmt$,timeAgo,stars,sampleBadge,initials,greeting,isBlocked,communityOptions,isCampusCommunity,openInstitutionPicker,campusEmoji,mePhoto,isMe,avatarFor,verifiedBadge,dodgeKeyboard,kbSnap,_kbApply:kbVvApply},
 });
 })();

@@ -51,6 +51,7 @@ function showTab(name){
   try{ ui.closeSheet(); }catch(e){}
   ['search','pulse','notifications'].forEach(k=>{ try{ if(HUB[k]&&HUB[k].close) HUB[k].close(); }catch(e){} });
   try{ if(HUB.chat&&HUB.chat.close) HUB.chat.close(); }catch(e){}
+  try{ if(HUB.ui&&HUB.ui.clearToasts) HUB.ui.clearToasts(); }catch(e){}
   document.querySelectorAll('#tabbar .tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));
   document.querySelectorAll('.view').forEach(v=>{ v.hidden = v.dataset.view!==name; });
   const el=document.getElementById('view-'+name);

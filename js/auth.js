@@ -338,7 +338,8 @@ function loginHTML(){
   +'</div>';
 }
 /* Complete a Firebase-authenticated session: exchange the ID token with the
-   backend, build the local profile, animate in. */
+   backend, build the local profile. The auth overlay is closed by the caller
+   BEFORE this runs (dismiss-first) — this function never gates UI on network. */
 function finishFirebaseLogin(fbUser, remember, extra){
   return fbUser.getIdToken().then(function(idToken){
     return HUB.api.authFirebase(idToken,
@@ -355,12 +356,6 @@ function finishFirebaseLogin(fbUser, remember, extra){
       createdAt:Date.now()
     };
     signIn(u,remember);
-    try{
-      var w=document.createElement('div');
-      w.className='auth-wake'; w.setAttribute('aria-hidden','true');
-      rootEl.appendChild(w);
-      setTimeout(function(){ close(); if(w.parentNode) w.parentNode.removeChild(w); },520);
-    }catch(e){ close(); }
     ui.toast(t('auth.signedInAs',{name:u.name||u.email}));
   });
 }
@@ -415,7 +410,16 @@ function wireLogin(){
         curView='signup'; goStep(3,false);
         return;
       }
-      return finishFirebaseLogin(user, remember).then(function(){ done(true); });
+      /* Dismiss-first: Firebase auth succeeded — close the overlay immediately
+         so the user sees Home, then do the backend handshake in the background.
+         The old code gated close() on the backend round-trip + a 520ms timer,
+         leaving the dialog up for seconds (PraBin 2026-10-07). */
+      close();
+      done(true);
+      finishFirebaseLogin(user, remember).catch(function(e){
+        try{ ui.toast(t('auth.errBackend')||'Sign-in sync failed — please retry.'); }catch(e2){}
+      });
+      return;
     }).catch(function(e){
       done(false);
       errShow('aErr', firebaseErrMsg(e));
