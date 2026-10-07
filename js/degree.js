@@ -1556,7 +1556,7 @@ function bindTracker(){
     if(!cur) return;
     const ds=dstate();
     if(ds.tracked===cur.slug){ ds.tracked=null; }
-    else{ ds.tracked=cur.slug; ds.active=cur.slug; }
+    else{ ds.tracked=cur.slug; ds.active=cur.slug; ui().toast(t('trackStarted')); }
     save(); emitProgress(); renderTracker();
   };
   const rp=document.getElementById('degResetProg');
@@ -1602,7 +1602,8 @@ function toggleSlot(slotId,at){
   /* Completing a course is an explicit "this is my plan" signal — auto-track
      it so the Home card picks it up without forcing a manual tap. Browsing
      alone never tracks (PraBin 2026-10-07). */
-  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug; }
+  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug;
+    setTimeout(function(){ ui().toast(t('trackStarted')); },1600); }
   save(); emitProgress();
   ui().toast(t('deg.doneToast',{code:c.code}));
   try{ if(HUB.fx&&HUB.fx.haptic) HUB.fx.haptic('success'); }catch(e2){}
@@ -1616,7 +1617,8 @@ function completeChoice(plan,c,pick,at){
   const done=curDone();
   done[dk]={code:pick.code,title:pick.title||c.title,
     credits:(typeof pick.credits==='number'?pick.credits:(Number(c.credits)||0)),ts:Date.now(),at:occKey(si,ci)};
-  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug; }
+  if(cur&&!dstate().tracked){ dstate().tracked=cur.slug;
+    setTimeout(function(){ ui().toast(t('trackStarted')); },1600); }
   save(); emitProgress();
   ui().closeSheet();
   ui().toast(t('deg.doneToast',{code:pick.code}));
