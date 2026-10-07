@@ -270,7 +270,7 @@ function quickAccessHTML(){
 HUB.views.home={
   render(el){
     const st=store.state, me=store.myName();
-    const events=st.events;
+    const events=st.events||[];
     const langTag={en:'en-US',es:'es',ne:'ne-NP',hi:'hi-IN'}[HUB.i18n.getLang()]||'en-US';
     let dateStr='';
     try{ dateStr=new Date().toLocaleDateString(langTag,{weekday:'long',month:'short',day:'numeric'}); }catch(e){ dateStr=new Date().toDateString(); }

@@ -1316,7 +1316,11 @@ function renderTracker(){
   const tabs='<div class="deg-tabs"><button class="deg-tab'+(xferMode?'':' on')+'" id="degTabPlan">'+esc(t('deg.tabPlan'))+'</button>'+
     '<button class="deg-tab'+(xferMode?' on':'')+'" id="degTabXfer">'+esc(t('deg.tabXfer'))+'</button></div>';
   let h=tabs;
-  h+='<div style="text-align:center;margin:0 0 10px"><button class="btn btn-line btn-sm" id="degSwitch">'+esc(t('deg.switch'))+'</button></div>';
+  const isTracked=(dstate().tracked===cur.slug);
+  h+='<div style="text-align:center;margin:0 0 10px"><button class="btn btn-line btn-sm" id="degSwitch">'+esc(t('deg.switch'))+'</button> '+
+    '<button class="btn btn-line btn-sm" id="degTrack">'+esc(t(isTracked?'trackStop':'trackPlan'))+'</button> '+
+    '<button class="btn btn-line btn-sm" id="degResetProg">'+esc(t('deg.resetProg'))+'</button></div>';
+  if(!isTracked) h+='<div style="text-align:center;margin:-4px 0 10px;opacity:.65;font-size:12px">'+esc(t('trackHint'))+'</div>';
   if(!xferMode){
     const cap=paceCap(cur.slug);
     const view=reflowView(plan,cap);
@@ -1542,6 +1546,23 @@ function bindTracker(){
   });
   const sw=document.getElementById('degSwitch');
   if(sw) sw.onclick=function(){ renderPicker(); };
+  const tk=document.getElementById('degTrack');
+  if(tk) tk.onclick=function(){
+    if(!cur) return;
+    const ds=dstate();
+    if(ds.tracked===cur.slug){ ds.tracked=null; }
+    else{ ds.tracked=cur.slug; ds.active=cur.slug; }
+    save(); renderTracker();
+  };
+  const rp=document.getElementById('degResetProg');
+  if(rp) rp.onclick=function(){
+    if(!cur) return;
+    if(!window.confirm(t('deg.resetProgConfirm'))) return;
+    const p=progFor(cur.slug);
+    p.done={}; p._occMig=0; save();
+    renderTracker();
+    if(window.HUB&&HUB.showTab) HUB.showTab('home');
+  };
   body.querySelectorAll('[data-intake-term]').forEach(function(btn){
     btn.onclick=function(){ setIntakeTerm(cur.slug,btn.dataset.intakeTerm); };
   });
@@ -1856,7 +1877,7 @@ function bindEntry(scope){
   const root=(scope&&scope.querySelector)?scope:document;
   const b=root.querySelector?root.querySelector('#homeDegEntry'):document.getElementById('homeDegEntry');
   if(b){
-    const go=function(){ open(dstate().active||null); };
+    const go=function(){ open(dstate().tracked||dstate().active||null); };
     b.onclick=go;
     b.onkeydown=function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } };
   }
@@ -1894,38 +1915,29 @@ function bindEntry(scope){
 
 /* ---------------- home progress card ----------------
    "Degree progress" card for Home, directly above "Your classes".
-   Shows the ENROLLED plan's real numbers — same store, same done-record
+   Shows the TRACKED plan's real numbers — same store, same done-record
    model, same reflow/pace logic as the tracker view, so the card can never
-   disagree with the plan. No plan yet -> honest empty state, never faked.
-   - enrolledSlug(): dstate().active (set when a plan is opened); else the
-     plan with the most recently checked-off course; else null.
-   - snapshot(slug): loads the plan file, sums earned via occRec() (the same
+   disagree with the plan. No tracked plan -> honest empty state, never faked.
+   Tracking is EXPLICIT: the user taps "Track this plan". Merely opening a
+   plan never auto-tracks it (PraBin 2026-10-07: "It keep choosing this").
+   - enrolledSlug(): dstate().tracked, set only by explicit user action.
+   - snapshot(slug): loads the plan file, sums earned via earnedCredits() (the
      function the tracker uses to paint checkmarks), reflows at the user's
      pace, finds the current semester by calendar (intakeTerm vs today) with
      fallback to the first semester that still has incomplete courses. */
 function enrolledSlug(){
   const ds=dstate();
-  if(ds.active) return ds.active;
-  let best=null, bestTs=0;
-  Object.keys(ds.progress||{}).forEach(function(slug){
-    const p=ds.progress[slug]; if(!p||!p.done) return;
-    Object.keys(p.done).forEach(function(k){
-      const r=p.done[k], ts=(r&&typeof r==='object'&&r.ts)||0;
-      if(ts>bestTs){ bestTs=ts; best=slug; }
-    });
-  });
-  return best;
+  /* EXPLICIT tracking only. Merely opening a plan sets ds.active (for
+     "continue where you left off") but never auto-tracks it — PraBin
+     2026-10-07: "It keep choosing this. Please fix it". */
+  return ds.tracked||null;
 }
 function progSnapshot(slug,plan,meta){
   const p=progFor(slug), done=p.done||{};
   const total=Math.max(0,Number(plan.total_credits)||0);
-  let earned=0;
-  semsOf(plan).forEach(function(sem,si){
-    (sem.courses||[]).forEach(function(c,ci){
-      if(occRec(done,plan,c,si,ci)) earned+=Math.max(0,Number(c.credits)||0);
-    });
-  });
-  earned=Math.min(earned,total);
+  /* Single source of truth: the exact function the plan view uses, so the
+     Home card can never disagree with the plan's own "X of Y credits". */
+  const earned=Math.min(earnedCredits(plan,done),total);
   const left=Math.max(0,total-earned);
   const cap=(Number(p.pace)>0)?Number(p.pace):0;
   const per=cap||15;
@@ -1991,11 +2003,14 @@ function bindHomeProgress(scope){
   if(!host) return;
   const slug=enrolledSlug();
   if(!slug){ host.innerHTML=homeProgressEmpty(); wireProgCard(host,null); return; }
-  Promise.all([degFile(slug),degIndex()]).then(function(res){
-    const file=res[0];
+  /* degFile always settles (fetchJSON retries then rejects -> caught -> null),
+     so the skeleton is honest loading, never stuck forever. */
+  degFile(slug).then(function(file){
     if(!host.isConnected) return;
     if(!file||!file.plan){ host.innerHTML=homeProgressEmpty(); wireProgCard(host,null); return; }
-    const meta=((res[1]||{}).plans||[]).filter(function(x){ return x.slug===slug; })[0]||null;
+    /* display name comes straight from the plan file — no 9.7MB index load
+       on the Home render path. */
+    const meta={degree:file.plan.degree||'', major:file.plan.major||''};
     const s=progSnapshot(slug,file.plan,meta);
     const fx=(window.HUB&&HUB.fx)||null;
     host.innerHTML=

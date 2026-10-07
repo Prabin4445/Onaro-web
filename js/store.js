@@ -174,7 +174,7 @@ function save(){ if(window.HUB&&HUB.safe&&HUB.safe.saveState){ HUB.safe.saveStat
 function myName(){ return state.profile.name||'you'; }
 function householdOwed(){ // {owedToMe, billDue}
   let owedToMe=0, billDue=null, earliest='';
-  for(const h of state.households){
+  for(const h of (state.households||[])){
     const n=h.members.length||1, me=myName();
     for(const b of h.bills){
       const share=b.amount/n;

@@ -107,15 +107,18 @@ def boot(width):
     time.sleep(0.5)
     return c, proc
 
-def wait_fill(c, timeout=25):
-    for _ in range(int(timeout / 0.5)):
+def wait_fill(c, timeout=60):
+    # wait until the card leaves skeleton/empty AND the count-up tween settles
+    # (read dpgLeft twice 1.2s apart; stable + non-zero means done)
+    last = None
+    for _ in range(int(timeout / 0.6)):
         v = j(c, "return (document.getElementById('dpgLeft')||{}).textContent;")
-        if v and v not in ('0', ''):
+        if v and v not in ('0', '') and v == last:
             return True
-        empty = j(c, "return !!document.querySelector('[data-degprog-empty]');")
-        if empty:
+        last = v if v not in ('0', '') else last
+        if j(c, "return !!document.querySelector('[data-degprog-empty]');"):
             return 'empty'
-        time.sleep(0.5)
+        time.sleep(0.6)
     return False
 
 for width in (390, 320):
@@ -148,10 +151,14 @@ for width in (390, 320):
     shot(c, 'qa/degprog-%d.png' % width)
     # ---- 2. tap card -> opens enrolled plan ----
     j(c, "document.getElementById('degprogCard').click(); return 1;")
-    time.sleep(2.5)
-    opened = j(c, "return !!document.querySelector('.degroot .deg-panel');")
+    title = ''
+    for _ in range(20):
+        time.sleep(0.5)
+        opened = j(c, "return !!document.querySelector('.degroot .deg-panel');")
+        title = j(c, "return (document.getElementById('degTitle')||{}).textContent||'';")
+        if opened and ('Industrial' in title or 'A.A.S.' in title):
+            break
     check('%d: tap opens plan tracker' % width, opened is True)
-    title = j(c, "return (document.getElementById('degTitle')||{}).textContent||'';")
     check('%d: tracker shows the enrolled plan' % width, 'Industrial' in title or 'A.A.S.' in title, title[:60])
     j(c, "var b=document.getElementById('degClose'); if(b) b.click(); return 1;")
     time.sleep(1)
