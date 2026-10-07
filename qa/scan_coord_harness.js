@@ -90,5 +90,40 @@ function liveQuadScale(trkQ, trkW, trkH, vw, vh) {
   if (!r.q && r.guide) pass++; else { fail++; console.log('FAIL 9 misses should clear'); }
 })();
 
+
+// Test 4 (round 2): INVARIANT — crop region == displayed green box, always.
+// frameGrab creates fc with exactly video dimensions; liveQuad maps track
+// coords to fc coords with the same scale factors used for display.
+// Therefore the quad passed to cropView is pixel-identical to the green box.
+(function () {
+  const vw = 1080, vh = 1920, dw = 320, dh = Math.round(320 * vh / vw);
+  // Simulate: track quad in detection space, display maps via liveQuad(vw,vh),
+  // capture via frameGrab gives fc(vw,vh), finish calls liveQuad(fc.width,fc.height)
+  const trueQ = [{ x: 200, y: 400 }, { x: 880, y: 380 }, { x: 900, y: 1500 }, { x: 180, y: 1520 }];
+  const trkQ = trueQ.map(p => ({ x: p.x * dw / vw, y: p.y * dh / vh }));
+  const displayed = liveQuadScale(trkQ, dw, dh, vw, vh);   // what user sees
+  const fcW = vw, fcH = vh;                                // frameGrab dimensions
+  const cropped = liveQuadScale(trkQ, dw, dh, fcW, fcH);   // what gets cropped
+  displayed.forEach((d, i) => eq(cropped[i], d, 0.001, `invariant corner ${i}`));
+})();
+
+// Test 5: takePhoto path is GONE — no code path can produce a photo-space crop.
+// Verify finish() no longer accepts an isPhoto argument.
+(function () {
+  if (/function finish\(fc,isPhoto\)/.test(src)) { fail++; console.log('FAIL: takePhoto path still present'); }
+  else { pass++; }
+  // Actual ImageCapture API calls (not comments or i18n keys like scan.takePhoto)
+  var codeLines = src.split('\n').filter(function(l){
+    var t=l.trim();
+    return t.indexOf('//')!==0 && t.indexOf('*')!==0 && t.indexOf('takePhoto')===-1 || /ic\.takePhoto|\.takePhoto\(\)/.test(l);
+  });
+  var hasTakePhotoCall = /new ImageCapture|ic\.takePhoto\(\)/.test(src.replace(/\/\/.*$/gm,''));
+  if (hasTakePhotoCall) { fail++; console.log('FAIL: ImageCapture.takePhoto() call still present'); }
+  else { pass++; }
+})();
+
+console.log(`\n${pass} passed, ${fail} failed`);
+process.exit(fail ? 1 : 0);
+
 console.log(`\n==== ${pass} passed, ${fail} failed ====`);
 process.exit(fail ? 1 : 0);

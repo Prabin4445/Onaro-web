@@ -2028,6 +2028,21 @@ var SCAN={
       var q=liveQuad(vw,vh);
       var pts=q.map(function(p){ return f2v(p.x,p.y,r); });
       var A=accent(), i;
+      /* Debug overlay: ?scandbg=1 shows the coordinate pipeline so field
+         issues can be diagnosed from a screenshot. */
+      if(/[?&]scandbg=1/.test(location.search)){
+        try{
+          octx.save();
+          octx.fillStyle='rgba(0,0,0,0.72)';
+          octx.fillRect(6,6,300,86);
+          octx.fillStyle='#7CFF6B'; octx.font='11px monospace'; octx.textAlign='left';
+          var L=['vid '+vw+'x'+vh,'trk '+trkW+'x'+trkH+' guide:'+(trkGuide?1:0),
+            'q '+q.map(function(p){return Math.round(p.x)+','+Math.round(p.y);}).join(' '),
+            'path: frameGrab (video frame == display)'];
+          for(var li=0;li<L.length;li++) octx.fillText(L[li],12,22+li*18);
+          octx.restore();
+        }catch(e){}
+      }
       if(trkGuide){
         /* no paper locked: subtle dashed A4 aim guide, NO dimming — the user
            must see the paper to aim at it. Never a wild quad. */
@@ -2106,50 +2121,15 @@ var SCAN={
       var vw=vid.videoWidth, vh=vid.videoHeight;
       if(!vw||!vh) return;
       cancelAnimationFrame(rafId); alive=false;
-      function finish(fc,isPhoto){
-        var q=liveQuad(fc.width,fc.height); /* tracked paper (scaled to the still), or the A4 aim guide */
-        if(isPhoto){
-          /* The takePhoto still is a LARGER, differently-cropped sensor readout
-             than the video frame the live quad was tracked on (and possibly a
-             different aspect). Check aspect agreement first: if the photo and
-             video aspects differ by >3%, the video-mapped quad is geometrically
-             invalid (independent x/y scaling stretches it) — do NOT trust it.
-             In that case re-detection in photo space is the ONLY valid source;
-             if it fails we fall back to the video frame grab (correct coords,
-             lower res) rather than a distorted crop. */
-          var vAsp=vw/Math.max(1,vh), pAsp=fc.width/Math.max(1,fc.height);
-          var aspectOk=Math.abs(vAsp-pAsp)/Math.max(vAsp,pAsp)<0.03;
-          /* Re-detect directly in photo space so the quad is self-consistent
-             with the pixels being warped. Falls back to the video-mapped quad
-             when detection finds nothing (only if aspects agree).
-             IMPORTANT: detectQuad returns a near-full-frame quad (4% inset ≈
-             85% of frame area) when it finds nothing. Accept the re-detected
-             quad ONLY if it covers <82% of the photo — otherwise the user gets
-             an uncropped full photo instead of the paper they saw locked on
-             screen. */
-          var photoQ=null;
-          try{
-            var pq=SCAN.detectQuad(fc);
-            if(pq&&pq.length===4){
-              var pArea=0;
-              try{ pArea=CV.quadArea(pq); }catch(e2){ pArea=0; }
-              if(pArea>0&&pArea<fc.width*fc.height*0.82) photoQ=pq;
-            }
-          }catch(e){}
-          if(photoQ){ q=photoQ; }
-          else if(!aspectOk){
-            /* Aspects disagree and re-detection failed: the video-mapped quad
-               cannot be trusted. Re-capture from the video frame (exact coords)
-               instead of producing a distorted "half" crop. */
-            try{ R.busy(body,false); }catch(e2){}
-            frameGrab(); return;
-          }
-          /* else: aspects agree, keep the video-mapped quad as fallback */
-        }
+      function finish(fc){
+        /* fc is ALWAYS the video frame (see capture note above), so the
+           tracked quad maps 1:1 — no aspect checks, no re-detection, no
+           fallback paths. The crop region == the displayed green box. */
+        var q=liveQuad(fc.width,fc.height); /* tracked paper, or the A4 aim guide */
         /* capture-time refinement: re-snap the live-tracked quad on the
-           full-res still (edge-snapped + re-intersected corners) so the warp
+           captured frame (edge-snapped + re-intersected corners) so the warp
            comes out level like CamScanner. Falls back to the live quad. */
-        if(!trkGuide||isPhoto){
+        if(!trkGuide){
           try{
             var fpx=fc.getContext('2d').getImageData(0,0,fc.width,fc.height).data;
             var rq=CV.refineCapture(fpx,fc.width,fc.height,q);
@@ -2166,42 +2146,17 @@ var SCAN={
         catch(e){ stopAll(); SCAN.start(body,true); return; }
         finish(fc);
       }
-      /* Full-resolution still when the platform offers it (ImageCapture),
-         otherwise the native video frame. Either way: native sensor pixels,
-         never an upscaled preview. */
-      var vtrack=(stream&&stream.getVideoTracks&&stream.getVideoTracks()[0])||null;
-      if(vtrack&&window.ImageCapture){
-        try{
-          var ic=new ImageCapture(vtrack);
-          R.busy(body,true);
-          ic.takePhoto().then(function(blob){
-            R.busy(body,false);
-            if(window.createImageBitmap){
-              /* EXIF orientation: iPhone takePhoto blobs are sensor-landscape
-                 with an EXIF rotation flag. Without imageOrientation:'from-image'
-                 the canvas gets an UNROTATED landscape image while the live
-                 video quad is portrait -> the quad maps into the wrong space
-                 and the warp comes out distorted. */
-              try{ return createImageBitmap(blob,{imageOrientation:'from-image'}); }catch(e){}
-              return createImageBitmap(blob);
-            }
-            return new Promise(function(res,rej){
-              var url=URL.createObjectURL(blob), im=new Image();
-              im.onload=function(){ URL.revokeObjectURL(url); res(im); };
-              im.onerror=function(e){ URL.revokeObjectURL(url); rej(e); };
-              im.src=url;
-            });
-          }).then(function(bm){
-            var bw=bm.width||bm.naturalWidth||vw, bh=bm.height||bm.naturalHeight||vh;
-            var fc=document.createElement('canvas'); fc.width=bw; fc.height=bh;
-            try{ fc.getContext('2d').drawImage(bm,0,0,bw,bh); }
-            catch(e){ frameGrab(); return; }
-            if(bm.close){ try{bm.close();}catch(e2){} }
-            finish(fc,true); /* full-res photo: re-detect in photo space */
-          }).catch(function(){ R.busy(body,false); frameGrab(); });
-          return;
-        }catch(e){ /* fall through to frameGrab */ }
-      }
+      /* Capture: ALWAYS from the video frame (frameGrab).
+         Rationale (PraBin iPhone 2026-10-07, round 2): the green detection box
+         is drawn on the video frame. iPhone takePhoto() returns a DIFFERENT
+         sensor readout — different crop, possibly different framing — than the
+         video preview. Even when aspects "agree", the photo can show content
+         the video didn't (or vice versa), so the video-mapped quad lands in
+         the wrong place: background gets included, document gets cut ("comes
+         in half"). The video frame IS the ground truth the user sees.
+         Invariant: crop region == displayed green box, ALWAYS.
+         takePhoto() is intentionally not used: no web API exposes the
+         sensor-crop relationship, so the mapping can never be guaranteed. */
       frameGrab();
     };
     if(HUB.perms) HUB.perms.nudge('camera'); /* non-blocking; already called by gateTake, suppressed as duplicate */
