@@ -1,23 +1,3 @@
-/* ================= Groups tab — glossy-3D redesign (2026-10-05) =================
-   Elevates the Groups tab (js/groups.js surfaces) into the glossy-3D visual
-   language: dark #0D100A, glossy gradient cards with top sheen, volt-green
-   accents (follows the rose gender theme via --volt-rgb), rounded-3xl,
-   gradient borders on featured banners. NO purple anywhere.
-   Scoping: new .gr-* classes are groups-only; .gu-scoped overrides deepen
-   shared classes (.card, .gcard, .seg, .gu-row) WITHOUT touching Home /
-   market / sheets, which reuse some of these shells. Dark-first (the app
-   defaults to dark); body:not(.dark) carries the light-glass adaptation.
-   All motion is transform/opacity-only; frozen under prefers-reduced-motion. */
-
-/* ---------- hero banner: glossy gradient + gradient border ---------- */
-.gr-hero{position:relative;overflow:hidden;border-radius:24px;
-  display:flex;gap:14px;align-items:center;
-  padding:18px 16px;margin:0 0 14px;
-  border:1px solid transparent;
-  background:
-    linear-gradient(165deg,#18200f 0%,#0e130a 55%,#0b0e07 100%) padding-box,
-    linear-gradient(135deg,rgba(var(--volt-rgb),.75),rgba(var(--volt-rgb),.10) 38%,rgba(255,255,255,.22) 62%,rgba(var(--volt-rgb),.45)) border-box;
-  box-shadow:0 18px 44px rgba(0,0,0,.45),0 0 34px rgba(var(--volt-rgb),.10)}
 .gr-hero::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
   background:linear-gradient(180deg,rgba(255,255,255,.15),rgba(255,255,255,0) 46%)}
 .gr-hero::after{content:'';position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;
@@ -124,36 +104,6 @@ body.dark .gu .gu-row{
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .gr-psamp{font-size:9px;font-weight:800;letter-spacing:.06em;color:#9aa68c;
   border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:1px 7px}
-
-/* ---------- light mode: light-glass adaptation ---------- */
-body:not(.dark) .gr-hero{
-  background:
-    linear-gradient(165deg,#ffffff 0%,#f0f4e4 60%,#e7edd8 100%) padding-box,
-    linear-gradient(135deg,rgba(140,180,30,.75),rgba(140,180,30,.12) 38%,rgba(255,255,255,.7) 62%,rgba(140,180,30,.45)) border-box;
-  box-shadow:0 16px 36px rgba(60,80,20,.16),inset 0 1px 0 rgba(255,255,255,.9)}
-body:not(.dark) .gr-hero-tx h1{color:#131a00}
-body:not(.dark) .gr-hero-tx p{color:#5c6650}
-body:not(.dark) .gr-hero-ico{background:linear-gradient(160deg,#f4f8e8,#dde6c8);
-  border-color:rgba(140,180,30,.5)}
-body:not(.dark) .gu .seg{background:linear-gradient(180deg,#ffffff,#eef2e2);border-color:rgba(140,180,30,.3)}
-body:not(.dark) .gu .seg button{color:#5c6650}
-body:not(.dark) .gu .seg button.on{color:#131a00}
-body:not(.dark) .gu .gcard{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(243,247,233,.92));
-  border-color:rgba(140,180,30,.28)}
-body:not(.dark) .gu .gcard-body h3{color:#131a00}
-body:not(.dark) .gu .gcard-body p,body:not(.dark) .gu .gcard-meta{color:#5c6650}
-body:not(.dark) .gu .gr-card{background:linear-gradient(180deg,#ffffff,#f2f5e8);
-  border-color:rgba(140,180,30,.25);box-shadow:0 14px 30px rgba(60,80,20,.12),inset 0 1px 0 #fff}
-body:not(.dark) .gu .gu-row{background:linear-gradient(180deg,#ffffff,#f4f7ea);
-  border-color:rgba(140,180,30,.22)}
-body:not(.dark) .gu .gu-row h3{color:#131a00}
-body:not(.dark) .gr-sechd h2{color:#131a00}
-body:not(.dark) .gr-pname{color:#4c5545}
-body:not(.dark) .gr-pini{background:linear-gradient(160deg,#f2f6e6,#dde5c9);color:#131a00;border-color:#f4f7ea}
-body:not(.dark) .gr-pring{box-shadow:0 8px 18px rgba(60,80,20,.25),0 0 12px rgba(140,180,30,.35)}
-body:not(.dark) .gr-pdot{border-color:#f4f7ea}
-body:not(.dark) .gu .cghero{border-color:rgba(140,180,30,.35)}
-
 /* ---------- 320px safety ---------- */
 @media (max-width:360px){
   .gr-hero{padding:14px 12px;gap:11px}

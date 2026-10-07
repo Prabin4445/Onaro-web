@@ -5,7 +5,7 @@ const {store,ui}=HUB;
 const t=function(k,v){ return HUB.i18n.t(k,v); };
 HUB.views=HUB.views||{};
 
-function applyTheme(){ document.body.classList.toggle('dark',!!store.state.prefs.dark); applyGenderTheme(false); }
+function applyTheme(){ document.body.classList.add('dark'); applyGenderTheme(false); }
 
 /* Gender-driven UI theme (2026-09-29): female -> rose pink accent, everyone
    else -> the signature volt green. CSS vars do the heavy lifting (every tab

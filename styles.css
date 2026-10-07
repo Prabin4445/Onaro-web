@@ -25,7 +25,9 @@
   unicode-range:U+0900-097F,U+1CD0-1CF9,U+200C-200D,U+20A8,U+20B9,U+A830-A839,U+A8E0-A8FF}
 
 :root{
-  /* Light — warm paper */
+  /* Dark only (2026-10-07): light mode removed by PraBin's order.
+     These base values are always overridden by body.dark below;
+     body always carries the dark class. */
   --bg:#FAFAF7;
   --surface:#FFFFFF;
   --surface2:#EFF1E6;          /* app alias, used across views */
@@ -1050,7 +1052,7 @@ body.dark .map-fallback{background:rgba(255,255,255,.04)}
 /* Native form controls (the MEMORY vault date picker, community select) must
    follow the theme: without color-scheme the date-picker calendar indicator
    renders dark-on-dark and is effectively invisible in dark mode. */
-:root{color-scheme:light}
+:root{color-scheme:dark}
 body.dark{color-scheme:dark}
 /* Keep the household-card balance figure on one line at 390px (it wrapped
    mid-phrase: "owed to / you"). Scoped to Worker-3's .hh-card only. */
@@ -3161,10 +3163,6 @@ body.dark #view-home .hsec-act{color:var(--volt)}
   background:linear-gradient(150deg,#182619,#0d130d);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.14);
 }
-body:not(.dark) .hm-ask-in{
-  background:linear-gradient(150deg,rgba(255,255,255,.94),rgba(238,250,222,.94));
-  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-}
 .hm-ask-main{flex:1;min-width:0;display:flex;align-items:center;gap:12px}
 .hm-ask-bulb{
   flex:none;width:46px;height:46px;border-radius:15px;display:grid;place-items:center;font-size:25px;
@@ -3174,8 +3172,6 @@ body:not(.dark) .hm-ask-in{
 .hm-ask-txt{display:flex;flex-direction:column;min-width:0}
 .hm-ask-t{color:#fff;font-size:17px;font-weight:800;letter-spacing:-.01em}
 .hm-ask-s{color:rgba(255,255,255,.72);font-size:12.5px;line-height:1.4;margin-top:2px}
-body:not(.dark) .hm-ask-t{color:var(--ink)}
-body:not(.dark) .hm-ask-s{color:var(--ink-2)}
 .hm-ask-go{
   flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
   font-size:17px;font-weight:800;color:#131A00;background:var(--volt);

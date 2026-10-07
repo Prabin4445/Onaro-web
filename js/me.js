@@ -591,7 +591,6 @@ function renderSettings(){
   const grp=k=>'<div class="me-setgroup">'+t(k)+'</div>';
   return secHead('calc-set','⚙️',t('me.set.title'))
     +'<div class="card me-setcard">'+grp('me.set.gAppearance')
-    +trow('darkToggle','wl-moon','🌙',noEm(t('me.set.dark')),store.state.prefs.dark)
     +trow('soundToggle','calc-snd-on','🔊',t('me.set.sound'),store.state.prefs.soundOn!==false)
     +'<div class="kv me-setring"><span class="me-setlab">'+sic('wl-sparkle','✨')+'<span class="me-settx">'+t('me.set.ringtone')+'</span></span><div id="ringList" style="flex:1;min-width:0;display:flex;flex-direction:column;gap:6px"></div></div>'
     +'<p class="hint">'+t('me.set.soundNote')+'</p>'
@@ -795,10 +794,6 @@ HUB.views.me={ render(el){
   if(mlb) mlb.onclick=()=>HUB.i18n.openLanguagePicker();
   const mcb=document.getElementById('meCountryBtn');
   if(mcb) mcb.onclick=()=>HUB.i18n.openCountryPicker(()=>rerender());
-  const dt=document.getElementById('darkToggle');
-  const flipDark=()=>{ dt.classList.toggle('on'); store.state.prefs.dark=dt.classList.contains('on'); dt.setAttribute('aria-checked',String(store.state.prefs.dark)); store.save(); HUB.applyTheme(); };
-  dt.onclick=flipDark;
-  dt.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); flipDark(); } };
   /* sound on/off (Workstream: original Onaro ringtone + notification chime) */
   const st=document.getElementById('soundToggle');
   if(st){

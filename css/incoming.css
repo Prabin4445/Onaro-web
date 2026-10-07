@@ -20,11 +20,6 @@
 .incall::after{content:"";position:absolute;z-index:-1;width:340px;height:340px;border-radius:50%;
   top:8%;left:50%;transform:translateX(-50%);
   background:radial-gradient(closest-side,rgba(var(--volt-rgb),.22),rgba(var(--volt-rgb),0))}
-body:not(.dark) .incall::before{
-  background:radial-gradient(120% 90% at 50% 0%,#f2f7e4 0%,#e9efe0 55%,#dfe6d4 100%)}
-body:not(.dark) .incall::after{
-  background:radial-gradient(closest-side,rgba(120,150,40,.20),rgba(120,150,40,0))}
-
 .inc-tag{align-self:center;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   color:var(--accent-ink);background:var(--volt);border-radius:999px;padding:5px 12px}
 .inc-ava{width:124px;height:124px;border-radius:50%;display:flex;align-items:center;justify-content:center;
@@ -37,13 +32,7 @@ body:not(.dark) .incall::after{
 @keyframes incpulse{0%,100%{box-shadow:0 0 0 10px rgba(var(--volt-rgb),.10),0 18px 44px rgba(0,0,0,.45)}
   50%{box-shadow:0 0 0 22px rgba(var(--volt-rgb),.05),0 18px 44px rgba(0,0,0,.45)}}
 .inc-name{margin:14px 0 0;font-size:30px;font-weight:800;letter-spacing:-.01em;color:#f4f7ea;
-  max-width:100%;overflow:hidden;text-overflow:ellipsis}
-body:not(.dark) .inc-name{color:#17210c}
-.inc-sub{margin:0;font-size:15px;color:rgba(244,247,234,.72);max-width:100%;overflow:hidden;text-overflow:ellipsis}
-body:not(.dark) .inc-sub{color:rgba(23,33,12,.66)}
-.inc-kind{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--volt);font-weight:700}
-body:not(.dark) .inc-kind{color:var(--accent-strong)}
-.inc-actions{display:flex;gap:56px;margin-top:34px}
+  max-width:100%;overflow:hidden;text-overflow:ellipsis}.inc-sub{margin:0;font-size:15px;color:rgba(244,247,234,.72);max-width:100%;overflow:hidden;text-overflow:ellipsis}.inc-kind{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--volt);font-weight:700}.inc-actions{display:flex;gap:56px;margin-top:34px}
 .inc-btn{display:flex;flex-direction:column;align-items:center;gap:10px;background:none;border:0;
   cursor:pointer;color:inherit;font:inherit;padding:0;min-width:88px;min-height:88px}
 .inc-circle{width:78px;height:78px;border-radius:50%;display:flex;align-items:center;justify-content:center;
@@ -54,12 +43,8 @@ body:not(.dark) .inc-kind{color:var(--accent-strong)}
 .inc-decline .inc-circle{background:linear-gradient(145deg,#f2707a,#e5484d 60%,#c93a41);
   box-shadow:0 10px 28px rgba(229,72,77,.38),inset 0 2px 6px rgba(255,255,255,.45),inset 0 -4px 10px rgba(120,20,24,.35)}
 .inc-circle svg{width:34px;height:34px;flex:none}
-.inc-label{font-size:14px;font-weight:700;color:rgba(244,247,234,.85)}
-body:not(.dark) .inc-label{color:rgba(23,33,12,.8)}
-.inc-note{position:absolute;bottom:calc(18px + env(safe-area-inset-bottom));left:0;right:0;
-  font-size:12px;color:rgba(244,247,234,.45);padding:0 24px}
-body:not(.dark) .inc-note{color:rgba(23,33,12,.45)}
-/* ghost variant for the "Preview incoming call screen" button in the call
+.inc-label{font-size:14px;font-weight:700;color:rgba(244,247,234,.85)}.inc-note{position:absolute;bottom:calc(18px + env(safe-area-inset-bottom));left:0;right:0;
+  font-size:12px;color:rgba(244,247,234,.45);padding:0 24px}/* ghost variant for the "Preview incoming call screen" button in the call
    empty state — sits under the primary volt button */
 .callsim20.ghost{background:transparent;border:1.5px solid var(--accent);color:inherit;
   box-shadow:none;margin-top:2px}

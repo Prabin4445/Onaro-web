@@ -95,7 +95,7 @@ function seeds(){
      Real data comes from the backend API and user actions. */
   return {
     profile:{name:'',email:'',phone:'',campus:'',audience:'',avatarColor:0,verified:false,stars:0,jobsDone:0,createdAt:now,sample:false,discoverable:true},
-    prefs:{dark:true},
+    prefs:{},
     people:[],
     listings:[],
     jobs:[],
@@ -125,9 +125,6 @@ if(!state.reports) state.reports=[];
 if(!state.blocked) state.blocked=[];
 if(state.prefs.privacyCampus==null) state.prefs.privacyCampus=true;
 if(state.prefs.privacyLocation==null) state.prefs.privacyLocation=false;
-/* Dark mode is the default: only fill it in when never explicitly chosen;
-   a saved true/false from the theme toggle always wins. */
-if(state.prefs.dark==null) state.prefs.dark=true;
 /* Workstream D: people-discovery seeds + the discoverability privacy flag.
    Legacy saved profiles default to discoverable so the demo surface is alive. */
 if(!Array.isArray(state.people)) state.people=seedPeople();

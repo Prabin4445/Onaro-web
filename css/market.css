@@ -210,29 +210,6 @@ h2.mkd-title{font-size:18px;font-weight:700;margin:0 0 4px;line-height:1.4}
 }
 #view-market .fab:active{transform:scale(.9)}
 #view-market .fab.hide{transform:translateY(90px);opacity:0;pointer-events:none}
-
-/* ---------- light mode: light-glass ---------- */
-body:not(.dark) .mk-hero{
-  background:
-    linear-gradient(150deg,rgba(var(--volt-rgb),.30),rgba(var(--volt-rgb),.08) 45%,rgba(255,255,255,.85) 80%) padding-box,
-    linear-gradient(135deg,rgba(74,122,0,.55),rgba(255,255,255,.4) 40%,rgba(74,122,0,.25) 100%) border-box;
-  box-shadow:0 14px 34px rgba(74,122,0,.18),inset 0 1px 0 rgba(255,255,255,.7);
-}
-body:not(.dark) .mktile,body:not(.dark) .mksim-card,body:not(.dark) .mkspec,
-body:not(.dark) .mkseller,body:not(.dark) .mk-empty{
-  background:linear-gradient(155deg,rgba(255,255,255,.95),rgba(255,255,255,.72));
-  border-color:rgba(16,20,8,.09);
-  box-shadow:0 10px 24px rgba(16,20,8,.10),inset 0 1px 0 rgba(255,255,255,.9);
-}
-body:not(.dark) .mk-chip,body:not(.dark) #view-market #mkRadius.seg-compact,
-body:not(.dark) .mk-search-wrap .input{
-  background:linear-gradient(150deg,rgba(255,255,255,.9),rgba(255,255,255,.6));
-  border-color:rgba(16,20,8,.10);
-  box-shadow:0 4px 12px rgba(16,20,8,.07),inset 0 1px 0 rgba(255,255,255,.9);
-}
-body:not(.dark) .mktile-body .money,body:not(.dark) .mksim .money,
-body:not(.dark) .mkd-price{color:var(--accent-strong)}
-
 /* ---------- small screens ---------- */
 @media (max-width:360px){
   .mk-hero{padding:15px 14px}

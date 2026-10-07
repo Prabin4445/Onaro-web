@@ -4352,7 +4352,7 @@ Object.assign(HUB.i18n._dict('en'),{
 'me.safety.discOff':'Hidden from the People list 👻',
 'me.safety.discAria':'Discoverable by people at my community',
 /* settings */
-'me.set.title':'Settings','me.set.dark':'🌙 Dark mode',
+'me.set.title':'Settings',
 'me.set.gAppearance':'Appearance','me.set.gNotify':'Notifications','me.set.gData':'Data & storage',
 'me.set.clear':'Clear sample data','me.set.clearBtn':'Clear','me.set.sound':'Sound','me.set.soundNote':'Call ringtone.','me.set.ringtone':'Ringtone',
 'me.set.cleared':'Sample data cleared',
@@ -4535,7 +4535,7 @@ Object.assign(HUB.i18n._dict('es'),{
 'me.safety.discOff':'Oculto de la lista de Personas 👻',
 'me.safety.discAria':'Visible para personas de mi comunidad',
 'me.set.title':'Ajustes',
-'me.set.dark':'🌙 Modo oscuro',
+
 'me.set.clear':'Borrar datos de muestra',
 'me.set.clearBtn':'Borrar','me.set.sound':'Sonido','me.set.soundNote':'Tono de llamada.','me.set.ringtone':'Tono de llamada',
 'me.set.gAppearance':'Apariencia','me.set.gNotify':'Notificaciones','me.set.gData':'Datos y almacenamiento',
@@ -4720,7 +4720,7 @@ Object.assign(HUB.i18n._dict('ne'),{
 'me.safety.discOff':'मानिस सूचीबाट लुकाइयो 👻',
 'me.safety.discAria':'मेरो समुदायका मानिसहरूले देख्न सक्छन्',
 'me.set.title':'सेटिङ',
-'me.set.dark':'🌙 डार्क मोड',
+
 'me.set.clear':'नमूना डाटा खाली गर्नुहोस्',
 'me.set.clearBtn':'खाली गर्नुहोस्','me.set.sound':'आवाज','me.set.soundNote':'कलको रिङटोन।','me.set.ringtone':'रिङटोन',
 'me.set.gAppearance':'रूप','me.set.gNotify':'सूचनाहरू','me.set.gData':'डाटा र भण्डारण',
@@ -4905,7 +4905,7 @@ Object.assign(HUB.i18n._dict('hi'),{
 'me.safety.discOff':'लोग सूची से छिपा 👻',
 'me.safety.discAria':'मेरे समुदाय के लोग देख सकते हैं',
 'me.set.title':'सेटिंग',
-'me.set.dark':'🌙 डार्क मोड',
+
 'me.set.clear':'नमूना डेटा साफ़ करें',
 'me.set.gAppearance':'दिखावट','me.set.gNotify':'सूचनाएं','me.set.gData':'डेटा और स्टोरेज',
 'me.set.clearBtn':'साफ़ करें','me.set.sound':'ध्वनि','me.set.soundNote':'कॉल रिंगटोन।','me.set.ringtone':'रिंगटोन',
