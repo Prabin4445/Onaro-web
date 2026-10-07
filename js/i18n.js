@@ -7557,6 +7557,7 @@ Object.assign(HUB.i18n._dict('en'),{
 'deg.entryTitle':'Degree plans',
 'deg.entryHook':'Your degree, one class at a time.',
 'deg.entrySub':'{n} plans · {s} schools',
+'deg.entryCta':'Find your path',
 'deg.searchPh':'Search school or major…',
 'deg.all':'All',
 'deg.associate':'Associate',

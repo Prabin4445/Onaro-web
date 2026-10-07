@@ -1387,19 +1387,48 @@ function xferHTML(plan,meta,done,earned,total){
    One managed row card near the Grade Calculator (home.js renders
    HUB.degree.entryHTML() and binds HUB.degree.bindEntry(el)), so it
    survives i18n re-renders like every other home card. */
+/* ---------------- Home tab entry card ----------------
+   Big glowing hero card (PraBin 2026-10-07): 3D graduation cap with volt
+   halo, float animation, shimmer sweep — sized like the Appointments card
+   to attract taps. home.js renders HUB.degree.entryHTML() and binds
+   HUB.degree.bindEntry(el); #homeDegSub keeps receiving the live
+   "{n} plans · {s} schools" counts. */
 function entryHTML(){
-  return '<div class="hsec"><div class="hrow" id="homeDegEntry" role="button" tabindex="0"'+
+  return '<div class="hsec"><div class="deg-hero" id="homeDegEntry" role="button" tabindex="0"'+
     ' aria-label="'+esc(t('deg.entryTitle'))+'">'+
-    '<span class="hrow-ico"><svg class="deg-cap-anim" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">'+
-    '<g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+
-    '<polygon points="12,3.5 21.5,8 12,12.5 2.5,8"/><path d="M7,10.2 V14 c0,1.6 10,1.6 10,0 V10.2"/></g>'+
-    '<circle class="deg-btn" cx="12" cy="8" r="1.1"/>'+
-    '<g class="deg-tassel"><path class="deg-tassel-cord" d="M12,8 C15.5,8.6 17.5,10.5 17.5,13.5"/>'+
-    '<circle class="deg-tassel-dot" cx="17.5" cy="15" r="1.6"/></g>'+
-    '<path class="deg-spark" d="M19,3.6 l0.7,1.8 1.8,0.7 -1.8,0.7 -0.7,1.8 -0.7,-1.8 -1.8,-0.7 1.8,-0.7 z"/></svg></span>'+
-    '<span class="grow"><span class="hrow-t">'+esc(t('deg.entryTitle'))+'</span>'+
-    '<span class="hrow-s" id="homeDegSub">'+esc(t('deg.entryHook'))+'</span></span>'+
-    '<span class="chev">›</span></div></div>';
+    '<div class="deg-hero-cap" aria-hidden="true">'+
+    '<svg viewBox="0 0 120 120" width="104" height="104">'+
+    '<defs>'+
+    '<radialGradient id="degHeroHalo" cx="50%" cy="50%" r="50%">'+
+    '<stop offset="0%" stop-color="#C6F135" stop-opacity=".55"/>'+
+    '<stop offset="60%" stop-color="#C6F135" stop-opacity=".12"/>'+
+    '<stop offset="100%" stop-color="#C6F135" stop-opacity="0"/></radialGradient>'+
+    '<linearGradient id="degHeroBoard" x1="0" y1="0" x2="1" y2="1">'+
+    '<stop offset="0%" stop-color="#2b3440"/><stop offset="55%" stop-color="#171d26"/>'+
+    '<stop offset="100%" stop-color="#0c0f14"/></linearGradient>'+
+    '<linearGradient id="degHeroBand" x1="0" y1="0" x2="0" y2="1">'+
+    '<stop offset="0%" stop-color="#232b37"/><stop offset="100%" stop-color="#10141b"/></linearGradient>'+
+    '<filter id="degHeroDS" x="-40%" y="-40%" width="180%" height="180%">'+
+    '<feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000" flood-opacity=".55"/>'+
+    '<feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#C6F135" flood-opacity=".28"/></filter>'+
+    '</defs>'+
+    '<circle cx="60" cy="60" r="46" fill="url(#degHeroHalo)"/>'+
+    '<g filter="url(#degHeroDS)">'+
+    '<path d="M38,54 L38,74 Q60,88 82,74 L82,54 Z" fill="url(#degHeroBand)"/>'+
+    '<polygon points="60,20 106,43 60,66 14,43" fill="url(#degHeroBoard)" stroke="rgba(198,241,53,.45)" stroke-width="1.6" stroke-linejoin="round"/>'+
+    '<polygon points="60,20 106,43 60,66 14,43" fill="none" stroke="rgba(255,255,255,.16)" stroke-width="1" stroke-linejoin="round" transform="translate(0,-2.5)"/>'+
+    '<circle cx="60" cy="43" r="4.2" fill="#C6F135"/>'+
+    '<g class="deg-hero-tassel"><path d="M60,43 C86,47 94,58 94,78" fill="none" stroke="#C6F135" stroke-width="2.4" stroke-linecap="round"/>'+
+    '<rect x="88.5" y="76" width="11" height="17" rx="5.5" fill="#C6F135"/>'+
+    '<path d="M91,85 L91,95 M94,85 L94,96 M97,85 L97,95" stroke="#9db82a" stroke-width="1.6" stroke-linecap="round"/></g>'+
+    '</g>'+
+    '<path class="deg-hero-spark1" d="M22,26 l1.6,4 4,1.6 -4,1.6 -1.6,4 -1.6,-4 -4,-1.6 4,-1.6 z" fill="#C6F135"/>'+
+    '<path class="deg-hero-spark2" d="M98,88 l1.2,3 3,1.2 -3,1.2 -1.2,3 -1.2,-3 -3,-1.2 3,-1.2 z" fill="#fff"/>'+
+    '</svg></div>'+
+    '<div class="deg-hero-t">'+esc(t('deg.entryTitle'))+'</div>'+
+    '<div class="deg-hero-pill"><span id="homeDegSub">'+esc(t('deg.entryHook'))+'</span></div>'+
+    '<div class="deg-hero-cta">'+esc(t('deg.entryCta'))+'<span aria-hidden="true"> →</span></div>'+
+    '</div></div>';
 }
 function bindEntry(scope){
   const root=(scope&&scope.querySelector)?scope:document;

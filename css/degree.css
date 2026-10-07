@@ -285,8 +285,7 @@ body.dark .deg-warn{color:var(--amber);background:rgba(251,191,36,.10);border-co
 .deg-req .no{background:rgba(180,83,9,.15);color:var(--warn)}
 body.dark .deg-req .no{color:var(--amber)}
 
-/* ---------- home entry row ---------- */
-#homeDegEntry .hrow-ico{font-size:20px}
+/* ---------- home entry row (legacy: superseded by .deg-hero card 2026-10-07) ---------- */
 
 /* ---------- reduced motion ---------- */
 @media (prefers-reduced-motion:reduce){
@@ -326,6 +325,56 @@ body.dark .deg-req .no{color:var(--amber)}
 @media (prefers-reduced-motion:reduce){
   .deg-cap-anim,.deg-tassel,.deg-spark{animation:none}
   .deg-spark{opacity:0}
+}
+
+/* ---------- Home hero card: big 3D glowing graduation cap (PraBin 2026-10-07)
+   Tall centered card like the Appointments empty state. Layered volt halo,
+   drop-shadowed cap, float + tassel swing + shimmer sweep. Tasteful glow,
+   no purple. Honors prefers-reduced-motion. */
+.deg-hero{position:relative;overflow:hidden;text-align:center;cursor:pointer;
+  border-radius:24px;padding:26px 20px 22px;font-family:inherit;color:var(--ink);
+  background:linear-gradient(165deg,#151c0e 0%,#0d100a 58%,#0a0d08 100%);
+  border:1px solid rgba(var(--volt-rgb),.38);
+  box-shadow:0 0 0 1px rgba(0,0,0,.45),0 20px 46px rgba(0,0,0,.55),
+    0 0 36px rgba(var(--volt-rgb),.13),inset 0 1px 0 rgba(255,255,255,.09);
+  transition:transform .22s var(--ease-spring, ease),box-shadow .22s ease;
+  -webkit-tap-highlight-color:transparent}
+.deg-hero:active{transform:scale(.975);
+  box-shadow:0 0 0 1px rgba(0,0,0,.45),0 10px 26px rgba(0,0,0,.5),
+  0 0 22px rgba(var(--volt-rgb),.1),inset 0 1px 0 rgba(255,255,255,.09)}
+.deg-hero:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+/* shimmer sweep across the card */
+.deg-hero::after{content:"";position:absolute;top:-30%;bottom:-30%;left:-70%;width:46%;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.13) 45%,rgba(198,241,53,.10) 55%,transparent);
+  transform:skewX(-18deg);animation:degHeroShimmer 5.5s ease-in-out infinite;pointer-events:none}
+@keyframes degHeroShimmer{0%,58%{left:-70%}92%,100%{left:140%}}
+.deg-hero-cap{display:grid;place-items:center;margin:2px auto 10px;width:112px;height:112px;
+  animation:degHeroFloat 4.2s ease-in-out infinite}
+.deg-hero-cap svg{display:block;overflow:visible}
+@keyframes degHeroFloat{0%,100%{transform:translateY(0) rotate(-1.2deg)}50%{transform:translateY(-7px) rotate(1.2deg)}}
+.deg-hero-tassel{transform-origin:60px 43px;animation:degHeroTassel 4.2s ease-in-out infinite}
+@keyframes degHeroTassel{0%,100%{transform:rotate(7deg)}50%{transform:rotate(-9deg)}}
+.deg-hero-spark1{transform-origin:22px 33px;animation:degHeroSpark 3.1s ease-in-out infinite}
+.deg-hero-spark2{transform-origin:98px 94px;animation:degHeroSpark 3.1s ease-in-out 1.1s infinite}
+@keyframes degHeroSpark{0%,100%{transform:scale(.35);opacity:0}50%{transform:scale(1);opacity:.95}}
+.deg-hero-t{font-size:22px;font-weight:800;letter-spacing:-.01em;margin-bottom:10px}
+.deg-hero-pill{display:inline-block;max-width:100%;padding:8px 16px;border-radius:999px;
+  font-size:13.5px;font-weight:700;color:var(--volt);
+  background:rgba(var(--volt-rgb),.12);border:1px solid rgba(var(--volt-rgb),.4);
+  box-shadow:0 0 16px rgba(var(--volt-rgb),.16),inset 0 1px 0 rgba(255,255,255,.07)}
+.deg-hero-pill span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.deg-hero-cta{margin-top:12px;font-size:13px;font-weight:700;color:var(--muted)}
+.deg-hero-cta span{color:var(--volt)}
+@media(max-width:360px){
+  .deg-hero{padding:22px 14px 18px;border-radius:20px}
+  .deg-hero-cap{width:92px;height:92px}
+  .deg-hero-cap svg{width:88px;height:88px}
+  .deg-hero-t{font-size:19px}
+  .deg-hero-pill{font-size:12.5px;padding:7px 13px}
+}
+@media (prefers-reduced-motion:reduce){
+  .deg-hero::after,.deg-hero-cap,.deg-hero-tassel,.deg-hero-spark1,.deg-hero-spark2{animation:none}
+  .deg-hero-spark1,.deg-hero-spark2{opacity:0}
 }
 
 /* ---------- Campus display (multi-campus institutions, 2026-10-06) ---------- */
