@@ -207,6 +207,15 @@ body.dark .phone{box-shadow:none}
   border-bottom:1px solid var(--line);
 }
 .appbar .appbar-icons{gap:12px;align-items:center}
+/* header must NEVER overflow the viewport: the brand shrinks first (it has
+   overflow:hidden), the icon row compresses as a unit, and the icon/logout
+   buttons keep their fixed tap-target size (flex-shrink:0) so they are always
+   fully visible and tappable. Root cause of 2026-10-07 iPhone report where
+   the logo clipped left and the logout button clipped right. */
+.appbar{min-width:0}
+.appbar .appbar-icons{flex-shrink:1;min-width:0}
+.appbar .iconbtn{flex-shrink:0}
+#logoutBtn{flex-shrink:0}
 /* narrow screens: brand + 6 icons must always fit the 480px phone column.
    Hide the tagline and step the icon size down as the viewport narrows. */
 @media(max-width:520px){
@@ -3113,6 +3122,7 @@ body.dark #view-home .hsec-act{color:var(--volt)}
 .hm-mods{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 18px}
 .hm-mod{
   position:relative;overflow:hidden;border:0;border-radius:22px;padding:14px;min-height:132px;
+  min-width:0; /* grid items default to min-width:auto and refuse to shrink — blows out the 1fr tracks on narrow screens */
   display:flex;flex-direction:column;align-items:flex-start;text-align:left;cursor:pointer;color:#fff;
   box-shadow:0 10px 24px rgba(5,25,20,.30),inset 0 1px 0 rgba(255,255,255,.35);
   transition:transform .25s var(--ease-spring);
