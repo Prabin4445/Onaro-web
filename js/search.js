@@ -148,7 +148,7 @@ function render(q){
   q=String(q||'').trim();
   if(!q){
     if(tag) tag.innerHTML='';
-    host.innerHTML='<div class="empty"><div class="big">🔍</div>'+
+    host.innerHTML='<div class="empty ps-empty"><div class="big">🔍</div>'+
       '<p style="margin-bottom:14px">'+t('search.emptyTitle')+'</p>'+
       SUGGESTIONS.map(sk=>{ const s=t(sk); return '<button class="chip" data-q="'+ui.esc(s)+'" style="margin:0 6px 8px 0">“'+ui.esc(s)+'”</button>'; }).join('')+
       '</div>';

@@ -1,0 +1,125 @@
+/* ============================================================
+   Onaro — premium loading & empty states (polish pass, 2026-10-07)
+   Dark-mode only. Brand: volt #C6F135 on #0D100A. No purple.
+   All motion is gated behind (prefers-reduced-motion: no-preference);
+   reduced-motion users get calm, static placeholders instead.
+   Injected app-wide by js/home.js (guarded link[data-ps-css]).
+   ============================================================ */
+
+/* ================= skeleton primitives ================= */
+.ps-skel{
+  position:relative;overflow:hidden;
+  background:#1b2013;border-radius:10px;
+  pointer-events:none;user-select:none;
+}
+.ps-skel::after{
+  content:'';position:absolute;inset:0;
+  /* elegant light sweep with a whisper of volt */
+  background:linear-gradient(100deg,
+    transparent 30%,
+    rgba(198,241,53,.10) 45%,
+    rgba(255,255,255,.11) 50%,
+    rgba(198,241,53,.10) 55%,
+    transparent 70%);
+  transform:translateX(-100%);
+}
+@media (prefers-reduced-motion: no-preference){
+  .ps-skel::after{animation:psShimmer 1.6s ease-in-out infinite}
+  /* staggered sweep across list rows */
+  .ps-skel-list .ps-skel::after{animation-delay:calc(var(--i,0)*.14s)}
+}
+@keyframes psShimmer{to{transform:translateX(100%)}}
+
+/* block sizes */
+.ps-line{height:12px;margin:9px 0}
+.ps-line.lg{height:17px}
+.ps-line.short{width:62%}
+.ps-line.xs{width:38%}
+.ps-ava{width:48px;height:48px;border-radius:50%;flex:0 0 auto}
+.ps-ava.sm{width:36px;height:36px}
+.ps-media{aspect-ratio:16/9;border-radius:14px}
+.ps-chip{width:66px;height:30px;border-radius:999px}
+.ps-btn{width:128px;height:42px;border-radius:13px}
+
+/* row skeleton: avatar + text lines (chat / professors / degree lists) */
+.ps-skel-row{
+  display:flex;gap:13px;align-items:center;
+  padding:13px 15px;border-radius:17px;
+  background:rgba(27,32,19,.55);
+  border:1px solid rgba(198,241,53,.09);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+.ps-skel-row .grow{flex:1;min-width:0}
+.ps-skel-list{display:grid;gap:10px;padding:2px 0}
+
+/* card skeleton: media + body lines (market grid / group carousels) */
+.ps-skel-card{
+  border-radius:18px;overflow:hidden;
+  background:rgba(27,32,19,.55);
+  border:1px solid rgba(198,241,53,.09);
+}
+.ps-skel-card .ps-skel-body{padding:12px 14px}
+.ps-skel-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+/* ================= elevated empty states =================
+   Add class "ps-empty" to any .empty block: the emoji becomes a
+   glossy volt-ring icon disc, with a soft pop-in entrance. */
+.ps-empty{position:relative}
+.ps-empty .big{
+  display:grid;place-items:center;
+  width:74px;height:74px;margin:0 auto 17px;
+  border-radius:50%;font-size:35px;line-height:1;
+  background:radial-gradient(circle at 32% 26%,#2d3419,#131608 74%);
+  border:1px solid rgba(198,241,53,.38);
+  box-shadow:0 0 0 7px rgba(198,241,53,.06),
+             0 0 30px rgba(198,241,53,.20),
+             inset 0 2px 7px rgba(255,255,255,.10),
+             inset 0 -6px 12px rgba(0,0,0,.45);
+}
+.ps-empty h3{font-size:18px}
+.ps-empty .ps-sub{color:var(--muted);font-size:14px;max-width:300px;margin:0 auto}
+.ps-empty .btn,.ps-empty .ps-cta{margin-top:18px}
+.ps-empty .hint{margin-top:10px}
+@media (prefers-reduced-motion: no-preference){
+  .ps-empty{animation:psPop .5s cubic-bezier(.2,.9,.25,1.12)}
+  .ps-empty .big{animation:psFloat 3.6s ease-in-out infinite}
+  .mk-empty{animation:psPop .5s cubic-bezier(.2,.9,.25,1.12)}
+}
+@keyframes psPop{0%{opacity:0;transform:translateY(12px) scale(.97)}100%{opacity:1;transform:none}}
+@keyframes psFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* ================= volt spinner =================
+   Generic brand spinner for any async wait. Existing spinners
+   (auth, scan, lang) already use volt; this covers the rest. */
+.ps-spin{
+  width:26px;height:26px;border-radius:50%;margin:20px auto;
+  border:3px solid #2b311b;border-top-color:#C6F135;
+  box-shadow:0 0 14px rgba(198,241,53,.25);
+}
+.ps-spin.lg{width:42px;height:42px;border-width:4px}
+.ps-spin.sm{width:18px;height:18px;border-width:2.5px;margin:10px auto}
+@media (prefers-reduced-motion: no-preference){
+  .ps-spin{animation:psSpin .8s linear infinite}
+}
+@keyframes psSpin{to{transform:rotate(360deg)}}
+.ps-loadwrap{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  padding:36px 16px;color:var(--muted);font-size:13.5px;text-align:center;
+}
+
+/* subtle volt polish on the degree game-like loader */
+.deg-loading .deg-load-bar{box-shadow:0 0 14px rgba(198,241,53,.28)}
+.deg-loading .deg-load-tip{
+  border:1px solid rgba(198,241,53,.16);border-radius:14px;
+  padding:10px 14px;background:rgba(27,32,19,.5);
+}
+
+/* ================= reduced motion: static & calm ================= */
+@media (prefers-reduced-motion: reduce){
+  .ps-skel::after{
+    animation:none;transform:none;
+    background:linear-gradient(100deg,transparent 35%,rgba(255,255,255,.06) 50%,transparent 65%);
+  }
+  .ps-empty,.ps-empty .big,.mk-empty{animation:none}
+  .ps-spin{animation:none}
+}

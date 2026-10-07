@@ -148,7 +148,7 @@ function renderHouseholdsList(el){
   html+=segBar();
   html+='<button class="btn btn-ghost btn-block gu-new" id="newHh">'+t('groups.newHh')+'</button><div style="height:12px"></div>';
   if(!hs.length){
-    html+='<div class="empty"><div class="big">🏠</div><p>'+t('groups.emptyHh')+'</p></div>';
+    html+='<div class="empty ps-empty"><div class="big">🏠</div><p>'+t('groups.emptyHh')+'</p></div>';
   }
   let hhI=0;
   for(const h of hs){
@@ -632,7 +632,7 @@ function renderCampus(el){
       +'<div class="grow"><h3>'+ui.esc(p.author)+' <span class="meta">· '+ui.timeAgo(p.at||Date.now())+'</span></h3>'
       +'<div style="font-size:14.5px;line-height:1.45">'+ui.esc(p.text)+'</div></div>'+ui.sampleBadge(p.sample)+'</div>';
   }
-  if(!s.events.length&&!posts.length) html+='<div class="empty"><div class="big">🏘️</div><p>'+t('groups.quiet')+'</p></div>';
+  if(!s.events.length&&!posts.length) html+='<div class="empty ps-empty"><div class="big">🏘️</div><p>'+t('groups.quiet')+'</p></div>';
 
   el.innerHTML=html+'</div>';
   bindSeg(el);
@@ -831,7 +831,7 @@ function clubsResultsHTML(){
   const mine=cgAll().filter(function(g){ return g.mine&&matchQ(g); });
   let html='<div class="sechd gu-sechd"><h2>🌊 '+t('cg.nearYou')+'</h2><span class="meta">'+nearF.length+'</span></div>';
   if(nearF.length) html+=carouselHTML(nearF);
-  else html+='<div class="empty"><div class="big">🌊</div><p>'+t(q?'cg.emptySearch':'cg.empty')+'</p></div>';
+  else html+='<div class="empty ps-empty"><div class="big">🌊</div><p>'+t(q?'cg.emptySearch':'cg.empty')+'</p></div>';
   if(nearF.length&&nearF.every(function(e){ return e.g.sample; }))
     html+='<p class="hint" style="margin:2px 2px 8px">'+t('cg.sampleHint')+'</p>';
   html+='<div class="sechd gu-sechd"><h2>🛠️ '+t('cg.yours')+'</h2><span class="meta">'+mine.length+'</span></div>';

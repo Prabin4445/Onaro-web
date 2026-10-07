@@ -133,9 +133,12 @@ function renderRows(){
       preview(th).toLowerCase().includes(listQuery));
   }
   if(!threads.length){
-    host.innerHTML='<div class="empty"><div class="big">💬</div><p>'+
+    /* premium polish (2026-10-07): elevated empty state with a real CTA */
+    host.innerHTML='<div class="empty ps-empty"><div class="big">💬</div><p class="ps-sub">'+
       (listQuery?t('chat.emptySearch'):t('chat.emptyNone'))+
-      '</p></div>';
+      '</p>'+(listQuery?'':'<button class="btn btn-primary ps-cta" id="chatEmptyNew">'+t('chat.new')+'</button>')+'</div>';
+    const cen=document.getElementById('chatEmptyNew');
+    if(cen) cen.onclick=newContactSheet;
     return;
   }
   host.innerHTML=threads.map(th=>{

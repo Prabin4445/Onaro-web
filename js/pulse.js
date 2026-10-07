@@ -130,7 +130,7 @@ function open(){
   document.addEventListener('keydown',onKey);
   const host=document.getElementById('hubPulseRows');
   if(!feed.length){
-    host.innerHTML='<div class="empty"><div class="big">⚡</div>'+
+    host.innerHTML='<div class="empty ps-empty"><div class="big">⚡</div>'+
       '<p style="margin-bottom:16px">'+t('pulse.empty')+'</p>'+
       '<button class="btn btn-primary" id="hubPulsePost">'+t('pulse.post')+'</button></div>';
     document.getElementById('hubPulsePost').onclick=()=>goto('market');

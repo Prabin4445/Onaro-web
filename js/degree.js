@@ -128,6 +128,19 @@ function degLoadingHTML(){
     +'<div class="deg-load-tip"><span class="deg-load-tipicon">💡</span><span id="degLoadTip">'+esc(t('deg.loadTip1'))+'</span></div>'
     +'</div>';
 }
+/* premium polish (2026-10-07): shimmer skeleton rows shown while directory
+   results load, so the list never flashes a bare "Loading…" line. */
+function degSkelRows(n){
+  let h='<div class="ps-skel-list" aria-hidden="true">';
+  const count=n||6;
+  for(let i=0;i<count;i++){
+    h+='<div class="ps-skel-row" style="--i:'+i+'">'
+      +'<div class="ps-skel ps-ava sm"></div>'
+      +'<div class="grow"><div class="ps-skel ps-line lg"></div>'
+      +'<div class="ps-skel ps-line short"></div></div></div>';
+  }
+  return h+'</div>';
+}
 function degLoadingStart(){
   const stage=document.getElementById('degLoadStage');
   const fill=document.getElementById('degLoadFill');
@@ -642,10 +655,10 @@ function openPlan(slug){
   degIndex().then(function(idx){
     if(seq!==loadSeq) return;
     const meta=(idx.plans||[]).filter(function(p){ return p.slug===slug; })[0];
-    if(!meta){ if(body) body.innerHTML='<div class="empty"><div class="big">🎓</div><p>'+esc(t('deg.loadFail'))+'</p></div>'; return; }
+    if(!meta){ if(body) body.innerHTML='<div class="empty ps-empty"><div class="big">🎓</div><p>'+esc(t('deg.loadFail'))+'</p></div>'; return; }
     degFile(slug).then(function(file){
       if(seq!==loadSeq) return; /* user hit back while loading */
-      if(!file||!file.plan){ if(body) body.innerHTML='<div class="empty"><div class="big">🎓</div><p>'+esc(t('deg.loadFail'))+'</p></div>'; return; }
+      if(!file||!file.plan){ if(body) body.innerHTML='<div class="empty ps-empty"><div class="big">🎓</div><p>'+esc(t('deg.loadFail'))+'</p></div>'; return; }
       cur={slug:slug,plan:file.plan,meta:meta};
       normSemNumbers(cur.plan); /* plans missing semester `n` get 1-based numbers */
       xferMode=false; collapsed={}; lastPop=null; lastFloat=null;
@@ -755,7 +768,7 @@ function updatePickerResults(){
       }
     }catch(e){}
     if(DATA.idxFailed){
-      h+='<div class="empty"><div class="big">📡</div><p>'+esc(t('deg.loadFail'))+'</p>'+
+      h+='<div class="empty ps-empty"><div class="big">📡</div><p>'+esc(t('deg.loadFail'))+'</p>'+
         '<button class="btn btn-line btn-sm" id="degRetry">'+esc(t('common.retry'))+'</button></div>';
     }else{
       let anySchool=false;
@@ -802,7 +815,7 @@ function updatePickerResults(){
         }
         h+='</div>';
       });
-      if(!anySchool) h+='<div class="empty"><div class="big">🔍</div><p>'+esc(t('deg.noMatch'))+'</p></div>';
+      if(!anySchool) h+='<div class="empty ps-empty"><div class="big">🔍</div><p>'+esc(t('deg.noMatch'))+'</p></div>';
     }
     box.innerHTML=h;
     /* bindings: results only — the search input is never touched */
@@ -882,7 +895,7 @@ function updateDirectory(){
     return;
   }
   host.innerHTML='<div class="deg-browse"><div class="deg-dir-hd">'+esc(t('deg.browseAll'))+'</div>'+
-    '<div id="degBResults"><div class="empty"><div class="big">🎓</div><p>'+esc(t('common.loading'))+'</p></div></div></div>';
+    '<div id="degBResults">'+degSkelRows(6)+'</div></div>';
   natDir().then(function(d){
     const box=document.getElementById('degBResults');
     if(!box) return;
@@ -893,7 +906,7 @@ function updateDirectory(){
       return (r[1]+' '+r[2]+' '+r[3]).toLowerCase().indexOf(qq)!==-1;
     }).slice(0,40);
     if(!rows.length){
-      box.innerHTML='<div class="empty"><div class="big">🔍</div><p>'+esc(t('deg.noSchools'))+'</p></div>';
+      box.innerHTML='<div class="empty ps-empty"><div class="big">🔍</div><p>'+esc(t('deg.noSchools'))+'</p></div>';
       return;
     }
     let h='';
@@ -913,7 +926,7 @@ function updateDirectory(){
 }
 function renderBrowseSchool(box){
   const s=browseState.school;
-  box.innerHTML='<div class="empty"><div class="big">🎓</div><p>'+esc(t('common.loading'))+'</p></div>';
+  box.innerHTML=degSkelRows(8);
   natDir().then(function(d){
     const row=(d.schools||[]).filter(function(r){ return String(r[0])===String(s.u); })[0]||[];
     const name=row[1]||'', loc=(row[2]||'')+', '+(row[3]||'');
@@ -1373,7 +1386,7 @@ function xferHTML(plan,meta,done,earned,total){
     });
   });
   if(!anyX){
-    return h+'<div class="empty"><div class="big">🔀</div><p><b>'+esc(t('deg.xferNone'))+'</b></p>'+
+    return h+'<div class="empty ps-empty"><div class="big">🔀</div><p><b>'+esc(t('deg.xferNone'))+'</b></p>'+
       '<p class="sub">'+esc(t('deg.xferNote'))+'</p></div>';
   }
   Object.keys(perSchool).sort().forEach(function(nm){

@@ -1,0 +1,288 @@
+/* ==========================================================================
+   premium-depth.css — Onaro visual-depth & material layer
+   --------------------------------------------------------------------------
+   ADDITIVE OVERRIDES ONLY. This file never resets layout, positioning, or
+   theme logic; it only deepens the tactile, expensive feel of the app.
+
+   Dark background assumed everywhere (#0D100A). No light-mode rules.
+   No purple anywhere. Accent is always var(--volt) (#C6F135) so the female
+   gender theme (body.theme-rose) follows automatically — never hardcode
+   rose values here, and never target rose selectors.
+
+   Specificity: single-class / attribute selectors are used so these rules
+   sit later in the cascade and win over existing stylesheets without
+   !important. Where an existing dark-mode rule must be beaten
+   (e.g. body.dark .home-hero), the doubled-class trick (.x.x) matches its
+   specificity and wins by source order — without depending on the
+   body.dark class surviving the light-mode removal.
+   ========================================================================== */
+
+/* ============ §1 · Depth token system ============ */
+:root {
+  /* Layered shadows — ambient lift + tight contact shadow so cards float
+     above the #0D100A background. */
+  --pd-shadow-card:
+    0 24px 48px -16px rgba(0, 0, 0, 0.62), 0 8px 18px -8px rgba(0, 0, 0, 0.55),
+    0 1px 0 0 rgba(255, 255, 255, 0.045) inset;
+  --pd-shadow-card-sm:
+    0 12px 26px -10px rgba(0, 0, 0, 0.55), 0 4px 10px -4px rgba(0, 0, 0, 0.5),
+    0 1px 0 0 rgba(255, 255, 255, 0.04) inset;
+  --pd-shadow-sheet:
+    0 -18px 60px -12px rgba(0, 0, 0, 0.7), 0 -4px 18px -6px rgba(0, 0, 0, 0.55),
+    0 1px 0 0 rgba(255, 255, 255, 0.09) inset;
+  --pd-shadow-overlay:
+    0 30px 70px -18px rgba(0, 0, 0, 0.75), 0 10px 24px -10px rgba(0, 0, 0, 0.6);
+
+  /* Pressable 3D: top highlight + bottom depth on buttons/tappable cards. */
+  --pd-shadow-btn:
+    0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+    0 -2px 0 0 rgba(0, 0, 0, 0.28) inset, 0 10px 22px -10px rgba(0, 0, 0, 0.6),
+    0 3px 8px -3px rgba(0, 0, 0, 0.5);
+  --pd-shadow-btn-pressed:
+    0 1px 0 0 rgba(0, 0, 0, 0.18) inset, 0 2px 6px -2px rgba(0, 0, 0, 0.55);
+
+  /* Glass tints — translucent dark, iOS needs the -webkit prefix. */
+  --pd-glass-sheet: rgba(24, 29, 17, 0.78);
+  --pd-glass-panel: rgba(24, 29, 17, 0.62);
+  --pd-glass-toast: rgba(28, 33, 19, 0.85);
+
+  /* Volt-tinted glows (var(--volt-rgb) follows volt/rose themes). */
+  --pd-glow-volt:
+    0 0 0 1px rgba(var(--volt-rgb), 0.22),
+    0 14px 34px -12px rgba(var(--volt-rgb), 0.28),
+    0 24px 48px -16px rgba(0, 0, 0, 0.62);
+  --pd-glow-volt-sm:
+    0 0 0 1px rgba(var(--volt-rgb), 0.18),
+    0 8px 20px -8px rgba(var(--volt-rgb), 0.22),
+    0 12px 26px -10px rgba(0, 0, 0, 0.55);
+
+  --pd-edge-hi: inset 0 1px 0 0 rgba(255, 255, 255, 0.07);
+}
+
+/* ============ §2 · Glassmorphism — sheets, scrims, overlays ============ */
+
+/* Bottom sheets: frosted glass with a lit top edge. The scrim behind them
+   deepens so the sheet reads as a raised glass plane. */
+.sheethost {
+  background: rgba(5, 7, 3, 0.62);
+  -webkit-backdrop-filter: blur(6px) saturate(1.1);
+  backdrop-filter: blur(6px) saturate(1.1);
+}
+.sheet {
+  background: var(--pd-glass-sheet);
+  -webkit-backdrop-filter: blur(26px) saturate(1.35);
+  backdrop-filter: blur(26px) saturate(1.35);
+  box-shadow: var(--pd-shadow-sheet);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: none;
+}
+/* Glass edge: the bright hairline along the sheet's top rim. */
+.sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Chat panel + full-screen overlay roots: same frosted treatment so every
+   layer of the app shares one material language. */
+.chatpanel {
+  background: var(--pd-glass-panel);
+  -webkit-backdrop-filter: blur(24px) saturate(1.3);
+  backdrop-filter: blur(24px) saturate(1.3);
+  box-shadow: var(--pd-edge-hi), var(--pd-shadow-overlay);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.chatroot {
+  background: rgba(5, 7, 3, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Toasts: floating glass pills with lift. */
+.toast {
+  background: var(--pd-glass-toast);
+  -webkit-backdrop-filter: blur(16px) saturate(1.25);
+  backdrop-filter: blur(16px) saturate(1.25);
+  box-shadow:
+    var(--pd-edge-hi),
+    0 14px 30px -10px rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* ============ §3 · Layered shadows + subtle gradients on cards ============ */
+
+/* Generic float: every *-card class (daily, gpa, professors, scanner,
+   wellness, friends, market, degree…) lifts off the background with an
+   ambient + contact shadow stack. Doubled attribute-class keeps this ahead
+   of single-class card rules without !important. */
+[class*="-card"][class*="-card"] {
+  box-shadow: var(--pd-shadow-card);
+}
+/* Smaller tiles get the compact stack so dense grids don't feel heavy. */
+.gw-card[class*="-card"],
+.cgchip[class*="chip"] {
+  box-shadow: var(--pd-shadow-card-sm);
+}
+
+/* Premium gradient base on cards: never flat — a whisper of top light over
+   the surface tone. background-image layers over background-color, so cards
+   that paint their own imagery are untouched. */
+.dly-card,
+.gpa-card,
+.prof-card,
+.ppl-card,
+.sc-card,
+.gw-card,
+.wl-card,
+.bdg-card,
+.frq-card,
+.rw-card,
+.hh-card,
+.auth-card,
+.mksim-card,
+.sty-card,
+.gr-card {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0) 42%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Hero / primary cards: volt-tinted glow + deeper dark gradient.
+   Doubled class beats the existing body.dark .home-hero rule by source
+   order; uses var(--volt-rgb) so the rose theme glows rose, not volt. */
+.home-hero.home-hero {
+  background:
+    radial-gradient(
+      120% 90% at 85% -10%,
+      rgba(var(--volt-rgb), 0.2),
+      transparent 60%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(var(--volt-rgb), 0.1) 0%,
+      rgba(var(--volt-rgb), 0.03) 38%,
+      #141a0e 100%
+    );
+  box-shadow: var(--pd-glow-volt), var(--pd-edge-hi);
+  border: 1px solid rgba(var(--volt-rgb), 0.2);
+}
+.dly-card.dly-card.hero,
+.gpa-card.gpa-card.hero,
+.deg-hero.deg-hero {
+  background:
+    radial-gradient(
+      110% 80% at 80% 0%,
+      rgba(var(--volt-rgb), 0.14),
+      transparent 55%
+    ),
+    linear-gradient(160deg, #1b2113 0%, #12170c 100%);
+  box-shadow: var(--pd-glow-volt-sm), var(--pd-edge-hi);
+  border: 1px solid rgba(var(--volt-rgb), 0.14);
+}
+
+/* ============ §4 · Depth on interactive elements ============ */
+
+/* Tappable cards beg to be pressed: slight 3D + springy settle on touch.
+   translateY is transform-only (no layout shift), max-width safe at 320px. */
+[class*="-card"]:active {
+  transform: translateY(1px) scale(0.995);
+  box-shadow: var(--pd-shadow-btn-pressed);
+  transition:
+    transform 0.12s ease-out,
+    box-shadow 0.12s ease-out;
+}
+
+/* Buttons: top highlight + bottom depth = the clay/pressable look.
+   Icon-only buttons (.iconbtn) and transparent ghost buttons keep their
+   flat treatment; everything else gets the 3D treatment. */
+button[class]:not(.iconbtn):not(.sheetx):not([class*="ghost"]) {
+  box-shadow: var(--pd-edge-hi), var(--pd-shadow-btn);
+}
+button[class]:not(.iconbtn):not(.sheetx):not([class*="ghost"]):active {
+  box-shadow: var(--pd-shadow-btn-pressed);
+  transform: translateY(1px);
+}
+
+/* The universal sheet dismiss ✕: glassy disc with a lit rim. */
+.sheetx {
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    var(--pd-edge-hi),
+    0 6px 14px -6px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tab bar: floating glass dock with lift, hairline top edge. */
+.tabbar {
+  background: rgba(20, 24, 13, 0.78);
+  -webkit-backdrop-filter: blur(22px) saturate(1.3);
+  backdrop-filter: blur(22px) saturate(1.3);
+  box-shadow:
+    0 -14px 34px -12px rgba(0, 0, 0, 0.65),
+    var(--pd-edge-hi);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Active tab: volt halo so the current destination feels selected. */
+.tab.active {
+  box-shadow:
+    0 0 0 1px rgba(var(--volt-rgb), 0.3),
+    0 6px 16px -6px rgba(var(--volt-rgb), 0.35),
+    var(--pd-edge-hi);
+}
+
+/* Ask pill + primary CTAs: volt glow ring on the signature actions. */
+#askPillMain,
+.ob-role.on,
+.wlcm-crow.on {
+  box-shadow: var(--pd-glow-volt-sm), var(--pd-edge-hi);
+}
+
+/* ============ §5 · Sheen (motion-gated) ============ */
+
+/* A slow light sweep across the home hero — premium shimmer, strictly
+   gated behind prefers-reduced-motion. Purely decorative: pointer-events
+   none, transform-only, no layout impact at any width. */
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero.home-hero::after {
+    content: "";
+    position: absolute;
+    top: -40%;
+    bottom: -40%;
+    left: -30%;
+    width: 45%;
+    background: linear-gradient(
+      100deg,
+      transparent,
+      rgba(255, 255, 255, 0.055),
+      transparent
+    );
+    transform: skewX(-18deg);
+    animation: pd-sheen 9s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes pd-sheen {
+    0%,
+    55% {
+      left: -45%;
+    }
+    85%,
+    100% {
+      left: 130%;
+    }
+  }
+}

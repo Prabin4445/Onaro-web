@@ -11,6 +11,33 @@ const {store,ui}=HUB;
 const t=function(k,v){ return HUB.i18n.t(k,v); };
 HUB.views=HUB.views||{};
 
+/* premium-states.css — global premium loading/empty-state stylesheet
+   (skeleton shimmer, elevated empty states, volt spinners). Guarded so it
+   injects once, app-wide. (polish pass 2026-10-07) */
+(function(){
+  if(document.querySelector('link[data-ps-css]')) return;
+  const l=document.createElement('link');
+  l.rel='stylesheet'; l.href='css/premium-states.css'; l.setAttribute('data-ps-css','1');
+  document.head.appendChild(l);
+})();
+
+/* premium polish stylesheets (2026-10-07): depth (glass/shadows), motion
+   (press physics/transitions), type (hierarchy/spacing). Same guarded
+   injection pattern — appends after existing stylesheets so cascade wins. */
+(function(){
+  const files=[
+    ['css/premium-depth.css','data-pd-css'],
+    ['css/premium-motion.css','data-pm-css'],
+    ['css/premium-type.css','data-pt-css']
+  ];
+  for(const [href,attr] of files){
+    if(document.querySelector('link['+attr+']')) continue;
+    const l=document.createElement('link');
+    l.rel='stylesheet'; l.href=href; l.setAttribute(attr,'1');
+    document.head.appendChild(l);
+  }
+})();
+
 /* ---- "What's happening" events as a 3D water-flow carousel ----
    Same treatment as the groups carousel: .flow/.gcard classes get the
    cover-flow tilt + auto-drift from HUB.cgroups.bindCarousels (already

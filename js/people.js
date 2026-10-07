@@ -117,7 +117,7 @@ function cardHTML(p){
 /* ================= empty state ================= */
 function emptyHTML(){
   const copy=isStudent()?t('people.emptyStudent'):t('people.emptyNeighbor');
-  return '<div class="empty"><div class="big">👥</div><h3>'+t('people.emptyT')+'</h3>'
+  return '<div class="empty ps-empty"><div class="big">👥</div><h3>'+t('people.emptyT')+'</h3>'
     +'<p class="sub">'+copy+'</p>'
     +'<button class="btn btn-primary" id="pplInvite">'+t('people.invite')+'</button></div>';
 }
@@ -258,12 +258,12 @@ function friendsListHTML(){
   const all=frAll(), list=frFiltered();
   let html='<div class="row between" style="margin-bottom:4px"><h2 style="margin:0">👥 '+ui.esc(t('friends.title'))+'</h2><span class="meta">'+list.length+'</span></div>';
   if(!all.length){
-    html+='<div class="empty"><div class="big">📇</div><p>'+t('friends.none')+'</p><p class="sub">'+t('friends.noneSub')+'</p>'
+    html+='<div class="empty ps-empty"><div class="big">📇</div><p>'+t('friends.none')+'</p><p class="sub">'+t('friends.noneSub')+'</p>'
       +'<div class="row" style="gap:8px;justify-content:center;margin-top:8px">'
       +'<button class="btn btn-primary btn-sm" id="frSync2">'+t('friends.sync')+'</button>'
       +'<button class="btn btn-line btn-sm" id="frMan2">'+t('friends.manual')+'</button></div></div>';
   }else if(!list.length){
-    html+='<div class="empty"><div class="big">🔍</div><p>'+t('people.emptyT')+'</p></div>';
+    html+='<div class="empty ps-empty"><div class="big">🔍</div><p>'+t('people.emptyT')+'</p></div>';
   }else{
     html+=list.map(function(c){ return frRowHTML(c,all.indexOf(c)); }).join('');
   }

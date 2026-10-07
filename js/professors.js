@@ -302,6 +302,20 @@ function cardHTML(p){
     '<span class="prof-line">'+line+'</span></span>'+
     '<span class="prof-chev" aria-hidden="true">›</span></button>';
 }
+/* premium polish (2026-10-07): shimmer skeleton rows while the faculty
+   directory is still loading, so the list never flashes a false "no
+   professors" state during the async fetch. Mirrors cardHTML's shape. */
+function profSkelRows(){
+  let h='<div class="ps-skel-list" aria-hidden="true">';
+  for(let i=0;i<6;i++){
+    h+='<div class="ps-skel-row" style="--i:'+i+'">'
+      +'<div class="ps-skel ps-ava"></div>'
+      +'<div class="grow"><div class="ps-skel ps-line lg"></div>'
+      +'<div class="ps-skel ps-line short"></div>'
+      +'<div class="ps-skel ps-line xs"></div></div></div>';
+  }
+  return h+'</div>';
+}
 function paintList(){
   const U=ui(), box=document.getElementById('profList');
   if(!box) return;
@@ -309,13 +323,16 @@ function paintList(){
   if(!list.length){
     /* Offline or load failure: show clear message with retry */
     if(isOffline()||FAC.loadFailed){
-      box.innerHTML='<div class="empty"><div class="big">📡</div><p><b>'+U.esc(t('prof.offlineT'))+'</b></p>'
+      box.innerHTML='<div class="empty ps-empty"><div class="big">📡</div><p><b>'+U.esc(t('prof.offlineT'))+'</b></p>'
         +'<p class="hint">'+U.esc(t('prof.offlineS'))+'</p>'
         +'<button class="btn btn-dark btn-sm" id="profRetry">↻ '+U.esc(t('common.retry'))+'</button></div>';
       const rt=document.getElementById('profRetry');
       if(rt) rt.onclick=function(){ FAC.idx=null; FAC.idxP=null; FAC.loadFailed=false; paintList(); ensureFaculty(campus()).then(function(){ paintList(); }); };
+    }else if(FAC.idx===null||(function(){ const sl=facultySlugFor(campus()); return sl&&!FAC.files[sl]; })()){
+      /* directory or campus file still loading: skeleton, not a false empty */
+      box.innerHTML=profSkelRows();
     }else{
-      box.innerHTML='<div class="empty"><div class="big">🔍</div><p>'+
+      box.innerHTML='<div class="empty ps-empty"><div class="big">🔍</div><p>'+
         (query?U.esc(t('prof.noResults',{q:query})):U.esc(t('prof.noProfs',{campus:campus()})))+'</p>'+
         '<p class="hint">➕ '+U.esc(t('prof.addMissing'))+'</p>'+
         '<button class="btn btn-dark btn-sm" id="profAddEmpty">＋ '+U.esc(t('prof.addProf'))+'</button></div>';
@@ -371,7 +388,7 @@ function renderList(el){
 }
 function renderNoCampus(el){
   const U=ui();
-  el.innerHTML='<div class="prof-wrap"><div class="empty prof-empty">'+
+  el.innerHTML='<div class="prof-wrap"><div class="empty prof-empty ps-empty">'+
     '<div class="big">🎓</div><h2>'+U.esc(t('prof.title'))+'</h2>'+
     '<p>'+U.esc(t('prof.noCampus'))+'</p>'+
     '<button class="btn btn-dark" id="profPickCampus">'+U.esc(t('prof.noCampusCta'))+'</button>'+
@@ -440,7 +457,7 @@ function renderDetail(el,pid){
   /* reviews */
   h+='<h3 class="prof-h">'+U.esc(t('prof.comment'))+'s · '+s.n+'</h3>';
   h+='<div id="profRevs">'+(rs.length?rs.map(r=>reviewHTML(pid,r)).join('')
-    :'<div class="empty"><div class="big">💬</div><p>'+U.esc(t('prof.noRatings'))+'</p></div>')+'</div>';
+    :'<div class="empty ps-empty"><div class="big">💬</div><p>'+U.esc(t('prof.noRatings'))+'</p></div>')+'</div>';
   if(rs.length) h+='<button class="prof-scroll" id="profGoDown" aria-label="↓">↓</button>'+
     '<button class="prof-scroll up" id="profGoUp" aria-label="↑" hidden>↑</button>';
   h+='<p class="hint">🔒 '+U.esc(t('prof.localNote'))+'</p></div>';

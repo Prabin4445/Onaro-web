@@ -1,0 +1,259 @@
+/* ============================================================
+   premium-type.css — Onaro premium typography pass (dark only)
+   ------------------------------------------------------------
+   LOAD ORDER: link this AFTER styles.css, profile.css and every
+   css/*.css file. All rules are additive overrides; on equal
+   specificity the later stylesheet wins, which is what this file
+   relies on. No !important, no copy changes, no brand colors.
+
+   Type scale (fluid, 320px-safe):
+     display  clamp(1.875rem, 8vw, 2.625rem)   hero / h1
+     h2       clamp(1.25rem, 5.4vw, 1.5rem)
+     h3       clamp(1.02rem, 4.4vw, 1.2rem)
+     title    1.0625rem                         card titles
+     body     1rem / 1.55
+     small    .8125rem / 1.5                    secondary text
+     micro    .6875rem / .1em tracking          eyebrows, caps labels
+
+   Faces: Space Grotesk 700 for display (only 500/700 are
+   self-hosted — never assign 800 to the display face, or the
+   browser will synthesize a faux bold). Inter 400–800 for UI text.
+   ============================================================ */
+
+/* ---------- 0. Fluid scale tokens ---------- */
+:root{
+  --pt-display:clamp(1.875rem,8vw,2.625rem);
+  --pt-h2:clamp(1.25rem,5.4vw,1.5rem);
+  --pt-h3:clamp(1.02rem,4.4vw,1.2rem);
+  --pt-title:1.0625rem;
+  --pt-hero:clamp(1.9rem,8.4vw,2.5rem);
+}
+
+/* ---------- 1. Base rendering ---------- */
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  line-height:1.55;
+}
+/* Refined tertiary gray: --faint (#6E7266) sat ~3.8:1 on #0D100A,
+   too muddy for small text. Same olive cast, a touch lifted. */
+body.dark{--faint:#787C70}
+
+/* ---------- 2. Headline hierarchy ---------- */
+h1{
+  font-size:var(--pt-display);
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.08;
+  text-wrap:balance;
+}
+h2{
+  font-family:var(--font-display);
+  font-size:var(--pt-h2);
+  font-weight:700;
+  letter-spacing:-.025em;
+  line-height:1.18;
+  text-wrap:balance;
+}
+h3{
+  font-family:var(--font-display);
+  font-size:var(--pt-h3);
+  font-weight:700;
+  letter-spacing:-.015em;
+  line-height:1.28;
+}
+h4{
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:-.01em;
+  line-height:1.35;
+}
+
+/* Home greeting + ask-style hero prompts */
+.greet{
+  font-size:var(--pt-hero);
+  letter-spacing:-.03em;
+  line-height:1.08;
+  text-wrap:balance;
+}
+.sty-ask{
+  font-family:var(--font-display);
+  font-size:clamp(1.3rem,5.6vw,1.55rem);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.2;
+  text-wrap:balance;
+}
+/* Welcome / onboarding hero */
+.wlcm-card h1{
+  font-size:clamp(1.4rem,6vw,1.7rem);
+  letter-spacing:-.025em;
+  line-height:1.15;
+  text-wrap:balance;
+}
+/* Incoming call name — Inter 800 is real (self-hosted), keep it */
+.inc-name{letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+
+/* ---------- 3. Section & card titles ---------- */
+/* Unified section header: display face, never faux-800 */
+.sechd h2{
+  font-family:var(--font-display);
+  font-size:clamp(1.05rem,4.6vw,1.2rem);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.2;
+}
+/* Card titles across modules (wellness / scanner / gym / style) */
+.wl-card h3,
+.sc-cardtitle,
+.gw-cardtitle,
+.sty-cardtitle{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:var(--pt-title);
+  letter-spacing:-.02em;
+  line-height:1.25;
+}
+/* Top-bar titles: degree, style */
+.deg-topbar-t,
+.sty-topbar-t{
+  font-family:var(--font-display);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.2;
+}
+/* Wellness dashboard topbar + section heads */
+.wl-topbar h2{font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.wl-sect > h3{letter-spacing:-.015em;line-height:1.3}
+/* People/profile section titles — 800 on the display face would be
+   synthesized (only 500/700 ship), so pin to real 700 */
+.ppl-prof .ppl-sec h2{font-weight:700}
+/* Degree plan name + school header */
+.deg-planname{font-weight:800;letter-spacing:-.02em;line-height:1.25;text-wrap:balance}
+.deg-school-hd h3{font-weight:700;letter-spacing:-.015em}
+
+/* ---------- 4. Weight discipline ---------- */
+/* 900 is not self-hosted (Inter ships 400–800); normalize to the
+   heaviest real weight so nothing renders as faux bold. */
+.deg-ring-num,
+.deg-code,
+.deg-sem-done,
+.gw-gymmode{font-weight:800}
+
+/* Micro caps labels read crisper at 700 than at 800 */
+.cupnext,
+.gw-chips-lbl,
+.gw-seclbl,
+.gw-earnedtag,
+.wl-kicker,
+.rw-num,
+.inc-tag,
+.deg-cr,
+.deg-cat,
+.deg-choice-chip,
+.calltile .role,
+.callroute .cb-cap,
+.vbadge-cap{font-weight:700}
+
+/* ---------- 5. Eyebrows & micro labels — one tracking standard ---------- */
+.qband-eyebrow,
+.intl-chead,
+.langregion,
+.cupnext,
+.gw-chips-lbl,
+.gw-seclbl,
+.wl-kicker,
+.rw-num,
+.inc-tag,
+.home-date{
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+/* ---------- 6. Body & secondary text ---------- */
+/* Long-form blocks breathe at 1.6 */
+.sub,
+.dly-chead-s,
+.wl-article .body,
+.wl-phase ul,
+.callhint,
+.callnotice,
+.callerror p,
+.ppl-known,
+.capmanifestline,
+.sty-wxline,
+.gw-tsec p,
+.gw-tsec ol,
+.gw-tsec ul{
+  line-height:1.6;
+}
+/* Pretty-wrap keeps paragraph rags clean (progressive) */
+.sub,
+.qband-text,
+.wl-detail,
+.callerror p{text-wrap:pretty}
+/* Secondary text under 13px must clear 4.5:1 — --faint doesn't,
+   so promote these to the refined --muted */
+.sty-cardsub,
+.sty-count span,
+.rw-num,
+.rw-it span,
+.ringfile,
+.deg-earned{color:var(--muted)}
+
+/* ---------- 7. Timestamps, meta & subtitles ---------- */
+/* Meta lines get medium weight so they stay legible at small sizes */
+.item .meta,
+.deg-school-hd .meta,
+.deg-planrow .meta,
+.deg-schoolname,
+.deg-earned,
+.deg-pending-row .grow,
+.ppl-badges .meta,
+.gw-exsub,
+.sty-today-items{font-weight:500}
+.bubble .t{letter-spacing:.04em}
+.deg-school-hd .meta,
+.deg-planrow .meta,
+.item .meta{letter-spacing:.01em}
+
+/* ---------- 8. Tabular numerals ---------- */
+/* Counts, timers, ring stats and money must not jitter as digits change */
+.deg-ring-num,
+.deg-yrval,
+.wl-hero .n,
+.wl-next .n,
+.ccount,
+.sty-count b,
+.wl-stat .v,
+.gw-prog,
+.deg-pace,
+.croom,
+.ctimer,
+.gw-setof{font-variant-numeric:tabular-nums}
+/* Oversized numerals tighten up optically */
+.wl-hero .n{letter-spacing:-.03em;line-height:1.05}
+.gw-restclock{letter-spacing:-.02em}
+.deg-ring-num{letter-spacing:-.02em}
+
+/* ---------- 9. Tab bar labels ---------- */
+.tab{
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.tab > span:last-child{line-height:1.3}
+
+/* ---------- 10. Chat readability ---------- */
+.bubble{line-height:1.55}
+.chatpanel .chathead h2,
+.chatpanel .chathead h3{line-height:1.25}
+
+/* ---------- 11. 320px safeguards ---------- */
+/* Fluid clamps above already bottom out safely; this guards the two
+   fixed hero sizes that could crowd a 320px viewport. */
+@media (max-width:360px){
+  .inc-name{font-size:26px}
+  .wl-hero .n{font-size:38px}
+  .greet{letter-spacing:-.02em}
+}

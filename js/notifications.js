@@ -295,7 +295,7 @@ function open(){
 
   const host=document.getElementById('hubNotifRows');
   if(!notifs.length){
-    host.innerHTML='<div class="empty"><div class="big">🔕</div><p>'+t('notif.emptyT')+' '+t('notif.emptyS')+'</p></div>';
+    host.innerHTML='<div class="empty ps-empty"><div class="big">🔕</div><p>'+t('notif.emptyT')+' '+t('notif.emptyS')+'</p></div>';
     return;
   }
   host.innerHTML=SYSTEMS.map(s=>{
