@@ -612,12 +612,26 @@ var CV=(function(){
     if(Math.min.apply(null,L)<Math.max(w,h)*0.05) return rej('sliver'); /* sliver, not paper */
     var wA=(L[0]+L[2])/2, hA=(L[1]+L[3])/2;
     var aspect=Math.max(wA,hA)/Math.max(1e-6,Math.min(wA,hA));
-    /* A4, Letter, and square: many journals/notebooks are square-ish, and
-       rejecting them outright made real documents undetectable. The other
-       gates (edges, contrast, texture) still kill non-paper rectangles. */
+    /* A4, Letter, square — PLUS receipts (the most-scanned document!).
+       2026-10-07: the old gate only allowed 1.0/1.294/1.414, so RECEIPTS
+       (aspect 2-3) were rejected outright — PraBin had to "move a lot"
+       because the detector refused to lock onto his receipt. Two-tier:
+       ideal shapes score 1.0, acceptable document shapes (receipts, legal,
+       long tickets) score 0.7+, only extreme slivers are rejected. The
+       edge/contrast/texture gates still kill non-paper rectangles. */
     var dA=Math.min(Math.abs(aspect-1.4142),Math.abs(aspect-1.2941),Math.abs(aspect-1.0));
-    var aspS=Math.exp(-Math.pow(dA/0.20,2));
-    if(aspS<0.25) return rej('aspect');
+    /* sigma 0.35 (was 0.20): the old tight curve punished even slightly-off
+       aspects so hard the total score could never exceed the 0.30 keep
+       threshold — e.g. aspect 1.64 scored 0.279 max. Documents photographed
+       at an angle have skewed aspects; be forgiving. */
+    var aspS=Math.exp(-Math.pow(dA/0.35,2));
+    if(aspS<0.25){
+      /* second chance: receipt/document aspect range */
+      var dR=Math.min(Math.abs(aspect-2.0),Math.abs(aspect-2.5),Math.abs(aspect-3.0),
+                      Math.abs(aspect-1.75),Math.abs(aspect-1.2727)); /* legal 14/11 */
+      if(aspect>=1.6&&aspect<=3.4&&dR<0.45){ aspS=0.75; }
+      else return rej('aspect');
+    }
     var angS=1;
     for(i=0;i<4;i++){
       var p0=q[i],p1=q[(i+1)%4],p2=q[(i+2)%4];
@@ -760,15 +774,20 @@ var CV=(function(){
     if(outN>8&&inN>8&&Math.abs(inM/inN-outM/outN)<15) return rej('flat');
     /* 0.3x penalty when the quad runs into the frame border (the wild-quad
        signature). The zone is tight (1%): a real sheet sitting a few px off
-       the edge is legitimate and must not be penalized. */
-    var mrg=Math.min(w,h), touch=false;
+       the edge is legitimate and must not be penalized.
+       2026-10-07: soften for close-up documents — a real receipt held close
+       often touches ONE border; only touching 2+ borders is the wild-quad
+       signature. Single-border touch gets a mild 0.75x instead of 0.3x, so
+       users don't have to back the phone away to get a lock. */
+    var mrg=Math.min(w,h), touchN=0;
     for(i=0;i<4;i++){ p=q[i];
-      if(p.x<mrg*0.01||p.x>w-mrg*0.01||p.y<mrg*0.01||p.y>h-mrg*0.01){ touch=true; break; } }
-    if(!touch) for(i=0;i<4;i++){
+      if(p.x<mrg*0.01||p.x>w-mrg*0.01||p.y<mrg*0.01||p.y>h-mrg*0.01){ touchN++; } }
+    if(!touchN) for(i=0;i<4;i++){
       var mx=(q[i].x+q[(i+1)%4].x)/2, my=(q[i].y+q[(i+1)%4].y)/2;
-      if(mx<mrg*0.0075||mx>w-mrg*0.0075||my<mrg*0.0075||my>h-mrg*0.0075){ touch=true; break; } }
-    if(out) out.terms={areaS:+areaS.toFixed(3),aspS:+aspS.toFixed(3),angS:+angS.toFixed(3),sup:+sup.toFixed(3),touch:touch?1:0};
-    return aspS*areaS*angS*(0.25+0.75*sup)*(touch?0.3:1);
+      if(mx<mrg*0.0075||mx>w-mrg*0.0075||my<mrg*0.0075||my>h-mrg*0.0075){ touchN++; break; } }
+    var touchPen=touchN>=2?0.3:(touchN===1?0.75:1);
+    if(out) out.terms={areaS:+areaS.toFixed(3),aspS:+aspS.toFixed(3),angS:+angS.toFixed(3),sup:+sup.toFixed(3),touch:touchN};
+    return aspS*areaS*angS*(0.25+0.75*sup)*touchPen;
   }
   function guideRect(w,h){
     var gh=h*0.62, gw=gh/1.4142;
@@ -835,7 +854,7 @@ var CV=(function(){
     return searchQuads(sm,w,h,g,otsu(sm.m,w,h));
   }
   function detectLive(px,w,h,state){
-    state=state||{q:null,score:0,lost:0};
+    state=state||{q:null,score:0,lost:0,lock:0};
     var best=null,bestS=0;
     try{
       var r=scoreCandidates(px,w,h);
@@ -857,21 +876,38 @@ var CV=(function(){
     function ema(a,b,f){ var o=[],j;
       for(j=0;j<4;j++) o.push({x:a[j].x+(b[j].x-a[j].x)*f, y:a[j].y+(b[j].y-a[j].y)*f});
       return o; }
+    /* Lock-on: once a quad has been stable (high IoU) for 3 consecutive
+       detections, it LOCKS. A locked quad only moves with the EMA (never
+       snaps), and only a wildly different quad with a much better score can
+       break the lock. This kills the "here n there" jumping that made PraBin
+       chase the box around. */
+    var LOCK_IOU=0.55, LOCK_FRAMES=3;
     if(best){
-      if(!state.q){ state.q=best; state.score=bestS; state.lost=0; }
+      if(!state.q){ state.q=best; state.score=bestS; state.lost=0; state.lock=0; }
       else{
         var iou=boxIoU(best,state.q);
-        if(iou>0.25){
+        if(iou>LOCK_IOU){ state.lock=Math.min(LOCK_FRAMES,(state.lock||0)+1); }
+        else if(iou<0.25){ state.lock=0; }
+        /* locked: blend gently, never snap */
+        if((state.lock||0)>=LOCK_FRAMES){
+          if(iou>0.25){
+            state.q=ema(state.q,best,0.12);
+            if(bestS>state.score) state.score=bestS;
+          }
+          /* far-away candidate needs overwhelming evidence to break lock */
+          else if(bestS>state.score*2.5){ state.q=best; state.score=bestS; state.lock=0; }
+          state.lost=0;
+        }else if(iou>0.25){
           if(bestS>state.score*1.12){ state.q=ema(state.q,best,0.5); state.score=bestS; }
           else state.q=ema(state.q,best,0.18);
           state.lost=0;
         }else if(bestS>state.score*1.7){
-          state.q=best; state.score=bestS; state.lost=0;
+          state.q=best; state.score=bestS; state.lost=0; state.lock=0;
         }else state.lost=0;
       }
     }else{
       state.lost++;
-      if(state.lost>8){ state.q=null; state.score=0; }
+      if(state.lost>8){ state.q=null; state.score=0; state.lock=0; }
     }
     return {q:state.q, score:state.score, guide:!state.q};
   }
@@ -1935,7 +1971,7 @@ var SCAN={
     function markReady(){ vidReady=true; if(capBtn) capBtn.disabled=false; }
     /* paper tracker: smoothed quad in detection-frame coords (+ its frame size),
        or the aim guide when no paper-like quad is locked. */
-    var trk={q:null,score:0,lost:0}, trkW=0, trkH=0, trkGuide=true;
+    var trk={q:null,score:0,lost:0,lock:0}, trkW=0, trkH=0, trkGuide=true;
     function accent(){ try{ return (getComputedStyle(document.body).getPropertyValue('--accent')||'').trim()||'#b6e332'; }catch(e){ return '#b6e332'; } }
     /* tracked quad (or the A4 aim guide) in video-frame coords */
     function liveQuad(vw,vh){
@@ -2075,23 +2111,40 @@ var SCAN={
         if(isPhoto){
           /* The takePhoto still is a LARGER, differently-cropped sensor readout
              than the video frame the live quad was tracked on (and possibly a
-             different aspect): mapping the video quad over with independent
-             x/y scale stretches it. Re-detect directly in photo space so the
-             quad is self-consistent with the pixels being warped. Falls back
-             to the video-mapped quad when detection finds nothing.
+             different aspect). Check aspect agreement first: if the photo and
+             video aspects differ by >3%, the video-mapped quad is geometrically
+             invalid (independent x/y scaling stretches it) — do NOT trust it.
+             In that case re-detection in photo space is the ONLY valid source;
+             if it fails we fall back to the video frame grab (correct coords,
+             lower res) rather than a distorted crop. */
+          var vAsp=vw/Math.max(1,vh), pAsp=fc.width/Math.max(1,fc.height);
+          var aspectOk=Math.abs(vAsp-pAsp)/Math.max(vAsp,pAsp)<0.03;
+          /* Re-detect directly in photo space so the quad is self-consistent
+             with the pixels being warped. Falls back to the video-mapped quad
+             when detection finds nothing (only if aspects agree).
              IMPORTANT: detectQuad returns a near-full-frame quad (4% inset ≈
              85% of frame area) when it finds nothing. Accept the re-detected
              quad ONLY if it covers <82% of the photo — otherwise the user gets
              an uncropped full photo instead of the paper they saw locked on
              screen. */
+          var photoQ=null;
           try{
             var pq=SCAN.detectQuad(fc);
             if(pq&&pq.length===4){
               var pArea=0;
               try{ pArea=CV.quadArea(pq); }catch(e2){ pArea=0; }
-              if(pArea>0&&pArea<fc.width*fc.height*0.82) q=pq;
+              if(pArea>0&&pArea<fc.width*fc.height*0.82) photoQ=pq;
             }
           }catch(e){}
+          if(photoQ){ q=photoQ; }
+          else if(!aspectOk){
+            /* Aspects disagree and re-detection failed: the video-mapped quad
+               cannot be trusted. Re-capture from the video frame (exact coords)
+               instead of producing a distorted "half" crop. */
+            try{ R.busy(body,false); }catch(e2){}
+            frameGrab(); return;
+          }
+          /* else: aspects agree, keep the video-mapped quad as fallback */
         }
         /* capture-time refinement: re-snap the live-tracked quad on the
            full-res still (edge-snapped + re-intersected corners) so the warp
