@@ -110,7 +110,14 @@ function pruneBackups(prefix){
 
 try{
   setTimeout(function(){
-    if(!booted) showRecovery('boot timeout');
+    if(booted) return;
+    /* 2026-10-07: don't scare users who are taking their time on the welcome
+       screen (language/country picker) — that's not a boot failure (PraBin). */
+    try{
+      var w=document.getElementById('wlcmHost');
+      if(w && !w.hidden) return;
+    }catch(e){}
+    showRecovery('boot timeout');
   }, BOOT_TIMEOUT_MS);
 }catch(e){}
 
