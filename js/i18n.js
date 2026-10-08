@@ -300,8 +300,10 @@ function t(key,vars){
    Bundled: en/es/ne/hi (already in DICT). The other 24 live in
    data/locales/<code>.json and are fetched on first selection.
    Cache layers: in-memory DICT[code] -> localStorage ('orbit_i18n_dict_'+code).
-   Key-hash guard: each file carries kh = hash of the en key list; a stale
-   cached copy that no longer matches the bundle is refetched, never misaligned.
+   The kh field in each file is informational only (hash of the en key list at
+   build time). registerLocale intentionally does NOT refuse on kh mismatch:
+   a stale locale degrades gracefully via English fallback in t(), while a
+   hard refuse bricked all 24 lazy locales on every key addition (2026-10-07).
    Any failure resolves false and t() keeps falling back to English. */
 function keyHash(){
   var keys=Object.keys(DICT.en).join('\n'), h=5381, i;
@@ -316,7 +318,12 @@ function localeReady(code){
 }
 function registerLocale(code,payload){
   if(!payload||!payload.values) return false;
-  if(String(payload.kh)!==keyHash()) return false; /* stale build: refuse */
+  /* 2026-10-07: removed the hard keyHash refuse. It bricked ALL 24 lazy
+     locales every time an English key was added (kh drifted from 12zqycp to
+     1jajjtk and every loadLocale silently failed — PraBin iPhone report:
+     "below nepali no language work"). A stale locale degrades gracefully:
+     t() falls back to English for missing keys, extra/renamed keys are
+     simply never looked up. Hard-refusing was pure downside. */
   DICT[code]=payload.values;
   return true;
 }
