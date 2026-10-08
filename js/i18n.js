@@ -5203,6 +5203,10 @@ function openCountryPicker(onPick){
    Defaults pre-selected: language English, country best-guess (or US).
    Continue works immediately — lightweight and skippable-sane. */
 var wlcmLang='en', wlcmCountry='US', wlcmQ='', wlcmLQ='', wlcmStep='lang';
+/* welcome transitions: wlcmLastStep/wlcmLastCount suppress re-staggering on
+   search-keystroke redraws; wlcmTransTimer clears the direction class after
+   the step-change animation. */
+var wlcmLastStep=null, wlcmLastCount=-1, wlcmTransTimer=null;
 function ensureWelcome(next){
   var s={};
   try{ s=JSON.parse(localStorage.getItem('orbit_i18n')||'{}'); }catch(e){}
@@ -5210,6 +5214,7 @@ function ensureWelcome(next){
   wlcmLang=i18n.getLang()||'en';
   wlcmCountry=i18n.getCountry()||i18n.guessCountry();
   wlcmQ=''; wlcmLQ=''; wlcmStep='lang';
+  wlcmLastStep=null; wlcmLastCount=-1; /* fresh run: allow stagger + no direction class on mount */
   buildWelcome(next);
 }
 function buildWelcome(next){
@@ -5217,7 +5222,22 @@ function buildWelcome(next){
   if(old) old.remove();
   var host=document.createElement('div');
   host.className='wlcmhost'; host.id='wlcmHost'; host.hidden=true;
-  host.innerHTML='<div class="wlcm-card" role="dialog" aria-modal="true" aria-label="'+t('welcome.title').replace(/"/g,'&quot;')+'">'+
+  /* ambient aurora: styled by the CSS worker (.wlcm-aurora). Minimal fallback
+     injected once here so the div never renders unstyled if their pass lands
+     later (uses volt + teal; no purple by brand rule). */
+  if(!document.getElementById('wlcmAuroraFallback')){
+    var afs=document.createElement('style'); afs.id='wlcmAuroraFallback';
+    afs.textContent='.wlcm-aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none}'+
+    '.wlcm-aurora::before,.wlcm-aurora::after{content:"";position:absolute;width:120vmax;height:120vmax;border-radius:50%;'+
+    'filter:blur(70px);opacity:.3;animation:wlcmAurora 18s ease-in-out infinite alternate}'+
+    '.wlcm-aurora::before{background:radial-gradient(circle,rgba(198,241,53,.5),transparent 62%);top:-45%;left:-25%}'+
+    '.wlcm-aurora::after{background:radial-gradient(circle,rgba(94,234,212,.45),transparent 62%);bottom:-50%;right:-30%;animation-delay:-9s}'+
+    '@keyframes wlcmAurora{from{transform:translate3d(-6%,-4%,0) scale(1)}to{transform:translate3d(6%,5%,0) scale(1.1)}}'+
+    '@media (prefers-reduced-motion:reduce){.wlcm-aurora::before,.wlcm-aurora::after{animation:none}}';
+    document.head.appendChild(afs);
+  }
+  host.innerHTML='<div class="wlcm-aurora" aria-hidden="true"></div>'+
+    '<div class="wlcm-card" role="dialog" aria-modal="true" aria-label="'+t('welcome.title').replace(/"/g,'&quot;')+'">'+
     '<div class="wlcm-brand"><span class="brand-name" role="img" aria-label="Onaro"><span class="brand-mark">'+HUB.icons.logoMark('W')+'</span>naro</span></div>'+
     '<div id="wlcmBody"></div>'+
   '</div>';
@@ -5237,6 +5257,39 @@ function buildWelcome(next){
 function drawWelcome(next){
   var body=document.getElementById('wlcmBody');
   if(!body) return;
+  /* ---- direction-aware step transitions + staggered entrance ----
+     Forward (lang→country→ready) slides in from the right, backward from the
+     left. The class is always cleared by a 320ms timeout (never animationend
+     alone) so it re-triggers next time and never traps the body if animations
+     are disabled (reduced motion): no rule on the class = no visual change. */
+  var wlcmOrder={lang:0,country:1,ready:2};
+  var prevStepIdx=(wlcmLastStep&&wlcmOrder[wlcmLastStep]!==undefined)?wlcmOrder[wlcmLastStep]:-1;
+  var curStepIdx=(wlcmOrder[wlcmStep]!==undefined)?wlcmOrder[wlcmStep]:0;
+  var wlcmStepChanged=(wlcmLastStep!==wlcmStep);
+  if(wlcmTransTimer){ clearTimeout(wlcmTransTimer); wlcmTransTimer=null; }
+  body.classList.remove('wlcm-step-enter-r','wlcm-step-enter-l');
+  if(wlcmStepChanged&&prevStepIdx>=0){
+    body.classList.add(curStepIdx>prevStepIdx?'wlcm-step-enter-r':'wlcm-step-enter-l');
+    wlcmTransTimer=setTimeout(function(){
+      var b2=document.getElementById('wlcmBody');
+      if(b2) b2.classList.remove('wlcm-step-enter-r','wlcm-step-enter-l');
+      wlcmTransTimer=null;
+    },320);
+  }
+  /* staggered entrance: add wlcm-rise + --d only when the STEP changed or the
+     visible item count changed. Search-keystroke redraws (same step, same
+     count) skip entirely — focus/caret restore keeps working, zero jank.
+     Stagger cap: first 12 items 45ms apart, the rest share --d:540ms. */
+  function wlcmStagger(sel){
+    var els=body.querySelectorAll(sel);
+    var countChanged=(wlcmLastCount!==els.length);
+    if(!wlcmStepChanged&&!countChanged) return; /* search typing: stay put */
+    for(var i=0;i<els.length;i++){
+      els[i].classList.add('wlcm-rise');
+      els[i].style.setProperty('--d',(Math.min(i,12)*45)+'ms');
+    }
+    wlcmLastCount=els.length;
+  }
   var lang=wlcmLang;
   function T(key,vars){ /* render the welcome step in the picked language */
     var v=(HUB.i18n._dict(lang)||{})[key];
@@ -5315,6 +5368,7 @@ function drawWelcome(next){
     });
     var lq=document.getElementById('wlcmLQ');
     lq.oninput=function(){ wlcmLQ=lq.value; var pos=lq.selectionStart; drawWelcome(next); var nl=document.getElementById('wlcmLQ'); if(nl){ nl.focus(); nl.setSelectionRange(pos,pos); } };
+    wlcmStagger('.wlcm-lang'); wlcmLastStep=wlcmStep;
     return;
   }
   /* ---- Step 2: country dialog (Back returns to Step 1) ---- */
@@ -5334,6 +5388,7 @@ function drawWelcome(next){
     });
     var qi=document.getElementById('wlcmQ');
     qi.oninput=function(){ wlcmQ=qi.value; var pos=qi.selectionStart; drawWelcome(next); var nq=document.getElementById('wlcmQ'); if(nq){ nq.focus(); nq.setSelectionRange(pos,pos); } };
+    wlcmStagger('.wlcm-crow'); wlcmLastStep=wlcmStep;
     return;
   }
   /* ---- Step 3: ready — pick summary + friendly disclaimer + Continue ---- */
@@ -5359,6 +5414,7 @@ function drawWelcome(next){
     }
     proceed();
   };
+  wlcmStagger('.wlcm-pick, .wlcm-disclaimer, #wlcmGo'); wlcmLastStep=wlcmStep;
 }
 
 /* ---- appbar chrome: globe button (visible on every tab) ---- */
