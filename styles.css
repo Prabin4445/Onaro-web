@@ -1147,60 +1147,167 @@ body.dark{color-scheme:dark}
 .wlcmhost{position:fixed;inset:0;z-index:200;display:block;
   background:rgba(13,16,10,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .wlcmhost[hidden]{display:none}
-.wlcm-card{background:var(--paper,#FAFAF7);color:var(--ink);width:100%;max-width:480px;
+/* iOS selection artifacts (2026-10-07): kill the blue selection UI /
+   callout handles on the welcome screen; search inputs keep text
+   selection so typing still works. */
+.wlcmhost,.wlcmhost *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.wlcmhost input,.wlcmhost textarea{-webkit-user-select:text;user-select:text;-webkit-touch-callout:default}
+.wlcm-card{
+  /* 3D crystal glass (2026-10-07): layered top-light + translucent base,
+     hairline border, inset highlights, deeper drop shadow. backdrop-filter
+     is the card's one blur declaration. */
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.45) 0%,rgba(255,255,255,0) 30%),
+    var(--paper,#FAFAF7);
+  color:var(--ink);width:100%;max-width:480px;
   max-height:94vh;overflow-y:auto;border-radius:24px 24px 0 0;padding:26px 22px calc(26px + env(safe-area-inset-bottom));
-  box-shadow:0 -18px 60px rgba(0,0,0,.35);
+  border:1px solid rgba(16,20,8,.08);border-bottom:0;
+  box-shadow:
+    0 -18px 60px rgba(0,0,0,.30),
+    inset 0 1px 0 rgba(255,255,255,.55);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  perspective:900px; /* enables the rotateX rise-in on .wlcm-rise children */
   /* iOS-safe bottom dock (same bug family as .sheethost/.chatroot): wlcmupC
      keeps the -50% X offset in every keyframe. */
   position:absolute;left:50%;bottom:0;transform:translateX(-50%);
   animation:wlcmupC .35s cubic-bezier(.32,.72,0,1)}
 @keyframes wlcmupC{from{transform:translateX(-50%) translateY(46px);opacity:0}to{transform:translateX(-50%);opacity:1}}
+body.dark .wlcm-card{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 28%),
+    linear-gradient(165deg,rgba(32,38,18,.94),rgba(13,16,10,.96));
+  border-color:rgba(255,255,255,.09);
+  box-shadow:
+    0 -18px 60px rgba(0,0,0,.55),
+    inset 0 1px 0 rgba(255,255,255,.09)}
 .wlcm-brand{margin-bottom:10px}
 .wlcm-brand .brand-name{font-family:"Space Grotesk",Inter,system-ui,sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em}
 .wlcm-card h1{font-size:24px;font-weight:800;letter-spacing:-.02em;margin:0}
 .wlcm-h{font-size:15px;font-weight:800;margin:18px 0 8px}
 .wlcm-langs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.wlcm-lang{border:1.5px solid var(--line);background:var(--surface);border-radius:14px;padding:10px 8px;
-  cursor:pointer;display:flex;flex-direction:column;gap:2px;align-items:center;font-family:var(--font);color:var(--ink)}
+/* Crystal glass tiles (2026-10-07): translucent + top glow, gradient
+   hairline border, 3D press on :active (120ms transform/shadow only). */
+.wlcm-lang{
+  border:1px solid rgba(16,20,8,.10);
+  background:linear-gradient(180deg,rgba(255,255,255,.70),rgba(255,255,255,.25));
+  border-radius:14px;padding:10px 8px;
+  cursor:pointer;display:flex;flex-direction:column;gap:2px;align-items:center;
+  font-family:var(--font);color:var(--ink);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.60),0 2px 8px rgba(16,20,8,.10);
+  transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease,background .12s ease;
+  -webkit-tap-highlight-color:transparent}
+body.dark .wlcm-lang{
+  border-color:rgba(255,255,255,.12);
+  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.02));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 3px 10px rgba(0,0,0,.30)}
+.wlcm-lang:active{transform:translateY(2px) scale(.97);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 1px 3px rgba(0,0,0,.25)}
+/* Selected: volt-glow glass (JS keeps toggling the .on class name). */
+.wlcm-lang.on{
+  border-color:#D4F53F;
+  background:linear-gradient(180deg,rgba(212,245,63,.22),rgba(212,245,63,.06));
+  box-shadow:0 0 18px rgba(212,245,63,.25),inset 0 0 12px rgba(212,245,63,.08),
+    inset 0 1px 0 rgba(255,255,255,.22)}
 .wlcm-lang .wl{font-weight:800;font-size:15px}
 .wlcm-lang .wl-sub{font-size:11.5px;color:var(--muted)}
-.wlcm-lang.on{border-color:#C6F135;background:rgba(var(--volt-rgb),.14);box-shadow:0 0 0 1px #C6F135}
-.wlcm-countries{max-height:30vh;overflow-y:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+/* (removed: .wlcm-lang.on legacy rule — replaced by the volt-glow glass
+   .wlcm-lang.on above; JS still toggles the same .on class name) */
+.wlcm-countries{max-height:30vh;overflow-y:auto;border-radius:14px;
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(255,255,255,.60),var(--surface,#FFFFFF));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.60),0 2px 10px rgba(16,20,8,.08)}
+body.dark .wlcm-countries{
+  border-color:rgba(255,255,255,.10);
+  background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 3px 12px rgba(0,0,0,.25)}
 .wlcm-crow{display:flex;align-items:center;gap:10px;width:100%;padding:9px 12px;border:0;border-bottom:1px solid var(--line);
-  background:transparent;cursor:pointer;font-family:var(--font);color:var(--ink);text-align:start;font-size:14.5px}
+  background:transparent;cursor:pointer;font-family:var(--font);color:var(--ink);text-align:start;font-size:14.5px;
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  -webkit-tap-highlight-color:transparent}
+body.dark .wlcm-crow{border-bottom-color:rgba(255,255,255,.07)}
+.wlcm-crow:active{transform:translateY(1px) scale(.99);background:rgba(255,255,255,.05)}
+.wlcm-crow.on{
+  /* volt left-edge glow + tinted wash (JS keeps toggling .on) */
+  background:linear-gradient(90deg,rgba(212,245,63,.16),rgba(212,245,63,.03));
+  box-shadow:inset 3px 0 0 #D4F53F,inset 0 0 14px rgba(212,245,63,.10)}
 .wlcm-crow:last-child{border-bottom:0}
 .wlcm-crow .wf{font-size:22px;flex:0 0 auto}
 .wlcm-crow .wn{font-weight:600;flex:1}
 .wlcm-crow .wk{color:#1F7A4D;font-weight:800}
 /* ORBIT-I18N — welcome 3-step flow (PraBin 2026-09-22): progress dots, back
    button, pick summary, friendly community disclaimer. Glass language kept. */
+/* Glassy pill track (2026-10-07): the active dot grows with a 300ms
+   width/glow transition. */
 .wlcm-steps{display:flex;gap:6px;justify-content:center;margin-bottom:14px}
-.wlcm-dot{width:22px;height:6px;border-radius:99px;background:var(--line)}
-.wlcm-dot.on{background:#C6F135}
-.wlcm-dot.done{background:#C6F135;opacity:.45}
+.wlcm-dot{width:22px;height:6px;border-radius:99px;background:var(--line);
+  transition:width .3s cubic-bezier(.32,.72,0,1),background .3s ease,box-shadow .3s ease}
+body.dark .wlcm-dot{background:rgba(255,255,255,.14);box-shadow:inset 0 1px 2px rgba(0,0,0,.40)}
+.wlcm-dot.on{width:34px;background:#D4F53F;
+  box-shadow:0 0 10px rgba(212,245,63,.55),inset 0 1px 0 rgba(255,255,255,.50)}
+.wlcm-dot.done{background:rgba(var(--volt-rgb),.45)}
 .wlcm-back{border:0;background:transparent;color:var(--muted);font-weight:800;font-size:14px;
   padding:6px 0;margin-bottom:2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .wlcm-back:active{opacity:.6}
 .wlcm-picks{display:grid;gap:8px;margin-bottom:4px}
-.wlcm-pick{display:flex;align-items:center;gap:10px;background:var(--surface);
-  border:1px solid var(--line);border-radius:14px;padding:10px 12px}
+.wlcm-pick{display:flex;align-items:center;gap:10px;
+  background:linear-gradient(180deg,rgba(255,255,255,.65),var(--surface,#FFFFFF));
+  border:1px solid var(--line);border-radius:14px;padding:10px 12px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.60),0 2px 8px rgba(16,20,8,.08)}
+body.dark .wlcm-pick{
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border-color:rgba(255,255,255,.10);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 3px 10px rgba(0,0,0,.30)}
 .wlcm-pick .wp-l{font-size:20px;flex:0 0 auto}
 .wlcm-pick .wp-t{font-weight:800;flex:1;min-width:0}
 .wp-ch{border:0;background:transparent;color:#8FAE1F;font-weight:700;font-size:12.5px;
   cursor:pointer;padding:4px 2px;white-space:nowrap;-webkit-tap-highlight-color:transparent}
 body.dark .wp-ch{color:#C6F135}
+/* Frosted glass note (2026-10-07): volt-tinted border, inset glows. */
 .wlcm-disclaimer{margin-top:14px;padding:13px 14px;border-radius:14px;
   background:rgba(var(--volt-rgb),.10);border:1px solid rgba(var(--volt-rgb),.35);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10),inset 0 0 20px rgba(var(--volt-rgb),.05);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   font-size:13.5px;line-height:1.55}
 body.dark .wlcm-disclaimer{background:rgba(var(--volt-rgb),.08)}
 /* Continue on the final welcome step is always visible: it sticks to the
    bottom of the card on short screens instead of hiding below the fold. */
-#wlcmGo{position:sticky;bottom:0}
-.wlcm-crow.on{background:rgba(var(--volt-rgb),.16)}
-body.dark .wlcm-card{background:#14170F}
-body.dark .wlcm-crow.on,body.dark .wlcm-lang.on{background:rgba(var(--volt-rgb),.12)}
+#wlcmGo{position:sticky;bottom:0;
+  /* subtle volt gradient sheen over the btn-primary background (2026-10-07) */
+  background-image:linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,0) 50%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),
+    0 4px 14px color-mix(in srgb,var(--accent) 38%,transparent)}
+/* Glass search input inside welcome (2026-10-07) */
+.wlcmhost .field .input{
+  background:rgba(255,255,255,.65);
+  border:1px solid rgba(16,20,8,.10);
+  box-shadow:inset 0 2px 6px rgba(16,20,8,.08),inset 0 1px 0 rgba(255,255,255,.60)}
+body.dark .wlcmhost .field .input{
+  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+  border-color:rgba(255,255,255,.14);
+  box-shadow:inset 0 2px 6px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+/* (removed: legacy .wlcm-crow.on / .wlcm-card dark flat backgrounds —
+   replaced by the volt left-edge glow and crystal glass rules above) */
 .langrow,.crrow{border:0;background:transparent;font-family:var(--font);color:var(--ink)}
 .langrow + .langrow,.crrow + .crrow{border-top:1px solid var(--line)}
+
+/* ORBIT-WLCM-ANIM (2026-10-07): entrance + step transitions, CSS side.
+   Contract for the JS worker: add class `wlcm-rise` + inline `--d` (delay)
+   to step content elements; toggle `wlcm-step-enter-r` / `wlcm-step-enter-l`
+   on #wlcmBody when the step changes.
+   NEVER animate .wlcm-card itself here — its transform is owned by the
+   iOS-safe wlcmupC keyframes (translateX(-50%) in every frame). */
+.wlcm-card .wlcm-rise{animation:wlcmRise .5s cubic-bezier(.32,.72,0,1) both;
+  animation-delay:var(--d,0ms)}
+@keyframes wlcmRise{
+  from{opacity:0;transform:translateY(18px) rotateX(6deg)}
+  to{opacity:1;transform:none}}
+#wlcmBody.wlcm-step-enter-r{animation:wlcmStepR .26s cubic-bezier(.32,.72,0,1) both}
+#wlcmBody.wlcm-step-enter-l{animation:wlcmStepL .26s cubic-bezier(.32,.72,0,1) both}
+@keyframes wlcmStepR{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+@keyframes wlcmStepL{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .wlcmhost *{animation:none!important;transition:none!important}}
 
 /* ORBIT-INTL (Workstream F): world institution directory picker.
    Scoped classes only (intl-*); brand palette, no purple; body.dark inherits. */
