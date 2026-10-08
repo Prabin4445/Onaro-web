@@ -1172,6 +1172,15 @@ body.dark{color-scheme:dark}
   position:absolute;left:50%;bottom:0;transform:translateX(-50%);
   animation:wlcmupC .35s cubic-bezier(.32,.72,0,1)}
 @keyframes wlcmupC{from{transform:translateX(-50%) translateY(46px);opacity:0}to{transform:translateX(-50%);opacity:1}}
+/* QA 2026-10-07: css/premium-depth.css `[class*="-card"]:active` matches
+   .wlcm-card (an :active ancestor of any pressed button inside it) and
+   overwrites the iOS-safe translateX(-50%) centering with
+   translateY(1px) scale(.995) — the card jumps ~195px right while pressed
+   and the release misses the button, so the tap never lands. Instant under
+   prefers-reduced-motion (which kills the 0.12s transition that otherwise
+   masks it); a held tap breaks it in normal motion too. Re-assert centering
+   at (0,3,0), above the premium rule's (0,2,0). */
+.wlcmhost .wlcm-card:active{transform:translateX(-50%)}
 body.dark .wlcm-card{
   background:
     linear-gradient(180deg,rgba(255,255,255,.10) 0%,rgba(255,255,255,0) 28%),
@@ -1202,11 +1211,20 @@ body.dark .wlcm-lang{
   box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 3px 10px rgba(0,0,0,.30)}
 .wlcm-lang:active{transform:translateY(2px) scale(.97);
   box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 1px 3px rgba(0,0,0,.25)}
-/* Selected: volt-glow glass (JS keeps toggling the .on class name). */
-.wlcm-lang.on{
+/* Selected: volt-glow glass (JS keeps toggling the .on class name).
+   QA 2026-10-07: css/premium-depth.css paints every button[class] with a clay
+   shadow at (0,4,1), which outranked the plain .on rule AND the body.dark
+   override (0,2,1) — the volt glow never showed in either theme. Scoped to
+   (0,5,0)/(0,6,1) so the selected state wins. */
+.wlcmhost .wlcm-card .wlcm-langs .wlcm-lang.on{
   border-color:#D4F53F;
   background:linear-gradient(180deg,rgba(212,245,63,.22),rgba(212,245,63,.06));
   box-shadow:0 0 18px rgba(212,245,63,.25),inset 0 0 12px rgba(212,245,63,.08),
+    inset 0 1px 0 rgba(255,255,255,.22)}
+body.dark .wlcmhost .wlcm-card .wlcm-langs .wlcm-lang.on{
+  border-color:#D4F53F;
+  background:linear-gradient(180deg,rgba(212,245,63,.28),rgba(212,245,63,.10));
+  box-shadow:0 0 20px rgba(212,245,63,.35),inset 0 0 12px rgba(212,245,63,.10),
     inset 0 1px 0 rgba(255,255,255,.22)}
 .wlcm-lang .wl{font-weight:800;font-size:15px}
 .wlcm-lang .wl-sub{font-size:11.5px;color:var(--muted)}
@@ -1226,7 +1244,9 @@ body.dark .wlcm-countries{
   -webkit-tap-highlight-color:transparent}
 body.dark .wlcm-crow{border-bottom-color:rgba(255,255,255,.07)}
 .wlcm-crow:active{transform:translateY(1px) scale(.99);background:rgba(255,255,255,.05)}
-.wlcm-crow.on{
+/* QA 2026-10-07: scoped to (0,5,0) — the premium-depth clay button shadow
+   at (0,4,1) was eating the volt left-edge (same bug class as .wlcm-lang.on). */
+.wlcmhost .wlcm-card .wlcm-countries .wlcm-crow.on{
   /* volt left-edge glow + tinted wash (JS keeps toggling .on) */
   background:linear-gradient(90deg,rgba(212,245,63,.16),rgba(212,245,63,.03));
   box-shadow:inset 3px 0 0 #D4F53F,inset 0 0 14px rgba(212,245,63,.10)}
@@ -1245,6 +1265,10 @@ body.dark .wlcm-dot{background:rgba(255,255,255,.14);box-shadow:inset 0 1px 2px 
 .wlcm-dot.on{width:34px;background:#D4F53F;
   box-shadow:0 0 10px rgba(212,245,63,.55),inset 0 1px 0 rgba(255,255,255,.50)}
 .wlcm-dot.done{background:rgba(var(--volt-rgb),.45)}
+/* QA 2026-10-07: body.dark .wlcm-dot (0,2,1) outranks .wlcm-dot.on (0,2,0),
+   so the volt glow was dead in dark mode (the default). Re-assert it here. */
+body.dark .wlcm-dot.on{background:#D4F53F;
+  box-shadow:0 0 10px rgba(212,245,63,.55),inset 0 1px 0 rgba(255,255,255,.50)}
 .wlcm-back{border:0;background:transparent;color:var(--muted);font-weight:800;font-size:14px;
   padding:6px 0;margin-bottom:2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .wlcm-back:active{opacity:.6}
