@@ -1,0 +1,235 @@
+{
+ "institution": {
+  "name": "Monroe Community College",
+  "city": "Rochester",
+  "state": "NY",
+  "kind": "community_college"
+ },
+ "plan": {
+  "id": "monroe-community-college-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 64,
+  "catalog_year": "2026-2027",
+  "source_url": "https://www.monroecc.edu/academics/majors-programs/health-sciences/nursing-associate-of-applied-science/",
+  "notes": "Source: Monroe Community College official Nursing A.A.S. program sheet (monroecc.edu) - the traditional four-semester pathway. The program sheet states no catalog year; the identical sequence appears on the current program page (verified 2026-10-09) - filed as 2026-2027, disclosed here. Transcribed exactly as published: 18+18+16+12 = 64 (\"TOTAL CREDITS: 64\"). Every course requires a grade of C or higher (per the sheet). The sheet's \"#\" (MTH 160) and \"*\" (BIO 144/145/202) footnote keys were not captured in the source text - documented in the slot notes rather than guessed. Competitive admission - see the Health Related Programs site for current admission criteria. Program is ACEN-accredited. Prerequisites recorded for the sequential clinical chain (NUR 112 after NUR 110+111; NUR 211/212 after NUR 112; NUR 214 after NUR 211+212) and BIO 145 after BIO 144.",
+  "transfer_confidence": "core_only",
+  "external_prereqs": [],
+  "last_verified": "2026-10-09",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Semester",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "code": "MTH 160",
+      "title": "Statistics I (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "The program sheet marks MTH 160 with a \"#\" footnote; the footnote key text was not captured - documented here rather than guessed.",
+      "options": []
+     },
+     {
+      "code": "BIO 144",
+      "title": "Human Anatomy and Physiology I (grade of C or higher required)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "The program sheet marks BIO 144 with a \"*\" footnote; the footnote key text was not captured - documented here rather than guessed.",
+      "options": []
+     },
+     {
+      "code": "NUR 110",
+      "title": "Foundations of Nursing (grade of C or higher required)",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NUR 111",
+      "title": "Fundamentals of Nursing (grade of C or higher required)",
+      "credits": 7,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PSY 101",
+      "title": "Introduction to Psychological Science (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Semester",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "code": "ENG-1",
+      "title": "ENG 101 College Composition OR ENG 200 Advanced Composition (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"ENG 101 College Composition (grade of C or higher required) OR ENG 200 Advanced Composition (grade of C or higher required)\" (3 credits).",
+      "options": [
+       "ENG 101",
+       "ENG 200"
+      ]
+     },
+     {
+      "code": "BIO 145",
+      "title": "Human Anatomy and Physiology II (grade of C or higher required)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 144"
+      ],
+      "choice": false,
+      "choice_note": "The program sheet marks BIO 145 with a \"*\" footnote; the footnote key text was not captured - documented here rather than guessed.",
+      "options": []
+     },
+     {
+      "code": "NUR 112",
+      "title": "Nursing Care of the Adult and Child I (grade of C or higher required)",
+      "credits": 8,
+      "category": "major",
+      "prereq": [
+       "NUR 110",
+       "NUR 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PSY 212",
+      "title": "Developmental Psychology - Lifespan (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Semester",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "BIO 202",
+      "title": "Microbiology (grade of C or higher required)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "The program sheet marks BIO 202 with a \"*\" footnote; the footnote key text was not captured - documented here rather than guessed.",
+      "options": []
+     },
+     {
+      "code": "NUR 210",
+      "title": "Issues in Nursing (grade of C or higher required)",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NUR 211",
+      "title": "Psychiatric-Mental Health Nursing (7 weeks; grade of C or higher required)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NUR 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NUR 212",
+      "title": "Maternal - Neonatal Nursing (7 weeks; grade of C or higher required)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "NUR 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "SOC 101",
+      "title": "Introduction to Sociology (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fourth Semester",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "NUR 214",
+      "title": "Nursing Care of the Adult and Child II (grade of C or higher required)",
+      "credits": 8,
+      "category": "major",
+      "prereq": [
+       "NUR 211",
+       "NUR 212"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "HEG 215",
+      "title": "Global Health and Culture (grade of C or higher required)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PSY 108",
+      "title": "Fundamentals of APA Style (grade of C or higher required)",
+      "credits": 1,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}

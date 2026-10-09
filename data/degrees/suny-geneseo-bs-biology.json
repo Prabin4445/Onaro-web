@@ -1,0 +1,729 @@
+{
+ "institution": {
+  "name": "State University of New York at Geneseo",
+  "city": "Geneseo",
+  "state": "NY",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "suny-geneseo-bs-biology",
+  "degree": "BS",
+  "major": "Biology",
+  "total_credits": 120,
+  "catalog_year": "2024-2025",
+  "source_url": "https://bulletin.geneseo.edu/preview_program.php?catoid=22&poid=2170&returnto=948&print",
+  "notes": "Source: SUNY Geneseo 2024-2025 Undergraduate Bulletin (archived catalog), official \"Sample Course Map\" for Biology, B.S. (the current bulletin is 2025-2026; this is the archived 2024-2025 map, filed honestly as 2024-2025 - disclosed here). Transcribed exactly as published: 15+16+15+17+16+13+14+14 = 120 (\"Total Credit Hours: 120\"). CREDIT CORRECTION (see WRTG 105 slot note): map prints WRTG 105 at 4 credits, which contradicts its own term total (15) and the 120 total; transcribed at 3 credits per two corroborating official sources, making the map internally consistent. Choice slots transcribed with the bulletin's option lists; credit-difference choices resolved at minimum with disclosure (CHEM 129/209; MATH 222/228/BIOL 350). Multi-credit elective rows transcribed as single slots (5 and 11) to avoid inventing splits - documented in slot notes. Program rules documented in slot notes: minimum C- in BIOL 117/118/119/120/203/222 and the required 200-level lab; three additional biology labs (only one at 200-level); min 18 credits at 300-level+; max 4 credits from BIOL 395-399. Prerequisites recorded only for direct in-plan numbered sequences. Bulletin note: \"Variation in the order of courses is possible, depending upon prerequisites. Consult course information in the bulletin or your academic advisor to customize your eight semester plan.\"",
+  "transfer_confidence": "core_only",
+  "external_prereqs": [],
+  "last_verified": "2026-10-09",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Year Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "BIOL 117",
+      "title": "General Biology - Cells, Genetics, Evolution",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 118",
+      "title": "General Biology Laboratory I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 116",
+      "title": "Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 119",
+      "title": "Introductory Chemistry Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WRTG 105",
+      "title": "Writing Seminar",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "CREDIT CORRECTION (disclosed): the sample map prints \"WRTG 105 (4)\" but that makes the term sum 16 against the map's own declared 15 credit hours and breaks the 120 total. Two official sources list WRTG 105 Writing Seminar at 3 credits: this bullet's Biology Adolescence Education map (same bulletin, term sums correctly at 15) and SUNY Cortland's Geneseo transfer equivalency table. Transcribed at 3 credits, which makes the map internally consistent (15 / 120).",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-1",
+      "title": "MATH 112 Precalculus OR MATH 221 Calculus I",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"MATH 112 - Precalculus (4) OR MATH 221 - Calculus I (4)\". Transcribed as a 4-credit choice slot.",
+      "options": [
+       "MATH 112",
+       "MATH 221"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "First Year Spring",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "BIOL 119",
+      "title": "General Biology - Diversity, Physiology, Ecology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "BIOL 117"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 120",
+      "title": "General Biology Laboratory II",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 118",
+      "title": "Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHEM 116"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM-1",
+      "title": "CHEM 129 Introduction to Laboratory Research in Chemistry OR CHEM 209 Intermediate Chemistry Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"CHEM 129 (1) or CHEM 209 - Intermediate Chemistry Laboratory (2)\". Genuine credit difference; resolved at the 1-credit minimum per pipeline rule (choosing CHEM 209 makes this term 17).",
+      "options": [
+       "CHEM 129",
+       "CHEM 209"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-2",
+      "title": "MATH 222 Calculus II OR MATH 228 Calculus II for Biologists OR BIOL 350 Foundations of Biostatistics",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"MATH 222 (4) OR MATH 228 - Calculus II for Biologists (4) OR BIOL 350 - Foundations of Biostatistics (3)\". Transcribed at 4 credits to match the map's declared 16-credit term; choosing BIOL 350 (3 cr) makes the term 15 - disclosed here.",
+      "options": [
+       "MATH 222",
+       "MATH 228",
+       "BIOL 350"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WLANG-101",
+      "title": "World Language 101",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"World Language 101\" (4 credits). Specific language not named.",
+      "options": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Second Year Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CHEM 211",
+      "title": "Organic Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHEM 118"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 203",
+      "title": "Principles of Ecology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "BIOL 119"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 216",
+      "title": "Organic Chemistry Laboratory",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "WLANG-102",
+      "title": "World Language 102",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"World Language 102\" (4 credits). Specific language not named.",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GS-DPP",
+      "title": "Global Society: Diversity, Pluralism, Power (DPP)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Global Society: DPP\" (3 credits). Specific course not named.",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Second Year Spring",
+    "declared_credits": 17,
+    "courses": [
+     {
+      "code": "CHEM 213",
+      "title": "Organic Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "CHEM 211"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 222",
+      "title": "Genetics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "BIOL 117"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-LAB200",
+      "title": "Biology 200-level laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 200 level lab\" (1 credit). Options per bulletin: BIOL 204 Ecology Laboratory; BIOL 216 Biology Second Year Laboratory; BIOL 223 Genetics Laboratory.",
+      "options": [
+       "BIOL 204",
+       "BIOL 216",
+       "BIOL 223"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GS-WCV",
+      "title": "Global Society: World Cultures & Values (WCV)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Global Society: WCV\" (4 credits). Specific course not named.",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GS-CAI",
+      "title": "Global Society: Creativity & Innovation (CAI)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Global Society: CAI\" (3 credits). Specific course not named.",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GS-CGC",
+      "title": "Global Society: Contemporary Global Challenges (CGC)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Global Society: CGC\" (3 credits). Specific course not named.",
+      "options": [],
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Third Year Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "BIOL 335",
+      "title": "Foundations of Biochemistry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 113",
+      "title": "General Physics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 114",
+      "title": "Physics I Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-ELEC-1",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GS-SST",
+      "title": "Global Society: Sustainability (SST)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Global Society: SST\" (3 credits). Specific course not named.",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GENELEC-S5-1",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Electives - 3\".",
+      "options": [],
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Third Year Spring",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "PHYS 115",
+      "title": "General Physics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "PHYS 113"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 116",
+      "title": "Physics II Lab",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-ELEC-2",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-ELEC-3",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GENELEC-S6-1",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Elective - 3\".",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fourth Year Fall",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIOL-ELEC-4",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-ELEC-5",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IAL-1",
+      "title": "Integrative & Applied Learning",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Integrative & Applied Learning\" (3 credits). Specific course/experience not named.",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GENELEC-S7-5",
+      "title": "Electives (5 credits)",
+      "credits": 5,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "The plan lists \"Electives - 5\" in this term as one row; transcribed as a single 5-credit choice slot to match the plan exactly rather than inventing a split.",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Fourth Year Spring",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIOL-ELEC-6",
+      "title": "Biology 3xx-4xx elective",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Plan literal: \"Biology 3xx-4xx Elective\" (3 credits). Options per the bulletin biology course list: BIOL 300 Cell Biology; BIOL 378 Microscope Techniques; BIOL 379 Advanced Laboratory in Biology; BIOL 380 Biology Seminar; BIOL 383 Graduate School and Work Seminar; BIOL 384 Communicating Science; BIOL 385 Senior Seminar in Biochemistry; BIOL 390 Molecular Techniques; BIOL 391 Electron Microscopy; BIOL 392 Genome Analysis; BIOL 393 Honors Thesis; BIOL 395 Internship in Biology; BIOL 396 Advanced Research In Biology; BIOL 397 Lab Instructor for Introductory Biology Courses; BIOL 398 Biology Lab Pedagogy; BIOL 399 Directed Study. Bulletin rule: electives must include three additional biology laboratory courses (only one at the 200-level) and a minimum of 18 credits at the 300-level or above; no more than 4 credits from BIOL 395/396/397/398/399 may count.",
+      "options": [
+       "BIOL 300",
+       "BIOL 378",
+       "BIOL 379",
+       "BIOL 380",
+       "BIOL 383",
+       "BIOL 384",
+       "BIOL 385",
+       "BIOL 390",
+       "BIOL 391",
+       "BIOL 392",
+       "BIOL 393",
+       "BIOL 395",
+       "BIOL 396",
+       "BIOL 397",
+       "BIOL 398",
+       "BIOL 399"
+      ],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GENELEC-S8-11",
+      "title": "Electives (11 credits)",
+      "credits": 11,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "The plan lists \"Electives - 11\" in this term as one row; transcribed as a single 11-credit choice slot to match the plan exactly rather than inventing a split.",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "e5bc944071ae6d919c700d336b3a12f85cc2f6f646d2429da2a131f826261c78"
+ }
+}

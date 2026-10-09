@@ -1,0 +1,529 @@
+{
+ "institution": {
+  "name": "College of Staten Island",
+  "city": "Staten Island",
+  "state": "NY",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "college-of-staten-island-bs-biology-ecology-evolution-behavior",
+  "degree": "BS",
+  "major": "Biology (Ecology, Evolution and Behavior)",
+  "total_credits": 120,
+  "catalog_year": "2026-2027",
+  "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/csi01/catalog-pdf/ruWaU1g0EN9UVfQAV7q3/sMJm9FBaDQdn6EfcLHX0Od8Fg/BIO-CSI-2025-09-16-13-47-28.pdf",
+  "notes": "Source: College of Staten Island (CUNY) official Coursedog catalog PDF, Biology department, \"Degree Map Name: BIO-BS:ECOEVOBEH | 2024-PRESENT\", \"Total Degree Map Credits 120 - 123\", Degree Map Effective Catalog Year printed as \"2026 -\" (truncated in the PDF; filed as 2026-2027, disclosed here). Transcribed exactly as published at the map’s minimum credit values: 15+15+15+15+16+15+14+15 = 120, within the map’s published 120-123 range; every semester sum matches the map’s declared Actual Credits at the chosen values. Credit ranges resolved at minimum per project rule with disclosure: the Year 1 Spring calculus block is listed 4-7 (transcribed at 4; the map does not itemize the lecture/lab split; MTH 229 is a 1-credit lab per the map). Lecture+lab pairs the map treats as single requirement blocks (BIO 170/171, BIO 180/181, CHM 141/121, CHM 142/127) are transcribed as one combined slot each so no lecture/lab credit split is invented. \"OR\" alternates folded into choice slots with the map’s option lists; unnamed Flexible Core / College Option / elective slots transcribed as choice slots with the map literal as title. Prerequisites recorded only where the map states a clear in-plan course prerequisite (CHM 142 block: CHM 141/121; CHM 250: CHM 142/127; CHM 256: CHM 250; PHY 160 block: PHY 116; BIO 272: BIO 180/181; ENG 151: ENG 111). Prerequisites for track-elective options vary by course and are documented in the slot notes. The World Cultures option list includes AAD 105, which the map itself marks \"(Inactive)\" - flagged, not silently dropped. Course titles verified against the map text. This is the Ecology, Evolution and Behavior track; the map also publishes BIOGEN and MOLCELLDEV tracks (not transcribed).",
+  "transfer_confidence": "core_only",
+  "external_prereqs": [],
+  "last_verified": "2026-10-09",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Year 1 Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ENG 111",
+      "title": "Introduction to College Writing",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Map notes CUNY Proficiency Index score of 65+ as the placement prerequisite.",
+      "options": []
+     },
+     {
+      "code": "BIO 170",
+      "title": "General Biology I (BIO 170) + General Biology I Laboratory (BIO 171)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Map treats lecture + lab as one 4-credit requirement block (Minimum Grade C per the map). Transcribed as one combined slot to avoid inventing the lecture/lab credit split.",
+      "options": []
+     },
+     {
+      "code": "CHM 141",
+      "title": "General Chemistry I (CHM 141) + General Chemistry I Laboratory (CHM 121)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Map treats lecture + lab as one 4-credit requirement block. Transcribed as one combined slot to avoid inventing the lecture/lab credit split.",
+      "options": []
+     },
+     {
+      "code": "MTH 123",
+      "title": "College Algebra and Trigonometry (MTH 123 or MTH 125 with Intermediate Algebra Review)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"MTH 123 - College Algebra and Trigonometry OR MTH 125 - College Algebra and Trigonometry with Intermediate Algebra Review\". Prerequisite per the map: MTH 30 or appropriate math placement or department permission.",
+      "options": [
+       "MTH 123",
+       "MTH 125"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Year 1 Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ENG 151",
+      "title": "College Writing",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENG 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MTH 231",
+      "title": "Analytic Geometry and Calculus I + Calculus Computer Laboratory (MTH 231 + MTH 229, or MTH 230 + MTH 229)",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "MTH 123"
+      ],
+      "choice": true,
+      "choice_note": "Map lists this block at 4-7 credits; transcribed at the 4-credit minimum per project rule (the map’s own term minimum, 15, is preserved). The map does not itemize the lecture/lab credit split; MTH 229 is a 1-credit lab per the map’s course-requirement detail. Minimum Grade C per the map.",
+      "options": [
+       "MTH 231 + MTH 229",
+       "MTH 230 + MTH 229"
+      ]
+     },
+     {
+      "code": "BIO 180",
+      "title": "General Biology II (BIO 180) + General Biology II Laboratory (BIO 181)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 170",
+       "BIO 170"
+      ],
+      "choice": false,
+      "choice_note": "Map treats lecture + lab as one 4-credit requirement block (Minimum Grade C per the map). Transcribed as one combined slot to avoid inventing the lecture/lab credit split.",
+      "options": []
+     },
+     {
+      "code": "CHM 142",
+      "title": "General Chemistry II (CHM 142) + General Chemistry II Laboratory (CHM 127)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CHM 141",
+       "CHM 141"
+      ],
+      "choice": false,
+      "choice_note": "Map treats lecture + lab as one 4-credit requirement block. Transcribed as one combined slot to avoid inventing the lecture/lab credit split.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Year 2 Fall",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CHM 250",
+      "title": "Organic Chemistry I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "CHM 142",
+       "CHM 142"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "FLEX-IS-1",
+      "title": "Flexible Core: Individual and Society",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"Flexible Core Individual and Society\". Specific course not named on the map.",
+      "options": []
+     },
+     {
+      "code": "BIO-CORE5-1",
+      "title": "Biology core elective 1 (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 205 / BIO 233 / BIO 235 / BIO 237 / BIO 239. Options (BIO 205 General Physiology; BIO 233 Genetics; BIO 235 Evolution; BIO 237 Cell Biology; BIO 239 Ecology).",
+      "options": [
+       "BIO 205",
+       "BIO 233",
+       "BIO 235",
+       "BIO 237",
+       "BIO 239"
+      ]
+     },
+     {
+      "code": "FLEX-USED-1",
+      "title": "Flexible Core: U.S. Experience in Its Diversity",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"Flexible Core U.S. Experience in Its Diversity\". Specific course not named on the map.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Year 2 Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CHM 256",
+      "title": "Organic Chemistry II",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "CHM 250"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "FLEX-CE-1",
+      "title": "Flexible Core: Creative Expression",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"Flexible Core Creative Expression\". Specific course not named on the map.",
+      "options": []
+     },
+     {
+      "code": "BIO-CORE5-2",
+      "title": "Biology core elective 2 (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 205 / BIO 233 / BIO 235 / BIO 237 / BIO 239. Options (BIO 205 General Physiology; BIO 233 Genetics; BIO 235 Evolution; BIO 237 Cell Biology; BIO 239 Ecology).",
+      "options": [
+       "BIO 205",
+       "BIO 233",
+       "BIO 235",
+       "BIO 237",
+       "BIO 239"
+      ]
+     },
+     {
+      "code": "WC-1",
+      "title": "World Cultures and Global Issues (Flexible Core)",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map lists a World Cultures and Global Issues flexible-core slot with many options. AAD 105 is marked \"(Inactive)\" on the map itself and is flagged here rather than silently dropped.",
+      "options": [
+       "ASL 112",
+       "CHN 112",
+       "FRN 112",
+       "ITL 112",
+       "SPN 112",
+       "SPN 119",
+       "AAD 105",
+       "HST 105",
+       "GEG 100",
+       "GEG 101",
+       "HST 106",
+       "HST 115",
+       "POL 103",
+       "ARB 112"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Year 3 Fall",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "BIO-CORE5-3",
+      "title": "Biology core elective 3 (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 205 / BIO 233 / BIO 235 / BIO 237 / BIO 239. Options (BIO 205 General Physiology; BIO 233 Genetics; BIO 235 Evolution; BIO 237 Cell Biology; BIO 239 Ecology).",
+      "options": [
+       "BIO 205",
+       "BIO 233",
+       "BIO 235",
+       "BIO 237",
+       "BIO 239"
+      ]
+     },
+     {
+      "code": "BIO-CORE5-4",
+      "title": "Biology core elective 4 (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 205 / BIO 233 / BIO 235 / BIO 237 / BIO 239. Options (BIO 205 General Physiology; BIO 233 Genetics; BIO 235 Evolution; BIO 237 Cell Biology; BIO 239 Ecology).",
+      "options": [
+       "BIO 205",
+       "BIO 233",
+       "BIO 235",
+       "BIO 237",
+       "BIO 239"
+      ]
+     },
+     {
+      "code": "BIO-CORE5-5",
+      "title": "Biology core elective 5 (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 205 / BIO 233 / BIO 235 / BIO 237 / BIO 239. Options (BIO 205 General Physiology; BIO 233 Genetics; BIO 235 Evolution; BIO 237 Cell Biology; BIO 239 Ecology).",
+      "options": [
+       "BIO 205",
+       "BIO 233",
+       "BIO 235",
+       "BIO 237",
+       "BIO 239"
+      ]
+     },
+     {
+      "code": "PHY 120",
+      "title": "General Physics I + Laboratory (PHY 120 + PHY 121) or Physics I (PHY 116)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"PHY 120 - General Physics I AND PHY 121 - General Physics I Laboratory OR PHY 116 - Physics I\", one 4-credit block.",
+      "options": [
+       "PHY 120 + PHY 121",
+       "PHY 116"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Year 3 Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "BIO 272",
+      "title": "Statistics for the Biological Sciences",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "BIO 180",
+       "BIO 180"
+      ],
+      "choice": false,
+      "choice_note": "Prerequisite per the map: BIO 180/181 (or BIO 160) and MTH 123/130/231/232.",
+      "options": []
+     },
+     {
+      "code": "PHY 160",
+      "title": "General Physics II + Laboratory (PHY 160 + PHY 161) or Physics II (PHY 156)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"PHY 160 - General Physics II AND PHY 161 - General Physics II Laboratory OR PHY 156 - Physics II\", one 4-credit block. Prerequisite per the map: PHY 116.",
+      "options": [
+       "PHY 160 + PHY 161",
+       "PHY 156"
+      ]
+     },
+     {
+      "code": "BIO-ELECA-3cr",
+      "title": "Biology track elective (3 cr)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one course from the Ecology/Evolution/Behavior track elective pool (this slot assigned 3 credits by the map). Prerequisites vary by selected course; see the catalog. Options (BIO 217 Introduction to Tropical Ecology; BIO 222 Field Biology; BIO 310 Vertebrate Zoology; BIO 313 Invertebrate Zoology and Paleontology; BIO 321 Conservation Biology; BIO 324 Developmental Biology; BIO 326 Introduction to Bioinformatics and Genomics; BIO 328 Botany; BIO 329 Marine Biology and Oceanography; BIO 415 Mathematical Biology).",
+      "options": [
+       "BIO 217",
+       "BIO 222",
+       "BIO 310",
+       "BIO 313",
+       "BIO 321",
+       "BIO 324",
+       "BIO 326",
+       "BIO 328",
+       "BIO 329",
+       "BIO 415"
+      ]
+     },
+     {
+      "code": "BIO-ELECA-4cr",
+      "title": "Biology track elective (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one course from the same track elective pool (this slot assigned 4 credits by the map). Two slots in this term draw from the same pool with different credit values per the map. Prerequisites vary by selected course; see the catalog. Options (BIO 217 Introduction to Tropical Ecology; BIO 222 Field Biology; BIO 310 Vertebrate Zoology; BIO 313 Invertebrate Zoology and Paleontology; BIO 321 Conservation Biology; BIO 324 Developmental Biology; BIO 326 Introduction to Bioinformatics and Genomics; BIO 328 Botany; BIO 329 Marine Biology and Oceanography; BIO 415 Mathematical Biology).",
+      "options": [
+       "BIO 217",
+       "BIO 222",
+       "BIO 310",
+       "BIO 313",
+       "BIO 321",
+       "BIO 324",
+       "BIO 326",
+       "BIO 328",
+       "BIO 329",
+       "BIO 415"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Year 4 Fall",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIO 338",
+      "title": "Animal Behavior",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ELECTIVE-4F-1",
+      "title": "Elective Credit (ELEC 1000)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"ELEC 1000 - Elective Credit\" (3 credits). Free elective.",
+      "options": []
+     },
+     {
+      "code": "BIO-EXPM-1",
+      "title": "Experimental Methods in Biology (3 cr)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 450 Experimental Methods in Animal Physiology, BIO 452 Experimental Methods in Behavioral Biology, BIO 456 Experimental Methods in Ecology.",
+      "options": [
+       "BIO 450",
+       "BIO 452",
+       "BIO 456"
+      ]
+     },
+     {
+      "code": "BIO-ELECB-1",
+      "title": "Biology track elective (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 310 Vertebrate Zoology, BIO 313 Invertebrate Zoology and Paleontology, BIO 321 Conservation Biology, BIO 326 Introduction to Bioinformatics and Genomics, BIO 328 Botany, BIO 329 Marine Biology and Oceanography, BIO 415 Mathematical Biology. Prerequisites vary by selected course (e.g. BIO 310 requires BIO 235; BIO 313 requires BIO 239; BIO 321 requires BIO 237 + CHM 142/127; BIO 326 requires BIO 233).",
+      "options": [
+       "BIO 310",
+       "BIO 313",
+       "BIO 321",
+       "BIO 326",
+       "BIO 328",
+       "BIO 329",
+       "BIO 415"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Year 4 Spring",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "CO-ANALYSIS-1",
+      "title": "College Option: Social Scientific Analysis OR Textual, Aesthetic, and Linguistics Analysis",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"Social Scientific Analysis OR Textual, Aesthetic, and Linguistics Analysis\" (one 4-credit College Option analysis requirement).",
+      "options": [
+       "Social Scientific Analysis",
+       "Textual, Aesthetic, and Linguistics Analysis"
+      ]
+     },
+     {
+      "code": "BIO-ELECA2-3cr",
+      "title": "Biology track elective (3 cr)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one course from the track elective pool (this slot assigned 3 credits by the map). Prerequisites vary by selected course (e.g. BIO 310 requires BIO 235; BIO 313 requires BIO 239; BIO 321 requires BIO 237 + CHM 142/127; BIO 326 requires BIO 233; BIO 415 requires MTH 230/231 + MTH 229 + one 300-level BIO). Options (BIO 217 Introduction to Tropical Ecology; BIO 222 Field Biology; BIO 310 Vertebrate Zoology; BIO 313 Invertebrate Zoology and Paleontology; BIO 321 Conservation Biology; BIO 324 Developmental Biology; BIO 326 Introduction to Bioinformatics and Genomics; BIO 328 Botany; BIO 329 Marine Biology and Oceanography; BIO 415 Mathematical Biology).",
+      "options": [
+       "BIO 217",
+       "BIO 222",
+       "BIO 310",
+       "BIO 313",
+       "BIO 321",
+       "BIO 324",
+       "BIO 326",
+       "BIO 328",
+       "BIO 329",
+       "BIO 415"
+      ]
+     },
+     {
+      "code": "BIO-ELECB-2",
+      "title": "Biology track elective (4 cr)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: one of BIO 310 Vertebrate Zoology, BIO 313 Invertebrate Zoology and Paleontology, BIO 321 Conservation Biology, BIO 326 Introduction to Bioinformatics and Genomics, BIO 328 Botany, BIO 329 Marine Biology and Oceanography, BIO 415 Mathematical Biology. Prerequisites vary by selected course; see the catalog.",
+      "options": [
+       "BIO 310",
+       "BIO 313",
+       "BIO 321",
+       "BIO 326",
+       "BIO 328",
+       "BIO 329",
+       "BIO 415"
+      ]
+     },
+     {
+      "code": "ELECTIVE-4S-1",
+      "title": "Elective Credit (ELEC 1000)",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Map literal: \"ELEC 1000 - Elective Credit\" (4 credits). Free elective.",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,554 @@
+{
+ "institution": {
+  "name": "The City College of New York",
+  "city": "New York",
+  "state": "NY",
+  "kind": "public4yr"
+ },
+ "plan": {
+  "id": "city-college-of-new-york-be-mechanical-engineering",
+  "degree": "BE",
+  "major": "Mechanical Engineering",
+  "total_credits": 129,
+  "catalog_year": "2015-2016",
+  "source_url": "https://www.ccny.cuny.edu/mecheng/recommendedcourseseq",
+  "notes": "Source: The City College of New York, Grove School of Engineering, Department of Mechanical Engineering official \"Recommended Sequence of Courses\" page (ccny.cuny.edu/mecheng/recommendedcourseseq). The page carries no catalog year; it was last updated 07/04/2015, so it is filed as 2015-2016 - disclosed here. Course numbers/titles transcribed exactly as the sequence page prints them (e.g. MATH 20102, CHEM 31606, ME 46300 Micro/nanotechnology), even where the department's newer requirements list uses renumbered equivalents - the sequence is the official term-by-term source. Transcribed exactly as published: 15+16+17+18+16+16+16+15 = 129, matching the department's published \"Total Credits for Major: 129-130\" at its minimum. Science elective slots resolve the department's 3-4 credit range at the 3-credit minimum per project rule, with the full official option pool documented. Unnamed Liberal Arts / Design Elective / ME Elective slots transcribed as choice slots with the sequence literal as title. Degree is the B.E. (Bachelor of Engineering) per the department page. Prerequisites recorded only for direct in-plan chains (calculus sequence, physics sequence, writing sequence, ME 24700 after ME 24600, ME 47400 after ME 47300).",
+  "transfer_confidence": "core_only",
+  "external_prereqs": [],
+  "last_verified": "2026-10-09",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Semester",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "MATH 20102",
+      "title": "Calculus I",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "CHEM 31606/10300/10301",
+      "title": "General Chemistry for Engineers: CHEM 31606 or 10300 or 10301",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Chem 31606( or 10300 or 10301): General Chemistry for Engineers\".",
+      "options": [
+       "CHEM 31606",
+       "CHEM 10300",
+       "CHEM 10301"
+      ]
+     },
+     {
+      "code": "ME 14500",
+      "title": "Computer-Aided Drafting",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ENGR 10100",
+      "title": "Engineering Design I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ENGL 11000",
+      "title": "Freshman Composition",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "LA-S1-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Semester",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "MATH 20202",
+      "title": "Calculus II",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "MATH 20102"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PHYS 20700",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "SCI-ELEC-1",
+      "title": "First Science Elective course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"First Science Elective Course\". Per the department requirements list, one of: BIO 10100 Foundation of Biology (3), BIO 32100 Introduction to Human Physiology and Biophysics (4), CHEM 10401 General Chemistry II (3), CHEM 26100 Organic Chemistry I (3), CHEM 33000 Physical Chemistry I (3), EAS 10600 Earth System Science (3), EAS 21700 Earth and Atmospheric Science (3), PHYS 31500 Medical Physics (3), PHYS 32100 Modern Physics for Engineers (3), PHYS 42200 Biophysics (3), PHYS 42300 Biophysics in Applications (3), PHYS 45400 Descriptive Astronomy (3). Transcribed at 3 credits (minimum of the 3-4 range).",
+      "options": [
+       "BIO 10100",
+       "BIO 32100",
+       "CHEM 10401",
+       "CHEM 26100",
+       "CHEM 33000",
+       "EAS 10600",
+       "EAS 21700",
+       "PHYS 31500",
+       "PHYS 32100",
+       "PHYS 42200",
+       "PHYS 42300",
+       "PHYS 45400"
+      ]
+     },
+     {
+      "code": "ENGL 21007",
+      "title": "Writing for Engineering",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "ENGL 11000"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "LA-S2-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Semester",
+    "declared_credits": 17,
+    "courses": [
+     {
+      "code": "MATH 20300",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "MATH 20202"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PHYS 20800",
+      "title": "General Physics II",
+      "credits": 4,
+      "category": "core",
+      "prereq": [
+       "PHYS 20700"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ENGR 20400",
+      "title": "Electrical Circuits",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 24600",
+      "title": "Engineering Mechanics I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "LA-S3-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fourth Semester",
+    "declared_credits": 18,
+    "courses": [
+     {
+      "code": "MATH 39100",
+      "title": "Methods of Differential Equations",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "MATH 20300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ENGR 23000",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 24700",
+      "title": "Engineering Mechanics II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ME 24600"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 32200",
+      "title": "Computer Methods in Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 33000",
+      "title": "Mechanics of Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "SCI-ELEC-2",
+      "title": "Second Science Elective course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Second Science Elective course\". Same option pool as the First Science Elective (see Semester 2 note). Transcribed at 3 credits (minimum of the 3-4 range).",
+      "options": [
+       "BIO 10100",
+       "BIO 32100",
+       "CHEM 10401",
+       "CHEM 26100",
+       "CHEM 33000",
+       "EAS 10600",
+       "EAS 21700",
+       "PHYS 31500",
+       "PHYS 32100",
+       "PHYS 42200",
+       "PHYS 42300",
+       "PHYS 45400"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fifth Semester",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "MATH 39200",
+      "title": "Linear Algebra and Vector Analysis for Engineers",
+      "credits": 3,
+      "category": "core",
+      "prereq": [
+       "MATH 20300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 31100",
+      "title": "Fundamentals of Mechatronics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 35600",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 46100",
+      "title": "Engineering Materials",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "LA-S5-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Sixth Semester",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "ME 43000",
+      "title": "Thermal Systems Analysis and Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 37100",
+      "title": "Computer-Aided Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 41100",
+      "title": "Systems Control",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 43300",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 47200",
+      "title": "Mechanical Systems Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Seventh Semester",
+    "declared_credits": 16,
+    "courses": [
+     {
+      "code": "ME 43600",
+      "title": "Aero-Thermal-Fluids Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 46200",
+      "title": "Manufacturing Processes and Materials",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 46300",
+      "title": "Micro/nanotechnology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ME 47300",
+      "title": "Senior Design Project I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "DES-ELEC-1",
+      "title": "Design Elective course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Design Elective course\". Specific course not named on the sequence page.",
+      "options": []
+     },
+     {
+      "code": "LA-S7-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Eighth Semester",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "ME 47400",
+      "title": "Senior Design Project II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ME 47300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "DES-ELEC-2",
+      "title": "Design Elective course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Two Design Elective courses\" (first). Specific course not named.",
+      "options": []
+     },
+     {
+      "code": "DES-ELEC-3",
+      "title": "Design Elective course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Two Design Elective courses\" (second). Specific course not named.",
+      "options": []
+     },
+     {
+      "code": "ME-ELEC-1",
+      "title": "Mechanical Engineering Elective course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Mechanical Engineering Elective course\". Per the department requirements list, five ME electives (15 cr) are chosen from the published technical-elective list (e.g. ME 54100, ME 46800, ME 51100, ME 52600, ENGR 22800, etc.). Specific course not named on the sequence page.",
+      "options": []
+     },
+     {
+      "code": "LA-S8-1",
+      "title": "Liberal Arts course",
+      "credits": 3,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Sequence literal: \"Liberal Arts course\". Specific course not named.",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}
