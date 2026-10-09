@@ -1,0 +1,605 @@
+{
+ "institution": {
+  "name": "Jacksonville University",
+  "city": "Jacksonville, FL",
+  "state": "FL",
+  "kind": "private4yr"
+ },
+ "plan": {
+  "id": "jacksonville-university-bs-biology",
+  "degree": "BS",
+  "major": "Biology",
+  "total_credits": 100,
+  "catalog_year": "2025-2026",
+  "source_url": "https://www.ju.edu/biology/docs/Biology-BS-4-Year-Plan.pdf",
+  "transfer_confidence": "",
+  "notes": "Source: Jacksonville University 'Biology (BS) Four-Year Degree Plan' (ju.edu/biology/docs/Biology-BS-4-Year-Plan.pdf). The 2025-2026 JU catalog's Biology section links this document as the sample four-year progression plan ('A sample four year progression plan for students entering as a first year student can be found here'), and every course number/title below was verified against the 2025-2026 catalog (https://ju.edu/academics/25-26_JacksonvilleUniversityCatalog.pdf). No catalog year is printed on the plan PDF itself; catalog_year is set from the current catalog that publishes it. CATALOG RANGE DISCLOSURE: the plan is a 'Courses Recommended' framework with genuine credit ranges. Every range slot is resolved at its MINIMUM here (e.g. 'Core Courses or electives 0-3' = 0; 'Remaining core, electives 9-14' = 9), so the plan totals 100 credits at minimum while the catalog declares 120 — real students fill the core/elective range slots to reach 120; see each slot's choice_note for its full catalog range. OR-slots (BIOL 180/190, MATH 110/140, ENGL 103/CS 150, BIOL 280/290, PHYS 111/151, PHYS 112/152, upper-lab/BIOL 470) occupy one slot each. BIOL 223SI ('fall or spring') is shown in sophomore fall only; it is one 3-credit course taken in either term. MATH 140 (4 cr) is required by the major: the minimum path shows MATH 110 in freshman fall plus MATH 140 in sophomore fall; students placing into MATH 140 skip the sophomore slot. Catalog prereq footnotes carried in notes (not invented): BIOL 280 requires C or better in BIOL 180, ENGL 103, MATH 206, and CS 150 or GEOG 450; BIOL 290 requires C or better in BIOL 190, ENGL 103, MATH 206, CS 150, and one of BIOL 180/CS 160/CHEM 104; BIOL 223SI requires C or better in CHEM 104 and one of BIOL 170/MSC 101/BIOL 180/MSC 111&112/MSC 113&114. The catalog also requires an exit exam (senior year or as part of BIOL 470) and C or better in allied courses. Suggested sequence per pipeline rules. No TCCNS in Florida; transfer_confidence is empty. prereq arrays are empty (per-course prereqs live in the catalog text above, not in the plan table; not duplicated).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Fall — Year 1",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "BIOL 180/190",
+      "title": "BIOL 180 or BIOL 190",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL 180 or BIOL 190 (3-4 cr); resolved at minimum 3",
+      "options": [
+       {
+        "code": "BIOL 180",
+        "credits": 4,
+        "title": "Biological Diversity"
+       },
+       {
+        "code": "BIOL 190",
+        "credits": 3,
+        "title": "Biological Unity"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "MATH 110/140",
+      "title": "MATH 110 or MATH 140",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: MATH 110 or MATH 140 (3-4 cr), by math placement; MATH 140 is required by the major — students taking MATH 110 complete MATH 140 in sophomore fall (see semester 3)",
+      "options": [
+       {
+        "code": "MATH 110",
+        "credits": 3,
+        "title": "The Mathematics of Motion & Change"
+       },
+       {
+        "code": "MATH 140",
+        "credits": 4,
+        "title": "Calculus I"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 103",
+      "title": "General Chemistry I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "ENGL 103/CS 150",
+      "title": "ENGL 103 or CS 150",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: ENGL 103 or CS 150 (3 cr)",
+      "options": [
+       {
+        "code": "ENGL 103",
+        "credits": 3,
+        "title": "Introductory Writing"
+       },
+       {
+        "code": "CS 150",
+        "credits": 3,
+        "title": "Personal Productivity Using Technology"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "CORE-ELECT-FILL",
+      "title": "Core Courses or electives",
+      "credits": 0,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 0-3 credits for 'Core Courses or electives' (resolved at minimum 0; see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Spring — Year 1",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIOL 180/190",
+      "title": "BIOL 180 or BIOL 190",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL 180 or BIOL 190 (3-4 cr); resolved at minimum 3 (the other of the pair from fall)",
+      "options": [
+       {
+        "code": "BIOL 180",
+        "credits": 4,
+        "title": "Biological Diversity"
+       },
+       {
+        "code": "BIOL 190",
+        "credits": 3,
+        "title": "Biological Unity"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "MATH 206",
+      "title": "Statistical Methods in Science",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 104",
+      "title": "General Chemistry II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "ENGL 103/CS 150",
+      "title": "ENGL 103 or CS 150",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: ENGL 103 or CS 150 (3 cr) (the other of the pair from fall)",
+      "options": [
+       {
+        "code": "ENGL 103",
+        "credits": 3,
+        "title": "Introductory Writing"
+       },
+       {
+        "code": "CS 150",
+        "credits": 3,
+        "title": "Personal Productivity Using Technology"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "CORE-ELECT-FILL",
+      "title": "Core Courses or electives",
+      "credits": 0,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 0-3 credits for 'Core Courses or electives' (resolved at minimum 0; see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fall — Year 2",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIOL 280/290",
+      "title": "BIOL 280 or BIOL 290",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL 280 or BIOL 290 (3 cr). Prereqs per catalog: BIOL 280 needs C or better in BIOL 180, ENGL 103, MATH 206, and CS 150 or GEOG 450; BIOL 290 needs C or better in BIOL 190, ENGL 103, MATH 206, CS 150, and one of BIOL 180/CS 160/CHEM 104",
+      "options": [
+       {
+        "code": "BIOL 280",
+        "credits": 3,
+        "title": "Methods in Field Biology"
+       },
+       {
+        "code": "BIOL 290",
+        "credits": 3,
+        "title": "Basic Laboratory Techniques in Biology"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "BIOL 223SI",
+      "title": "Oral Presentation in Biological Science",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "Catalog: BIOL 223SI (fall or spring) — one 3-credit course taken in either sophomore term; shown here in fall. Prereq per catalog: C or better in CHEM 104 and one of BIOL 170/MSC 101/BIOL 180/MSC 111&112/MSC 113&114",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 301/L",
+      "title": "Organic Chemistry I (with Lab)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "MATH 140",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: 'MATH 140 (if not completed)' — required by the major; skip this slot if MATH 140 was completed in freshman fall",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "CORE-ELECT-FILL",
+      "title": "Core Courses or electives",
+      "credits": 0,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 0-4 credits for 'Core Courses or electives' (resolved at minimum 0; see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Spring — Year 2",
+    "declared_credits": 9,
+    "courses": [
+     {
+      "code": "BIOL 280/290",
+      "title": "BIOL 280 or BIOL 290",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL 280 or BIOL 290 (3 cr) (the other of the pair from fall); prereqs as in semester 3",
+      "options": [
+       {
+        "code": "BIOL 280",
+        "credits": 3,
+        "title": "Methods in Field Biology"
+       },
+       {
+        "code": "BIOL 290",
+        "credits": 3,
+        "title": "Basic Laboratory Techniques in Biology"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "CHEM 302/L",
+      "title": "Organic Chemistry II (with Lab)",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "CORE-ELECT-FILL",
+      "title": "Core Courses or electives",
+      "credits": 2,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 2-8 credits for 'Core Courses or electives' (resolved at minimum 2; see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall — Year 3",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "BIOL-UPPER-LAB",
+      "title": "BIOL upper division lab course",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL upper division lab course (4 cr)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "BIOL-UPPER",
+      "title": "BIOL upper division course",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL upper division course (3-4 cr); resolved at minimum 3",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "PHYS 111/151",
+      "title": "PHYS 111 or PHYS 151",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: PHYS 111 or PHYS 151 (4 cr)",
+      "options": [
+       {
+        "code": "PHYS 111",
+        "credits": 4,
+        "title": "Principles of Physics I"
+       },
+       {
+        "code": "PHYS 151",
+        "credits": 4,
+        "title": "General Physics: Mechanics"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "REMAINING",
+      "title": "Remaining core, electives (major, minor, or university), Independent Study, or Internship",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 3-6 credits; resolved at minimum 3 (see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring — Year 3",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "BIOL-UPPER-LAB",
+      "title": "BIOL upper division lab course",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: BIOL upper division lab course (4 cr)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "PHYS 112/152",
+      "title": "PHYS 112 or PHYS 152",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: PHYS 112 or PHYS 152 (4 cr)",
+      "options": [
+       {
+        "code": "PHYS 112",
+        "credits": 4,
+        "title": "Principles of Physics II"
+       },
+       {
+        "code": "PHYS 152",
+        "credits": 4,
+        "title": "General Physics: Electricity & Magnetism"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "REMAINING",
+      "title": "Remaining core, electives (major, minor, or university), Independent Study, or Internship",
+      "credits": 4,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 4-10 credits; resolved at minimum 4 (see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s6-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Fall — Year 4",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "BIOL-LAB/470",
+      "title": "BIOL upper division lab course or BIOL 470",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: 'BIOL upper division lab course or BIOL 470' (3-4 cr); resolved at minimum 3. BIOL 470 is the capstone; the catalog's exit exam may be taken as part of BIOL 470",
+      "options": [
+       {
+        "code": "BIOL-UPPER-LAB",
+        "credits": 4,
+        "title": "BIOL upper division lab course"
+       },
+       {
+        "code": "BIOL 470",
+        "credits": 3,
+        "title": "Capstone"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "REMAINING",
+      "title": "Remaining core, electives (major, minor, or university), Independent Study, or Internship",
+      "credits": 9,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 9-14 credits; resolved at minimum 9 (see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s7-1",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Spring — Year 4",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "BIOL-LAB/470",
+      "title": "BIOL upper division lab course or BIOL 470",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog: 'BIOL upper division lab course or BIOL 470' (3-4 cr); resolved at minimum 3",
+      "options": [
+       {
+        "code": "BIOL-UPPER-LAB",
+        "credits": 4,
+        "title": "BIOL upper division lab course"
+       },
+       {
+        "code": "BIOL 470",
+        "credits": 3,
+        "title": "Capstone"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "REMAINING",
+      "title": "Remaining core, electives (major, minor, or university), Independent Study, or Internship",
+      "credits": 9,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Catalog range 9-14 credits; resolved at minimum 9 (see plan notes)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s8-1",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "fd81f8c33049aee4d7e44597601b6e2a3b692f3af6b22b155840df2e3584cbb0",
+  "last_verified": "2026-10-09"
+ }
+}
