@@ -1,0 +1,155 @@
+{
+ "institution": {
+  "city": "Youngwood",
+  "kind": "community",
+  "name": "Westmoreland County Community College",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "Diploma",
+  "id": "westmoreland-county-community-college-diploma-practical-nursing",
+  "major": "Practical Nursing",
+  "notes": "Source: Westmoreland County Community College 2026-2027 catalog page, 'Nursing, Practical Nursing Diploma' (May 2026). Suggested sequence grouped by term: Spring (16cr), Summer (16cr), Fall (15cr) = 47 credits, matching catalog-published minimum program credits. Selective-admission program; HS-level biology and chemistry with labs (or equivalent) with a C or better required for NUR course entry, documented here (not courses). Prerequisite ordering verified: BIO 171 before BIO 172; NPN 101 before NPN 151 before NPN 201; PSY 160 and BIO 172 before NPN 201.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NPN-101",
+      "credits": 9.0,
+      "options": [],
+      "prereq": [],
+      "title": "Practical Nursing I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO-171",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [],
+      "title": "Anatomy & Physiology I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CPT-150",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Microcomputer Concepts",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.0,
+    "label": "Spring",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NPN-151",
+      "credits": 9.0,
+      "options": [],
+      "prereq": [
+       "NPN-101"
+      ],
+      "title": "Practical Nursing II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIO-172",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [
+       "BIO-171"
+      ],
+      "title": "Anatomy & Physiology II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSY-160",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "General Psychology",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.0,
+    "label": "Summer",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NPN-201",
+      "credits": 12.0,
+      "options": [],
+      "prereq": [
+       "NPN-151",
+       "PSY-160",
+       "BIO-172"
+      ],
+      "title": "Practical Nursing III",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG-161",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "College Writing",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15.0,
+    "label": "Fall",
+    "n": 3
+   }
+  ],
+  "source_url": "https://westmoreland.edu/academics/programs/26-27-catalog-pages/practical-nursing-diploma-may2026.pdf",
+  "total_credits": 47.0,
+  "transfer_confidence": "",
+  "content_hash": "d5c804dedb5a4c6a4cb737b6e6b7a03baae4c723191f62716dc4507193955c86",
+  "last_verified": "2026-10-09"
+ }
+}
