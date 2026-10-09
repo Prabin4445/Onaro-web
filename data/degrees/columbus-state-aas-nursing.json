@@ -1,0 +1,320 @@
+{
+ "institution": {
+  "name": "Columbus State Community College",
+  "city": "Columbus, OH",
+  "state": "OH",
+  "kind": "community_college"
+ },
+ "plan": {
+  "id": "columbus-state-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 64,
+  "catalog_year": "2026-2027",
+  "source_url": "https://explore.cscc.edu/programs/NURS.AAS",
+  "transfer_confidence": "",
+  "notes": "Source: Columbus State Community College official online catalog (explore.cscc.edu, academia-nut API), program 'Nursing AAS' (NURS.AAS). Term-by-term sequence transcribed from the catalog's semester sections. Catalog year honesty: the API exposes no explicit catalog year; program data was synced September 2026, so catalog_year is set to 2026-2027 (the academic year in effect at sync time). Catalog OR-slots (alternatives occupying one slot) are transcribed as single choice slots resolved at minimum credits; AND-bundles are kept together. Generic elective slots use the catalog's own slot text. No TCCNS in Ohio; transfer_confidence is empty.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Semester",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "NURS 1871",
+      "title": "Fundamental Concepts of Nursing Care",
+      "credits": 6,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "COLS 1100",
+      "title": "First Year Experience Seminar",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "BIO 2300",
+      "title": "Human Anatomy",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "NURS 1150",
+      "title": "Pharmacology Concepts in Nursing I",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "MULT 1110 OR HIMT 1121",
+      "title": "Medical Terminology OR Advanced Medical Terminology",
+      "credits": 2,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: MULT 1110 OR HIMT 1121. Resolved at minimum 2 cr.",
+      "options": [
+       {
+        "code": "MULT 1110",
+        "credits": 2,
+        "title": "Medical Terminology"
+       },
+       {
+        "code": "HIMT 1121",
+        "credits": 2,
+        "title": "Advanced Medical Terminology"
+       }
+      ],
+      "required_zero": false,
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Semester",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "NURS 1873",
+      "title": "Concepts of Nursing Care Related to Health Problems",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "NURS 1151",
+      "title": "Pharmacology Concepts in Nursing II",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "BIO 2301",
+      "title": "Human Physiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s2-2",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Semester",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "TECHNICAL-COURSE-REQUIREMENT",
+      "title": "Technical Course Requirement - 1 course (3 credits) needed. Select from NURS 2864 or NURS 2866 or NURS 2872.",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Technical Course Requirement - 1 course (3 credits) needed. Select from NURS 2864 or NURS 2866 or NURS 2872.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "ENGL 1100",
+      "title": "Composition I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "PSY 1100",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "OT36-GENERAL-ELECTIVE-SELECT",
+      "title": "OT36 General Elective* (Select from recommended list below)",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: OT36 General Elective* (Select from recommended list below)",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fourth Semester",
+    "declared_credits": 13,
+    "courses": [
+     {
+      "code": "NURS 2052",
+      "title": "Pharmacology Concepts in Nursing III",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "TECHNICAL-COURSE-REQUIREMENT",
+      "title": "Technical Course Requirement - 2 courses (3 credits each) needed. Select from NURS 2864 or NURS 2866 or NURS 2872.",
+      "credits": 6,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Technical Course Requirement - 2 courses (3 credits each) needed. Select from NURS 2864 or NURS 2866 or NURS 2872.",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "PSY 2340",
+      "title": "Human Growth and Development Over the Life Span",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "STAT 1350",
+      "title": "Elementary Statistics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s4-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fifth Semester",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "NURS 2873",
+      "title": "Ldrshp & Nsg Care Multiple Hlth Problms",
+      "credits": 8,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "BIO 2215",
+      "title": "Microbiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false,
+      "slot_id": "s5-1",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "ae1c86c47d5fea448e97338369fd6af63f4c228ad31d91959b42324a371abc08",
+  "last_verified": "2026-10-09"
+ }
+}

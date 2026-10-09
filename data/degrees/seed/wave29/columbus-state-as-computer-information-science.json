@@ -1,0 +1,305 @@
+{
+ "institution": {
+  "name": "Columbus State Community College",
+  "city": "Columbus, OH",
+  "state": "OH",
+  "kind": "community_college"
+ },
+ "plan": {
+  "id": "columbus-state-as-computer-information-science",
+  "degree": "AS",
+  "major": "Computer and Information Science",
+  "total_credits": 55,
+  "catalog_year": "2026-2027",
+  "source_url": "https://explore.cscc.edu/programs/CIS.AS",
+  "transfer_confidence": "",
+  "notes": "Source: Columbus State Community College official online catalog (explore.cscc.edu, academia-nut API), program 'Associate of Science - Computer and Information Science' (CIS.AS). Term-by-term sequence transcribed from the catalog's semester sections. Catalog year honesty: the API exposes no explicit catalog year; program data was synced September 2026, so catalog_year is set to 2026-2027 (the academic year in effect at sync time). Catalog OR-slots (alternatives occupying one slot) are transcribed as single choice slots resolved at minimum credits; AND-bundles are kept together. Generic elective slots use the catalog's own slot text. No TCCNS in Ohio; transfer_confidence is empty.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Semester",
+    "declared_credits": 15,
+    "courses": [
+     {
+      "code": "COLS 1100",
+      "title": "First Year Experience Seminar",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "ENGL 1100 OR ENGL 1101",
+      "title": "Composition I OR Composition I Plus",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: ENGL 1100 OR ENGL 1101. Resolved at minimum 3 cr.",
+      "options": [
+       {
+        "code": "ENGL 1100",
+        "credits": 3,
+        "title": "Composition I"
+       },
+       {
+        "code": "ENGL 1101",
+        "credits": 6,
+        "title": "Composition I Plus"
+       }
+      ],
+      "required_zero": false
+     },
+     {
+      "code": "MATH 1151",
+      "title": "Calculus I",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "HISTORICAL-STUDY-COURSE",
+      "title": "Historical Study course *",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Historical Study course *",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "SOCIAL-AND-BEHAVIORAL-SCIENC",
+      "title": "Social and Behavioral Science course* Recommended: ECON 2200 Principles of Microeconomics",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Social and Behavioral Science course* Recommended: ECON 2200 Principles of Microeconomics",
+      "options": [],
+      "required_zero": false
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Semester",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "INTERMEDIATE-COMPOSITION-COU",
+      "title": "Intermediate Composition course * Recommended: ENGL 2767 Composition II: Writing about Science & Technology",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Intermediate Composition course * Recommended: ENGL 2767 Composition II: Writing about Science & Technology",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "MATH 1152 OR GEN",
+      "title": "Calculus II OR XXXX-XXXX A.S. Elective",
+      "credits": 5,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: MATH 1152 OR GEN. Resolved at minimum 5 cr.",
+      "options": [
+       {
+        "code": "MATH 1152",
+        "credits": 5,
+        "title": "Calculus II"
+       },
+       {
+        "code": "GEN",
+        "credits": 5,
+        "title": "XXXX-XXXX A.S. Elective"
+       }
+      ],
+      "required_zero": false
+     },
+     {
+      "code": "CSCI 1103",
+      "title": "Intro to Programming Logic",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "NATURAL-SCIENCE-COURSE",
+      "title": "Natural Science course *",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Natural Science course *",
+      "options": [],
+      "required_zero": false
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Fourth Semester",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "STAT 2470 OR GEN",
+      "title": "Intro Probability Statistics Eng & Sci OR A.S. Elective *",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: STAT 2470 OR GEN. Resolved at minimum 4 cr.",
+      "options": [
+       {
+        "code": "STAT 2470",
+        "credits": 4,
+        "title": "Intro Probability Statistics Eng & Sci"
+       },
+       {
+        "code": "GEN",
+        "credits": 4,
+        "title": "A.S. Elective *"
+       }
+      ],
+      "required_zero": false
+     },
+     {
+      "code": "CSCI 2467",
+      "title": "Java Programming I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "NATURAL-SCIENCE-COURSE-WITH-",
+      "title": "Natural Science course, with lab * Recommended: PHYS 1250 Calculus-Based Physics I",
+      "credits": 5,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Natural Science course, with lab * Recommended: PHYS 1250 Calculus-Based Physics I",
+      "options": [],
+      "required_zero": false
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fifth Semester",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "A-S-ELECTIVE",
+      "title": "A.S. Elective *",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: A.S. Elective *",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "CSCI 1511 OR CSCI 2469 OR CSCI 2740",
+      "title": "Python Programming OR Java Programming II OR Data Structures and Algorithm Analysis",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: CSCI 1511 OR CSCI 2469 OR CSCI 2740. Resolved at minimum 3 cr.",
+      "options": [
+       {
+        "code": "CSCI 1511",
+        "credits": 3,
+        "title": "Python Programming"
+       },
+       {
+        "code": "CSCI 2469",
+        "credits": 3,
+        "title": "Java Programming II"
+       },
+       {
+        "code": "CSCI 2740",
+        "credits": 3,
+        "title": "Data Structures and Algorithm Analysis"
+       }
+      ],
+      "required_zero": false
+     },
+     {
+      "code": "NATURAL-SCIENCE-WITH-LAB",
+      "title": "Natural Science, with lab *",
+      "credits": 5,
+      "category": "elective",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog elective slot: Natural Science, with lab *",
+      "options": [],
+      "required_zero": false
+     },
+     {
+      "code": "COMM 1105 OR COMM 1110 OR GEN",
+      "title": "Oral Communication OR Small Group Communication OR A.S. Elective *",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "tccns": "",
+      "choice": true,
+      "choice_note": "Official catalog OR-slot: COMM 1105 OR COMM 1110 OR GEN. Resolved at minimum 3 cr.",
+      "options": [
+       {
+        "code": "COMM 1105",
+        "credits": 3,
+        "title": "Oral Communication"
+       },
+       {
+        "code": "COMM 1110",
+        "credits": 3,
+        "title": "Small Group Communication"
+       },
+       {
+        "code": "GEN",
+        "credits": 3,
+        "title": "A.S. Elective *"
+       }
+      ],
+      "required_zero": false
+     }
+    ]
+   }
+  ]
+ }
+}
