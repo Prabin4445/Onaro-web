@@ -1,0 +1,699 @@
+{
+ "institution": {
+  "city": "Brooklyn",
+  "kind": "public4yr",
+  "name": "New York City College of Technology",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026",
+  "degree": "BTECH",
+  "id": "citytech-btech-computer-engineering-technology",
+  "major": "Computer Engineering Technology",
+  "notes": "Source: CUNY official Coursedog degree-map PDF for New York City College of Technology (City Tech), program CEB-BT 'Computer Engineering Technology', BTECH - Bachelor of Technology, Degree Map Name 'Computer Engineering Technology', Total Degree Map Credits 128-131, Degree Map Effective Catalog Year 'Spring 2026', narrative 'A recommended semester-by-term plan for full-time students' (coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com, official CUNY catalog PDF). Eight semesters transcribed exactly as published: 16+16+15+17+16+17+17+14 = 128, matching the lower bound of the published 128-131 range; total_credits=128 (the sequence's own published total; range documented here). Prerequisite ordering verified: MAT 1275 -> MAT 1375 -> MAT 1475 -> MAT 1575 -> MAT 2680; CET 1100 before CET 1111 (pre-or-corequisite); CET 1150 (Sem 1) before CET 2350 Electronics (Sem 3); CET 2312/CET 2350/CET 2450/CET 2370 chain per map notes; CET 3510 before CET 4773; CET 3625 before CET 4705 before CET 4805; CET 3615/CET 4711 before CET 4811 Capstone. Published choice slots: PHYS 1433 (Algebra Based) OR PHYS 1441 (Calculus Based); PHYS 1434 OR PHYS 1442; Y2 Spring math slot 'MAT 1475 - Calculus I OR MAT 1575 - Calculus II' (PRE: MAT 1375 OR math placement; transcribed as a choice); Y4 Fall technical-elective slot 'Computer Engineering Technical Elective I OR CET 4900 - Internship in Computer Engineering'; Y4 Spring 'Liberal Arts Course OR World Language Sequence'. 'Flexible Core - Any Area' and 'Speech/Oral Communication', 'Interdisciplinary Course' are Coursedog catalog literals. ABET-ETAC accredited program. Degree classification: BTECH = Bachelor of Technology (bachelor's level). City Tech is CUNY's designated senior college of technology; this is its first plan in the index (school was previously uncovered).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1275",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "College Algebra and Trigonometry",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1100",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Computer and Software Engineering",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Logic and Problem Solving",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1120",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Graphics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1150",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Electrical Circuits",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1121",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 1101"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1211",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Objected-Oriented Programming in Software Design",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1250",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Digital Systems",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1375",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1275"
+      ],
+      "title": "Precalculus",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core - Any Area'.",
+      "code": "FLEXCORE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core - Any Area",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2312",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Reverse Engineering/Product Design",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2350",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CET 1150"
+      ],
+      "title": "Electronics",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2370",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Hardware Systems",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2390",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Operating Systems Laboratory",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official either/or physics slot: algebra-based or calculus-based General Physics I.",
+      "code": "PHYS 1433/1441",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHYS 1433",
+        "title": "General Physics I: Algebra Based"
+       },
+       {
+        "code": "PHYS 1441",
+        "title": "General Physics I: Calculus Based"
+       }
+      ],
+      "prereq": [],
+      "title": "General Physics I (PHYS 1433 Algebra Based or PHYS 1441 Calculus Based)",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 2 Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CET 2350"
+      ],
+      "title": "Introduction to Microcontrollers",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2455",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CET 2370"
+      ],
+      "title": "Data Communications",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2461",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Systems: Software Interface",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 2411",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "C/C++ Programming for Embedded Systems",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Published 'MAT 1475 - Calculus I OR MAT 1575 - Calculus II' (PRE: MAT 1375 OR math placement); standard path is MAT 1475 here, MAT 1575 in Year 3 Fall.",
+      "code": "MAT 1475",
+      "credits": 4,
+      "options": [
+       {
+        "code": "MAT 1475",
+        "title": "Calculus I"
+       },
+       {
+        "code": "MAT 1575",
+        "title": "Calculus II"
+       }
+      ],
+      "prereq": [
+       "MAT 1375"
+      ],
+      "title": "Calculus I",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core - Any Area'.",
+      "code": "FLEXCORE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core - Any Area",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Year 2 Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 3510",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Microcomputer Systems Technology",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 3525",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Electrical Networks",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1575",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1475"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official either/or physics slot: algebra-based or calculus-based General Physics II.",
+      "code": "PHYS 1434/1442",
+      "credits": 4,
+      "options": [
+       {
+        "code": "PHYS 1434",
+        "title": "General Physics II: Algebra Based"
+       },
+       {
+        "code": "PHYS 1442",
+        "title": "General Physics II: Calculus Based"
+       }
+      ],
+      "prereq": [],
+      "title": "General Physics II (PHYS 1434 Algebra Based or PHYS 1442 Calculus Based)",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 3 Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 3615",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CET 3525"
+      ],
+      "title": "Instrumentation and Data Acquisition",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 3625",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Applied Analysis Laboratory",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 3640",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CET 3510"
+      ],
+      "title": "Software For Computer Control",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2680",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1575"
+      ],
+      "title": "Differential Equations",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core - Any Area'.",
+      "code": "FLEXCORE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core - Any Area",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Speech/Oral Communication'.",
+      "code": "SPEECH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Speech/Oral Communication",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Year 3 Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4705",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CET 3625"
+      ],
+      "title": "Component and Subsystem Design",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4711",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer-Controlled Systems Design",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4773",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CET 3510"
+      ],
+      "title": "Inter-Networking Technology",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2580",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT 1475"
+      ],
+      "title": "Introduction to Linear Algebra",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Interdisciplinary Course'.",
+      "code": "INTERDISC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Interdisciplinary Course",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Published 'Computer Engineering Technical Elective I OR CET 4900 - Internship in Computer Engineering'.",
+      "code": "CET-TECHELECT-1",
+      "credits": 3,
+      "options": [
+       {
+        "code": "CET 4900",
+        "title": "Internship in Computer Engineering"
+       }
+      ],
+      "prereq": [],
+      "title": "Computer Engineering Technical Elective I (or CET 4900 Internship)",
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Year 4 Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4805",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CET 4705"
+      ],
+      "title": "Digital System Design Using HDL",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4811",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CET 4711"
+      ],
+      "title": "Capstone Design Project",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 4864",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Principles of Feedback Control Systems",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Computer Engineering Technical Elective I'.",
+      "code": "CET-TECHELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Engineering Technical Elective I",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Published 'Liberal Arts Course OR World Language Sequence'.",
+      "code": "LA/WL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Liberal Arts Course or World Language Sequence",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Year 4 Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/nyt01/catalog-pdf/a7DZfBYWfH0NMkwvlxmu/QyQx2zSUUqkKWFQeJ8quqVXwd/CET-NYT-2025-11-21-19-17-39.pdf",
+  "total_credits": 128,
+  "transfer_confidence": "",
+  "content_hash": "d47c67bb54f6efb7d27465ef53b525c97a339fc8ca503a468f09a4bad18227a7",
+  "last_verified": "2026-10-09"
+ }
+}

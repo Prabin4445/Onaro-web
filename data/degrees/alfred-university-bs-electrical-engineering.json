@@ -1,0 +1,897 @@
+{
+ "institution": {
+  "city": "Alfred",
+  "kind": "private",
+  "name": "Alfred University",
+  "state": "NY"
+ },
+ "plan": {
+  "allow_repeated_courses": true,
+  "catalog_year": "2024-2025",
+  "degree": "BS",
+  "id": "alfred-university-bs-electrical-engineering",
+  "major": "Electrical Engineering",
+  "notes": "Source: Alfred University Inamori School of Engineering official 'Suggested Curriculum Course Plan' (SCCP) for Electrical Engineering, 'for students entering Fall 2024 - Spring 2025', edited June 7, 2024 (my.alfred.edu/engineering/_docs/eegr-2024-25.pdf). This is the newest term-by-term plan the school publishes; the 2026-2027 AU Catalog (undergraduatecatalog.alfred.edu) publishes requirement lists only. Semester credit sums transcribed exactly as published: 16+17+16+18+15+19+16+15 = 132, matching the published Total Credits: 132 (engineering bachelor's: 126-130 typical; EE plans run slightly higher; SOE minimum requirement 128). Prerequisite ordering verified: MATH 151->152->253->271; CHEM 105->106; PHYS 125->126; ENGR 220 (Circuit Theory I, Sem 4) before ELEC 321 (Circuit Theory II, Sem 5); ELEC 210 Digital Logic (Sem 3) before ELEC 310 Microprocessor Systems (Sem 6). 0-credit labs (CHEM 105L etc. are 1 cr; ENGR 117L, PHYS 125L/126L, ELEC 210L/220L/321L/356L, ENGR 160/360 are 0 cr) are official recurring seminar/lab slots transcribed with required_zero:true. ENGR 160 (Sem 1-2), ENGR 360 (Sem 3-8), and ENGR 490 capstone (Sem 7-8, 2+2 with the same instructor per the published capstone rule) repeat by official design - allow_repeated_courses:true. Semester 4 computing slot is an official either/or: CSCI 156 Computer Science I OR RNEW 303 Software Engineering (transcribed as a choice). EE Elective (6 cr): one published sequence - Computer Engineering (VLSI Design / Computer Architecture), Renewable Energy (RNEW 432 Solar Energy / RNEW 431 Wind Energy), Controls (ELEC 422 / ELEC 423), or Power Engineering (ELEC 433 Modern Electric Grids / ELEC 441 Advanced Power Electronics). Technical Electives (6 cr): most 300/400-level CEMS, CHEM, ELEC, ENGR, MATH, MECH, PHYS, RNEW (except CHEM 343, MATH 331, MECH 320, unapproved Topics); or FIN 348 / MGMT 328; or COOP 385 / ENGR 385 internship. ENGL 101 'if required otherwise General Education elective (2-4)'. AU degree rules per plan: Global Perspective, Wellness/PE, 2.0 GPA with no more than 7 credits of D/D+ in engineering courses, 60-credit SOE General Education. Verify: Alfred State College (SUNY tech college in the same town) is a DIFFERENT school and was separately blocked/collected; this plan is Alfred University (private).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "'ENGL 101 if required otherwise General Education elective (2-4)'.",
+      "code": "ENGL 101",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Writing I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 151",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 105",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Chemistry I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 105L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "General Chemistry I Laboratory",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 101",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Engineering",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 117",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Foundations II & Lab",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 117L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Engineering Foundations II Lab",
+      "slot_id": "s1-6",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 160",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "First-Year Seminar",
+      "slot_id": "s1-7",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 1",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 152",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 151"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 106",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CHEM 105"
+      ],
+      "title": "General Chemistry II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 106L",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "General Chemistry II Laboratory",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 125",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Physics I",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 125L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Physics I Laboratory",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 102",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Aided Design",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 104",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Aided Engineering",
+      "slot_id": "s2-6",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 160",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "First-Year Seminar",
+      "slot_id": "s2-7",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "UNIV 101",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Common Ground",
+      "slot_id": "s2-8",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Semester 2",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 253",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MATH 152"
+      ],
+      "title": "Calculus III",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 126",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHYS 125"
+      ],
+      "title": "Physics II",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYS 126L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Physics II Laboratory",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 110",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Communication",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 210",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Digital Logic",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 210L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Digital Logic Laboratory",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s3-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 3",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 271",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MATH 253"
+      ],
+      "title": "Differential Equations",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official either/or computing slot in the published plan.",
+      "code": "CSCI 156/RNEW 303",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CSCI 156",
+        "title": "Computer Science I"
+       },
+       {
+        "code": "RNEW 303",
+        "title": "Software Engineering"
+       }
+      ],
+      "prereq": [],
+      "title": "Computer Science I (CSCI 156) or Software Engineering (RNEW 303)",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 220",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Circuit Theory I & Lab",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 220L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Circuit Theory I Laboratory",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MECH 212",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Dynamics",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s4-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'General Education Elective (4)'.",
+      "code": "GEED-ELECT-1",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s4-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 18,
+    "label": "Semester 4",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 321",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ENGR 220"
+      ],
+      "title": "Circuit Theory II & Lab",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 321L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Circuit Theory II Laboratory",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 354",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Device Electronics",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 306",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Economics",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MECH 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Thermodynamics I",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RNEW 322",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Signals & Systems",
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s5-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 5",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 310",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "ELEC 210"
+      ],
+      "title": "Microprocessor Systems & Applications",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 356",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Electronic Circuits",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ELEC 356L",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Electronic Circuits Laboratory",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 305",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Statistics",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 388",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Applied Complex Variables",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 395",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Design",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MECH 422",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Control Systems",
+      "slot_id": "s6-6",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s6-7",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 19,
+    "label": "Semester 6",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Senior Capstone Group Project (2+2 with the same instructor; defense of capstone poster & approved thesis required).",
+      "code": "ENGR 490",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Senior Capstone Group Project",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RNEW 355",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Power System Operation and Economics",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "RNEW 468",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Electric Machinery",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "EE Elective: one published 6-credit sequence - Computer Engineering (VLSI Design / Computer Architecture), Renewable Energy (RNEW 432 / RNEW 431), Controls (ELEC 422 / ELEC 423), or Power Engineering (ELEC 433 / ELEC 441).",
+      "code": "EE-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "EE Elective (published sequence)",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical Elective: most 300/400-level CEMS, CHEM, ELEC, ENGR, MATH, MECH, PHYS, RNEW; or FIN 348 / MGMT 328; or COOP 385 / ENGR 385 internship.",
+      "code": "TECH-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'General Education Elective (2)'.",
+      "code": "GEED-ELECT-2",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s7-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester 7",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "Senior Capstone Group Project (2+2 with the same instructor).",
+      "code": "ENGR 490",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Senior Capstone Group Project",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "EE Elective: second half of the published 6-credit EE sequence.",
+      "code": "EE-ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "EE Elective (published sequence)",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Technical Elective (see Semester 7 note).",
+      "code": "TECH-ELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Wellness (2)' - AU Wellness & Physical Education requirement.",
+      "code": "WELLNESS-1",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Wellness",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Fitness (1)'.",
+      "code": "FITNESS-1",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Fitness",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'General Education Elective (4)'.",
+      "code": "GEED-ELECT-3",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective",
+      "slot_id": "s8-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR 360",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Undergraduate Seminar",
+      "slot_id": "s8-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Semester 8",
+    "n": 8
+   }
+  ],
+  "source_url": "https://my.alfred.edu/engineering/_docs/eegr-2024-25.pdf",
+  "total_credits": 132,
+  "transfer_confidence": "",
+  "content_hash": "f6b10c2bc0614b1c0f6fc31b92ddbfa53014a18ac02f47ae57368dd67805a89a",
+  "last_verified": "2026-10-09"
+ }
+}

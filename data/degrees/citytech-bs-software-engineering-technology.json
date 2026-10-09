@@ -1,0 +1,601 @@
+{
+ "institution": {
+  "city": "Brooklyn",
+  "kind": "public4yr",
+  "name": "New York City College of Technology",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "2026",
+  "degree": "BS",
+  "id": "citytech-bs-software-engineering-technology",
+  "major": "Software Engineering Technology",
+  "notes": "Source: CUNY official Coursedog degree-map PDF for New York City College of Technology (City Tech), program SET-BS 'Software Engineering Technology', BS, Degree Map Name 'Software Engineering Technology', Total Degree Map Credits 120-122, Degree Map Effective Catalog Year '2026', narrative 'A recommended semester-by-semester plan for full-time students who enter the program with a math placement of MAT 1275 or MAT 1275CO' (coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com, official CUNY catalog PDF; same PDF also carries the CEB-BT BTech map collected separately). Eight semesters transcribed exactly as published: 16+16+14+16+13+15+15+15 = 120, matching the lower bound of the published 120-122 range; total_credits=120 (the sequence's own published total; range documented here). Prerequisite ordering verified: CET 1211 (Y1 Spring) before SET 2330 (Y2 Fall); CET 1250 before SET 2350; MAT 1375 -> MAT 1475 -> MAT 1575; SET 3610 (Y3 Spring) before SET 4710 (Y4 Fall) before SET 4810 Capstone (Y4 Spring). Published choice slots: Y4 Fall and Y4 Spring 'Liberal Arts Course OR World Language Sequence'; Technical Elective (Generic) slots per the published technical-elective list. Y4 Fall contains a 3-credit slot published literally as '-' (transcribed as an open-elective choice slot). DATA ANOMALY (documented, not corrected): Y2 Fall lists 'PHYS 1434 - General Physics II: Algebra Based' with no Physics I anywhere in the map, and its published note reads 'Pre-requisite of PHYS 1433 is required' — likely a Coursedog labeling slip (intended PHYS 1433); transcribed exactly as published. Degree classification: BS (bachelor's).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1275",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "College Algebra and Trigonometry",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1100",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Computer and Software Engineering",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1111",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Logic and Problem Solving",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1120",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Graphics",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1150",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Electrical Circuits",
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Fall (Semester 1)",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG 1121",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG 1101"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1375",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1275"
+      ],
+      "title": "Precalculus",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1211",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Objected-Oriented Programming in Software Design",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CET 1250",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Digital Systems",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core Creative Expression'.",
+      "code": "FLEXCORE-CE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core Creative Expression",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1475",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1375"
+      ],
+      "title": "Calculus I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "Published as 'PHYS 1434 - General Physics II: Algebra Based' with the published note 'Pre-requisite of PHYS 1433 is required' (likely a Coursedog labeling slip; transcribed exactly as published).",
+      "code": "PHYS 1434",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Physics II: Algebra Based",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 2330",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CET 1211"
+      ],
+      "title": "Cloud Database Fundamentals",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 2350",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CET 1250"
+      ],
+      "title": "Computer Architecture",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Year 2 Fall (Semester 2)",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 1575",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT 1475"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 2430",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Algorithmic Design and Data Structures",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 2440",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "System Programming",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core Individual and Society'.",
+      "code": "FLEXCORE-IS",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core Individual and Society",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core US Experience in Its Diversity'.",
+      "code": "FLEXCORE-USED",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core US Experience in Its Diversity",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 2 Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2572",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Probability and Mathematical Statistics I",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 3510",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Software Requirements Engineering",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 3530",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Cloud Computing and Networking",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Flexible Core World Cultures and Global Issues'.",
+      "code": "FLEXCORE-WCGI",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Flexible Core World Cultures and Global Issues",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Year 3 Fall (Semester 3)",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT 2580",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Linear Algebra",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 3610",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Software Architecture and Design",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 3630",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Cybersecurity Foundations",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Speech/Oral Communication'.",
+      "code": "SPEECH-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Speech/Oral Communication",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Technical Elective (Generic)'.",
+      "code": "SET-TECHELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective (Generic)",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 3 Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 4710",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "SET 3610"
+      ],
+      "title": "Software Testing and Quality Assurance",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Interdisciplinary Course'.",
+      "code": "INTERDISC-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Interdisciplinary Course",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Published 'Liberal Arts Course OR World Language Sequence'.",
+      "code": "LA/WL-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Liberal Arts Course or World Language Sequence",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Published literally as '-' (a 3-credit open slot in the degree map).",
+      "code": "OPEN-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Open Elective (published as '-')",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Technical Elective (Generic)'.",
+      "code": "SET-TECHELECT-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective (Generic)",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 4 Fall (Semester 4)",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "SET 4810",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "SET 4710"
+      ],
+      "title": "Software Capstone Design",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Published 'Liberal Arts Course OR World Language Sequence'.",
+      "code": "LA/WL-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Liberal Arts Course or World Language Sequence",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Technical Elective (Generic)'.",
+      "code": "SET-TECHELECT-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective (Generic)",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Technical Elective (Generic)'.",
+      "code": "SET-TECHELECT-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Technical Elective (Generic)",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'General Education Elective (Generic)'.",
+      "code": "GEED-ELECT-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Education Elective (Generic)",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 4 Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://coursedog-pdfs-public-prod.s3.us-east-2.amazonaws.com/nyt01/catalog-pdf/a7DZfBYWfH0NMkwvlxmu/QyQx2zSUUqkKWFQeJ8quqVXwd/CET-NYT-2025-11-21-19-17-39.pdf",
+  "total_credits": 120,
+  "transfer_confidence": "",
+  "content_hash": "a592729932b7bac7d0a406cfcc08823c94b70a42fea719a6d0eb4aa5b684b533",
+  "last_verified": "2026-10-09"
+ }
+}
