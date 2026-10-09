@@ -1,0 +1,292 @@
+{
+ "institution": {
+  "name": "Cochran School of Nursing",
+  "city": "Yonkers",
+  "state": "NY",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "cochran-school-of-nursing-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 68,
+  "catalog_year": "2024-2025",
+  "source_url": "https://cochranschoolofnursing.us/wp-content/uploads/2024/09/CSN-Student-Handbook-24-25-9.24.pdf",
+  "notes": "Source: Cochran School of Nursing official Student Handbook 2024-2025, 'CURRICULUM PLAN-DAY PROGRAM' (p.8), transcribed exactly as published: pre-clinical 12 cr + four semesters (11.5/14.5/14/16) = 68 credits (38 nursing + 30 liberal arts). Published rules: all pre-requisites must be completed prior to matriculation; science courses must be taken within 5 years of admission; psychology courses within 10 years. Prerequisite/corequisite chains verified against the handbook course descriptions: NUR 101 requires BIOL 121 + BIOL 123 (co-req BIOL 221); NUR 102 requires NUR 101 + NUR 100 (co-req NUTR 109); NUR 200 requires NUR 102; NUR 203 requires NUR 102 + NUR 200; NUR 204 requires PSYCH 101 + NUR 102 + NUR 200; NUR 205 requires NUR 200 with co-requisites NUR 203 + NUR 204. Evening program follows a different sequence (not collected).",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Pre-Clinical Courses",
+    "declared_credits": 12,
+    "courses": [
+     {
+      "code": "BIOL 221",
+      "title": "Microbiology with Lab",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 121",
+      "title": "Human Anatomy & Physiology 1 with Lab",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL 123",
+      "title": "Human Anatomy & Physiology 2 with Lab",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "First Year - First Semester",
+    "declared_credits": 11.5,
+    "courses": [
+     {
+      "code": "NUR 100",
+      "title": "safeMedicate for Nursing",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 101",
+      "title": "Fundamentals of Nursing",
+      "credits": 7.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "BIOL 121",
+       "BIOL 123"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYCH 101",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "First Year - Second Semester",
+    "declared_credits": 14.5,
+    "courses": [
+     {
+      "code": "NUR 102",
+      "title": "Medical/Surgical Nursing",
+      "credits": 8.5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NUR 101",
+       "NUR 100"
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUTR 109",
+      "title": "Nutrition for Health Care",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSYCH 116",
+      "title": "Lifespan Development",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Second Year - First Semester",
+    "declared_credits": 14,
+    "courses": [
+     {
+      "code": "NUR 200",
+      "title": "Maternal & Child Nursing",
+      "credits": 8,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NUR 102"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SOC 101",
+      "title": "Introduction to Sociology",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGLISH 101",
+      "title": "Writing and Research",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Second Year - Second Semester",
+    "declared_credits": 16.0,
+    "courses": [
+     {
+      "code": "NUR 203",
+      "title": "Advanced Medical/Surgical Nursing",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NUR 102",
+       "NUR 200"
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 204",
+      "title": "Behavioral and Mental Health Nursing",
+      "credits": 4.25,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PSYCH 101",
+       "NUR 102",
+       "NUR 200"
+      ],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUR 205",
+      "title": "Leadership and Transition to Practice",
+      "credits": 2.75,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NUR 200"
+      ],
+      "coreq": [
+       {
+        "course": "NUR 203",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "NUR 204",
+        "kind": "concurrent_required"
+       }
+      ],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGLISH 102",
+      "title": "Writing and Literature",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "transfer_confidence": "",
+  "content_hash": "ebff3f746c8e25c1c2dbe19fa635d0872483abcfc60a5b9e10f593908279d144",
+  "last_verified": "2026-10-09"
+ }
+}
