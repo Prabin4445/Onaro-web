@@ -122,6 +122,10 @@ function signIn(u,remember){
   try{ HUB.store.save(); }catch(e){}
   syncProfile(u);
   repaintMe();
+  /* Pull the account's degree progress from the backend so the tracked plan
+     and completed courses follow the user across devices/logins. Silent and
+     best-effort: local data is never wiped by this. */
+  try{ if(window.HUB&&HUB.degree&&HUB.degree.pullFromCloud) HUB.degree.pullFromCloud(); }catch(e){}
 }
 function doSignOut(){ clearSession(); repaintMe(); try{ if(fbAuth) fbAuth.signOut(); }catch(e){} openLogin(); }
 /* signOut plays the logout cinematic first; the real sign-out runs when it

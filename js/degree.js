@@ -195,7 +195,65 @@ function dstate(){
   if(!st.degree.progress||typeof st.degree.progress!=='object') st.degree.progress={};
   return st.degree;
 }
-function save(){ store().save(); }
+function save(){
+  store().save();
+  /* Stamp local freshness so login-merge can tell which side is newer. */
+  try{ dstate()._updated_at=new Date().toISOString(); }catch(e){}
+  syncDegreeToCloudSoon();
+}
+/* Debounced cloud sync: degree progress follows the account across devices.
+   Local-first — the local store is authoritative for the UI; this only pushes
+   a copy to the backend when the user is signed in. Failures are silent:
+   the next change or login retries. */
+let _degSyncTimer=null;
+function syncDegreeToCloudSoon(){
+  try{
+    if(!(window.HUB&&HUB.api&&HUB.api.isLoggedIn())) return;
+  }catch(e){ return; }
+  if(_degSyncTimer) clearTimeout(_degSyncTimer);
+  _degSyncTimer=setTimeout(function(){
+    _degSyncTimer=null;
+    syncDegreeToCloudNow();
+  }, 2500);
+}
+function syncDegreeToCloudNow(){
+  try{
+    if(!(window.HUB&&HUB.api&&HUB.api.isLoggedIn()&&HUB.api.putDegreeProgress)) return Promise.resolve(null);
+    const ds=dstate();
+    return HUB.api.putDegreeProgress(ds.tracked||null, ds.progress||{}, ds._updated_at||null);
+  }catch(e){ return Promise.resolve(null); }
+}
+/* Pull the account's degree progress after login and merge with local.
+   Merge rule: union of completed courses per plan (a course done on ANY
+   device stays done); tracked_slug comes from whichever side is newer. */
+function pullDegreeFromCloud(){
+  try{
+    if(!(window.HUB&&HUB.api&&HUB.api.isLoggedIn()&&HUB.api.getDegreeProgress)) return Promise.resolve(null);
+    return HUB.api.getDegreeProgress().then(function(srv){
+      if(!srv) return null;
+      const ds=dstate();
+      const srvProg=(srv.progress&&typeof srv.progress==='object')?srv.progress:{};
+      const locProg=ds.progress||{};
+      let changed=false;
+      /* union completed courses per plan slug */
+      Object.keys(srvProg).forEach(function(slug){
+        const sp=srvProg[slug]||{}, lp=locProg[slug]||{};
+        const done=Object.assign({}, lp.done||{}, sp.done||{});
+        const merged=Object.assign({}, lp, sp, {done:done});
+        /* keep the newer startYear/intake when both set */
+        if(lp.startYear&&sp.startYear){ merged.startYear=(srv.updated_at>(ds._updated_at||''))?sp.startYear:lp.startYear; }
+        if(!locProg[slug]||JSON.stringify(locProg[slug])!==JSON.stringify(merged)){ locProg[slug]=merged; changed=true; }
+      });
+      /* tracked plan: server wins if newer and non-empty */
+      const srvNewer=srv.updated_at&&srv.updated_at>(ds._updated_at||'');
+      if(srv.tracked_slug&&(srvNewer||!ds.tracked)){ ds.tracked=srv.tracked_slug; changed=true; }
+      else if(!srv.tracked_slug&&!ds.tracked&&srvProg&&Object.keys(srvProg).length){ /* nothing to adopt */ }
+      if(srv.updated_at&&(!ds._updated_at||srv.updated_at>ds._updated_at)) ds._updated_at=srv.updated_at;
+      if(changed){ store().save(); emitProgress(); }
+      return srv;
+    }).catch(function(){ return null; });
+  }catch(e){ return Promise.resolve(null); }
+}
 /* Notify Home (and any other subscriber) that degree progress/tracking
    changed. The subscriber re-binds only the progress card — targeted,
    never a full Home re-render. Safe to call even when HUB.emit is missing
@@ -2087,5 +2145,6 @@ function wireProgCard(host,slug){
 }
 
 HUB.degree={open:open,close:close,entryHTML:entryHTML,bindEntry:bindEntry,_state:dstate,
-  homeProgressHTML:homeProgressHTML,bindHomeProgress:bindHomeProgress};
+  homeProgressHTML:homeProgressHTML,bindHomeProgress:bindHomeProgress,
+  pullFromCloud:pullDegreeFromCloud,syncToCloudNow:syncDegreeToCloudNow};
 })();

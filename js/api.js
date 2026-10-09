@@ -306,6 +306,19 @@
     var q='?limit='+(limit||100)+(before?'&before='+encodeURIComponent(before):'');
     return apiGet('/v1/groups/'+encodeURIComponent(groupId)+'/messages'+q);
   }
+  /* ---------- degree progress sync (follows the account across devices) ---------- */
+  function getDegreeProgress(){
+    if(!isLoggedIn()) return Promise.resolve(null);
+    return apiGet('/v1/me/degree-progress').catch(function(){ return null; });
+  }
+  function putDegreeProgress(trackedSlug, progress, clientUpdatedAt){
+    if(!isLoggedIn()) return Promise.resolve(null);
+    return apiPost('/v1/me/degree-progress', {
+      tracked_slug: trackedSlug||null,
+      progress: progress||{},
+      client_updated_at: clientUpdatedAt||null
+    }).catch(function(){ return null; });
+  }
 
   window.HUB=window.HUB||{};
   window.HUB.api={
@@ -324,6 +337,8 @@
     createConversation:createConversation, listConversations:listConversations,
     sendMessage:sendMessage, getMessages:getMessages,
     // group messaging
-    sendGroupMessage:sendGroupMessage, getGroupMessages:getGroupMessages
+    sendGroupMessage:sendGroupMessage, getGroupMessages:getGroupMessages,
+    // degree progress sync
+    getDegreeProgress:getDegreeProgress, putDegreeProgress:putDegreeProgress
   };
 })();
