@@ -1,0 +1,711 @@
+{
+ "institution": {
+  "city": "Scranton, PA",
+  "kind": "private",
+  "name": "University of Scranton",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2025-2026 (see honesty note)",
+  "degree": "BSN",
+  "id": "university-of-scranton-bsn-nursing",
+  "major": "Nursing",
+  "notes": "Source: University of Scranton official admissions sample-curriculum PDF (admissions.scranton.edu/academic-programs/academic-programs-pdfs/nursing.pdf), 'NURSING 127.5 Credits', which states 'This is a sample curriculum. Please refer to the 2025-2026 Undergraduate Catalog at scranton.edu/catalog.' CATALOG-YEAR HONESTY NOTE: transcribed from the admissions PDF (current as retrieved 2026-10-09); the Acalog catalog program page retrievable at collection time was the 2023-2024 archived edition, whose 'Nursing Curriculum' table corroborates the PDF's term structure. REPEATED COURSES (allow_repeated_courses): CHEM 110 Introductory Chemistry is a two-semester 3+3 sequence (Year 1 Fall and Spring); FYS 101 First Year Seminar is a 0-credit requirement in both Year 1 terms. Term sums verified against the PDF's published term totals (16/16/15/17/18/15/15.5/15 = 127.5). Fourth Year Spring: the PDF's printed course list sums to 12 but its published term total is 15; the 2023-2024 catalog curriculum table assigns a 3-credit Free Elective to Fourth Year Spring, so a 'FREE ELECT Free Elective (3)' choice slot is included there with this disclosure — not invented. 'PSYC 210 or EDUC 120' is one alternative slot (or-linked alternatives occupy one slot per standard). Prereq ordering follows the catalog's Level I/II/III progression (250/251 fundamentals before 350/352/360/361/371/373; those before 450/452/471/472/491).",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introductory Chemistry"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 110/110L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Human Anatomy and Physiology I (Lecture + Lab)"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "WRTG 107",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Composition"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 120",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Philosophy"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Psychology"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "FYS 101",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "First Year Seminar"
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 140",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Foundations of Professional Nursing"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM 110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introductory Chemistry"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 111/111L",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "BIOL 110/110L"
+      ],
+      "title": "Human Anatomy and Physiology II (Lecture + Lab)"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'FREE ELECT Free Elective' (3 credits)",
+      "code": "FREE-ELECT-3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'HUMN ELEC Humanities Elective' (3 credits)",
+      "code": "HUMN-ELEC-3A",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities Elective"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "FYS 101",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "First Year Seminar"
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Year 1 Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 250",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Physical and Health Assessment"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 250L",
+      "coreq": [
+       {
+        "course": "NURS 250",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "Physical and Health Assessment Clinical Lab"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "BIOL 110/110L"
+      ],
+      "title": "Introductory Medical Microbiology"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'PSYC 210 Statistics in the Behavioral Sciences or EDUC 120 Applied Statistics' (3 credits) — one slot",
+      "code": "PSYC-210-OR-EDUC-120",
+      "credits": 3,
+      "options": [
+       {
+        "code": "PSYC 210",
+        "title": "Statistics in the Behavioral Sciences"
+       },
+       {
+        "code": "EDUC 120",
+        "title": "Applied Statistics"
+       }
+      ],
+      "prereq": [],
+      "title": "Statistics (PSYC 210 or EDUC 120)"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 210",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Ethics"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "T/RS 121",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Theology I: Introduction to the Bible"
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 2 Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 251",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 250"
+      ],
+      "title": "Fundamentals of Nursing"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 251L",
+      "coreq": [
+       {
+        "course": "NURS 251",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 250"
+      ],
+      "title": "Clinical Experience in Fundamentals of Nursing"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 262",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "NURS 250"
+      ],
+      "title": "Pharmacotherapeutics for Nurses I"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "NUTR 220",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Nutrition for the Health Care Professions"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "T/RS 122",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "T/RS 121"
+      ],
+      "title": "Theology II: Introduction to Christian Theology"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'HUMN ELECT Humanities Elective' (3 credits)",
+      "code": "HUMN-ELEC-3B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities Elective"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 293",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 251"
+      ],
+      "title": "Principles of Research and Evidenced-Based Practice"
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Year 2 Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 251",
+       "NURS 262"
+      ],
+      "title": "Nursing Care of the Adults I"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 350L",
+      "coreq": [
+       {
+        "course": "NURS 350",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 251",
+       "NURS 262"
+      ],
+      "title": "Clinical Experience in Nursing Care of Adults I"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 352",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 251",
+       "NURS 262"
+      ],
+      "title": "Nursing Care in Psychiatric and Mental Health"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 352L",
+      "coreq": [
+       {
+        "course": "NURS 352",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 251",
+       "NURS 262"
+      ],
+      "title": "Clinical Experience in Psychiatric and Mental Health Nursing"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 360",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 262"
+      ],
+      "title": "Pharmacotherapeutics for Nurses II"
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHIL 212",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "PHIL 210"
+      ],
+      "title": "Medical Ethics"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'HUMN ELECT Humanities Elective' (3 credits)",
+      "code": "HUMN-ELEC-3C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities Elective"
+     }
+    ],
+    "declared_credits": 18,
+    "label": "Year 3 Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 361",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 360"
+      ],
+      "title": "Pharmacotherapeutics for Nurses III"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 371",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 350"
+      ],
+      "title": "Nursing Care of Adults II"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 371L",
+      "coreq": [
+       {
+        "course": "NURS 371",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 350"
+      ],
+      "title": "Clinical Experience in Nursing Care of Adults II"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 373",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 352"
+      ],
+      "title": "Nursing Care of the Childbearing Family"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 373L",
+      "coreq": [
+       {
+        "course": "NURS 373",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 352"
+      ],
+      "title": "Clinical Experience in Nursing Care of the Childbearing Family"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'HUMN ELECT Humanities Elective' (3 credits)",
+      "code": "HUMN-ELEC-3D",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Humanities Elective"
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 3 Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 450",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 371"
+      ],
+      "title": "Nursing Care of Adults III"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 450L",
+      "coreq": [
+       {
+        "course": "NURS 450",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 371"
+      ],
+      "title": "Clinical Experience in Nursing Care of Adults III"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 452",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 373"
+      ],
+      "title": "Nursing Care of Children and Families"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 452L",
+      "coreq": [
+       {
+        "course": "NURS 452",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 1.5,
+      "options": [],
+      "prereq": [
+       "NURS 373"
+      ],
+      "title": "Clinical Experience in Nursing Care of Children and Families"
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'PSYC ELECT Psychology Elective' (3 credits)",
+      "code": "PSYC-ELEC-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Psychology Elective"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Catalog literal 'FREE ELECT Free Elective' (3 credits)",
+      "code": "FREE-ELECT-3B",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective"
+     }
+    ],
+    "declared_credits": 15.5,
+    "label": "Year 4 Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 471",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 450",
+       "NURS 452"
+      ],
+      "title": "Nursing Care in Community Health"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 471L",
+      "coreq": [
+       {
+        "course": "NURS 471",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 450",
+       "NURS 452"
+      ],
+      "title": "Clinical Experience in Nursing Care in Community Health"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 472",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 450",
+       "NURS 452"
+      ],
+      "title": "Advanced Nursing and Transition to Professional Practice"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 472L",
+      "coreq": [
+       {
+        "course": "NURS 472",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "NURS 450",
+       "NURS 452"
+      ],
+      "title": "Clinical Experience in Advanced Nursing and Transition to Professional Practice"
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "NURS 491",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "NURS 450",
+       "NURS 452"
+      ],
+      "title": "Senior Seminar"
+     },
+     {
+      "category": "elective",
+      "choice": true,
+      "choice_note": "The PDF's printed Fourth Year Spring course list sums to 12 against its published term total of 15; the 2023-2024 catalog 'Nursing Curriculum' table assigns a 3-credit Free Elective to Fourth Year Spring. Included as a choice slot with this disclosure.",
+      "code": "FREE-ELECT-3C",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective"
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Year 4 Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "http://admissions.scranton.edu/academic-programs/academic-programs-pdfs/nursing.pdf",
+  "total_credits": 127.5,
+  "transfer_confidence": "tccns_equivalencies",
+  "allow_repeated_courses": true
+ }
+}
