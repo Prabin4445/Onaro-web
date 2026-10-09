@@ -1,0 +1,391 @@
+{
+ "institution": {
+  "city": "Flushing",
+  "kind": "private",
+  "name": "Vaughn College of Aeronautics and Technology",
+  "state": "NY"
+ },
+ "plan": {
+  "catalog_year": "Fall 2021 - Spring 2023",
+  "degree": "AAS",
+  "id": "vaughn-college-of-aeronautics-and-technology-aas-aeronautical-engineering-technology",
+  "major": "Aeronautical Engineering Technology",
+  "notes": "Source: official Vaughn College curriculum sheet 'AERONAUTICAL ENGINEERING TECHNOLOGY (DAET) - Associate in Applied Science (AAS) (Fall/2021 - Spring/2023)', Rev.04/2021 (vaughn.edu), transcribed exactly: four semesters (16/17/18/13) = 64 credits (GRAND TOTAL CREDITS: 64). Credits used are the sheet's 'Total Cr.' per course (lecture + lab combined). CD101 Career Development Seminar is a required 0-credit course (marked required_zero). 'Placement' prerequisites are not real courses and are omitted. EGR230's catalog prerequisite is 'EGR235 OR MEE235'; MEE235 is not in this AAS sequence, so prereq is recorded as EGR235 with the alternative documented here. Corequisites shown on the sheet (e.g. PHY120L with PHY120, CDE117L with CDE117, CDE385L with CDE385) are not modeled as courses; their credit is included in the lecture course's total as published. DP209 AAS Degree Project carries the sheet note 'This course should be taken during the last semester'. Category mapping: general-education competency courses (MAT, ENG, PHY, POL254, HIS141, FYI101) = core; technical courses = major. No courses invented.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "FYI101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "First Year Initiatives",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT115",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Pre-Calculus",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG110",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CDE117",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Computer Aided Design I (CAD I)",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY120",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "College Physics I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Semester I",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CD101",
+      "credits": 0,
+      "options": [],
+      "prereq": [],
+      "required_zero": true,
+      "title": "Career Development Seminar",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR115",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT115",
+       "PHY120"
+      ],
+      "title": "Engineering Mechanics I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR235",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT115",
+       "PHY120"
+      ],
+      "title": "Material Science and Composites",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG120",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG110"
+      ],
+      "title": "English II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT120",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MAT115"
+      ],
+      "title": "Calculus I",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY220",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHY120",
+       "MAT115"
+      ],
+      "title": "College Physics II",
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "Semester II",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR220",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "EGR115",
+       "MAT120"
+      ],
+      "title": "Strength of Materials I",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CDE385",
+      "credits": 2,
+      "options": [],
+      "prereq": [
+       "CDE117"
+      ],
+      "title": "CATIA I",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR215",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "EGR115",
+       "MAT120",
+       "PHY220"
+      ],
+      "title": "Engineering Mechanics II",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR210",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT120",
+       "PHY220"
+      ],
+      "title": "Thermodynamics",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "POL254",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG110"
+      ],
+      "title": "American Government",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR230",
+      "credits": 1,
+      "options": [],
+      "prereq": [
+       "EGR235"
+      ],
+      "title": "Mechanical Testing and Evaluation Lab",
+      "slot_id": "s3-5",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MAT220",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MAT120"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s3-6",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 18,
+    "label": "Semester III",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR345",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "EGR210",
+       "MAT220"
+      ],
+      "title": "Fluid Mechanics",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EGR340",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "EGR220",
+       "MAT220"
+      ],
+      "title": "Computational Methods in Engineering",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIS141",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG110"
+      ],
+      "title": "Global Civilization",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG290",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG110"
+      ],
+      "title": "Public Speaking",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DP209",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "title": "AAS Degree Project",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Semester IV",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.vaughn.edu/wp-content/uploads/2021/11/1-F2021_S2023-AAS-Aeronautical-Engineering-Technology_FINAL-HR.pdf",
+  "total_credits": 64,
+  "transfer_confidence": "",
+  "content_hash": "a5561d34c368f7e66630a1b315be377a9d4e11af1e9fcb5218c8df06eca6ae4e",
+  "last_verified": "2026-10-09"
+ }
+}
