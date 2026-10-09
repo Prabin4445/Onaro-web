@@ -271,16 +271,27 @@ def check_live():
         'js/app.js',
         'index.html',
     ]
+    def curl_status(u):
+        # curl is the reliable path in this sandbox; urllib's connection gets
+        # intermittently killed by the egress proxy while curl succeeds.
+        try:
+            p = subprocess.run(
+                ['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}',
+                 '--max-time', '25', '-A', 'OnaroHealthCheck/1.0',
+                 LIVE + '/' + u],
+                capture_output=True, text=True, timeout=40)
+            code = p.stdout.strip()
+            return int(code) if code.isdigit() else None
+        except Exception:
+            return None
+
     bad = []
     for u in urls:
-        try:
-            req = urllib.request.Request(LIVE + '/' + u,
-                                         headers={'User-Agent': 'OnaroHealthCheck/1.0'})
-            with urllib.request.urlopen(req, timeout=20) as r:
-                if r.status != 200:
-                    bad.append(f'{u}: http {r.status}')
-        except Exception as e:
-            bad.append(f'{u}: {str(e)[:120]}')
+        code = curl_status(u)
+        if code is None:
+            bad.append(f'{u}: curl fetch failed (transient)')
+        elif code != 200:
+            bad.append(f'{u}: http {code}')
     ok_counts['live_files_ok'] = len(urls) - len(bad)
     for b in bad:
         # WARN not ERROR: live blips can be transient; recheck next run
@@ -288,18 +299,14 @@ def check_live():
     # spot-check one per-school degree file + one faculty file on live
     for probe in ['data/degrees/dallas-college-aa-business.json',
                   'data/faculty/alberta-university-of-the-arts.json']:
-        try:
-            req = urllib.request.Request(LIVE + '/' + probe,
-                                         headers={'User-Agent': 'OnaroHealthCheck/1.0'})
-            with urllib.request.urlopen(req, timeout=20) as r:
-                if r.status != 200:
-                    report('ERROR', 'live', f'{probe}: http {r.status} — per-school data 404 on live')
-        except Exception as e:
+        code = curl_status(probe)
+        if code is None:
             # WARN not ERROR: a connection exception proves nothing about the live
-            # site — sandbox egress is flaky for Python (urllib gets its connection
-            # closed while curl on the same URL succeeds). Only an actual non-200
-            # response proves a live-site problem.
-            report('WARN', 'live', f'{probe}: {str(e)[:120]} — transient fetch failure, site not proven down')
+            # site — sandbox egress is flaky. Only an actual non-200 response
+            # proves a live-site problem.
+            report('WARN', 'live', f'{probe}: fetch failed — transient, site not proven down')
+        elif code != 200:
+            report('ERROR', 'live', f'{probe}: http {code} — per-school data not serving on live')
 
 def write_report():
     os.makedirs(REPORT_DIR, exist_ok=True)
