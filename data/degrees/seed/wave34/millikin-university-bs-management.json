@@ -1,0 +1,554 @@
+{
+ "institution": {
+  "name": "Millikin University",
+  "city": "Decatur",
+  "state": "IL",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "millikin-university-bs-management",
+  "degree": "BS",
+  "major": "Management",
+  "catalog_year": "2026-2027",
+  "total_credits": 121,
+  "source_url": "https://millikin.edu/sites/default/files/2026-06/Management%20060526.pdf",
+  "transfer_confidence": "",
+  "notes": "Grade footnotes as printed: 1 = C- or better required; 2 = C+ or better required; 3 = C or better required. Official Millikin '8-Semester Plan' template; the document states: 'The schedule above provides a template. Schedules will vary by student.' Undergraduate graduation requirement: 120 credits.  External prereqs include EC 110, the alternate \u2018or\u2019 prerequisite option for FI 340 not modeled in the term plan. Semester totals as printed (15/16/15/15/15/15/15/15) sum to 121; the university-wide graduation requirement is 120 credits \u2014 plan transcribed exactly as published.",
+  "external_prereqs": [
+   "MA 098",
+   "MA 110",
+   "EC 110"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester 1",
+    "courses": [
+     {
+      "code": "IN 140",
+      "title": "Millikin Foundations",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "EN 181",
+      "title": "University Writing",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ET 100",
+      "title": "Business Creation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "CO 230",
+      "title": "Public & Professional Speaking",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MA 130",
+      "title": "Elem. Prob. & Stats",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       {
+        "one_of": [
+         "MA 098",
+         "MA 110"
+        ],
+        "raw": "pre-req (MA098 or MA110)"
+       }
+      ],
+      "choice": true,
+      "choice_note": "MA 130, or elective (as printed)",
+      "options": [
+       "MA 130",
+       "Elective"
+      ]
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester 2",
+    "courses": [
+     {
+      "code": "IS 120",
+      "title": "Introduction to Business Analytics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MA 098"
+        ],
+        "raw": "pre-requisite: MA098"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "AC 230",
+      "title": "Introduction to Financial Statements",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "EC 100",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "EC 100 or EC 110 (pre-req: QR course)",
+      "options": [
+       "EC 100",
+       "EC 110"
+      ]
+     },
+     {
+      "code": "MA 130",
+      "title": "Elem. Prob. & Stats",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MA 130 or ICS #1",
+      "options": [
+       "MA 130",
+       "ICS #1"
+      ]
+     },
+     {
+      "code": "Natural Science with Lab",
+      "title": "Natural Science with Lab",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester 3",
+    "courses": [
+     {
+      "code": "EC 100",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "EC 100 or EC 110 (pre-req: QR course)",
+      "options": [
+       "EC 100",
+       "EC 110"
+      ]
+     },
+     {
+      "code": "AC 240",
+      "title": "Principles of Managerial Accounting",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AC 230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "IS 240",
+      "title": "Foundations of Information Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "EN 281",
+      "title": "Writing in the Disciplines",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       "EN 181"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Semester 4",
+    "courses": [
+     {
+      "code": "MK 200",
+      "title": "Principles of Marketing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "CO 250",
+      "title": "Written Business Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "EN 281"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Humanities in the US",
+      "title": "Humanities in the US",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ICS #2",
+      "title": "International Cultures & Structures #2",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Semester 5",
+    "courses": [
+     {
+      "code": "MG 300",
+      "title": "Organizational Behavior & Change",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EN 181"
+        ],
+        "raw": "pre-req: EN181, JR standing"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "FI 340",
+      "title": "Financial Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EC 100",
+         "EC 110"
+        ],
+        "raw": "pre-requisite: EC100 or EC110"
+       },
+       "AC 240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 370",
+      "title": "Operations Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MA 130"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Global Studies",
+      "title": "Global Studies",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Semester 6",
+    "courses": [
+     {
+      "code": "Social Sciences in the US",
+      "title": "Social Sciences in the US",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 372",
+      "title": "Quality Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MA 130"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 340",
+      "title": "Human Resource Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MG 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Creative Arts",
+      "title": "Creative Arts",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Semester 7",
+    "courses": [
+     {
+      "code": "MG 344",
+      "title": "Leading Diverse Organizations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MG 300"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 471",
+      "title": "Management Internship",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MG 300",
+       "MG 340",
+       "MG 370"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "IB 330",
+      "title": "International Business",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "AC 230"
+        ],
+        "raw": "pre-requisite: AC230"
+       },
+       {
+        "one_of": [
+         "EC 100"
+        ],
+        "raw": "pre-requisite: EC100"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "300/400 Tabor Elective",
+      "title": "300/400 Tabor Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Semester 8",
+    "courses": [
+     {
+      "code": "BU 450",
+      "title": "Global Business Strategy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FI 340",
+       "MG 300",
+       "MK 200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 341",
+      "title": "Data Analytics for Managers",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IS 120",
+       "MA 130"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MG 375",
+      "title": "Project Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "300/400 Elective",
+      "title": "300/400 Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective \u2014 open slot as printed in the official plan",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}

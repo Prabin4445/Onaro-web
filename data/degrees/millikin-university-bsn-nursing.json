@@ -1,0 +1,493 @@
+{
+ "institution": {
+  "name": "Millikin University",
+  "city": "Decatur",
+  "state": "IL",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "millikin-university-bsn-nursing",
+  "degree": "BSN",
+  "major": "Nursing",
+  "catalog_year": "2024-2025",
+  "total_credits": 121,
+  "source_url": "https://catalog.millikin.edu/preview_program.php?catoid=3&poid=248&returnto=98",
+  "transfer_confidence": "",
+  "notes": "Official 'The BSN Curriculum' guide: 'The following curriculum guide outlines the typical basic curriculum progression for four-year (8 semester) students and serves as a general guideline only.' Sourced from the 2024-2025 Undergraduate University Catalog (archived); the current 2026-2027 catalog program page was not directly reachable, so the archived edition is used and labeled honestly. Semester credit sums as printed (13/16/17/16/15/15/16/13) total 121; the BSN graduation requirement is a minimum of 120 credits — plan transcribed exactly as published. Progression rules (documented, not modeled as prereqs): all major courses require C- or better; CGPA 2.5 minimum; only one prerequisite course may be repeated once; only one required nursing course may be repeated once. The conditional 'If math placement has not been met: MA 097 or MA 098' row is placement-conditional and excluded from the term plan. CH 203/205 are prerequisites for BI 206 (per catalog note) but not for the nursing major itself.",
+  "external_prereqs": [
+   "MA 097",
+   "MA 098"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Freshman first semester",
+    "courses": [
+     {
+      "code": "IN 140",
+      "title": "University Seminar",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 181",
+      "title": "University Writing",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PS 130",
+      "title": "Introductory Psychology",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 114",
+      "title": "Fundamentals of Chemistry",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Freshman second semester",
+    "courses": [
+     {
+      "code": "CO 230",
+      "title": "Public & Professional Speaking",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "CO 230 or CO 200",
+      "options": [
+       "CO 230",
+       "CO 200"
+      ],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PS 240",
+      "title": "Lifespan Development",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "PS 240 or NU 250 (Human Growth & Development & U.S. Lifespan Cultural Diversity)",
+      "options": [
+       "PS 240",
+       "NU 250"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Social Sciences in the US",
+      "title": "Social Sciences in the US",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Social Sciences in the US (or elective if taking NU250)",
+      "options": [
+       "Social Sciences in the US",
+       "Elective"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 203",
+      "title": "Essentials of Organic and Biochemistry",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CH 205",
+      "title": "Essentials of Organic and Biochemistry Laboratory",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "International Cultures and Structures",
+      "title": "International Cultures and Structures",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "International Cultures and Structures — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s2-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore first semester",
+    "courses": [
+     {
+      "code": "BI 206",
+      "title": "Human Anatomy and Physiology I",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "CH 203",
+       "CH 205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BI 230",
+      "title": "Principles of Microbiology",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 281",
+      "title": "Writing in the Disciplines",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Humanities in the United States",
+      "title": "Humanities in the United States",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "International Cultures and Structures",
+      "title": "International Cultures and Structures",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "International Cultures and Structures — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore second semester",
+    "courses": [
+     {
+      "code": "BI 207",
+      "title": "Human Anatomy and Physiology II",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 311",
+      "title": "Health Assessment",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 202",
+      "title": "Adult Health Nursing I",
+      "credits": 6,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 203",
+      "title": "Fundamental Nursing Concepts & Clinical Calculations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior first semester",
+    "courses": [
+     {
+      "code": "NU 316",
+      "title": "Pathophysiology & Pharmacology I",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 410",
+      "title": "Mental Health-Mental Illness Nursing",
+      "credits": 9,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Global Studies",
+      "title": "Global Studies",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior second semester",
+    "courses": [
+     {
+      "code": "NU 317",
+      "title": "Pathophysiology & Pharmacology II",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 400",
+      "title": "Parent-Child Nursing",
+      "credits": 9,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PS 201",
+      "title": "Statistical Methods in the Behavioral Sciences",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "PS 201 or MA 130 (Elementary Probability and Statistics with Spreadsheets) or NU 201 (Statistical Concepts for Healthcare)",
+      "options": [
+       "PS 201",
+       "MA 130",
+       "NU 201"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior first semester",
+    "courses": [
+     {
+      "code": "NU 420",
+      "title": "Adult Health Nursing II",
+      "credits": 9,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 481",
+      "title": "Issues in Nursing Research and Management",
+      "credits": 4,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Creative Arts",
+      "title": "Creative Arts",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior second semester",
+    "courses": [
+     {
+      "code": "NU 430",
+      "title": "Community Health Nursing",
+      "credits": 9,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 440",
+      "title": "Transition to Professional Nursing",
+      "credits": 1,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NU 475",
+      "title": "Professional Nursing Intern Capstone",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "a371ca2db880b9939fa5b062c251f4d0215425b2808dc47d422998f309d9e295",
+  "last_verified": "2026-10-09"
+ }
+}

@@ -1,0 +1,664 @@
+{
+ "institution": {
+  "name": "Millikin University",
+  "city": "Decatur",
+  "state": "IL",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "millikin-university-bs-management-information-systems",
+  "degree": "BS",
+  "major": "Management Information Systems",
+  "catalog_year": "2026-2027",
+  "total_credits": 121,
+  "source_url": "https://millikin.edu/sites/default/files/2026-06/MIS%20060526.pdf",
+  "transfer_confidence": "",
+  "notes": "Grade footnotes as printed: 1 = C- or better required; 2 = C+ or better required; 3 = C or better required. Official Millikin '8-Semester Plan' template; the document states: 'The schedule above provides a template. Schedules will vary by student.' Undergraduate graduation requirement: 120 credits.  External prereqs include EC 110 and CS 135, alternate ‘or’ prerequisite options (FI 340; IS 321) not modeled in the term plan. Semester totals as printed (15/16/15/15/15/15/15/15) sum to 121; the university-wide graduation requirement is 120 credits — plan transcribed exactly as published. The plan's degree worksheet lists MIS elective options: IS 310, IS 322, IS 332, IS 350, IS 334, IS 362, IS 410, IS 470, IS 390.",
+  "external_prereqs": [
+   "MA 098",
+   "MA 110",
+   "EC 110",
+   "CS 135"
+  ],
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester 1",
+    "courses": [
+     {
+      "code": "IN 140",
+      "title": "Millikin Foundations",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 181",
+      "title": "University Writing",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ET 100",
+      "title": "Business Creation",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 120",
+      "title": "Introduction to Business Analytics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "MA 098"
+        ],
+        "raw": "pre-requisite: MA098"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MA 130",
+      "title": "Elem. Prob. & Stats",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       {
+        "one_of": [
+         "MA 098",
+         "MA 110"
+        ],
+        "raw": "pre-req (MA098 or MA110)"
+       }
+      ],
+      "choice": true,
+      "choice_note": "MA 130, or elective (as printed)",
+      "options": [
+       "MA 130",
+       "Elective"
+      ],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester 2",
+    "courses": [
+     {
+      "code": "IS 240",
+      "title": "Foundations of Information Systems",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AC 230",
+      "title": "Introduction to Financial Statements",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EC 100",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "EC 100 or EC 110 (pre-req: QR course)",
+      "options": [
+       "EC 100",
+       "EC 110"
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MA 130",
+      "title": "Elem. Prob. & Stats",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MA 130 or ICS #1",
+      "options": [
+       "MA 130",
+       "ICS #1"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Natural Science with Lab",
+      "title": "Natural Science with Lab",
+      "credits": 4,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester 3",
+    "courses": [
+     {
+      "code": "EC 100",
+      "title": "Principles of Macroeconomics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "EC 100 or EC 110 (pre-req: QR course)",
+      "options": [
+       "EC 100",
+       "EC 110"
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "AC 240",
+      "title": "Principles of Managerial Accounting",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "AC 230"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CO 230",
+      "title": "Public & Professional Speaking",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "EN 281",
+      "title": "Writing in the Disciplines",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       "EN 181"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Semester 4",
+    "courses": [
+     {
+      "code": "MK 200",
+      "title": "Principles of Marketing",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CO 250",
+      "title": "Written Business Communication",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "EN 281"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 221",
+      "title": "Programming Fundamentals",
+      "credits": 3,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Humanities in the US",
+      "title": "Humanities in the US",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Semester 5",
+    "courses": [
+     {
+      "code": "MG 300",
+      "title": "Organizational Behavior & Change",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EN 181"
+        ],
+        "raw": "pre-req: EN181, JR standing"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 321",
+      "title": "Systems Analysis and Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "IS 221",
+         "CS 135"
+        ],
+        "raw": "pre-requisite: IS221 or CS135"
+       }
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FI 340",
+      "title": "Financial Management",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       {
+        "one_of": [
+         "EC 100",
+         "EC 110"
+        ],
+        "raw": "pre-requisite: EC100 or EC110"
+       },
+       "AC 240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Creative Arts",
+      "title": "Creative Arts",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "300/400 Elective",
+      "title": "300/400 Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "300/400 Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Semester 6",
+    "courses": [
+     {
+      "code": "Social Sciences in the US",
+      "title": "Social Sciences in the US",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 311",
+      "title": "IT Infrastructure",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IS 240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IS 370",
+      "title": "Database Application Development",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IS 120",
+       "IS 240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "300/400 Elective",
+      "title": "300/400 Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "300/400 Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Semester 7",
+    "courses": [
+     {
+      "code": "IS 471",
+      "title": "MIS Internship",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "IS 240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Global Studies",
+      "title": "Global Studies",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MIS Elective",
+      "title": "MIS Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MIS Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MIS Elective",
+      "title": "MIS Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MIS Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Semester 8",
+    "courses": [
+     {
+      "code": "BU 450",
+      "title": "Global Business Strategy",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "FI 340",
+       "MG 300",
+       "MK 200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MIS Elective",
+      "title": "MIS Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "MIS Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "300/400 Elective",
+      "title": "300/400 Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "300/400 Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ICS #2",
+      "title": "International Cultures & Structures #2",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "Elective",
+      "title": "Elective",
+      "credits": 3,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Elective — open slot as printed in the official plan",
+      "options": [],
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "740f2db4e717f46c50ee2930b899b3a32e0b33c08db4c541a459ddcf7bfde5fb",
+  "last_verified": "2026-10-09"
+ }
+}
