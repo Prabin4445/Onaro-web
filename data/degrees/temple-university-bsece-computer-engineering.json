@@ -1,0 +1,906 @@
+{
+ "institution": {
+  "city": "Philadelphia",
+  "kind": "university",
+  "name": "Temple University",
+  "state": "PA"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "BSECE",
+  "id": "temple-university-bsece-computer-engineering",
+  "major": "Electrical and Computer Engineering (Computer Engineering Concentration)",
+  "notes": "Source: Temple University Undergraduate Bulletin (current), 'Electrical and Computer Engineering BSECE with Computer Engineering Concentration — Suggested Plan for New Students Starting in the 2026-2027 Academic Year'. 128 total credits, 8 semesters; semester sums match catalog-published term totals (16/15/16/15/18/16/17/15). The ECE Technical Elective slot is transcribed with the catalog's official ECE technical elective list as options. Prerequisite ordering verified: MATH 1041 before MATH 1042 before MATH 2041; PHYS 1061 before PHYS 1062; ECE 2342 before ECE 2352; ECE 2612 before ECE 3612 before ECE 4612; ECE 3516 before ECE 3522; ECE 3822 before ECE 3824; ECE 4176 before ENGR 4296.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: MATH 1041 Calculus I or MATH 1941 Honors Calculus I.",
+      "code": "MATH-1041",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "MATH-1041",
+        "credits": 4.0,
+        "title": "Calculus I"
+       },
+       {
+        "code": "MATH-1941",
+        "credits": 4.0,
+        "title": "Honors Calculus I"
+       }
+      ],
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: PHYS 1061 Elementary Classical Physics I or PHYS 1961 Honors.",
+      "code": "PHYS-1061",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "PHYS-1061",
+        "credits": 4.0,
+        "title": "Elementary Classical Physics I"
+       },
+       {
+        "code": "PHYS-1961",
+        "credits": 4.0,
+        "title": "Honors Elementary Classical Physics I"
+       }
+      ],
+      "prereq": [],
+      "title": "Elementary Classical Physics I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: ENGR 1101 Introduction to Engineering and Engineering Technology or ENGR 1901 Honors.",
+      "code": "ENGR-1101",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "ENGR-1101",
+        "credits": 3.0,
+        "title": "Introduction to Engineering and Engineering Technology"
+       },
+       {
+        "code": "ENGR-1901",
+        "credits": 3.0,
+        "title": "Honors Introduction to Engineering"
+       }
+      ],
+      "prereq": [],
+      "title": "Introduction to Engineering and Engineering Technology",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR-1001",
+      "credits": 1.0,
+      "options": [],
+      "prereq": [],
+      "title": "College of Engineering First Year Seminar",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog choice: ENG 0802 Analytical Reading and Writing, ENG 0812 ESL, or ENG 0902 Honors.",
+      "code": "ENG-0802",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "ENG-0802",
+        "credits": 4.0,
+        "title": "Analytical Reading and Writing"
+       },
+       {
+        "code": "ENG-0812",
+        "credits": 4.0,
+        "title": "Analytical Reading and Writing: ESL"
+       },
+       {
+        "code": "ENG-0902",
+        "credits": 4.0,
+        "title": "Honors Analytical Reading and Writing"
+       }
+      ],
+      "prereq": [],
+      "title": "Analytical Reading and Writing",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.0,
+    "label": "Year 1 Fall",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: MATH 1042 Calculus II or MATH 1942 Honors Calculus II.",
+      "code": "MATH-1042",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "MATH-1042",
+        "credits": 4.0,
+        "title": "Calculus II"
+       },
+       {
+        "code": "MATH-1942",
+        "credits": 4.0,
+        "title": "Honors Calculus II"
+       }
+      ],
+      "prereq": [
+       "MATH-1041"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: PHYS 1062 Elementary Classical Physics II or PHYS 1962 Honors.",
+      "code": "PHYS-1062",
+      "credits": 4.0,
+      "options": [
+       {
+        "code": "PHYS-1062",
+        "credits": 4.0,
+        "title": "Elementary Classical Physics II"
+       },
+       {
+        "code": "PHYS-1962",
+        "credits": 4.0,
+        "title": "Honors Elementary Classical Physics II"
+       }
+      ],
+      "prereq": [
+       "PHYS-1061"
+      ],
+      "title": "Elementary Classical Physics II",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CHEM-1035",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Chemistry for Engineers",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: CHEM 1033/1953 General Chemistry Laboratory I or CHEM 1036 Chemistry Laboratory for Engineers.",
+      "code": "CHEM-1033",
+      "credits": 1.0,
+      "options": [
+       {
+        "code": "CHEM-1033",
+        "credits": 1.0,
+        "title": "General Chemistry Laboratory I"
+       },
+       {
+        "code": "CHEM-1953",
+        "credits": 1.0,
+        "title": "Honors Chemical Science Laboratory I"
+       },
+       {
+        "code": "CHEM-1036",
+        "credits": 1.0,
+        "title": "Chemistry Laboratory for Engineers"
+       }
+      ],
+      "prereq": [],
+      "title": "General Chemistry Laboratory I",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR-1102",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Engineering Problem Solving",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15.0,
+    "label": "Year 1 Spring",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR-2011",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Analysis and Applications",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGR-2013",
+      "credits": 1.0,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Analysis and Applications Lab",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-1111",
+      "credits": 4.0,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Computation I",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-2342",
+      "credits": 5.0,
+      "options": [],
+      "prereq": [],
+      "title": "Circuits and Electronics I",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog choice: IH 0851 Intellectual Heritage I: The Good Life or IH 0951 Honors.",
+      "code": "IH-0851",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "IH-0851",
+        "credits": 3.0,
+        "title": "Intellectual Heritage I: The Good Life"
+       },
+       {
+        "code": "IH-0951",
+        "credits": 3.0,
+        "title": "Honors Intellectual Heritage I: The Good Life"
+       }
+      ],
+      "prereq": [],
+      "title": "Intellectual Heritage I: The Good Life",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.0,
+    "label": "Year 2 Fall",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: MATH 2041 Differential Equations I or MATH 2941 Honors.",
+      "code": "MATH-2041",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "MATH-2041",
+        "credits": 3.0,
+        "title": "Differential Equations I"
+       },
+       {
+        "code": "MATH-2941",
+        "credits": 3.0,
+        "title": "Honors Differential Equations I"
+       }
+      ],
+      "prereq": [
+       "MATH-1042"
+      ],
+      "title": "Differential Equations I",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-2612",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Digital Circuit Design",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-2613",
+      "credits": 1.0,
+      "options": [],
+      "prereq": [],
+      "title": "Digital Circuit Design Laboratory",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-2352",
+      "credits": 5.0,
+      "options": [],
+      "prereq": [
+       "ECE-2342"
+      ],
+      "title": "Circuits and Electronics II",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog choice: IH 0852 Intellectual Heritage II: The Common Good or IH 0952 Honors.",
+      "code": "IH-0852",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "IH-0852",
+        "credits": 3.0,
+        "title": "Intellectual Heritage II: The Common Good"
+       },
+       {
+        "code": "IH-0952",
+        "credits": 3.0,
+        "title": "Honors Intellectual Heritage II: The Common Good"
+       }
+      ],
+      "prereq": [],
+      "title": "Intellectual Heritage II: The Common Good",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15.0,
+    "label": "Year 2 Spring",
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: ECE 3516 Signals and Systems or ECE 3916 Honors.",
+      "code": "ECE-3516",
+      "credits": 5.0,
+      "options": [
+       {
+        "code": "ECE-3516",
+        "credits": 5.0,
+        "title": "Signals and Systems"
+       },
+       {
+        "code": "ECE-3916",
+        "credits": 5.0,
+        "title": "Honors Signals and Systems"
+       }
+      ],
+      "prereq": [],
+      "title": "Signals and Systems",
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: ECE 3612 Processor Systems or ECE 3914 Honors.",
+      "code": "ECE-3612",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "ECE-3612",
+        "credits": 3.0,
+        "title": "Processor Systems"
+       },
+       {
+        "code": "ECE-3914",
+        "credits": 3.0,
+        "title": "Honors Processor Systems"
+       }
+      ],
+      "prereq": [
+       "ECE-2612"
+      ],
+      "title": "Processor Systems",
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: ECE 3613 Processor Systems Laboratory or ECE 3915 Honors.",
+      "code": "ECE-3613",
+      "credits": 1.0,
+      "options": [
+       {
+        "code": "ECE-3613",
+        "credits": 1.0,
+        "title": "Processor Systems Laboratory"
+       },
+       {
+        "code": "ECE-3915",
+        "credits": 1.0,
+        "title": "Honors Processor Systems Laboratory"
+       }
+      ],
+      "prereq": [],
+      "title": "Processor Systems Laboratory",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog choice: ENGR 2196 Technical Communication [WI] or ENGR 2996 Honors.",
+      "code": "ENGR-2196",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "ENGR-2196",
+        "credits": 3.0,
+        "title": "Technical Communication"
+       },
+       {
+        "code": "ENGR-2996",
+        "credits": 3.0,
+        "title": "Honors Technical Communication"
+       }
+      ],
+      "prereq": [],
+      "title": "Technical Communication",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'GenEd Breadth Course' (3).",
+      "code": "GENED-1",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "GenEd Breadth Course",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'GenEd Breadth Course' (3).",
+      "code": "GENED-2",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "GenEd Breadth Course",
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 18.0,
+    "label": "Year 3 Fall",
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3522",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "ECE-3516"
+      ],
+      "title": "Stochastic Processes in Signals and Systems",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3622",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Embedded System Design",
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3623",
+      "credits": 1.0,
+      "options": [],
+      "prereq": [],
+      "title": "Embedded System Design Laboratory",
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3822",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Engineering Computation II",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-4612",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "ECE-3612"
+      ],
+      "title": "Advanced Processor Systems",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'GenEd Breadth Course' (3).",
+      "code": "GENED-3",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "GenEd Breadth Course",
+      "slot_id": "s6-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16.0,
+    "label": "Year 3 Spring",
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3712",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to Electromagnetic Fields and Waves",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-3824",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [
+       "ECE-3822"
+      ],
+      "title": "Engineering Computation III",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-4176",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Senior Design Project I: ECE",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Math, Science, or Engineering Elective #1' (3).",
+      "code": "MSE-ELECTIVE-1",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Math, Science, or Engineering Elective",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'GenEd Breadth Course' (3).",
+      "code": "GENED-4",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "GenEd Breadth Course",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'Free Elective' (2).",
+      "code": "FREE-ELECTIVE-1",
+      "credits": 2.0,
+      "options": [],
+      "prereq": [],
+      "title": "Free Elective",
+      "slot_id": "s7-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17.0,
+    "label": "Year 4 Fall",
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECE-4532",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Data and Computer Communication",
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog choice: ENGR 4296 Capstone Senior Design Project [WI] or ENGR 4996 Honors.",
+      "code": "ENGR-4296",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "ENGR-4296",
+        "credits": 3.0,
+        "title": "Capstone Senior Design Project"
+       },
+       {
+        "code": "ENGR-4996",
+        "credits": 3.0,
+        "title": "Honors Capstone Senior Design Project"
+       }
+      ],
+      "prereq": [
+       "ECE-4176"
+      ],
+      "title": "Capstone Senior Design Project",
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'ECE Technical Elective' (3); transcribed with the catalog's official ECE technical elective list as options.",
+      "code": "ECE-3412",
+      "credits": 3.0,
+      "options": [
+       {
+        "code": "ECE-3412",
+        "credits": 3.0,
+        "title": "Classical Control Systems"
+       },
+       {
+        "code": "ECE-3432",
+        "credits": 3.0,
+        "title": "Robotic Control using Robotic Operating System (ROS)"
+       },
+       {
+        "code": "ECE-3614",
+        "credits": 3.0,
+        "title": "Printed Circuit Board Design"
+       },
+       {
+        "code": "ECE-3732",
+        "credits": 3.0,
+        "title": "Electromechanical Energy Systems"
+       },
+       {
+        "code": "ECE-4312",
+        "credits": 3.0,
+        "title": "Microelectronics II"
+       },
+       {
+        "code": "ECE-4322",
+        "credits": 3.0,
+        "title": "VLSI Systems Design"
+       },
+       {
+        "code": "ECE-4412",
+        "credits": 3.0,
+        "title": "Modern Control Theory"
+       },
+       {
+        "code": "ECE-4422",
+        "credits": 3.0,
+        "title": "Digital Control Systems"
+       },
+       {
+        "code": "ECE-4512",
+        "credits": 3.0,
+        "title": "Digital Communication Systems"
+       },
+       {
+        "code": "ECE-4522",
+        "credits": 3.0,
+        "title": "Digital Signal Processing"
+       },
+       {
+        "code": "ECE-4527",
+        "credits": 3.0,
+        "title": "Introduction to Machine Learning and Pattern Recognition"
+       },
+       {
+        "code": "ECE-4542",
+        "credits": 3.0,
+        "title": "Telecommunications Engineering"
+       },
+       {
+        "code": "ECE-4712",
+        "credits": 3.0,
+        "title": "Power System Analysis"
+       },
+       {
+        "code": "ECE-4722",
+        "credits": 3.0,
+        "title": "Power Electronics"
+       },
+       {
+        "code": "ECE-4822",
+        "credits": 3.0,
+        "title": "Engineering Computation IV"
+       }
+      ],
+      "prereq": [],
+      "title": "Classical Control Systems",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Catalog literal 'Math, Science, or Engineering Elective #2' (3).",
+      "code": "MSE-ELECTIVE-2",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "Math, Science, or Engineering Elective",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Catalog literal 'GenEd Breadth Course' (3).",
+      "code": "GENED-5",
+      "credits": 3.0,
+      "options": [],
+      "prereq": [],
+      "title": "GenEd Breadth Course",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15.0,
+    "label": "Year 4 Spring",
+    "n": 8
+   }
+  ],
+  "source_url": "https://bulletin.temple.edu/undergraduate/engineering/electrical-computer-engineering-computer-engineering-bsece/electrical-computer-engineering-computer-engineering-bsece.pdf",
+  "total_credits": 128.0,
+  "transfer_confidence": "",
+  "content_hash": "550df2b9724d2e2fa349116c424cfff5c3e39aac8b06d99a0fa5a427073fba9d",
+  "last_verified": "2026-10-09"
+ }
+}
