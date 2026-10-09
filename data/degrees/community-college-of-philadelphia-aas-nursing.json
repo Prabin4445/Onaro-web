@@ -1,0 +1,285 @@
+{
+ "institution": {
+  "name": "Community College of Philadelphia",
+  "city": "Philadelphia",
+  "state": "PA",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "community-college-of-philadelphia-aas-nursing",
+  "degree": "AAS",
+  "major": "Nursing",
+  "total_credits": 56.0,
+  "catalog_year": "2025-2026",
+  "source_url": "https://www.ccp.edu/college-catalog/degree-programs/associate-applied-science-aas/nursing?mode=l",
+  "notes": "Source: CCP official Nursing AAS program page, 'Course Sequence' (Traditional Admission option), verified 2026-10-08. program_type professional-phase: only the 5-semester professional phase is sequenced; admission prerequisites (BIOL 109, ENGL 101, MATH 150/251, general elective) completed before Semester 1 live in external_prereqs. Degree requires 69 credits total; the 56 sequenced here + 13 pre-admission prerequisite credits = 69. Semester 1 (Summer) is 3 credits (NURS 100 only) because all other requirements are pre-admission — transcribed as published. AAS = Associate in Applied Science (career degree, RN licensure). Prerequisite chain verified: NURS 100 -> 101 -> 132 -> 231 -> 232. Humanities slot (Semester 5) is a catalog choice among PHIL 101/111/211, CMS 115, or another Humanities course.",
+  "transfer_confidence": "",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Semester 1 (Summer)",
+    "declared_credits": 3.0,
+    "courses": [
+     {
+      "code": "NURS-100",
+      "title": "Health Assessment",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "BIOL-109",
+       "ENGL-101",
+       "MATH-150"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Semester 2 (Fall)",
+    "declared_credits": 14.0,
+    "courses": [
+     {
+      "code": "NURS-101",
+      "title": "Nursing I",
+      "credits": 7.0,
+      "category": "major",
+      "prereq": [
+       "NURS-100"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "NUTR-111",
+      "title": "Introduction to Nutrition",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [
+       "ENGL-101",
+       "BIOL-109"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-110",
+      "title": "Anatomy and Physiology II",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [
+       "BIOL-109"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Semester 3 (Spring)",
+    "declared_credits": 14.0,
+    "courses": [
+     {
+      "code": "NURS-132",
+      "title": "Nursing II",
+      "credits": 7.0,
+      "category": "major",
+      "prereq": [
+       "NURS-101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL-102",
+      "title": "The Research Paper",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [
+       "ENGL-101"
+      ],
+      "choice": true,
+      "choice_note": "Catalog choice: ENGL 102 or ENGL 102H.",
+      "options": [
+       {
+        "code": "ENGL-102",
+        "credits": 3.0,
+        "title": "The Research Paper"
+       },
+       {
+        "code": "ENGL-102H",
+        "credits": 3.0,
+        "title": "The Research Paper (Honors)"
+       }
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIOL-241",
+      "title": "Microbiology",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [
+       "BIOL-109"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Semester 4 (Fall)",
+    "declared_credits": 13.0,
+    "courses": [
+     {
+      "code": "NURS-231",
+      "title": "Nursing III",
+      "credits": 7.0,
+      "category": "major",
+      "prereq": [
+       "NURS-132"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CIS-103",
+      "title": "Introduction to Information Technology",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "SOC-101",
+      "title": "Introduction to Sociology",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog choice: SOC 101 or SOC 101H.",
+      "options": [
+       {
+        "code": "SOC-101",
+        "credits": 3.0,
+        "title": "Introduction to Sociology"
+       },
+       {
+        "code": "SOC-101H",
+        "credits": 3.0,
+        "title": "Introduction to Sociology (Honors)"
+       }
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Semester 5 (Spring)",
+    "declared_credits": 12.0,
+    "courses": [
+     {
+      "code": "NURS-232",
+      "title": "Nursing IV",
+      "credits": 9.0,
+      "category": "major",
+      "prereq": [
+       "NURS-231"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "HUMANITIES-ELECTIVE",
+      "title": "Humanities Elective",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog choice: PHIL 101, PHIL 111, PHIL 211, CMS 115, or another Humanities course (3).",
+      "options": [
+       {
+        "code": "PHIL-101",
+        "credits": 3.0,
+        "title": "Introduction to Philosophy"
+       },
+       {
+        "code": "PHIL-111",
+        "credits": 3.0,
+        "title": "Critical Thinking"
+       },
+       {
+        "code": "PHIL-211",
+        "credits": 3.0,
+        "title": "Ethical Problems"
+       },
+       {
+        "code": "CMS-115",
+        "credits": 3.0,
+        "title": "Public Speaking"
+       }
+      ],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "program_type": "professional-phase",
+  "external_prereqs": [
+   "BIOL-109",
+   "ENGL-101",
+   "MATH-150",
+   "MATH-251",
+   "AH-101"
+  ],
+  "content_hash": "9a9af8b714d457dc4dba79399a9b68f840117b94510b214e5dcd7bb51483ee4b",
+  "last_verified": "2026-10-09"
+ }
+}

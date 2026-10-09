@@ -1,0 +1,591 @@
+{
+ "institution": {
+  "name": "Bucknell University",
+  "city": "Lewisburg",
+  "state": "PA",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "bucknell-university-bs-computer-science-engineering",
+  "degree": "BS",
+  "major": "Computer Science & Engineering",
+  "total_credits": 34.0,
+  "catalog_year": "2026-2027",
+  "source_url": "https://coursecatalog.bucknell.edu/collegeofengineeringcurricula/areasofstudy/computersciencecsci/",
+  "notes": "Source: Bucknell University 2026-2027 Course Catalog (official, coursecatalog.bucknell.edu), College of Engineering, 'Bachelor of Science in Computer Science & Engineering' requirements table. Bucknell measures coursework in COURSE UNITS (1 unit = one full course); transcribed in units as published (catalog total: 34). Prerequisite ordering verified: MATH 201 (Calc I) before MATH 202 (Calc II); PHYS 211 before PHYS 212; CSCI 203 before CSCI 204; CSCI 204 before CSCI 205/306; CSCI 475 Senior Design I before CSCI 476 Senior Design II. Footnote alternatives documented per course: (1) CSCI 203 waivable via AP CS A or placement; (3) STAT 227 waivable via AP Statistics or equivalent; (4) MATH 241 replaceable by MATH 280/MATH 240 combo or a Combinatorics & Graph Theory course; (6) CSCI 475/476 replaceable by ENGR 452/453. 'Elective' slots = catalog literal (SLSC/ARHC/distribution requirements per footnote text).",
+  "transfer_confidence": "",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Year Fall",
+    "declared_credits": 4.0,
+    "courses": [
+     {
+      "code": "ENGR 099",
+      "title": "Engineering Seminar: Becoming a Bucknell Engineer",
+      "credits": 0.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "required_zero": true,
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR 100",
+      "title": "Engineering Design Experience",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 201",
+      "title": "Calculus I",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "Footnote: students meeting MATH 201/202 requirements may consider a math minor/double major.",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 211",
+      "title": "Classical and Modern Physics I",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "FOUNDATION-SEMINAR",
+      "title": "Foundation Seminar (W1)",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "First Year Spring",
+    "declared_credits": 4.0,
+    "courses": [
+     {
+      "code": "CSCI 203",
+      "title": "Introduction to Computer Science",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 1: requirement can be fulfilled with transfer credit for AP Computer Science A; students with programming experience may request placement into CSCI 204 and later substitute this requirement for a CSCI elective.",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 202",
+      "title": "Calculus II",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [
+       "MATH 201"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 212",
+      "title": "Classical and Modern Physics II",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [
+       "PHYS 211"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-1",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit); distribution requirements per program footnote (SLSC/ARHC).",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Sophomore Fall",
+    "declared_credits": 4.5,
+    "courses": [
+     {
+      "code": "CSCI 201",
+      "title": "Computer Science Seminar",
+      "credits": 0.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 204",
+      "title": "Data Structures & Algorithms",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "CSCI 203"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 227",
+      "title": "Statistics and Engineering",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 3: STAT 227 requirement may be waived for students with credit for a substantially similar course (e.g., AP Statistics).",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-2",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-3",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Sophomore Spring",
+    "declared_credits": 4.5,
+    "courses": [
+     {
+      "code": "CSCI 202",
+      "title": "Research Methods",
+      "credits": 0.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 205",
+      "title": "Software Engineering and Design",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "CSCI 204"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 241",
+      "title": "Discrete Structures",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 4: any 1.5- or 2.0-credit combination of MATH 280 and MATH 240, or any 1.0-credit Combinatorics & Graph Theory course, may replace MATH 241 Discrete Structures.",
+      "options": [
+       {
+        "code": "MATH 280/MATH 240",
+        "title": "MATH 280 + MATH 240 combination"
+       },
+       {
+        "code": "COMB-GRAPH",
+        "title": "Combinatorics & Graph Theory course"
+       }
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-4",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-5",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Junior Fall",
+    "declared_credits": 4.0,
+    "courses": [
+     {
+      "code": "CSCI 306",
+      "title": "Computer Systems",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "CSCI 204"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 345",
+      "title": "Computers and Society",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ECEG 341",
+      "title": "Electrical & Computer Engineering Systems",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-6",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Junior Spring",
+    "declared_credits": 4.5,
+    "courses": [
+     {
+      "code": "CSCI 307",
+      "title": "Computer Networks and Security",
+      "credits": 0.5,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 308",
+      "title": "Programming Language Design",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 311",
+      "title": "Algorithm Design & Analysis",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATHSCI-ELECTIVE-1",
+      "title": "Math/Science Elective",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 5: any course with NSMC designation outside the Department of Computer Science.",
+      "options": [],
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-7",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Senior Fall",
+    "declared_credits": 4.5,
+    "courses": [
+     {
+      "code": "CSCI 315",
+      "title": "Operating Systems Design",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CSCI 475",
+      "title": "Senior Design I",
+      "credits": 0.5,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 6: CSCI 475 Senior Design I and CSCI 476 Senior Design II may be replaced by ENGR 452 Interdisciplinary Senior Design I and ENGR 453 Interdisciplinary Senior Design II.",
+      "options": [
+       {
+        "code": "ENGR 452",
+        "title": "Interdisciplinary Senior Design I"
+       }
+      ],
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-8",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-9",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATHSCI-ELECTIVE-2",
+      "title": "Math/Science Elective",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Footnote 5: any course with NSMC designation outside the Department of Computer Science.",
+      "options": [],
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "label": "Senior Spring",
+    "declared_credits": 4.0,
+    "courses": [
+     {
+      "code": "CSCI 476",
+      "title": "Senior Design II",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "CSCI 475"
+      ],
+      "choice": true,
+      "choice_note": "Footnote 6: may be replaced by ENGR 453 Interdisciplinary Senior Design II.",
+      "options": [
+       {
+        "code": "ENGR 453",
+        "title": "Interdisciplinary Senior Design II"
+       }
+      ],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-10",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-11",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ELECTIVE-12",
+      "title": "Elective",
+      "credits": 1.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Elective' (1 unit).",
+      "options": [],
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "6293c80f409699be85e1d72265330b33a77e9a60e7418293a688226bb3067484",
+  "last_verified": "2026-10-09"
+ }
+}

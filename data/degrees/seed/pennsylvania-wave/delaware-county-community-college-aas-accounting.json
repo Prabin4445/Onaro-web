@@ -1,0 +1,274 @@
+{
+ "institution": {
+  "name": "Delaware County Community College",
+  "city": "Media",
+  "state": "PA",
+  "kind": "public"
+ },
+ "plan": {
+  "id": "delaware-county-community-college-aas-accounting",
+  "degree": "AAS",
+  "major": "Accounting",
+  "total_credits": 62.0,
+  "catalog_year": "2025-2026",
+  "source_url": "https://www.dccc.edu/wp-content/uploads/2025/12/DCCC-25-26-CollegeCatalog.pdf",
+  "notes": "Source: Delaware County Community College 2025-2026 College Catalog (official PDF), 'Accounting, Associate in Applied Science (ACCT)' Full-Time Academic Plan (p.48-49). Career (non-transfer) AAS. Prerequisite ordering verified: ACC 111 before ACC 112; ACC 112 before ACC 201/ACC 202; ENG 100 before ENG 112. 'BUS/DPR Elective' = select from BUS/DPR list per catalog Notes; designated electives (Diversity and Social Justice, Scientific Inquiry, Behavioral & Social Science, Arts & Humanities) per catalog designation lists.",
+  "transfer_confidence": "",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "First Semester",
+    "declared_credits": 15.0,
+    "courses": [
+     {
+      "code": "ENG 100",
+      "title": "English Composition I",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "BUS 104",
+      "title": "Mathematics for Business",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "BUS 100",
+      "title": "Introduction to Business",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ACC 111",
+      "title": "Financial Accounting",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "CS 100",
+      "title": "Introduction to Information Technology",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Second Semester",
+    "declared_credits": 16.0,
+    "courses": [
+     {
+      "code": "ENG 112",
+      "title": "English Composition II: Writing About Literature",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [
+       "ENG 100"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ACC 112",
+      "title": "Managerial Accounting",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "ACC 111"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ACC 115",
+      "title": "Computerized Accounting",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "BUS-DPR-ELECTIVE-1",
+      "title": "BUS/DPR Elective",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'BUS/DPR Elective' (3). Select from catalog BUS/DPR elective list.",
+      "options": []
+     },
+     {
+      "code": "DSJ-SOCSCI",
+      "title": "Diversity and Social Justice Social Science Course",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'Any Diversity and Social Justice designated Social Science course' (3).",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Third Semester",
+    "declared_credits": 16.0,
+    "courses": [
+     {
+      "code": "ACC 201",
+      "title": "Introduction to Cost Accounting",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "ACC 112"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "BUS 130",
+      "title": "Business Communication",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ACC 202/ACC 210",
+      "title": "ACC 202 or ACC 210",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "ACC 112"
+      ],
+      "choice": true,
+      "choice_note": "Catalog: 'ACC 202 Introduction to Tax Accounting or ACC 210 Federal Income Tax Accounting' (3).",
+      "options": [
+       {
+        "code": "ACC 202",
+        "title": "Introduction to Tax Accounting"
+       },
+       {
+        "code": "ACC 210",
+        "title": "Federal Income Tax Accounting"
+       }
+      ]
+     },
+     {
+      "code": "SCI-INQUIRY",
+      "title": "Scientific Inquiry Science Course",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'Any Scientific Inquiry designated Science course' (4).",
+      "options": []
+     },
+     {
+      "code": "BEH-SOCSCI-ELECTIVE",
+      "title": "Behavioral & Social Science Elective",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'Behavioral & Social Science Elective' (3).",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Fourth Semester",
+    "declared_credits": 15.0,
+    "courses": [
+     {
+      "code": "BUS 243",
+      "title": "Legal Environment of Business",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ECO 210/ECO 220",
+      "title": "ECO 210 or ECO 220",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'ECO 210 Macroeconomic Principles or ECO 220 Microeconomic Principles' (3).",
+      "options": [
+       {
+        "code": "ECO 210",
+        "title": "Macroeconomic Principles"
+       },
+       {
+        "code": "ECO 220",
+        "title": "Microeconomic Principles"
+       }
+      ]
+     },
+     {
+      "code": "ARTS-HUM-ELECTIVE",
+      "title": "Arts & Humanities Elective",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'Arts & Humanities Elective' (3).",
+      "options": []
+     },
+     {
+      "code": "BUS-DPR-ELECTIVE-2",
+      "title": "BUS/DPR Elective",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'BUS/DPR Elective' (3). Select from catalog BUS/DPR elective list.",
+      "options": []
+     },
+     {
+      "code": "OPEN-ELECTIVE-1",
+      "title": "Open Elective",
+      "credits": 3.0,
+      "category": "elective",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog: 'Open Elective' (3).",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}

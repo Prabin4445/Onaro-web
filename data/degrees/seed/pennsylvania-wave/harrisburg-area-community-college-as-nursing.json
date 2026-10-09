@@ -1,0 +1,361 @@
+{
+ "institution": {
+  "name": "Harrisburg Area Community College",
+  "city": "Harrisburg",
+  "state": "PA",
+  "kind": "community"
+ },
+ "plan": {
+  "id": "harrisburg-area-community-college-as-nursing",
+  "degree": "AS",
+  "major": "Nursing",
+  "total_credits": 68.0,
+  "catalog_year": "2025-2026",
+  "source_url": "https://www.hacc.edu/eprograms/prgguides/PG3456_NURSING_AS-Fall26-2.pdf",
+  "notes": "Source: HACC official Nursing AS program guide (PG3456, updated 5/26/26), 'RECOMMENDED SEQUENCE FOR 6-Semester STUDENTS'. 68 credits total (program requirement). Mathematics Core Elective is 'MATH 103 or 202, 3 or 4' credits; transcribed as MATH 103 (College Algebra, 3 cr) at the minimum, range documented here. AS = Associate in Science (transfer degree, RN licensure). Prerequisite chain from the 2025-2026 Nursing Student Handbook: BIOL 121 before all NURS 140-level courses; NURS 140/142 before 141/144; all 140-level before 150/151; BIOL 122 before NURS 240; PSYC 101 before NURS 244; BIOL 221 before NURS 250. Course titles verified against HACC 2025-26 course descriptions and the program guide. Note: program guide states students must begin in the Allied Health AAS before applying to the clinical Nursing AS.",
+  "transfer_confidence": "",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Summer I",
+    "declared_credits": 8.0,
+    "courses": [
+     {
+      "code": "BIOL-121",
+      "title": "Anatomy and Physiology I",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "ENGL-101",
+      "title": "English Composition I",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "FYS-ELECTIVE",
+      "title": "First-Year Seminar Elective",
+      "credits": 1.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'First-Year-Seminar (Preferred: AH 100)' (1).",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Fall Semester I",
+    "declared_credits": 13.0,
+    "courses": [
+     {
+      "code": "BIOL-122",
+      "title": "Anatomy and Physiology II",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [
+       "BIOL-121"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-140",
+      "title": "Intro to Nursing Practice Concepts I",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "BIOL-121"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-141",
+      "title": "Intro to Nursing Practice Concepts II",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "NURS-140",
+       "NURS-142"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-142",
+      "title": "Health Assessment Concepts for Nursing Practice",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "BIOL-121"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-143",
+      "title": "Concepts of Informatics in Nursing Practice",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "BIOL-121"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-144",
+      "title": "Fundamental Concepts for Nursing Practice",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "NURS-140",
+       "NURS-142"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Spring Semester I",
+    "declared_credits": 15.5,
+    "courses": [
+     {
+      "code": "ENGL-102",
+      "title": "English Composition II",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [
+       "ENGL-101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-150",
+      "title": "Holistic Health Concepts for Nursing Practice I",
+      "credits": 5.0,
+      "category": "major",
+      "prereq": [
+       "NURS-140",
+       "NURS-141",
+       "NURS-142",
+       "NURS-143",
+       "NURS-144"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-151",
+      "title": "Holistic Health Concepts for Nursing Practice II",
+      "credits": 4.5,
+      "category": "major",
+      "prereq": [
+       "NURS-150"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "PSYC-101",
+      "title": "General Psychology",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Summer II",
+    "declared_credits": 7.0,
+    "courses": [
+     {
+      "code": "BIOL-221",
+      "title": "Microbiology",
+      "credits": 4.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "MATH-103",
+      "title": "College Algebra",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog 'MATH 103 or 202, 3 or 4 credits'; transcribed as MATH 103 (3 cr) at the minimum.",
+      "options": [
+       {
+        "code": "MATH-103",
+        "credits": 3.0,
+        "title": "College Algebra"
+       },
+       {
+        "code": "MATH-202",
+        "credits": 4.0,
+        "title": "Introduction to Statistics"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Fall Semester II",
+    "declared_credits": 12.5,
+    "courses": [
+     {
+      "code": "COMM-101",
+      "title": "Effective Speaking",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-240",
+      "title": "Adult Health Concepts for Nursing Practice I",
+      "credits": 2.0,
+      "category": "major",
+      "prereq": [
+       "BIOL-122",
+       "NURS-150",
+       "NURS-151"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-241",
+      "title": "Adult Health Concepts for Nursing Practice II",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "NURS-240"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-242",
+      "title": "Family Health Concepts for Nursing Practice I",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "NURS-150",
+       "NURS-151"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-244",
+      "title": "Advanced Behavioral Health Concepts for Nursing Practice",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "PSYC-101",
+       "NURS-150",
+       "NURS-151"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Spring Semester II",
+    "declared_credits": 12.0,
+    "courses": [
+     {
+      "code": "HUMANITIES-ARTS",
+      "title": "Humanities & Arts Core Elective",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Humanities & Arts Core Elective' (3); SPAN 104 highly recommended.",
+      "options": []
+     },
+     {
+      "code": "NURS-243",
+      "title": "Family Health Concepts for Nursing Practice II",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "NURS-150",
+       "NURS-151"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-250",
+      "title": "Complex Health Concepts for Nursing Practice",
+      "credits": 2.5,
+      "category": "major",
+      "prereq": [
+       "BIOL-221",
+       "NURS-240",
+       "NURS-241"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     },
+     {
+      "code": "NURS-251",
+      "title": "Leadership & Management Concepts for Nursing Practice",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "NURS-240",
+       "NURS-241",
+       "NURS-250"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": []
+     }
+    ]
+   }
+  ]
+ }
+}

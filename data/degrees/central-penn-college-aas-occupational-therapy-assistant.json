@@ -1,0 +1,415 @@
+{
+ "institution": {
+  "name": "Central Penn College",
+  "city": "Summerdale",
+  "state": "PA",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "central-penn-college-aas-occupational-therapy-assistant",
+  "degree": "AAS",
+  "major": "Occupational Therapy Assistant",
+  "total_credits": 79.0,
+  "catalog_year": "2025-2026",
+  "source_url": "https://www.centralpenn.edu/wp-content/uploads/20252026_ota_handbookupdated_5_1_25.pdf",
+  "notes": "Source: Central Penn College OTA Program Student Handbook 2025-2026 (updated 5/1/2025), 'RECOMMENDED COURSE SEQUENCE (Traditional Students)'. 79 credits total (49 core + 30 gen ed/elective), matches handbook graduation requirement. AAS = Associate in Applied Science (career degree). Term 4 lists OTA205 prereq as 'OTA110, OTA200 & PSY420' but the sequence's abnormal-psychology course is PSY220; transcribed prereq as published. Term 6 math is a catalog OR choice (MTH105/MTH125), modeled as options. 'Global Citizenship Category' and 'Open Elective' are catalog-literal generic slots. Central Penn runs on 4 terms/year (Jan/Apr/Jul/Oct); sequence uses Term 1-7 numbering as published.",
+  "transfer_confidence": "",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Term 1",
+    "declared_credits": 10.0,
+    "courses": [
+     {
+      "code": "OTA-100",
+      "title": "Fundamentals of Occupational Therapy",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ALH-120",
+      "title": "Anatomy & Physiology I",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ALH-120L",
+      "title": "Anatomy & Physiology I Lab",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IDS-101",
+      "title": "CPC Foundations",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "label": "Term 2",
+    "declared_credits": 14.0,
+    "courses": [
+     {
+      "code": "OTA-108",
+      "title": "Therapeutic Techniques I",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "OTA-100",
+       "ALH-120"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ALH-130",
+      "title": "Anatomy & Physiology II",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "ALH-120"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ALH-130L",
+      "title": "Anatomy & Physiology II Lab",
+      "credits": 1.0,
+      "category": "major",
+      "prereq": [
+       "ALH-120L"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENG-101",
+      "title": "College Composition I",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "BIO-105",
+      "title": "Human Development",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "label": "Term 3",
+    "declared_credits": 14.0,
+    "courses": [
+     {
+      "code": "OTA-110",
+      "title": "Therapeutic Techniques II",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "ALH-130",
+       "OTA-108"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OTA-200",
+      "title": "Developmental Occupational Therapy",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "BIO-105",
+       "OTA-108"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PSY-220",
+      "title": "Abnormal Psychology",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "BIO-105"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "IDS-102",
+      "title": "Intro to Information Literacy",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [
+       "ENG-101"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "label": "Term 4",
+    "declared_credits": 11.0,
+    "courses": [
+     {
+      "code": "OTA-205",
+      "title": "Occupational Therapy in Mental Health",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "OTA-110",
+       "OTA-200",
+       "PSY-420"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OTA-230",
+      "title": "Pathology and Function",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "ALH-130",
+       "OTA-108"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "COM-101",
+      "title": "Intro to Human Communication",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "label": "Term 5",
+    "declared_credits": 11.0,
+    "courses": [
+     {
+      "code": "OTA-210",
+      "title": "Occupational Therapy in Physical Rehab",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "OTA-200",
+       "OTA-205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OTA-220",
+      "title": "Occupational Therapy in Geriatrics",
+      "credits": 4.0,
+      "category": "major",
+      "prereq": [
+       "OTA-205"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "OPEN-ELECTIVE",
+      "title": "Open Elective",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Open Elective' (3).",
+      "options": [],
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "label": "Term 6",
+    "declared_credits": 9.0,
+    "courses": [
+     {
+      "code": "OTA-215",
+      "title": "Developing Professional Behaviors",
+      "credits": 3.0,
+      "category": "major",
+      "prereq": [
+       "OTA-200"
+      ],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "GLOBAL-CITIZENSHIP",
+      "title": "Global Citizenship Category",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog literal 'Global Citizenship Category' (3).",
+      "options": [],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-CHOICE",
+      "title": "College Algebra OR Quantitative Literacy",
+      "credits": 3.0,
+      "category": "core",
+      "prereq": [],
+      "choice": true,
+      "choice_note": "Catalog OR choice: MTH105 or MTH125.",
+      "options": [
+       {
+        "code": "MTH-105",
+        "credits": 3.0,
+        "title": "College Algebra"
+       },
+       {
+        "code": "MTH-125",
+        "credits": 3.0,
+        "title": "Quantitative Literacy"
+       }
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "label": "Term 7",
+    "declared_credits": 10.0,
+    "courses": [
+     {
+      "code": "OTA-299",
+      "title": "Occupational Therapy Level II Fieldwork",
+      "credits": 10.0,
+      "category": "major",
+      "prereq": [],
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "external_prereqs": [
+   "PSY-420"
+  ],
+  "content_hash": "23f74c5c8b016b9c2770977df888e41e1643b62fab66fba2055a88242c541212",
+  "last_verified": "2026-10-09"
+ }
+}
