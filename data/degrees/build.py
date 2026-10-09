@@ -111,6 +111,7 @@ def normalize_flat(d):
                  'catalog_year': d.get('catalog_year'), 'source_url': d.get('source_url'),
                  'transfer_confidence': d.get('transfer_confidence', ''),
                  'notes': notes or '', 'semesters': sems,
+                 'allow_repeated_courses': d.get('allow_repeated_courses', False),
                  'content_hash': d.get('content_hash', ''),
                  'last_verified': d.get('last_verified', ''),
                  'source_hash': d.get('source_hash', '')},
