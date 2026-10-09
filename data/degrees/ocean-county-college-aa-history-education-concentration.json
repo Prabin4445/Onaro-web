@@ -1,0 +1,331 @@
+{
+ "institution": {
+  "city": "Toms River",
+  "kind": "community",
+  "name": "Ocean County College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AA",
+  "id": "ocean-county-college-aa-history-education-concentration",
+  "major": "Humanities and Cultures - History Education Concentration",
+  "notes": "Source: Ocean County College Academic Catalog 2026-2027, 'History Education Concentration' (catalog.ocean.edu/areas-study/humanities-cultures/history-ed/), Associate in Arts (A.A.) in Humanities and Cultures - History Education Concentration, 'Total Credit Hours 60' (verified 2026-10-09). All 4 semesters transcribed; sums verified against published totals (14/16/15/15 = 60). STRUCTURAL NOTE (verified against raw catalog HTML): the grid lists 'History Gen. Ed. Requirement' (3 cr) slots each year; HIST 175 'History of New Jersey (Recommended)' appears with an EMPTY credit cell directly under the Fall Two requirement slot - it is the catalog's recommended course to satisfy that 3-credit slot, NOT an additional course (counting it separately would break the published 15-credit Fall Two total). It is documented in the Fall Two placeholder's choice_note. 'Choose one of the following' (3 cr) in Spring Two is satisfied by ARTS 181, ARTS 182, or MUSC 190 (options array). Or-choices transcribed with options arrays (MATH 151/156; CSIT 110/123; HIST 171/181; HIST 191/SOCI 238; HIST 172/182). BIOL 161 & 161L transcribed as a single lecture+lab row per convention.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "STSC150",
+      "credits": 2,
+      "options": [],
+      "prereq": [],
+      "title": "Student Success Seminar",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL151",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English I",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: MATH 151 (A Survey of Mathematics) or MATH 156 (Introduction to Statistics); student selects one",
+      "code": "MATH-151-156",
+      "credits": 3,
+      "options": [
+       "MATH 151 — A Survey of Mathematics",
+       "MATH 156 — Introduction to Statistics"
+      ],
+      "prereq": [],
+      "title": "A Survey of Mathematics or Introduction to Statistics",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIST173",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "United States History to 1877",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMM154",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Fundamentals of Public Speaking",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Fall One",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENGL152",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid lists 'History Gen. Ed. Requirement' (3 credits); student selects a course from the History general education category (see catalog General Education list)",
+      "code": "HIST-GENED-SPR1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "History General Education Requirement",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "BIOL161-161L",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "General Biology I Lecture and Lab",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: CSIT 110 (Introduction to Computers and Computer Applications) or CSIT 123 (Integrated Office Software); student selects one",
+      "code": "CSIT-110-123",
+      "credits": 3,
+      "options": [
+       "CSIT 110 — Introduction to Computers and Computer Applications",
+       "CSIT 123 — Integrated Office Software"
+      ],
+      "prereq": [],
+      "title": "Introduction to Computers and Computer Applications or Integrated Office Software",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIST174",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "United States History from 1877",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "Spring One",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid lists 'History Gen. Ed. Requirement' (3 credits); the catalog marks HIST 175 History of New Jersey as the RECOMMENDED course for this slot (its grid row carries no separate credit value - it satisfies this slot, it is not an additional course)",
+      "code": "HIST-GENED-FALL2",
+      "credits": 3,
+      "options": [
+       "HIST 175 — History of New Jersey (recommended)"
+      ],
+      "prereq": [],
+      "title": "History General Education Requirement (HIST 175 recommended)",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EDUC178",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introduction to the Education of Exceptional Students",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PSYC172",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "General Psychology",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: HIST 171 (Western Civilization to 1650) or HIST 181 (World Civilization to 1660); student selects one",
+      "code": "HIST-171-181",
+      "credits": 3,
+      "options": [
+       "HIST 171 — Western Civilization to 1650",
+       "HIST 181 — World Civilization to 1660"
+      ],
+      "prereq": [],
+      "title": "Western Civilization to 1650 or World Civilization to 1660",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: HIST 191 (African-American History) or SOCI 238 (Race and Ethnicity); student selects one",
+      "code": "HIST-191-SOCI-238",
+      "credits": 3,
+      "options": [
+       "HIST 191 — African-American History",
+       "SOCI 238 — Race and Ethnicity"
+      ],
+      "prereq": [],
+      "title": "African-American History or Race and Ethnicity",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Fall Two",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid lists 'History Gen. Ed. Requirement' (3 credits); student selects a course from the History general education category",
+      "code": "HIST-GENED-SPR2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "History General Education Requirement",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "GEOG162",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Human Geography",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "EDUC261",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Development of the Learner",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: HIST 172 (Western Civilization from 1650) or HIST 182 (World Civilization From 1660); student selects one",
+      "code": "HIST-172-182",
+      "credits": 3,
+      "options": [
+       "HIST 172 — Western Civilization from 1650",
+       "HIST 182 — World Civilization From 1660"
+      ],
+      "prereq": [],
+      "title": "Western Civilization from 1650 or World Civilization From 1660",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Official Plan of Study Grid: 'Choose one of the following' (3 credits)",
+      "code": "ARTS-MUSC-CHOICE",
+      "credits": 3,
+      "options": [
+       "ARTS 181 — Art From Prehistory to Middle Ages",
+       "ARTS 182 — Art From Renaissance to Modern World",
+       "MUSC 190 — Introduction to Music Appreciation"
+      ],
+      "prereq": [],
+      "title": "Choose one: Art or Music Appreciation",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Spring Two",
+    "n": 4
+   }
+  ],
+  "source_url": "https://catalog.ocean.edu/areas-study/humanities-cultures/history-ed/",
+  "total_credits": 60,
+  "transfer_confidence": "core_only",
+  "content_hash": "4d5c49ab32be68f008d38bb363f52e52f1c126559725e0f3b5d836d9abe911b5",
+  "last_verified": "2026-10-09"
+ }
+}
