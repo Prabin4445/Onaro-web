@@ -1,0 +1,337 @@
+{
+ "institution": {
+  "city": "Blackwood",
+  "kind": "community",
+  "name": "Camden County College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AAS",
+  "external_prereqs": [
+   "MTH-100"
+  ],
+  "id": "camden-county-college-aas-data-science",
+  "major": "Data Science",
+  "notes": "Source: Camden County College official program page (www.camdencc.edu/program/data-science/), Program Code DSC.AAS, Associate in Applied Science, 'Total Minimum Credits 60'. Program page carries no explicit catalog year; reflects the college's current published program listing (verified 2026-10-09). All 4 semesters transcribed; semester sums verified against published totals (16/16/15/13 = 60). Prerequisite footnotes transcribed verbatim: DSC-103 req. MTH-100 (placement-level, in external_prereqs); ENG-102 req. ENG-101; DSC-120 req. DSC-103; MTH-150 req. MTH-140; MTH-172 req. MTH-171; MTH-261 req. MTH-150; CSC-272 req. CSC-171 and MTH-171; DSC-203 req. DSC-103, MTH-172; DSC-230 req. CSC-272, DSC-203; DSC-250 req. DSC-203; DSC-280 req. DSC-203 with co-requisites DSC-230, DSC-250; MTH-262 req. MTH-261. Footnotes 1, 3, 4 are placement tests, not course prereqs. 'Diversity-Humanities General Education Elective' transcribed as a choice placeholder.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-103",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH-100"
+      ],
+      "title": "Introduction to Data Science",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-106",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Data Security, Privacy and Ethics",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-171",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Statistics",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-140",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "First Year / First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG-102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG-101"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-171",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Introductory Python Programming",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-120",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "DSC-103"
+      ],
+      "title": "SQL for Data Science",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-150",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-140"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-172",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH-171"
+      ],
+      "title": "Statistics II",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 16,
+    "label": "First Year / Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-261",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "MTH-150"
+      ],
+      "title": "Introduction to Mathematical Modeling",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-272",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC-171",
+       "MTH-171"
+      ],
+      "title": "Data Science Programming Applications",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ECO-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Macroeconomics",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-203",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "DSC-103",
+       "MTH-172"
+      ],
+      "title": "Data Analytics and Modelling Techniques",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Diversity-Humanities General Education Elective per official program page.",
+      "code": "DIVHUM-ELECTIVE",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Diversity-Humanities General Education Elective",
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Second Year / First Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-230",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC-272",
+       "DSC-203"
+      ],
+      "title": "Statistical and Machine Learning",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-250",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "DSC-203"
+      ],
+      "title": "Data Visualization and Presentation",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "DSC-280",
+      "coreq": [
+       {
+        "course": "DSC-230",
+        "kind": "concurrent_required"
+       },
+       {
+        "course": "DSC-250",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "DSC-203"
+      ],
+      "title": "Data in Context-A Capstone Experience",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-262",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-261"
+      ],
+      "title": "Probabilistic Models",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 13,
+    "label": "Second Year / Second Semester",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.camdencc.edu/program/data-science/",
+  "total_credits": 60,
+  "transfer_confidence": "advisory",
+  "content_hash": "8028306c2bd6feb99318c31213b8844b7d5ed2ae5e894a6f47ad97397bcd16ea",
+  "last_verified": "2026-10-09"
+ }
+}

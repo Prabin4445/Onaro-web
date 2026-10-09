@@ -1,0 +1,297 @@
+{
+ "institution": {
+  "city": "Blackwood",
+  "kind": "community",
+  "name": "Camden County College",
+  "state": "NJ"
+ },
+ "plan": {
+  "catalog_year": "2026-2027",
+  "degree": "AS",
+  "id": "camden-county-college-as-computer-science",
+  "major": "Computer Science",
+  "notes": "Source: Camden County College official program page (www.camdencc.edu/program/computer-science-2/), Program Code CSC.AS, Associate in Science, 'Total Minimum Credits 60'. Program page carries no explicit catalog year; reflects the college's current published program listing (verified 2026-10-09). All 4 semesters transcribed; semester sums verified against published totals (14/17/15/14 = 60). Prerequisite footnotes transcribed: ENG-102 req. ENG-101; CSC-122 and CSC-240 req. CSC-121; MTH-150, MTH-129, PHY-201, MTH-145 req. MTH-140; CSC-223 req. CSC-122 with co-requisite MTH-129; CSC-225 req. CSC-122; PHY-202 req. PHY-201. Footnotes 1-2 are placement tests (test into ENG-101 / MTH-140), not course prereqs. Two 'Social Science General Education Elective' slots transcribed as choice placeholders.",
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "English Composition I",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-121",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Structured Programming (C++)",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIS-101",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "World Civilization I",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-140",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "title": "Calculus I",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "First Year / First Semester",
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "ENG-102",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "ENG-101"
+      ],
+      "title": "English Composition II",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-122",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC-121"
+      ],
+      "title": "Computer Science I",
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "HIS-102",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "World Civilization II",
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-150",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-140"
+      ],
+      "title": "Calculus II",
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Social Science General Education Elective per official program page.",
+      "code": "SOCSCI-ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social Science General Education Elective",
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 17,
+    "label": "First Year / Second Semester",
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-223",
+      "coreq": [
+       {
+        "course": "MTH-129",
+        "kind": "concurrent_required"
+       }
+      ],
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "CSC-122"
+      ],
+      "title": "Computer Science II",
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-129",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-140"
+      ],
+      "title": "Discrete Mathematics",
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY-201",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-140"
+      ],
+      "title": "Physics III",
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-240",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC-121"
+      ],
+      "title": "Computer Organization",
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 15,
+    "label": "Second Year / First Semester",
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "CSC-225",
+      "credits": 3,
+      "options": [],
+      "prereq": [
+       "CSC-122"
+      ],
+      "title": "Computer Laboratory Techniques",
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "MTH-145",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "MTH-140"
+      ],
+      "title": "Linear Algebra",
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHY-202",
+      "credits": 4,
+      "options": [],
+      "prereq": [
+       "PHY-201"
+      ],
+      "title": "Physics IV",
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "category": "core",
+      "choice": true,
+      "choice_note": "Social Science General Education Elective per official program page.",
+      "code": "SOCSCI-ELECTIVE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "title": "Social Science General Education Elective",
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     }
+    ],
+    "declared_credits": 14,
+    "label": "Second Year / Second Semester",
+    "n": 4
+   }
+  ],
+  "source_url": "https://www.camdencc.edu/program/computer-science-2/",
+  "total_credits": 60,
+  "transfer_confidence": "core_only",
+  "content_hash": "ec8d35f915848fe82c8fc9cf3aeb366a4b227321670fdbaaf91f94516ce97525",
+  "last_verified": "2026-10-09"
+ }
+}
