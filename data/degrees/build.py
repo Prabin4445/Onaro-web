@@ -226,6 +226,19 @@ def validate(d):
         return (lo, hi)
     is_extended = plan.get('extended') is True
     prog_type = str(plan.get('program_type') or '')
+    # REQUIREMENTS-ONLY PLANS (coordinator decision 2026-10-09, PraBin order:
+    # "they should be public"): the school publishes official degree
+    # REQUIREMENTS but no semester-by-semester sequence. These plans carry
+    # requirements_only=true, store all requirements in a single semester
+    # block labeled as requirements (never invented terms), and skip the
+    # semester-count gate. Credit-sum validation still applies. The app must
+    # render these as a requirements list, never as a term plan.
+    req_only = plan.get('requirements_only') is True
+    if req_only:
+        if nsem != 1:
+            errs.append(f'requirements_only plan must have exactly 1 semester block (has {nsem})')
+        if not plan.get('notes') or 'no official' not in str(plan.get('notes')).lower():
+            errs.append('requirements_only plan notes must state the catalog publishes no official semester sequence')
     # Special program models with legitimately non-standard term counts.
     # program_type MUST be justified by the official source in the plan notes:
     # - professional-phase: only the professional phase is sequenced (prereqs
@@ -239,7 +252,9 @@ def validate(d):
     #   (coordinator decision 2026-10-06, UNL pre-law wave 36)
     # - part-time: officially published part-time cohort tracks (more, lighter
     #   terms than the full-time sequence, e.g. UA-PTC HIT AAS part-time: 8 terms)
-    if prog_type in ('professional-phase', 'completion', 'accelerated', '3-plus-2', '3-plus-3') and (
+    if req_only:
+        pass  # semester-count gate skipped; single requirements block only
+    elif prog_type in ('professional-phase', 'completion', 'accelerated', '3-plus-2', '3-plus-3') and (
         deg.startswith('AA') or deg.startswith('AS') or deg.startswith('B')
     ):
         # cap 9 (was 7): genuine 9-term health completion/professional-phase
