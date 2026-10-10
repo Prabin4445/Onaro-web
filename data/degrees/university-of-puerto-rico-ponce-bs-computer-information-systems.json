@@ -1,0 +1,682 @@
+{
+ "institution": {
+  "name": "University of Puerto Rico at Ponce",
+  "city": "Ponce, PR",
+  "state": "PR",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "university-of-puerto-rico-ponce-bs-computer-information-systems",
+  "degree": "BS",
+  "major": "Computer Information Systems",
+  "catalog_year": "2023-2024",
+  "total_credits": 132,
+  "source_url": "https://www.uprp.edu/wp-content/uploads/sites/11/2023/08/curriculo-sici-rev-oct-2019-rev-ago-2023-dl.pdf",
+  "requirements_only": false,
+  "notes": "Official University of Puerto Rico at Ponce, Department of Business Administration and Computer Sciences, \"Bachillerato en Ciencias en Sistemas de Informacion Computadorizados\", revised curriculum October 2019, revision August 2023 (still the published curriculum as of 2026-10-10). 8-semester sequence; catalog-stated TOTAL DE CREDITOS: 132. INGL 3113/3114 are required 0-credit oral-practice labs. Directed (orientada) electives = the published Electivas Orientadas list (SICI 4278, 4997, 3019, 3028, 3039, 4995, 4286, 4285, 4465, XXX7, 4405, XXX5, XXX3, XXX4, XXX6).",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "ADMI 3005",
+      "title": "Teoría Administrativa",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "SICI 3211",
+      "title": "Fund. de Sist. de Información",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "ESPA 3101",
+      "title": "Español Básico I",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "INGL-3101-O-3103",
+      "title": "Inglés Básico I / Inglés Intermedio I",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of INGL 3101 Inglés Básico I or INGL 3103 Inglés Intermedio I",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "INGL 3113",
+      "title": "Práctica Oral Inglés Básico I",
+      "credits": 0,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "MATE 3001",
+      "title": "Matemática Introductoria I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "CIBI-3001-O-CIFI-3001",
+      "title": "Biología General / Ciencias Físicas",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of CIBI 3001 Biología General or CIFI 3001 Ciencias Físicas",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "COTI 3101",
+      "title": "Algoritmos y Desarrollo de Programas I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3001"
+      ],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "ESPA 3102",
+      "title": "Español Básico II",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ESPA 3101"
+      ],
+      "tccns": "",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "INGL-3102-O-3104",
+      "title": "Inglés Básico II / Inglés Intermedio II",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of INGL 3102 Inglés Básico II or INGL 3104 Inglés Intermedio II",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "INGL 3114",
+      "title": "Práctica Oral Inglés Básico II",
+      "credits": 0,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "code": "MECU 3031",
+      "title": "Métodos Cuantitativos para la Adm. de Empresas I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3001"
+      ],
+      "tccns": "",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "CISO-3121-O-HUMA-3101",
+      "title": "Int. Ciencias Sociales I / Cultura Occidental I",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of CISO 3121 Introducción a las Ciencias Sociales I or HUMA 3101 Cultura Occidental I",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "CONT 3005",
+      "title": "Contabilidad Elemental I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "COTI 3102",
+      "title": "Algoritmos y Desarrollo de Programas II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COTI 3101"
+      ],
+      "tccns": "",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "MECU 3032",
+      "title": "Métodos Cuantitativos para la Adm. de Empresas II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MECU 3031"
+      ],
+      "tccns": "",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "SICI 3015",
+      "title": "Análisis y Diseño Sist. de Inf.",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 3211"
+      ],
+      "tccns": "",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "COTI 4210",
+      "title": "Prog. Aplicaciones Web I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COTI 3102"
+      ],
+      "tccns": "",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "ESTA 3001",
+      "title": "Estadística Comercial I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MECU 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "CONT 3006",
+      "title": "Contabilidad Elemental II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CONT 3005"
+      ],
+      "tccns": "",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "CISO-3122-O-HUMA-3102",
+      "title": "Int. Ciencias Sociales II / Cultura Occidental II",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of CISO 3122 Introducción a las Ciencias Sociales II or HUMA 3102 Cultura Occidental II",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4020",
+      "title": "Análisis y Diseño Est. Avanz.",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "ECON 3021",
+      "title": "Principios de Economía I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-1",
+      "title": "Electiva Libre",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "INGL 3116",
+      "title": "Compendio Comunicación Comercial",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4010",
+      "title": "Estadística por Computadora",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ESTA 3001"
+      ],
+      "tccns": "",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4030",
+      "title": "Desarrollo de Base de Datos",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4036",
+      "title": "Estructura de Datos",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COTI 3102",
+       "MECU 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s5-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "SICI 4175",
+      "title": "Programación JAVA",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 4036"
+      ],
+      "tccns": "",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "SICI-DIRECTED-ELECTIVE-1",
+      "title": "SICI Electiva Orientada",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the published Electivas Orientadas: SICI 4278, 4997, 3019, 3028, 3039, 4995, 4286, 4285, 4465, XXX7, 4405, XXX5, XXX3, XXX4, XXX6",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4029",
+      "title": "Fund. de Sistemas Operativos",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 4036",
+       "SICI 4010"
+      ],
+      "tccns": "",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "FINA 3006",
+      "title": "Finanza Mercantil",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CONT 3006",
+       "ECON 3021"
+      ],
+      "tccns": "",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "SICI 4037",
+      "title": "Comunicación de Datos",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s6-4",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-2",
+      "title": "Electiva Libre",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "SICI-DIRECTED-ELECTIVE-2",
+      "title": "SICI Electiva Orientada",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the published Electivas Orientadas",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "ESCO 4005",
+      "title": "Redacción de Informes Técnicos",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "MERC 3115",
+      "title": "Principios de Mercadeo",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ECON 3021"
+      ],
+      "tccns": "",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "SICI 3016",
+      "title": "Implementación de Proyectos",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 4037"
+      ],
+      "tccns": "",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "FILO 3185",
+      "title": "Ética en la Computadora",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "SICI 4065",
+      "title": "Práctica en Programación",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "SICI 3016",
+       "SICI 4175"
+      ],
+      "tccns": "",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "SICI-DIRECTED-ELECTIVE-3",
+      "title": "SICI Electiva Orientada",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the published Electivas Orientadas",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "SICI-DIRECTED-ELECTIVE-4",
+      "title": "SICI Electiva Orientada",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of the published Electivas Orientadas",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-3",
+      "title": "Electiva Libre",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-4",
+      "title": "Electiva Libre",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "52696bed506c3b0f192f28fe53681e7fef67b154d98e57054289d8ecd92adebc",
+  "last_verified": "2026-10-10"
+ }
+}

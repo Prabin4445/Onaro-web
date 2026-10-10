@@ -1,0 +1,550 @@
+{
+ "institution": {
+  "name": "Inter American University of Puerto Rico",
+  "city": "Guayama, PR",
+  "state": "PR",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "inter-american-university-guayama-bsn-nursing",
+  "degree": "BSN",
+  "major": "Nursing",
+  "catalog_year": "2023-2024",
+  "total_credits": 120,
+  "source_url": "http://guayama.inter.edu/wp-content/uploads/Academicos/Salud/secuencial-BS-PEI.pdf",
+  "requirements_only": false,
+  "notes": "Official Inter American University of Puerto Rico, Guayama Campus, Department of Health Sciences \"Secuencial Curricular - Programa de Bachillerato en Ciencias en Enfermería\", revised September 2023 (still the published sequential on the campus site as of 2026-10-10). 8-semester sequence; catalog-stated degree total 120 credits (General Education 45 + Concentration 72 + Electives 3). NURS 3100 lists \"Grado Asociado en Enfermería\" (associate degree in nursing) as its requirement per the sequential. GEHS/GEST/GEPE elective slots = the listed category options; second-semester choice is GEHS 2010 or GEEC 2000.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "NURS 1111",
+      "title": "Fundamentos de Enfermería",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 1112",
+      "title": "Práctica de Fundamentos de Enfermería",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 1130",
+      "title": "Aspectos Farmacológicos",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEMA 1000",
+      "title": "Razonamiento Cuantitativo",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEEN 1101",
+      "title": "Inglés como Segundo Idioma I: Comunicación Oral",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEIC 1010",
+      "title": "Tecnología de la Información y la Computadora",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "NURS 1231",
+      "title": "Fundamentos en el Cuidado del Adulto I",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1111",
+       "NURS 1112",
+       "NURS 1130"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 1232",
+      "title": "Práctica Adulto I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1111",
+       "NURS 1112",
+       "NURS 1130"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GESP 1101",
+      "title": "Literatura y Comunicación: Narrativa y Poesía",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEEN 1102",
+      "title": "Inglés como Segundo Idioma II: Reading",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "GEEN 1101"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GEHS-2010-OR-GEEC-2000",
+      "title": "Proceso Histórico de Puerto Rico / Cultura Emprendedora",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEHS 2010 Proceso Histórico de Puerto Rico or GEEC 2000 Cultura Emprendedora",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "NURS 2141",
+      "title": "Fundamentos en el Cuidado Materno-Neonatal",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1231"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2142",
+      "title": "Práctica en el Cuidado Materno-Neonatal",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1231",
+       "NURS 1232"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2233",
+      "title": "Fundamentos en el Cuidado del Adulto II",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1231"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2234",
+      "title": "Práctica Adulto II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 1231",
+       "NURS 1232"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GESP 1102",
+      "title": "Literatura y Comunicación: Ensayo y Teatro",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "GESP 1101"
+      ],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "NURS 2351",
+      "title": "Fundamentos de Cuidado Pediátrico",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 2141",
+       "NURS 2142",
+       "NURS 2233"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2352",
+      "title": "Práctica en el Cuidado Pediátrico",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 2234"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2361",
+      "title": "Fundamentos en el Cuidado Sicosocial",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 2233",
+       "NURS 2141"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2362",
+      "title": "Práctica Sicosocial",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 2142",
+       "NURS 2234",
+       "NURS 2352"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 2970",
+      "title": "Seminario de Transición",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 2233",
+       "NURS 2141"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GECF 1010",
+      "title": "Introducción a la Fe Cristiana",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "NURS 3100",
+      "title": "Dimensiones de la Práctica Profesional",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3115",
+      "title": "Introducción al Proceso de Investigación en Enfermería",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3120",
+      "title": "Estimado de Salud",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEEN 1103",
+      "title": "Inglés como Segundo Idioma III: Writing",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "GEEN 1102"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GESP 2203",
+      "title": "Literatura y Visión de Mundo",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "GESP 1102"
+      ],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "NURS 3140",
+      "title": "Intervención en Transiciones Sicosociales",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 3100",
+       "NURS 3120",
+       "NURS 3115"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 3190",
+      "title": "Intervenciones Profesionales en el Ciclo de Vida",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 3100",
+       "NURS 3120",
+       "NURS 3115"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4911",
+      "title": "Práctica en Intervenciones Profesionales en el Ciclo de Vida",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 3100",
+       "NURS 3120",
+       "NURS 3115"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GEEC 2000",
+      "title": "Cultura Emprendedora",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "NURS 4180",
+      "title": "Cuidado de Enfermería a la Familia y Comunidad",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 3140",
+       "NURS 3190"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "NURS 4914",
+      "title": "Práctica en cuidado de Enfermería a la Familia y Comunidad",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 4911"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "GEPE 4040",
+      "title": "Ética y Responsabilidad Social",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEST-ELECTIVE",
+      "title": "GEST Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEST 2020 El Ambiente Natural y El Ser Humano or GEST 2030 Tecnología y Ambiente",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "NURS 4980",
+      "title": "Taller Integrador",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "NURS 4914"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "FREE-ELECTIVE-1",
+      "title": "Curso Electivo",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective course (choose a course)",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEHS-ELECTIVE",
+      "title": "GEHS Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEHS 3020 Sociedad Global, GEHS 3050 Formación Humana Sociedad y Cultura, GEHS 4030 Civilización Occidental Moderna y Contemporánea, or GEHS 4020 Civilización Occidental Antigua y Medieval",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GEPE-ELECTIVE",
+      "title": "GEPE Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEPE 3010 Apreciación del Arte, GEPE 3020 Apreciación de la Música, or GEPE 3030 Apreciación del Teatro",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ]
+ }
+}

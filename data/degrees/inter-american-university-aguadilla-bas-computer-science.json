@@ -1,0 +1,602 @@
+{
+ "institution": {
+  "name": "Inter American University of Puerto Rico",
+  "city": "Aguadilla, PR",
+  "state": "PR",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "inter-american-university-aguadilla-bas-computer-science",
+  "degree": "BAS",
+  "major": "Computer Science",
+  "catalog_year": "2018-2019",
+  "total_credits": 122,
+  "source_url": "https://aguadilla.inter.edu/wp-content/uploads/2023/10/Bachelor-of-Applied-Science-in-Computer-Science.pdf",
+  "requirements_only": false,
+  "notes": "Official Inter American University of Puerto Rico, Aguadilla Campus, Department of Science Technology \"Sequential Bachelor of Applied Science in Computer Science\", Effective Date: 2018 (still the published sequential on the campus site as of 2026-10-10). 8-semester sequence; catalog-stated degree total 122 credits (General Education 48 + Concentration 65 + Prescribed distributive 6 + Electives 3). English I/II/III slots depend on College Board score (GEEN 1101/1201/2311, 1102/1202/2312, 1103/1203/2313) and are recorded as choice slots. Prescribed distributive slots = any two of the 9 listed COMP courses (COMP 2850, 3600, 3800, 397_ special topics 1-6 cr, 4160, 4210, 4415, 4480, 4580).",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "COMP 2120",
+      "title": "Programming Logic",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "GEEN-ENGLISH-I",
+      "title": "English I",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of GEEN 1101, GEEN 1201, or GEEN 2311 according to College Board results",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "GEIC 1010",
+      "title": "Information and Computer Technologies",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "GEMA 1200",
+      "title": "Fundamentals of Algebra",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "GESP 1101",
+      "title": "Literature and Communication: Narrative and Poetry",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "COMP 2025",
+      "title": "Web Page Development",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 2315",
+      "title": "Structured Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2120"
+      ],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "GEEN-ENGLISH-II",
+      "title": "English II",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of GEEN 1102, GEEN 1202, or GEEN 2312 according to College Board results",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "GESP 1102",
+      "title": "Literature and Communication: Essay and Theatre",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "MATH 1500",
+      "title": "Pre-calculation",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "GEMA 1200"
+      ],
+      "tccns": "",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "COMP 2400",
+      "title": "Object-Oriented Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2315"
+      ],
+      "tccns": "",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 2501",
+      "title": "Discrete Computational Structures I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 1500"
+      ],
+      "tccns": "",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "COMP 2800",
+      "title": "Databases",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "GEEN-ENGLISH-III",
+      "title": "English III",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of GEEN 1103, GEEN 1203, or GEEN 2313 according to College Board results",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "MATH 2251",
+      "title": "Calculus I",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 1500"
+      ],
+      "tccns": "",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "COMP 2502",
+      "title": "Discrete Computation Structures II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 2900",
+      "title": "Data Structure",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2400",
+       "COMP 2501"
+      ],
+      "tccns": "",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "COMP 3015",
+      "title": "WEB Programming with Databases",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2800"
+      ],
+      "tccns": "",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "GEFC 1010",
+      "title": "Introduction to the Christian Faith",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "GESP 2203",
+      "title": "Literature and World view",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "COMP 3300",
+      "title": "Computer Organization and Architecture",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2900"
+      ],
+      "tccns": "",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 3900",
+      "title": "Visual Computing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "GEPE-APPRECIATION",
+      "title": "Art/Music/Theatre Appreciation",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEPE 3010 Art Appreciation, GEPE 3020 Music Appreciation, or GEPE 3030 Theatre Appreciation",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "GEST 2020",
+      "title": "The Natural Environment and the Human Being",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "PHYS 3001",
+      "title": "General Physics I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 1500"
+      ],
+      "tccns": "",
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "COMP 3400",
+      "title": "Software Engineer",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2800",
+       "COMP 2900"
+      ],
+      "tccns": "",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 3500",
+      "title": "Operating Systems",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 3300"
+      ],
+      "tccns": "",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "GEEC 2000",
+      "title": "Entrepreneurial Culture",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "GEHS 2010",
+      "title": "Historical Process of Contemporary Puerto Rico",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "COMP 4200",
+      "title": "Remote Processing and Networking",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 2502",
+       "COMP 3300"
+      ],
+      "tccns": "",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP 4400",
+      "title": "Systems Development and Implementation",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 3400"
+      ],
+      "tccns": "",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "COMP 4410",
+      "title": "Computer Security",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "COMP 3300"
+      ],
+      "tccns": "",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "GEHP 3000",
+      "title": "Integral Health and Quality of Life",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "GEHS-ELECTIVE",
+      "title": "Global Society / Human Formation / Western Civilization",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Select one: GEHS 3020 Global Society, GEHS 3050 Human Formation Society and Culture, GEHS 4020 Ancient and Medieval Western Civilization, or GEHS 4030 Modern and Contemporary Western Civilization",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "COMP 4910",
+      "title": "Practice and Professional Ethics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "COMP-PRESCRIBED-DISTRIBUTIVE-1",
+      "title": "Prescribed Distributive Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one prescribed Computer Science course: COMP 2850, 3600, 3800, 397_ (1-6 cr), 4160, 4210, 4415, 4480, or 4580",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "COMP-PRESCRIBED-DISTRIBUTIVE-2",
+      "title": "Prescribed Distributive Course",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Select one prescribed Computer Science course: COMP 2850, 3600, 3800, 397_ (1-6 cr), 4160, 4210, 4415, 4480, or 4580",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-1",
+      "title": "Elective Course",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Elective course (choose a course)",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "GEPE 4040",
+      "title": "Ethics and social responsibility",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "444e96aeb11077b16ba28969c7cffefb3081fd91838ce639cf3ba8b5f8fd2f6f",
+  "last_verified": "2026-10-10"
+ }
+}

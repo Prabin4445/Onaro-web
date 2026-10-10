@@ -1,0 +1,828 @@
+{
+ "institution": {
+  "name": "University of Puerto Rico at Mayaguez",
+  "city": "Mayaguez, PR",
+  "state": "PR",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "university-of-puerto-rico-mayaguez-bs-computer-sciences-and-engineering",
+  "degree": "BS",
+  "major": "Computer Sciences and Engineering",
+  "catalog_year": "2025-2026",
+  "total_credits": 153,
+  "source_url": "https://www.uprm.edu/cse/wp-content/uploads/sites/153/2022/07/Curriculum_CIIC_BS-2.pdf",
+  "requirements_only": false,
+  "notes": "Official UPRM Computer Science and Engineering Department curriculum for the BS in Computer Sciences and Engineering, July 2022 edition (applies to students entering during or after Summer 2020; still the published current curriculum on the department site as of 2026-10-10). 10-semester (5-year) sequence; catalog-stated TOTAL CREDITS: 153. \"INGL 3---\" first/second-year English slots depend on placement and are recorded as choice slots; socio-humanistic, free, physical-education (EDFI), and technical elective slots recorded with distinct codes. Technical electives = approved CIIC/INSO 5xxx list per department rules. Catalog prints \"CIIIC 4050\" (triple I) for Operating Systems; transcribed as CIIC 4050, the correct departmental course code.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "MATE 3031",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "QUIM 3131",
+      "title": "General Chemistry I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "QUIM 3133",
+      "title": "General Chemistry Lab I",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "INGL-FIRST-YEAR-1",
+      "title": "English First Year",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "INGL 3---: first-year English course per placement",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 3015",
+      "title": "Intro. to Computer Programming I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "MATE 3032",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3031"
+      ],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "QUIM 3132",
+      "title": "General Chemistry II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "QUIM 3131",
+       "QUIM 3133"
+      ],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "QUIM 3134",
+      "title": "General Chemistry Lab II",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "QUIM 3131",
+       "QUIM 3133"
+      ],
+      "tccns": "",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "INGL-FIRST-YEAR-2",
+      "title": "English First Year",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "INGL 3---: first-year English course per placement",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 3075",
+      "title": "Foundations of Computing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s2-4",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 4010",
+      "title": "Advanced Programming",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s2-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "MATE 3063",
+      "title": "Calculus III",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "FISI 3171",
+      "title": "Physics I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3031"
+      ],
+      "tccns": "",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "FISI 3173",
+      "title": "Physics Lab I",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 4020",
+      "title": "Data Structures",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4010",
+       "CIIC 3075"
+      ],
+      "tccns": "",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "code": "ESPA 3101",
+      "title": "Spanish I",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "CIIC 4025",
+      "title": "Algorithm Design and Analysis",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "FISI 3172",
+      "title": "Physics II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "FISI 3171"
+      ],
+      "tccns": "",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "FISI 3174",
+      "title": "Physics Lab II",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "FISI 3173"
+      ],
+      "tccns": "",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "INEL 3105",
+      "title": "Electrical Systems Analysis I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "ESPA 3102",
+      "title": "Spanish II",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ESPA 3101"
+      ],
+      "tccns": "",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "INSO 4101",
+      "title": "Intro to Software Engineering",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 3081",
+      "title": "Computer Architecture I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 3015"
+      ],
+      "tccns": "",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "MATE 4145",
+      "title": "Linear Algebra and Differential Equations",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3063"
+      ],
+      "tccns": "",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "INEL 4115",
+      "title": "Electrical Measurements Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "INGL-SECOND-YEAR-1",
+      "title": "English Second Year",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "INGL 3---: second-year English course per placement",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "INGE 3011",
+      "title": "Engineering Graphics",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 4082",
+      "title": "Computer Architecture II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 3081"
+      ],
+      "tccns": "",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "TECHNICAL-ELECTIVE-1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CIIC/INSO 5xxx technical elective per department rules",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "ININ 4010",
+      "title": "Engineering Probability and Statistics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 3015",
+       "MATE 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "INGL-SECOND-YEAR-2",
+      "title": "English Second Year",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "INGL 3---: second-year English course per placement",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "CIIC 4050",
+      "title": "Operating Systems",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020",
+       "CIIC 4082"
+      ],
+      "tccns": "",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 4030",
+      "title": "Programming Languages",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 5045",
+      "title": "Automata and Formal Languages",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "INGE 3045",
+      "title": "Electrical Engineering Materials",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "QUIM 3132",
+       "QUIM 3134",
+       "FISI 3172"
+      ],
+      "tccns": "",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIO-HUMANISTIC-ELECTIVE-1",
+      "title": "Socio-Humanistic Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Socio-humanistic elective per general education requirements",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "CIIC 4060",
+      "title": "Database Systems",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "CIIC 4070",
+      "title": "Computer Networks",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4020"
+      ],
+      "tccns": "",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "TECHNICAL-ELECTIVE-2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CIIC/INSO 5xxx technical elective per department rules",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "ININ 4015",
+      "title": "Engineering Economics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3032"
+      ],
+      "tccns": "",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIO-HUMANISTIC-ELECTIVE-2",
+      "title": "Socio-Humanistic Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Socio-humanistic elective per general education requirements",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 9,
+    "courses": [
+     {
+      "code": "CIIC 4151",
+      "title": "CSE Design Project",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CIIC 4025",
+       "CIIC 4060",
+       "INSO 4101"
+      ],
+      "tccns": "",
+      "slot_id": "s9-0",
+      "xfer": []
+     },
+     {
+      "code": "INGE 3035",
+      "title": "Engineering Mechanics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATE 3031"
+      ],
+      "tccns": "",
+      "slot_id": "s9-1",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-1",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s9-2",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-2",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s9-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIO-HUMANISTIC-ELECTIVE-3",
+      "title": "Socio-Humanistic Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Socio-humanistic elective per general education requirements",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s9-4",
+      "xfer": []
+     },
+     {
+      "code": "EDFI-ELECTIVE-1",
+      "title": "Physical Education Elective",
+      "credits": 1,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "EDFI physical education elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s9-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 10,
+    "courses": [
+     {
+      "code": "TECHNICAL-ELECTIVE-3",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Approved CIIC/INSO 5xxx technical elective per department rules",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s10-0",
+      "xfer": []
+     },
+     {
+      "code": "INME 4045",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "FISI 3172",
+       "QUIM 3132",
+       "QUIM 3134"
+      ],
+      "tccns": "",
+      "slot_id": "s10-1",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-3",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s10-2",
+      "xfer": []
+     },
+     {
+      "code": "FREE-ELECTIVE-4",
+      "title": "Free Elective",
+      "credits": 3,
+      "category": "elective",
+      "choice": true,
+      "choice_note": "Free elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s10-3",
+      "xfer": []
+     },
+     {
+      "code": "SOCIO-HUMANISTIC-ELECTIVE-4",
+      "title": "Socio-Humanistic Elective",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Socio-humanistic elective per general education requirements",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s10-4",
+      "xfer": []
+     },
+     {
+      "code": "EDFI-ELECTIVE-2",
+      "title": "Physical Education Elective",
+      "credits": 1,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "EDFI physical education elective",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s10-5",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "96e7e918679ff6a9aa0f6f7ee4fcf070d6aae7bc3bf07eaa40b0e1a0826f8699",
+  "last_verified": "2026-10-10"
+ }
+}
