@@ -1,0 +1,602 @@
+{
+  "institution": {
+    "name": "Purdue University",
+    "city": "West Lafayette, IN",
+    "state": "IN",
+    "kind": "university"
+  },
+  "plan": {
+    "id": "purdue-wl-bs-computer-science",
+    "degree": "BS",
+    "major": "Computer Science",
+    "catalog_year": "2025-2026",
+    "total_credits": 120,
+    "source_url": "https://www.purdue.edu/science/archive/docs/current-students/majors/computer-science-f25-dpg.pdf",
+    "requirements_only": false,
+    "notes": "Official Purdue 2025-2026 Computer Science Degree Progression Guide (College of Science). The guide publishes credit ranges for Science Core options (3-4) and calculus options (MA 16100 5 cr vs MA 16500 4 cr); recorded at minimum-choice values per collection convention, which sum to exactly 120, the degree minimum ('Minimum 120 Credits'). All major, track, and prereq courses require a grade of C or better. 2.0 major/graduation GPA required.",
+    "semesters": [
+      {
+        "n": 1,
+        "courses": [
+          {
+            "code": "CS 18000",
+            "title": "Problem Solving and Object-Oriented Programming",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "Co-req CALC I"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "CS 19300",
+            "title": "Tools",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "Recommended with CS 18000; not a degree requirement per catalog notes",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "MA 16500",
+            "title": "Analytic Geometry and Calculus I",
+            "credits": 4,
+            "category": "major",
+            "choice": true,
+            "choice_note": "MA 16100 (5 cr) or MA 16500 (4 cr); recorded at minimum",
+            "options": [
+              {
+                "code": "MA 16100",
+                "title": "Plane Analytic Geometry and Calculus I",
+                "credits": 5
+              },
+              {
+                "code": "MA 16500",
+                "title": "Analytic Geometry and Calculus I",
+                "credits": 4
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-1",
+            "title": "Free Elective",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-2",
+            "title": "Free Elective",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "courses": [
+          {
+            "code": "CS 18200",
+            "title": "Foundations of Computer Science",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "CS 18000",
+              "CALC I"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "CS 24000",
+            "title": "Programming in C",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "CS 18000"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "MA 16600",
+            "title": "Analytic Geometry and Calculus II",
+            "credits": 4,
+            "category": "major",
+            "choice": true,
+            "choice_note": "MA 16200 (5 cr) or MA 16600 (4 cr); recorded at minimum",
+            "options": [
+              {
+                "code": "MA 16200",
+                "title": "Plane Analytic Geometry and Calculus II",
+                "credits": 5
+              },
+              {
+                "code": "MA 16600",
+                "title": "Analytic Geometry and Calculus II",
+                "credits": 4
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option (First-Year Composition)",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "First-Year Composition selection from Science Core list (3-4 credits; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-3",
+            "title": "Free Elective",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "courses": [
+          {
+            "code": "CS 25000",
+            "title": "Computer Architecture",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "CS 18200",
+              "CS 24000"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "CS 25100",
+            "title": "Data Structures and Algorithms",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "CS 18200",
+              "CS 24000"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "MA 26100",
+            "title": "Multivariate Calculus",
+            "credits": 4,
+            "category": "major",
+            "choice": true,
+            "choice_note": "MA 26100 (4 cr) or MA 27101 Honors (5 cr); recorded at minimum",
+            "options": [
+              {
+                "code": "MA 26100",
+                "title": "Multivariate Calculus",
+                "credits": 4
+              },
+              {
+                "code": "MA 27101",
+                "title": "Honors Multivariate Calculus",
+                "credits": 5
+              }
+            ],
+            "prereq": [
+              "CALC II"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CS 29100",
+            "title": "Sophomore Development Seminar",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "Recommended; not a degree requirement",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "courses": [
+          {
+            "code": "COM 21700",
+            "title": "Science Writing and Presentation",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "Suggested Science Core option",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CS 25200",
+            "title": "Systems Programming",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [
+              "CS 25000",
+              "CS 25100"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "MA 26500",
+            "title": "Linear Algebra",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "MA 26500 or MA 35100 (both 3 cr)",
+            "options": [
+              {
+                "code": "MA 26500",
+                "title": "Linear Algebra",
+                "credits": 3
+              },
+              {
+                "code": "MA 35100",
+                "title": "Elementary Linear Algebra",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-4",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 5,
+        "courses": [
+          {
+            "code": "STAT 35000",
+            "title": "Introduction to Statistics",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "STAT 35000 or STAT 51100 (both 3 cr)",
+            "options": [
+              {
+                "code": "STAT 35000",
+                "title": "Introduction to Statistics",
+                "credits": 3
+              },
+              {
+                "code": "STAT 51100",
+                "title": "Statistical Methods",
+                "credits": 3
+              }
+            ],
+            "prereq": [
+              "CALC II"
+            ],
+            "tccns": ""
+          },
+          {
+            "code": "CS-TRACK-REQ-1",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CS-TRACK-REQ-2",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-5",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CS 39100",
+            "title": "Junior Resources Seminar",
+            "credits": 1,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "Recommended; not a degree requirement",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 6,
+        "courses": [
+          {
+            "code": "CS-TRACK-REQ-3",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CS-TRACK-REQ-4",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "GREAT-ISSUES",
+            "title": "Great Issues in Science",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Choose one Great Issues in Science course",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-6",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 7,
+        "courses": [
+          {
+            "code": "CS-TRACK-REQ-5",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection from the College of Science core list (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT-2",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-7",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-8",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "courses": [
+          {
+            "code": "CS-TRACK-REQ-6",
+            "title": "CS Track Requirement",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "CS track requirement: 6 track courses required across semesters 5-8; specific courses determined by the student's chosen track (Algorithmic Foundations, Database & Information Systems, Machine Intelligence, Programming Languages, Software Engineering, or Systems). Each track course is 3 credits.",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT-3",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SCI-CORE-OPT-4",
+            "title": "Science Core Option",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Science Core selection (3-4 credits each; recorded at minimum)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-9",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "FREE-ELECT-10",
+            "title": "Free Elective",
+            "credits": 3,
+            "category": "elective",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      }
+    ],
+    "external_prereqs": [
+      "Co-req CALC I",
+      "CALC I",
+      "CALC II"
+    ]
+  }
+}

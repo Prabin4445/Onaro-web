@@ -1,0 +1,555 @@
+{
+ "institution": {
+  "name": "University of Southern Indiana",
+  "city": "Evansville",
+  "state": "IN",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "usi-bse-engineering",
+  "degree": "BSE",
+  "major": "Engineering",
+  "catalog_year": "2025-2026",
+  "total_credits": 127,
+  "source_url": "http://usi.edu/media/iprfudqu/engineering.pdf",
+  "requirements_only": false,
+  "notes": "Official Engineering Degree Map PDF from the USI Pott College Advising & Resource Center, transcribed with exact per-semester credit totals matching the published map (16/15/18/16/17/15/15/15 = 127). The 2025-2026 USI Undergraduate Bulletin (bulletin.usi.edu, Engineering Major B.S.E.) confirms the four-year Bachelor of Science in Engineering requires 127 semester hours. The map is labeled a 'suggested degree plan' (advisor-individualized); prerequisites shown are as printed on the map. Course-code style normalized with hyphens (e.g. Eng 101 -> ENG-101); 'L' denotes the lab component included in the credit total.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "ENG-101",
+      "title": "Rhetoric and Composition 1",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s1-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "UNIV-101",
+      "title": "First Year Experience",
+      "credits": 1,
+      "category": "gened",
+      "slot_id": "s1-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "KIN-192",
+      "title": "Fitness/Wellness",
+      "credits": 1,
+      "category": "gened",
+      "slot_id": "s1-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM-261",
+      "title": "General Chemistry 1",
+      "credits": 4,
+      "category": "major",
+      "slot_id": "s1-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-230",
+      "title": "Calculus 1",
+      "credits": 4,
+      "category": "major",
+      "slot_id": "s1-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-107",
+      "title": "Fundamentals of Engineering",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-230"
+      ],
+      "slot_id": "s1-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "CMST-101",
+      "title": "Public Speaking",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s2-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-108",
+      "title": "Systems of Engineering and Freshman Design",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENGR-107"
+      ],
+      "slot_id": "s2-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-121/ME-121",
+      "title": "Drafting and Annotation (Engr 121 or ME 121)",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Complete Engr 121 or ME 121.",
+      "options": [
+       {
+        "code": "ENGR-121",
+        "title": "Drafting and Annotation",
+        "credits": 1
+       },
+       {
+        "code": "ME-121",
+        "title": "Drafting and Annotation",
+        "credits": 1
+       }
+      ],
+      "slot_id": "s2-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-235",
+      "title": "Calculus 2",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH-230"
+      ],
+      "slot_id": "s2-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS-205",
+      "title": "Intermediate Physics 1 with Lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "MATH-230"
+      ],
+      "slot_id": "s2-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "ENG-201",
+      "title": "Rhetoric and Composition 2",
+      "credits": 3,
+      "category": "gened",
+      "prereq": [
+       "ENG-101"
+      ],
+      "slot_id": "s3-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-335",
+      "title": "Calculus 3",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "MATH-235"
+      ],
+      "slot_id": "s3-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-235",
+      "title": "Statics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "PHYS-205",
+       "MATH-235"
+      ],
+      "slot_id": "s3-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME-225",
+      "title": "Thermodynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "PHYS-205"
+      ],
+      "slot_id": "s3-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS-206",
+      "title": "Intermediate Physics 2 with Lab",
+      "credits": 5,
+      "category": "major",
+      "prereq": [
+       "PHYS-205",
+       "MATH-230"
+      ],
+      "slot_id": "s3-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "ECE-255",
+      "title": "Electrical Circuits",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "PHYS-206"
+      ],
+      "slot_id": "s4-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-275",
+      "title": "Dynamics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR-235",
+       "MATH-230"
+      ],
+      "slot_id": "s4-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-291",
+      "title": "Experimental Design and Technical Writing (WRE)",
+      "credits": 2,
+      "category": "major",
+      "prereq": [
+       "ENG-201",
+       "ENGR-108"
+      ],
+      "slot_id": "s4-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-366",
+      "title": "Differential Equations",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-335"
+      ],
+      "slot_id": "s4-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-SCI-ELECT",
+      "title": "Math/Science Elective",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Math/Science Elective per the official degree map (3-4 hours; recorded at 4).",
+      "slot_id": "s4-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "ENGR-305",
+      "title": "Engineering Statistics (WoK 1)",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR-107",
+       "MATH-235"
+      ],
+      "slot_id": "s5-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-355",
+      "title": "Strength of Materials",
+      "credits": 4,
+      "category": "major",
+      "prereq": [
+       "ENGR-235"
+      ],
+      "slot_id": "s5-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-01",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s5-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-1CR",
+      "title": "Engineering Discipline Elective",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "1-credit Engineering Discipline Elective per the official degree map.",
+      "slot_id": "s5-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-02",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s5-4",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHIL-201",
+      "title": "Introduction to Ethics (EED)",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s5-5",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "CORE-WOK",
+      "title": "Core: Ways of Knowing",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s6-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-375",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ENGR-235"
+      ],
+      "slot_id": "s6-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-335",
+      "title": "Engineering Economics",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "MATH-230"
+      ],
+      "slot_id": "s6-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-03",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s6-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-04",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s6-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "CORE-GLOBAL",
+      "title": "Core: Ways of Knowing - Global Embedded",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s7-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "CORE-WLC",
+      "title": "Core: World Language and Culture",
+      "credits": 3,
+      "category": "gened",
+      "slot_id": "s7-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-05",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s7-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-06",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s7-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-07",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s7-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "ECON-208/209",
+      "title": "Macro or Micro Economics (Econ 208 or 209)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Complete Econ 208 or Econ 209.",
+      "options": [
+       {
+        "code": "ECON-208",
+        "title": "Macroeconomics",
+        "credits": 3
+       },
+       {
+        "code": "ECON-209",
+        "title": "Microeconomics",
+        "credits": 3
+       }
+      ],
+      "slot_id": "s8-0",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-491",
+      "title": "Senior Design",
+      "credits": 3,
+      "category": "major",
+      "prereq": [
+       "ECE-255",
+       "ENGR-275",
+       "ENGR-305",
+       "ENGR-335",
+       "ENGR-375"
+      ],
+      "slot_id": "s8-1",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-08",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s8-2",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-09",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s8-3",
+      "xfer": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGR-DISC-ELECT-10",
+      "title": "Engineering Discipline Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Engineering Discipline Elective per the official degree map; specific course chosen with advisor.",
+      "slot_id": "s8-4",
+      "xfer": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ],
+  "content_hash": "357c8d3ca1d5674aa8883ef1254dd39536cb4c0b9113a6c0b7e7203fc1b179e9",
+  "last_verified": "2026-10-10"
+ }
+}
