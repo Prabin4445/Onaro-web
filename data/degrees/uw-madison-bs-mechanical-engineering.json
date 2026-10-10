@@ -1,0 +1,631 @@
+{
+ "institution": {
+  "city": "Madison, WI",
+  "kind": "university",
+  "name": "University of Wisconsin-Madison",
+  "state": "WI"
+ },
+ "plan": {
+  "catalog_year": "2025-2026",
+  "degree": "BS",
+  "id": "uw-madison-bs-mechanical-engineering",
+  "major": "Mechanical Engineering",
+  "notes": "Official UW-Madison College of Engineering Mechanical Engineering BS sample degree plan (First year 31, Second year 32, Third year 34, Fourth year 31 = 128 credits as published). Courses listed in catalog sequence and split into 8 semesters matching the published year totals; semester pairing follows prerequisite logic (calc/physics/statics early, design sequence late). CHEM choice recorded at minimum 4 (CHEM 103) per convention. M E 201 vs INTEREGR 156: the plan lists one in fall and the other in spring, both as choice slots. Tuition page on the source cites 2025-26 rates, so catalog_year 2025-2026.",
+  "requirements_only": false,
+  "semesters": [
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 221",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Calculus And Analytic Geometry 1",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHEM 103 (4 cr), CHEM 104 (5 cr), or CHEM 109 (5 cr); recorded at 4",
+      "code": "CHEM 103",
+      "credits": 4,
+      "options": [
+       {
+        "code": "CHEM 103",
+        "credits": 4,
+        "title": "General Chemistry I"
+       },
+       {
+        "code": "CHEM 104",
+        "credits": 5,
+        "title": "General Chemistry II"
+       },
+       {
+        "code": "CHEM 109",
+        "credits": 5,
+        "title": "Advanced General Chemistry"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Chemistry",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "M E 201 (Introduction to Mechanical Engineering) or INTEREGR 156 (Introduction to Engineering Design); the plan lists one in fall and the other in spring",
+      "code": "M E 201",
+      "credits": 3,
+      "options": [
+       {
+        "code": "M E 201",
+        "credits": 3,
+        "title": "Introduction to Mechanical Engineering"
+       },
+       {
+        "code": "INTEREGR 156",
+        "credits": 3,
+        "title": "Introduction to Engineering Design"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Engineering",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved liberal studies elective",
+      "code": "LIBERAL-STUDIES-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Liberal Studies Elective",
+      "slot_id": "s1-3",
+      "xfer": []
+     }
+    ],
+    "n": 1
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 222",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Calculus And Analytic Geometry 2",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "E M A 201",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Statics",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 231",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Geometric Modeling For Design And Manufacturing",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "The other of M E 201 / INTEREGR 156 from fall",
+      "code": "INTEREGR 156",
+      "credits": 3,
+      "options": [
+       {
+        "code": "INTEREGR 156",
+        "credits": 3,
+        "title": "Introduction to Engineering Design"
+       },
+       {
+        "code": "M E 201",
+        "credits": 3,
+        "title": "Introduction to Mechanical Engineering"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction to Engineering",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved liberal studies elective",
+      "code": "LIBERAL-STUDIES-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Liberal Studies Elective",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ],
+    "n": 2
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "E M A 303",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Mechanics Of Materials",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 234",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Calculus-Functions Of Several Variables",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E/E M A 307",
+      "credits": 1,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Mechanics Of Materials Lab",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "COMP SCI 220",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Data Science Programming I",
+      "slot_id": "s3-3",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved liberal studies elective",
+      "code": "LIBERAL-STUDIES-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Liberal Studies Elective",
+      "slot_id": "s3-4",
+      "xfer": []
+     }
+    ],
+    "n": 3
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "E M A 202",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Dynamics",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "MATH 320",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Linear Algebra And Differential Equations",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "PHYSICS 202",
+      "credits": 5,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "General Physics",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M S & E 350",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction To Materials Science",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "STAT 324 or I SY E 210 (both 3 cr)",
+      "code": "STAT 324",
+      "credits": 3,
+      "options": [
+       {
+        "code": "STAT 324",
+        "credits": 3,
+        "title": "Introduction to Statistics For Science And Engineering"
+       },
+       {
+        "code": "I SY E 210",
+        "credits": 3,
+        "title": "Probability and Statistics for Engineers"
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "title": "Statistics",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ],
+    "n": 4
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 331",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Computer-aided Engineering",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 361",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Thermodynamics",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 340",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Dynamic Systems",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved math/science elective",
+      "code": "MATH-SCI-ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Math/Science Elective",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 310",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Manufacturing: Polymer Processing And Engineering",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved liberal studies elective",
+      "code": "LIBERAL-STUDIES-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Liberal Studies Elective",
+      "slot_id": "s5-5",
+      "xfer": []
+     }
+    ],
+    "n": 5
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 342",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Design Of Machine Elements",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 363",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Fluid Dynamics",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "INTEREGR 397",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Engineering Communication",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 376",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Introduction To Mechatronics",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 311",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Manufacturing: Metals And Automation",
+      "slot_id": "s6-4",
+      "xfer": []
+     }
+    ],
+    "n": 6
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 351",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Interdisciplinary Experiential Design Projects I",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 364",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Elementary Heat Transfer",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 368",
+      "credits": 4,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Engineering Measurements And Instrumentation",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved technical elective",
+      "code": "TECHNICAL-ELECTIVE-1",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Technical Elective",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved technical elective",
+      "code": "TECHNICAL-ELECTIVE-2",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Technical Elective",
+      "slot_id": "s7-4",
+      "xfer": []
+     }
+    ],
+    "n": 7
+   },
+   {
+    "courses": [
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 352",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Interdisciplinary Experiential Design Projects II",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "code": "M E 370",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Energy Systems Laboratory",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved technical elective",
+      "code": "TECHNICAL-ELECTIVE-3",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Technical Elective",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "category": "major",
+      "choice": true,
+      "choice_note": "Any approved technical elective",
+      "code": "TECHNICAL-ELECTIVE-4",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Technical Elective",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Any approved liberal studies elective",
+      "code": "LIBERAL-STUDIES-5",
+      "credits": 3,
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "title": "Liberal Studies Elective",
+      "slot_id": "s8-4",
+      "xfer": []
+     }
+    ],
+    "n": 8
+   }
+  ],
+  "source_url": "https://engineering.wisc.edu/programs/degrees/mechanical-engineering-bs/",
+  "total_credits": 128,
+  "content_hash": "ebbe33e2b63f78565f8727473f28ca5e2297a761b0781cc5e5f8ca0aae5c995f",
+  "last_verified": "2026-10-10"
+ }
+}
