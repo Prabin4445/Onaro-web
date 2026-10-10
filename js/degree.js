@@ -1385,12 +1385,20 @@ function renderTracker(){
     '<button class="btn btn-line btn-sm" id="degResetProg">'+esc(t('deg.resetProg'))+'</button></div>';
   if(!isTracked) h+='<div style="text-align:center;margin:-4px 0 10px;opacity:.65;font-size:12px">'+esc(t('trackHint'))+'</div>';
   if(!xferMode){
-    const cap=paceCap(cur.slug);
-    const view=reflowView(plan,cap);
-    h+=headerHTML(plan,meta,done,earned,total,cap,view);
-    h+=intakeHTML(cur.slug);
-    h+=paceHTML(plan,done,cap,view);
-    view.forEach(function(vs){ h+=semHTML(plan,done,vs); });
+    if(plan.requirements_only){
+      /* Honest rendering: this school publishes requirements, not a semester
+         sequence. Show a checkable requirements list, never fake semesters. */
+      h+='<div class="deg-reqonly-notice">'+esc(t('deg.reqOnly'))+'</div>';
+      h+=headerHTML(plan,meta,done,earned,total,0,null);
+      h+=reqOnlyHTML(plan,done);
+    }else{
+      const cap=paceCap(cur.slug);
+      const view=reflowView(plan,cap);
+      h+=headerHTML(plan,meta,done,earned,total,cap,view);
+      h+=intakeHTML(cur.slug);
+      h+=paceHTML(plan,done,cap,view);
+      view.forEach(function(vs){ h+=semHTML(plan,done,vs); });
+    }
   }else{
     h+=xferHTML(plan,meta,done,earned,total);
   }
@@ -1503,6 +1511,38 @@ function headerHTML(plan,meta,done,earned,total,cap,view){
    preserved on every item, so completion keys, tiles and swipe handlers
    work identically in the re-flowed view. Collapse keys are namespaced so
    the "as published" and "my pace" views keep independent open state. */
+/* Requirements-only plan view: a single checkable list of all required
+   courses, grouped by category. No fake semester breakdown. Reuses the same
+   tileHTML so checking courses off works identically (progress syncs too). */
+function reqOnlyHTML(plan,done){
+  const sems=semsOf(plan);
+  const groups={};
+  const order=[];
+  sems.forEach(function(sem,si){
+    (sem.courses||[]).forEach(function(c,ci){
+      const cat=c.category||'major';
+      if(!groups[cat]){ groups[cat]=[]; order.push(cat); }
+      groups[cat].push({c:c,si:si,ci:ci});
+    });
+  });
+  let h='<div class="deg-reqonly">';
+  order.forEach(function(cat){
+    const items=groups[cat];
+    let catCr=0, catDone=0;
+    items.forEach(function(it){
+      catCr+=Number(it.c.credits)||0;
+      if(occRec(done,plan,it.c,it.si,it.ci)) catDone++;
+    });
+    h+='<section class="deg-sem open"><div class="deg-sem-hd" style="cursor:default"><span class="grow">'+
+      '<span class="t">'+esc(catLabel(cat))+'</span>'+
+      '<span class="s">'+catDone+'/'+items.length+' · '+esc(t('deg.semCredits',{n:catCr}))+'</span></span></div>'+
+      '<div class="deg-sem-body">';
+    items.forEach(function(it){ h+=tileHTML(plan,it.c,done,it.si,it.ci); });
+    h+='</div></section>';
+  });
+  h+='</div>';
+  return h;
+}
 function semHTML(plan,done,vw){
   const items=vw.items, n=vw.n;
   const ckey=vw.pub?vw.semN:('pace:'+n);
