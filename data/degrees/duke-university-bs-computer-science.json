@@ -1,0 +1,314 @@
+{
+ "institution": {
+  "name": "Duke University",
+  "city": "Durham, NC",
+  "state": "NC",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "duke-university-bs-computer-science",
+  "degree": "BS",
+  "major": "Computer Science",
+  "catalog_year": "2026-2027",
+  "total_credits": 15,
+  "source_url": "https://cs.duke.edu/undergraduate/degrees/BS",
+  "requirements_only": true,
+  "notes": "Official Duke University Computer Science BS requirements (cs.duke.edu). The catalog publishes official degree requirements with no official semester sequence; collected as a single requirements block. Duke uses COURSE UNITS, not semester hours: 1 course = 1 unit (approximately 3-4 semester hours). Units below are Duke course units; they were NOT converted to semester hours. Major requires 15 units; 34 units total for the BS degree. Revised requirements (AI core including COMPSCI 270 + AI elective) apply to students matriculating Fall 2026 and later; pre-Fall-2026 matriculants are grandfathered under prior requirements. Concentrations available: Software Engineering and Design; Software Systems; Data Science; AI and Machine Learning.",
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Requirements",
+    "courses": [
+     {
+      "code": "COMPSCI 201",
+      "title": "Data Structures and Algorithms",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "COMPSCI 230",
+      "title": "Discrete Mathematics (or 231D/232)",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "COMPSCI 230 OR COMPSCI 231D OR COMPSCI 232",
+      "options": [
+       {
+        "code": "COMPSCI 230",
+        "title": "Discrete Mathematics",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 231D",
+        "title": "Discrete Mathematics (D)",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 232",
+        "title": "Discrete Mathematics (alt)",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "COMPSCI 210D",
+      "title": "Computer Architecture (or 250D)",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "COMPSCI 210D OR COMPSCI 250D",
+      "options": [
+       {
+        "code": "COMPSCI 210D",
+        "title": "Computer Architecture",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 250D",
+        "title": "Computer Architecture (alt)",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "COMPSCI 270",
+      "title": "Probability / Linear Algebra requirement",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "COMPSCI 270 OR (one of MATH 202, MATH 212, MATH 219 AND one of MATH 216, MATH 218, MATH 221)",
+      "options": [
+       {
+        "code": "COMPSCI 270",
+        "title": "Introduction to Artificial Intelligence (core)",
+        "credits": 1
+       },
+       {
+        "code": "MATH 202/212/219+216/218/221",
+        "title": "Math alternative sequence",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "COMPSCI 330",
+      "title": "Design and Analysis of Algorithms",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "SYS",
+      "title": "Systems course (1 unit, choose one)",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of: COMPSCI 310/510, 316/516, 345, 350L/550, 351/581, 356/514, 512",
+      "options": [
+       {
+        "code": "COMPSCI 310",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 316",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 345",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 350L",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 351",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 356",
+        "title": "Systems option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 512",
+        "title": "Systems option",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-5",
+      "xfer": []
+     },
+     {
+      "code": "AI",
+      "title": "AI course (1 unit, choose one)",
+      "credits": 1,
+      "category": "major",
+      "choice": true,
+      "choice_note": "One of: COMPSCI 370/570, 371/671, 526, 527, 575",
+      "options": [
+       {
+        "code": "COMPSCI 370",
+        "title": "AI option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 371",
+        "title": "AI option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 526",
+        "title": "AI option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 527",
+        "title": "AI option",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 575",
+        "title": "AI option",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-6",
+      "xfer": []
+     },
+     {
+      "code": "ELEC",
+      "title": "CS electives (4 units)",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "4 elective units (details per department advising)",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-7",
+      "xfer": []
+     },
+     {
+      "code": "COMPSCI 101L",
+      "title": "Introductory course (or 102L/116)",
+      "credits": 1,
+      "category": "core",
+      "choice": true,
+      "choice_note": "COMPSCI 101L OR COMPSCI 102L OR COMPSCI 116 (waived if COMPSCI 201 completed successfully)",
+      "options": [
+       {
+        "code": "COMPSCI 101L",
+        "title": "Introduction to Computer Science",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 102L",
+        "title": "Introduction to Computer Science (alt)",
+        "credits": 1
+       },
+       {
+        "code": "COMPSCI 116",
+        "title": "Introduction to Computer Science (alt)",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-8",
+      "xfer": []
+     },
+     {
+      "code": "MATH 111L",
+      "title": "Calculus I (and II)",
+      "credits": 2,
+      "category": "core",
+      "choice": true,
+      "choice_note": "MATH 111L & MATH 112L OR MATH 21 & MATH 22 (2 units)",
+      "options": [
+       {
+        "code": "MATH 111L+112L",
+        "title": "Calculus I & II",
+        "credits": 2
+       },
+       {
+        "code": "MATH 21+22",
+        "title": "Calculus I & II (alt)",
+        "credits": 2
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-9",
+      "xfer": []
+     },
+     {
+      "code": "STA 230",
+      "title": "Probability/Statistics requirement",
+      "credits": 1,
+      "category": "core",
+      "choice": true,
+      "choice_note": "STA 230/MATH 230 OR STA 230S/MATH 230S OR STA 231/MATH 340 OR MATH 231 OR STA 240L",
+      "options": [
+       {
+        "code": "STA 230",
+        "title": "Statistics option",
+        "credits": 1
+       },
+       {
+        "code": "STA 231",
+        "title": "Statistics option",
+        "credits": 1
+       },
+       {
+        "code": "STA 240L",
+        "title": "Statistics option",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-10",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "37d1fdb68fc4189ad970d42aa1e20d78eba3a16f7e8007c05dec07c75719ba3b",
+  "last_verified": "2026-10-10"
+ }
+}
