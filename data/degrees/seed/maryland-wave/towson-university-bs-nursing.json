@@ -1,0 +1,626 @@
+{
+  "institution": {
+    "name": "Towson University",
+    "city": "Towson, MD",
+    "state": "MD",
+    "kind": "university"
+  },
+  "plan": {
+    "id": "towson-university-bs-nursing",
+    "degree": "BS",
+    "major": "Nursing",
+    "catalog_year": "2026-2027",
+    "total_credits": 123,
+    "source_url": "https://catalog.towson.edu/undergraduate/health-professions/nursing/nursing-basic-students/",
+    "requirements_only": false,
+    "notes": "Towson University 2026-2027 Undergraduate Catalog, Major in Nursing: Basic Students (B.S.). Official Four-Year Plan of Study; catalog publishes Total Units 123-124. The statistics slot (MATH 231, MATH 237, or PSYC 212, 3-4 credits) is recorded at 3 credits (MATH 231) per minimum-credit convention; choosing PSYC 212 (4 credits) yields the 124-credit path. BIOL 221 & 221L / BIOL 222 & 222L are lecture+lab combined 4-credit rows as printed. NURS 416 appears in the Junior Term 2 column of the catalog grid.",
+    "semesters": [
+      {
+        "n": 1,
+        "courses": [
+          {
+            "code": "BIOL 191",
+            "title": "Introductory Biology for Health Professions",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: BIOL 191, CHEM 121; satisfies Core 7 (Biological and Physical Sciences)",
+            "options": [
+              {
+                "code": "BIOL 191",
+                "title": "Introductory Biology for Health Professions",
+                "credits": 3
+              },
+              {
+                "code": "CHEM 121",
+                "title": "Allied Health Chemistry I",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIOL 191L",
+            "title": "Introductory Biology for Health Professions Lab",
+            "credits": 1,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: BIOL 191L, CHEM 121L",
+            "options": [
+              {
+                "code": "BIOL 191L",
+                "title": "Introductory Biology for Health Professions Lab",
+                "credits": 1
+              },
+              {
+                "code": "CHEM 121L",
+                "title": "Allied Health Chemistry I Laboratory",
+                "credits": 1
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 115",
+            "title": "College Algebra",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "satisfies Core 3 (Mathematics)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSYC 101",
+            "title": "Introduction to Psychology",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: PSYC 101, SOCI 101; satisfies Core 6 (Social and Behavioral Sciences)",
+            "options": [
+              {
+                "code": "PSYC 101",
+                "title": "Introduction to Psychology",
+                "credits": 3
+              },
+              {
+                "code": "SOCI 101",
+                "title": "Introduction to Sociology",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-1-OR-2",
+            "title": "Core 1 (Towson Seminar) or Core 2 (English Composition)",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Satisfies Towson Core 1 or Core 2 requirement",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-4",
+            "title": "Core 4: Creativity and Creative Development",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 2,
+        "courses": [
+          {
+            "code": "CHEM 121",
+            "title": "Allied Health Chemistry I",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: CHEM 121, BIOL 191; satisfies Core 8 (Biological and Physical Sciences)",
+            "options": [
+              {
+                "code": "CHEM 121",
+                "title": "Allied Health Chemistry I",
+                "credits": 3
+              },
+              {
+                "code": "BIOL 191",
+                "title": "Introductory Biology for Health Professions",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CHEM 121L",
+            "title": "Allied Health Chemistry I Laboratory",
+            "credits": 1,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: CHEM 121L, BIOL 191L",
+            "options": [
+              {
+                "code": "CHEM 121L",
+                "title": "Allied Health Chemistry I Laboratory",
+                "credits": 1
+              },
+              {
+                "code": "BIOL 191L",
+                "title": "Introductory Biology for Health Professions Lab",
+                "credits": 1
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "SOCI 101",
+            "title": "Introduction to Sociology",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: SOCI 101, PSYC 101",
+            "options": [
+              {
+                "code": "SOCI 101",
+                "title": "Introduction to Sociology",
+                "credits": 3
+              },
+              {
+                "code": "PSYC 101",
+                "title": "Introduction to Psychology",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-2-OR-1",
+            "title": "Core 2 (English Composition) or Core 1 (Towson Seminar)",
+            "credits": 3,
+            "category": "gened",
+            "choice": true,
+            "choice_note": "Satisfies Towson Core 2 or Core 1 requirement",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-5",
+            "title": "Core 5: Arts and Humanities",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-10",
+            "title": "Core 10: Metropolitan Perspectives",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 3,
+        "courses": [
+          {
+            "code": "BIOL 221",
+            "title": "Human Anatomy & Physiology I",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "Includes BIOL 221L lab (BIOL 221 & 221L)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "HLTH 331",
+            "title": "Nutrition for Health Professionals",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "PSYC 203",
+            "title": "Human Development",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-11",
+            "title": "Core 11: The United States as a Nation",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-12",
+            "title": "Core 12: Global Perspectives",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 4,
+        "courses": [
+          {
+            "code": "BIOL 215",
+            "title": "Essentials of Microbiology",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "BIOL 222",
+            "title": "Human Anatomy & Physiology II",
+            "credits": 4,
+            "category": "major",
+            "choice": false,
+            "choice_note": "Includes BIOL 222L lab (BIOL 222 & 222L)",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "MATH 231",
+            "title": "Basic Statistics",
+            "credits": 3,
+            "category": "major",
+            "choice": true,
+            "choice_note": "Choose one: MATH 231, MATH 237, PSYC 212",
+            "options": [
+              {
+                "code": "MATH 231",
+                "title": "Basic Statistics",
+                "credits": 3
+              },
+              {
+                "code": "MATH 237",
+                "title": "Elementary Biostatistics",
+                "credits": 3
+              },
+              {
+                "code": "PSYC 212",
+                "title": "Behavioral Statistics",
+                "credits": 3
+              }
+            ],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "CORE-14",
+            "title": "Core 14: Ethical Issues and Perspectives",
+            "credits": 3,
+            "category": "gened",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 5,
+        "courses": [
+          {
+            "code": "NURS 347",
+            "title": "Health Assessment Across the Life Span",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 356",
+            "title": "Adult Health Nursing I: Foundations",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 356C",
+            "title": "Adult Health Nursing I: Foundations Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 361",
+            "title": "Pharmacology",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 365",
+            "title": "Pathophysiology",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 6,
+        "courses": [
+          {
+            "code": "NURS 333",
+            "title": "Writing for Evidence-Based Practice: Issues in Professional Nursing",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 358",
+            "title": "Psychiatric and Mental Health Nursing",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 358C",
+            "title": "Psychiatric and Mental Health Nursing Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 360",
+            "title": "Adult Health Nursing II",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 360C",
+            "title": "Adult Health Nursing II Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 416",
+            "title": "Diversity and Social Justice in Healthcare",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 7,
+        "courses": [
+          {
+            "code": "NURS 473",
+            "title": "Nursing Care of Families and Newborns",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 473C",
+            "title": "Nursing Care of Families and Newborns Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 475",
+            "title": "Child Health",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 475C",
+            "title": "Child Health Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 480",
+            "title": "Adult Health Nursing III",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 480C",
+            "title": "Adult Health Nursing III Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      },
+      {
+        "n": 8,
+        "courses": [
+          {
+            "code": "NURS 435",
+            "title": "Nursing Research for Evidence-Based Practice",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 476",
+            "title": "Public Health Nursing",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 476C",
+            "title": "Public Health Nursing Clinical",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 481",
+            "title": "Transition to Practice: Leadership, Quality, and Safety in Collaborative Healthcare Environments",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 483",
+            "title": "Senior Practicum Immersion",
+            "credits": 3,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          },
+          {
+            "code": "NURS 488",
+            "title": "Preparation for Licensure Exam",
+            "credits": 2,
+            "category": "major",
+            "choice": false,
+            "choice_note": "",
+            "options": [],
+            "prereq": [],
+            "tccns": ""
+          }
+        ]
+      }
+    ]
+  }
+}
