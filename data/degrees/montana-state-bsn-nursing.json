@@ -1,0 +1,733 @@
+{
+ "institution": {
+  "name": "Montana State University",
+  "city": "Bozeman, MT",
+  "state": "MT",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "montana-state-bsn-nursing",
+  "degree": "BSN",
+  "major": "Nursing",
+  "catalog_year": "2026-2027",
+  "total_credits": 120,
+  "source_url": "https://catalog.montana.edu/undergraduate/nursing/bsn/bsn.pdf",
+  "requirements_only": false,
+  "notes": "MSU 2026-2027 catalog, Traditional BSN (Mark & Robyn Jones College of Nursing). Semesters 1-4 = published pre-nursing sample plan; semesters 5-8 = the four-semester nursing program courses (program total 60 credits; 120 minimum to graduate). NRSG 400 Nursing Simulation (1 cr) repeats in each of the four nursing semesters by catalog design. Labs CHMY 122IN, BIOM 251, CHMY 124 are co-required with their lecture courses; catalog credit figures (4 cr) cover lecture plus lab. M 140 exempt with MSU Math Placement level 400+. WRIT 101W exempt for students with a conferred baccalaureate degree. Competitive admission to the nursing major after pre-nursing coursework; C or better required in all nursing curriculum courses.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "WRIT 101W",
+      "title": "College Writing I",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Exempt for students with a conferred baccalaureate degree.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CHMY 121IN",
+      "title": "Introduction to General Chemistry",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "CHMY 122IN lab co-required; 4 credits cover lecture plus lab.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "COMX 111US",
+      "title": "Introduction to Public Speaking",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "M 140",
+      "title": "College Math for Healthcare",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Exempt with MSU Math Placement level 400 or above.",
+      "options": [
+       {
+        "code": "M 140",
+        "title": "College Math for Healthcare",
+        "credits": 3
+       },
+       {
+        "code": "M 121Q",
+        "title": "College Algebra",
+        "credits": 3
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "ELECT-BSN-1",
+      "title": "Free electives",
+      "credits": 5,
+      "category": "elective",
+      "choice": false,
+      "choice_note": "Composite: electives as needed to reach 120 credits.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "SOCI 101IS",
+      "title": "Introduction to Sociology",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one.",
+      "options": [
+       {
+        "code": "SOCI 101IS",
+        "title": "Introduction to Sociology",
+        "credits": 3
+       },
+       {
+        "code": "PSYX 100IS",
+        "title": "Introduction to Psychology",
+        "credits": 3
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "BIOM 250",
+      "title": "Microbiology for Health Sciences: Infectious Diseases",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "BIOM 251 lab co-required; 4 credits cover lecture plus lab.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "CHMY 123",
+      "title": "Introduction to Organic Chemistry and Biochemistry",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "CHMY 124 lab co-required; 4 credits cover lecture plus lab.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE-IA-IH-D-1",
+      "title": "IA, IH, or D University Core",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Composite: one University Core course from IA, IH, or D categories.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "BIOH 201",
+      "title": "Human Anatomy and Physiology I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "WRIT 201",
+      "title": "College Writing II",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "HDFS 101IS",
+      "title": "Individual and Family Development: Lifespan",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Choose one.",
+      "options": [
+       {
+        "code": "HDFS 101IS",
+        "title": "Individual and Family Development: Lifespan",
+        "credits": 3
+       },
+       {
+        "code": "PSYX 230",
+        "title": "Developmental Psychology",
+        "credits": 3
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "CORE-IA-IH-D-2",
+      "title": "IA, IH, or D University Core",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Composite: one University Core course from IA, IH, or D categories.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "BIOH 211",
+      "title": "Human Anatomy and Physiology II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "STAT 216Q",
+      "title": "Introduction to Statistics",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "NUTR 221CS",
+      "title": "Basic Human Nutrition",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 116",
+      "title": "Introduction to Professional Nursing",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "CORE-D-IA-IH-3",
+      "title": "D, IA, or IH University Core",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "Composite: one University Core course from D, IA, or IH categories.",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "NRSG 314",
+      "title": "Concepts in Psychosocial Nursing",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 316",
+      "title": "Pathophysiology and Pharmacotherapeutics for Nurses I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 323",
+      "title": "Professional Development I: Professional and Ethical Nursing",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 327",
+      "title": "Foundations of Nursing Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 328",
+      "title": "Foundations of Nursing Lab",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 329",
+      "title": "Adult Health Assessment",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-5",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 400",
+      "title": "Nursing Simulation",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-6",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "NRSG 317",
+      "title": "Pathophysiology and Pharmacotherapeutics for Nurses II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 324R",
+      "title": "Professional Development II: Evidence Based Practice",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 332",
+      "title": "Nursing Concepts for Health Promotion",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 334",
+      "title": "Nursing Practice for Health Promotion",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 354",
+      "title": "Nursing Concepts in Reproductive Health",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-4",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 357",
+      "title": "Nursing Concepts in Pediatric Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-5",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 359",
+      "title": "Nursing Practice in Reproductive Health and Pediatric Care",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-6",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 400",
+      "title": "Nursing Simulation",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-7",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "NRSG 400",
+      "title": "Nursing Simulation",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 403",
+      "title": "Professional Development III: Care Management",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 408",
+      "title": "Nursing Concepts in Chronic Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 409",
+      "title": "Nursing Practice in Chronic Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 426",
+      "title": "Nursing Concepts in Population Health",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-4",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 427",
+      "title": "Nursing Practice in Population Health",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-5",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 431",
+      "title": "Nursing Concepts in Psychiatric/Mental Health",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-6",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 432",
+      "title": "Nursing Practice in Psychiatric/Mental Health",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-7",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "NRSG 400",
+      "title": "Nursing Simulation",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 412",
+      "title": "Professional Development IV: Nursing Leadership and Transition to Practice",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 452",
+      "title": "Health Policy and Economics",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 470",
+      "title": "Nursing Concepts in Acute Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 471",
+      "title": "Nursing Practice in Acute Care",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-4",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 480",
+      "title": "Management of Healthcare Systems",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-5",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 488",
+      "title": "NCLEX Preparation",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-6",
+      "xfer": []
+     },
+     {
+      "code": "NRSG 498",
+      "title": "Professional Internship",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-7",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "allow_repeated_courses": true,
+  "content_hash": "441a3428270cce5b4c3f4e5f256f81e0ba2edb6826350169f1ea01dd13de551f",
+  "last_verified": "2026-10-10"
+ }
+}
