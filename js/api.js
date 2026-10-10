@@ -185,6 +185,21 @@
       });
     });
   }
+  function apiPut(path, body){
+    var b=base();
+    if(!b) return Promise.reject(new Error('no api'));
+    var headers=Object.assign({'Content-Type':'application/json'}, authHeaders());
+    return fetch(b+path, {
+      method:'PUT',
+      headers:headers,
+      body:JSON.stringify(body||{})
+    }).then(function(r){
+      return r.json().then(function(j){
+        if(!r.ok) throw new Error((j&&j.detail)||('http '+r.status));
+        return j;
+      });
+    });
+  }
   function apiGet(path){
     var b=base();
     if(!b) return Promise.reject(new Error('no api'));
@@ -313,7 +328,7 @@
   }
   function putDegreeProgress(trackedSlug, progress, clientUpdatedAt){
     if(!isLoggedIn()) return Promise.resolve(null);
-    return apiPost('/v1/me/degree-progress', {
+    return apiPut('/v1/me/degree-progress', {
       tracked_slug: trackedSlug||null,
       progress: progress||{},
       client_updated_at: clientUpdatedAt||null

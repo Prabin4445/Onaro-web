@@ -196,9 +196,10 @@ function dstate(){
   return st.degree;
 }
 function save(){
-  store().save();
-  /* Stamp local freshness so login-merge can tell which side is newer. */
+  /* Stamp local freshness BEFORE persisting so the saved store carries the
+     current timestamp for login-merge recency checks. */
   try{ dstate()._updated_at=new Date().toISOString(); }catch(e){}
+  store().save();
   syncDegreeToCloudSoon();
 }
 /* Debounced cloud sync: degree progress follows the account across devices.
