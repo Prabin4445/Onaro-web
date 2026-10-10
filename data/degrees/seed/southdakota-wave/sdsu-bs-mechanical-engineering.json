@@ -1,0 +1,708 @@
+{
+ "institution": {
+  "name": "South Dakota State University",
+  "city": "Brookings, SD",
+  "state": "SD",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "sdsu-bs-mechanical-engineering",
+  "degree": "BS",
+  "major": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "total_credits": 130,
+  "source_url": "https://www.sdstate.edu/sites/default/files/file-archive/2025-05/Mechanical%20Engineering%20(BS)%202025-2026%20Sample%20Plan.pdf",
+  "requirements_only": false,
+  "notes": "Official SDSU \"Mechanical Engineering (BS) 2025-2026 Sample Plan\" PDF, linked from the catalog Academic Advising Guide Sheet. Full 8-semester official sequence; every term total matches the plan exactly (17+16+16+16+17+16+17+15=130). SGR slots recorded as choice blocks; \"Tech Electives\" transcribed as TECH-ELEC-1..5 (3cr each, choose from department list). MATH 331 or MATH 471 choice recorded at 3cr. Plan states: minimum grade C in MATH 123, MATH 125, PHYS 207, ME 311, ME 312 and all EM courses; combined C average in ME and math courses.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "CHEM 112",
+      "title": "General Chemistry I (SGR #6)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "CHEM 112L",
+      "title": "General Chemistry I Lab (SGR #6)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "GE 101",
+      "title": "Introduction to Engineering and Technical Professions",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 123",
+      "title": "Calculus I (SGR #5)",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 121",
+      "title": "Production and Fabrication Processes",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 121L",
+      "title": "Production and Fabrication Processes Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "SGR-2",
+      "title": "Oral Communication (SGR #2)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SGR #2 Oral Communication elective",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "SGR-3",
+      "title": "Social Sciences (SGR #3)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SGR #3 Social Sciences elective; must satisfy civics requirement",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "EM 214",
+      "title": "Statics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 123"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 125",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 123"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 212",
+      "title": "Mechanical Engineering Design Technologies",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 207",
+      "title": "Fundamentals of Physics I (SGR #6)",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 123"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 207L",
+      "title": "Fundamentals of Physics I Lab (SGR #6)",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "SGR-1",
+      "title": "Written Communication (SGR #1)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SGR #1 Written Communication elective",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "EM 215",
+      "title": "Dynamics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 214"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "EM 321",
+      "title": "Mechanics of Materials",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 214"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 321",
+      "title": "Differential Equations",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 125"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 241",
+      "title": "Engineering Materials",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 123",
+       "CHEM 112"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 209",
+      "title": "Fundamentals of Physics II",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PHYS 207"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "PHYS 209L",
+      "title": "Fundamentals of Physics II Lab",
+      "credits": 1,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "ECON 201",
+      "title": "Principles of Microeconomics (SGR #3)",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ENGL 277",
+      "title": "Technical Writing in Engineering (SGR #1)",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "MATH-331-471",
+      "title": "Advanced Engineering Math or Numerical Analysis",
+      "credits": 3,
+      "category": "core",
+      "choice": true,
+      "choice_note": "Choose MATH 331 or MATH 471 (3cr)",
+      "options": [
+       {
+        "code": "MATH 331",
+        "title": "Advanced Engineering Math",
+        "credits": 3
+       },
+       {
+        "code": "MATH 471",
+        "title": "Numerical Analysis",
+        "credits": 3
+       }
+      ],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 230",
+      "title": "Engineering Design Methods",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 214",
+       "ME 121",
+       "ME 121L",
+       "ME 212"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 311",
+      "title": "Thermodynamics I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "PHYS 207",
+       "EM 215"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 376",
+      "title": "Measurements and Materials Characterization Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ENGL 277",
+       "ME 241",
+       "EM 321"
+      ],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "EE 300",
+      "title": "Basic Electrical Engineering I",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 125",
+       "PHYS 209"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "EE 300L",
+      "title": "Basic Electrical Engineering I Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "EM 331",
+      "title": "Fluid Mechanics",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 215"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "MATH 225",
+      "title": "Calculus III",
+      "credits": 4,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 125"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 312",
+      "title": "Thermodynamics II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ME 311",
+       "MATH 321"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 321",
+      "title": "Fundamentals of Machine Design",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 215"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 377",
+      "title": "Thermodynamics and Fluid Mechanics Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ME 311",
+       "EM 331"
+      ],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "EE 302",
+      "title": "Basic Electrical Engineering II",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EE 300",
+       "EE 300L"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "EE 302L",
+      "title": "Basic Electrical Engineering II Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 415",
+      "title": "Heat Transfer",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ME 311",
+       "EM 331",
+       "MATH 321"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 421",
+      "title": "Design of Machine Elements",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 321",
+       "ME 321"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 476",
+      "title": "Machine Components and Heat Transfer Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "SGR-4-A",
+      "title": "Arts and Humanities (SGR #4)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SGR #4 Arts and Humanities elective (first)",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "STAT 381",
+      "title": "Introduction to Probability and Statistics",
+      "credits": 3,
+      "category": "core",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 125"
+      ],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "ME 301",
+      "title": "Engineering Ethics and Economics",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 323",
+      "title": "Vibrations",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EM 215",
+       "EM 321"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 451",
+      "title": "Automatic Controls",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "EE 300"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "ME 452",
+      "title": "Mechatronics and Vibrations Lab",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "ME 478",
+      "title": "Mechanical Systems Design I",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ME 421"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-ELEC-1",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Technical elective: choose from department-approved list",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-ELEC-2",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Technical elective: choose from department-approved list",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "ME 479",
+      "title": "Mechanical Systems Design II",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "ME 478"
+      ],
+      "tccns": ""
+     },
+     {
+      "code": "SGR-4-B",
+      "title": "Arts and Humanities (SGR #4)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "SGR #4 Arts and Humanities elective (second)",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-ELEC-3",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Technical elective: choose from department-approved list",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-ELEC-4",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Technical elective: choose from department-approved list",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     },
+     {
+      "code": "TECH-ELEC-5",
+      "title": "Technical Elective",
+      "credits": 3,
+      "category": "major",
+      "choice": true,
+      "choice_note": "Technical elective: choose from department-approved list",
+      "options": [],
+      "prereq": [],
+      "tccns": ""
+     }
+    ]
+   }
+  ]
+ }
+}
