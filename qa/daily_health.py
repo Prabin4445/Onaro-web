@@ -26,7 +26,7 @@ Report: qa/daily-reports/YYYY-MM-DD.md
 import os, re, json, subprocess, sys, datetime, urllib.request
 
 HUB = os.path.expanduser('~/workspace/hub')
-LIVE = 'https://hub-preview.surge.sh'
+LIVE = 'https://onaro-web.pages.dev'  # migrated from hub-preview.surge.sh 2026-10-06
 REPORT_DIR = os.path.join(HUB, 'qa', 'daily-reports')
 
 issues = []   # (severity, check, detail) — severity: ERROR or WARN
@@ -276,7 +276,7 @@ def check_live():
         # intermittently killed by the egress proxy while curl succeeds.
         try:
             p = subprocess.run(
-                ['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}',
+                ['curl', '-s', '-L', '-o', '/dev/null', '-w', '%{http_code}',
                  '--max-time', '25', '-A', 'OnaroHealthCheck/1.0',
                  LIVE + '/' + u],
                 capture_output=True, text=True, timeout=40)
