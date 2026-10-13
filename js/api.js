@@ -119,6 +119,7 @@
           catalog_year:p.catalog_year, total_credits:p.total_credits,
           source_url:p.source_url, transfer_confidence:p.transfer_confidence,
           content_hash:'', last_verified:p.last_verified, notes:p.notes,
+          requirements_only:!!p.requirements_only,
           semesters:(p.semesters||[]).map(function(s){
             return {n:s.n, label:s.label, courses:(s.courses||[]).map(function(c){
               return {slot_id:c.slot_id, code:c.code, title:c.title,
