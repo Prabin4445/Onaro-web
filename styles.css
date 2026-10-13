@@ -169,6 +169,10 @@ body.dark.theme-rose{
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+/* Tap responsiveness (2026-10-13): manipulation removes the double-tap-zoom
+   wait on tap targets, so buttons feel instant on phones. Pinch-zoom on
+   dedicated zoom surfaces sets its own touch-action and still wins. */
+button,a,[role="button"]{touch-action:manipulation}
 html{-webkit-text-size-adjust:100%}
 /* FIT GUARD (2026-09-22): the page must never pan horizontally on any screen.
    overflow-x:clip (progressive enhancement over hidden) clips without creating
@@ -2979,6 +2983,9 @@ body.auth-open .toasthost{z-index:240}
 .auth-back{position:absolute;top:14px;left:16px;width:36px;height:36px;border-radius:50%;border:1px solid var(--glass-brd);
   background:var(--glass);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;z-index:2}
 .auth-back:active{transform:scale(.9)}
+.auth-x{position:absolute;top:14px;right:16px;width:36px;height:36px;border-radius:50%;border:1px solid var(--glass-brd);
+  background:var(--glass);color:var(--ink);font-size:16px;line-height:1;cursor:pointer;z-index:2}
+.auth-x:active{transform:scale(.9)}
 .auth-steps{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-2);margin:2px 0 8px}
 .auth-dots{display:flex;gap:6px;margin-bottom:14px}
 .auth-dots i{width:26px;height:5px;border-radius:3px;background:var(--line)}

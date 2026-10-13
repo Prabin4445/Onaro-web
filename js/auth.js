@@ -227,6 +227,7 @@ function loginWithFaceId(){
 
 /* ================= overlay shell ================= */
 var rootEl=null, pageEl=null, curView=null, curStep=0, backDir=false;
+var gateDismissed=false; /* session-only: user tapped Explore/✕ on the gate */
 function ensureRoot(){
   if(rootEl) return;
   rootEl=document.createElement('div');
@@ -264,6 +265,7 @@ function openSignup(){ suReset(); open('signup',1); }
    actually seen. Returns true when the gate opened the door. */
 function gate(){
   if(curView) return true; /* already showing a view — gate satisfied */
+  if(gateDismissed) return true; /* user chose Explore this session — stay dismissed */
   /* open as the splash BEGINS fading (not after removal): the splash lifts
      straight into the login, so the Home tab never flashes through. */
   var sp=document.getElementById('splash');
@@ -274,6 +276,10 @@ function gate(){
   openLogin(); return true;
 }
 function close(){
+  /* Closing the front door while signed out means "explore for now": the
+     boot gate must not reopen it this session (the boot poller would
+     otherwise resurrect the login within its 30s window). */
+  if(!currentUser()) gateDismissed=true;
   if(rootEl) rootEl.hidden=true;
   document.body.classList.remove('auth-open');
   try{ if(HUB.authplanet) HUB.authplanet.stop(); }catch(e){}
@@ -361,6 +367,7 @@ function stepDots(n,total){
 function loginHTML(){
   return brandHTML()
   +'<div class="card auth-card"><div class="auth-gloss" aria-hidden="true"></div>'
+  +'<button class="auth-x" id="aClose" aria-label="'+esc(t('common.close'))+'">✕</button>'
   +'<h1 class="auth-title">'+esc(t('auth.loginTitle'))+'</h1>'
   +'<p class="auth-sub">'+esc(t('auth.realNote'))+'</p>'
   +'<div class="field"><label for="aId">'+esc(t('auth.emailLabel'))+'</label>'
@@ -376,6 +383,7 @@ function loginHTML(){
  +'<p class="auth-note" id="aFaceNote" hidden></p>'
   +'<div class="auth-links"><button class="linklike" id="aForgot">'+esc(t('auth.forgotPw'))+'</button></div>'
   +'<p class="auth-switch"><button class="linklike" id="aToSignup">'+esc(t('auth.toSignup'))+'</button></p>'
+  +'<p class="auth-switch"><button class="linklike" id="aSkip">'+esc(t('auth.skip'))+'</button></p>'
   +'</div>';
 }
 /* Complete a Firebase-authenticated session: exchange the ID token with the
@@ -402,6 +410,13 @@ function finishFirebaseLogin(fbUser, remember, extra){
 }
 function wireLogin(){
   var idEl=document.getElementById('aId'), pwEl=document.getElementById('aPw');
+  /* Dismiss affordances: phones have no Escape key, so the login must be
+     closable by tap (explore mode). close() also disarms the boot gate for
+     this session so it never pops straight back up. */
+  var xBtn=document.getElementById('aClose');
+  if(xBtn) xBtn.onclick=function(){ close(); };
+  var skipBtn=document.getElementById('aSkip');
+  if(skipBtn) skipBtn.onclick=function(){ close(); };
   var showBtn=document.getElementById('aShowPw');
   showBtn.onclick=function(){
     var show=pwEl.type==='password';

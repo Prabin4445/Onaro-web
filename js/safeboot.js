@@ -117,6 +117,12 @@ try{
       var w=document.getElementById('wlcmHost');
       if(w && !w.hidden) return;
     }catch(e){}
+    /* Splash still up = boot still in progress (slow device/connection),
+       not a failure. The overlay also self-heals: booted() removes it if
+       boot completes afterwards. */
+    try{
+      if(document.getElementById('splash')) return;
+    }catch(e){}
     showRecovery('boot timeout');
   }, BOOT_TIMEOUT_MS);
 }catch(e){}
@@ -238,7 +244,11 @@ HUB.emit=function(ev,data){
 
 /* Public surface. report() is local-only diagnostics for QA. */
 HUB.safe = {
-  booted: function(){ booted = true; },
+  booted: function(){ booted = true;
+    /* Self-heal: if the watchdog showed the recovery overlay during a
+       merely-slow boot, remove it now that boot actually completed. */
+    try{ var ov=document.getElementById('saferecov'); if(ov) ov.remove(); }catch(e){}
+  },
   isBooted: function(){ return booted; },
   errors: function(){ return errors.slice(); },
   errCount: function(){ return errCount; },

@@ -62,15 +62,16 @@ function showTab(name){
 }
 HUB.showTab=showTab;
 
-/* Launch splash: fade out after boot + first tab render. Minimum 5.0s show so
-   the volt loading bar completes its fill; the inline backstop in index.html is
-   the hard ~6.0s cap if boot JS ever fails. */
+/* Launch splash: fade out after boot + first tab render. Minimum 2.0s show
+   so the wordmark/artwork entrance settles (the old 5.0s minimum belonged to
+   a retired loading-bar design and made every launch feel slow); the inline
+   backstop in index.html is the hard ~6.0s cap if boot JS ever fails. */
 function hideSplash(){
   try{
     var sh=document.getElementById('splash');
     if(!sh||sh.getAttribute('data-gone'))return;
     sh.setAttribute('data-gone','1');
-    var waitMs=Math.max(0,5000-(Date.now()-(window.__splashT0||Date.now())));
+    var waitMs=Math.max(0,2000-(Date.now()-(window.__splashT0||Date.now())));
     setTimeout(function(){
       sh.classList.add('splash-out');
       /* auth front door: if armed (signed-out, no onboarding sheet), open the

@@ -89,7 +89,7 @@ function safetyScore(p,s){
 
 /* ================= MEMORY VAULT (kept from previous build) ================= */
 function renderVault(){
-  const items=store.state.memory;
+  const items=store.state.memory||[];
   const q=searchQ.trim().toLowerCase();
   const filtered=items.filter(m=>!q||(m.title+' '+(m.note||'')).toLowerCase().includes(q));
 
@@ -486,13 +486,13 @@ function renderCommunities(p){
 function renderActivity(s){
   const items=[];
   const me=s.me;
-  for(const l of store.state.listings) if(l.seller===me)
+  for(const l of (store.state.listings||[])) if(l.seller===me)
     items.push({ic:'act-sell',fb:'🏷️',t:t('me.act.listed',{t:l.title}),m:((l.type||'').toLowerCase()||t('me.tx.chip.listing'))+' · '+ui.timeAgo(l.createdAt||Date.now()),at:l.createdAt||0,sample:l.sample});
-  for(const j of store.state.jobs){
+  for(const j of (store.state.jobs||[])){
     if(j.poster===me) items.push({ic:'act-job',fb:'💼',t:t('me.act.postedJob',{t:j.title}),m:(j.status||'open')+' · '+ui.fmt$(j.pay||0)+' · '+ui.timeAgo(j.createdAt||Date.now()),at:j.createdAt||0,sample:j.sample});
     else if(j.acceptedBy===me) items.push({ic:'act-job',fb:'💼',t:t('me.act.acceptedJob',{t:j.title}),m:(j.status||'open')+' · '+ui.fmt$(j.pay||0)+' · '+ui.timeAgo(j.createdAt||Date.now()),at:j.createdAt||0,sample:j.sample});
   }
-  for(const m of store.state.memory)
+  for(const m of (store.state.memory||[]))
     items.push({ic:'act-memory',fb:'🧠',t:t('me.act.vault',{t:m.title}),m:t('me.vault.kind.'+(m.kind||'note'))+' · '+ui.timeAgo(m.createdAt||Date.now()),at:m.createdAt||0,sample:m.sample});
   for(const c of (store.state.campusPosts||[])) if(c.author===me)
     items.push({ic:'act-post',fb:'📣',t:t('me.act.postedCommunity'),m:ui.timeAgo(c.at||Date.now()),at:c.at||0,sample:c.sample});

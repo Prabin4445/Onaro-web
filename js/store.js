@@ -106,6 +106,11 @@ function seeds(){
     cgroups:[],
     tasks:[],
     notes:[],
+    events:[],
+    campusPosts:[],
+    memory:[],
+    contacts:[],
+    households:[],
   };
 }
 
@@ -147,6 +152,16 @@ else{
 delete state.stories; delete state.storyBin; delete state.highlights;
 if(state.prefs) delete state.prefs.storyBlocks;
 if(!Array.isArray(state.classFires)) state.classFires=[];
+/* Fresh-install crash class (found 2026-10-13): these collections were used
+   unguarded across me/chat/groups/create/ai but never seeded or backfilled,
+   so a brand-new install had them undefined and the ME tab (and more) threw
+   on first render. Legacy states on the founder's phone carried them from
+   older seeds, which is why only fresh installs broke. */
+if(!Array.isArray(state.events)) state.events=[];
+if(!Array.isArray(state.campusPosts)) state.campusPosts=[];
+if(!Array.isArray(state.memory)) state.memory=[];
+if(!Array.isArray(state.contacts)) state.contacts=[];
+if(!Array.isArray(state.households)) state.households=[];
 /* Daily tab migrations */
 if(!Array.isArray(state.tasks)) state.tasks=[];
 if(!Array.isArray(state.notes)) state.notes=[];
