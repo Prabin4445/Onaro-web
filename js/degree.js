@@ -1046,19 +1046,29 @@ function updatePickerResults(){
         '<button class="btn btn-line btn-sm" id="degRetry">'+esc(t('common.retry'))+'</button></div>';
     }else{
       let anySchool=false;
+      /* Render cap: with 15k+ plans in the index, building DOM for EVERY
+         matching school+plan froze the tab for minutes (worse on phones).
+         Render at most ROW_CAP plan rows; searching/filtering narrows the
+         match set, and a notice states the true totals when truncated. */
+      const ROW_CAP=300;
+      let renderedRows=0, totalMatched=0;
       ordered.forEach(function(sch){
         const progs=sch.programs||[];
         const collected=progs.filter(function(p){ return p.status==='collected'&&plansBySlug[p.plan_id]; });
         const pending=progs.filter(function(p){ return p.status!=='collected'; });
-        const collRows=collected.filter(function(p){
+        const collRowsAll=collected.filter(function(p){
           const pl=plansBySlug[p.plan_id];
           return pickFilterOK(pl,p)&&ok(sch.name+' '+pl.major+' '+pl.degree);
         });
         const pendRows=pending.filter(function(p){
           return pickFilterOK(null,p)&&ok(sch.name+' '+p.program+' '+p.degree);
         });
-        if(!collRows.length&&!pendRows.length) return;
+        if(!collRowsAll.length&&!pendRows.length) return;
         anySchool=true;
+        totalMatched+=collRowsAll.length+pendRows.length;
+        if(renderedRows>=ROW_CAP) return; /* counted above; not rendered */
+        const collRows=collRowsAll.slice(0, ROW_CAP-renderedRows);
+        renderedRows+=collRows.length;
         const moreComing=(sch.programs_collected||0)<(sch.programs_total||0);
         const isMine=myUniSlug&&(sch.slug||sch.name)===myUniSlug;
         const kindPill=schoolKindLabel(sch, plansBySlug);
@@ -1099,6 +1109,10 @@ function updatePickerResults(){
         }
         h+='</div>';
       });
+      if(anySchool&&totalMatched>renderedRows){
+        h+='<div class="deg-sample" style="margin:10px 0;padding:8px 12px;border:1px dashed currentColor;border-radius:12px;font-size:12px;opacity:.8;text-align:center">'+
+          esc(t('deg.showingFirst',{n:renderedRows,total:totalMatched}))+'</div>';
+      }
       if(!anySchool) h+='<div class="empty ps-empty"><div class="big">🔍</div><p>'+esc(t('deg.noMatch'))+'</p></div>';
     }
     box.innerHTML=h;
