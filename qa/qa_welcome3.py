@@ -24,8 +24,13 @@ def run(theme, port, profile):
         else: h.js("document.body.classList.remove('dark')")
         h.js("HUB.ui.closeSheet&&HUB.ui.closeSheet()")
         time.sleep(1)
-        # fresh profile -> welcome overlay must show automatically
-        vis = h.js("(()=>{const w=document.getElementById('wlcmHost');return w&&!w.hidden})()")
+        # fresh profile -> welcome overlay must show automatically (poll: boot
+        # timing varies 6-15s in the sandbox; the old fixed ~6s check raced it)
+        vis = None
+        for _ in range(20):
+            vis = h.js("(()=>{const w=document.getElementById('wlcmHost');return w&&!w.hidden})()")
+            if vis is True: break
+            time.sleep(1)
         check(f'{theme}: welcome host visible on fresh boot', vis is True, vis)
         # ---- STEP 1: language screen
         s1 = h.js("(()=>{const b=document.getElementById('wlcmBody');return b&&!!b.querySelector('.wlcm-langs')&&!!b.querySelector('[data-wlang=\"es\"]')})()")
@@ -34,6 +39,7 @@ def run(theme, port, profile):
         check(f'{theme}: step1 has NO Continue button', nogo1 is True, nogo1)
         dots = h.js("(()=>[...document.querySelectorAll('.wlcm-dot')].map(d=>d.className))()")
         check(f'{theme}: 3 step dots, first active', isinstance(dots, list) and len(dots) == 3 and 'on' in dots[0], dots)
+        time.sleep(0.7)  # let the wlcmupC entrance (translateY 46px -> 0, .35s) settle before measuring
         v1 = json.loads(in_viewport(h, '.wlcm-card'))
         check(f'{theme}: step1 card within viewport', v1['t'] >= 0 and v1['b'] <= v1['ih'] + 1 and v1['l'] >= 0 and v1['r'] <= v1['iw'] + 1, v1)
         h.c.send('Page.captureScreenshot', {'format': 'png'})
