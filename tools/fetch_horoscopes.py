@@ -16,7 +16,8 @@ surge deploy down on 2026-10-02 00:19 CDT):
 - the idempotent skip now checks the LIVE file's date too: local-fresh but
   live-stale still deploys instead of skipping forever.
 """
-import json, sys, time, urllib.request, datetime, subprocess, os
+import json, sys, time, urllib.request, urllib.error, datetime, subprocess, os
+import base64, hashlib
 
 SIGNS = ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio",
          "sagittarius","capricorn","aquarius","pisces"]
@@ -116,41 +117,175 @@ def fetch_source(name, template, parse):
             return None
     return date, signs
 
+GH_REPO = "Prabin4445/Onaro-web"
+GH_PATH = "data/horoscopes.json"
+
+def _gh_api(method, path, body=None):
+    """GitHub API via the custom.github vault surrogate (same mechanism as
+    the Orbit Post repo tools): the stored token is injected by authd and
+    never read, printed, or written to disk by this script."""
+    sys.path.insert(0, "/opt/hatch/skills/skill-creator/bin")
+    from dynamic_credentials import add_surrogate_to_request, read_json_response
+    headers = {"Accept": "application/vnd.github+json",
+               "X-GitHub-Api-Version": "2022-11-28"}
+    data = None
+    if body is not None:
+        data = json.dumps(body).encode()
+        headers["Content-Type"] = "application/json"
+    req = urllib.request.Request("https://api.github.com" + path, data=data,
+                                 headers=headers, method=method)
+    add_surrogate_to_request(req, "custom.github",
+                             allowed_hosts=("api.github.com",))
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        return read_json_response(resp)
+
+def _git(*args):
+    return subprocess.run(["git"] + list(args), cwd=HUB,
+                          capture_output=True, text=True,
+                          timeout=DEPLOY_TIMEOUT)
+
+def _remote_head_sha():
+    """Current origin/master sha via anonymous fetch (repo is public), or
+    None when the fetch fails."""
+    rf = _git("fetch", "origin", "master")
+    if rf.returncode != 0:
+        return None
+    rr = _git("rev-parse", "origin/master")
+    return rr.stdout.strip() if rr.returncode == 0 else None
+
+def deploy_via_api(msg):
+    """Alternative deploy (added 2026-10-15): commit ONLY data/horoscopes.json
+    onto origin/master through the Git Data API, authenticated by the vault
+    surrogate. Exists because the cron sandbox has no git credentials, so
+    `git push` fails there every night ('could not read Username') while
+    plain HTTPS to api.github.com works. Returns the new commit sha, the
+    string 'current' when remote already holds this exact file, or None."""
+    try:
+        content = open(OUT, "rb").read()
+        blob_sha = hashlib.sha1(b"blob %d\0" % len(content) + content).hexdigest()
+        ref = _gh_api("GET", "/repos/%s/git/ref/heads/master" % GH_REPO)
+        head = ref["object"]["sha"]
+        commit = _gh_api("GET", "/repos/%s/git/commits/%s" % (GH_REPO, head))
+        tree_sha = commit["tree"]["sha"]
+        # skip the commit entirely when remote already has this exact blob
+        data_tree = None
+        for e in _gh_api("GET", "/repos/%s/git/trees/%s" % (GH_REPO, tree_sha))["tree"]:
+            if e["path"] == "data":
+                data_tree = e["sha"]
+        if data_tree:
+            for e in _gh_api("GET", "/repos/%s/git/trees/%s" % (GH_REPO, data_tree))["tree"]:
+                if e["path"] == "horoscopes.json" and e["sha"] == blob_sha:
+                    print("deploy api: remote already holds this exact file")
+                    return "current"
+        blob = _gh_api("POST", "/repos/%s/git/blobs" % GH_REPO,
+                       {"content": base64.b64encode(content).decode(),
+                        "encoding": "base64"})
+        tree = _gh_api("POST", "/repos/%s/git/trees" % GH_REPO,
+                       {"base_tree": tree_sha,
+                        "tree": [{"path": GH_PATH, "mode": "100644",
+                                  "type": "blob", "sha": blob["sha"]}]})
+        new_commit = _gh_api("POST", "/repos/%s/git/commits" % GH_REPO,
+                             {"message": msg, "tree": tree["sha"],
+                              "parents": [head]})
+        _gh_api("PATCH", "/repos/%s/git/refs/heads/master" % GH_REPO,
+                {"sha": new_commit["sha"], "force": False})
+        print("deploy ok via GitHub API: commit %s" % new_commit["sha"][:12])
+        return new_commit["sha"]
+    except Exception as e:
+        print("deploy api fallback failed: %s" % str(e)[:300])
+        return None
+
+def resync_local():
+    """After an API deploy, local master and origin/master hold the same
+    tree under different commit shas. Realign local master to origin/master
+    ONLY when provably lossless:
+    - every local-ahead commit touches just data/horoscopes.json,
+    - the two HEAD trees are identical,
+    - the working tree has no tracked changes besides data/horoscopes.json
+      itself (and that file's content must match origin's blob exactly).
+    Anything else: refuse and leave local git untouched."""
+    try:
+        remote = _remote_head_sha()
+        if not remote:
+            print("resync: fetch failed; leaving local git as-is")
+            return
+        local = _git("rev-parse", "HEAD").stdout.strip()
+        if local == remote:
+            return
+        ahead = _git("log", "--format=%H", "origin/master..HEAD").stdout.split()
+        for sha in ahead:
+            files = _git("diff-tree", "--no-commit-id", "--name-only", "-r",
+                         sha).stdout.split()
+            if files != [GH_PATH]:
+                print("resync: local commit %s touches %s; not realigning"
+                      % (sha[:8], files))
+                return
+        lt = _git("rev-parse", "HEAD^{tree}").stdout.strip()
+        rt = _git("rev-parse", "origin/master^{tree}").stdout.strip()
+        if lt != rt:
+            print("resync: trees differ; not realigning")
+            return
+        dirty = _git("status", "--porcelain").stdout.splitlines()
+        for line in dirty:
+            if line.startswith("??"):
+                continue  # untracked: reset --hard never touches these
+            path = line[3:].split(" -> ")[-1].strip()
+            if path != GH_PATH:
+                print("resync: uncommitted changes in %s; not realigning"
+                      % path)
+                return
+            want = _git("rev-parse", "origin/master:" + GH_PATH).stdout.strip()
+            content = open(OUT, "rb").read()
+            have = hashlib.sha1(b"blob %d\0" % len(content) + content).hexdigest()
+            if have != want:
+                print("resync: working horoscopes.json differs from origin; "
+                      "not realigning")
+                return
+        _git("reset", "--hard", "origin/master")
+        print("resync: local master realigned to origin/master (%s)"
+              % remote[:12])
+    except Exception as e:
+        print("resync skipped: %s" % str(e)[:200])
+
 def deploy():
-    """Publish the baked file: git commit + push; Cloudflare Pages
-    auto-deploys the onaro-web.pages.dev site on push. Replaces the
-    pre-2026-10-06 surge deploy path (Surge was abandoned)."""
+    """Publish the baked file; Cloudflare Pages auto-deploys onaro-web on
+    push. Primary path: git commit + push. Fallback (2026-10-15): the same
+    one-file commit via the GitHub API + vault surrogate, for environments
+    with no git credentials (the cron sandbox). Replaces the pre-2026-10-06
+    surge deploy path (Surge was abandoned)."""
     today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
-    subprocess.run(["git", "add", "data/horoscopes.json"], cwd=HUB,
-                   capture_output=True, text=True, timeout=DEPLOY_TIMEOUT)
-    rr = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=HUB,
-                        capture_output=True, text=True, timeout=DEPLOY_TIMEOUT)
-    if rr.returncode == 0:
-        print("deploy: nothing staged; file unchanged")
-        return True
     msg = "Daily horoscope refresh: %s readings" % today
-    for a in range(DEPLOY_ATTEMPTS):
-        rc = subprocess.run(["git", "commit", "-m", msg], cwd=HUB,
-                            capture_output=True, text=True,
-                            timeout=DEPLOY_TIMEOUT)
-        if rc.returncode != 0:
+    _git("add", GH_PATH)
+    rr = _git("diff", "--cached", "--quiet")
+    if rr.returncode != 0:
+        for a in range(DEPLOY_ATTEMPTS):
+            rc = _git("commit", "-m", msg)
+            if rc.returncode == 0:
+                break
             out = ((rc.stdout or "") + (rc.stderr or "")).lower()
-            if "nothing to commit" not in out and \
-               "no changes added to commit" not in out:
-                print("deploy attempt %d commit failed: %s"
-                      % (a + 1, (rc.stderr or rc.stdout)[-300:]))
-                time.sleep(10)
-                continue
-            # already committed on an earlier attempt; just push
-        rp = subprocess.run(["git", "push", "origin", "HEAD"], cwd=HUB,
-                            capture_output=True, text=True,
-                            timeout=DEPLOY_TIMEOUT)
-        if rp.returncode == 0:
-            print("deploy ok: pushed data/horoscopes.json for date=%s" % today)
-            return True
-        print("deploy attempt %d push failed: %s"
-              % (a + 1, (rp.stderr or rp.stdout)[-300:]))
-        time.sleep(10)
+            if "nothing to commit" in out or \
+               "no changes added to commit" in out:
+                break  # already committed on an earlier attempt/run
+            print("deploy attempt %d commit failed: %s"
+                  % (a + 1, (rc.stderr or rc.stdout)[-300:]))
+            time.sleep(10)
+    # already published? (also heals the old 'nothing staged' false success:
+    # an unpushed local commit must never count as deployed)
+    remote = _remote_head_sha()
+    local = _git("rev-parse", "HEAD").stdout.strip()
+    if remote and remote == local:
+        print("deploy: origin/master already at local HEAD; nothing to push")
+        return True
+    rp = _git("push", "origin", "HEAD")
+    if rp.returncode == 0:
+        print("deploy ok: pushed data/horoscopes.json for date=%s" % today)
+        return True
+    print("deploy: git push failed (%s); trying GitHub API fallback"
+          % (rp.stderr or rp.stdout)[-200:].strip())
+    res = deploy_via_api(msg)
+    if res:
+        resync_local()
+        return True
     return False
 
 def main():
