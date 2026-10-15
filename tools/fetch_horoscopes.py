@@ -140,9 +140,18 @@ def _gh_api(method, path, body=None):
         return read_json_response(resp)
 
 def _git(*args):
-    return subprocess.run(["git"] + list(args), cwd=HUB,
-                          capture_output=True, text=True,
-                          timeout=DEPLOY_TIMEOUT)
+    """git wrapper that NEVER raises: a timeout (flaky egress can hang a
+    fetch for minutes) becomes a plain failure result, so a slow network
+    can degrade the deploy path but never crash it. (First version crashed
+    the 2026-10-15 midday run exactly this way.)"""
+    try:
+        return subprocess.run(["git"] + list(args), cwd=HUB,
+                              capture_output=True, text=True,
+                              timeout=DEPLOY_TIMEOUT)
+    except subprocess.TimeoutExpired:
+        return subprocess.CompletedProcess(args, 124, "", "git timeout")
+    except Exception as e:
+        return subprocess.CompletedProcess(args, 1, "", str(e))
 
 def _remote_head_sha():
     """Current origin/master sha via anonymous fetch (repo is public), or
