@@ -1,0 +1,746 @@
+{
+ "institution": {
+  "name": "Judson University",
+  "city": "Elgin, IL",
+  "state": "IL",
+  "kind": "university"
+ },
+ "plan": {
+  "id": "judson-bsn-nursing-pre-licensure",
+  "degree": "BSN",
+  "major": "Nursing (Pre-Licensure)",
+  "catalog_year": "2026-2027",
+  "total_credits": 122,
+  "source_url": "https://catalog.judsonu.edu/departments-divisions-programs/nursing-department/nursing-major/#fouryearplantext",
+  "requirements_only": false,
+  "notes": "Official Judson University 2026-2027 catalog Plan of Study Grid (Bachelor of Science in Nursing, Pre-Licensure), transcribed from the live catalog page 2026-10-19. Catalog declares Total Hours 122-125 (ranges: GEN101/ESS101 1-2 hrs; math option 3-5 hrs); seed records the minimum-credit path = 122, and every term matches the grid's printed minimum term total. 0-credit clinical/lab components are recorded as required_zero per catalog (students must pass clinical/lab components in addition to the didactic portion). Admission to the professional portion requires a major application in the second-year fall (2.75 GPA, minimum B in BIO273/BIO274, minimum C in BIO371 and CHM151/CHM153, TEAS 70%+). The catalog grid prints NUR213 as 'Pedriatic Nursing'; recorded with the corrected spelling 'Pediatric Nursing'. Chapel earns no graduation credit and is not counted. The earlier local extract of this program was partial (rows summing to 113, with superseded course codes) and was NOT used.",
+  "semesters": [
+   {
+    "n": 1,
+    "courses": [
+     {
+      "code": "BIO273",
+      "title": "Anatomy and Physiology I w/Lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG101",
+      "title": "Expository Writing",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "GEN101-OR-ESS101",
+      "title": "Questions of Life: Entering the Judson Conversation or Wellness",
+      "credits": 1,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "GEN101 or ESS101; first-time students take GEN101, transfer students take ESS101",
+      "options": [
+       {
+        "code": "GEN101",
+        "title": "Questions of Life: Entering the Judson Conversation",
+        "credits": 1
+       },
+       {
+        "code": "ESS101",
+        "title": "Wellness",
+        "credits": 1
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "NUR101",
+      "title": "Academic Success Seminar",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "CHM151-OR-CHM153",
+      "title": "Introduction to Chemistry w/Lab or General Chemistry I w/Lab",
+      "credits": 4,
+      "category": "major",
+      "choice": true,
+      "choice_note": "CHM151 or CHM153",
+      "options": [
+       {
+        "code": "CHM151",
+        "title": "Introduction to Chemistry w/Lab",
+        "credits": 4
+       },
+       {
+        "code": "CHM153",
+        "title": "General Chemistry I w/Lab",
+        "credits": 4
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "courses": [
+     {
+      "code": "BIO274",
+      "title": "Anatomy and Physiology II w/Lab",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-0",
+      "xfer": []
+     },
+     {
+      "code": "ENG102",
+      "title": "Critical Thinking and Writing",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-1",
+      "xfer": []
+     },
+     {
+      "code": "PSY111",
+      "title": "Introduction to Psychology",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-2",
+      "xfer": []
+     },
+     {
+      "code": "THS110",
+      "title": "Christian Faith: Understanding and Application",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-3",
+      "xfer": []
+     },
+     {
+      "code": "MATH-CHOICE-1",
+      "title": "Mathematics (per placement)",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "One of MAT111 Mathematical Models: Statistical and Numerical, MAT211 Functions and Calculus I, or MAT215 Calculus w/Analytic Geometry I (3-5 hours); recorded at the 3-hour minimum",
+      "options": [
+       {
+        "code": "MAT111",
+        "title": "Mathematical Models: Statistical and Numerical",
+        "credits": 3
+       },
+       {
+        "code": "MAT211",
+        "title": "Functions and Calculus I",
+        "credits": 3
+       },
+       {
+        "code": "MAT215",
+        "title": "Calculus w/Analytic Geometry I",
+        "credits": 3
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s2-4",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "courses": [
+     {
+      "code": "BIO371",
+      "title": "Microbiology w/Lab",
+      "credits": 5,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-0",
+      "xfer": []
+     },
+     {
+      "code": "BST110",
+      "title": "Intro to the Christian Bible",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-1",
+      "xfer": []
+     },
+     {
+      "code": "HUMANITIES-OPTION-1",
+      "title": "Humanities Option",
+      "credits": 3,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Humanities option; HIS261 History of Civilization I and HIS262 History of Civilization II are recommended per catalog footnote",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-2",
+      "xfer": []
+     },
+     {
+      "code": "MAT311-OR-SSC391",
+      "title": "Probability and Statistics w/Lab or Statistics and Research Design",
+      "credits": 4,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "MAT311 or SSC391",
+      "options": [
+       {
+        "code": "MAT311",
+        "title": "Probability and Statistics w/Lab",
+        "credits": 4
+       },
+       {
+        "code": "SSC391",
+        "title": "Statistics and Research Design",
+        "credits": 4
+       }
+      ],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s3-3",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 4,
+    "courses": [
+     {
+      "code": "HSC210",
+      "title": "Pathophysiology",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR116",
+      "title": "Nutrition",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-1",
+      "xfer": []
+     },
+     {
+      "code": "NUR310",
+      "title": "Nursing Theory and Contemporary Issues",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-2",
+      "xfer": []
+     },
+     {
+      "code": "PSY201",
+      "title": "Lifespan Psychology",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-3",
+      "xfer": []
+     },
+     {
+      "code": "SPC120",
+      "title": "Foundations of Speech",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-4",
+      "xfer": []
+     },
+     {
+      "code": "PE-ACTIVITY-1",
+      "title": "Physical Activity course",
+      "credits": 1,
+      "category": "gened",
+      "choice": true,
+      "choice_note": "Physical Activity course per catalog four-year plan",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s4-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 5,
+    "courses": [
+     {
+      "code": "HSC102",
+      "title": "Pharmacology Essentials",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR112",
+      "title": "Foundation of Nursing",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-1",
+      "xfer": []
+     },
+     {
+      "code": "NUR112C",
+      "title": "Foundation of Nursing-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s5-2",
+      "xfer": []
+     },
+     {
+      "code": "NUR112L",
+      "title": "Foundation of Nursing-Lab",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s5-3",
+      "xfer": []
+     },
+     {
+      "code": "NUR113",
+      "title": "Nursing Health Assessment",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-4",
+      "xfer": []
+     },
+     {
+      "code": "NUR113L",
+      "title": "Nursing Health Assessment-Lab",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s5-5",
+      "xfer": []
+     },
+     {
+      "code": "NUR311",
+      "title": "Legal/Ethical Issues in Nursing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s5-6",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 6,
+    "courses": [
+     {
+      "code": "NUR115",
+      "title": "Advanced Nursing Skills",
+      "credits": 1,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR117",
+      "title": "Adult Health Nursing I",
+      "credits": 7,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-1",
+      "xfer": []
+     },
+     {
+      "code": "NUR117C",
+      "title": "Adult Health Nursing I-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s6-2",
+      "xfer": []
+     },
+     {
+      "code": "NUR118",
+      "title": "Psychiatric Nursing",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-3",
+      "xfer": []
+     },
+     {
+      "code": "NUR118C",
+      "title": "Psychiatric Nursing-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s6-4",
+      "xfer": []
+     },
+     {
+      "code": "NUR315",
+      "title": "Nursing Informatics",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s6-5",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 7,
+    "courses": [
+     {
+      "code": "NUR211",
+      "title": "Adult Health Nursing II",
+      "credits": 6,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR211C",
+      "title": "Adult Health Nursing II-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s7-1",
+      "xfer": []
+     },
+     {
+      "code": "NUR212",
+      "title": "Maternity Nursing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-2",
+      "xfer": []
+     },
+     {
+      "code": "NUR212C",
+      "title": "Maternity Nursing-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s7-3",
+      "xfer": []
+     },
+     {
+      "code": "NUR213",
+      "title": "Pediatric Nursing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-4",
+      "xfer": []
+     },
+     {
+      "code": "NUR213C",
+      "title": "Pediatric Nursing-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s7-5",
+      "xfer": []
+     },
+     {
+      "code": "NUR312",
+      "title": "Nursing Research/Evidence-Based Practice",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s7-6",
+      "xfer": []
+     }
+    ]
+   },
+   {
+    "n": 8,
+    "courses": [
+     {
+      "code": "GEN401",
+      "title": "The Good Life: Continuing the Conversation",
+      "credits": 3,
+      "category": "gened",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-0",
+      "xfer": []
+     },
+     {
+      "code": "NUR214",
+      "title": "Leadership and Management",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-1",
+      "xfer": []
+     },
+     {
+      "code": "NUR214C",
+      "title": "Leadership and Management-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s8-2",
+      "xfer": []
+     },
+     {
+      "code": "NUR413",
+      "title": "Critical Care Nursing",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-3",
+      "xfer": []
+     },
+     {
+      "code": "NUR413C",
+      "title": "Critical Care Nursing-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s8-4",
+      "xfer": []
+     },
+     {
+      "code": "NUR414",
+      "title": "Community/Global Health Nursing",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-5",
+      "xfer": []
+     },
+     {
+      "code": "NUR414C",
+      "title": "Community/Global Health-Clinical",
+      "credits": 0,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "required_zero": true,
+      "slot_id": "s8-6",
+      "xfer": []
+     },
+     {
+      "code": "NUR416",
+      "title": "Nursing Capstone",
+      "credits": 2,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s8-7",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "1fefd315c2ab0681663481b112b246f77d0ff99be0715adfc7bcaa87f9479e46",
+  "last_verified": "2026-10-20"
+ }
+}
