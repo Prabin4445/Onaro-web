@@ -1,0 +1,36 @@
+name: Daily horoscope refresh
+
+# Runs the same tools/fetch_horoscopes.py the sandbox cron uses, but on
+# GitHub's network, so a sandbox egress outage can no longer starve the
+# app of fresh readings. The script commits and pushes data/horoscopes.json
+# itself; Cloudflare Pages auto-deploys Onaro-web on push.
+on:
+  schedule:
+    # 05:19 and 17:19 UTC = 00:19 and 12:19 CDT (an hour earlier in CST
+    # winter; still twice daily, which is what matters).
+    - cron: '19 5,17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: horoscope-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and publish horoscopes
+        run: |
+          git config user.name "Onaro horoscope bot"
+          git config user.email "actions@users.noreply.github.com"
+          # The script hardcodes ~/workspace/hub (its sandbox home). Point
+          # that path at this checkout instead of forking the script.
+          mkdir -p "$HOME/workspace"
+          ln -sfn "$GITHUB_WORKSPACE" "$HOME/workspace/hub"
+          python3 "$HOME/workspace/hub/tools/fetch_horoscopes.py"
