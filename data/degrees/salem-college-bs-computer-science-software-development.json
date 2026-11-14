@@ -1,0 +1,250 @@
+{
+ "institution": {
+  "name": "Salem College",
+  "city": "Winston-Salem, NC",
+  "state": "NC",
+  "kind": "private"
+ },
+ "plan": {
+  "id": "salem-college-bs-computer-science-software-development",
+  "degree": "BS",
+  "major": "Computer Science with a Concentration in Software Development",
+  "total_credits": 49,
+  "catalog_year": "2026-2027",
+  "source_url": "https://catalog.salem.edu/preview_program.php?catoid=34&poid=953&returnto=1491",
+  "notes": "Transcribed 2026-11-14 from the official Salem College 2026-2027 Undergraduate Catalog (current edition, catoid=34), Computer Science with a Concentration in Software Development (BS) program page (poid=953). Salem College publishes major requirements but no official semester sequence for this program (its Print Degree Planner is a blank worksheet), so the plan is collected in requirements_only form as a single block. The recorded total is the major requirement only; the full degree requirements, including the Salem Impact core (published separately in the same catalog), are not itemized here. Per-course credits are the Hour(s) values printed on each course's own official course detail page in the same catalog; the program page itself prints no per-course credits. No course in this program names a lab corequisite. The catalog prints three mutually inconsistent totals for this major, all disclosed and none corrected: the block headings read 'Required Core Courses (38 hrs)' and 'Rize Education Online Software Development Concentration Courses (12 hrs)' (50 total), but the ten listed core courses itemize to 34 and the five listed concentration courses to 15 (49 total), while the introductory paragraph's figures (21 online semester hours + 33 Salem-taught semester hours) total 54. Every course the program page lists is placed exactly once, and the recorded total (49) is the exact itemized sum. Further catalog anomalies disclosed, not corrected: the introductory paragraph calls Computer Systems (CPSC 330) a core course, but CPSC 330 appears only in the concentration list; it says 'all four concentration courses' but five are listed; and CPSC 350 Computer Science Capstone prints a prerequisite of CPSC 150, a course that appears nowhere in this program's lists (CPSC 150 is therefore not recorded as a plan prerequisite; CPSC 350's in-plan prerequisites CPSC 242 and CPSC 301 are recorded). Several CPSC detail pages also require status as a Computer Science major or permission of the program director, as printed. The major is offered in collaboration with Rize Education: the concentration courses and CPSC 250/310 are taught online by Rize-affiliated faculty per the catalog.",
+  "requirements_only": true,
+  "semesters": [
+   {
+    "n": 1,
+    "label": "Requirements",
+    "declared_credits": 49,
+    "courses": [
+     {
+      "code": "CPSC 100",
+      "title": "Introduction to Programming",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-0",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 101",
+      "title": "Programming for Data Science",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 100"
+      ],
+      "tccns": "",
+      "slot_id": "s1-1",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 250",
+      "title": "Data Structures",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 101"
+      ],
+      "tccns": "",
+      "slot_id": "s1-2",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 301",
+      "title": "Programming Languages",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 100"
+      ],
+      "tccns": "",
+      "slot_id": "s1-3",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 310",
+      "title": "Algorithms",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 250",
+       "MATH 121"
+      ],
+      "tccns": "",
+      "slot_id": "s1-4",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 350",
+      "title": "Computer Science Capstone",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 242",
+       "CPSC 301"
+      ],
+      "tccns": "",
+      "slot_id": "s1-5",
+      "xfer": []
+     },
+     {
+      "code": "MATH 100",
+      "title": "Calculus I",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-6",
+      "xfer": []
+     },
+     {
+      "code": "MATH 101",
+      "title": "Calculus II",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 100"
+      ],
+      "tccns": "",
+      "slot_id": "s1-7",
+      "xfer": []
+     },
+     {
+      "code": "MATH 107",
+      "title": "Statistical Methods with R",
+      "credits": 4,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [],
+      "tccns": "",
+      "slot_id": "s1-8",
+      "xfer": []
+     },
+     {
+      "code": "MATH 121",
+      "title": "Introduction to Proofs",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "MATH 101"
+      ],
+      "tccns": "",
+      "slot_id": "s1-9",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 105",
+      "title": "Web Development",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 100"
+      ],
+      "tccns": "",
+      "slot_id": "s1-10",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 232",
+      "title": "Application Development I: Backend",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 105"
+      ],
+      "tccns": "",
+      "slot_id": "s1-11",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 242",
+      "title": "Application Development II: Frontend",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 232"
+      ],
+      "tccns": "",
+      "slot_id": "s1-12",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 330",
+      "title": "Computer Systems",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 100"
+      ],
+      "tccns": "",
+      "slot_id": "s1-13",
+      "xfer": []
+     },
+     {
+      "code": "CPSC 345",
+      "title": "Software Development",
+      "credits": 3,
+      "category": "major",
+      "choice": false,
+      "choice_note": "",
+      "options": [],
+      "prereq": [
+       "CPSC 232"
+      ],
+      "tccns": "",
+      "slot_id": "s1-14",
+      "xfer": []
+     }
+    ]
+   }
+  ],
+  "content_hash": "009ab3d048c082a75ee324eba6e54a7d61de870ddf133ea14280c06e926cac10",
+  "last_verified": "2026-11-14"
+ }
+}
